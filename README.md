@@ -1,0 +1,7 @@
+# Annals unit conjecture submission source
+
+This is a minimal review/publication snapshot for the LeanEval problem `annals_unit_conjecture`. The exact seven `Submission` source files and the official problem `lakefile.toml` and `lean-toolchain` are copied byte-for-byte from the immutable public candidate commit `de2b90f41032b5a567f9a718016ab3ec7a268329` in [trureturning-lean-eval](https://github.com/the-omega-institute/trureturning-lean-eval), whose parent is benchmark commit `0e093293afbe96be91504ae6e44947876d3fc84e`.
+
+The mathematical result is Giles Gardam's *A counterexample to the unit conjecture for group rings*, arXiv:2102.11818v2, Annals of Mathematics 194 (3) (2021), DOI [10.4007/annals.2021.194.3.9](https://doi.org/10.4007/annals.2021.194.3.9). This snapshot does not claim a new counterexample. Production attribution is `trureturning`, with Codex CLI implementation and one GPT-6 Pro plus two CLI independent reviews; reviews are pending.
+
+The official intake overlays `Submission.lean` and `Submission/**/*.lean` onto the canonical problem workspace. No Challenge/Solution overrides, caches, build outputs, secrets, process artifacts, comparator or nanoda acceptance claims, or unrelated workspaces are included. Existing source comments and upstream dependency attribution are preserved; Mathlib and LeanPool remain governed by their upstream licenses. The benchmark source is distributed under Apache License 2.0; see `LICENSE`.
