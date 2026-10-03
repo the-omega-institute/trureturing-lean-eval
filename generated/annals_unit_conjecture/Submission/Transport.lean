@@ -23,10 +23,9 @@ theorem official_z : UnitConjecture.z = pz := rfl
 theorem image_u : algebraEquiv UnitConjecture.u = unitE := by
   have ha : (UnitConjecture.a : UnitConjecture.P) = pa := rfl
   have hb : (UnitConjecture.b : UnitConjecture.P) = pb := rfl
-  have hab : (UnitConjecture.a * UnitConjecture.b : UnitConjecture.P) = pa * pb := rfl
   simp only [UnitConjecture.u, UnitConjecture.p, UnitConjecture.q, UnitConjecture.r,
     UnitConjecture.s, map_add, map_mul, map_one, algebra_coe, official_x, official_y,
-    official_z, map_inv, encode_x, encode_y, encode_z, ha, hb, hab, encode_a, encode_b,
+    official_z, map_inv, encode_x, encode_y, encode_z, ha, hb, encode_a, encode_b,
     unitE, polyP, polyQ, polyR, polyS, ex, ey, ez]
   simp [basis, MonoidAlgebra.single_mul_single]
 

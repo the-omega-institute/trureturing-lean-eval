@@ -40,18 +40,13 @@ theorem left_coefficient_0 : vOne * polyP + vA * uA + vB * uB + vAB * uAB = 1 :=
     mul_add, add_mul, mul_one, one_mul, MonoidAlgebra.single_mul_single]
   ext g
   simp only [MonoidAlgebra.coeff_add, MonoidAlgebra.coeff_single,
-    MonoidAlgebra.one_def, MonoidAlgebra.coeff_zero, Finsupp.add_apply, Finsupp.single_apply,
-    Finsupp.zero_apply, mul_def, inv_def, one_def, mulE, invE, oneE,
+    MonoidAlgebra.one_def, Finsupp.add_apply, Finsupp.single_apply,
+    mul_def, inv_def, one_def, mulE, invE, oneE,
     ex, ey, ez, ea, eb, rho, factor, addQ, addV, negV, zeroV]
   ring_nf
   simp [show (2 : ZMod 2) = 0 from by decide,
     show (4 : ZMod 2) = 0 from by decide,
     show (6 : ZMod 2) = 0 from by decide,
-    show (8 : ZMod 2) = 0 from by decide,
-    show (10 : ZMod 2) = 0 from by decide,
-    show (12 : ZMod 2) = 0 from by decide,
-    show (14 : ZMod 2) = 0 from by decide,
-    show (16 : ZMod 2) = 0 from by decide,
     show (17 : ZMod 2) = 1 from by decide]
 
 theorem left_coefficient_1 : vOne * uA + vA * polyP + vB * uAB + vAB * uB = 0 := by
@@ -60,19 +55,14 @@ theorem left_coefficient_1 : vOne * uA + vA * polyP + vB * uAB + vAB * uB = 0 :=
     mul_add, add_mul, mul_one, one_mul, MonoidAlgebra.single_mul_single]
   ext g
   simp only [MonoidAlgebra.coeff_add, MonoidAlgebra.coeff_single,
-    MonoidAlgebra.one_def, MonoidAlgebra.coeff_zero, Finsupp.add_apply, Finsupp.single_apply,
-    Finsupp.zero_apply, mul_def, inv_def, one_def, mulE, invE, oneE,
+    MonoidAlgebra.coeff_zero, Finsupp.add_apply, Finsupp.single_apply,
+    Finsupp.zero_apply, mul_def, inv_def, mulE, invE,
     ex, ey, ez, ea, eb, rho, factor, addQ, addV, negV, zeroV]
   ring_nf
   simp [show (2 : ZMod 2) = 0 from by decide,
     show (4 : ZMod 2) = 0 from by decide,
     show (6 : ZMod 2) = 0 from by decide,
-    show (8 : ZMod 2) = 0 from by decide,
-    show (10 : ZMod 2) = 0 from by decide,
-    show (12 : ZMod 2) = 0 from by decide,
-    show (14 : ZMod 2) = 0 from by decide,
-    show (16 : ZMod 2) = 0 from by decide,
-    show (17 : ZMod 2) = 1 from by decide]
+    show (8 : ZMod 2) = 0 from by decide]
 
 theorem left_coefficient_2 : vOne * uB + vA * uAB + vB * polyP + vAB * uA = 0 := by
   classical
@@ -80,19 +70,13 @@ theorem left_coefficient_2 : vOne * uB + vA * uAB + vB * polyP + vAB * uA = 0 :=
     mul_add, add_mul, mul_one, one_mul, MonoidAlgebra.single_mul_single]
   ext g
   simp only [MonoidAlgebra.coeff_add, MonoidAlgebra.coeff_single,
-    MonoidAlgebra.one_def, MonoidAlgebra.coeff_zero, Finsupp.add_apply, Finsupp.single_apply,
-    Finsupp.zero_apply, mul_def, inv_def, one_def, mulE, invE, oneE,
+    MonoidAlgebra.coeff_zero, Finsupp.add_apply, Finsupp.single_apply,
+    Finsupp.zero_apply, mul_def, inv_def, mulE, invE,
     ex, ey, ez, ea, eb, rho, factor, addQ, addV, negV, zeroV]
   ring_nf
   simp [show (2 : ZMod 2) = 0 from by decide,
     show (4 : ZMod 2) = 0 from by decide,
-    show (6 : ZMod 2) = 0 from by decide,
-    show (8 : ZMod 2) = 0 from by decide,
-    show (10 : ZMod 2) = 0 from by decide,
-    show (12 : ZMod 2) = 0 from by decide,
-    show (14 : ZMod 2) = 0 from by decide,
-    show (16 : ZMod 2) = 0 from by decide,
-    show (17 : ZMod 2) = 1 from by decide]
+    show (10 : ZMod 2) = 0 from by decide]
 
 theorem left_coefficient_3 : vOne * uAB + vA * uB + vB * uA + vAB * polyP = 0 := by
   classical
@@ -100,19 +84,13 @@ theorem left_coefficient_3 : vOne * uAB + vA * uB + vB * uA + vAB * polyP = 0 :=
     mul_add, add_mul, mul_one, one_mul, MonoidAlgebra.single_mul_single]
   ext g
   simp only [MonoidAlgebra.coeff_add, MonoidAlgebra.coeff_single,
-    MonoidAlgebra.one_def, MonoidAlgebra.coeff_zero, Finsupp.add_apply, Finsupp.single_apply,
-    Finsupp.zero_apply, mul_def, inv_def, one_def, mulE, invE, oneE,
+    MonoidAlgebra.coeff_zero, Finsupp.add_apply, Finsupp.single_apply,
+    Finsupp.zero_apply, mul_def, inv_def, mulE, invE,
     ex, ey, ez, ea, eb, rho, factor, addQ, addV, negV, zeroV]
   ring_nf
   simp [show (2 : ZMod 2) = 0 from by decide,
     show (4 : ZMod 2) = 0 from by decide,
-    show (6 : ZMod 2) = 0 from by decide,
-    show (8 : ZMod 2) = 0 from by decide,
-    show (10 : ZMod 2) = 0 from by decide,
-    show (12 : ZMod 2) = 0 from by decide,
-    show (14 : ZMod 2) = 0 from by decide,
-    show (16 : ZMod 2) = 0 from by decide,
-    show (17 : ZMod 2) = 1 from by decide]
+    show (6 : ZMod 2) = 0 from by decide]
 
 theorem inverseE_mul : inverseE * unitE = 1 := by
   calc
@@ -127,18 +105,13 @@ theorem right_coefficient_0 : polyP * vOne + uA * vA + uB * vB + uAB * vAB = 1 :
     mul_add, add_mul, mul_one, one_mul, MonoidAlgebra.single_mul_single]
   ext g
   simp only [MonoidAlgebra.coeff_add, MonoidAlgebra.coeff_single,
-    MonoidAlgebra.one_def, MonoidAlgebra.coeff_zero, Finsupp.add_apply, Finsupp.single_apply,
-    Finsupp.zero_apply, mul_def, inv_def, one_def, mulE, invE, oneE,
+    MonoidAlgebra.one_def, Finsupp.add_apply, Finsupp.single_apply,
+    mul_def, inv_def, one_def, mulE, invE, oneE,
     ex, ey, ez, ea, eb, rho, factor, addQ, addV, negV, zeroV]
   ring_nf
   simp [show (2 : ZMod 2) = 0 from by decide,
     show (4 : ZMod 2) = 0 from by decide,
     show (6 : ZMod 2) = 0 from by decide,
-    show (8 : ZMod 2) = 0 from by decide,
-    show (10 : ZMod 2) = 0 from by decide,
-    show (12 : ZMod 2) = 0 from by decide,
-    show (14 : ZMod 2) = 0 from by decide,
-    show (16 : ZMod 2) = 0 from by decide,
     show (17 : ZMod 2) = 1 from by decide]
 
 theorem right_coefficient_1 : polyP * vA + uA * vOne + uB * vAB + uAB * vB = 0 := by
@@ -147,19 +120,13 @@ theorem right_coefficient_1 : polyP * vA + uA * vOne + uB * vAB + uAB * vB = 0 :
     mul_add, add_mul, mul_one, one_mul, MonoidAlgebra.single_mul_single]
   ext g
   simp only [MonoidAlgebra.coeff_add, MonoidAlgebra.coeff_single,
-    MonoidAlgebra.one_def, MonoidAlgebra.coeff_zero, Finsupp.add_apply, Finsupp.single_apply,
-    Finsupp.zero_apply, mul_def, inv_def, one_def, mulE, invE, oneE,
+    MonoidAlgebra.coeff_zero, Finsupp.add_apply, Finsupp.single_apply,
+    Finsupp.zero_apply, mul_def, inv_def, mulE, invE,
     ex, ey, ez, ea, eb, rho, factor, addQ, addV, negV, zeroV]
   ring_nf
   simp [show (2 : ZMod 2) = 0 from by decide,
     show (4 : ZMod 2) = 0 from by decide,
-    show (6 : ZMod 2) = 0 from by decide,
-    show (8 : ZMod 2) = 0 from by decide,
-    show (10 : ZMod 2) = 0 from by decide,
-    show (12 : ZMod 2) = 0 from by decide,
-    show (14 : ZMod 2) = 0 from by decide,
-    show (16 : ZMod 2) = 0 from by decide,
-    show (17 : ZMod 2) = 1 from by decide]
+    show (10 : ZMod 2) = 0 from by decide]
 
 theorem right_coefficient_2 : polyP * vB + uA * vAB + uB * vOne + uAB * vA = 0 := by
   classical
@@ -167,19 +134,14 @@ theorem right_coefficient_2 : polyP * vB + uA * vAB + uB * vOne + uAB * vA = 0 :
     mul_add, add_mul, mul_one, one_mul, MonoidAlgebra.single_mul_single]
   ext g
   simp only [MonoidAlgebra.coeff_add, MonoidAlgebra.coeff_single,
-    MonoidAlgebra.one_def, MonoidAlgebra.coeff_zero, Finsupp.add_apply, Finsupp.single_apply,
-    Finsupp.zero_apply, mul_def, inv_def, one_def, mulE, invE, oneE,
+    MonoidAlgebra.coeff_zero, Finsupp.add_apply, Finsupp.single_apply,
+    Finsupp.zero_apply, mul_def, inv_def, mulE, invE,
     ex, ey, ez, ea, eb, rho, factor, addQ, addV, negV, zeroV]
   ring_nf
   simp [show (2 : ZMod 2) = 0 from by decide,
     show (4 : ZMod 2) = 0 from by decide,
     show (6 : ZMod 2) = 0 from by decide,
-    show (8 : ZMod 2) = 0 from by decide,
-    show (10 : ZMod 2) = 0 from by decide,
-    show (12 : ZMod 2) = 0 from by decide,
-    show (14 : ZMod 2) = 0 from by decide,
-    show (16 : ZMod 2) = 0 from by decide,
-    show (17 : ZMod 2) = 1 from by decide]
+    show (8 : ZMod 2) = 0 from by decide]
 
 theorem right_coefficient_3 : polyP * vAB + uA * vB + uB * vA + uAB * vOne = 0 := by
   classical
@@ -187,19 +149,13 @@ theorem right_coefficient_3 : polyP * vAB + uA * vB + uB * vA + uAB * vOne = 0 :
     mul_add, add_mul, mul_one, one_mul, MonoidAlgebra.single_mul_single]
   ext g
   simp only [MonoidAlgebra.coeff_add, MonoidAlgebra.coeff_single,
-    MonoidAlgebra.one_def, MonoidAlgebra.coeff_zero, Finsupp.add_apply, Finsupp.single_apply,
-    Finsupp.zero_apply, mul_def, inv_def, one_def, mulE, invE, oneE,
+    MonoidAlgebra.coeff_zero, Finsupp.add_apply, Finsupp.single_apply,
+    Finsupp.zero_apply, mul_def, inv_def, mulE, invE,
     ex, ey, ez, ea, eb, rho, factor, addQ, addV, negV, zeroV]
   ring_nf
   simp [show (2 : ZMod 2) = 0 from by decide,
     show (4 : ZMod 2) = 0 from by decide,
-    show (6 : ZMod 2) = 0 from by decide,
-    show (8 : ZMod 2) = 0 from by decide,
-    show (10 : ZMod 2) = 0 from by decide,
-    show (12 : ZMod 2) = 0 from by decide,
-    show (14 : ZMod 2) = 0 from by decide,
-    show (16 : ZMod 2) = 0 from by decide,
-    show (17 : ZMod 2) = 1 from by decide]
+    show (6 : ZMod 2) = 0 from by decide]
 
 theorem mul_inverseE : unitE * inverseE = 1 := by
   calc

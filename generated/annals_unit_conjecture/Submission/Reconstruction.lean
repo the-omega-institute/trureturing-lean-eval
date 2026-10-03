@@ -105,6 +105,7 @@ theorem section_mul (q r : Coset) :
     | exact move_b_a
     | exact section_b_ab
     | exact section_ab_a
+    | solve | simp [sigma, factor, addQ, transP, zeroV, pow_two, mul_assoc]
     | simpa [sigma, factor, addQ, transP, zeroV, pow_two, mul_assoc] using move_a_y
 
 def decodeFun (g : E) : UnitConjecture.P := transP g.v * sigma g.q
