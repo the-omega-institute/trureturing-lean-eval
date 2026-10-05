@@ -33,16 +33,16 @@ open scoped Manifold ContDiff
 in `ℝ⁷`, with its subspace topology — into `ℂ³`, taken as the plain function
 type `Fin 3 → ℂ`: all norms on a finite-dimensional space are equivalent, so
 the choice of model norm is immaterial to the statement. -/
-instance instChartedSpaceS6 :
+noncomputable instance instChartedSpaceS6 :
     ChartedSpace (Fin 3 → ℂ)
       (Metric.sphere (0 : EuclideanSpace ℝ (Fin 7)) 1) :=
-  sorry
+  Helpers.complexAtlas
 
 /-- **Hole 2 (proof).** The atlas of hole 1 is holomorphic: its transition
 functions are `ℂ`-analytic on their open domains. -/
 instance instIsManifoldS6 :
     IsManifold 𝓘(ℂ, Fin 3 → ℂ) ω
       (Metric.sphere (0 : EuclideanSpace ℝ (Fin 7)) 1) :=
-  sorry
+  Helpers.complexAtlas_isManifold
 
 end Submission
