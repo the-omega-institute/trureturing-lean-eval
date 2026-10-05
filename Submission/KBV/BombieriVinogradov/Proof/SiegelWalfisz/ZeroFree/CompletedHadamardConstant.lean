@@ -1,0 +1,104 @@
+-- Vendored from kimihiro64/bombieri-vinogradov@7a174830 BombieriVinogradov/Proof/SiegelWalfisz/ZeroFree/CompletedHadamardConstant.lean (Apache-2.0)
+-- Modified for the trureturing LeanEval submission (see NOTICE.md).
+import Submission.KBV.BombieriVinogradov.Proof.SiegelWalfisz.ZeroFree.CompletedHadamardNoMonomial
+import Submission.KBV.BombieriVinogradov.Proof.SiegelWalfisz.ZeroFree.CompletedLogDerivativeZeroSum
+import Submission.PNT.PrimeNumberTheoremAnd.Mathlib.Analysis.Calculus.Deriv.Polynomial
+import Submission.PNT.PrimeNumberTheoremAnd.Mathlib.Analysis.Complex.Divisor
+
+/-!
+# The completed-function Hadamard constant
+
+This module proves that evaluating the derivative of a no-monomial Hadamard
+polynomial at zero gives a unique complex constant, independent of the chosen
+factorization.
+-/
+
+set_option autoImplicit false
+
+namespace BombieriVinogradov.SiegelWalfisz
+
+/-- A complex number obtained from the derivative at zero of a degree-one
+no-monomial Hadamard polynomial for the symmetric completed L-function. -/
+def IsCompletedLFunctionHadamardConstant
+    {N : Nat} [NeZero N] (chi : DirichletCharacter Complex N)
+    (B : Complex) : Prop :=
+  exists P : Polynomial Complex,
+    P.degree <= 1 ∧
+      (forall z : Complex,
+        symmetricCompletedLFunction chi z =
+          Complex.exp (Polynomial.eval z P) *
+            Complex.Hadamard.divisorCanonicalProduct 1
+              (symmetricCompletedLFunction chi) (Set.univ : Set Complex) z) ∧
+      B = Polynomial.eval 0 P.derivative
+
+theorem symmetricCompletedLFunction_hadamard_polynomial_derivative_eval_eq
+    {N : Nat} [NeZero N] {chi : DirichletCharacter Complex N}
+    (hchi : chi ≠ 1) (hPrimitive : DirichletCharacter.IsPrimitive chi)
+    {P Q : Polynomial Complex} {z : Complex}
+    (hPfac : forall w : Complex,
+      symmetricCompletedLFunction chi w =
+        Complex.exp (Polynomial.eval w P) *
+          Complex.Hadamard.divisorCanonicalProduct 1
+            (symmetricCompletedLFunction chi) (Set.univ : Set Complex) w)
+    (hQfac : forall w : Complex,
+      symmetricCompletedLFunction chi w =
+        Complex.exp (Polynomial.eval w Q) *
+          Complex.Hadamard.divisorCanonicalProduct 1
+            (symmetricCompletedLFunction chi) (Set.univ : Set Complex) w)
+    (hz : forall p : Complex.Hadamard.divisorZeroIndex₀
+        (symmetricCompletedLFunction chi) (Set.univ : Set Complex),
+      z ≠ Complex.Hadamard.divisorZeroIndex₀_val p) :
+    Polynomial.eval z P.derivative = Polynomial.eval z Q.derivative := by
+  let S : Complex :=
+    ∑' p : Complex.Hadamard.divisorZeroIndex₀
+        (symmetricCompletedLFunction chi) (Set.univ : Set Complex),
+      (1 / (z - Complex.Hadamard.divisorZeroIndex₀_val p) +
+        1 / Complex.Hadamard.divisorZeroIndex₀_val p)
+  have hP :=
+    logDeriv_symmetricCompletedLFunction_eq_polynomial_derivative_add_tsum
+      hchi hPrimitive hPfac hz
+  have hQ :=
+    logDeriv_symmetricCompletedLFunction_eq_polynomial_derivative_add_tsum
+      hchi hPrimitive hQfac hz
+  have hsum : Polynomial.eval z P.derivative + S =
+      Polynomial.eval z Q.derivative + S := by
+    rw [← hP, ← hQ]
+  exact add_right_cancel hsum
+
+theorem symmetricCompletedLFunction_hadamard_polynomial_derivative_eval_zero_eq
+    {N : Nat} [NeZero N] {chi : DirichletCharacter Complex N}
+    (hchi : chi ≠ 1) (hPrimitive : DirichletCharacter.IsPrimitive chi)
+    {P Q : Polynomial Complex}
+    (hPfac : forall w : Complex,
+      symmetricCompletedLFunction chi w =
+        Complex.exp (Polynomial.eval w P) *
+          Complex.Hadamard.divisorCanonicalProduct 1
+            (symmetricCompletedLFunction chi) (Set.univ : Set Complex) w)
+    (hQfac : forall w : Complex,
+      symmetricCompletedLFunction chi w =
+        Complex.exp (Polynomial.eval w Q) *
+          Complex.Hadamard.divisorCanonicalProduct 1
+            (symmetricCompletedLFunction chi) (Set.univ : Set Complex) w) :
+    Polynomial.eval 0 P.derivative = Polynomial.eval 0 Q.derivative := by
+  apply symmetricCompletedLFunction_hadamard_polynomial_derivative_eval_eq
+    hchi hPrimitive hPfac hQfac
+  intro p
+  exact (Complex.Hadamard.divisorZeroIndex₀_val_ne_zero p).symm
+
+theorem existsUnique_symmetricCompletedLFunction_hadamardConstant
+    {N : Nat} [NeZero N] {chi : DirichletCharacter Complex N}
+    (hchi : chi ≠ 1) (hPrimitive : DirichletCharacter.IsPrimitive chi) :
+    ∃! B : Complex, IsCompletedLFunctionHadamardConstant chi B := by
+  choose P hDegree hFactorization using
+    symmetricCompletedLFunction_hadamard_factorization_no_monomial hchi hPrimitive
+  refine ExistsUnique.intro (Polynomial.eval 0 P.derivative) ?_ ?_
+  · exact Exists.intro P
+      (And.intro hDegree (And.intro hFactorization rfl))
+  · intro B hB
+    choose Q _hQDegree hQFactorization hBEq using hB
+    rw [hBEq]
+    exact
+      (symmetricCompletedLFunction_hadamard_polynomial_derivative_eval_zero_eq
+        hchi hPrimitive hFactorization hQFactorization).symm
+
+end BombieriVinogradov.SiegelWalfisz
