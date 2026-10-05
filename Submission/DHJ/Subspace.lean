@@ -24,7 +24,7 @@ open Combinatorics
 namespace DensityHalesJewett
 namespace Subspace
 
-variable {η α ι : Type*}
+variable {η α ι θ κ : Type*}
 
 /-- Evaluation by a fixed combinatorial subspace is injective. -/
 lemma injective (V : Combinatorics.Subspace η α ι) :
