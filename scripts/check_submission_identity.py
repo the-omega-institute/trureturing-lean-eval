@@ -77,8 +77,7 @@ def main() -> int:
         mode = "dry-run" if args.dry_run else "check"
         print(f"Identity {mode}: PASS; Model={canonical}; destination={DESTINATION}")
         print("Before manual submission: check source campaign issue #1 and owned official")
-        print("issues (including closed); never repeat the same problem. #1968 replaces")
-        print("closed #1967; unit #1969 already exists. No issue was created or edited.")
+        print("issues (including closed); never repeat the same problem. No issue was created or edited.")
         print("This check does not establish proof or benchmark acceptance.")
         return 0
     except Exception as error:
