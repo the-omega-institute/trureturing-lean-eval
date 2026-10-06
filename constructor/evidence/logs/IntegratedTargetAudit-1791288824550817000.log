@@ -1,0 +1,60 @@
+LightCondensed.Solid.solidification : CategoryTheory.Functor LightCondAb LightCondensed.Solid
+LightCondensed.Solid.solidification_additive : LightCondensed.Solid.solidification.Additive
+LightCondensed.Solid.solidificationAdjunction : LightCondensed.Solid.solidification ⊣ LightCondensed.isSolid.ι
+LightCondensed.Solid.derivedSolidification :
+  CategoryTheory.Functor LightCondensed.Solid.DLightCondAb LightCondensed.Solid.DSolid
+LightCondensed.Solid.derivedSolidificationCounit :
+  DerivedCategory.Q.comp LightCondensed.Solid.derivedSolidification ⟶
+    (LightCondensed.Solid.solidification.mapHomologicalComplex (ComplexShape.up ℤ)).comp DerivedCategory.Q
+LightCondensed.Solid.derivedSolidification_isLeftDerivedFunctor :
+  LightCondensed.Solid.derivedSolidification.IsLeftDerivedFunctor LightCondensed.Solid.derivedSolidificationCounit
+    (HomologicalComplex.quasiIso LightCondAb (ComplexShape.up ℤ))
+LightCondensed.Solid.derivedSolidificationAdjunction :
+  LightCondensed.Solid.derivedSolidification ⊣ LightCondensed.Solid.derivedInclusion
+LightCondensed.Solid.derivedSolidificationFreeCWFunctor :
+  CategoryTheory.Functor LightCondensed.Solid.CWTopCat LightCondensed.Solid.DLightCondAb
+LightCondensed.Solid.derivedSolidificationFreeCWFunctorSpec :
+  LightCondensed.Solid.derivedSolidificationFreeCWFunctor ≅
+    LightCondensed.Solid.CWTopCat.toTopCat.comp
+      (LightCondensed.Solid.freeLightCondAbOfTopFunctor.comp
+        ((DerivedCategory.singleFunctor LightCondAb 0).comp
+          (LightCondensed.Solid.derivedSolidification.comp LightCondensed.Solid.derivedInclusion)))
+LightCondensed.Solid.derivedSolidification_free_CW_derivedNatIso :
+  LightCondensed.Solid.derivedSolidificationFreeCWFunctor ≅
+    LightCondensed.Solid.singularChainsLightCondAbCWDerivedFunctor
+LightCondensed.Solid.derivedSolidification_free_CW_homologyIso (X : TopCat) [Topology.CWComplex Set.univ] (n : ℕ) :
+  LightCondensed.isSolid.ι.obj
+      ((DerivedCategory.homologyFunctor LightCondensed.Solid (-↑n)).obj
+        (LightCondensed.Solid.derivedSolidification.obj
+          ((DerivedCategory.singleFunctor LightCondAb 0).obj (LightCondensed.Solid.freeLightCondAbOfTop X)))) ≅
+    LightCondensed.Solid.singularHomologyLightCondAb X n
+LightCondensed.Solid.derivedSolidification_free_CW_homology (X : TopCat) [Topology.CWComplex Set.univ] (n : ℕ) :
+  Nonempty
+    (LightCondensed.isSolid.ι.obj
+        ((DerivedCategory.homologyFunctor LightCondensed.Solid (-↑n)).obj
+          (LightCondensed.Solid.derivedSolidification.obj
+            ((DerivedCategory.singleFunctor LightCondAb 0).obj (LightCondensed.Solid.freeLightCondAbOfTop X)))) ≅
+      LightCondensed.Solid.singularHomologyLightCondAb X n)
+'LightCondensed.Solid.solidification' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LightCondensed.Solid.solidification_additive' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LightCondensed.Solid.solidificationAdjunction' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LightCondensed.Solid.derivedSolidification' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LightCondensed.Solid.derivedSolidificationCounit' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LightCondensed.Solid.derivedSolidification_isLeftDerivedFunctor' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'LightCondensed.Solid.derivedSolidificationAdjunction' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LightCondensed.Solid.derivedSolidificationFreeCWFunctor' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LightCondensed.Solid.derivedSolidificationFreeCWFunctorSpec' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LightCondensed.Solid.derivedSolidification_free_CW_derivedNatIso' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+'LightCondensed.Solid.derivedSolidification_free_CW_homologyIso' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+'LightCondensed.Solid.derivedSolidification_free_CW_homology' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]

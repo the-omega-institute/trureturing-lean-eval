@@ -1,0 +1,369 @@
+[
+  {
+    "module": "CWSolid.DerivedRealization",
+    "source_sha256": "a03afbc1e7e15604fdeb6135f32f6030b2e07f398633d850a291a4fadb5e0a98",
+    "exit": 0,
+    "seconds": 393.59763383865356,
+    "log": "evidence/logs/CWSolid_DerivedRealization-1791288174875740000.log",
+    "original_command": [
+      "/Users/macstudio/.elan/toolchains/leanprover--lean4---v4.35.0-rc3/bin/lean",
+      "-j",
+      "1",
+      "-DElab.async=false",
+      "-DautoImplicit=false",
+      "-R",
+      "/private/tmp/trureturing-cw-solidification-20261006/src",
+      "-o",
+      "/private/tmp/trureturing-cw-solidification-20261006/build/CWSolid/DerivedRealization.olean",
+      "/private/tmp/trureturing-cw-solidification-20261006/src/CWSolid/DerivedRealization.lean"
+    ],
+    "historical_execution_only": true,
+    "roots": [
+      {
+        "name": "LightCondensed.Solid.derivedSolid_hasSmallCoproducts",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LightCondensed.Solid.derivedLightCondAb_hasSmallCoproducts",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LightCondensed.Solid.derivedLocal_hasSmallCoproducts",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LightCondensed.Solid.derivedInclusion_preservesSmallCoproducts",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LightCondensed.Solid.derivedInclusionToLocal_preservesSmallCoproducts",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LightCondensed.Solid.derivedLocalReflection_realized_complex",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LightCondensed.Solid.derivedInclusionToLocal_essSurj",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LightCondensed.Solid.derivedSolidLocalEquivalence",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      }
+    ]
+  },
+  {
+    "module": "CWSolid.RealizedAdjunction",
+    "source_sha256": "e4488b31948b5bc6c4d54b7a64b73ef219fa64b28703e1e2b70e83cdde510e46",
+    "exit": 0,
+    "seconds": 289.4174120426178,
+    "log": "evidence/logs/CWSolid_RealizedAdjunction-1791288472688461000.log",
+    "original_command": [
+      "/Users/macstudio/.elan/toolchains/leanprover--lean4---v4.35.0-rc3/bin/lean",
+      "-j",
+      "1",
+      "-DElab.async=false",
+      "-DautoImplicit=false",
+      "-R",
+      "/private/tmp/trureturing-cw-solidification-20261006/src",
+      "-o",
+      "/private/tmp/trureturing-cw-solidification-20261006/build/CWSolid/RealizedAdjunction.olean",
+      "/private/tmp/trureturing-cw-solidification-20261006/src/CWSolid/RealizedAdjunction.lean"
+    ],
+    "historical_execution_only": true,
+    "roots": [
+      {
+        "name": "LightCondensed.Solid.realizedDerivedSolidification",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LightCondensed.Solid.realizedDerivedSolidificationAdjunction",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      }
+    ]
+  },
+  {
+    "module": "CWSolid.OriginalDerived",
+    "source_sha256": "36d4c2f7a051a148c420b391bcf892a94df6f22ee58f412027aab8426adbddde",
+    "exit": 0,
+    "seconds": 146.47046208381653,
+    "log": "evidence/logs/CWSolid_OriginalDerived-1791288629210162000.log",
+    "original_command": [
+      "/Users/macstudio/.elan/toolchains/leanprover--lean4---v4.35.0-rc3/bin/lean",
+      "-j",
+      "1",
+      "-DElab.async=false",
+      "-DautoImplicit=false",
+      "-R",
+      "/private/tmp/trureturing-cw-solidification-20261006/src",
+      "-o",
+      "/private/tmp/trureturing-cw-solidification-20261006/build/CWSolid/OriginalDerived.olean",
+      "/private/tmp/trureturing-cw-solidification-20261006/src/CWSolid/OriginalDerived.lean"
+    ],
+    "historical_execution_only": true,
+    "roots": [
+      {
+        "name": "LightCondensed.Solid.solidification",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LightCondensed.Solid.solidification_additive",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LightCondensed.Solid.solidificationAdjunction",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LightCondensed.Solid.derivedSolidification",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LightCondensed.Solid.derivedSolidificationCounit",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LightCondensed.Solid.derivedSolidification_isLeftDerivedFunctor",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LightCondensed.Solid.derivedInclusion_isRightDerivedFunctor",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LightCondensed.Solid.derivedSolidificationAdjunction",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LightCondensed.Solid.solidification_hasLeftDerivedFunctor",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LightCondensed.Solid.derivedSolidification_isRightKanExtension",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      }
+    ]
+  },
+  {
+    "module": "IntegratedTargetAudit",
+    "source_sha256": "3c7075cb2fa88811bc70789a288b473c3f724c8400691244e8570ea0dc80d02a",
+    "exit": 0,
+    "seconds": 53.606147050857544,
+    "log": "evidence/logs/IntegratedTargetAudit-1791288824550817000.log",
+    "original_command": [
+      "/Users/macstudio/.elan/toolchains/leanprover--lean4---v4.35.0-rc3/bin/lean",
+      "-j",
+      "1",
+      "-DElab.async=false",
+      "-DautoImplicit=false",
+      "-R",
+      "/private/tmp/trureturing-cw-solidification-20261006/src",
+      "-o",
+      "/private/tmp/trureturing-cw-solidification-20261006/build/IntegratedTargetAudit.olean",
+      "/private/tmp/trureturing-cw-solidification-20261006/src/IntegratedTargetAudit.lean"
+    ],
+    "historical_execution_only": true,
+    "roots": [
+      {
+        "name": "LightCondensed.Solid.solidification",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LightCondensed.Solid.solidification_additive",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LightCondensed.Solid.solidificationAdjunction",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LightCondensed.Solid.derivedSolidification",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LightCondensed.Solid.derivedSolidificationCounit",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LightCondensed.Solid.derivedSolidification_isLeftDerivedFunctor",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LightCondensed.Solid.derivedSolidificationAdjunction",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LightCondensed.Solid.derivedSolidificationFreeCWFunctor",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LightCondensed.Solid.derivedSolidificationFreeCWFunctorSpec",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LightCondensed.Solid.derivedSolidification_free_CW_derivedNatIso",
+        "axioms": [
+          "propext",
+          "sorryAx",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LightCondensed.Solid.derivedSolidification_free_CW_homologyIso",
+        "axioms": [
+          "propext",
+          "sorryAx",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LightCondensed.Solid.derivedSolidification_free_CW_homology",
+        "axioms": [
+          "propext",
+          "sorryAx",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      }
+    ]
+  },
+  {
+    "module": "ChallengeIntegrated",
+    "source_sha256": "8dca19be645a5ca1b88c6f019a5d111321adbfcf886cbe5316376601fab6c01b",
+    "exit": 0,
+    "seconds": 108.87804007530212,
+    "log": "evidence/logs/ChallengeIntegrated-1791288755121796000.log",
+    "original_command": [
+      "/Users/macstudio/.elan/toolchains/leanprover--lean4---v4.35.0-rc3/bin/lean",
+      "-j",
+      "1",
+      "-DElab.async=false",
+      "-DautoImplicit=false",
+      "-R",
+      "/private/tmp/trureturing-cw-solidification-20261006/src",
+      "-o",
+      "/private/tmp/trureturing-cw-solidification-20261006/build/ChallengeIntegrated.olean",
+      "/private/tmp/trureturing-cw-solidification-20261006/src/ChallengeIntegrated.lean"
+    ],
+    "historical_execution_only": true
+  }
+]
