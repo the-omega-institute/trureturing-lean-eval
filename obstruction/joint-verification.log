@@ -1,0 +1,9 @@
+CWComparison.official_holes7_9_10_joint_target_empty :
+  ¬∃ L F,
+      Nonempty (L ⊣ derivedInclusion) ∧
+        Nonempty
+            (F ≅
+              CWTopCat.toTopCat ⋙
+                freeLightCondAbOfTopFunctor ⋙ DerivedCategory.singleFunctor LightCondAb 0 ⋙ L ⋙ derivedInclusion) ∧
+          Nonempty (F ≅ singularChainsLightCondAbCWDerivedFunctor)
+'CWComparison.official_holes7_9_10_joint_target_empty' depends on axioms: [propext, Classical.choice, Quot.sound]

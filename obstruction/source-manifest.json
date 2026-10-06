@@ -1,0 +1,650 @@
+{
+  "prepared_at": "2026-10-06T12:29:14.719935+00:00",
+  "scope": "Exact literal original holes7+9+10 joint incompatibility. Not objectwise/homology impossibility, not sufficiency of T2, not positive solve.",
+  "lean": "4.35.0-rc3",
+  "mathlib": "5e0c4e5239cb0a2d86d68a884bf52cfd963fce22",
+  "default_root": "OfficialJointTargetVerified",
+  "saved_compile_exit": 0,
+  "axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "custom_dependency_modules": 58,
+  "producer_unchanged_source_olean_pairs": {
+    "CWComparison.NerveScopeAudit": {
+      "source": "/tmp/trureturing-cw-comparison-20261006/logs/nerve-scope-checkpoint/src/CWComparison/NerveScopeAudit.lean",
+      "source_sha256": "8e453bc137a0c01f91bfc0319e88a0e40170e98f539a357ab789fb31acdf38e4",
+      "olean": "/tmp/trureturing-cw-comparison-20261006/build/CWComparison/NerveScopeAudit.olean",
+      "olean_sha256": "f8d06086467aaa5b5fe633a94c65e3d156e46ad0d81b40a0e91e28b5f5accac2"
+    },
+    "CWComparison.LastVertexOperator": {
+      "source": "/tmp/trureturing-cw-comparison-20261006/logs/nerve-scope-checkpoint/src/CWComparison/LastVertexOperator.lean",
+      "source_sha256": "5671dcdcd5a47151fbd8e042d63690dad24c22e7832e39a23b979f9cec955287",
+      "olean": "/tmp/trureturing-cw-comparison-20261006/build/CWComparison/LastVertexOperator.olean",
+      "olean_sha256": "d3316840171edb42059eac9f7e5e72e18d6f9c11ecf35dfddde33c5369df152a"
+    },
+    "CWComparison.SingularLastVertex": {
+      "source": "/tmp/trureturing-cw-comparison-20261006/logs/nerve-scope-checkpoint/src/CWComparison/SingularLastVertex.lean",
+      "source_sha256": "eabea465d92e80387a291c99357ada985e8f864883957e148df66300a82f905b",
+      "olean": "/tmp/trureturing-cw-comparison-20261006/build/CWComparison/SingularLastVertex.olean",
+      "olean_sha256": "cb8158df42ab3887137ce8b439f84da7e1787078d337c3de7a9931d0435990cd"
+    },
+    "CWComparison.SingularBarCollapse": {
+      "source": "/tmp/trureturing-cw-full-bar-review-20261006/src/CWComparison/SingularBarCollapse.lean",
+      "source_sha256": "12f1951eb80c06236aef0046942b319ebc5d8fda8b83ddea407cec68f244c517",
+      "olean": "/tmp/trureturing-cw-comparison-20261006/build/CWComparison/SingularBarCollapse.olean",
+      "olean_sha256": "7c7e8b0975c8b47737ab8943d3484edac03dbbf4d84e90822ceef92a9b93d76a"
+    },
+    "CWComparison.SingularFreeBarNaturality": {
+      "source": "/tmp/trureturing-cw-full-bar-review-20261006/src/CWComparison/SingularFreeBarNaturality.lean",
+      "source_sha256": "28b22d81a42b92c483f94e1e27e372827d25043b92bb74c7c52603985126456f",
+      "olean": "/tmp/trureturing-cw-comparison-20261006/build/CWComparison/SingularFreeBarNaturality.olean",
+      "olean_sha256": "839e48a07629d9685b2b64eba0d6b5d68e3f0ac0b367ad11820c1bfaa0bb2b9c"
+    },
+    "CWComparison.SingularFreeBarAugmentation": {
+      "source": "/tmp/trureturing-cw-full-bar-review-20261006/src/CWComparison/SingularFreeBarAugmentation.lean",
+      "source_sha256": "959db31052923222e06368ae654b59125054e3a74a2b096e37b008cd1183351f",
+      "olean": "/tmp/trureturing-cw-comparison-20261006/build/CWComparison/SingularFreeBarAugmentation.olean",
+      "olean_sha256": "60332b8ba786d830eebb7f95ac803172e2476bc05779d087963249aad891b3b3"
+    },
+    "CWComparison.SingularFreeBar": {
+      "source": "/tmp/trureturing-cw-full-bar-review-20261006/src/CWComparison/SingularFreeBar.lean",
+      "source_sha256": "eca1ac69e1274a02cd4227b2023b59697a519d26e48cd59d77bdad52490d6bd3",
+      "olean": "/tmp/trureturing-cw-comparison-20261006/build/CWComparison/SingularFreeBar.olean",
+      "olean_sha256": "cfb2ba06e0531d65af3c6c9a8d38da763b5c8c77228edb987781cffb459c6189"
+    },
+    "CWComparison.DerivedSimplexIntegral": {
+      "source": "/tmp/trureturing-cw-full-bar-review-20261006/src/CWComparison/DerivedSimplexIntegral.lean",
+      "source_sha256": "2eb8b9f4eaea9b0b5b736a732ed19daeced30141b84be438cff83ae72a4fd9b1",
+      "olean": "/tmp/trureturing-cw-comparison-20261006/build/CWComparison/DerivedSimplexIntegral.olean",
+      "olean_sha256": "5ad02052bf83a3462493ff1074128d35af00719b30047c7ea5ca63618e0ceec3"
+    },
+    "CWComparison.DerivedFreeSimplex": {
+      "source": "/tmp/trureturing-cw-full-bar-review-20261006/src/CWComparison/DerivedFreeSimplex.lean",
+      "source_sha256": "535c7318a0a98fbbc65196efb7e18da041961908b597cf96cf2de6a7ff876ae8",
+      "olean": "/tmp/trureturing-cw-comparison-20261006/build/CWComparison/DerivedFreeSimplex.olean",
+      "olean_sha256": "4e6c14bbd0dbc9379e8f4927b5e7697e108b37375484de616b7ff4816293a2cb"
+    },
+    "CWComparison.DerivedFreeHomotopy": {
+      "source": "/tmp/trureturing-cw-full-bar-review-20261006/src/CWComparison/DerivedFreeHomotopy.lean",
+      "source_sha256": "b6d16a3a10bdc0bfb9cb4c8769018ce86ad40c32827f499de7e59cba0e297fcd",
+      "olean": "/tmp/trureturing-cw-comparison-20261006/build/CWComparison/DerivedFreeHomotopy.olean",
+      "olean_sha256": "211de2c2ecbea73c53e4f87c81e33cfd579727a10ddbe52a7e44351c225f5402"
+    },
+    "CWComparison.DerivedTensorInversion": {
+      "source": "/tmp/trureturing-cw-full-bar-review-20261006/src/CWComparison/DerivedTensorInversion.lean",
+      "source_sha256": "11d2a5cf1ae64af7e8b5c06e60e975a79dec33fdebf19c9ba45a08fc9e83d2ab",
+      "olean": "/tmp/trureturing-cw-comparison-20261006/build/CWComparison/DerivedTensorInversion.olean",
+      "olean_sha256": "1353cade8c6c9e0a4dd0a106139a4f9008eb96eaa49a61521ed68dde54d12837"
+    },
+    "CWComparison.FrozenTensorOrthogonality": {
+      "source": "/tmp/trureturing-cw-full-bar-review-20261006/src/CWComparison/FrozenTensorOrthogonality.lean",
+      "source_sha256": "8f4e20b2640b3d6f0be633afe469b2b7e563c440585be47466039eecd4ceebd7",
+      "olean": "/tmp/trureturing-cw-comparison-20261006/build/CWComparison/FrozenTensorOrthogonality.olean",
+      "olean_sha256": "28d4a864e109ea20b541b493ae22aa117b4ee668ed1eda535e2353df0d58c8ba"
+    },
+    "CWComparison.FrozenExactMates": {
+      "source": "/tmp/trureturing-cw-full-bar-review-20261006/src/CWComparison/FrozenExactMates.lean",
+      "source_sha256": "528855f6d28202e973b2d323efc13837efe068f08cad0e2ac64e7cf02d3bd80a",
+      "olean": "/tmp/trureturing-cw-comparison-20261006/build/CWComparison/FrozenExactMates.olean",
+      "olean_sha256": "05c47d444880730c9ca41f492903edeab7210b7354034ea991285a89e743ae6f"
+    },
+    "CWComparison.DerivedTensorLocality": {
+      "source": "/tmp/trureturing-cw-full-bar-review-20261006/src/CWComparison/DerivedTensorLocality.lean",
+      "source_sha256": "109edf4f1d9bdc121e6ab14222f1d3c658ba314eae949c062bc4a825778d8c33",
+      "olean": "/tmp/trureturing-cw-comparison-20261006/build/CWComparison/DerivedTensorLocality.olean",
+      "olean_sha256": "d5a713d67d4c0cad7ededf100abbeb77f2f0be7b4b219dc325d3b857321067f4"
+    },
+    "CWComparison.FrozenFreeFlat": {
+      "source": "/tmp/trureturing-cw-full-bar-review-20261006/src/CWComparison/FrozenFreeFlat.lean",
+      "source_sha256": "9acfecc50398d4443824491ffc2ecf496194cec2fc58d84279d519baf64912fe",
+      "olean": "/tmp/trureturing-cw-comparison-20261006/build/CWComparison/FrozenFreeFlat.olean",
+      "olean_sha256": "433c57d94354fd55cebe05697feef879da418d467a7e776b56ff081e919d9661"
+    },
+    "CWSolid.Colimits": {
+      "source": "/tmp/trureturing-cw-full-bar-review-20261006/src/CWSolid/Colimits.lean",
+      "source_sha256": "cf909fd0c65d1e8b89f436b49648187afa886df5b98270d4c3db2f15f3e48c86",
+      "olean": "/tmp/trureturing-cw-solidification-20261006/build/CWSolid/Colimits.olean",
+      "olean_sha256": "292dfb07a23cb73c7da76b30a2f48cd2aba47f7f9ded3b5bcf1bed120af59efd"
+    },
+    "CWSolid.Reflection": {
+      "source": "/tmp/trureturing-cw-full-bar-review-20261006/src/CWSolid/Reflection.lean",
+      "source_sha256": "549d355084b30b2ca217e66f942dba7e29690c86f6bcbc6dea253bfefbce6c5d",
+      "olean": "/tmp/trureturing-cw-solidification-20261006/build/CWSolid/Reflection.olean",
+      "olean_sha256": "f14f58c2768990a8bacb5ced9c5a896eeee42ae41992df4d4be962415d6ea940"
+    },
+    "CWSolid.Filtered": {
+      "source": "/tmp/trureturing-cw-full-bar-review-20261006/src/CWSolid/Filtered.lean",
+      "source_sha256": "89024d289b158c8454796ec7d93d4323fd836e2eff3c0b806079b5c7a1bfae33",
+      "olean": "/tmp/trureturing-cw-solidification-20261006/build/CWSolid/Filtered.olean",
+      "olean_sha256": "5d914b9e0b95412b7db5bc882fec917f8a5e8dec571783447ea1e141888df99c"
+    },
+    "ChallengeDeps": {
+      "source": "/tmp/trureturing-cw-full-bar-review-20261006/src/ChallengeDeps.lean",
+      "source_sha256": "52cb3b252ac6a994de64d70192f5a622e5611ffee45578ae3d8567f9b2d84e71",
+      "olean": "/tmp/trureturing-cw-solidification-20261006/build/ChallengeDeps.olean",
+      "olean_sha256": "551f20f3ae86382a71a1a1577bea24e22b34346977b462ed2d984928fbfeb51c"
+    },
+    "CWComparison.FrozenDerivedAdjunction": {
+      "source": "/tmp/trureturing-cw-full-bar-review-20261006/src/CWComparison/FrozenDerivedAdjunction.lean",
+      "source_sha256": "7df21cf3325a9cea3822c10da9756370a1d63c7facedad8b023cb793bddd22b6",
+      "olean": "/tmp/trureturing-cw-comparison-20261006/build/CWComparison/FrozenDerivedAdjunction.olean",
+      "olean_sha256": "2c85be362b9edecc46db75913fe15da34cf175e7f33744fb01cd0192b22cbc46"
+    },
+    "CWSolid.ComplexAdjunction": {
+      "source": "/tmp/trureturing-cw-full-bar-review-20261006/src/CWSolid/ComplexAdjunction.lean",
+      "source_sha256": "c0cf541e28268062ecdef3aee078dd4e9c75674dd68aa72a9ec7f61b9158f425",
+      "olean": "/tmp/trureturing-cw-solidification-20261006/build/CWSolid/ComplexAdjunction.olean",
+      "olean_sha256": "60ea25542ae40ea2475d0fc987737520c0711383ced6eb9ee0d068fa1098764c"
+    },
+    "CWComparison.TensorLocalization": {
+      "source": "/tmp/trureturing-cw-full-bar-review-20261006/src/CWComparison/TensorLocalization.lean",
+      "source_sha256": "a470f41daace12c7b5c2f7e2bcf5f110b232cb8bc788587d21567229200c153c",
+      "olean": "/tmp/trureturing-cw-comparison-20261006/build/CWComparison/TensorLocalization.olean",
+      "olean_sha256": "cd4b407eb4b24825a6079b45c838ecaf263e536e68d50011f932b084bc0edfa5"
+    },
+    "CWComparison.Localizing": {
+      "source": "/tmp/trureturing-cw-full-bar-review-20261006/src/CWComparison/Localizing.lean",
+      "source_sha256": "33dece85852c6eb14c76d0193bac6a5fb09fc73293c68750949b97bd2066f6e0",
+      "olean": "/tmp/trureturing-cw-comparison-20261006/build/CWComparison/Localizing.olean",
+      "olean_sha256": "8cd03f7353827993874fbb58de1a38aec87a1dc4a122b3e6fab539b471e805f8"
+    },
+    "CWComparison.FreeAugmentation": {
+      "source": "/tmp/trureturing-cw-full-bar-review-20261006/src/CWComparison/FreeAugmentation.lean",
+      "source_sha256": "b7722335a9d194354fe659e9124f19c02dafc5d7fa6996b1dd6fa1e0d54063f2",
+      "olean": "/tmp/trureturing-cw-comparison-20261006/build/CWComparison/FreeAugmentation.olean",
+      "olean_sha256": "66792ae0cc5b0d13cf08f7173a68536e8653561b44ed3caccb5f1ae1e8cbcc5d"
+    },
+    "CWSolid.Early": {
+      "source": "/tmp/trureturing-cw-full-bar-review-20261006/src/CWSolid/Early.lean",
+      "source_sha256": "3f9562bee06a20a9d94265b61bc279cc05f1ecd729baf83daa90f1989420006a",
+      "olean": "/tmp/trureturing-cw-solidification-20261006/build/CWSolid/Early.olean",
+      "olean_sha256": "332efe4230f4f3def1f6928be47d6b9357f2a86d588b2e2c84a34c926bbeaf54"
+    },
+    "CWSolid.DiscreteInt": {
+      "source": "/tmp/trureturing-cw-full-bar-review-20261006/src/CWSolid/DiscreteInt.lean",
+      "source_sha256": "441f56fc3bf021c99250dfd9f648078ea093f26df5724027393af478a29fbb18",
+      "olean": "/tmp/trureturing-cw-solidification-20261006/build/CWSolid/DiscreteInt.olean",
+      "olean_sha256": "62126ade610d1ab53c097a3f6c6be1a62de5d4d0fac9fb03c8bfdefc65394b54"
+    },
+    "CWComparison.SingularProjective": {
+      "source": "/tmp/trureturing-cw-full-bar-review-20261006/src/CWComparison/SingularProjective.lean",
+      "source_sha256": "d4f694253557948a5119ee187c7d84c9db3f493045a955fecc6ce26aca329dfe",
+      "olean": "/tmp/trureturing-cw-comparison-20261006/build/CWComparison/SingularProjective.olean",
+      "olean_sha256": "3b1c05d0d169b2b10c626612a34e9703c9cf63e8b451f29453845ed6e6127be8"
+    },
+    "CWSolid.SingularSolid": {
+      "source": "/tmp/trureturing-cw-full-bar-review-20261006/src/CWSolid/SingularSolid.lean",
+      "source_sha256": "71cddd8f925e12c1753eefcc11338a6673925624f6099e4f40d1aa231b442fe8",
+      "olean": "/tmp/trureturing-cw-solidification-20261006/build/CWSolid/SingularSolid.olean",
+      "olean_sha256": "e447b2b1193234d445866df66d0191ef4185375493bbaaebd1e2ee89f1e5bfa0"
+    },
+    "CWSolid.ChainHomology": {
+      "source": "/tmp/trureturing-cw-full-bar-review-20261006/src/CWSolid/ChainHomology.lean",
+      "source_sha256": "1a35cb7d2519eb285b8b732ebde81529c8315486130d1956d0dde35e5aa2163a",
+      "olean": "/tmp/trureturing-cw-solidification-20261006/build/CWSolid/ChainHomology.olean",
+      "olean_sha256": "0847d6cefd0d192d755d7b8f9ab86a29881b0d77ccecfade2248a7a89455dd78"
+    },
+    "CWComparison.DerivedMap": {
+      "source": "/tmp/trureturing-cw-full-bar-review-20261006/src/CWComparison/DerivedMap.lean",
+      "source_sha256": "c94a6865e870083a2a08747d7de87e84dcb3ae42fa09373aa14c603eb95ac563",
+      "olean": "/tmp/trureturing-cw-comparison-20261006/build/CWComparison/DerivedMap.olean",
+      "olean_sha256": "39ed5bf8951813ef9ba4e274ed88f74e70a24a9046100fc0e1e810b78a29a0dc"
+    },
+    "CWComparison.DerivedLocalization": {
+      "source": "/tmp/trureturing-cw-full-bar-review-20261006/src/CWComparison/DerivedLocalization.lean",
+      "source_sha256": "4c1d848c125aeb1d3a09858e197acd46039ebfd02ef0fe1750e433b392be7451",
+      "olean": "/tmp/trureturing-cw-comparison-20261006/build/CWComparison/DerivedLocalization.olean",
+      "olean_sha256": "4058b5d1cb268adc3f7d33424d105ecba2ef39b4b60f18a1f70103781efd5fca"
+    },
+    "CWComparison.SingularDerived": {
+      "source": "/tmp/trureturing-cw-full-bar-review-20261006/src/CWComparison/SingularDerived.lean",
+      "source_sha256": "1f47eb1f8f2d6ed885e3b9a7eade357b24acf56914bae153b8035c26b44973d6",
+      "olean": "/tmp/trureturing-cw-comparison-20261006/build/CWComparison/SingularDerived.olean",
+      "olean_sha256": "8a15a85bb4c5b1880092cd061773291f768f78600a3b24a3202e3e5ff90db738"
+    },
+    "CWComparison.FreeBinaryHomotopy": {
+      "source": "/tmp/trureturing-cw-full-bar-review-20261006/src/CWComparison/FreeBinaryHomotopy.lean",
+      "source_sha256": "3e7c01f39179f5af943b08760bf1e16e7f7ed788546499f3915d390ba139315a",
+      "olean": "/tmp/trureturing-cw-comparison-20261006/build/CWComparison/FreeBinaryHomotopy.olean",
+      "olean_sha256": "b40ca3884e084fe82dcbeac71599aa6cdd79e14b8f05d546eef5812f3800f20e"
+    },
+    "CWComparison.BinaryEdgeDescent": {
+      "source": "/tmp/trureturing-cw-full-bar-review-20261006/src/CWComparison/BinaryEdgeDescent.lean",
+      "source_sha256": "a29b718ba659f68c2af6007ad4b8609aabf32bcae70992b415e12ff670fd8a3a",
+      "olean": "/tmp/trureturing-cw-comparison-20261006/build/CWComparison/BinaryEdgeDescent.olean",
+      "olean_sha256": "19005aa4ca8b2e61d7b8cb0cb702d20eeef648be0f797c95a06d29e2f5876888"
+    },
+    "CWComparison.BinaryEdgeRelation": {
+      "source": "/tmp/trureturing-cw-full-bar-review-20261006/src/CWComparison/BinaryEdgeRelation.lean",
+      "source_sha256": "9ef0c62b1bcbc7f87e67db4f41eaa3e69d17f66c58195d2ab98e3dc4551b86ae",
+      "olean": "/tmp/trureturing-cw-comparison-20261006/build/CWComparison/BinaryEdgeRelation.olean",
+      "olean_sha256": "9566ac51b2eeaa706129d3690e40055a3df0ec9948c6874e16a6cb0792fc8dfe"
+    },
+    "CWComparison.BinaryEdgeSpace": {
+      "source": "/tmp/trureturing-cw-full-bar-review-20261006/src/CWComparison/BinaryEdgeSpace.lean",
+      "source_sha256": "9ec20241872aac98babef8a624d906b1c711268333a98d624ade00796ee4f20b",
+      "olean": "/tmp/trureturing-cw-comparison-20261006/build/CWComparison/BinaryEdgeSpace.olean",
+      "olean_sha256": "d856b027021090af0c177c61d7dbe5e794a27c002227a6a09a0930f44e6e313a"
+    },
+    "CWComparison.BinaryEdges": {
+      "source": "/tmp/trureturing-cw-full-bar-review-20261006/src/CWComparison/BinaryEdges.lean",
+      "source_sha256": "bc3dee312d3e73140942ab405a16e1f9f7a2ed78013ccb08fa87dda09f4bd913",
+      "olean": "/tmp/trureturing-cw-comparison-20261006/build/CWComparison/BinaryEdges.olean",
+      "olean_sha256": "03c8e1d01435bee82803f081b77413bc7e97d6aebb1b5794259d5db6e5af58b5"
+    },
+    "CWComparison.SimplexCover": {
+      "source": "/tmp/trureturing-cw-full-bar-review-20261006/src/CWComparison/SimplexCover.lean",
+      "source_sha256": "2a826cf8de64a659330929c88f808552915a04c082381ec1426b2224217525d3",
+      "olean": "/tmp/trureturing-cw-comparison-20261006/build/CWComparison/SimplexCover.olean",
+      "olean_sha256": "2baf97b39f686b3206845f0f12c16a6c5ac3917ac6b57da2077ed81efa573275"
+    },
+    "CWComparison.ProfiniteCover": {
+      "source": "/tmp/trureturing-cw-full-bar-review-20261006/src/CWComparison/ProfiniteCover.lean",
+      "source_sha256": "d9f0df11cffdfb43fafad9a9bc7edc4e8a80803bf5ab365715f6f333e3f33cab",
+      "olean": "/tmp/trureturing-cw-comparison-20261006/build/CWComparison/ProfiniteCover.olean",
+      "olean_sha256": "43a18b8471412b83ec4e1adb8ceb4f601b231667e1ceca9fbfe80005ded86a07"
+    },
+    "CWComparison.CompactCover": {
+      "source": "/tmp/trureturing-cw-full-bar-review-20261006/src/CWComparison/CompactCover.lean",
+      "source_sha256": "f631b0604315fc90c09bc24de1a73c1975fb23fe201a681f87af7b41fd23aa83",
+      "olean": "/tmp/trureturing-cw-comparison-20261006/build/CWComparison/CompactCover.olean",
+      "olean_sha256": "7c70d4e99141eb80e7e7fb9ea3d04064e216d4b5404a29ad487010dcdd5b7211"
+    },
+    "CWComparison.BinaryEdgeChildren": {
+      "source": "/tmp/trureturing-cw-full-bar-review-20261006/src/CWComparison/BinaryEdgeChildren.lean",
+      "source_sha256": "a763d6218abcc483280c8703fde2bc0857e046c8615f7218731ca2ecd98609e6",
+      "olean": "/tmp/trureturing-cw-comparison-20261006/build/CWComparison/BinaryEdgeChildren.olean",
+      "olean_sha256": "fd952f6ee67bb3fb73dc81ee8006ed1f439b02407a2e1e76140469d08fde0fe7"
+    },
+    "CWComparison.BinaryShift": {
+      "source": "/tmp/trureturing-cw-full-bar-review-20261006/src/CWComparison/BinaryShift.lean",
+      "source_sha256": "0dad874eeda461d16996b0253868c584bd5f0e190f71dd013fc4a90b78486a95",
+      "olean": "/tmp/trureturing-cw-comparison-20261006/build/CWComparison/BinaryShift.olean",
+      "olean_sha256": "2d84070d74439d0159447452bffe4aeb9154efe1c561eb66bebb8bc1e6b82ff5"
+    },
+    "CWComparison.FreeCoverPresentation": {
+      "source": "/tmp/trureturing-cw-full-bar-review-20261006/src/CWComparison/FreeCoverPresentation.lean",
+      "source_sha256": "24df1defca8d881b8eb2130994c138a7fbf05b2497ca94c44cd72dae24bec917",
+      "olean": "/tmp/trureturing-cw-comparison-20261006/build/CWComparison/FreeCoverPresentation.olean",
+      "olean_sha256": "707196aee521b1a6addb8e99e4d68cce9ba16f73b2a3892ef29ecf3f95114b1d"
+    },
+    "CWComparison.FreePrism": {
+      "source": "/tmp/trureturing-cw-full-bar-review-20261006/src/CWComparison/FreePrism.lean",
+      "source_sha256": "d65f739a639bc914acb417b6f539bf209dfad36045ad902b1749fb72c7fe5321",
+      "olean": "/tmp/trureturing-cw-comparison-20261006/build/CWComparison/FreePrism.olean",
+      "olean_sha256": "9089929a3cacbbb33a8f0a37f7d77800ceba7bd78e050cd54cad6429734816bc"
+    },
+    "CWComparison.FreeSimplex": {
+      "source": "/tmp/trureturing-cw-full-bar-review-20261006/src/CWComparison/FreeSimplex.lean",
+      "source_sha256": "8fc6a4c98bed3909bc6d75bd70394484d0f8ddf7e483c8ad781dfd8c80db14b1",
+      "olean": "/tmp/trureturing-cw-comparison-20261006/build/CWComparison/FreeSimplex.olean",
+      "olean_sha256": "c4cdb5f1bc47215c19c2dc6815872c806528f6a48e54d8f2f8cd0ff5682e0e38"
+    },
+    "CWComparison.DerivedDiscreteInt": {
+      "source": "/tmp/trureturing-cw-full-bar-review-20261006/src/CWComparison/DerivedDiscreteInt.lean",
+      "source_sha256": "eec3bc36131e85c4945db2bc358b84cd782b4c894c559b49e900fe36da39e1e2",
+      "olean": "/tmp/trureturing-cw-comparison-20261006/build/CWComparison/DerivedDiscreteInt.olean",
+      "olean_sha256": "4b8a2daa0c34f0ab295bc3c5c0d487d98d2faf3a9560b384e0aa36154efb6cfb"
+    },
+    "CWComparison.SingularFiberContraction": {
+      "source": "/tmp/trureturing-cw-comparison-20261006/logs/nerve-scope-checkpoint/src/CWComparison/SingularFiberContraction.lean",
+      "source_sha256": "e14f2877ea2dbb3dc70387f11eaa2f57dd957dfe42133aa4c85519e2bd90ba6f",
+      "olean": "/tmp/trureturing-cw-comparison-20261006/build/CWComparison/SingularFiberContraction.olean",
+      "olean_sha256": "36c75f670b8f5662e13ca902f6fcad01dac3c811213b55e8f91d390a84f776d3"
+    },
+    "CWComparison.SingularResolutionFibers": {
+      "source": "/tmp/trureturing-cw-comparison-20261006/logs/nerve-scope-checkpoint/src/CWComparison/SingularResolutionFibers.lean",
+      "source_sha256": "c56559a33f2d5b594b7ba3687b03f16ebd8643782f9775ea73ce2f43d427a65a",
+      "olean": "/tmp/trureturing-cw-comparison-20261006/build/CWComparison/SingularResolutionFibers.olean",
+      "olean_sha256": "75a8af505b1ad90b84fa2f7b679894cc92c76f99079b4a192fe0caae3d84a3d0"
+    },
+    "CWComparison.CWNoClosedPoint": {
+      "source": "/tmp/trureturing-cw-comparison-20261006/logs/nerve-scope-checkpoint/src/CWComparison/CWNoClosedPoint.lean",
+      "source_sha256": "7585007cfe134679c57b7003316f6b1ca23b226f658b062f866300b15956730f",
+      "olean": "/tmp/trureturing-cw-comparison-20261006/build/CWComparison/CWNoClosedPoint.olean",
+      "olean_sha256": "73debf875fa9bffda01fe8c2728da4f862e636b4ac225a729df3dd3335558ad8"
+    },
+    "CWComparison.CWThickening": {
+      "source": "/tmp/trureturing-cw-comparison-20261006/logs/nerve-scope-checkpoint/src/CWComparison/CWThickening.lean",
+      "source_sha256": "f1809aab69115ebf788beb6d8c3b9198416fa06c609b5d9993c7f6155841f130",
+      "olean": "/tmp/trureturing-cw-comparison-20261006/build/CWComparison/CWThickening.olean",
+      "olean_sha256": "3f17694e0332985c8bdb92a7ca4f78ce8bc0705cdae3436afe0c492de986fb5e"
+    },
+    "CWComparison.CWThickeningDerived": {
+      "source": "/tmp/trureturing-cw-comparison-20261006/logs/nerve-scope-checkpoint/src/CWComparison/CWThickeningDerived.lean",
+      "source_sha256": "e0a22b758bb1a836df643baf52c51c5870e6a1739cab881e7047a0557505a758",
+      "olean": "/tmp/trureturing-cw-comparison-20261006/build/CWComparison/CWThickeningDerived.olean",
+      "olean_sha256": "e8ef338f9c9e15ebce5964c573af7517825f76a46f98d3378163c7f11c46a3c1"
+    },
+    "CWComparison.SingularHomotopy": {
+      "source": "/tmp/trureturing-cw-full-bar-review-20261006/src/CWComparison/SingularHomotopy.lean",
+      "source_sha256": "120d7792dff34c18416fc3614bf8dbf27850b5a3d0bcf227d5fae7d0eb844efb",
+      "olean": "/tmp/trureturing-cw-comparison-20261006/build/CWComparison/SingularHomotopy.olean",
+      "olean_sha256": "9a09060dce6ae86e7b4ac3bcc53c64bfcf6a91263fafd292b3fd9bbd217f7d8d"
+    },
+    "CWComparison.DiscreteSequenceDifference": {
+      "source": "/tmp/trureturing-cw-comparison-20261006/logs/nerve-scope-checkpoint/src/CWComparison/DiscreteSequenceDifference.lean",
+      "source_sha256": "8c27666e93814159615ba94631c883e60a84a20d050654189ad3ebd860a6994d",
+      "olean": "/tmp/trureturing-cw-comparison-20261006/build/CWComparison/DiscreteSequenceDifference.olean",
+      "olean_sha256": "03142d34843abd46e18d1ea7a8cbbc9ea0791c67039e9e2b729f709cfbdd1075"
+    },
+    "CWComparison.SequenceDifferenceLocalization": {
+      "source": "/tmp/trureturing-cw-comparison-20261006/logs/nerve-scope-checkpoint/src/CWComparison/SequenceDifferenceLocalization.lean",
+      "source_sha256": "51d779ef262157e344bbc87173b38076396149530f3a6e68fe93c4b59eb36074",
+      "olean": "/tmp/trureturing-cw-comparison-20261006/build/CWComparison/SequenceDifferenceLocalization.olean",
+      "olean_sha256": "bc02f8d56336d4dda59502d3412b3e5d1011c4786f287c432efd6d54c998ec3a"
+    },
+    "CWComparison.ShiftDerived": {
+      "source": "/tmp/trureturing-cw-full-bar-review-20261006/src/CWComparison/ShiftDerived.lean",
+      "source_sha256": "f6dfc18f5d24f1a5621246fec99384fc8c667eb6e3540e32052005c5ff95264c",
+      "olean": "/tmp/trureturing-cw-comparison-20261006/build/CWComparison/ShiftDerived.olean",
+      "olean_sha256": "7c3da792adf5620f7ac4a066f3d9e2a1f1fb2da8e09c164447d1a80a535f60dc"
+    },
+    "CWComparison.TotallyDisconnectedSingularNaturality": {
+      "source": "/tmp/trureturing-cw-comparison-20261006/logs/nerve-scope-checkpoint/src/CWComparison/TotallyDisconnectedSingularNaturality.lean",
+      "source_sha256": "571ec3147899daa258a3be974a5f6a066b566d646277742d3157beac2882c54f",
+      "olean": "/tmp/trureturing-cw-comparison-20261006/build/CWComparison/TotallyDisconnectedSingularNaturality.olean",
+      "olean_sha256": "8b2b71e3018415830066eee487a7d98bd0bb4d0a2040cd19602cb2c6c644b35a"
+    },
+    "CWComparison.SequenceSingularObstruction": {
+      "source": "/tmp/trureturing-cw-comparison-20261006/logs/nerve-scope-checkpoint/src/CWComparison/SequenceSingularObstruction.lean",
+      "source_sha256": "b71c36fce4c9e7130a5ef0f7446067ebe4fa0924a604820f26a140901835d11e",
+      "olean": "/tmp/trureturing-cw-comparison-20261006/build/CWComparison/SequenceSingularObstruction.olean",
+      "olean_sha256": "323afc667e73e74e8d51be217fdc267f485f46367600218b0075da0eb5285ffe"
+    },
+    "CWComparison.ProtectedCWComparisonObstruction": {
+      "source": "/tmp/trureturing-cw-comparison-20261006/logs/nerve-scope-checkpoint/src/CWComparison/ProtectedCWComparisonObstruction.lean",
+      "source_sha256": "b4fbb7c4bef3ca703352732e8baed5d1c703601c62581faeabe291f769305633",
+      "olean": "/tmp/trureturing-cw-comparison-20261006/build/CWComparison/ProtectedCWComparisonObstruction.olean",
+      "olean_sha256": "c2e3c2ec7b7e2c3f44316eac458bcbc1d5c12ae1f8b7bb88caec68e35b054c07"
+    }
+  },
+  "files": [
+    {
+      "path": "OFFICIAL_SCOPE_DEFECT.md",
+      "sha256": "c4812c52bc087c859e4719f809bf7654f6a6b44cfa3b6e6c4ae72a1012002a87"
+    },
+    {
+      "path": "README.md",
+      "sha256": "9c8e3e84a130eb7f9626e41bcd5c0c223b5a13cceaa317daaf4d6f8164ce0bab"
+    },
+    {
+      "path": "critical-audit-receipt.json",
+      "sha256": "8d9b66b1d2f29ab7aef6ab700c28303ad337861903630c9377685e4ee06f57c4"
+    },
+    {
+      "path": "critical-audit.log",
+      "sha256": "13fff16a21d5666b40a83c28eb84f4454d93c5c5b7c45d439a5a53f144d33895"
+    },
+    {
+      "path": "evidence/OriginalChallenge.lean",
+      "sha256": "c3176f2023748f0e1cdb5a725b35d7d8c587e6a19dd67d1f3e59626d8bb5a40c"
+    },
+    {
+      "path": "joint-verification-assembly.json",
+      "sha256": "4f090ecaa913c3a9a2c98e7783fdfa20788468f10c11b4bac98357cac1f8870b"
+    },
+    {
+      "path": "joint-verification-receipt.json",
+      "sha256": "b6ca9a47b7c8fd14dee7154a7aa18d380248bd0a488545b0e1855d669b3a51a4"
+    },
+    {
+      "path": "joint-verification.log",
+      "sha256": "dba26dee31a5e554d9fe4eb5e857d6bd6b721b050c73bda3373be2ec6f4153a6"
+    },
+    {
+      "path": "lakefile.toml",
+      "sha256": "b41bee6a6206d2c44c8112588d12dc759673da80c101f5446dd0a759f7b78d4f"
+    },
+    {
+      "path": "lean-toolchain",
+      "sha256": "bc84812c94489d1e3e191baa1dc10d5eb684382d7fe9d2a5ab085e72c1c67e47"
+    },
+    {
+      "path": "review.json",
+      "sha256": "a0f050d2728106503ca010930f95dc237f17ed60da7bdcf6a8deea14a80280da"
+    },
+    {
+      "path": "src/CWComparison/BinaryEdgeChildren.lean",
+      "sha256": "a763d6218abcc483280c8703fde2bc0857e046c8615f7218731ca2ecd98609e6"
+    },
+    {
+      "path": "src/CWComparison/BinaryEdgeDescent.lean",
+      "sha256": "a29b718ba659f68c2af6007ad4b8609aabf32bcae70992b415e12ff670fd8a3a"
+    },
+    {
+      "path": "src/CWComparison/BinaryEdgeRelation.lean",
+      "sha256": "9ef0c62b1bcbc7f87e67db4f41eaa3e69d17f66c58195d2ab98e3dc4551b86ae"
+    },
+    {
+      "path": "src/CWComparison/BinaryEdgeSpace.lean",
+      "sha256": "9ec20241872aac98babef8a624d906b1c711268333a98d624ade00796ee4f20b"
+    },
+    {
+      "path": "src/CWComparison/BinaryEdges.lean",
+      "sha256": "bc3dee312d3e73140942ab405a16e1f9f7a2ed78013ccb08fa87dda09f4bd913"
+    },
+    {
+      "path": "src/CWComparison/BinaryShift.lean",
+      "sha256": "0dad874eeda461d16996b0253868c584bd5f0e190f71dd013fc4a90b78486a95"
+    },
+    {
+      "path": "src/CWComparison/CWNoClosedPoint.lean",
+      "sha256": "7585007cfe134679c57b7003316f6b1ca23b226f658b062f866300b15956730f"
+    },
+    {
+      "path": "src/CWComparison/CWThickening.lean",
+      "sha256": "f1809aab69115ebf788beb6d8c3b9198416fa06c609b5d9993c7f6155841f130"
+    },
+    {
+      "path": "src/CWComparison/CWThickeningDerived.lean",
+      "sha256": "e0a22b758bb1a836df643baf52c51c5870e6a1739cab881e7047a0557505a758"
+    },
+    {
+      "path": "src/CWComparison/CompactCover.lean",
+      "sha256": "f631b0604315fc90c09bc24de1a73c1975fb23fe201a681f87af7b41fd23aa83"
+    },
+    {
+      "path": "src/CWComparison/DerivedDiscreteInt.lean",
+      "sha256": "eec3bc36131e85c4945db2bc358b84cd782b4c894c559b49e900fe36da39e1e2"
+    },
+    {
+      "path": "src/CWComparison/DerivedFreeHomotopy.lean",
+      "sha256": "b6d16a3a10bdc0bfb9cb4c8769018ce86ad40c32827f499de7e59cba0e297fcd"
+    },
+    {
+      "path": "src/CWComparison/DerivedFreeSimplex.lean",
+      "sha256": "535c7318a0a98fbbc65196efb7e18da041961908b597cf96cf2de6a7ff876ae8"
+    },
+    {
+      "path": "src/CWComparison/DerivedLocalization.lean",
+      "sha256": "4c1d848c125aeb1d3a09858e197acd46039ebfd02ef0fe1750e433b392be7451"
+    },
+    {
+      "path": "src/CWComparison/DerivedMap.lean",
+      "sha256": "c94a6865e870083a2a08747d7de87e84dcb3ae42fa09373aa14c603eb95ac563"
+    },
+    {
+      "path": "src/CWComparison/DerivedSimplexIntegral.lean",
+      "sha256": "2eb8b9f4eaea9b0b5b736a732ed19daeced30141b84be438cff83ae72a4fd9b1"
+    },
+    {
+      "path": "src/CWComparison/DerivedTensorInversion.lean",
+      "sha256": "11d2a5cf1ae64af7e8b5c06e60e975a79dec33fdebf19c9ba45a08fc9e83d2ab"
+    },
+    {
+      "path": "src/CWComparison/DerivedTensorLocality.lean",
+      "sha256": "109edf4f1d9bdc121e6ab14222f1d3c658ba314eae949c062bc4a825778d8c33"
+    },
+    {
+      "path": "src/CWComparison/DiscreteSequenceDifference.lean",
+      "sha256": "8c27666e93814159615ba94631c883e60a84a20d050654189ad3ebd860a6994d"
+    },
+    {
+      "path": "src/CWComparison/FreeAugmentation.lean",
+      "sha256": "b7722335a9d194354fe659e9124f19c02dafc5d7fa6996b1dd6fa1e0d54063f2"
+    },
+    {
+      "path": "src/CWComparison/FreeBinaryHomotopy.lean",
+      "sha256": "3e7c01f39179f5af943b08760bf1e16e7f7ed788546499f3915d390ba139315a"
+    },
+    {
+      "path": "src/CWComparison/FreeCoverPresentation.lean",
+      "sha256": "24df1defca8d881b8eb2130994c138a7fbf05b2497ca94c44cd72dae24bec917"
+    },
+    {
+      "path": "src/CWComparison/FreePrism.lean",
+      "sha256": "d65f739a639bc914acb417b6f539bf209dfad36045ad902b1749fb72c7fe5321"
+    },
+    {
+      "path": "src/CWComparison/FreeSimplex.lean",
+      "sha256": "8fc6a4c98bed3909bc6d75bd70394484d0f8ddf7e483c8ad781dfd8c80db14b1"
+    },
+    {
+      "path": "src/CWComparison/FrozenDerivedAdjunction.lean",
+      "sha256": "7df21cf3325a9cea3822c10da9756370a1d63c7facedad8b023cb793bddd22b6"
+    },
+    {
+      "path": "src/CWComparison/FrozenExactMates.lean",
+      "sha256": "528855f6d28202e973b2d323efc13837efe068f08cad0e2ac64e7cf02d3bd80a"
+    },
+    {
+      "path": "src/CWComparison/FrozenFreeFlat.lean",
+      "sha256": "9acfecc50398d4443824491ffc2ecf496194cec2fc58d84279d519baf64912fe"
+    },
+    {
+      "path": "src/CWComparison/FrozenTensorOrthogonality.lean",
+      "sha256": "8f4e20b2640b3d6f0be633afe469b2b7e563c440585be47466039eecd4ceebd7"
+    },
+    {
+      "path": "src/CWComparison/LastVertexOperator.lean",
+      "sha256": "5671dcdcd5a47151fbd8e042d63690dad24c22e7832e39a23b979f9cec955287"
+    },
+    {
+      "path": "src/CWComparison/Localizing.lean",
+      "sha256": "33dece85852c6eb14c76d0193bac6a5fb09fc73293c68750949b97bd2066f6e0"
+    },
+    {
+      "path": "src/CWComparison/NerveScopeAudit.lean",
+      "sha256": "8e453bc137a0c01f91bfc0319e88a0e40170e98f539a357ab789fb31acdf38e4"
+    },
+    {
+      "path": "src/CWComparison/ProfiniteCover.lean",
+      "sha256": "d9f0df11cffdfb43fafad9a9bc7edc4e8a80803bf5ab365715f6f333e3f33cab"
+    },
+    {
+      "path": "src/CWComparison/ProtectedCWComparisonObstruction.lean",
+      "sha256": "b4fbb7c4bef3ca703352732e8baed5d1c703601c62581faeabe291f769305633"
+    },
+    {
+      "path": "src/CWComparison/SequenceDifferenceLocalization.lean",
+      "sha256": "51d779ef262157e344bbc87173b38076396149530f3a6e68fe93c4b59eb36074"
+    },
+    {
+      "path": "src/CWComparison/SequenceSingularObstruction.lean",
+      "sha256": "b71c36fce4c9e7130a5ef0f7446067ebe4fa0924a604820f26a140901835d11e"
+    },
+    {
+      "path": "src/CWComparison/ShiftDerived.lean",
+      "sha256": "f6dfc18f5d24f1a5621246fec99384fc8c667eb6e3540e32052005c5ff95264c"
+    },
+    {
+      "path": "src/CWComparison/SimplexCover.lean",
+      "sha256": "2a826cf8de64a659330929c88f808552915a04c082381ec1426b2224217525d3"
+    },
+    {
+      "path": "src/CWComparison/SingularBarCollapse.lean",
+      "sha256": "12f1951eb80c06236aef0046942b319ebc5d8fda8b83ddea407cec68f244c517"
+    },
+    {
+      "path": "src/CWComparison/SingularDerived.lean",
+      "sha256": "1f47eb1f8f2d6ed885e3b9a7eade357b24acf56914bae153b8035c26b44973d6"
+    },
+    {
+      "path": "src/CWComparison/SingularFiberContraction.lean",
+      "sha256": "e14f2877ea2dbb3dc70387f11eaa2f57dd957dfe42133aa4c85519e2bd90ba6f"
+    },
+    {
+      "path": "src/CWComparison/SingularFreeBar.lean",
+      "sha256": "eca1ac69e1274a02cd4227b2023b59697a519d26e48cd59d77bdad52490d6bd3"
+    },
+    {
+      "path": "src/CWComparison/SingularFreeBarAugmentation.lean",
+      "sha256": "959db31052923222e06368ae654b59125054e3a74a2b096e37b008cd1183351f"
+    },
+    {
+      "path": "src/CWComparison/SingularFreeBarNaturality.lean",
+      "sha256": "28b22d81a42b92c483f94e1e27e372827d25043b92bb74c7c52603985126456f"
+    },
+    {
+      "path": "src/CWComparison/SingularHomotopy.lean",
+      "sha256": "120d7792dff34c18416fc3614bf8dbf27850b5a3d0bcf227d5fae7d0eb844efb"
+    },
+    {
+      "path": "src/CWComparison/SingularLastVertex.lean",
+      "sha256": "eabea465d92e80387a291c99357ada985e8f864883957e148df66300a82f905b"
+    },
+    {
+      "path": "src/CWComparison/SingularProjective.lean",
+      "sha256": "d4f694253557948a5119ee187c7d84c9db3f493045a955fecc6ce26aca329dfe"
+    },
+    {
+      "path": "src/CWComparison/SingularResolutionFibers.lean",
+      "sha256": "c56559a33f2d5b594b7ba3687b03f16ebd8643782f9775ea73ce2f43d427a65a"
+    },
+    {
+      "path": "src/CWComparison/TensorLocalization.lean",
+      "sha256": "a470f41daace12c7b5c2f7e2bcf5f110b232cb8bc788587d21567229200c153c"
+    },
+    {
+      "path": "src/CWComparison/TotallyDisconnectedSingularNaturality.lean",
+      "sha256": "571ec3147899daa258a3be974a5f6a066b566d646277742d3157beac2882c54f"
+    },
+    {
+      "path": "src/CWSolid/ChainHomology.lean",
+      "sha256": "1a35cb7d2519eb285b8b732ebde81529c8315486130d1956d0dde35e5aa2163a"
+    },
+    {
+      "path": "src/CWSolid/Colimits.lean",
+      "sha256": "cf909fd0c65d1e8b89f436b49648187afa886df5b98270d4c3db2f15f3e48c86"
+    },
+    {
+      "path": "src/CWSolid/ComplexAdjunction.lean",
+      "sha256": "c0cf541e28268062ecdef3aee078dd4e9c75674dd68aa72a9ec7f61b9158f425"
+    },
+    {
+      "path": "src/CWSolid/DiscreteInt.lean",
+      "sha256": "441f56fc3bf021c99250dfd9f648078ea093f26df5724027393af478a29fbb18"
+    },
+    {
+      "path": "src/CWSolid/Early.lean",
+      "sha256": "3f9562bee06a20a9d94265b61bc279cc05f1ecd729baf83daa90f1989420006a"
+    },
+    {
+      "path": "src/CWSolid/Filtered.lean",
+      "sha256": "89024d289b158c8454796ec7d93d4323fd836e2eff3c0b806079b5c7a1bfae33"
+    },
+    {
+      "path": "src/CWSolid/Reflection.lean",
+      "sha256": "549d355084b30b2ca217e66f942dba7e29690c86f6bcbc6dea253bfefbce6c5d"
+    },
+    {
+      "path": "src/CWSolid/SingularSolid.lean",
+      "sha256": "71cddd8f925e12c1753eefcc11338a6673925624f6099e4f40d1aa231b442fe8"
+    },
+    {
+      "path": "src/ChallengeDeps.lean",
+      "sha256": "52cb3b252ac6a994de64d70192f5a622e5611ffee45578ae3d8567f9b2d84e71"
+    },
+    {
+      "path": "src/CriticalAudit.lean",
+      "sha256": "7bf85e42296655c751333944da4fbf67eb57b92c1f22d06aeec30eff23a40178"
+    },
+    {
+      "path": "src/OfficialJointTargetVerified.lean",
+      "sha256": "775fedd251b09d08c372d830431ad6ddb1a4b39ac790d1fc134602a5eac13bc7"
+    }
+  ]
+}

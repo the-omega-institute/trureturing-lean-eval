@@ -1,0 +1,98 @@
+theorem CWComparison.protectedCWComparison_not_nonempty : ∀ {L : DLightCondAb ⥤ DSolid} (adj : L ⊣ derivedInclusion),
+  ¬Nonempty
+      (CWTopCat.toTopCat ⋙
+          freeLightCondAbOfTopFunctor ⋙ DerivedCategory.singleFunctor LightCondAb 0 ⋙ L ⋙ derivedInclusion ≅
+        singularChainsLightCondAbCWDerivedFunctor) :=
+fun {L} adj a =>
+  Nonempty.casesOn a fun hCW =>
+    let F := freeLightCondAbOfTopFunctor ⋙ DerivedCategory.singleFunctor LightCondAb 0 ⋙ L ⋙ derivedInclusion;
+    let H := singularChainsLightCondAbDerivedFunctor;
+    let eF := Functor.isoWhiskerRight (CWComparison.derivedFreeThickeningNatIso adj) derivedInclusion;
+    let eH :=
+      let a := Functor.whiskerRight CWComparison.cwThickeningProjection H;
+      asIso a ≪≫ H.leftUnitor;
+    let h := eF.symm ≪≫ CWComparison.cwThickeningCWFunctor.isoWhiskerLeft hCW ≪≫ eH;
+    have hn :=
+      id
+        (Eq.mpr
+          (id
+            (congr
+              (congrArg Eq
+                (Eq.trans
+                  (Preadditive.comp_add (F.obj CWComparison.sequenceTop) (H.obj CWComparison.sequenceTop)
+                    (H.obj CWComparison.sequenceTop) (h.hom.app CWComparison.sequenceTop)
+                    (𝟙 (singularChainsLightCondAbDerivedFunctor.obj CWComparison.sequenceTop) -
+                      H.map CWComparison.sequenceTopShift)
+                    (H.map CWComparison.sequenceTopInfinity))
+                  (congrFun'
+                    (congrArg HAdd.hAdd
+                      (Preadditive.comp_sub (h.hom.app CWComparison.sequenceTop)
+                        (𝟙 (singularChainsLightCondAbDerivedFunctor.obj CWComparison.sequenceTop))
+                        (H.map CWComparison.sequenceTopShift)))
+                    (h.hom.app CWComparison.sequenceTop ≫ H.map CWComparison.sequenceTopInfinity))))
+              (Eq.trans
+                (Preadditive.add_comp (F.obj CWComparison.sequenceTop) (F.obj CWComparison.sequenceTop)
+                  (H.obj CWComparison.sequenceTop)
+                  (𝟙 (F.obj CWComparison.sequenceTop) - F.map CWComparison.sequenceTopShift)
+                  (F.map CWComparison.sequenceTopInfinity) (h.hom.app CWComparison.sequenceTop))
+                (congrFun'
+                  (congrArg HAdd.hAdd
+                    (Eq.trans
+                      (Preadditive.sub_comp (𝟙 (F.obj CWComparison.sequenceTop)) (F.map CWComparison.sequenceTopShift)
+                        (h.hom.app CWComparison.sequenceTop))
+                      (congrFun' (congrArg HSub.hSub (Category.id_comp (h.hom.app CWComparison.sequenceTop)))
+                        (F.map CWComparison.sequenceTopShift ≫ h.hom.app CWComparison.sequenceTop))))
+                  (F.map CWComparison.sequenceTopInfinity ≫ h.hom.app CWComparison.sequenceTop)))))
+          (Eq.mpr
+            (id
+              (congrArg
+                (fun _a =>
+                  h.hom.app CWComparison.sequenceTop ≫
+                          𝟙 (singularChainsLightCondAbDerivedFunctor.obj CWComparison.sequenceTop) -
+                        _a +
+                      h.hom.app CWComparison.sequenceTop ≫ H.map CWComparison.sequenceTopInfinity =
+                    h.hom.app CWComparison.sequenceTop -
+                        F.map CWComparison.sequenceTopShift ≫ h.hom.app CWComparison.sequenceTop +
+                      F.map CWComparison.sequenceTopInfinity ≫ h.hom.app CWComparison.sequenceTop)
+                (Eq.symm (h.hom.naturality CWComparison.sequenceTopShift))))
+            (Eq.mpr
+              (id
+                (congrArg
+                  (fun _a =>
+                    h.hom.app CWComparison.sequenceTop ≫
+                            𝟙 (singularChainsLightCondAbDerivedFunctor.obj CWComparison.sequenceTop) -
+                          F.map CWComparison.sequenceTopShift ≫ h.hom.app CWComparison.sequenceTop +
+                        _a =
+                      h.hom.app CWComparison.sequenceTop -
+                          F.map CWComparison.sequenceTopShift ≫ h.hom.app CWComparison.sequenceTop +
+                        F.map CWComparison.sequenceTopInfinity ≫ h.hom.app CWComparison.sequenceTop)
+                  (Eq.symm (h.hom.naturality CWComparison.sequenceTopInfinity))))
+              (Eq.mpr
+                (id
+                  (congrArg
+                    (fun _a =>
+                      _a - F.map CWComparison.sequenceTopShift ≫ h.hom.app CWComparison.sequenceTop +
+                          F.map CWComparison.sequenceTopInfinity ≫ h.hom.app CWComparison.sequenceTop =
+                        h.hom.app CWComparison.sequenceTop -
+                            F.map CWComparison.sequenceTopShift ≫ h.hom.app CWComparison.sequenceTop +
+                          F.map CWComparison.sequenceTopInfinity ≫ h.hom.app CWComparison.sequenceTop)
+                    (Category.comp_id (h.hom.app CWComparison.sequenceTop))))
+                (Eq.refl
+                  (h.hom.app CWComparison.sequenceTop -
+                      F.map CWComparison.sequenceTopShift ≫ h.hom.app CWComparison.sequenceTop +
+                    F.map CWComparison.sequenceTopInfinity ≫ h.hom.app CWComparison.sequenceTop))))));
+    CWComparison.sequenceSingularDerivedDifference_not_isIso inferInstance
+'CWComparison.protectedCWComparison_not_nonempty' depends on axioms: [propext, Classical.choice, Quot.sound]
+theorem CWComparison.totalDerived_protectedCWComparison_not_nonempty : ∀
+  [inst : solidificationComplexQ.HasLeftDerivedFunctor (HomologicalComplex.quasiIso LightCondAb (ComplexShape.up ℤ))]
+  (adj : totalDerivedSolidification ⊣ derivedInclusion),
+  ¬Nonempty
+      (CWTopCat.toTopCat ⋙
+          freeLightCondAbOfTopFunctor ⋙
+            DerivedCategory.singleFunctor LightCondAb 0 ⋙ totalDerivedSolidification ⋙ derivedInclusion ≅
+        singularChainsLightCondAbCWDerivedFunctor) :=
+fun [solidificationComplexQ.HasLeftDerivedFunctor (HomologicalComplex.quasiIso LightCondAb (ComplexShape.up ℤ))] adj =>
+  CWComparison.protectedCWComparison_not_nonempty adj
+'CWComparison.totalDerived_protectedCWComparison_not_nonempty' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

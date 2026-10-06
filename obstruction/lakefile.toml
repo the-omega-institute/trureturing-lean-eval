@@ -1,0 +1,16 @@
+name = "cw_original_joint_obstruction"
+version = "0.1.0"
+defaultTargets = ["CWObstruction"]
+
+[leanOptions]
+autoImplicit = false
+
+[[require]]
+name = "mathlib"
+git = "https://github.com/leanprover-community/mathlib4.git"
+rev = "5e0c4e5239cb0a2d86d68a884bf52cfd963fce22"
+
+[[lean_lib]]
+name = "CWObstruction"
+srcDir = "src"
+roots = ["OfficialJointTargetVerified"]
