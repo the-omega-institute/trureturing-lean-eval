@@ -1,25 +1,22 @@
-This is a small runtime mechanism fixture, not a Fermat submission.
+This source-only fixture tests the production boundary of an original packed
+module named Submission inside the submitted outer module also named Submission.
+The original packed 655-byte root source is passed byte-for-byte to Lean's
+runFrontend at strict trust 0 with oleanFileName? = none. Its entire checked
+environment is installed as the current root environment. The outer compiler
+writes the final Submission.olean, using the original header imports, original
+module-specific private proof and original macro persistent extensions.
 
-`Submission.lean` embeds the unchanged 952-byte XZ/PAX fixture. Safe pure Lean
-code decodes it; Lean's original frontend strictly compiles the original
-`Fixture.ModuleA` and `Fixture.ModuleB` sources into the fixture's writable
-`.lake`, preserving module headers, private names and dynamically defined
-syntax. The entry imports these actual modules into the submitted environment.
-`Submission.root` references `PackedB.root`, and the official fixture root in
-`Solution.lean` references `Submission.root`. An additional submitted theorem
-consumes the original imported tactic macro.
+The checked root is Submission.fermat_last_theorem : forall n : Nat, n = n.
+This is explicitly a toy fixture; it does not elaborate or prove the actual
+Fermat theorem. The real original FLT Submission.lean is only archive material.
 
-The archive also contains the actual original FLT `Submission.lean` as unchanged
-material. This fixture does not elaborate it, and does not test or solve FLT.
+Solution.lean consumes the final root and both the root's own original macro and
+its imported module's macro. Official WorkspaceTest.lean is unchanged and forces
+nanoda. The isolated Ubuntu carrier retains original comparator, landrun,
+lean4export and nanoda source pins and runs the full original lake test chain.
+The loader performs no self import and emits no intermediate root olean.
 
-`WorkspaceTest.lean` is the original official harness, SHA256
-`17bd1978ec5ec46b151a616ae626d14cef01fcb6ce90a2d104dffae9a95e40df`.
-It forces independent nanoda checking. The isolated Ubuntu workflow installs
-the four original pinned tools and runs `lake test`; proof elaboration then
-occurs inside original comparator `safeLakeBuild`, with project sources read
-only and `.lake` writable. No archive tool, subprocess decoder, custom Lake
-hook, proof axiom, trust bypass or modified judge is used.
-
-Native fixture-only compilation, original exporter import and complete root
-nanoda replay have already exited zero. The Ubuntu result must be judged from
-its actual terminal receipt. This fixture contributes zero competition solves.
+Native frontend, final exporter and full fixture root nanoda have exited zero.
+Actual Ubuntu acceptance must be read from its new terminal receipt; old
+fixture acceptance does not stand in for this new boundary. Official competition
+solve credit remains zero, and full original FLT continues with its sole owner.

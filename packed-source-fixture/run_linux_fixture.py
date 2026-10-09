@@ -37,7 +37,9 @@ with log.open('w') as handle:
     code = child.wait()
 contents = log.read_text()
 markers = ['Running nanoda kernel on solution', 'nanoda kernel accepts the solution',
-           'Lean default kernel accepts the solution', 'Your solution is okay!']
+           'Lean default kernel accepts the solution', 'Your solution is okay!',
+           'PACKED_ORIGINAL_ROOT actual Submission',
+           'no self import; no intermediate root olean; kernel trust 0']
 markers_found = {s: s in contents for s in markers}
 unchanged = all(sha(project/p) == h for p,h in sources.items())
 objects = {str(p.relative_to(project)): sha(p) for p in (project/'.lake/build/lib/lean').rglob('*')
@@ -55,7 +57,7 @@ receipt = {
     'tool_binary_pins': binary_pins,
     'log_sha256': sha(log), 'required_acceptance_markers': markers_found,
     'original_forced_nanoda_harness': True,
-    'fixture_only': True, 'actual_Submission_entry': True,
+    'fixture_only': True, 'actual_Submission_entry': True, 'same_name_original_root_entry': True,
     'landrun_official_comparator_and_full_root_nanoda_fixture_chain_passed': accepted,
     'full_original_FLT_kernel_tested': False, 'official_solve_credit': 0,
 }
