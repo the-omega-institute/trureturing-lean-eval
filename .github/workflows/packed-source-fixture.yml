@@ -1,0 +1,96 @@
+name: Packed source fixture official comparator
+
+on:
+  push:
+    branches: [codex/packed-source-fixture-20261009]
+    paths:
+      - 'packed-source-fixture/**'
+      - '.github/workflows/packed-source-fixture.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  fixture:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with:
+          persist-credentials: false
+          sparse-checkout: packed-source-fixture
+
+      - uses: leanprover/lean-action@38fbc41a8c28c4cbaec22d7f7de508ec2e7c0dd9
+        with:
+          lake-package-directory: packed-source-fixture
+          use-mathlib-cache: false
+          use-github-cache: false
+          build: false
+          test: false
+          lint: false
+
+      - uses: actions/setup-go@b7ad1dad31e06c5925ef5d2fc7ad053ef454303e
+        with:
+          go-version: '1.25.12'
+          cache: false
+
+      - name: Set tool and evidence directories outside the fixture workspace
+        run: |
+          mkdir -p "$RUNNER_TEMP/packed-source-fixture-tools" "$RUNNER_TEMP/packed-source-fixture-evidence"
+          echo "FIXTURE_TOOL_DIR=$RUNNER_TEMP/packed-source-fixture-tools" >> "$GITHUB_ENV"
+          echo "FIXTURE_EVIDENCE_DIR=$RUNNER_TEMP/packed-source-fixture-evidence" >> "$GITHUB_ENV"
+          echo "FIXTURE_SOURCE_COMMIT=$GITHUB_SHA" >> "$GITHUB_ENV"
+
+      # The four installations follow the unchanged official submission
+      # workflow's source pins and toolchain choices. No submission hook runs.
+      - name: Install original pinned landrun
+        run: |
+          go install github.com/zouuup/landrun/cmd/landrun@5ed4a3db3a4ad930d577215c6b9abaa19df7f99f
+          echo "$(go env GOPATH)/bin" >> "$GITHUB_PATH"
+
+      - name: Build original pinned exporter with fixture Lean toolchain
+        run: |
+          set -euo pipefail
+          git clone https://github.com/leanprover/lean4export.git "$FIXTURE_TOOL_DIR/lean4export"
+          cd "$FIXTURE_TOOL_DIR/lean4export"
+          git checkout 076e8e57707e813375e8f9da8bf989799ace9680
+          cp "$GITHUB_WORKSPACE/packed-source-fixture/lean-toolchain" lean-toolchain
+          lake build lean4export
+          echo "$PWD/.lake/build/bin" >> "$GITHUB_PATH"
+
+      - name: Build original pinned comparator without changing its toolchain
+        run: |
+          set -euo pipefail
+          git clone https://github.com/leanprover/comparator.git "$FIXTURE_TOOL_DIR/comparator"
+          cd "$FIXTURE_TOOL_DIR/comparator"
+          git checkout d03acab154d269c06e60e4de7e4cc85deebff94b
+          lake build comparator
+          echo "$PWD/.lake/build/bin" >> "$GITHUB_PATH"
+
+      - name: Build original pinned nanoda
+        run: |
+          set -euo pipefail
+          git clone https://github.com/robsimmons/nanoda_lib.git "$FIXTURE_TOOL_DIR/nanoda"
+          cd "$FIXTURE_TOOL_DIR/nanoda"
+          git checkout 68d5ca9db226849b41a6fff59d796ff19d0a8840
+          cargo build --release
+          echo "$PWD/target/release" >> "$GITHUB_PATH"
+
+      - name: Run original forced-nanoda harness on source-only packed fixture
+        run: |
+          set -euo pipefail
+          export COMPARATOR_BIN="$FIXTURE_TOOL_DIR/comparator/.lake/build/bin/comparator"
+          export COMPARATOR_LANDRUN="$(command -v landrun)"
+          export COMPARATOR_LEAN4EXPORT="$FIXTURE_TOOL_DIR/lean4export/.lake/build/bin/lean4export"
+          export COMPARATOR_NANODA="$FIXTURE_TOOL_DIR/nanoda/target/release/nanoda_bin"
+          rm -rf "$GITHUB_WORKSPACE/.git"
+          python3 packed-source-fixture/run_linux_fixture.py
+
+      - name: Preserve exact terminal evidence
+        if: always()
+        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a
+        with:
+          name: packed-source-fixture-official-terminal
+          path: ${{ runner.temp }}/packed-source-fixture-evidence
+          if-no-files-found: warn
+          retention-days: 30
