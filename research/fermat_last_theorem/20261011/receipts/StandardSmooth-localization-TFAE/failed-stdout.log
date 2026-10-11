@@ -1,0 +1,206 @@
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_Algebra_IsStandardSmoothOfRelativeDimension_isDiscreteValuationRing_localization_atPrime.lean:60:4: warning: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_Algebra_IsStandardSmoothOfRelativeDimension_isDiscreteValuationRing_localization_atPrime.lean:78:2: warning: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_Algebra_IsStandardSmoothOfRelativeDimension_isDiscreteValuationRing_localization_atPrime.lean:79:2: warning: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_Algebra_IsStandardSmoothOfRelativeDimension_isDiscreteValuationRing_localization_atPrime.lean:80:2: warning: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_Algebra_IsStandardSmoothOfRelativeDimension_isDiscreteValuationRing_localization_atPrime.lean:84:7: warning: `MvPolynomial.pUnitAlgEquiv` has been deprecated: Use `MvPolynomial.uniqueAlgEquiv` instead
+
+Note: The updated constant has a different type:
+  (R : Type u) → [inst : CommSemiring R] → (σ : Type u_2) → [Unique σ] → MvPolynomial σ R ≃ₐ[R] Polynomial R
+instead of
+  (R : Type u) → [inst : CommSemiring R] → MvPolynomial PUnit.{u_2 + 1} R ≃ₐ[R] Polynomial R
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_Algebra_IsStandardSmoothOfRelativeDimension_isDiscreteValuationRing_localization_atPrime.lean:85:2: warning: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_Algebra_IsStandardSmoothOfRelativeDimension_isDiscreteValuationRing_localization_atPrime.lean:88:2: warning: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_Algebra_IsStandardSmoothOfRelativeDimension_isDiscreteValuationRing_localization_atPrime.lean:91:2: warning: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_Algebra_IsStandardSmoothOfRelativeDimension_isDiscreteValuationRing_localization_atPrime.lean:93:2: warning: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_Algebra_IsStandardSmoothOfRelativeDimension_isDiscreteValuationRing_localization_atPrime.lean:94:2: warning: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_Algebra_IsStandardSmoothOfRelativeDimension_isDiscreteValuationRing_localization_atPrime.lean:99:4: warning: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_Algebra_IsStandardSmoothOfRelativeDimension_isDiscreteValuationRing_localization_atPrime.lean:97:2: warning: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_Algebra_IsStandardSmoothOfRelativeDimension_isDiscreteValuationRing_localization_atPrime.lean:108:2: warning: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_Algebra_IsStandardSmoothOfRelativeDimension_isDiscreteValuationRing_localization_atPrime.lean:116:2: warning: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_Algebra_IsStandardSmoothOfRelativeDimension_isDiscreteValuationRing_localization_atPrime.lean:130:2: warning: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_Algebra_IsStandardSmoothOfRelativeDimension_isDiscreteValuationRing_localization_atPrime.lean:132:16: error: could not synthesize default value for parameter 'h₁' using tactics
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_Algebra_IsStandardSmoothOfRelativeDimension_isDiscreteValuationRing_localization_atPrime.lean:132:16: error: Tactic `rfl` failed: The left-hand side
+  [IsDiscreteValuationRing L, ValuationRing L, IsDedekindDomain L, IsIntegrallyClosed L ∧ ∃! P, P ≠ ⊥ ∧ P.IsPrime,
+      Submodule.IsPrincipal (maximalIdeal L), Module.finrank (ResidueField L) (CotangentSpace L) = 1,
+      ∀ (I : Ideal L), I ≠ ⊥ → ∃ n, I = maximalIdeal L ^ n][4 - 1]?
+is not definitionally equal to the right-hand side
+  some (Submodule.IsPrincipal (maximalIdeal L))
+
+k : Type u
+inst✝⁴ : Field k
+A : Type v
+inst✝³ : CommRing A
+inst✝² : Algebra k A
+inst✝¹ : IsStandardSmoothOfRelativeDimension 1 k A
+p : Ideal A
+inst✝ : p.IsMaximal
+g : MvPolynomial (Fin 1) k →ₐ[k] A
+hg : g.Etale
+P : Type (max u 0) := MvPolynomial (Fin 1) k
+this✝⁸ : Algebra P A := g.toAlgebra
+this✝⁷ : Etale P A
+this✝⁶ : IsScalarTower k P A
+e : P ≃ₐ[k] Polynomial k := (MvPolynomial.renameEquiv k (Equiv.equivPUnit (Fin 1))).trans (MvPolynomial.pUnitAlgEquiv k)
+this✝⁵ : IsPrincipalIdealRing P
+hPnf : ¬IsField P
+this✝⁴ : IsNoetherianRing A
+q : Ideal P := Ideal.under P p
+this✝³ : FiniteType k A
+this✝² : Module.Finite k (A ⧸ p)
+this✝¹ : Module.Finite k (P ⧸ q)
+hqmax : q.IsMaximal
+hq0 : q ≠ ⊥
+π : P
+hπ : q = P ∙ π
+hπ0 : π ≠ 0
+L : Type v := Localization.AtPrime p
+this✝ : Algebra (Localization.AtPrime q) (Localization.AtPrime p) := Localization.AtPrime.algebraOfLiesOver q p
+hmap : Ideal.map (algebraMap P L) q = maximalIdeal L
+hmaxL : maximalIdeal L = Ideal.span {(algebraMap P L) π}
+this : Module.Flat P L
+hreg : IsSMulRegular L ((algebraMap P L) π)
+hne : maximalIdeal L ≠ ⊥
+hnf : ¬IsField L
+hdom : IsDomain L
+hprinc : Submodule.IsPrincipal (maximalIdeal L)
+⊢ [IsDiscreteValuationRing L, ValuationRing L, IsDedekindDomain L, IsIntegrallyClosed L ∧ ∃! P, P ≠ ⊥ ∧ P.IsPrime,
+        Submodule.IsPrincipal (maximalIdeal L), Module.finrank (ResidueField L) (CotangentSpace L) = 1,
+        ∀ (I : Ideal L), I ≠ ⊥ → ∃ n, I = maximalIdeal L ^ n][4 - 1]? =
+    some (Submodule.IsPrincipal (maximalIdeal L))
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_Algebra_IsStandardSmoothOfRelativeDimension_isDiscreteValuationRing_localization_atPrime.lean:132:16: error: could not synthesize default value for parameter 'x._@.Mathlib.Data.List.TFAE.4142160432._hygCtx._hyg.58' using tactics
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_Algebra_IsStandardSmoothOfRelativeDimension_isDiscreteValuationRing_localization_atPrime.lean:132:16: error: TFAE indices start at 1.
+k : Type u
+inst✝⁴ : Field k
+A : Type v
+inst✝³ : CommRing A
+inst✝² : Algebra k A
+inst✝¹ : IsStandardSmoothOfRelativeDimension 1 k A
+p : Ideal A
+inst✝ : p.IsMaximal
+g : MvPolynomial (Fin 1) k →ₐ[k] A
+hg : g.Etale
+P : Type (max u 0) := MvPolynomial (Fin 1) k
+this✝⁸ : Algebra P A := g.toAlgebra
+this✝⁷ : Etale P A
+this✝⁶ : IsScalarTower k P A
+e : P ≃ₐ[k] Polynomial k := (MvPolynomial.renameEquiv k (Equiv.equivPUnit (Fin 1))).trans (MvPolynomial.pUnitAlgEquiv k)
+this✝⁵ : IsPrincipalIdealRing P
+hPnf : ¬IsField P
+this✝⁴ : IsNoetherianRing A
+q : Ideal P := Ideal.under P p
+this✝³ : FiniteType k A
+this✝² : Module.Finite k (A ⧸ p)
+this✝¹ : Module.Finite k (P ⧸ q)
+hqmax : q.IsMaximal
+hq0 : q ≠ ⊥
+π : P
+hπ : q = P ∙ π
+hπ0 : π ≠ 0
+L : Type v := Localization.AtPrime p
+this✝ : Algebra (Localization.AtPrime q) (Localization.AtPrime p) := Localization.AtPrime.algebraOfLiesOver q p
+hmap : Ideal.map (algebraMap P L) q = maximalIdeal L
+hmaxL : maximalIdeal L = Ideal.span {(algebraMap P L) π}
+this : Module.Flat P L
+hreg : IsSMulRegular L ((algebraMap P L) π)
+hne : maximalIdeal L ≠ ⊥
+hnf : ¬IsField L
+hdom : IsDomain L
+hprinc : Submodule.IsPrincipal (maximalIdeal L)
+⊢ 0 ≠ 0

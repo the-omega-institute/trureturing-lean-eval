@@ -96,3 +96,12 @@ no-op tactic. Deformation uses the current conditional lemmas. Both complete
 final modules passed fresh single-job make/kernel validation without warnings;
 their solution statements and earlier substantive compatibility repairs remain
 intact. Their original diagnostics and final receipts are retained.
+
+The standard-smooth localization repair is pending compilation. The actual
+failure used zero-based `List.TFAE.out` indices against the official Mathlib's
+one-based API. The candidate uses `.out 5 1`, migrates the reported deprecated
+tactic and polynomial equivalence, and updates the reported local declaration
+style. All theorem statements are unchanged. Original failure receipts and the
+exact patch are retained under `receipts/StandardSmooth-localization-TFAE/`.
+This candidate is excluded from the nine verified repairs until the existing
+single compiler queue produces successful make and kernel terminal receipts.
