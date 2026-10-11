@@ -69,3 +69,9 @@ now binds its ring and group parameters explicitly. The final full module passed
 the canonical single-job make/kernel check with empty stdout and stderr
 (kernel 18.56 seconds); its diagnostic query was removed and the solution
 statement remains unchanged. Failed and successful receipts are retained.
+
+The associated DVR approximation theorem card also passed complete make/kernel
+validation with empty stdout and stderr. It removes the same four optional
+instance names only after actual compiler failures. Its theorem statement and
+proof body are unchanged; original source binding and all terminal receipts
+are preserved under `receipts/DVR-approximation-theorem-card/`.
