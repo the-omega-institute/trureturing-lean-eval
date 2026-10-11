@@ -1,0 +1,68 @@
+{
+  "at": "2026-10-11T16:23:03.342469+00:00",
+  "module": "Submission.Supplier.P2M.Sol.S_Deformation_convPow_prime_apply_coeff_of_mem_wittHom",
+  "source_bound_original_record": {
+    "sha256": "33335b69869d2818dc5e36858e47e35c7739844a60fd560a844e9420a03e5ba9",
+    "exit": 0,
+    "empty_output_retry_done": false,
+    "source_sha256_after": "33335b69869d2818dc5e36858e47e35c7739844a60fd560a844e9420a03e5ba9",
+    "source_unchanged": true,
+    "olean_sha256": "df5c2d9ea43f9d02828f0346b191b93211380a261e0da46eeec117d3309bfa53",
+    "seconds": 106.89435266700002,
+    "pid": 71560,
+    "command": [
+      "/Users/macstudio/.local/omega-shims/lean",
+      "-j1",
+      "--trust=0",
+      "-Ddebug.skipKernelTC=false",
+      "-R",
+      "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src",
+      "-o",
+      "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-build/lib/lean/Submission/Supplier/P2M/Sol/S_Deformation_convPow_prime_apply_coeff_of_mem_wittHom.olean",
+      "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_Deformation_convPow_prime_apply_coeff_of_mem_wittHom.lean"
+    ],
+    "make_wrapper_pid": 46737,
+    "make_exit": 0,
+    "make_entry_failed": false,
+    "cache_binding_valid": true,
+    "canonical_make_running_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/6d5b26825ee6c8e121516d86-1791711547496653000.make-running.json",
+    "canonical_make_terminal_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/6d5b26825ee6c8e121516d86-1791711547496653000.make-terminal.json",
+    "kernel_terminal_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/6d5b26825ee6c8e121516d86-1791711547496653000.kernel/result.json",
+    "direct_dependencies": [
+      {
+        "module": "Submission.Supplier.Definitions.Def_Dieudonne_DatumAndHonda",
+        "source_sha256": "3e559961fffd0aac4a33d1280c27c51417b841901ec9fb36e48df7af0fd70ba8",
+        "object_sha256": null,
+        "receipt_reused": false
+      },
+      {
+        "module": "Submission.Supplier.Definitions.Def_Dieudonne_WittVectorHom",
+        "source_sha256": "f6a1006495ad9ffb9cea9ae644f4136c750ce1e3f084da31e1807ad334f668f8",
+        "object_sha256": "85435d3f34cb952c85fc44a98556e8581262696210fc9d6b8a85f3214b7f7b22",
+        "receipt_reused": true
+      },
+      {
+        "module": "Submission.Supplier.P2M.Util",
+        "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+        "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+        "receipt_reused": true
+      }
+    ],
+    "stdout": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/6d5b26825ee6c8e121516d86-1791711547496653000.kernel/stdout.log",
+    "stderr": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/6d5b26825ee6c8e121516d86-1791711547496653000.kernel/stderr.log"
+  },
+  "edits": [
+    {
+      "old": "if_pos",
+      "new": "ite_eq_left",
+      "occurrences": 5
+    },
+    {
+      "old": "if_neg",
+      "new": "ite_eq_right",
+      "occurrences": 10
+    }
+  ],
+  "solution_statement_unchanged": true,
+  "validation": "pending original single compiler queue"
+}

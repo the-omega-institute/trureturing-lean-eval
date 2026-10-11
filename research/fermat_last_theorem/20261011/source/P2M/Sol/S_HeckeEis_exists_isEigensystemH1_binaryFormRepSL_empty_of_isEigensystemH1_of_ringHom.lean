@@ -32,11 +32,11 @@ def IsCompat : Prop :=
 noncomputable def heckeLin : (Gamma0 N → V) →ₗ[K] (Gamma0 N → V) where
   toFun := coeffHeckeFun N ℓ ρ a
   map_add' z w := by
-    letI := (heckeUpper N ℓ).fintypeQuotientOfFiniteIndex
+    let := (heckeUpper N ℓ).fintypeQuotientOfFiniteIndex
     ext g
     simp only [coeffHeckeFun_apply, Pi.add_apply, map_add, Finset.sum_add_distrib]
   map_smul' c z := by
-    letI := (heckeUpper N ℓ).fintypeQuotientOfFiniteIndex
+    let := (heckeUpper N ℓ).fintypeQuotientOfFiniteIndex
     ext g
     simp only [coeffHeckeFun_apply, Pi.smul_apply, map_smul, RingHom.id_apply, Finset.smul_sum]
 
@@ -82,7 +82,7 @@ theorem heckeH1_comm {ℓ ℓ' : ℕ} [NeZero ℓ] [NeZero ℓ'] (hℓ : ℓ.Pri
   obtain ⟨z, rfl⟩ := coeffH1Mk_surjective ρ x
   rw [heckeH1_mk, heckeH1_mk, heckeH1_mk, heckeH1_mk, coeffH1Mk_eq_iff]
   simp only [coe_heckeZ1]
-  haveI : NeZero (ℓ * ℓ') := ⟨mul_ne_zero (NeZero.ne ℓ) (NeZero.ne ℓ')⟩
+  have : NeZero (ℓ * ℓ') := ⟨mul_ne_zero (NeZero.ne ℓ) (NeZero.ne ℓ')⟩
   have hℓℓ' : ¬ ℓ ∣ ℓ' := fun h => hne ((Nat.prime_dvd_prime_iff_eq hℓ hℓ').mp h)
   have hℓ'ℓ : ¬ ℓ' ∣ ℓ := fun h => hne ((Nat.prime_dvd_prime_iff_eq hℓ' hℓ).mp h).symm
   have h1 := coeffHeckeFun_coeffHeckeFun_sub_coeffHeckeFun_mul_mem_coeffCoboundaries N ℓ ℓ' (ℓ * ℓ')
@@ -165,7 +165,7 @@ theorem cocycle_apply_eq_zero_of_closure {G : Type*} [Group G] (ρ : Representat
 
 theorem exists_finset_closure_eq_top (N : ℕ) [NeZero N] :
     ∃ S : Finset (Gamma0 N), Subgroup.closure (S : Set (Gamma0 N)) = ⊤ := by
-  haveI hSL : Group.FG SL(2, ℤ) :=
+  have hSL : Group.FG SL(2, ℤ) :=
     Group.fg_iff.mpr ⟨{ModularGroup.S, ModularGroup.T}, SpecialLinearGroup.SL2Z_generators,
       Set.toFinite _⟩
   have hΓ : Group.FG (Gamma0 N) := inferInstance
@@ -185,7 +185,7 @@ theorem moduleFinite_coeffH1 (N : ℕ) [NeZero N] [IsNoetherianRing K] [Module.F
     refine Subtype.ext (funext fun g => ?_)
     have hg : g ∈ Subgroup.closure (S : Set (Gamma0 N)) := by rw [hS]; trivial
     exact cocycle_apply_eq_zero_of_closure ρ z S (fun s hs => congrFun hz ⟨s, hs⟩) g hg
-  haveI : Module.Finite K ↥(coeffCocycles ρ) := Module.Finite.of_injective ev hev
+  have : Module.Finite K ↥(coeffCocycles ρ) := Module.Finite.of_injective ev hev
   exact Module.Finite.of_surjective (coeffH1Mk ρ) (coeffH1Mk_surjective ρ)
 
 scoped instance moduleFinite_binaryForm [IsNoetherianRing K] (n : ℕ) : Module.Finite K ↥(BinaryForm K n) := by
@@ -343,7 +343,7 @@ theorem mem_span_range [NeZero N] [Algebra (ZMod p) κ] {Φ : H1 (ZMod p) N n �
       intro s hs
       apply Subtype.ext
       refine MvPolynomial.ext _ _ fun m => ?_
-      rw [coe_cocycleCmap_apply, coeff_cmap, crd_apply, Submodule.coe_zero, MvPolynomial.coeff_zero]
+      rw [coe_cocycleCmap_apply, coeff_cmap, crd_apply, Submodule.coe_zero, AddMonoidAlgebra.coeff_zero]
       by_contra hne
       apply hb
       refine Finset.mem_biUnion.mpr ⟨s, hs, Finset.mem_biUnion.mpr ⟨m, ?_, Finsupp.mem_support_iff.mpr hne⟩⟩
@@ -466,7 +466,7 @@ theorem exists_monic_splits_aeval_TH_eq_zero [NeZero N] [CharP κ p] (φ : integ
     (ℓ : ℕ) [NeZero ℓ] :
     ∃ P : κ[X], P.Monic ∧ P.Splits ∧ aeval (TH κ N n ℓ) P = 0 := by
   obtain ⟨Φ, hΦ⟩ := exists_isCoeffMap N n (algebraMap (ZMod p) κ)
-  haveI : Module.Finite (ZMod p) (H1 (ZMod p) N n) := moduleFinite_coeffH1 N _
+  have : Module.Finite (ZMod p) (H1 (ZMod p) N n) := moduleFinite_coeffH1 N _
   let P₀ : (ZMod p)[X] := (TH (ZMod p) N n ℓ).charpoly
   refine ⟨P₀.map (algebraMap (ZMod p) κ), (LinearMap.charpoly_monic _).map _,
     splits_map_of_monic_zmod φ _ (LinearMap.charpoly_monic _), ?_⟩
@@ -564,7 +564,7 @@ theorem exists_common_eigenvector_of_splits [FiniteDimensional K V] {ι : Type*}
     obtain ⟨hwW, hTw⟩ := (hmemW' w).mp hw
     refine (hmemW' _).mpr ⟨hstab j w hwW, ?_⟩
     rw [← Module.End.mul_apply, (hT i j).eq, Module.End.mul_apply, hTw, map_smul]
-  haveI : FiniteDimensional K W := inferInstance
+  have : FiniteDimensional K W := inferInstance
   have hlt : Module.finrank K W' < d := hd ▸ Submodule.finrank_lt_finrank_of_lt hW'lt
   obtain ⟨v, hvW', hv0, hv⟩ := ih _ hlt W' rfl hW'ne hstab'
   exact ⟨v, hW'le hvW', hv0, hv⟩
@@ -597,7 +597,7 @@ theorem solution
         (fun ℓ => HeckeEis.binaryFormAlphaAdj κ n ℓ) ∅ mu ∧
       ∀ ℓ : ℕ, ℓ.Prime → ¬ ℓ ∣ N → ℓ ∉ S₀ → mu ℓ = lam ℓ := by
   classical
-  letI : Algebra (ZMod p) κ := ZMod.algebra κ p
+  let : Algebra (ZMod p) κ := ZMod.algebra κ p
   obtain ⟨x, hx0, hxT⟩ := hocc
 
   let T : PrimeAway N → H1 κ N n →ₗ[κ] H1 κ N n := fun i => TH κ N n (i : ℕ)
@@ -633,15 +633,15 @@ theorem solution
     rw [hmemW] at hy ⊢
     intro i hi
     rw [← Module.End.mul_apply, (hTcomm i j).eq, Module.End.mul_apply, hy i hi, map_smul]
-  haveI : Module.Finite κ (H1 κ N n) := moduleFinite_coeffH1 N _
+  have : Module.Finite κ (H1 κ N n) := moduleFinite_coeffH1 N _
   obtain ⟨v, hvW, hv0, hv⟩ :=
     exists_common_eigenvector_of_splits T hTcomm hann _ W rfl hWne hstab
   choose c hc using hv
   let mu : ℕ → κ := fun ℓ => if h : ℓ.Prime ∧ ¬ ℓ ∣ N then c ⟨ℓ, h⟩ else 0
   have hmu : ∀ i : PrimeAway N, mu i = c i := fun i => by
-    simp only [mu, dif_pos i.2]
+    simp only [mu, dite_eq_left i.2]
   refine ⟨mu, ⟨v, hv0, fun ℓ hℓ hℓN _ => ?_⟩, fun ℓ hℓ hℓN hℓS => ?_⟩
-  · haveI : NeZero ℓ := ⟨hℓ.ne_zero⟩
+  · have : NeZero ℓ := ⟨hℓ.ne_zero⟩
     refine ⟨TH κ N n ℓ, isCoeffHeckeOnH1_TH κ N n ℓ, ?_⟩
     have h := hc ⟨ℓ, hℓ, hℓN⟩
     rw [hmu ⟨ℓ, hℓ, hℓN⟩]

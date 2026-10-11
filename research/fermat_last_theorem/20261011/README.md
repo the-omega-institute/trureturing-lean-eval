@@ -14,9 +14,9 @@ The nine repaired modules passed the canonical single-job `make lean` entry
 with `--trust=0` and kernel type checking enabled. CuspForm and Deformation
 also have successful associated theorem checks. The latest HeckeEis repair
 uses an explicit `zsmul_eq_mul` application for the ZMod target; its associated
-theorem check has also passed make/kernel validation. The attached receipts record
-the repaired source modules. Existing linter and
-deprecation warnings remain follow-up work before final delivery.
+theorem check has also passed make/kernel validation. The attached receipts record the repaired source modules. The final versions
+of all nine repaired source modules have now passed checks without warnings;
+unchanged supplier modules retain some existing warnings.
 
 This is a progress checkpoint. The complete Submission root, comparator,
 full-root Nanoda check, and official acceptance are pending. No new solve credit
@@ -82,3 +82,17 @@ rewrite failed to infer it. Reported binding-style warnings were corrected and
 unused parameter names were prefixed with underscores. The original hypotheses
 and conclusion remain intact. The complete module passed make/kernel validation
 (kernel 9.65 seconds) with empty stdout and stderr.
+
+The HeckeEis source was subsequently updated to the current coefficient-zero
+and dependent-if lemmas, and its reported proof-binding style warnings were
+cleared. The complete final module passed a fresh make/kernel check with empty
+stdout and stderr. Its solution statement is unchanged; the original scalar
+compatibility repair is retained alongside this warning-cleanup patch.
+
+CuspForm replaces the retired strict-product bound with its constituent
+`mul_le_of_le_one_left`/`trans_lt` proof, updates deprecated conditional,
+valuation, hom-coercion and function-coercion names, and removes the actual
+no-op tactic. Deformation uses the current conditional lemmas. Both complete
+final modules passed fresh single-job make/kernel validation without warnings;
+their solution statements and earlier substantive compatibility repairs remain
+intact. Their original diagnostics and final receipts are retained.

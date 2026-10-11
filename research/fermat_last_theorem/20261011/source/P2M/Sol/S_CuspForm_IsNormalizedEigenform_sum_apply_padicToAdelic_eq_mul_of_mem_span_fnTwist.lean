@@ -108,13 +108,13 @@ private theorem exists_repZ_eq (m : Matrix (Fin 2) (Fin 2) ℤ_[p]) (hdet : ‖m
       have : b - a * (j : ℤ_[p]) = (b - a * t) + a * (t - (j : ℤ_[p])) := by ring
       rw [this]
       have ha1 : ‖a * (t - (j : ℤ_[p]))‖ < 1 := by
-        rw [norm_mul]; exact mul_lt_one_of_nonneg_of_lt_one_right (PadicInt.norm_le_one a) (norm_nonneg _) htj
+        rw [norm_mul]; exact (mul_le_of_le_one_left (norm_nonneg _) (PadicInt.norm_le_one a)).trans_lt htj
       exact lt_of_le_of_lt (PadicInt.nonarchimedean _ _) (max_lt hbt ha1)
     have hdj : ‖d - c * (j : ℤ_[p])‖ < 1 := by
       have : d - c * (j : ℤ_[p]) = (d - c * t) + c * (t - (j : ℤ_[p])) := by ring
       rw [this]
       have hc1 : ‖c * (t - (j : ℤ_[p]))‖ < 1 := by
-        rw [norm_mul]; exact mul_lt_one_of_nonneg_of_lt_one_right (PadicInt.norm_le_one c) (norm_nonneg _) htj
+        rw [norm_mul]; exact (mul_le_of_le_one_left (norm_nonneg _) (PadicInt.norm_le_one c)).trans_lt htj
       exact lt_of_le_of_lt (PadicInt.nonarchimedean _ _) (max_lt hdt hc1)
     obtain ⟨y₁, hy₁⟩ := (PadicInt.norm_lt_one_iff_dvd _).mp hbj
     obtain ⟨y₂, hy₂⟩ := (PadicInt.norm_lt_one_iff_dvd _).mp hdj
@@ -532,7 +532,7 @@ private theorem map_repQ_eq_heckeMatrix {i : Fin (p + 1)} (hi : (i : ℕ) < p) :
   refine Units.ext ?_
   rw [ModularForm.val_heckeMatrix hp.out.ne_zero]
   ext a b
-  rw [Matrix.GeneralLinearGroup.map_apply, coe_repQ, repMat, if_pos hi]
+  rw [Matrix.GeneralLinearGroup.map_apply, coe_repQ, repMat, ite_eq_left hi]
   fin_cases a <;> fin_cases b <;> simp
 
 private theorem map_repQ_last_eq_heckeDiagMatrix :
@@ -540,7 +540,7 @@ private theorem map_repQ_last_eq_heckeDiagMatrix :
   refine Units.ext ?_
   rw [ModularForm.val_heckeDiagMatrix hp.out.ne_zero]
   ext a b
-  rw [Matrix.GeneralLinearGroup.map_apply, coe_repQ, repMat, if_neg (by simp)]
+  rw [Matrix.GeneralLinearGroup.map_apply, coe_repQ, repMat, ite_eq_right (by simp)]
   fin_cases a <;> fin_cases b <;> simp
 
 private theorem finComponent_glFin_globalPoints_repQ (i : Fin (p + 1)) :
@@ -716,7 +716,7 @@ private theorem mem_of_isPShape {v : HeightOneSpectrum (𝓞 ℚ)} (hv : v ≠ p
   · rw [div_eq_mul_inv, map_mul, ← finAdeleEval_apply, map_mul, finAdeleEval_apply, finAdeleEval_apply]
     refine mul_mem (algebraMap_mem_adicCompletionIntegers_of_den p hv (Or.inl (Rat.den_intCast n))) ?_
     refine algebraMap_mem_adicCompletionIntegers_of_den p hv (Or.inr ?_)
-    rw [Rat.inv_natCast_den, if_neg hp.out.ne_zero]
+    rw [Rat.inv_natCast_den, ite_eq_right hp.out.ne_zero]
 
 private noncomputable def kRep (i : Fin (p + 1)) : GL (Fin 2) (FiniteAdeleRing (𝓞 ℚ) ℚ) :=
   glFin (𝓞 ℚ) ℚ (globalPoints (𝓞 ℚ) ℚ (repQ p i)) * (ρA p i)⁻¹
@@ -769,11 +769,10 @@ private theorem lowerLeft_mem_idealBall (N : Ideal (𝓞 ℚ)) {g : GL (Fin 2) (
   by_cases hv : v = padicPlace p
   · subst hv
     rw [← finComponent_apply, hself, Units.val_one, Matrix.one_apply_ne (by decide), map_zero]
-    exact zero_le'
+    exact zero_le
   · rw [hne v hv 1 0, hm, map_zero]
-    change Valued.v ((0 : FiniteAdeleRing (𝓞 ℚ) ℚ) v) ≤ _
     rw [← finAdeleEval_apply, map_zero, map_zero]
-    exact zero_le'
+    exact zero_le
 
 private theorem kRep_entry_of_ne {v : HeightOneSpectrum (𝓞 ℚ)} (hv : v ≠ padicPlace p) (i : Fin (p + 1)) (a b : Fin 2) :
     ((kRep p i : Matrix (Fin 2) (Fin 2) (FiniteAdeleRing (𝓞 ℚ) ℚ)) a b) v
@@ -862,7 +861,7 @@ private theorem exists_eq_globalPoints_mul_mul_finEmbed_of_mem_finiteLevelOne {M
 omit hp in
 private theorem σ_apply_of_det_pos {g : GL (Fin 2) ℝ} (hg : 0 < (g.det : ℝ)) (z : ℂ) :
     UpperHalfPlane.σ g z = z := by
-  rw [UpperHalfPlane.σ, if_pos hg]
+  rw [UpperHalfPlane.σ, ite_eq_left hg]
   rfl
 
 omit hp in
@@ -883,7 +882,7 @@ variable (p : ℕ) [hp : Fact p.Prime]
 
 private theorem det_map_repQ (i : Fin (p + 1)) :
     ((Matrix.GeneralLinearGroup.map (Rat.castHom ℝ) (repQ p i)).det : ℝ) = (p : ℝ) := by
-  rw [Matrix.GeneralLinearGroup.map_det, Units.coe_map, MonoidHom.coe_coe]
+  rw [Matrix.GeneralLinearGroup.map_det, Units.coe_map, MonoidHom.coe_ofClass]
   change (Rat.castHom ℝ) (Matrix.det ((repMat p i).map (Int.castRingHom ℚ))) = _
   rw [show (repMat p i).map (Int.castRingHom ℚ) = (Int.castRingHom ℚ).mapMatrix (repMat p i) from rfl,
     ← RingHom.map_det, det_repMat, map_natCast, map_natCast]
@@ -1171,7 +1170,7 @@ private theorem apply_eq_one_of_admitsModulus {q : ℕ} [Fact q.Prime] {b : ℕ}
   by_cases hv : v = padicPlace q
   · subst hv
     rw [huq, sub_self, map_zero]
-    exact zero_le'
+    exact zero_le
   · rw [idealMultiplicity_ratLevel_pow_eq_zero b hv, Nat.cast_zero, neg_zero, WithZero.exp_zero]
     calc Valued.v ((u : AdeleRing (𝓞 ℚ) ℚ).2 v - 1)
         ≤ max (Valued.v ((u : AdeleRing (𝓞 ℚ) ℚ).2 v)) (Valued.v (1 : (v.adicCompletion ℚ))) :=
@@ -1389,7 +1388,7 @@ theorem solution
   have hTg : ModularForm.heckeT 2 ℓ (⇑g) = ModularFormClass.qCoeff g ℓ • (⇑g) := by
     have := congrArg (fun f : CuspForm (CongruenceSubgroup.Gamma0 M) 2 => (⇑f : UpperHalfPlane → ℂ))
       (CuspForm.IsNormalizedEigenform.heckeTLin_apply_eq_qCoeff_smul M g hg ℓ hℓ hℓM)
-    simpa [CuspForm.coe_heckeTLin_apply, CuspForm.coe_smul] using this
+    simpa [CuspForm.coe_heckeTLin_apply, FunLike.coe_smul] using this
   have hself : heckeAway ℓ (AdelicSpan.self (fnTwist ℚ η Φ))
       = ((η (uniformizerIdele ℚ (padicPlace ℓ)) : ℂ)⁻¹ * ModularFormClass.qCoeff g ℓ)
           • AdelicSpan.self (fnTwist ℚ η Φ) :=

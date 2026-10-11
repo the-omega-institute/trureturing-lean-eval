@@ -164,22 +164,22 @@ theorem exists_eq_tr_add {f : U p} (hf : ∀ r : ZMod p, ρ p r f = f) :
     rw [coeff_tr]
     simp only [hg]
     by_cases hd : IsFixed p d
-    · rw [if_pos hd]
+    · rw [ite_eq_left hd]
       refine Finset.sum_eq_zero fun r _ => ?_
-      rw [if_neg]
+      rw [ite_eq_right]
       rintro ⟨h1, -⟩
       exact h1 ((isFixed_sh_iff p _ d).2 hd)
-    · rw [if_neg hd]
+    · rw [ite_eq_right hd]
 
       obtain ⟨r₀, hr₀⟩ : ∃ r₀ : ZMod p, sh p (-r₀) d = rep p d := by
         obtain ⟨s, hs⟩ := rep_mem p d
         exact ⟨-s, by rw [neg_neg, hs]⟩
       rw [Finset.sum_eq_single r₀]
-      · rw [if_pos, hinv]
+      · rw [ite_eq_left, hinv]
         refine ⟨fun h => hd ((isFixed_sh_iff p _ d).1 h), ?_⟩
         rw [rep_sh, hr₀]
       · intro r _ hr
-        rw [if_neg]
+        rw [ite_eq_right]
         rintro ⟨-, h2⟩
         rw [rep_sh] at h2
         apply hr
@@ -191,8 +191,8 @@ theorem exists_eq_tr_add {f : U p} (hf : ∀ r : ZMod p, ρ p r f = f) :
         rwa [sub_eq_zero, eq_comm] at this
       · intro h; exact absurd (Finset.mem_univ r₀) h
   refine ⟨g, f - tr p g, by abel, fun d hd => ?_, fun d hd => ?_⟩
-  · rw [AddMonoidAlgebra.coeff_sub, Finsupp.sub_apply, htr, if_pos hd, sub_zero]
-  · rw [AddMonoidAlgebra.coeff_sub, Finsupp.sub_apply, htr, if_neg hd]
+  · rw [AddMonoidAlgebra.coeff_sub, Finsupp.sub_apply, htr, ite_eq_left hd, sub_zero]
+  · rw [AddMonoidAlgebra.coeff_sub, Finsupp.sub_apply, htr, ite_eq_right hd]
     exact sub_self (f.coeff d)
 
 noncomputable def diag : U p →ₐ[ZMod p] MvPolynomial ℕ (ZMod p) := rename Prod.snd
@@ -251,7 +251,7 @@ theorem coeff_diag_of_isFixed {h : U p} (hh : ∀ d, ¬ IsFixed p d → h.coeff 
       exact (mem_support_iff.1 hx) (hh x hxf)
     by_cases hxd : x = d
     · subst hxd; simp
-    · rw [if_neg hxd, if_neg]
+    · rw [ite_eq_right hxd, ite_eq_right]
       intro heq
       exact hxd (eq_of_isFixed_of_mapDomain_eq p hxf hd heq)
 
@@ -303,7 +303,7 @@ theorem e_apply (i : ℕ) (j : ZMod p) (l : ℕ) : e p i (j, l) = if l = i then 
     · simp
     · intro b _ hb; simp [hb]
     · simp
-  · rw [if_neg h]
+  · rw [ite_eq_right h]
     exact Finset.sum_eq_zero fun x _ => by simp [Ne.symm h]
 
 theorem isFixed_e (i : ℕ) : IsFixed p (e p i) := fun j l => by rw [e_apply, e_apply]
@@ -354,12 +354,12 @@ theorem S_coeff_succ (i : ℕ) : ∃ g : U p, (S p).coeff (i + 1) = tr p g + nm 
     rw [hX, coeff_monomial]
     by_cases hde : e p i = d
     · subst hde
-      rw [if_pos (mapDomain_snd_e p i).symm, if_pos rfl]
-    · rw [if_neg hde, if_neg]
+      rw [ite_eq_left (mapDomain_snd_e p i).symm, ite_eq_left rfl]
+    · rw [ite_eq_right hde, ite_eq_right]
       intro heq
       apply hde
       exact eq_of_isFixed_of_mapDomain_eq p (isFixed_e p i) hd ((mapDomain_snd_e p i).trans heq)
-  · rw [hnfix d hd, if_neg]
+  · rw [hnfix d hd, ite_eq_right]
     rintro rfl
     exact hd (isFixed_e p i)
 

@@ -1,0 +1,160 @@
+{
+  "at": "2026-10-11T16:23:03.349635+00:00",
+  "module": "Submission.Supplier.P2M.Sol.S_HeckeEis_exists_isEigensystemH1_binaryFormRepSL_empty_of_isEigensystemH1_of_ringHom",
+  "source_bound_original_record": {
+    "sha256": "e09a104aa41cdecf005532473f194452d8a1e7d6548c37790b3dd1b84b1d0923",
+    "exit": 0,
+    "empty_output_retry_done": false,
+    "source_sha256_after": "e09a104aa41cdecf005532473f194452d8a1e7d6548c37790b3dd1b84b1d0923",
+    "source_unchanged": true,
+    "olean_sha256": "002465f5eb44539e0d2b2f4e53c6f242b67da9081dc0e59c7c0e9c1afb725b06",
+    "seconds": 139.65958387499995,
+    "pid": 36685,
+    "command": [
+      "/Users/macstudio/.local/omega-shims/lean",
+      "-j1",
+      "--trust=0",
+      "-Ddebug.skipKernelTC=false",
+      "-R",
+      "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src",
+      "-o",
+      "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-build/lib/lean/Submission/Supplier/P2M/Sol/S_HeckeEis_exists_isEigensystemH1_binaryFormRepSL_empty_of_isEigensystemH1_of_ringHom.olean",
+      "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_HeckeEis_exists_isEigensystemH1_binaryFormRepSL_empty_of_isEigensystemH1_of_ringHom.lean"
+    ],
+    "make_wrapper_pid": 1892,
+    "make_exit": 0,
+    "make_entry_failed": false,
+    "cache_binding_valid": true,
+    "canonical_make_running_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/4ffa80876a9e4686b3cb0a7c-1791712498991245000.make-running.json",
+    "canonical_make_terminal_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/4ffa80876a9e4686b3cb0a7c-1791712498991245000.make-terminal.json",
+    "kernel_terminal_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/4ffa80876a9e4686b3cb0a7c-1791712498991245000.kernel/result.json",
+    "direct_dependencies": [
+      {
+        "module": "Submission.Supplier.Definitions.Def_Gamma0HeckeOperatorHom",
+        "source_sha256": "a3dd5ba42426a016a1f7906ec17f8f63e109e5db4b07ef18160375bb9d3e499d",
+        "object_sha256": "fb7a089a396da30008911bf751aa544f3b351dd0a8129c83a6b97c134a2df47d",
+        "receipt_reused": true
+      },
+      {
+        "module": "Submission.Supplier.Definitions.Def_Gamma0CoeffCohomology",
+        "source_sha256": "e2e73dc31be6b4c85b0e0ada78717f4ba3e482be7019a447b3910134c9189d0a",
+        "object_sha256": null,
+        "receipt_reused": false
+      },
+      {
+        "module": "Submission.Supplier.Definitions.Def_HeckeEis_BinaryFormRep",
+        "source_sha256": "703e128de7dd1e083d98b5e96978b2a2c39b92a5b3aae9eb506bb6b3b760a5a8",
+        "object_sha256": "451c3d91d03f1de77a045ef1fc6a21772b48136a6a45623b298826e38f8b4c44",
+        "receipt_reused": true
+      },
+      {
+        "module": "Submission.Supplier.Definitions.Def_Gamma0CoeffCohomologyEigen",
+        "source_sha256": "0920b6e5efee806a47ee3d472c1554d9a09567f971d577a495c2e25c2aad515c",
+        "object_sha256": "f7b4d843b8662d8dbd8041d03eea24055428f9b70a7e06a3a0f406d392a899c9",
+        "receipt_reused": true
+      },
+      {
+        "module": "Submission.Supplier.Theorems.Thm_HeckeEis_coeffHeckeFun_mem_coeffCocycles",
+        "source_sha256": "186c10220fdaf550592f4c96259407b7fb4b97a5039389ec151b2d4b4f72c7a6",
+        "object_sha256": "983dba96ec67b9014205bea7c2612038d85e6b7a556f8cbcff5d000c7403d9a5",
+        "receipt_reused": true
+      },
+      {
+        "module": "Submission.Supplier.Theorems.Thm_HeckeEis_coeffHeckeFun_mem_coeffCoboundaries",
+        "source_sha256": "c6e29341ed056aefbadba6060a9771c21c5925bd8903b9b841492704c30715c4",
+        "object_sha256": "72d3713090d77d582c97771683452397628f48a878ef64baa31158ee339de3ef",
+        "receipt_reused": true
+      },
+      {
+        "module": "Submission.Supplier.Theorems.Thm_HeckeEis_binaryFormAlphaAdj_comp_binaryFormRepSL_heckeConj",
+        "source_sha256": "fd3cbf5792e95dd9ebf8b635f9fb4dbbf93b0ecaaba9172c90bc5b12c2731273",
+        "object_sha256": "bde01b6412458c1b45fe3fe68c6c330075a5b667d96487519760b749b38aba6f",
+        "receipt_reused": true
+      },
+      {
+        "module": "Submission.Supplier.Theorems.Thm_HeckeEis_coeffHeckeFun_coeffHeckeFun_sub_coeffHeckeFun_mul_mem_coeffCoboundaries",
+        "source_sha256": "6393d259cc8a2a6a0d64af62954e013282c234d6318e482d4a5c96548718f99c",
+        "object_sha256": "9750e8e060874006207b577fdb3da709a5724c4f49131f57bb913177d45d26d5",
+        "receipt_reused": true
+      },
+      {
+        "module": "Submission.Supplier.Theorems.Thm_HeckeEis_exists_coeffH1_map_ringHom_binaryFormRepSL",
+        "source_sha256": "833541811601fb11aee365905ec34981cead0fa18887a72f8d1b3cdc204f4bc9",
+        "object_sha256": "5ef79a8ca82f0d6a3df7c3210ea55e05c9804a53879339092596f51f7d44e53d",
+        "receipt_reused": true
+      },
+      {
+        "module": "Submission.Supplier.P2M.Util",
+        "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+        "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+        "receipt_reused": true
+      }
+    ],
+    "stdout": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/4ffa80876a9e4686b3cb0a7c-1791712498991245000.kernel/stdout.log",
+    "stderr": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/4ffa80876a9e4686b3cb0a7c-1791712498991245000.kernel/stderr.log"
+  },
+  "edits": [
+    {
+      "line": 35,
+      "old": "letI := (heckeUpper N \u2113).fintypeQuotientOfFiniteIndex",
+      "new": "let := (heckeUpper N \u2113).fintypeQuotientOfFiniteIndex"
+    },
+    {
+      "line": 39,
+      "old": "letI := (heckeUpper N \u2113).fintypeQuotientOfFiniteIndex",
+      "new": "let := (heckeUpper N \u2113).fintypeQuotientOfFiniteIndex"
+    },
+    {
+      "line": 85,
+      "old": "haveI : NeZero (\u2113 * \u2113') := \u27e8mul_ne_zero (NeZero.ne \u2113) (NeZero.ne \u2113')\u27e9",
+      "new": "have : NeZero (\u2113 * \u2113') := \u27e8mul_ne_zero (NeZero.ne \u2113) (NeZero.ne \u2113')\u27e9"
+    },
+    {
+      "line": 168,
+      "old": "haveI hSL : Group.FG SL(2, \u2124) :=",
+      "new": "have hSL : Group.FG SL(2, \u2124) :="
+    },
+    {
+      "line": 188,
+      "old": "haveI : Module.Finite K \u21a5(coeffCocycles \u03c1) := Module.Finite.of_injective ev hev",
+      "new": "have : Module.Finite K \u21a5(coeffCocycles \u03c1) := Module.Finite.of_injective ev hev"
+    },
+    {
+      "line": 469,
+      "old": "haveI : Module.Finite (ZMod p) (H1 (ZMod p) N n) := moduleFinite_coeffH1 N _",
+      "new": "have : Module.Finite (ZMod p) (H1 (ZMod p) N n) := moduleFinite_coeffH1 N _"
+    },
+    {
+      "line": 567,
+      "old": "haveI : FiniteDimensional K W := inferInstance",
+      "new": "have : FiniteDimensional K W := inferInstance"
+    },
+    {
+      "line": 600,
+      "old": "letI : Algebra (ZMod p) \u03ba := ZMod.algebra \u03ba p",
+      "new": "let : Algebra (ZMod p) \u03ba := ZMod.algebra \u03ba p"
+    },
+    {
+      "line": 636,
+      "old": "haveI : Module.Finite \u03ba (H1 \u03ba N n) := moduleFinite_coeffH1 N _",
+      "new": "have : Module.Finite \u03ba (H1 \u03ba N n) := moduleFinite_coeffH1 N _"
+    },
+    {
+      "line": 644,
+      "old": "\u00b7 haveI : NeZero \u2113 := \u27e8h\u2113.ne_zero\u27e9",
+      "new": "\u00b7 have : NeZero \u2113 := \u27e8h\u2113.ne_zero\u27e9"
+    },
+    {
+      "old": "MvPolynomial.coeff_zero",
+      "new": "AddMonoidAlgebra.coeff_zero",
+      "occurrences": 1
+    },
+    {
+      "old": "dif_pos",
+      "new": "dite_eq_left",
+      "occurrences": 1
+    }
+  ],
+  "solution_statement_unchanged": true,
+  "validation": "pending original single compiler queue"
+}
