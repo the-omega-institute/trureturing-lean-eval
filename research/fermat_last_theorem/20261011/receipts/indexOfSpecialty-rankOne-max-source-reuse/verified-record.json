@@ -1,0 +1,58 @@
+{
+  "at": "2026-10-11T23:28:48.039026+00:00",
+  "module": "P2M.Sol.S_AlgebraicCurve_indexOfSpecialty_eq_ell_sub_of_rankOne_max",
+  "source": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/P2M/Sol/S_AlgebraicCurve_indexOfSpecialty_eq_ell_sub_of_rankOne_max.lean",
+  "original_source": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/official-layout/source-reuse/20261012-indexOfSpecialty-rankOne-max/original.lean",
+  "reuse_module": "P2M.Sol.S_AlgebraicCurve_exists_genus_riemannIndex_of_stichtenothGenusExists",
+  "reuse_declaration": "_root_.P2MW.S_AlgebraicCurve_exists_genus_riemannIndex_of_stichtenothGenusExists.AlgebraicCurve.indexOfSpecialty_eq_ell_sub_of_rankOne_max",
+  "provider_compile_record": {
+    "sha256": "ea9f9fe68cce99cedd6db526b75ff6ee1a0c0533725102b3608a5ba8a14fe677",
+    "exit": 0,
+    "empty_output_retry_done": false,
+    "source_sha256_after": "ea9f9fe68cce99cedd6db526b75ff6ee1a0c0533725102b3608a5ba8a14fe677",
+    "source_unchanged": true,
+    "olean_sha256": "66c017874b89dd60a2a89068f57a96438d563b46483b9c2a0966e2cad1d75a32",
+    "seconds": 32.935663250000005,
+    "stdout": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/666bd99a4203dce5d4310226-1791472759516098000.stdout",
+    "stderr": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/666bd99a4203dce5d4310226-1791472759516098000.stderr"
+  },
+  "original_solution_declaration": "theorem solution {K F : Type*} [Field K] [Field F] [Algebra K F] [HasPrincipalDivisors K F]\n    (hRankOne : WeilDifferentialRankOne K F)\n    {W : Divisor K F} {φ : Module.Dual K ↥(adeleSpace K F)}\n    (hφ : φ ∈ omegaSpace W) (hφ0 : φ ≠ 0)\n    (hWmax : ∀ E : Divisor K F, φ ∈ omegaSpace E → E ≤ W) (D : Divisor K F) :\n    indexOfSpecialty D = ell (W - D) :=",
+  "solution_declaration_text_unchanged": true,
+  "original_lines": 1633,
+  "candidate_lines": 18,
+  "proof_shape": "existing solution delegates to existing supplier theorem; no new mathematical claim",
+  "verification_status": "source and associated theorem card passed canonical make and kernel checks",
+  "full_original_complete": false,
+  "official_new_solve_credit": 0,
+  "verification_results": [
+    {
+      "module": "Submission.Supplier.P2M.Sol.S_AlgebraicCurve_indexOfSpecialty_eq_ell_sub_of_rankOne_max",
+      "kind": "source",
+      "make_exit": 0,
+      "kernel_exit": 0,
+      "source_unchanged": true,
+      "kernel_seconds": 112.77853850000001,
+      "make_seconds": 174.510161292,
+      "warnings": 0,
+      "edited": true,
+      "kernel_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/official-layout/source-reuse/20261012-genus-rankOne-validation/20261012-indexOfSpecialty-rankOne-max-source.kernel/result.json",
+      "make_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/official-layout/source-reuse/20261012-genus-rankOne-validation/20261012-indexOfSpecialty-rankOne-max-source.make-terminal.json",
+      "configuration": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/official-layout/source-reuse/20261012-genus-rankOne-validation/20261012-indexOfSpecialty-rankOne-max-source.configuration.json"
+    },
+    {
+      "module": "Submission.Supplier.Theorems.Thm_AlgebraicCurve_indexOfSpecialty_eq_ell_sub_of_rankOne_max",
+      "kind": "card",
+      "make_exit": 0,
+      "kernel_exit": 0,
+      "source_unchanged": true,
+      "kernel_seconds": 18.913064125000002,
+      "make_seconds": 23.837526,
+      "warnings": 0,
+      "edited": false,
+      "kernel_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/official-layout/source-reuse/20261012-genus-rankOne-validation/20261012-indexOfSpecialty-rankOne-max-card.kernel/result.json",
+      "make_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/official-layout/source-reuse/20261012-genus-rankOne-validation/20261012-indexOfSpecialty-rankOne-max-card.make-terminal.json",
+      "configuration": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/official-layout/source-reuse/20261012-genus-rankOne-validation/20261012-indexOfSpecialty-rankOne-max-card.configuration.json"
+    }
+  ],
+  "verified_at": "2026-10-11T23:32:06.563923+00:00"
+}
