@@ -1,0 +1,23 @@
+--- omega-gate.original
++++ omega-gate.candidate
+@@ -539,7 +539,19 @@
+         fcntl.flock(adm, fcntl.LOCK_EX)  # one candidate at a time; released on exec/close
+         now = time.time()
+         used = used_gb()
+-        eval_res, any_build = scan()
++        try:
++            eval_res, any_build = scan()
++        except NativeScanError as error:
++            # An incomplete process snapshot cannot admit a build. Release the
++            # admission mutex and take a fresh snapshot after the normal wait.
++            fcntl.flock(adm, fcntl.LOCK_UN)
++            if not waited:
++                waited = True
++                why = 'native process observation incomplete: %s' % error
++                sys.stderr.write('omega-gate: waiting (%s)\n' % why)
++                log('wait %s: %s cwd=%s' % (name, why, os.getcwd()))
++            time.sleep(5)
++            continue
+         ts = recent_admits(ramp_file, now)
+         committed = used + eval_res + JOB_GB * len(ts)
+         if committed + REQUEST_GB <= BUDGET_GB or not any_build:

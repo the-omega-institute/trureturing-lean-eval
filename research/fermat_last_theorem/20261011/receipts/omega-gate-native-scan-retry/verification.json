@@ -1,0 +1,69 @@
+{
+  "passed": true,
+  "results": [
+    {
+      "name": "incomplete-then-fresh-success",
+      "scans": 3,
+      "fresh_used_samples": 3,
+      "waits": 2,
+      "execs": 1,
+      "ramp_written": true,
+      "events": [
+        "lock",
+        "unlock",
+        "wait",
+        "lock",
+        "unlock",
+        "wait",
+        "lock",
+        "exec"
+      ]
+    },
+    {
+      "name": "persistent-incomplete-does-not-admit",
+      "scans": 3,
+      "fresh_used_samples": 3,
+      "waits": 3,
+      "execs": 0,
+      "ramp_written": false,
+      "events": [
+        "lock",
+        "unlock",
+        "wait",
+        "lock",
+        "unlock",
+        "wait",
+        "lock",
+        "unlock",
+        "wait"
+      ]
+    },
+    {
+      "name": "original-budget-still-queues",
+      "scans": 2,
+      "fresh_used_samples": 2,
+      "waits": 1,
+      "execs": 1,
+      "ramp_written": true,
+      "events": [
+        "lock",
+        "unlock",
+        "wait",
+        "lock",
+        "exec"
+      ]
+    },
+    {
+      "name": "real-reaped-child-reproduces-original-boundary",
+      "passed": true,
+      "pid": 23395,
+      "error": "short KERN_PROC_PID record pid=23395 size=0"
+    },
+    {
+      "name": "real-live-kernel-record-still-validated",
+      "passed": true
+    }
+  ],
+  "budgets_changed": false,
+  "incomplete_scan_can_admit": false
+}

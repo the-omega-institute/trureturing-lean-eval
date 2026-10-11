@@ -1,0 +1,25 @@
+omega-gate: waiting (committed 56.8G (used 48.8 + eval 0.0 + ramp 1*8) + 35 > budget 90G)
+Traceback (most recent call last):
+  File "/Users/macstudio/.local/bin/omega-gate", line 434, in _native_scan
+    initial_info = _task_info(library, pid)
+  File "/Users/macstudio/.local/bin/omega-gate", line 288, in _task_info
+    raise _Disappeared(pid)
+__main__._Disappeared: 31246
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/macstudio/.local/bin/omega-gate", line 564, in <module>
+    main()
+  File "/Users/macstudio/.local/bin/omega-gate", line 542, in main
+    eval_res, any_build = scan()
+  File "/Users/macstudio/.local/bin/omega-gate", line 515, in scan
+    reserve, any_build, _ = _native_scan()
+  File "/Users/macstudio/.local/bin/omega-gate", line 436, in _native_scan
+    if _require_terminal_identity(library, pid):
+  File "/Users/macstudio/.local/bin/omega-gate", line 338, in _require_terminal_identity
+    first = _kernel_process_record(library, pid)
+  File "/Users/macstudio/.local/bin/omega-gate", line 319, in _kernel_process_record
+    raise NativeScanError('short KERN_PROC_PID record pid=%d size=%d' % (pid, size.value))
+__main__.NativeScanError: short KERN_PROC_PID record pid=31246 size=0
+make: *** [lean] Error 1
