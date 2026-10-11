@@ -1,6 +1,6 @@
 # FLT source checkpoint — 2026-10-11
 
-This checkpoint saves ten verified repairs in the ongoing port of
+This checkpoint saves eleven verified repairs in the ongoing port of
 `anthropics/fermats-last-theorem@6e837e75355538c7f80bab5b956861e86c4eacc2`.
 The source files are complete canonical modules; patches show this checkpoint's changes
 against the immediately preceding local port. Import adaptation for the official
@@ -10,12 +10,12 @@ CuspForm uses an explicit residue-field cancellation proof. Deformation uses the
 current polynomial coefficient API and limits legacy implicit-argument transparency
 to `namespace Univ`. Both retain their original hypotheses and conclusions.
 
-The ten repaired modules passed the canonical single-job `make lean` entry
+The eleven repaired modules passed the canonical single-job `make lean` entry
 with `--trust=0` and kernel type checking enabled. CuspForm and Deformation
 also have successful associated theorem checks. The latest HeckeEis repair
 uses an explicit `zsmul_eq_mul` application for the ZMod target; its associated
 theorem check has also passed make/kernel validation. The attached receipts record the repaired source modules. The final versions
-of all ten repaired source modules have now passed checks without warnings;
+of all eleven repaired source modules have now passed checks without warnings;
 unchanged supplier modules retain some existing warnings.
 
 This is a progress checkpoint. The complete Submission root, comparator,
@@ -108,3 +108,13 @@ stderr. Original failure receipts and the exact patch are retained under
 The associated standard-smooth localization theorem card also passed make and
 kernel validation (kernel 43.41 seconds), with empty stdout and stderr. Its
 source was unchanged. The complete source and terminal receipts are retained.
+
+The modular-curve canonical-divisor degree theorem card now removes eight
+optional simp references that are absent from its imported environment. Each
+removed name has a source-bound Lean failure: three were rejected individually,
+and a targeted diagnostic rejected the remaining five in one run. The temporary
+diagnostic was removed. The original theorem statement and proof body are
+unchanged, and the complete final module passed canonical single-job make and
+kernel checks (kernel 29.61 seconds), with empty stdout and stderr. Original and
+final source, the patch, and failed and successful receipts are retained under
+`receipts/ModularCurve-canonical-divisor-theorem-card/`.
