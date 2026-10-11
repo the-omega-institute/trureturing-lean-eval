@@ -1,0 +1,39 @@
+--- a/P2M/Sol/S_WeierstrassProjModel_schemeNsmul_locallyQuasiFinite_of_isPointsEval.lean
++++ b/P2M/Sol/S_WeierstrassProjModel_schemeNsmul_locallyQuasiFinite_of_isPointsEval.lean
+@@ -47,7 +47,7 @@
+   (Classical.choose_spec (exists_genericPoint_projModelCR_of_field V)).2
+ 
+ private scoped instance ha3q_isDomain : IsDomain (ProjModelRingCR V) := by
+-  haveI : (⊥ : Ideal (ProjModelRingCR V)).IsPrime := by
++  have : (⊥ : Ideal (ProjModelRingCR V)).IsPrime := by
+     have h := (ha3q_η V).isPrime
+     rwa [ha3q_η_bot V, HomogeneousIdeal.toIdeal_bot] at h
+   exact IsDomain.of_bot_isPrime (ProjModelRingCR V)
+@@ -135,7 +135,8 @@
+     mem_nonZeroDivisors_of_ne_zero (polynomial_ne_zero V)
+   have h3 : ringKrullDim (MvPolynomial (Fin 3) K) = (3 : ℕ) := by
+     rw [MvPolynomial.ringKrullDim_of_isNoetherianRing, ringKrullDim_eq_zero_of_field K,
+-      zero_add, Nat.card_eq_fintype_card, Fintype.card_fin]
++      zero_add, ENat.card_eq_coe_fintype_card, Fintype.card_fin]
++    exact ENat.WithBot.coe_eq_natCast 3
+   have hle : ringKrullDim (ProjModelRingCR V) + 1 ≤ (3 : ℕ) := by
+     rw [← h3]
+     show ringKrullDim (MvPolynomial (Fin 3) K ⧸ Ideal.span {V.polynomial}) + 1 ≤ _
+@@ -189,7 +190,7 @@
+         ≤ y.asHomogeneousIdeal.toIdeal := by
+       rw [hEq]; exact hirr𝔪
+     exact y.not_irrelevant_le (toIdeal_le_toIdeal_iff.mp hle)
+-  haveI : IsDomain (ProjModelRingCR V) := inferInstance
++  have : IsDomain (ProjModelRingCR V) := inferInstance
+ 
+   let p0 : PrimeSpectrum (ProjModelRingCR V) := ⟨⊥, Ideal.isPrime_bot⟩
+   let p1 : PrimeSpectrum (ProjModelRingCR V) := ⟨x.asHomogeneousIdeal.toIdeal, x.isPrime⟩
+@@ -242,7 +243,7 @@
+     rw [h0] at this
+     rw [(Submodule.mem_bot _).mp this]
+     exact zero_mem _
+-  haveI : IsNoetherianRing (ProjModelRingCR V) := inferInstance
++  have : IsNoetherianRing (ProjModelRingCR V) := inferInstance
+   have hfin : (𝔞.toIdeal.minimalPrimes).Finite := Ideal.finite_minimalPrimes_of_isNoetherianRing _ _
+ 
+   have hmem : ∀ x ∈ T, x.asHomogeneousIdeal.toIdeal ∈ 𝔞.toIdeal.minimalPrimes := by

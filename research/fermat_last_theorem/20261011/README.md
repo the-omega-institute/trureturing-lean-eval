@@ -1,6 +1,6 @@
 # FLT source checkpoint — 2026-10-11
 
-This checkpoint saves four verified repairs in the ongoing port of
+This checkpoint saves five verified repairs in the ongoing port of
 `anthropics/fermats-last-theorem@6e837e75355538c7f80bab5b956861e86c4eacc2`.
 The source files are complete canonical modules; patches show this checkpoint's changes
 against the immediately preceding local port. Import adaptation for the official
@@ -10,7 +10,7 @@ CuspForm uses an explicit residue-field cancellation proof. Deformation uses the
 current polynomial coefficient API and limits legacy implicit-argument transparency
 to `namespace Univ`. Both retain their original hypotheses and conclusions.
 
-The four repaired modules passed the canonical single-job `make lean` entry
+The five repaired modules passed the canonical single-job `make lean` entry
 with `--trust=0` and kernel type checking enabled. CuspForm and Deformation
 also have successful associated theorem checks. The latest HeckeEis repair
 uses an explicit `zsmul_eq_mul` application for the ZMod target; its associated
@@ -35,3 +35,13 @@ after actual Lean failures; the patch starts after the existing watcher removed
 the first four names. A prior successful environment query confirms the remaining
 four absent names. Its theorem statement and proof body are unchanged. The new
 receipts are saved under `receipts/PlaceSpecialization-theorem-card/`.
+
+The projective-model multiplication proof uses the current extended-natural
+cardinality formula for multivariate-polynomial Krull dimension, with explicit
+`ENat.card_eq_coe_fintype_card` and `ENat.WithBot.coe_eq_natCast` applications.
+Three proof-valued `haveI` bindings were changed to `have` to clear the actual
+style warnings. The complete repaired module passed make/kernel validation
+(kernel 14.16 seconds) with empty stdout/stderr. Its theorem statements are
+unchanged; both actual failed diagnostics are retained. Its associated theorem
+card also passed make/kernel validation (kernel 39.20 seconds) with
+empty stdout/stderr.
