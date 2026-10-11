@@ -1,0 +1,12 @@
+--- a/P2M/Sol/S_CuspForm_IsNormalizedEigenform_sum_apply_padicToAdelic_eq_mul_of_mem_span_fnTwist.lean
++++ b/P2M/Sol/S_CuspForm_IsNormalizedEigenform_sum_apply_padicToAdelic_eq_mul_of_mem_span_fnTwist.lean
+@@ -99,7 +99,8 @@
+     have hjp : j < p := ZMod.val_lt _
+     have htj : ‖t - (j : ℤ_[p])‖ < 1 := by
+       have h1 : PadicInt.toZMod (t - (j : ℤ_[p])) = 0 := by
+-        rw [map_sub, map_natCast, hj, ZMod.natCast_zmod_val, sub_self]
++        rw [map_sub, map_natCast, hj, ZMod.natCast_zmod_val]
++        exact sub_self (PadicInt.toZMod t)
+       have h2 : t - (j : ℤ_[p]) ∈ RingHom.ker (PadicInt.toZMod (p := p)) := RingHom.mem_ker.mpr h1
+       rw [PadicInt.ker_toZMod] at h2
+       exact PadicInt.mem_nonunits.mp ((IsLocalRing.mem_maximalIdeal _).mp h2)

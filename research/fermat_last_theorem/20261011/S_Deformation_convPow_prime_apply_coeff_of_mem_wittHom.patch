@@ -1,0 +1,125 @@
+--- a/P2M/Sol/S_Deformation_convPow_prime_apply_coeff_of_mem_wittHom.lean
++++ b/P2M/Sol/S_Deformation_convPow_prime_apply_coeff_of_mem_wittHom.lean
+@@ -15,6 +15,8 @@
+ 
+ namespace Univ
+ 
++set_option backward.isDefEq.respectTransparency false
++
+ variable (p : ℕ) [hp : Fact p.Prime]
+ 
+ abbrev Var : Type := ZMod p × ℕ
+@@ -64,8 +66,8 @@
+   simp [ρ, sh, rename_monomial]
+ 
+ theorem coeff_ρ (r : ZMod p) (d : Var p →₀ ℕ) (f : U p) :
+-    coeff d (ρ p r f) = coeff (sh p (-r) d) f := by
+-  have h : sh p r (sh p (-r) d) = d := by rw [sh_sh, add_neg_cancel, sh_zero]
++    (ρ p r f).coeff d = f.coeff (sh p (-r) d) := by
++  have h : sh p r (sh p (-r) d) = d := by rw [sh_sh, add_neg_cancel r, sh_zero]
+   conv_lhs => rw [← h]
+   exact coeff_rename_mapDomain _ (τ p r).injective _ _
+ 
+@@ -134,30 +136,30 @@
+ noncomputable def tr (g : U p) : U p := ∑ r : ZMod p, ρ p r g
+ 
+ theorem coeff_tr (g : U p) (d : Var p →₀ ℕ) :
+-    coeff d (tr p g) = ∑ r : ZMod p, coeff (sh p (-r) d) g := by
++    (tr p g).coeff d = ∑ r : ZMod p, g.coeff (sh p (-r) d) := by
+   simp only [tr, coeff_sum, coeff_ρ]
+ 
+ theorem exists_eq_tr_add {f : U p} (hf : ∀ r : ZMod p, ρ p r f = f) :
+-    ∃ g h : U p, f = tr p g + h ∧ (∀ d, IsFixed p d → coeff d h = coeff d f) ∧
+-      (∀ d, ¬ IsFixed p d → coeff d h = 0) := by
+-  classical
+-  have hinv : ∀ (r : ZMod p) (d : Var p →₀ ℕ), coeff (sh p r d) f = coeff d f := by
++    ∃ g h : U p, f = tr p g + h ∧ (∀ d, IsFixed p d → h.coeff d = f.coeff d) ∧
++      (∀ d, ¬ IsFixed p d → h.coeff d = 0) := by
++  classical
++  have hinv : ∀ (r : ZMod p) (d : Var p →₀ ℕ), f.coeff (sh p r d) = f.coeff d := by
+     intro r d
+     have := coeff_ρ p r (sh p r d) f
+     rwa [hf, sh_sh, neg_add_cancel, sh_zero] at this
+ 
+-  let g : U p := ∑ d ∈ f.support with (¬ IsFixed p d ∧ rep p d = d), monomial d (coeff d f)
+-  have hg : ∀ d, coeff d g = if (¬ IsFixed p d ∧ rep p d = d) then coeff d f else 0 := by
++  let g : U p := ∑ d ∈ f.support with (¬ IsFixed p d ∧ rep p d = d), monomial d (f.coeff d)
++  have hg : ∀ d, g.coeff d = if (¬ IsFixed p d ∧ rep p d = d) then f.coeff d else 0 := by
+     intro d
+     simp only [g, coeff_sum, coeff_monomial]
+-    rw [Finset.sum_ite_eq' (f.support.filter _) d (fun x => coeff x f)]
++    rw [Finset.sum_ite_eq' (f.support.filter _) d (fun x => f.coeff x)]
+     simp only [Finset.mem_filter, mem_support_iff, ne_eq]
+     by_cases h : ¬IsFixed p d ∧ rep p d = d
+-    · by_cases h0 : coeff d f = 0
++    · by_cases h0 : f.coeff d = 0
+       · simp [h, h0]
+       · simp [h, h0]
+     · simp [h]
+-  have htr : ∀ d, coeff d (tr p g) = if IsFixed p d then 0 else coeff d f := by
++  have htr : ∀ d, (tr p g).coeff d = if IsFixed p d then 0 else f.coeff d := by
+     intro d
+     rw [coeff_tr]
+     simp only [hg]
+@@ -189,8 +191,9 @@
+         rwa [sub_eq_zero, eq_comm] at this
+       · intro h; exact absurd (Finset.mem_univ r₀) h
+   refine ⟨g, f - tr p g, by abel, fun d hd => ?_, fun d hd => ?_⟩
+-  · rw [coeff_sub, htr, if_pos hd, sub_zero]
+-  · rw [coeff_sub, htr, if_neg hd, sub_self]
++  · rw [AddMonoidAlgebra.coeff_sub, Finsupp.sub_apply, htr, if_pos hd, sub_zero]
++  · rw [AddMonoidAlgebra.coeff_sub, Finsupp.sub_apply, htr, if_neg hd]
++    exact sub_self (f.coeff d)
+ 
+ noncomputable def diag : U p →ₐ[ZMod p] MvPolynomial ℕ (ZMod p) := rename Prod.snd
+ 
+@@ -231,13 +234,13 @@
+   rw [hd, hd']
+   exact Nat.eq_of_mul_eq_mul_left hp.out.pos this
+ 
+-theorem coeff_diag_of_isFixed {h : U p} (hh : ∀ d, ¬ IsFixed p d → coeff d h = 0)
++theorem coeff_diag_of_isFixed {h : U p} (hh : ∀ d, ¬ IsFixed p d → h.coeff d = 0)
+     {d : Var p →₀ ℕ} (hd : IsFixed p d) :
+-    coeff (d.mapDomain Prod.snd) (diag p h) = coeff d h := by
++    (diag p h).coeff (d.mapDomain Prod.snd) = h.coeff d := by
+   classical
+   conv_lhs => rw [as_sum h]
+   simp only [diag, map_sum, rename_monomial, coeff_sum, coeff_monomial]
+-  rw [Finset.sum_congr rfl (g := fun x => if x = d then coeff x h else 0)]
++  rw [Finset.sum_congr rfl (g := fun x => if x = d then h.coeff x else 0)]
+   · rw [Finset.sum_ite_eq']
+     split_ifs with hmem
+     · rfl
+@@ -324,13 +327,13 @@
+   refine ⟨g, ?_⟩
+   suffices hh : h = 0 by rw [hf, hh, add_zero]
+   ext d
+-  rw [coeff_zero]
++  rw [AddMonoidAlgebra.coeff_zero, Finsupp.zero_apply]
+   by_cases hd : IsFixed p d
+   · rw [← coeff_diag_of_isFixed p hnfix hd]
+     have : diag p h = 0 := by
+       have := congrArg (diag p) hf
+       rwa [diag_S_coeff_zero, map_add, diag_tr, zero_add, eq_comm] at this
+-    rw [this, coeff_zero]
++    rw [this, AddMonoidAlgebra.coeff_zero, Finsupp.zero_apply]
+   · exact hnfix d hd
+ 
+ theorem S_coeff_succ (i : ℕ) : ∃ g : U p, (S p).coeff (i + 1) = tr p g + nm p i := by
+@@ -361,6 +364,7 @@
+     exact hd (isFixed_e p i)
+ 
+ end Univ
++set_option backward.isDefEq.respectTransparency true
+ p2m_reactivate "P2MW.S_Deformation_convPow_prime_apply_coeff_of_mem_wittHom.Deformation.WittHomVREL.Univ"
+ 
+ end Deformation.WittHomVREL
+@@ -567,7 +571,7 @@
+ theorem lam_ev_ρ (r : ZMod p) (g : Univ.U p) :
+     (Dp k p A T β).lam (ev k p A T β y (Univ.ρ p r g)) = (Dp k p A T β).lam (ev k p A T β y g) := by
+   have H : ∀ s : ZMod p, (Dp k p A T β).lam (ev k p A T β y (Univ.ρ p s g)) =
+-      ∑ d ∈ g.support, (ZMod.castHom (dvd_refl p) k (coeff d g)) •
++      ∑ d ∈ g.support, (ZMod.castHom (dvd_refl p) k (g.coeff d)) •
+         ∏ j : ZMod p, β.ofConv (av p A y d j) := by
+     intro s
+     conv_lhs => rw [as_sum g]
