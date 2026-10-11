@@ -1,0 +1,13 @@
+--- a/P2M/Sol/S_HeckeEis_exists_isEigensystemH1_binaryFormRepSL_empty_of_isEigensystemH1_of_ringHom.lean
++++ b/P2M/Sol/S_HeckeEis_exists_isEigensystemH1_binaryFormRepSL_empty_of_isEigensystemH1_of_ringHom.lean
+@@ -238,8 +238,8 @@
+       MvPolynomial.C (l c) * MvPolynomial.map (Int.castRingHom (ZMod p)) G := by
+   refine MvPolynomial.ext _ _ fun m => ?_
+   rw [coeff_cmap, MvPolynomial.coeff_C_mul, MvPolynomial.coeff_C_mul, MvPolynomial.coeff_map,
+-    MvPolynomial.coeff_map, eq_intCast, eq_intCast, mul_comm c, ← zsmul_eq_mul, map_zsmul, zsmul_eq_mul,
+-    mul_comm]
++    MvPolynomial.coeff_map, eq_intCast, eq_intCast, mul_comm c, ← zsmul_eq_mul, map_zsmul]
++  exact (zsmul_eq_mul (l c) (G.coeff m)).trans (mul_comm _ _)
+ 
+ theorem cmap_monomial (l : κ →+ ZMod p) (d : Fin 2 →₀ ℕ) (c : κ) :
+     cmap p κ l (MvPolynomial.monomial d c) = MvPolynomial.monomial d (l c) := by
