@@ -104,3 +104,7 @@ statements are unchanged. The complete repaired module passed canonical
 single-job make and kernel checks (kernel 27.34 seconds), with empty stdout and
 stderr. Original failure receipts and the exact patch are retained under
 `receipts/StandardSmooth-localization-TFAE/`.
+
+The associated standard-smooth localization theorem card also passed make and
+kernel validation (kernel 43.41 seconds), with empty stdout and stderr. Its
+source was unchanged. The complete source and terminal receipts are retained.
