@@ -1,0 +1,17 @@
+import P2M.Sol.S_AlgebraicCurve_RationalFunctionField_stichtenothGenusExists
+
+-- Reuse the supplier proof already checked in the imported module.
+-- Keep the original solution telescope and conclusion.
+namespace P2MW.S_AlgebraicCurve_RationalFunctionField_indexOfSpecialtyFinite_of_ratFunc_tower
+
+set_option autoImplicit false
+
+open _root_.P2MW.S_AlgebraicCurve_RationalFunctionField_stichtenothGenusExists.AlgebraicCurve
+
+-- Preserve the original solution telescope, including its explicit parent instance.
+set_option linter.overlappingInstances false in
+theorem solution (K : Type*) [Field K] [DecidableEq (RatFunc K)] (F : Type*) [Field F] [Algebra K F] [Algebra (RatFunc K) F] [IsScalarTower K (RatFunc K) F] [FiniteDimensional (RatFunc K) F] [Algebra.IsSeparable (RatFunc K) F] [HasPrincipalDivisors K F] [IsCurveOver K F] [Nonempty (Place K F)] [FiniteDimensional K (LSpace (0 : Divisor K F))] :
+    IndexOfSpecialtyFinite K F :=
+  _root_.P2MW.S_AlgebraicCurve_RationalFunctionField_stichtenothGenusExists.AlgebraicCurve.RationalFunctionField.indexOfSpecialtyFinite_of_ratFunc_tower (K := K) (F := F)
+
+end P2MW.S_AlgebraicCurve_RationalFunctionField_indexOfSpecialtyFinite_of_ratFunc_tower

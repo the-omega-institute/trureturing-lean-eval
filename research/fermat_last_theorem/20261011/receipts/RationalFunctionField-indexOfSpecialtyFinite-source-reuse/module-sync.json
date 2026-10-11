@@ -1,0 +1,23 @@
+{
+  "at": "2026-10-11T22:36:28.500264+00:00",
+  "supplier": "anthropics/fermats-last-theorem",
+  "supplier_commit": "6e837e75355538c7f80bab5b956861e86c4eacc2",
+  "official_mathlib": "5e0c4e5239cb0a2d86d68a884bf52cfd963fce22",
+  "toolchain": "leanprover/lean4:v4.35.0-rc3",
+  "elaborator_options": "\n-- Elaborator settings from the recovered exact-pin FLT controller.\nset_option autoImplicit false\nset_option maxHeartbeats 4000000\nset_option synthInstance.maxHeartbeats 400000\nset_option backward.isDefEq.respectTransparency.types false\nset_option debug.skipKernelTC false\n-- End recovered elaborator settings.\n",
+  "applied": true,
+  "proofs_compiled_in_this_step": false,
+  "source_count": 1,
+  "rows": [
+    {
+      "original_module": "P2M.Sol.S_AlgebraicCurve_RationalFunctionField_indexOfSpecialtyFinite_of_ratFunc_tower",
+      "submission_module": "Submission.Supplier.P2M.Sol.S_AlgebraicCurve_RationalFunctionField_indexOfSpecialtyFinite_of_ratFunc_tower",
+      "original_sha256": "ac8f67dbaae613b01a891fe4e6c4cb3980768f3e6244b70b9c29e845be1e0870",
+      "submission_sha256": "775f4a1745be0e4eaae86e5b617e7a38a630430426fcdbf87c179e3402c6130b",
+      "proof_body_preserved": true,
+      "dependencies": [
+        "P2M.Sol.S_AlgebraicCurve_RationalFunctionField_stichtenothGenusExists"
+      ]
+    }
+  ]
+}

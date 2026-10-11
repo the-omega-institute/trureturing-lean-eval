@@ -1,0 +1,48 @@
+{
+  "at": "2026-10-11T21:15:45.188884+00:00",
+  "module": "P2M.Sol.S_AlgebraicCurve_RationalFunctionField_indexOfSpecialtyFinite_of_ratFunc_tower",
+  "source": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/P2M/Sol/S_AlgebraicCurve_RationalFunctionField_indexOfSpecialtyFinite_of_ratFunc_tower.lean",
+  "original_source": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/official-layout/source-reuse/20261012-RationalFunctionField-indexOfSpecialtyFinite-tower/original.lean",
+  "reuse_module": "P2M.Sol.S_AlgebraicCurve_RationalFunctionField_stichtenothGenusExists",
+  "reuse_declaration": "_root_.P2MW.S_AlgebraicCurve_RationalFunctionField_stichtenothGenusExists.AlgebraicCurve.RationalFunctionField.indexOfSpecialtyFinite_of_ratFunc_tower",
+  "provider_kernel_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/ed21ac9d07b3572c9ad02d23-1791748471748303000.kernel/result.json",
+  "original_solution_declaration": "theorem solution (K : Type*) [Field K] [DecidableEq (RatFunc K)] (F : Type*) [Field F] [Algebra K F] [Algebra (RatFunc K) F] [IsScalarTower K (RatFunc K) F] [FiniteDimensional (RatFunc K) F] [Algebra.IsSeparable (RatFunc K) F] [HasPrincipalDivisors K F] [IsCurveOver K F] [Nonempty (Place K F)] [FiniteDimensional K (LSpace (0 : Divisor K F))] :\n    IndexOfSpecialtyFinite K F :=",
+  "solution_declaration_text_unchanged": true,
+  "original_lines": 2545,
+  "candidate_lines": 17,
+  "verification_status": "source and associated theorem card passed canonical make and kernel checks",
+  "full_original_complete": false,
+  "official_new_solve_credit": 0,
+  "intentional_overlapping_instance_compatibility": "The original solution explicitly has HasPrincipalDivisors and IsCurveOver; preserve both binders and scope the overlappingInstances style-linter exception to this solution only.",
+  "verified_at": "2026-10-11T23:05:06.969584+00:00",
+  "verification_results": [
+    {
+      "module": "Submission.Supplier.P2M.Sol.S_AlgebraicCurve_RationalFunctionField_indexOfSpecialtyFinite_of_ratFunc_tower",
+      "kind": "source",
+      "make_exit": 0,
+      "kernel_exit": 0,
+      "source_unchanged": true,
+      "kernel_seconds": 184.634583542,
+      "make_seconds": 260.51259275,
+      "warnings": 0,
+      "edited": true,
+      "kernel_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/official-layout/source-reuse/20261012-three-reuse-validation-r3/20261012-RationalFunctionField-indexOfSpecialtyFinite-tower-source.kernel/result.json",
+      "make_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/official-layout/source-reuse/20261012-three-reuse-validation-r3/20261012-RationalFunctionField-indexOfSpecialtyFinite-tower-source.make-terminal.json",
+      "configuration": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/official-layout/source-reuse/20261012-three-reuse-validation-r3/20261012-RationalFunctionField-indexOfSpecialtyFinite-tower-source.configuration.json"
+    },
+    {
+      "module": "Submission.Supplier.Theorems.Thm_AlgebraicCurve_RationalFunctionField_indexOfSpecialtyFinite_of_ratFunc_tower",
+      "kind": "card",
+      "make_exit": 0,
+      "kernel_exit": 0,
+      "source_unchanged": true,
+      "kernel_seconds": 15.578598625,
+      "make_seconds": 24.120248333,
+      "warnings": 1,
+      "edited": false,
+      "kernel_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/official-layout/source-reuse/20261012-three-reuse-validation-r3/20261012-RationalFunctionField-indexOfSpecialtyFinite-tower-card.kernel/result.json",
+      "make_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/official-layout/source-reuse/20261012-three-reuse-validation-r3/20261012-RationalFunctionField-indexOfSpecialtyFinite-tower-card.make-terminal.json",
+      "configuration": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/official-layout/source-reuse/20261012-three-reuse-validation-r3/20261012-RationalFunctionField-indexOfSpecialtyFinite-tower-card.configuration.json"
+    }
+  ]
+}
