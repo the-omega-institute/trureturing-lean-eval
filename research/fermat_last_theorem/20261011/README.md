@@ -1,6 +1,6 @@
 # FLT source checkpoint — 2026-10-11
 
-This checkpoint saves three verified repairs in the ongoing port of
+This checkpoint saves four verified repairs in the ongoing port of
 `anthropics/fermats-last-theorem@6e837e75355538c7f80bab5b956861e86c4eacc2`.
 The source files are complete canonical modules; patches show this checkpoint's changes
 against the immediately preceding local port. Import adaptation for the official
@@ -10,7 +10,7 @@ CuspForm uses an explicit residue-field cancellation proof. Deformation uses the
 current polynomial coefficient API and limits legacy implicit-argument transparency
 to `namespace Univ`. Both retain their original hypotheses and conclusions.
 
-The three repaired modules passed the canonical single-job `make lean` entry
+The four repaired modules passed the canonical single-job `make lean` entry
 with `--trust=0` and kernel type checking enabled. CuspForm and Deformation
 also have successful associated theorem checks. The latest HeckeEis repair
 uses an explicit `zsmul_eq_mul` application for the ZMod target; its associated
@@ -21,3 +21,9 @@ deprecation warnings remain follow-up work before final delivery.
 This is a progress checkpoint. The complete Submission root, comparator,
 full-root Nanoda check, and official acceptance are pending. No new solve credit
 is claimed. `LICENSE`, `NOTICE`, and `ATTRIBUTION.md` preserve supplier attribution.
+
+Specialization-map surjectivity removes unavailable optional simp-attribute names
+from one previously unverified module. The original theorem and proof body are
+unchanged. A prior successful Lean environment query identified the names, and
+the repaired complete module passed a fresh make/kernel check. Its patch starts
+after the three earlier individual attribute removals by the existing watcher.
