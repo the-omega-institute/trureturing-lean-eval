@@ -1,0 +1,23 @@
+{
+  "at": "2026-10-11T22:18:10.102875+00:00",
+  "supplier": "anthropics/fermats-last-theorem",
+  "supplier_commit": "6e837e75355538c7f80bab5b956861e86c4eacc2",
+  "official_mathlib": "5e0c4e5239cb0a2d86d68a884bf52cfd963fce22",
+  "toolchain": "leanprover/lean4:v4.35.0-rc3",
+  "elaborator_options": "\n-- Elaborator settings from the recovered exact-pin FLT controller.\nset_option autoImplicit false\nset_option maxHeartbeats 4000000\nset_option synthInstance.maxHeartbeats 400000\nset_option backward.isDefEq.respectTransparency.types false\nset_option debug.skipKernelTC false\n-- End recovered elaborator settings.\n",
+  "applied": true,
+  "proofs_compiled_in_this_step": false,
+  "source_count": 1,
+  "rows": [
+    {
+      "original_module": "P2M.Sol.S_AlgebraicCurve_riemannGenusBounded_of_indexFinite",
+      "submission_module": "Submission.Supplier.P2M.Sol.S_AlgebraicCurve_riemannGenusBounded_of_indexFinite",
+      "original_sha256": "81238daae89715ee82d8e6e0bbe634d23eda4e1fce5673889e12d765079c0773",
+      "submission_sha256": "194f6a7eb6b978d1a414b726b054506836276fd2f0a08c435e8b720974468b12",
+      "proof_body_preserved": true,
+      "dependencies": [
+        "P2M.Sol.S_AlgebraicCurve_RationalFunctionField_stichtenothGenusExists"
+      ]
+    }
+  ]
+}
