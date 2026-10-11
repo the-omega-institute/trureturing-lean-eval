@@ -1,0 +1,118 @@
+--- a/P2M/Sol/S_CerednikDrinfeld_ribbon_finrank_torsion_eq_finrank_quotient_componentGroup.lean
++++ b/P2M/Sol/S_CerednikDrinfeld_ribbon_finrank_torsion_eq_finrank_quotient_componentGroup.lean
+@@ -50,14 +50,14 @@
+     [AddCommGroup μ] [AddGroup.FG G] {p : ℕ} [Module (ZMod p) G] (hp : p.Prime)
+     (hG : ∀ g : G, p • g = 0) (hμ : Nat.card μ = p) :
+     Finite G ∧ Finite (G →+ μ) ∧ Nat.card (G →+ μ) = Nat.card G := by
+-  haveI : Fact p.Prime := ⟨hp⟩
++  have : Fact p.Prime := ⟨hp⟩
+   have hμfin : Finite μ := Nat.finite_of_card_ne_zero (by rw [hμ]; exact hp.ne_zero)
+   have hpμ : ∀ x : μ, p • x = 0 := fun x => by
+     have h := card_nsmul_eq_zero' (G := μ) (x := x)
+     rwa [hμ] at h
+-  letI modμ : Module (ZMod p) μ := AddCommGroup.zmodModule hpμ
+-  haveI hGmodfin : Module.Finite (ZMod p) G := by
+-    obtain ⟨S, hS⟩ := AddGroup.fg_def.1 ‹AddGroup.FG G›
++  let modμ : Module (ZMod p) μ := AddCommGroup.zmodModule hpμ
++  have hGmodfin : Module.Finite (ZMod p) G := by
++    obtain ⟨_, S, _, hS⟩ := AddGroup.fg_iff'.1 ‹AddGroup.FG G›
+     refine ⟨⟨S, ?_⟩⟩
+     rw [eq_top_iff]
+     intro v _
+@@ -65,13 +65,13 @@
+       rw [hS]; exact AddSubgroup.mem_top v
+     exact (AddSubgroup.closure_le ((Submodule.span (ZMod p) (S : Set G)).toAddSubgroup)).2
+       (fun x hx => Submodule.subset_span hx) hv
+-  haveI hGfin : Finite G :=
+-    AddCommGroup.finite_of_fg_torsion G
++  have hGfin : Finite G :=
++    AddCommGroup.finite_of_fg_isAddTorsion G
+       (fun g => isOfFinAddOrder_iff_nsmul_eq_zero.2 ⟨p, hp.pos, hG g⟩)
+   let b := Module.finBasis (ZMod p) G
+   let e12 : (G →+ μ) ≃ (Fin (Module.finrank (ZMod p) G) → μ) :=
+     (AddMonoidHom.toZModLinearMapEquiv p).toEquiv.trans (b.constr (ZMod p)).symm.toEquiv
+-  haveI hHfin : Finite (G →+ μ) := Finite.of_equiv _ e12.symm
++  have hHfin : Finite (G →+ μ) := Finite.of_equiv _ e12.symm
+   refine ⟨hGfin, hHfin, ?_⟩
+   rw [Nat.card_congr e12, Nat.card_fun, hμ, Nat.card_eq_fintype_card, Fintype.card_fin,
+     Module.natCard_eq_pow_finrank (K := ZMod p) (V := G), Nat.card_zmod]
+@@ -220,33 +220,33 @@
+     Module.finrank (HeckeAlg ⧸ 𝔪) ↥(heckeTorsion Ψmod 𝔪) =
+       Module.finrank (HeckeAlg ⧸ 𝔪) (Ψamod ⧸ (𝔪 • (⊤ : Submodule HeckeAlg Ψamod))) := by
+   classical
+-  haveI hΨfin : Finite (Module.Dual ℤ Z ⧸ LinearMap.range G) := finite_coker G hinj
+-  haveI hΨmodfin : Finite Ψmod := Finite.of_equiv _ eΨ.toEquiv.symm
+-  haveI hΨamodfin : Finite Ψamod := Finite.of_equiv _ eΨa.toEquiv.symm
+-  haveI : Finite ↥(heckeTorsion Ψmod 𝔪) := Subtype.finite
+-  haveI : Finite (Ψamod ⧸ (𝔪 • (⊤ : Submodule HeckeAlg Ψamod))) :=
++  have hΨfin : Finite (Module.Dual ℤ Z ⧸ LinearMap.range G) := finite_coker G hinj
++  have hΨmodfin : Finite Ψmod := Finite.of_equiv _ eΨ.toEquiv.symm
++  have hΨamodfin : Finite Ψamod := Finite.of_equiv _ eΨa.toEquiv.symm
++  have : Finite ↥(heckeTorsion Ψmod 𝔪) := Subtype.finite
++  have : Finite (Ψamod ⧸ (𝔪 • (⊤ : Submodule HeckeAlg Ψamod))) :=
+     Finite.of_surjective _ (Submodule.mkQ_surjective _)
+-  letI hkField : Field (HeckeAlg ⧸ 𝔪) := Ideal.Quotient.field 𝔪
++  let hkField : Field (HeckeAlg ⧸ 𝔪) := Ideal.Quotient.field 𝔪
+ 
+   by_cases hk : Finite (HeckeAlg ⧸ 𝔪)
+   swap
+-  · haveI : Infinite (HeckeAlg ⧸ 𝔪) := not_finite_iff_infinite.mp hk
+-    haveI := subsingleton_of_finite_of_infinite (HeckeAlg ⧸ 𝔪) ↥(heckeTorsion Ψmod 𝔪)
+-    haveI := subsingleton_of_finite_of_infinite (HeckeAlg ⧸ 𝔪)
++  · have : Infinite (HeckeAlg ⧸ 𝔪) := not_finite_iff_infinite.mp hk
++    have := subsingleton_of_finite_of_infinite (HeckeAlg ⧸ 𝔪) ↥(heckeTorsion Ψmod 𝔪)
++    have := subsingleton_of_finite_of_infinite (HeckeAlg ⧸ 𝔪)
+       (Ψamod ⧸ (𝔪 • (⊤ : Submodule HeckeAlg Ψamod)))
+     rw [Module.finrank_zero_of_subsingleton, Module.finrank_zero_of_subsingleton]
+ 
+-  haveI : Finite (HeckeAlg ⧸ 𝔪) := hk
++  have : Finite (HeckeAlg ⧸ 𝔪) := hk
+   obtain ⟨p, hchar⟩ := CharP.exists (HeckeAlg ⧸ 𝔪)
+   have hp : p.Prime := by
+     rcases CharP.char_is_prime_or_zero (HeckeAlg ⧸ 𝔪) p with h | h
+     · exact h
+     · exfalso
+       subst h
+-      haveI : CharZero (HeckeAlg ⧸ 𝔪) := CharP.charP_to_charZero (HeckeAlg ⧸ 𝔪)
++      have : CharZero (HeckeAlg ⧸ 𝔪) := CharP.charP_to_charZero (HeckeAlg ⧸ 𝔪)
+       exact (not_finite_iff_infinite.mpr
+         (Infinite.of_injective (Nat.cast : ℕ → HeckeAlg ⧸ 𝔪) Nat.cast_injective)) hk
+-  haveI : Fact p.Prime := ⟨hp⟩
++  have : Fact p.Prime := ⟨hp⟩
+   have hpm : ((p : ℕ) : HeckeAlg) ∈ 𝔪 := by
+     rw [← Ideal.Quotient.eq_zero_iff_mem, map_natCast]
+     exact CharP.cast_eq_zero (HeckeAlg ⧸ 𝔪) p
+@@ -379,11 +379,11 @@
+     refine Submodule.Quotient.induction_on _ q fun y => ?_
+     rw [← Submodule.Quotient.mk_smul, Submodule.Quotient.mk_eq_zero]
+     exact LinearMap.mem_range.mpr ⟨y, by rw [pmul_apply, natCast_zsmul]⟩
+-  haveI : Finite ((Module.Dual ℤ Z ⧸ LinearMap.range G) ⧸ LinearMap.range (pmul G (p : ℤ))) :=
++  have : Finite ((Module.Dual ℤ Z ⧸ LinearMap.range G) ⧸ LinearMap.range (pmul G (p : ℤ))) :=
+     Finite.of_surjective _ (Submodule.mkQ_surjective _)
+-  haveI : AddGroup.FG ((Module.Dual ℤ Z ⧸ LinearMap.range G) ⧸ LinearMap.range (pmul G (p : ℤ))) :=
+-    AddGroup.fg_of_finite
+-  haveI : Finite ((Module.Dual ℤ Z ⧸ LinearMap.range G) →+ ZMod p) :=
++  have : AddGroup.FG ((Module.Dual ℤ Z ⧸ LinearMap.range G) ⧸ LinearMap.range (pmul G (p : ℤ))) :=
++    inferInstance
++  have : Finite ((Module.Dual ℤ Z ⧸ LinearMap.range G) →+ ZMod p) :=
+     Finite.of_injective (fun φ : (Module.Dual ℤ Z ⧸ LinearMap.range G) →+ ZMod p => (⇑φ))
+       DFunLike.coe_injective
+   obtain ⟨_, _, hcard2⟩ := @card_hom_eq_card_of_prime_torsion
+@@ -408,7 +408,7 @@
+       right_inv := fun ψ => by ext d; simp }
+   have hcard4 : Nat.card ((Module.Dual ℤ Z ⧸ LinearMap.range G) →+ ZMod p) =
+       Nat.card (Ψamod →+ ZMod p) := Nat.card_congr eHom
+-  haveI : Finite (Ψamod →+ ZMod p) := Finite.of_equiv _ eHom
++  have : Finite (Ψamod →+ ZMod p) := Finite.of_equiv _ eHom
+   have hcard : Nat.card (Ψamod →+ ZMod p) = Nat.card ↥(TorP Ψmod p) := by
+     rw [hcardTp, hcard1, ← hcard2, hcard3, hcard4]
+   have hβ_bij : Function.Bijective β := hβ_inj.bijective_of_nat_card_le hcard.le
+@@ -439,7 +439,7 @@
+     rw [← Submodule.Quotient.mk_smul, Submodule.Quotient.mk_eq_zero,
+       ← Nat.cast_smul_eq_nsmul HeckeAlg]
+     exact Submodule.smul_mem_smul hpm Submodule.mem_top
+-  haveI : AddGroup.FG (Ψamod ⧸ (𝔪 • (⊤ : Submodule HeckeAlg Ψamod))) := AddGroup.fg_of_finite
++  have : AddGroup.FG (Ψamod ⧸ (𝔪 • (⊤ : Submodule HeckeAlg Ψamod))) := inferInstance
+   obtain ⟨_, _, hcardN⟩ := @card_hom_eq_card_of_prime_torsion
+     (Ψamod ⧸ (𝔪 • (⊤ : Submodule HeckeAlg Ψamod))) (ZMod p) _ _ inferInstance p
+     (AddCommGroup.zmodModule hquotN_tors) hp hquotN_tors (Nat.card_zmod p)
