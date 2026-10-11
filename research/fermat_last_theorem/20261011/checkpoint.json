@@ -31,6 +31,22 @@
       "patch": "S_ModularCurve_PlaceSpecialization_spPic0_surjective.patch",
       "kernel_exit": 0,
       "kernel_seconds": 76.7707095
+    },
+    {
+      "module": "P2M.Sol.S_WeierstrassProjModel_schemeNsmul_locallyQuasiFinite_of_isPointsEval",
+      "source": "sources/P2M/Sol/S_WeierstrassProjModel_schemeNsmul_locallyQuasiFinite_of_isPointsEval.lean",
+      "patch": "patches/ProjModel-KrullDimension-ENat-card.patch",
+      "kernel_exit": 0,
+      "kernel_seconds": 14.1642005
+    },
+    {
+      "module": "Theorems.Thm_IsDiscreteValuationRing_finprod_smul_sub_one_mem_maximalIdeal_pow_of_sub_one_mem_pow_herbrand_of_prime_card",
+      "source": "source/Theorems/Thm_IsDiscreteValuationRing_finprod_smul_sub_one_mem_maximalIdeal_pow_of_sub_one_mem_pow_herbrand_of_prime_card.lean",
+      "patch": "patches/Herbrand-norm-theorem-attributes.patch",
+      "verification": "receipts/Herbrand-norm-theorem-attributes/repair.json",
+      "make_exit": 0,
+      "kernel_exit": 0,
+      "kernel_seconds": 6.170393792
     }
   ],
   "full_original_complete": false,
