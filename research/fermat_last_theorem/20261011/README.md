@@ -14,7 +14,7 @@ The four repaired modules passed the canonical single-job `make lean` entry
 with `--trust=0` and kernel type checking enabled. CuspForm and Deformation
 also have successful associated theorem checks. The latest HeckeEis repair
 uses an explicit `zsmul_eq_mul` application for the ZMod target; its associated
-theorem check continues in the same controller. The attached receipts record
+theorem check has also passed make/kernel validation. The attached receipts record
 the repaired source modules. Existing linter and
 deprecation warnings remain follow-up work before final delivery.
 
@@ -27,3 +27,11 @@ from one previously unverified module. The original theorem and proof body are
 unchanged. A prior successful Lean environment query identified the names, and
 the repaired complete module passed a fresh make/kernel check. Its patch starts
 after the three earlier individual attribute removals by the existing watcher.
+
+The associated specialization-surjectivity theorem card is saved as pending
+validation. The same missing optional attributes were removed after actual Lean
+failures; the patch starts after the existing watcher removed the first four
+names. A prior successful environment query confirms the remaining four absent
+names. Its theorem statement and proof body are unchanged, and the existing
+single-job controller will validate it. No successful theorem-card check is
+claimed by this pending checkpoint.
