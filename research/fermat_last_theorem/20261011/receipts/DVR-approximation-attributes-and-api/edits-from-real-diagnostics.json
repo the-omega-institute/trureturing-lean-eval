@@ -1,0 +1,235 @@
+[
+  {
+    "line": 173,
+    "before": "  letI : Field (FixedPoints.subring B G ⧸ maximalIdeal (FixedPoints.subring B G)) := Ideal.Quotient.field _",
+    "after": "  let : Field (FixedPoints.subring B G ⧸ maximalIdeal (FixedPoints.subring B G)) := Ideal.Quotient.field _"
+  },
+  {
+    "line": 174,
+    "before": "  letI : Field (B ⧸ maximalIdeal B) := Ideal.Quotient.field _",
+    "after": "  let : Field (B ⧸ maximalIdeal B) := Ideal.Quotient.field _"
+  },
+  {
+    "line": 309,
+    "before": "  haveI : Fact p.Prime := ⟨hp⟩",
+    "after": "  have : Fact p.Prime := ⟨hp⟩"
+  },
+  {
+    "line": 323,
+    "before": "  haveI : FaithfulSMul H B := faithfulSMul_subgroup H",
+    "after": "  have : FaithfulSMul H B := faithfulSMul_subgroup H"
+  },
+  {
+    "line": 324,
+    "before": "  haveI : Fact (Nat.card H).Prime := ⟨hℓ⟩",
+    "after": "  have : Fact (Nat.card H).Prime := ⟨hℓ⟩"
+  },
+  {
+    "line": 325,
+    "before": "  haveI : Nontrivial H := Finite.one_lt_card_iff_nontrivial.mp (by rw [show Nat.card H = Nat.card H from rfl]; exact hℓ.one_lt)",
+    "after": "  have : Nontrivial H := Finite.one_lt_card_iff_nontrivial.mp (by rw [show Nat.card H = Nat.card H from rfl]; exact hℓ.one_lt)"
+  },
+  {
+    "line": 420,
+    "before": "  haveI : Subsingleton G := (Nat.card_eq_one_iff_unique.mp hG).1",
+    "after": "  have : Subsingleton G := (Nat.card_eq_one_iff_unique.mp hG).1"
+  },
+  {
+    "line": 421,
+    "before": "  haveI : Unique G := uniqueOfSubsingleton 1",
+    "after": "  have : Unique G := uniqueOfSubsingleton 1"
+  },
+  {
+    "line": 447,
+    "before": "    haveI : H.Normal := normal_of_isMulCommutative H",
+    "after": "    have : H.Normal := normal_of_isMulCommutative H"
+  },
+  {
+    "line": 448,
+    "before": "    haveI : Fact (Nat.card H).Prime := ⟨hℓ⟩",
+    "after": "    have : Fact (Nat.card H).Prime := ⟨hℓ⟩"
+  },
+  {
+    "line": 450,
+    "before": "    haveI : FaithfulSMul H B := faithfulSMul_subgroup H",
+    "after": "    have : FaithfulSMul H B := faithfulSMul_subgroup H"
+  },
+  {
+    "line": 451,
+    "before": "    haveI : (maximalIdeal B).LiesOver (maximalIdeal (FixedPoints.subring B H)) := liesOver_fixedPoints",
+    "after": "    have : (maximalIdeal B).LiesOver (maximalIdeal (FixedPoints.subring B H)) := liesOver_fixedPoints"
+  },
+  {
+    "line": 452,
+    "before": "    haveI : Finite (FixedPoints.subring B H ⧸ maximalIdeal (FixedPoints.subring B H)) := finite_residue_fixedPoints",
+    "after": "    have : Finite (FixedPoints.subring B H ⧸ maximalIdeal (FixedPoints.subring B H)) := finite_residue_fixedPoints"
+  },
+  {
+    "line": 453,
+    "before": "    haveI : Algebra.IsSeparable (FixedPoints.subring B H ⧸ maximalIdeal (FixedPoints.subring B H)) (B ⧸ maximalIdeal B) :=",
+    "after": "    have : Algebra.IsSeparable (FixedPoints.subring B H ⧸ maximalIdeal (FixedPoints.subring B H)) (B ⧸ maximalIdeal B) :="
+  },
+  {
+    "line": 455,
+    "before": "    haveI : IsDiscreteValuationRing (FixedPoints.subring B H) := FixedPoints.isDiscreteValuationRing_subring",
+    "after": "    have : IsDiscreteValuationRing (FixedPoints.subring B H) := FixedPoints.isDiscreteValuationRing_subring"
+  },
+  {
+    "line": 458,
+    "before": "      haveI : Finite (ResidueField B) := ‹Finite (B ⧸ maximalIdeal B)›",
+    "after": "      have : Finite (ResidueField B) := ‹Finite (B ⧸ maximalIdeal B)›"
+  },
+  {
+    "line": 457,
+    "before": "    haveI : PerfectField (ResidueField B) := by",
+    "after": "    have : PerfectField (ResidueField B) := by"
+  },
+  {
+    "line": 460,
+    "before": "    haveI : FaithfulSMul (G ⧸ H) (FixedPoints.subring B H) :=",
+    "after": "    have : FaithfulSMul (G ⧸ H) (FixedPoints.subring B H) :="
+  },
+  {
+    "line": 462,
+    "before": "    haveI : (maximalIdeal (FixedPoints.subring B H)).LiesOver",
+    "after": "    have : (maximalIdeal (FixedPoints.subring B H)).LiesOver"
+  },
+  {
+    "line": 464,
+    "before": "    haveI : Finite (FixedPoints.subring (FixedPoints.subring B H) (G ⧸ H) ⧸",
+    "after": "    have : Finite (FixedPoints.subring (FixedPoints.subring B H) (G ⧸ H) ⧸"
+  },
+  {
+    "line": 466,
+    "before": "    haveI : Algebra.IsSeparable (FixedPoints.subring (FixedPoints.subring B H) (G ⧸ H) ⧸",
+    "after": "    have : Algebra.IsSeparable (FixedPoints.subring (FixedPoints.subring B H) (G ⧸ H) ⧸"
+  },
+  {
+    "line": 469,
+    "before": "    haveI : IsMulCommutative (G ⧸ H) := isMulCommutative_quotient H",
+    "after": "    have : IsMulCommutative (G ⧸ H) := isMulCommutative_quotient H"
+  },
+  {
+    "line": 661,
+    "before": "  haveI : FaithfulSMul I B := faithfulSMul_subgroup I",
+    "after": "  have : FaithfulSMul I B := faithfulSMul_subgroup I"
+  },
+  {
+    "line": 662,
+    "before": "  haveI : (maximalIdeal B).LiesOver (maximalIdeal (FixedPoints.subring B I)) := liesOver_fixedPoints",
+    "after": "  have : (maximalIdeal B).LiesOver (maximalIdeal (FixedPoints.subring B I)) := liesOver_fixedPoints"
+  },
+  {
+    "line": 663,
+    "before": "  haveI : Finite (FixedPoints.subring B I ⧸ maximalIdeal (FixedPoints.subring B I)) := finite_residue_fixedPoints",
+    "after": "  have : Finite (FixedPoints.subring B I ⧸ maximalIdeal (FixedPoints.subring B I)) := finite_residue_fixedPoints"
+  },
+  {
+    "line": 664,
+    "before": "  haveI : Algebra.IsSeparable (FixedPoints.subring B I ⧸ maximalIdeal (FixedPoints.subring B I)) (B ⧸ maximalIdeal B) :=",
+    "after": "  have : Algebra.IsSeparable (FixedPoints.subring B I ⧸ maximalIdeal (FixedPoints.subring B I)) (B ⧸ maximalIdeal B) :="
+  },
+  {
+    "line": 666,
+    "before": "  haveI : IsDiscreteValuationRing (FixedPoints.subring B I) := FixedPoints.isDiscreteValuationRing_subring",
+    "after": "  have : IsDiscreteValuationRing (FixedPoints.subring B I) := FixedPoints.isDiscreteValuationRing_subring"
+  },
+  {
+    "line": 667,
+    "before": "  haveI : IsMulCommutative I := ⟨⟨fun a b => Subtype.ext (IsMulCommutative.is_comm.comm (a : G) b)⟩⟩",
+    "after": "  have : IsMulCommutative I := ⟨⟨fun a b => Subtype.ext (IsMulCommutative.is_comm.comm (a : G) b)⟩⟩"
+  },
+  {
+    "line": 669,
+    "before": "    haveI : Finite (ResidueField B) := ‹Finite (B ⧸ maximalIdeal B)›",
+    "after": "    have : Finite (ResidueField B) := ‹Finite (B ⧸ maximalIdeal B)›"
+  },
+  {
+    "line": 668,
+    "before": "  haveI : PerfectField (ResidueField B) := by",
+    "after": "  have : PerfectField (ResidueField B) := by"
+  },
+  {
+    "line": 671,
+    "before": "  haveI : FaithfulSMul (G ⧸ I) (FixedPoints.subring B I) :=",
+    "after": "  have : FaithfulSMul (G ⧸ I) (FixedPoints.subring B I) :="
+  },
+  {
+    "line": 673,
+    "before": "  haveI : (maximalIdeal (FixedPoints.subring B I)).LiesOver",
+    "after": "  have : (maximalIdeal (FixedPoints.subring B I)).LiesOver"
+  },
+  {
+    "line": 675,
+    "before": "  haveI : Finite (FixedPoints.subring (FixedPoints.subring B I) (G ⧸ I) ⧸",
+    "after": "  have : Finite (FixedPoints.subring (FixedPoints.subring B I) (G ⧸ I) ⧸"
+  },
+  {
+    "line": 677,
+    "before": "  haveI : Algebra.IsSeparable (FixedPoints.subring (FixedPoints.subring B I) (G ⧸ I) ⧸",
+    "after": "  have : Algebra.IsSeparable (FixedPoints.subring (FixedPoints.subring B I) (G ⧸ I) ⧸"
+  },
+  {
+    "line": 155,
+    "before": "  ⟨fun {h₁ h₂} hh => Subtype.ext (FaithfulSMul.eq_of_smul_eq_smul (M := G) (α := B) hh)⟩",
+    "after": "  ⟨fun {_h₁ h₂} hh => Subtype.ext (FaithfulSMul.eq_of_smul_eq_smul (M := G) (α := B) hh)⟩"
+  },
+  {
+    "line": 155,
+    "before": "  ⟨fun {_h₁ h₂} hh => Subtype.ext (FaithfulSMul.eq_of_smul_eq_smul (M := G) (α := B) hh)⟩",
+    "after": "  ⟨fun {_h₁ _h₂} hh => Subtype.ext (FaithfulSMul.eq_of_smul_eq_smul (M := G) (α := B) hh)⟩"
+  },
+  {
+    "line": 148,
+    "omit": "[Finite G]"
+  },
+  {
+    "line": 159,
+    "omit": "[Finite G]"
+  },
+  {
+    "line": 206,
+    "omit": "[Finite G]"
+  },
+  {
+    "line": 212,
+    "omit": "[Finite G]"
+  },
+  {
+    "line": 389,
+    "omit": "[Finite G]"
+  },
+  {
+    "line": 625,
+    "omit": "[Finite G]"
+  },
+  {
+    "line": 643,
+    "omit": "[Finite G]"
+  },
+  {
+    "api": "ENat.coe_le_coe",
+    "replacement": "ENat.natCast_le_natCast",
+    "count": 2
+  },
+  {
+    "api": "Set.mem_setOf_eq",
+    "replacement": "Set.mem_ofPred_eq",
+    "count": 1
+  },
+  {
+    "api": "dif_pos",
+    "replacement": "dite_eq_left",
+    "count": 2
+  },
+  {
+    "api": "if_pos",
+    "replacement": "ite_eq_left",
+    "count": 3
+  },
+  {
+    "api": "if_neg",
+    "replacement": "ite_eq_right",
+    "count": 1
+  }
+]

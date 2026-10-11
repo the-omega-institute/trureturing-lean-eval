@@ -1,0 +1,128 @@
+{
+  "module": "Submission.Supplier.P2M.Sol.S_IsDiscreteValuationRing_exists_finset_card_mul_card_upperRamificationGroup_le_forall_exists_sub_mul_finprod_smul_mem_pow",
+  "removed_terminally_rejected_attribute_names": [
+    "IsDedekindDomain.HeightOneSpectrum.instMulActionHomClassAlgHomTensorProductAdicCompletionForallValEqUnder_definitions"
+  ],
+  "canonical_before_sha256": "f6d17f703d5273e36929ba66b9dc745eee8714db510a93386bece273d9cfbe46",
+  "canonical_after_sha256": "38de73e2b7450503fe81f32cb6beadf3feadc83bff00dd7cc7103f4f6ea5f675",
+  "packaged_before_sha256": "b776f8c7604ed234b0188a5e26b874ac3cd51d9b84b707a1d45c38c617646935",
+  "failure_receipt": {
+    "sha256": "b776f8c7604ed234b0188a5e26b874ac3cd51d9b84b707a1d45c38c617646935",
+    "exit": 1,
+    "empty_output_retry_done": false,
+    "source_sha256_after": "b776f8c7604ed234b0188a5e26b874ac3cd51d9b84b707a1d45c38c617646935",
+    "source_unchanged": true,
+    "olean_sha256": null,
+    "seconds": 36.769236542000726,
+    "pid": 51190,
+    "command": [
+      "/Users/macstudio/.local/omega-shims/lean",
+      "-j1",
+      "--trust=0",
+      "-Ddebug.skipKernelTC=false",
+      "-R",
+      "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src",
+      "-o",
+      "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-build/lib/lean/Submission/Supplier/P2M/Sol/S_IsDiscreteValuationRing_exists_finset_card_mul_card_upperRamificationGroup_le_forall_exists_sub_mul_finprod_smul_mem_pow.olean",
+      "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_IsDiscreteValuationRing_exists_finset_card_mul_card_upperRamificationGroup_le_forall_exists_sub_mul_finprod_smul_mem_pow.lean"
+    ],
+    "make_wrapper_pid": 50139,
+    "make_exit": 2,
+    "make_entry_failed": false,
+    "cache_binding_valid": true,
+    "canonical_make_running_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/5d0968f01dd91405af17fb2f-1791733756723586000.make-running.json",
+    "canonical_make_terminal_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/5d0968f01dd91405af17fb2f-1791733756723586000.make-terminal.json",
+    "kernel_terminal_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/5d0968f01dd91405af17fb2f-1791733756723586000.kernel/result.json",
+    "direct_dependencies": [
+      {
+        "module": "Submission.Supplier.Definitions.Def_Mathlib_RingTheory_Valuation_UpperRamificationGroup",
+        "source_sha256": "a0aa1c43e7c58373167e01c2c3bcf9826b2e736fad9fb1343388727f93477c7d",
+        "object_sha256": "91d4ea687ea940820279c4c6979afefd0cc2dc64b32143006d09893784a03580",
+        "receipt_reused": true
+      },
+      {
+        "module": "Submission.Supplier.Definitions.Def_Mathlib_RingTheory_Invariant_FixedSubringLocal",
+        "source_sha256": "1b99ce83a298778817b5c9a83a25de106f574ef2bf2790a4a53e4124c0ee243b",
+        "object_sha256": "8b99cd4615d3bfdc56fec0af964c1c3e16b794eee19f85b38c943473d80c1450",
+        "receipt_reused": true
+      },
+      {
+        "module": "Submission.Supplier.Definitions.Def_RamificationChain_Wild",
+        "source_sha256": "bf6ec3c6c7ced6b0800692b46b3c4c38b7d411b6ef8e971f22d903c319241f77",
+        "object_sha256": "edb43bf6b3253e08cdfd9ab38fe05a62e3b0ac46adc582631c3b06bd4c4021db",
+        "receipt_reused": true
+      },
+      {
+        "module": "Submission.Supplier.Theorems.Thm_IsDiscreteValuationRing_hasseArfChain_lowerRamificationGroup_of_isMulCommutative",
+        "source_sha256": "575f8f03e389e792f5d047f0f61d2603e13a3f19c178e7b6fcf2c89599ef5125",
+        "object_sha256": "7a24c0dc9e7a5b1113da9ea4ccf238c6bb7845a8dc493915b62b4e5b3d0cbd6e",
+        "receipt_reused": true
+      },
+      {
+        "module": "Submission.Supplier.Theorems.Thm_IsDiscreteValuationRing_upperRamificationQuotientCompat_of_isSeparable_residueField",
+        "source_sha256": "1e1938227c13539c8e73178dd000dcc0f50df4a940d2c175ecb880fef0741865",
+        "object_sha256": "2ecc6c93da0544b2fb2b4eff11a807a4c0ef01b2647cfa3847574da3a976bcb4",
+        "receipt_reused": true
+      },
+      {
+        "module": "Submission.Supplier.Theorems.Thm_IsDiscreteValuationRing_map_lowerRamificationGroup_mk_eq_of_isSeparable_residueField",
+        "source_sha256": "99a6d3d69b0b8c3ff31294c06f394bd939a01ec49144b940c821f23ceb0ad894",
+        "object_sha256": "692bd6779fc9e9a87b7e7cd7316de64224dde3fcedb70e1bc11989f02ead3f88",
+        "receipt_reused": true
+      },
+      {
+        "module": "Submission.Supplier.Theorems.Thm_IsLocalRing_herbrandPhi_eq_herbrandPhi_quotient_comp_of_map_lowerRamificationGroup_mk_eq",
+        "source_sha256": "a77635be066d6314783b0ec1ce4e6845a0fc38f260a3ce28871c680d27b2aed0",
+        "object_sha256": "ec7b13fd63ab52a5c763e4b36c2ba52d7a4812d0ba444e2534bb89d033750e55",
+        "receipt_reused": true
+      },
+      {
+        "module": "Submission.Supplier.Theorems.Thm_FixedPoints_faithfulSMul_and_liesOver_and_isSeparable_and_perfectField_subring",
+        "source_sha256": "27cc16eb048392d579efbca782bdf9c413590fbc912527b2d35e3b9123daf665",
+        "object_sha256": "2ab375d9054a97dea6805b5cd491e78f8b53054ea4443a86f68e02ff3c015c17",
+        "receipt_reused": true
+      },
+      {
+        "module": "Submission.Supplier.Theorems.Thm_FixedPoints_isDiscreteValuationRing_subring",
+        "source_sha256": "66f95e2a2faab28ebb930cc764a1696f1c982feb0523b5baaa0508288d305b9c",
+        "object_sha256": "2fb797329ec27299fbb4c32d42f3445af2584a2c6f016d2ea8c8b34e328bf6d8",
+        "receipt_reused": true
+      },
+      {
+        "module": "Submission.Supplier.Theorems.Thm_IsDiscreteValuationRing_addVal_coe_eq_lowerRamificationCard_zero_mul_addVal_fixedPoints",
+        "source_sha256": "c392eb6ae807ac3bbc2bba617fe49bef81a54163eb043b7b416ccda1e68751c8",
+        "object_sha256": "b3dbf867511cafe170311488152b712ddc3c3f07f8ba86b62ae4f21c2432d7fc",
+        "receipt_reused": true
+      },
+      {
+        "module": "Submission.Supplier.Theorems.Thm_IsDiscreteValuationRing_exists_sub_finprod_smul_mem_pow_succ_of_lowerRamificationGroup_zero_eq_bot",
+        "source_sha256": "a56b9a87bf4c9f47fab052aa30669515221795f51a5a0e6820edd7d25040360e",
+        "object_sha256": "992d4fc57024fbf8c78fb87073869a0735d59c25133873ddba7094dcd83c2682",
+        "receipt_reused": true
+      },
+      {
+        "module": "Submission.Supplier.Theorems.Thm_IsDiscreteValuationRing_exists_finset_card_le_forall_exists_sub_mul_finprod_smul_mem_pow_of_prime_card",
+        "source_sha256": "a355167c16d2569bfd69de0f471bbe6aded8af8cc4b6f815425a347ce3438602",
+        "object_sha256": "8a2e9df7d3eac60f948a56236e7789255ce2558cd74386664d8a55faefac7407",
+        "receipt_reused": true
+      },
+      {
+        "module": "Submission.Supplier.Theorems.Thm_IsDiscreteValuationRing_finprod_smul_sub_one_mem_maximalIdeal_pow_of_sub_one_mem_pow_herbrand_of_prime_card",
+        "source_sha256": "9a47cb4883bccc75cf62319916bd8ad20fa92e8a1bebd8ebf348d95d2a800d48",
+        "object_sha256": "270f4074850341e2c2ee9745412a46d94ffb00cbf7e25eb4e7a8c126b974794a",
+        "receipt_reused": true
+      },
+      {
+        "module": "Submission.Supplier.P2M.Util",
+        "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+        "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+        "receipt_reused": true
+      }
+    ],
+    "stdout": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/5d0968f01dd91405af17fb2f-1791733756723586000.kernel/stdout.log",
+    "stderr": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/5d0968f01dd91405af17fb2f-1791733756723586000.kernel/stderr.log"
+  },
+  "mathematical_source_unchanged": true,
+  "new_compilation_pending": true,
+  "packaged_after_sha256": "4d6d1a1fa14d7fa401f5f6a7323bcbc2abdd60800945e439fb8040dbdbfccc87"
+}

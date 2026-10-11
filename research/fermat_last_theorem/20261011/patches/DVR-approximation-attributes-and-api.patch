@@ -1,0 +1,285 @@
+--- a/P2M/Sol/S_IsDiscreteValuationRing_exists_finset_card_mul_card_upperRamificationGroup_le_forall_exists_sub_mul_finprod_smul_mem_pow.lean
++++ b/P2M/Sol/S_IsDiscreteValuationRing_exists_finset_card_mul_card_upperRamificationGroup_le_forall_exists_sub_mul_finprod_smul_mem_pow.lean
+@@ -14,7 +14,7 @@
+ import Theorems.Thm_IsDiscreteValuationRing_finprod_smul_sub_one_mem_maximalIdeal_pow_of_sub_one_mem_pow_herbrand_of_prime_card
+ import P2M.Util
+ namespace P2MW.S_IsDiscreteValuationRing_exists_finset_card_mul_card_upperRamificationGroup_le_forall_exists_sub_mul_finprod_smul_mem_pow
+-attribute [-instance] IsDedekindDomain.HeightOneSpectrum.Extension.instAlgebraSubtypeAdicCompletionMemValuationSubringAdicCompletionIntegersValEqUnder IsDedekindDomain.HeightOneSpectrum.Extension.instAlgebraSubtypeAdicCompletionMemValuationSubringAdicCompletionIntegersValEqUnder_1 IsDedekindDomain.HeightOneSpectrum.instMulActionHomClassAlgHomTensorProductAdicCompletionForallValEqUnder_definitions IsDedekindDomain.HeightOneSpectrum.Extension.instAlgebraAdicCompletionValEqUnder IsDedekindDomain.HeightOneSpectrum.adicCompletion.instFiniteForallValEqUnderOfFiniteDimensional_definitions IsDedekindDomain.HeightOneSpectrum.instIsBiscalarSubtypeAdicCompletionMemValuationSubringAdicCompletionIntegersTensorProductCoeAlgHomTensorAdicCompletionIntegersTo IsDedekindDomain.HeightOneSpectrum.Extension.instContinuousSMulAdicCompletionValEqUnder IsDedekindDomain.HeightOneSpectrum.adicCompletion.instIsModuleTopology IsDedekindDomain.HeightOneSpectrum.Extension.instFiniteSubtypeAdicCompletionMemValuationSubringAdicCompletionIntegersValEqUnderOfFiniteDimensional IsDedekindDomain.HeightOneSpectrum.adicCompletion.instFiniteValEqUnderOfFiniteDimensional_definitions instIsBiscalarTensorProductCoeAlgHomBaseChange_of_algebraMap IsDedekindDomain.HeightOneSpectrum.instIsScalarTowerSubtypeAdicCompletionMemValuationSubringAdicCompletionIntegersValEqUnder_definitions IsDedekindDomain.HeightOneSpectrum.adicCompletion.instIsModuleTopologyPi IsDedekindDomain.HeightOneSpectrum.instLiesOverSubtypeAdicCompletionMemValuationSubringAdicCompletionIntegersCompletionIdealAsIdeal Submodule.instIsTopologicalModuleSubtypeMem Pi.instTopologicalModule IsTopologicalModule.toContinuousSMul IsTopologicalModule.toContinuousAdd instFunLike SemialgHomClass.toSemilinearMapClass instCoeTCSemialgHom SemialgHomClass.toRingHomClass SemialgHomClass.instSemialgHom
++attribute [-instance] IsDedekindDomain.HeightOneSpectrum.Extension.instAlgebraSubtypeAdicCompletionMemValuationSubringAdicCompletionIntegersValEqUnder IsDedekindDomain.HeightOneSpectrum.Extension.instAlgebraSubtypeAdicCompletionMemValuationSubringAdicCompletionIntegersValEqUnder_1 IsDedekindDomain.HeightOneSpectrum.Extension.instAlgebraAdicCompletionValEqUnder IsDedekindDomain.HeightOneSpectrum.instIsBiscalarSubtypeAdicCompletionMemValuationSubringAdicCompletionIntegersTensorProductCoeAlgHomTensorAdicCompletionIntegersTo IsDedekindDomain.HeightOneSpectrum.Extension.instContinuousSMulAdicCompletionValEqUnder IsDedekindDomain.HeightOneSpectrum.adicCompletion.instIsModuleTopology IsDedekindDomain.HeightOneSpectrum.Extension.instFiniteSubtypeAdicCompletionMemValuationSubringAdicCompletionIntegersValEqUnderOfFiniteDimensional instIsBiscalarTensorProductCoeAlgHomBaseChange_of_algebraMap IsDedekindDomain.HeightOneSpectrum.adicCompletion.instIsModuleTopologyPi IsDedekindDomain.HeightOneSpectrum.instLiesOverSubtypeAdicCompletionMemValuationSubringAdicCompletionIntegersCompletionIdealAsIdeal Submodule.instIsTopologicalModuleSubtypeMem Pi.instTopologicalModule IsTopologicalModule.toContinuousSMul IsTopologicalModule.toContinuousAdd instFunLike SemialgHomClass.toSemilinearMapClass instCoeTCSemialgHom SemialgHomClass.toRingHomClass SemialgHomClass.instSemialgHom
+ attribute [-simp] IsLocalRing.lowerRamificationGroup_subgroupOf IsLocalRing.lowerRamificationGroup_map_subtype ValuationSubring.lowerRamificationGroup_map_subtype ValuationSubring.lowerRamificationGroup_subgroupOf SemialgHom.baseChange_of_algebraMap_tmul_left SemialgHom.baseChangeRightOfAlgebraMap_apply Pi.semialgHomPi_apply Pi.semialgHom_apply Module.Basis.rightBaseChange_apply LinearEquiv.coe_mulLeft LinearEquiv.coe_mulRight WithVal.semialgebraMap_toFun_ofVal Module.Basis.rightBaseChange_repr IsDedekindDomain.HeightOneSpectrum.adicCompletionIntegers.tensorCoe_tmul IsDedekindDomain.HeightOneSpectrum.tensorAdicCompletionIntegersTo_tmul SemialgHom.baseChangeRightOfAlgebraMap_coe IsDedekindDomain.HeightOneSpectrum.adicCompletion.integerBaseChangeLinearEquiv_tmul_apply SemialgHom.baseChange_of_algebraMap_tmul_right IsLocalization.map_moduleTensorEquiv_symm_tmul IsLocalization.leftModuleTensorEquiv_apply IsLocalization.moduleLid_symm_apply IsLocalization.leftModuleTensorEquiv_symm_apply IsLocalization.map_moduleTensorEquiv_tmul IsModuleTopology.continuousLinearEquiv_apply AlgEquiv.extendScalars_symm_apply IsModuleTopology.Module.Basis.equivFun_homeo_symm_apply IsModuleTopology.Module.Basis.equivFun_homeo_apply IsModuleTopology.continuousAlgEquivOfIsBiscalar_apply AlgEquiv.extendScalars_apply IsModuleTopology.continuousLinearEquiv_symm_apply SemialgHom.restrictScalars_toFun SemialgHom.mk.sizeOf_spec SemialgHom.mk.injEq SemialgHom.coe_coe coe_mk TensorProduct.RightActions.smul_def TensorProduct.RightActions.Module.TensorProduct.comm_symm_apply_tmul TensorProduct.RightActions.LinearMap.baseChange_id TensorProduct.RightActions.algebraMap_eval TensorProduct.RightActions.Module.TensorProduct.comm_apply_tmul
+ attribute [-simp] TensorProduct.RightActions.Algebra.TensorProduct.comm_symm_apply_tmul TensorProduct.RightActions.Algebra.TensorProduct.comm_apply_tmul
+ 
+@@ -132,7 +132,7 @@
+     simp
+   | coe k =>
+     rw [show ((lowerRamificationCard B G 0 : ℕ) : ℕ∞) * (k : ℕ∞) = ((lowerRamificationCard B G 0 * k : ℕ) : ℕ∞) by push_cast; rfl]
+-    rw [ENat.coe_le_coe, ENat.coe_le_coe]
++    rw [ENat.natCast_le_natCast, ENat.natCast_le_natCast]
+     exact ⟨fun h => Nat.mul_le_mul_left _ h, fun h => Nat.le_of_mul_le_mul_left h (Nat.pos_of_ne_zero he)⟩
+ 
+ omit [IsDomain B] [IsDiscreteValuationRing B] [Finite G] in
+@@ -145,6 +145,7 @@
+ 
+ omit [IsDomain B] [IsDiscreteValuationRing B] in
+ 
++omit [Finite G] in
+ lemma liesOver_fixedPoints [IsLocalRing B] :
+     (maximalIdeal B).LiesOver (maximalIdeal (FixedPoints.subring B G)) :=
+   ⟨FixedPoints.maximalIdeal_subring_eq_comap⟩
+@@ -152,10 +153,11 @@
+ omit [IsDomain B] [IsDiscreteValuationRing B] [Finite G] in
+ 
+ lemma faithfulSMul_subgroup [FaithfulSMul G B] (H : Subgroup G) : FaithfulSMul H B :=
+-  ⟨fun {h₁ h₂} hh => Subtype.ext (FaithfulSMul.eq_of_smul_eq_smul (M := G) (α := B) hh)⟩
++  ⟨fun {_h₁ _h₂} hh => Subtype.ext (FaithfulSMul.eq_of_smul_eq_smul (M := G) (α := B) hh)⟩
+ 
+ omit [IsDomain B] [IsDiscreteValuationRing B] in
+ 
++omit [Finite G] in
+ lemma finite_residue_fixedPoints [IsLocalRing B] [Finite (B ⧸ maximalIdeal B)] :
+     Finite (FixedPoints.subring B G ⧸ maximalIdeal (FixedPoints.subring B G)) := by
+   have : Finite (ResidueField B) := ‹Finite (B ⧸ maximalIdeal B)›
+@@ -170,8 +172,8 @@
+     [(maximalIdeal B).LiesOver (maximalIdeal (FixedPoints.subring B G))]
+     [Finite (FixedPoints.subring B G ⧸ maximalIdeal (FixedPoints.subring B G))] [Finite (B ⧸ maximalIdeal B)] :
+     Algebra.IsSeparable (FixedPoints.subring B G ⧸ maximalIdeal (FixedPoints.subring B G)) (B ⧸ maximalIdeal B) := by
+-  letI : Field (FixedPoints.subring B G ⧸ maximalIdeal (FixedPoints.subring B G)) := Ideal.Quotient.field _
+-  letI : Field (B ⧸ maximalIdeal B) := Ideal.Quotient.field _
++  let : Field (FixedPoints.subring B G ⧸ maximalIdeal (FixedPoints.subring B G)) := Ideal.Quotient.field _
++  let : Field (B ⧸ maximalIdeal B) := Ideal.Quotient.field _
+   have : Module.Finite (FixedPoints.subring B G ⧸ maximalIdeal (FixedPoints.subring B G)) (B ⧸ maximalIdeal B) :=
+     Module.Finite.of_finite
+   have : Algebra.IsAlgebraic (FixedPoints.subring B G ⧸ maximalIdeal (FixedPoints.subring B G)) (B ⧸ maximalIdeal B) :=
+@@ -193,7 +195,7 @@
+   by_contra hlt
+   rw [not_le] at hlt
+   have hmem' := Nat.sInf_mem ⟨n, hmem⟩
+-  simp only [Set.mem_setOf_eq] at hmem'
++  simp only [Set.mem_ofPred_eq] at hmem'
+   have := herbrandPhi_strictMono (R := R) (G := G) (show ((sInf {k : ℕ | (m : ℚ) ≤ herbrandPhi R G k} : ℕ) : ℚ) < n by
+     exact_mod_cast hlt)
+   rw [h] at this
+@@ -203,12 +205,14 @@
+     upperRamificationGroup R G m = lowerRamificationGroup R G n := by
+   unfold upperRamificationGroup; rw [upperRamificationIndex_eq_of_herbrandPhi_eq h]
+ 
++omit [Finite G] in
+ lemma lowerRamificationCard_of_prime_of_le {t : ℕ} (ht : lowerRamificationGroup R G t = ⊤) {i : ℕ} (hi : i ≤ t) :
+     lowerRamificationCard R G i = Nat.card G := by
+   unfold lowerRamificationCard
+   have : lowerRamificationGroup R G i = ⊤ := top_le_iff.mp (ht ▸ lowerRamificationGroup_antitone hi)
+   rw [this, Subgroup.card_top]
+ 
++omit [Finite G] in
+ lemma lowerRamificationCard_of_prime_of_lt {t : ℕ} (ht' : lowerRamificationGroup R G (t + 1) = ⊥) {i : ℕ} (hi : t < i) :
+     lowerRamificationCard R G i = 1 := by
+   unfold lowerRamificationCard
+@@ -306,7 +310,7 @@
+     ∃ H : Subgroup G, (Nat.card H).Prime := by
+   classical
+   obtain ⟨p, hp, hpd⟩ := Nat.exists_prime_and_dvd h
+-  haveI : Fact p.Prime := ⟨hp⟩
++  have : Fact p.Prime := ⟨hp⟩
+   obtain ⟨g, hg⟩ := exists_prime_orderOf_dvd_card' (G := G) p hpd
+   exact ⟨Subgroup.zpowers g, by rw [Nat.card_zpowers, hg]; exact hp⟩
+ 
+@@ -320,9 +324,9 @@
+ lemma exists_jump_of_prime (H : Subgroup G) (hℓ : (Nat.card H).Prime) (hH0 : lowerRamificationGroup B H 0 = ⊤) :
+     ∃ t : ℕ, lowerRamificationGroup B H t = ⊤ ∧ lowerRamificationGroup B H (t + 1) = ⊥ := by
+   classical
+-  haveI : FaithfulSMul H B := faithfulSMul_subgroup H
+-  haveI : Fact (Nat.card H).Prime := ⟨hℓ⟩
+-  haveI : Nontrivial H := Finite.one_lt_card_iff_nontrivial.mp (by rw [show Nat.card H = Nat.card H from rfl]; exact hℓ.one_lt)
++  have : FaithfulSMul H B := faithfulSMul_subgroup H
++  have : Fact (Nat.card H).Prime := ⟨hℓ⟩
++  have : Nontrivial H := Finite.one_lt_card_iff_nontrivial.mp (by rw [show Nat.card H = Nat.card H from rfl]; exact hℓ.one_lt)
+ 
+   have hbot : ∃ N : ℕ, lowerRamificationGroup B H N = ⊥ := by
+     by_contra hall
+@@ -386,6 +390,7 @@
+ 
+ variable {G : Type*} [Group G] [Finite G] [MulSemiringAction G B]
+ 
++omit [Finite G] in
+ lemma isUnit_smul' (g : G) {b : B} (hb : IsUnit b) : IsUnit (g • b) :=
+   hb.map (MulSemiringAction.toRingHom G B g)
+ 
+@@ -417,8 +422,8 @@
+     {G : Type*} [Group G] [Finite G] [MulSemiringAction G B] (hG : Nat.card G = 1) (m : ℕ) :
+     Conclusion B G (Nat.card G) m := by
+   classical
+-  haveI : Subsingleton G := (Nat.card_eq_one_iff_unique.mp hG).1
+-  haveI : Unique G := uniqueOfSubsingleton 1
++  have : Subsingleton G := (Nat.card_eq_one_iff_unique.mp hG).1
++  have : Unique G := uniqueOfSubsingleton 1
+   have hall : ∀ i, lowerRamificationGroup B G i = ⊤ := fun i => Subsingleton.elim _ _
+   have hφ : herbrandPhi B G m = m := herbrandPhi_of_le_jump (hall m) le_rfl
+   have hk : upperRamificationIndex B G m = m := upperRamificationIndex_eq_of_herbrandPhi_eq hφ
+@@ -429,44 +434,44 @@
+     fun u _ hu => by rw [hN]; simpa [hG, hk] using hu, ⟨m, hφ⟩⟩
+   rw [hN, one_mul, sub_self, hG]; exact Ideal.zero_mem _
+ 
+-theorem conclusion_of_totallyRamified (n : ℕ) :
+-    ∀ (B : Type*) [CommRing B] [IsDomain B] [IsDiscreteValuationRing B]
++theorem conclusion_of_totallyRamified (n : ℕ)
++    (B : Type*) [CommRing B] [IsDomain B] [IsDiscreteValuationRing B]
+       (G : Type*) [Group G] [Finite G] [MulSemiringAction G B] [FaithfulSMul G B] [IsMulCommutative G]
+       [(maximalIdeal B).LiesOver (maximalIdeal (FixedPoints.subring B G))]
+       [Algebra.IsSeparable (FixedPoints.subring B G ⧸ maximalIdeal (FixedPoints.subring B G)) (B ⧸ maximalIdeal B)]
+-      [Finite (B ⧸ maximalIdeal B)],
++      [Finite (B ⧸ maximalIdeal B)] :
+       Nat.card G = n → lowerRamificationGroup B G 0 = ⊤ → ∀ m : ℕ, Conclusion B G (Nat.card G) m := by
+-  induction n using Nat.strong_induction_on with
++  induction n using Nat.strong_induction_on generalizing B G with
+   | _ n ih =>
+-    intro B _ _ _ G _ _ _ _ _ _ _ _ hn h0 m
++    intro hn h0 m
+     classical
+     by_cases htriv : Nat.card G = 1
+     · exact conclusion_of_card_eq_one htriv m
+ 
+     obtain ⟨H, hℓ⟩ := exists_subgroup_card_prime htriv
+-    haveI : H.Normal := normal_of_isMulCommutative H
+-    haveI : Fact (Nat.card H).Prime := ⟨hℓ⟩
+-
+-    haveI : FaithfulSMul H B := faithfulSMul_subgroup H
+-    haveI : (maximalIdeal B).LiesOver (maximalIdeal (FixedPoints.subring B H)) := liesOver_fixedPoints
+-    haveI : Finite (FixedPoints.subring B H ⧸ maximalIdeal (FixedPoints.subring B H)) := finite_residue_fixedPoints
+-    haveI : Algebra.IsSeparable (FixedPoints.subring B H ⧸ maximalIdeal (FixedPoints.subring B H)) (B ⧸ maximalIdeal B) :=
++    have : H.Normal := normal_of_isMulCommutative H
++    have : Fact (Nat.card H).Prime := ⟨hℓ⟩
++
++    have : FaithfulSMul H B := faithfulSMul_subgroup H
++    have : (maximalIdeal B).LiesOver (maximalIdeal (FixedPoints.subring B H)) := liesOver_fixedPoints
++    have : Finite (FixedPoints.subring B H ⧸ maximalIdeal (FixedPoints.subring B H)) := finite_residue_fixedPoints
++    have : Algebra.IsSeparable (FixedPoints.subring B H ⧸ maximalIdeal (FixedPoints.subring B H)) (B ⧸ maximalIdeal B) :=
+       isSeparable_residue_of_finite
+-    haveI : IsDiscreteValuationRing (FixedPoints.subring B H) := FixedPoints.isDiscreteValuationRing_subring
+-
+-    haveI : PerfectField (ResidueField B) := by
+-      haveI : Finite (ResidueField B) := ‹Finite (B ⧸ maximalIdeal B)›
++    have : IsDiscreteValuationRing (FixedPoints.subring B H) := FixedPoints.isDiscreteValuationRing_subring
++
++    have : PerfectField (ResidueField B) := by
++      have : Finite (ResidueField B) := ‹Finite (B ⧸ maximalIdeal B)›
+       infer_instance
+-    haveI : FaithfulSMul (G ⧸ H) (FixedPoints.subring B H) :=
++    have : FaithfulSMul (G ⧸ H) (FixedPoints.subring B H) :=
+       (FixedPoints.faithfulSMul_and_liesOver_and_isSeparable_and_perfectField_subring (R := B) (G := G) H).1
+-    haveI : (maximalIdeal (FixedPoints.subring B H)).LiesOver
++    have : (maximalIdeal (FixedPoints.subring B H)).LiesOver
+         (maximalIdeal (FixedPoints.subring (FixedPoints.subring B H) (G ⧸ H))) := liesOver_fixedPoints
+-    haveI : Finite (FixedPoints.subring (FixedPoints.subring B H) (G ⧸ H) ⧸
++    have : Finite (FixedPoints.subring (FixedPoints.subring B H) (G ⧸ H) ⧸
+         maximalIdeal (FixedPoints.subring (FixedPoints.subring B H) (G ⧸ H))) := finite_residue_fixedPoints
+-    haveI : Algebra.IsSeparable (FixedPoints.subring (FixedPoints.subring B H) (G ⧸ H) ⧸
++    have : Algebra.IsSeparable (FixedPoints.subring (FixedPoints.subring B H) (G ⧸ H) ⧸
+         maximalIdeal (FixedPoints.subring (FixedPoints.subring B H) (G ⧸ H)))
+         (FixedPoints.subring B H ⧸ maximalIdeal (FixedPoints.subring B H)) := isSeparable_residue_of_finite
+-    haveI : IsMulCommutative (G ⧸ H) := isMulCommutative_quotient H
++    have : IsMulCommutative (G ⧸ H) := isMulCommutative_quotient H
+ 
+     have hH0 : lowerRamificationGroup B H 0 = ⊤ := by rw [lowerRamificationGroup_subgroup, h0, Subgroup.top_subgroupOf]
+     obtain ⟨t, ht, ht'⟩ := exists_jump_of_prime H hℓ hH0
+@@ -507,7 +512,7 @@
+       ((∏ᶠ c : G ⧸ H, c • (⟨y, hy⟩ : FixedPoints.subring B H) : FixedPoints.subring B H) : B) else 1
+     have hNQ : ∀ (y : B) (hy : ∀ h : H, h • y = y),
+         NQ y = ((∏ᶠ c : G ⧸ H, c • (⟨y, hy⟩ : FixedPoints.subring B H) : FixedPoints.subring B H) : B) :=
+-      fun y hy => dif_pos hy
++      fun y hy => dite_eq_left hy
+     refine ⟨⟨Finset.image₂ (fun x y => x * NQ y) (S'.image (↑)) SH, ?_, ?_, ?_⟩, ?_, ⟨psiPrime (Nat.card H) t k', hφ⟩⟩
+     ·
+       have hsub : ∀ j : ℕ, Nat.card ((upperRamificationGroup B G j).subgroupOf H) =
+@@ -523,13 +528,13 @@
+           Nat.card (lowerRamificationGroup B H (psiPrime (Nat.card H) t k')) := by
+         by_cases hkt : k' = t
+         · have h1 : lowerRamificationGroup B H (psiPrime (Nat.card H) t k') = ⊤ := by
+-            rw [hkt]; unfold psiPrime; rw [if_pos le_rfl]; exact ht
++            rw [hkt]; unfold psiPrime; rw [ite_eq_left le_rfl]; exact ht
+           have h2 : lowerRamificationGroup B H (psiPrime (Nat.card H) t k'') = ⊥ :=
+             le_bot_iff.mp (ht' ▸ lowerRamificationGroup_antitone
+               ((show t + 1 ≤ k'' by omega).trans (le_psiPrime hℓ.one_lt.le t k'')))
+-          rw [h1, h2, Subgroup.card_top, Subgroup.card_bot, mul_one, if_pos hkt] at *
+-          simpa [if_pos hkt] using hSHc
+-        · rw [if_neg hkt] at hSHc
++          rw [h1, h2, Subgroup.card_top, Subgroup.card_bot, mul_one, ite_eq_left hkt] at *
++          simpa [ite_eq_left hkt] using hSHc
++        · rw [ite_eq_right hkt] at hSHc
+           calc SH.card * Nat.card (lowerRamificationGroup B H (psiPrime (Nat.card H) t k''))
+               ≤ 1 * Nat.card (lowerRamificationGroup B H (psiPrime (Nat.card H) t k')) := by
+                 exact Nat.mul_le_mul hSHc (Subgroup.card_le_of_le (lowerRamificationGroup_antitone
+@@ -622,24 +627,29 @@
+ variable {B : Type*} [CommRing B] [IsLocalRing B]
+ variable {G : Type*} [Group G] [Finite G] [MulSemiringAction G B]
+ 
++omit [Finite G] in
+ lemma card_lowerRamificationGroup_inertia (i : ℕ) :
+     Nat.card (lowerRamificationGroup B (lowerRamificationGroup B G 0) i) = Nat.card (lowerRamificationGroup B G i) := by
+   rw [lowerRamificationGroup_subgroup]
+   exact Nat.card_congr (Subgroup.subgroupOfEquivOfLe (lowerRamificationGroup_antitone (Nat.zero_le i))).toEquiv
+ 
++omit [Finite G] in
+ lemma herbrandPhi_inertia : herbrandPhi B (lowerRamificationGroup B G 0) = herbrandPhi B G := by
+   funext u
+   unfold herbrandPhi lowerRamificationCard
+   simp only [card_lowerRamificationGroup_inertia]
+ 
++omit [Finite G] in
+ lemma upperRamificationIndex_inertia (v : ℚ) :
+     upperRamificationIndex B (lowerRamificationGroup B G 0) v = upperRamificationIndex B G v := by
+   unfold upperRamificationIndex; rw [herbrandPhi_inertia]
+ 
++omit [Finite G] in
+ lemma card_upperRamificationGroup_inertia (v : ℚ) :
+     Nat.card (upperRamificationGroup B (lowerRamificationGroup B G 0) v) = Nat.card (upperRamificationGroup B G v) := by
+   unfold upperRamificationGroup; rw [upperRamificationIndex_inertia]; exact card_lowerRamificationGroup_inertia _
+ 
++omit [Finite G] in
+ lemma smul_sub_one_mem_pow (g : G) {x : B} {n : ℕ} (hx : x - 1 ∈ maximalIdeal B ^ n) : g • x - 1 ∈ maximalIdeal B ^ n := by
+   have : g • x - 1 = g • (x - 1) := by rw [smul_sub, smul_one]
+   rw [this]
+@@ -658,23 +668,23 @@
+   classical
+   set I : Subgroup G := lowerRamificationGroup B G 0 with hIdef
+ 
+-  haveI : FaithfulSMul I B := faithfulSMul_subgroup I
+-  haveI : (maximalIdeal B).LiesOver (maximalIdeal (FixedPoints.subring B I)) := liesOver_fixedPoints
+-  haveI : Finite (FixedPoints.subring B I ⧸ maximalIdeal (FixedPoints.subring B I)) := finite_residue_fixedPoints
+-  haveI : Algebra.IsSeparable (FixedPoints.subring B I ⧸ maximalIdeal (FixedPoints.subring B I)) (B ⧸ maximalIdeal B) :=
++  have : FaithfulSMul I B := faithfulSMul_subgroup I
++  have : (maximalIdeal B).LiesOver (maximalIdeal (FixedPoints.subring B I)) := liesOver_fixedPoints
++  have : Finite (FixedPoints.subring B I ⧸ maximalIdeal (FixedPoints.subring B I)) := finite_residue_fixedPoints
++  have : Algebra.IsSeparable (FixedPoints.subring B I ⧸ maximalIdeal (FixedPoints.subring B I)) (B ⧸ maximalIdeal B) :=
+     isSeparable_residue_of_finite
+-  haveI : IsDiscreteValuationRing (FixedPoints.subring B I) := FixedPoints.isDiscreteValuationRing_subring
+-  haveI : IsMulCommutative I := ⟨⟨fun a b => Subtype.ext (IsMulCommutative.is_comm.comm (a : G) b)⟩⟩
+-  haveI : PerfectField (ResidueField B) := by
+-    haveI : Finite (ResidueField B) := ‹Finite (B ⧸ maximalIdeal B)›
++  have : IsDiscreteValuationRing (FixedPoints.subring B I) := FixedPoints.isDiscreteValuationRing_subring
++  have : IsMulCommutative I := ⟨⟨fun a b => Subtype.ext (IsMulCommutative.is_comm.comm (a : G) b)⟩⟩
++  have : PerfectField (ResidueField B) := by
++    have : Finite (ResidueField B) := ‹Finite (B ⧸ maximalIdeal B)›
+     infer_instance
+-  haveI : FaithfulSMul (G ⧸ I) (FixedPoints.subring B I) :=
++  have : FaithfulSMul (G ⧸ I) (FixedPoints.subring B I) :=
+     (FixedPoints.faithfulSMul_and_liesOver_and_isSeparable_and_perfectField_subring (R := B) (G := G) I).1
+-  haveI : (maximalIdeal (FixedPoints.subring B I)).LiesOver
++  have : (maximalIdeal (FixedPoints.subring B I)).LiesOver
+       (maximalIdeal (FixedPoints.subring (FixedPoints.subring B I) (G ⧸ I))) := liesOver_fixedPoints
+-  haveI : Finite (FixedPoints.subring (FixedPoints.subring B I) (G ⧸ I) ⧸
++  have : Finite (FixedPoints.subring (FixedPoints.subring B I) (G ⧸ I) ⧸
+       maximalIdeal (FixedPoints.subring (FixedPoints.subring B I) (G ⧸ I))) := finite_residue_fixedPoints
+-  haveI : Algebra.IsSeparable (FixedPoints.subring (FixedPoints.subring B I) (G ⧸ I) ⧸
++  have : Algebra.IsSeparable (FixedPoints.subring (FixedPoints.subring B I) (G ⧸ I) ⧸
+       maximalIdeal (FixedPoints.subring (FixedPoints.subring B I) (G ⧸ I)))
+       (FixedPoints.subring B I ⧸ maximalIdeal (FixedPoints.subring B I)) := isSeparable_residue_of_finite
+ 
+@@ -694,7 +704,7 @@
+     ((∏ᶠ c : G ⧸ I, c • (⟨y, hy⟩ : FixedPoints.subring B I) : FixedPoints.subring B I) : B) else 1
+   have hNQ : ∀ (y : B) (hy : ∀ h : I, h • y = y),
+       NQ y = ((∏ᶠ c : G ⧸ I, c • (⟨y, hy⟩ : FixedPoints.subring B I) : FixedPoints.subring B I) : B) :=
+-    fun y hy => dif_pos hy
++    fun y hy => dite_eq_left hy
+ 
+   have hNQ1 : ∀ (u : FixedPoints.subring B I) (j : ℕ), u - 1 ∈ maximalIdeal (FixedPoints.subring B I) ^ j →
+       (∏ᶠ c : G ⧸ I, c • u) - 1 ∈ maximalIdeal (FixedPoints.subring B I) ^ j := fun u j hu =>

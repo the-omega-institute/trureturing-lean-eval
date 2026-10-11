@@ -1,6 +1,6 @@
 # FLT source checkpoint — 2026-10-11
 
-This checkpoint saves seven verified repairs in the ongoing port of
+This checkpoint saves eight verified repairs in the ongoing port of
 `anthropics/fermats-last-theorem@6e837e75355538c7f80bab5b956861e86c4eacc2`.
 The source files are complete canonical modules; patches show this checkpoint's changes
 against the immediately preceding local port. Import adaptation for the official
@@ -10,7 +10,7 @@ CuspForm uses an explicit residue-field cancellation proof. Deformation uses the
 current polynomial coefficient API and limits legacy implicit-argument transparency
 to `namespace Univ`. Both retain their original hypotheses and conclusions.
 
-The seven repaired modules passed the canonical single-job `make lean` entry
+The eight repaired modules passed the canonical single-job `make lean` entry
 with `--trust=0` and kernel type checking enabled. CuspForm and Deformation
 also have successful associated theorem checks. The latest HeckeEis repair
 uses an explicit `zsmul_eq_mul` application for the ZMod target; its associated
@@ -61,3 +61,11 @@ The Cerednik–Drinfeld ribbon module now obtains ambient finite generators usin
 warnings were corrected. Its complete module passed the canonical single-job
 make/kernel check with no warnings and an axiom closure containing only
 `propext`, `Classical.choice`, and `Quot.sound`. The solution statement is unchanged.
+
+The DVR approximation module removes four optional instance attributes rejected
+by the actual compiler, updates deprecated API calls, and clears the reported
+style, unused-variable, and overlapping-instance warnings. The induction helper
+now binds its ring and group parameters explicitly. The final full module passed
+the canonical single-job make/kernel check with empty stdout and stderr
+(kernel 18.56 seconds); its diagnostic query was removed and the solution
+statement remains unchanged. Failed and successful receipts are retained.
