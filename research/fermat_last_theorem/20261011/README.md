@@ -28,10 +28,10 @@ unchanged. A prior successful Lean environment query identified the names, and
 the repaired complete module passed a fresh make/kernel check. Its patch starts
 after the three earlier individual attribute removals by the existing watcher.
 
-The associated specialization-surjectivity theorem card is saved as pending
-validation. The same missing optional attributes were removed after actual Lean
-failures; the patch starts after the existing watcher removed the first four
-names. A prior successful environment query confirms the remaining four absent
-names. Its theorem statement and proof body are unchanged, and the existing
-single-job controller will validate it. No successful theorem-card check is
-claimed by this pending checkpoint.
+The associated specialization-surjectivity theorem card also passed the same
+canonical single-job make/kernel validation (kernel 6.92 seconds),
+with empty stdout and stderr. The same missing optional attributes were removed
+after actual Lean failures; the patch starts after the existing watcher removed
+the first four names. A prior successful environment query confirms the remaining
+four absent names. Its theorem statement and proof body are unchanged. The new
+receipts are saved under `receipts/PlaceSpecialization-theorem-card/`.
