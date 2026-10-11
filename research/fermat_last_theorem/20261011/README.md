@@ -1,6 +1,6 @@
 # FLT source checkpoint — 2026-10-11
 
-This checkpoint saves nine verified repairs in the ongoing port of
+This checkpoint saves ten verified repairs in the ongoing port of
 `anthropics/fermats-last-theorem@6e837e75355538c7f80bab5b956861e86c4eacc2`.
 The source files are complete canonical modules; patches show this checkpoint's changes
 against the immediately preceding local port. Import adaptation for the official
@@ -10,12 +10,12 @@ CuspForm uses an explicit residue-field cancellation proof. Deformation uses the
 current polynomial coefficient API and limits legacy implicit-argument transparency
 to `namespace Univ`. Both retain their original hypotheses and conclusions.
 
-The nine repaired modules passed the canonical single-job `make lean` entry
+The ten repaired modules passed the canonical single-job `make lean` entry
 with `--trust=0` and kernel type checking enabled. CuspForm and Deformation
 also have successful associated theorem checks. The latest HeckeEis repair
 uses an explicit `zsmul_eq_mul` application for the ZMod target; its associated
 theorem check has also passed make/kernel validation. The attached receipts record the repaired source modules. The final versions
-of all nine repaired source modules have now passed checks without warnings;
+of all ten repaired source modules have now passed checks without warnings;
 unchanged supplier modules retain some existing warnings.
 
 This is a progress checkpoint. The complete Submission root, comparator,
@@ -97,11 +97,10 @@ final modules passed fresh single-job make/kernel validation without warnings;
 their solution statements and earlier substantive compatibility repairs remain
 intact. Their original diagnostics and final receipts are retained.
 
-The standard-smooth localization repair is pending compilation. The actual
-failure used zero-based `List.TFAE.out` indices against the official Mathlib's
-one-based API. The candidate uses `.out 5 1`, migrates the reported deprecated
-tactic and polynomial equivalence, and updates the reported local declaration
-style. All theorem statements are unchanged. Original failure receipts and the
-exact patch are retained under `receipts/StandardSmooth-localization-TFAE/`.
-This candidate is excluded from the nine verified repairs until the existing
-single compiler queue produces successful make and kernel terminal receipts.
+The standard-smooth localization module now uses the official Mathlib's
+one-based `List.TFAE.out` indices (`.out 5 1`). The reported deprecated tactic,
+polynomial equivalence, and local declaration style were updated. All theorem
+statements are unchanged. The complete repaired module passed canonical
+single-job make and kernel checks (kernel 27.34 seconds), with empty stdout and
+stderr. Original failure receipts and the exact patch are retained under
+`receipts/StandardSmooth-localization-TFAE/`.
