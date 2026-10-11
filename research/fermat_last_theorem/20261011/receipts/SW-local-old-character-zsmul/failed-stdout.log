@@ -1,0 +1,126 @@
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_ModularCurve_SW_local_old_smul_top_eq_top_of_not_hasLowerLevelTorsion_aux2.lean:29:2: warning: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_ModularCurve_SW_local_old_smul_top_eq_top_of_not_hasLowerLevelTorsion_aux2.lean:95:2: warning: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_ModularCurve_SW_local_old_smul_top_eq_top_of_not_hasLowerLevelTorsion_aux2.lean:112:2: warning: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_ModularCurve_SW_local_old_smul_top_eq_top_of_not_hasLowerLevelTorsion_aux2.lean:113:2: warning: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_ModularCurve_SW_local_old_smul_top_eq_top_of_not_hasLowerLevelTorsion_aux2.lean:130:36: error: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  ?f (?n • ?g)
+in the target expression
+  Z (b • lam (g x)) = b • Z (lam (g x))
+
+case refine_3
+p : ℕ
+inst✝⁴ : Fact (Nat.Prime p)
+V : Type u_1
+inst✝³ : AddCommGroup V
+Xo : Type u_2
+inst✝² : AddCommGroup Xo
+inst✝¹ : Module HeckeAlg Xo
+𝔪 : Ideal HeckeAlg
+hp : ↑p ∈ 𝔪
+good : Nat.Primes → Prop
+B : Nat.Primes → V →+ V
+e : V →+ Xo
+he : ∀ (ℓ : Nat.Primes), good ℓ → ∀ (v : V), heckeGen ℓ • e v = e ((B ℓ) v)
+v₀ : V
+G : Type u_3
+inst✝ : AddCommGroup G
+Z : ZMod p →+ G
+hZ : Function.Injective ⇑Z
+W : Submodule HeckeAlg Xo := 𝔪 • ⊤
+hv₀ : e v₀ ∉ W
+hkill : ∀ (m : Xo ⧸ W), p • m = 0
+modp : Module (ZMod p) (Xo ⧸ W)
+g : V →+ Xo ⧸ W := W.mkQ.toAddMonoidHom.comp e
+hg_apply : ∀ (v : V), g v = W.mkQ (e v)
+hm₀ : g v₀ ≠ 0
+hgT : ∀ (ℓ : Nat.Primes), good ℓ → ∀ (b : ℤ), heckeGen ℓ - MvPolynomial.C b ∈ 𝔪 → ∀ (x : V), g ((B ℓ) x) = b • g x
+hfree : Module.Free (ZMod p) (Xo ⧸ W)
+hproj : Module.Projective (ZMod p) (Xo ⧸ W)
+lam : Xo ⧸ W →ₗ[ZMod p] ZMod p
+hlam : lam (g v₀) ≠ 0
+ℓ : Nat.Primes
+hℓ : good ℓ
+b : ℤ
+hb : heckeGen ℓ - MvPolynomial.C b ∈ 𝔪
+x : V
+⊢ Z (b • lam (g x)) = b • Z (lam (g x))
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_ModularCurve_SW_local_old_smul_top_eq_top_of_not_hasLowerLevelTorsion_aux2.lean:210:2: warning: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_ModularCurve_SW_local_old_smul_top_eq_top_of_not_hasLowerLevelTorsion_aux2.lean:322:2: warning: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_ModularCurve_SW_local_old_smul_top_eq_top_of_not_hasLowerLevelTorsion_aux2.lean:290:37: warning: Variable name `hqN` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hqN
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_ModularCurve_SW_local_old_smul_top_eq_top_of_not_hasLowerLevelTorsion_aux2.lean:290:53: warning: Variable name `hq'N` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hq'N
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_ModularCurve_SW_local_old_smul_top_eq_top_of_not_hasLowerLevelTorsion_aux2.lean:290:71: warning: Variable name `hqq'` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hqq'
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_ModularCurve_SW_local_old_smul_top_eq_top_of_not_hasLowerLevelTorsion_aux2.lean:293:50: warning: Variable name `hA₁` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hA₁
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_ModularCurve_SW_local_old_smul_top_eq_top_of_not_hasLowerLevelTorsion_aux2.lean:299:63: warning: Variable name `hX₁` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hX₁
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_ModularCurve_SW_local_old_smul_top_eq_top_of_not_hasLowerLevelTorsion_aux2.lean:305:5: warning: Variable name `hU₁` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hU₁
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`

@@ -1,6 +1,6 @@
 # FLT source checkpoint — 2026-10-11
 
-This checkpoint saves eight verified repairs in the ongoing port of
+This checkpoint saves nine verified repairs in the ongoing port of
 `anthropics/fermats-last-theorem@6e837e75355538c7f80bab5b956861e86c4eacc2`.
 The source files are complete canonical modules; patches show this checkpoint's changes
 against the immediately preceding local port. Import adaptation for the official
@@ -10,7 +10,7 @@ CuspForm uses an explicit residue-field cancellation proof. Deformation uses the
 current polynomial coefficient API and limits legacy implicit-argument transparency
 to `namespace Univ`. Both retain their original hypotheses and conclusions.
 
-The eight repaired modules passed the canonical single-job `make lean` entry
+The nine repaired modules passed the canonical single-job `make lean` entry
 with `--trust=0` and kernel type checking enabled. CuspForm and Deformation
 also have successful associated theorem checks. The latest HeckeEis repair
 uses an explicit `zsmul_eq_mul` application for the ZMod target; its associated
@@ -75,3 +75,10 @@ validation with empty stdout and stderr. It removes the same four optional
 instance names only after actual compiler failures. Its theorem statement and
 proof body are unchanged; original source binding and all terminal receipts
 are preserved under `receipts/DVR-approximation-theorem-card/`.
+
+The modular-curve SW local-old auxiliary proof now supplies the exact bundled
+`AddMonoidHom.map_zsmul` application for its `ZMod p` character, after the generic
+rewrite failed to infer it. Reported binding-style warnings were corrected and
+unused parameter names were prefixed with underscores. The original hypotheses
+and conclusion remain intact. The complete module passed make/kernel validation
+(kernel 9.65 seconds) with empty stdout and stderr.

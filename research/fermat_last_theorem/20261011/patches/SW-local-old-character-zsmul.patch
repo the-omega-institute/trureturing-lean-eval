@@ -1,0 +1,86 @@
+--- a/P2M/Sol/S_ModularCurve_SW_local_old_smul_top_eq_top_of_not_hasLowerLevelTorsion_aux2.lean
++++ b/P2M/Sol/S_ModularCurve_SW_local_old_smul_top_eq_top_of_not_hasLowerLevelTorsion_aux2.lean
+@@ -18,7 +18,7 @@
+     (hq'p : q' ≠ p) (A : ValuationSubring (AlgebraicClosure ℚ))
+     [CharP (IsLocalRing.ResidueField ↥A) q'] :
+     ∃ ζ : (IsLocalRing.ResidueField ↥A)ˣ, IsPrimitiveRoot ζ p := by
+-  haveI : NeZero p := ⟨(Fact.out : p.Prime).ne_zero⟩
++  have : NeZero p := ⟨(Fact.out : p.Prime).ne_zero⟩
+   obtain ⟨ζ₀, hζ₀⟩ := HasEnoughRootsOfUnity.exists_primitiveRoot (AlgebraicClosure ℚ) p
+ 
+   have hmem : ζ₀ ∈ A := by
+@@ -84,7 +84,7 @@
+       ← Nat.cast_smul_eq_nsmul HeckeAlg]
+     exact Submodule.smul_mem_smul hp Submodule.mem_top
+ 
+-  haveI modp : Module (ZMod p) (Xo ⧸ W) := AddCommGroup.zmodModule hkill
++  have modp : Module (ZMod p) (Xo ⧸ W) := AddCommGroup.zmodModule hkill
+ 
+   set g : V →+ Xo ⧸ W := W.mkQ.toAddMonoidHom.comp e
+   have hg_apply : ∀ v, g v = W.mkQ (e v) := fun v => rfl
+@@ -101,8 +101,8 @@
+       Submodule.Quotient.mk_eq_zero]
+     exact Submodule.smul_mem_smul hb Submodule.mem_top
+ 
+-  haveI hfree : Module.Free (ZMod p) (Xo ⧸ W) := Module.Free.of_divisionRing (ZMod p) (Xo ⧸ W)
+-  haveI hproj : Module.Projective (ZMod p) (Xo ⧸ W) := @Module.Projective.of_free (ZMod p) _ (Xo ⧸ W) _ modp hfree
++  have hfree : Module.Free (ZMod p) (Xo ⧸ W) := Module.Free.of_divisionRing (ZMod p) (Xo ⧸ W)
++  have hproj : Module.Projective (ZMod p) (Xo ⧸ W) := @Module.Projective.of_free (ZMod p) _ (Xo ⧸ W) _ modp hfree
+   obtain ⟨lam, hlam⟩ : ∃ lam : (Xo ⧸ W) →ₗ[ZMod p] ZMod p, lam (g v₀) ≠ 0 :=
+     @Module.Projective.exists_dual_ne_zero (Xo ⧸ W) _ (ZMod p) _ modp hproj _ hm₀
+   refine ⟨Z.comp (lam.toAddMonoidHom.comp g), ?_, ?_, ?_⟩
+@@ -119,7 +119,8 @@
+     rw [← map_nsmul, ← map_nsmul, hkill, map_zero, map_zero]
+   · intro ℓ hℓ b hb x
+     show Z (lam (g (B ℓ x))) = b • Z (lam (g x))
+-    rw [hgT ℓ hℓ b hb x, map_zsmul, map_zsmul]
++    rw [hgT ℓ hℓ b hb x, map_zsmul]
++    exact Z.map_zsmul b (lam (g x))
+ 
+ theorem hasLowerLevelTorsion_of_character (p : ℕ) [Fact p.Prime]
+     {J : Type*} [AddCommGroup J] [Module HeckeAlg J] (𝒯 : Submodule HeckeAlg J)
+@@ -199,7 +200,7 @@
+       ε (heckeGen ℓ • y) x = ε y (heckeCharacterAction (A ℓ).transpose (hcol ℓ) x)) :
+     HasLowerLevelTorsion S 𝔪 J := by
+   classical
+-  haveI : NeZero p := ⟨(Fact.out : p.Prime).ne_zero⟩
++  have : NeZero p := ⟨(Fact.out : p.Prime).ne_zero⟩
+ 
+   obtain ⟨B, hB⟩ : ∃ B : Nat.Primes → ↥(characterLattice ι) →+ ↥(characterLattice ι),
+       ∀ ℓ x, B ℓ x = heckeCharacterAction (A ℓ).transpose (hcol ℓ) x :=
+@@ -279,22 +280,22 @@
+ open SWLocalOldAux2 in
+ theorem solution
+     (p : ℕ) [Fact p.Prime] {N q q' : ℕ}
+-    (hq : q.Prime) (hq' : q'.Prime) (hqN : ¬ q ∣ N) (hq'N : ¬ q' ∣ N) (hqq' : q' ≠ q) (hq'p : q' ≠ p)
++    (hq : q.Prime) (hq' : q'.Prime) (_hqN : ¬ q ∣ N) (_hq'N : ¬ q' ∣ N) (_hqq' : q' ≠ q) (hq'p : q' ≠ p)
+     [NeZero (N * q')] [NeZero N] [NeZero q] [Fact q.Prime] [Fact q'.Prime]
+     (𝔪 : Ideal HeckeAlg) (hmax : 𝔪.IsMaximal) (hp : (p : HeckeAlg) ∈ 𝔪)
+-    (A₁ : ValuationSubring (AlgebraicClosure ℚ)) (hA₁ : A₁.LiesOverPrime q')
++    (A₁ : ValuationSubring (AlgebraicClosure ℚ)) (_hA₁ : A₁.LiesOverPrime q')
+     [DecidableEq (IsLocalRing.ResidueField ↥A₁)] [CharP (IsLocalRing.ResidueField ↥A₁) q']
+     [Fintype ↥(ssPlaces q' (N * q) (IsLocalRing.ResidueField ↥A₁))]
+     [Fintype ↥(ssPlaces q' N (IsLocalRing.ResidueField ↥A₁))]
+     [DecidableEq ↥(ssPlaces q' (N * q) (IsLocalRing.ResidueField ↥A₁))]
+     [DecidableEq ↥(ssPlaces q' N (IsLocalRing.ResidueField ↥A₁))]
+-    (X₁ : SSLevelDatum q' (IsLocalRing.ResidueField ↥A₁) N q) (hX₁ : X₁.HeckeLaws)
++    (X₁ : SSLevelDatum q' (IsLocalRing.ResidueField ↥A₁) N q) (_hX₁ : X₁.HeckeLaws)
+     {Xo₁ : Type} [AddCommGroup Xo₁] [Module HeckeAlg Xo₁] [Module.Finite ℤ Xo₁]
+     (eX₁ : Xo₁ ≃+ (↥(characterLattice ↥(ssPlaces q' N (IsLocalRing.ResidueField ↥A₁))) × ↥(characterLattice ↥(ssPlaces q' N (IsLocalRing.ResidueField ↥A₁)))))
+     (hT₁ : ∀ ℓ : Nat.Primes, ¬ ((ℓ : ℕ) ∣ N * q * q') → ∀ x : Xo₁,
+         ((eX₁ (heckeGen ℓ • x)).1 : ↥(ssPlaces q' N (IsLocalRing.ResidueField ↥A₁)) → ℤ) = (X₁.vertexHecke ℓ).mulVec ((eX₁ x).1 : ↥(ssPlaces q' N (IsLocalRing.ResidueField ↥A₁)) → ℤ) ∧
+         ((eX₁ (heckeGen ℓ • x)).2 : ↥(ssPlaces q' N (IsLocalRing.ResidueField ↥A₁)) → ℤ) = (X₁.vertexHecke ℓ).mulVec ((eX₁ x).2 : ↥(ssPlaces q' N (IsLocalRing.ResidueField ↥A₁)) → ℤ))
+-    (hU₁ : ∀ x : Xo₁,
++    (_hU₁ : ∀ x : Xo₁,
+         ((eX₁ (heckeGen ⟨q, hq⟩ • x)).1 : ↥(ssPlaces q' N (IsLocalRing.ResidueField ↥A₁)) → ℤ) =
+             (X₁.vertexHecke ⟨q, hq⟩).mulVec ((eX₁ x).1 : ↥(ssPlaces q' N (IsLocalRing.ResidueField ↥A₁)) → ℤ) - ((eX₁ x).2 : ↥(ssPlaces q' N (IsLocalRing.ResidueField ↥A₁)) → ℤ) ∧
+         ((eX₁ (heckeGen ⟨q, hq⟩ • x)).2 : ↥(ssPlaces q' N (IsLocalRing.ResidueField ↥A₁)) → ℤ) = ((q : ℕ) : ℤ) • ((eX₁ x).1 : ↥(ssPlaces q' N (IsLocalRing.ResidueField ↥A₁)) → ℤ))
+@@ -311,7 +312,7 @@
+       ¬ ∃ S : Finset Nat.Primes, (∀ ℓ ∈ S, (ℓ : ℕ) ∣ N * q * q') ∧
+         HasLowerLevelTorsion S 𝔪 (JZero (N * q'))) :
+     𝔪 • (⊤ : Submodule HeckeAlg Xo₁) = ⊤ := by
+-  letI hJ : Module HeckeAlg (JZero (N * q')) := heckeModuleBar (N * q')
++  let hJ : Module HeckeAlg (JZero (N * q')) := heckeModuleBar (N * q')
+   by_contra hne
+   obtain ⟨ζ, hζ⟩ := exists_isPrimitiveRoot_residueField p hq' hq'p A₁
+   have hn0 : N * q * q' ≠ 0 := mul_ne_zero (mul_ne_zero (NeZero.ne N) (NeZero.ne q)) hq'.ne_zero

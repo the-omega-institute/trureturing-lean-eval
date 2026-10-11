@@ -1,0 +1,141 @@
+{
+  "at": "2026-10-11T16:27:48.155017+00:00",
+  "module": "Submission.Supplier.P2M.Sol.S_ModularCurve_SW_local_old_smul_top_eq_top_of_not_hasLowerLevelTorsion_aux2",
+  "failure_record": {
+    "sha256": "99223f570e265aeca8bb07fd7d7b886240ddb672245faa3ca3bdb41c8d986f24",
+    "exit": 1,
+    "empty_output_retry_done": false,
+    "source_sha256_after": "99223f570e265aeca8bb07fd7d7b886240ddb672245faa3ca3bdb41c8d986f24",
+    "source_unchanged": true,
+    "olean_sha256": null,
+    "seconds": 22.235147916999267,
+    "pid": 46485,
+    "command": [
+      "/Users/macstudio/.local/omega-shims/lean",
+      "-j1",
+      "--trust=0",
+      "-Ddebug.skipKernelTC=false",
+      "-R",
+      "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src",
+      "-o",
+      "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-build/lib/lean/Submission/Supplier/P2M/Sol/S_ModularCurve_SW_local_old_smul_top_eq_top_of_not_hasLowerLevelTorsion_aux2.olean",
+      "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_ModularCurve_SW_local_old_smul_top_eq_top_of_not_hasLowerLevelTorsion_aux2.lean"
+    ],
+    "make_wrapper_pid": 46106,
+    "make_exit": 2,
+    "make_entry_failed": false,
+    "cache_binding_valid": true,
+    "canonical_make_running_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/ae8284e4ee9cccea57ff1ea0-1791735577028629000.make-running.json",
+    "canonical_make_terminal_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/ae8284e4ee9cccea57ff1ea0-1791735577028629000.make-terminal.json",
+    "kernel_terminal_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/ae8284e4ee9cccea57ff1ea0-1791735577028629000.kernel/result.json",
+    "direct_dependencies": [
+      {
+        "module": "Submission.Supplier.Definitions.Def_ModularCurve_HeckeModule",
+        "source_sha256": "3b8659f9f62bbb62dd7893af2f031579d5b5e151d80fe8d90eb50cdbae08c153",
+        "object_sha256": "e5350c671fa407b23fa6b535358415b5e044375622facb3aeeb75e09f05e3bd9",
+        "receipt_reused": true
+      },
+      {
+        "module": "Submission.Supplier.Definitions.Def_ModularCurve_ToricMonodromyPart",
+        "source_sha256": "a396db8bf972415e310d81871bd9692b5756df1c0edd3dd3d5efcdf36a002093",
+        "object_sha256": "f4f631a4b4bb4ee88b14707bc19dff3635890cd94d8d21234f87ebb65f409646",
+        "receipt_reused": true
+      },
+      {
+        "module": "Submission.Supplier.Definitions.Def_ModularCurve_ToricDescentData",
+        "source_sha256": "2952a8219b5c920f3a90043f41cc51bb186bf00a0be7abe46eb50ce1b59c8fc2",
+        "object_sha256": "a55c2326dee9c319a603e9af2a96a3bf5f93517b88e43cf17f9ce8838103c16e",
+        "receipt_reused": true
+      },
+      {
+        "module": "Submission.Supplier.Definitions.Def_ModularCurve_ComponentGroupHecke",
+        "source_sha256": "9f5f72561560b509677a1be65f1a0aa8b36b72f1951ff92f9cfcbff5b865c064",
+        "object_sha256": "e1f9851445124f6cb9ed2499bb20e409911ba63b0c6e29234620cd44cc5f3013",
+        "receipt_reused": true
+      },
+      {
+        "module": "Submission.Supplier.Definitions.Def_ModularCurve_SSDegeneracyHecke",
+        "source_sha256": "e47ffde4bf255db931ce5e70baf03016f1818d645c8a2ee19caa98de4c2248f0",
+        "object_sha256": "16697e7e9d186aded2d817ca81b0c7acaf0aaecd5ff602ad79a7221a54354534",
+        "receipt_reused": true
+      },
+      {
+        "module": "Submission.Supplier.Definitions.Def_ModularCurve_MazurPrincipleCore",
+        "source_sha256": "40a24d0652256965fc880ad2c44979d246ce415eaf891459897614f48631516a",
+        "object_sha256": "da0bcda23e0e5790e581a49b7e79e4bcffd7ff23c54214506eb28d4ce1676611",
+        "receipt_reused": true
+      },
+      {
+        "module": "Submission.Supplier.P2M.Util",
+        "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+        "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+        "receipt_reused": true
+      }
+    ],
+    "stdout": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/ae8284e4ee9cccea57ff1ea0-1791735577028629000.kernel/stdout.log",
+    "stderr": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/ae8284e4ee9cccea57ff1ea0-1791735577028629000.kernel/stderr.log"
+  },
+  "edits": [
+    {
+      "line": 21,
+      "old": "haveI : NeZero p := \u27e8(Fact.out : p.Prime).ne_zero\u27e9",
+      "new": "have : NeZero p := \u27e8(Fact.out : p.Prime).ne_zero\u27e9"
+    },
+    {
+      "line": 87,
+      "old": "haveI modp : Module (ZMod p) (Xo \u29f8 W) := AddCommGroup.zmodModule hkill",
+      "new": "have modp : Module (ZMod p) (Xo \u29f8 W) := AddCommGroup.zmodModule hkill"
+    },
+    {
+      "line": 104,
+      "old": "haveI hfree : Module.Free (ZMod p) (Xo \u29f8 W) := Module.Free.of_divisionRing (ZMod p) (Xo \u29f8 W)",
+      "new": "have hfree : Module.Free (ZMod p) (Xo \u29f8 W) := Module.Free.of_divisionRing (ZMod p) (Xo \u29f8 W)"
+    },
+    {
+      "line": 105,
+      "old": "haveI hproj : Module.Projective (ZMod p) (Xo \u29f8 W) := @Module.Projective.of_free (ZMod p) _ (Xo \u29f8 W) _ modp hfree",
+      "new": "have hproj : Module.Projective (ZMod p) (Xo \u29f8 W) := @Module.Projective.of_free (ZMod p) _ (Xo \u29f8 W) _ modp hfree"
+    },
+    {
+      "line": 202,
+      "old": "haveI : NeZero p := \u27e8(Fact.out : p.Prime).ne_zero\u27e9",
+      "new": "have : NeZero p := \u27e8(Fact.out : p.Prime).ne_zero\u27e9"
+    },
+    {
+      "line": 314,
+      "old": "letI hJ : Module HeckeAlg (JZero (N * q')) := heckeModuleBar (N * q')",
+      "new": "let hJ : Module HeckeAlg (JZero (N * q')) := heckeModuleBar (N * q')"
+    },
+    {
+      "old": "    rw [hgT \u2113 h\u2113 b hb x, map_zsmul, map_zsmul]\n",
+      "new": "    rw [hgT \u2113 h\u2113 b hb x, map_zsmul]\n    exact Z.map_zsmul b (lam (g x))\n",
+      "basis": "Explicit bundled AddMonoidHom.map_zsmul; current Mathlib to_additive reorders integer before element"
+    },
+    {
+      "unused_binder": "hqN",
+      "renamed": "_hqN"
+    },
+    {
+      "unused_binder": "hq'N",
+      "renamed": "_hq'N"
+    },
+    {
+      "unused_binder": "hqq'",
+      "renamed": "_hqq'"
+    },
+    {
+      "unused_binder": "hA\u2081",
+      "renamed": "_hA\u2081"
+    },
+    {
+      "unused_binder": "hX\u2081",
+      "renamed": "_hX\u2081"
+    },
+    {
+      "unused_binder": "hU\u2081",
+      "renamed": "_hU\u2081"
+    }
+  ],
+  "solution_statement_alpha_equivalent": true,
+  "validation": "pending existing single compiler queue"
+}
