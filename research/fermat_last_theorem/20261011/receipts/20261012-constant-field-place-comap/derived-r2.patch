@@ -1,0 +1,350 @@
+--- original-derived
++++ candidate-derived-r2
+@@ -1,4 +1,5 @@
+ import Mathlib
++import Submission.Supplier.P2M.Sol.S_AlgebraicCurve_Place_exists_comap_algebraMap_eq_of_constantFieldExtension
+ import Submission.Supplier.Definitions.Def_AlgebraicCurve_DivisorClassGroup
+ import Submission.Supplier.Definitions.Def_AlgebraicCurve_IsCurveOver
+ import Submission.Supplier.Theorems.Thm_AlgebraicCurve_linearIndependent_of_constantFieldExtension_of_isAlgClosed
+@@ -21,333 +22,9 @@
+ 
+ open AlgebraicCurve
+ 
++open _root_.P2MW.S_AlgebraicCurve_Place_exists_comap_algebraMap_eq_of_constantFieldExtension.W7XUnram
++
+ namespace W7XUnram
+-
+-section Basic
+-
+-variable {K F : Type*} [Field K] [Field F] [Algebra K F] (v : Place K F)
+-
+-theorem ord_nonneg_of_mem {f : F} (hf : f ∈ v.toValuationSubring) : 0 ≤ v.ord f := by
+-  rcases eq_or_ne f 0 with rfl | hf0
+-  · simp
+-  obtain ⟨π, hπ⟩ := IsDiscreteValuationRing.exists_irreducible v.toValuationSubring
+-  obtain ⟨n, u, hu⟩ :=
+-    IsDiscreteValuationRing.eq_unit_mul_pow_irreducible
+-      (x := (⟨f, hf⟩ : v.toValuationSubring)) (by simpa [Subtype.ext_iff] using hf0) hπ
+-  have hcoe : f = ((u : v.toValuationSubring) : F) * ((π : F) ^ (n : ℤ)) := by
+-    have h := congrArg (Subtype.val) hu
+-    push_cast at h
+-    rw [zpow_natCast]
+-    exact h
+-  rw [hcoe, v.ord_unit_smul_zpow u hπ (n : ℤ)]
+-  exact Int.natCast_nonneg n
+-
+-theorem ord_eq_zero_of_mem_of_inv_mem {f : F} (h1 : f ∈ v.toValuationSubring)
+-    (h2 : f⁻¹ ∈ v.toValuationSubring) : v.ord f = 0 := by
+-  have a := ord_nonneg_of_mem v h1
+-  have b := ord_nonneg_of_mem v h2
+-  rw [v.ord_inv] at b
+-  omega
+-
+-theorem one_le_ord_of_mem_of_inv_not_mem {f : F} (h1 : f ∈ v.toValuationSubring)
+-    (h2 : f⁻¹ ∉ v.toValuationSubring) : 1 ≤ v.ord f := by
+-  have hf0 : f ≠ 0 := by
+-    rintro rfl
+-    exact h2 (by simp)
+-  obtain ⟨π, hπ⟩ := IsDiscreteValuationRing.exists_irreducible v.toValuationSubring
+-  obtain ⟨u, hu⟩ := v.exists_unit_mul_zpow hf0 hπ
+-  have h0 := ord_nonneg_of_mem v h1
+-  by_contra hlt
+-  have hz : v.ord f = 0 := by omega
+-  apply h2
+-  have hmul : ((u : v.toValuationSubring) : F) *
+-      (((u⁻¹ : v.toValuationSubringˣ) : v.toValuationSubring) : F) = 1 := by
+-    rw [← MulMemClass.coe_mul, Units.mul_inv, OneMemClass.coe_one]
+-  rw [hu, hz, zpow_zero, mul_one, ← eq_inv_of_mul_eq_one_right hmul]
+-  exact SetLike.coe_mem _
+-
+-theorem mem_iff_ord_nonneg (f : F) : f ∈ v.toValuationSubring ↔ 0 ≤ v.ord f := by
+-  refine ⟨ord_nonneg_of_mem v, fun h => ?_⟩
+-  by_contra hmem
+-  have hinv : f⁻¹ ∈ v.toValuationSubring :=
+-    (v.toValuationSubring.mem_or_inv_mem f).resolve_left hmem
+-  have := one_le_ord_of_mem_of_inv_not_mem v hinv (by simpa using hmem)
+-  rw [v.ord_inv] at this
+-  omega
+-
+-theorem ord_algebraMap_eq_zero {L : Type*} [Field L] [Algebra F L] {K' : Type*} [Field K']
+-    [Algebra K' L] (w : Place K' L) {f : F}
+-    (h1 : algebraMap F L f ∈ w.toValuationSubring)
+-    (h2 : algebraMap F L f⁻¹ ∈ w.toValuationSubring) : w.ord (algebraMap F L f) = 0 :=
+-  ord_eq_zero_of_mem_of_inv_mem w h1 (by simpa using h2)
+-
+-end Basic
+-
+-section Psi
+-
+-variable {K F K' : Type*} (F' : Type*) [Field K] [Field F] [Field K'] [Field F']
+-  [Algebra K F] [Algebra K' F'] [Algebra K K'] [Algebra F F'] [Algebra K F']
+-  [IsScalarTower K K' F'] [IsScalarTower K F F']
+-  {ι : Type*} (B : Module.Basis ι K K') (P : Place K F)
+-
+-noncomputable def Psi : (ι →₀ P.toValuationSubring) →+ F' :=
+-  Finsupp.liftAddHom fun j =>
+-    (AddMonoidHom.mulLeft (algebraMap K' F' (B j))).comp
+-      ((algebraMap F F' : F →+* F').toAddMonoidHom.comp
+-        P.toValuationSubring.subtype.toAddMonoidHom)
+-
+-omit [Algebra K F'] [IsScalarTower K K' F'] [IsScalarTower K F F'] in
+-theorem Psi_single (j : ι) (o : P.toValuationSubring) :
+-    Psi F' B P (Finsupp.single j o) = algebraMap K' F' (B j) * algebraMap F F' (o : F) := by
+-  simp [Psi]
+-
+-omit [Algebra K F'] [IsScalarTower K K' F'] [IsScalarTower K F F'] in
+-theorem Psi_apply (w : ι →₀ P.toValuationSubring) :
+-    Psi F' B P w = w.sum fun j o => algebraMap K' F' (B j) * algebraMap F F' (o : F) := by
+-  rw [Psi, Finsupp.liftAddHom_apply]
+-  rfl
+-
+-theorem Psi_smul (s : P.toValuationSubring) (w : ι →₀ P.toValuationSubring) :
+-    Psi F' B P (s • w) = algebraMap F F' (s : F) * Psi F' B P w := by
+-  induction w using Finsupp.induction with
+-  | zero => simp
+-  | single_add a b f _ _ ih =>
+-    rw [smul_add, map_add, map_add, ih, Finsupp.smul_single, Psi_single, Psi_single, mul_add,
+-      smul_eq_mul, MulMemClass.coe_mul, map_mul]
+-    ring
+-
+-noncomputable def pureW (d : K') (o : P.toValuationSubring) : ι →₀ P.toValuationSubring :=
+-  (B.repr d).mapRange (fun a => algebraMap K P.toValuationSubring a * o) (by simp)
+-
+-theorem Psi_pureW (d : K') (o : P.toValuationSubring) :
+-    Psi F' B P (pureW B P d o) = algebraMap K' F' d * algebraMap F F' (o : F) := by
+-  rw [Psi_apply, pureW, Finsupp.sum_mapRange_index (fun j => by simp)]
+-  conv_rhs => rw [← B.linearCombination_repr d, Finsupp.linearCombination_apply]
+-  simp only [Finsupp.sum, map_sum, Finset.sum_mul]
+-  refine Finset.sum_congr rfl fun j _ => ?_
+-  rw [MulMemClass.coe_mul, Place.coe_algebraMap, map_mul, Algebra.smul_def, map_mul,
+-    ← IsScalarTower.algebraMap_apply, ← IsScalarTower.algebraMap_apply]
+-  ring
+-
+-theorem Psi_mul_mem_range (w₁ w₂ : ι →₀ P.toValuationSubring) :
+-    ∃ w, Psi F' B P w = Psi F' B P w₁ * Psi F' B P w₂ := by
+-  classical
+-  refine ⟨∑ i ∈ w₁.support, ∑ j ∈ w₂.support, pureW B P (B i * B j) (w₁ i * w₂ j), ?_⟩
+-  rw [map_sum, Psi_apply F' B P w₁, Finsupp.sum, Finset.sum_mul]
+-  refine Finset.sum_congr rfl fun i _ => ?_
+-  rw [map_sum, Psi_apply F' B P w₂, Finsupp.sum, Finset.mul_sum]
+-  refine Finset.sum_congr rfl fun j _ => ?_
+-  rw [Psi_pureW, map_mul, MulMemClass.coe_mul, map_mul]
+-  ring
+-
+-noncomputable def rangePsi : Subring F' where
+-  carrier := Set.range (Psi F' B P)
+-  mul_mem' := by
+-    rintro _ _ ⟨w₁, rfl⟩ ⟨w₂, rfl⟩
+-    exact Psi_mul_mem_range F' B P w₁ w₂
+-  one_mem' := ⟨pureW B P 1 1, by simp [Psi_pureW]⟩
+-  add_mem' := by
+-    rintro _ _ ⟨w₁, rfl⟩ ⟨w₂, rfl⟩
+-    exact ⟨w₁ + w₂, map_add _ _ _⟩
+-  zero_mem' := ⟨0, map_zero _⟩
+-  neg_mem' := by
+-    rintro _ ⟨w, rfl⟩
+-    exact ⟨-w, map_neg _ _⟩
+-
+-theorem mem_rangePsi_iff {y : F'} : y ∈ rangePsi F' B P ↔ ∃ w, Psi F' B P w = y := Iff.rfl
+-
+-theorem algebraMap_mem_rangePsi (d : K') : algebraMap K' F' d ∈ rangePsi F' B P :=
+-  ⟨pureW B P d 1, by simp [Psi_pureW]⟩
+-
+-theorem algebraMap_coe_mem_rangePsi (o : P.toValuationSubring) :
+-    algebraMap F F' (o : F) ∈ rangePsi F' B P :=
+-  ⟨pureW B P 1 o, by simp [Psi_pureW]⟩
+-
+-theorem Psi_mem {S : Type*} [SetLike S F'] [SubringClass S F'] (V : S)
+-    (hK : ∀ d : K', algebraMap K' F' d ∈ V)
+-    (hO : ∀ o : P.toValuationSubring, algebraMap F F' (o : F) ∈ V)
+-    (w : ι →₀ P.toValuationSubring) : Psi F' B P w ∈ V := by
+-  rw [Psi_apply]
+-  exact sum_mem fun j _ => mul_mem (hK _) (hO _)
+-
+-noncomputable def fracPsi : Subalgebra K' F' where
+-  carrier := {y | ∃ w, ∃ s : P.toValuationSubring, (s : F) ≠ 0 ∧
+-    y * algebraMap F F' (s : F) = Psi F' B P w}
+-  mul_mem' := by
+-    rintro y₁ y₂ ⟨w₁, s₁, hs₁, h₁⟩ ⟨w₂, s₂, hs₂, h₂⟩
+-    obtain ⟨w, hw⟩ := Psi_mul_mem_range F' B P w₁ w₂
+-    refine ⟨w, s₁ * s₂, by rw [MulMemClass.coe_mul]; exact mul_ne_zero hs₁ hs₂, ?_⟩
+-    rw [hw, ← h₁, ← h₂, MulMemClass.coe_mul, map_mul]
+-    ring
+-  one_mem' := ⟨pureW B P 1 1, 1, by simp, by simp [Psi_pureW]⟩
+-  add_mem' := by
+-    rintro y₁ y₂ ⟨w₁, s₁, hs₁, h₁⟩ ⟨w₂, s₂, hs₂, h₂⟩
+-    refine ⟨s₂ • w₁ + s₁ • w₂, s₁ * s₂, by rw [MulMemClass.coe_mul]; exact mul_ne_zero hs₁ hs₂, ?_⟩
+-    rw [map_add, Psi_smul, Psi_smul, ← h₁, ← h₂, MulMemClass.coe_mul, map_mul]
+-    ring
+-  zero_mem' := ⟨0, 1, by simp, by simp⟩
+-  algebraMap_mem' d := ⟨pureW B P d 1, 1, by simp, by simp [Psi_pureW]⟩
+-
+-theorem mem_fracPsi_iff {y : F'} : y ∈ fracPsi F' B P ↔ ∃ w, ∃ s : P.toValuationSubring,
+-    (s : F) ≠ 0 ∧ y * algebraMap F F' (s : F) = Psi F' B P w := Iff.rfl
+-
+-theorem algebraMap_mem_fracPsi (f : F) : algebraMap F F' f ∈ fracPsi F' B P := by
+-  rcases P.toValuationSubring.mem_or_inv_mem f with h | h
+-  · exact ⟨pureW B P 1 ⟨f, h⟩, 1, by simp, by simp [Psi_pureW]⟩
+-  · rcases eq_or_ne f 0 with rfl | hf
+-    · rw [map_zero]; exact (fracPsi F' B P).zero_mem
+-    · refine ⟨pureW B P 1 1, ⟨f⁻¹, h⟩, by simpa using hf, ?_⟩
+-      simp [Psi_pureW, mul_inv_cancel₀ ((map_ne_zero (algebraMap F F')).2 hf)]
+-
+-theorem exists_mul_Psi_eq (hgen : IntermediateField.adjoin K' (Set.range (algebraMap F F')) = ⊤)
+-    {z : F'} (hz : z ≠ 0) :
+-    ∃ w₁ w₂, Psi F' B P w₂ ≠ 0 ∧ z * Psi F' B P w₂ = Psi F' B P w₁ := by
+-  have hzmem : z ∈ IntermediateField.adjoin K' (Set.range (algebraMap F F')) := by
+-    rw [hgen]; trivial
+-  rw [IntermediateField.mem_adjoin_iff_div] at hzmem
+-  obtain ⟨r, hr, s, hs, rfl⟩ := hzmem
+-  have hle : Algebra.adjoin K' (Set.range (algebraMap F F')) ≤ fracPsi F' B P :=
+-    Algebra.adjoin_le (by rintro _ ⟨f, rfl⟩; exact algebraMap_mem_fracPsi F' B P f)
+-  obtain ⟨w₁, s₁, hs₁, h₁⟩ := hle hr
+-  obtain ⟨w₂, s₂, hs₂, h₂⟩ := hle hs
+-  have hr0 : r ≠ 0 := by rintro rfl; simp at hz
+-  have hs0 : s ≠ 0 := by rintro rfl; simp at hz
+-  refine ⟨s₂ • w₁, s₁ • w₂, ?_, ?_⟩
+-  · rw [Psi_smul, ← h₂]
+-    exact mul_ne_zero (by simpa using hs₁) (mul_ne_zero hs0 (by simpa using hs₂))
+-  · rw [Psi_smul, Psi_smul, ← h₁, ← h₂]
+-    field_simp
+-
+-end Psi
+-
+-theorem ne_zero_and_inv_mem_of_add {L : Type*} [Field L] (V : ValuationSubring L) {a m p : L}
+-    (ha : a ∈ V) (hai : a⁻¹ ∈ V) (ha0 : a ≠ 0) (hm : m ∈ V) (hp : p ∈ V) (hpi : p⁻¹ ∉ V) :
+-    a + p * m ≠ 0 ∧ (a + p * m)⁻¹ ∈ V := by
+-  have hva : V.valuation a = 1 := by
+-    refine le_antisymm ((V.valuation_le_one_iff a).2 ha) ?_
+-    have h := (V.valuation_le_one_iff _).2 hai
+-    rw [map_inv₀] at h
+-    exact (inv_le_one₀ (zero_lt_iff.2 ((Valuation.ne_zero_iff _).2 ha0))).1 h
+-  have hvp : V.valuation p < 1 :=
+-    lt_of_le_of_ne ((V.valuation_le_one_iff p).2 hp)
+-      (fun h => hpi (by rw [← V.valuation_le_one_iff, map_inv₀, h, inv_one]))
+-  have hvm : V.valuation m ≤ 1 := (V.valuation_le_one_iff m).2 hm
+-  have hlt : V.valuation (p * m) < V.valuation a := by
+-    rw [map_mul, hva]
+-    calc V.valuation p * V.valuation m ≤ V.valuation p * 1 := by gcongr
+-      _ = V.valuation p := mul_one _
+-      _ < 1 := hvp
+-  have hve : V.valuation (a + p * m) = 1 := by
+-    rw [Valuation.map_add_eq_of_lt_left _ hlt, hva]
+-  refine ⟨(Valuation.ne_zero_iff _).1 (by rw [hve]; exact one_ne_zero), ?_⟩
+-  rw [← V.valuation_le_one_iff, map_inv₀, hve, inv_one]
+-
+-section Decomp
+-
+-variable {K F K' : Type*} (F' : Type*) [Field K] [Field F] [Field K'] [Field F']
+-  [Algebra K F] [Algebra K' F'] [Algebra K K'] [Algebra F F'] [Algebra K F']
+-  [IsScalarTower K K' F'] [IsScalarTower K F F']
+-  {ι : Type*} (B : Module.Basis ι K K') (P : Place K F)
+-
+-theorem exists_digit [IsAlgClosed K] [IsCurveOver K F] {π : P.toValuationSubring}
+-    (hπ : Irreducible π) (o : P.toValuationSubring) :
+-    ∃ a : K, ∃ o' : P.toValuationSubring,
+-      o = algebraMap K P.toValuationSubring a + π * o' ∧ (o = 0 → o' = 0) := by
+-  rcases eq_or_ne o 0 with rfl | ho
+-  · exact ⟨0, 0, by simp, fun _ => rfl⟩
+-  haveI : Module.Finite K P.ResidueField := IsCurveOver.finiteResidue P
+-  haveI : Algebra.IsIntegral K P.ResidueField := Algebra.IsIntegral.of_finite K _
+-  have hbij : Function.Bijective (algebraMap K P.ResidueField) :=
+-    IsAlgClosed.algebraMap_bijective_of_isIntegral
+-  obtain ⟨a, ha⟩ := hbij.2 (IsLocalRing.residue P.toValuationSubring o)
+-  have hmem : o - algebraMap K P.toValuationSubring a ∈
+-      IsLocalRing.maximalIdeal P.toValuationSubring := by
+-    rw [← IsLocalRing.residue_eq_zero_iff, map_sub, sub_eq_zero, ← ha,
+-      IsScalarTower.algebraMap_apply K P.toValuationSubring P.ResidueField,
+-      IsLocalRing.ResidueField.algebraMap_eq]
+-  rw [hπ.maximalIdeal_eq, Ideal.mem_span_singleton'] at hmem
+-  obtain ⟨b, hb⟩ := hmem
+-  exact ⟨a, b, by rw [mul_comm, hb]; ring, fun h => absurd h ho⟩
+-
+-theorem decomp [IsAlgClosed K] [IsCurveOver K F] {π : P.toValuationSubring} (hπ : Irreducible π)
+-    (w : ι →₀ P.toValuationSubring) (hw : w ≠ 0) :
+-    ∃ (k : ℕ) (d : K') (w' : ι →₀ P.toValuationSubring), d ≠ 0 ∧
+-      Psi F' B P w = algebraMap F F' (π : F) ^ k *
+-        (algebraMap K' F' d + algebraMap F F' (π : F) * Psi F' B P w') := by
+-  classical
+-  choose dig rest hdr hr0 using exists_digit P hπ
+-  have hrest0 : rest 0 = 0 := hr0 0 rfl
+-  have step : ∀ w : ι →₀ P.toValuationSubring,
+-      Psi F' B P w = algebraMap K' F' (∑ j ∈ w.support, dig (w j) • B j) +
+-        algebraMap F F' (π : F) * Psi F' B P (w.mapRange rest hrest0) := by
+-    intro w
+-    rw [Psi_apply F' B P (w.mapRange _ _),
+-      Finsupp.sum_mapRange_index (fun j => by simp)]
+-    rw [Psi_apply]
+-    simp only [Finsupp.sum, map_sum, Finset.mul_sum, ← Finset.sum_add_distrib]
+-    refine Finset.sum_congr rfl fun j _ => ?_
+-    conv_lhs => rw [hdr (w j)]
+-    rw [AddMemClass.coe_add, MulMemClass.coe_mul, Place.coe_algebraMap, map_add, map_mul,
+-      Algebra.smul_def, map_mul, ← IsScalarTower.algebraMap_apply K K' F',
+-      ← IsScalarTower.algebraMap_apply K F F']
+-    ring
+-  suffices h : ∀ (n : ℕ) (w : ι →₀ P.toValuationSubring) (j₁ : ι), w j₁ ≠ 0 →
+-      P.ord ((w j₁ : P.toValuationSubring) : F) < n →
+-      ∃ (k : ℕ) (d : K') (w' : ι →₀ P.toValuationSubring), d ≠ 0 ∧
+-        Psi F' B P w = algebraMap F F' (π : F) ^ k *
+-          (algebraMap K' F' d + algebraMap F F' (π : F) * Psi F' B P w') by
+-    obtain ⟨j₁, hj₁⟩ : ∃ j₁, w j₁ ≠ 0 := by
+-      by_contra h
+-      push Not at h
+-      exact hw (Finsupp.ext h)
+-    exact h ((P.ord ((w j₁ : P.toValuationSubring) : F)).toNat + 1) w j₁ hj₁ (by omega)
+-  intro n
+-  induction n with
+-  | zero =>
+-    intro w j₁ _ hlt
+-    have := ord_nonneg_of_mem P (w j₁).2
+-    push_cast at hlt
+-    omega
+-  | succ n ih =>
+-    intro w j₁ hj₁ hlt
+-    by_cases hdig : ∃ j ∈ w.support, dig (w j) ≠ 0
+-    · refine ⟨0, ∑ j ∈ w.support, dig (w j) • B j, w.mapRange rest hrest0, ?_, ?_⟩
+-      · intro hd
+-        obtain ⟨j, hj, hne⟩ := hdig
+-        exact hne (linearIndependent_iff'.1 B.linearIndependent w.support (fun j => dig (w j))
+-          hd j hj)
+-      · rw [pow_zero, one_mul]
+-        exact step w
+-    · push Not at hdig
+-      have hd0 : ∑ j ∈ w.support, dig (w j) • B j = 0 :=
+-        Finset.sum_eq_zero fun j hj => by rw [hdig j hj, zero_smul]
+-      have hj₁s : j₁ ∈ w.support := Finsupp.mem_support_iff.2 hj₁
+-      have hwj : ((w j₁ : P.toValuationSubring) : F) = (π : F) * (rest (w j₁) : F) := by
+-        conv_lhs => rw [hdr (w j₁)]
+-        rw [hdig j₁ hj₁s]
+-        simp
+-      have hr : rest (w j₁) ≠ 0 := by
+-        intro h
+-        apply hj₁
+-        apply Subtype.ext
+-        rw [hwj, h]
+-        simp
+-      have hw' : (w.mapRange rest hrest0) j₁ ≠ 0 := by
+-        rwa [Finsupp.mapRange_apply]
+-      have hord : P.ord (((w.mapRange rest hrest0) j₁ : P.toValuationSubring) : F) < n := by
+-        rw [Finsupp.mapRange_apply]
+-        have hr0' : ((rest (w j₁) : P.toValuationSubring) : F) ≠ 0 := fun h => hr (Subtype.ext h)
+-        have hπ0 : (π : F) ≠ 0 := fun h => hπ.ne_zero (Subtype.ext h)
+-        have := P.ord_mul hπ0 hr0'
+-        rw [← hwj, P.ord_coe_irreducible hπ] at this
+-        push_cast at hlt
+-        omega
+-      obtain ⟨k, d, w'', hd, heq⟩ := ih (w.mapRange rest hrest0) j₁ hw' hord
+-      refine ⟨k + 1, d, w'', hd, ?_⟩
+-      rw [step w, hd0, map_zero, zero_add, heq]
+-      ring
+-
+-end Decomp
+ 
+ section LinDisj
+ 
+@@ -626,3 +303,5 @@
+     rw [← map_inv₀, key, map_mul, map_mul, map_pow]
+     exact mul_mem (mul_mem (hAV' _ (algebraMap_coe_mem_rangePsi F' B P _)) hfV) (pow_mem hπV _)
+   exact ⟨P', hover, ordEq P' hover, fun Q' hQ' => uniq Q' P' hQ' hover⟩
++
++#print axioms solution
