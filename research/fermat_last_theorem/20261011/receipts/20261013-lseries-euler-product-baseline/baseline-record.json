@@ -1,0 +1,59 @@
+{
+  "at": "2026-10-12T19:56:48.941101+00:00",
+  "baseline_source_card_pair_actual_make_kernel_passed": true,
+  "canonical_solution_byte_identical_to_supplier": true,
+  "full_original_proof_retained": true,
+  "original_main_hypotheses_and_conclusion_preserved": true,
+  "original_solution_lines": 181,
+  "checks": {
+    "source": {
+      "module": "Submission.Supplier.P2M.Sol.S_LSeries_exists_hasProd_tsum_eq_lseries_of_norm_le_pow",
+      "make_exit": 0,
+      "kernel_exit": 0,
+      "kernel_seconds": 3.571501916,
+      "source_unchanged": true,
+      "compiler_warnings": 11,
+      "direct_dependencies": [
+        {
+          "module": "Submission.Supplier.P2M.Util",
+          "receipt": null,
+          "actual_exit": 0
+        }
+      ],
+      "solution_axiom_audit": "not printed separately; full-root audit pending"
+    },
+    "card": {
+      "module": "Submission.Supplier.Theorems.Thm_LSeries_exists_hasProd_tsum_eq_lseries_of_norm_le_pow",
+      "make_exit": 0,
+      "kernel_exit": 0,
+      "kernel_seconds": 16.192142417,
+      "source_unchanged": true,
+      "compiler_warnings": 0,
+      "direct_dependencies": [
+        {
+          "module": "Submission.Supplier.P2M.Util",
+          "receipt": null,
+          "actual_exit": 0
+        },
+        {
+          "module": "Submission.Supplier.P2M.Sol.S_LSeries_exists_hasProd_tsum_eq_lseries_of_norm_le_pow",
+          "receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/a425154e61a5d8a731d52946-1791834736074513000.kernel/result.json",
+          "actual_exit": 0
+        }
+      ],
+      "solution_axiom_audit": "not printed separately; full-root audit pending"
+    }
+  },
+  "proof_summary": "Retain the complete original 181-line construction of global coefficients from the supplied prime-indexed local coefficients by prime factorization. The proof retains prime-power interpolation, multiplicativity for coprime integers, preservation of coefficient nonnegativity, the norm bound and resulting abscissa of absolute convergence bound, and the HasProd Euler-product identity throughout the original half-plane Re(s) > A + 1. All original assumptions and all four original conclusion components remain. The canonical solution is byte-identical to the supplier source.",
+  "no_source_change": true,
+  "no_linter_suppression_added": true,
+  "source_axiom_audit_pending": true,
+  "supplier": "anthropics/fermats-last-theorem",
+  "supplier_commit": "6e837e75355538c7f80bab5b956861e86c4eacc2",
+  "full_original_complete": false,
+  "official_new_solve_credit": 0,
+  "jobs": 1,
+  "compilers": 1,
+  "threads": 1,
+  "controller_continues_same_full_FLT_graph": true
+}
