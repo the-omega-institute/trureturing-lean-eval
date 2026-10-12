@@ -1,0 +1,43 @@
+{
+  "at": "2026-10-12T13:16:10.262450+00:00",
+  "module": "Submission.Supplier.P2M.Sol.S_AlgebraicCurve_exists_indexOfSpecialty_nsmul_single_eq_zero_of_genusReached",
+  "status": "Complete original solution and unchanged theorem card verified through canonical make lean and kernel",
+  "card_unchanged": true,
+  "verified_pair": true,
+  "warnings": 0,
+  "axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "checks": {
+    "source": {
+      "configuration": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/official-layout/terminal-proof-repairs/20261012-genus-reached-specialty-vanishing/source-r1.configuration.json",
+      "kernel_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/official-layout/terminal-proof-repairs/20261012-genus-reached-specialty-vanishing/source-r1.kernel/result.json",
+      "make_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/official-layout/terminal-proof-repairs/20261012-genus-reached-specialty-vanishing/source-r1.make-terminal.json",
+      "kernel_exit": 0,
+      "make_exit": 0,
+      "seconds": 40.434050125,
+      "source_unchanged": true
+    },
+    "card": {
+      "configuration": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/official-layout/terminal-proof-repairs/20261012-genus-reached-specialty-vanishing/card.configuration.json",
+      "kernel_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/official-layout/terminal-proof-repairs/20261012-genus-reached-specialty-vanishing/card.kernel/result.json",
+      "make_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/official-layout/terminal-proof-repairs/20261012-genus-reached-specialty-vanishing/card.make-terminal.json",
+      "kernel_exit": 0,
+      "make_exit": 0,
+      "seconds": 41.115544082999996,
+      "source_unchanged": true
+    }
+  },
+  "supplier": "anthropics/fermats-last-theorem",
+  "supplier_commit": "6e837e75355538c7f80bab5b956861e86c4eacc2",
+  "official_mathlib": "5e0c4e5239cb0a2d86d68a884bf52cfd963fce22",
+  "lean_toolchain": "leanprover/lean4:v4.35.0-rc3",
+  "full_original_complete": false,
+  "official_new_solve_credit": 0,
+  "commit_message": "Verify complete genus-reached specialty vanishing at a point multiple",
+  "preserved_scope": "Exact original result: under the original field, curve, nonempty-place, finite-dimensional LSpace-zero and genus-reached hypotheses, every given place has a natural multiple whose indexOfSpecialty vanishes; original card unchanged.",
+  "source_changes": "Retain the complete original construction using the natural absolute value of the integer bound plus one, the positive residue degree, finite omegaSpace and the original Riemann–Roch maximality inequality. Modernize only two propositional haveI bindings; adapted source appends a solution axiom audit.",
+  "root_status": "Full FLT root and official acceptance remain pending."
+}
