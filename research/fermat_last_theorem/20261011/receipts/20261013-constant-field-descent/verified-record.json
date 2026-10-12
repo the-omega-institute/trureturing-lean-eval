@@ -1,0 +1,51 @@
+{
+  "at": "2026-10-12T17:07:43.884344+00:00",
+  "module": "Submission.Supplier.P2M.Sol.S_AlgebraicCurve_exists_constantFieldDescent",
+  "status": "Complete original solution and unchanged theorem card verified through canonical make lean and kernel",
+  "card_unchanged": true,
+  "verified_pair": true,
+  "warnings": 0,
+  "axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "checks": {
+    "source": {
+      "configuration": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/official-layout/terminal-proof-repairs/20261013-constant-field-descent/source-r1.configuration.json",
+      "kernel_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/official-layout/terminal-proof-repairs/20261013-constant-field-descent/source-r1.kernel/result.json",
+      "make_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/official-layout/terminal-proof-repairs/20261013-constant-field-descent/source-r1.make-terminal.json",
+      "kernel_exit": 0,
+      "make_exit": 0,
+      "seconds": 62.726104458,
+      "source_unchanged": true
+    },
+    "card": {
+      "configuration": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/official-layout/terminal-proof-repairs/20261013-constant-field-descent/card.configuration.json",
+      "kernel_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/official-layout/terminal-proof-repairs/20261013-constant-field-descent/card.kernel/result.json",
+      "make_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/official-layout/terminal-proof-repairs/20261013-constant-field-descent/card.make-terminal.json",
+      "kernel_exit": 0,
+      "make_exit": 0,
+      "seconds": 70.836534042,
+      "source_unchanged": true
+    }
+  },
+  "supplier": "anthropics/fermats-last-theorem",
+  "supplier_commit": "6e837e75355538c7f80bab5b956861e86c4eacc2",
+  "official_mathlib": "5e0c4e5239cb0a2d86d68a884bf52cfd963fce22",
+  "lean_toolchain": "leanprover/lean4:v4.35.0-rc3",
+  "full_original_complete": false,
+  "official_new_solve_credit": 0,
+  "commit_message": "FLT: verify full constant-field descent without linter warnings",
+  "original_main_statement_preserved": true,
+  "full_original_proof_retained": true,
+  "original_raw_source_retained": true,
+  "main_hypotheses_changed": false,
+  "main_conclusion_changed": false,
+  "haveI_to_have": 16,
+  "letI_to_let": 1,
+  "original_baseline_kernel_exit": 0,
+  "original_baseline_kernel_seconds": 31.184346541,
+  "proof_summary": "Retain the full coefficient descent, countable algebraically closed base field and complex embedding, finite function-field extension, curve and canonical divisor constructions, and generating-range equality. Modernize only the seventeen bindings diagnosed by the actual original-source compile, then audit the original solution's complete axiom closure.",
+  "diagnosed_instance_binding_modernizations": 17
+}
