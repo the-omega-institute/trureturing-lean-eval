@@ -1,0 +1,43 @@
+{
+  "at": "2026-10-12T15:23:49.362108+00:00",
+  "module": "Submission.Supplier.P2M.Sol.S_AlgebraicCurve_hasPrincipalDivisors_of_finiteDimensional_of_isSeparable",
+  "status": "Complete original solution and unchanged theorem card verified through canonical make lean and kernel",
+  "card_unchanged": true,
+  "verified_pair": true,
+  "warnings": 0,
+  "axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "checks": {
+    "source": {
+      "configuration": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/official-layout/terminal-proof-repairs/20261012-principal-divisors-finite-separable/source-r2.configuration.json",
+      "kernel_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/official-layout/terminal-proof-repairs/20261012-principal-divisors-finite-separable/source-r2.kernel/result.json",
+      "make_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/official-layout/terminal-proof-repairs/20261012-principal-divisors-finite-separable/source-r2.make-terminal.json",
+      "kernel_exit": 0,
+      "make_exit": 0,
+      "seconds": 50.917513166,
+      "source_unchanged": true
+    },
+    "card": {
+      "configuration": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/official-layout/terminal-proof-repairs/20261012-principal-divisors-finite-separable/card.configuration.json",
+      "kernel_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/official-layout/terminal-proof-repairs/20261012-principal-divisors-finite-separable/card.kernel/result.json",
+      "make_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/official-layout/terminal-proof-repairs/20261012-principal-divisors-finite-separable/card.make-terminal.json",
+      "kernel_exit": 0,
+      "make_exit": 0,
+      "seconds": 45.690365042,
+      "source_unchanged": true
+    }
+  },
+  "supplier": "anthropics/fermats-last-theorem",
+  "supplier_commit": "6e837e75355538c7f80bab5b956861e86c4eacc2",
+  "official_mathlib": "5e0c4e5239cb0a2d86d68a884bf52cfd963fce22",
+  "lean_toolchain": "leanprover/lean4:v4.35.0-rc3",
+  "full_original_complete": false,
+  "official_new_solve_credit": 0,
+  "commit_message": "Verify full finite-separable principal divisors and unchanged card",
+  "preserved_scope": "Complete original HasPrincipalDivisors K E target under every original field, RatFunc algebra, scalar-tower, finite-dimensional and separability hypothesis; unchanged original card; arbitrary characteristic.",
+  "source_changes": "Retain the full original weighted-degree, norm/Galois splitting-field and finite-tower descent proof. Modernize six propositional haveI bindings and the local splitting-field Algebra letI to let while preserving its data construction; omit separability only from the generic sum helper where it was unused; append the solution axiom audit.",
+  "root_status": "Full FLT root and official acceptance remain pending."
+}
