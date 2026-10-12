@@ -1,0 +1,42 @@
+{
+  "at": "2026-10-12T10:37:13.863984+00:00",
+  "controller": {
+    "pid": 23154,
+    "command": [
+      "/Library/Developer/CommandLineTools/usr/bin/python3",
+      "-u",
+      "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006.py",
+      "--workers",
+      "1",
+      "--poll-seconds",
+      "10",
+      "--canonical-make-entry",
+      "--retry-empty-failures"
+    ],
+    "started_at": "2026-10-12T10:36:02.257470+00:00"
+  },
+  "controller_process": "  PID  PPID STAT ELAPSED    RSS COMMAND\n23154 23153 R      01:11 190304 /Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/Resources/Python.app/Contents/MacOS/Python -u /Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006.py --workers 1 --poll-seconds 10 --canonical-make-entry --retry-empty-failures\n",
+  "status": {
+    "compiled": 7454,
+    "ready": 4417,
+    "failed": 0,
+    "root_compiled": false,
+    "workers": 1,
+    "canonical_build_queue_waiting": false
+  },
+  "running": {
+    "Submission.Supplier.Theorems.Thm_AlgebraicCurve_exists_ball_abelJacobiVec_restrictAlong_sub_sub_mem_pathPeriodLattice": {
+      "pid": 31754,
+      "make_wrapper_pid": 30544,
+      "phase": "kernel",
+      "sha256": "03944bf1c0830013e8e7dfac74516cbbdbbcf241ce2be0fe2734cc1ff3de7708",
+      "configuration": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/04ca0137129b17eeaf701fcc-1791801393532664000.configuration.json",
+      "live_process": "  PID  PPID STAT ELAPSED    RSS COMMAND\n31754 31751 U      00:34 4167792 lean -j1 --trust=0 -Ddebug.skipKernelTC=false -R /Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src -o /Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-build/lib/lean/Submission/Supplier/Theorems/Thm_AlgebraicCurve_exists_ball_abelJacobiVec_restrictAlong_sub_sub_mem_pathPeriodLattice.olean /Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/Theorems/Thm_AlgebraicCurve_exists_ball_abelJacobiVec_restrictAlong_sub_sub_mem_pathPeriodLattice.lean\n"
+    }
+  },
+  "jobs": 1,
+  "compilers": 1,
+  "threads": 1,
+  "official_new_solve_credit": 0,
+  "full_original_complete": false
+}

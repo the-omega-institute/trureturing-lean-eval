@@ -1,0 +1,33 @@
+{
+  "at": "2026-10-12T10:36:24.380966+00:00",
+  "launch": {
+    "pid": 23154,
+    "command": [
+      "/Library/Developer/CommandLineTools/usr/bin/python3",
+      "-u",
+      "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006.py",
+      "--workers",
+      "1",
+      "--poll-seconds",
+      "10",
+      "--canonical-make-entry",
+      "--retry-empty-failures"
+    ],
+    "started_at": "2026-10-12T10:36:02.257470+00:00"
+  },
+  "process": "  PID  PPID STAT ELAPSED    RSS COMMAND\n23154 23153 R      00:22 131888 /Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/Resources/Python.app/Contents/MacOS/Python -u /Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006.py --workers 1 --poll-seconds 10 --canonical-make-entry --retry-empty-failures\n",
+  "status": {
+    "root": "Submission",
+    "sources": 60469,
+    "pending_sources": 0,
+    "compiled": 7452,
+    "ready": 4419,
+    "failed": 0,
+    "root_compiled": false,
+    "workers": 1,
+    "canonical_build_queue_waiting": null,
+    "running": {}
+  },
+  "full_original_complete": false,
+  "official_new_solve_credit": 0
+}
