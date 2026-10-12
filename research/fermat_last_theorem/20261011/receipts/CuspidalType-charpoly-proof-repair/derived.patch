@@ -1,0 +1,87 @@
+--- /Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_CuspidalType_charpoly_ind_torus_eq_X_pow_orderOf_sub_one_pow.lean
++++ /Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_CuspidalType_charpoly_ind_torus_eq_X_pow_orderOf_sub_one_pow.lean
+@@ -67,7 +67,7 @@
+   have hint : IsIntegral K L := Algebra.IsIntegral.isIntegral L
+   have hdeg : m ≤ (minpoly K L).natDegree := by
+     by_contra hlt
+-    push_neg at hlt
++    push Not at hlt
+     have hp0 : minpoly K L ≠ 0 := (minpoly.monic hint).ne_zero
+     have happly := DFunLike.congr_fun (minpoly.aeval K L) (Finsupp.single x₀ (1 : K))
+     rw [LinearMap.zero_apply, Polynomial.aeval_eq_sum_range, LinearMap.sum_apply] at happly
+@@ -227,7 +227,7 @@
+       show Finsupp.sumFinsuppLEquivProdFinsupp K (Finsupp.domLCongr (Equiv.sumCompl p).symm (Finsupp.single y c)) = _
+       rw [Finsupp.domLCongr_single]
+       by_cases h : p y
+-      · rw [Equiv.sumCompl_symm_apply_of_pos h, dif_pos h]
++      · rw [Equiv.sumCompl_symm_apply_of_pos h, dite_eq_left h]
+         refine Prod.ext ?_ ?_
+         · ext a
+           rw [Finsupp.fst_sumFinsuppLEquivProdFinsupp, Finsupp.single_apply, Finsupp.single_apply]
+@@ -235,7 +235,7 @@
+         · ext a
+           rw [Finsupp.snd_sumFinsuppLEquivProdFinsupp, Finsupp.single_apply]
+           simp
+-      · rw [Equiv.sumCompl_symm_apply_of_neg h, dif_neg h]
++      · rw [Equiv.sumCompl_symm_apply_of_neg h, dite_eq_right h]
+         refine Prod.ext ?_ ?_
+         · ext a
+           rw [Finsupp.fst_sumFinsuppLEquivProdFinsupp, Finsupp.single_apply]
+@@ -249,9 +249,9 @@
+       simp only [LinearMap.comp_apply, LinearEquiv.coe_coe, permLin_single]
+       by_cases hx : p x
+       · have hσx : p (σ x) := (hp x).mp hx
+-        rw [he, he, dif_pos hσx, dif_pos hx, LinearMap.prodMap_apply, map_zero, permLin_subtypePerm_single]
++        rw [he, he, dite_eq_left hσx, dite_eq_left hx, LinearMap.prodMap_apply, map_zero, permLin_subtypePerm_single]
+       · have hσx : ¬ p (σ x) := (hnp x).mp hx
+-        rw [he, he, dif_neg hσx, dif_neg hx, LinearMap.prodMap_apply, map_zero, permLin_subtypePerm_single]
++        rw [he, he, dite_eq_right hσx, dite_eq_right hx, LinearMap.prodMap_apply, map_zero, permLin_subtypePerm_single]
+     have hconj : e.conj (permLin K σ) = (permLin K σO).prodMap (permLin K σC) := by
+       rw [LinearEquiv.conj_apply, key, LinearMap.comp_assoc, LinearEquiv.comp_coe, LinearEquiv.symm_trans_self,
+         LinearEquiv.refl_toLinearMap, LinearMap.comp_id]
+@@ -269,6 +269,9 @@
+ open scoped Matrix
+ 
+ variable (q : ℕ) [Fact q.Prime]
++
++local instance : AddCommGroup (ZMod q) :=
++  (inferInstance : Ring (ZMod q)).toAddCommGroup
+ 
+ theorem torus_mulVec_repr (β : (GaloisField q 2)ˣ) (w : GaloisField q 2) :
+     ((torus q β : GL2 q) : Matrix (Fin 2) (Fin 2) (ZMod q)) *ᵥ ⇑((quadBasis q).repr w) =
+@@ -284,9 +287,9 @@
+         (by
+           intro h0
+           have := congrArg (fun u => ((torus q β)⁻¹ : GL2 q).val *ᵥ u) h0
+-          simp only [Matrix.mulVec_mulVec, Matrix.mulVec_zero] at this
++          rw [Matrix.mulVec_mulVec] at this
+           rw [show ((torus q β)⁻¹ : GL2 q).val * ((torus q β : GL2 q) : Matrix (Fin 2) (Fin 2) (ZMod q)) = 1 from
+-            Units.inv_mul _, Matrix.one_mulVec] at this
++            Units.inv_mul _, Matrix.one_mulVec, Matrix.mulVec_zero] at this
+           exact hv this) := by
+   change (Matrix.GeneralLinearGroup.toLin (torus q β)) • Projectivization.mk (ZMod q) v hv = _
+   rw [Projectivization.smul_mk]
+@@ -346,7 +349,7 @@
+       orderOf (MulAction.toPermHom (GL2 q) (ProjLine q) (torus q α)) ∣ q + 1 := by
+   classical
+   set σ : Equiv.Perm (ProjLine q) := MulAction.toPermHom (GL2 q) (ProjLine q) (torus q α) with hσ
+-  haveI : Fintype (ProjLine q) := Fintype.ofFinite _
++  have : Fintype (ProjLine q) := Fintype.ofFinite _
+   have hcard : Fintype.card (ProjLine q) = q + 1 := by rw [← Nat.card_eq_fintype_card, card_projLine]
+   refine ⟨orderOf_pos σ, ?_⟩
+   obtain ⟨-, hdvd⟩ := charpoly_permLin_of_free (K := ZMod q) (Fintype.card (ProjLine q)) (ProjLine q) rfl σ (orderOf σ)
+@@ -361,7 +364,7 @@
+   set σ : Equiv.Perm (ProjLine q) := MulAction.toPermHom (GL2 q) (ProjLine q) (torus q α) with hσ
+   have hind : ind q K (torus q α) = permLin K σ := by
+     rw [Representation.ofMulActionFinsupp_def]; rfl
+-  haveI : Fintype (ProjLine q) := Fintype.ofFinite _
++  have : Fintype (ProjLine q) := Fintype.ofFinite _
+   have hcard : Fintype.card (ProjLine q) = q + 1 := by rw [← Nat.card_eq_fintype_card, card_projLine]
+   have hm : 0 < orderOf σ := orderOf_pos σ
+   have hfree := free_toPermHom_torus q α
+@@ -377,3 +380,5 @@
+       (X ^ orderOf (MulAction.toPermHom (GL2 q) (ProjLine q) (torus q α)) - 1) ^
+         ((q + 1) / orderOf (MulAction.toPermHom (GL2 q) (ProjLine q) (torus q α))) :=
+   CuspidalType.IndTorus.charpoly_ind_torus q K α
++
++#print axioms solution

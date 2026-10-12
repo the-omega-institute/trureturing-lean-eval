@@ -1,0 +1,143 @@
+@P2MW.S_CuspidalType_charpoly_ind_torus_eq_X_pow_orderOf_sub_one_pow.CuspidalType.IndTorus.«instModuleZModForallFinOfNatNat_module-diagnostic»
+  q inst✝
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/official-layout/terminal-proof-repairs/20261012-cuspidal-charpoly/module-diagnostic.lean:36:48: error(lean.synthInstanceFailed): failed to synthesize instance of type class
+  @Module.{0, 0} (ZMod q) (Fin (@OfNat.ofNat.{0} Nat (nat_lit 2) (instOfNatNat (nat_lit 2))) → ZMod q)
+    (@Ring.toSemiring.{0} (ZMod q)
+      (@DivisionRing.toRing.{0} (ZMod q) (@Field.toDivisionRing.{0} (ZMod q) (@ZMod.instField q inst✝))))
+    (@AddCommGroup.toAddCommMonoid.{0} (Fin (@OfNat.ofNat.{0} Nat (nat_lit 2) (instOfNatNat (nat_lit 2))) → ZMod q)
+      (@Pi.addCommGroup.{0, 0} (Fin (@OfNat.ofNat.{0} Nat (nat_lit 2) (instOfNatNat (nat_lit 2))))
+        (fun (a : Fin (@OfNat.ofNat.{0} Nat (nat_lit 2) (instOfNatNat (nat_lit 2)))) => ZMod q)
+        fun (i : Fin (@OfNat.ofNat.{0} Nat (nat_lit 2) (instOfNatNat (nat_lit 2)))) =>
+        @instAddCommGroupOfIsSimpleAddGroupOfIsNilpotent.{0} (ZMod q)
+          (@AddGroupWithOne.toAddGroup.{0} (ZMod q)
+            (@Ring.toAddGroupWithOne.{0} (ZMod q)
+              (@DivisionRing.toRing.{0} (ZMod q) (@Field.toDivisionRing.{0} (ZMod q) (@ZMod.instField q inst✝)))))
+          (@ZMod.instIsSimpleAddGroup q inst✝)
+          (@AddCommGroup.isNilpotent.{0} (ZMod q)
+            (@AddGroupWithOne.toAddGroup.{0} (ZMod q)
+              (@Ring.toAddGroupWithOne.{0} (ZMod q)
+                (@DivisionRing.toRing.{0} (ZMod q) (@Field.toDivisionRing.{0} (ZMod q) (@ZMod.instField q inst✝)))))
+            (@IsAddCyclic.isAddCommutative.{0} (ZMod q)
+              (@AddGroupWithOne.toAddGroup.{0} (ZMod q)
+                (@Ring.toAddGroupWithOne.{0} (ZMod q)
+                  (@DivisionRing.toRing.{0} (ZMod q) (@Field.toDivisionRing.{0} (ZMod q) (@ZMod.instField q inst✝)))))
+              (ZMod.instIsAddCyclic q)))))
+
+Hint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.
+fun (v : Fin (@OfNat.ofNat.{0} Nat (nat_lit 2) (instOfNatNat (nat_lit 2))) → ZMod q)
+    (hv :
+      @Ne.{1} (Fin (@OfNat.ofNat.{0} Nat (nat_lit 2) (instOfNatNat (nat_lit 2))) → ZMod q) v
+        (@OfNat.ofNat.{0} (Fin (@OfNat.ofNat.{0} Nat (nat_lit 2) (instOfNatNat (nat_lit 2))) → ZMod q) (nat_lit 0)
+          (@Zero.toOfNat0.{0} (Fin (@OfNat.ofNat.{0} Nat (nat_lit 2) (instOfNatNat (nat_lit 2))) → ZMod q)
+            (@Pi.instZero.{0, 0} (Fin (@OfNat.ofNat.{0} Nat (nat_lit 2) (instOfNatNat (nat_lit 2))))
+              (fun (a : Fin (@OfNat.ofNat.{0} Nat (nat_lit 2) (instOfNatNat (nat_lit 2)))) => ZMod q)
+              fun (i : Fin (@OfNat.ofNat.{0} Nat (nat_lit 2) (instOfNatNat (nat_lit 2)))) =>
+              @MulZeroClass.toZero.{0} (ZMod q)
+                (@instMulZeroClassOfSemiring.{0} (ZMod q)
+                  (@CommSemiring.toSemiring.{0} (ZMod q)
+                    (@Semifield.toCommSemiring.{0} (ZMod q)
+                      (@Field.toSemifield.{0} (ZMod q) (@ZMod.instField q inst✝))))))))) =>
+  sorryAx.{u_1} ((tag : Unit) → ?m.11 v hv) Bool.true
+    (@Function.const.{1, 1} Unit Lean.Name Unit.unit
+      (Lean.Name.num
+        (Lean.Name.str
+          (Lean.Name.str
+            (Lean.Name.num
+              (Lean.Name.str
+                (Lean.Name.str
+                  (Lean.Name.str
+                    (Lean.Name.num
+                      (Lean.Name.num
+                        (Lean.Name.num
+                          (Lean.Name.num
+                            (Lean.Name.num
+                              (Lean.Name.num (Lean.Name.str Lean.Name.anonymous "module-diagnostic")
+                                (@OfNat.ofNat.{0} Nat (nat_lit 36) (instOfNatNat (nat_lit 36))))
+                              (@OfNat.ofNat.{0} Nat (nat_lit 48) (instOfNatNat (nat_lit 48))))
+                            (@OfNat.ofNat.{0} Nat (nat_lit 36) (instOfNatNat (nat_lit 36))))
+                          (@OfNat.ofNat.{0} Nat (nat_lit 81) (instOfNatNat (nat_lit 81))))
+                        (@OfNat.ofNat.{0} Nat (nat_lit 48) (instOfNatNat (nat_lit 48))))
+                      (@OfNat.ofNat.{0} Nat (nat_lit 81) (instOfNatNat (nat_lit 81))))
+                    "_sorry")
+                  "_@")
+                "module-diagnostic")
+              (@OfNat.ofNat.{0} Nat (nat_lit 734750286) (instOfNatNat (nat_lit 734750286))))
+            "_hygCtx")
+          "_hyg")
+        (@OfNat.ofNat.{0} Nat (nat_lit 28)
+          (instOfNatNat
+            (nat_lit
+              28))))) : (v : Fin (@OfNat.ofNat.{0} Nat (nat_lit 2) (instOfNatNat (nat_lit 2))) → ZMod q) →
+  (hv :
+      @Ne.{1} (Fin (@OfNat.ofNat.{0} Nat (nat_lit 2) (instOfNatNat (nat_lit 2))) → ZMod q) v
+        (@OfNat.ofNat.{0} (Fin (@OfNat.ofNat.{0} Nat (nat_lit 2) (instOfNatNat (nat_lit 2))) → ZMod q) (nat_lit 0)
+          (@Zero.toOfNat0.{0} (Fin (@OfNat.ofNat.{0} Nat (nat_lit 2) (instOfNatNat (nat_lit 2))) → ZMod q)
+            (@Pi.instZero.{0, 0} (Fin (@OfNat.ofNat.{0} Nat (nat_lit 2) (instOfNatNat (nat_lit 2))))
+              (fun (a : Fin (@OfNat.ofNat.{0} Nat (nat_lit 2) (instOfNatNat (nat_lit 2)))) => ZMod q)
+              fun (i : Fin (@OfNat.ofNat.{0} Nat (nat_lit 2) (instOfNatNat (nat_lit 2)))) =>
+              @MulZeroClass.toZero.{0} (ZMod q)
+                (@instMulZeroClassOfSemiring.{0} (ZMod q)
+                  (@CommSemiring.toSemiring.{0} (ZMod q)
+                    (@Semifield.toCommSemiring.{0} (ZMod q)
+                      (@Field.toSemifield.{0} (ZMod q) (@ZMod.instField q inst✝))))))))) →
+    ?m.11 v hv
+fun (v : Fin (@OfNat.ofNat.{0} Nat (nat_lit 2) (instOfNatNat (nat_lit 2))) → ZMod q)
+    (hv :
+      @Ne.{1} (Fin (@OfNat.ofNat.{0} Nat (nat_lit 2) (instOfNatNat (nat_lit 2))) → ZMod q) v
+        (@OfNat.ofNat.{0} (Fin (@OfNat.ofNat.{0} Nat (nat_lit 2) (instOfNatNat (nat_lit 2))) → ZMod q) (nat_lit 0)
+          (@Zero.toOfNat0.{0} (Fin (@OfNat.ofNat.{0} Nat (nat_lit 2) (instOfNatNat (nat_lit 2))) → ZMod q)
+            (@Pi.instZero.{0, 0} (Fin (@OfNat.ofNat.{0} Nat (nat_lit 2) (instOfNatNat (nat_lit 2))))
+              (fun (a : Fin (@OfNat.ofNat.{0} Nat (nat_lit 2) (instOfNatNat (nat_lit 2)))) => ZMod q)
+              fun (i : Fin (@OfNat.ofNat.{0} Nat (nat_lit 2) (instOfNatNat (nat_lit 2)))) =>
+              @MulZeroClass.toZero.{0} (ZMod q)
+                (@instMulZeroClassOfSemiring.{0} (ZMod q)
+                  (@CommSemiring.toSemiring.{0} (ZMod q)
+                    (@Semifield.toCommSemiring.{0} (ZMod q)
+                      (@Field.toSemifield.{0} (ZMod q) (@ZMod.instField q inst✝))))))))) =>
+  @Projectivization.mk.{0, 0} (ZMod q) (Fin (@OfNat.ofNat.{0} Nat (nat_lit 2) (instOfNatNat (nat_lit 2))) → ZMod q)
+    (@Field.toDivisionRing.{0} (ZMod q) (@ZMod.instField q inst✝))
+    (@Pi.addCommGroup.{0, 0} (Fin (@OfNat.ofNat.{0} Nat (nat_lit 2) (instOfNatNat (nat_lit 2))))
+      (fun (a : Fin (@OfNat.ofNat.{0} Nat (nat_lit 2) (instOfNatNat (nat_lit 2)))) => ZMod q)
+      fun (i : Fin (@OfNat.ofNat.{0} Nat (nat_lit 2) (instOfNatNat (nat_lit 2)))) =>
+      @Ring.toAddCommGroup.{0} (ZMod q)
+        (@DivisionRing.toRing.{0} (ZMod q) (@Field.toDivisionRing.{0} (ZMod q) (@ZMod.instField q inst✝))))
+    (@Pi.Function.module.{0, 0, 0} (Fin (@OfNat.ofNat.{0} Nat (nat_lit 2) (instOfNatNat (nat_lit 2)))) (ZMod q) (ZMod q)
+      (@Ring.toSemiring.{0} (ZMod q)
+        (@DivisionRing.toRing.{0} (ZMod q) (@Field.toDivisionRing.{0} (ZMod q) (@ZMod.instField q inst✝))))
+      (@Semiring.toAddCommMonoid.{0} (ZMod q)
+        (@Ring.toSemiring.{0} (ZMod q)
+          (@DivisionRing.toRing.{0} (ZMod q) (@Field.toDivisionRing.{0} (ZMod q) (@ZMod.instField q inst✝)))))
+      (@Semiring.toModule.{0} (ZMod q)
+        (@Ring.toSemiring.{0} (ZMod q)
+          (@DivisionRing.toRing.{0} (ZMod q) (@Field.toDivisionRing.{0} (ZMod q) (@ZMod.instField q inst✝))))))
+    v
+    hv : (v : Fin (@OfNat.ofNat.{0} Nat (nat_lit 2) (instOfNatNat (nat_lit 2))) → ZMod q) →
+  (hv :
+      @Ne.{1} (Fin (@OfNat.ofNat.{0} Nat (nat_lit 2) (instOfNatNat (nat_lit 2))) → ZMod q) v
+        (@OfNat.ofNat.{0} (Fin (@OfNat.ofNat.{0} Nat (nat_lit 2) (instOfNatNat (nat_lit 2))) → ZMod q) (nat_lit 0)
+          (@Zero.toOfNat0.{0} (Fin (@OfNat.ofNat.{0} Nat (nat_lit 2) (instOfNatNat (nat_lit 2))) → ZMod q)
+            (@Pi.instZero.{0, 0} (Fin (@OfNat.ofNat.{0} Nat (nat_lit 2) (instOfNatNat (nat_lit 2))))
+              (fun (a : Fin (@OfNat.ofNat.{0} Nat (nat_lit 2) (instOfNatNat (nat_lit 2)))) => ZMod q)
+              fun (i : Fin (@OfNat.ofNat.{0} Nat (nat_lit 2) (instOfNatNat (nat_lit 2)))) =>
+              @MulZeroClass.toZero.{0} (ZMod q)
+                (@instMulZeroClassOfSemiring.{0} (ZMod q)
+                  (@CommSemiring.toSemiring.{0} (ZMod q)
+                    (@Semifield.toCommSemiring.{0} (ZMod q)
+                      (@Field.toSemifield.{0} (ZMod q) (@ZMod.instField q inst✝))))))))) →
+    @Projectivization.{0, 0} (ZMod q) (Fin (@OfNat.ofNat.{0} Nat (nat_lit 2) (instOfNatNat (nat_lit 2))) → ZMod q)
+      (@Field.toDivisionRing.{0} (ZMod q) (@ZMod.instField q inst✝))
+      (@Pi.addCommGroup.{0, 0} (Fin (@OfNat.ofNat.{0} Nat (nat_lit 2) (instOfNatNat (nat_lit 2))))
+        (fun (a : Fin (@OfNat.ofNat.{0} Nat (nat_lit 2) (instOfNatNat (nat_lit 2)))) => ZMod q)
+        fun (i : Fin (@OfNat.ofNat.{0} Nat (nat_lit 2) (instOfNatNat (nat_lit 2)))) =>
+        @Ring.toAddCommGroup.{0} (ZMod q)
+          (@DivisionRing.toRing.{0} (ZMod q) (@Field.toDivisionRing.{0} (ZMod q) (@ZMod.instField q inst✝))))
+      (@Pi.Function.module.{0, 0, 0} (Fin (@OfNat.ofNat.{0} Nat (nat_lit 2) (instOfNatNat (nat_lit 2)))) (ZMod q)
+        (ZMod q)
+        (@Ring.toSemiring.{0} (ZMod q)
+          (@DivisionRing.toRing.{0} (ZMod q) (@Field.toDivisionRing.{0} (ZMod q) (@ZMod.instField q inst✝))))
+        (@Semiring.toAddCommMonoid.{0} (ZMod q)
+          (@Ring.toSemiring.{0} (ZMod q)
+            (@DivisionRing.toRing.{0} (ZMod q) (@Field.toDivisionRing.{0} (ZMod q) (@ZMod.instField q inst✝)))))
+        (@Semiring.toModule.{0} (ZMod q)
+          (@Ring.toSemiring.{0} (ZMod q)
+            (@DivisionRing.toRing.{0} (ZMod q) (@Field.toDivisionRing.{0} (ZMod q) (@ZMod.instField q inst✝))))))

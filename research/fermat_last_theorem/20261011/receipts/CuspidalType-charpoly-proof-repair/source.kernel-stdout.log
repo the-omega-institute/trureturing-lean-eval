@@ -1,0 +1,30 @@
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_CuspidalType_charpoly_ind_torus_eq_X_pow_orderOf_sub_one_pow.lean:285:18: error(lean.synthInstanceFailed): failed to synthesize instance of type class
+  Module (ZMod q) (Fin 2 → ZMod q)
+
+Hint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_CuspidalType_charpoly_ind_torus_eq_X_pow_orderOf_sub_one_pow.lean:286:6: error(lean.synthInstanceFailed): failed to synthesize instance of type class
+  Module (ZMod q) (Fin 2 → ZMod q)
+
+Hint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_CuspidalType_charpoly_ind_torus_eq_X_pow_orderOf_sub_one_pow.lean:292:48: error: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  ?A *ᵥ 0
+in the target expression
+  v = ↑((torus q) β)⁻¹ *ᵥ 0
+
+q : ℕ
+inst✝ : Fact (Nat.Prime q)
+β : (GaloisField q 2)ˣ
+v : Fin 2 → ZMod q
+hv : v ≠ 0
+h0 : ↑((torus q) β) *ᵥ v = 0
+this : v = ↑((torus q) β)⁻¹ *ᵥ 0
+⊢ False
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_CuspidalType_charpoly_ind_torus_eq_X_pow_orderOf_sub_one_pow.lean:294:57: error(lean.synthInstanceFailed): failed to synthesize instance of type class
+  Module (ZMod q) (Fin 2 → ZMod q)
+
+Hint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_CuspidalType_charpoly_ind_torus_eq_X_pow_orderOf_sub_one_pow.lean:309:8: error(lean.unknownIdentifier): Unknown identifier `torus_smul_mk`
+'P2MW.S_CuspidalType_charpoly_ind_torus_eq_X_pow_orderOf_sub_one_pow.solution' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
