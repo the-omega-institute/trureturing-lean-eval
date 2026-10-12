@@ -1,0 +1,146 @@
+{
+  "at": "2026-10-12T20:29:15.550808+00:00",
+  "baseline_source_card_pair_actual_make_kernel_passed": true,
+  "canonical_solution_byte_identical_to_supplier": true,
+  "canonical_card_byte_identical_to_supplier": true,
+  "cached_import_full_source_replay_and_audit_pending": true,
+  "full_original_proof_retained": true,
+  "original_main_hypotheses_and_conclusion_preserved": true,
+  "original_solution_lines": 6116,
+  "original_card_lines": 14,
+  "checks": {
+    "source": {
+      "module": "Submission.Supplier.P2M.Sol.S_LocalNewvector_PSCarrier_fixedSubmodule_padicK1_zero_le_of_stable",
+      "make_exit": 0,
+      "kernel_exit": 0,
+      "kernel_seconds": 66.62130683299999,
+      "source_unchanged": true,
+      "compiler_warnings": 92,
+      "direct_dependencies": [
+        {
+          "module": "Submission.Supplier.Definitions.Def_RepTheory_SmoothVectors",
+          "source_bound_cached_controller_record_exit": 0,
+          "separate_kernel_receipt": null,
+          "full_source_replay_and_audit_pending": true
+        },
+        {
+          "module": "Submission.Supplier.Definitions.Def_RepTheory_GL2CongruenceSubgroup",
+          "source_bound_cached_controller_record_exit": 0,
+          "separate_kernel_receipt": null,
+          "full_source_replay_and_audit_pending": true
+        },
+        {
+          "module": "Submission.Supplier.Definitions.Def_LocalLanglands_HeckeCosetLocal",
+          "controller_dependency_record": {
+            "module": "Submission.Supplier.Definitions.Def_LocalLanglands_HeckeCosetLocal",
+            "source_sha256": "92dfebaaeb01ad17036044c7b1a11bcf769cfa10ec0c7e4c9c28b14e112b8b49",
+            "object_sha256": null,
+            "receipt_reused": false
+          },
+          "cached_import_present": true,
+          "separate_kernel_receipt": null,
+          "source_object_binding_not_recorded": true,
+          "full_source_replay_and_audit_pending": true
+        },
+        {
+          "module": "Submission.Supplier.Definitions.Def_LocalLanglands_IntegralSubgroupOpen",
+          "source_bound_cached_controller_record_exit": 0,
+          "separate_kernel_receipt": null,
+          "full_source_replay_and_audit_pending": true
+        },
+        {
+          "module": "Submission.Supplier.Definitions.Def_LocalLanglands_IntegralSubgroupCompact",
+          "source_bound_cached_controller_record_exit": 0,
+          "separate_kernel_receipt": null,
+          "full_source_replay_and_audit_pending": true
+        },
+        {
+          "module": "Submission.Supplier.Definitions.Def_LocalNewvector_CongruenceSubgroupK1",
+          "source_bound_cached_controller_record_exit": 0,
+          "separate_kernel_receipt": null,
+          "full_source_replay_and_audit_pending": true
+        },
+        {
+          "module": "Submission.Supplier.Definitions.Def_LocalNewvector_ConductorDatum",
+          "source_bound_cached_controller_record_exit": 0,
+          "separate_kernel_receipt": null,
+          "full_source_replay_and_audit_pending": true
+        },
+        {
+          "module": "Submission.Supplier.Definitions.Def_LocalNewvector_CharConductor",
+          "source_bound_cached_controller_record_exit": 0,
+          "separate_kernel_receipt": null,
+          "full_source_replay_and_audit_pending": true
+        },
+        {
+          "module": "Submission.Supplier.Definitions.Def_LocalNewvector_PrincipalSeriesCarrier",
+          "source_bound_cached_controller_record_exit": 0,
+          "separate_kernel_receipt": null,
+          "full_source_replay_and_audit_pending": true
+        },
+        {
+          "module": "Submission.Supplier.Theorems.Thm_LocalNewvector_PSCarrier_finrank_fixedSubmodule_padicK1",
+          "source_bound_cached_controller_record_exit": 0,
+          "separate_kernel_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/b2e266df9c32f42a491ddf78-1791836445901520000.kernel/result.json",
+          "actual_kernel_exit": 0
+        },
+        {
+          "module": "Submission.Supplier.P2M.Util",
+          "source_bound_cached_controller_record_exit": 0,
+          "separate_kernel_receipt": null,
+          "full_source_replay_and_audit_pending": true
+        }
+      ],
+      "solution_axiom_audit": "not printed separately; full-root audit pending",
+      "printed_axiom_closures": []
+    },
+    "card": {
+      "module": "Submission.Supplier.Theorems.Thm_LocalNewvector_PSCarrier_fixedSubmodule_padicK1_zero_le_of_stable",
+      "make_exit": 0,
+      "kernel_exit": 0,
+      "kernel_seconds": 5.544189749999999,
+      "source_unchanged": true,
+      "compiler_warnings": 0,
+      "direct_dependencies": [
+        {
+          "module": "Submission.Supplier.Definitions.Def_LocalNewvector_CharConductor",
+          "source_bound_cached_controller_record_exit": 0,
+          "separate_kernel_receipt": null,
+          "full_source_replay_and_audit_pending": true
+        },
+        {
+          "module": "Submission.Supplier.Definitions.Def_LocalNewvector_PrincipalSeriesCarrier",
+          "source_bound_cached_controller_record_exit": 0,
+          "separate_kernel_receipt": null,
+          "full_source_replay_and_audit_pending": true
+        },
+        {
+          "module": "Submission.Supplier.P2M.Util",
+          "source_bound_cached_controller_record_exit": 0,
+          "separate_kernel_receipt": null,
+          "full_source_replay_and_audit_pending": true
+        },
+        {
+          "module": "Submission.Supplier.P2M.Sol.S_LocalNewvector_PSCarrier_fixedSubmodule_padicK1_zero_le_of_stable",
+          "source_bound_cached_controller_record_exit": 0,
+          "separate_kernel_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/817d224bc8f96d13cb75f074-1791836639056253000.kernel/result.json",
+          "actual_kernel_exit": 0
+        }
+      ],
+      "solution_axiom_audit": "not printed separately; full-root audit pending",
+      "printed_axiom_closures": []
+    }
+  },
+  "proof_summary": "Retain the complete original proof that the full level-zero fixed submodule is contained in each nonzero GL2-stable principal-series submodule under the original unramified-character and gamma-ratio p hypotheses. The proof retains the averaging and bump-vector construction and splits into generation of the full carrier when a bump vector is present, or extraction of the spherical vector when no bump vector is present. All original hypotheses and the entire fixed-submodule inclusion are preserved. No recursive axiom closure was separately printed.",
+  "no_source_change": true,
+  "no_linter_suppression_added": true,
+  "source_axiom_audit_pending": true,
+  "supplier": "anthropics/fermats-last-theorem",
+  "supplier_commit": "6e837e75355538c7f80bab5b956861e86c4eacc2",
+  "full_original_complete": false,
+  "official_new_solve_credit": 0,
+  "jobs": 1,
+  "compilers": 1,
+  "threads": 1,
+  "controller_continues_same_full_FLT_graph": true
+}
