@@ -1,0 +1,160 @@
+--- /Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/P2M/Sol/S_HopfAlgebra_exists_finiteFlat_galoisSimple_factor_of_nonzero_equivariant_map.lean
++++ /Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/P2M/Sol/S_HopfAlgebra_exists_finiteFlat_galoisSimple_factor_of_nonzero_equivariant_map.lean
+@@ -49,8 +49,7 @@
+     ofConv_galAct, ofConv_galAct]
+ 
+   generalize (Coalgebra.comul (R := GaloisRep.ratLocalizedAt p) h) = z
+-  induction z using TensorProduct.induction_on with
+-  | zero => simp
++  induction z using TensorProduct.inductionOn with
+   | add x y hx hy => simp only [map_add, hx, hy]
+   | tmul a b =>
+       simp only [Algebra.TensorProduct.lift_tmul, map_mul, AlgHom.coe_comp,
+@@ -66,7 +65,7 @@
+ 
+ lemma galAct_id (f : WithConv (H →ₐ[GaloisRep.ratLocalizedAt p] AlgebraicClosure ℚ)) :
+     galAct 1 f = f :=
+-  withConv_ext fun h => by simp [galAct_spec]
++  withConv_ext fun h => by simp
+ 
+ lemma galAct_comp (σ τ : AlgebraicClosure ℚ ≃ₐ[ℚ] AlgebraicClosure ℚ)
+     (f : WithConv (H →ₐ[GaloisRep.ratLocalizedAt p] AlgebraicClosure ℚ)) :
+@@ -124,7 +123,7 @@
+ 
+ noncomputable def antipodeAlgHom : G →ₐ[R] G :=
+   AlgHom.ofLinearMap (HopfAlgebra.antipode R) HopfAlgebra.antipode_one fun a b => by
+-    rw [HopfAlgebra.antipode_mul, mul_comm]
++    rw [HopfAlgebra.antipode_mul_antidistrib, mul_comm]
+ 
+ @[scoped simp] lemma antipodeAlgHom_apply (g : G) : antipodeAlgHom R G g = HopfAlgebra.antipode R g := rfl
+ 
+@@ -162,7 +161,7 @@
+ section Sub
+ variable {K : AddSubgroup M} (hK : IsStable K)
+ 
+-noncomputable def subDMA : DistribMulAction Gal ↥K where
++@[instance_reducible] noncomputable def subDMA : DistribMulAction Gal ↥K where
+   smul σ x := ⟨σ • (x : M), hK σ x x.2⟩
+   one_smul x := Subtype.ext (one_smul Gal (x : M))
+   mul_smul σ τ x := Subtype.ext (mul_smul σ τ (x : M))
+@@ -178,7 +177,7 @@
+ section Quot
+ variable {K : AddSubgroup M} (hK : IsStable K)
+ 
+-noncomputable def quotDMA : DistribMulAction Gal (M ⧸ K) where
++@[instance_reducible] noncomputable def quotDMA : DistribMulAction Gal (M ⧸ K) where
+   smul σ := Quotient.map' (σ • ·) (fun a b hab => by
+     rw [QuotientAddGroup.leftRel_apply] at hab ⊢
+     have h := hK σ _ hab
+@@ -242,21 +241,21 @@
+     refine LinearMap.ext fun x => ?_
+     obtain ⟨y, rfl⟩ := hℓ x
+     exact DFunLike.congr_fun hfg y
+-  haveI : Module.Finite K ((Fin n → R) →ₗ[R] K) :=
++  have : Module.Finite K ((Fin n → R) →ₗ[R] K) :=
+     Module.Finite.equiv ((Pi.basisFun R (Fin n)).constr K)
+-  haveI : Module.Finite K (G →ₗ[R] K) := Module.Finite.of_injective D hD
++  have : Module.Finite K (G →ₗ[R] K) := Module.Finite.of_injective D hD
+   exact li2.finite
+ 
+ open E54ChildA E55
+ 
+ set_option synthInstance.maxHeartbeats 1600000 in
+ theorem solution
+-    {p : ℕ} (hp : p.Prime) (hp2 : p ≠ 2)
++    {p : ℕ} (hp : p.Prime) (_hp2 : p ≠ 2)
+     {H : Type} [CommRing H] [HopfAlgebra (GaloisRep.ratLocalizedAt p) H]
+     [Module.Finite (GaloisRep.ratLocalizedAt p) H] [Module.Flat (GaloisRep.ratLocalizedAt p) H]
+     [Coalgebra.IsCocomm (GaloisRep.ratLocalizedAt p) H]
+     (hMp : ∀ f : WithConv (H →ₐ[GaloisRep.ratLocalizedAt p] AlgebraicClosure ℚ), f ^ p = 1)
+-    (P : ValuationSubring (AlgebraicClosure ℚ)) (hP : P.LiesOverPrime p)
++    (P : ValuationSubring (AlgebraicClosure ℚ)) (_hP : P.LiesOverPrime p)
+     (N : Type) [AddCommGroup N] [Module (IsLocalRing.ResidueField P) N]
+     (act : (AlgebraicClosure ℚ ≃ₐ[ℚ] AlgebraicClosure ℚ) → N →ₗ[IsLocalRing.ResidueField P] N)
+     (F : WithConv (H →ₐ[GaloisRep.ratLocalizedAt p] AlgebraicClosure ℚ) → N)
+@@ -284,9 +283,9 @@
+               (∀ h : H', g h = σ (f h)) → g ∈ S) →
+           S = ⊥ ∨ S = ⊤) := by
+   classical
+-  haveI : Fact p.Prime := ⟨hp⟩
+-
+-  haveI instFin : Finite (M (p := p) (H := H)) := by
++  have : Fact p.Prime := ⟨hp⟩
++
++  have instFin : Finite (M (p := p) (H := H)) := by
+     have hfin : Finite (H →ₐ[GaloisRep.ratLocalizedAt p] AlgebraicClosure ℚ) :=
+       E55.finite_algHom
+     have hfinW : Finite (WithConv (H →ₐ[GaloisRep.ratLocalizedAt p] AlgebraicClosure ℚ)) :=
+@@ -328,8 +327,8 @@
+           K = G₀ ∨ K = G' :=
+     by
+ 
+-    haveI : Finite (Set (M (p := p) (H := H))) := inferInstance
+-    haveI : Finite (AddSubgroup (M (p := p) (H := H))) :=
++    have : Finite (Set (M (p := p) (H := H))) := inferInstance
++    have : Finite (AddSubgroup (M (p := p) (H := H))) :=
+       Finite.of_injective (fun K => (K : Set (M (p := p) (H := H)))) SetLike.coe_injective
+ 
+     let Pset : Set (AddSubgroup (M (p := p) (H := H))) :=
+@@ -340,7 +339,7 @@
+       exact ⟨eM f, trivial, by show F (eM.symm (eM f)) ≠ 0; rw [Equiv.symm_apply_apply]; exact hf⟩
+ 
+     obtain ⟨G', hG'P, hG'min⟩ :=
+-      Finite.to_wellFoundedLT.wf.has_min Pset ⟨⊤, hPtop⟩
++      Finite.to_wellFoundedLT.has_min Pset ⟨⊤, hPtop⟩
+ 
+     have hbotstab : IsStable (M := M (p := p) (H := H)) (⊥ : AddSubgroup _) := by
+       intro σ m hm; rw [AddSubgroup.mem_bot] at hm ⊢; rw [hm]; exact smul_zero σ
+@@ -351,7 +350,7 @@
+     let Qset : Set (AddSubgroup (M (p := p) (H := H))) := {K | IsStable K ∧ K < G'}
+ 
+     obtain ⟨G₀, hG₀Q, hG₀max⟩ :=
+-      Finite.to_wellFoundedGT.wf.has_min Qset ⟨⊥, hbotstab, hbotlt⟩
++      Finite.to_wellFoundedGT.has_min Qset ⟨⊥, hbotstab, hbotlt⟩
+ 
+     refine ⟨G', hG'P.1, hG'P.2, G₀, hG₀Q.1, hG₀Q.2.le, ?_, ?_⟩
+     ·
+@@ -366,13 +365,13 @@
+         · exact absurd hlt (hG₀max K ⟨hKstab, hKlt⟩)
+         · exact Or.inl heq.symm
+ 
+-  letI iG' : DistribMulAction Gal ↥G' := subDMA hG'stab
++  let iG' : DistribMulAction Gal ↥G' := subDMA hG'stab
+   let G₀' : AddSubgroup ↥G' := G₀.addSubgroupOf G'
+   have hG₀'stab : IsStable (M := ↥G') G₀' := by
+     intro σ x hx
+     have hx' : (x : M (p := p) (H := H)) ∈ G₀ := hx
+     exact hG₀stab σ _ hx'
+-  letI iQ : DistribMulAction Gal (↥G' ⧸ G₀') := quotDMA hG₀'stab
++  let iQ : DistribMulAction Gal (↥G' ⧸ G₀') := quotDMA hG₀'stab
+ 
+   obtain ⟨H₁, iCR₁, iHA₁, hFin₁, hFl₁, hCC₁, e₁, he₁_add, he₁_act⟩ :=
+     GaloisRep.exists_finiteFlat_sub_of_equivariant_injection p H
+@@ -380,11 +379,11 @@
+       (fun σ f g hfg => eM_act σ f g hfg)
+       (ι := G'.subtype) G'.subtype_injective
+       (fun σ n => (subDMA_coe hG'stab σ n).symm)
+-  letI : CommRing H₁ := iCR₁
+-  letI : HopfAlgebra (GaloisRep.ratLocalizedAt p) H₁ := iHA₁
+-  haveI : Module.Finite (GaloisRep.ratLocalizedAt p) H₁ := hFin₁
+-  haveI : Module.Flat (GaloisRep.ratLocalizedAt p) H₁ := hFl₁
+-  haveI : Coalgebra.IsCocomm (GaloisRep.ratLocalizedAt p) H₁ := hCC₁
++  let : CommRing H₁ := iCR₁
++  let : HopfAlgebra (GaloisRep.ratLocalizedAt p) H₁ := iHA₁
++  have : Module.Finite (GaloisRep.ratLocalizedAt p) H₁ := hFin₁
++  have : Module.Flat (GaloisRep.ratLocalizedAt p) H₁ := hFl₁
++  have : Coalgebra.IsCocomm (GaloisRep.ratLocalizedAt p) H₁ := hCC₁
+ 
+   have hπeq : ∀ (σ : Gal) (m : ↥G'),
+       QuotientAddGroup.mk' G₀' (σ • m) = σ • QuotientAddGroup.mk' G₀' m :=
+@@ -394,8 +393,8 @@
+       hFin₁ hFl₁ hCC₁ (↥G') _ iG' e₁ he₁_add he₁_act
+       (↥G' ⧸ G₀') _ iQ (QuotientAddGroup.mk' G₀')
+       (QuotientAddGroup.mk'_surjective G₀') hπeq
+-  letI : CommRing H' := iCR'
+-  letI : HopfAlgebra (GaloisRep.ratLocalizedAt p) H' := iHA'
++  let : CommRing H' := iCR'
++  let : HopfAlgebra (GaloisRep.ratLocalizedAt p) H' := iHA'
+ 
+   let Ftd : (↥G' ⧸ G₀') →+ N := QuotientAddGroup.lift G₀' (Ft.comp G'.subtype)
+     (fun x hx => hG₀ker _ hx)
