@@ -1,0 +1,11 @@
+--- original-card.lean
++++ candidate-card.lean
+@@ -23,7 +23,7 @@
+     Function.Bijective
+       (Algebra.TensorProduct.lift
+         (Algebra.ofId (AlgebraicClosure ℚ) (WithConv (H →ₐ[GaloisRep.ratLocalizedAt q] AlgebraicClosure ℚ) → AlgebraicClosure ℚ))
+-        (Pi.algHom (GaloisRep.ratLocalizedAt q) _
++        (AlgHom.pi
+           fun ν : WithConv (H →ₐ[GaloisRep.ratLocalizedAt q] AlgebraicClosure ℚ) => (WithConv.ofConv ν : H →ₐ[GaloisRep.ratLocalizedAt q] AlgebraicClosure ℚ))
+         (fun _ _ => Commute.all _ _) :
+         AlgebraicClosure ℚ ⊗[GaloisRep.ratLocalizedAt q] H →ₐ[AlgebraicClosure ℚ] (WithConv (H →ₐ[GaloisRep.ratLocalizedAt q] AlgebraicClosure ℚ) → AlgebraicClosure ℚ)) := by p2m_exact_reverting @_root_.P2MW.S_GaloisRep_bijective_lift_pi_algHom_of_finiteFlatHopf.solution

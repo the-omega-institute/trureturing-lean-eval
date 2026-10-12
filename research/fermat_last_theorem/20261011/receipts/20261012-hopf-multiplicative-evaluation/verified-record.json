@@ -1,0 +1,49 @@
+{
+  "at": "2026-10-12T12:01:33.979659+00:00",
+  "module": "Submission.Supplier.P2M.Sol.S_GaloisRep_bijective_lift_pi_algHom_of_finiteFlatHopf",
+  "original_lines": 296,
+  "candidate_lines": 288,
+  "scope_preserved": "Full bijectivity of the multiplicative evaluation tensor lift; original q, primality, commutative Hopf algebra, finiteness, flatness, and cocommutativity hypotheses retained.",
+  "statement_syntax_change": "Replace deprecated Pi.algHom R A g with AlgHom.pi g. In the official pinned Mathlib, Pi.algHom is an abbreviation of AlgHom.pi.",
+  "source_changes": "Use the exact AlgebraicClosure.isAlgebraic proof; remove redundant conversion tactics and dead fallback; modernize 9 propositional haveI bindings; replace deprecated Pi algebra maps and tensor induction with their current public APIs. New tensor induction has tmul/add cases and covers zero via tmul 0 0.",
+  "failed_attempts": [
+    "original: redundant convert continuation; 18 warnings",
+    "source-r1: old zero alternatives incompatible with the new two-case tensor induction"
+  ],
+  "source_verified": true,
+  "card_verified": true,
+  "status": "Complete original bijectivity target verified through canonical make lean and kernel",
+  "supplier": "anthropics/fermats-last-theorem",
+  "supplier_commit": "6e837e75355538c7f80bab5b956861e86c4eacc2",
+  "official_mathlib": "5e0c4e5239cb0a2d86d68a884bf52cfd963fce22",
+  "lean_toolchain": "leanprover/lean4:v4.35.0-rc3",
+  "full_original_complete": false,
+  "official_new_solve_credit": 0,
+  "verified_pair": true,
+  "warnings": 0,
+  "axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "checks": {
+    "source": {
+      "configuration": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/official-layout/terminal-proof-repairs/20261012-hopf-multiplicative-evaluation/source-r2.configuration.json",
+      "kernel_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/official-layout/terminal-proof-repairs/20261012-hopf-multiplicative-evaluation/source-r2.kernel/result.json",
+      "make_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/official-layout/terminal-proof-repairs/20261012-hopf-multiplicative-evaluation/source-r2.make-terminal.json",
+      "kernel_exit": 0,
+      "make_exit": 0,
+      "seconds": 54.027452249999996,
+      "source_unchanged": true
+    },
+    "card": {
+      "configuration": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/official-layout/terminal-proof-repairs/20261012-hopf-multiplicative-evaluation/card.configuration.json",
+      "kernel_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/official-layout/terminal-proof-repairs/20261012-hopf-multiplicative-evaluation/card.kernel/result.json",
+      "make_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/official-layout/terminal-proof-repairs/20261012-hopf-multiplicative-evaluation/card.make-terminal.json",
+      "kernel_exit": 0,
+      "make_exit": 0,
+      "seconds": 60.264136708,
+      "source_unchanged": true
+    }
+  }
+}

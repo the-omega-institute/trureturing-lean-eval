@@ -1,0 +1,133 @@
+--- original-adapted-source.lean
++++ candidate-adapted-source-r1.lean
+@@ -36,7 +36,7 @@
+ theorem evPt_tmul (φ : Pts q H) (t : ℚ̄) (h : H) : evPt q H φ (t ⊗ₜ[GaloisRep.ratLocalizedAt q] h) = t * (WithConv.ofConv φ) h := by
+   rw [evPt, Algebra.TensorProduct.lift_tmul]; rfl
+ 
+-def ev : ℚ̄ ⊗[GaloisRep.ratLocalizedAt q] H →ₐ[ℚ̄] (Pts q H → ℚ̄) := Pi.algHom ℚ̄ _ (fun φ => evPt q H φ)
++def ev : ℚ̄ ⊗[GaloisRep.ratLocalizedAt q] H →ₐ[ℚ̄] (Pts q H → ℚ̄) := AlgHom.pi (fun φ => evPt q H φ)
+ 
+ theorem ev_apply (x : ℚ̄ ⊗[GaloisRep.ratLocalizedAt q] H) (φ : Pts q H) : ev q H x φ = evPt q H φ x := rfl
+ 
+@@ -50,7 +50,7 @@
+ theorem finite_pts : Finite (Pts q H) := by
+   apply Nat.finite_of_card_ne_zero
+   rw [GaloisRep.natCard_withConv_algHom_eq_finrank_of_finiteFlatHopf q H]
+-  haveI : Nontrivial H := by
++  have : Nontrivial H := by
+ 
+     have h := Bialgebra.counit_one (R := GaloisRep.ratLocalizedAt q) (A := H)
+     refine ⟨⟨1, 0, fun h10 => ?_⟩⟩
+@@ -74,8 +74,8 @@
+ 
+ theorem ev_surjective : Function.Surjective (ev q H) := by
+   classical
+-  haveI := finite_pts q H
+-  haveI : Fintype (Pts q H) := Fintype.ofFinite _
++  have := finite_pts q H
++  have : Fintype (Pts q H) := Fintype.ofFinite _
+ 
+   suffices h : LinearMap.range (ev q H).toLinearMap = ⊤ from
+     LinearMap.range_eq_top.mp h
+@@ -120,8 +120,8 @@
+ 
+ theorem ev_bijective : Function.Bijective (ev q H) := by
+   classical
+-  haveI := finite_pts q H
+-  haveI : Fintype (Pts q H) := Fintype.ofFinite _
++  have := finite_pts q H
++  have : Fintype (Pts q H) := Fintype.ofFinite _
+   refine ⟨?_, ev_surjective q H⟩
+ 
+   have hdim : Module.finrank ℚ̄ (ℚ̄ ⊗[GaloisRep.ratLocalizedAt q] H) = Module.finrank ℚ̄ (Pts q H → ℚ̄) := by
+@@ -148,10 +148,7 @@
+ 
+ theorem galT_tmul (σ : ℚ̄ ≃ₐ[ℚ] ℚ̄) (t : ℚ̄) (h : H) :
+     galT q H σ (t ⊗ₜ[GaloisRep.ratLocalizedAt q] h) = σ t ⊗ₜ[GaloisRep.ratLocalizedAt q] h := by
+-  first
+-    | rfl
+-    | (show (Algebra.TensorProduct.map (resR q σ) (AlgHom.id _ H)) (t ⊗ₜ[GaloisRep.ratLocalizedAt q] h) = _
+-       erw [Algebra.TensorProduct.map_tmul]; rfl)
++  rfl
+ 
+ theorem gal_algebraMap (σ : ℚ̄ ≃ₐ[ℚ] ℚ̄) (r : GaloisRep.ratLocalizedAt q) :
+     σ (algebraMap (GaloisRep.ratLocalizedAt q) ℚ̄ r) = algebraMap (GaloisRep.ratLocalizedAt q) ℚ̄ r := by
+@@ -169,7 +166,7 @@
+ 
+ theorem ev_galT (σ : ℚ̄ ≃ₐ[ℚ] ℚ̄) (x : ℚ̄ ⊗[GaloisRep.ratLocalizedAt q] H) (φ : Pts q H) :
+     ev q H (galT q H σ x) φ = σ (ev q H x (galPt q H σ⁻¹ φ)) := by
+-  induction x using TensorProduct.induction_on with
++  induction x using TensorProduct.inductionOn with
+   | zero => simp
+   | tmul t h =>
+       rw [galT_tmul, ev_tmul, ev_tmul, map_mul, ofConv_galPt_apply, ← AlgEquiv.mul_apply, mul_inv_cancel,
+@@ -183,7 +180,7 @@
+ theorem basis_repr_galT {ι : Type} (b : Module.Basis ι (GaloisRep.ratLocalizedAt q) H) (σ : ℚ̄ ≃ₐ[ℚ] ℚ̄)
+     (x : ℚ̄ ⊗[GaloisRep.ratLocalizedAt q] H) (i : ι) :
+     (Algebra.TensorProduct.basis ℚ̄ b).repr (galT q H σ x) i = σ ((Algebra.TensorProduct.basis ℚ̄ b).repr x i) := by
+-  induction x using TensorProduct.induction_on with
++  induction x using TensorProduct.inductionOn with
+   | zero => simp only [map_zero, Finsupp.zero_apply]
+   | tmul t h =>
+       rw [galT_tmul, Algebra.TensorProduct.basis_repr_tmul, Algebra.TensorProduct.basis_repr_tmul,
+@@ -216,9 +213,7 @@
+ theorem smul_pts_def (σ : ℚ̄ ≃ₐ[ℚ] ℚ̄) (φ : Pts q H) : σ • φ = galPt q H σ φ := rfl
+ 
+ theorem isAlgebraic_qbar : Algebra.IsAlgebraic ℚ (AlgebraicClosure ℚ) := by
+-  convert AlgebraicClosure.isAlgebraic ℚ
+-  rfl
+-  rfl
++  exact AlgebraicClosure.isAlgebraic ℚ
+ 
+ theorem isAlgClosure_qbar : IsAlgClosure ℚ (AlgebraicClosure ℚ) :=
+   (isAlgClosure_iff ℚ (AlgebraicClosure ℚ)).mpr ⟨inferInstance, isAlgebraic_qbar⟩
+@@ -228,15 +223,15 @@
+ theorem exists_level : ∃ E : IntermediateField ℚ ℚ̄, FiniteDimensional ℚ E ∧ Normal ℚ E ∧
+     ∀ σ : ℚ̄ ≃ₐ[ℚ] ℚ̄, (∀ e : ℚ̄, e ∈ E → σ e = e) → ∀ φ : Pts q H, σ • φ = φ := by
+   classical
+-  haveI := finite_pts q H
+-  haveI : Fintype (Pts q H) := Fintype.ofFinite _
++  have := finite_pts q H
++  have : Fintype (Pts q H) := Fintype.ofFinite _
+   obtain ⟨s, hs⟩ : (⊤ : Submodule (GaloisRep.ratLocalizedAt q) H).FG := Module.finite_def.mp inferInstance
+ 
+   let V : Finset ℚ̄ := (Finset.univ ×ˢ s).image fun p : Pts q H × H => (WithConv.ofConv p.1) p.2
+   have hVint : ∀ x ∈ (V : Set ℚ̄), IsIntegral ℚ x := fun x _ => (isAlgebraic_qbar.isAlgebraic x).isIntegral
+-  haveI : Finite (↑(V : Set ℚ̄)) := Finite.of_fintype _
++  have : Finite (↑(V : Set ℚ̄)) := Finite.of_fintype _
+   let K : IntermediateField ℚ ℚ̄ := IntermediateField.adjoin ℚ (V : Set ℚ̄)
+-  haveI hKfd : FiniteDimensional ℚ K := IntermediateField.finiteDimensional_adjoin hVint
++  have hKfd : FiniteDimensional ℚ K := IntermediateField.finiteDimensional_adjoin hVint
+   let E : IntermediateField ℚ ℚ̄ := IntermediateField.normalClosure ℚ K ℚ̄
+   refine ⟨E, normalClosure.is_finiteDimensional ℚ K ℚ̄, normalClosure.normal ℚ K ℚ̄, ?_⟩
+   intro σ hσ φ
+@@ -282,23 +277,25 @@
+     Function.Bijective
+       (Algebra.TensorProduct.lift
+         (Algebra.ofId (AlgebraicClosure ℚ) (WithConv (H →ₐ[GaloisRep.ratLocalizedAt q] AlgebraicClosure ℚ) → AlgebraicClosure ℚ))
+-        (Pi.algHom (GaloisRep.ratLocalizedAt q) _
++        (AlgHom.pi
+           fun ν : WithConv (H →ₐ[GaloisRep.ratLocalizedAt q] AlgebraicClosure ℚ) => (WithConv.ofConv ν : H →ₐ[GaloisRep.ratLocalizedAt q] AlgebraicClosure ℚ))
+         (fun _ _ => Commute.all _ _) :
+         AlgebraicClosure ℚ ⊗[GaloisRep.ratLocalizedAt q] H →ₐ[AlgebraicClosure ℚ] (WithConv (H →ₐ[GaloisRep.ratLocalizedAt q] AlgebraicClosure ℚ) → AlgebraicClosure ℚ)) := by
+ 
+   have h : ⇑(Algebra.TensorProduct.lift
+         (Algebra.ofId (AlgebraicClosure ℚ) (WithConv (H →ₐ[GaloisRep.ratLocalizedAt q] AlgebraicClosure ℚ) → AlgebraicClosure ℚ))
+-        (Pi.algHom (GaloisRep.ratLocalizedAt q) _
++        (AlgHom.pi
+           fun ν : WithConv (H →ₐ[GaloisRep.ratLocalizedAt q] AlgebraicClosure ℚ) => (WithConv.ofConv ν : H →ₐ[GaloisRep.ratLocalizedAt q] AlgebraicClosure ℚ))
+         (fun _ _ => Commute.all _ _) :
+         AlgebraicClosure ℚ ⊗[GaloisRep.ratLocalizedAt q] H →ₐ[AlgebraicClosure ℚ] (WithConv (H →ₐ[GaloisRep.ratLocalizedAt q] AlgebraicClosure ℚ) → AlgebraicClosure ℚ)) = ⇑(P2MMultEv.ev q H) := by
+     funext x; funext φ
+-    induction x using TensorProduct.induction_on with
++    induction x using TensorProduct.inductionOn with
+     | zero => simp only [map_zero, Pi.zero_apply]
+     | tmul t hh =>
+-        rw [P2MMultEv.ev_tmul, Algebra.TensorProduct.lift_tmul, Pi.mul_apply, Pi.algHom_apply, Algebra.ofId_apply,
++        rw [P2MMultEv.ev_tmul, Algebra.TensorProduct.lift_tmul, Pi.mul_apply, AlgHom.pi_apply, Algebra.ofId_apply,
+           Pi.algebraMap_apply, Algebra.algebraMap_self, RingHom.id_apply]
+     | add x y hx hy => simp only [map_add, Pi.add_apply, hx, hy]
+   rw [h]
+   exact P2MMultEv.ev_bijective q H
++
++#print axioms solution
