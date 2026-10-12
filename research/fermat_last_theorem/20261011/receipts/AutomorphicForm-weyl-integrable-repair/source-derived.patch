@@ -1,0 +1,326 @@
+--- P2M/Sol/S_AutomorphicForm_weylIntertwiningIntegrand_integrable_of_re_gt_half.lean
++++ P2M/Sol/S_AutomorphicForm_weylIntertwiningIntegrand_integrable_of_re_gt_half.lean
+@@ -63,11 +63,11 @@
+   dsimp only [] at hab
+   by_cases ha : a = 0 <;> by_cases hb : b = 0
+   · rw [ha, hb]
+-  · rw [dif_pos ha, dif_neg hb] at hab
++  · rw [dite_eq_left ha, dite_eq_right hb] at hab
+     exact absurd hab.symm (Nat.succ_ne_zero _)
+-  · rw [dif_neg ha, dif_pos hb] at hab
++  · rw [dite_eq_right ha, dite_eq_left hb] at hab
+     exact absurd hab (Nat.succ_ne_zero _)
+-  · rw [dif_neg ha, dif_neg hb] at hab
++  · rw [dite_eq_right ha, dite_eq_right hb] at hab
+     rw [← WithZero.coe_unzero ha, ← WithZero.coe_unzero hb, hf (Nat.add_right_cancel hab)]
+ 
+ theorem isCountablyGenerated_uniformity_of_valued (R : Type*) (Γ₀ : Type*) [Ring R]
+@@ -104,7 +104,7 @@
+     (isOpenEmbedding_inclusion_principal hBo (hprin t)).isOpen_range
+   have hUsc : ∀ t, SecondCountableTopology (U t) := by
+     intro t
+-    haveI := hpiece t
++    have := hpiece t
+     exact (((isOpenEmbedding_inclusion_principal hBo (hprin t)).isEmbedding.toHomeomorph).symm).isEmbedding.secondCountableTopology
+   have hcover : ⋃ t : Finset ι, U t = Set.univ := by
+     ext x
+@@ -123,7 +123,7 @@
+ scoped instance instSecondCountableFiniteAdeleRing (R K : Type*) [CommRing R] [IsDedekindDomain R]
+     [Field K] [Algebra R K] [IsFractionRing R K] [Countable R] [Countable K] :
+     SecondCountableTopology (FiniteAdeleRing R K) := by
+-  haveI : SecondCountableTopology
++  have : SecondCountableTopology
+       (Πʳ v : HeightOneSpectrum R, [v.adicCompletion K, v.adicCompletionIntegers K]) :=
+     secondCountableTopology_restrictedProduct fun v => Valued.isOpen_valuationSubring _
+   exact inferInstanceAs <| SecondCountableTopology <|
+@@ -131,12 +131,12 @@
+ 
+ scoped instance instSecondCountableInfiniteAdeleRing (K : Type*) [Field K] [NumberField K] :
+     SecondCountableTopology (InfiniteAdeleRing K) := by
+-  haveI : ∀ v : InfinitePlace K, SecondCountableTopology v.Completion := by
++  have : ∀ v : InfinitePlace K, SecondCountableTopology v.Completion := by
+     intro v
+-    haveI : Countable (WithAbs v.1) := (WithAbs.equiv v.1).toEquiv.injective.countable
+-    haveI : SeparableSpace v.Completion :=
++    have : Countable (WithAbs v.1) := (WithAbs.equiv v.1).toEquiv.injective.countable
++    have : SeparableSpace v.Completion :=
+       ⟨_, Set.countable_range _, NumberField.InfinitePlace.Completion.denseRange_coe (v := v)⟩
+-    haveI : (uniformity v.Completion).IsCountablyGenerated :=
++    have : (uniformity v.Completion).IsCountablyGenerated :=
+       EMetric.instIsCountablyGeneratedUniformity
+     exact UniformSpace.secondCountable_of_separable _
+   exact inferInstanceAs <| SecondCountableTopology <| (v : InfinitePlace K) → v.Completion
+@@ -632,7 +632,7 @@
+     unfold refSet
+     rw [Measure.prod_prod, Measure.prod_prod, harch, mul_assoc]
+     congr 1
+-    rw [ENNReal.coe_finsetProd]
++    rw [ENNReal.ofNNReal_finsetProd]
+     refine Finset.prod_congr rfl fun w _ => ?_
+     rw [ENNReal.coe_pow, enorm_eq_nnnorm]
+ 
+@@ -729,9 +729,9 @@
+   classical
+ 
+   set H : AddSubgroup B := A.addSubgroupOf B with hH
+-  haveI : H.FiniteIndex := ⟨hfin⟩
++  have : H.FiniteIndex := ⟨hfin⟩
+   obtain ⟨s, hs, -⟩ := H.exists_isComplement_left 0
+-  haveI : Finite s := hs.finite_left_iff.mpr inferInstance
++  have : Finite s := hs.finite_left_iff.mpr inferInstance
+   have hcard : Nat.card s = A.relIndex B := hs.card_left
+ 
+   have hcover : (B : Set 𝔸f) = ⋃ c : s, ((c : B) : 𝔸f) +ᵥ (A : Set 𝔸f) := by
+@@ -772,7 +772,7 @@
+   have hconst : ∀ c : s, μ (slab F S (((c : B) : 𝔸f) +ᵥ (A : Set 𝔸f))) = μ (slab F S A) := fun c => by
+     rw [← vadd_slab, measure_vadd]
+   rw [hslab, measure_iUnion hdisj' hmeas, tsum_congr hconst]
+-  haveI := Fintype.ofFinite s
++  have := Fintype.ofFinite s
+   rw [tsum_fintype, Finset.sum_const, Finset.card_univ, ← Nat.card_eq_fintype_card, hcard, nsmul_eq_mul]
+ 
+ end Coset
+@@ -849,7 +849,7 @@
+       exact (hScpt.prod hZcpt).image continuous_id
+     exact hc.measure_lt_top
+ 
+-  haveI : μ.Regular := by
++  have : μ.Regular := by
+     show (adelicAddHaar (𝓞 F) F).Regular
+     unfold adelicAddHaar
+     infer_instance
+@@ -1039,7 +1039,7 @@
+       ((show RestrictedProduct (fun v : HeightOneSpectrum (𝓞 F) => v.adicCompletion F)
+           (fun v => (v.adicCompletionIntegers F : Set (v.adicCompletion F))) Filter.cofinite from b).eventually.mono
+         fun v hv => by
+-          rw [if_neg (show ¬ BigFin F b v from not_not.mpr hv)]
++          rw [ite_eq_right (show ¬ BigFin F b v from not_not.mpr hv)]
+           exact one_mem _))
+ 
+ theorem selE_fst (a : 𝔸∞) (b : 𝔸f) (w : InfinitePlace F) : (selE F a b).1 w = if BigInf F a w then 1 else 0 := rfl
+@@ -1152,7 +1152,7 @@
+ theorem unitBox_eq_preimage (C : Set A) :
+     unitBox C = Units.embedProduct (Matrix (Fin 2) (Fin 2) A) ⁻¹' (matBox C ×ˢ (MulOpposite.op '' matBox C)) := by
+   ext k
+-  simp only [unitBox, Set.mem_setOf_eq, Set.mem_preimage, Units.embedProduct_apply, Set.mem_prod, Set.mem_image]
++  simp only [unitBox, Set.mem_ofPred_eq, Set.mem_preimage, Units.embedProduct_apply, Set.mem_prod, Set.mem_image]
+   constructor
+   · rintro ⟨h1, h2⟩; exact ⟨h1, _, h2, rfl⟩
+   · rintro ⟨h1, M, hM, hMk⟩
+@@ -1209,7 +1209,7 @@
+ 
+ omit [NumberField F] in
+ theorem isCompact_archBall : IsCompact (archBall F) := by
+-  haveI := fun w => AdelicBox.properSpace_completion F w
++  have := fun w => AdelicBox.properSpace_completion F w
+   have : archBall F = Set.pi Set.univ fun w : InfinitePlace F => Metric.closedBall (0 : w.Completion) 9 := by
+     ext a; exact ⟨fun h w _ => mem_closedBall_zero_iff.mpr (h w), fun h w => mem_closedBall_zero_iff.mp (h w (Set.mem_univ _))⟩
+   rw [this]
+@@ -1323,7 +1323,7 @@
+ 
+ theorem exists_bound_mFactor {φ : AdelicGL2 (𝓞 F) F → ℂ} (hφ : Continuous φ) (g : AdelicGL2 (𝓞 F) F) :
+     ∃ B : ℝ, ∀ (a : 𝔸∞) (b : 𝔸f), ‖φ (mFactor F a b * g)‖ ≤ B := by
+-  letI : TopologicalSpace 𝔸 := inferInstance
++  let : TopologicalSpace 𝔸 := inferInstance
+   obtain ⟨B, hB⟩ := exists_bound_on_unitBox (isCompact_entrySet F) hφ g
+   exact ⟨B, fun a b => hB _ (mFactor_mem_unitBox F a b)⟩
+ 
+@@ -1478,10 +1478,10 @@
+   exact (isCompact_integralFiniteAdeles F).image (continuous_const.mul continuous_id)
+ 
+ theorem relIndex_dilate_ne_zero (y : (𝔸f)ˣ) : (intLattice F).relIndex (dilate F y) ≠ 0 := by
+-  haveI : CompactSpace (dilate F y) := isCompact_iff_compactSpace.mp (isCompact_dilate F y)
++  have : CompactSpace (dilate F y) := isCompact_iff_compactSpace.mp (isCompact_dilate F y)
+   have hopen : IsOpen (((intLattice F).addSubgroupOf (dilate F y) : AddSubgroup (dilate F y)) : Set (dilate F y)) :=
+     (isOpen_integralFiniteAdeles F).preimage continuous_subtype_val
+-  haveI := AddSubgroup.quotient_finite_of_isOpen _ hopen
++  have := AddSubgroup.quotient_finite_of_isOpen _ hopen
+   exact AddSubgroup.index_ne_zero_of_finite
+ 
+ def unif (v : HOS) : F := Classical.choose (v.valuation_exists_uniformizer F)
+@@ -1628,7 +1628,7 @@
+     rw [valued_stepElt_same, Finsupp.add_apply, Finsupp.single_eq_same]
+     push_cast
+     exact mul_le_of_le_one_left' (valuation_le_one v (r := r))
+-  · rw [stepElt, singleFin_apply_of_ne F _ _ hv, map_zero]; exact zero_le'
++  · rw [stepElt, singleFin_apply_of_ne F _ _ hv, map_zero]; exact zero_le
+ 
+ theorem sub_mem_asIdeal_of_stepElt_sub_mem (k : HOS →₀ ℕ) (v₀ : HOS) {r r' : 𝓞 F}
+     (h : stepElt F k v₀ r - stepElt F k v₀ r' ∈ latt F k) : r - r' ∈ v₀.asIdeal := by
+@@ -1654,7 +1654,7 @@
+   set L' := latt F (k + Finsupp.single v₀ 1)
+   have hLL' : L ≤ L' := latt_mono F le_self_add
+   have hidx : (L.addSubgroupOf L').index = L.relIndex L' := rfl
+-  haveI : Finite (L' ⧸ L.addSubgroupOf L') := by
++  have : Finite (L' ⧸ L.addSubgroupOf L') := by
+     apply Nat.finite_of_card_ne_zero
+     rw [← AddSubgroup.index_eq_card, hidx]
+     exact relIndex_latt_latt_ne_zero F _ _
+@@ -1706,7 +1706,7 @@
+ 
+ theorem one_le_normProd (k : HOS →₀ ℕ) : 1 ≤ normProd F k := by
+   rw [normProd, Finsupp.prod]
+-  exact Finset.one_le_prod' fun v _ => Nat.one_le_pow _ _ (Nat.pos_of_ne_zero (by
++  exact Finset.one_le_prod fun v _ => Nat.one_le_pow _ _ (Nat.pos_of_ne_zero (by
+     rw [Ne, Ideal.absNorm_eq_zero_iff]; exact v.ne_bot))
+ 
+ theorem normProd_le_relIndex (k : HOS →₀ ℕ) : normProd F k ≤ (intLattice F).relIndex (latt F k) := by
+@@ -1748,10 +1748,10 @@
+   have h : (Set.univ : Set (Ideal (𝓞 F))) = ⋃ n : ℕ, {I : Ideal (𝓞 F) | Ideal.absNorm I = n} := by
+     ext I; simp
+   rw [← Set.countable_univ_iff, h]
+-  exact Set.countable_iUnion fun n => (Ideal.finite_setOf_absNorm_eq n).countable
++  exact Set.countable_iUnion fun n => (Ideal.finite_setOfPred_absNorm_eq n).countable
+ 
+ scoped instance countable_heightOneSpectrum : Countable HOS := by
+-  haveI := countable_ideal F
++  have := countable_ideal F
+   exact Function.Injective.countable (f := fun v : HOS => v.asIdeal) fun v w h => HeightOneSpectrum.ext h
+ 
+ scoped instance countable_finsupp : Countable (HOS →₀ ℕ) := inferInstance
+@@ -1797,7 +1797,7 @@
+     show Finset.Icc 1 n = Finset.Ioc 0 n from Finset.Icc_succ_left_eq_Ioc _ _,
+     show 1 = Nat.card {I : Ideal (𝓞 F) // Ideal.absNorm I = 0} by simp [Ideal.absNorm_eq_zero_iff],
+     Finset.sum_Ioc_add_eq_sum_Icc (n.zero_le),
+-    ← Finset.card_preimage_eq_sum_card_image_eq (fun k _ => Ideal.finite_setOf_absNorm_eq k)]
++    ← Finset.card_preimage_eq_sum_card_image_eq (fun k _ => Ideal.finite_setOfPred_absNorm_eq k)]
+   simp [Set.coe_eq_subtype]
+ 
+ def zetaTerm (t : ℝ) (n : ℕ) : ℝ := if n = 0 then 0 else idealCount F n / (n : ℝ) ^ t
+@@ -1832,11 +1832,11 @@
+       ∑' n : ℕ, (Nat.card {I : {I : Ideal (𝓞 F) // I ≠ ⊥} // Ideal.absNorm I.1 = n} : ℝ≥0∞) * ψ n := by
+   rw [← Equiv.tsum_eq (Equiv.sigmaFiberEquiv fun I : {I : Ideal (𝓞 F) // I ≠ ⊥} => Ideal.absNorm I.1), ENNReal.tsum_sigma']
+   refine tsum_congr fun n => ?_
+-  haveI : Finite {I : Ideal (𝓞 F) // Ideal.absNorm I = n} := (Ideal.finite_setOf_absNorm_eq n).to_subtype
+-  haveI : Finite {I : {I : Ideal (𝓞 F) // I ≠ ⊥} // Ideal.absNorm I.1 = n} :=
++  have : Finite {I : Ideal (𝓞 F) // Ideal.absNorm I = n} := (Ideal.finite_setOfPred_absNorm_eq n).to_subtype
++  have : Finite {I : {I : Ideal (𝓞 F) // I ≠ ⊥} // Ideal.absNorm I.1 = n} :=
+     Finite.of_injective (fun I => (⟨I.1.1, I.2⟩ : {I : Ideal (𝓞 F) // Ideal.absNorm I = n}))
+       (fun I J h => Subtype.ext (Subtype.ext (congrArg (fun x : {I : Ideal (𝓞 F) // Ideal.absNorm I = n} => x.1) h)))
+-  haveI := Fintype.ofFinite {I : {I : Ideal (𝓞 F) // I ≠ ⊥} // Ideal.absNorm I.1 = n}
++  have := Fintype.ofFinite {I : {I : Ideal (𝓞 F) // I ≠ ⊥} // Ideal.absNorm I.1 = n}
+   have hconst : ∀ I : {I : {I : Ideal (𝓞 F) // I ≠ ⊥} // Ideal.absNorm I.1 = n},
+       ψ (Ideal.absNorm ((Equiv.sigmaFiberEquiv fun I : {I : Ideal (𝓞 F) // I ≠ ⊥} => Ideal.absNorm I.1) ⟨n, I⟩).1) = ψ n :=
+     fun I => by rw [Equiv.sigmaFiberEquiv_apply, I.2]
+@@ -1845,7 +1845,7 @@
+ theorem card_fibre_le (n : ℕ) :
+     (Nat.card {I : {I : Ideal (𝓞 F) // I ≠ ⊥} // Ideal.absNorm I.1 = n} : ℝ≥0∞) ≤ ENNReal.ofReal (idealCount F n) := by
+   rw [idealCount, ENNReal.ofReal_natCast]
+-  haveI : Finite {I : Ideal (𝓞 F) // Ideal.absNorm I = n} := (Ideal.finite_setOf_absNorm_eq n).to_subtype
++  have : Finite {I : Ideal (𝓞 F) // Ideal.absNorm I = n} := (Ideal.finite_setOfPred_absNorm_eq n).to_subtype
+   exact_mod_cast Nat.card_le_card_of_injective
+     (fun I : {I : {I : Ideal (𝓞 F) // I ≠ ⊥} // Ideal.absNorm I.1 = n} => (⟨I.1.1, I.2⟩ : {I : Ideal (𝓞 F) // Ideal.absNorm I = n}))
+     (fun I J h => Subtype.ext (Subtype.ext (congrArg (fun x : {I : Ideal (𝓞 F) // Ideal.absNorm I = n} => x.1) h)))
+@@ -1874,7 +1874,7 @@
+       have hψ : ψ n = ENNReal.ofReal ((n : ℝ) ^ t)⁻¹ := by
+         simp only [ψ]
+         rw [← ENNReal.ofReal_natCast, ENNReal.ofReal_rpow_of_pos hnpos, Real.rpow_neg hnpos.le, ]
+-      rw [hψ, zetaTerm, if_neg (by omega), div_eq_mul_inv,
++      rw [hψ, zetaTerm, ite_eq_right (by omega), div_eq_mul_inv,
+         ENNReal.ofReal_mul (idealCount_nonneg F n)]
+       exact mul_le_mul' (card_fibre_le F n) le_rfl
+   have h4 : ∑' n, ENNReal.ofReal (zetaTerm F t n) = ENNReal.ofReal (∑' n, zetaTerm F t n) :=
+@@ -1980,7 +1980,7 @@
+     unfold placeMeasureReal
+     have he : Measurable ⇑(Completion.ringEquivRealOfIsReal hw).symm := (Completion.isometryEquivRealOfIsReal hw).symm.continuous.measurable
+     rw [integrable_map_measure hcont.aestronglyMeasurable he.aemeasurable]
+-    have hmult : (b * w.mult : ℝ) = b := by rw [InfinitePlace.mult, if_pos hw]; push_cast; ring
++    have hmult : (b * w.mult : ℝ) = b := by rw [InfinitePlace.mult, ite_eq_left hw]; push_cast; ring
+     have : (placeWeight w (b * w.mult)) ∘ ⇑(Completion.ringEquivRealOfIsReal hw).symm = fun t : ℝ => (max 1 ‖t‖) ^ (-b) := by
+       ext t; simp only [Function.comp_apply, placeWeight, norm_ringEquivRealOfIsReal_symm, hmult]
+     rw [this]
+@@ -1991,7 +1991,7 @@
+     have he : Measurable ⇑(Completion.ringEquivComplexOfIsComplex hw').symm :=
+       (Completion.isometryEquivComplexOfIsComplex hw').symm.continuous.measurable
+     rw [integrable_map_measure hcont.aestronglyMeasurable he.aemeasurable]
+-    have hmult : (b * w.mult : ℝ) = 2 * b := by rw [InfinitePlace.mult, if_neg hw]; push_cast; ring
++    have hmult : (b * w.mult : ℝ) = 2 * b := by rw [InfinitePlace.mult, ite_eq_right hw]; push_cast; ring
+     have : (placeWeight w (b * w.mult)) ∘ ⇑(Completion.ringEquivComplexOfIsComplex hw').symm = fun t : ℂ => (max 1 ‖t‖) ^ (-(2 * b)) := by
+       ext t; simp only [Function.comp_apply, placeWeight, norm_ringEquivComplexOfIsComplex_symm, hmult]
+     rw [this]
+@@ -2044,7 +2044,7 @@
+   ext u; simp [archSlab, mem_slab]
+ 
+ scoped instance isFiniteMeasureOnCompacts_margMeasure : IsFiniteMeasureOnCompacts (margMeasure F) := by
+-  haveI : (adelicAddHaar (𝓞 F) F).IsAddHaarMeasure := isAddHaarMeasure_adelicAddHaar (𝓞 F) F
++  have : (adelicAddHaar (𝓞 F) F).IsAddHaarMeasure := isAddHaarMeasure_adelicAddHaar (𝓞 F) F
+   refine ⟨fun K hK => ?_⟩
+   rw [margMeasure_apply F hK.measurableSet]
+   have hc : IsCompact (slab F K (integralFiniteAdeles (𝓞 F) F)) := by
+@@ -2056,7 +2056,7 @@
+   exact hc.measure_lt_top
+ 
+ scoped instance isAddLeftInvariant_margMeasure : (margMeasure F).IsAddLeftInvariant := by
+-  haveI : (adelicAddHaar (𝓞 F) F).IsAddHaarMeasure := isAddHaarMeasure_adelicAddHaar (𝓞 F) F
++  have : (adelicAddHaar (𝓞 F) F).IsAddHaarMeasure := isAddHaarMeasure_adelicAddHaar (𝓞 F) F
+   refine ⟨fun t => ?_⟩
+   refine Measure.ext fun S hS => ?_
+   rw [Measure.map_apply (measurable_const_add t) hS, margMeasure_apply F hS, margMeasure_apply F (measurable_const_add t hS)]
+@@ -2139,9 +2139,9 @@
+     ∫⁻ u in slab F S B, h u.1 ∂μ = A.relIndex B * ∫⁻ u in slab F S A, h u.1 ∂μ := by
+   classical
+   set H : AddSubgroup B := A.addSubgroupOf B with hH
+-  haveI : H.FiniteIndex := ⟨hfin⟩
++  have : H.FiniteIndex := ⟨hfin⟩
+   obtain ⟨s, hs, -⟩ := H.exists_isComplement_left 0
+-  haveI : Finite s := hs.finite_left_iff.mpr inferInstance
++  have : Finite s := hs.finite_left_iff.mpr inferInstance
+   have hcard : Nat.card s = A.relIndex B := hs.card_left
+   have hcover : (B : Set 𝔸f) = ⋃ c : s, ((c : B) : 𝔸f) +ᵥ (A : Set 𝔸f) := by
+     ext b
+@@ -2180,7 +2180,7 @@
+   have hconst : ∀ c : s, ∫⁻ u in slab F S (((c : B) : 𝔸f) +ᵥ (A : Set 𝔸f)), h u.1 ∂μ = ∫⁻ u in slab F S A, h u.1 ∂μ := fun c =>
+     setLIntegral_vadd_slab_comp_fst F μ hmeasA _ h
+   rw [hslab, lintegral_iUnion hmeas hdisj', tsum_congr hconst]
+-  haveI := Fintype.ofFinite s
++  have := Fintype.ofFinite s
+   rw [tsum_fintype, Finset.sum_const, Finset.card_univ, ← Nat.card_eq_fintype_card, hcard, nsmul_eq_mul]
+ 
+ theorem fst_mul (x y : 𝔸) : (x * y).1 = x.1 * y.1 := rfl
+@@ -2224,20 +2224,20 @@
+ theorem norm_selY_fst (a : 𝔸∞) (b : 𝔸f) (w : InfinitePlace F) : ‖(selY F a b).1 w‖ = max 1 ‖a w‖ := by
+   rw [selY_fst]
+   by_cases h : BigInf F a w
+-  · rw [if_pos h, max_eq_right (le_of_lt h)]
+-  · rw [if_neg h, norm_one, max_eq_left (not_lt.mp h)]
++  · rw [ite_eq_left h, max_eq_right (le_of_lt h)]
++  · rw [ite_eq_right h, norm_one, max_eq_left (not_lt.mp h)]
+ 
+ theorem one_le_valued_selY_snd (a : 𝔸∞) (b : 𝔸f) (v : HOS) : 1 ≤ Valued.v ((selY F a b).2 v) := by
+   rw [selY_snd]
+   by_cases h : BigFin F b v
+-  · rw [if_pos h]; exact (one_lt_valued_of_bigFin F h).le
+-  · rw [if_neg h, map_one]
++  · rw [ite_eq_left h]; exact (one_lt_valued_of_bigFin F h).le
++  · rw [ite_eq_right h, map_one]
+ 
+ theorem valued_le_valued_selY_snd (a : 𝔸∞) (b : 𝔸f) (v : HOS) : Valued.v (b v) ≤ Valued.v ((selY F a b).2 v) := by
+   rw [selY_snd]
+   by_cases h : BigFin F b v
+-  · rw [if_pos h]
+-  · rw [if_neg h, map_one]
++  · rw [ite_eq_left h]
++  · rw [ite_eq_right h, map_one]
+     exact (mem_adicCompletionIntegers _ _ _).mp (not_not.mp h)
+ 
+ theorem snd_mem_dilate (u : 𝔸) : u.2 ∈ dilate F (finPart F (yUnit (selRel F u.1 u.2))) :=
+@@ -2300,7 +2300,10 @@
+     rw [Set.indicator_of_mem hmem, distribHaarChar_split_real F Y hv, Real.mul_rpow hp hNpos.le, hYval, prod_norm_selY_rpow_neg,
+       ENNReal.ofReal_mul (archWeight_nonneg F a u.1), ← ENNReal.ofReal_rpow_of_pos hNpos, ENNReal.ofReal_natCast, idx, ← hk, mul_comm]
+   rw [← hterm]
+-  exact ENNReal.le_tsum k
++  unfold domG
++  exact ENNReal.le_tsum (f := fun l : HOS →₀ ℕ =>
++    idx F l ^ (-a) * (slab F Set.univ (latt F l)).indicator
++      (fun v : 𝔸 => ENNReal.ofReal (archWeight F a v.1)) u) k
+ 
+ theorem continuous_unipotentGL2' : Continuous (fun u : 𝔸 => (unipotentGL2 u : AdelicGL2 (𝓞 F) F)) := by
+   have hval : Continuous (fun u : 𝔸 => ((unipotentGL2 u : AdelicGL2 (𝓞 F) F) : Matrix (Fin 2) (Fin 2) 𝔸)) := by
+@@ -2423,6 +2426,4 @@
+     letI := adeleBorel (𝓞 F) F
+     Integrable (fun x : AdeleRing (𝓞 F) F =>
+       φ ((adelicWeyl (𝓞 F) F)⁻¹ * unipotentGL2 x * g)) (adelicAddHaar (𝓞 F) F) := by
+-  first
+-    | exact AutomorphicForm.weylIntertwiningIntegrand_integrable_of_re_gt_half_impl F
+-    | (apply AutomorphicForm.weylIntertwiningIntegrand_integrable_of_re_gt_half_impl <;> assumption)
++  exact AutomorphicForm.weylIntertwiningIntegrand_integrable_of_re_gt_half_impl F

@@ -1,0 +1,42 @@
+{
+  "at": "2026-10-12T06:52:47.636262+00:00",
+  "problem": "fermat_last_theorem",
+  "status": "complete source and associated theorem card verified",
+  "repair": "Explicitly unfold domG and pass the whole summand family to ENNReal.le_tsum; update only reported deprecations and proof bindings; remove unreachable fallback and the compiler-rejected missing optional card attribute.",
+  "complete_solution_declaration_unchanged": true,
+  "complete_card_theorem_and_proof_unchanged": true,
+  "checks": [
+    {
+      "module": "Submission.Supplier.P2M.Sol.S_AutomorphicForm_weylIntertwiningIntegrand_integrable_of_re_gt_half",
+      "make_exit": 0,
+      "kernel_exit": 0,
+      "seconds": 82.007265542,
+      "warnings": 0,
+      "source_unchanged": true,
+      "source_sha256": "f519e3b37136872c47fc4ee5483f9dddec6010caa64275fe6f5ccf94b7dee84a",
+      "object_sha256": "64c633392b82c0a1d91a8ea5ffc099e3c6c59ec8cd2d3da07c3444aa081dd357",
+      "kernel_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/official-layout/terminal-proof-repairs/20261012-weyl-integrable-r2/source.kernel/result.json"
+    },
+    {
+      "module": "Submission.Supplier.Theorems.Thm_AutomorphicForm_weylIntertwiningIntegrand_integrable_of_re_gt_half",
+      "make_exit": 0,
+      "kernel_exit": 0,
+      "seconds": 56.463549375,
+      "warnings": 0,
+      "source_unchanged": true,
+      "source_sha256": "34bd4cce3cdf61800d282cdffcb862a7bba992ba09a6b69ce5b6742d98513e77",
+      "object_sha256": "13bee8207c715dbd07a8d8c7458fed3924549130f331277ae37252cd2ea4db6f",
+      "kernel_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/official-layout/terminal-proof-repairs/20261012-weyl-integrable-r3/card.kernel/result.json"
+    }
+  ],
+  "source_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "root_source_mirrors": "same proof edits synchronized; actual validation covers Submission.Supplier modules",
+  "failed_attempts_preserved": true,
+  "independent_review_seats": 0,
+  "full_original_complete": false,
+  "official_new_solve_credit": 0
+}
