@@ -1,0 +1,137 @@
+{
+  "at": "2026-10-12T21:43:23.304894+00:00",
+  "baseline_source_card_pair_actual_make_kernel_passed": true,
+  "canonical_solution_byte_identical_to_supplier": true,
+  "canonical_card_byte_identical_to_supplier": true,
+  "cached_import_full_source_replay_and_audit_pending": true,
+  "full_original_proof_retained": true,
+  "original_main_hypotheses_and_conclusion_preserved": true,
+  "original_solution_lines": 434,
+  "original_card_lines": 8,
+  "checks": {
+    "source": {
+      "module": "Submission.Supplier.P2M.Sol.S_ModularCurve_phiIrreducible_all",
+      "make_exit": 0,
+      "kernel_exit": 0,
+      "kernel_seconds": 26.090051791,
+      "source_unchanged": true,
+      "compiler_warnings": 3,
+      "direct_dependencies": [
+        {
+          "module": "Submission.Supplier.Definitions.Def_ModularCurve_X0",
+          "source_bound_cached_controller_record_exit": 0,
+          "separate_kernel_receipt": null,
+          "full_source_replay_and_audit_pending": true
+        },
+        {
+          "module": "Submission.Supplier.Definitions.Def_ModularCurve_LaurentCoeff",
+          "source_bound_cached_controller_record_exit": 0,
+          "separate_kernel_receipt": null,
+          "full_source_replay_and_audit_pending": true
+        },
+        {
+          "module": "Submission.Supplier.Definitions.Def_ModularCurve_PhiGen",
+          "source_bound_cached_controller_record_exit": 0,
+          "separate_kernel_receipt": null,
+          "full_source_replay_and_audit_pending": true
+        },
+        {
+          "module": "Submission.Supplier.Theorems.Thm_ModularCurve_coeffMap_qExpand",
+          "source_bound_cached_controller_record_exit": 0,
+          "separate_kernel_receipt": null,
+          "full_source_replay_and_audit_pending": true
+        },
+        {
+          "module": "Submission.Supplier.Theorems.Thm_ModularCurve_PhiGen_splits_prime_at_slot",
+          "source_bound_cached_controller_record_exit": 0,
+          "separate_kernel_receipt": null,
+          "full_source_replay_and_audit_pending": true
+        },
+        {
+          "module": "Submission.Supplier.Theorems.Thm_ModularCurve_finrank_adjoin_jqN_eq_dedekindPsi",
+          "source_bound_cached_controller_record_exit": 0,
+          "separate_kernel_receipt": null,
+          "full_source_replay_and_audit_pending": true
+        },
+        {
+          "module": "Submission.Supplier.Theorems.Thm_ModularCurve_aeval_jqN_toAdjoin",
+          "source_bound_cached_controller_record_exit": 0,
+          "separate_kernel_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/1d45ad982ddcaf82e1f4461a-1791840019083131000.kernel/result.json",
+          "actual_kernel_exit": 0
+        },
+        {
+          "module": "Submission.Supplier.Theorems.Thm_ModularCurve_phiIrreducible_of_prime",
+          "source_bound_cached_controller_record_exit": 0,
+          "separate_kernel_receipt": null,
+          "full_source_replay_and_audit_pending": true
+        },
+        {
+          "module": "Submission.Supplier.P2M.Util",
+          "source_bound_cached_controller_record_exit": 0,
+          "separate_kernel_receipt": null,
+          "full_source_replay_and_audit_pending": true
+        }
+      ],
+      "solution_axiom_audit": "actual final solution recursively printed STANDARD3",
+      "printed_axiom_closures": [
+        {
+          "declaration": "P2MW.S_ModularCurve_phiIrreducible_all.solution",
+          "recursive_axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ]
+    },
+    "card": {
+      "module": "Submission.Supplier.Theorems.Thm_ModularCurve_phiIrreducible_all",
+      "make_exit": 0,
+      "kernel_exit": 0,
+      "kernel_seconds": 24.371417125,
+      "source_unchanged": true,
+      "compiler_warnings": 0,
+      "direct_dependencies": [
+        {
+          "module": "Submission.Supplier.Definitions.Def_ModularCurve_X0",
+          "source_bound_cached_controller_record_exit": 0,
+          "separate_kernel_receipt": null,
+          "full_source_replay_and_audit_pending": true
+        },
+        {
+          "module": "Submission.Supplier.Definitions.Def_ModularCurve_PhiGen",
+          "source_bound_cached_controller_record_exit": 0,
+          "separate_kernel_receipt": null,
+          "full_source_replay_and_audit_pending": true
+        },
+        {
+          "module": "Submission.Supplier.P2M.Util",
+          "source_bound_cached_controller_record_exit": 0,
+          "separate_kernel_receipt": null,
+          "full_source_replay_and_audit_pending": true
+        },
+        {
+          "module": "Submission.Supplier.P2M.Sol.S_ModularCurve_phiIrreducible_all",
+          "source_bound_cached_controller_record_exit": 0,
+          "separate_kernel_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/c20fe430e14c9ae7b5e72b44-1791840067296069000.kernel/result.json",
+          "actual_kernel_exit": 0
+        }
+      ],
+      "solution_axiom_audit": "not printed separately; full-root audit pending",
+      "printed_axiom_closures": []
+    }
+  },
+  "proof_summary": "Retain the full original 434-line proof of PhiIrreducible data for every nonzero natural level N and every ModularPolynomialData N, with no added primality, squarefree or other level restriction. The original adjoining-degree argument, modular-polynomial root identity, comparison of the minimal-polynomial degree with dedekindPsi N, monic divisibility equality and irreducibility argument are all retained, together with the original auxiliary separability results. The actual final solution recursive axiom closure printed exactly STANDARD3. Original compiler warning logs are preserved.",
+  "no_source_change": true,
+  "no_linter_suppression_added": true,
+  "source_axiom_audit_pending": false,
+  "source_solution_axiom_audit_passed": true,
+  "supplier": "anthropics/fermats-last-theorem",
+  "supplier_commit": "6e837e75355538c7f80bab5b956861e86c4eacc2",
+  "full_original_complete": false,
+  "official_new_solve_credit": 0,
+  "jobs": 1,
+  "compilers": 1,
+  "threads": 1,
+  "controller_continues_same_full_FLT_graph": true
+}
