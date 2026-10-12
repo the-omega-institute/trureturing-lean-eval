@@ -1,0 +1,79 @@
+{
+  "at": "2026-10-12T22:07:47.200506+00:00",
+  "baseline_source_card_pair_actual_make_kernel_passed": true,
+  "canonical_solution_byte_identical_to_supplier": true,
+  "canonical_card_byte_identical_to_supplier": true,
+  "cached_import_full_source_replay_and_audit_pending": true,
+  "full_original_proof_retained": true,
+  "original_main_hypotheses_and_conclusion_preserved": true,
+  "original_solution_lines": 57,
+  "original_card_lines": 11,
+  "checks": {
+    "source": {
+      "module": "Submission.Supplier.P2M.Sol.S_ModularCurve_eq_zero_of_mem_ssJSet_two",
+      "make_exit": 0,
+      "kernel_exit": 0,
+      "kernel_seconds": 35.33678375,
+      "source_unchanged": true,
+      "compiler_warnings": 4,
+      "direct_dependencies": [
+        {
+          "module": "Submission.Supplier.Definitions.Def_ModularCurve_SupersingularModuli",
+          "source_sha256": "4031a93137f2c84ef1ceac2c55d55462a115112a7b9bfbd99c0de6e5e3194be2",
+          "object_sha256": "b31732008dcdf7f441a8ca44b98c74dcfce43f57212b2631d5b942b15784cdc1",
+          "receipt_reused": true
+        },
+        {
+          "module": "Submission.Supplier.P2M.Util",
+          "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+          "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+          "receipt_reused": true
+        }
+      ],
+      "solution_axiom_audit": "not printed separately; full-root audit pending",
+      "printed_axiom_closures": []
+    },
+    "card": {
+      "module": "Submission.Supplier.Theorems.Thm_ModularCurve_eq_zero_of_mem_ssJSet_two",
+      "make_exit": 0,
+      "kernel_exit": 0,
+      "kernel_seconds": 51.217703042000004,
+      "source_unchanged": true,
+      "compiler_warnings": 0,
+      "direct_dependencies": [
+        {
+          "module": "Submission.Supplier.Definitions.Def_ModularCurve_SupersingularModuli",
+          "source_sha256": "4031a93137f2c84ef1ceac2c55d55462a115112a7b9bfbd99c0de6e5e3194be2",
+          "object_sha256": "b31732008dcdf7f441a8ca44b98c74dcfce43f57212b2631d5b942b15784cdc1",
+          "receipt_reused": true
+        },
+        {
+          "module": "Submission.Supplier.P2M.Util",
+          "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+          "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+          "receipt_reused": true
+        },
+        {
+          "module": "Submission.Supplier.P2M.Sol.S_ModularCurve_eq_zero_of_mem_ssJSet_two",
+          "source_sha256": "7dba27e8cb0b0f361d86cdc6b8ac4fa4b0da7f5077f7b8bfd7ea658f4c42e98c",
+          "object_sha256": "f11f616c76619cb03ae48a562379e0d9492a081fb98435b91504177dae0f031d",
+          "receipt_reused": true
+        }
+      ],
+      "solution_axiom_audit": "not printed separately; full-root audit pending",
+      "printed_axiom_closures": []
+    }
+  },
+  "proof_summary": "Retain the complete original proof that a=0 for every field k of characteristic 2 with DecidableEq, every a in ssJSet 2 k and the original Frobenius-square fixed-point hypothesis a^(2^2)=a. No algebraic closure, finite-field or other additional field restriction is added. The original curve ofJNe0Or1728 a, characteristic-two vanishing of 1728, a^3=1 consequence, explicit nonzero affine 2-torsion point, derived unit instances and supersingular contradiction are retained. Source/card are byte-identical to the supplier; original compiler warning logs are preserved. No final solution recursive axiom closure was separately printed.",
+  "no_source_change": true,
+  "no_linter_suppression_added": true,
+  "source_axiom_audit_pending": true,
+  "supplier": "anthropics/fermats-last-theorem",
+  "supplier_commit": "6e837e75355538c7f80bab5b956861e86c4eacc2",
+  "full_original_complete": false,
+  "official_new_solve_credit": 0,
+  "jobs": 1,
+  "compilers": 1,
+  "threads": 1,
+  "controller_continues_same_full_FLT_graph": true
+}
