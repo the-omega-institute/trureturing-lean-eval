@@ -1,0 +1,64 @@
+{
+  "at": "2026-10-12T19:37:17.491372+00:00",
+  "baseline_source_card_pair_actual_make_kernel_passed": true,
+  "canonical_solution_byte_identical_to_supplier": true,
+  "full_original_proof_retained": true,
+  "original_main_hypotheses_and_conclusion_preserved": true,
+  "original_solution_lines": 117,
+  "checks": {
+    "source": {
+      "module": "Submission.Supplier.P2M.Sol.S_HopfAlgebra_signTwist_antipode_mul_comul_padicInt",
+      "make_exit": 0,
+      "kernel_exit": 0,
+      "kernel_seconds": 12.163092708,
+      "source_unchanged": true,
+      "compiler_warnings": 10,
+      "direct_dependencies": [
+        {
+          "module": "Submission.Supplier.Theorems.Thm_HopfAlgebra_antipode_antipode",
+          "receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/fb4a4624b0e313477535cb6d-1791833228753607000.kernel/result.json",
+          "actual_exit": 0
+        },
+        {
+          "module": "Submission.Supplier.P2M.Util",
+          "receipt": null,
+          "actual_exit": 0
+        }
+      ],
+      "solution_axiom_audit": "not printed separately; full-root audit pending"
+    },
+    "card": {
+      "module": "Submission.Supplier.Theorems.Thm_HopfAlgebra_signTwist_antipode_mul_comul_padicInt",
+      "make_exit": 0,
+      "kernel_exit": 0,
+      "kernel_seconds": 42.480690083000006,
+      "source_unchanged": true,
+      "compiler_warnings": 0,
+      "direct_dependencies": [
+        {
+          "module": "Submission.Supplier.P2M.Util",
+          "receipt": null,
+          "actual_exit": 0
+        },
+        {
+          "module": "Submission.Supplier.P2M.Sol.S_HopfAlgebra_signTwist_antipode_mul_comul_padicInt",
+          "receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/6734f91ab9e6838404264ee9-1791833618380922000.kernel/result.json",
+          "actual_exit": 0
+        }
+      ],
+      "solution_axiom_audit": "not printed separately; full-root audit pending"
+    }
+  },
+  "proof_summary": "Retain the complete original left and right antipode identities for the supplied p-adic sign twist. Prove invertibility of 2 and of the supplied unit, the negative projection identities and tensor-projection idempotence, the interaction of the projection with left/right tensor antipodes, and cancellation of the scalar correction. Apply these to the original left and right Hopf convolution identities to obtain both original twisted multiplication/comultiplication conclusions. All original hypotheses, including the odd prime, unit scalar and cocommutativity assumption, remain. The entire canonical solution is byte-identical to the supplier original.",
+  "no_source_change": true,
+  "no_linter_suppression_added": true,
+  "source_axiom_audit_pending": true,
+  "supplier": "anthropics/fermats-last-theorem",
+  "supplier_commit": "6e837e75355538c7f80bab5b956861e86c4eacc2",
+  "full_original_complete": false,
+  "official_new_solve_credit": 0,
+  "jobs": 1,
+  "compilers": 1,
+  "threads": 1,
+  "controller_continues_same_full_FLT_graph": true
+}
