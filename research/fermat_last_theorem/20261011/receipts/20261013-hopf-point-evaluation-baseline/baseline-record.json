@@ -1,0 +1,59 @@
+{
+  "at": "2026-10-12T19:28:38.333439+00:00",
+  "baseline_source_card_pair_actual_make_kernel_passed": true,
+  "canonical_solution_byte_identical_to_supplier": true,
+  "full_original_proof_retained": true,
+  "original_main_hypotheses_and_conclusion_preserved": true,
+  "original_solution_lines": 69,
+  "checks": {
+    "source": {
+      "module": "Submission.Supplier.P2M.Sol.S_HopfAlgebra_algHom_eq_of_forall_comp_eq_of_bijective_evalPoints",
+      "make_exit": 0,
+      "kernel_exit": 0,
+      "kernel_seconds": 47.349472500000005,
+      "source_unchanged": true,
+      "compiler_warnings": 3,
+      "direct_dependencies": [
+        {
+          "module": "Submission.Supplier.P2M.Util",
+          "receipt": null,
+          "actual_exit": 0
+        }
+      ],
+      "solution_axiom_audit": "not printed separately; full-root audit pending"
+    },
+    "card": {
+      "module": "Submission.Supplier.Theorems.Thm_HopfAlgebra_algHom_eq_of_forall_comp_eq_of_bijective_evalPoints",
+      "make_exit": 0,
+      "kernel_exit": 0,
+      "kernel_seconds": 8.9228305,
+      "source_unchanged": true,
+      "compiler_warnings": 1,
+      "direct_dependencies": [
+        {
+          "module": "Submission.Supplier.P2M.Util",
+          "receipt": null,
+          "actual_exit": 0
+        },
+        {
+          "module": "Submission.Supplier.P2M.Sol.S_HopfAlgebra_algHom_eq_of_forall_comp_eq_of_bijective_evalPoints",
+          "receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/d998b3183350450d7dd91e3e-1791832940066842000.kernel/result.json",
+          "actual_exit": 0
+        }
+      ],
+      "solution_axiom_audit": "not printed separately; full-root audit pending"
+    }
+  },
+  "proof_summary": "Retain the complete original tensor-product descent proof over the fixed field of the supplied Galois subgroup. The injective right inclusion into the scalar extension and the stated bijective point-evaluation map reduce equality of the two algebra endomorphisms to their equality after composition with every supplied point. Every original main hypothesis, including the finite-module and finite-point instances and the explicit evaluation-map bijectivity hypothesis, remains. The entire canonical solution is byte-identical to the supplier original.",
+  "no_source_change": true,
+  "no_linter_suppression_added": true,
+  "source_axiom_audit_pending": true,
+  "supplier": "anthropics/fermats-last-theorem",
+  "supplier_commit": "6e837e75355538c7f80bab5b956861e86c4eacc2",
+  "full_original_complete": false,
+  "official_new_solve_credit": 0,
+  "jobs": 1,
+  "compilers": 1,
+  "threads": 1,
+  "controller_continues_same_full_FLT_graph": true
+}
