@@ -1,0 +1,59 @@
+{
+  "at": "2026-10-12T19:30:30.587239+00:00",
+  "baseline_source_card_pair_actual_make_kernel_passed": true,
+  "canonical_solution_byte_identical_to_supplier": true,
+  "full_original_proof_retained": true,
+  "original_main_hypotheses_and_conclusion_preserved": true,
+  "original_solution_lines": 72,
+  "checks": {
+    "source": {
+      "module": "Submission.Supplier.P2M.Sol.S_HopfAlgebra_antipode_antipode",
+      "make_exit": 0,
+      "kernel_exit": 0,
+      "kernel_seconds": 36.146761042,
+      "source_unchanged": true,
+      "compiler_warnings": 1,
+      "direct_dependencies": [
+        {
+          "module": "Submission.Supplier.P2M.Util",
+          "receipt": null,
+          "actual_exit": 0
+        }
+      ],
+      "solution_axiom_audit": "not printed separately; full-root audit pending"
+    },
+    "card": {
+      "module": "Submission.Supplier.Theorems.Thm_HopfAlgebra_antipode_antipode",
+      "make_exit": 0,
+      "kernel_exit": 0,
+      "kernel_seconds": 11.233202166,
+      "source_unchanged": true,
+      "compiler_warnings": 0,
+      "direct_dependencies": [
+        {
+          "module": "Submission.Supplier.P2M.Util",
+          "receipt": null,
+          "actual_exit": 0
+        },
+        {
+          "module": "Submission.Supplier.P2M.Sol.S_HopfAlgebra_antipode_antipode",
+          "receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/dcee0cd3912d4725e876b63e-1791833122523293000.kernel/result.json",
+          "actual_exit": 0
+        }
+      ],
+      "solution_axiom_audit": "not printed separately; full-root audit pending"
+    }
+  },
+  "proof_summary": "Retain the complete original proof that the antipode of the supplied commutative Hopf algebra is involutive. Preserve the general scalar-map identity and convolution identity for antipode times the identity map, the commutative double-antipode convolution calculation using a coalgebra representation and the counit, and the identification of left and right convolution inverses. The resulting linear-map identity gives the original pointwise conclusion S(S(a)) = a. All original commutative-semiring and Hopf-algebra hypotheses remain. The entire canonical solution is byte-identical to the supplier original.",
+  "no_source_change": true,
+  "no_linter_suppression_added": true,
+  "source_axiom_audit_pending": true,
+  "supplier": "anthropics/fermats-last-theorem",
+  "supplier_commit": "6e837e75355538c7f80bab5b956861e86c4eacc2",
+  "full_original_complete": false,
+  "official_new_solve_credit": 0,
+  "jobs": 1,
+  "compilers": 1,
+  "threads": 1,
+  "controller_continues_same_full_FLT_graph": true
+}
