@@ -1,0 +1,59 @@
+{
+  "at": "2026-10-12T17:52:00.690944+00:00",
+  "module": "Submission.Supplier.P2M.Sol.S_AlgebraicCurve_Divisor_mapDomain_placeReduction_correspondence",
+  "status": "Complete original solution and unchanged theorem card verified through canonical make lean and kernel",
+  "card_unchanged": true,
+  "verified_pair": true,
+  "warnings": 0,
+  "axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "checks": {
+    "source": {
+      "configuration": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/official-layout/terminal-proof-repairs/20261013-divisor-reduction-correspondence/source-r1.configuration.json",
+      "kernel_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/official-layout/terminal-proof-repairs/20261013-divisor-reduction-correspondence/source-r1.kernel/result.json",
+      "make_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/official-layout/terminal-proof-repairs/20261013-divisor-reduction-correspondence/source-r1.make-terminal.json",
+      "kernel_exit": 0,
+      "make_exit": 0,
+      "seconds": 50.755804042,
+      "source_unchanged": true
+    },
+    "card": {
+      "configuration": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/official-layout/terminal-proof-repairs/20261013-divisor-reduction-correspondence/card.configuration.json",
+      "kernel_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/official-layout/terminal-proof-repairs/20261013-divisor-reduction-correspondence/card.kernel/result.json",
+      "make_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/official-layout/terminal-proof-repairs/20261013-divisor-reduction-correspondence/card.make-terminal.json",
+      "kernel_exit": 0,
+      "make_exit": 0,
+      "seconds": 47.475963166,
+      "source_unchanged": true
+    }
+  },
+  "supplier": "anthropics/fermats-last-theorem",
+  "supplier_commit": "6e837e75355538c7f80bab5b956861e86c4eacc2",
+  "official_mathlib": "5e0c4e5239cb0a2d86d68a884bf52cfd963fce22",
+  "lean_toolchain": "leanprover/lean4:v4.35.0-rc3",
+  "full_original_complete": false,
+  "official_new_solve_credit": 0,
+  "commit_message": "FLT: verify divisor reduction correspondence without warnings",
+  "original_main_hypotheses_and_conclusion_preserved": true,
+  "full_original_construction_retained": true,
+  "original_raw_source_retained": true,
+  "original_proof_snapshot_retained": true,
+  "proof_bodies_claimed_identical": false,
+  "main_hypotheses_changed": false,
+  "main_conclusion_changed": false,
+  "diagnosed_instance_binding_modernizations": 49,
+  "haveI_to_have": 36,
+  "letI_to_let": 13,
+  "deprecated_alias_occurrences": 1,
+  "deprecated_name_replaced": "Set.mem_setOf_eq -> Set.mem_ofPred_eq",
+  "internal_unused_binder_alpha_rename": "hFI -> _hFI; the original FundamentalIdentityAlong hypothesis is retained and the original theorem card still names its binder hFI",
+  "original_baseline_kernel_exit": 0,
+  "original_baseline_make_exit": 0,
+  "original_baseline_kernel_seconds": 44.868362959,
+  "original_baseline_warnings": 51,
+  "proof_summary": "Retain the complete valuation reduction construction, residue-field and transcendental generator arguments, finite-fibre/compatible-embedding counts, restrictions of extended field maps, correspondence on single-place divisors, and the full additive mapDomain/correspondence commutation theorem.",
+  "library_search": "Exact target-name search found no trureturing D5 provider. Preserve the existing construction and public theorem card; the only qualified source-solution consumer is the original positional p2m_exact_reverting card."
+}
