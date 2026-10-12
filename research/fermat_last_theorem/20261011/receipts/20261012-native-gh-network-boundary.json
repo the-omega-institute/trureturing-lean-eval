@@ -1,0 +1,46 @@
+{
+  "at": "2026-10-12T03:13:24.952211+00:00",
+  "host": "api.github.com",
+  "system_resolver_error": "[Errno 8] nodename nor servname provided, or not known",
+  "dig_exit": 0,
+  "dig_output": "20.205.243.168",
+  "public_tls_probe_exit": 6,
+  "public_tls_error": "curl: (6) Could not resolve host: api.github.com",
+  "public_tls_response_first_line": null,
+  "native_gh_probes": [
+    {
+      "environment": {
+        "GODEBUG": "netdns=go"
+      },
+      "command": [
+        "gh",
+        "api",
+        "user",
+        "--jq",
+        ".login"
+      ],
+      "exit": 1,
+      "error": "tls: failed to verify certificate: x509: OSStatus -26276"
+    },
+    {
+      "environment": {
+        "GODEBUG": "netdns=go",
+        "SSL_CERT_FILE": "/etc/ssl/cert.pem"
+      },
+      "command": [
+        "gh",
+        "api",
+        "user",
+        "--jq",
+        ".login"
+      ],
+      "exit": 1,
+      "error": "tls: failed to verify certificate: x509: OSStatus -26276"
+    }
+  ],
+  "updated_at": "2026-10-12T03:15:53.793697+00:00",
+  "resolved_boundary": "Native DNS failed; Go DNS mode reaches certificate verification, which fails in the macOS trust API before authentication",
+  "tls_verification_disabled": false,
+  "global_dns_or_keychain_changed": false,
+  "current_github_token_validity": "unverified"
+}
