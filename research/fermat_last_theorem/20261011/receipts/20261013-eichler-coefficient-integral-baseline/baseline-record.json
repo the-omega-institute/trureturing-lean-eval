@@ -1,0 +1,90 @@
+{
+  "at": "2026-10-12T19:23:26.166770+00:00",
+  "baseline_source_card_pair_actual_make_kernel_passed": true,
+  "canonical_solution_identical_after_removing_only_compatibility_macro": true,
+  "original_solution_tail_byte_identical": true,
+  "full_original_proof_retained": true,
+  "original_main_hypotheses_and_conclusion_preserved": true,
+  "original_solution_lines": 129,
+  "checks": {
+    "source": {
+      "module": "Submission.Supplier.P2M.Sol.S_HeckeEis_IsEichlerIntegral_coeff_binaryFormRepSL_inv_apply_sub_eq_intervalIntegral_slash",
+      "make_exit": 0,
+      "kernel_exit": 0,
+      "kernel_seconds": 41.15346075,
+      "source_unchanged": true,
+      "compiler_warnings": 0,
+      "direct_dependencies": [
+        {
+          "module": "Submission.Supplier.Definitions.Def_HeckeEis_BinaryFormRep",
+          "receipt": null,
+          "actual_exit": 0
+        },
+        {
+          "module": "Submission.Supplier.Definitions.Def_HeckeEis_EichlerIntegral",
+          "receipt": null,
+          "actual_exit": 0
+        },
+        {
+          "module": "Submission.Supplier.Theorems.Thm_HeckeEis_IsEichlerIntegral_slash",
+          "receipt": null,
+          "actual_exit": 0
+        },
+        {
+          "module": "Submission.Supplier.Theorems.Thm_HeckeEis_coeff_single_one_eq_eval_of_mem_binaryForm",
+          "receipt": null,
+          "actual_exit": 0
+        },
+        {
+          "module": "Submission.Supplier.P2M.Util",
+          "receipt": null,
+          "actual_exit": 0
+        }
+      ],
+      "solution_axiom_audit": "not printed separately; full-root audit pending"
+    },
+    "card": {
+      "module": "Submission.Supplier.Theorems.Thm_HeckeEis_IsEichlerIntegral_coeff_binaryFormRepSL_inv_apply_sub_eq_intervalIntegral_slash",
+      "make_exit": 0,
+      "kernel_exit": 0,
+      "kernel_seconds": 41.308652125,
+      "source_unchanged": true,
+      "compiler_warnings": 0,
+      "direct_dependencies": [
+        {
+          "module": "Submission.Supplier.Definitions.Def_HeckeEis_BinaryFormRep",
+          "receipt": null,
+          "actual_exit": 0
+        },
+        {
+          "module": "Submission.Supplier.Definitions.Def_HeckeEis_EichlerIntegral",
+          "receipt": null,
+          "actual_exit": 0
+        },
+        {
+          "module": "Submission.Supplier.P2M.Util",
+          "receipt": null,
+          "actual_exit": 0
+        },
+        {
+          "module": "Submission.Supplier.P2M.Sol.S_HeckeEis_IsEichlerIntegral_coeff_binaryFormRepSL_inv_apply_sub_eq_intervalIntegral_slash",
+          "receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/3e612b750bc931e2d889643f-1791832261606789000.kernel/result.json",
+          "actual_exit": 0
+        }
+      ],
+      "solution_axiom_audit": "not printed separately; full-root audit pending"
+    }
+  },
+  "proof_summary": "Retain the complete original binary-substitution evaluation, top-coefficient evaluation, invariance under powers of T, coefficient of linePow, and slash/conjugation calculation. Compose the complex Eichler derivative with a real horizontal path, establish continuity and interval integrability, and apply the fundamental theorem of calculus to obtain the original conjugated binary-form coefficient/interval-integral identity. Only the previously accepted qualified coefficient API macro is added to the original supplier source; removing that macro makes the complete canonical source byte-identical to the supplier original, and the original public solution tail is byte-identical.",
+  "no_source_change": true,
+  "no_linter_suppression_added": true,
+  "source_axiom_audit_pending": true,
+  "supplier": "anthropics/fermats-last-theorem",
+  "supplier_commit": "6e837e75355538c7f80bab5b956861e86c4eacc2",
+  "full_original_complete": false,
+  "official_new_solve_credit": 0,
+  "jobs": 1,
+  "compilers": 1,
+  "threads": 1,
+  "controller_continues_same_full_FLT_graph": true
+}
