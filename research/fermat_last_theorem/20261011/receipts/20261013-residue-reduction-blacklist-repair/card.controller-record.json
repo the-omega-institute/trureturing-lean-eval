@@ -1,0 +1,63 @@
+{
+  "sha256": "1dcabc8b15ce9fc10dfd4941c62c9758ddaadcebe6f7244d9ff39383ab0c61df",
+  "exit": 0,
+  "empty_output_retry_done": false,
+  "source_sha256_after": "1dcabc8b15ce9fc10dfd4941c62c9758ddaadcebe6f7244d9ff39383ab0c61df",
+  "source_unchanged": true,
+  "olean_sha256": "3f7c16f355baeadaf4f262ec16e006178c8159d7d744d466fb301c739623dd35",
+  "seconds": 52.681020999999994,
+  "pid": 12097,
+  "command": [
+    "/Users/macstudio/.local/omega-shims/lean",
+    "-j1",
+    "--trust=0",
+    "-Ddebug.skipKernelTC=false",
+    "-R",
+    "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src",
+    "-o",
+    "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-build/lib/lean/Submission/Supplier/Theorems/Thm_ModularCurve_coeffMap_residue_mem_modularFunctionFieldFullC_of_not_dvd.olean",
+    "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/Theorems/Thm_ModularCurve_coeffMap_residue_mem_modularFunctionFieldFullC_of_not_dvd.lean"
+  ],
+  "make_wrapper_pid": null,
+  "make_exit": 0,
+  "make_entry_failed": false,
+  "cache_binding_valid": true,
+  "canonical_make_running_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/official-layout/terminal-proof-repairs/20261013-residue-reduction-blacklist-repair/card-r2.make-running.json",
+  "canonical_make_terminal_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/official-layout/terminal-proof-repairs/20261013-residue-reduction-blacklist-repair/card-r2.make-terminal.json",
+  "kernel_terminal_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/official-layout/terminal-proof-repairs/20261013-residue-reduction-blacklist-repair/card-r2.kernel/result.json",
+  "direct_dependencies": [
+    {
+      "module": "Submission.Supplier.Definitions.Def_ModularCurve_ReductionModL",
+      "source_sha256": "71810bc10e265113e4951da7d3c3dff50bcaeb31bee9c98f7de559c33b7727e0",
+      "object_sha256": "f5d7c2d82c5aa11d77685fd22612e9eec8c19c29fcf4ef9df2d8329f072fd6de",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Definitions.Def_EllipticCurve_FrobeniusTrace",
+      "source_sha256": "399f64e985f83d26e4ac2d8c0e28f280ae9cb7760458bdb3d93c32cbf51f1559",
+      "object_sha256": "cd37d36c2ff163b3587b156401035161c7480f4fb8968f143e20e45e32715b61",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.P2M.Util",
+      "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+      "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.P2M.Sol.S_ModularCurve_coeffMap_residue_mem_modularFunctionFieldFullC_of_not_dvd",
+      "source_sha256": "5cec184bf8f2ca9fafdf0ed0e9343b342bb8548784cb25508d84ffc744c34ecb",
+      "object_sha256": "85a44eb1811fb7062baa42df1fcdd4843dc630ea3358bdca4cef1e60137407ab",
+      "receipt_reused": true
+    }
+  ],
+  "stdout": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/official-layout/terminal-proof-repairs/20261013-residue-reduction-blacklist-repair/card-r2.kernel/stdout.log",
+  "stderr": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/official-layout/terminal-proof-repairs/20261013-residue-reduction-blacklist-repair/card-r2.kernel/stderr.log",
+  "actual_final_solution_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "manual_verified_receipt": true,
+  "compiler_warnings": 0
+}

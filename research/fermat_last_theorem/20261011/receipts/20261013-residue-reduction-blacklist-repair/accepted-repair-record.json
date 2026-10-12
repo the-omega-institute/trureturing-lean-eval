@@ -1,0 +1,74 @@
+{
+  "at": "2026-10-12T23:37:29.836676+00:00",
+  "status": "clean source/card genuinely compiled; zero warnings; actual final STANDARD3 closures",
+  "problem": "fermat_last_theorem",
+  "fixes": [
+    "Remove eight names absent from the actual source import environment",
+    "Omit seven unused helper section NeZero assumptions",
+    "Use have in six local instance bindings",
+    "Keep the original successful double-sided simplification of the LiesOverPrime hypothesis; remove unexecuted fallback branches"
+  ],
+  "full_original_final_theorem_statement_preserved": true,
+  "original_final_solution_body_preserved": true,
+  "actual_final_axiom_closures_pending": true,
+  "new_official_credit": 0,
+  "all_removed_attribute_names": [
+    "ModularCurve.eisensteinNumerator_nineteen",
+    "ModularCurve.eisensteinNumerator_thirteen",
+    "ModularCurve.eisensteinNumerator_seventeen",
+    "ModularCurve.constantCoeff_dedekindEtaUnitQ",
+    "ModularCurve.eisensteinNumerator_eleven",
+    "ModularCurve.eisensteinNumerator_five",
+    "ModularCurve.eisensteinNumerator_seven",
+    "ModularCurve.eisensteinNumerator_twentythree"
+  ],
+  "remaining_names_query": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/official-layout/terminal-proof-repairs/20261013-residue-reduction-blacklist-repair/imported-names-probe.kernel/result.json",
+  "prior_names_rejection_evidence": [
+    "ebeec21dadda2473e0cd887a-1791845670173735000",
+    "ebeec21dadda2473e0cd887a-1791847628331683000"
+  ],
+  "existing_watcher": "repair_obsolete_attributes.py had already removed the first four rejected entries; those edits are preserved",
+  "configuration": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/official-layout/terminal-proof-repairs/20261013-residue-reduction-blacklist-repair/source-r2.configuration.json",
+  "prior_failed_cleanup_source": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/official-layout/terminal-proof-repairs/20261013-residue-reduction-blacklist-repair/source-r1.kernel/result.json",
+  "checks": {
+    "source": {
+      "module": "Submission.Supplier.P2M.Sol.S_ModularCurve_coeffMap_residue_mem_modularFunctionFieldFullC_of_not_dvd",
+      "make_exit": 0,
+      "lean_exit": 0,
+      "kernel_seconds": 58.1157035,
+      "compiler_warnings": 0,
+      "final_declaration": "P2MW.S_ModularCurve_coeffMap_residue_mem_modularFunctionFieldFullC_of_not_dvd.solution",
+      "actual_recursive_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "source_unchanged": true,
+      "full_import_source_replay_pending": true
+    },
+    "card": {
+      "module": "Submission.Supplier.Theorems.Thm_ModularCurve_coeffMap_residue_mem_modularFunctionFieldFullC_of_not_dvd",
+      "make_exit": 0,
+      "lean_exit": 0,
+      "kernel_seconds": 52.681020999999994,
+      "compiler_warnings": 0,
+      "final_declaration": "ModularCurve.coeffMap_residue_mem_modularFunctionFieldFullC_of_not_dvd",
+      "actual_recursive_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "source_unchanged": true,
+      "full_import_source_replay_pending": true
+    }
+  },
+  "full_original_complete": false,
+  "official_new_solve_credit": 0,
+  "source_summary": "Preserve the original theorem for every nonzero N, every prime ell not dividing N, every valuation subring of the algebraic closure of Q lying over ell, and every integral Laurent series whose fraction-field image lies in the original modular function field. The entire original monomial independence, finite-dimensional span, polynomial relation, denominator clearing and nonzero residue coefficient proof is retained. Only nonexistent attribute entries, unused helper assumptions, local-instance style and dead fallback tactics changed. Final theorem statement and body are byte-preserved.",
+  "supplier": "anthropics/fermats-last-theorem",
+  "supplier_commit": "6e837e75355538c7f80bab5b956861e86c4eacc2",
+  "full_import_source_replay_and_full_root_audits_pending": true,
+  "jobs": 1,
+  "compilers": 1,
+  "threads": 1
+}

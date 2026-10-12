@@ -1,0 +1,125 @@
+--- baseline-adapted
++++ clean-adapted
+@@ -17,8 +17,7 @@
+ namespace P2MW.S_ModularCurve_coeffMap_residue_mem_modularFunctionFieldFullC_of_not_dvd
+ attribute [-instance] ModularCurve.PhiGen.instNeZeroPhiGenCosetA ModularCurve.instIsDomainTensorProduct AlgebraicClosure.Rat.isGalois AlgebraicCurve.Place.instIsPrimeCenter AlgebraicCurve.Place.instIsFractionRingIntegralClosureAt AlgebraicCurve.Place.instIsTorsionFreeSubtypeMemValuationSubringToValuationSubringIntegralClosureAt AlgebraicCurve.Place.instIsDedekindDomainIntegralClosureAt AlgebraicCurve.Place.instFiniteSubtypeMemValuationSubringToValuationSubringIntegralClosureAt AlgebraicCurve.instFundamentalIdentityOfSumRamificationInertia AlgebraicCurve.Place.instIsScalarTowerResidueFieldRestrictPushforward AlgebraicCurve.Place.instAlgebraResidueFieldRestrictPushforward AlgebraicCurve.Place.instIsLocalHomRestrictInclusion AlgebraicCurve.IsCurveOver.instNontrivialKaehler AlgebraicCurve.IsCurveOver.instFreeKaehler AlgebraicCurve.IsCurveOver.toHasPrincipalDivisors AlgebraicCurve.IsCurveOver.instFiniteResidue AlgebraicCurve.Place.instIsRankOneDiscreteWithZeroMultiplicativeIntAdicValuation AlgebraicCurve.Place.instIsTrivialOnWithZeroMultiplicativeIntAdicValuation
+ attribute [-simp] ModularCurve.evalAtJqN_X ModularCurve.qTwistFun_coeff ModularCurve.swapBivar_C_X ModularCurve.PhiGen.cosetA_succ ModularCurve.qTwist_coeff ModularCurve.PhiGen.cosetB_zero ModularCurve.PhiGen.cosetA_zero ModularCurve.qTwist_single ModularCurve.swapBivar_X ModularCurve.aeval_toRingHom_X ModularCurve.PhiGen.cosetB_succ ModularForm.val_heckeDiagMatrix ModularForm.heckeU_zero ModularForm.heckeU_zero_left ModularForm.heckeT_zero ModularForm.val_heckeMatrix ModularForm.heckeMatrix_zero ModularForm.heckeT_zero_left ModularForm.heckeDiagMatrix_zero ModularForm.val_upperTriangularGL ModularCurve.coe_baseChangeEquiv_apply ModularCurve.baseChangeHom_tmul ModularCurve.coe_cuspidalDivisor₀ AlgebraicCurve.Place.placeOfPrime_toValuationSubring AlgebraicCurve.Place.mem_fiberOver AlgebraicCurve.Place.fiberEquiv_symm_apply AlgebraicCurve.Place.fiberEquiv_apply AlgebraicCurve.Place.centerHeightOneSpectrum_asIdeal AlgebraicCurve.Divisor.mapRestrict_single AlgebraicCurve.Divisor.pushforward_single AlgebraicCurve.Place.coe_restrictInclusion AlgebraicCurve.Place.mem_fiber AlgebraicCurve.Place.restrict_toValuationSubring AlgebraicCurve.Divisor.degree_pushforward AlgebraicCurve.Place.restrictResidueMap_residue AlgebraicCurve.Pic0.coe_pushforwardDegZeroHom AlgebraicCurve.Pic0.coe_pullbackDegZeroHom AlgebraicCurve.IsFrobeniusEndo.frobNormRingHom_apply ModularCurve.frobeniusPushforwardGeomLevelPic0_mk ModularCurve.coe_frobeniusGeomLevelEquiv_apply
+-attribute [-simp] ModularCurve.coe_frobeniusPushforwardGeomLevelDegZero ModularCurve.heckeFibreGeomLevelPic0OfIsCurveOver_mk ModularCurve.frobeniusGeomLevel_apply_coe ModularCurve.frobeniusPullbackGeomLevelPic0OfIsCurveOver_mk ModularCurve.coe_heckeFibreGeomLevelDegZero ModularCurve.coe_frobeniusPullbackGeomLevelDegZero ModularCurve.frobeniusPullbackGeomLevelPic0_mk ModularCurve.frobeniusPullbackGeomLevel_single ModularCurve.heckeFibreGeomLevelPic0_mk ModularCurve.frobeniusPushforwardGeomLevelPic0OfIsCurveOver_mk ModularCurve.frobeniusPushforwardGeomLevel_single ModularCurve.qExpandAlgC_apply AlgebraicCurve.Place.congrEquiv_symm_apply AlgebraicCurve.RationalFunctionField.heightOneSpectrumOfIrreducible_asIdeal AlgebraicCurve.Place.congrRingEquiv_toValuationSubring AlgebraicCurve.Place.congrEquiv_apply AlgebraicCurve.Place.coe_comapSymmRingEquiv_apply AlgebraicCurve.RationalFunctionField.deg_placeOfPoint AlgebraicCurve.Divisor.degree_pushforwardAlong AlgebraicCurve.Pic0.coe_degZeroCorrespondence AlgebraicCurve.Place.mem_fiberAlong AlgebraicCurve.coe_frobeniusPushforwardDegZero AlgebraicCurve.IsFrobeniusEndo.coe_frobeniusPullbackDegZero ModularCurve.reduceModBivar_C_X ModularCurve.laurentMap_coeff ModularCurve.reduceModBivar_X ModularCurve.laurentMap_single ModularCurve.evalAtJInt_X ModularCurve.evalAtJMod_X ModularCurve.jqNMod_one ModularCurve.aeval_heckeGen ModularCurve.coe_mTorsionGaloisRep_apply ModularCurve.eisensteinSystem_of_dvd ModularCurve.eisensteinSystem_of_not_dvd ModularCurve.eisensteinNumerator_seventeen ModularCurve.eisensteinNumerator_eleven ModularCurve.eisensteinNumerator_five ModularCurve.eisensteinNumerator_seven ModularCurve.eisensteinNumerator_twentythree
+-attribute [-simp] ModularCurve.constantCoeff_dedekindEtaUnitQ
++attribute [-simp] ModularCurve.coe_frobeniusPushforwardGeomLevelDegZero ModularCurve.heckeFibreGeomLevelPic0OfIsCurveOver_mk ModularCurve.frobeniusGeomLevel_apply_coe ModularCurve.frobeniusPullbackGeomLevelPic0OfIsCurveOver_mk ModularCurve.coe_heckeFibreGeomLevelDegZero ModularCurve.coe_frobeniusPullbackGeomLevelDegZero ModularCurve.frobeniusPullbackGeomLevelPic0_mk ModularCurve.frobeniusPullbackGeomLevel_single ModularCurve.heckeFibreGeomLevelPic0_mk ModularCurve.frobeniusPushforwardGeomLevelPic0OfIsCurveOver_mk ModularCurve.frobeniusPushforwardGeomLevel_single ModularCurve.qExpandAlgC_apply AlgebraicCurve.Place.congrEquiv_symm_apply AlgebraicCurve.RationalFunctionField.heightOneSpectrumOfIrreducible_asIdeal AlgebraicCurve.Place.congrRingEquiv_toValuationSubring AlgebraicCurve.Place.congrEquiv_apply AlgebraicCurve.Place.coe_comapSymmRingEquiv_apply AlgebraicCurve.RationalFunctionField.deg_placeOfPoint AlgebraicCurve.Divisor.degree_pushforwardAlong AlgebraicCurve.Pic0.coe_degZeroCorrespondence AlgebraicCurve.Place.mem_fiberAlong AlgebraicCurve.coe_frobeniusPushforwardDegZero AlgebraicCurve.IsFrobeniusEndo.coe_frobeniusPullbackDegZero ModularCurve.reduceModBivar_C_X ModularCurve.laurentMap_coeff ModularCurve.reduceModBivar_X ModularCurve.laurentMap_single ModularCurve.evalAtJInt_X ModularCurve.evalAtJMod_X ModularCurve.jqNMod_one ModularCurve.aeval_heckeGen ModularCurve.coe_mTorsionGaloisRep_apply ModularCurve.eisensteinSystem_of_dvd ModularCurve.eisensteinSystem_of_not_dvd
+ 
+ open ModularCurve IntermediateField Polynomial
+ 
+@@ -238,15 +237,18 @@
+ 
+ @[scoped simp] lemma coe_monoE (e : ℕ → ℕ) : (monoE K N e : LaurentSeries K) = mono K N e := rfl
+ 
++omit [NeZero N] in
+ lemma aeval_jqModC_mem_fullC (p : K[X]) : aeval (jqModC K) p ∈ modularFunctionFieldFullC K N := by
+   rw [show jqModC K = (modularFunctionFieldFullC K N).val (jE K N) from rfl, aeval_algHom_apply]
+   exact SetLike.coe_mem _
+ 
++omit [NeZero N] in
+ lemma val_aeval_jE (p : K[X]) :
+     ((aeval (jE K N) p : ↥(modularFunctionFieldFullC K N)) : LaurentSeries K) = aeval (jqModC K) p := by
+   rw [show jqModC K = (modularFunctionFieldFullC K N).val (jE K N) from rfl, aeval_algHom_apply]
+   rfl
+ 
++omit [NeZero N] in
+ theorem indep_poly {ι : Type*} [Fintype ι] (v : ι → ↥(modularFunctionFieldFullC K N))
+     (hv : LinearIndependent (K₀ K N) v) (C : ι → K[X])
+     (hC : ∑ i, aeval (jqModC K) (C i) * (v i : LaurentSeries K) = 0) : ∀ i, C i = 0 := by
+@@ -298,11 +300,11 @@
+ theorem span_monoE_eq_top (hN : (N : K) ≠ 0) :
+     Submodule.span (K₀ K N) (Set.range (monoE K N)) = ⊤ := by
+   classical
+-  haveI : Module.Finite (K₀ K N) ↥(modularFunctionFieldFullC K N) :=
++  have : Module.Finite (K₀ K N) ↥(modularFunctionFieldFullC K N) :=
+     Module.finite_of_finrank_pos (by
+       rw [finrank_adjoin_jqModC_modularFunctionFieldFullC_eq_dedekindPsi K N hN]
+       exact dedekindPsi_pos' N)
+-  haveI : Algebra.IsAlgebraic (K₀ K N) ↥(modularFunctionFieldFullC K N) :=
++  have : Algebra.IsAlgebraic (K₀ K N) ↥(modularFunctionFieldFullC K N) :=
+     Algebra.IsAlgebraic.of_finite _ _
+   set S : Set ↥(modularFunctionFieldFullC K N) :=
+     Set.range fun i : divIdx N => monoE K N (Pi.single i.1 1) with hS_def
+@@ -345,13 +347,13 @@
+ theorem exists_indep_monomials (hN : (N : K) ≠ 0) :
+     ∃ e : Fin (dedekindPsi N) → ℕ → ℕ, LinearIndependent (K₀ K N) (fun i => monoE K N (e i)) := by
+   classical
+-  haveI : Module.Finite (K₀ K N) ↥(modularFunctionFieldFullC K N) :=
++  have : Module.Finite (K₀ K N) ↥(modularFunctionFieldFullC K N) :=
+     Module.finite_of_finrank_pos (by
+       rw [finrank_adjoin_jqModC_modularFunctionFieldFullC_eq_dedekindPsi K N hN]
+       exact dedekindPsi_pos' N)
+   obtain ⟨b, hb_sub, hb_span, hb_li⟩ :=
+     exists_linearIndependent (K₀ K N) (Set.range (monoE K N))
+-  haveI : Fintype b := (hb_li.setFinite).fintype
++  have : Fintype b := (hb_li.setFinite).fintype
+   have hcard : Fintype.card b = dedekindPsi N := by
+     rw [linearIndependent_iff_card_eq_finrank_span.mp hb_li, Set.finrank, Subtype.range_coe,
+       hb_span, span_monoE_eq_top K N hN, finrank_top,
+@@ -385,6 +387,7 @@
+   rw [show modularFunctionFieldBar N = laurentBaseChange ℚbar (modularFunctionFieldFull N) from rfl, h1,
+     relfinrank_full_eq_dedekindPsi]
+ 
++omit [NeZero N] in
+ theorem clear_denominators {ι : Type*} [Fintype ι] (g : ι → L₀ N) :
+     ∃ D : ℚbar[X], D ≠ 0 ∧ ∃ c : ι → ℚbar[X],
+       (∀ i, aeval (jqModC ℚbar) (c i) =
+@@ -431,6 +434,7 @@
+     rw [hrs i, h1, map_zero, zero_div]
+     rfl
+ 
++omit [NeZero N] in
+ lemma val_sum_smul {ι : Type*} [Fintype ι] (g : ι → L₀ N) (v : ι → ↥(modularFunctionFieldBar N)) :
+     ((∑ i, g i • v i : ↥(modularFunctionFieldBar N)) : LaurentSeries ℚbar) =
+       ∑ i, ((g i : ↥(modularFunctionFieldBar N)) : LaurentSeries ℚbar) * (v i : LaurentSeries ℚbar) := by
+@@ -440,6 +444,7 @@
+   rw [IntermediateField.smul_def, smul_eq_mul, map_mul]
+   rfl
+ 
++omit [NeZero N] in
+ theorem linearIndependent_of_poly {ι : Type*} [Fintype ι] (v : ι → ↥(modularFunctionFieldBar N))
+     (hv : ∀ c : ι → ℚbar[X],
+       ∑ i, aeval (jqModC ℚbar) (c i) * (v i : LaurentSeries ℚbar) = 0 → ∀ i, c i = 0) :
+@@ -453,6 +458,7 @@
+   intro i
+   exact hc0 i (hv c hrel i)
+ 
++omit [NeZero N] in
+ theorem exists_poly_relation {ι : Type*} [Fintype ι] (v : ι → ↥(modularFunctionFieldBar N))
+     (hspan : Submodule.span (L₀ N) (Set.range v) = ⊤) (y : ↥(modularFunctionFieldBar N)) :
+     ∃ D : ℚbar[X], D ≠ 0 ∧ ∃ c : ι → ℚbar[X],
+@@ -480,11 +486,14 @@
+   set k := IsLocalRing.ResidueField A with hk
+ 
+   have hℓk : ((ℓ : ℕ) : k) = 0 := by
+-    have h1 : ((ℓ : A) : ℚbar) ∈ A.nonunits := by first | simpa using hA | (have h_1 := hA; simp at h_1; exact h_1) | (have h_1 := hA; simp at h_1 ⊢; exact h_1) | exact (hA)
++    have h1 : ((ℓ : A) : ℚbar) ∈ A.nonunits := by
++      have h := hA
++      simp at h ⊢
++      exact h
+     have h2 : (ℓ : A) ∈ IsLocalRing.maximalIdeal A := ValuationSubring.coe_mem_nonunits_iff.mp h1
+     have h3 : IsLocalRing.residue A (ℓ : A) = 0 := (IsLocalRing.residue_eq_zero_iff _).mpr h2
+     simpa using h3
+-  haveI : CharP k ℓ := (CharP.charP_iff_prime_eq_zero Fact.out).mpr hℓk
++  have : CharP k ℓ := (CharP.charP_iff_prime_eq_zero Fact.out).mpr hℓk
+   have hNk : (N : k) ≠ 0 := fun h => hℓN ((CharP.cast_eq_zero_iff k ℓ N).mp h)
+ 
+   obtain ⟨e, he⟩ := exists_indep_monomials k N hNk
+@@ -502,7 +511,7 @@
+     exact hi₀ (indep_poly k N _ he C (by simpa only [coe_monoE] using hC) i₀)
+   have hli : LinearIndependent (L₀ N) v₀ := linearIndependent_of_poly N v₀ hpoly
+   have hspan : Submodule.span (L₀ N) (Set.range v₀) = ⊤ := by
+-    haveI : Nonempty (Fin (dedekindPsi N)) := ⟨⟨0, dedekindPsi_pos' N⟩⟩
++    have : Nonempty (Fin (dedekindPsi N)) := ⟨⟨0, dedekindPsi_pos' N⟩⟩
+     exact hli.span_eq_top_of_card_eq_finrank (by rw [Fintype.card_fin, finrank_L₀])
+ 
+   obtain ⟨D, hD, c, hrel⟩ := exists_poly_relation N v₀ hspan ⟨coeffMap A.subtype y, hy⟩
+@@ -557,3 +566,5 @@
+     ModularCurve.coeffMap (IsLocalRing.residue A) y ∈
+       ModularCurve.modularFunctionFieldFullC (IsLocalRing.ResidueField A) N :=
+   W7F_ES9A_PORT.main N hℓN A hA y hy
++
++#print axioms P2MW.S_ModularCurve_coeffMap_residue_mem_modularFunctionFieldFullC_of_not_dvd.solution
