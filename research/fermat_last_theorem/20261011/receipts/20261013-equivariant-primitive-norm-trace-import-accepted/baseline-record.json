@@ -1,0 +1,92 @@
+{
+  "at": "2026-10-12T21:30:59.740267+00:00",
+  "manual_repair_source_card_pair_actual_make_kernel_passed": true,
+  "canonical_solution_byte_identical_to_supplier": false,
+  "canonical_solution_byte_identical_to_accepted_repair_candidate": true,
+  "canonical_card_byte_identical_to_supplier": true,
+  "cached_import_full_source_replay_and_audit_pending": true,
+  "full_original_proof_retained": true,
+  "original_main_hypotheses_and_conclusion_preserved": true,
+  "original_solution_lines": 289,
+  "repaired_solution_lines": 290,
+  "original_card_lines": 13,
+  "checks": {
+    "source": {
+      "module": "Submission.Supplier.P2M.Sol.S_ModularCurve_Period_CuspForm_exists_equivariantPrimitive_gamma0",
+      "make_exit": 0,
+      "kernel_exit": 0,
+      "kernel_seconds": 8.530354916,
+      "source_unchanged": true,
+      "compiler_warnings": 0,
+      "direct_dependencies": [
+        {
+          "module": "Submission.Supplier.Definitions.Def_ModularCurve_PeriodMap",
+          "source_bound_cached_controller_record_exit": 0,
+          "separate_kernel_receipt": null,
+          "full_source_replay_and_audit_pending": true
+        },
+        {
+          "module": "Submission.Supplier.P2M.Util",
+          "source_bound_cached_controller_record_exit": 0,
+          "separate_kernel_receipt": null,
+          "full_source_replay_and_audit_pending": true
+        }
+      ],
+      "solution_axiom_audit": "actual final solution recursively printed STANDARD3",
+      "printed_axiom_closures": [
+        {
+          "declaration": "P2MW.S_ModularCurve_Period_CuspForm_exists_equivariantPrimitive_gamma0.solution",
+          "recursive_axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ]
+    },
+    "card": {
+      "module": "Submission.Supplier.Theorems.Thm_ModularCurve_Period_CuspForm_exists_equivariantPrimitive_gamma0",
+      "make_exit": 0,
+      "kernel_exit": 0,
+      "kernel_seconds": 14.43577375,
+      "source_unchanged": true,
+      "compiler_warnings": 0,
+      "direct_dependencies": [
+        {
+          "module": "Submission.Supplier.Definitions.Def_ModularCurve_PeriodMapBundled",
+          "source_bound_cached_controller_record_exit": 0,
+          "separate_kernel_receipt": null,
+          "full_source_replay_and_audit_pending": true
+        },
+        {
+          "module": "Submission.Supplier.P2M.Util",
+          "source_bound_cached_controller_record_exit": 0,
+          "separate_kernel_receipt": null,
+          "full_source_replay_and_audit_pending": true
+        },
+        {
+          "module": "Submission.Supplier.P2M.Sol.S_ModularCurve_Period_CuspForm_exists_equivariantPrimitive_gamma0",
+          "source_bound_cached_controller_record_exit": 0,
+          "separate_kernel_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/1d2530205d275ef5ab75b2f4-1791840289786105000.kernel/result.json",
+          "actual_kernel_exit": 0
+        }
+      ],
+      "solution_axiom_audit": "not printed separately; full-root audit pending",
+      "printed_axiom_closures": []
+    }
+  },
+  "proof_summary": "Retain the entire original equivariant-primitive proof for every nonzero level N and every weight-two cusp form f for Gamma0 N. Add the explicit current Mathlib NormTrace import to access the existing SlashInvariantForm.translate, and adjust the four original style-warning sites without suppressing linters. The original main statement and unchanged theorem card retain all four conclusions: derivative equal to f at every upper-half-plane point, zero limit at infinity, Gamma0-equivariant primitive, and a finite transformed limit at infinity for every delta in SL(2,Z). The full q-parameter primitive construction, chain rule, constancy argument and all-cusp assembly are retained. The actual repaired final solution recursive axiom closure printed exactly STANDARD3, with no sorryAx; both actual source/card make/kernel checks are warning-free.",
+  "no_source_change": false,
+  "no_linter_suppression_added": true,
+  "source_axiom_audit_pending": false,
+  "source_solution_axiom_audit_passed": true,
+  "prior_failure_and_candidate_receipts": "20261013-equivariant-primitive-norm-trace-import",
+  "supplier": "anthropics/fermats-last-theorem",
+  "supplier_commit": "6e837e75355538c7f80bab5b956861e86c4eacc2",
+  "full_original_complete": false,
+  "official_new_solve_credit": 0,
+  "jobs": 1,
+  "compilers": 1,
+  "threads": 1,
+  "controller_continues_same_full_FLT_graph": true
+}
