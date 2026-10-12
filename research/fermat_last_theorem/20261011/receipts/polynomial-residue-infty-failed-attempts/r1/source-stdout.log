@@ -1,0 +1,22 @@
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_AlgebraicCurve_RationalFunctionField_trace_localResidue_placeInfty_X_pow_eq_zero.lean:24:8: error: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  RatFunc.X ^ n *
+    (S_AlgebraicCurve_residueTheoremK_ratFunc_of_isAlgClosed.AlgebraicCurve.RationalFunctionField.placeInfty
+          K).differentialCoeff
+      ((KaehlerDifferential.D K (RatFunc K)) RatFunc.X)
+in the target expression
+  (HasCanonicalLocalResidueKStar.dataKStar v).res
+      (RatFunc.X ^ n * v.differentialCoeff ((KaehlerDifferential.D K (RatFunc K)) RatFunc.X)) =
+    0
+
+K : Type u_1
+inst✝⁵ : Field K
+inst✝⁴ : PerfectField K
+inst✝³ : DecidableEq (RatFunc K)
+inst✝² : HasCanonicalLocalResidueKStar K (RatFunc K)
+inst✝¹ : ∀ (v : Place K (RatFunc K)), v.DCoordGenerates
+inst✝ : Nontrivial Ω[RatFunc K⁄K]
+n : ℕ
+v : Place K (RatFunc K) := RationalFunctionField.placeInfty K
+⊢ (HasCanonicalLocalResidueKStar.dataKStar v).res
+      (RatFunc.X ^ n * v.differentialCoeff ((KaehlerDifferential.D K (RatFunc K)) RatFunc.X)) =
+    0

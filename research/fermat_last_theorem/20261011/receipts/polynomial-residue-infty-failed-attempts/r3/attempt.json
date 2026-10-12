@@ -1,0 +1,39 @@
+{
+  "at": "2026-10-12T01:44:38.724155+00:00",
+  "attempt": "r3",
+  "status": "source passed make/kernel; unchanged theorem card failed with two missing imported declarations",
+  "candidate_lines": 46,
+  "source_candidate": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/official-layout/source-reuse/20261012-polynomial-residue-infty/candidate-r3.lean",
+  "results": [
+    {
+      "kind": "source",
+      "module": "Submission.Supplier.P2M.Sol.S_AlgebraicCurve_RationalFunctionField_trace_localResidue_placeInfty_X_pow_eq_zero",
+      "configuration": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/official-layout/source-reuse/20261012-polynomial-residue-infty-validation-r3/polynomial-residue-infty-source.configuration.json",
+      "edited": true,
+      "make_exit": 0,
+      "kernel_exit": 0,
+      "source_unchanged": true,
+      "kernel_seconds": 8.4038305,
+      "warnings": 0,
+      "kernel_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/official-layout/source-reuse/20261012-polynomial-residue-infty-validation-r3/polynomial-residue-infty-source.kernel/result.json",
+      "make_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/official-layout/source-reuse/20261012-polynomial-residue-infty-validation-r3/polynomial-residue-infty-source.make-terminal.json"
+    },
+    {
+      "kind": "card",
+      "module": "Submission.Supplier.Theorems.Thm_AlgebraicCurve_RationalFunctionField_trace_localResidue_placeInfty_X_pow_eq_zero",
+      "configuration": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/official-layout/source-reuse/20261012-polynomial-residue-infty-validation-r3/polynomial-residue-infty-card.configuration.json",
+      "edited": false,
+      "make_exit": 2,
+      "kernel_exit": 1,
+      "source_unchanged": true,
+      "kernel_seconds": 45.92539875,
+      "warnings": 0,
+      "kernel_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/official-layout/source-reuse/20261012-polynomial-residue-infty-validation-r3/polynomial-residue-infty-card.kernel/result.json",
+      "make_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/official-layout/source-reuse/20261012-polynomial-residue-infty-validation-r3/polynomial-residue-infty-card.make-terminal.json"
+    }
+  ],
+  "card_diagnostics": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/Theorems/Thm_AlgebraicCurve_RationalFunctionField_trace_localResidue_placeInfty_X_pow_eq_zero.lean:19:807: error(lean.unknownIdentifier): Unknown constant `AlgebraicCurve.instHasCanonicalLocalResidueK`\n/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/Theorems/Thm_AlgebraicCurve_RationalFunctionField_trace_localResidue_placeInfty_X_pow_eq_zero.lean:20:626: error(lean.unknownIdentifier): Unknown constant `AlgebraicCurve.Place.CanonicalLocalResidueDataS.mk.sizeOf_spec`\n",
+  "next_repair": "Import Definitions.Def_AlgebraicCurve_CanonicalLocalResidueInstanceV2; keep original theorem card unchanged",
+  "full_original_complete": false,
+  "official_new_solve_credit": 0
+}
