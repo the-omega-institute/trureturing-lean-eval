@@ -1,0 +1,50 @@
+{
+  "at": "2026-10-12T02:24:39.647028+00:00",
+  "module": "P2M.Sol.S_AlgebraicCurve_one_le_deg",
+  "source": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/P2M/Sol/S_AlgebraicCurve_one_le_deg.lean",
+  "directory": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/official-layout/source-reuse/20261012-place-degree-positive",
+  "original_source": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/official-layout/source-reuse/20261012-place-degree-positive/original.lean",
+  "status": "candidate saved outside canonical source; not yet verified",
+  "original_lines": 352,
+  "candidate_lines": 13,
+  "complete_solution_declaration_text_equal": true,
+  "solution_declaration_text_unchanged": true,
+  "reuse_module": "Definitions.Def_AlgebraicCurve_IsCurveOver and Mathlib",
+  "reused_declarations": [
+    "AlgebraicCurve.IsCurveOver.finite_residueField",
+    "Module.finrank_pos"
+  ],
+  "faithfulness_boundary": "Retains the original arbitrary field and IsCurveOver telescope and the original 1 <= degree conclusion; derives finite residue dimension from the existing IsCurveOver law and applies Mathlib finrank positivity. No PerfectField or IsAlgClosed assumption is added.",
+  "full_original_complete": false,
+  "official_new_solve_credit": 0,
+  "verification_status": "source and associated theorem card passed canonical make and kernel checks",
+  "verification_results": [
+    {
+      "kind": "source",
+      "module": "Submission.Supplier.P2M.Sol.S_AlgebraicCurve_one_le_deg",
+      "configuration": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/official-layout/source-reuse/20261012-place-degree-positive-validation/place-degree-source.configuration.json",
+      "edited": true,
+      "make_exit": 0,
+      "kernel_exit": 0,
+      "source_unchanged": true,
+      "kernel_seconds": 2.3800593329999997,
+      "warnings": 0,
+      "kernel_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/official-layout/source-reuse/20261012-place-degree-positive-validation/place-degree-source.kernel/result.json",
+      "make_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/official-layout/source-reuse/20261012-place-degree-positive-validation/place-degree-source.make-terminal.json"
+    },
+    {
+      "kind": "card",
+      "module": "Submission.Supplier.Theorems.Thm_AlgebraicCurve_one_le_deg",
+      "configuration": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/official-layout/source-reuse/20261012-place-degree-positive-validation/place-degree-card.configuration.json",
+      "edited": false,
+      "make_exit": 0,
+      "kernel_exit": 0,
+      "source_unchanged": true,
+      "kernel_seconds": 6.026261417,
+      "warnings": 0,
+      "kernel_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/official-layout/source-reuse/20261012-place-degree-positive-validation/place-degree-card.kernel/result.json",
+      "make_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/official-layout/source-reuse/20261012-place-degree-positive-validation/place-degree-card.make-terminal.json"
+    }
+  ],
+  "verified_at": "2026-10-12T02:30:13.593068+00:00"
+}
