@@ -1,0 +1,74 @@
+{
+  "at": "2026-10-12T19:37:17.019023+00:00",
+  "baseline_source_card_pair_actual_make_kernel_passed": true,
+  "canonical_solution_byte_identical_to_supplier": true,
+  "full_original_proof_retained": true,
+  "original_main_hypotheses_and_conclusion_preserved": true,
+  "original_solution_lines": 204,
+  "checks": {
+    "source": {
+      "module": "Submission.Supplier.P2M.Sol.S_HopfAlgebra_exists_signTwist_withConv_equiv_formula_of_linearEquiv_padicInt",
+      "make_exit": 0,
+      "kernel_exit": 0,
+      "kernel_seconds": 37.196862708000005,
+      "source_unchanged": true,
+      "compiler_warnings": 16,
+      "direct_dependencies": [
+        {
+          "module": "Submission.Supplier.Definitions.Def_GaloisRep_Flat",
+          "receipt": null,
+          "actual_exit": 0
+        },
+        {
+          "module": "Submission.Supplier.Theorems.Thm_HopfAlgebra_antipode_antipode",
+          "receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/fb4a4624b0e313477535cb6d-1791833228753607000.kernel/result.json",
+          "actual_exit": 0
+        },
+        {
+          "module": "Submission.Supplier.P2M.Util",
+          "receipt": null,
+          "actual_exit": 0
+        }
+      ],
+      "solution_axiom_audit": "not printed separately; full-root audit pending"
+    },
+    "card": {
+      "module": "Submission.Supplier.Theorems.Thm_HopfAlgebra_exists_signTwist_withConv_equiv_formula_of_linearEquiv_padicInt",
+      "make_exit": 0,
+      "kernel_exit": 0,
+      "kernel_seconds": 44.565826124999994,
+      "source_unchanged": true,
+      "compiler_warnings": 0,
+      "direct_dependencies": [
+        {
+          "module": "Submission.Supplier.Definitions.Def_GaloisRep_Flat",
+          "receipt": null,
+          "actual_exit": 0
+        },
+        {
+          "module": "Submission.Supplier.P2M.Util",
+          "receipt": null,
+          "actual_exit": 0
+        },
+        {
+          "module": "Submission.Supplier.P2M.Sol.S_HopfAlgebra_exists_signTwist_withConv_equiv_formula_of_linearEquiv_padicInt",
+          "receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/5e8968a49a4f51d8d0457621-1791833370912554000.kernel/result.json",
+          "actual_exit": 0
+        }
+      ],
+      "solution_axiom_audit": "not printed separately; full-root audit pending"
+    }
+  },
+  "proof_summary": "Retain the complete original sign-twist point-equivalence construction over the p-adic integers. Prove invertibility of 2 for the supplied odd prime, the antipode involution and positive/negative projection identities, the twisted multiplication formulas, and multiplicativity of the explicit forward and inverse algebra-point maps. Use the supplied nonzero square root and scalar relation to prove both inverse identities and retain the original coefficient formula. Every original hypothesis, including the linear equivalence, unit preservation, twisted multiplication and antipode compatibility, remains. The entire canonical solution is byte-identical to the supplier original.",
+  "no_source_change": true,
+  "no_linter_suppression_added": true,
+  "source_axiom_audit_pending": true,
+  "supplier": "anthropics/fermats-last-theorem",
+  "supplier_commit": "6e837e75355538c7f80bab5b956861e86c4eacc2",
+  "full_original_complete": false,
+  "official_new_solve_credit": 0,
+  "jobs": 1,
+  "compilers": 1,
+  "threads": 1,
+  "controller_continues_same_full_FLT_graph": true
+}
