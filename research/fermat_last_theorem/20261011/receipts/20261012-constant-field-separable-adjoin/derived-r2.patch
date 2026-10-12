@@ -1,0 +1,35 @@
+--- original-derived
++++ candidate-derived-r2
+@@ -24,7 +24,7 @@
+     [IsAlgClosed K]
+     (hfg : ∃ x : F, Transcendental K x ∧
+       FiniteDimensional (IntermediateField.adjoin K ({x} : Set F)) F)
+-    (hfg' : ∃ x : F', Transcendental K' x ∧
++    (_hfg' : ∃ x : F', Transcendental K' x ∧
+       FiniteDimensional (IntermediateField.adjoin K' ({x} : Set F')) F')
+     (hgen : IntermediateField.adjoin K' (Set.range (algebraMap F F')) = ⊤) :
+     ∃ t' : F', FiniteDimensional (IntermediateField.adjoin K' ({t'} : Set F')) F' ∧
+@@ -33,7 +33,7 @@
+   obtain ⟨x, hx, hxfin⟩ := hfg
+   obtain ⟨t, _ht_trans, ht_fin, ht_sep⟩ :=
+     AlgebraicCurve.exists_separating_transcendental_of_perfectField hx hxfin
+-  haveI := ht_fin; haveI := ht_sep
++  have := ht_fin; have := ht_sep
+   refine ⟨algebraMap F F' t, ?_, ?_⟩
+   all_goals
+     set Kt := IntermediateField.adjoin K ({t} : Set F) with hKt
+@@ -59,7 +59,7 @@
+ 
+     set Bt := Module.finBasis Kt F with hBt
+     set S : Set F' := Set.range fun i => algebraMap F F' (Bt i : F) with hS
+-    haveI : Finite S := (Set.finite_range _).to_subtype
++    have : Finite S := (Set.finite_range _).to_subtype
+ 
+     have key : ∀ i,
+         Polynomial.aeval (R := Kt') (algebraMap F F' (Bt i : F))
+@@ -99,3 +99,5 @@
+ 
+   · rw [← separableClosure.eq_top_iff, eq_top_iff, ← hadj_top]
+     exact adjoin_le_iff.mpr fun y hy => mem_separableClosure_iff.mpr (hsepS y hy)
++
++#print axioms solution

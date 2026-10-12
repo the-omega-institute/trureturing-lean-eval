@@ -1,0 +1,52 @@
+{
+  "at": "2026-10-12T11:15:52.957755+00:00",
+  "module": "Submission.Supplier.P2M.Sol.S_AlgebraicCurve_exists_finiteDimensional_isSeparable_adjoin_of_constantFieldExtension_of_isAlgClosed",
+  "source": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/P2M/Sol/S_AlgebraicCurve_exists_finiteDimensional_isSeparable_adjoin_of_constantFieldExtension_of_isAlgClosed.lean",
+  "derived": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_AlgebraicCurve_exists_finiteDimensional_isSeparable_adjoin_of_constantFieldExtension_of_isAlgClosed.lean",
+  "card": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/Theorems/Thm_AlgebraicCurve_exists_finiteDimensional_isSeparable_adjoin_of_constantFieldExtension_of_isAlgClosed.lean",
+  "original_lines": 93,
+  "preserved_scope": "All original hypotheses retained, including both curve finite-generation hypotheses; arbitrary field characteristic and both finite-dimensionality/separability conclusions.",
+  "main_library_search": "No exact selected constant-field separable-adjoin theorem in trureturing D5/Blueprint; Mathlib separability API is reused in the original construction.",
+  "status": "Complete original finite-dimensional separable-adjoin conclusion and unchanged theorem card verified through canonical make lean/kernel.",
+  "full_original_complete": false,
+  "official_new_solve_credit": 0,
+  "independent_review_seats": 0,
+  "candidate_lines": 93,
+  "candidate_status": "verified source-r2 and original card",
+  "solution_statement_equal_after_binder_name_normalization": true,
+  "card_unchanged": true,
+  "verified_pair": true,
+  "warnings": 0,
+  "axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "checks": {
+    "source": {
+      "configuration": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/official-layout/terminal-proof-repairs/20261012-constant-field-separable-adjoin/source-r2.configuration.json",
+      "kernel_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/official-layout/terminal-proof-repairs/20261012-constant-field-separable-adjoin/source-r2.kernel/result.json",
+      "make_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/official-layout/terminal-proof-repairs/20261012-constant-field-separable-adjoin/source-r2.make-terminal.json",
+      "kernel_exit": 0,
+      "make_exit": 0,
+      "seconds": 48.013409209,
+      "source_unchanged": true
+    },
+    "card": {
+      "configuration": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/official-layout/terminal-proof-repairs/20261012-constant-field-separable-adjoin/card.configuration.json",
+      "kernel_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/official-layout/terminal-proof-repairs/20261012-constant-field-separable-adjoin/card.kernel/result.json",
+      "make_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/official-layout/terminal-proof-repairs/20261012-constant-field-separable-adjoin/card.make-terminal.json",
+      "kernel_exit": 0,
+      "make_exit": 0,
+      "seconds": 40.825620083,
+      "source_unchanged": true
+    }
+  },
+  "initial_success_with_warnings": "source-r1; 3 propositional haveI bindings (one checked twice by all_goals) and one unused binder name",
+  "source_changes": "Only haveI→have for propositions and hfg′→_hfg′ binder name; the hypothesis itself, every other original hypothesis, both conclusions, and the original full construction remain.",
+  "final_source_version": "source-r2",
+  "supplier": "anthropics/fermats-last-theorem",
+  "supplier_commit": "6e837e75355538c7f80bab5b956861e86c4eacc2",
+  "official_mathlib": "5e0c4e5239cb0a2d86d68a884bf52cfd963fce22",
+  "lean_toolchain": "leanprover/lean4:v4.35.0-rc3"
+}
