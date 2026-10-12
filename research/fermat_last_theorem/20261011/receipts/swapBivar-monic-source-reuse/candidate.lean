@@ -1,0 +1,12 @@
+import P2M.Sol.S_ModularCurve_ModularPolynomialData_transposeToAdjoin_monic_of_qExpansion
+
+namespace P2MW.S_ModularCurve_swapBivar_monic_of_coeff_bounds
+
+set_option autoImplicit false
+
+open _root_.ModularCurve _root_.ModularCurve.PhiGen
+
+theorem solution {Φ : Polynomial (Polynomial ℤ)} {d : ℕ} (h0 : (Φ.coeff 0).Monic) (h0deg : (Φ.coeff 0).natDegree = d) (hk : ∀ k, k ≠ 0 → (Φ.coeff k).degree < (d : WithBot ℕ)) : (swapBivar Φ).Monic ∧ (swapBivar Φ).natDegree = d := by
+  exact _root_.P2MW.S_ModularCurve_ModularPolynomialData_transposeToAdjoin_monic_of_qExpansion.ModularCurve.swapBivar_monic_of_coeff_bounds h0 h0deg hk
+
+end P2MW.S_ModularCurve_swapBivar_monic_of_coeff_bounds
