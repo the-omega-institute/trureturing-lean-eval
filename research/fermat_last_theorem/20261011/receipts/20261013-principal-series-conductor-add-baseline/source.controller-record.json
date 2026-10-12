@@ -1,0 +1,98 @@
+{
+  "sha256": "fa9b7104b0ce6491843deaf3a4f7f88fae3158e87c4a19b7b58ba07987eefabc",
+  "exit": 0,
+  "empty_output_retry_done": false,
+  "source_sha256_after": "fa9b7104b0ce6491843deaf3a4f7f88fae3158e87c4a19b7b58ba07987eefabc",
+  "source_unchanged": true,
+  "olean_sha256": "6de5f399d9814c35d6c4809ef52d4945b31bf621fc46255df201de79e2100e81",
+  "seconds": 36.07995162499992,
+  "pid": 25831,
+  "command": [
+    "/Users/macstudio/.local/omega-shims/lean",
+    "-j1",
+    "--trust=0",
+    "-Ddebug.skipKernelTC=false",
+    "-R",
+    "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src",
+    "-o",
+    "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-build/lib/lean/Submission/Supplier/P2M/Sol/S_LocalNewvector_PSCarrier_hasNewvectorConductor_add.olean",
+    "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_LocalNewvector_PSCarrier_hasNewvectorConductor_add.lean"
+  ],
+  "make_wrapper_pid": 24914,
+  "make_exit": 0,
+  "make_entry_failed": false,
+  "cache_binding_valid": true,
+  "canonical_make_running_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/5ce3b7c99bd4eb244c7e36a8-1791836198404681000.make-running.json",
+  "canonical_make_terminal_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/5ce3b7c99bd4eb244c7e36a8-1791836198404681000.make-terminal.json",
+  "kernel_terminal_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/5ce3b7c99bd4eb244c7e36a8-1791836198404681000.kernel/result.json",
+  "direct_dependencies": [
+    {
+      "module": "Submission.Supplier.Definitions.Def_RepTheory_SmoothVectors",
+      "source_sha256": "6ef9c81e09d925807f5597c56fc1e20f1e6785e189df59f307ec4125bc6fb813",
+      "object_sha256": "e90cddff21b7ce1f72719bc4b2cd001a6112dc4dbd3efade84c8ddc2a9875200",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Definitions.Def_RepTheory_GL2CongruenceSubgroup",
+      "source_sha256": "d77723d8199735374903214dab0e7afbb58b6c1433578f16d4f80b9cb964b018",
+      "object_sha256": "ad19b3002af9f47878aaad62956d7bed34715fd66ffe9b3ef5e43b607f67dfc6",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Definitions.Def_LocalLanglands_HeckeCosetLocal",
+      "source_sha256": "92dfebaaeb01ad17036044c7b1a11bcf769cfa10ec0c7e4c9c28b14e112b8b49",
+      "object_sha256": null,
+      "receipt_reused": false
+    },
+    {
+      "module": "Submission.Supplier.Definitions.Def_LocalLanglands_IntegralSubgroupOpen",
+      "source_sha256": "b9f0ba942201c1d43f466be0d46175bc5ca3e2187a9186f80274b2672214cd94",
+      "object_sha256": "e2f1e7b92f669c367a81a07ee80947c787e7343922eea3b4587c28b69554a957",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Definitions.Def_LocalLanglands_IntegralSubgroupCompact",
+      "source_sha256": "937800246c03ffd4dd4b6e126309ea241ea2250e6ba908b5789b435147da8815",
+      "object_sha256": "e97d0869f8a22bd6375ee1716ee913468242adaf86ad5a98aa64300e6354bdf2",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Definitions.Def_LocalNewvector_CongruenceSubgroupK1",
+      "source_sha256": "6650b3a5b3694435b0ebbe99e19ca67a99c60a818d0da41f83f5dc55bd194ccd",
+      "object_sha256": "e5e2a56d8b426b6c28ae36b4ac54173e65daea7a7a26db74030895ba1ccfddce",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Definitions.Def_LocalNewvector_ConductorDatum",
+      "source_sha256": "03f06a4d674cbee4c407bf7e49c470b4b6997ffc8bf65fc41aac9d47b7a153ca",
+      "object_sha256": "67a19792aae8fd45dcfd34d692d5c9bdda85ec5083a12eca794b37589e3de5e5",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Definitions.Def_LocalNewvector_CharConductor",
+      "source_sha256": "a924bacf3e8529d8263b473a8731d499f58b74da2bcd63da8fe0dfc5edb5b0ee",
+      "object_sha256": "9f73046fa5555274a36c7383353aacd272621c81f19539846bd118de40075b86",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Definitions.Def_LocalNewvector_PrincipalSeriesCarrier",
+      "source_sha256": "1df69097397b3a0579a500de8b9c308baf4cc38e1273ca5b09f50675b7f89b8d",
+      "object_sha256": "e9b5faff489ef1cde1798c27b7b59206456a6d32cbbe42104483ab2666e1f172",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Theorems.Thm_LocalNewvector_gl2CongruenceSubgroup_le_padicK1",
+      "source_sha256": "60c3362b913d4b14389d91b474b8e62ca71e6be0ddc82478ca4cfc5747fd5911",
+      "object_sha256": "bd708eb0b7a1704701ff4a807e590822629db8e4f020c2aeada72e090e61cfbe",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.P2M.Util",
+      "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+      "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+      "receipt_reused": true
+    }
+  ],
+  "stdout": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/5ce3b7c99bd4eb244c7e36a8-1791836198404681000.kernel/stdout.log",
+  "stderr": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/5ce3b7c99bd4eb244c7e36a8-1791836198404681000.kernel/stderr.log"
+}
