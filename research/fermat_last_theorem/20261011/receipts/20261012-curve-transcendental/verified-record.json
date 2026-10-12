@@ -1,0 +1,43 @@
+{
+  "at": "2026-10-12T15:34:36.540542+00:00",
+  "module": "Submission.Supplier.P2M.Sol.S_AlgebraicCurve_isCurveOver_of_transcendental",
+  "status": "Complete original solution and unchanged theorem card verified through canonical make lean and kernel",
+  "card_unchanged": true,
+  "verified_pair": true,
+  "warnings": 0,
+  "axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "checks": {
+    "source": {
+      "configuration": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/official-layout/terminal-proof-repairs/20261012-curve-transcendental/source-r2.configuration.json",
+      "kernel_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/official-layout/terminal-proof-repairs/20261012-curve-transcendental/source-r2.kernel/result.json",
+      "make_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/official-layout/terminal-proof-repairs/20261012-curve-transcendental/source-r2.make-terminal.json",
+      "kernel_exit": 0,
+      "make_exit": 0,
+      "seconds": 36.412366625000004,
+      "source_unchanged": true
+    },
+    "card": {
+      "configuration": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/official-layout/terminal-proof-repairs/20261012-curve-transcendental/card.configuration.json",
+      "kernel_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/official-layout/terminal-proof-repairs/20261012-curve-transcendental/card.kernel/result.json",
+      "make_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/official-layout/terminal-proof-repairs/20261012-curve-transcendental/card.make-terminal.json",
+      "kernel_exit": 0,
+      "make_exit": 0,
+      "seconds": 39.426088541999995,
+      "source_unchanged": true
+    }
+  },
+  "supplier": "anthropics/fermats-last-theorem",
+  "supplier_commit": "6e837e75355538c7f80bab5b956861e86c4eacc2",
+  "official_mathlib": "5e0c4e5239cb0a2d86d68a884bf52cfd963fce22",
+  "lean_toolchain": "leanprover/lean4:v4.35.0-rc3",
+  "full_original_complete": false,
+  "official_new_solve_credit": 0,
+  "commit_message": "Verify full curve structure from a separating transcendental generator",
+  "preserved_scope": "The exact complete original IsCurveOver K F target, including principal divisors, finite residues, and free rank-one Kaehler module, under every original transcendentality, finiteness and separability hypothesis; unchanged original card.",
+  "source_changes": "Retain the complete original three-part curve construction, including the RatFunc tower transport in the residue proof. Modernize only proposition instances and the local RatFunc Algebra letI to let with its full data construction retained; append the axiom audit.",
+  "root_status": "Full FLT root and official acceptance remain pending."
+}
