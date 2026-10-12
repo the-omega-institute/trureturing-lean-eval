@@ -1,0 +1,43 @@
+{
+  "at": "2026-10-12T13:34:13.569344+00:00",
+  "module": "Submission.Supplier.P2M.Sol.S_AlgebraicCurve_genusFF_eq_of_constantFieldExtension_of_isAlgClosed",
+  "status": "Complete original solution and unchanged theorem card verified through canonical make lean and kernel",
+  "card_unchanged": true,
+  "verified_pair": true,
+  "warnings": 0,
+  "axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "checks": {
+    "source": {
+      "configuration": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/official-layout/terminal-proof-repairs/20261012-constant-field-genus-equality/source-r1.configuration.json",
+      "kernel_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/official-layout/terminal-proof-repairs/20261012-constant-field-genus-equality/source-r1.kernel/result.json",
+      "make_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/official-layout/terminal-proof-repairs/20261012-constant-field-genus-equality/source-r1.make-terminal.json",
+      "kernel_exit": 0,
+      "make_exit": 0,
+      "seconds": 19.875361541999997,
+      "source_unchanged": true
+    },
+    "card": {
+      "configuration": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/official-layout/terminal-proof-repairs/20261012-constant-field-genus-equality/card.configuration.json",
+      "kernel_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/official-layout/terminal-proof-repairs/20261012-constant-field-genus-equality/card.kernel/result.json",
+      "make_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/official-layout/terminal-proof-repairs/20261012-constant-field-genus-equality/card.make-terminal.json",
+      "kernel_exit": 0,
+      "make_exit": 0,
+      "seconds": 34.500307625,
+      "source_unchanged": true
+    }
+  },
+  "supplier": "anthropics/fermats-last-theorem",
+  "supplier_commit": "6e837e75355538c7f80bab5b956861e86c4eacc2",
+  "official_mathlib": "5e0c4e5239cb0a2d86d68a884bf52cfd963fce22",
+  "lean_toolchain": "leanprover/lean4:v4.35.0-rc3",
+  "full_original_complete": false,
+  "official_new_solve_credit": 0,
+  "commit_message": "Verify complete characteristic-free genus preservation under constant extension",
+  "preserved_scope": "Exact original equality genusFF K' F' = genusFF K F with every original field, algebra, scalar-tower, algebraic-closure, transcendental finite-generation, curve and field-generation hypothesis retained; original theorem card unchanged.",
+  "source_changes": "Complete original equality solution unchanged. It applies the now kernel-checked original genus upper and lower bounds. Adapted source appends only the solution axiom audit. Arbitrary characteristic remains in scope.",
+  "root_status": "Full FLT root, Comparator, full-root Nanoda and official acceptance remain pending; scoped genus-chain success gives no new official solve credit."
+}
