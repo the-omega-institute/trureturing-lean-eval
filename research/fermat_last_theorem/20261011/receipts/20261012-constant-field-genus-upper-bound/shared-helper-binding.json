@@ -1,0 +1,18 @@
+{
+  "at": "2026-10-12T13:07:22.648166+00:00",
+  "helper": "P2MW.S_AlgebraicCurve_le_genusFF_of_constantFieldExtension_of_isAlgClosed.W7XGenusFFGE.constantsAreBase",
+  "provider_module": "Submission.Supplier.P2M.Sol.S_AlgebraicCurve_le_genusFF_of_constantFieldExtension_of_isAlgClosed",
+  "provider_kernel_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/official-layout/terminal-proof-repairs/20261012-constant-field-genus-lower-bound/source-r1.kernel/result.json",
+  "provider_source_sha256": "73b5550d985645302120aa809938462b5217a47d57614285bcaadf4b8650725d",
+  "provider_olean_sha256": "0de924aa00301edf5498fd0bb12602826f77e4fa2f96ae07c2223887c2773913",
+  "helper_statement": "theorem constantsAreBase {K F : Type*} [Field K] [Field F] [Algebra K F] [IsAlgClosed K]\n    [IsCurveOver K F]\n    (hfg : \u2203 x : F, Transcendental K x \u2227\n      FiniteDimensional (IntermediateField.adjoin K ({x} : Set F)) F) :\n    ConstantsAreBase K F",
+  "original_statement_matches_ignoring_whitespace": true,
+  "proof_bodies_claimed_identical": false,
+  "assumptions": "Field K, Field F, Algebra K F, IsAlgClosed K, IsCurveOver K F and original transcendental finite-extension existence hypothesis; no CharZero hypothesis",
+  "source_closure": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "main_original_hypotheses_preserved": true
+}

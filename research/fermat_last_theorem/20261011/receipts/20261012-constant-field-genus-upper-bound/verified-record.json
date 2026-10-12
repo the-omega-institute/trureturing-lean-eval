@@ -1,0 +1,44 @@
+{
+  "at": "2026-10-12T13:29:42.864419+00:00",
+  "module": "Submission.Supplier.P2M.Sol.S_AlgebraicCurve_genusFF_le_of_constantFieldExtension_of_isAlgClosed",
+  "status": "Complete original solution and unchanged theorem card verified through canonical make lean and kernel",
+  "card_unchanged": true,
+  "verified_pair": true,
+  "warnings": 0,
+  "axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "checks": {
+    "source": {
+      "configuration": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/official-layout/terminal-proof-repairs/20261012-constant-field-genus-upper-bound/source-r1.configuration.json",
+      "kernel_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/official-layout/terminal-proof-repairs/20261012-constant-field-genus-upper-bound/source-r1.kernel/result.json",
+      "make_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/official-layout/terminal-proof-repairs/20261012-constant-field-genus-upper-bound/source-r1.make-terminal.json",
+      "kernel_exit": 0,
+      "make_exit": 0,
+      "seconds": 44.648250250000004,
+      "source_unchanged": true
+    },
+    "card": {
+      "configuration": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/official-layout/terminal-proof-repairs/20261012-constant-field-genus-upper-bound/card.configuration.json",
+      "kernel_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/official-layout/terminal-proof-repairs/20261012-constant-field-genus-upper-bound/card.kernel/result.json",
+      "make_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/official-layout/terminal-proof-repairs/20261012-constant-field-genus-upper-bound/card.make-terminal.json",
+      "kernel_exit": 0,
+      "make_exit": 0,
+      "seconds": 6.131434917,
+      "source_unchanged": true
+    }
+  },
+  "supplier": "anthropics/fermats-last-theorem",
+  "supplier_commit": "6e837e75355538c7f80bab5b956861e86c4eacc2",
+  "official_mathlib": "5e0c4e5239cb0a2d86d68a884bf52cfd963fce22",
+  "lean_toolchain": "leanprover/lean4:v4.35.0-rc3",
+  "full_original_complete": false,
+  "official_new_solve_credit": 0,
+  "commit_message": "Verify full characteristic-free genus upper bound under constant extension",
+  "preserved_scope": "Exact original genusFF K' F' ≤ genusFF K F under all original field, scalar-tower, algebraic-closure, finite-transcendental-generation, curve and field-generation assumptions; unchanged original theorem card.",
+  "source_changes": "Retain the full original upper-bound construction and Riemann–Roch index calculations. Replace only the duplicated constantsAreBase proof by its checked public lower-bound provider with an identical telescope; modernize propositional haveI bindings and append the solution axiom audit. No CharZero hypothesis added.",
+  "shared_helper": "The reused helper's statement matches the original exactly ignoring whitespace; provider receipt and source/object binding are recorded in shared-helper-binding.json.",
+  "root_status": "Full FLT root and official acceptance remain pending."
+}
