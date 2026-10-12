@@ -1,0 +1,44 @@
+{
+  "at": "2026-10-12T13:06:38.954609+00:00",
+  "module": "Submission.Supplier.P2M.Sol.S_AlgebraicCurve_le_genusFF_of_constantFieldExtension_of_isAlgClosed",
+  "status": "Complete original solution and unchanged theorem card verified through canonical make lean and kernel",
+  "card_unchanged": true,
+  "verified_pair": true,
+  "warnings": 0,
+  "axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "checks": {
+    "source": {
+      "configuration": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/official-layout/terminal-proof-repairs/20261012-constant-field-genus-lower-bound/source-r1.configuration.json",
+      "kernel_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/official-layout/terminal-proof-repairs/20261012-constant-field-genus-lower-bound/source-r1.kernel/result.json",
+      "make_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/official-layout/terminal-proof-repairs/20261012-constant-field-genus-lower-bound/source-r1.make-terminal.json",
+      "kernel_exit": 0,
+      "make_exit": 0,
+      "seconds": 34.758888709000004,
+      "source_unchanged": true
+    },
+    "card": {
+      "configuration": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/official-layout/terminal-proof-repairs/20261012-constant-field-genus-lower-bound/card.configuration.json",
+      "kernel_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/official-layout/terminal-proof-repairs/20261012-constant-field-genus-lower-bound/card.kernel/result.json",
+      "make_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/official-layout/terminal-proof-repairs/20261012-constant-field-genus-lower-bound/card.make-terminal.json",
+      "kernel_exit": 0,
+      "make_exit": 0,
+      "seconds": 47.376505916,
+      "source_unchanged": true
+    }
+  },
+  "supplier": "anthropics/fermats-last-theorem",
+  "supplier_commit": "6e837e75355538c7f80bab5b956861e86c4eacc2",
+  "official_mathlib": "5e0c4e5239cb0a2d86d68a884bf52cfd963fce22",
+  "lean_toolchain": "leanprover/lean4:v4.35.0-rc3",
+  "full_original_complete": false,
+  "official_new_solve_credit": 0,
+  "commit_message": "Verify characteristic-free genus lower bound and shared constant-field lemma",
+  "preserved_scope": "Retain the complete original genus lower-bound proof and every original main-theorem hypothesis; unchanged original card proves genusFF K F ≤ genusFF K' F' in arbitrary characteristic.",
+  "source_changes": "Modernize eleven propositional haveI bindings to have and push_neg to push Not; append axiom audits for the full solution and its consumed public constantsAreBase helper. Both closures are exactly the three standard axioms.",
+  "shared_helper": "The checked W7XGenusFFGE.constantsAreBase theorem will be reused by the next upper-bound and specialty-vanishing sources, with its original field, algebra, algebraic-closure, curve and finite-generation assumptions retained.",
+  "root_status": "Full FLT root and official acceptance remain pending."
+}
