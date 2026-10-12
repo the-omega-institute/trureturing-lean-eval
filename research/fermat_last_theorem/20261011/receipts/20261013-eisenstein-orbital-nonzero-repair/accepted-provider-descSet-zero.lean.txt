@@ -1,0 +1,14 @@
+private theorem descSet_zero (hϖ : Irreducible ϖ) (hmax : (Ideal.span {ϖ}).IsMaximal)
+    (hdet : Y 0 0 * Y 1 1 - Y 0 1 * Y 1 0 = ϖ * w) (htr : Y 0 0 + Y 1 1 = ϖ * t') :
+    descSet (K := K) hϖ.ne_zero hdet 0 = {latticeMap (toGLK (K := K) Y (det_ne_zero_of_eisenstein hϖ.ne_zero hdet)) (stdLattice R K)} := by
+  have hL1 := latticeMap_toGLK_stdLattice_mem_strictInterval (K := K) hϖ hdet htr
+  ext M
+  simp only [descSet, Set.mem_setOf_eq, Set.mem_singleton_iff, sphereSet_zero, mem_strictInterval_iff]
+  constructor
+  · rintro ⟨⟨h1, h2⟩, hle⟩
+    rcases eq_or_eq_of_mem_strictInterval_stdLattice hϖ hmax (show M ∈ strictInterval (K := K) hϖ.ne_zero (stdLattice R K) from ⟨h1, h2⟩)
+        hle (latticeMap_toGLK_stdLattice_le Y _) with h | h
+    · exact h.symm
+    · exact absurd h hL1.2.ne
+  · rintro rfl
+    exact ⟨hL1, le_rfl⟩

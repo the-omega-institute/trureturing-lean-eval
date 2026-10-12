@@ -1,0 +1,50 @@
+{
+  "sha256": "d3ce705b5e18e56198a72f058213a71f12135faf3406f54ee27b6117eabb885b",
+  "exit": 0,
+  "empty_output_retry_done": false,
+  "source_sha256_after": "d3ce705b5e18e56198a72f058213a71f12135faf3406f54ee27b6117eabb885b",
+  "source_unchanged": true,
+  "olean_sha256": "dea4d55d8f3c68ecc6c2ab68a7f99123cb699f38668fd4e9d59789d5a7beb94c",
+  "seconds": 37.27867745900039,
+  "pid": 1025,
+  "command": [
+    "/Users/macstudio/.local/omega-shims/lean",
+    "-j1",
+    "--trust=0",
+    "-Ddebug.skipKernelTC=false",
+    "-R",
+    "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src",
+    "-o",
+    "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-build/lib/lean/Submission/Supplier/Theorems/Thm_LT_LatticeTree_unitOrbitalCount_ne_zero_of_eisenstein.olean",
+    "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/Theorems/Thm_LT_LatticeTree_unitOrbitalCount_ne_zero_of_eisenstein.lean"
+  ],
+  "make_wrapper_pid": 99230,
+  "make_exit": 0,
+  "make_entry_failed": false,
+  "cache_binding_valid": true,
+  "canonical_make_running_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/9dbc403c94edf308ffd22f6b-1791835776054697000.make-running.json",
+  "canonical_make_terminal_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/9dbc403c94edf308ffd22f6b-1791835776054697000.make-terminal.json",
+  "kernel_terminal_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/9dbc403c94edf308ffd22f6b-1791835776054697000.kernel/result.json",
+  "direct_dependencies": [
+    {
+      "module": "Submission.Supplier.Definitions.Def_LatticeTreeOrbital",
+      "source_sha256": "399dc1b656b9a8d0274cbaf65983e836d8d9a6558f2850b6d50522a59d49037b",
+      "object_sha256": "40cda241212ad0aade054412ab3beaa179aaa20ff81600d39084423679d18163",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.P2M.Util",
+      "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+      "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.P2M.Sol.S_LT_LatticeTree_unitOrbitalCount_ne_zero_of_eisenstein",
+      "source_sha256": "0f9885a29471b0215314742aa0b51258584175dfc3dc468acd9aca86709d6504",
+      "object_sha256": "325705bb2a88cf9a1e00cd0c1b828a8479dc4461be7397afd11337e4be74bc89",
+      "receipt_reused": true
+    }
+  ],
+  "stdout": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/9dbc403c94edf308ffd22f6b-1791835776054697000.kernel/stdout.log",
+  "stderr": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/9dbc403c94edf308ffd22f6b-1791835776054697000.kernel/stderr.log"
+}

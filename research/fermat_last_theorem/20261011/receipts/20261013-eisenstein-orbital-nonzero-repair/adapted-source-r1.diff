@@ -1,0 +1,180 @@
+--- original-adapted
++++ candidate-adapted
+@@ -8,7 +8,7 @@
+ import Mathlib.LinearAlgebra.Matrix.GeneralLinearGroup.Defs
+ import Mathlib.RepresentationTheory.Homological.GroupCohomology.Hilbert90
+ import Mathlib.RingTheory.Norm.Transitivity
+-import Mathlib.Data.Complex.Basic
++import Mathlib.Basic.Complex.Basic
+ import Mathlib.FieldTheory.Finite.GaloisField
+ import Mathlib.GroupTheory.Index
+ import Mathlib.RingTheory.AdicCompletion.Basic
+@@ -225,7 +225,7 @@
+     (hlow : latticeMap (scalarGL (unitOfNeZero (K := K) hϖ.ne_zero)) (stdLattice R K) < L)
+     (hhigh : L < stdLattice R K) :
+     ∃ c d : R, ¬ (ϖ ∣ c ∧ ϖ ∣ d) ∧ L = interLattice R K ϖ c d := by
+-  obtain ⟨v, hv, hv'⟩ := SetLike.exists_of_lt hlow
++  obtain ⟨v, hv, hv'⟩ := IsConcreteLE.exists_of_lt hlow
+   obtain ⟨r, hr⟩ := exists_coords (hhigh.le hv)
+   exact ⟨r 0, r 1,
+     fun h => hv' ((mem_latticeMap_scalarGL_stdLattice_iff_forall_dvd hϖ.ne_zero hr).mpr
+@@ -237,7 +237,7 @@
+     (hlow : latticeMap (scalarGL (unitOfNeZero (K := K) hϖ.ne_zero)) (stdLattice R K) < L)
+     (hhigh : L < stdLattice R K) :
+     ∃ x : Option (R ⧸ Ideal.span {ϖ}), neighborOfOption R K ϖ x = L := by
+-  obtain ⟨v, hv, hv'⟩ := SetLike.exists_of_lt hlow
++  obtain ⟨v, hv, hv'⟩ := IsConcreteLE.exists_of_lt hlow
+   obtain ⟨r, hr⟩ := exists_coords (hhigh.le hv)
+   have hL : L = interLattice R K ϖ (r 0) (r 1) :=
+     eq_interLattice_of_notMem hϖ hmax hlow hhigh hv hv' hr
+@@ -614,7 +614,7 @@
+ private theorem isTorsionFree_coe_of_isFractionRing (K : Type*) [Field K] [Algebra O K]
+     [IsFractionRing O K] [Module K V] [IsScalarTower O K V] (M : Submodule O V) :
+     Module.IsTorsionFree O ↥M := by
+-  haveI : Module.IsTorsionFree O V := isTorsionFree_of_isFractionRing K
++  have : Module.IsTorsionFree O V := isTorsionFree_of_isFractionRing K
+   exact Function.Injective.moduleIsTorsionFree (Subtype.val : ↥M → V) Subtype.val_injective
+     fun _ _ => rfl
+ 
+@@ -622,7 +622,7 @@
+     [Algebra O K] [IsFractionRing O K] [Module K V] [IsScalarTower O K V]
+     (M : Submodule O V) [Module.Finite O ↥M] :
+     Module.Free O ↥M := by
+-  haveI : Module.IsTorsionFree O ↥M := isTorsionFree_coe_of_isFractionRing K M
++  have : Module.IsTorsionFree O ↥M := isTorsionFree_coe_of_isFractionRing K M
+   exact Module.free_of_finite_type_torsion_free'
+ 
+ end Freeness
+@@ -711,7 +711,7 @@
+ 
+ private theorem fg_of_le_fg [IsNoetherianRing R] {L M : Submodule R (Fin 2 → K)}
+     (hM : M.FG) (hLM : L ≤ M) : L.FG := by
+-  haveI : Module.Finite R ↥M := Module.Finite.iff_fg.mpr hM
++  have : Module.Finite R ↥M := Module.Finite.iff_fg.mpr hM
+   have hL : L = Submodule.map M.subtype (Submodule.comap M.subtype L) := by
+     rw [Submodule.map_comap_subtype]
+     exact (inf_eq_right.mpr hLM).symm
+@@ -1147,7 +1147,7 @@
+   obtain ⟨⟨⟨hN1, hN2⟩, hNprim⟩, hNfar⟩ := hN
+   have hXN : X ≤ N := hN1
+   ext M
+-  rw [Set.mem_diff, Set.mem_singleton_iff]
++  rw [Set.mem_sdiff, Set.mem_singleton_iff]
+   constructor
+   · rintro ⟨⟨⟨⟨hM1, hM2⟩, hMprim⟩, hMfar⟩, hMN⟩
+     have hMleN : M ≤ N := by
+@@ -1190,7 +1190,7 @@
+     [Finite (R ⧸ Ideal.span {ϖ})] {d : ℕ} {N : Submodule R (Fin 2 → K)} (hN : N ∈ sphereSet (K := K) hϖ.ne_zero d) :
+     (children (K := K) hϖ.ne_zero d N).ncard = Nat.card (R ⧸ Ideal.span {ϖ}) := by
+   have hfull : IsFullLattice N := isFullLattice_of_latticeWithin_stdLattice hN.1.1
+-  rw [children_eq hϖ hmax hN, Set.ncard_diff_singleton_of_mem (rootNeighbour_mem_strictInterval hϖ hN),
++  rw [children_eq hϖ hmax hN, Set.ncard_sdiff_singleton_of_mem (rootNeighbour_mem_strictInterval hϖ hN),
+     ← Nat.card_coe_set_eq, natCard_strictInterval hϖ hmax hfull]
+   rfl
+ 
+@@ -1198,7 +1198,7 @@
+     [Finite (R ⧸ Ideal.span {ϖ})] (d : ℕ) (hfin : (sphereSet (K := K) hϖ.ne_zero d).Finite) :
+     Nat.card (sphereSet (K := K) hϖ.ne_zero (d + 1)) = Nat.card (R ⧸ Ideal.span {ϖ}) * Nat.card (sphereSet (K := K)
+         hϖ.ne_zero d) := by
+-  haveI : Fintype (sphereSet (K := K) hϖ.ne_zero d) := hfin.fintype
++  have : Fintype (sphereSet (K := K) hϖ.ne_zero d) := hfin.fintype
+ 
+   let parent : sphereSet (K := K) hϖ.ne_zero (d + 1) → sphereSet (K := K) hϖ.ne_zero d :=
+     fun M => ⟨M.1 ⊔ latticeMap (scalarGL (unitOfNeZero (K := K) hϖ.ne_zero ^ (d + 1))) (stdLattice R K),
+@@ -1212,7 +1212,7 @@
+           exact ⟨fun h => congrArg Subtype.val h, fun h => Subtype.ext h⟩)).trans
+         (Equiv.subtypeSubtypeEquivSubtypeInter _ _)
+     rw [Nat.card_congr e, Nat.card_coe_set_eq, ncard_children hϖ hmax N.2]
+-  haveI : ∀ N : sphereSet (K := K) hϖ.ne_zero d, Finite {M : sphereSet (K := K) hϖ.ne_zero (d + 1) // parent M = N}
++  have : ∀ N : sphereSet (K := K) hϖ.ne_zero d, Finite {M : sphereSet (K := K) hϖ.ne_zero (d + 1) // parent M = N}
+       := by
+     intro N
+     apply Nat.finite_of_card_ne_zero
+@@ -1289,7 +1289,7 @@
+ 
+ private theorem latticeMap_scalarGL_unitsMap (w : Rˣ) (L : Submodule R (Fin 2 → K)) :
+     latticeMap (scalarGL (Units.map (algebraMap R K : R →* K) w)) L = L :=
+-  latticeMap_scalarGL_eq_self_of_isUnit w.isUnit (by rw [Units.coe_map, MonoidHom.coe_coe]) L
++  latticeMap_scalarGL_eq_self_of_isUnit w.isUnit (by rw [Units.coe_map, MonoidHom.coe_ofClass]) L
+ 
+ variable [IsFractionRing R K]
+ 
+@@ -1874,7 +1874,7 @@
+   have hvec : ∀ {L : Submodule R (Fin 2 → K)}, latticeMap g L ≤ L → ∀ v ∈ L, Y.map (algebraMap R K) *ᵥ v ∈ L :=
+     fun hL v hv => hL (mulVec_mem_latticeMap hv)
+   ext v
+-  simp only [mem_fixedVertexSet, Set.mem_setOf_eq]
++  simp only [mem_fixedVertexSet, Set.mem_ofPred_eq]
+   constructor
+   · intro hfix
+     change IsFixedVertex γK v at hfix
+@@ -1943,11 +1943,10 @@
+ 
+ private theorem descSet_zero (hϖ : Irreducible ϖ) (hmax : (Ideal.span {ϖ}).IsMaximal)
+     (hdet : Y 0 0 * Y 1 1 - Y 0 1 * Y 1 0 = ϖ * w) (htr : Y 0 0 + Y 1 1 = ϖ * t') :
+-    descSet (K := K) hϖ.ne_zero hdet 0 = {latticeMap (toGLK (K := K) Y (det_ne_zero_of_eisenstein hϖ.ne_zero hdet))
+-        (stdLattice R K)} := by
++    descSet (K := K) hϖ.ne_zero hdet 0 = {latticeMap (toGLK (K := K) Y (det_ne_zero_of_eisenstein hϖ.ne_zero hdet)) (stdLattice R K)} := by
+   have hL1 := latticeMap_toGLK_stdLattice_mem_strictInterval (K := K) hϖ hdet htr
+   ext M
+-  simp only [descSet, Set.mem_setOf_eq, Set.mem_singleton_iff, sphereSet_zero, mem_strictInterval_iff]
++  simp only [descSet, Set.mem_ofPred_eq, Set.mem_singleton_iff, sphereSet_zero, mem_strictInterval_iff]
+   constructor
+   · rintro ⟨⟨h1, h2⟩, hle⟩
+     rcases eq_or_eq_of_mem_strictInterval_stdLattice hϖ hmax (show M ∈ strictInterval (K := K) hϖ.ne_zero (stdLattice
+@@ -1977,7 +1976,7 @@
+     (hfin : (descSet (K := K) hϖ.ne_zero hdet d).Finite) :
+     Nat.card (descSet (K := K) hϖ.ne_zero hdet (d + 1)) = Nat.card (R ⧸ Ideal.span {ϖ}) * Nat.card (descSet (K := K)
+         hϖ.ne_zero hdet d) := by
+-  haveI : Fintype (descSet (K := K) hϖ.ne_zero hdet d) := hfin.fintype
++  have : Fintype (descSet (K := K) hϖ.ne_zero hdet d) := hfin.fintype
+   have hϖL1 : latticeMap (scalarGL (unitOfNeZero (K := K) hϖ.ne_zero ^ (d + 1))) (stdLattice R K)
+       ≤ latticeMap (toGLK (K := K) Y (det_ne_zero_of_eisenstein hϖ.ne_zero hdet)) (stdLattice R K) :=
+     (latticeMap_scalarGL_pow_succ_le_toGLK (K := K) hϖ hdet htr d).trans (latticeMap_scalarGL_pow_le_self hϖ.ne_zero
+@@ -1994,7 +1993,7 @@
+         left_inv := fun M => rfl
+         right_inv := fun M => rfl }
+     rw [Nat.card_congr e, Nat.card_coe_set_eq, ncard_children hϖ hmax N.2.1]
+-  haveI : ∀ N : descSet (K := K) hϖ.ne_zero hdet d, Finite {M : descSet (K := K) hϖ.ne_zero hdet (d + 1) // parent M
++  have : ∀ N : descSet (K := K) hϖ.ne_zero hdet d, Finite {M : descSet (K := K) hϖ.ne_zero hdet (d + 1) // parent M
+       = N} := by
+     intro N
+     apply Nat.finite_of_card_ne_zero
+@@ -2034,8 +2033,8 @@
+   have hL1full : IsFullLattice (latticeMap g (stdLattice R K)) := (isFullLattice_stdLattice (R := R) (K := K)).map g
+   have hP := ncard_primSandwich (K := K) hϖ hmax d
+   have hD := natCard_descSet (K := K) hϖ hmax hdet htr d
+-  haveI : Finite (primSandwich (K := K) hϖ.ne_zero d) := hP.2.to_subtype
+-  haveI : Finite (descSet (K := K) hϖ.ne_zero hdet d) := hD.2.to_subtype
++  have : Finite (primSandwich (K := K) hϖ.ne_zero d) := hP.2.to_subtype
++  have : Finite (descSet (K := K) hϖ.ne_zero hdet d) := hD.2.to_subtype
+ 
+   have hfullP : ∀ {M}, M ∈ primSandwich (K := K) hϖ.ne_zero d → IsFullLattice M := fun hM =>
+       isFullLattice_of_latticeWithin_stdLattice hM.1
+@@ -2129,7 +2128,7 @@
+     Nat.card (fixedVertexSet (R := R) (Matrix.GeneralLinearGroup.map (algebraMap R K) γ))
+       = 2 * ∑ r ∈ Finset.range (d + 1), Nat.card (R ⧸ Ideal.span {ϖ}) ^ r := by
+   have hmax : (Ideal.span {ϖ}).IsMaximal := isMaximal_span_of_irreducible hϖ
+-  rw [fixedVertexSet_map_eq_edgeTube (K := K) hϖ hmax hval hfin γ mu hdet htr hY, Set.coe_setOf,
++  rw [fixedVertexSet_map_eq_edgeTube (K := K) hϖ hmax hval hfin γ mu hdet htr hY, Set.coe_ofPred,
+     natCard_edgeTube (K := K) hϖ hmax hval hdet htr d, one_add_sum_add_pow_eq_two_mul_sum]
+ 
+ end PIDCount
+@@ -2181,7 +2180,7 @@
+   · obtain ⟨k, rfl⟩ := Nat.exists_eq_add_of_le hmn
+     refine ⟨k, ua * ub⁻¹, Or.inl (Units.ext ?_)⟩
+     rw [← hab]
+-    simp only [Units.val_mul, Units.val_pow_eq_pow_val, unitOfNeZero_coe, Units.coe_map, MonoidHom.coe_coe,
++    simp only [Units.val_mul, Units.val_pow_eq_pow_val, unitOfNeZero_coe, Units.coe_map, MonoidHom.coe_ofClass,
+       map_mul, map_pow, map_units_val_inv]
+     field_simp
+     rw [pow_add]
+@@ -2189,7 +2188,7 @@
+     refine ⟨k, ua * ub⁻¹, Or.inr (Units.ext ?_)⟩
+     rw [← hab]
+     simp only [Units.val_mul, Units.val_inv_eq_inv_val, Units.val_pow_eq_pow_val, unitOfNeZero_coe, Units.coe_map,
+-      MonoidHom.coe_coe, map_mul, map_pow, map_units_val_inv]
++      MonoidHom.coe_ofClass, map_mul, map_pow, map_units_val_inv]
+     field_simp
+     rw [pow_add]
+ 
