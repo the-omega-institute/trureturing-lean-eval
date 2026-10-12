@@ -1,16 +1,30 @@
 --- original-derived.lean
 +++ candidate-derived.lean
-@@ -99,7 +99,8 @@
+@@ -83,6 +83,12 @@
+ 
+ variable (q : ℕ) [Fact q.Prime]
+ 
++local instance : AddCommGroup (ZMod q) :=
++  (inferInstance : Ring (ZMod q)).toAddCommGroup
++
++local instance : AddCommGroup (GaloisField q 2) :=
++  (inferInstance : Ring (GaloisField q 2)).toAddCommGroup
++
+ theorem exists_eq_add_mul {α : GaloisField q 2}
+     (hα : α ∉ Set.range (algebraMap (ZMod q) (GaloisField q 2))) (x : GaloisField q 2) :
+     ∃ a b : ZMod q, x = algebraMap (ZMod q) (GaloisField q 2) a + algebraMap (ZMod q) (GaloisField q 2) b * α := by
+@@ -99,7 +105,9 @@
        have h1 : t • α = -(s • (1 : GaloisField q 2)) := eq_neg_of_add_eq_zero_right hst
        have h2 : α = t⁻¹ • (-(s • (1 : GaloisField q 2))) := by
          rw [← h1, smul_smul, inv_mul_cancel₀ ht, one_smul]
 -      rw [h2, Algebra.smul_def, Algebra.smul_def, mul_one, map_neg, map_mul, map_inv₀]
 +      rw [h2, Algebra.smul_def, Algebra.smul_def, mul_one]
-+      simp only [map_neg, map_mul]
++      rw [(algebraMap (ZMod q) (GaloisField q 2)).map_neg (s * t⁻¹),
++        (algebraMap (ZMod q) (GaloisField q 2)).map_mul s t⁻¹]
        ring
    have hcard : Fintype.card (Fin 2) = Module.finrank (ZMod q) (GaloisField q 2) := by
      rw [Fintype.card_fin, GaloisField.finrank q two_ne_zero]
-@@ -160,3 +161,5 @@
+@@ -160,3 +168,5 @@
      (hα : (α : GaloisField q 2) ∉ Set.range (algebraMap (ZMod q) (GaloisField q 2))) (h : GL2 q) :
      h * torus q α = torus q α * h ↔ h ∈ (torus q).range :=
    Ws23NV3.main_a q hα h

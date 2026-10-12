@@ -83,6 +83,12 @@ open Polynomial CuspidalType
 
 variable (q : ℕ) [Fact q.Prime]
 
+local instance : AddCommGroup (ZMod q) :=
+  (inferInstance : Ring (ZMod q)).toAddCommGroup
+
+local instance : AddCommGroup (GaloisField q 2) :=
+  (inferInstance : Ring (GaloisField q 2)).toAddCommGroup
+
 theorem exists_eq_add_mul {α : GaloisField q 2}
     (hα : α ∉ Set.range (algebraMap (ZMod q) (GaloisField q 2))) (x : GaloisField q 2) :
     ∃ a b : ZMod q, x = algebraMap (ZMod q) (GaloisField q 2) a + algebraMap (ZMod q) (GaloisField q 2) b * α := by
@@ -100,7 +106,8 @@ theorem exists_eq_add_mul {α : GaloisField q 2}
       have h2 : α = t⁻¹ • (-(s • (1 : GaloisField q 2))) := by
         rw [← h1, smul_smul, inv_mul_cancel₀ ht, one_smul]
       rw [h2, Algebra.smul_def, Algebra.smul_def, mul_one]
-      simp only [map_neg, map_mul]
+      rw [(algebraMap (ZMod q) (GaloisField q 2)).map_neg (s * t⁻¹),
+        (algebraMap (ZMod q) (GaloisField q 2)).map_mul s t⁻¹]
       ring
   have hcard : Fintype.card (Fin 2) = Module.finrank (ZMod q) (GaloisField q 2) := by
     rw [Fintype.card_fin, GaloisField.finrank q two_ne_zero]
