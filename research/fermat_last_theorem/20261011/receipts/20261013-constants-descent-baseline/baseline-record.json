@@ -1,0 +1,99 @@
+{
+  "at": "2026-10-12T19:13:32.975242+00:00",
+  "baseline_source_card_pair_actual_make_kernel_passed": true,
+  "canonical_solution_byte_identical_to_supplier": true,
+  "full_original_proof_retained": true,
+  "original_main_hypotheses_and_conclusion_preserved": true,
+  "original_solution_lines": 400,
+  "checks": {
+    "source": {
+      "module": "Submission.Supplier.P2M.Sol.S_AlgebraicCurve_constantsAreBase_of_apply_algebraMap_eq_pow_card",
+      "make_exit": 0,
+      "kernel_exit": 0,
+      "kernel_seconds": 49.230519832999995,
+      "source_unchanged": true,
+      "compiler_warnings": 8,
+      "direct_dependencies": [
+        {
+          "module": "Submission.Supplier.Definitions.Def_AlgebraicCurve_Correspondence",
+          "receipt": null,
+          "actual_exit": 0
+        },
+        {
+          "module": "Submission.Supplier.Definitions.Def_AlgebraicCurve_IsCurveOver",
+          "receipt": null,
+          "actual_exit": 0
+        },
+        {
+          "module": "Submission.Supplier.Definitions.Def_AlgebraicCurve_AdelicIndex",
+          "receipt": null,
+          "actual_exit": 0
+        },
+        {
+          "module": "Submission.Supplier.Theorems.Thm_AlgebraicCurve_Place_mem_iff_ord_nonneg",
+          "receipt": null,
+          "actual_exit": 0
+        },
+        {
+          "module": "Submission.Supplier.Theorems.Thm_AlgebraicCurve_IsCurveOver_exists_separating_transcendental",
+          "receipt": null,
+          "actual_exit": 0
+        },
+        {
+          "module": "Submission.Supplier.Theorems.Thm_AlgebraicCurve_constantsAreBase_of_isAlgClosed_of_transcendental",
+          "receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/official-layout/terminal-proof-repairs/20261012-constants-transcendental/card.kernel/result.json",
+          "actual_exit": 0
+        },
+        {
+          "module": "Submission.Supplier.P2M.Util",
+          "receipt": null,
+          "actual_exit": 0
+        }
+      ],
+      "solution_axiom_audit": "not printed separately; full-root audit pending"
+    },
+    "card": {
+      "module": "Submission.Supplier.Theorems.Thm_AlgebraicCurve_constantsAreBase_of_apply_algebraMap_eq_pow_card",
+      "make_exit": 0,
+      "kernel_exit": 0,
+      "kernel_seconds": 27.581530584,
+      "source_unchanged": true,
+      "compiler_warnings": 0,
+      "direct_dependencies": [
+        {
+          "module": "Submission.Supplier.Definitions.Def_AlgebraicCurve_IsCurveOver",
+          "receipt": null,
+          "actual_exit": 0
+        },
+        {
+          "module": "Submission.Supplier.Definitions.Def_AlgebraicCurve_AdelicIndex",
+          "receipt": null,
+          "actual_exit": 0
+        },
+        {
+          "module": "Submission.Supplier.P2M.Util",
+          "receipt": null,
+          "actual_exit": 0
+        },
+        {
+          "module": "Submission.Supplier.P2M.Sol.S_AlgebraicCurve_constantsAreBase_of_apply_algebraMap_eq_pow_card",
+          "receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/23b6fecd1bc54a2b3da9398b-1791832073921625000.kernel/result.json",
+          "actual_exit": 0
+        }
+      ],
+      "solution_axiom_audit": "not printed separately; full-root audit pending"
+    }
+  },
+  "proof_summary": "Retain the full original valuation-comap construction: positivity and divisibility for the least positive ramification order, irreducible uniformizer and DVR/PID factorization, a comapped place, finite-field constant embedding into the algebraically closed base, the fixed-point polynomial root count, finite-type generation, and descent from ConstantsAreBase upstairs using the stated Frobenius law. The complete original solution is byte-identical to the supplier source.",
+  "no_source_change": true,
+  "no_linter_suppression_added": true,
+  "source_axiom_audit_pending": true,
+  "supplier": "anthropics/fermats-last-theorem",
+  "supplier_commit": "6e837e75355538c7f80bab5b956861e86c4eacc2",
+  "full_original_complete": false,
+  "official_new_solve_credit": 0,
+  "jobs": 1,
+  "compilers": 1,
+  "threads": 1,
+  "controller_continues_same_full_FLT_graph": true
+}
