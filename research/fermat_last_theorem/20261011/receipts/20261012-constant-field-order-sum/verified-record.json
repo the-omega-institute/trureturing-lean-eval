@@ -1,0 +1,43 @@
+{
+  "at": "2026-10-12T12:14:26.949578+00:00",
+  "module": "Submission.Supplier.P2M.Sol.S_AlgebraicCurve_Place_ord_sum_algebraMap_mul_le_ord_of_linearIndependent_of_constantFieldExtension",
+  "status": "Complete original solution and unchanged theorem card verified through canonical make lean and kernel",
+  "card_unchanged": true,
+  "verified_pair": true,
+  "warnings": 0,
+  "axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "checks": {
+    "source": {
+      "configuration": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/official-layout/terminal-proof-repairs/20261012-constant-field-order-sum/source-r2.configuration.json",
+      "kernel_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/official-layout/terminal-proof-repairs/20261012-constant-field-order-sum/source-r2.kernel/result.json",
+      "make_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/official-layout/terminal-proof-repairs/20261012-constant-field-order-sum/source-r2.make-terminal.json",
+      "kernel_exit": 0,
+      "make_exit": 0,
+      "seconds": 44.019639,
+      "source_unchanged": true
+    },
+    "card": {
+      "configuration": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/official-layout/terminal-proof-repairs/20261012-constant-field-order-sum/card.configuration.json",
+      "kernel_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/official-layout/terminal-proof-repairs/20261012-constant-field-order-sum/card.kernel/result.json",
+      "make_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/official-layout/terminal-proof-repairs/20261012-constant-field-order-sum/card.make-terminal.json",
+      "kernel_exit": 0,
+      "make_exit": 0,
+      "seconds": 40.4040185,
+      "source_unchanged": true
+    }
+  },
+  "supplier": "anthropics/fermats-last-theorem",
+  "supplier_commit": "6e837e75355538c7f80bab5b956861e86c4eacc2",
+  "official_mathlib": "5e0c4e5239cb0a2d86d68a884bf52cfd963fce22",
+  "lean_toolchain": "leanprover/lean4:v4.35.0-rc3",
+  "full_original_complete": false,
+  "official_new_solve_credit": 0,
+  "preserved_scope": "Full nonzero sum and valuation bound for every supported coefficient, with all original constant-field-extension hypotheses and arbitrary characteristic retained.",
+  "source_changes": "Retain the original 193-line construction; modernize two propositional haveI bindings, preserve three unused hypotheses with underscored binder names, and replace two deprecated dif_pos names with dite_eq_left.",
+  "main_library_search": "No exact selected names in current trureturing D5/Blueprint; original Mathlib finite-residue and valuation APIs are used.",
+  "commit_message": "Verify full constant-field coefficient valuation bound"
+}
