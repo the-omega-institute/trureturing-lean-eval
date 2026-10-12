@@ -1,0 +1,59 @@
+{
+  "at": "2026-10-12T10:34:37.153413+00:00",
+  "module": "Submission.Supplier.P2M.Sol.S_ValuationSubring_exists_forall_mem_asIdeal_iff_mem_inertiaSubgroupIn_fixing_ne_of_not_dvd_valuation",
+  "provider": "Submission.Supplier.P2M.Sol.S_ValuationSubring_exists_mem_inertiaSubgroupIn_fixing_ne_of_not_dvd_valuation",
+  "public_helper_namespace": "P2MW.S_ValuationSubring_exists_mem_inertiaSubgroupIn_fixing_ne_of_not_dvd_valuation.WtTF.RB",
+  "source": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/P2M/Sol/S_ValuationSubring_exists_forall_mem_asIdeal_iff_mem_inertiaSubgroupIn_fixing_ne_of_not_dvd_valuation.lean",
+  "derived": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_ValuationSubring_exists_forall_mem_asIdeal_iff_mem_inertiaSubgroupIn_fixing_ne_of_not_dvd_valuation.lean",
+  "card": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/Theorems/Thm_ValuationSubring_exists_forall_mem_asIdeal_iff_mem_inertiaSubgroupIn_fixing_ne_of_not_dvd_valuation.lean",
+  "original_lines": 1027,
+  "candidate_lines": 561,
+  "removed_duplicate_helper_lines": 471,
+  "complete_solution_declaration_equal": true,
+  "retained_stronger_proof_tail_equal": false,
+  "card_unchanged": true,
+  "candidate_status": "verified source-r4 and original card",
+  "official_new_solve_credit": 0,
+  "full_original_complete": false,
+  "status": "complete strengthened solution and unchanged theorem card passed canonical make/kernel; shared public RB helpers reused, modern inertia API retained",
+  "reused_lines": 592,
+  "verified_reuse_pair": true,
+  "warnings": 0,
+  "axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "checks": {
+    "source": {
+      "configuration": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/official-layout/source-reuse/20261012-valuation-strengthened-shared-helpers/source-r4.configuration.json",
+      "kernel_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/official-layout/source-reuse/20261012-valuation-strengthened-shared-helpers/source-r4.kernel/result.json",
+      "make_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/official-layout/source-reuse/20261012-valuation-strengthened-shared-helpers/source-r4.make-terminal.json",
+      "seconds": 14.387712584,
+      "kernel_exit": 0,
+      "make_exit": 0,
+      "source_unchanged": true
+    },
+    "card": {
+      "configuration": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/official-layout/source-reuse/20261012-valuation-strengthened-shared-helpers/card.configuration.json",
+      "kernel_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/official-layout/source-reuse/20261012-valuation-strengthened-shared-helpers/card.kernel/result.json",
+      "make_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/official-layout/source-reuse/20261012-valuation-strengthened-shared-helpers/card.make-terminal.json",
+      "seconds": 2.7762301249999997,
+      "kernel_exit": 0,
+      "make_exit": 0,
+      "source_unchanged": true
+    }
+  },
+  "independent_review_seats": 0,
+  "main_proof_preserved": "The original localization-ring, Galois and inertia construction and extra two valuation lemmas remain. Inertia degree and the fundamental degree identity use current Mathlib APIs; no original hypothesis or conclusion is removed.",
+  "failed_attempts": [
+    "source-r2",
+    "source-r3"
+  ],
+  "initial_success_with_warnings": "source-r1",
+  "final_source_version": "source-r4",
+  "supplier": "anthropics/fermats-last-theorem",
+  "supplier_commit": "6e837e75355538c7f80bab5b956861e86c4eacc2",
+  "official_mathlib": "5e0c4e5239cb0a2d86d68a884bf52cfd963fce22",
+  "lean_toolchain": "leanprover/lean4:v4.35.0-rc3"
+}
