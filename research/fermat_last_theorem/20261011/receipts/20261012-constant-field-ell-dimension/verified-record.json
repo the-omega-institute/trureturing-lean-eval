@@ -1,0 +1,46 @@
+{
+  "at": "2026-10-12T12:52:27.044259+00:00",
+  "module": "Submission.Supplier.P2M.Sol.S_AlgebraicCurve_ell_mapDomain_eq_of_constantFieldExtension_of_isAlgClosed",
+  "status": "Complete original solution and unchanged theorem card verified through canonical make lean and kernel",
+  "card_unchanged": true,
+  "verified_pair": true,
+  "warnings": 0,
+  "axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "checks": {
+    "source": {
+      "configuration": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/official-layout/terminal-proof-repairs/20261012-constant-field-ell-dimension/source-r3.configuration.json",
+      "kernel_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/official-layout/terminal-proof-repairs/20261012-constant-field-ell-dimension/source-r3.kernel/result.json",
+      "make_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/official-layout/terminal-proof-repairs/20261012-constant-field-ell-dimension/source-r3.make-terminal.json",
+      "kernel_exit": 0,
+      "make_exit": 0,
+      "seconds": 44.822508166000006,
+      "source_unchanged": true
+    },
+    "card": {
+      "configuration": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/official-layout/terminal-proof-repairs/20261012-constant-field-ell-dimension/card.configuration.json",
+      "kernel_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/official-layout/terminal-proof-repairs/20261012-constant-field-ell-dimension/card.kernel/result.json",
+      "make_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/official-layout/terminal-proof-repairs/20261012-constant-field-ell-dimension/card.make-terminal.json",
+      "kernel_exit": 0,
+      "make_exit": 0,
+      "seconds": 44.412160584,
+      "source_unchanged": true
+    }
+  },
+  "supplier": "anthropics/fermats-last-theorem",
+  "supplier_commit": "6e837e75355538c7f80bab5b956861e86c4eacc2",
+  "official_mathlib": "5e0c4e5239cb0a2d86d68a884bf52cfd963fce22",
+  "lean_toolchain": "leanprover/lean4:v4.35.0-rc3",
+  "full_original_complete": false,
+  "official_new_solve_credit": 0,
+  "commit_message": "Verify full Riemann–Roch dimension preservation under constant extension",
+  "preserved_scope": "Retain the complete original dimension-preservation solution and all original main-theorem hypotheses; the original theorem card is byte-for-byte unchanged. Arbitrary characteristic remains in scope.",
+  "source_changes": "Modernize two propositional haveI bindings to have, push_neg to push Not, and the deprecated Finsupp.mapDomain_notin_range alias to Finsupp.mapDomain_of_notMem_range. Both consumed auxiliary lemmas explicitly omit only the three unused section assumptions IsAlgClosed K', IsCurveOver K F and IsCurveOver K' F'. Every original assumption remains on solution and on its unchanged theorem card.",
+  "final_source_version": "source-r3",
+  "verification": "Final source and unchanged original card pass canonical make lean and --trust=0 kernel checking with zero warnings, empty stderr and exactly propext, Classical.choice, Quot.sound.",
+  "main_library_search": "Exact selected dimension and genus-extension names were searched in current trureturing D5/Blueprint/Library/Problems with no match; reuse checked original supplier dependencies.",
+  "root_status": "Full FLT root and official acceptance remain pending."
+}
