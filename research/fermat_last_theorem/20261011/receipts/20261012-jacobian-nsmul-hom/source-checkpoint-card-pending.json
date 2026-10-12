@@ -1,0 +1,42 @@
+{
+  "at": "2026-10-12T14:43:06.777566+00:00",
+  "status": "Complete original Jacobian nsmul homomorphism solution source kernel-verified; original card recheck pending",
+  "main_target_preserved": "Original full conjunction: preserves unit; preserves every natural point-multiple; commutes with schemeNsmul for every n, under the complete original telescope",
+  "source_changes": "Four propositional haveI bindings modernized to have; only the unused placeholder subtype binder renamed _x; explicit namespace closure and two axiom audits appended. Complete original source and public helpers retained.",
+  "source_make_exit": 0,
+  "source_kernel_exit": 0,
+  "source_unchanged": true,
+  "warnings": 0,
+  "solution_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "direct_dependencies": [
+    {
+      "module": "Submission.Supplier.Definitions.Def_JacJ1Iface",
+      "source_sha256": "bc9a5f919f6512d10b5fd274db4cf2d873b413c3e0eb9e1edc7e9096a8259450",
+      "object_sha256": "24db1645bd327efec4ea723d891bfaaf8bb150fd5f2c0e6eae5cb33c4a8c7666"
+    },
+    {
+      "module": "Submission.Supplier.Definitions.Def_GoodReductionJacobian_RelativeGroupLawKernel",
+      "source_sha256": "d23cd745fe7c82604b9faaf518df0eb12f2e9a43e26046505398f2dfed3fe555",
+      "object_sha256": "e9fd2f0cbcb2c1793456fabd5c634e0e02a21997fa7a88627ec2ce426da11ab3"
+    },
+    {
+      "module": "Submission.Supplier.Definitions.Def_AlgebraicGeometry_NeronModelEndomorphismExtension",
+      "source_sha256": "27c8b1699a85ae5a3d4d5444523ee9f059b8c4d504be2949966122fd68aa6cbd",
+      "object_sha256": "a4b54127629a60239b13fb1660abb90f609c777ca314b1b796b4f0e5f6630d6d"
+    },
+    {
+      "module": "Submission.Supplier.P2M.Util",
+      "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+      "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff"
+    }
+  ],
+  "card_unchanged": true,
+  "card_recheck": "sole live job, wrapper PID 7362, resource queue at last observation",
+  "source_card_pair_adopted": false,
+  "full_original_complete": false,
+  "official_new_solve_credit": 0
+}
