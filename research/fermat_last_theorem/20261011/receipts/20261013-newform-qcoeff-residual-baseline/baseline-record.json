@@ -1,0 +1,106 @@
+{
+  "at": "2026-10-12T20:02:33.574063+00:00",
+  "baseline_source_card_pair_actual_make_kernel_passed": true,
+  "canonical_solution_byte_identical_to_supplier": true,
+  "canonical_card_byte_identical_to_supplier": true,
+  "original_card_lines": 35,
+  "full_original_proof_retained": true,
+  "original_main_hypotheses_and_conclusion_preserved": true,
+  "original_solution_lines": 140,
+  "checks": {
+    "source": {
+      "module": "Submission.Supplier.P2M.Sol.S_CuspForm_IsNewform_qCoeff_eq_zero_and_sq_eq_one_and_not_residual_zero_of_mem_roots_of_ne",
+      "make_exit": 0,
+      "kernel_exit": 0,
+      "kernel_seconds": 35.491475542,
+      "source_unchanged": true,
+      "compiler_warnings": 6,
+      "direct_dependencies": [
+        {
+          "module": "Submission.Supplier.Definitions.Def_CuspForm_HeckeAlgebra",
+          "receipt": null,
+          "actual_exit": 0
+        },
+        {
+          "module": "Submission.Supplier.Definitions.Def_CuspForm_Newforms",
+          "receipt": null,
+          "actual_exit": 0
+        },
+        {
+          "module": "Submission.Supplier.Theorems.Thm_CuspForm_qCoeff_eq_zero_of_isNewform_of_sq_dvd",
+          "receipt": null,
+          "actual_exit": 0
+        },
+        {
+          "module": "Submission.Supplier.Theorems.Thm_CuspForm_traceLin_atkinLehnerLin_eq_zero_of_isNewform",
+          "receipt": null,
+          "actual_exit": 0
+        },
+        {
+          "module": "Submission.Supplier.Theorems.Thm_CuspForm_qCoeff_sq_eq_one_of_traceLin_atkinLehnerLin_eq_zero",
+          "receipt": null,
+          "actual_exit": 0
+        },
+        {
+          "module": "Submission.Supplier.Theorems.Thm_IsLocalRing_not_exists_monic_aeval_eq_zero_map_residue_eq_X_pow_of_mul_eq_algebraMap_of_isUnit",
+          "receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/7e71a02fdfe09a9628c8a336-1791834377138759000.kernel/result.json",
+          "actual_exit": 0
+        },
+        {
+          "module": "Submission.Supplier.Theorems.Thm_CuspForm_fg_toSubmodule_heckeAlgebra",
+          "receipt": null,
+          "actual_exit": 0
+        },
+        {
+          "module": "Submission.Supplier.P2M.Util",
+          "receipt": null,
+          "actual_exit": 0
+        }
+      ],
+      "solution_axiom_audit": "not printed separately; full-root audit pending"
+    },
+    "card": {
+      "module": "Submission.Supplier.Theorems.Thm_CuspForm_IsNewform_qCoeff_eq_zero_and_sq_eq_one_and_not_residual_zero_of_mem_roots_of_ne",
+      "make_exit": 0,
+      "kernel_exit": 0,
+      "kernel_seconds": 19.217679125,
+      "source_unchanged": true,
+      "compiler_warnings": 0,
+      "direct_dependencies": [
+        {
+          "module": "Submission.Supplier.Definitions.Def_CuspForm_HeckeAlgebra",
+          "receipt": null,
+          "actual_exit": 0
+        },
+        {
+          "module": "Submission.Supplier.Definitions.Def_CuspForm_Newforms",
+          "receipt": null,
+          "actual_exit": 0
+        },
+        {
+          "module": "Submission.Supplier.P2M.Util",
+          "receipt": null,
+          "actual_exit": 0
+        },
+        {
+          "module": "Submission.Supplier.P2M.Sol.S_CuspForm_IsNewform_qCoeff_eq_zero_and_sq_eq_one_and_not_residual_zero_of_mem_roots_of_ne",
+          "receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/0018181eaeada01e66e8aceb-1791834444992016000.kernel/result.json",
+          "actual_exit": 0
+        }
+      ],
+      "solution_axiom_audit": "not printed separately; full-root audit pending"
+    }
+  },
+  "proof_summary": "Retain the complete original 140-line newform proof and all three conclusions. Square divisibility gives the zero Hecke coefficient; exact prime divisibility gives a coefficient equal to 1 or -1 via the Atkin-Lehner trace identity; roots at an unramified prime cannot have a monic integral equation reducing to a pure power of X. The proof retains integrality of the Hecke coefficient through finite generation, integrality of each quadratic root and its complementary root, their product equal to q, and the local-ring unit contradiction from the original distinct-prime assumption. All original DVR, adic-completeness, residue-finiteness, characteristic, newform and Hecke-eigenvalue assumptions remain. Canonical solution and card are byte-identical to the supplier originals.",
+  "no_source_change": true,
+  "no_linter_suppression_added": true,
+  "source_axiom_audit_pending": true,
+  "supplier": "anthropics/fermats-last-theorem",
+  "supplier_commit": "6e837e75355538c7f80bab5b956861e86c4eacc2",
+  "full_original_complete": false,
+  "official_new_solve_credit": 0,
+  "jobs": 1,
+  "compilers": 1,
+  "threads": 1,
+  "controller_continues_same_full_FLT_graph": true
+}
