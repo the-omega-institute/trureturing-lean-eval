@@ -1,0 +1,121 @@
+{
+  "at": "2026-10-12T22:45:35.519722+00:00",
+  "baseline_source_card_pair_actual_make_kernel_passed": true,
+  "canonical_solution_byte_identical_to_supplier": true,
+  "canonical_card_byte_identical_to_supplier": true,
+  "cached_import_full_source_replay_and_audit_pending": true,
+  "full_original_proof_retained": true,
+  "original_main_hypotheses_and_conclusion_preserved": true,
+  "original_solution_lines": 815,
+  "original_card_lines": 32,
+  "checks": {
+    "source": {
+      "module": "Submission.Supplier.P2M.Sol.S_ModularCurve_exists_mem_periodLattice_eq_sum_intCast_mul_edgeIntegral_of_isParabolicHom",
+      "make_exit": 0,
+      "kernel_exit": 0,
+      "kernel_seconds": 69.149621417,
+      "source_unchanged": true,
+      "compiler_warnings": 1,
+      "direct_dependencies": [
+        {
+          "module": "Submission.Supplier.Definitions.Def_ModularCurve_PeriodLattice",
+          "source_sha256": "cac52612596a1afa724f8cda5282e84364e38266940e61a3561f372eccabe2dc",
+          "object_sha256": "bf56bc5ac2ad79de9970253d1467115737ecdf4f32269f896b2381bae4d0852c",
+          "receipt_reused": true
+        },
+        {
+          "module": "Submission.Supplier.Definitions.Def_ModularCurve_PeriodMap",
+          "source_sha256": "5acf4e570629a49b529fed25d764bd7de9120a51dbc1f80018650cd937a0aed5",
+          "object_sha256": "012e8618e75b0f93bbcd3f9b2facf43aed4d813b74f4af3f22ac146c9a154835",
+          "receipt_reused": true
+        },
+        {
+          "module": "Submission.Supplier.Definitions.Def_ModularCurve_PeriodMapBundled",
+          "source_sha256": "3067a7dad3e8b56dae4c62afb592ba4a935bdd96cfaae824e3615a3b5ca52fca",
+          "object_sha256": "0ecf7666eeb1ae41142eb9ed7f07656d1a646851ecd767c9bc39e2404c1f88c6",
+          "receipt_reused": true
+        },
+        {
+          "module": "Submission.Supplier.Definitions.Def_AutomorphicForm_Gamma0FundamentalSet",
+          "source_sha256": "fd1c10e34ad824c8fa531e5292ae85a5993b0faadf8878e65148080cb8a12101",
+          "object_sha256": "f3ef600170a0d762fcf4373f73db4c6bff135e844bb0eeacba7f2487a18c91c8",
+          "receipt_reused": true
+        },
+        {
+          "module": "Submission.Supplier.Theorems.Thm_ModularCurve_exists_hasEquivariantPrimitive",
+          "source_sha256": "90028069de462db93d60cce08d5833fcb236cdd5baf03215cd5dc06eb185f9ff",
+          "object_sha256": "03413085e98e4d7e513e9e96bbb2bbfeb41ea7fa74ea601f482252cacdb51493",
+          "receipt_reused": true
+        },
+        {
+          "module": "Submission.Supplier.Theorems.Thm_ModularCurve_period_apply_eq_sub_of_hasEquivariantPrimitive",
+          "source_sha256": "3497d9e4267f1108029f400f2ea2a49ff047a7742c7cca08563449e98ab44c65",
+          "object_sha256": "1f0571377ba6826f82defb1c7f793663eb5e9750fe9162e0e2f1c2af2aaecedb",
+          "receipt_reused": true
+        },
+        {
+          "module": "Submission.Supplier.P2M.Util",
+          "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+          "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+          "receipt_reused": true
+        }
+      ],
+      "solution_axiom_audit": "not printed separately; full-root audit pending",
+      "printed_axiom_closures": []
+    },
+    "card": {
+      "module": "Submission.Supplier.Theorems.Thm_ModularCurve_exists_mem_periodLattice_eq_sum_intCast_mul_edgeIntegral_of_isParabolicHom",
+      "make_exit": 0,
+      "kernel_exit": 0,
+      "kernel_seconds": 6.029190041,
+      "source_unchanged": true,
+      "compiler_warnings": 0,
+      "direct_dependencies": [
+        {
+          "module": "Submission.Supplier.Definitions.Def_ModularCurve_PeriodLattice",
+          "source_sha256": "cac52612596a1afa724f8cda5282e84364e38266940e61a3561f372eccabe2dc",
+          "object_sha256": "bf56bc5ac2ad79de9970253d1467115737ecdf4f32269f896b2381bae4d0852c",
+          "receipt_reused": true
+        },
+        {
+          "module": "Submission.Supplier.Definitions.Def_ModularCurve_PeriodMap",
+          "source_sha256": "5acf4e570629a49b529fed25d764bd7de9120a51dbc1f80018650cd937a0aed5",
+          "object_sha256": "012e8618e75b0f93bbcd3f9b2facf43aed4d813b74f4af3f22ac146c9a154835",
+          "receipt_reused": true
+        },
+        {
+          "module": "Submission.Supplier.Definitions.Def_AutomorphicForm_Gamma0FundamentalSet",
+          "source_sha256": "fd1c10e34ad824c8fa531e5292ae85a5993b0faadf8878e65148080cb8a12101",
+          "object_sha256": "f3ef600170a0d762fcf4373f73db4c6bff135e844bb0eeacba7f2487a18c91c8",
+          "receipt_reused": true
+        },
+        {
+          "module": "Submission.Supplier.P2M.Util",
+          "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+          "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+          "receipt_reused": true
+        },
+        {
+          "module": "Submission.Supplier.P2M.Sol.S_ModularCurve_exists_mem_periodLattice_eq_sum_intCast_mul_edgeIntegral_of_isParabolicHom",
+          "source_sha256": "77ca43e4740ec5071dc8fb89007a8c53deab0a6cb0911f9ff2dd1dcac67df029",
+          "object_sha256": "f895d46848abb8ad79c65b82b35ec9cd1563e71666db7da2f9513d33948fea2b",
+          "receipt_reused": true
+        }
+      ],
+      "solution_axiom_audit": "not printed separately; full-root audit pending",
+      "printed_axiom_closures": []
+    }
+  },
+  "proof_summary": "Retain the full original theorem for every nonzero natural level N, the original finite quotient instance, arbitrary T/S correction maps satisfying their exact quotient-representative equations, and every integer-valued parabolic additive homomorphism phi. It constructs Lambda in the original periodLattice N and proves the complete ray-and-arc integral formula equals Lambda(g) for every weight-two cusp form g and every G satisfying the original denominator-transformation formula. The original quotient-cocycle, finite-permutation coboundary, cusp analytic bounds, primitive/limit, edge integral, and final period-lattice assembly proofs are preserved. No additional restriction is introduced. Canonical source/card remain byte-identical to their supplier originals. Original warnings are retained; separate final solution axiom audit remains pending.",
+  "no_source_change": true,
+  "no_linter_suppression_added": true,
+  "source_axiom_audit_pending": true,
+  "supplier": "anthropics/fermats-last-theorem",
+  "supplier_commit": "6e837e75355538c7f80bab5b956861e86c4eacc2",
+  "full_original_complete": false,
+  "official_new_solve_credit": 0,
+  "jobs": 1,
+  "compilers": 1,
+  "threads": 1,
+  "controller_continues_same_full_FLT_graph": true
+}
