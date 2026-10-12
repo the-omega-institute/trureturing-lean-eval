@@ -1,0 +1,165 @@
+{
+  "at": "2026-10-12T21:17:38.720065+00:00",
+  "baseline_source_card_pair_actual_make_kernel_passed": true,
+  "canonical_solution_byte_identical_to_supplier": true,
+  "canonical_card_byte_identical_to_supplier": true,
+  "cached_import_full_source_replay_and_audit_pending": true,
+  "full_original_proof_retained": true,
+  "original_main_hypotheses_and_conclusion_preserved": true,
+  "original_solution_lines": 2382,
+  "original_card_lines": 10,
+  "checks": {
+    "source": {
+      "module": "Submission.Supplier.P2M.Sol.S_ModularCurve_B3_specialisationEquivariance_level",
+      "make_exit": 0,
+      "kernel_exit": 0,
+      "kernel_seconds": 64.741685167,
+      "source_unchanged": true,
+      "compiler_warnings": 7,
+      "direct_dependencies": [
+        {
+          "module": "Submission.Supplier.Definitions.Def_ModularCurve_EMD",
+          "source_bound_cached_controller_record_exit": 0,
+          "separate_kernel_receipt": null,
+          "full_source_replay_and_audit_pending": true
+        },
+        {
+          "module": "Submission.Supplier.Definitions.Def_HahnSeries_Monodromy",
+          "source_bound_cached_controller_record_exit": 0,
+          "separate_kernel_receipt": null,
+          "full_source_replay_and_audit_pending": true
+        },
+        {
+          "module": "Submission.Supplier.Definitions.Def_WeierstrassCurve_VariableChangePointEquiv",
+          "source_bound_cached_controller_record_exit": 0,
+          "separate_kernel_receipt": null,
+          "full_source_replay_and_audit_pending": true
+        },
+        {
+          "module": "Submission.Supplier.Theorems.Thm_WeierstrassCurve_Affine_Point_vcInvFun_add",
+          "source_bound_cached_controller_record_exit": 0,
+          "separate_kernel_receipt": null,
+          "full_source_replay_and_audit_pending": true
+        },
+        {
+          "module": "Submission.Supplier.Theorems.Thm_WeierstrassCurve_card_torsionBy_eq_sq_of_isAlgClosed",
+          "controller_dependency_record": {
+            "module": "Submission.Supplier.Theorems.Thm_WeierstrassCurve_card_torsionBy_eq_sq_of_isAlgClosed",
+            "source_sha256": "877fba7f8cd04d2a15b31efbc4755de530836d9c7450fe1fbdd797c0a0377759",
+            "object_sha256": null,
+            "receipt_reused": false
+          },
+          "cached_import_present": true,
+          "separate_kernel_receipt": null,
+          "source_object_binding_not_recorded": true,
+          "full_source_replay_and_audit_pending": true
+        },
+        {
+          "module": "Submission.Supplier.Theorems.Thm_HahnSeries_isAlgClosed_rat",
+          "source_bound_cached_controller_record_exit": 0,
+          "separate_kernel_receipt": null,
+          "full_source_replay_and_audit_pending": true
+        },
+        {
+          "module": "Submission.Supplier.Theorems.Thm_WeierstrassCurve_Affine_Point_zsmul_some_eq_some_div",
+          "controller_dependency_record": {
+            "module": "Submission.Supplier.Theorems.Thm_WeierstrassCurve_Affine_Point_zsmul_some_eq_some_div",
+            "source_sha256": "27168afd97665cec164590b4f24d3731c18dbc34e44ae2a096dbfcd3a5b5429e",
+            "object_sha256": null,
+            "receipt_reused": false
+          },
+          "cached_import_present": true,
+          "separate_kernel_receipt": null,
+          "source_object_binding_not_recorded": true,
+          "full_source_replay_and_audit_pending": true
+        },
+        {
+          "module": "Submission.Supplier.Theorems.Thm_WeierstrassCurve_Affine_evalEval_psi_sq",
+          "source_bound_cached_controller_record_exit": 0,
+          "separate_kernel_receipt": null,
+          "full_source_replay_and_audit_pending": true
+        },
+        {
+          "module": "Submission.Supplier.Theorems.Thm_WeierstrassCurve_mem_stabilizer_variableChange_iff_of_isShortNF_of_a4_eq_zero",
+          "source_bound_cached_controller_record_exit": 0,
+          "separate_kernel_receipt": null,
+          "full_source_replay_and_audit_pending": true
+        },
+        {
+          "module": "Submission.Supplier.Theorems.Thm_WeierstrassCurve_mem_stabilizer_variableChange_iff_of_isShortNF_of_a6_eq_zero",
+          "source_bound_cached_controller_record_exit": 0,
+          "separate_kernel_receipt": null,
+          "full_source_replay_and_audit_pending": true
+        },
+        {
+          "module": "Submission.Supplier.Definitions.Def_ModularCurve_SpecialisationBridge",
+          "source_bound_cached_controller_record_exit": 0,
+          "separate_kernel_receipt": null,
+          "full_source_replay_and_audit_pending": true
+        },
+        {
+          "module": "Submission.Supplier.Definitions.Def_ModularCurve_HahnSpecialise",
+          "source_bound_cached_controller_record_exit": 0,
+          "separate_kernel_receipt": null,
+          "full_source_replay_and_audit_pending": true
+        },
+        {
+          "module": "Submission.Supplier.Theorems.Thm_ModularCurve_HahnSpecialise_specialiseCycSub_bijective",
+          "source_bound_cached_controller_record_exit": 0,
+          "separate_kernel_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/ea4f6da2b0bead13177dafae-1791839395182291000.kernel/result.json",
+          "actual_kernel_exit": 0
+        },
+        {
+          "module": "Submission.Supplier.P2M.Util",
+          "source_bound_cached_controller_record_exit": 0,
+          "separate_kernel_receipt": null,
+          "full_source_replay_and_audit_pending": true
+        }
+      ],
+      "solution_axiom_audit": "not printed separately; full-root audit pending",
+      "printed_axiom_closures": []
+    },
+    "card": {
+      "module": "Submission.Supplier.Theorems.Thm_ModularCurve_B3_specialisationEquivariance_level",
+      "make_exit": 0,
+      "kernel_exit": 0,
+      "kernel_seconds": 44.865459541999996,
+      "source_unchanged": true,
+      "compiler_warnings": 0,
+      "direct_dependencies": [
+        {
+          "module": "Submission.Supplier.Definitions.Def_ModularCurve_SpecialisationBridge",
+          "source_bound_cached_controller_record_exit": 0,
+          "separate_kernel_receipt": null,
+          "full_source_replay_and_audit_pending": true
+        },
+        {
+          "module": "Submission.Supplier.P2M.Util",
+          "source_bound_cached_controller_record_exit": 0,
+          "separate_kernel_receipt": null,
+          "full_source_replay_and_audit_pending": true
+        },
+        {
+          "module": "Submission.Supplier.P2M.Sol.S_ModularCurve_B3_specialisationEquivariance_level",
+          "source_bound_cached_controller_record_exit": 0,
+          "separate_kernel_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/f61fd48ad8cac4edb18b3235-1791839515479694000.kernel/result.json",
+          "actual_kernel_exit": 0
+        }
+      ],
+      "solution_axiom_audit": "not printed separately; full-root audit pending",
+      "printed_axiom_closures": []
+    }
+  },
+  "proof_summary": "Retain the complete original 2382-line level-specialization equivariance proof for every nonzero natural level N and every j0 in Qbar. It constructs an equivalence beta from exact-order-N cyclic subgroups of the Hahn near-curve to those of WeierstrassCurve.ofJ j0, and proves for every pair G,G' that existence of a Hahn monodromy element carrying G to G' is equivalent to SameOrbit of their beta-images. The proof retains character extension and monodromy fullness, integral torsion-coordinate and reduction-additivity arguments, the specialization equivalence, and both directions of the orbit equivalence in the generic case and the exceptional cases j0=0 and j0=1728. No primality restriction or exclusions of the exceptional fibres are added. All original hypotheses, the equivalence witness, the full biconditional and the entire proof are unchanged. No recursive axiom closure was separately printed.",
+  "no_source_change": true,
+  "no_linter_suppression_added": true,
+  "source_axiom_audit_pending": true,
+  "supplier": "anthropics/fermats-last-theorem",
+  "supplier_commit": "6e837e75355538c7f80bab5b956861e86c4eacc2",
+  "full_original_complete": false,
+  "official_new_solve_credit": 0,
+  "jobs": 1,
+  "compilers": 1,
+  "threads": 1,
+  "controller_continues_same_full_FLT_graph": true
+}
