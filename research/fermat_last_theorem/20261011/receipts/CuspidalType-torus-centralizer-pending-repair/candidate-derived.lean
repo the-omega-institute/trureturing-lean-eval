@@ -86,7 +86,7 @@ variable (q : ℕ) [Fact q.Prime]
 local instance : AddCommGroup (ZMod q) :=
   (inferInstance : Ring (ZMod q)).toAddCommGroup
 
-local instance : AddCommGroup (GaloisField q 2) :=
+noncomputable local instance : AddCommGroup (GaloisField q 2) :=
   (inferInstance : Ring (GaloisField q 2)).toAddCommGroup
 
 theorem exists_eq_add_mul {α : GaloisField q 2}
