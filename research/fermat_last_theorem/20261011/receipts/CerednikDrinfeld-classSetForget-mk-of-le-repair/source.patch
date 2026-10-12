@@ -1,0 +1,12 @@
+--- S_CerednikDrinfeld_classSetForget_mk_of_le.original.lean	2026-10-08 00:04:18
++++ /Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_CerednikDrinfeld_classSetForget_mk_of_le.lean	2026-10-12 13:13:15
+@@ -23,7 +23,7 @@
+     CerednikDrinfeld.classSetForget U U' (QuaternionAlgebra.ClassSet.mk U x) = QuaternionAlgebra.ClassSet.mk U' x := by
+   obtain ⟨d, k, hd, hk, hout⟩ :=
+     DoubleCoset.mk_out_eq_mul (Submodule.finiteIdeleDiagonal ℍ[ℚ, a, b]).range U x
+-  obtain ⟨δ, rfl⟩ := MonoidHom.mem_range.mp hd
++  obtain ⟨δ, rfl⟩ := MonoidHom.mem_range.mp k
+   show ClassSet.mk U' (ClassSet.mk U x).out = _
+-  rw [show (ClassSet.mk U x).out = Submodule.finiteIdeleDiagonal ℍ[ℚ, a, b] δ * x * k from hout,
++  rw [show (ClassSet.mk U x).out = Submodule.finiteIdeleDiagonal ℍ[ℚ, a, b] δ * x * hd from hout,
+     ClassSet.mk_mul_of_mem _ _ (h hk), ClassSet.mk_diagonal_mul]
