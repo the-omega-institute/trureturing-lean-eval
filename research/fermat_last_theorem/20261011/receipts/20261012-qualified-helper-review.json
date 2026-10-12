@@ -1,0 +1,65 @@
+{
+  "at": "2026-10-12T09:33:29.644002+00:00",
+  "scope": "static signature review only; no new compilation claimed",
+  "rejected": [
+    {
+      "candidate_indices": [
+        3,
+        4
+      ],
+      "reason": "Both providers omit the valuation/ideal membership equivalence required by the target."
+    },
+    {
+      "candidate_indices": [
+        5
+      ],
+      "reason": "Provider requires CharZero K; target has no characteristic-zero hypothesis."
+    },
+    {
+      "candidate_indices": [
+        2,
+        6
+      ],
+      "reason": "Provider returns ModularForm, target requires CuspForm with cusp condition."
+    },
+    {
+      "candidate_indices": [
+        7
+      ],
+      "reason": "Identically named FrickeHecke.main is a cohomology identity, not the cusp-form nebentypus and coefficient theorem."
+    }
+  ],
+  "signature_compatible_pending": [
+    {
+      "candidate_indices": [
+        8
+      ],
+      "reason": "Same NumberField Euler product blow-up statement, including excluded-prime finite set and one-sided filter."
+    },
+    {
+      "candidate_indices": [
+        9,
+        10,
+        11,
+        12
+      ],
+      "reason": "Same algebraically closed algebraic-extension conjugacy helper; inspected provider 9; alternatives not separately inspected."
+    },
+    {
+      "candidate_indices": [
+        13,
+        14,
+        15,
+        16,
+        17,
+        18
+      ],
+      "reason": "Same Atkin-Lehner cocycle; inspected provider 13; alternatives not separately inspected."
+    }
+  ],
+  "active_validation_candidates": [
+    0,
+    1
+  ],
+  "official_new_solve_credit": 0
+}

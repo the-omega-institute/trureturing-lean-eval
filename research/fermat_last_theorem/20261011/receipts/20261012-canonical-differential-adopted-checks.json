@@ -1,0 +1,109 @@
+{
+  "at": "2026-10-12T09:47:17.151026+00:00",
+  "previous_records": {
+    "Submission.Supplier.P2M.Sol.S_HopfAlgebra_exists_finiteFlat_galoisSimple_factor_of_nonzero_equivariant_map": {
+      "sha256": "ec8a9b427a587b0239086cfca0bad9d066c31ed4584f57769aee32e1a7a0eb4a",
+      "exit": 1,
+      "empty_output_retry_done": false,
+      "source_sha256_after": "ec8a9b427a587b0239086cfca0bad9d066c31ed4584f57769aee32e1a7a0eb4a",
+      "source_unchanged": true,
+      "olean_sha256": null,
+      "seconds": 362.78468658400004,
+      "pid": 76936,
+      "command": [
+        "/Users/macstudio/.local/omega-shims/lean",
+        "-j1",
+        "--trust=0",
+        "-Ddebug.skipKernelTC=false",
+        "-R",
+        "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src",
+        "-o",
+        "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-build/lib/lean/Submission/Supplier/P2M/Sol/S_HopfAlgebra_exists_finiteFlat_galoisSimple_factor_of_nonzero_equivariant_map.olean",
+        "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_HopfAlgebra_exists_finiteFlat_galoisSimple_factor_of_nonzero_equivariant_map.lean"
+      ],
+      "make_wrapper_pid": 17265,
+      "make_exit": 2,
+      "make_entry_failed": false,
+      "cache_binding_valid": true,
+      "canonical_make_running_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/4d7801d50d21c2c6504d93b4-1791796107013609000.make-running.json",
+      "canonical_make_terminal_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/4d7801d50d21c2c6504d93b4-1791796107013609000.make-terminal.json",
+      "kernel_terminal_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/4d7801d50d21c2c6504d93b4-1791796107013609000.kernel/result.json",
+      "direct_dependencies": [
+        {
+          "module": "Submission.Supplier.Theorems.Thm_GaloisRep_exists_finiteFlat_sub_of_equivariant_injection",
+          "source_sha256": "4b8a52ff6ea694eed6ad783cf7c32f8fae780c79c979ac8f95990ed0d93e7f7c",
+          "object_sha256": "ffad6ea699a47bca4c6598340f5bc865a92f1394f29b839e63125789b3612e5a",
+          "receipt_reused": true
+        },
+        {
+          "module": "Submission.Supplier.Theorems.Thm_GaloisRep_exists_finiteFlat_quotient_of_equivariant_surjection",
+          "source_sha256": "7ff332109249d848ccd9eb6d3ae692b96cab210f6163fded5b453891828ba43f",
+          "object_sha256": "24f149fed03e582df82476f8b3c3d15d454d0d010077416a088f41ec1a28c9d6",
+          "receipt_reused": true
+        },
+        {
+          "module": "Submission.Supplier.Theorems.Thm_GaloisRep_natCard_withConv_algHom_eq_finrank_of_finiteFlatHopf",
+          "source_sha256": "df616ae005495ed44d3f5887eb66d9c8ad5759f664a2d87810c7a601de7dcf18",
+          "object_sha256": "7a0df9bd779cc883c8b7d1bab0a8104aba49cf13600fe6e5658e778c79674c67",
+          "receipt_reused": true
+        },
+        {
+          "module": "Submission.Supplier.P2M.Util",
+          "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+          "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+          "receipt_reused": true
+        }
+      ],
+      "stdout": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/4d7801d50d21c2c6504d93b4-1791796107013609000.kernel/stdout.log",
+      "stderr": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/4d7801d50d21c2c6504d93b4-1791796107013609000.kernel/stderr.log"
+    },
+    "Submission.Supplier.Theorems.Thm_HopfAlgebra_exists_finiteFlat_galoisSimple_factor_of_nonzero_equivariant_map": null,
+    "Submission.Supplier.P2M.Sol.S_AlgebraicCurve_exists_mem_D_eq_smul_D_of_isCurveOver": null,
+    "Submission.Supplier.Theorems.Thm_AlgebraicCurve_exists_mem_D_eq_smul_D_of_isCurveOver": null,
+    "Submission.Supplier.P2M.Sol.S_AlgebraicCurve_exists_ord_eq_zero_D_eq_smul_D_of_isCurveOver": null,
+    "Submission.Supplier.Theorems.Thm_AlgebraicCurve_exists_ord_eq_zero_D_eq_smul_D_of_isCurveOver": null
+  },
+  "adopted": [
+    {
+      "module": "Submission.Supplier.P2M.Sol.S_HopfAlgebra_exists_finiteFlat_galoisSimple_factor_of_nonzero_equivariant_map",
+      "seconds": 56.401654084,
+      "source_bound_kernel_exit": 0,
+      "make_exit": 0
+    },
+    {
+      "module": "Submission.Supplier.Theorems.Thm_HopfAlgebra_exists_finiteFlat_galoisSimple_factor_of_nonzero_equivariant_map",
+      "seconds": 6.1177174999999995,
+      "source_bound_kernel_exit": 0,
+      "make_exit": 0
+    },
+    {
+      "module": "Submission.Supplier.P2M.Sol.S_AlgebraicCurve_exists_mem_D_eq_smul_D_of_isCurveOver",
+      "seconds": 51.551450624999994,
+      "source_bound_kernel_exit": 0,
+      "make_exit": 0
+    },
+    {
+      "module": "Submission.Supplier.Theorems.Thm_AlgebraicCurve_exists_mem_D_eq_smul_D_of_isCurveOver",
+      "seconds": 40.578969916999995,
+      "source_bound_kernel_exit": 0,
+      "make_exit": 0
+    },
+    {
+      "module": "Submission.Supplier.P2M.Sol.S_AlgebraicCurve_exists_ord_eq_zero_D_eq_smul_D_of_isCurveOver",
+      "seconds": 5.359545667,
+      "source_bound_kernel_exit": 0,
+      "make_exit": 0
+    },
+    {
+      "module": "Submission.Supplier.Theorems.Thm_AlgebraicCurve_exists_ord_eq_zero_D_eq_smul_D_of_isCurveOver",
+      "seconds": 47.549614375000004,
+      "source_bound_kernel_exit": 0,
+      "make_exit": 0
+    }
+  ],
+  "full_original_complete": false,
+  "official_new_solve_credit": 0,
+  "jobs": 1,
+  "compilers": 1,
+  "threads": 1
+}
