@@ -1,0 +1,59 @@
+{
+  "at": "2026-10-12T19:52:27.837220+00:00",
+  "baseline_source_card_pair_actual_make_kernel_passed": true,
+  "canonical_solution_byte_identical_to_supplier": true,
+  "full_original_proof_retained": true,
+  "original_main_hypotheses_and_conclusion_preserved": true,
+  "original_solution_lines": 287,
+  "checks": {
+    "source": {
+      "module": "Submission.Supplier.P2M.Sol.S_Int_exists_not_dvd_and_le_and_not_isSquare_and_forall_prime_of_sq_sub_four_mul_ne_zero",
+      "make_exit": 0,
+      "kernel_exit": 0,
+      "kernel_seconds": 63.476670208,
+      "source_unchanged": true,
+      "compiler_warnings": 10,
+      "direct_dependencies": [
+        {
+          "module": "Submission.Supplier.P2M.Util",
+          "receipt": null,
+          "actual_exit": 0
+        }
+      ],
+      "solution_axiom_audit": "not printed separately; full-root audit pending"
+    },
+    "card": {
+      "module": "Submission.Supplier.Theorems.Thm_Int_exists_not_dvd_and_le_and_not_isSquare_and_forall_prime_of_sq_sub_four_mul_ne_zero",
+      "make_exit": 0,
+      "kernel_exit": 0,
+      "kernel_seconds": 18.213210666,
+      "source_unchanged": true,
+      "compiler_warnings": 0,
+      "direct_dependencies": [
+        {
+          "module": "Submission.Supplier.P2M.Util",
+          "receipt": null,
+          "actual_exit": 0
+        },
+        {
+          "module": "Submission.Supplier.P2M.Sol.S_Int_exists_not_dvd_and_le_and_not_isSquare_and_forall_prime_of_sq_sub_four_mul_ne_zero",
+          "receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/929afe32605ba7a966f82542-1791834041649958000.kernel/result.json",
+          "actual_exit": 0
+        }
+      ],
+      "solution_axiom_audit": "not printed separately; full-root audit pending"
+    }
+  },
+  "proof_summary": "Retain the complete original Deuring normalization construction for g(a) = a^2 + t*a + q. Chinese remainder congruences over primes dividing the nonzero discriminant, the supplied prime and 2 are preserved. Moving within the congruence class gives g(a) >= 2 and nonsquare by placing 4*g(a) between consecutive squares, while retaining supplied-prime nondivisibility and the universal prime-square exclusion condition. All original hypotheses and all four conclusion components remain; the canonical solution is byte-identical to the supplier source.",
+  "no_source_change": true,
+  "no_linter_suppression_added": true,
+  "source_axiom_audit_pending": true,
+  "supplier": "anthropics/fermats-last-theorem",
+  "supplier_commit": "6e837e75355538c7f80bab5b956861e86c4eacc2",
+  "full_original_complete": false,
+  "official_new_solve_credit": 0,
+  "jobs": 1,
+  "compilers": 1,
+  "threads": 1,
+  "controller_continues_same_full_FLT_graph": true
+}
