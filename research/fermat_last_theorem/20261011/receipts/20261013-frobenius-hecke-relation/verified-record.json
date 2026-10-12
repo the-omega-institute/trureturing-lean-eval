@@ -1,0 +1,45 @@
+{
+  "at": "2026-10-12T16:18:41.426725+00:00",
+  "module": "Submission.Supplier.P2M.Sol.S_ModularCurve_frobenius_frobenius_sub_heckeOperatorModL_frobenius_add_smul_eq_zero",
+  "status": "Complete original solution and unchanged theorem card verified through canonical make lean and kernel",
+  "card_unchanged": true,
+  "verified_pair": true,
+  "warnings": 0,
+  "axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "checks": {
+    "source": {
+      "configuration": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/official-layout/terminal-proof-repairs/20261013-frobenius-hecke-relation/source-r1.configuration.json",
+      "kernel_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/official-layout/terminal-proof-repairs/20261013-frobenius-hecke-relation/source-r1.kernel/result.json",
+      "make_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/official-layout/terminal-proof-repairs/20261013-frobenius-hecke-relation/source-r1.make-terminal.json",
+      "kernel_exit": 0,
+      "make_exit": 0,
+      "seconds": 101.701419042,
+      "source_unchanged": true
+    },
+    "card": {
+      "configuration": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/official-layout/terminal-proof-repairs/20261013-frobenius-hecke-relation/card.configuration.json",
+      "kernel_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/official-layout/terminal-proof-repairs/20261013-frobenius-hecke-relation/card.kernel/result.json",
+      "make_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/official-layout/terminal-proof-repairs/20261013-frobenius-hecke-relation/card.make-terminal.json",
+      "kernel_exit": 0,
+      "make_exit": 0,
+      "seconds": 45.588386917,
+      "source_unchanged": true
+    }
+  },
+  "supplier": "anthropics/fermats-last-theorem",
+  "supplier_commit": "6e837e75355538c7f80bab5b956861e86c4eacc2",
+  "official_mathlib": "5e0c4e5239cb0a2d86d68a884bf52cfd963fce22",
+  "lean_toolchain": "leanprover/lean4:v4.35.0-rc3",
+  "full_original_complete": false,
+  "official_new_solve_credit": 0,
+  "commit_message": "Verify full original Frobenius–Hecke relation without warnings",
+  "proof_scope": "Retains the entire original modular-function-field construction, separability, Frobenius ramification, norm, divisor pushforward/pullback and special-fibre relation proofs. Modernizes only the 28 diagnosed local haveI/letI bindings and one deprecated core alias. Alpha-renames the unused internal solution binder hℓN to _hℓN; retains its nondivisibility hypothesis and the complete original conclusion. The original theorem card remains byte-for-byte unchanged.",
+  "main_statement_preserved": true,
+  "main_statement_preserved_modulo_binder_alpha_rename": true,
+  "nondivisibility_hypothesis_retained": true,
+  "all_original_proof_helpers_retained": true
+}
