@@ -1,0 +1,60 @@
+{
+  "at": "2026-10-12T00:47:46.820792+00:00",
+  "module": "P2M.Sol.S_AlgebraicCurve_residueTheorem_of_residueTheorem_ratFunc_of_residueTraceCompletionCommute",
+  "status": "candidate prepared; no make/kernel check yet; canonical source not changed",
+  "original_lines": 7889,
+  "candidate_lines": 94,
+  "complete_solution_declaration_text_equal": true,
+  "provider_module": "P2M.Sol.S_AlgebraicCurve_residueTheoremK_of_isAlgClosed",
+  "reused_declarations": [
+    "AlgebraicCurve.kw_es_fiberKaehlerCotraceResidueIdentity_of_RTCC_CTS",
+    "AlgebraicCurve.finsum_place_eq_finsum_fiber_sum",
+    "ModularCurve.KwF4R1V386a.kwF4R1V386a_completionTraceSum_of_isSeparable",
+    "AlgebraicCurve.kaehlerPullback_eq_kaehlerCotrace",
+    "AlgebraicCurve.kaehlerCotrace_dX_ne_zero_of_isSeparable"
+  ],
+  "retained_original_reduction_lemmas": [
+    "kaehlerResidueTerm_smul_diagonal",
+    "residueTheorem_of_fiberKaehlerCotraceResidueIdentity"
+  ],
+  "direct_composition_boundary": "The provider IsAlgClosed composition concludes ResidueTheoremK and does not match the original PerfectField/ResidueTheorem target. This candidate retains the original general reduction instead.",
+  "full_original_complete": false,
+  "official_new_solve_credit": 0,
+  "source": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/P2M/Sol/S_AlgebraicCurve_residueTheorem_of_residueTheorem_ratFunc_of_residueTraceCompletionCommute.lean",
+  "original_source": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/official-layout/source-reuse/20261012-residue-RTCC-composition/original.lean",
+  "reuse_module": "P2M.Sol.S_AlgebraicCurve_residueTheoremK_of_isAlgClosed",
+  "reuse_declaration": "_root_.P2MW.S_AlgebraicCurve_residueTheoremK_of_isAlgClosed.AlgebraicCurve.kw_es_fiberKaehlerCotraceResidueIdentity_of_RTCC_CTS",
+  "solution_declaration_text_unchanged": true,
+  "verification_status": "source and associated theorem card passed canonical make and kernel checks",
+  "original_overlapping_solution_binders_preserved": true,
+  "overlapping_instance_linter_scope": "only the complete original solution declaration",
+  "verification_results": [
+    {
+      "kind": "source",
+      "module": "Submission.Supplier.P2M.Sol.S_AlgebraicCurve_residueTheorem_of_residueTheorem_ratFunc_of_residueTraceCompletionCommute",
+      "configuration": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/official-layout/source-reuse/20261012-residue-RTCC-validation-r2/residue-RTCC-source.configuration.json",
+      "edited": true,
+      "make_exit": 0,
+      "kernel_exit": 0,
+      "source_unchanged": true,
+      "kernel_seconds": 70.973130167,
+      "warnings": 0,
+      "kernel_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/official-layout/source-reuse/20261012-residue-RTCC-validation-r2/residue-RTCC-source.kernel/result.json",
+      "make_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/official-layout/source-reuse/20261012-residue-RTCC-validation-r2/residue-RTCC-source.make-terminal.json"
+    },
+    {
+      "kind": "card",
+      "module": "Submission.Supplier.Theorems.Thm_AlgebraicCurve_residueTheorem_of_residueTheorem_ratFunc_of_residueTraceCompletionCommute",
+      "configuration": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/official-layout/source-reuse/20261012-residue-RTCC-validation-r2/residue-RTCC-card.configuration.json",
+      "edited": false,
+      "make_exit": 0,
+      "kernel_exit": 0,
+      "source_unchanged": true,
+      "kernel_seconds": 47.880896,
+      "warnings": 1,
+      "kernel_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/official-layout/source-reuse/20261012-residue-RTCC-validation-r2/residue-RTCC-card.kernel/result.json",
+      "make_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/official-layout/source-reuse/20261012-residue-RTCC-validation-r2/residue-RTCC-card.make-terminal.json"
+    }
+  ],
+  "verified_at": "2026-10-12T01:09:19.148114+00:00"
+}
