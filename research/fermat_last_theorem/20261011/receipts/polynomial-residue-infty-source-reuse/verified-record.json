@@ -1,0 +1,59 @@
+{
+  "at": "2026-10-12T01:08:14.623626+00:00",
+  "module": "P2M.Sol.S_AlgebraicCurve_RationalFunctionField_trace_localResidue_placeInfty_X_pow_eq_zero",
+  "source": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/P2M/Sol/S_AlgebraicCurve_RationalFunctionField_trace_localResidue_placeInfty_X_pow_eq_zero.lean",
+  "directory": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/official-layout/source-reuse/20261012-polynomial-residue-infty",
+  "status": "candidate saved outside canonical source; not compiled or installed",
+  "original_lines": 13173,
+  "candidate_lines": 47,
+  "complete_solution_declaration_text_equal": true,
+  "provider_module": "P2M.Sol.S_AlgebraicCurve_residueTheoremK_ratFunc_of_isAlgClosed",
+  "reused_declarations": [
+    "AlgebraicCurve.X_pow_mul_differentialCoeff_D_X_eq_neg",
+    "AlgebraicCurve.surjective_algebraMap_residueField_placeInfty",
+    "AlgebraicCurve.ord_placeInfty_X_inv",
+    "AlgebraicCurve.p0n22_cpf_res_differentialCoeff_D_mul_pow_inv_of_surj",
+    "AlgebraicCurve.canonicalLocalResidueDataK_res_differentialCoeff_D_mul_pow_inv_placeInfty"
+  ],
+  "faithfulness_boundary": "Retains PerfectField, canonical residue data, all DCoordGenerates binders and the original trace-zero conclusion; does not use the provider final IsAlgClosed theorem.",
+  "full_original_complete": false,
+  "official_new_solve_credit": 0,
+  "original_source": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/official-layout/source-reuse/20261012-polynomial-residue-infty/original.lean",
+  "reuse_module": "P2M.Sol.S_AlgebraicCurve_residueTheoremK_ratFunc_of_isAlgClosed",
+  "solution_declaration_text_unchanged": true,
+  "verification_status": "source and associated theorem card passed canonical make and kernel checks",
+  "dependency_check_adjustment": "The general surjective-power theorem card has no object yet. The candidate now composes the already compiled provider rational-function characteristic-p helper and its characteristic-zero derivative helper, retaining the original PerfectField target.",
+  "place_bridge": "Uses Place.ext and the same infinity valuation subring to identify canonical and provider places before rewriting.",
+  "characteristic_zero_reuse": "Public AlgebraicCurve.canonicalLocalResidueDataK_res_differentialCoeff_D_mul_pow_inv_placeInfty",
+  "dependency_import_repair": "Definitions.Def_AlgebraicCurve_CanonicalLocalResidueInstanceV2",
+  "updated_at": "2026-10-12T01:44:57.537063+00:00",
+  "verification_results": [
+    {
+      "kind": "source",
+      "module": "Submission.Supplier.P2M.Sol.S_AlgebraicCurve_RationalFunctionField_trace_localResidue_placeInfty_X_pow_eq_zero",
+      "configuration": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/official-layout/source-reuse/20261012-polynomial-residue-infty-validation-r4/polynomial-residue-infty-source.configuration.json",
+      "edited": true,
+      "make_exit": 0,
+      "kernel_exit": 0,
+      "source_unchanged": true,
+      "kernel_seconds": 58.642583916999996,
+      "warnings": 0,
+      "kernel_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/official-layout/source-reuse/20261012-polynomial-residue-infty-validation-r4/polynomial-residue-infty-source.kernel/result.json",
+      "make_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/official-layout/source-reuse/20261012-polynomial-residue-infty-validation-r4/polynomial-residue-infty-source.make-terminal.json"
+    },
+    {
+      "kind": "card",
+      "module": "Submission.Supplier.Theorems.Thm_AlgebraicCurve_RationalFunctionField_trace_localResidue_placeInfty_X_pow_eq_zero",
+      "configuration": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/official-layout/source-reuse/20261012-polynomial-residue-infty-validation-r4/polynomial-residue-infty-card.configuration.json",
+      "edited": false,
+      "make_exit": 0,
+      "kernel_exit": 0,
+      "source_unchanged": true,
+      "kernel_seconds": 51.465091041,
+      "warnings": 0,
+      "kernel_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/official-layout/source-reuse/20261012-polynomial-residue-infty-validation-r4/polynomial-residue-infty-card.kernel/result.json",
+      "make_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/official-layout/source-reuse/20261012-polynomial-residue-infty-validation-r4/polynomial-residue-infty-card.make-terminal.json"
+    }
+  ],
+  "verified_at": "2026-10-12T01:49:40.995433+00:00"
+}
