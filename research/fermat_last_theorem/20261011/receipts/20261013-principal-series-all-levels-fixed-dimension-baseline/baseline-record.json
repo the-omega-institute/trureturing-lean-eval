@@ -1,0 +1,112 @@
+{
+  "at": "2026-10-12T20:33:19.866190+00:00",
+  "baseline_source_card_pair_actual_make_kernel_passed": true,
+  "canonical_solution_byte_identical_to_supplier": true,
+  "canonical_card_byte_identical_to_supplier": true,
+  "cached_import_full_source_replay_and_audit_pending": true,
+  "full_original_proof_retained": true,
+  "original_main_hypotheses_and_conclusion_preserved": true,
+  "original_solution_lines": 36,
+  "original_card_lines": 13,
+  "checks": {
+    "source": {
+      "module": "Submission.Supplier.P2M.Sol.S_LocalNewvector_PSCarrier_finrank_fixedSubmodule_padicK1",
+      "make_exit": 0,
+      "kernel_exit": 0,
+      "kernel_seconds": 5.551486791,
+      "source_unchanged": true,
+      "compiler_warnings": 0,
+      "direct_dependencies": [
+        {
+          "module": "Submission.Supplier.Definitions.Def_LocalNewvector_CharConductor",
+          "source_bound_cached_controller_record_exit": 0,
+          "separate_kernel_receipt": null,
+          "full_source_replay_and_audit_pending": true
+        },
+        {
+          "module": "Submission.Supplier.Definitions.Def_LocalNewvector_PrincipalSeriesCarrier",
+          "source_bound_cached_controller_record_exit": 0,
+          "separate_kernel_receipt": null,
+          "full_source_replay_and_audit_pending": true
+        },
+        {
+          "module": "Submission.Supplier.Theorems.Thm_LocalNewvector_PSCarrier_hasNewvectorConductor_add",
+          "source_bound_cached_controller_record_exit": 0,
+          "separate_kernel_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/df313034c7e4a53a24186304-1791836241735441000.kernel/result.json",
+          "actual_kernel_exit": 0
+        },
+        {
+          "module": "Submission.Supplier.Theorems.Thm_LocalNewvector_PSCarrier_finrank_fixedSubmodule_padicK1_of_add_le",
+          "source_bound_cached_controller_record_exit": 0,
+          "separate_kernel_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/79ffb2b1ca6f4acac2906f1d-1791836068428339000.kernel/result.json",
+          "actual_kernel_exit": 0
+        },
+        {
+          "module": "Submission.Supplier.P2M.Util",
+          "source_bound_cached_controller_record_exit": 0,
+          "separate_kernel_receipt": null,
+          "full_source_replay_and_audit_pending": true
+        }
+      ],
+      "solution_axiom_audit": "not printed separately; full-root audit pending",
+      "printed_axiom_closures": [
+        {
+          "declaration": "P2MW.S_LocalNewvector_PSCarrier_finrank_fixedSubmodule_padicK1.FLT.PrincipalSeriesGL2Padic.PSCarrier.finrank_fixedSubmodule_padicK1_impl",
+          "recursive_axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ]
+    },
+    "card": {
+      "module": "Submission.Supplier.Theorems.Thm_LocalNewvector_PSCarrier_finrank_fixedSubmodule_padicK1",
+      "make_exit": 0,
+      "kernel_exit": 0,
+      "kernel_seconds": 32.883994542,
+      "source_unchanged": true,
+      "compiler_warnings": 0,
+      "direct_dependencies": [
+        {
+          "module": "Submission.Supplier.Definitions.Def_LocalNewvector_CharConductor",
+          "source_bound_cached_controller_record_exit": 0,
+          "separate_kernel_receipt": null,
+          "full_source_replay_and_audit_pending": true
+        },
+        {
+          "module": "Submission.Supplier.Definitions.Def_LocalNewvector_PrincipalSeriesCarrier",
+          "source_bound_cached_controller_record_exit": 0,
+          "separate_kernel_receipt": null,
+          "full_source_replay_and_audit_pending": true
+        },
+        {
+          "module": "Submission.Supplier.P2M.Util",
+          "source_bound_cached_controller_record_exit": 0,
+          "separate_kernel_receipt": null,
+          "full_source_replay_and_audit_pending": true
+        },
+        {
+          "module": "Submission.Supplier.P2M.Sol.S_LocalNewvector_PSCarrier_finrank_fixedSubmodule_padicK1",
+          "source_bound_cached_controller_record_exit": 0,
+          "separate_kernel_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/4e6bb0878936bce11bcbdd5b-1791836432056071000.kernel/result.json",
+          "actual_kernel_exit": 0
+        }
+      ],
+      "solution_axiom_audit": "not printed separately; full-root audit pending",
+      "printed_axiom_closures": []
+    }
+  },
+  "proof_summary": "Retain the complete original all-level principal-series fixed-dimension proof. Under the two original character conductor hypotheses and for arbitrary m, the fixed-submodule finrank remains m+1-(n1+n2), with natural-number truncated subtraction, covering levels below and above the conductor sum. The argument reuses the already accepted conductor and above-sum dimension results. All original hypotheses and the exact all-level equality are retained. Only the original implementation recursive axiom closure was separately printed.",
+  "no_source_change": true,
+  "no_linter_suppression_added": true,
+  "source_axiom_audit_pending": true,
+  "supplier": "anthropics/fermats-last-theorem",
+  "supplier_commit": "6e837e75355538c7f80bab5b956861e86c4eacc2",
+  "full_original_complete": false,
+  "official_new_solve_credit": 0,
+  "jobs": 1,
+  "compilers": 1,
+  "threads": 1,
+  "controller_continues_same_full_FLT_graph": true
+}
