@@ -1,0 +1,56 @@
+{
+  "at": "2026-10-12T18:09:06.756686+00:00",
+  "module": "Submission.Supplier.P2M.Sol.S_AlgebraicCurve_Place_ordDiff_eq_ordDifferential",
+  "status": "Complete original solution and unchanged theorem card verified through canonical make lean and kernel",
+  "card_unchanged": true,
+  "verified_pair": true,
+  "warnings": 0,
+  "axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "checks": {
+    "source": {
+      "configuration": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/official-layout/terminal-proof-repairs/20261013-differential-order/source-r1.configuration.json",
+      "kernel_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/official-layout/terminal-proof-repairs/20261013-differential-order/source-r1.kernel/result.json",
+      "make_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/official-layout/terminal-proof-repairs/20261013-differential-order/source-r1.make-terminal.json",
+      "kernel_exit": 0,
+      "make_exit": 0,
+      "seconds": 43.565446083,
+      "source_unchanged": true
+    },
+    "card": {
+      "configuration": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/official-layout/terminal-proof-repairs/20261013-differential-order/card.configuration.json",
+      "kernel_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/official-layout/terminal-proof-repairs/20261013-differential-order/card.kernel/result.json",
+      "make_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/official-layout/terminal-proof-repairs/20261013-differential-order/card.make-terminal.json",
+      "kernel_exit": 0,
+      "make_exit": 0,
+      "seconds": 39.257116749999994,
+      "source_unchanged": true
+    }
+  },
+  "supplier": "anthropics/fermats-last-theorem",
+  "supplier_commit": "6e837e75355538c7f80bab5b956861e86c4eacc2",
+  "official_mathlib": "5e0c4e5239cb0a2d86d68a884bf52cfd963fce22",
+  "lean_toolchain": "leanprover/lean4:v4.35.0-rc3",
+  "full_original_complete": false,
+  "official_new_solve_credit": 0,
+  "commit_message": "FLT: verify differential order bridge without warnings",
+  "original_main_hypotheses_and_conclusion_preserved": true,
+  "full_original_construction_retained": true,
+  "original_raw_source_retained": true,
+  "original_proof_snapshot_retained": true,
+  "proof_bodies_claimed_identical": false,
+  "main_hypotheses_changed": false,
+  "main_conclusion_changed": false,
+  "diagnosed_instance_binding_modernizations": 4,
+  "haveI_to_have": 4,
+  "letI_to_let": 0,
+  "original_baseline_kernel_exit": 0,
+  "original_baseline_make_exit": 0,
+  "original_baseline_kernel_seconds": 60.322700084,
+  "original_baseline_warnings": 4,
+  "proof_summary": "Retain the full original bridge from ordDiff to ordDifferential: perfect-field and differential-coordinate generation instances, a finite-dimensional transcendental generator, the irreducible uniformizer and its order, the expression of a differential in dCoord, and the two verified differential-coefficient lemmas.",
+  "library_search": "No exact trureturing D5 target hit. The helper with the same short name in the sum-ordDiff source has extra generator/instance parameters and a longer proof; retain the original short proof and existing verified prerequisite cards. The unchanged original card is the sole qualified solution consumer."
+}
