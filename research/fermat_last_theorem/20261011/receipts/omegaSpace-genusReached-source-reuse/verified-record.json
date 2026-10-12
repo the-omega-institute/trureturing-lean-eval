@@ -1,0 +1,49 @@
+{
+  "at": "2026-10-11T23:49:45.873691+00:00",
+  "module": "P2M.Sol.S_AlgebraicCurve_omegaSpace_finite_of_genusReached",
+  "source": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/P2M/Sol/S_AlgebraicCurve_omegaSpace_finite_of_genusReached.lean",
+  "original_source": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/official-layout/source-reuse/20261012-omegaSpace-genusReached/original.lean",
+  "reuse_module": "P2M.Sol.S_AlgebraicCurve_RationalFunctionField_stichtenothGenusExists",
+  "reuse_declaration": "_root_.P2MW.S_AlgebraicCurve_RationalFunctionField_stichtenothGenusExists.AlgebraicCurve.omegaSpace_finite_of_genusReached",
+  "provider_kernel_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/ed21ac9d07b3572c9ad02d23-1791748471748303000.kernel/result.json",
+  "original_solution_declaration": "theorem solution {K F : Type*} [Field K] [Field F] [Algebra K F] [IsCurveOver K F] [Nonempty (Place K F)] [FiniteDimensional K ↥(LSpace (0 : Divisor K F))]\n    {γ : ℤ} {D₀ : Divisor K F} (h : RiemannGenusReachedAt γ D₀) (D : Divisor K F) :\n    Module.Finite K ↥(omegaSpace (K := K) (F := F) D) :=",
+  "solution_declaration_text_unchanged": true,
+  "original_lines": 1346,
+  "candidate_lines": 15,
+  "proof_shape": "existing solution delegates to existing supplier theorem; no new mathematical claim",
+  "verification_status": "corrected source and associated theorem card passed canonical make and kernel checks",
+  "full_original_complete": false,
+  "official_new_solve_credit": 0,
+  "verification_results": [
+    {
+      "module": "Submission.Supplier.P2M.Sol.S_AlgebraicCurve_omegaSpace_finite_of_genusReached",
+      "kind": "source",
+      "make_exit": 0,
+      "kernel_exit": 0,
+      "source_unchanged": true,
+      "kernel_seconds": 162.977604584,
+      "make_seconds": 198.930040792,
+      "warnings": 0,
+      "edited": true,
+      "kernel_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/official-layout/source-reuse/20261012-omegaSpace-genusReached-validation-r2/omegaSpace-genusReached-source.kernel/result.json",
+      "make_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/official-layout/source-reuse/20261012-omegaSpace-genusReached-validation-r2/omegaSpace-genusReached-source.make-terminal.json",
+      "configuration": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/official-layout/source-reuse/20261012-omegaSpace-genusReached-validation-r2/omegaSpace-genusReached-source.configuration.json"
+    },
+    {
+      "module": "Submission.Supplier.Theorems.Thm_AlgebraicCurve_omegaSpace_finite_of_genusReached",
+      "kind": "card",
+      "make_exit": 0,
+      "kernel_exit": 0,
+      "source_unchanged": true,
+      "kernel_seconds": 108.685628666,
+      "make_seconds": 155.427282375,
+      "warnings": 0,
+      "edited": false,
+      "kernel_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/official-layout/source-reuse/20261012-omegaSpace-genusReached-validation-r2/omegaSpace-genusReached-card.kernel/result.json",
+      "make_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/official-layout/source-reuse/20261012-omegaSpace-genusReached-validation-r2/omegaSpace-genusReached-card.make-terminal.json",
+      "configuration": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/official-layout/source-reuse/20261012-omegaSpace-genusReached-validation-r2/omegaSpace-genusReached-card.configuration.json"
+    }
+  ],
+  "failed_attempt_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/official-layout/source-reuse/20261012-omegaSpace-genusReached/failed-attempt-r1.json",
+  "verified_at": "2026-10-12T00:01:47.522006+00:00"
+}
