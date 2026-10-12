@@ -1,0 +1,265 @@
+{
+  "at": "2026-10-12T20:35:22.995819+00:00",
+  "baseline_source_card_pair_actual_make_kernel_passed": true,
+  "canonical_solution_byte_identical_to_supplier": true,
+  "canonical_card_byte_identical_to_supplier": true,
+  "cached_import_full_source_replay_and_audit_pending": true,
+  "full_original_proof_retained": true,
+  "original_main_hypotheses_and_conclusion_preserved": true,
+  "original_solution_lines": 1012,
+  "original_card_lines": 42,
+  "checks": {
+    "source": {
+      "module": "Submission.Supplier.P2M.Sol.S_CuspForm_IsNewform_exists_quadraticTwistToExponentOne_of_sq_dvd_of_adelicLift_principalSeries_isUnramified_ratio",
+      "make_exit": 0,
+      "kernel_exit": 0,
+      "kernel_seconds": 52.694849540999996,
+      "source_unchanged": true,
+      "compiler_warnings": 21,
+      "direct_dependencies": [
+        {
+          "module": "Submission.Supplier.Definitions.Def_CuspForm_Newforms",
+          "source_bound_cached_controller_record_exit": 0,
+          "separate_kernel_receipt": null,
+          "full_source_replay_and_audit_pending": true
+        },
+        {
+          "module": "Submission.Supplier.Definitions.Def_CuspForm_HeckeAlgebra",
+          "source_bound_cached_controller_record_exit": 0,
+          "separate_kernel_receipt": null,
+          "full_source_replay_and_audit_pending": true
+        },
+        {
+          "module": "Submission.Supplier.Definitions.Def_CuspForm_AdelicLift",
+          "source_bound_cached_controller_record_exit": 0,
+          "separate_kernel_receipt": null,
+          "full_source_replay_and_audit_pending": true
+        },
+        {
+          "module": "Submission.Supplier.Definitions.Def_LocalNewvector_AdelicSpanCarrier",
+          "source_bound_cached_controller_record_exit": 0,
+          "separate_kernel_receipt": null,
+          "full_source_replay_and_audit_pending": true
+        },
+        {
+          "module": "Submission.Supplier.Definitions.Def_LocalNewvector_PrincipalSeriesCarrier",
+          "source_bound_cached_controller_record_exit": 0,
+          "separate_kernel_receipt": null,
+          "full_source_replay_and_audit_pending": true
+        },
+        {
+          "module": "Submission.Supplier.Definitions.Def_LocalNewvector_CharConductor",
+          "source_bound_cached_controller_record_exit": 0,
+          "separate_kernel_receipt": null,
+          "full_source_replay_and_audit_pending": true
+        },
+        {
+          "module": "Submission.Supplier.Definitions.Def_LocalNewvector_ConductorDatum",
+          "source_bound_cached_controller_record_exit": 0,
+          "separate_kernel_receipt": null,
+          "full_source_replay_and_audit_pending": true
+        },
+        {
+          "module": "Submission.Supplier.Definitions.Def_AutomorphicForm_AdelicLsXi",
+          "source_bound_cached_controller_record_exit": 0,
+          "separate_kernel_receipt": null,
+          "full_source_replay_and_audit_pending": true
+        },
+        {
+          "module": "Submission.Supplier.Definitions.Def_AutomorphicForm_SmoothAutomorphicFnAt",
+          "source_bound_cached_controller_record_exit": 0,
+          "separate_kernel_receipt": null,
+          "full_source_replay_and_audit_pending": true
+        },
+        {
+          "module": "Submission.Supplier.Definitions.Def_AutomorphicForm_FnTwist",
+          "source_bound_cached_controller_record_exit": 0,
+          "separate_kernel_receipt": null,
+          "full_source_replay_and_audit_pending": true
+        },
+        {
+          "module": "Submission.Supplier.Definitions.Def_AutomorphicForm_HeckeEigenfunction",
+          "source_bound_cached_controller_record_exit": 0,
+          "separate_kernel_receipt": null,
+          "full_source_replay_and_audit_pending": true
+        },
+        {
+          "module": "Submission.Supplier.Definitions.Def_HeckeCharacter_FiniteOrder",
+          "source_bound_cached_controller_record_exit": 0,
+          "separate_kernel_receipt": null,
+          "full_source_replay_and_audit_pending": true
+        },
+        {
+          "module": "Submission.Supplier.Definitions.Def_AdelicDock_LocalEmbedding",
+          "source_bound_cached_controller_record_exit": 0,
+          "separate_kernel_receipt": null,
+          "full_source_replay_and_audit_pending": true
+        },
+        {
+          "module": "Submission.Supplier.Definitions.Def_NumberField_AdelicLevel",
+          "source_bound_cached_controller_record_exit": 0,
+          "separate_kernel_receipt": null,
+          "full_source_replay_and_audit_pending": true
+        },
+        {
+          "module": "Submission.Supplier.Definitions.Def_FLTPrelim_Modularity",
+          "source_bound_cached_controller_record_exit": 0,
+          "separate_kernel_receipt": null,
+          "full_source_replay_and_audit_pending": true
+        },
+        {
+          "module": "Submission.Supplier.Theorems.Thm_CuspForm_exists_isNewform_descent",
+          "source_bound_cached_controller_record_exit": 0,
+          "separate_kernel_receipt": null,
+          "full_source_replay_and_audit_pending": true
+        },
+        {
+          "module": "Submission.Supplier.Theorems.Thm_CuspForm_IsNormalizedEigenform_exists_ringHom_heckeAlgebra",
+          "source_bound_cached_controller_record_exit": 0,
+          "separate_kernel_receipt": null,
+          "full_source_replay_and_audit_pending": true
+        },
+        {
+          "module": "Submission.Supplier.Theorems.Thm_CuspForm_IsAdelicLiftOf_levelZero_inv",
+          "source_bound_cached_controller_record_exit": 0,
+          "separate_kernel_receipt": null,
+          "full_source_replay_and_audit_pending": true
+        },
+        {
+          "module": "Submission.Supplier.Theorems.Thm_LocalNewvector_PSCarrier_isIrreducibleGLRep_of_isUnramified",
+          "source_bound_cached_controller_record_exit": 0,
+          "separate_kernel_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/342c8c35cbe474f4c14db0fa-1791651753866757000.kernel/result.json",
+          "actual_kernel_exit": 0
+        },
+        {
+          "module": "Submission.Supplier.Theorems.Thm_LocalNewvector_PSCarrier_finrank_fixedSubmodule_padicK1",
+          "source_bound_cached_controller_record_exit": 0,
+          "separate_kernel_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/b2e266df9c32f42a491ddf78-1791836445901520000.kernel/result.json",
+          "actual_kernel_exit": 0
+        },
+        {
+          "module": "Submission.Supplier.Theorems.Thm_LocalNewvector_PSCarrier_existsUnique_mem_inf_fixedSubmodule_padicK1_one_of_stable",
+          "source_bound_cached_controller_record_exit": 0,
+          "separate_kernel_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/77a6eab3bc352397132cff26-1791836626950858000.kernel/result.json",
+          "actual_kernel_exit": 0
+        },
+        {
+          "module": "Submission.Supplier.Theorems.Thm_LocalNewvector_exists_mem_fixedSubmodule_and_map_eq_of_map_mem_fixedSubmodule",
+          "source_bound_cached_controller_record_exit": 0,
+          "separate_kernel_receipt": null,
+          "full_source_replay_and_audit_pending": true
+        },
+        {
+          "module": "Submission.Supplier.Theorems.Thm_CuspForm_IsNewform_hasNewvectorConductor_adelicSpan_factorization_of_isAdelicLiftOf",
+          "source_bound_cached_controller_record_exit": 0,
+          "separate_kernel_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/5d3879bd3ab4c9522a76c7e7-1791660918386070000.kernel/result.json",
+          "actual_kernel_exit": 0
+        },
+        {
+          "module": "Submission.Supplier.Theorems.Thm_HeckeCharacter_exists_isFiniteOrderHeckeChar_rat_apply_uniformizerIdele_eq_apply_localUnit_eq_inv",
+          "source_bound_cached_controller_record_exit": 0,
+          "separate_kernel_receipt": null,
+          "full_source_replay_and_audit_pending": true
+        },
+        {
+          "module": "Submission.Supplier.Theorems.Thm_CuspForm_IsNormalizedEigenform_exists_isNormalizedEigenform_qCoeff_eq_mul_of_adelicLift_fnTwist_of_mem_span_of_fixed",
+          "source_bound_cached_controller_record_exit": 0,
+          "separate_kernel_receipt": null,
+          "full_source_replay_and_audit_pending": true
+        },
+        {
+          "module": "Submission.Supplier.Theorems.Thm_LocalNewvector_PSCarrier_fixedSubmodule_padicK1_zero_le_of_stable",
+          "source_bound_cached_controller_record_exit": 0,
+          "separate_kernel_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/1692cc0a8152214f14da1a35-1791836754270859000.kernel/result.json",
+          "actual_kernel_exit": 0
+        },
+        {
+          "module": "Submission.Supplier.Theorems.Thm_CuspForm_IsAdelicLiftOf_exists_mem_span_fnTwist_fixed_padicK1_one_of_principalSeries",
+          "source_bound_cached_controller_record_exit": 0,
+          "separate_kernel_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/2179766d29d93371888aacc8-1791836925673985000.kernel/result.json",
+          "actual_kernel_exit": 0
+        },
+        {
+          "module": "Submission.Supplier.P2M.Util",
+          "source_bound_cached_controller_record_exit": 0,
+          "separate_kernel_receipt": null,
+          "full_source_replay_and_audit_pending": true
+        }
+      ],
+      "solution_axiom_audit": "not printed separately; full-root audit pending",
+      "printed_axiom_closures": []
+    },
+    "card": {
+      "module": "Submission.Supplier.Theorems.Thm_CuspForm_IsNewform_exists_quadraticTwistToExponentOne_of_sq_dvd_of_adelicLift_principalSeries_isUnramified_ratio",
+      "make_exit": 0,
+      "kernel_exit": 0,
+      "kernel_seconds": 55.043966708,
+      "source_unchanged": true,
+      "compiler_warnings": 0,
+      "direct_dependencies": [
+        {
+          "module": "Submission.Supplier.Definitions.Def_CuspForm_Newforms",
+          "source_bound_cached_controller_record_exit": 0,
+          "separate_kernel_receipt": null,
+          "full_source_replay_and_audit_pending": true
+        },
+        {
+          "module": "Submission.Supplier.Definitions.Def_CuspForm_HeckeAlgebra",
+          "source_bound_cached_controller_record_exit": 0,
+          "separate_kernel_receipt": null,
+          "full_source_replay_and_audit_pending": true
+        },
+        {
+          "module": "Submission.Supplier.Definitions.Def_CuspForm_AdelicLift",
+          "source_bound_cached_controller_record_exit": 0,
+          "separate_kernel_receipt": null,
+          "full_source_replay_and_audit_pending": true
+        },
+        {
+          "module": "Submission.Supplier.Definitions.Def_LocalNewvector_AdelicSpanCarrier",
+          "source_bound_cached_controller_record_exit": 0,
+          "separate_kernel_receipt": null,
+          "full_source_replay_and_audit_pending": true
+        },
+        {
+          "module": "Submission.Supplier.Definitions.Def_LocalNewvector_PrincipalSeriesCarrier",
+          "source_bound_cached_controller_record_exit": 0,
+          "separate_kernel_receipt": null,
+          "full_source_replay_and_audit_pending": true
+        },
+        {
+          "module": "Submission.Supplier.Definitions.Def_LocalNewvector_CharConductor",
+          "source_bound_cached_controller_record_exit": 0,
+          "separate_kernel_receipt": null,
+          "full_source_replay_and_audit_pending": true
+        },
+        {
+          "module": "Submission.Supplier.P2M.Util",
+          "source_bound_cached_controller_record_exit": 0,
+          "separate_kernel_receipt": null,
+          "full_source_replay_and_audit_pending": true
+        },
+        {
+          "module": "Submission.Supplier.P2M.Sol.S_CuspForm_IsNewform_exists_quadraticTwistToExponentOne_of_sq_dvd_of_adelicLift_principalSeries_isUnramified_ratio",
+          "source_bound_cached_controller_record_exit": 0,
+          "separate_kernel_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/6990724a67bec6fbe84686b3-1791837040005661000.kernel/result.json",
+          "actual_kernel_exit": 0
+        }
+      ],
+      "solution_axiom_audit": "not printed separately; full-root audit pending",
+      "printed_axiom_closures": []
+    }
+  },
+  "proof_summary": "Retain the complete original quadratic-twist level-descent proof under the exact newform, Hecke eigencharacter, field embedding, square-divisibility, adelic lift, nonzero equivariant principal-series map and unramified-ratio hypotheses. The conclusion retains m=q for odd q or m=8 for q=2, a nontrivial quadratic character over K, a newform at a nonzero level M' not divisible by q squared, its Hecke eigencharacter and field map, and the complete original twisted eigenvalue identity at every prime satisfying all stated exclusions and coprimality. No assumption or existential conclusion is dropped. The final solution recursive axiom closure was not separately printed.",
+  "no_source_change": true,
+  "no_linter_suppression_added": true,
+  "source_axiom_audit_pending": true,
+  "supplier": "anthropics/fermats-last-theorem",
+  "supplier_commit": "6e837e75355538c7f80bab5b956861e86c4eacc2",
+  "full_original_complete": false,
+  "official_new_solve_credit": 0,
+  "jobs": 1,
+  "compilers": 1,
+  "threads": 1,
+  "controller_continues_same_full_FLT_graph": true
+}

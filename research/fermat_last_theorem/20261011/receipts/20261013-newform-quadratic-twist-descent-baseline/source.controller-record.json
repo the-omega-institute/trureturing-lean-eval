@@ -1,0 +1,200 @@
+{
+  "sha256": "09304e659c31e5ee3ec64a0b638c429b5355202a267e3b05c9c79ae6dea7dd75",
+  "exit": 0,
+  "empty_output_retry_done": false,
+  "source_sha256_after": "09304e659c31e5ee3ec64a0b638c429b5355202a267e3b05c9c79ae6dea7dd75",
+  "source_unchanged": true,
+  "olean_sha256": "606cbe29ddefddd2f839d732979971e00bb391364f15ede235a2124c5749a546",
+  "seconds": 114.25970129100006,
+  "pid": 70857,
+  "command": [
+    "/Users/macstudio/.local/omega-shims/lean",
+    "-j1",
+    "--trust=0",
+    "-Ddebug.skipKernelTC=false",
+    "-R",
+    "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src",
+    "-o",
+    "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-build/lib/lean/Submission/Supplier/P2M/Sol/S_CuspForm_IsNewform_exists_quadraticTwistToExponentOne_of_sq_dvd_of_adelicLift_principalSeries_isUnramified_ratio.olean",
+    "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_CuspForm_IsNewform_exists_quadraticTwistToExponentOne_of_sq_dvd_of_adelicLift_principalSeries_isUnramified_ratio.lean"
+  ],
+  "make_wrapper_pid": 51822,
+  "make_exit": 0,
+  "make_entry_failed": false,
+  "cache_binding_valid": true,
+  "canonical_make_running_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/6990724a67bec6fbe84686b3-1791837040005661000.make-running.json",
+  "canonical_make_terminal_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/6990724a67bec6fbe84686b3-1791837040005661000.make-terminal.json",
+  "kernel_terminal_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/6990724a67bec6fbe84686b3-1791837040005661000.kernel/result.json",
+  "direct_dependencies": [
+    {
+      "module": "Submission.Supplier.Definitions.Def_CuspForm_Newforms",
+      "source_sha256": "038ffb0534cb0d69dd4d32975f5910d02e5c2e91edf8776d1a0153b10c2eb713",
+      "object_sha256": "9c52ed2ea48466c20a5f0d8ba9c6e8f19711fc3a1f6027584e55dd5044e94968",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Definitions.Def_CuspForm_HeckeAlgebra",
+      "source_sha256": "37e31bd47834e4fb954228067f4b7d48a8892ca73db1dfeb023d0d562d748abf",
+      "object_sha256": "f49293f84c6df230c5dc5057fb71f4b4097b439107841de6011aa351b638add9",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Definitions.Def_CuspForm_AdelicLift",
+      "source_sha256": "5de40ae353dd962cc2efeb8427be45980d72968e95bd6888e7a54aa3fc07f764",
+      "object_sha256": "57a55d4f8cb392d088729a693eeb875105b940341468becafcd9b81f6e1d9015",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Definitions.Def_LocalNewvector_AdelicSpanCarrier",
+      "source_sha256": "b9a8c834045a62e0c43a02f357b8c1a19334af215bb8d4372e37d650e454e767",
+      "object_sha256": "1f94967f7a11261edd5279088c1bae8d9bc83901bfcc6e1a1ce6ed25d9904b80",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Definitions.Def_LocalNewvector_PrincipalSeriesCarrier",
+      "source_sha256": "1df69097397b3a0579a500de8b9c308baf4cc38e1273ca5b09f50675b7f89b8d",
+      "object_sha256": "e9b5faff489ef1cde1798c27b7b59206456a6d32cbbe42104483ab2666e1f172",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Definitions.Def_LocalNewvector_CharConductor",
+      "source_sha256": "a924bacf3e8529d8263b473a8731d499f58b74da2bcd63da8fe0dfc5edb5b0ee",
+      "object_sha256": "9f73046fa5555274a36c7383353aacd272621c81f19539846bd118de40075b86",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Definitions.Def_LocalNewvector_ConductorDatum",
+      "source_sha256": "03f06a4d674cbee4c407bf7e49c470b4b6997ffc8bf65fc41aac9d47b7a153ca",
+      "object_sha256": "67a19792aae8fd45dcfd34d692d5c9bdda85ec5083a12eca794b37589e3de5e5",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Definitions.Def_AutomorphicForm_AdelicLsXi",
+      "source_sha256": "bc9b5e05da1dd21c90324b1143b1a7f97370f1323ec858ac20c8f3d0290e6364",
+      "object_sha256": "e69066b8355869845e4599ecf1bed5400d58ba701c31195c1f1615fdd4d66156",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Definitions.Def_AutomorphicForm_SmoothAutomorphicFnAt",
+      "source_sha256": "df18f8d677cfaef69c6485bf9f41d2f4260c26926903e1590f50faf58d5452d7",
+      "object_sha256": "a1b8b61729f1eece2b9e1c0eed10cc7495acf64eb817d5854e9e15f0f2f229d1",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Definitions.Def_AutomorphicForm_FnTwist",
+      "source_sha256": "3a8cd72b03187d930c5fd93be3777a343c141a7d217e1c07c68b9bde509034b0",
+      "object_sha256": "f0bde351f5c4451f22a3968d12852adb87b6c0ec61b7d0f045aa692a8b5be742",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Definitions.Def_AutomorphicForm_HeckeEigenfunction",
+      "source_sha256": "6c5cee010db5e236b87cbf61b4113856d522ec091837587b39d58698b4b1da1b",
+      "object_sha256": "33c4015391aba2afad7ac5fa600996e907ddca28b2a433ac549a90c184de3ee3",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Definitions.Def_HeckeCharacter_FiniteOrder",
+      "source_sha256": "7b8ced79799dd902bdee53c3b3fd3af274e968ca47e9317bb376b3f7d8de7301",
+      "object_sha256": "cfc28669cfab23c8a3781d1d029342a3468c0ed91bc3095a9b299a69ce51f775",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Definitions.Def_AdelicDock_LocalEmbedding",
+      "source_sha256": "8dd7d0ec1dfab8c88a8cc7de14be8d9a65ae4ab5458530bb25f42f6742b4ae47",
+      "object_sha256": "0d9a261afbc1ecca88149032c76920e6a9b20319ef4f272e47f0f73f5fd181f2",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Definitions.Def_NumberField_AdelicLevel",
+      "source_sha256": "b2abbefdbcc0befdce3eba26e743768681de7830f30af7a32bdd667e91f15731",
+      "object_sha256": "1981db2375bbafba16ced1c3ef8e299fa4b2f3b34cc21e7c486a23422e4d9dc5",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Definitions.Def_FLTPrelim_Modularity",
+      "source_sha256": "cd80952a6230452e6aaa5edf715476e07b302f0997d2402dfcf314c5c07d2219",
+      "object_sha256": "f469fdbf80c45b247e2d1cb30e2d93a46b3bc393fe5f91f8fa89e627ae837b77",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Theorems.Thm_CuspForm_exists_isNewform_descent",
+      "source_sha256": "93a6eb77a7d95d610be756dfdeee7fb6f01e0255a8a110c9ab73b9b472845aec",
+      "object_sha256": "98dc96b95f6d2bfb17f67778f115a07765843eb02c4d5dc5e4eb90efab18c1f3",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Theorems.Thm_CuspForm_IsNormalizedEigenform_exists_ringHom_heckeAlgebra",
+      "source_sha256": "fb6e68cd686cb83c67d415cab44d7ac59f83be72bd3a2c05336144142bf47d80",
+      "object_sha256": "e238cadcdb231df03da59bed609c874b38d3b013904bf7d9a582b11ed711d6e4",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Theorems.Thm_CuspForm_IsAdelicLiftOf_levelZero_inv",
+      "source_sha256": "b98bc8663b8f109b481e8a1d1fc75536b0138a726ddd2398d96f6a5cbd46e9fe",
+      "object_sha256": "5ad0dbe1d39f87356603f05fcd27b54cd9cc67b44485482d27ba40f41c223721",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Theorems.Thm_LocalNewvector_PSCarrier_isIrreducibleGLRep_of_isUnramified",
+      "source_sha256": "02ba7f24d1a8aa480d41d09ac58113176b8b0dc208cc037944a486a1708dadd3",
+      "object_sha256": "1fed70f03e77a0e774fc4539294b2fbfed00afe0e858f075a558608974348359",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Theorems.Thm_LocalNewvector_PSCarrier_finrank_fixedSubmodule_padicK1",
+      "source_sha256": "ec6b2ce39c93c8b074da27303f08b8a0734f70e47e35b1c35275010b98d439a3",
+      "object_sha256": "445b54c693534f10b2e0f74ee28f781d265e53fccde3ff4822bf7b4ec15290fe",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Theorems.Thm_LocalNewvector_PSCarrier_existsUnique_mem_inf_fixedSubmodule_padicK1_one_of_stable",
+      "source_sha256": "6ee57ffdbe0ba7058557ad4d28f81629be7eb22768293d451531f5cf374a5b61",
+      "object_sha256": "6fc5682b68b2a7b6b22c916e751989c98383a364e68795b4499581ebafff3c1a",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Theorems.Thm_LocalNewvector_exists_mem_fixedSubmodule_and_map_eq_of_map_mem_fixedSubmodule",
+      "source_sha256": "32158d80f99674024b97e108d1220ae014e9d667d883c5034eb31847594e052a",
+      "object_sha256": "1be501da5ec1369e2d0891e756f0d3c6ec2214310053c6a2027261d5990838c1",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Theorems.Thm_CuspForm_IsNewform_hasNewvectorConductor_adelicSpan_factorization_of_isAdelicLiftOf",
+      "source_sha256": "d3b0909b181effa42161d9e91ecb61315f71aeec41d29a08bfc95fba4dc06eb4",
+      "object_sha256": "f994ecdafb22e70a45b9d722b0b07415b60cfd96c4004331e1da9b2dd2fe821a",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Theorems.Thm_HeckeCharacter_exists_isFiniteOrderHeckeChar_rat_apply_uniformizerIdele_eq_apply_localUnit_eq_inv",
+      "source_sha256": "d1204b820285dc50cbbab9a358e8562b5b3bf681df4f433b56a8c2039cd4eb0c",
+      "object_sha256": "273842c51e207065f85ef1040a09909ca592e3a9a2054a7e67bc3a56bcd97291",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Theorems.Thm_CuspForm_IsNormalizedEigenform_exists_isNormalizedEigenform_qCoeff_eq_mul_of_adelicLift_fnTwist_of_mem_span_of_fixed",
+      "source_sha256": "f4ba5c0851d075cf84cbc36473d9c3e156c1c02bfdae164f9ec185c9126f2677",
+      "object_sha256": "e738f846c843671c1559f80c9cf5a9a575f18a7d709487426b4e643d6c0a3265",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Theorems.Thm_LocalNewvector_PSCarrier_fixedSubmodule_padicK1_zero_le_of_stable",
+      "source_sha256": "18fce96ac42a205611360980c016729078144ea0caa10ae5d8ef36296ad68763",
+      "object_sha256": "6c7270d92f60aab62377098443e1184956e81987df0d621d478e8995c9fb7073",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Theorems.Thm_CuspForm_IsAdelicLiftOf_exists_mem_span_fnTwist_fixed_padicK1_one_of_principalSeries",
+      "source_sha256": "b2c1f9d96c4d0604794a2daf8c2fcd7f5093e3437539968c2326940b1a286a1e",
+      "object_sha256": "4ef1e688e2534601361ce50b239551cb18bf8d2ca4e626e0ef63dbc6e776af69",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.P2M.Util",
+      "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+      "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+      "receipt_reused": true
+    }
+  ],
+  "stdout": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/6990724a67bec6fbe84686b3-1791837040005661000.kernel/stdout.log",
+  "stderr": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/6990724a67bec6fbe84686b3-1791837040005661000.kernel/stderr.log"
+}
