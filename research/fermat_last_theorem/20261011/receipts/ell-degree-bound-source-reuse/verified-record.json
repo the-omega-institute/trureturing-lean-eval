@@ -1,0 +1,45 @@
+{
+  "at": "2026-10-12T00:12:29.424339+00:00",
+  "module": "P2M.Sol.S_AlgebraicCurve_ell_sub_ell_le_degree_sub_degree",
+  "source": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/P2M/Sol/S_AlgebraicCurve_ell_sub_ell_le_degree_sub_degree.lean",
+  "original_source": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/official-layout/source-reuse/20261012-ell-degree-bound/original.lean",
+  "reuse_module": "P2M.Sol.S_AlgebraicCurve_RationalFunctionField_stichtenothGenusExists",
+  "reuse_declaration": "_root_.P2MW.S_AlgebraicCurve_RationalFunctionField_stichtenothGenusExists.AlgebraicCurve.ell_sub_ell_le_degree_sub_degree",
+  "provider_kernel_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/ed21ac9d07b3572c9ad02d23-1791748471748303000.kernel/result.json",
+  "original_solution_declaration": "theorem solution {K F : Type*} [Field K] [Field F] [Algebra K F] [IsCurveOver K F] {D\u2081 D\u2082 : Divisor K F} (hD : D\u2081 \u2264 D\u2082)\n    [FiniteDimensional K \u21a5(LSpace D\u2082)] :\n    (ell D\u2082 : \u2124) - (ell D\u2081 : \u2124) \u2264 Divisor.degree D\u2082 - Divisor.degree D\u2081 :=",
+  "solution_declaration_text_unchanged": true,
+  "original_lines": 723,
+  "candidate_lines": 15,
+  "verification_status": "source and associated theorem card passed canonical make and kernel checks",
+  "full_original_complete": false,
+  "official_new_solve_credit": 0,
+  "verification_results": [
+    {
+      "kind": "source",
+      "module": "Submission.Supplier.P2M.Sol.S_AlgebraicCurve_ell_sub_ell_le_degree_sub_degree",
+      "configuration": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/official-layout/source-reuse/20261012-polynomial-linear-degree-validation/ell-degree-bound-source.configuration.json",
+      "edited": true,
+      "make_exit": 0,
+      "kernel_exit": 0,
+      "source_unchanged": true,
+      "kernel_seconds": 45.135208082999995,
+      "warnings": 0,
+      "kernel_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/official-layout/source-reuse/20261012-polynomial-linear-degree-validation/ell-degree-bound-source.kernel/result.json",
+      "make_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/official-layout/source-reuse/20261012-polynomial-linear-degree-validation/ell-degree-bound-source.make-terminal.json"
+    },
+    {
+      "kind": "card",
+      "module": "Submission.Supplier.Theorems.Thm_AlgebraicCurve_ell_sub_ell_le_degree_sub_degree",
+      "configuration": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/official-layout/source-reuse/20261012-polynomial-linear-degree-validation/ell-degree-bound-card.configuration.json",
+      "edited": false,
+      "make_exit": 0,
+      "kernel_exit": 0,
+      "source_unchanged": true,
+      "kernel_seconds": 50.229974416999994,
+      "warnings": 0,
+      "kernel_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/official-layout/source-reuse/20261012-polynomial-linear-degree-validation/ell-degree-bound-card.kernel/result.json",
+      "make_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/official-layout/source-reuse/20261012-polynomial-linear-degree-validation/ell-degree-bound-card.make-terminal.json"
+    }
+  ],
+  "verified_at": "2026-10-12T00:37:02.576573+00:00"
+}
