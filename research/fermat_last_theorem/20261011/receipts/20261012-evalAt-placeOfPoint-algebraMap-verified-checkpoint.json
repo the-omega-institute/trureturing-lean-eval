@@ -1,0 +1,71 @@
+{
+  "at": "2026-10-12T04:11:49.965419+00:00",
+  "previous_goal_turn": "progress",
+  "this_goal_turn": "progress",
+  "new_verified_pairs": 1,
+  "verified_source_reuse_count": 27,
+  "checked_module_count": 54,
+  "new_records": [
+    {
+      "at": "2026-10-12T03:54:25.476935+00:00",
+      "module": "P2M.Sol.S_AlgebraicCurve_RationalFunctionField_evalAt_placeOfPoint_algebraMap",
+      "source": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/P2M/Sol/S_AlgebraicCurve_RationalFunctionField_evalAt_placeOfPoint_algebraMap.lean",
+      "directory": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/official-layout/source-reuse/20261012-evalAt-placeOfPoint-algebraMap",
+      "original_source": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/official-layout/source-reuse/20261012-evalAt-placeOfPoint-algebraMap/original.lean",
+      "status": "verified source and associated unchanged theorem card; canonical candidate installed",
+      "original_lines": 1263,
+      "candidate_lines": 12,
+      "complete_solution_declaration_text_equal": true,
+      "solution_declaration_text_unchanged": true,
+      "reuse_module": "P2M.Sol.S_AlgebraicCurve_RationalFunctionField_weilReciprocity",
+      "reused_declarations": [
+        "AlgebraicCurve.RationalFunctionField.evalAt_placeOfPoint_algebraMap"
+      ],
+      "faithfulness_boundary": "Exact same polynomial evaluation statement; reuses the checked public provider theorem and retains arbitrary field K with no added hypotheses.",
+      "full_original_complete": false,
+      "official_new_solve_credit": 0,
+      "verification_status": "source and associated theorem card passed canonical make and kernel checks",
+      "verification_results": [
+        {
+          "kind": "source",
+          "module": "Submission.Supplier.P2M.Sol.S_AlgebraicCurve_RationalFunctionField_evalAt_placeOfPoint_algebraMap",
+          "configuration": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/official-layout/source-reuse/20261012-evalAt-point-validation-r2/source.configuration.json",
+          "edited": true,
+          "make_exit": 0,
+          "kernel_exit": 0,
+          "source_unchanged": true,
+          "kernel_seconds": 18.894124959,
+          "warnings": 0,
+          "kernel_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/official-layout/source-reuse/20261012-evalAt-point-validation-r2/source.kernel/result.json",
+          "make_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/official-layout/source-reuse/20261012-evalAt-point-validation-r2/source.make-terminal.json"
+        },
+        {
+          "kind": "card",
+          "module": "Submission.Supplier.Theorems.Thm_AlgebraicCurve_RationalFunctionField_evalAt_placeOfPoint_algebraMap",
+          "configuration": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/official-layout/source-reuse/20261012-evalAt-point-validation-r2/card.configuration.json",
+          "edited": false,
+          "make_exit": 0,
+          "kernel_exit": 0,
+          "source_unchanged": true,
+          "kernel_seconds": 28.328062875,
+          "warnings": 0,
+          "kernel_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/official-layout/source-reuse/20261012-evalAt-point-validation-r2/card.kernel/result.json",
+          "make_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/official-layout/source-reuse/20261012-evalAt-point-validation-r2/card.make-terminal.json"
+        }
+      ],
+      "verified_at": "2026-10-12T04:10:21.254169+00:00"
+    }
+  ],
+  "failed_checks_this_batch": 0,
+  "prior_failed_attempt_preserved": true,
+  "theorem_cards_edited": false,
+  "validation_driver_exit": 0,
+  "controller_pid": 9391,
+  "controller_resume_required": false,
+  "single_job": true,
+  "lean_threads": 1,
+  "independent_review_seats": 0,
+  "full_original_complete": false,
+  "official_new_solve_credit": 0,
+  "provenance": "After preserving the R1 namespace failure, the original open namespace context was restored and the public provider theorem was checked exactly. Complete root and official acceptance remain pending."
+}
