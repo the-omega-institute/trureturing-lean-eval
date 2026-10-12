@@ -1,0 +1,74 @@
+{
+  "at": "2026-10-12T19:50:10.011821+00:00",
+  "baseline_source_card_pair_actual_make_kernel_passed": true,
+  "canonical_solution_byte_identical_to_supplier": true,
+  "full_original_proof_retained": true,
+  "original_main_hypotheses_and_conclusion_preserved": true,
+  "original_solution_lines": 134,
+  "checks": {
+    "source": {
+      "module": "Submission.Supplier.P2M.Sol.S_HopfAlgebra_signTwist_galois_of_formula_of_linearEquiv_padicInt",
+      "make_exit": 0,
+      "kernel_exit": 0,
+      "kernel_seconds": 6.861016084,
+      "source_unchanged": true,
+      "compiler_warnings": 15,
+      "direct_dependencies": [
+        {
+          "module": "Submission.Supplier.Definitions.Def_GaloisRep_Flat",
+          "receipt": null,
+          "actual_exit": 0
+        },
+        {
+          "module": "Submission.Supplier.Theorems.Thm_HopfAlgebra_antipode_antipode",
+          "receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/fb4a4624b0e313477535cb6d-1791833228753607000.kernel/result.json",
+          "actual_exit": 0
+        },
+        {
+          "module": "Submission.Supplier.P2M.Util",
+          "receipt": null,
+          "actual_exit": 0
+        }
+      ],
+      "solution_axiom_audit": "not printed separately; full-root audit pending"
+    },
+    "card": {
+      "module": "Submission.Supplier.Theorems.Thm_HopfAlgebra_signTwist_galois_of_formula_of_linearEquiv_padicInt",
+      "make_exit": 0,
+      "kernel_exit": 0,
+      "kernel_seconds": 5.816556125,
+      "source_unchanged": true,
+      "compiler_warnings": 0,
+      "direct_dependencies": [
+        {
+          "module": "Submission.Supplier.Definitions.Def_GaloisRep_Flat",
+          "receipt": null,
+          "actual_exit": 0
+        },
+        {
+          "module": "Submission.Supplier.P2M.Util",
+          "receipt": null,
+          "actual_exit": 0
+        },
+        {
+          "module": "Submission.Supplier.P2M.Sol.S_HopfAlgebra_signTwist_galois_of_formula_of_linearEquiv_padicInt",
+          "receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/1e3b30d239b3a90b237f243a-1791833765290140000.kernel/result.json",
+          "actual_exit": 0
+        }
+      ],
+      "solution_axiom_audit": "not printed separately; full-root audit pending"
+    }
+  },
+  "proof_summary": "Retain the complete original construction of the antipode as an algebra homomorphism and its convolution-inverse identity. The supplied sign-twist formula and sigma(s)^2 = s^2 yield the two cases sigma(s) = s and sigma(s) = -s, retaining equality in the fixed-root case and convolution product equal to one in the other case. All original hypotheses and both conclusions remain; the canonical solution is byte-identical to the supplier source.",
+  "no_source_change": true,
+  "no_linter_suppression_added": true,
+  "source_axiom_audit_pending": true,
+  "supplier": "anthropics/fermats-last-theorem",
+  "supplier_commit": "6e837e75355538c7f80bab5b956861e86c4eacc2",
+  "full_original_complete": false,
+  "official_new_solve_credit": 0,
+  "jobs": 1,
+  "compilers": 1,
+  "threads": 1,
+  "controller_continues_same_full_FLT_graph": true
+}
