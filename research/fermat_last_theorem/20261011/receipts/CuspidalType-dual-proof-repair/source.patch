@@ -1,0 +1,47 @@
+--- /Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/P2M/Sol/S_CuspidalType_IsCuspidalOfType_dual.lean
++++ /Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/P2M/Sol/S_CuspidalType_IsCuspidalOfType_dual.lean
+@@ -37,7 +37,7 @@
+ theorem charpoly_ofMulAction_inv (g : G) :
+     (Representation.ofMulActionFinsupp k G H g⁻¹).charpoly = (Representation.ofMulActionFinsupp k G H g).charpoly := by
+   classical
+-  haveI : Fintype H := Fintype.ofFinite H
++  have : Fintype H := Fintype.ofFinite H
+   let b : Module.Basis H k (H →₀ k) := Finsupp.basisSingleOne
+   rw [← LinearMap.charpoly_toMatrix _ b, ← LinearMap.charpoly_toMatrix _ b, ← Matrix.charpoly_transpose]
+   congr 1
+@@ -46,8 +46,8 @@
+     Finsupp.basisSingleOne_repr, LinearEquiv.refl_apply, Representation.ofMulActionFinsupp_single,
+     Finsupp.single_apply, inv_smul_eq_iff]
+   by_cases hij : i = g • j
+-  · rw [if_pos hij, if_pos hij.symm]
+-  · rw [if_neg hij, if_neg (Ne.symm hij)]
++  · rw [ite_eq_left hij, ite_eq_left hij.symm]
++  · rw [ite_eq_right hij, ite_eq_right (Ne.symm hij)]
+ 
+ end Perm
+ 
+@@ -110,9 +110,15 @@
+     intro f hf
+     apply dual_eq_zero_of_forall_comp_unipotent h f
+     intro t
+-    have := hf (-t)
+-    rw [Representation.dual_apply, unipotent_inv, neg_neg, Module.Dual.transpose_apply] at this
+-    exact this
++    have hfix : f ∘ₗ ρ ((unipotent q t)⁻¹) = f := by
++      simpa only [Representation.dual_apply, Module.Dual.transpose_apply] using hf t
++    calc
++      f ∘ₗ ρ (unipotent q t) =
++          (f ∘ₗ ρ ((unipotent q t)⁻¹)) ∘ₗ ρ (unipotent q t) := by rw [hfix]
++      _ = f := by
++        rw [LinearMap.comp_assoc, ← Module.End.mul_eq_comp, ← map_mul,
++          inv_mul_cancel, map_one]
++        rfl
+   ·
+     intro c
+     rw [Representation.dual_apply, ← map_inv, h.central, transpose_id]
+@@ -124,3 +130,5 @@
+       mul_comm (X - C (((θ α)⁻¹ : Kˣ) : K)) (X - C ((θ α : Kˣ) : K))] at key
+     rw [key]
+     exact charpoly_ofMulAction_inv (k := K) (H := ProjLine q) (torus q α)
++
++#print axioms solution

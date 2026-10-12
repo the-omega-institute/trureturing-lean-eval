@@ -1,0 +1,47 @@
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_CuspidalType_IsCuspidalOfType_dual.lean:48:2: warning: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_CuspidalType_IsCuspidalOfType_dual.lean:57:8: warning: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_CuspidalType_IsCuspidalOfType_dual.lean:57:20: warning: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_CuspidalType_IsCuspidalOfType_dual.lean:58:8: warning: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_CuspidalType_IsCuspidalOfType_dual.lean:58:20: warning: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_CuspidalType_IsCuspidalOfType_dual.lean:122:50: error: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  - -?a
+in the target expression
+  (Module.Dual.transpose (ρ (unipotent q (- -t)))) f = f
+
+case refine_2
+q : ℕ
+inst✝⁵ : Fact (Nat.Prime q)
+K : Type u_1
+inst✝⁴ : Field K
+inst✝³ : CharZero K
+θ : (GaloisField q 2)ˣ →* Kˣ
+V : Type u_2
+inst✝² : AddCommGroup V
+inst✝¹ : Module K V
+inst✝ : FiniteDimensional K V
+ρ : Representation K (GL2 q) V
+h : IsCuspidalOfType θ ρ
+f : Module.Dual K V
+hf : ∀ (t : ZMod q), (ρ.dual (unipotent q t)) f = f
+t : ZMod q
+this : (Module.Dual.transpose (ρ (unipotent q (- -t)))) f = f
+⊢ f ∘ₗ ρ (unipotent q t) = f
