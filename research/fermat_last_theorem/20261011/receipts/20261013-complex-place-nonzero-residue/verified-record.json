@@ -1,0 +1,65 @@
+{
+  "at": "2026-10-12T18:31:35.022968+00:00",
+  "module": "Submission.Supplier.P2M.Sol.S_ModularCurve_ComplexPlaceDictionary_exists_slashInvariant_residue_ne_zero_of_pt_ne",
+  "status": "Complete original solution and unchanged theorem card verified through canonical make lean and kernel",
+  "card_unchanged": true,
+  "verified_pair": true,
+  "warnings": 0,
+  "axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "checks": {
+    "source": {
+      "configuration": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/official-layout/terminal-proof-repairs/20261013-complex-place-nonzero-residue/source-r1.configuration.json",
+      "kernel_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/official-layout/terminal-proof-repairs/20261013-complex-place-nonzero-residue/source-r1.kernel/result.json",
+      "make_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/official-layout/terminal-proof-repairs/20261013-complex-place-nonzero-residue/source-r1.make-terminal.json",
+      "kernel_exit": 0,
+      "make_exit": 0,
+      "seconds": 65.037349917,
+      "source_unchanged": true
+    },
+    "card": {
+      "configuration": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/official-layout/terminal-proof-repairs/20261013-complex-place-nonzero-residue/card.configuration.json",
+      "kernel_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/official-layout/terminal-proof-repairs/20261013-complex-place-nonzero-residue/card.kernel/result.json",
+      "make_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/official-layout/terminal-proof-repairs/20261013-complex-place-nonzero-residue/card.make-terminal.json",
+      "kernel_exit": 0,
+      "make_exit": 0,
+      "seconds": 58.011376333,
+      "source_unchanged": true
+    }
+  },
+  "supplier": "anthropics/fermats-last-theorem",
+  "supplier_commit": "6e837e75355538c7f80bab5b956861e86c4eacc2",
+  "official_mathlib": "5e0c4e5239cb0a2d86d68a884bf52cfd963fce22",
+  "lean_toolchain": "leanprover/lean4:v4.35.0-rc3",
+  "full_original_complete": false,
+  "official_new_solve_credit": 0,
+  "commit_message": "FLT: verify complex place nonzero residue construction",
+  "original_main_hypotheses_and_conclusion_preserved": true,
+  "full_original_construction_retained": true,
+  "original_raw_source_retained": true,
+  "original_raw_supplier_source_retained": true,
+  "original_proof_snapshot_retained": true,
+  "proof_bodies_claimed_identical": false,
+  "main_hypotheses_changed": false,
+  "main_conclusion_changed": false,
+  "original_baseline_kernel_exit": 1,
+  "original_baseline_make_exit": 2,
+  "original_baseline_kernel_seconds": 59.068660208,
+  "original_baseline_warnings": 3,
+  "existing_provider_import": "Submission.Supplier.Definitions.Def_ModularCurve_ModularUnit",
+  "provider_closure_modules": 2,
+  "provider_cycle": false,
+  "restored_auto_removed_header_attributes": [
+    "ModularCurve.eisensteinNumerator_nineteen",
+    "ModularCurve.eisensteinNumerator_seventeen",
+    "ModularCurve.eisensteinNumerator_eleven"
+  ],
+  "deprecated_alias_occurrences": 2,
+  "deprecated_name_replaced": "dif_neg -> dite_eq_right",
+  "unnecessary_seq_focus_replacements": 1,
+  "proof_summary": "Retain the entire original modular-function realization and modular-form quotient construction, boundedness of the j-function at a complex place, slash invariance and Möbius derivative law, uniqueness of local residues, the Riemann Roch two-point differential construction, cusp exponential decay, nonzero selected residue, two-point support and full analytic local pole expansion.",
+  "library_search": "No exact trureturing D5 target hit. The missing attribute constants are real declarations in the existing ModularUnit provider; its source/object match the accepted record and its import closure has only two modules and no target cycle. Import that provider so the original adapted source header and unchanged original theorem card remain valid. The gammaH analogue uses a different dictionary and assumptions; preserve the current full construction."
+}
