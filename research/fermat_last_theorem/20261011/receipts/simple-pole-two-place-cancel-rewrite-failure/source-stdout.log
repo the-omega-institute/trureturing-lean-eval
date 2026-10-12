@@ -1,0 +1,83 @@
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_AlgebraicCurve_RationalFunctionField_trace_localResidue_finitePlace_add_trace_localResidue_placeInfty_eq_zero.lean:42:6: error: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  (HasCanonicalLocalResidueKStar.dataKStar (RationalFunctionField.finitePlace K hp)).res
+    (S_AlgebraicCurve_residueTheoremK_ratFunc_of_isAlgClosed.AlgebraicCurve.p1PrincipalPartAtom K p c 1 *
+      (RationalFunctionField.finitePlace K hp).differentialCoeff
+        (S_AlgebraicCurve_residueTheoremK_ratFunc_of_isAlgClosed.AlgebraicCurve.dX K))
+in the target expression
+  (Algebra.trace K (RationalFunctionField.finitePlace K hp).ResidueField)
+        ((HasCanonicalLocalResidueKStar.dataKStar (RationalFunctionField.finitePlace K hp)).res
+          ((algebraMap K[X] (RatFunc K)) c / (algebraMap K[X] (RatFunc K)) p *
+            (RationalFunctionField.finitePlace K hp).differentialCoeff
+              ((KaehlerDifferential.D K (RatFunc K)) RatFunc.X))) +
+      (Algebra.trace K
+          (S_AlgebraicCurve_residueTheoremK_ratFunc_of_isAlgClosed.AlgebraicCurve.RationalFunctionField.placeInfty
+              K).ResidueField)
+        ((HasCanonicalLocalResidueKStar.dataKStar
+              (S_AlgebraicCurve_residueTheoremK_ratFunc_of_isAlgClosed.AlgebraicCurve.RationalFunctionField.placeInfty
+                K)).res
+          ((algebraMap K[X] (RatFunc K)) c / (algebraMap K[X] (RatFunc K)) p *
+            (S_AlgebraicCurve_residueTheoremK_ratFunc_of_isAlgClosed.AlgebraicCurve.RationalFunctionField.placeInfty
+                  K).differentialCoeff
+              ((KaehlerDifferential.D K (RatFunc K)) RatFunc.X))) =
+    0
+
+K : Type u_1
+inst✝⁵ : Field K
+inst✝⁴ : PerfectField K
+inst✝³ : DecidableEq (RatFunc K)
+inst✝² : HasCanonicalLocalResidueKStar K (RatFunc K)
+inst✝¹ : ∀ (v : Place K (RatFunc K)), v.DCoordGenerates
+inst✝ : Nontrivial Ω[RatFunc K⁄K]
+p c : K[X]
+hmon : p.Monic
+hp : Irreducible p
+hc : c.degree < p.degree
+hv :
+  RationalFunctionField.placeInfty K =
+    S_AlgebraicCurve_residueTheoremK_ratFunc_of_isAlgClosed.AlgebraicCurve.RationalFunctionField.placeInfty K
+hfmem :
+  S_AlgebraicCurve_residueTheoremK_ratFunc_of_isAlgClosed.AlgebraicCurve.p1PrincipalPartAtom K p c 1 *
+      (RationalFunctionField.finitePlace K hp).differentialCoeff
+        (S_AlgebraicCurve_residueTheoremK_ratFunc_of_isAlgClosed.AlgebraicCurve.dX K) ∈
+    AlgebraicCurve.Place.simplePoleSubmodule✝ (RationalFunctionField.finitePlace K hp)
+himem :
+  S_AlgebraicCurve_residueTheoremK_ratFunc_of_isAlgClosed.AlgebraicCurve.p1PrincipalPartAtom K p c 1 *
+      (S_AlgebraicCurve_residueTheoremK_ratFunc_of_isAlgClosed.AlgebraicCurve.RationalFunctionField.placeInfty
+            K).differentialCoeff
+        (S_AlgebraicCurve_residueTheoremK_ratFunc_of_isAlgClosed.AlgebraicCurve.dX K) ∈
+    AlgebraicCurve.Place.simplePoleSubmodule✝
+      (S_AlgebraicCurve_residueTheoremK_ratFunc_of_isAlgClosed.AlgebraicCurve.RationalFunctionField.placeInfty K)
+h :
+  (Algebra.trace K (RationalFunctionField.finitePlace K hp).ResidueField)
+        ((AlgebraicCurve.Place.simplePoleResidueAux✝ (RationalFunctionField.finitePlace K hp))
+          ⟨S_AlgebraicCurve_residueTheoremK_ratFunc_of_isAlgClosed.AlgebraicCurve.p1PrincipalPartAtom K p c 1 *
+              (RationalFunctionField.finitePlace K hp).differentialCoeff
+                (S_AlgebraicCurve_residueTheoremK_ratFunc_of_isAlgClosed.AlgebraicCurve.dX K),
+            hfmem⟩) +
+      (Algebra.trace K
+          (S_AlgebraicCurve_residueTheoremK_ratFunc_of_isAlgClosed.AlgebraicCurve.RationalFunctionField.placeInfty
+              K).ResidueField)
+        ((AlgebraicCurve.Place.simplePoleResidueAux✝
+            (S_AlgebraicCurve_residueTheoremK_ratFunc_of_isAlgClosed.AlgebraicCurve.RationalFunctionField.placeInfty K))
+          ⟨S_AlgebraicCurve_residueTheoremK_ratFunc_of_isAlgClosed.AlgebraicCurve.p1PrincipalPartAtom K p c 1 *
+              (S_AlgebraicCurve_residueTheoremK_ratFunc_of_isAlgClosed.AlgebraicCurve.RationalFunctionField.placeInfty
+                    K).differentialCoeff
+                (S_AlgebraicCurve_residueTheoremK_ratFunc_of_isAlgClosed.AlgebraicCurve.dX K),
+            himem⟩) =
+    0
+⊢ (Algebra.trace K (RationalFunctionField.finitePlace K hp).ResidueField)
+        ((HasCanonicalLocalResidueKStar.dataKStar (RationalFunctionField.finitePlace K hp)).res
+          ((algebraMap K[X] (RatFunc K)) c / (algebraMap K[X] (RatFunc K)) p *
+            (RationalFunctionField.finitePlace K hp).differentialCoeff
+              ((KaehlerDifferential.D K (RatFunc K)) RatFunc.X))) +
+      (Algebra.trace K
+          (S_AlgebraicCurve_residueTheoremK_ratFunc_of_isAlgClosed.AlgebraicCurve.RationalFunctionField.placeInfty
+              K).ResidueField)
+        ((HasCanonicalLocalResidueKStar.dataKStar
+              (S_AlgebraicCurve_residueTheoremK_ratFunc_of_isAlgClosed.AlgebraicCurve.RationalFunctionField.placeInfty
+                K)).res
+          ((algebraMap K[X] (RatFunc K)) c / (algebraMap K[X] (RatFunc K)) p *
+            (S_AlgebraicCurve_residueTheoremK_ratFunc_of_isAlgClosed.AlgebraicCurve.RationalFunctionField.placeInfty
+                  K).differentialCoeff
+              ((KaehlerDifferential.D K (RatFunc K)) RatFunc.X))) =
+    0
