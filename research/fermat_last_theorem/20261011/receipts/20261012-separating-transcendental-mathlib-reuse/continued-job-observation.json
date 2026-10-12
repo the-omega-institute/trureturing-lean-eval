@@ -1,0 +1,43 @@
+{
+  "at": "2026-10-12T11:02:19.077496+00:00",
+  "controller": {
+    "pid": 99424,
+    "command": [
+      "/Library/Developer/CommandLineTools/usr/bin/python3",
+      "-u",
+      "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006.py",
+      "--workers",
+      "1",
+      "--poll-seconds",
+      "10",
+      "--canonical-make-entry",
+      "--retry-empty-failures"
+    ],
+    "started_at": "2026-10-12T11:00:42.055067+00:00"
+  },
+  "controller_process": "  PID  PPID STAT ELAPSED    RSS COMMAND\n99424 99394 S      01:37 192848 /Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/Resources/Python.app/Contents/MacOS/Python -u /Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006.py --workers 1 --poll-seconds 10 --canonical-make-entry --retry-empty-failures\n",
+  "status": {
+    "compiled": 7466,
+    "sources": 60469,
+    "ready": 4420,
+    "failed": 0,
+    "root_compiled": false,
+    "workers": 1,
+    "canonical_build_queue_waiting": true
+  },
+  "running": {
+    "Submission.Supplier.Theorems.Thm_AlgebraicCurve_Place_ordDifferential_D_eq_zero_of_constantFieldExtension_of_forall_mem": {
+      "pid": 8404,
+      "make_wrapper_pid": 8404,
+      "phase": "canonical_make_queue",
+      "sha256": "1aaf7608d2a591a59c37e054327a5d93f4ccec4bb570a93b90a1527034662a27",
+      "configuration": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/7d0cc198396e9bf051bc9268-1791802891529335000.configuration.json",
+      "live_process": "  PID  PPID STAT ELAPSED    RSS COMMAND\n 8404 99424 S      00:48  13120 /Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/Resources/Python.app/Contents/MacOS/Python -u /Users/macstudio/omega/research/lean-eval-01a124c1-52fb-7761-a67c-75fc0610196f/canonical-flt-make-door/run_make_check.py /Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/7d0cc198396e9bf051bc9268-1791802891529335000.configuration.json\n"
+    }
+  },
+  "jobs": 1,
+  "compilers": 1,
+  "threads": 1,
+  "official_new_solve_credit": 0,
+  "full_original_complete": false
+}
