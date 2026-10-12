@@ -1,0 +1,137 @@
+{
+  "at": "2026-10-12T21:54:25.978799+00:00",
+  "manual_repair_source_card_pair_actual_make_kernel_passed": true,
+  "original_solution_lines": 473,
+  "repaired_solution_lines": 475,
+  "original_card_lines": 48,
+  "repaired_card_lines": 48,
+  "canonical_solution_byte_identical_to_supplier": false,
+  "canonical_card_byte_identical_to_supplier": false,
+  "original_main_hypotheses_and_conclusion_preserved": true,
+  "full_original_proof_retained": true,
+  "source_solution_axiom_audit_passed": true,
+  "no_linter_suppression_added": true,
+  "checks": {
+    "source": {
+      "module": "Submission.Supplier.P2M.Sol.S_ModularCurve_PlaceSpecialization_isGoodClass_of_comp_eq_zero_of_exists_isGoodDiv",
+      "make_exit": 0,
+      "kernel_exit": 0,
+      "kernel_seconds": 15.294720209,
+      "compiler_warnings": 0,
+      "source_unchanged": true,
+      "printed_axiom_closures": [
+        {
+          "declaration": "P2MW.S_ModularCurve_PlaceSpecialization_isGoodClass_of_comp_eq_zero_of_exists_isGoodDiv.solution",
+          "recursive_axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "final_solution_STANDARD3_audit": true,
+      "direct_dependencies": [
+        {
+          "module": "Submission.Supplier.Definitions.Def_ModularCurve_GlueData",
+          "source_sha256": "22659e0ce86d1845f21e0853a6f1c4dd7b2ec26715a11048d1362c9ac8b45537",
+          "object_sha256": null,
+          "receipt_reused": false
+        },
+        {
+          "module": "Submission.Supplier.Definitions.Def_ModularCurve_SupersingularNodePlaces",
+          "source_sha256": "0280afd84cee43b1c9efb508f585a2b7f9aafb1fc7ddc6af661e4728e6c5535c",
+          "object_sha256": "e2bfd505aa5f2fa29cf32d1eb80333cdc1b46f4b6eb9d9114105610e11a50dc3",
+          "receipt_reused": true
+        },
+        {
+          "module": "Submission.Supplier.Definitions.Def_ModularCurve_CoeffSemilinearAut",
+          "source_sha256": "3c49a881519c450c6f441a1be2690cd57ccd3b5f412f393c73e051d2976790e4",
+          "object_sha256": null,
+          "receipt_reused": false
+        },
+        {
+          "module": "Submission.Supplier.Theorems.Thm_ModularCurve_deg_eq_one_modularFunctionFieldBar",
+          "source_sha256": "2c6a37ffbfc5908bfdb9ec137c274527efe7d2a56e811b9ac57f9c5090ab3c6f",
+          "object_sha256": "0f2290c3ecf50aef946d8173d743f2579eec70d201503db8925362dc2b190d79",
+          "receipt_reused": true
+        },
+        {
+          "module": "Submission.Supplier.Theorems.Thm_ModularCurve_place_deg_eq_one_of_isAlgClosed",
+          "source_sha256": "21c7d3016f75434b3a599087bc368d68b72640087c17e6f7e4a75d418cbc03a2",
+          "object_sha256": "da8783c0b66483ece04676a719f04626ce610a13920b4709520ca845e5415296",
+          "receipt_reused": true
+        },
+        {
+          "module": "Submission.Supplier.Theorems.Thm_ModularCurve_arithFrobC_smul_eq_frobOnPlacesGeomLevel",
+          "source_sha256": "42c531b842b6f3789127ed9255f9f6d836606f71d447a20dab77dd69d6ef24bd",
+          "object_sha256": "136ff15971a451507d6e030627dc42c585c325649ec4fdb64b3df480f59bbd72",
+          "receipt_reused": true
+        },
+        {
+          "module": "Submission.Supplier.Theorems.Thm_AlgebraicCurve_Pic0_zsmul_mk_eq_zero_of_isPrincipal",
+          "source_sha256": "d3f31688d2d0affb3573b816f58ba0c817954a2a81bd0cde7c32aa8e201e2f19",
+          "object_sha256": "7c4024841027374fec5727f7f31d04ad39b5785e0594eec8bb8c21281d2e9ab4",
+          "receipt_reused": true
+        },
+        {
+          "module": "Submission.Supplier.P2M.Util",
+          "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+          "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+          "receipt_reused": true
+        }
+      ]
+    },
+    "card": {
+      "module": "Submission.Supplier.Theorems.Thm_ModularCurve_PlaceSpecialization_isGoodClass_of_comp_eq_zero_of_exists_isGoodDiv",
+      "make_exit": 0,
+      "kernel_exit": 0,
+      "kernel_seconds": 57.576938666000004,
+      "compiler_warnings": 0,
+      "source_unchanged": true,
+      "printed_axiom_closures": [],
+      "final_solution_STANDARD3_audit": false,
+      "direct_dependencies": [
+        {
+          "module": "Submission.Supplier.Definitions.Def_ModularCurve_GlueData",
+          "source_sha256": "22659e0ce86d1845f21e0853a6f1c4dd7b2ec26715a11048d1362c9ac8b45537",
+          "object_sha256": null,
+          "receipt_reused": false
+        },
+        {
+          "module": "Submission.Supplier.Definitions.Def_ModularCurve_SupersingularNodePlaces",
+          "source_sha256": "0280afd84cee43b1c9efb508f585a2b7f9aafb1fc7ddc6af661e4728e6c5535c",
+          "object_sha256": "e2bfd505aa5f2fa29cf32d1eb80333cdc1b46f4b6eb9d9114105610e11a50dc3",
+          "receipt_reused": true
+        },
+        {
+          "module": "Submission.Supplier.Definitions.Def_ModularCurve_CoeffSemilinearAut",
+          "source_sha256": "3c49a881519c450c6f441a1be2690cd57ccd3b5f412f393c73e051d2976790e4",
+          "object_sha256": null,
+          "receipt_reused": false
+        },
+        {
+          "module": "Submission.Supplier.P2M.Util",
+          "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+          "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+          "receipt_reused": true
+        },
+        {
+          "module": "Submission.Supplier.P2M.Sol.S_ModularCurve_PlaceSpecialization_isGoodClass_of_comp_eq_zero_of_exists_isGoodDiv",
+          "source_sha256": "c419dd919f7df000668cb0f8b77b4901fd9d9a4a06b156805b676232d3901c3a",
+          "object_sha256": "8eccc7adb2c00a8f16cf26d7b04421f1b711b2b1f57deb09b3e9b0ea29f469f4",
+          "receipt_reused": true
+        }
+      ]
+    }
+  },
+  "prior_failure_and_candidate_receipts": "20261013-good-class-obsolete-numerator-attributes",
+  "cached_import_full_source_replay_and_audit_pending": true,
+  "proof_summary": "Retain the entire original GoodClass descent proof and exact original source/card main statements. Remove obsolete minus-simp entries for the seven Eisenstein numerator constants and constantCoeff_dedekindEtaUnitQ, replace the 15 deprecated if_pos/if_neg uses and the redundant DecidableEq instance with their current forms, and print the final solution recursive axiom closure. Both source and card passed actual warning-free make/kernel checks. The final solution actually printed exactly STANDARD3. All valuation, characteristic, prime, nonzero-level, Frobenius-fixed nonempty node, positive width, component-map law, principal correcting divisor with exact plus/minus LCM degrees, good representative and comp x=0 hypotheses remain unchanged.",
+  "supplier": "anthropics/fermats-last-theorem",
+  "supplier_commit": "6e837e75355538c7f80bab5b956861e86c4eacc2",
+  "full_original_complete": false,
+  "official_new_solve_credit": 0,
+  "jobs": 1,
+  "compilers": 1,
+  "threads": 1
+}
