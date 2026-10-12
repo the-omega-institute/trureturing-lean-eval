@@ -1,0 +1,86 @@
+{
+  "at": "2026-10-12T19:52:21.013983+00:00",
+  "baseline_source_card_pair_actual_make_kernel_passed": true,
+  "canonical_solution_byte_identical_to_supplier": true,
+  "full_original_proof_retained": true,
+  "original_main_hypotheses_and_conclusion_preserved": true,
+  "original_solution_lines": 149,
+  "checks": {
+    "source": {
+      "module": "Submission.Supplier.P2M.Sol.S_HopfOrder_exists_equiv_algHom_apply_eq_and_toConv_mul",
+      "make_exit": 0,
+      "kernel_exit": 0,
+      "kernel_seconds": 8.056240792,
+      "source_unchanged": true,
+      "compiler_warnings": 10,
+      "direct_dependencies": [
+        {
+          "module": "Submission.Supplier.Definitions.Def_HopfAlgebra_HopfOrderData",
+          "controller_dependency_record": {
+            "module": "Submission.Supplier.Definitions.Def_HopfAlgebra_HopfOrderData",
+            "source_sha256": "6b33dd4894252ca0a41f87c95f29e17b677c5a7df92d73259fafb063f947ab75",
+            "object_sha256": null,
+            "receipt_reused": false
+          },
+          "cached_import_present": true,
+          "separate_source_kernel_receipt": null,
+          "source_object_binding_not_recorded": true,
+          "dependency_audit": "deferred to required full-root source replay and audit"
+        },
+        {
+          "module": "Submission.Supplier.P2M.Util",
+          "receipt": null,
+          "actual_exit": 0
+        }
+      ],
+      "solution_axiom_audit": "not printed separately; full-root audit pending"
+    },
+    "card": {
+      "module": "Submission.Supplier.Theorems.Thm_HopfOrder_exists_equiv_algHom_apply_eq_and_toConv_mul",
+      "make_exit": 0,
+      "kernel_exit": 0,
+      "kernel_seconds": 54.169744875,
+      "source_unchanged": true,
+      "compiler_warnings": 0,
+      "direct_dependencies": [
+        {
+          "module": "Submission.Supplier.Definitions.Def_HopfAlgebra_HopfOrderData",
+          "controller_dependency_record": {
+            "module": "Submission.Supplier.Definitions.Def_HopfAlgebra_HopfOrderData",
+            "source_sha256": "6b33dd4894252ca0a41f87c95f29e17b677c5a7df92d73259fafb063f947ab75",
+            "object_sha256": null,
+            "receipt_reused": false
+          },
+          "cached_import_present": true,
+          "separate_source_kernel_receipt": null,
+          "source_object_binding_not_recorded": true,
+          "dependency_audit": "deferred to required full-root source replay and audit"
+        },
+        {
+          "module": "Submission.Supplier.P2M.Util",
+          "receipt": null,
+          "actual_exit": 0
+        },
+        {
+          "module": "Submission.Supplier.P2M.Sol.S_HopfOrder_exists_equiv_algHom_apply_eq_and_toConv_mul",
+          "receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/5fea9511974316248b13856b-1791833843539342000.kernel/result.json",
+          "actual_exit": 0
+        }
+      ],
+      "solution_axiom_audit": "not printed separately; full-root audit pending"
+    }
+  },
+  "proof_summary": "Retain the complete original restriction and scalar-extension maps between generic-fiber algebra points and integral-order points, both inverse identities proved by base-change and tensor induction, evaluation compatibility, convolution multiplication compatibility, and preservation of one. All original hypotheses and conclusions remain; the canonical solution is byte-identical to the supplier source. The original unusedSectionVars option is retained without adding suppression.",
+  "no_source_change": true,
+  "no_linter_suppression_added": true,
+  "source_axiom_audit_pending": true,
+  "cached_import_separate_audit_pending": true,
+  "supplier": "anthropics/fermats-last-theorem",
+  "supplier_commit": "6e837e75355538c7f80bab5b956861e86c4eacc2",
+  "full_original_complete": false,
+  "official_new_solve_credit": 0,
+  "jobs": 1,
+  "compilers": 1,
+  "threads": 1,
+  "controller_continues_same_full_FLT_graph": true
+}
