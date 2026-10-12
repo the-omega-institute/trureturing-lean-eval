@@ -1,0 +1,56 @@
+{
+  "at": "2026-10-12T00:34:02.643773+00:00",
+  "module": "P2M.Sol.S_AlgebraicCurve_two_mul_genus_sub_two_eq_of_degree_canonical",
+  "source": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/P2M/Sol/S_AlgebraicCurve_two_mul_genus_sub_two_eq_of_degree_canonical.lean",
+  "original_source": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/official-layout/source-reuse/20261012-tame-genus-formula/original.lean",
+  "reuse_module": "P2M.Sol.S_AlgebraicCurve_map_ne_zero_of_tame",
+  "reuse_declaration": "_root_.P2MW.S_AlgebraicCurve_map_ne_zero_of_tame.AlgebraicCurve.two_mul_genus_sub_two_eq_of_degree_canonical",
+  "provider_compile_record": {
+    "sha256": "fe3948078d195377ec2942a3ec44856efd730a267857c73ad5697ce793c7fb2f",
+    "exit": 0,
+    "empty_output_retry_done": false,
+    "source_sha256_after": "fe3948078d195377ec2942a3ec44856efd730a267857c73ad5697ce793c7fb2f",
+    "source_unchanged": true,
+    "olean_sha256": "1dc9eae41628bfd13f83190d7db1b5842cb905cd927a806bf47d866cf574c09b",
+    "seconds": 103.73286154099992,
+    "stdout": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/5c68706c12592e54d008b372-1791474021853000000.stdout",
+    "stderr": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/5c68706c12592e54d008b372-1791474021853000000.stderr"
+  },
+  "provider_receipt_scope": "legacy successful source check with unchanged source/object binding; exact reused application will be checked through canonical make with trust=0",
+  "original_solution_declaration": "theorem solution {K : Type*} {F : Type*} {F' : Type*} [Field K] [Field F] [Field F'] [Algebra K F] [Algebra K F'] [Algebra F F'] [IsScalarTower K F F'] [Algebra.IsIntegral F F']\n    [IsCurveOver K F] [\u2200 v : Place K F, v.DCoordGenerates] [IsCurveOver K F'] [\u2200 w : Place K F', w.DCoordGenerates]\n    [HasCanonicalDivisor (K := K) (F := F)] [HasCanonicalDivisor (K := K) (F := F')]\n    [FiniteDimensional F F'] [Algebra.IsSeparable F F']\n    (hreg : \u2200 (w : Place K F') (u : F'), u \u2260 0 \u2192 w.ord u = 0 \u2192\n      w.differentialCoeff (KaehlerDifferential.D K F' u) = 0\n        \u2228 0 \u2264 w.ord (w.differentialCoeff (KaehlerDifferential.D K F' u)))\n    (htame : \u2200 w : Place K F', ((w.ramificationIndex F : \u2115) : F') \u2260 0)\n    {\u03c9\u2080 : \u03a9[F\u2044K]} (h\u03c9\u2080 : \u03c9\u2080 \u2260 0) (h\u03c9\u2080' : KaehlerDifferential.map K K F F' \u03c9\u2080 \u2260 0)\n    (hK : Divisor.degree (canonicalDivisorOf (K := K) h\u03c9\u2080) = 2 * (genus K F : \u2124) - 2)\n    (hK' : Divisor.degree (canonicalDivisorOf (K := K) h\u03c9\u2080') = 2 * (genus K F' : \u2124) - 2) :\n    2 * (genus K F' : \u2124) - 2\n      = (Module.finrank F F' : \u2124) * (2 * (genus K F : \u2124) - 2)\n        + \u2211\u1da0 w : Place K F', ((w.ramificationIndex F : \u2124) - 1) * (w.deg : \u2124) :=",
+  "solution_declaration_text_unchanged": true,
+  "original_lines": 1229,
+  "candidate_lines": 26,
+  "verification_status": "source and associated theorem card passed canonical make and kernel checks",
+  "full_original_complete": false,
+  "official_new_solve_credit": 0,
+  "verification_results": [
+    {
+      "kind": "source",
+      "module": "Submission.Supplier.P2M.Sol.S_AlgebraicCurve_two_mul_genus_sub_two_eq_of_degree_canonical",
+      "configuration": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/official-layout/source-reuse/20261012-tame-differential-genus-validation/tame-genus-formula-source.configuration.json",
+      "edited": true,
+      "make_exit": 0,
+      "kernel_exit": 0,
+      "source_unchanged": true,
+      "kernel_seconds": 28.023564042,
+      "warnings": 0,
+      "kernel_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/official-layout/source-reuse/20261012-tame-differential-genus-validation/tame-genus-formula-source.kernel/result.json",
+      "make_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/official-layout/source-reuse/20261012-tame-differential-genus-validation/tame-genus-formula-source.make-terminal.json"
+    },
+    {
+      "kind": "card",
+      "module": "Submission.Supplier.Theorems.Thm_AlgebraicCurve_two_mul_genus_sub_two_eq_of_degree_canonical",
+      "configuration": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/official-layout/source-reuse/20261012-tame-differential-genus-validation/tame-genus-formula-card.configuration.json",
+      "edited": false,
+      "make_exit": 0,
+      "kernel_exit": 0,
+      "source_unchanged": true,
+      "kernel_seconds": 90.589288209,
+      "warnings": 0,
+      "kernel_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/official-layout/source-reuse/20261012-tame-differential-genus-validation/tame-genus-formula-card.kernel/result.json",
+      "make_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/official-layout/source-reuse/20261012-tame-differential-genus-validation/tame-genus-formula-card.make-terminal.json"
+    }
+  ],
+  "verified_at": "2026-10-12T00:41:30.909108+00:00"
+}
