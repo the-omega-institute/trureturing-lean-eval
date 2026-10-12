@@ -1,0 +1,25 @@
+{
+  "provider": "Submission.Supplier.P2M.Sol.S_AlgebraicCurve_Place_ordDifferential_D_eq_zero_of_constantFieldExtension_of_forall_mem",
+  "helper_checks": {
+    "ord_nonneg_of_mem": {
+      "statement_equal": true,
+      "body_equal_ignoring_whitespace": true,
+      "body_equal_ignoring_whitespace_and_semicolon": true
+    },
+    "one_le_ord_of_mem_of_inv_not_mem": {
+      "statement_equal": true,
+      "body_equal_ignoring_whitespace": false,
+      "body_equal_ignoring_whitespace_and_semicolon": true
+    },
+    "mem_iff_ord_nonneg": {
+      "statement_equal": true,
+      "body_equal_ignoring_whitespace": true,
+      "body_equal_ignoring_whitespace_and_semicolon": true
+    }
+  },
+  "helper_scope": "Generic fields K and F, Algebra K F, and v : Place K F; no characteristic hypothesis",
+  "formatting_difference": "one_le_ord_of_mem_of_inv_not_mem places rintro and exact on separate lines in the checked provider",
+  "original_solution_declaration_equal": true,
+  "original_solution_declaration_equal_for": "source-r1 helper-only candidate",
+  "final_source_changes": "Two push_neg\u2192push Not changes, one Finsupp.mapDomain_notin_range\u2192mapDomain_of_notMem_range alias change, and hlift_new\u2192_hlift_new binder name; full hypothesis retained"
+}
