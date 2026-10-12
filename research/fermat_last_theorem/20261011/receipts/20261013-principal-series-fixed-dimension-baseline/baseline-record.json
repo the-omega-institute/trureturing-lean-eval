@@ -1,0 +1,179 @@
+{
+  "at": "2026-10-12T20:16:21.404943+00:00",
+  "baseline_source_card_pair_actual_make_kernel_passed": true,
+  "canonical_solution_byte_identical_to_supplier": true,
+  "canonical_card_byte_identical_to_supplier": true,
+  "cached_import_full_source_replay_and_audit_pending": true,
+  "full_original_proof_retained": true,
+  "original_main_hypotheses_and_conclusion_preserved": true,
+  "original_solution_lines": 2679,
+  "original_card_lines": 13,
+  "checks": {
+    "source": {
+      "module": "Submission.Supplier.P2M.Sol.S_LocalNewvector_PSCarrier_finrank_fixedSubmodule_padicK1_of_add_le",
+      "make_exit": 0,
+      "kernel_exit": 0,
+      "kernel_seconds": 28.909959583,
+      "source_unchanged": true,
+      "compiler_warnings": 32,
+      "direct_dependencies": [
+        {
+          "module": "Submission.Supplier.Definitions.Def_RepTheory_SmoothVectors",
+          "source_bound_cached_controller_record_exit": 0,
+          "separate_kernel_receipt": null,
+          "full_source_replay_and_audit_pending": true
+        },
+        {
+          "module": "Submission.Supplier.Definitions.Def_RepTheory_GL2CongruenceSubgroup",
+          "source_bound_cached_controller_record_exit": 0,
+          "separate_kernel_receipt": null,
+          "full_source_replay_and_audit_pending": true
+        },
+        {
+          "module": "Submission.Supplier.Definitions.Def_LocalLanglands_HeckeCosetLocal",
+          "controller_dependency_record": {
+            "module": "Submission.Supplier.Definitions.Def_LocalLanglands_HeckeCosetLocal",
+            "source_sha256": "92dfebaaeb01ad17036044c7b1a11bcf769cfa10ec0c7e4c9c28b14e112b8b49",
+            "object_sha256": null,
+            "receipt_reused": false
+          },
+          "cached_import_present": true,
+          "separate_kernel_receipt": null,
+          "source_object_binding_not_recorded": true,
+          "full_source_replay_and_audit_pending": true
+        },
+        {
+          "module": "Submission.Supplier.Definitions.Def_LocalLanglands_IntegralSubgroupOpen",
+          "source_bound_cached_controller_record_exit": 0,
+          "separate_kernel_receipt": null,
+          "full_source_replay_and_audit_pending": true
+        },
+        {
+          "module": "Submission.Supplier.Definitions.Def_LocalLanglands_IntegralSubgroupCompact",
+          "source_bound_cached_controller_record_exit": 0,
+          "separate_kernel_receipt": null,
+          "full_source_replay_and_audit_pending": true
+        },
+        {
+          "module": "Submission.Supplier.Definitions.Def_LocalNewvector_CongruenceSubgroupK1",
+          "source_bound_cached_controller_record_exit": 0,
+          "separate_kernel_receipt": null,
+          "full_source_replay_and_audit_pending": true
+        },
+        {
+          "module": "Submission.Supplier.Definitions.Def_LocalNewvector_ConductorDatum",
+          "source_bound_cached_controller_record_exit": 0,
+          "separate_kernel_receipt": null,
+          "full_source_replay_and_audit_pending": true
+        },
+        {
+          "module": "Submission.Supplier.Definitions.Def_LocalNewvector_CharConductor",
+          "source_bound_cached_controller_record_exit": 0,
+          "separate_kernel_receipt": null,
+          "full_source_replay_and_audit_pending": true
+        },
+        {
+          "module": "Submission.Supplier.Definitions.Def_LocalNewvector_PrincipalSeriesCarrier",
+          "source_bound_cached_controller_record_exit": 0,
+          "separate_kernel_receipt": null,
+          "full_source_replay_and_audit_pending": true
+        },
+        {
+          "module": "Submission.Supplier.Theorems.Thm_LocalNewvector_gl2CongruenceSubgroup_le_padicK1",
+          "source_bound_cached_controller_record_exit": 0,
+          "separate_kernel_receipt": null,
+          "full_source_replay_and_audit_pending": true
+        },
+        {
+          "module": "Submission.Supplier.P2M.Util",
+          "source_bound_cached_controller_record_exit": 0,
+          "separate_kernel_receipt": null,
+          "full_source_replay_and_audit_pending": true
+        }
+      ],
+      "solution_axiom_audit": "not printed separately; full-root audit pending",
+      "printed_auxiliary_axiom_closures": [
+        {
+          "declaration": "P2MW.S_LocalNewvector_PSCarrier_finrank_fixedSubmodule_padicK1_of_add_le.FLT.PrincipalSeriesGL2Padic.PSCarrier.finrank_fixedSubmodule_padicK1_of_add_le_impl",
+          "recursive_axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "P2MW.S_LocalNewvector_PSCarrier_finrank_fixedSubmodule_padicK1_of_add_le.FLT.PrincipalSeriesGL2Padic.le_finrank_principalSeries_inf_rightInvariant_padicK1",
+          "recursive_axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "P2MW.S_LocalNewvector_PSCarrier_finrank_fixedSubmodule_padicK1_of_add_le.FLT.PrincipalSeriesGL2Padic.finrank_principalSeries_inf_rightInvariant_padicK1_le",
+          "recursive_axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "P2MW.S_LocalNewvector_PSCarrier_finrank_fixedSubmodule_padicK1_of_add_le.FLT.PrincipalSeriesGL2Padic.PSCarrier.finrank_fixed_padicK1_eq",
+          "recursive_axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ]
+    },
+    "card": {
+      "module": "Submission.Supplier.Theorems.Thm_LocalNewvector_PSCarrier_finrank_fixedSubmodule_padicK1_of_add_le",
+      "make_exit": 0,
+      "kernel_exit": 0,
+      "kernel_seconds": 5.6642607080000005,
+      "source_unchanged": true,
+      "compiler_warnings": 0,
+      "direct_dependencies": [
+        {
+          "module": "Submission.Supplier.Definitions.Def_LocalNewvector_CharConductor",
+          "source_bound_cached_controller_record_exit": 0,
+          "separate_kernel_receipt": null,
+          "full_source_replay_and_audit_pending": true
+        },
+        {
+          "module": "Submission.Supplier.Definitions.Def_LocalNewvector_PrincipalSeriesCarrier",
+          "source_bound_cached_controller_record_exit": 0,
+          "separate_kernel_receipt": null,
+          "full_source_replay_and_audit_pending": true
+        },
+        {
+          "module": "Submission.Supplier.P2M.Util",
+          "source_bound_cached_controller_record_exit": 0,
+          "separate_kernel_receipt": null,
+          "full_source_replay_and_audit_pending": true
+        },
+        {
+          "module": "Submission.Supplier.P2M.Sol.S_LocalNewvector_PSCarrier_finrank_fixedSubmodule_padicK1_of_add_le",
+          "source_bound_cached_controller_record_exit": 0,
+          "separate_kernel_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/48b4ec93af7e15194cd63ae1-1791836027355913000.kernel/result.json",
+          "actual_kernel_exit": 0
+        }
+      ],
+      "solution_axiom_audit": "not printed separately; full-root audit pending",
+      "printed_auxiliary_axiom_closures": []
+    }
+  },
+  "proof_summary": "Retain the complete original 2679-line principal-series fixed-submodule dimension construction and original theorem card. The complete source retains the conductor and carrier constructions, lower and upper dimension bounds, their equality for positive level, and the zero-level case. For the original prime p, characters with conductors n1 and n2, and every m with n1+n2 <= m, the original conclusion remains finrank over C of the padicK1 p m fixed submodule = m-(n1+n2)+1. The original four auxiliary/implementation axiom print commands produced exactly the standard three axioms. The final solution axiom closure was not printed separately. All original assumptions remain; canonical solution and card are byte-identical to supplier originals.",
+  "no_source_change": true,
+  "no_linter_suppression_added": true,
+  "source_axiom_audit_pending": true,
+  "supplier": "anthropics/fermats-last-theorem",
+  "supplier_commit": "6e837e75355538c7f80bab5b956861e86c4eacc2",
+  "full_original_complete": false,
+  "official_new_solve_credit": 0,
+  "jobs": 1,
+  "compilers": 1,
+  "threads": 1,
+  "controller_continues_same_full_FLT_graph": true
+}
