@@ -1,0 +1,77 @@
+{
+  "at": "2026-10-12T20:47:32.724657+00:00",
+  "baseline_source_card_pair_actual_make_kernel_passed": true,
+  "canonical_solution_byte_identical_to_supplier": true,
+  "canonical_card_byte_identical_to_supplier": true,
+  "cached_import_full_source_replay_and_audit_pending": true,
+  "full_original_proof_retained": true,
+  "original_main_hypotheses_and_conclusion_preserved": true,
+  "original_solution_lines": 388,
+  "original_card_lines": 12,
+  "checks": {
+    "source": {
+      "module": "Submission.Supplier.P2M.Sol.S_M4aHerbrand_finrank_sUnit_eq",
+      "make_exit": 0,
+      "kernel_exit": 0,
+      "kernel_seconds": 29.260265708,
+      "source_unchanged": true,
+      "compiler_warnings": 12,
+      "direct_dependencies": [
+        {
+          "module": "Submission.Supplier.P2M.Util",
+          "source_bound_cached_controller_record_exit": 0,
+          "separate_kernel_receipt": null,
+          "full_source_replay_and_audit_pending": true
+        }
+      ],
+      "solution_axiom_audit": "passed: original final solution closure is exactly STANDARD3; full-root audit remains pending",
+      "printed_axiom_closures": [
+        {
+          "declaration": "P2MW.S_M4aHerbrand_finrank_sUnit_eq.solution",
+          "recursive_axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ]
+    },
+    "card": {
+      "module": "Submission.Supplier.Theorems.Thm_M4aHerbrand_finrank_sUnit_eq",
+      "make_exit": 0,
+      "kernel_exit": 0,
+      "kernel_seconds": 7.462407792,
+      "source_unchanged": true,
+      "compiler_warnings": 0,
+      "direct_dependencies": [
+        {
+          "module": "Submission.Supplier.P2M.Util",
+          "source_bound_cached_controller_record_exit": 0,
+          "separate_kernel_receipt": null,
+          "full_source_replay_and_audit_pending": true
+        },
+        {
+          "module": "Submission.Supplier.P2M.Sol.S_M4aHerbrand_finrank_sUnit_eq",
+          "source_bound_cached_controller_record_exit": 0,
+          "separate_kernel_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/98c26f000e760c0f44e98aa7-1791837902461645000.kernel/result.json",
+          "actual_kernel_exit": 0
+        }
+      ],
+      "solution_axiom_audit": "card closure not printed separately; full-root audit pending",
+      "printed_axiom_closures": []
+    }
+  },
+  "proof_summary": "Retain the complete original S-unit finite-generation and rank proof for every number field K and every finite set S of height-one primes of its ring of integers. Both original conclusions are retained: Module.Finite over the integers for the additive S-unit group, and its finrank equal to Nat.card S plus NumberField.Units.rank K. The original statement requires only the stated Field, NumberField and Finite S instances, with no added restrictions on K or S. The full original construction and proof are preserved byte-identically to the supplier. Its actual final solution recursive axiom closure was printed as STANDARD3.",
+  "no_source_change": true,
+  "no_linter_suppression_added": true,
+  "source_axiom_audit_pending": false,
+  "source_solution_axiom_audit_passed": true,
+  "supplier": "anthropics/fermats-last-theorem",
+  "supplier_commit": "6e837e75355538c7f80bab5b956861e86c4eacc2",
+  "full_original_complete": false,
+  "official_new_solve_credit": 0,
+  "jobs": 1,
+  "compilers": 1,
+  "threads": 1,
+  "controller_continues_same_full_FLT_graph": true
+}
