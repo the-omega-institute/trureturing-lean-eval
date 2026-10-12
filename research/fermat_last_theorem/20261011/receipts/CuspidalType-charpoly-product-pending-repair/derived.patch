@@ -1,0 +1,55 @@
+--- original-derived.lean
++++ candidate-derived.lean
+@@ -60,7 +60,7 @@
+     ∏ χ : G →* Kˣ, (X - C ((χ x : Kˣ) : K)) = (X ^ orderOf x - 1) ^ (Nat.card G / orderOf x) := by
+   classical
+   have hN0 : 0 < Nat.card G := Nat.card_pos
+-  haveI : NeZero (Nat.card G) := ⟨hN0.ne'⟩
++  have : NeZero (Nat.card G) := ⟨hN0.ne'⟩
+   obtain ⟨g, hg⟩ := IsCyclic.exists_generator (α := G)
+   have hog : orderOf g = Nat.card G := orderOf_eq_card_of_forall_mem_zpowers hg
+ 
+@@ -123,6 +123,9 @@
+ 
+ variable (q : ℕ) [Fact q.Prime]
+ 
++local instance : AddCommGroup (ZMod q) :=
++  (inferInstance : Ring (ZMod q)).toAddCommGroup
++
+ theorem torus_mulVec_repr (β : (GaloisField q 2)ˣ) (w : GaloisField q 2) :
+     ((torus q β : GL2 q) : Matrix (Fin 2) (Fin 2) (ZMod q)) *ᵥ ⇑((quadBasis q).repr w) =
+       ⇑((quadBasis q).repr ((β : GaloisField q 2) * w)) := by
+@@ -137,9 +140,9 @@
+         (by
+           intro h0
+           have := congrArg (fun u => ((torus q β)⁻¹ : GL2 q).val *ᵥ u) h0
+-          simp only [Matrix.mulVec_mulVec, Matrix.mulVec_zero] at this
++          rw [Matrix.mulVec_mulVec] at this
+           rw [show ((torus q β)⁻¹ : GL2 q).val * ((torus q β : GL2 q) : Matrix (Fin 2) (Fin 2) (ZMod q)) = 1 from
+-            Units.inv_mul _, Matrix.one_mulVec] at this
++            Units.inv_mul _, Matrix.one_mulVec, Matrix.mulVec_zero] at this
+           exact hv this) := by
+   change (Matrix.GeneralLinearGroup.toLin (torus q β)) • Projectivization.mk (ZMod q) v hv = _
+   rw [Projectivization.smul_mk]
+@@ -229,11 +232,11 @@
+   open CuspidalType.IndTorusChar CuspidalType.CycChar in
+ 
+   let Z : Subgroup (GaloisField q 2)ˣ := scalars q
+-  haveI : IsCyclic ((GaloisField q 2)ˣ ⧸ Z) := isCyclic_of_surjective _ (QuotientGroup.mk'_surjective Z)
++  have : IsCyclic ((GaloisField q 2)ˣ ⧸ Z) := isCyclic_of_surjective _ (QuotientGroup.mk'_surjective Z)
+   have hN : Nat.card ((GaloisField q 2)ˣ ⧸ Z) = q + 1 := card_quotient_scalars q
+-  haveI : NeZero (q + 1) := ⟨Nat.succ_ne_zero q⟩
+-
+-  haveI : Fintype (((GaloisField q 2)ˣ ⧸ Z) →* Kˣ) := by
++  have : NeZero (q + 1) := ⟨Nat.succ_ne_zero q⟩
++
++  have : Fintype (((GaloisField q 2)ˣ ⧸ Z) →* Kˣ) := by
+     haveI : HasEnoughRootsOfUnity K (Monoid.exponent ((GaloisField q 2)ˣ ⧸ Z)) := by
+       rw [IsCyclic.exponent_eq_card, hN]; infer_instance
+     exact Fintype.ofFinite _
+@@ -264,3 +267,5 @@
+   rw [hN, ← orderOf_toPermHom_torus] at hprod
+   rw [CuspidalType.charpoly_ind_torus_eq_X_pow_orderOf_sub_one_pow, ← hprod]
+   rfl
++
++#print axioms solution

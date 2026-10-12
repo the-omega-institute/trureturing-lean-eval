@@ -1,0 +1,18 @@
+--- original-derived.lean
++++ candidate-derived.lean
+@@ -99,7 +99,8 @@
+       have h1 : t • α = -(s • (1 : GaloisField q 2)) := eq_neg_of_add_eq_zero_right hst
+       have h2 : α = t⁻¹ • (-(s • (1 : GaloisField q 2))) := by
+         rw [← h1, smul_smul, inv_mul_cancel₀ ht, one_smul]
+-      rw [h2, Algebra.smul_def, Algebra.smul_def, mul_one, map_neg, map_mul, map_inv₀]
++      rw [h2, Algebra.smul_def, Algebra.smul_def, mul_one]
++      simp only [map_neg, map_mul]
+       ring
+   have hcard : Fintype.card (Fin 2) = Module.finrank (ZMod q) (GaloisField q 2) := by
+     rw [Fintype.card_fin, GaloisField.finrank q two_ne_zero]
+@@ -160,3 +161,5 @@
+     (hα : (α : GaloisField q 2) ∉ Set.range (algebraMap (ZMod q) (GaloisField q 2))) (h : GL2 q) :
+     h * torus q α = torus q α * h ↔ h ∈ (torus q).range :=
+   Ws23NV3.main_a q hα h
++
++#print axioms solution

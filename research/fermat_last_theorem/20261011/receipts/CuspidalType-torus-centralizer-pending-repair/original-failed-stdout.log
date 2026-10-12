@@ -1,0 +1,19 @@
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_CuspidalType_mul_torus_eq_torus_mul_iff.lean:102:59: error: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  ?f (-?a)
+in the target expression
+  (algebraMap (ZMod q) (GaloisField q 2)) (-(s * t⁻¹)) =
+    (algebraMap (ZMod q) (GaloisField q 2)) t⁻¹ * -(algebraMap (ZMod q) (GaloisField q 2)) s
+
+case neg
+q : ℕ
+inst✝ : Fact (Nat.Prime q)
+α : GaloisField q 2
+hα : α ∉ Set.range ⇑(algebraMap (ZMod q) (GaloisField q 2))
+x : GaloisField q 2
+s t : ZMod q
+hst : s • 1 + t • α = 0
+ht : ¬t = 0
+h1 : t • α = -(s • 1)
+h2 : α = t⁻¹ • -(s • 1)
+⊢ (algebraMap (ZMod q) (GaloisField q 2)) (-(s * t⁻¹)) =
+    (algebraMap (ZMod q) (GaloisField q 2)) t⁻¹ * -(algebraMap (ZMod q) (GaloisField q 2)) s
