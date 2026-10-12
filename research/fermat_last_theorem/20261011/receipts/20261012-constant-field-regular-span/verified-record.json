@@ -1,0 +1,54 @@
+{
+  "at": "2026-10-12T11:39:19.555813+00:00",
+  "module": "Submission.Supplier.P2M.Sol.S_AlgebraicCurve_mem_span_range_algebraMap_of_constantFieldExtension_of_isAlgClosed",
+  "source": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/P2M/Sol/S_AlgebraicCurve_mem_span_range_algebraMap_of_constantFieldExtension_of_isAlgClosed.lean",
+  "derived": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_AlgebraicCurve_mem_span_range_algebraMap_of_constantFieldExtension_of_isAlgClosed.lean",
+  "card": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/Theorems/Thm_AlgebraicCurve_mem_span_range_algebraMap_of_constantFieldExtension_of_isAlgClosed.lean",
+  "original_lines": 872,
+  "preserved_scope": "Full original regular-at-new-places membership in scalar span conclusion; both algebraically closed constant fields, both curve hypotheses and arbitrary characteristic retained.",
+  "status": "Complete characteristic-free original regular-at-new-places scalar-span conclusion and unchanged theorem card passed canonical make/kernel.",
+  "full_original_complete": false,
+  "official_new_solve_credit": 0,
+  "independent_review_seats": 0,
+  "candidate_lines": 368,
+  "provider": "Submission.Supplier.P2M.Sol.S_AlgebraicCurve_mem_span_range_algebraMap_of_constantFieldExtension",
+  "shared_helper_blocks_equal": true,
+  "complete_solution_declaration_equal": true,
+  "card_unchanged": true,
+  "candidate_status": "verified source-r4 and original card",
+  "complete_solution_statement_equal": true,
+  "verified_reuse_pair": true,
+  "warnings": 0,
+  "axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "checks": {
+    "source": {
+      "configuration": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/official-layout/terminal-proof-repairs/20261012-constant-field-regular-span/source-r4.configuration.json",
+      "kernel_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/official-layout/terminal-proof-repairs/20261012-constant-field-regular-span/source-r4.kernel/result.json",
+      "make_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/official-layout/terminal-proof-repairs/20261012-constant-field-regular-span/source-r4.make-terminal.json",
+      "kernel_exit": 0,
+      "make_exit": 0,
+      "seconds": 48.839361708,
+      "source_unchanged": true
+    },
+    "card": {
+      "configuration": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/official-layout/terminal-proof-repairs/20261012-constant-field-regular-span/card.configuration.json",
+      "kernel_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/official-layout/terminal-proof-repairs/20261012-constant-field-regular-span/card.kernel/result.json",
+      "make_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/official-layout/terminal-proof-repairs/20261012-constant-field-regular-span/card.make-terminal.json",
+      "kernel_exit": 0,
+      "make_exit": 0,
+      "seconds": 50.952471625,
+      "source_unchanged": true
+    }
+  },
+  "initial_success_with_warnings": "source-r3; redundant conversion/unreachable tactic fallback",
+  "source_changes": "504 duplicate helper lines replaced by import of checked identical characteristic-free public W7XH helpers. Full transcendence, valuation-comap, trace, basis and final arguments retained. Seven propositional haveI bindings modernized and one redundant conversion replaced by exact h2.",
+  "final_source_version": "source-r4",
+  "supplier": "anthropics/fermats-last-theorem",
+  "supplier_commit": "6e837e75355538c7f80bab5b956861e86c4eacc2",
+  "official_mathlib": "5e0c4e5239cb0a2d86d68a884bf52cfd963fce22",
+  "lean_toolchain": "leanprover/lean4:v4.35.0-rc3"
+}
