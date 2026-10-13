@@ -1,0 +1,62 @@
+{
+  "at": "2026-10-13T21:58:58.022800+00:00",
+  "checks": {
+    "source": {
+      "module": "Submission.Supplier.P2M.Sol.S_groupCohomology_exists_isGalois_of_isLevelConstant1",
+      "make_exit": 0,
+      "kernel_exit": 0,
+      "kernel_seconds": 61.05409075,
+      "compiler_warnings": 0,
+      "final_standard3_audit_passed": true,
+      "printed_final_axiom_closures": [
+        {
+          "declaration": "P2MW.S_groupCohomology_exists_isGalois_of_isLevelConstant1.solution",
+          "recursive_axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "original_canonical_lines": 66,
+      "repaired_canonical_lines": 66,
+      "original_final_statement_and_full_module_proof_preserved": true
+    },
+    "card": {
+      "module": "Submission.Supplier.Theorems.Thm_groupCohomology_exists_isGalois_of_isLevelConstant1",
+      "make_exit": 0,
+      "kernel_exit": 0,
+      "kernel_seconds": 212.932837958,
+      "compiler_warnings": 0,
+      "final_standard3_audit_passed": true,
+      "printed_final_axiom_closures": [
+        {
+          "declaration": "groupCohomology.exists_isGalois_of_isLevelConstant1",
+          "recursive_axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "original_canonical_lines": 13,
+      "repaired_canonical_lines": 15,
+      "original_final_statement_and_full_module_proof_preserved": true
+    }
+  },
+  "proof_summary": "Preserve the full supplier theorem statement, all original hypotheses, supporting lemmas and proof. Remove only the terminally diagnosed redundant rfl after comap_ker rewriting; preserve the full helper proof. Replace the identical Normal proof convert/rfl block with direct exact of the same IsAlgClosure.normal theorem, update proposition-valued haveI to have while retaining computational Fintype haveI, and append final source/card recursive axiom queries. Every source/card result below is from an actual canonical make/kernel run; pending supplier pairs are not accepted.",
+  "original_statements_hypotheses_and_full_proofs_preserved": true,
+  "repaired_source_card_pair_actual_make_kernel_passed": true,
+  "source_card_actual_final_standard3": true,
+  "no_linter_suppression_added": true,
+  "baseline_source_actual_exit": 1,
+  "supplier": "anthropics/fermats-last-theorem",
+  "supplier_commit": "6e837e75355538c7f80bab5b956861e86c4eacc2",
+  "selected_problem": "fermat_last_theorem",
+  "full_original_complete": false,
+  "official_new_solve_credit": 0,
+  "full_root_import_replay_and_axiom_audit_pending": true,
+  "max_active_flt_jobs": 1,
+  "max_active_flt_compilers": 1,
+  "lean_threads": 1
+}
