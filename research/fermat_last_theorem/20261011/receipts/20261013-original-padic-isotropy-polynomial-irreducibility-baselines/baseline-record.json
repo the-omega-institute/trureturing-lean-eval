@@ -1,0 +1,138 @@
+{
+  "at": "2026-10-13T07:08:29.229529+00:00",
+  "original_source_card_pairs_actual_make_kernel_passed": true,
+  "canonical_pairs_byte_identical_to_supplier": true,
+  "no_source_edits": true,
+  "no_linter_suppression_added": true,
+  "no_redundant_recompilation": true,
+  "original_statements_hypotheses_and_proofs_preserved": true,
+  "checks": {
+    "Padic_exists_ternary_isotropic_of_sq_eq_smul_of_anticommute": {
+      "proof_summary": "For any additive commutative group A, arbitrary natural prime ell, an additive equivalence between ell-power rank-two torsion and the indicated torsion subgroup for every n, arbitrary integer u and v and arbitrary additive endomorphisms i and j squaring to the respective scalar maps and anticommuting on every element, retain existence of a nonzero p-adic triple z,x,y satisfying z^2-u*x^2-v*y^2=0. Preserve the original quaternion norm identity, finite-fibre counting and primitive vector extraction at every depth, compactness of p-adic integral vectors with a unit coordinate, geometric norm bound and final algebraic conversion to the ternary form. No odd-prime or nonzero-u/v assumption is added.",
+      "checks": {
+        "source": {
+          "module": "Submission.Supplier.P2M.Sol.S_Padic_exists_ternary_isotropic_of_sq_eq_smul_of_anticommute",
+          "canonical_lines": 370,
+          "canonical_byte_identical_to_supplier": true,
+          "make_exit": 0,
+          "kernel_exit": 0,
+          "kernel_seconds": 111.071436917,
+          "compiler_warnings": 2,
+          "source_unchanged_during_check": true,
+          "printed_final_axiom_closures": [],
+          "separate_final_axiom_audit_pending": true,
+          "direct_dependencies": [
+            {
+              "module": "Submission.Supplier.P2M.Util",
+              "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+              "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+              "receipt_reused": true
+            }
+          ]
+        },
+        "card": {
+          "module": "Submission.Supplier.Theorems.Thm_Padic_exists_ternary_isotropic_of_sq_eq_smul_of_anticommute",
+          "canonical_lines": 5,
+          "canonical_byte_identical_to_supplier": true,
+          "make_exit": 0,
+          "kernel_exit": 0,
+          "kernel_seconds": 47.784807084,
+          "compiler_warnings": 0,
+          "source_unchanged_during_check": true,
+          "printed_final_axiom_closures": [],
+          "separate_final_axiom_audit_pending": true,
+          "direct_dependencies": [
+            {
+              "module": "Submission.Supplier.P2M.Util",
+              "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+              "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.P2M.Sol.S_Padic_exists_ternary_isotropic_of_sq_eq_smul_of_anticommute",
+              "source_sha256": "1d0e7e566e9de6ad32fcb1bfdcc1693827dfd1995a7f12306284bd4beac60b37",
+              "object_sha256": "aafced928ffbe6f5c333d80bbee580d29456cc8bdfa20bdabf198a9f6a3e010a",
+              "receipt_reused": true
+            }
+          ]
+        }
+      }
+    },
+    "Polynomial_X_pow_sub_C_irreducible_of_isCoprime_apply": {
+      "proof_summary": "For any field F, any integer-valued function v additive on products of nonzero inputs, any positive natural n and any nonzero field element a with IsCoprime (v a) n, retain irreducibility of X^n-C a. Preserve the full supplier proof using an irreducible factor, its adjoined root and algebra norm, the valuation equality forcing divisibility of the factor degree by n, and the positive upper and lower degree bounds. No discrete-valuation, surjectivity, characteristic, or extra valuation law is added.",
+      "checks": {
+        "source": {
+          "module": "Submission.Supplier.P2M.Sol.S_Polynomial_X_pow_sub_C_irreducible_of_isCoprime_apply",
+          "canonical_lines": 60,
+          "canonical_byte_identical_to_supplier": true,
+          "make_exit": 0,
+          "kernel_exit": 0,
+          "kernel_seconds": 12.72004425,
+          "compiler_warnings": 0,
+          "source_unchanged_during_check": true,
+          "printed_final_axiom_closures": [],
+          "separate_final_axiom_audit_pending": true,
+          "direct_dependencies": [
+            {
+              "module": "Submission.Supplier.P2M.Util",
+              "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+              "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+              "receipt_reused": true
+            }
+          ]
+        },
+        "card": {
+          "module": "Submission.Supplier.Theorems.Thm_Polynomial_X_pow_sub_C_irreducible_of_isCoprime_apply",
+          "canonical_lines": 10,
+          "canonical_byte_identical_to_supplier": true,
+          "make_exit": 0,
+          "kernel_exit": 0,
+          "kernel_seconds": 12.49868725,
+          "compiler_warnings": 0,
+          "source_unchanged_during_check": true,
+          "printed_final_axiom_closures": [],
+          "separate_final_axiom_audit_pending": true,
+          "direct_dependencies": [
+            {
+              "module": "Submission.Supplier.P2M.Util",
+              "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+              "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.P2M.Sol.S_Polynomial_X_pow_sub_C_irreducible_of_isCoprime_apply",
+              "source_sha256": "3eb70aa1904f6114186b1342a8a849a9f29d46a544e0c77e09fcaccbea303255",
+              "object_sha256": "1dbe4c69a6a9fd7b553db2cc5e5f68d6c1039fb83588524f317666b0e2f55d8d",
+              "receipt_reused": true
+            }
+          ]
+        }
+      }
+    }
+  },
+  "supplier": "anthropics/fermats-last-theorem",
+  "supplier_commit": "6e837e75355538c7f80bab5b956861e86c4eacc2",
+  "full_original_complete": false,
+  "official_new_solve_credit": 0,
+  "complete_import_replay_and_recursive_axiom_audits_pending": true,
+  "selected_problem": "fermat_last_theorem",
+  "max_active_flt_jobs": 1,
+  "max_active_flt_compilers": 1,
+  "lean_threads": 1,
+  "graph_snapshot": {
+    "compiled": 7870,
+    "failed": 0,
+    "ready": 4374,
+    "root_compiled": false,
+    "workers": 1,
+    "running": {
+      "Submission.Supplier.P2M.Sol.S_minpoly_eq_X_pow_sub_C_of_isCoprime_apply": {
+        "pid": 84361,
+        "make_wrapper_pid": 42916,
+        "phase": "kernel",
+        "sha256": "a4183522793a99b508fb35cd955b5894c2bb41e99361081ff095e78d5d153244",
+        "configuration": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/756f78ab5f78fc5f9a0c3e55-1791875243747893000.configuration.json"
+      }
+    }
+  }
+}
