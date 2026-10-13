@@ -1,0 +1,93 @@
+{
+  "at": "2026-10-13T12:37:14.371640+00:00",
+  "original_source_card_pairs_actual_make_kernel_passed": true,
+  "canonical_pairs_byte_identical_to_supplier": true,
+  "no_source_edits": true,
+  "no_linter_suppression_added": true,
+  "no_redundant_recompilation": true,
+  "original_statements_hypotheses_and_proofs_preserved": true,
+  "checks": {
+    "WeierstrassCurve_Affine_Point_exists_zsmul_eq_of_isAlgClosed": {
+      "proof_summary": "Preserve an arbitrary algebraically closed field K with DecidableEq, an elliptic Weierstrass curve E over K, any integer n with n nonzero as an integer, and an arbitrary affine point P. Retain existence of an affine point Q with n times Q equal P. Preserve the complete 376-line supplier source, including all supporting division-polynomial identities, consecutive squared-division-polynomial coprimality, Jacobian-to-affine multiplication formula, Phi/PsiSq coprimality, polynomial degree and root construction, positive natural multiplication surjectivity, and the sign reduction for negative integers. No nonzero cast of n in K, characteristic-zero, characteristic-coprimality or prime-order assumption is added; the statement and full proof remain characteristic independent.",
+      "checks": {
+        "source": {
+          "module": "Submission.Supplier.P2M.Sol.S_WeierstrassCurve_Affine_Point_exists_zsmul_eq_of_isAlgClosed",
+          "canonical_lines": 376,
+          "canonical_byte_identical_to_supplier": true,
+          "make_exit": 0,
+          "kernel_exit": 0,
+          "kernel_seconds": 18.957628708,
+          "compiler_warnings": 4,
+          "source_unchanged_during_check": true,
+          "printed_final_axiom_closures": [],
+          "separate_final_axiom_audit_pending": true,
+          "direct_dependencies": [
+            {
+              "module": "Submission.Supplier.Definitions.Def_WeierstrassCurve_EDSEngine",
+              "source_sha256": "53930f3a3f7d8e8efbd2fec92fa44e2aaee32540b7659d5ec1ad24f2d9c0d071",
+              "object_sha256": "4af60ae4dde0bc897bf795b190c700accefde269d3ff01687289653969f643d8",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.P2M.Util",
+              "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+              "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+              "receipt_reused": true
+            }
+          ]
+        },
+        "card": {
+          "module": "Submission.Supplier.Theorems.Thm_WeierstrassCurve_Affine_Point_exists_zsmul_eq_of_isAlgClosed",
+          "canonical_lines": 7,
+          "canonical_byte_identical_to_supplier": true,
+          "make_exit": 0,
+          "kernel_exit": 0,
+          "kernel_seconds": 72.606381916,
+          "compiler_warnings": 0,
+          "source_unchanged_during_check": true,
+          "printed_final_axiom_closures": [],
+          "separate_final_axiom_audit_pending": true,
+          "direct_dependencies": [
+            {
+              "module": "Submission.Supplier.P2M.Util",
+              "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+              "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.P2M.Sol.S_WeierstrassCurve_Affine_Point_exists_zsmul_eq_of_isAlgClosed",
+              "source_sha256": "4ffcf6cf68d7976c952e84c651d6c5fe935c549fa96016f5a5d9837cff5a4ec0",
+              "object_sha256": "d26c4be4d17214f5f910c7ca053cc53fc87de00862e5313d82b4ddf2c785ffb0",
+              "receipt_reused": true
+            }
+          ]
+        }
+      }
+    }
+  },
+  "supplier": "anthropics/fermats-last-theorem",
+  "supplier_commit": "6e837e75355538c7f80bab5b956861e86c4eacc2",
+  "full_original_complete": false,
+  "official_new_solve_credit": 0,
+  "complete_import_replay_and_recursive_axiom_audits_pending": true,
+  "selected_problem": "fermat_last_theorem",
+  "max_active_flt_jobs": 1,
+  "max_active_flt_compilers": 1,
+  "lean_threads": 1,
+  "graph_snapshot": {
+    "compiled": 8002,
+    "failed": 0,
+    "ready": 4354,
+    "root_compiled": false,
+    "workers": 1,
+    "running": {
+      "Submission.Supplier.P2M.Sol.S_WeierstrassCurve_Affine_eq_zero_of_forall_transEquiv_eq": {
+        "pid": 15727,
+        "make_wrapper_pid": 15727,
+        "phase": "canonical_make_queue",
+        "sha256": "cd4c38d9cae351072fd9275ce035dd83e939cfeaf8551a2b7a8259ecc09e1002",
+        "configuration": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/f286c0ff542278dc2615c256-1791894990384754000.configuration.json"
+      }
+    }
+  }
+}
