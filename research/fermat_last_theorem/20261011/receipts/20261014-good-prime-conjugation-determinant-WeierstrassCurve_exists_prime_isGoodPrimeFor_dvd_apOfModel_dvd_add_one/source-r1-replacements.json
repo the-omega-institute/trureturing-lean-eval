@@ -1,0 +1,27 @@
+[
+  [
+    "  have hdetτ : LinearMap.det (ρ τ) = -1 := by\n    rw [← hdetc, ← hρ, hconj, map_mul, map_mul, mul_comm (LinearMap.det (ρ γ)), mul_assoc, ← map_mul,\n      hinv₂, map_one, mul_one]",
+    "  have hdetτ : LinearMap.det (ρ τ) = -1 := by\n    have h : LinearMap.det (ρ complexConjugation) = (-1 : ZMod p) := hdetc\n    rw [hconj, map_mul, map_mul, mul_comm (LinearMap.det (ρ γ)), mul_assoc, ← map_mul,\n      hinv₂, map_one, mul_one] at h\n    exact h",
+    1
+  ],
+  [
+    "      rw [← h10det, hdetτ]; ring",
+    "      rw [← h10det, hdetτ]\n      exact neg_add_cancel (1 : ZMod p)",
+    1
+  ],
+  [
+    "\n  haveI : Fact p.Prime := ⟨hp⟩\n",
+    "\n  have : Fact p.Prime := ⟨hp⟩\n",
+    1
+  ],
+  [
+    "\n  haveI : E.IsElliptic := isElliptic_map_of_Δ_ne_zero W hΔ\n",
+    "\n  have : E.IsElliptic := isElliptic_map_of_Δ_ne_zero W hΔ\n",
+    1
+  ],
+  [
+    "\n  haveI := hLfin\n",
+    "\n  have := hLfin\n",
+    1
+  ]
+]

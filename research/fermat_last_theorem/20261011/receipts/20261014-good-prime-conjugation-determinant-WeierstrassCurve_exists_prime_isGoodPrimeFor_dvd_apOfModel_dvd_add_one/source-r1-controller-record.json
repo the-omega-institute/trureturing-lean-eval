@@ -1,0 +1,86 @@
+{
+  "sha256": "ad519efe40428b5106780e366ff7b2a9e328fc8f7b3ba0f99e697fcfe3647948",
+  "exit": 0,
+  "empty_output_retry_done": false,
+  "source_sha256_after": "ad519efe40428b5106780e366ff7b2a9e328fc8f7b3ba0f99e697fcfe3647948",
+  "source_unchanged": true,
+  "olean_sha256": "2020a096c3123e8d27b5625a51d8f28d37e31e6d187dbdf4978165056b7a18c3",
+  "seconds": 44.01804104199982,
+  "pid": 77332,
+  "command": [
+    "/Users/macstudio/.local/omega-shims/lean",
+    "-j1",
+    "--trust=0",
+    "-Ddebug.skipKernelTC=false",
+    "-R",
+    "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src",
+    "-o",
+    "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-build/lib/lean/Submission/Supplier/P2M/Sol/S_WeierstrassCurve_exists_prime_isGoodPrimeFor_dvd_apOfModel_dvd_add_one.olean",
+    "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_WeierstrassCurve_exists_prime_isGoodPrimeFor_dvd_apOfModel_dvd_add_one.lean"
+  ],
+  "make_wrapper_pid": 76042,
+  "make_exit": 0,
+  "make_entry_failed": false,
+  "cache_binding_valid": true,
+  "canonical_make_running_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/bddf8cd69d5342c9c2ddbd73-1791912003191955000.make-running.json",
+  "canonical_make_terminal_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/bddf8cd69d5342c9c2ddbd73-1791912003191955000.make-terminal.json",
+  "kernel_terminal_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/bddf8cd69d5342c9c2ddbd73-1791912003191955000.kernel/result.json",
+  "direct_dependencies": [
+    {
+      "module": "Submission.Supplier.Definitions.Def_FLTPrelim_Modularity",
+      "source_sha256": "cd80952a6230452e6aaa5edf715476e07b302f0997d2402dfcf314c5c07d2219",
+      "object_sha256": "f469fdbf80c45b247e2d1cb30e2d93a46b3bc393fe5f91f8fa89e627ae837b77",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Definitions.Def_GaloisRep_ComplexConjugation",
+      "source_sha256": "b5c7aa4587998f2aff2beb67fa7d6ebf5880fc18ff87a6c32d762036597267fe",
+      "object_sha256": "331b9c2b5bfa4ee8bfb943d68a5a23cda04700feac7410acf6659ed1e6ac98ca",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Definitions.Def_TaylorWiles_Primes",
+      "source_sha256": "008cdabba3448a2117aec711ec76ec7388039b8bbbdf42b6a13eed49829f4de6",
+      "object_sha256": "45409b98f6ef25ef58dfd0f260c2f7ed3c3b2ced3b0614e2d60bef2faa21c4b9",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Theorems.Thm_FrobeniusDensity_exists_frobenius_conj_of_mul_self_eq_one_of_statement",
+      "source_sha256": "3627d0218452f87862d532f55ddcfd559d7172a8b9a274e341f28d3685b3c773",
+      "object_sha256": "5a88557f2036ce6d9d83cd7f489758dc5a639df7564c4c5bf1e068a0084ba871",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Theorems.Thm_WeierstrassCurve_galoisTrace_complexConjugation_eq_zero_and_det_eq_neg_one",
+      "source_sha256": "aa11a76cc0931280076f3c3df0e43812bccbd27c3565d8777ce8475ecb883d68",
+      "object_sha256": "0ffe91ae28b36080e57d41b280ba3710eaa8be9606bd07581874cc4350d76a99",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Theorems.Thm_FrobeniusDensity_statement",
+      "source_sha256": "f1ec83f20258cab91d1fee617eccce925c3cb24a90564e17a267c8cd59fb9f96",
+      "object_sha256": "15cd2561037d99f99ef30afef64926b595b8a38dc2c6c3e048cedd84f67b16ca",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Theorems.Thm_WeierstrassCurve_IsIntegralModelOf_galoisTrace_det_frobenius",
+      "source_sha256": "84fc4317beded657c468ff09d4a9b8d7facc8fcf9a6ee60c8fe890817f3a3748",
+      "object_sha256": "f66fec1310c9f832a768f251657184925ce022194cb885828745a82b4eb08045",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Theorems.Thm_WeierstrassCurve_galoisRepModuleEnd_factorsThroughFiniteLevel",
+      "source_sha256": "3115c369ca3d74a8cb2b3dca8769e7577779cd2979ede7e4bc45edde62cfedba",
+      "object_sha256": "66f45ed91026fe0e35d6279fa49a1883d7ea35a3b84c0d31abe587f41583d838",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.P2M.Util",
+      "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+      "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+      "receipt_reused": true
+    }
+  ],
+  "stdout": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/bddf8cd69d5342c9c2ddbd73-1791912003191955000.kernel/stdout.log",
+  "stderr": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/bddf8cd69d5342c9c2ddbd73-1791912003191955000.kernel/stderr.log"
+}

@@ -1,0 +1,62 @@
+{
+  "at": "2026-10-13T17:23:19.871247+00:00",
+  "checks": {
+    "source": {
+      "module": "Submission.Supplier.P2M.Sol.S_WeierstrassCurve_exists_prime_isGoodPrimeFor_dvd_apOfModel_dvd_add_one",
+      "make_exit": 0,
+      "kernel_exit": 0,
+      "kernel_seconds": 31.544427875,
+      "compiler_warnings": 0,
+      "final_standard3_audit_passed": true,
+      "printed_final_axiom_closures": [
+        {
+          "declaration": "P2MW.S_WeierstrassCurve_exists_prime_isGoodPrimeFor_dvd_apOfModel_dvd_add_one.solution",
+          "recursive_axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "original_canonical_lines": 102,
+      "repaired_canonical_lines": 105,
+      "original_final_statement_and_full_module_proof_preserved": true
+    },
+    "card": {
+      "module": "Submission.Supplier.Theorems.Thm_WeierstrassCurve_exists_prime_isGoodPrimeFor_dvd_apOfModel_dvd_add_one",
+      "make_exit": 0,
+      "kernel_exit": 0,
+      "kernel_seconds": 79.627185208,
+      "compiler_warnings": 0,
+      "final_standard3_audit_passed": true,
+      "printed_final_axiom_closures": [
+        {
+          "declaration": "WeierstrassCurve.exists_prime_isGoodPrimeFor_dvd_apOfModel_dvd_add_one",
+          "recursive_axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "original_canonical_lines": 12,
+      "repaired_canonical_lines": 14,
+      "original_final_statement_and_full_module_proof_preserved": true
+    }
+  },
+  "proof_summary": "Preserve the complete 102-line supplier source and 12-line card: for every integral Weierstrass W with nonzero discriminant, every prime p and every finite exclusion set S, construct a prime q outside S with good reduction and both original p-divisibility conclusions. Retain the full integral-model construction, finite Galois level, Frobenius density, conjugation, trace/determinant transport and ZMod divisibility proof. Rewrite the positive determinant expression in the original complex-conjugation hypothesis rather than its negative-one RHS, use neg_add_cancel for the final scalar equality, and fix all warning-directed proposition declarations. All original hypotheses and proof branches remain; actual final source/card make/kernel zero, zero warnings, exactly STANDARD3 and matching dependencies are required.",
+  "original_statements_hypotheses_and_full_proofs_preserved": true,
+  "repaired_source_card_pair_actual_make_kernel_passed": true,
+  "source_card_actual_final_standard3": true,
+  "no_linter_suppression_added": true,
+  "baseline_source_actual_exit": 1,
+  "supplier": "anthropics/fermats-last-theorem",
+  "supplier_commit": "6e837e75355538c7f80bab5b956861e86c4eacc2",
+  "selected_problem": "fermat_last_theorem",
+  "full_original_complete": false,
+  "official_new_solve_credit": 0,
+  "full_root_import_replay_and_axiom_audit_pending": true,
+  "max_active_flt_jobs": 1,
+  "max_active_flt_compilers": 1,
+  "lean_threads": 1
+}
