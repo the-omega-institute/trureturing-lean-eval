@@ -1,0 +1,47 @@
+{
+  "at": "2026-10-13T22:43:20.091239+00:00",
+  "name": "groupCohomology_levelCoboundaries2_le_levelCocycles2",
+  "state": "candidate only; unapplied and uncompiled",
+  "revision": "r1",
+  "selected_problem": "fermat_last_theorem",
+  "supplier": "anthropics/fermats-last-theorem",
+  "supplier_commit": "6e837e75355538c7f80bab5b956861e86c4eacc2",
+  "basis": "Both complete P2mS26U1 helper sections in the candidate match the actually accepted r166 source exactly; main proof and all original hypotheses preserved.",
+  "basis_source": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/P2M/Sol/S_groupCohomology_exists_isGalois_of_isLevelConstant1.lean",
+  "basis_accepted_record": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/official-layout/terminal-proof-repairs/20261013-shared-normal-proof-api/groupCohomology_exists_isGalois_of_isLevelConstant1/accepted-repair-record.json",
+  "changes": [
+    "Remove one redundant rfl after MonoidHom.comap_ker rewriting.",
+    "Replace differing original Normal convert/Subsingleton proof with the same direct exact IsAlgClosure.normal proof already accepted in r166.",
+    "Replace proposition-valued haveI by have; no computational Fintype haveI occurs in this original.",
+    "Append exact final source/card recursive axiom queries."
+  ],
+  "scope": "Original arbitrary CommRing k, Group G, representation M and original elementwise finite-extension invariance hsm preserved. All kernel, normality, finite-index, finite Galois level, both-sided invariance, finite image of the primitive, simultaneous finite coefficient level, and complete level-coboundary-to-level-cocycle proof branches retained. No finite-group, finite-dimensional coefficient, or extra subgroup normality assumption added.",
+  "counts": {
+    "source": {
+      "original_lines": 115,
+      "candidate_lines": 115
+    },
+    "card": {
+      "original_lines": 13,
+      "candidate_lines": 15
+    }
+  },
+  "complete_original_statement_hypotheses_helpers_and_proofs_preserved": true,
+  "canonical_source_card_edited": false,
+  "adapted_source_card_edited": false,
+  "two_complete_helper_sections_match_accepted_r166_source": true,
+  "source_card_actual_make_kernel_and_axiom_verification_pending": true,
+  "zero_warning_verification_pending": true,
+  "kernel_success_claimed": false,
+  "new_compilers_spawned": 0,
+  "full_original_complete": false,
+  "official_new_solve_credit": 0,
+  "files": [
+    "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/official-layout/terminal-proof-repairs/20261014-level-coboundary-kernel-candidate/candidate-canonical-source-r1.lean",
+    "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/official-layout/terminal-proof-repairs/20261014-level-coboundary-kernel-candidate/candidate-adapted-source-r1.lean",
+    "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/official-layout/terminal-proof-repairs/20261014-level-coboundary-kernel-candidate/candidate-canonical-card-r1.lean",
+    "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/official-layout/terminal-proof-repairs/20261014-level-coboundary-kernel-candidate/candidate-adapted-card-r1.lean",
+    "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/official-layout/terminal-proof-repairs/20261014-level-coboundary-kernel-candidate/source-r1-replacements.json"
+  ],
+  "next_action": "Preserve untouched originals until the existing single-worker controller actually reports a matching terminal failure; then check active/queued import closure before applying and require actual source/card make/kernel0, zero warnings, STANDARD3 and current dependency bindings before acceptance."
+}
