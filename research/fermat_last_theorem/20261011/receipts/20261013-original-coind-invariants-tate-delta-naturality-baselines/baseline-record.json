@@ -1,0 +1,174 @@
+{
+  "at": "2026-10-13T09:54:01.989057+00:00",
+  "original_source_card_pairs_actual_make_kernel_passed": true,
+  "canonical_pairs_byte_identical_to_supplier": true,
+  "no_source_edits": true,
+  "no_linter_suppression_added": true,
+  "no_redundant_recompilation": true,
+  "original_statements_hypotheses_and_proofs_preserved": true,
+  "checks": {
+    "Rep_nonempty_invariants_coind_linearEquiv_invariants": {
+      "proof_summary": "For an arbitrary commutative ring k, group G, subgroup S and k-representation N of S, retain existence of a k-linear equivalence between invariants of Rep.coind S.subtype N and invariants of N. Preserve evaluation at the identity, the inverse constant function, linearity and both inverse proofs. No finite-index, finite-group, normality or finite-dimensionality hypothesis is added.",
+      "checks": {
+        "source": {
+          "module": "Submission.Supplier.P2M.Sol.S_Rep_nonempty_invariants_coind_linearEquiv_invariants",
+          "canonical_lines": 33,
+          "canonical_byte_identical_to_supplier": true,
+          "make_exit": 0,
+          "kernel_exit": 0,
+          "kernel_seconds": 12.545034875,
+          "compiler_warnings": 0,
+          "source_unchanged_during_check": true,
+          "printed_final_axiom_closures": [],
+          "separate_final_axiom_audit_pending": true,
+          "direct_dependencies": [
+            {
+              "module": "Submission.Supplier.P2M.Util",
+              "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+              "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+              "receipt_reused": true
+            }
+          ]
+        },
+        "card": {
+          "module": "Submission.Supplier.Theorems.Thm_Rep_nonempty_invariants_coind_linearEquiv_invariants",
+          "canonical_lines": 11,
+          "canonical_byte_identical_to_supplier": true,
+          "make_exit": 0,
+          "kernel_exit": 0,
+          "kernel_seconds": 71.660208625,
+          "compiler_warnings": 0,
+          "source_unchanged_during_check": true,
+          "printed_final_axiom_closures": [],
+          "separate_final_axiom_audit_pending": true,
+          "direct_dependencies": [
+            {
+              "module": "Submission.Supplier.P2M.Util",
+              "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+              "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.P2M.Sol.S_Rep_nonempty_invariants_coind_linearEquiv_invariants",
+              "source_sha256": "861236d9d6adaec1c039e58312cfda4cde787b94fd2ae1d91519117631d5b40d",
+              "object_sha256": "da90e03f6d0b15ee680b467544558d7caf2da453a6ad9f7aa8b5c20cb1882b23",
+              "receipt_reused": true
+            }
+          ]
+        }
+      }
+    },
+    "Rep_tateDelta_naturality": {
+      "proof_summary": "For an arbitrary commutative ring k, finite group G, short exact representation complexes X and Y, any morphism tau between them and every integer n, retain naturality of the Tate connecting map: tateDelta hX n followed by tateMap tau1 (n+1) equals tateMap tau3 n followed by tateDelta hY n. Preserve positive-degree cohomology naturality, the degree-zero seam, the negative-one invariant/coinvariant seam, the negative-two homology seam, and all lower negative homology degrees. No integer range, exactness hypothesis, ring or complex is restricted.",
+      "checks": {
+        "source": {
+          "module": "Submission.Supplier.P2M.Sol.S_Rep_tateDelta_naturality",
+          "canonical_lines": 101,
+          "canonical_byte_identical_to_supplier": true,
+          "make_exit": 0,
+          "kernel_exit": 0,
+          "kernel_seconds": 84.278902583,
+          "compiler_warnings": 0,
+          "source_unchanged_during_check": true,
+          "printed_final_axiom_closures": [],
+          "separate_final_axiom_audit_pending": true,
+          "direct_dependencies": [
+            {
+              "module": "Submission.Supplier.Definitions.Def_GroupCohomology_TateCohomology",
+              "source_sha256": "945d08a532ddf3320bc429f4d1c13cc1e331a24479fb3c1ee501d3fb74a345e3",
+              "object_sha256": null,
+              "receipt_reused": false
+            },
+            {
+              "module": "Submission.Supplier.Definitions.Def_GroupCohomology_TateSeam",
+              "source_sha256": "da641e68f33e1f2f8b330ea7e740cb2c8542dcc18c5b1fcc0591b206912a2133",
+              "object_sha256": "9722d0da5e28026661b0fcd11a8adf8d6272cb984ebc68e10f97aecdb181e1b6",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.Definitions.Def_GroupCohomology_TateShiftMaps",
+              "source_sha256": "de5509563b9147fb63a78bcf7837f1fdff275b9fefeec46051aa6bd6d2537548",
+              "object_sha256": "b4d8e5d2f63695d8992eba36aad82b796c8b1e57ea04d3347f59ad994045cee3",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.P2M.Util",
+              "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+              "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+              "receipt_reused": true
+            }
+          ]
+        },
+        "card": {
+          "module": "Submission.Supplier.Theorems.Thm_Rep_tateDelta_naturality",
+          "canonical_lines": 13,
+          "canonical_byte_identical_to_supplier": true,
+          "make_exit": 0,
+          "kernel_exit": 0,
+          "kernel_seconds": 6.153131959,
+          "compiler_warnings": 0,
+          "source_unchanged_during_check": true,
+          "printed_final_axiom_closures": [],
+          "separate_final_axiom_audit_pending": true,
+          "direct_dependencies": [
+            {
+              "module": "Submission.Supplier.Definitions.Def_GroupCohomology_TateCohomology",
+              "source_sha256": "945d08a532ddf3320bc429f4d1c13cc1e331a24479fb3c1ee501d3fb74a345e3",
+              "object_sha256": null,
+              "receipt_reused": false
+            },
+            {
+              "module": "Submission.Supplier.Definitions.Def_GroupCohomology_TateSeam",
+              "source_sha256": "da641e68f33e1f2f8b330ea7e740cb2c8542dcc18c5b1fcc0591b206912a2133",
+              "object_sha256": "9722d0da5e28026661b0fcd11a8adf8d6272cb984ebc68e10f97aecdb181e1b6",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.Definitions.Def_GroupCohomology_TateShiftMaps",
+              "source_sha256": "de5509563b9147fb63a78bcf7837f1fdff275b9fefeec46051aa6bd6d2537548",
+              "object_sha256": "b4d8e5d2f63695d8992eba36aad82b796c8b1e57ea04d3347f59ad994045cee3",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.P2M.Util",
+              "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+              "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.P2M.Sol.S_Rep_tateDelta_naturality",
+              "source_sha256": "e0dc773e6f928e7f172a9f12cefd4673ae6c60493e5704c19f3349d320769e79",
+              "object_sha256": "66dbdca8e7dff4a391e4ea3938f8ff3ef10d82c7e77dc2ecb580be71c9c5ddd6",
+              "receipt_reused": true
+            }
+          ]
+        }
+      }
+    }
+  },
+  "supplier": "anthropics/fermats-last-theorem",
+  "supplier_commit": "6e837e75355538c7f80bab5b956861e86c4eacc2",
+  "full_original_complete": false,
+  "official_new_solve_credit": 0,
+  "complete_import_replay_and_recursive_axiom_audits_pending": true,
+  "selected_problem": "fermat_last_theorem",
+  "max_active_flt_jobs": 1,
+  "max_active_flt_compilers": 1,
+  "lean_threads": 1,
+  "graph_snapshot": {
+    "compiled": 7934,
+    "failed": 0,
+    "ready": 4369,
+    "root_compiled": false,
+    "workers": 1,
+    "running": {
+      "Submission.Supplier.P2M.Sol.S_Representation_exists_basis_toMatrix_mem_subfield_of_trace_det_mem_of_hasEigenvalue": {
+        "pid": 27887,
+        "make_wrapper_pid": 27887,
+        "phase": "canonical_make_queue",
+        "sha256": "b5f527dce3906301ac7d11de79777933052441a2ebb6b3936e99b35fa61c0729",
+        "configuration": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/5c5315c7a6f1821982dedced-1791885180146150000.configuration.json"
+      }
+    }
+  }
+}
