@@ -1,0 +1,62 @@
+{
+  "sha256": "34ea2c1b3dc6daac9e9e56694d31fffc04f808467e6674e7b9bfd58a221d35b1",
+  "exit": 0,
+  "empty_output_retry_done": false,
+  "source_sha256_after": "34ea2c1b3dc6daac9e9e56694d31fffc04f808467e6674e7b9bfd58a221d35b1",
+  "source_unchanged": true,
+  "olean_sha256": "66be9cce0b327caa4fa258daecaf5d0424b4c5ad83a5f2da67059bf73f25f026",
+  "seconds": 107.65861608299997,
+  "pid": 50219,
+  "command": [
+    "/Users/macstudio/.local/omega-shims/lean",
+    "-j1",
+    "--trust=0",
+    "-Ddebug.skipKernelTC=false",
+    "-R",
+    "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src",
+    "-o",
+    "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-build/lib/lean/Submission/Supplier/P2M/Sol/S_ModularCurve_geomAut_atkinLehner_comp_legs.olean",
+    "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_ModularCurve_geomAut_atkinLehner_comp_legs.lean"
+  ],
+  "make_wrapper_pid": 93405,
+  "make_exit": 0,
+  "make_entry_failed": false,
+  "cache_binding_valid": true,
+  "canonical_make_running_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/526cbc4ac76aca69a654b8ee-1791854622977296000.make-running.json",
+  "canonical_make_terminal_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/526cbc4ac76aca69a654b8ee-1791854622977296000.make-terminal.json",
+  "kernel_terminal_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/526cbc4ac76aca69a654b8ee-1791854622977296000.kernel/result.json",
+  "direct_dependencies": [
+    {
+      "module": "Submission.Supplier.Definitions.Def_ModularCurve_AtkinLehnerPartial",
+      "source_sha256": "c28657e8d547c602c05cadabe9b17d07a0a1bf08668e314f0f46075f3b96a520",
+      "object_sha256": "c0ae1e875e1cbb8fe09d14fd778a1e1c27ef45bef7f56571b5aed1e1fec56532",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Definitions.Def_ModularCurve_HeckeOperator",
+      "source_sha256": "2f80c1daa09e6bdb1072b2e199a2202bebeb42f9f3cac9cf105d134faad03e49",
+      "object_sha256": "81ae5d0b03011faf9a957293ad41842eecbf2488cd675873a1d7157732caa973",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Definitions.Def_ModularCurve_GeometricBaseChange",
+      "source_sha256": "8fa8e5bcab4b23b4c8c9473eb7a6db133a0fb59706e4a4050209f622a65ac22f",
+      "object_sha256": "0bfc6b155b0640710bf64454751529aaec657ebfbec143c28e64a5b9a966ec48",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Theorems.Thm_ModularCurve_coeffMap_qExpand",
+      "source_sha256": "c5752e53c7be44261dbbaee516a86754fcd161d651866810fe7ad6f76b2550c9",
+      "object_sha256": "f14e63d17f5d9d00d42c9ebd6d0c482bcaf811aa5f0ab2873192f1721e089a12",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.P2M.Util",
+      "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+      "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+      "receipt_reused": true
+    }
+  ],
+  "stdout": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/526cbc4ac76aca69a654b8ee-1791854622977296000.kernel/stdout.log",
+  "stderr": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/526cbc4ac76aca69a654b8ee-1791854622977296000.kernel/stderr.log"
+}

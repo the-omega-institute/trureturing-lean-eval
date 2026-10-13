@@ -1,0 +1,210 @@
+{
+  "at": "2026-10-13T01:30:36.856293+00:00",
+  "original_source_card_pairs_actual_make_kernel_passed": true,
+  "canonical_pairs_byte_identical_to_supplier": true,
+  "no_source_edits": true,
+  "no_linter_suppression_added": true,
+  "no_redundant_recompilation": true,
+  "original_statements_hypotheses_and_proofs_preserved": true,
+  "checks": {
+    "ModularCurve_fromSpecStalk_genericPoint_comp_eq_of_xHDRModelAtP_top_drModelPackageLevel": {
+      "proof_summary": "Retain the original nonzero level N0, prime p with p not dividing N0, XHDRModelAtP and DRModelPackageLevel, function-field equality, Igusa scheme isomorphism and finite-chart map with all original compatibility hypotheses. For every original psi satisfying the two original diagram equations, the generic-point fromSpecStalk composite equals the original Spec.map of the composite field equivalences followed by the DR fromSpecStalk map.",
+      "checks": {
+        "source": {
+          "module": "Submission.Supplier.P2M.Sol.S_ModularCurve_fromSpecStalk_genericPoint_comp_eq_of_xHDRModelAtP_top_drModelPackageLevel",
+          "canonical_lines": 883,
+          "canonical_byte_identical_to_supplier": true,
+          "make_exit": 0,
+          "kernel_exit": 0,
+          "kernel_seconds": 47.846492125,
+          "compiler_warnings": 39,
+          "source_unchanged_during_check": true,
+          "printed_final_axiom_closure": null,
+          "separate_final_axiom_audit_pending": true,
+          "direct_dependencies": [
+            {
+              "module": "Submission.Supplier.Definitions.Def_ModularCurve_XHDRModelAtP",
+              "source_sha256": "96355f0824eabb23ede96ffdbf806c297a75e6e927199074a73279f52bce9fde",
+              "object_sha256": "34a3f9c89069b9c1025062e124bb7e8dbff7f146fee741be589041e24ccc6c82",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.Definitions.Def_ModularCurve_DRModelPackageLevel",
+              "source_sha256": "b3c32d0209832303b72e7c228663e59acabf1a5d0d4bdd86156cdac87e8e7910",
+              "object_sha256": "a91e38ce4937c47c9826accabc15a1ff73ffef60a5330b1401807afc7567225b",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.Definitions.Def_AlgebraicCurve_BaseChangeGalois",
+              "source_sha256": "295976f732fc41de900b80b9a0c33241cfff2d377d0da96518004dd78436cd06",
+              "object_sha256": "7ffb25b0b0797827cf7402e46133b91270063e48e77e29925c38e235e58d1265",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.P2M.Util",
+              "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+              "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+              "receipt_reused": true
+            }
+          ]
+        },
+        "card": {
+          "module": "Submission.Supplier.Theorems.Thm_ModularCurve_fromSpecStalk_genericPoint_comp_eq_of_xHDRModelAtP_top_drModelPackageLevel",
+          "canonical_lines": 34,
+          "canonical_byte_identical_to_supplier": true,
+          "make_exit": 0,
+          "kernel_exit": 0,
+          "kernel_seconds": 53.493501459,
+          "compiler_warnings": 0,
+          "source_unchanged_during_check": true,
+          "printed_final_axiom_closure": null,
+          "separate_final_axiom_audit_pending": true,
+          "direct_dependencies": [
+            {
+              "module": "Submission.Supplier.Definitions.Def_ModularCurve_XHDRModelAtP",
+              "source_sha256": "96355f0824eabb23ede96ffdbf806c297a75e6e927199074a73279f52bce9fde",
+              "object_sha256": "34a3f9c89069b9c1025062e124bb7e8dbff7f146fee741be589041e24ccc6c82",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.Definitions.Def_ModularCurve_DRModelPackageLevel",
+              "source_sha256": "b3c32d0209832303b72e7c228663e59acabf1a5d0d4bdd86156cdac87e8e7910",
+              "object_sha256": "a91e38ce4937c47c9826accabc15a1ff73ffef60a5330b1401807afc7567225b",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.P2M.Util",
+              "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+              "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.P2M.Sol.S_ModularCurve_fromSpecStalk_genericPoint_comp_eq_of_xHDRModelAtP_top_drModelPackageLevel",
+              "source_sha256": "118aadd7bd539484a73e546eadd1b7e507edd6f709a99627c2fd217e07205f6a",
+              "object_sha256": "f7efb4c6bf6ed1b4c9e70a51dcf71e5750f9f92e33c04e79f3fc80c7c5e818df",
+              "receipt_reused": true
+            }
+          ]
+        }
+      }
+    },
+    "ModularCurve_geomAut_atkinLehner_comp_legs": {
+      "proof_summary": "For every original field L with Algebra Q L and Algebra.IsAlgebraic Q L, nonzero N and ell, and original Atkin-Lehner automorphism sigma, retain both equations: geomAut composed with heckeAlphaBar equals heckeBetaBar, and geomAut composed with heckeBetaBar equals heckeAlphaBar.",
+      "checks": {
+        "source": {
+          "module": "Submission.Supplier.P2M.Sol.S_ModularCurve_geomAut_atkinLehner_comp_legs",
+          "canonical_lines": 193,
+          "canonical_byte_identical_to_supplier": true,
+          "make_exit": 0,
+          "kernel_exit": 0,
+          "kernel_seconds": 24.256033959,
+          "compiler_warnings": 2,
+          "source_unchanged_during_check": true,
+          "printed_final_axiom_closure": null,
+          "separate_final_axiom_audit_pending": true,
+          "direct_dependencies": [
+            {
+              "module": "Submission.Supplier.Definitions.Def_ModularCurve_AtkinLehnerPartial",
+              "source_sha256": "c28657e8d547c602c05cadabe9b17d07a0a1bf08668e314f0f46075f3b96a520",
+              "object_sha256": "c0ae1e875e1cbb8fe09d14fd778a1e1c27ef45bef7f56571b5aed1e1fec56532",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.Definitions.Def_ModularCurve_HeckeOperator",
+              "source_sha256": "2f80c1daa09e6bdb1072b2e199a2202bebeb42f9f3cac9cf105d134faad03e49",
+              "object_sha256": "81ae5d0b03011faf9a957293ad41842eecbf2488cd675873a1d7157732caa973",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.Definitions.Def_ModularCurve_GeometricBaseChange",
+              "source_sha256": "8fa8e5bcab4b23b4c8c9473eb7a6db133a0fb59706e4a4050209f622a65ac22f",
+              "object_sha256": "0bfc6b155b0640710bf64454751529aaec657ebfbec143c28e64a5b9a966ec48",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.Theorems.Thm_ModularCurve_coeffMap_qExpand",
+              "source_sha256": "c5752e53c7be44261dbbaee516a86754fcd161d651866810fe7ad6f76b2550c9",
+              "object_sha256": "f14e63d17f5d9d00d42c9ebd6d0c482bcaf811aa5f0ab2873192f1721e089a12",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.P2M.Util",
+              "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+              "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+              "receipt_reused": true
+            }
+          ]
+        },
+        "card": {
+          "module": "Submission.Supplier.Theorems.Thm_ModularCurve_geomAut_atkinLehner_comp_legs",
+          "canonical_lines": 8,
+          "canonical_byte_identical_to_supplier": true,
+          "make_exit": 0,
+          "kernel_exit": 0,
+          "kernel_seconds": 3.031685625,
+          "compiler_warnings": 0,
+          "source_unchanged_during_check": true,
+          "printed_final_axiom_closure": null,
+          "separate_final_axiom_audit_pending": true,
+          "direct_dependencies": [
+            {
+              "module": "Submission.Supplier.Definitions.Def_ModularCurve_AtkinLehnerPartial",
+              "source_sha256": "c28657e8d547c602c05cadabe9b17d07a0a1bf08668e314f0f46075f3b96a520",
+              "object_sha256": "c0ae1e875e1cbb8fe09d14fd778a1e1c27ef45bef7f56571b5aed1e1fec56532",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.Definitions.Def_ModularCurve_HeckeOperator",
+              "source_sha256": "2f80c1daa09e6bdb1072b2e199a2202bebeb42f9f3cac9cf105d134faad03e49",
+              "object_sha256": "81ae5d0b03011faf9a957293ad41842eecbf2488cd675873a1d7157732caa973",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.Definitions.Def_ModularCurve_GeometricBaseChange",
+              "source_sha256": "8fa8e5bcab4b23b4c8c9473eb7a6db133a0fb59706e4a4050209f622a65ac22f",
+              "object_sha256": "0bfc6b155b0640710bf64454751529aaec657ebfbec143c28e64a5b9a966ec48",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.P2M.Util",
+              "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+              "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.P2M.Sol.S_ModularCurve_geomAut_atkinLehner_comp_legs",
+              "source_sha256": "34ea2c1b3dc6daac9e9e56694d31fffc04f808467e6674e7b9bfd58a221d35b1",
+              "object_sha256": "66be9cce0b327caa4fa258daecaf5d0424b4c5ad83a5f2da67059bf73f25f026",
+              "receipt_reused": true
+            }
+          ]
+        }
+      }
+    }
+  },
+  "supplier": "anthropics/fermats-last-theorem",
+  "supplier_commit": "6e837e75355538c7f80bab5b956861e86c4eacc2",
+  "full_original_complete": false,
+  "official_new_solve_credit": 0,
+  "complete_import_replay_and_recursive_axiom_audits_pending": true,
+  "selected_problem": "fermat_last_theorem",
+  "max_active_flt_jobs": 1,
+  "max_active_flt_compilers": 1,
+  "lean_threads": 1,
+  "graph_snapshot": {
+    "compiled": 7732,
+    "failed": 0,
+    "ready": 4386,
+    "root_compiled": false,
+    "workers": 1,
+    "running": {
+      "Submission.Supplier.Theorems.Thm_ModularCurve_isCurveOver_modularFunctionFieldC_of_isSeparable_jqNModC": {
+        "pid": 13458,
+        "make_wrapper_pid": 13458,
+        "phase": "canonical_make_queue",
+        "sha256": "64881d579587562de6d2835cacb242d726d0a5714bf449a3cabc517a5adf352b",
+        "configuration": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/f35f639830de1ee7972d5fef-1791855032744405000.configuration.json"
+      }
+    }
+  }
+}
