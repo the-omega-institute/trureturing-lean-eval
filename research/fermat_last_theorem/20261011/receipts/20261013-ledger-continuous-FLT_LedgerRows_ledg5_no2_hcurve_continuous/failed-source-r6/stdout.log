@@ -1,0 +1,53 @@
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_FLT_LedgerRows_ledg5_no2_hcurve_continuous.lean:232:44: error: Type mismatch
+  Pi.Function.module ?m.41 ?m.42
+has type
+  (β : Type ?u.29) → [inst : Semiring ?m.42] → [inst_1 : AddCommMonoid β] → [Module ?m.42 β] → Module ?m.42 (?m.41 → β)
+of sort
+  Type (max (max (?u.29 + 1) ?u.30) ?u.31)
+but is expected to have type
+  Module (ZMod 3) (Fin 2 → ZMod 3)
+of sort `Type`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_FLT_LedgerRows_ledg5_no2_hcurve_continuous.lean:235:18: error: synthesized type class instance is not definitionally equal to expression inferred by typing rules, synthesized
+  this✝
+inferred
+  Pi.Function.module (Fin 2) (ZMod 3) (ZMod 3)
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_FLT_LedgerRows_ledg5_no2_hcurve_continuous.lean:240:25: error: synthesized type class instance is not definitionally equal to expression inferred by typing rules, synthesized
+  this✝
+inferred
+  Pi.Function.module (Fin 2) (ZMod 3) (ZMod 3)
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_FLT_LedgerRows_ledg5_no2_hcurve_continuous.lean:241:12: error(lean.unknownIdentifier): Unknown identifier `hbt`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_FLT_LedgerRows_ledg5_no2_hcurve_continuous.lean:244:49: error(lean.unknownIdentifier): Unknown identifier `N'.toSubmodule`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_FLT_LedgerRows_ledg5_no2_hcurve_continuous.lean:245:46: error: Type mismatch
+  b.equivFun
+has type
+  V W ≃ₗ[ZMod 3] Fin 2 → ZMod 3
+but is expected to have type
+  V W →ₗ[ZMod 3] Fin 2 → ZMod 3
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_FLT_LedgerRows_ledg5_no2_hcurve_continuous.lean:250:16: error(lean.unknownIdentifier): Unknown identifier `N'.apply_mem_toSubmodule`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_FLT_LedgerRows_ledg5_no2_hcurve_continuous.lean:258:23: error: Type mismatch
+  b.equivFun
+has type
+  V W ≃ₗ[ZMod 3] Fin 2 → ZMod 3
+but is expected to have type
+  V W →ₗ[ZMod 3] Fin 2 → ZMod 3
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_FLT_LedgerRows_ledg5_no2_hcurve_continuous.lean:230:82: error: unsolved goals
+case refine_2
+W : WeierstrassCurve ℤ
+hΔ : W.Δ ≠ 0
+hirr : W.ModRepIsIrreducible 3
+this✝¹ : Module (ZMod 3) (ZMod 3) := Semiring.toModule
+this✝ : Module (ZMod 3) (Fin 2 → ZMod 3) := sorry
+this : Module.Finite (ZMod 3) (V W)
+b : Module.Basis (Fin 2) (ZMod 3) (V W) := basisV W hΔ
+hb : b = basisV W hΔ
+hbt : sorry ≠ ⊤
+S : Submodule (ZMod 3) (Fin 2 → ZMod 3) := sorry
+hS : S = sorry
+N : Submodule (ZMod 3) (V W) := Submodule.comap sorry S
+hNdef : N = Submodule.comap sorry S
+hN : ∀ (σ : Gal(Qb/ℚ)), ∀ y ∈ N, ((r W) σ) y ∈ N
+⊢ (Deformation.matrixRepresentation (rho W hΔ)).IsIrreducible
+'P2MW.S_FLT_LedgerRows_ledg5_no2_hcurve_continuous.solution' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]

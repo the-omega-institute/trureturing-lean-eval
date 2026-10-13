@@ -1,0 +1,42 @@
+[
+  [
+    "  refine ⟨fun N' => ?_⟩",
+    "  refine @IsSimpleOrder.mk _ _ _ hnt (fun N' => ?_)",
+    1
+  ],
+  [
+    "\n  haveI := isElliptic_baseChange W hΔ\n",
+    "\n  have := isElliptic_baseChange W hΔ\n",
+    1
+  ],
+  [
+    "\n  haveI := moduleFinite_V W hΔ\n",
+    "\n  have := moduleFinite_V W hΔ\n",
+    4
+  ],
+  [
+    "\n  haveI := isElliptic_map W hΔ\n",
+    "\n  have := isElliptic_map W hΔ\n",
+    4
+  ],
+  [
+    "\n  haveI := hL\n",
+    "\n  have := hL\n",
+    1
+  ],
+  [
+    "\n  haveI : Nontrivial (Subrepresentation (Deformation.matrixRepresentation (rho W hΔ))) :=\n",
+    "\n  have hnt : Nontrivial (Subrepresentation (Deformation.matrixRepresentation (rho W hΔ))) :=\n",
+    1
+  ],
+  [
+    "\n    haveI := isElliptic_map W hΔ\n",
+    "\n    have := isElliptic_map W hΔ\n",
+    1
+  ],
+  [
+    "theorem isIrreducible_matrixRepresentation (hΔ : W.Δ ≠ 0) (hirr : W.ModRepIsIrreducible 3) :\n    Representation.IsIrreducible (Deformation.matrixRepresentation (rho W hΔ)) := by\n",
+    "theorem isIrreducible_matrixRepresentation (hΔ : W.Δ ≠ 0) (hirr : W.ModRepIsIrreducible 3) :\n    Representation.IsIrreducible (Deformation.matrixRepresentation (rho W hΔ)) := by\n  let : Module (ZMod 3) (ZMod 3) := Semiring.toModule _\n  let : Module (ZMod 3) (Fin 2 → ZMod 3) := Pi.Function.module _ _\n",
+    1
+  ]
+]

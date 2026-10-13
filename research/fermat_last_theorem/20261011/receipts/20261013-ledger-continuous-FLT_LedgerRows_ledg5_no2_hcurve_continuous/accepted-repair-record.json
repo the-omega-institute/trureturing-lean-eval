@@ -1,0 +1,62 @@
+{
+  "at": "2026-10-13T17:01:39.328131+00:00",
+  "checks": {
+    "source": {
+      "module": "Submission.Supplier.P2M.Sol.S_FLT_LedgerRows_ledg5_no2_hcurve_continuous",
+      "make_exit": 0,
+      "kernel_exit": 0,
+      "kernel_seconds": 86.018487833,
+      "compiler_warnings": 0,
+      "final_standard3_audit_passed": true,
+      "printed_final_axiom_closures": [
+        {
+          "declaration": "P2MW.S_FLT_LedgerRows_ledg5_no2_hcurve_continuous.solution",
+          "recursive_axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "original_canonical_lines": 331,
+      "repaired_canonical_lines": 337,
+      "original_final_statement_and_full_module_proof_preserved": true
+    },
+    "card": {
+      "module": "Submission.Supplier.Theorems.Thm_FLT_LedgerRows_ledg5_no2_hcurve_continuous",
+      "make_exit": 0,
+      "kernel_exit": 0,
+      "kernel_seconds": 51.350147041,
+      "compiler_warnings": 0,
+      "final_standard3_audit_passed": true,
+      "printed_final_axiom_closures": [
+        {
+          "declaration": "FLT.LedgerRows.ledg5_no2_hcurve_continuous",
+          "recursive_axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "original_canonical_lines": 30,
+      "repaired_canonical_lines": 32,
+      "original_final_statement_and_full_module_proof_preserved": true
+    }
+  },
+  "proof_summary": "Preserve the complete 331-line supplier source and 30-line theorem card, every arbitrary integral semistable Weierstrass curve with nonzero discriminant, and the original mod-three irreducibility hypothesis. Retain the continuous surjective representation into GL(Fin 2, ZMod 3), the exact mod-three cyclotomic determinant, and every original good-prime Frobenius trace equality. Preserve all basis transport, stable-line exclusion, pullback stability and map/comap irreducibility, finite-level continuity, determinant, trace and surjectivity proofs. Supply the standard Mathlib self-module and Pi.Function.module locally to remove the imported custom module instance mismatch, and use IsSimpleOrder.mk with explicit Subrepresentation carrier and the original nontriviality proof hnt, fix all warning-directed proposition declarations, and append final recursive axiom queries. Require actual current source/card zero-warning make/kernel exits zero, exact STANDARD3 and matching source dependency.",
+  "original_statements_hypotheses_and_full_proofs_preserved": true,
+  "repaired_source_card_pair_actual_make_kernel_passed": true,
+  "source_card_actual_final_standard3": true,
+  "no_linter_suppression_added": true,
+  "baseline_source_actual_exit": 1,
+  "supplier": "anthropics/fermats-last-theorem",
+  "supplier_commit": "6e837e75355538c7f80bab5b956861e86c4eacc2",
+  "selected_problem": "fermat_last_theorem",
+  "full_original_complete": false,
+  "official_new_solve_credit": 0,
+  "full_root_import_replay_and_axiom_audit_pending": true,
+  "max_active_flt_jobs": 1,
+  "max_active_flt_compilers": 1,
+  "lean_threads": 1
+}

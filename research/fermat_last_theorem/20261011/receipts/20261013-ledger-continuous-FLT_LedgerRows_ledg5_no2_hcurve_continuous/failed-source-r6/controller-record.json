@@ -1,0 +1,152 @@
+{
+  "sha256": "022586088948aee3b20605ed87572e432031ffacba2af5986446823209f98f12",
+  "exit": 1,
+  "empty_output_retry_done": false,
+  "source_sha256_after": "022586088948aee3b20605ed87572e432031ffacba2af5986446823209f98f12",
+  "source_unchanged": true,
+  "olean_sha256": null,
+  "seconds": 124.34068641700287,
+  "pid": 93805,
+  "command": [
+    "/Users/macstudio/.local/omega-shims/lean",
+    "-j1",
+    "--trust=0",
+    "-Ddebug.skipKernelTC=false",
+    "-R",
+    "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src",
+    "-o",
+    "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-build/lib/lean/Submission/Supplier/P2M/Sol/S_FLT_LedgerRows_ledg5_no2_hcurve_continuous.olean",
+    "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_FLT_LedgerRows_ledg5_no2_hcurve_continuous.lean"
+  ],
+  "make_wrapper_pid": 49586,
+  "make_exit": 2,
+  "make_entry_failed": false,
+  "cache_binding_valid": true,
+  "canonical_make_running_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/a22b7f8cf2fb2c5305b5fa87-1791909336069580000.make-running.json",
+  "canonical_make_terminal_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/a22b7f8cf2fb2c5305b5fa87-1791909336069580000.make-terminal.json",
+  "kernel_terminal_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/a22b7f8cf2fb2c5305b5fa87-1791909336069580000.kernel/result.json",
+  "direct_dependencies": [
+    {
+      "module": "Submission.Supplier.Definitions.Def_FLTPrelim_FreyPackage",
+      "source_sha256": "ef210858d87b3d89b486976d8067e7aa27b162766d697ba21e2d9830e60434c4",
+      "object_sha256": "c2fccd76e0fe7557bf9c2f9acb69ccc649f092b25eb2862e587001b9c2b89c53",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Definitions.Def_FLTPrelim_GaloisRep",
+      "source_sha256": "fc0cb3d111b0d87e9c0b5be473858fa25c7d444fc6865ba1d05b6d9994700ff4",
+      "object_sha256": "d5a2340c2252cf4831dee6d0e2a52c4081c0958d63ff920d267a4db6240b48b5",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Definitions.Def_FLTPrelim_Modularity",
+      "source_sha256": "cd80952a6230452e6aaa5edf715476e07b302f0997d2402dfcf314c5c07d2219",
+      "object_sha256": "f469fdbf80c45b247e2d1cb30e2d93a46b3bc393fe5f91f8fa89e627ae837b77",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Definitions.Def_FLTPrelim_ModularRep",
+      "source_sha256": "d045178939f1ab9a7b8526664c461d91789f2e335edef584d1ad859891d7cc18",
+      "object_sha256": "3672ffb14bd1235f321b277d66b30e306ec8543c762d017c616e6e7d91b7f56e",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Definitions.Def_FLTPrelim_Ramification",
+      "source_sha256": "00fe8d0d63a3bcd209efde3539d0fdce08cad1c4b4b2e5b15ed18efc273b0441",
+      "object_sha256": "9c8ceef3342e5a6b5af8eda270ac74239e1012faec3128daa560373353d1ae90",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Definitions.Def_EllipticCurve_FrobeniusTrace",
+      "source_sha256": "399f64e985f83d26e4ac2d8c0e28f280ae9cb7760458bdb3d93c32cbf51f1559",
+      "object_sha256": "cd37d36c2ff163b3587b156401035161c7480f4fb8968f143e20e45e32715b61",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Definitions.Def_GaloisRep_ModThreeCyclotomic",
+      "source_sha256": "ef9ae450ddce134beb66b396cad9917611fa7c5c1e37477d35380ad3bcb47fe4",
+      "object_sha256": "0184625f1213dd5f20b379b677bcab74538c9b71e9141df267ad380218798595",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Definitions.Def_GaloisRep_Residual",
+      "source_sha256": "acaab9dd928d013c9340e77676443b27f1ffc090abea3f139482b8fd2f8e8ff5",
+      "object_sha256": "429ac7b7b2b45f4aee7f1d99d97669e2e968c350566949b758046d25d399fcab",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Definitions.Def_GaloisRep_GlobalUnramifiedAt",
+      "source_sha256": "2205db28e591159e6920dab408bda699cf47bc8ddaf972929057d6d0e3ab449b",
+      "object_sha256": "145872d3f0f4249f824bd33c20f4673baa3e12b994f62f470938bc1b053feaa3",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Definitions.Def_Deformations_MatrixRepresentation",
+      "source_sha256": "cb3cced46738f1e7fc7f6a7af6537a882a30406021583c69b8ee1533364150d6",
+      "object_sha256": "f90aea79d0f9d1cb4111bc4e8589a0ed2cc22251c1dce625b34bc91e0b228dcf",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Definitions.Def_WeierstrassCurve_ReductionMap",
+      "source_sha256": "ba05f975812979dde2713cf1b08815075c21b33d34c4650f454c8c1f96879aa1",
+      "object_sha256": "2656d9d5a5f7851cc74b93ff7c919e3b6e24d61bf551965306cda1aae5824fe7",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Theorems.Thm_WeierstrassCurve_card_torsionBy_eq_sq_of_isAlgClosed",
+      "source_sha256": "877fba7f8cd04d2a15b31efbc4755de530836d9c7450fe1fbdd797c0a0377759",
+      "object_sha256": null,
+      "receipt_reused": false
+    },
+    {
+      "module": "Submission.Supplier.Theorems.Thm_WeierstrassCurve_galoisRepModuleEnd_factorsThroughFiniteLevel",
+      "source_sha256": "3115c369ca3d74a8cb2b3dca8769e7577779cd2979ede7e4bc45edde62cfedba",
+      "object_sha256": "66f45ed91026fe0e35d6279fa49a1883d7ea35a3b84c0d31abe587f41583d838",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Theorems.Thm_WeierstrassCurve_galoisTrace_frobenius_eq_apOfModel",
+      "source_sha256": "50174836b3e254a1b1775773e2bda8694fd3d9882d3ddde578e50199f7b53c20",
+      "object_sha256": "bf7412d3e4f7743ace9d8eb98c40aa4f1df5f99fe50f9a5e2c50ad761bee44b5",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Theorems.Thm_WeierstrassCurve_apply_eq_pow_det_galoisRep_of_pow_eq_one",
+      "source_sha256": "3eedd45b474103ca67c4845747ee51dfb59b0c2a529a09bdf9cd0d088dae267a",
+      "object_sha256": "575d73e9a3252bcbc830c797a18ae3ce97be434b73f19accf183abb0b1dc80c5",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Theorems.Thm_WeierstrassCurve_det_galoisRep_surjOn_inertia",
+      "source_sha256": "e83c99c11b97cbb758f267a4f72b0f65681da15a8ac02afff33bd188c0c4e022",
+      "object_sha256": "0689eb270dbefbc469a2e9698fd57d37cb116ceb34d48ba82b0192c6ad769795",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Theorems.Thm_WeierstrassCurve_galoisRep_inertia_unipotent_of_isSemistableModel",
+      "source_sha256": "aba5a2fdfa2b8a9e10f1d14598913690d9bf15fade5f19ffcf9a2702e4567fdb",
+      "object_sha256": "fcff805b90a2bd88a14e6fbe135649ad5f910673d8902c87495794c9672cbb84",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Theorems.Thm_GaloisRep_not_isIrreducible_matrixRepresentation_of_isUnramifiedAt_of_det_eq_modThreeCyclotomicChar",
+      "source_sha256": "7b9b903544787504ad47d05951e6effe0214fb4e5e734fc4edac1dd1444b3f0b",
+      "object_sha256": "d1e62cc76b3e0387e2fbdf17b0892fcb55780d61a5e06dd2712fe87be820a5c2",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Theorems.Thm_Matrix_GeneralLinearGroup_surjective_of_isUnipotent_of_forall_exists_mulVec_ne_smul_of_det_surjective",
+      "source_sha256": "cb98c8c54a6741c8aa6591efd7d19f3e7c230adc191b645c8ccd795f8a1ba3cf",
+      "object_sha256": "70201d5c4ab5fb03a8ebcb013faf9658936ae132297e6d0b775591c626b9aee8",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.P2M.Util",
+      "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+      "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+      "receipt_reused": true
+    }
+  ],
+  "stdout": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/a22b7f8cf2fb2c5305b5fa87-1791909336069580000.kernel/stdout.log",
+  "stderr": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/a22b7f8cf2fb2c5305b5fa87-1791909336069580000.kernel/stderr.log"
+}
