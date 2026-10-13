@@ -1,0 +1,279 @@
+{
+  "at": "2026-10-13T01:35:58.485277+00:00",
+  "original_source_card_pairs_actual_make_kernel_passed": true,
+  "canonical_pairs_byte_identical_to_supplier": true,
+  "no_source_edits": true,
+  "no_linter_suppression_added": true,
+  "no_redundant_recompilation": true,
+  "original_statements_hypotheses_and_proofs_preserved": true,
+  "checks": {
+    "ModularCurve_heckeComponentAction_eq_nsmul_of_offDiagDivides": {
+      "proof_summary": "For every original finite decidable index type, positive weights e, integer matrix B and integer n satisfying the original Hecke row sums, weight symmetry and off-diagonal divisibility hypotheses, preserve the full equation heckeComponentAction e B hrow hsym x = n smul x for every componentGroup e element x. The original etaWitness, Gram-map range, coordinate-functional span and quotient proofs are retained.",
+      "checks": {
+        "source": {
+          "module": "Submission.Supplier.P2M.Sol.S_ModularCurve_heckeComponentAction_eq_nsmul_of_offDiagDivides",
+          "canonical_lines": 195,
+          "canonical_byte_identical_to_supplier": true,
+          "make_exit": 0,
+          "kernel_exit": 0,
+          "kernel_seconds": 3.0128166249999997,
+          "compiler_warnings": 6,
+          "source_unchanged_during_check": true,
+          "printed_final_axiom_closure": null,
+          "separate_final_axiom_audit_pending": true,
+          "direct_dependencies": [
+            {
+              "module": "Submission.Supplier.Definitions.Def_ModularCurve_ComponentGroupHecke",
+              "source_sha256": "9f5f72561560b509677a1be65f1a0aa8b36b72f1951ff92f9cfcbff5b865c064",
+              "object_sha256": "e1f9851445124f6cb9ed2499bb20e409911ba63b0c6e29234620cd44cc5f3013",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.P2M.Util",
+              "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+              "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+              "receipt_reused": true
+            }
+          ]
+        },
+        "card": {
+          "module": "Submission.Supplier.Theorems.Thm_ModularCurve_heckeComponentAction_eq_nsmul_of_offDiagDivides",
+          "canonical_lines": 12,
+          "canonical_byte_identical_to_supplier": true,
+          "make_exit": 0,
+          "kernel_exit": 0,
+          "kernel_seconds": 14.897296082999999,
+          "compiler_warnings": 0,
+          "source_unchanged_during_check": true,
+          "printed_final_axiom_closure": null,
+          "separate_final_axiom_audit_pending": true,
+          "direct_dependencies": [
+            {
+              "module": "Submission.Supplier.Definitions.Def_ModularCurve_ComponentGroupHecke",
+              "source_sha256": "9f5f72561560b509677a1be65f1a0aa8b36b72f1951ff92f9cfcbff5b865c064",
+              "object_sha256": "e1f9851445124f6cb9ed2499bb20e409911ba63b0c6e29234620cd44cc5f3013",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.P2M.Util",
+              "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+              "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.P2M.Sol.S_ModularCurve_heckeComponentAction_eq_nsmul_of_offDiagDivides",
+              "source_sha256": "4c9367bd8228f48587a6a97b65c548e3586c6d1862745753eb53df584912f27e",
+              "object_sha256": "49b25eaccb17a40dfd0bce1d871508e4fb7d4a186cdea37e413dfe72d2dc430d",
+              "receipt_reused": true
+            }
+          ]
+        }
+      }
+    },
+    "ModularCurve_isCurveOver_modularFunctionFieldC_of_isSeparable_jqNModC": {
+      "proof_summary": "For every original field K, nonzero level N and separability hypothesis for jqNModC K N over the field adjoined by jqModC K, preserve the original IsCurveOver K (modularFunctionFieldC K N) conclusion. The original modular-polynomial data, transcendence, finite dimension and separability proof is unchanged.",
+      "checks": {
+        "source": {
+          "module": "Submission.Supplier.P2M.Sol.S_ModularCurve_isCurveOver_modularFunctionFieldC_of_isSeparable_jqNModC",
+          "canonical_lines": 28,
+          "canonical_byte_identical_to_supplier": true,
+          "make_exit": 0,
+          "kernel_exit": 0,
+          "kernel_seconds": 64.65202145900001,
+          "compiler_warnings": 0,
+          "source_unchanged_during_check": true,
+          "printed_final_axiom_closure": null,
+          "separate_final_axiom_audit_pending": true,
+          "direct_dependencies": [
+            {
+              "module": "Submission.Supplier.Definitions.Def_AlgebraicCurve_IsCurveOver",
+              "source_sha256": "3d53c0528c8bc1ae3b59135d2dc1a76d8abbd68c829305a8f4a8d584c3796553",
+              "object_sha256": "e059f779f8f2ce4be7ecc33e0af4e4d4e1629cd5eb8f0516c569e5b236d3539d",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.Definitions.Def_ModularCurve_JqCoeff",
+              "source_sha256": "7334dfa90713b4611aeefdd810ac66290653bc06ed0998f63792a8070ec06daf",
+              "object_sha256": "49efd5e907b46b445bebd74910bc77acc46bd8868d4b11f2810c9adf55f95005",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.Theorems.Thm_AlgebraicCurve_isCurveOver_of_transcendental",
+              "source_sha256": "8f24a5bc92fcb5aca4fd6c9788be52500ca0d2053b5fdbc43bd532c54c54de6e",
+              "object_sha256": "1b5c73d37a45ab2822095a33e0aa400d8e08e69ae4b41a97d2f0860d52db0adb",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.Theorems.Thm_ModularCurve_transcendental_jqModC",
+              "source_sha256": "63c40c117bdf0b7883cb875a3b9cc329918e8d1927ad3f03ba25e70fe78b4ba4",
+              "object_sha256": "660112617632b14327206f78b094a6bdb22f8afc87610647f58e109a5f50a4a0",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.Theorems.Thm_ModularCurve_nonempty_modularPolynomialData",
+              "source_sha256": "1a6312b1deddabc64151c6f9dc0f0039b317a0e8bdcaed87a273bc4e3a26a2ee",
+              "object_sha256": "253f01017933a0cae79a3cef7401126f12c26b91182a839b83fdedf1cc0c7809",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.Theorems.Thm_ModularCurve_finiteDimensional_and_isSeparable_adjoin_jGeomGen_of_isSeparable_jqNModC",
+              "source_sha256": "9c97f44c931757d1fe8593e98cfd478d0148a68a2e0581bc95c51d4f5542b960",
+              "object_sha256": "8b0ae0ce3902119074497514103553e9ec81c70dbf47b8ca3ca20dc4114436d6",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.P2M.Util",
+              "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+              "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+              "receipt_reused": true
+            }
+          ]
+        },
+        "card": {
+          "module": "Submission.Supplier.Theorems.Thm_ModularCurve_isCurveOver_modularFunctionFieldC_of_isSeparable_jqNModC",
+          "canonical_lines": 16,
+          "canonical_byte_identical_to_supplier": true,
+          "make_exit": 0,
+          "kernel_exit": 0,
+          "kernel_seconds": 26.643563625,
+          "compiler_warnings": 0,
+          "source_unchanged_during_check": true,
+          "printed_final_axiom_closure": null,
+          "separate_final_axiom_audit_pending": true,
+          "direct_dependencies": [
+            {
+              "module": "Submission.Supplier.Definitions.Def_AlgebraicCurve_IsCurveOver",
+              "source_sha256": "3d53c0528c8bc1ae3b59135d2dc1a76d8abbd68c829305a8f4a8d584c3796553",
+              "object_sha256": "e059f779f8f2ce4be7ecc33e0af4e4d4e1629cd5eb8f0516c569e5b236d3539d",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.Definitions.Def_ModularCurve_JqCoeff",
+              "source_sha256": "7334dfa90713b4611aeefdd810ac66290653bc06ed0998f63792a8070ec06daf",
+              "object_sha256": "49efd5e907b46b445bebd74910bc77acc46bd8868d4b11f2810c9adf55f95005",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.P2M.Util",
+              "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+              "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.P2M.Sol.S_ModularCurve_isCurveOver_modularFunctionFieldC_of_isSeparable_jqNModC",
+              "source_sha256": "42c689173746724585c769fa1fcf22f78c89ac8df20a94075fb15fa9aefd856f",
+              "object_sha256": "784e6c5c0e20123e9950f7c72b3912ed567b4e4190544a33f7773cb623752d55",
+              "receipt_reused": true
+            }
+          ]
+        }
+      }
+    },
+    "ModularCurve_kaehlerRankOne_modularFunctionFieldC_of_isSeparable_jqNModC": {
+      "proof_summary": "For every original field K, nonzero level N and the same original jqNModC separability hypothesis, preserve both conclusions: the Kaehler differential module over modularFunctionFieldC K N is free and has finrank exactly one. The original field-map, intermediate-field equivalence, minpoly separability transport and tower proofs remain.",
+      "checks": {
+        "source": {
+          "module": "Submission.Supplier.P2M.Sol.S_ModularCurve_kaehlerRankOne_modularFunctionFieldC_of_isSeparable_jqNModC",
+          "canonical_lines": 137,
+          "canonical_byte_identical_to_supplier": true,
+          "make_exit": 0,
+          "kernel_exit": 0,
+          "kernel_seconds": 61.656731291999996,
+          "compiler_warnings": 7,
+          "source_unchanged_during_check": true,
+          "printed_final_axiom_closure": null,
+          "separate_final_axiom_audit_pending": true,
+          "direct_dependencies": [
+            {
+              "module": "Submission.Supplier.Definitions.Def_AlgebraicCurve_IsCurveOver",
+              "source_sha256": "3d53c0528c8bc1ae3b59135d2dc1a76d8abbd68c829305a8f4a8d584c3796553",
+              "object_sha256": "e059f779f8f2ce4be7ecc33e0af4e4d4e1629cd5eb8f0516c569e5b236d3539d",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.Definitions.Def_ModularCurve_JqCoeff",
+              "source_sha256": "7334dfa90713b4611aeefdd810ac66290653bc06ed0998f63792a8070ec06daf",
+              "object_sha256": "49efd5e907b46b445bebd74910bc77acc46bd8868d4b11f2810c9adf55f95005",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.Theorems.Thm_ModularCurve_transcendental_jqModC",
+              "source_sha256": "63c40c117bdf0b7883cb875a3b9cc329918e8d1927ad3f03ba25e70fe78b4ba4",
+              "object_sha256": "660112617632b14327206f78b094a6bdb22f8afc87610647f58e109a5f50a4a0",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.P2M.Util",
+              "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+              "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+              "receipt_reused": true
+            }
+          ]
+        },
+        "card": {
+          "module": "Submission.Supplier.Theorems.Thm_ModularCurve_kaehlerRankOne_modularFunctionFieldC_of_isSeparable_jqNModC",
+          "canonical_lines": 13,
+          "canonical_byte_identical_to_supplier": true,
+          "make_exit": 0,
+          "kernel_exit": 0,
+          "kernel_seconds": 7.050116999999999,
+          "compiler_warnings": 0,
+          "source_unchanged_during_check": true,
+          "printed_final_axiom_closure": null,
+          "separate_final_axiom_audit_pending": true,
+          "direct_dependencies": [
+            {
+              "module": "Submission.Supplier.Definitions.Def_AlgebraicCurve_IsCurveOver",
+              "source_sha256": "3d53c0528c8bc1ae3b59135d2dc1a76d8abbd68c829305a8f4a8d584c3796553",
+              "object_sha256": "e059f779f8f2ce4be7ecc33e0af4e4d4e1629cd5eb8f0516c569e5b236d3539d",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.Definitions.Def_ModularCurve_JqCoeff",
+              "source_sha256": "7334dfa90713b4611aeefdd810ac66290653bc06ed0998f63792a8070ec06daf",
+              "object_sha256": "49efd5e907b46b445bebd74910bc77acc46bd8868d4b11f2810c9adf55f95005",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.P2M.Util",
+              "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+              "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.P2M.Sol.S_ModularCurve_kaehlerRankOne_modularFunctionFieldC_of_isSeparable_jqNModC",
+              "source_sha256": "f32ed53ebff574d9f9ee8b6da62677eafae1328878a4b6fcd066dbee0c3c17b7",
+              "object_sha256": "493d950975da456c3533dd630ab0a01f354c63dfbc4c26f5e2548965f211cce2",
+              "receipt_reused": true
+            }
+          ]
+        }
+      }
+    }
+  },
+  "supplier": "anthropics/fermats-last-theorem",
+  "supplier_commit": "6e837e75355538c7f80bab5b956861e86c4eacc2",
+  "full_original_complete": false,
+  "official_new_solve_credit": 0,
+  "complete_import_replay_and_recursive_axiom_audits_pending": true,
+  "selected_problem": "fermat_last_theorem",
+  "max_active_flt_jobs": 1,
+  "max_active_flt_compilers": 1,
+  "lean_threads": 1,
+  "graph_snapshot": {
+    "compiled": 7735,
+    "failed": 0,
+    "ready": 4383,
+    "root_compiled": false,
+    "workers": 1,
+    "running": {
+      "Submission.Supplier.P2M.Sol.S_ModularCurve_minpoly_jqN_eq_toAdjoin": {
+        "pid": 82346,
+        "make_wrapper_pid": 82346,
+        "phase": "canonical_make_queue",
+        "sha256": "23ec33e6065e02371524617c03c505ba1710c185b8f0d51da1f3683e0a3eafcb",
+        "configuration": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/2471c887e636197d6ff4b58d-1791855273135477000.configuration.json"
+      }
+    }
+  }
+}
