@@ -1,0 +1,79 @@
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_Polynomial_exists_factorization_resultant_X_pow_sub_one_eq_mul_add_of_not_dvd.lean:200:10: error: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  ?n • ?b
+in the target expression
+  ↑ℓ • (Int.castRingHom (ZMod ℓ)).mapMatrix N = 0
+
+d ℓ : ℕ
+hℓ : Fact (Nat.Prime ℓ)
+N : Matrix (Fin d) (Fin d) ℤ
+hdvd : ↑ℓ ∣ (1 + ↑ℓ • N).det
+h0 : ↑(1 + ↑ℓ • N).det = 0
+⊢ ↑ℓ • (Int.castRingHom (ZMod ℓ)).mapMatrix N = 0
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_Polynomial_exists_factorization_resultant_X_pow_sub_one_eq_mul_add_of_not_dvd.lean:202:8: error: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  ↑ℓ • (Int.castRingHom (ZMod ℓ)).mapMatrix N
+in the target expression
+  (1 + ↑ℓ • (Int.castRingHom (ZMod ℓ)).mapMatrix N).det = 1
+
+d ℓ : ℕ
+hℓ : Fact (Nat.Prime ℓ)
+N : Matrix (Fin d) (Fin d) ℤ
+hdvd : ↑ℓ ∣ (1 + ↑ℓ • N).det
+h0 : ↑(1 + ↑ℓ • N).det = 0
+this : ↑ℓ • (Int.castRingHom (ZMod ℓ)).mapMatrix N = 0
+⊢ (1 + ↑ℓ • (Int.castRingHom (ZMod ℓ)).mapMatrix N).det = 1
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_Polynomial_exists_factorization_resultant_X_pow_sub_one_eq_mul_add_of_not_dvd.lean:264:2: warning: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_Polynomial_exists_factorization_resultant_X_pow_sub_one_eq_mul_add_of_not_dvd.lean:308:10: error: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  ?n • ?b
+in the target expression
+  ↑ℓ • (Int.castRingHom (ZMod ℓ)).mapMatrix N = 0
+
+d ℓ : ℕ
+hℓ : Fact (Nat.Prime ℓ)
+j : ℕ
+hj : ¬ℓ ∣ j
+N : Matrix (Fin d) (Fin d) ℤ
+A : Matrix (Fin d) (Fin d) ℤ := ↑j • 1 + ↑ℓ • N
+hdvd : ↑ℓ ∣ A.det
+hA : A = ↑j • 1 + ↑ℓ • N
+h0 : ↑A.det = 0
+⊢ ↑ℓ • (Int.castRingHom (ZMod ℓ)).mapMatrix N = 0
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_Polynomial_exists_factorization_resultant_X_pow_sub_one_eq_mul_add_of_not_dvd.lean:312:10: error: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  ?n • ?b
+in the target expression
+  ↑j • 1 = ↑j • 1
+
+d ℓ : ℕ
+hℓ : Fact (Nat.Prime ℓ)
+j : ℕ
+hj : ¬ℓ ∣ j
+N : Matrix (Fin d) (Fin d) ℤ
+A : Matrix (Fin d) (Fin d) ℤ := ↑j • 1 + ↑ℓ • N
+hdvd : ↑ℓ ∣ A.det
+hA : A = ↑j • 1 + ↑ℓ • N
+h0 : ↑A.det = 0
+hℓ0 : ↑ℓ • (Int.castRingHom (ZMod ℓ)).mapMatrix N = 0
+⊢ ↑j • 1 = ↑j • 1
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_Polynomial_exists_factorization_resultant_X_pow_sub_one_eq_mul_add_of_not_dvd.lean:313:8: error: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  ↑ℓ • (Int.castRingHom (ZMod ℓ)).mapMatrix N
+in the target expression
+  (↑j • 1 + ↑ℓ • (Int.castRingHom (ZMod ℓ)).mapMatrix N).det = ↑j ^ d
+
+d ℓ : ℕ
+hℓ : Fact (Nat.Prime ℓ)
+j : ℕ
+hj : ¬ℓ ∣ j
+N : Matrix (Fin d) (Fin d) ℤ
+A : Matrix (Fin d) (Fin d) ℤ := ↑j • 1 + ↑ℓ • N
+hdvd : ↑ℓ ∣ A.det
+hA : A = ↑j • 1 + ↑ℓ • N
+h0 : ↑A.det = 0
+hℓ0 : ↑ℓ • (Int.castRingHom (ZMod ℓ)).mapMatrix N = 0
+hj1 : ↑j • 1 = ↑j • 1
+⊢ (↑j • 1 + ↑ℓ • (Int.castRingHom (ZMod ℓ)).mapMatrix N).det = ↑j ^ d

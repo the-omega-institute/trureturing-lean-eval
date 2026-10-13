@@ -1,0 +1,16 @@
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_Polynomial_exists_factorization_resultant_X_pow_sub_one_eq_mul_add_of_not_dvd.lean:306:64: error: unsolved goals
+d ℓ : ℕ
+hℓ : Fact (Nat.Prime ℓ)
+j : ℕ
+hj : ¬ℓ ∣ j
+N : Matrix (Fin d) (Fin d) ℤ
+A : Matrix (Fin d) (Fin d) ℤ := ↑j • 1 + ↑ℓ • N
+hdvd : ↑ℓ ∣ A.det
+hA : A = ↑j • 1 + ↑ℓ • N
+h0 : ↑A.det = 0
+a b : Fin d
+⊢ ↑(diagonal (fun x => ↑j) a b) = if a = b then ↑j else 0
+'P2MW.S_Polynomial_exists_factorization_resultant_X_pow_sub_one_eq_mul_add_of_not_dvd.solution' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]

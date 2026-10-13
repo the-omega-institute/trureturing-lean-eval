@@ -1,0 +1,16 @@
+    have hred : (Int.castRingHom (ZMod ℓ)).mapMatrix (1 + (ℓ : ℤ) • N) = 1 := by
+      ext a b
+      simp [RingHom.mapMatrix_apply, Matrix.map_apply, Matrix.add_apply,
+        Matrix.one_apply, zsmul_eq_mul, ← Matrix.diagonal_natCast, Matrix.diagonal_mul]
+    rw [show (((1 + (ℓ : ℤ) • N).det : ℤ) : ZMod ℓ) = (Int.castRingHom (ZMod ℓ)) (1 + (ℓ : ℤ) • N).det
+      from rfl, RingHom.map_det, hred, Matrix.det_one]
+
+    have hred : (Int.castRingHom (ZMod ℓ)).mapMatrix A =
+        (j : ZMod ℓ) • (1 : Matrix (Fin d) (Fin d) (ZMod ℓ)) := by
+      rw [hA]
+      ext a b
+      simp [RingHom.mapMatrix_apply, Matrix.map_apply, Matrix.add_apply,
+        Matrix.smul_apply, Matrix.one_apply, zsmul_eq_mul, smul_eq_mul,
+        ← Matrix.diagonal_natCast, Matrix.diagonal_mul]
+    rw [show ((A.det : ℤ) : ZMod ℓ) = (Int.castRingHom (ZMod ℓ)) A.det from rfl,
+      RingHom.map_det, hred, Matrix.det_smul, Matrix.det_one, mul_one, Fintype.card_fin]

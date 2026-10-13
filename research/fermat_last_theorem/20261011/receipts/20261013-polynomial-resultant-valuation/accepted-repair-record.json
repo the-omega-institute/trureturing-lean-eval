@@ -1,0 +1,62 @@
+{
+  "at": "2026-10-13T07:51:04.003238+00:00",
+  "checks": {
+    "source": {
+      "module": "Submission.Supplier.P2M.Sol.S_Polynomial_exists_factorization_resultant_X_pow_sub_one_eq_mul_add_of_not_dvd",
+      "make_exit": 0,
+      "kernel_exit": 0,
+      "kernel_seconds": 52.930384917,
+      "compiler_warnings": 0,
+      "final_standard3_audit_passed": true,
+      "printed_final_axiom_closures": [
+        {
+          "declaration": "P2MW.S_Polynomial_exists_factorization_resultant_X_pow_sub_one_eq_mul_add_of_not_dvd.solution",
+          "recursive_axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "original_canonical_lines": 383,
+      "repaired_canonical_lines": 385,
+      "original_final_statement_and_full_module_proof_preserved": true
+    },
+    "card": {
+      "module": "Submission.Supplier.Theorems.Thm_Polynomial_exists_factorization_resultant_X_pow_sub_one_eq_mul_add_of_not_dvd",
+      "make_exit": 0,
+      "kernel_exit": 0,
+      "kernel_seconds": 109.734315959,
+      "compiler_warnings": 0,
+      "final_standard3_audit_passed": true,
+      "printed_final_axiom_closures": [
+        {
+          "declaration": "Polynomial.exists_factorization_resultant_X_pow_sub_one_eq_mul_add_of_not_dvd",
+          "recursive_axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "original_canonical_lines": 13,
+      "repaired_canonical_lines": 15,
+      "original_final_statement_and_full_module_proof_preserved": true
+    }
+  },
+  "proof_summary": "For every monic integer polynomial P and arbitrary natural prime ell not dividing P.coeff 0, with nonzero resultant of X^n-1 and P for every positive n, retain positive m0 and natural c such that for every positive j prime to ell and every natural k the ell-factorization exponent of the absolute resultant of X^(m0*j*ell^k)-1 and P equals P.natDegree*k+c. Preserve the full companion-matrix, characteristic-polynomial/resultant, congruence, finite-order and lifting-the-exponent proof, including dimension zero and ell=2.",
+  "original_statements_hypotheses_and_full_proofs_preserved": true,
+  "repaired_source_card_pair_actual_make_kernel_passed": true,
+  "source_card_actual_final_standard3": true,
+  "no_linter_suppression_added": true,
+  "baseline_source_actual_exit": 1,
+  "supplier": "anthropics/fermats-last-theorem",
+  "supplier_commit": "6e837e75355538c7f80bab5b956861e86c4eacc2",
+  "selected_problem": "fermat_last_theorem",
+  "full_original_complete": false,
+  "official_new_solve_credit": 0,
+  "full_root_import_replay_and_axiom_audit_pending": true,
+  "max_active_flt_jobs": 1,
+  "max_active_flt_compilers": 1,
+  "lean_threads": 1
+}

@@ -1,0 +1,31 @@
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_Polynomial_exists_factorization_resultant_X_pow_sub_one_eq_mul_add_of_not_dvd.lean:197:78: error: unsolved goals
+d ℓ : ℕ
+hℓ : Fact (Nat.Prime ℓ)
+N : Matrix (Fin d) (Fin d) ℤ
+hdvd : ↑ℓ ∣ (1 + ↑ℓ • N).det
+h0 : ↑(1 + ↑ℓ • N).det = 0
+a b : Fin d
+⊢ ↑((↑ℓ * N) a b) = 0
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_Polynomial_exists_factorization_resultant_X_pow_sub_one_eq_mul_add_of_not_dvd.lean:200:8: warning: This simp argument is unused:
+  Matrix.smul_apply
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [RingHom.mapMatrix_apply, Matrix.map_apply, Matrix.add_apply, Matrix.one_apply, zsmul_eq_mul]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_Polynomial_exists_factorization_resultant_X_pow_sub_one_eq_mul_add_of_not_dvd.lean:306:64: error: unsolved goals
+d ℓ : ℕ
+hℓ : Fact (Nat.Prime ℓ)
+j : ℕ
+hj : ¬ℓ ∣ j
+N : Matrix (Fin d) (Fin d) ℤ
+A : Matrix (Fin d) (Fin d) ℤ := ↑j • 1 + ↑ℓ • N
+hdvd : ↑ℓ ∣ A.det
+hA : A = ↑j • 1 + ↑ℓ • N
+h0 : ↑A.det = 0
+a b : Fin d
+⊢ ↑(↑j a b) + ↑((↑ℓ * N) a b) = if a = b then ↑j else 0
+'P2MW.S_Polynomial_exists_factorization_resultant_X_pow_sub_one_eq_mul_add_of_not_dvd.solution' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
