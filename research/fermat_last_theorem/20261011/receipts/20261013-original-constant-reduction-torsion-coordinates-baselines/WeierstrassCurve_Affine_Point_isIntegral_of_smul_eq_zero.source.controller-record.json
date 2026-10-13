@@ -1,0 +1,44 @@
+{
+  "sha256": "ef3ebc1f112fa5f7bf135e64f6c2ca76c9b89a078d7e117ab768cb4f3aa5e945",
+  "exit": 0,
+  "empty_output_retry_done": false,
+  "source_sha256_after": "ef3ebc1f112fa5f7bf135e64f6c2ca76c9b89a078d7e117ab768cb4f3aa5e945",
+  "source_unchanged": true,
+  "olean_sha256": "306ab02d41b7ad2f19ff01cd108834e98efe611028fd0b9e62da12eb9399dfa5",
+  "seconds": 70.66244449999976,
+  "pid": 85464,
+  "command": [
+    "/Users/macstudio/.local/omega-shims/lean",
+    "-j1",
+    "--trust=0",
+    "-Ddebug.skipKernelTC=false",
+    "-R",
+    "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src",
+    "-o",
+    "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-build/lib/lean/Submission/Supplier/P2M/Sol/S_WeierstrassCurve_Affine_Point_isIntegral_of_smul_eq_zero.olean",
+    "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_WeierstrassCurve_Affine_Point_isIntegral_of_smul_eq_zero.lean"
+  ],
+  "make_wrapper_pid": 78636,
+  "make_exit": 0,
+  "make_entry_failed": false,
+  "cache_binding_valid": true,
+  "canonical_make_running_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/f9b53145018965b3128aeb06-1791893243810667000.make-running.json",
+  "canonical_make_terminal_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/f9b53145018965b3128aeb06-1791893243810667000.make-terminal.json",
+  "kernel_terminal_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/f9b53145018965b3128aeb06-1791893243810667000.kernel/result.json",
+  "direct_dependencies": [
+    {
+      "module": "Submission.Supplier.Theorems.Thm_WeierstrassCurve_Affine_Point_eval_psiSq_eq_zero_of_smul_eq_zero",
+      "source_sha256": "0200b0c5db454fc04398125dc807e202efe522fdbd8a4c8a967494d6bf57ea0a",
+      "object_sha256": "005bea4ba8f9c05373baec21c8b8ca0f91659a4260fed94cddc23c60015ee89a",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.P2M.Util",
+      "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+      "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+      "receipt_reused": true
+    }
+  ],
+  "stdout": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/f9b53145018965b3128aeb06-1791893243810667000.kernel/stdout.log",
+  "stderr": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/f9b53145018965b3128aeb06-1791893243810667000.kernel/stderr.log"
+}

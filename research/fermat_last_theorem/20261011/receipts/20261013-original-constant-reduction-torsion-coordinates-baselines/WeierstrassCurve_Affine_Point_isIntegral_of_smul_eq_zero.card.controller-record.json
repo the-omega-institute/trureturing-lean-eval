@@ -1,0 +1,44 @@
+{
+  "sha256": "1fb62f82207a302e9d4753a731444bbbd9c372831c263298f711262f8f4d47bd",
+  "exit": 0,
+  "empty_output_retry_done": false,
+  "source_sha256_after": "1fb62f82207a302e9d4753a731444bbbd9c372831c263298f711262f8f4d47bd",
+  "source_unchanged": true,
+  "olean_sha256": "416206646811b07f8bb57f71d1e6226e07548d6c355478aae37f895ee53b013a",
+  "seconds": 23.368375707999803,
+  "pid": 1416,
+  "command": [
+    "/Users/macstudio/.local/omega-shims/lean",
+    "-j1",
+    "--trust=0",
+    "-Ddebug.skipKernelTC=false",
+    "-R",
+    "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src",
+    "-o",
+    "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-build/lib/lean/Submission/Supplier/Theorems/Thm_WeierstrassCurve_Affine_Point_isIntegral_of_smul_eq_zero.olean",
+    "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/Theorems/Thm_WeierstrassCurve_Affine_Point_isIntegral_of_smul_eq_zero.lean"
+  ],
+  "make_wrapper_pid": 98270,
+  "make_exit": 0,
+  "make_entry_failed": false,
+  "cache_binding_valid": true,
+  "canonical_make_running_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/87d1bee411f9c71be0a260ae-1791893317565535000.make-running.json",
+  "canonical_make_terminal_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/87d1bee411f9c71be0a260ae-1791893317565535000.make-terminal.json",
+  "kernel_terminal_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/87d1bee411f9c71be0a260ae-1791893317565535000.kernel/result.json",
+  "direct_dependencies": [
+    {
+      "module": "Submission.Supplier.P2M.Util",
+      "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+      "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.P2M.Sol.S_WeierstrassCurve_Affine_Point_isIntegral_of_smul_eq_zero",
+      "source_sha256": "ef3ebc1f112fa5f7bf135e64f6c2ca76c9b89a078d7e117ab768cb4f3aa5e945",
+      "object_sha256": "306ab02d41b7ad2f19ff01cd108834e98efe611028fd0b9e62da12eb9399dfa5",
+      "receipt_reused": true
+    }
+  ],
+  "stdout": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/87d1bee411f9c71be0a260ae-1791893317565535000.kernel/stdout.log",
+  "stderr": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/87d1bee411f9c71be0a260ae-1791893317565535000.kernel/stderr.log"
+}

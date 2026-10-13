@@ -1,0 +1,318 @@
+{
+  "at": "2026-10-13T12:18:52.893684+00:00",
+  "original_source_card_pairs_actual_make_kernel_passed": true,
+  "canonical_pairs_byte_identical_to_supplier": true,
+  "no_source_edits": true,
+  "no_linter_suppression_added": true,
+  "no_redundant_recompilation": true,
+  "original_statements_hypotheses_and_proofs_preserved": true,
+  "checks": {
+    "AlgebraicCurve_exists_constantReduction_of_constantFieldExtension": {
+      "proof_summary": "Preserve arbitrary fields K,F,K-prime,F-prime with all original compatible algebras and scalar towers, algebraically closed K, both one-variable function-field finite-generation hypotheses, and the K-prime-adjoin image-of-F generation condition. Preserve all four outputs: retraction on every F scalar, kernel exactly the maximal ideal, regular scaling of every nonzero F-prime element by a K-prime scalar into the valuation subring with nonzero image, and image of each contained K-prime scalar in the K-scalar range of F. The complete 30-line supplier proof constructs its valuation subring A and retraction sigma from algebraic closedness and applies the section theorem; neither A nor sigma is an additional input. No extra assumptions on K-prime or F-prime are added.",
+      "checks": {
+        "source": {
+          "module": "Submission.Supplier.P2M.Sol.S_AlgebraicCurve_exists_constantReduction_of_constantFieldExtension",
+          "canonical_lines": 30,
+          "canonical_byte_identical_to_supplier": true,
+          "make_exit": 0,
+          "kernel_exit": 0,
+          "kernel_seconds": 7.834483541999999,
+          "compiler_warnings": 0,
+          "source_unchanged_during_check": true,
+          "printed_final_axiom_closures": [],
+          "separate_final_axiom_audit_pending": true,
+          "direct_dependencies": [
+            {
+              "module": "Submission.Supplier.Theorems.Thm_IsAlgClosed_exists_valuationSubring_ringHom_retraction",
+              "source_sha256": "4124a896facf4cb331fc1703a2013a58816bba17780f7cb8677b3dffe4383b75",
+              "object_sha256": "58c48b12729a5e0f6bf9f636707a84ff11d3da52ae71dd4f104043ed2d999256",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.Theorems.Thm_AlgebraicCurve_exists_valuationSubring_section_of_constantField_valuationSubring",
+              "source_sha256": "a78b8c0cd3b4329f5e7485c47ff970524bb7a62fb90c2e1d9cf42e66b4c65f24",
+              "object_sha256": "c28580c17f667313fec9d63b0e5d44b16a9a816bb3c1198f28c1783fb14bf5fd",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.P2M.Util",
+              "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+              "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+              "receipt_reused": true
+            }
+          ]
+        },
+        "card": {
+          "module": "Submission.Supplier.Theorems.Thm_AlgebraicCurve_exists_constantReduction_of_constantFieldExtension",
+          "canonical_lines": 20,
+          "canonical_byte_identical_to_supplier": true,
+          "make_exit": 0,
+          "kernel_exit": 0,
+          "kernel_seconds": 102.996024458,
+          "compiler_warnings": 0,
+          "source_unchanged_during_check": true,
+          "printed_final_axiom_closures": [],
+          "separate_final_axiom_audit_pending": true,
+          "direct_dependencies": [
+            {
+              "module": "Submission.Supplier.P2M.Util",
+              "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+              "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.P2M.Sol.S_AlgebraicCurve_exists_constantReduction_of_constantFieldExtension",
+              "source_sha256": "c1512a4eebaaec12fbc243c53933a4859eda5a4130fd2bd90930eac4b8c594a2",
+              "object_sha256": "982274a714ba3bba34a7a8b92bfc2d0581b3ac83d2d61a920596a3964fb871af",
+              "receipt_reused": true
+            }
+          ]
+        }
+      }
+    },
+    "WeierstrassCurve_Affine_Point_eval_psiSq_eq_zero_of_smul_eq_zero": {
+      "proof_summary": "Preserve an arbitrary field L with DecidableEq, an elliptic Weierstrass curve W, arbitrary integer n, nonsingular affine coordinates x,y, and n times the corresponding affine point equal to zero. Retain precisely the conclusion that the squared division polynomial PsiSq n evaluates to zero at x. Preserve the complete 32-line supplier proof; no nonzero, positive or prime condition on n is added.",
+      "checks": {
+        "source": {
+          "module": "Submission.Supplier.P2M.Sol.S_WeierstrassCurve_Affine_Point_eval_psiSq_eq_zero_of_smul_eq_zero",
+          "canonical_lines": 32,
+          "canonical_byte_identical_to_supplier": true,
+          "make_exit": 0,
+          "kernel_exit": 0,
+          "kernel_seconds": 15.699417083,
+          "compiler_warnings": 0,
+          "source_unchanged_during_check": true,
+          "printed_final_axiom_closures": [],
+          "separate_final_axiom_audit_pending": true,
+          "direct_dependencies": [
+            {
+              "module": "Submission.Supplier.Definitions.Def_EllipticCurve_DivisionPolynomialOmega",
+              "source_sha256": "6cfe537b9599b6f02827f1af6522fe692e904962d03e92a2a2a29e0a93075211",
+              "object_sha256": "a7a67e0c66e14d26f518f3a98386b0783910238c2ff96100c2b908b912afe33a",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.Theorems.Thm_WeierstrassCurve_Affine_Point_smul_some_eq_zero_iff",
+              "source_sha256": "32d5441ff72d770413c517d6773bd9e508c8ad5b926c90cfb7ef3b69c44bf18b",
+              "object_sha256": "3e4eb026135d2c4494dbf43ad38a66530f8084e40500b42f5fece5585de831d9",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.P2M.Util",
+              "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+              "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+              "receipt_reused": true
+            }
+          ]
+        },
+        "card": {
+          "module": "Submission.Supplier.Theorems.Thm_WeierstrassCurve_Affine_Point_eval_psiSq_eq_zero_of_smul_eq_zero",
+          "canonical_lines": 13,
+          "canonical_byte_identical_to_supplier": true,
+          "make_exit": 0,
+          "kernel_exit": 0,
+          "kernel_seconds": 86.610254292,
+          "compiler_warnings": 0,
+          "source_unchanged_during_check": true,
+          "printed_final_axiom_closures": [],
+          "separate_final_axiom_audit_pending": true,
+          "direct_dependencies": [
+            {
+              "module": "Submission.Supplier.Definitions.Def_EllipticCurve_DivisionPolynomialOmega",
+              "source_sha256": "6cfe537b9599b6f02827f1af6522fe692e904962d03e92a2a2a29e0a93075211",
+              "object_sha256": "a7a67e0c66e14d26f518f3a98386b0783910238c2ff96100c2b908b912afe33a",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.P2M.Util",
+              "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+              "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.P2M.Sol.S_WeierstrassCurve_Affine_Point_eval_psiSq_eq_zero_of_smul_eq_zero",
+              "source_sha256": "50400d714ae708c88d05fb8fdffa8d2d9aac7686455e8da9e6b5756bfaca3797",
+              "object_sha256": "25ed71503dd7eeca1f8b553d1cd48c59a35e562399644fd281a792b3499f307b",
+              "receipt_reused": true
+            }
+          ]
+        }
+      }
+    },
+    "WeierstrassCurve_Affine_Point_isIntegral_of_smul_eq_zero": {
+      "proof_summary": "Preserve arbitrary fields F,L with the F-algebra structure on L and DecidableEq L, an elliptic Weierstrass curve over F, integer n with its cast in F nonzero, nonsingular affine coordinates x,y after base change, and n times the corresponding affine point equal to zero. Retain both conclusions IsIntegral F x and IsIntegral F y. Preserve the complete 65-line supplier proof using the nonzero division polynomial for x, the monic Weierstrass equation over the integral closure for y, and transitivity of integrality. No algebraic-closedness, characteristic-zero or prime-order assumption is added.",
+      "checks": {
+        "source": {
+          "module": "Submission.Supplier.P2M.Sol.S_WeierstrassCurve_Affine_Point_isIntegral_of_smul_eq_zero",
+          "canonical_lines": 65,
+          "canonical_byte_identical_to_supplier": true,
+          "make_exit": 0,
+          "kernel_exit": 0,
+          "kernel_seconds": 35.917057041,
+          "compiler_warnings": 2,
+          "source_unchanged_during_check": true,
+          "printed_final_axiom_closures": [],
+          "separate_final_axiom_audit_pending": true,
+          "direct_dependencies": [
+            {
+              "module": "Submission.Supplier.Theorems.Thm_WeierstrassCurve_Affine_Point_eval_psiSq_eq_zero_of_smul_eq_zero",
+              "source_sha256": "0200b0c5db454fc04398125dc807e202efe522fdbd8a4c8a967494d6bf57ea0a",
+              "object_sha256": "005bea4ba8f9c05373baec21c8b8ca0f91659a4260fed94cddc23c60015ee89a",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.P2M.Util",
+              "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+              "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+              "receipt_reused": true
+            }
+          ]
+        },
+        "card": {
+          "module": "Submission.Supplier.Theorems.Thm_WeierstrassCurve_Affine_Point_isIntegral_of_smul_eq_zero",
+          "canonical_lines": 15,
+          "canonical_byte_identical_to_supplier": true,
+          "make_exit": 0,
+          "kernel_exit": 0,
+          "kernel_seconds": 6.526882541,
+          "compiler_warnings": 0,
+          "source_unchanged_during_check": true,
+          "printed_final_axiom_closures": [],
+          "separate_final_axiom_audit_pending": true,
+          "direct_dependencies": [
+            {
+              "module": "Submission.Supplier.P2M.Util",
+              "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+              "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.P2M.Sol.S_WeierstrassCurve_Affine_Point_isIntegral_of_smul_eq_zero",
+              "source_sha256": "ef3ebc1f112fa5f7bf135e64f6c2ca76c9b89a078d7e117ab768cb4f3aa5e945",
+              "object_sha256": "306ab02d41b7ad2f19ff01cd108834e98efe611028fd0b9e62da12eb9399dfa5",
+              "receipt_reused": true
+            }
+          ]
+        }
+      }
+    },
+    "WeierstrassCurve_bijective_torsionBy_pointMap_ratAlgClosure_padicAlgClosure_of_isElliptic": {
+      "proof_summary": "Preserve arbitrary elliptic Weierstrass curve E over the rationals, natural prime p, and arbitrary rational algebra embedding iota from the rational algebraic closure to the p-adic algebraic closure. Preserve both classical DecidableEq instances and the exact affine-point map between the p-torsion submodules, including its membership proof. Retain full Function.Bijective, and the complete 74-line supplier proof; no preferred embedding or additional good-reduction hypothesis is added.",
+      "checks": {
+        "source": {
+          "module": "Submission.Supplier.P2M.Sol.S_WeierstrassCurve_bijective_torsionBy_pointMap_ratAlgClosure_padicAlgClosure_of_isElliptic",
+          "canonical_lines": 74,
+          "canonical_byte_identical_to_supplier": true,
+          "make_exit": 0,
+          "kernel_exit": 0,
+          "kernel_seconds": 8.264817125,
+          "compiler_warnings": 3,
+          "source_unchanged_during_check": true,
+          "printed_final_axiom_closures": [],
+          "separate_final_axiom_audit_pending": true,
+          "direct_dependencies": [
+            {
+              "module": "Submission.Supplier.Definitions.Def_GaloisRep_Flat",
+              "source_sha256": "59474ee379b00b70196dff4825d4fad20a309928a2d3214dabb17a67091c48c6",
+              "object_sha256": "f436f36b8f04c55cebc0b3ca453de19377ed018bd09cce31db752d9a181881a5",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.Definitions.Def_GaloisRep_Residual",
+              "source_sha256": "acaab9dd928d013c9340e77676443b27f1ffc090abea3f139482b8fd2f8e8ff5",
+              "object_sha256": "429ac7b7b2b45f4aee7f1d99d97669e2e968c350566949b758046d25d399fcab",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.Definitions.Def_FLTPrelim_GaloisRep",
+              "source_sha256": "fc0cb3d111b0d87e9c0b5be473858fa25c7d444fc6865ba1d05b6d9994700ff4",
+              "object_sha256": "d5a2340c2252cf4831dee6d0e2a52c4081c0958d63ff920d267a4db6240b48b5",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.Theorems.Thm_WeierstrassCurve_Affine_Point_isIntegral_of_smul_eq_zero",
+              "source_sha256": "1fb62f82207a302e9d4753a731444bbbd9c372831c263298f711262f8f4d47bd",
+              "object_sha256": "416206646811b07f8bb57f71d1e6226e07548d6c355478aae37f895ee53b013a",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.P2M.Util",
+              "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+              "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+              "receipt_reused": true
+            }
+          ]
+        },
+        "card": {
+          "module": "Submission.Supplier.Theorems.Thm_WeierstrassCurve_bijective_torsionBy_pointMap_ratAlgClosure_padicAlgClosure_of_isElliptic",
+          "canonical_lines": 25,
+          "canonical_byte_identical_to_supplier": true,
+          "make_exit": 0,
+          "kernel_exit": 0,
+          "kernel_seconds": 70.309342208,
+          "compiler_warnings": 0,
+          "source_unchanged_during_check": true,
+          "printed_final_axiom_closures": [],
+          "separate_final_axiom_audit_pending": true,
+          "direct_dependencies": [
+            {
+              "module": "Submission.Supplier.Definitions.Def_GaloisRep_Flat",
+              "source_sha256": "59474ee379b00b70196dff4825d4fad20a309928a2d3214dabb17a67091c48c6",
+              "object_sha256": "f436f36b8f04c55cebc0b3ca453de19377ed018bd09cce31db752d9a181881a5",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.Definitions.Def_GaloisRep_Residual",
+              "source_sha256": "acaab9dd928d013c9340e77676443b27f1ffc090abea3f139482b8fd2f8e8ff5",
+              "object_sha256": "429ac7b7b2b45f4aee7f1d99d97669e2e968c350566949b758046d25d399fcab",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.Definitions.Def_FLTPrelim_GaloisRep",
+              "source_sha256": "fc0cb3d111b0d87e9c0b5be473858fa25c7d444fc6865ba1d05b6d9994700ff4",
+              "object_sha256": "d5a2340c2252cf4831dee6d0e2a52c4081c0958d63ff920d267a4db6240b48b5",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.P2M.Util",
+              "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+              "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.P2M.Sol.S_WeierstrassCurve_bijective_torsionBy_pointMap_ratAlgClosure_padicAlgClosure_of_isElliptic",
+              "source_sha256": "f7568e6113ffd259397ea908968284f2ae14a75efad1f018275e7a39c5746806",
+              "object_sha256": "903c701b05b84aba0ac48228f62e2c418f4a92dc026083993400108ac57e35ec",
+              "receipt_reused": true
+            }
+          ]
+        }
+      }
+    }
+  },
+  "supplier": "anthropics/fermats-last-theorem",
+  "supplier_commit": "6e837e75355538c7f80bab5b956861e86c4eacc2",
+  "full_original_complete": false,
+  "official_new_solve_credit": 0,
+  "complete_import_replay_and_recursive_axiom_audits_pending": true,
+  "selected_problem": "fermat_last_theorem",
+  "max_active_flt_jobs": 1,
+  "max_active_flt_compilers": 1,
+  "lean_threads": 1,
+  "graph_snapshot": {
+    "compiled": 7995,
+    "failed": 0,
+    "ready": 4352,
+    "root_compiled": false,
+    "workers": 1,
+    "running": {
+      "Submission.Supplier.Theorems.Thm_WeierstrassCurve_bijective_torsionBy_pointMap_ratAlgClosure_padicAlgClosure": {
+        "pid": 13088,
+        "make_wrapper_pid": 71624,
+        "phase": "kernel",
+        "sha256": "5e6751f4accc64a01a51381da8b44fb7656d1791980a29189e258556c90e198a",
+        "configuration": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/7b683ad9054ffb962f5a0003-1791893738642004000.configuration.json"
+      }
+    }
+  }
+}
