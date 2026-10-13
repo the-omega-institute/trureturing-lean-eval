@@ -1,0 +1,37 @@
+[
+  [
+    "isIntegral_algebraMap_iff (algebraMap ℚ ℚbar).injective",
+    "isIntegral_algebraMap_iff",
+    1
+  ],
+  [
+    "\n  haveI : FiniteDimensional ℚ E := IntermediateField.adjoin.finiteDimensional hxint\n",
+    "\n  have : FiniteDimensional ℚ E := IntermediateField.adjoin.finiteDimensional hxint\n",
+    1
+  ],
+  [
+    "\n  haveI := center_liesOver hp hA\n",
+    "\n  have := center_liesOver hp hA\n",
+    2
+  ],
+  [
+    "\n  haveI : (Ideal.span {(p : ℤ)}).IsMaximal :=\n",
+    "\n  have : (Ideal.span {(p : ℤ)}).IsMaximal :=\n",
+    1
+  ],
+  [
+    "\n  haveI := center_isMaximal hp hA\n",
+    "\n  have := center_isMaximal hp hA\n",
+    2
+  ],
+  [
+    "\n  letI : Field (𝓞 ⧸ center A) := Ideal.Quotient.field _\n",
+    "\n  let : Field (𝓞 ⧸ center A) := Ideal.Quotient.field _\n",
+    2
+  ],
+  [
+    "\n  haveI : CharP (ResidueField A') p := charP_of_ringEquiv p e\n",
+    "\n  have : CharP (ResidueField A') p := charP_of_ringEquiv p e\n",
+    1
+  ]
+]
