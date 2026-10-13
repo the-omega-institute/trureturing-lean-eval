@@ -1,0 +1,27 @@
+[
+  [
+    "    rw [add_neg_cancel, ZMod.val_zero, pow_zero] at h",
+    "    erw [add_neg_cancel, ZMod.val_zero, pow_zero] at h",
+    1
+  ],
+  [
+    "      rw [hdet, sub_eq_add_neg, hvadd ζ₀ hζ₀n, hvneg ζ₀ hζ₀n, hvmul ζ₀ hζ₀n, hvmul ζ₀ hζ₀n]",
+    "      erw [hdet, sub_eq_add_neg, hvadd ζ₀ hζ₀n, hvneg ζ₀ hζ₀n, hvmul ζ₀ hζ₀n, hvmul ζ₀ hζ₀n]",
+    1
+  ],
+  [
+    "\n  haveI : Fact n.Prime := ⟨hn⟩\n",
+    "\n  have : Fact n.Prime := ⟨hn⟩\n",
+    1
+  ],
+  [
+    "\n  haveI : Finite V := Nat.finite_of_card_ne_zero (by rw [hcard]; exact pow_ne_zero _ hn.ne_zero)\n",
+    "\n  have : Finite V := Nat.finite_of_card_ne_zero (by rw [hcard]; exact pow_ne_zero _ hn.ne_zero)\n",
+    1
+  ],
+  [
+    "\n  haveI : Module.Finite (ZMod n) V := Module.Finite.of_finite\n",
+    "\n  have : Module.Finite (ZMod n) V := Module.Finite.of_finite\n",
+    1
+  ]
+]

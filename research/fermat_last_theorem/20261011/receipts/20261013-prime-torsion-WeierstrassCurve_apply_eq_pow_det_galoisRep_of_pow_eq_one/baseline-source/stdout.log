@@ -1,0 +1,142 @@
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_WeierstrassCurve_apply_eq_pow_det_galoisRep_of_pow_eq_one.lean:21:2: warning: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_WeierstrassCurve_apply_eq_pow_det_galoisRep_of_pow_eq_one.lean:25:2: warning: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_WeierstrassCurve_apply_eq_pow_det_galoisRep_of_pow_eq_one.lean:26:2: warning: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_WeierstrassCurve_apply_eq_pow_det_galoisRep_of_pow_eq_one.lean:81:8: error: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  ?a + -?a
+in the target expression
+  u ^ (x + -x).val = u ^ x.val * u ^ (-x).val
+
+F : Type u_1
+K : Type u_2
+inst✝⁵ : Field F
+inst✝⁴ : Field K
+inst✝³ : Algebra F K
+inst✝² : IsAlgClosed K
+inst✝¹ : DecidableEq K
+W : WeierstrassCurve F
+inst✝ : W.IsElliptic
+n : ℕ
+hn : Nat.Prime n
+hnK : ↑n ≠ 0
+σ : Gal(K/F)
+ζ : K
+hζ : ζ ^ n = 1
+this✝¹ : Fact (Nat.Prime n)
+V : Submodule ℤ W⟮K⟯ := Submodule.torsionBy ℤ W⟮K⟯ ↑n
+hV : V = Submodule.torsionBy ℤ W⟮K⟯ ↑n
+hcard : Nat.card ↥V = n ^ 2
+this✝ : Finite ↥V
+this : Module.Finite (ZMod n) ↥V
+h2 : Module.finrank (ZMod n) ↥V = 2
+b : Module.Basis (Fin 2) (ZMod n) ↥V := Module.finBasisOfFinrankEq (ZMod n) (↥V) h2
+e : ↥(Submodule.torsionBy ℤ W⟮K⟯ ↑n) → ↥(Submodule.torsionBy ℤ W⟮K⟯ ↑n) → Kˣ
+haddL : ∀ (P P' Q : ↥(Submodule.torsionBy ℤ W⟮K⟯ ↑n)), e (P + P') Q = e P Q * e P' Q
+haddR : ∀ (P Q Q' : ↥(Submodule.torsionBy ℤ W⟮K⟯ ↑n)), e P (Q + Q') = e P Q * e P Q'
+halt : ∀ (P : ↥(Submodule.torsionBy ℤ W⟮K⟯ ↑n)), e P P = 1
+hgal : ∀ (σ : Gal(K/F)) (P Q : ↥(Submodule.torsionBy ℤ W⟮K⟯ ↑n)), ↑(e (σ • P) (σ • Q)) = σ ↑(e P Q)
+hnd : ∀ (P : ↥(Submodule.torsionBy ℤ W⟮K⟯ ↑n)), (∀ (Q : ↥(Submodule.torsionBy ℤ W⟮K⟯ ↑n)), e P Q = 1) → P = 0
+hzeroL : ∀ (B : ↥(Submodule.torsionBy ℤ W⟮K⟯ ↑n)), e 0 B = 1
+hzeroR : ∀ (A : ↥(Submodule.torsionBy ℤ W⟮K⟯ ↑n)), e A 0 = 1
+hpowL : ∀ (k : ℕ) (A B : ↥V), e (k • A) B = e A B ^ k
+hpowR : ∀ (k : ℕ) (A B : ↥V), e A (k • B) = e A B ^ k
+hsmulL : ∀ (x : ZMod n) (A B : ↥V), e (x • A) B = e A B ^ x.val
+hsmulR : ∀ (x : ZMod n) (A B : ↥V), e A (x • B) = e A B ^ x.val
+hskew : ∀ (A B : ↥V), e B A = (e A B)⁻¹
+hpown : ∀ (A B : ↥V), e A B ^ n = 1
+hmod : ∀ (u : Kˣ), u ^ n = 1 → ∀ (a : ℕ), u ^ (a % n) = u ^ a
+hvadd : ∀ (u : Kˣ), u ^ n = 1 → ∀ (x y : ZMod n), u ^ (x + y).val = u ^ x.val * u ^ y.val
+hvmul : ∀ (u : Kˣ), u ^ n = 1 → ∀ (x y : ZMod n), u ^ (x * y).val = (u ^ x.val) ^ y.val
+u : Kˣ
+hu : u ^ n = 1
+x : ZMod n
+h : u ^ (x + -x).val = u ^ x.val * u ^ (-x).val
+⊢ u ^ (-x).val = (u ^ x.val)⁻¹
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_WeierstrassCurve_apply_eq_pow_det_galoisRep_of_pow_eq_one.lean:109:47: error: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  ζ₀ ^ (-?x).val
+in the target expression
+  ζ₀ ^ (M 0 0 * M 1 1).val * ζ₀ ^ (-(M 0 1 * M 1 0)).val =
+    (ζ₀ ^ (M 0 0).val) ^ (M 1 1).val * ((ζ₀ ^ (M 0 1).val) ^ (M 1 0).val)⁻¹
+
+F : Type u_1
+K : Type u_2
+inst✝⁵ : Field F
+inst✝⁴ : Field K
+inst✝³ : Algebra F K
+inst✝² : IsAlgClosed K
+inst✝¹ : DecidableEq K
+W : WeierstrassCurve F
+inst✝ : W.IsElliptic
+n : ℕ
+hn : Nat.Prime n
+hnK : ↑n ≠ 0
+σ : Gal(K/F)
+ζ : K
+hζ : ζ ^ n = 1
+this✝¹ : Fact (Nat.Prime n)
+V : Submodule ℤ W⟮K⟯ := Submodule.torsionBy ℤ W⟮K⟯ ↑n
+hV : V = Submodule.torsionBy ℤ W⟮K⟯ ↑n
+hcard : Nat.card ↥V = n ^ 2
+this✝ : Finite ↥V
+this : Module.Finite (ZMod n) ↥V
+h2✝ : Module.finrank (ZMod n) ↥V = 2
+b : Module.Basis (Fin 2) (ZMod n) ↥V := Module.finBasisOfFinrankEq (ZMod n) (↥V) h2✝
+e : ↥(Submodule.torsionBy ℤ W⟮K⟯ ↑n) → ↥(Submodule.torsionBy ℤ W⟮K⟯ ↑n) → Kˣ
+haddL : ∀ (P P' Q : ↥(Submodule.torsionBy ℤ W⟮K⟯ ↑n)), e (P + P') Q = e P Q * e P' Q
+haddR : ∀ (P Q Q' : ↥(Submodule.torsionBy ℤ W⟮K⟯ ↑n)), e P (Q + Q') = e P Q * e P Q'
+halt : ∀ (P : ↥(Submodule.torsionBy ℤ W⟮K⟯ ↑n)), e P P = 1
+hgal : ∀ (σ : Gal(K/F)) (P Q : ↥(Submodule.torsionBy ℤ W⟮K⟯ ↑n)), ↑(e (σ • P) (σ • Q)) = σ ↑(e P Q)
+hnd : ∀ (P : ↥(Submodule.torsionBy ℤ W⟮K⟯ ↑n)), (∀ (Q : ↥(Submodule.torsionBy ℤ W⟮K⟯ ↑n)), e P Q = 1) → P = 0
+hzeroL : ∀ (B : ↥(Submodule.torsionBy ℤ W⟮K⟯ ↑n)), e 0 B = 1
+hzeroR : ∀ (A : ↥(Submodule.torsionBy ℤ W⟮K⟯ ↑n)), e A 0 = 1
+hpowL : ∀ (k : ℕ) (A B : ↥V), e (k • A) B = e A B ^ k
+hpowR : ∀ (k : ℕ) (A B : ↥V), e A (k • B) = e A B ^ k
+hsmulL : ∀ (x : ZMod n) (A B : ↥V), e (x • A) B = e A B ^ x.val
+hsmulR : ∀ (x : ZMod n) (A B : ↥V), e A (x • B) = e A B ^ x.val
+hskew : ∀ (A B : ↥V), e B A = (e A B)⁻¹
+hpown : ∀ (A B : ↥V), e A B ^ n = 1
+hmod : ∀ (u : Kˣ), u ^ n = 1 → ∀ (a : ℕ), u ^ (a % n) = u ^ a
+hvadd : ∀ (u : Kˣ), u ^ n = 1 → ∀ (x y : ZMod n), u ^ (x + y).val = u ^ x.val * u ^ y.val
+hvmul : ∀ (u : Kˣ), u ^ n = 1 → ∀ (x y : ZMod n), u ^ (x * y).val = (u ^ x.val) ^ y.val
+hvneg : ∀ (u : Kˣ), u ^ n = 1 → ∀ (x : ZMod n), u ^ (-x).val = (u ^ x.val)⁻¹
+f : ↥V →ₗ[ZMod n] ↥V := AddMonoidHom.toZModLinearMap n (DistribSMul.toAddMonoidHom (↥V) σ)
+hfdef : f = AddMonoidHom.toZModLinearMap n (DistribSMul.toAddMonoidHom (↥V) σ)
+hf : ∀ (A : ↥V), f A = σ • A
+M : Matrix (Fin 2) (Fin 2) (ZMod n) := (LinearMap.toMatrix b b) f
+hMdef : M = (LinearMap.toMatrix b b) f
+hfb : ∀ (j : Fin 2), f (b j) = M 0 j • b 0 + M 1 j • b 1
+hdet : LinearMap.det f = M 0 0 * M 1 1 - M 0 1 * M 1 0
+ζ₀ : Kˣ := e (b 0) (b 1)
+hζ₀ : ζ₀ = e (b 0) (b 1)
+hζ₀n : ζ₀ ^ n = 1
+h1 : e (σ • b 0) (σ • b 1) = e (M 0 0 • b 0 + M 1 0 • b 1) (M 0 1 • b 0 + M 1 1 • b 1)
+h2 :
+  e (M 0 0 • b 0 + M 1 0 • b 1) (M 0 1 • b 0 + M 1 1 • b 1) =
+    (ζ₀ ^ (M 0 0).val) ^ (M 1 1).val * ((ζ₀ ^ (M 0 1).val) ^ (M 1 0).val)⁻¹
+⊢ ζ₀ ^ (M 0 0 * M 1 1).val * ζ₀ ^ (-(M 0 1 * M 1 0)).val =
+    (ζ₀ ^ (M 0 0).val) ^ (M 1 1).val * ((ζ₀ ^ (M 0 1).val) ^ (M 1 0).val)⁻¹
+
+Note: The target expression is not type-correct under the `implicit` transparency level, which may have triggered the failure. This is usually caused by unfolding of semireducible definitions in prior tactic steps. Use `set_option linter.tacticCheckInstances true` to investigate the source of the issue.
+Full error:
+  function expected
+    M 0

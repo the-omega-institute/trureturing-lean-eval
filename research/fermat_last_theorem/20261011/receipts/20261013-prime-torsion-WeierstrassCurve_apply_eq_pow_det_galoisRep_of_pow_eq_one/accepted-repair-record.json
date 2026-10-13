@@ -1,0 +1,62 @@
+{
+  "at": "2026-10-13T14:46:45.743572+00:00",
+  "checks": {
+    "source": {
+      "module": "Submission.Supplier.P2M.Sol.S_WeierstrassCurve_apply_eq_pow_det_galoisRep_of_pow_eq_one",
+      "make_exit": 0,
+      "kernel_exit": 0,
+      "kernel_seconds": 61.073286167,
+      "compiler_warnings": 0,
+      "final_standard3_audit_passed": true,
+      "printed_final_axiom_closures": [
+        {
+          "declaration": "P2MW.S_WeierstrassCurve_apply_eq_pow_det_galoisRep_of_pow_eq_one.solution",
+          "recursive_axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "original_canonical_lines": 122,
+      "repaired_canonical_lines": 124,
+      "original_final_statement_and_full_module_proof_preserved": true
+    },
+    "card": {
+      "module": "Submission.Supplier.Theorems.Thm_WeierstrassCurve_apply_eq_pow_det_galoisRep_of_pow_eq_one",
+      "make_exit": 0,
+      "kernel_exit": 0,
+      "kernel_seconds": 9.856629416,
+      "compiler_warnings": 0,
+      "final_standard3_audit_passed": true,
+      "printed_final_axiom_closures": [
+        {
+          "declaration": "WeierstrassCurve.apply_eq_pow_det_galoisRep_of_pow_eq_one",
+          "recursive_axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "original_canonical_lines": 10,
+      "repaired_canonical_lines": 12,
+      "original_final_statement_and_full_module_proof_preserved": true
+    }
+  },
+  "proof_summary": "Preserve the full 122-line supplier proof, arbitrary fields and their algebra structure, algebraic closedness and DecidableEq of K, elliptic W, arbitrary prime n of nonzero cast, relative Galois automorphism sigma and every nth root of unity zeta. Retain the exact sigma-zeta determinant-exponent equality on the full n-torsion module. Apply only the two diagnosed rw-to-erw transparency changes using the same equalities, three original warning-directed proposition-valued haveI-to-have changes, and final source/card recursive axiom queries. Preserve the complete cardinality, rank-two basis, nondegenerate pairing, modular-exponent and primitive-root arguments. Require actual zero-warning canonical source/card make/kernel results and exact final propext, Classical.choice, Quot.sound; no original hypothesis or conclusion is weakened.",
+  "original_statements_hypotheses_and_full_proofs_preserved": true,
+  "repaired_source_card_pair_actual_make_kernel_passed": true,
+  "source_card_actual_final_standard3": true,
+  "no_linter_suppression_added": true,
+  "baseline_source_actual_exit": 1,
+  "supplier": "anthropics/fermats-last-theorem",
+  "supplier_commit": "6e837e75355538c7f80bab5b956861e86c4eacc2",
+  "selected_problem": "fermat_last_theorem",
+  "full_original_complete": false,
+  "official_new_solve_credit": 0,
+  "full_root_import_replay_and_axiom_audit_pending": true,
+  "max_active_flt_jobs": 1,
+  "max_active_flt_compilers": 1,
+  "lean_threads": 1
+}
