@@ -1,0 +1,66 @@
+{
+  "at": "2026-10-13T20:17:19.101438+00:00",
+  "checks": {
+    "source": {
+      "module": "Submission.Supplier.P2M.Sol.S_ModularCurve_natCard_ord_jBar_sub_1728_eq_one_eq_nuTwo",
+      "make_exit": 0,
+      "kernel_exit": 0,
+      "kernel_seconds": 105.462185,
+      "compiler_warnings": 0,
+      "printed_final_axiom_closures": [
+        {
+          "declaration": "P2MW.S_ModularCurve_natCard_ord_jBar_sub_1728_eq_one_eq_nuTwo.solution",
+          "recursive_axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "final_standard3_audit_passed": true,
+      "original_canonical_lines": 2282,
+      "repaired_canonical_lines": 2282,
+      "original_final_statement_and_full_module_proof_preserved": true,
+      "dependency_receipts_match_current_controller": true
+    },
+    "card": {
+      "module": "Submission.Supplier.Theorems.Thm_ModularCurve_natCard_ord_jBar_sub_1728_eq_one_eq_nuTwo",
+      "make_exit": 0,
+      "kernel_exit": 0,
+      "kernel_seconds": 51.886075875,
+      "compiler_warnings": 0,
+      "printed_final_axiom_closures": [
+        {
+          "declaration": "ModularCurve.natCard_ord_jBar_sub_1728_eq_one_eq_nuTwo",
+          "recursive_axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "final_standard3_audit_passed": true,
+      "original_canonical_lines": 20,
+      "repaired_canonical_lines": 22,
+      "original_final_statement_and_full_module_proof_preserved": true,
+      "dependency_receipts_match_current_controller": true
+    }
+  },
+  "proof_summary": "For every original nonzero natural level N, preserve the original order-divisibility and full positive-fiber cardinality hypotheses and the exact final statement of ModularCurve.natCard_ord_jBar_sub_1728_eq_one_eq_nuTwo. Preserve the full 2282-line supplier module and all normalization, residue, domination, valuation, ramification and counting branches. Remove only the unrelated eight numerical header blacklist entries, fix precisely the 20 terminally reported local haveI/letI style bindings, retain every other source line and original final statements, and add the card recursive axiom query. Actual current source/card make/kernel checks passed with zero warnings, exactly the three standard axioms and matching dependency receipts.",
+  "repaired_source_card_pair_actual_make_kernel_passed": true,
+  "source_card_actual_final_standard3": true,
+  "original_statements_hypotheses_and_full_proofs_preserved": true,
+  "no_linter_suppression_added": true,
+  "baseline_source_actual_exit": 1,
+  "baseline_make_actual_exit": 2,
+  "terminal_error_name": "ModularCurve.eisensteinNumerator_nineteen",
+  "supplier": "anthropics/fermats-last-theorem",
+  "supplier_commit": "6e837e75355538c7f80bab5b956861e86c4eacc2",
+  "selected_problem": "fermat_last_theorem",
+  "full_original_complete": false,
+  "official_new_solve_credit": 0,
+  "full_root_import_replay_and_axiom_audit_pending": true,
+  "max_active_flt_jobs": 1,
+  "max_active_flt_compilers": 1,
+  "lean_threads": 1
+}
