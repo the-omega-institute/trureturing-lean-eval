@@ -1,0 +1,174 @@
+{
+  "at": "2026-10-13T05:35:53.168286+00:00",
+  "original_source_card_pairs_actual_make_kernel_passed": true,
+  "canonical_pairs_byte_identical_to_supplier": true,
+  "no_source_edits": true,
+  "no_linter_suppression_added": true,
+  "no_redundant_recompilation": true,
+  "original_statements_hypotheses_and_proofs_preserved": true,
+  "checks": {
+    "NumberField_PlaceTransport_orbit_eq_setOf_under_eq": {
+      "proof_summary": "For the original fields E and K with NumberField K, Algebra E K and IsGalois E K, retain the equality between the Galois orbit of an arbitrary height-one prime w of the integer ring of K and the entire set of primes with the same contraction to the integer ring of E. Preserve derivation of NumberField E from the algebra embedding, compatibility between transport of height-one primes and ideal action, the invariant-ring prime orbit theorem and both inclusions. No separate NumberField E hypothesis or restriction on the chosen prime is added.",
+      "checks": {
+        "source": {
+          "module": "Submission.Supplier.P2M.Sol.S_NumberField_PlaceTransport_orbit_eq_setOf_under_eq",
+          "canonical_lines": 51,
+          "canonical_byte_identical_to_supplier": true,
+          "make_exit": 0,
+          "kernel_exit": 0,
+          "kernel_seconds": 37.063929958,
+          "compiler_warnings": 4,
+          "source_unchanged_during_check": true,
+          "printed_final_axiom_closures": [],
+          "separate_final_axiom_audit_pending": true,
+          "direct_dependencies": [
+            {
+              "module": "Submission.Supplier.Definitions.Def_NumberField_PlaceTransport",
+              "source_sha256": "267495c4974bac1f017bc9d5d927963f35a6ad7a10bcd66d0f5887409e0b53da",
+              "object_sha256": "c058d625a2c3443960f8ee5d2376f8d7312b7ce6cfec2082b9b9c0b79bb5d222",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.P2M.Util",
+              "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+              "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+              "receipt_reused": true
+            }
+          ]
+        },
+        "card": {
+          "module": "Submission.Supplier.Theorems.Thm_NumberField_PlaceTransport_orbit_eq_setOf_under_eq",
+          "canonical_lines": 11,
+          "canonical_byte_identical_to_supplier": true,
+          "make_exit": 0,
+          "kernel_exit": 0,
+          "kernel_seconds": 5.482420834,
+          "compiler_warnings": 0,
+          "source_unchanged_during_check": true,
+          "printed_final_axiom_closures": [],
+          "separate_final_axiom_audit_pending": true,
+          "direct_dependencies": [
+            {
+              "module": "Submission.Supplier.Definitions.Def_NumberField_PlaceTransport",
+              "source_sha256": "267495c4974bac1f017bc9d5d927963f35a6ad7a10bcd66d0f5887409e0b53da",
+              "object_sha256": "c058d625a2c3443960f8ee5d2376f8d7312b7ce6cfec2082b9b9c0b79bb5d222",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.P2M.Util",
+              "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+              "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.P2M.Sol.S_NumberField_PlaceTransport_orbit_eq_setOf_under_eq",
+              "source_sha256": "9e5b8897141b2d18f65d3a0cbb4d82f36ee48c19eb9c120385e8d0e57f5b83b2",
+              "object_sha256": "d07c1d2b3a93f2da52b621155d8020ab005e3010a85b23376687479e460182b0",
+              "receipt_reused": true
+            }
+          ]
+        }
+      }
+    },
+    "NumberField_PlaceTransport_stabilizer_eq_decomp": {
+      "proof_summary": "For the original fields E and K with NumberField K and Algebra E K, and an arbitrary height-one prime w of the integer ring of K, retain equality of its stabilizer under K-algebra automorphisms over E with the finite-place decomposition group. Preserve both complete subgroup inclusions, inverse action on the valuation subring, valuation transport for fixed primes, membership via integral valuation less than one and valuation invariance for decomposition-group elements. No Galois assumption or separate NumberField E assumption is added.",
+      "checks": {
+        "source": {
+          "module": "Submission.Supplier.P2M.Sol.S_NumberField_PlaceTransport_stabilizer_eq_decomp",
+          "canonical_lines": 36,
+          "canonical_byte_identical_to_supplier": true,
+          "make_exit": 0,
+          "kernel_exit": 0,
+          "kernel_seconds": 5.825548458,
+          "compiler_warnings": 0,
+          "source_unchanged_during_check": true,
+          "printed_final_axiom_closures": [],
+          "separate_final_axiom_audit_pending": true,
+          "direct_dependencies": [
+            {
+              "module": "Submission.Supplier.Definitions.Def_NumberField_PlaceTransport",
+              "source_sha256": "267495c4974bac1f017bc9d5d927963f35a6ad7a10bcd66d0f5887409e0b53da",
+              "object_sha256": "c058d625a2c3443960f8ee5d2376f8d7312b7ce6cfec2082b9b9c0b79bb5d222",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.Definitions.Def_NumberField_PlaceDecompositionAction",
+              "source_sha256": "446a3d675ba18cb632cb2612bac27f8b643361b7ff8a1fef188238893e8161b1",
+              "object_sha256": "dd72629e8e6b6eb59456ccec00ad2dda6f42c1845b75e6cfadd36889e482af89",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.P2M.Util",
+              "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+              "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+              "receipt_reused": true
+            }
+          ]
+        },
+        "card": {
+          "module": "Submission.Supplier.Theorems.Thm_NumberField_PlaceTransport_stabilizer_eq_decomp",
+          "canonical_lines": 11,
+          "canonical_byte_identical_to_supplier": true,
+          "make_exit": 0,
+          "kernel_exit": 0,
+          "kernel_seconds": 59.934465792,
+          "compiler_warnings": 0,
+          "source_unchanged_during_check": true,
+          "printed_final_axiom_closures": [],
+          "separate_final_axiom_audit_pending": true,
+          "direct_dependencies": [
+            {
+              "module": "Submission.Supplier.Definitions.Def_NumberField_PlaceTransport",
+              "source_sha256": "267495c4974bac1f017bc9d5d927963f35a6ad7a10bcd66d0f5887409e0b53da",
+              "object_sha256": "c058d625a2c3443960f8ee5d2376f8d7312b7ce6cfec2082b9b9c0b79bb5d222",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.Definitions.Def_NumberField_PlaceDecompositionAction",
+              "source_sha256": "446a3d675ba18cb632cb2612bac27f8b643361b7ff8a1fef188238893e8161b1",
+              "object_sha256": "dd72629e8e6b6eb59456ccec00ad2dda6f42c1845b75e6cfadd36889e482af89",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.P2M.Util",
+              "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+              "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.P2M.Sol.S_NumberField_PlaceTransport_stabilizer_eq_decomp",
+              "source_sha256": "02c2f668a6081c62056d3332ba4dbef1a31d4aa01b7054fabfb344a6c2443252",
+              "object_sha256": "6fc704c012a8a77254d0c7bc5a79738a6247a47d0541e6212df2f936244d6d47",
+              "receipt_reused": true
+            }
+          ]
+        }
+      }
+    }
+  },
+  "supplier": "anthropics/fermats-last-theorem",
+  "supplier_commit": "6e837e75355538c7f80bab5b956861e86c4eacc2",
+  "full_original_complete": false,
+  "official_new_solve_credit": 0,
+  "complete_import_replay_and_recursive_axiom_audits_pending": true,
+  "selected_problem": "fermat_last_theorem",
+  "max_active_flt_jobs": 1,
+  "max_active_flt_compilers": 1,
+  "lean_threads": 1,
+  "graph_snapshot": {
+    "compiled": 7846,
+    "failed": 0,
+    "ready": 4378,
+    "root_compiled": false,
+    "workers": 1,
+    "running": {
+      "Submission.Supplier.P2M.Sol.S_NumberField_SUnits_sUnits_eq_unit": {
+        "pid": 35407,
+        "make_wrapper_pid": 35407,
+        "phase": "canonical_make_queue",
+        "sha256": "33c4e7c1422105e2fef2833c5d87b869fab1b9eb458edeb01d4f26aa9e1e9169",
+        "configuration": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/2cee52c11c4ac281df4702c2-1791869680119308000.configuration.json"
+      }
+    }
+  }
+}
