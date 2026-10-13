@@ -1,0 +1,168 @@
+{
+  "at": "2026-10-13T04:13:43.504836+00:00",
+  "original_source_card_pairs_actual_make_kernel_passed": true,
+  "canonical_pairs_byte_identical_to_supplier": true,
+  "no_source_edits": true,
+  "no_linter_suppression_added": true,
+  "no_redundant_recompilation": true,
+  "original_statements_hypotheses_and_proofs_preserved": true,
+  "checks": {
+    "ModPForms_smul_thetaPS_sub_smul_mem_modPMod_add_two": {
+      "proof_summary": "For every original nonzero natural level N, arbitrary field F, integer weight k and power series phi in modPMod(N,k,F), retain (12:F)*thetaPS(phi)-(k:F)*(qP(F)*phi) in modPMod(N,k+2,F). Preserve the original integral Serre coefficient construction, analytic qExpansion calculation and complete span induction over generators, zero, addition and scalar multiplication. Do not restrict F to positive characteristic or require 12 to be invertible.",
+      "checks": {
+        "source": {
+          "module": "Submission.Supplier.P2M.Sol.S_ModPForms_smul_thetaPS_sub_smul_mem_modPMod_add_two",
+          "canonical_lines": 446,
+          "canonical_byte_identical_to_supplier": true,
+          "make_exit": 0,
+          "kernel_exit": 0,
+          "kernel_seconds": 14.38077475,
+          "compiler_warnings": 12,
+          "source_unchanged_during_check": true,
+          "printed_final_axiom_closures": [],
+          "separate_final_axiom_audit_pending": true,
+          "direct_dependencies": [
+            {
+              "module": "Submission.Supplier.Definitions.Def_CuspForm_ModPForms",
+              "source_sha256": "c61b04fce46ee2fa05e2b84b2992c88a297377e9d41605fce09699b0c120de34",
+              "object_sha256": "8db0268f8625f5a470fc3c7bacdb85cc45702491ec1fac5f521c9c94721a1157",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.Definitions.Def_SwdAlgebra",
+              "source_sha256": "86a8093ea206ba171f03ee9f3d78b3220deae2e53811acae4f508b30092501e6",
+              "object_sha256": "3ee21814b05b4ff60d2fa9217f7659bcd1e5d6981de30345001a5ba2632808fd",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.Theorems.Thm_ModularForm_exists_gamma0_coe_eq_serreDerivative",
+              "source_sha256": "cd94d32cfa8d3dcdb489bcfb600b10c56554ecc292a60024da3de409a14213df",
+              "object_sha256": "97a289910974259354a5a0192a33f127753d616d5d75d7d190a7054ac757e209",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.P2M.Util",
+              "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+              "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+              "receipt_reused": true
+            }
+          ]
+        },
+        "card": {
+          "module": "Submission.Supplier.Theorems.Thm_ModPForms_smul_thetaPS_sub_smul_mem_modPMod_add_two",
+          "canonical_lines": 9,
+          "canonical_byte_identical_to_supplier": true,
+          "make_exit": 0,
+          "kernel_exit": 0,
+          "kernel_seconds": 50.340637917,
+          "compiler_warnings": 0,
+          "source_unchanged_during_check": true,
+          "printed_final_axiom_closures": [],
+          "separate_final_axiom_audit_pending": true,
+          "direct_dependencies": [
+            {
+              "module": "Submission.Supplier.Definitions.Def_CuspForm_ModPForms",
+              "source_sha256": "c61b04fce46ee2fa05e2b84b2992c88a297377e9d41605fce09699b0c120de34",
+              "object_sha256": "8db0268f8625f5a470fc3c7bacdb85cc45702491ec1fac5f521c9c94721a1157",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.Definitions.Def_SwdAlgebra",
+              "source_sha256": "86a8093ea206ba171f03ee9f3d78b3220deae2e53811acae4f508b30092501e6",
+              "object_sha256": "3ee21814b05b4ff60d2fa9217f7659bcd1e5d6981de30345001a5ba2632808fd",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.P2M.Util",
+              "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+              "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.P2M.Sol.S_ModPForms_smul_thetaPS_sub_smul_mem_modPMod_add_two",
+              "source_sha256": "ae50528e09f7b845efbccffe996da5706c049b91518f73c4c9806e18d264b413",
+              "object_sha256": "e516e9921c20168dec06164096290285777d76f166d7e173d7ba463c26b68553",
+              "receipt_reused": true
+            }
+          ]
+        }
+      }
+    },
+    "ModularForm_exists_gamma0_forall_tendsto_slash_atImInfty_of_three_le": {
+      "proof_summary": "For every original nonzero natural level N, integer weight k with 3<=k and Even(k), and arbitrary function v:SL2(Z)->C invariant under exactly the original Gamma0(N) left action and all integer powers of T on the right, preserve existence of a Gamma0(N) modular form f whose weight-k slash by every sigma tends at imaginary infinity to v(sigma). Retain the full original finite orbit Eisenstein construction, slash asymptotics, positive class sizes, multiplicity calculation and normalized finite sum. Do not restrict v or sigma.",
+      "checks": {
+        "source": {
+          "module": "Submission.Supplier.P2M.Sol.S_ModularForm_exists_gamma0_forall_tendsto_slash_atImInfty_of_three_le",
+          "canonical_lines": 597,
+          "canonical_byte_identical_to_supplier": true,
+          "make_exit": 0,
+          "kernel_exit": 0,
+          "kernel_seconds": 66.14613987499999,
+          "compiler_warnings": 12,
+          "source_unchanged_during_check": true,
+          "printed_final_axiom_closures": [],
+          "separate_final_axiom_audit_pending": true,
+          "direct_dependencies": [
+            {
+              "module": "Submission.Supplier.P2M.Util",
+              "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+              "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+              "receipt_reused": true
+            }
+          ]
+        },
+        "card": {
+          "module": "Submission.Supplier.Theorems.Thm_ModularForm_exists_gamma0_forall_tendsto_slash_atImInfty_of_three_le",
+          "canonical_lines": 13,
+          "canonical_byte_identical_to_supplier": true,
+          "make_exit": 0,
+          "kernel_exit": 0,
+          "kernel_seconds": 47.77525025,
+          "compiler_warnings": 0,
+          "source_unchanged_during_check": true,
+          "printed_final_axiom_closures": [],
+          "separate_final_axiom_audit_pending": true,
+          "direct_dependencies": [
+            {
+              "module": "Submission.Supplier.P2M.Util",
+              "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+              "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.P2M.Sol.S_ModularForm_exists_gamma0_forall_tendsto_slash_atImInfty_of_three_le",
+              "source_sha256": "245ff769256b30125bf466fc2421ef6933bcdbf3ab0f8d3a8d768607fe807d8c",
+              "object_sha256": "16fa92de91a29f18bf32ecbb6f9f0051d7b54a7fe01052889314a3eea38a874e",
+              "receipt_reused": true
+            }
+          ]
+        }
+      }
+    }
+  },
+  "supplier": "anthropics/fermats-last-theorem",
+  "supplier_commit": "6e837e75355538c7f80bab5b956861e86c4eacc2",
+  "full_original_complete": false,
+  "official_new_solve_credit": 0,
+  "complete_import_replay_and_recursive_axiom_audits_pending": true,
+  "selected_problem": "fermat_last_theorem",
+  "max_active_flt_jobs": 1,
+  "max_active_flt_compilers": 1,
+  "lean_threads": 1,
+  "graph_snapshot": {
+    "compiled": 7813,
+    "failed": 0,
+    "ready": 4387,
+    "root_compiled": false,
+    "workers": 1,
+    "running": {
+      "Submission.Supplier.Theorems.Thm_Module_End_exists_ne_zero_forall_apply_eq_smul_of_dual_comp_eq_smul": {
+        "pid": 33619,
+        "make_wrapper_pid": 33619,
+        "phase": "canonical_make_queue",
+        "sha256": "f4fdf464c5724108ad227ddc504b19706e11ec788f6ab01130808898c49f00ea",
+        "configuration": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/5838c08c44d94ba44124aa45-1791864803760205000.configuration.json"
+      }
+    }
+  }
+}
