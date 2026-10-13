@@ -1,0 +1,48 @@
+--- original-source
++++ candidate-source
+@@ -13,8 +13,7 @@
+ namespace P2MW.S_ModularCurve_pair_heckeOperatorBar_eq_pair_fricke_heckeOperatorBar
+ attribute [-instance] AlgebraicCurve.Place.instIsRankOneDiscreteWithZeroMultiplicativeIntAdicValuation AlgebraicCurve.Place.instIsTrivialOnWithZeroMultiplicativeIntAdicValuation AlgebraicCurve.Place.instIsPrimeCenter AlgebraicCurve.Place.instIsFractionRingIntegralClosureAt AlgebraicCurve.Place.instIsTorsionFreeSubtypeMemValuationSubringToValuationSubringIntegralClosureAt AlgebraicCurve.Place.instIsDedekindDomainIntegralClosureAt AlgebraicCurve.Place.instFiniteSubtypeMemValuationSubringToValuationSubringIntegralClosureAt ModularCurve.PhiGen.instNeZeroPhiGenCosetA ModularCurve.instIsDomainTensorProduct AlgebraicClosure.Rat.isGalois
+ attribute [-simp] AlgebraicCurve.IsFrobeniusEndo.frobNormRingHom_apply ModularCurve.frobeniusPushforwardGeomLevelPic0_mk ModularCurve.coe_frobeniusGeomLevelEquiv_apply ModularCurve.coe_frobeniusPushforwardGeomLevelDegZero ModularCurve.heckeFibreGeomLevelPic0OfIsCurveOver_mk ModularCurve.frobeniusGeomLevel_apply_coe ModularCurve.frobeniusPullbackGeomLevelPic0OfIsCurveOver_mk ModularCurve.coe_heckeFibreGeomLevelDegZero ModularCurve.coe_frobeniusPullbackGeomLevelDegZero ModularCurve.frobeniusPullbackGeomLevelPic0_mk ModularCurve.frobeniusPullbackGeomLevel_single ModularCurve.heckeFibreGeomLevelPic0_mk ModularCurve.frobeniusPushforwardGeomLevelPic0OfIsCurveOver_mk ModularCurve.frobeniusPushforwardGeomLevel_single ModularCurve.qExpandAlgC_apply AlgebraicCurve.Place.congrEquiv_symm_apply AlgebraicCurve.RationalFunctionField.heightOneSpectrumOfIrreducible_asIdeal AlgebraicCurve.Place.congrRingEquiv_toValuationSubring AlgebraicCurve.Place.congrEquiv_apply AlgebraicCurve.Place.coe_comapSymmRingEquiv_apply AlgebraicCurve.RationalFunctionField.deg_placeOfPoint AlgebraicCurve.coe_frobeniusPushforwardDegZero AlgebraicCurve.IsFrobeniusEndo.coe_frobeniusPullbackDegZero ModularCurve.jqNModC_one ModularCurve.reduceModBivar_C_X ModularCurve.laurentMap_coeff ModularCurve.reduceModBivar_X ModularCurve.laurentMap_single ModularCurve.evalAtJInt_X ModularCurve.evalAtJMod_X ModularCurve.jqNMod_one AlgebraicCurve.Place.placeOfPrime_toValuationSubring AlgebraicCurve.Place.mem_fiberOver AlgebraicCurve.Place.fiberEquiv_symm_apply AlgebraicCurve.Place.fiberEquiv_apply AlgebraicCurve.Place.centerHeightOneSpectrum_asIdeal ModularCurve.evalAtJqN_X ModularCurve.qTwistFun_coeff ModularCurve.swapBivar_C_X ModularCurve.PhiGen.cosetA_succ
+-attribute [-simp] ModularCurve.qTwist_coeff ModularCurve.PhiGen.cosetB_zero ModularCurve.PhiGen.cosetA_zero ModularCurve.qTwist_single ModularCurve.swapBivar_X ModularCurve.aeval_toRingHom_X ModularCurve.PhiGen.cosetB_succ ModularForm.val_heckeDiagMatrix ModularForm.heckeU_zero ModularForm.heckeU_zero_left ModularForm.heckeT_zero ModularForm.val_heckeMatrix ModularForm.heckeMatrix_zero ModularForm.heckeT_zero_left ModularForm.heckeDiagMatrix_zero ModularForm.val_upperTriangularGL ModularCurve.coe_towerInclBar ModularCurve.coe_towerSubstBar ModularCurve.coe_cuspidalDivisor₀ ModularCurve.qInftyPlaceBar_toValuationSubring ModularCurve.qSeriesBar_zero ModularCurve.qSeriesBar_add ModularCurve.cuspInftyFull_toValuationSubring ModularCurve.qInftyPlaceRat_toValuationSubring ModularCurve.qSeriesBar_mul ModularCurve.qSeriesBar_div ModularCurve.qSeriesBar_eq_zero_iff ModularCurve.coe_uniformizerBar ModularCurve.qSeriesBar_pow ModularCurve.cuspInfty_toValuationSubring ModularCurve.qSeriesBar_one ModularCurve.qSeriesBar_inv ModularCurve.qSeriesBar_sub ModularCurve.qSeriesBar_neg ModularCurve.coe_baseChangeEquiv_apply ModularCurve.baseChangeHom_tmul AlgebraicCurve.RationalFunctionField.placeInfty_toValuationSubring ModularCurve.eisensteinNumerator_nineteen ModularCurve.eisensteinNumerator_seventeen ModularCurve.eisensteinNumerator_eleven
+-attribute [-simp] ModularCurve.eisensteinNumerator_five ModularCurve.eisensteinNumerator_seven ModularCurve.eisensteinNumerator_twentythree ModularCurve.eisensteinNumerator_thirteen ModularCurve.constantCoeff_dedekindEtaUnitQ
++attribute [-simp] ModularCurve.qTwist_coeff ModularCurve.PhiGen.cosetB_zero ModularCurve.PhiGen.cosetA_zero ModularCurve.qTwist_single ModularCurve.swapBivar_X ModularCurve.aeval_toRingHom_X ModularCurve.PhiGen.cosetB_succ ModularForm.val_heckeDiagMatrix ModularForm.heckeU_zero ModularForm.heckeU_zero_left ModularForm.heckeT_zero ModularForm.val_heckeMatrix ModularForm.heckeMatrix_zero ModularForm.heckeT_zero_left ModularForm.heckeDiagMatrix_zero ModularForm.val_upperTriangularGL ModularCurve.coe_towerInclBar ModularCurve.coe_towerSubstBar ModularCurve.coe_cuspidalDivisor₀ ModularCurve.qInftyPlaceBar_toValuationSubring ModularCurve.qSeriesBar_zero ModularCurve.qSeriesBar_add ModularCurve.cuspInftyFull_toValuationSubring ModularCurve.qInftyPlaceRat_toValuationSubring ModularCurve.qSeriesBar_mul ModularCurve.qSeriesBar_div ModularCurve.qSeriesBar_eq_zero_iff ModularCurve.coe_uniformizerBar ModularCurve.qSeriesBar_pow ModularCurve.cuspInfty_toValuationSubring ModularCurve.qSeriesBar_one ModularCurve.qSeriesBar_inv ModularCurve.qSeriesBar_sub ModularCurve.qSeriesBar_neg ModularCurve.coe_baseChangeEquiv_apply ModularCurve.baseChangeHom_tmul AlgebraicCurve.RationalFunctionField.placeInfty_toValuationSubring
+ 
+ set_option autoImplicit false
+ 
+@@ -77,7 +76,7 @@
+     degeneracyPullbackPair N q =
+       ![pullbackAlongHom' (heckeAlphaBar (AlgebraicClosure ℚ) N q) hα hP hFIα,
+         pullbackAlongHom' (heckeBetaBar (AlgebraicClosure ℚ) N q) hβ hP hFIβ] := by
+-  rw [degeneracyPullbackPair, dif_pos ⟨hα, hβ, hP, hFIα, hFIβ⟩]
++  rw [degeneracyPullbackPair, dite_eq_left ⟨hα, hβ, hP, hFIα, hFIβ⟩]
+   rfl
+ 
+ theorem heckePic0Bar_eq_push_pull
+@@ -143,7 +142,7 @@
+     (hwy : (wy : JZero N) = SemilinearAut.ofAlgAut σ • (y : JZero N))
+     (hwTy : (wTy : JZero N) = SemilinearAut.ofAlgAut σ • heckeOperatorBar N ℓ (y : JZero N)) :
+     e.pair Tx wy = e.pair x wTy := by
+-  haveI : NeZero (ℓ : ℕ) := ⟨ℓ.2.ne_zero⟩
++  have : NeZero (ℓ : ℕ) := ⟨ℓ.2.ne_zero⟩
+   obtain ⟨hα, hβ, hP, hfinα, hFIβ, hNα⟩ := ModularCurve.heckeInputsAll N ℓ
+   obtain ⟨hα', hβ', hP', hfinβ, hFIα, hNβ⟩ := ModularCurve.heckeInputsAllTranspose N ℓ
+   have hpull : DegeneracyPullbackInputs N ℓ := ⟨hα, hβ, hP, hFIα, hFIβ⟩
+@@ -201,13 +200,15 @@
+     (hwTy : (wTy : ModularCurve.JZero N)
+       = AlgebraicCurve.SemilinearAut.ofAlgAut σ • ModularCurve.heckeOperatorBar N ℓ (y : ModularCurve.JZero N)) :
+     e.pair Tx wy = e.pair x wTy := by
+-  haveI : NeZero (N * (ℓ : ℕ)) := ⟨mul_ne_zero (NeZero.ne N) ℓ.2.ne_zero⟩
++  have : NeZero (N * (ℓ : ℕ)) := ⟨mul_ne_zero (NeZero.ne N) ℓ.2.ne_zero⟩
+   obtain ⟨t, ht, hfin⟩ :=
+     ModularCurve.exists_transcendental_finiteDimensional_modularFunctionFieldBar (N * ℓ)
+-  haveI := ModularCurve.isCurveOver_laurentBaseChange_modularFunctionFieldFull (AlgebraicClosure ℚ) (N * ℓ)
++  have := ModularCurve.isCurveOver_laurentBaseChange_modularFunctionFieldFull (AlgebraicClosure ℚ) (N * ℓ)
+   exact ModularCurve.PEdge.pair_heckeOperatorBar_fricke N ℓ e
+     (AlgebraicCurve.Pic0.nonempty_divisorialWeilPairingData (AlgebraicClosure ℚ)
+       (ModularCurve.modularFunctionFieldBar (N * ℓ)) ⟨t, ht, hfin⟩ n).some
+     σ hσ x y Tx wy wTy hTx hwy hwTy
+ 
+ end
++
++#print axioms P2MW.S_ModularCurve_pair_heckeOperatorBar_eq_pair_fricke_heckeOperatorBar.solution

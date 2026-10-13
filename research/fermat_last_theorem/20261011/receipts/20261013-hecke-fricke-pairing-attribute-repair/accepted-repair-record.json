@@ -1,0 +1,61 @@
+{
+  "at": "2026-10-13T02:14:07.071425+00:00",
+  "repaired_source_card_pair_actual_make_kernel_passed": true,
+  "original_final_statements_preserved": true,
+  "full_original_module_proof_retained": true,
+  "no_linter_suppression_added": true,
+  "checks": {
+    "source": {
+      "module": "Submission.Supplier.P2M.Sol.S_ModularCurve_pair_heckeOperatorBar_eq_pair_fricke_heckeOperatorBar",
+      "make_exit": 0,
+      "kernel_exit": 0,
+      "kernel_seconds": 68.742289,
+      "compiler_warnings": 0,
+      "printed_final_axiom_closures": [
+        {
+          "declaration": "P2MW.S_ModularCurve_pair_heckeOperatorBar_eq_pair_fricke_heckeOperatorBar.solution",
+          "recursive_axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "final_standard3_audit_passed": true,
+      "original_canonical_lines": 213,
+      "repaired_canonical_lines": 214,
+      "original_final_statement_preserved": true
+    },
+    "card": {
+      "module": "Submission.Supplier.Theorems.Thm_ModularCurve_pair_heckeOperatorBar_eq_pair_fricke_heckeOperatorBar",
+      "make_exit": 0,
+      "kernel_exit": 0,
+      "kernel_seconds": 59.053633958,
+      "compiler_warnings": 0,
+      "printed_final_axiom_closures": [
+        {
+          "declaration": "ModularCurve.pair_heckeOperatorBar_eq_pair_fricke_heckeOperatorBar",
+          "recursive_axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "final_standard3_audit_passed": true,
+      "original_canonical_lines": 29,
+      "repaired_canonical_lines": 30,
+      "original_final_statement_preserved": true
+    }
+  },
+  "repair": "Preserve the existing watcher repair of missing minus-simp names. Remove the remaining unrelated blacklist entries for seven numerical eisensteinNumerator lemmas and the Dedekind eta constant coefficient, including the four names rejected in the two actual prior checks. Replace the deprecated dif_pos with dite_eq_left and use have for the three local proposition instances. Print final source/card axioms.",
+  "proof_summary": "For every original nonzero natural level N, prime ell and nonzero torsion level n, retain both original principal-divisor instances, divisorial Weil pairing data e, Fricke automorphism sigma with every original generator equation, and arbitrary torsion elements x, y, Tx, wy, wTy with the original three identifying equations. Preserve e.pair Tx wy = e.pair x wTy. The original pullback and pushforward wrappers, degeneracy adjunction, transpose Fricke exchange, torsion transport, alternating-pairing inverse calculation and final choice of upstairs pairing data all remain. No extra coprimality hypothesis or weakened conclusion is added.",
+  "supplier": "anthropics/fermats-last-theorem",
+  "supplier_commit": "6e837e75355538c7f80bab5b956861e86c4eacc2",
+  "full_original_complete": false,
+  "official_new_solve_credit": 0,
+  "complete_import_replay_and_full_root_audits_pending": true,
+  "max_active_flt_jobs": 1,
+  "max_active_flt_compilers": 1,
+  "lean_threads": 1
+}
