@@ -1,0 +1,50 @@
+{
+  "sha256": "878fb6f3378ad0738473199e01ce8211a007b20162656ad812e0ae5048872309",
+  "exit": 0,
+  "empty_output_retry_done": false,
+  "source_sha256_after": "878fb6f3378ad0738473199e01ce8211a007b20162656ad812e0ae5048872309",
+  "source_unchanged": true,
+  "olean_sha256": "0fd7864c72f4e49765bf067c43a89c2bc9b4bf5ace65fb9272aa9236b69bad8a",
+  "seconds": 185.43952883299994,
+  "pid": 1571,
+  "command": [
+    "/Users/macstudio/.local/omega-shims/lean",
+    "-j1",
+    "--trust=0",
+    "-Ddebug.skipKernelTC=false",
+    "-R",
+    "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src",
+    "-o",
+    "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-build/lib/lean/Submission/Supplier/Theorems/Thm_NeronModelInfra_exists_opens_extension_of_forall_nhds_extension.olean",
+    "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/Theorems/Thm_NeronModelInfra_exists_opens_extension_of_forall_nhds_extension.lean"
+  ],
+  "make_wrapper_pid": 64202,
+  "make_exit": 0,
+  "make_entry_failed": false,
+  "cache_binding_valid": true,
+  "canonical_make_running_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/350698d3d363409f972b3d6c-1791868053140967000.make-running.json",
+  "canonical_make_terminal_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/350698d3d363409f972b3d6c-1791868053140967000.make-terminal.json",
+  "kernel_terminal_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/350698d3d363409f972b3d6c-1791868053140967000.kernel/result.json",
+  "direct_dependencies": [
+    {
+      "module": "Submission.Supplier.Definitions.Def_AlgebraicGeometry_NeronModelPropertyBundleCarrier",
+      "source_sha256": "0b23142f01863da372f21d95bd1636b18becf4e9e57a44e4168d760e80e22d3f",
+      "object_sha256": "7c5f9f5466b8b8e249f9d2cdd6396c1e9ac6aecb01f7e0bfd28b2bea25db4361",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.P2M.Util",
+      "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+      "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.P2M.Sol.S_NeronModelInfra_exists_opens_extension_of_forall_nhds_extension",
+      "source_sha256": "7524cacedaf4f2aba4a8fccae02168f1f28bdcecdef504e55954afca0db7c7ef",
+      "object_sha256": "b059254e46c611e1ea525e54aafb6f729ee22056818fbbc5ab23e0ff5d1b1c33",
+      "receipt_reused": true
+    }
+  ],
+  "stdout": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/350698d3d363409f972b3d6c-1791868053140967000.kernel/stdout.log",
+  "stderr": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/350698d3d363409f972b3d6c-1791868053140967000.kernel/stderr.log"
+}
