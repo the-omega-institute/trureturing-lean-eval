@@ -1,0 +1,108 @@
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_WeierstrassCurve_exists_atP_filtration_of_goodReduction.lean:42:2: warning: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_WeierstrassCurve_exists_atP_filtration_of_goodReduction.lean:82:2: warning: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_WeierstrassCurve_exists_atP_filtration_of_goodReduction.lean:85:2: warning: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_WeierstrassCurve_exists_atP_filtration_of_goodReduction.lean:129:2: warning: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_WeierstrassCurve_exists_atP_filtration_of_goodReduction.lean:153:2: warning: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_WeierstrassCurve_exists_atP_filtration_of_goodReduction.lean:157:2: warning: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_WeierstrassCurve_exists_atP_filtration_of_goodReduction.lean:161:2: warning: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_WeierstrassCurve_exists_atP_filtration_of_goodReduction.lean:164:2: warning: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_WeierstrassCurve_exists_atP_filtration_of_goodReduction.lean:245:54: error: unsolved goals
+W : WeierstrassCurve ℤ
+hΔ : W.Δ ≠ 0
+p : ℕ
+inst✝ : Fact (Nat.Prime p)
+hp2 : p ≠ 2
+A : ValuationSubring Qbar
+hA : A.LiesOverPrime p
+S : AddSubgroup (Pts W)
+habs : ∀ σ ∈ inertiaSubgroupIn ℚ A, ∀ (P : Pts W), σ • P - P ∈ S
+x₀ : Pts W
+hx₀tors : p • x₀ = 0
+hx₀ : x₀ ∉ S
+j : ℕ
+hp : Nat.Prime p
+hfinT : Finite ↥(Tors W (p ^ (j + 1)))
+hfinTp : Finite ↥(Tors W p)
+hFle : Tors W (p ^ (j + 1)) ⊓ S ≤ Tors W (p ^ (j + 1))
+hfinF : Finite ↥(Tors W (p ^ (j + 1)) ⊓ S)
+hle1 : Tors W p ⊓ S ≤ Tors W p
+hfin1 : Finite ↥(Tors W p ⊓ S)
+hsocF1 : Nat.card ↥(Tors W p ⊓ S) ≤ p
+hsocle : Nat.card { z // p • z = 0 } ≤ p
+hexp : ∀ (z : ↥(Tors W (p ^ (j + 1)) ⊓ S)), p ^ (j + 1) • z = 0
+hdvdF : Nat.card ↥(Tors W (p ^ (j + 1)) ⊓ S) ∣ p ^ (j + 1)
+e : ℕ
+he : e ≤ j + 1
+hecard : Nat.card ↥(Tors W (p ^ (j + 1)) ⊓ S) = p ^ e
+helt : e < j + 1
+hej : e ≤ j
+htriv : ∀ τ ∈ inertiaSubgroupIn ℚ A, ∀ (x : Pts W), p • x = 0 → τ • x = x
+τ₀ : Gal(Qbar/ℚ)
+hτ₀ : τ₀ ∈ inertiaSubgroupIn ℚ A
+hdet₀ : 1 = ↑(-1)
+hone : (galoisRepModuleEnd ℚ (W.map (Int.castRingHom ℚ)) p) τ₀ = LinearMap.id
+⊢ -1 = -1
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_WeierstrassCurve_exists_atP_filtration_of_goodReduction.lean:321:2: warning: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
