@@ -1,0 +1,75 @@
+{
+  "at": "2026-10-13T04:09:14.274548+00:00",
+  "original_source_card_pair_actual_make_kernel_passed": true,
+  "canonical_pairs_byte_identical_to_supplier": true,
+  "no_source_edits": true,
+  "no_linter_suppression_added": true,
+  "original_statements_hypotheses_and_proofs_preserved": true,
+  "checks": {
+    "source": {
+      "module": "Submission.Supplier.P2M.Sol.S_ModularForm_exists_gamma0_coe_eq_serreDerivative",
+      "canonical_lines": 399,
+      "canonical_byte_identical_to_supplier": true,
+      "make_exit": 0,
+      "kernel_exit": 0,
+      "kernel_seconds": 58.495404208000004,
+      "compiler_warnings": 0,
+      "printed_final_axiom_closures": [],
+      "separate_final_axiom_audit_pending": true,
+      "direct_dependencies": [
+        {
+          "module": "Submission.Supplier.Definitions.Def_CuspForm_ModPForms",
+          "source_sha256": "c61b04fce46ee2fa05e2b84b2992c88a297377e9d41605fce09699b0c120de34",
+          "object_sha256": "8db0268f8625f5a470fc3c7bacdb85cc45702491ec1fac5f521c9c94721a1157",
+          "receipt_reused": true
+        },
+        {
+          "module": "Submission.Supplier.P2M.Util",
+          "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+          "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+          "receipt_reused": true
+        }
+      ]
+    },
+    "card": {
+      "module": "Submission.Supplier.Theorems.Thm_ModularForm_exists_gamma0_coe_eq_serreDerivative",
+      "canonical_lines": 9,
+      "canonical_byte_identical_to_supplier": true,
+      "make_exit": 0,
+      "kernel_exit": 0,
+      "kernel_seconds": 37.98687925,
+      "compiler_warnings": 0,
+      "printed_final_axiom_closures": [],
+      "separate_final_axiom_audit_pending": true,
+      "direct_dependencies": [
+        {
+          "module": "Submission.Supplier.Definitions.Def_CuspForm_ModPForms",
+          "source_sha256": "c61b04fce46ee2fa05e2b84b2992c88a297377e9d41605fce09699b0c120de34",
+          "object_sha256": "8db0268f8625f5a470fc3c7bacdb85cc45702491ec1fac5f521c9c94721a1157",
+          "receipt_reused": true
+        },
+        {
+          "module": "Submission.Supplier.P2M.Util",
+          "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+          "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+          "receipt_reused": true
+        },
+        {
+          "module": "Submission.Supplier.P2M.Sol.S_ModularForm_exists_gamma0_coe_eq_serreDerivative",
+          "source_sha256": "540fb93fb6e3cb0b05bdb4a6748cb081d59de278c9a3a82f34004a7f4afd7982",
+          "object_sha256": "f5c0a8ce731e8c9d33be6ba36ddfa738ae6b3dc1c88f60c1600fdddcf168a119",
+          "receipt_reused": true
+        }
+      ]
+    }
+  },
+  "supplier": "anthropics/fermats-last-theorem",
+  "supplier_commit": "6e837e75355538c7f80bab5b956861e86c4eacc2",
+  "proof_summary": "For every original nonzero natural level N, integer weight k and Gamma0(N) modular form f of weight k, retain existence of a Gamma0(N) modular form g of weight k+2 whose function is exactly the Serre derivative of f. Preserve the original slash invariance, holomorphy, cusp boundedness, Gamma0 period and translation argument. No positivity, cusp-form or arithmetic restriction is added.",
+  "full_original_complete": false,
+  "official_new_solve_credit": 0,
+  "complete_import_replay_and_recursive_axiom_audits_pending": true,
+  "max_active_flt_jobs": 1,
+  "max_active_flt_compilers": 1,
+  "lean_threads": 1
+}
