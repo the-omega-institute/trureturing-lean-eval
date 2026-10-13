@@ -1,0 +1,465 @@
+{
+  "at": "2026-10-13T03:54:14.597266+00:00",
+  "original_source_card_pairs_actual_make_kernel_passed": true,
+  "canonical_pairs_byte_identical_to_supplier": true,
+  "no_source_edits": true,
+  "no_linter_suppression_added": true,
+  "no_redundant_recompilation": true,
+  "original_statements_hypotheses_and_proofs_preserved": true,
+  "checks": {
+    "ModularCurve_nonempty_ssPlaces_fibre": {
+      "proof_summary": "For every original nonzero natural level N, prime q not dividing N, algebraically closed field K of characteristic q with the original DecidableEq instance and a in ssJSet(q,K), retain nonemptiness of the subtype of supersingular places w with w.evalAt(jGeomGen(K,N))=a. Preserve the full original rational j-line equivalences, ramification/inertia sum, degree-one residues and finite fibre order sum equal to dedekindPsi(N), followed by its positivity. The separability required by the internal engine remains derived from q not dividing N, without adding it to the final statement.",
+      "checks": {
+        "source": {
+          "module": "Submission.Supplier.P2M.Sol.S_ModularCurve_nonempty_ssPlaces_fibre",
+          "canonical_lines": 365,
+          "canonical_byte_identical_to_supplier": true,
+          "make_exit": 0,
+          "kernel_exit": 0,
+          "kernel_seconds": 126.31702954100001,
+          "compiler_warnings": 7,
+          "source_unchanged_during_check": true,
+          "printed_final_axiom_closures": [],
+          "separate_final_axiom_audit_pending": true,
+          "direct_dependencies": [
+            {
+              "module": "Submission.Supplier.Definitions.Def_ModularCurve_SupersingularNodePlaces",
+              "source_sha256": "0280afd84cee43b1c9efb508f585a2b7f9aafb1fc7ddc6af661e4728e6c5535c",
+              "object_sha256": "e2bfd505aa5f2fa29cf32d1eb80333cdc1b46f4b6eb9d9114105610e11a50dc3",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.Definitions.Def_AlgebraicCurve_PlacesOverDVR",
+              "source_sha256": "b4701d5cb63e6b2a0ac510222270539538ad65fc07696f1fad107918efc53e11",
+              "object_sha256": "40db65cd3839274cc0f40b6f8116892db97a9865a14bad49f536fe686e382c32",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.Theorems.Thm_ModularCurve_nonempty_modularPolynomialData",
+              "source_sha256": "1a6312b1deddabc64151c6f9dc0f0039b317a0e8bdcaed87a273bc4e3a26a2ee",
+              "object_sha256": "253f01017933a0cae79a3cef7401126f12c26b91182a839b83fdedf1cc0c7809",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.Theorems.Thm_ModularCurve_finiteDimensional_and_isSeparable_adjoin_jGeomGen_of_isSeparable_jqNModC",
+              "source_sha256": "9c97f44c931757d1fe8593e98cfd478d0148a68a2e0581bc95c51d4f5542b960",
+              "object_sha256": "8b0ae0ce3902119074497514103553e9ec81c70dbf47b8ca3ca20dc4114436d6",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.Theorems.Thm_ModularCurve_relfinrank_adjoin_jqModC_modularFunctionFieldC_eq_dedekindPsi",
+              "source_sha256": "1931ddf34ae446b8b89af0932e61cbe3d8fab4fca31484891a93e41266b06b5b",
+              "object_sha256": "1150abf80dcc6e7ed6df0c2e778be571b974f2b153b31af13e61cb3a1ef037f7",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.Theorems.Thm_AlgebraicCurve_Place_sum_ramificationIndex_mul_inertiaDeg_fiberOver",
+              "source_sha256": "2fad822508cdcecfc552be7402ea8b1dac166cdd55bddba32f5ff0d5a1cc869c",
+              "object_sha256": "f460c6b0e11b21a1ceb9b3f84763e12902c4fe514c230225f43cb31ac919640d",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.Theorems.Thm_ModularCurve_place_deg_eq_one_of_isAlgClosed",
+              "source_sha256": "21c7d3016f75434b3a599087bc368d68b72640087c17e6f7e4a75d418cbc03a2",
+              "object_sha256": "da8783c0b66483ece04676a719f04626ce610a13920b4709520ca845e5415296",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.Theorems.Thm_AlgebraicCurve_Place_isRational_iff_deg_eq_one",
+              "source_sha256": "d10e9823aff9b3fe6d7eddd92a29fe00db41188ac5318faa265ce6703b0fa28f",
+              "object_sha256": "63c44b7e2e2b06e4834ee51cf87e94d1feb4235bd3f51a082a2e90acc3b8ef5a",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.Theorems.Thm_ModularCurve_eq_charLGeomPlaceOfPoint_of_ord_pos",
+              "source_sha256": "061e1e8f8fdf684724a519ab33b1de8921a9bfd3b496b03075915976d982e53c",
+              "object_sha256": "0ebe376825fa729891d8b489001d4ab3a92b5e086787a4a2b6548d6a7bc4ae05",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.Theorems.Thm_AlgebraicCurve_RationalFunctionField_ord_placeOfPoint_algebraMap",
+              "source_sha256": "b650cd20a289be6fd7acd606b3f23255b7665a12903a5bbf7c7a2ac2f98f5f2a",
+              "object_sha256": "b8cc4299895ae986e6058d99d54db44d7343fc9eaa7d4f6ef0c71905ed6ae27a",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.Theorems.Thm_ModularCurve_dedekindPsi_pos",
+              "source_sha256": "7c766f161f1965a36be46ee7bf8fcbd2426b4fd2ce3f0c4002e1c21cc556768e",
+              "object_sha256": "0ea735f5dcd12c6ec4b585517957cbeec0e08080218f17dd5cebc5513558d2d7",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.Theorems.Thm_ModularCurve_isSeparable_jqNModC_of_natCast_ne_zero",
+              "source_sha256": "33163b3456fc664922a03166cccbe4f35046f738c84cdfaf1fb40d767a86813f",
+              "object_sha256": "d2d959721ac91540228bb0527e9f67d7d3c3df7f1389048a1b42752165a41c6a",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.P2M.Util",
+              "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+              "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+              "receipt_reused": true
+            }
+          ]
+        },
+        "card": {
+          "module": "Submission.Supplier.Theorems.Thm_ModularCurve_nonempty_ssPlaces_fibre",
+          "canonical_lines": 11,
+          "canonical_byte_identical_to_supplier": true,
+          "make_exit": 0,
+          "kernel_exit": 0,
+          "kernel_seconds": 5.746025916,
+          "compiler_warnings": 0,
+          "source_unchanged_during_check": true,
+          "printed_final_axiom_closures": [],
+          "separate_final_axiom_audit_pending": true,
+          "direct_dependencies": [
+            {
+              "module": "Submission.Supplier.Definitions.Def_ModularCurve_SupersingularNodePlaces",
+              "source_sha256": "0280afd84cee43b1c9efb508f585a2b7f9aafb1fc7ddc6af661e4728e6c5535c",
+              "object_sha256": "e2bfd505aa5f2fa29cf32d1eb80333cdc1b46f4b6eb9d9114105610e11a50dc3",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.Definitions.Def_ModularCurve_SupersingularModuli",
+              "source_sha256": "4031a93137f2c84ef1ceac2c55d55462a115112a7b9bfbd99c0de6e5e3194be2",
+              "object_sha256": "b31732008dcdf7f441a8ca44b98c74dcfce43f57212b2631d5b942b15784cdc1",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.P2M.Util",
+              "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+              "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.P2M.Sol.S_ModularCurve_nonempty_ssPlaces_fibre",
+              "source_sha256": "9aeb8cb74faf7a7c22666a85d55cd038d3701350812dddefd07b60716f6518aa",
+              "object_sha256": "d911a77fc9351238d3905e3eaffbec777c47e6eadff234ba53327cd7ff01b5bf",
+              "receipt_reused": true
+            }
+          ]
+        }
+      }
+    },
+    "ModularCurve_nuThree_mul_of_coprime": {
+      "proof_summary": "For every original pair of coprime natural numbers M and N, retain nuThree(M*N)=nuThree(M)*nuThree(N), with no added nonzero, positivity, prime or squarefree hypotheses. Preserve the full original Chinese remainder ring equivalence, equation x^2+x+1=0 transported to the product, solution-subtype equivalences and Nat.card product argument.",
+      "checks": {
+        "source": {
+          "module": "Submission.Supplier.P2M.Sol.S_ModularCurve_nuThree_mul_of_coprime",
+          "canonical_lines": 59,
+          "canonical_byte_identical_to_supplier": true,
+          "make_exit": 0,
+          "kernel_exit": 0,
+          "kernel_seconds": 4.359918667,
+          "compiler_warnings": 0,
+          "source_unchanged_during_check": true,
+          "printed_final_axiom_closures": [],
+          "separate_final_axiom_audit_pending": true,
+          "direct_dependencies": [
+            {
+              "module": "Submission.Supplier.Definitions.Def_ModularCurve_GenusNumerics",
+              "source_sha256": "1bb8c32d3eac5f62fe7f86de914837543cdf0af8c18ae08d2768fb287d1980d3",
+              "object_sha256": "c47cd2663ba21ac13deeefcf0de3ec4c4dd1e8804203bd7ca6474233b0e00d11",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.P2M.Util",
+              "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+              "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+              "receipt_reused": true
+            }
+          ]
+        },
+        "card": {
+          "module": "Submission.Supplier.Theorems.Thm_ModularCurve_nuThree_mul_of_coprime",
+          "canonical_lines": 6,
+          "canonical_byte_identical_to_supplier": true,
+          "make_exit": 0,
+          "kernel_exit": 0,
+          "kernel_seconds": 8.42903075,
+          "compiler_warnings": 0,
+          "source_unchanged_during_check": true,
+          "printed_final_axiom_closures": [],
+          "separate_final_axiom_audit_pending": true,
+          "direct_dependencies": [
+            {
+              "module": "Submission.Supplier.Definitions.Def_ModularCurve_GenusNumerics",
+              "source_sha256": "1bb8c32d3eac5f62fe7f86de914837543cdf0af8c18ae08d2768fb287d1980d3",
+              "object_sha256": "c47cd2663ba21ac13deeefcf0de3ec4c4dd1e8804203bd7ca6474233b0e00d11",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.P2M.Util",
+              "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+              "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.P2M.Sol.S_ModularCurve_nuThree_mul_of_coprime",
+              "source_sha256": "1022086732fd08dd2d391d8797d65bec8c808b22e73a5594df62c9a202f2456a",
+              "object_sha256": "ff3aa4c04807c5fd967d8670923881080041176ab2b4f03760e5d31624c90600",
+              "receipt_reused": true
+            }
+          ]
+        }
+      }
+    },
+    "ModularCurve_nuTwo_mul_of_coprime": {
+      "proof_summary": "For every original pair of coprime natural numbers M and N, retain nuTwo(M*N)=nuTwo(M)*nuTwo(N), with no added nonzero, positivity, prime or squarefree hypotheses. Preserve the full original Chinese remainder ring equivalence, equation x^2+1=0 transported to the product, solution-subtype equivalences and Nat.card product argument.",
+      "checks": {
+        "source": {
+          "module": "Submission.Supplier.P2M.Sol.S_ModularCurve_nuTwo_mul_of_coprime",
+          "canonical_lines": 59,
+          "canonical_byte_identical_to_supplier": true,
+          "make_exit": 0,
+          "kernel_exit": 0,
+          "kernel_seconds": 10.076291000000001,
+          "compiler_warnings": 0,
+          "source_unchanged_during_check": true,
+          "printed_final_axiom_closures": [],
+          "separate_final_axiom_audit_pending": true,
+          "direct_dependencies": [
+            {
+              "module": "Submission.Supplier.Definitions.Def_ModularCurve_GenusNumerics",
+              "source_sha256": "1bb8c32d3eac5f62fe7f86de914837543cdf0af8c18ae08d2768fb287d1980d3",
+              "object_sha256": "c47cd2663ba21ac13deeefcf0de3ec4c4dd1e8804203bd7ca6474233b0e00d11",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.P2M.Util",
+              "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+              "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+              "receipt_reused": true
+            }
+          ]
+        },
+        "card": {
+          "module": "Submission.Supplier.Theorems.Thm_ModularCurve_nuTwo_mul_of_coprime",
+          "canonical_lines": 6,
+          "canonical_byte_identical_to_supplier": true,
+          "make_exit": 0,
+          "kernel_exit": 0,
+          "kernel_seconds": 9.51510375,
+          "compiler_warnings": 0,
+          "source_unchanged_during_check": true,
+          "printed_final_axiom_closures": [],
+          "separate_final_axiom_audit_pending": true,
+          "direct_dependencies": [
+            {
+              "module": "Submission.Supplier.Definitions.Def_ModularCurve_GenusNumerics",
+              "source_sha256": "1bb8c32d3eac5f62fe7f86de914837543cdf0af8c18ae08d2768fb287d1980d3",
+              "object_sha256": "c47cd2663ba21ac13deeefcf0de3ec4c4dd1e8804203bd7ca6474233b0e00d11",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.P2M.Util",
+              "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+              "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.P2M.Sol.S_ModularCurve_nuTwo_mul_of_coprime",
+              "source_sha256": "15ffb541ccf7acccc1ef64afdd2f5bac80097960b35438cbfe2b85f3a06525dc",
+              "object_sha256": "81ae59be60b061a0fcbc9e6f6324e30819223e98ba13030c9cfc982fd4d82dc3",
+              "receipt_reused": true
+            }
+          ]
+        }
+      }
+    },
+    "ModularCurve_genusFormula_mul_expand": {
+      "proof_summary": "For the original nonzero coprime natural numbers M and N, preserve the exact rational genusFormula(M*N)-2*genusFormula(N)+1 expansion with the four original dedekindPsi, nuTwo, nuThree and cuspCount terms and denominators 12, 4, 3 and 2. Retain the original definition unfolding, four multiplicativity identities, casts and ring calculation. This is the original genusFormula identity, not an independent identification with the geometric genus.",
+      "checks": {
+        "source": {
+          "module": "Submission.Supplier.P2M.Sol.S_ModularCurve_genusFormula_mul_expand",
+          "canonical_lines": 26,
+          "canonical_byte_identical_to_supplier": true,
+          "make_exit": 0,
+          "kernel_exit": 0,
+          "kernel_seconds": 29.408789583,
+          "compiler_warnings": 0,
+          "source_unchanged_during_check": true,
+          "printed_final_axiom_closures": [],
+          "separate_final_axiom_audit_pending": true,
+          "direct_dependencies": [
+            {
+              "module": "Submission.Supplier.Definitions.Def_ModularCurve_GenusNumerics",
+              "source_sha256": "1bb8c32d3eac5f62fe7f86de914837543cdf0af8c18ae08d2768fb287d1980d3",
+              "object_sha256": "c47cd2663ba21ac13deeefcf0de3ec4c4dd1e8804203bd7ca6474233b0e00d11",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.Theorems.Thm_ModularCurve_dedekindPsi_mul_of_coprime",
+              "source_sha256": "c431fd338844cd9eeff21fac0cca4f8d1192a240c349bc627eeb4c82c2c0c04a",
+              "object_sha256": "04b22ed5a883c1f6463c5caa533d0a3fd3ddeb36165f9acb1c7700eda25cba02",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.Theorems.Thm_ModularCurve_nuTwo_mul_of_coprime",
+              "source_sha256": "03ed71c3c141e8f4282ec68c119d04b9f8cacd1ea859d7cfd97c9dd3c806a614",
+              "object_sha256": "3bb4a09f07292424c7424e9ae215f6c4689e023166d59824c81573b1e08fc40e",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.Theorems.Thm_ModularCurve_nuThree_mul_of_coprime",
+              "source_sha256": "55c69ecc65cdf75935b2f88128fa79af03661641d403dbe225131b61e20e86af",
+              "object_sha256": "e552e05ebb0882386f304e3211245b5028cba86071d8e4d33396b04b56425ec5",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.Theorems.Thm_ModularCurve_cuspCount_mul_of_coprime",
+              "source_sha256": "e1ade161caf1e8b0c3e8bd2285a69fc81c5c0b80ea330a65df4d64eb05d6893a",
+              "object_sha256": "7e5382ed12cee6776b3e95e23d85511f08891317028996690e67e86f326cffb1",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.P2M.Util",
+              "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+              "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+              "receipt_reused": true
+            }
+          ]
+        },
+        "card": {
+          "module": "Submission.Supplier.Theorems.Thm_ModularCurve_genusFormula_mul_expand",
+          "canonical_lines": 17,
+          "canonical_byte_identical_to_supplier": true,
+          "make_exit": 0,
+          "kernel_exit": 0,
+          "kernel_seconds": 36.556518041000004,
+          "compiler_warnings": 0,
+          "source_unchanged_during_check": true,
+          "printed_final_axiom_closures": [],
+          "separate_final_axiom_audit_pending": true,
+          "direct_dependencies": [
+            {
+              "module": "Submission.Supplier.Definitions.Def_ModularCurve_GenusNumerics",
+              "source_sha256": "1bb8c32d3eac5f62fe7f86de914837543cdf0af8c18ae08d2768fb287d1980d3",
+              "object_sha256": "c47cd2663ba21ac13deeefcf0de3ec4c4dd1e8804203bd7ca6474233b0e00d11",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.P2M.Util",
+              "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+              "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.P2M.Sol.S_ModularCurve_genusFormula_mul_expand",
+              "source_sha256": "4a4c2dec32660a0e66753309b139c434e1ea6863ec8387c1affa5c1abbb69f2b",
+              "object_sha256": "ec24dc2ba2e14a67d4f39a65e94d6700171d83156278196351d8bae41971e2a7",
+              "receipt_reused": true
+            }
+          ]
+        }
+      }
+    },
+    "ModularCurve_ssCountFormula_eq_genus": {
+      "proof_summary": "For the original nonzero natural N, prime q and q not dividing N, preserve ssCountFormula(N,q)=genusFormula(N*q)-2*genusFormula(N)+1. Retain the original derivation of coprimality, genusFormula product expansion, prime-level Dedekind psi and cusp count identities, definition unfolding of ssCountFormula/eichlerMass, casts and ring calculation. This exact rational formula equality does not itself count supersingular places or identify geometric genus.",
+      "checks": {
+        "source": {
+          "module": "Submission.Supplier.P2M.Sol.S_ModularCurve_ssCountFormula_eq_genus",
+          "canonical_lines": 22,
+          "canonical_byte_identical_to_supplier": true,
+          "make_exit": 0,
+          "kernel_exit": 0,
+          "kernel_seconds": 7.288610833,
+          "compiler_warnings": 0,
+          "source_unchanged_during_check": true,
+          "printed_final_axiom_closures": [],
+          "separate_final_axiom_audit_pending": true,
+          "direct_dependencies": [
+            {
+              "module": "Submission.Supplier.Definitions.Def_ModularCurve_EichlerMass",
+              "source_sha256": "d60076613e9b1b96ae9b41c2fc281b1bb66ef8a7a5c8a6be56d5cb55ad3aa3c2",
+              "object_sha256": "8deca6af9f3f6a817d760df52a1d6119c50e77f1f597715de3afcc0949b1cce4",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.Theorems.Thm_ModularCurve_genusFormula_mul_expand",
+              "source_sha256": "1a5c7ea6d5f82b5a263c766b958c9bf195705ea8f3d5f0291e26f170f442c284",
+              "object_sha256": "356c745753dc10b8eb26633f1fc5da0c1b2827f509e1b797cd4e1a790de92aae",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.Theorems.Thm_ModularCurve_dedekindPsi_prime",
+              "source_sha256": "573aec17c932147321e2ea197ccf3d8b7575972892d0c072c4858e3dfa237953",
+              "object_sha256": "c85756e568f02cb893fbc8ba94e86c13d78aea0949cdce07b15581523ea01d3a",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.Theorems.Thm_ModularCurve_cuspCount_prime",
+              "source_sha256": "5c4cdcced9b69556ca7277d1cfe321bd12cb3f5af4691e360095647adf3981e7",
+              "object_sha256": "3aa8afd17f65e6ec08a6d63a83b84fea84de6f4eb44e83d692b71a61b8a9ea86",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.P2M.Util",
+              "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+              "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+              "receipt_reused": true
+            }
+          ]
+        },
+        "card": {
+          "module": "Submission.Supplier.Theorems.Thm_ModularCurve_ssCountFormula_eq_genus",
+          "canonical_lines": 13,
+          "canonical_byte_identical_to_supplier": true,
+          "make_exit": 0,
+          "kernel_exit": 0,
+          "kernel_seconds": 38.852972834,
+          "compiler_warnings": 0,
+          "source_unchanged_during_check": true,
+          "printed_final_axiom_closures": [],
+          "separate_final_axiom_audit_pending": true,
+          "direct_dependencies": [
+            {
+              "module": "Submission.Supplier.Definitions.Def_ModularCurve_EichlerMass",
+              "source_sha256": "d60076613e9b1b96ae9b41c2fc281b1bb66ef8a7a5c8a6be56d5cb55ad3aa3c2",
+              "object_sha256": "8deca6af9f3f6a817d760df52a1d6119c50e77f1f597715de3afcc0949b1cce4",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.P2M.Util",
+              "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+              "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.P2M.Sol.S_ModularCurve_ssCountFormula_eq_genus",
+              "source_sha256": "296ffc1870e93e3af05a10a0dc425e5c5ee74543fb529059a26fd2912b18079f",
+              "object_sha256": "586f26ac92de1bd35a6a728e644f7eeff072a06ddf4d130c26ac67227c231b59",
+              "receipt_reused": true
+            }
+          ]
+        }
+      }
+    }
+  },
+  "supplier": "anthropics/fermats-last-theorem",
+  "supplier_commit": "6e837e75355538c7f80bab5b956861e86c4eacc2",
+  "full_original_complete": false,
+  "official_new_solve_credit": 0,
+  "complete_import_replay_and_recursive_axiom_audits_pending": true,
+  "selected_problem": "fermat_last_theorem",
+  "max_active_flt_jobs": 1,
+  "max_active_flt_compilers": 1,
+  "lean_threads": 1,
+  "graph_snapshot": {
+    "compiled": 7802,
+    "failed": 0,
+    "ready": 4392,
+    "root_compiled": false,
+    "workers": 1,
+    "running": {
+      "Submission.Supplier.P2M.Sol.S_ModularCurve_qExpansionDiffAlong_smul_map": {
+        "pid": 91384,
+        "make_wrapper_pid": 91384,
+        "phase": "canonical_make_queue",
+        "sha256": "fb3c63e352cc3623969d6be283ed67f72942c188fe5ce09dfa97bd50042131af",
+        "configuration": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/f889abc362f6f925a834daae-1791863647168097000.configuration.json"
+      }
+    }
+  }
+}

@@ -1,0 +1,19 @@
+import Submission.Supplier.Definitions.Def_ModularCurve_SupersingularNodePlaces
+import Submission.Supplier.Definitions.Def_ModularCurve_SupersingularModuli
+import Submission.Supplier.P2M.Util
+import Submission.Supplier.P2M.Sol.S_ModularCurve_nonempty_ssPlaces_fibre
+
+-- Elaborator settings from the recovered exact-pin FLT controller.
+set_option autoImplicit false
+set_option maxHeartbeats 4000000
+set_option synthInstance.maxHeartbeats 400000
+set_option backward.isDefEq.respectTransparency.types false
+set_option debug.skipKernelTC false
+-- End recovered elaborator settings.
+attribute [-instance] AlgebraicCurve.Place.instIsPrimeCenter AlgebraicCurve.Place.instIsFractionRingIntegralClosureAt AlgebraicCurve.Place.instIsTorsionFreeSubtypeMemValuationSubringToValuationSubringIntegralClosureAt AlgebraicCurve.Place.instIsDedekindDomainIntegralClosureAt AlgebraicCurve.Place.instFiniteSubtypeMemValuationSubringToValuationSubringIntegralClosureAt ModularCurve.PhiGen.instNeZeroPhiGenCosetA AlgebraicCurve.RationalFunctionField.instNontrivialSubtypeUnitsWithZeroMultiplicativeIntMemSubgroupValueGroupRatFuncValuationInftyValuation_definitions
+attribute [-simp] AlgebraicCurve.Place.placeOfPrime_toValuationSubring AlgebraicCurve.Place.mem_fiberOver AlgebraicCurve.Place.fiberEquiv_symm_apply AlgebraicCurve.Place.fiberEquiv_apply AlgebraicCurve.Place.centerHeightOneSpectrum_asIdeal ModularCurve.coeffEmb_coeff ModularCurve.coeffMap_coeff ModularCurve.coeffMap_id ModularCurve.coeffMap_single ModularCurve.evalAtJqN_X ModularCurve.qTwistFun_coeff ModularCurve.swapBivar_C_X ModularCurve.PhiGen.cosetA_succ ModularCurve.qTwist_coeff ModularCurve.PhiGen.cosetB_zero ModularCurve.PhiGen.cosetA_zero ModularCurve.qTwist_single ModularCurve.swapBivar_X ModularCurve.aeval_toRingHom_X ModularCurve.PhiGen.cosetB_succ ModularForm.val_heckeDiagMatrix ModularForm.heckeU_zero ModularForm.heckeU_zero_left ModularForm.heckeT_zero ModularForm.val_heckeMatrix ModularForm.heckeMatrix_zero ModularForm.heckeT_zero_left ModularForm.heckeDiagMatrix_zero ModularForm.val_upperTriangularGL ModularCurve.CharPReduction.coeffRed_coeff ModularCurve.CharPReduction.redLocHom_apply AlgebraicCurve.RationalFunctionField.placeInfty_toValuationSubring AlgebraicCurve.RationalFunctionField.placeEquivOption_placeInfty AlgebraicCurve.RationalFunctionField.placeEquivOption_symm_some AlgebraicCurve.RationalFunctionField.placeEquivOption_placeOfPoint AlgebraicCurve.RationalFunctionField.placeEquivOption_symm_none
+
+theorem ModularCurve.nonempty_ssPlaces_fibre (q N : ℕ) [NeZero N] (hqN : ¬ q ∣ N) (K : Type) [Field K] [DecidableEq K]
+    [Fact q.Prime] [CharP K q] [IsAlgClosed K] {a : K} (ha : a ∈ ModularCurve.ssJSet q K) :
+    Nonempty {w : AlgebraicCurve.Place K (ModularCurve.modularFunctionFieldC K N) //
+        w ∈ ModularCurve.ssPlaces q N K ∧ w.evalAt (ModularCurve.jGeomGen K N) = a} := by p2m_exact_reverting @_root_.P2MW.S_ModularCurve_nonempty_ssPlaces_fibre.solution
