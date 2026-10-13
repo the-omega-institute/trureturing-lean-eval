@@ -1,0 +1,231 @@
+{
+  "at": "2026-10-13T02:16:40.868604+00:00",
+  "original_source_card_pairs_actual_make_kernel_passed": true,
+  "canonical_pairs_byte_identical_to_supplier": true,
+  "no_source_edits": true,
+  "no_linter_suppression_added": true,
+  "no_redundant_recompilation": true,
+  "original_statements_hypotheses_and_proofs_preserved": true,
+  "checks": {
+    "ModularCurve_heckePic0BarTranspose_fricke_smul": {
+      "proof_summary": "Preserve the original nonzero N and ell, Fricke automorphism sigma with all generator equations, both Hecke integrality hypotheses, the principal-divisor instance at level N times ell, both fundamental identities, finite-along and norm-formula hypotheses, and every x in JZero N. Retain the original equation that the transpose Hecke Pic0 action on sigma smul x equals sigma smul the original Hecke Pic0 action on x. The original divisor, pullback-pushforward exchange and generator-intertwining proofs are unchanged.",
+      "checks": {
+        "source": {
+          "module": "Submission.Supplier.P2M.Sol.S_ModularCurve_heckePic0BarTranspose_fricke_smul",
+          "canonical_lines": 285,
+          "canonical_byte_identical_to_supplier": true,
+          "make_exit": 0,
+          "kernel_exit": 0,
+          "kernel_seconds": 49.664185209,
+          "compiler_warnings": 10,
+          "source_unchanged_during_check": true,
+          "printed_final_axiom_closures": [],
+          "separate_final_axiom_audit_pending": true,
+          "direct_dependencies": [
+            {
+              "module": "Submission.Supplier.Definitions.Def_ModularCurve_HeckeOperator",
+              "source_sha256": "2f80c1daa09e6bdb1072b2e199a2202bebeb42f9f3cac9cf105d134faad03e49",
+              "object_sha256": "81ae5d0b03011faf9a957293ad41842eecbf2488cd675873a1d7157732caa973",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.Theorems.Thm_ModularCurve_exists_frickeAlgEquiv_modularFunctionFieldBar",
+              "source_sha256": "bbdd55f9f41337816e4e1157adb94faacad635f17e25fa489f2aeff72acecff9",
+              "object_sha256": "80f74c92fa94e620d6a88a9425bbfa985591126b32fd27f6564e64afe3fd71c1",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.P2M.Util",
+              "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+              "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+              "receipt_reused": true
+            }
+          ]
+        },
+        "card": {
+          "module": "Submission.Supplier.Theorems.Thm_ModularCurve_heckePic0BarTranspose_fricke_smul",
+          "canonical_lines": 29,
+          "canonical_byte_identical_to_supplier": true,
+          "make_exit": 0,
+          "kernel_exit": 0,
+          "kernel_seconds": 7.966230541,
+          "compiler_warnings": 0,
+          "source_unchanged_during_check": true,
+          "printed_final_axiom_closures": [],
+          "separate_final_axiom_audit_pending": true,
+          "direct_dependencies": [
+            {
+              "module": "Submission.Supplier.Definitions.Def_ModularCurve_HeckeOperator",
+              "source_sha256": "2f80c1daa09e6bdb1072b2e199a2202bebeb42f9f3cac9cf105d134faad03e49",
+              "object_sha256": "81ae5d0b03011faf9a957293ad41842eecbf2488cd675873a1d7157732caa973",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.P2M.Util",
+              "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+              "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.P2M.Sol.S_ModularCurve_heckePic0BarTranspose_fricke_smul",
+              "source_sha256": "26e08cf068075551290108c5428ebb7f24365592ce1215889353e62fef9a5aef",
+              "object_sha256": "1332d4095c9d17597083b6909e8d3ec56944f896560007cff0216df2a92db46c",
+              "receipt_reused": true
+            }
+          ]
+        }
+      }
+    },
+    "ModularCurve_PhiGen_sum_qTwist_coeff": {
+      "proof_summary": "For every original field K over Q, natural ell, unit zeta with the original primitive-root hypothesis, Laurent series f and integer k, retain the coefficient formula for the sum of all ell qTwists: ell times f.coeff k when ell divides k, and zero otherwise. Preserve all original hypotheses, including the absence of an extra nonzero or prime restriction on ell, and the full root-of-unity sum proof.",
+      "checks": {
+        "source": {
+          "module": "Submission.Supplier.P2M.Sol.S_ModularCurve_PhiGen_sum_qTwist_coeff",
+          "canonical_lines": 634,
+          "canonical_byte_identical_to_supplier": true,
+          "make_exit": 0,
+          "kernel_exit": 0,
+          "kernel_seconds": 30.83425725,
+          "compiler_warnings": 15,
+          "source_unchanged_during_check": true,
+          "printed_final_axiom_closures": [
+            {
+              "declaration": "P2MW.S_ModularCurve_PhiGen_sum_qTwist_coeff.solution",
+              "recursive_axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            }
+          ],
+          "separate_final_axiom_audit_pending": false,
+          "direct_dependencies": [
+            {
+              "module": "Submission.Supplier.Definitions.Def_ModularCurve_X0",
+              "source_sha256": "c38cb223f906b47b683743f598f9b13b15ea7fb7c5bddea00c85b1b20bd04306",
+              "object_sha256": "765403721e410e108317117782eed7fb7e462656e4b61c9796a09425971b78cf",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.Definitions.Def_ModularCurve_LaurentCoeff",
+              "source_sha256": "b669bf23529a8efa8e14cf704c3ef062c9dc7d12a964ea3ae43f6b9d5660fec0",
+              "object_sha256": "92decff74b33d21abf9b9d6512ceb1fa0d0af5f13d86e1b9bb7b4b3837e94e59",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.Definitions.Def_ModularCurve_PhiGen",
+              "source_sha256": "83d500ef00084ac6c6a4f75718d9e34a473ce477215d81d572fcae6cf718a347",
+              "object_sha256": "6a4dc9e0d4cc4ec2336f248b72e75d8038bcb861df1d99964a5c5ff98b940760",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.Definitions.Def_ModularCurve_DegeneracyTower",
+              "source_sha256": "2858f7165525ea689da362ea5984232ea112d16c792b5f28b916979ff06d165d",
+              "object_sha256": "50d13e9da3c94dbb6e23354b0f631573d265ae7d042ae3a2a2c9b72ff939ac3e",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.Theorems.Thm_ModularCurve_coeffMap_qExpand",
+              "source_sha256": "c5752e53c7be44261dbbaee516a86754fcd161d651866810fe7ad6f76b2550c9",
+              "object_sha256": "f14e63d17f5d9d00d42c9ebd6d0c482bcaf811aa5f0ab2873192f1721e089a12",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.Theorems.Thm_ModularCurve_PhiGen_splits_prime_at_slot",
+              "source_sha256": "d7c2a324bffa9899d32e80f6d8bea4d678523a67e7d15f3dcfb20298a94e3445",
+              "object_sha256": "c58907da04d26822a4b9d867ffbbbf2f420b3b39dfa1f3a20c0bede19f001757",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.Theorems.Thm_ModularCurve_PhiGen_splits_of_prime",
+              "source_sha256": "cfd313cf60df2a922603855844e5cfece112103eb79a889d4f4e0543f557f513",
+              "object_sha256": "7d4eda1d25e2dfb5e0410bc93903221259cc3bac9bf3b4712da0640daddd220c",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.Theorems.Thm_ModularCurve_minpoly_jqN_eq_toAdjoin",
+              "source_sha256": "a95270ef11112755de504b071966a1466c7a530b396164dc9276c6afc4e3480b",
+              "object_sha256": "abde00247f63e3ff675444d4d4dc468afe5d6e949ec12c433d1a401ab92b8085",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.Theorems.Thm_ModularCurve_exists_phiIrreducible",
+              "source_sha256": "2138ac45ec7f3647826740d23381bb981c699842ab926a35e39a94e736fb97ae",
+              "object_sha256": "48b989b14f0a387966e94e22007845d660cf1ce6521b3d13c141790e5729cdb1",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.Theorems.Thm_ModularCurve_aeval_jqN_toAdjoin",
+              "source_sha256": "58f895c9419ea872ab5e362d19773d4b8959259ff8bd678c9b42e810ffac3fd1",
+              "object_sha256": "6abf065ba57a895c5626be43a1728ba63fd9dba8812425759f394ff27e5a6634",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.P2M.Util",
+              "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+              "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+              "receipt_reused": true
+            }
+          ]
+        },
+        "card": {
+          "module": "Submission.Supplier.Theorems.Thm_ModularCurve_PhiGen_sum_qTwist_coeff",
+          "canonical_lines": 10,
+          "canonical_byte_identical_to_supplier": true,
+          "make_exit": 0,
+          "kernel_exit": 0,
+          "kernel_seconds": 24.468697041,
+          "compiler_warnings": 0,
+          "source_unchanged_during_check": true,
+          "printed_final_axiom_closures": [],
+          "separate_final_axiom_audit_pending": true,
+          "direct_dependencies": [
+            {
+              "module": "Submission.Supplier.Definitions.Def_ModularCurve_PhiGen",
+              "source_sha256": "83d500ef00084ac6c6a4f75718d9e34a473ce477215d81d572fcae6cf718a347",
+              "object_sha256": "6a4dc9e0d4cc4ec2336f248b72e75d8038bcb861df1d99964a5c5ff98b940760",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.P2M.Util",
+              "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+              "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.P2M.Sol.S_ModularCurve_PhiGen_sum_qTwist_coeff",
+              "source_sha256": "58bfc9cb3b98e1536c594a4572d8be75ed59466313a2fea0728de09bc982f3df",
+              "object_sha256": "2a1eeba8dcf0aceef9f93e3134f0aebbdcf3c8d810be40bb99f4bbc11c4c3be2",
+              "receipt_reused": true
+            }
+          ]
+        }
+      }
+    }
+  },
+  "supplier": "anthropics/fermats-last-theorem",
+  "supplier_commit": "6e837e75355538c7f80bab5b956861e86c4eacc2",
+  "full_original_complete": false,
+  "official_new_solve_credit": 0,
+  "complete_import_replay_and_recursive_axiom_audits_pending": true,
+  "selected_problem": "fermat_last_theorem",
+  "max_active_flt_jobs": 1,
+  "max_active_flt_compilers": 1,
+  "lean_threads": 1,
+  "graph_snapshot": {
+    "compiled": 7748,
+    "failed": 0,
+    "ready": 4393,
+    "root_compiled": false,
+    "workers": 1,
+    "running": {
+      "Submission.Supplier.Theorems.Thm_ModularCurve_theta_coeff": {
+        "pid": 88916,
+        "make_wrapper_pid": 84601,
+        "phase": "kernel",
+        "sha256": "25159718cae47fc7d3a35e5c8f28f63f348e6c8ac1e74299754b0d7f819b04e3",
+        "configuration": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/1fe151b218c5a443a3084fab-1791857774537207000.configuration.json"
+      }
+    }
+  }
+}
