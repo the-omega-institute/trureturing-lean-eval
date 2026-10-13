@@ -1,0 +1,86 @@
+{
+  "sha256": "59fb310b3f3fe9e9cc403930c41818a6cfd0b8317d704253549fe9c669e97e4f",
+  "exit": 0,
+  "empty_output_retry_done": false,
+  "source_sha256_after": "59fb310b3f3fe9e9cc403930c41818a6cfd0b8317d704253549fe9c669e97e4f",
+  "source_unchanged": true,
+  "olean_sha256": "91cf02fea4ef2c232effc366303058bc2536662077cea9e0ae76eed134a3bd83",
+  "seconds": 146.17561612499958,
+  "pid": 86477,
+  "command": [
+    "/Users/macstudio/.local/omega-shims/lean",
+    "-j1",
+    "--trust=0",
+    "-Ddebug.skipKernelTC=false",
+    "-R",
+    "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src",
+    "-o",
+    "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-build/lib/lean/Submission/Supplier/P2M/Sol/S_WeierstrassCurve_exists_withConv_equiv_torsionBy_padicAlgClosure_of_ratAlgClosure.olean",
+    "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_WeierstrassCurve_exists_withConv_equiv_torsionBy_padicAlgClosure_of_ratAlgClosure.lean"
+  ],
+  "make_wrapper_pid": 56004,
+  "make_exit": 0,
+  "make_entry_failed": false,
+  "cache_binding_valid": true,
+  "canonical_make_running_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/e68c5e08be7a8b8e6431f694-1791893942762113000.make-running.json",
+  "canonical_make_terminal_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/e68c5e08be7a8b8e6431f694-1791893942762113000.make-terminal.json",
+  "kernel_terminal_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/e68c5e08be7a8b8e6431f694-1791893942762113000.kernel/result.json",
+  "direct_dependencies": [
+    {
+      "module": "Submission.Supplier.Definitions.Def_GaloisRep_Flat",
+      "source_sha256": "59474ee379b00b70196dff4825d4fad20a309928a2d3214dabb17a67091c48c6",
+      "object_sha256": "f436f36b8f04c55cebc0b3ca453de19377ed018bd09cce31db752d9a181881a5",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Definitions.Def_GaloisRep_Residual",
+      "source_sha256": "acaab9dd928d013c9340e77676443b27f1ffc090abea3f139482b8fd2f8e8ff5",
+      "object_sha256": "429ac7b7b2b45f4aee7f1d99d97669e2e968c350566949b758046d25d399fcab",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Definitions.Def_FLTPrelim_GaloisRep",
+      "source_sha256": "fc0cb3d111b0d87e9c0b5be473858fa25c7d444fc6865ba1d05b6d9994700ff4",
+      "object_sha256": "d5a2340c2252cf4831dee6d0e2a52c4081c0958d63ff920d267a4db6240b48b5",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Theorems.Thm_HopfAlgebra_bijective_withConv_algHomComp_of_finite_of_isAlgClosed",
+      "source_sha256": "8232f505055e16ff07797f9ad9f6a5d31b317caed1bda8359d0f236dea394618",
+      "object_sha256": "95a466c9ea11b2e4824455bd5129693f953a46c33c3f5d74b130b7f88f0aee3f",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Theorems.Thm_WeierstrassCurve_bijective_torsionBy_pointMap_ratAlgClosure_padicAlgClosure",
+      "source_sha256": "5e6751f4accc64a01a51381da8b44fb7656d1791980a29189e258556c90e198a",
+      "object_sha256": "f942b09ff1d53c2d566de2c2acbbdb2cb23414d46617c85ed04d349a6d275735",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Theorems.Thm_AlgebraicClosure_exists_ratAlgEquiv_of_padicAlgEquiv_comp",
+      "source_sha256": "f6251006854956b2bb876f7fe1e52535f4a92df37843dae632d917e6bbf27e78",
+      "object_sha256": "d2ea04faa062bfdc8e906dab281f0b5f88f9173515c4821924f124851becb87b",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Theorems.Thm_WeierstrassCurve_exists_addEquiv_torsionBy_ratBaseChange_eq_padicMap_padicAlgClosure",
+      "source_sha256": "0c19ecf8adf05c5cc047e0023dbccef381a035be3ba8e9e1a3953e2c70f7504a",
+      "object_sha256": "e67a7548fa5eade93e2ec7b75d4435ddaf22fd2c911f66373f852cf5945ec405",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Theorems.Thm_AlgebraicClosure_nonempty_algHom_rat_padicAlgClosure",
+      "source_sha256": "60c6a504041d71f19b2298a1def64269f5bc96d01db45b6cb2dc82e2f856c2a6",
+      "object_sha256": "50944a0aa6cddfd803481b73266fc18868d2d024b7cc70e70970149b85c88c2a",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.P2M.Util",
+      "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+      "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+      "receipt_reused": true
+    }
+  ],
+  "stdout": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/e68c5e08be7a8b8e6431f694-1791893942762113000.kernel/stdout.log",
+  "stderr": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/e68c5e08be7a8b8e6431f694-1791893942762113000.kernel/stderr.log"
+}
