@@ -1,0 +1,141 @@
+{
+  "at": "2026-10-13T14:31:55.608871+00:00",
+  "original_source_card_pairs_actual_make_kernel_passed": true,
+  "canonical_pairs_byte_identical_to_supplier": true,
+  "no_source_edits": true,
+  "no_linter_suppression_added": true,
+  "no_redundant_recompilation": true,
+  "original_statements_hypotheses_and_proofs_preserved": true,
+  "checks": {
+    "WeierstrassCurve_tateModuleRep_det_frobenius": {
+      "proof_summary": "Preserve arbitrary rational Weierstrass curve W, prime p with its original Fact p.Prime instance, nonzero discriminant, and the exact all-level p-power torsion cardinality hypothesis. Preserve arbitrary prime ell different from p, an arbitrary valuation subring A of AlgebraicClosure Q lying over ell, and an arbitrary rational algebra automorphism sigma with its original A.IsFrobeniusAt sigma ell hypothesis. Retain the exact p-adic integer equality LinearMap.det ((W.tateModuleRep p hcard).rho sigma) = (ell : Z_p). Preserve the complete 36-line supplier source, including the full padic_sep proof that membership in every p-power principal ideal forces zero, and the main proof obtaining every determinant congruence from full cyclotomicity and Frobenius action on p-power roots of unity, then using separation and subtraction cancellation. No good-reduction, odd-prime, p-at-least-five, chosen valuation or additional unramifiedness assumption is added. The exact equality is not replaced by a congruence at a fixed level, and every original hypothesis is retained.",
+      "checks": {
+        "source": {
+          "module": "Submission.Supplier.P2M.Sol.S_WeierstrassCurve_tateModuleRep_det_frobenius",
+          "canonical_lines": 36,
+          "canonical_byte_identical_to_supplier": true,
+          "make_exit": 0,
+          "kernel_exit": 0,
+          "kernel_seconds": 133.748743,
+          "compiler_warnings": 0,
+          "source_unchanged_during_check": true,
+          "printed_final_axiom_closures": [],
+          "separate_final_axiom_audit_pending": true,
+          "direct_dependencies": [
+            {
+              "module": "Submission.Supplier.Definitions.Def_EllipticCurve_TateModule",
+              "source_sha256": "deedc6fe6dbef085790cc6b09731f30e103f0a18c752375cd6fb1f32ac1f25fb",
+              "object_sha256": "f25141995a1bec6406f6c0c015e2e7910f0116c4bbf0254c0b63a891f2905897",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.Definitions.Def_GaloisRep_LocalConditions",
+              "source_sha256": "966a9ca341b94a89b6daed7c4cb4ef933f48bcabda2305f7387f4c7c3f7b189b",
+              "object_sha256": "bced9ae5abcf0beb1e999617195d5ecc94f40190412553b584491a57e9769534",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.Definitions.Def_FLTPrelim_Ramification",
+              "source_sha256": "00fe8d0d63a3bcd209efde3539d0fdce08cad1c4b4b2e5b15ed18efc273b0441",
+              "object_sha256": "9c8ceef3342e5a6b5af8eda270ac74239e1012faec3128daa560373353d1ae90",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.Definitions.Def_EllipticCurve_FrobeniusTrace",
+              "source_sha256": "399f64e985f83d26e4ac2d8c0e28f280ae9cb7760458bdb3d93c32cbf51f1559",
+              "object_sha256": "cd37d36c2ff163b3587b156401035161c7480f4fb8968f143e20e45e32715b61",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.Theorems.Thm_WeierstrassCurve_tateModuleRep_detIsCyclotomic",
+              "source_sha256": "f89ec0d1c4e329e7b7706ad08788bc32b27a43cc94e5dac75870d7ab902162e4",
+              "object_sha256": "54ed46b0553dd191011d28ac6a0009aaf4ee123cfd4f7c8ab6c1da005d52d128",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.Theorems.Thm_ValuationSubring_IsFrobeniusAt_apply_eq_pow_of_pow_prime_pow_eq_one",
+              "source_sha256": "910f49378c29b3a370e13305188b81b05394c4930edad2210947bab6e6e8c739",
+              "object_sha256": "83491a08f5916649a7718a35ae89a4856a62b237e0bec56932b0569ff65c96d0",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.P2M.Util",
+              "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+              "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+              "receipt_reused": true
+            }
+          ]
+        },
+        "card": {
+          "module": "Submission.Supplier.Theorems.Thm_WeierstrassCurve_tateModuleRep_det_frobenius",
+          "canonical_lines": 18,
+          "canonical_byte_identical_to_supplier": true,
+          "make_exit": 0,
+          "kernel_exit": 0,
+          "kernel_seconds": 46.050432750000006,
+          "compiler_warnings": 0,
+          "source_unchanged_during_check": true,
+          "printed_final_axiom_closures": [],
+          "separate_final_axiom_audit_pending": true,
+          "direct_dependencies": [
+            {
+              "module": "Submission.Supplier.Definitions.Def_EllipticCurve_TateModule",
+              "source_sha256": "deedc6fe6dbef085790cc6b09731f30e103f0a18c752375cd6fb1f32ac1f25fb",
+              "object_sha256": "f25141995a1bec6406f6c0c015e2e7910f0116c4bbf0254c0b63a891f2905897",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.Definitions.Def_FLTPrelim_Ramification",
+              "source_sha256": "00fe8d0d63a3bcd209efde3539d0fdce08cad1c4b4b2e5b15ed18efc273b0441",
+              "object_sha256": "9c8ceef3342e5a6b5af8eda270ac74239e1012faec3128daa560373353d1ae90",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.Definitions.Def_EllipticCurve_FrobeniusTrace",
+              "source_sha256": "399f64e985f83d26e4ac2d8c0e28f280ae9cb7760458bdb3d93c32cbf51f1559",
+              "object_sha256": "cd37d36c2ff163b3587b156401035161c7480f4fb8968f143e20e45e32715b61",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.P2M.Util",
+              "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+              "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.P2M.Sol.S_WeierstrassCurve_tateModuleRep_det_frobenius",
+              "source_sha256": "60ea9aa76500b8ece0153393b86314fd3403e28e78fdc71e423cab76c7b5357d",
+              "object_sha256": "fbe7f9340617c48eb421d8b43ccb251222063151e69bbdcfe11d1bfee1dc68f9",
+              "receipt_reused": true
+            }
+          ]
+        }
+      }
+    }
+  },
+  "supplier": "anthropics/fermats-last-theorem",
+  "supplier_commit": "6e837e75355538c7f80bab5b956861e86c4eacc2",
+  "full_original_complete": false,
+  "official_new_solve_credit": 0,
+  "complete_import_replay_and_recursive_axiom_audits_pending": true,
+  "selected_problem": "fermat_last_theorem",
+  "max_active_flt_jobs": 1,
+  "max_active_flt_compilers": 1,
+  "lean_threads": 1,
+  "graph_snapshot": {
+    "compiled": 8024,
+    "failed": 0,
+    "ready": 4359,
+    "root_compiled": false,
+    "workers": 1,
+    "running": {
+      "Submission.Supplier.P2M.Sol.S_WeierstrassCurve_apply_eq_pow_det_galoisRep_of_pow_eq_one": {
+        "pid": 31997,
+        "make_wrapper_pid": 31997,
+        "phase": "canonical_make_queue",
+        "sha256": "0feba6083aaacb62cf383e1aaaf25382a43a884142b494b8bb3ac44516d346ae",
+        "configuration": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/3860e08937ed280ef592a2b7-1791901851834293000.configuration.json"
+      }
+    }
+  }
+}
