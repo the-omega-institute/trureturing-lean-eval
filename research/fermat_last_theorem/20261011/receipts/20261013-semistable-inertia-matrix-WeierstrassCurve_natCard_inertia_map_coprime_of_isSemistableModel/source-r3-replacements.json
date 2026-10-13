@@ -1,0 +1,37 @@
+[
+  [
+    "by simp [Matrix.one_fin_two]",
+    "by simp [Matrix.one_fin_two]; decide",
+    4
+  ],
+  [
+    "    (hirr : W.ModRepIsIrreducible 3)",
+    "    (_hirr : W.ModRepIsIrreducible 3)",
+    1
+  ],
+  [
+    "\n  haveI := isElliptic_baseChange W hΔ\n",
+    "\n  have := isElliptic_baseChange W hΔ\n",
+    1
+  ],
+  [
+    "\n  haveI := moduleFinite_V W hΔ\n",
+    "\n  have := moduleFinite_V W hΔ\n",
+    2
+  ],
+  [
+    "\n  haveI := isElliptic_map W hΔ\n",
+    "\n  have := isElliptic_map W hΔ\n",
+    4
+  ],
+  [
+    "\n  haveI := hL\n",
+    "\n  have := hL\n",
+    1
+  ],
+  [
+    "\n  haveI : Fact q.Prime := ⟨hq⟩\n",
+    "\n  have : Fact q.Prime := ⟨hq⟩\n",
+    1
+  ]
+]

@@ -1,0 +1,62 @@
+{
+  "at": "2026-10-13T15:07:50.986377+00:00",
+  "checks": {
+    "source": {
+      "module": "Submission.Supplier.P2M.Sol.S_WeierstrassCurve_natCard_inertia_map_coprime_of_isSemistableModel",
+      "make_exit": 0,
+      "kernel_exit": 0,
+      "kernel_seconds": 25.943429542,
+      "compiler_warnings": 0,
+      "final_standard3_audit_passed": true,
+      "printed_final_axiom_closures": [
+        {
+          "declaration": "P2MW.S_WeierstrassCurve_natCard_inertia_map_coprime_of_isSemistableModel.solution",
+          "recursive_axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "original_canonical_lines": 500,
+      "repaired_canonical_lines": 502,
+      "original_final_statement_and_full_module_proof_preserved": true
+    },
+    "card": {
+      "module": "Submission.Supplier.Theorems.Thm_WeierstrassCurve_natCard_inertia_map_coprime_of_isSemistableModel",
+      "make_exit": 0,
+      "kernel_exit": 0,
+      "kernel_seconds": 38.983427208,
+      "compiler_warnings": 0,
+      "final_standard3_audit_passed": true,
+      "printed_final_axiom_closures": [
+        {
+          "declaration": "WeierstrassCurve.natCard_inertia_map_coprime_of_isSemistableModel",
+          "recursive_axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "original_canonical_lines": 34,
+      "repaired_canonical_lines": 36,
+      "original_final_statement_and_full_module_proof_preserved": true
+    }
+  },
+  "proof_summary": "Preserve the full supplier source and card, arbitrary integral semistable W with nonzero discriminant, the original irreducibility hypothesis, arbitrary continuous surjective mod-three representation, cyclotomic determinant and every original Frobenius-trace hypothesis, every prime q different from three, and every valuation above q. Retain exact coprimality of the inertia image cardinality with q. Keep all cardinality, determinant, torsion representation, density, absolute irreducibility, conjugation, unipotence and order arguments. Finish only four concrete matrix inverse additive-cancellation goals with kernel-checked decide, fix warning-directed proposition declarations and identical occurrences and rename the unused irreducibility binder while retaining its type. Append final recursive axiom queries. Require actual source/card canonical make/kernel exits zero, zero warnings and exact STANDARD3.",
+  "original_statements_hypotheses_and_full_proofs_preserved": true,
+  "repaired_source_card_pair_actual_make_kernel_passed": true,
+  "source_card_actual_final_standard3": true,
+  "no_linter_suppression_added": true,
+  "baseline_source_actual_exit": 1,
+  "supplier": "anthropics/fermats-last-theorem",
+  "supplier_commit": "6e837e75355538c7f80bab5b956861e86c4eacc2",
+  "selected_problem": "fermat_last_theorem",
+  "full_original_complete": false,
+  "official_new_solve_credit": 0,
+  "full_root_import_replay_and_axiom_audit_pending": true,
+  "max_active_flt_jobs": 1,
+  "max_active_flt_compilers": 1,
+  "lean_threads": 1
+}
