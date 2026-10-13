@@ -1,0 +1,99 @@
+{
+  "at": "2026-10-13T06:38:15.926428+00:00",
+  "original_source_card_pairs_actual_make_kernel_passed": true,
+  "canonical_pairs_byte_identical_to_supplier": true,
+  "no_source_edits": true,
+  "no_linter_suppression_added": true,
+  "no_redundant_recompilation": true,
+  "original_statements_hypotheses_and_proofs_preserved": true,
+  "checks": {
+    "PadicInt_KummerCarrier_comul_coassoc": {
+      "proof_summary": "For arbitrary natural prime p and arbitrary p-adic unit u, retain equality of the two iterated Kummer-carrier comultiplications under the full tensor-product associator, as algebra homomorphisms over the p-adic integers. Preserve AdjoinRoot lift/root equations, the complete three-factor finite-product tensor equivalence, tensor induction, the integer-division carry two-cocycle identity, both factorwise lifted comultiplication paths and their final comparison on all carrier coordinates. No restriction on the unit, prime or tensor factors is added. The original complete source and theorem card are byte-identical to the supplier.",
+      "checks": {
+        "source": {
+          "module": "Submission.Supplier.P2M.Sol.S_PadicInt_KummerCarrier_comul_coassoc",
+          "canonical_lines": 305,
+          "canonical_byte_identical_to_supplier": true,
+          "make_exit": 0,
+          "kernel_exit": 0,
+          "kernel_seconds": 117.72413875000001,
+          "compiler_warnings": 19,
+          "source_unchanged_during_check": true,
+          "printed_final_axiom_closures": [],
+          "separate_final_axiom_audit_pending": true,
+          "direct_dependencies": [
+            {
+              "module": "Submission.Supplier.Definitions.Def_PadicInt_KummerCarrier",
+              "source_sha256": "6f36254902fdc8ba1a6756abcdcc22b26f8f822cc1dede08b6a3b31acc3d9380",
+              "object_sha256": "47de58411cd2826e9b14be0f8c1a003e27633a3a6901874710390a48f33db8c1",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.P2M.Util",
+              "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+              "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+              "receipt_reused": true
+            }
+          ]
+        },
+        "card": {
+          "module": "Submission.Supplier.Theorems.Thm_PadicInt_KummerCarrier_comul_coassoc",
+          "canonical_lines": 12,
+          "canonical_byte_identical_to_supplier": true,
+          "make_exit": 0,
+          "kernel_exit": 0,
+          "kernel_seconds": 114.491516417,
+          "compiler_warnings": 0,
+          "source_unchanged_during_check": true,
+          "printed_final_axiom_closures": [],
+          "separate_final_axiom_audit_pending": true,
+          "direct_dependencies": [
+            {
+              "module": "Submission.Supplier.Definitions.Def_PadicInt_KummerCarrier",
+              "source_sha256": "6f36254902fdc8ba1a6756abcdcc22b26f8f822cc1dede08b6a3b31acc3d9380",
+              "object_sha256": "47de58411cd2826e9b14be0f8c1a003e27633a3a6901874710390a48f33db8c1",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.P2M.Util",
+              "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+              "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.P2M.Sol.S_PadicInt_KummerCarrier_comul_coassoc",
+              "source_sha256": "cbc9c7254608987aa77077b50e8a5a13053ffad8a0efdc670ca124665100072e",
+              "object_sha256": "e315aa03bc036331b9b58fd421097f76274452bc561b5de6b3ce7646e76bab86",
+              "receipt_reused": true
+            }
+          ]
+        }
+      }
+    }
+  },
+  "supplier": "anthropics/fermats-last-theorem",
+  "supplier_commit": "6e837e75355538c7f80bab5b956861e86c4eacc2",
+  "full_original_complete": false,
+  "official_new_solve_credit": 0,
+  "complete_import_replay_and_recursive_axiom_audits_pending": true,
+  "selected_problem": "fermat_last_theorem",
+  "max_active_flt_jobs": 1,
+  "max_active_flt_compilers": 1,
+  "lean_threads": 1,
+  "graph_snapshot": {
+    "compiled": 7860,
+    "failed": 0,
+    "ready": 4377,
+    "root_compiled": false,
+    "workers": 1,
+    "running": {
+      "Submission.Supplier.P2M.Sol.S_PadicInt_KummerCarrier_bialgebra_axioms": {
+        "pid": 13131,
+        "make_wrapper_pid": 13131,
+        "phase": "canonical_make_queue",
+        "sha256": "aa1df1c3faeb1673f24596186aa3b99ad6dbdb3ece580bb6b37f99188f9fcd7a",
+        "configuration": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/4ac021aa042b59f8b4e02a2f-1791873471642371000.configuration.json"
+      }
+    }
+  }
+}
