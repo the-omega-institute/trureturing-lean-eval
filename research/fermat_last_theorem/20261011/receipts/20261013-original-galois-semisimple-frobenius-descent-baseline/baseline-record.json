@@ -1,0 +1,129 @@
+{
+  "at": "2026-10-13T10:16:46.665701+00:00",
+  "original_source_card_pairs_actual_make_kernel_passed": true,
+  "canonical_pairs_byte_identical_to_supplier": true,
+  "no_source_edits": true,
+  "no_linter_suppression_added": true,
+  "no_redundant_recompilation": true,
+  "original_statements_hypotheses_and_proofs_preserved": true,
+  "checks": {
+    "GaloisRep_exists_isSemisimpleRepresentation_charpoly_map_eq_of_trace_det_frobenius_mem_range": {
+      "proof_summary": "For an arbitrary finite coefficient field kappa embedded in an algebraically closed field Omega, a two-dimensional representation of the absolute Galois group of Q factoring through a finite level, and the original Frobenius trace/determinant range condition outside an arbitrary finite set of primes, retain existence of a kappa-valued representation factoring through a finite level, semisimple as a matrix representation, with original kernel containment and equality of mapped characteristic polynomials at every Galois automorphism. Preserve all valuation-subring and Frobenius quantifiers, the complete 495-line proof and all original hypotheses; no ramification, irreducibility, determinant or characteristic assumption is added.",
+      "checks": {
+        "source": {
+          "module": "Submission.Supplier.P2M.Sol.S_GaloisRep_exists_isSemisimpleRepresentation_charpoly_map_eq_of_trace_det_frobenius_mem_range",
+          "canonical_lines": 495,
+          "canonical_byte_identical_to_supplier": true,
+          "make_exit": 0,
+          "kernel_exit": 0,
+          "kernel_seconds": 53.601925625,
+          "compiler_warnings": 8,
+          "source_unchanged_during_check": true,
+          "printed_final_axiom_closures": [],
+          "separate_final_axiom_audit_pending": true,
+          "direct_dependencies": [
+            {
+              "module": "Submission.Supplier.Definitions.Def_GaloisRep_Residual",
+              "source_sha256": "acaab9dd928d013c9340e77676443b27f1ffc090abea3f139482b8fd2f8e8ff5",
+              "object_sha256": "429ac7b7b2b45f4aee7f1d99d97669e2e968c350566949b758046d25d399fcab",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.Definitions.Def_Deformations_MatrixRepresentation",
+              "source_sha256": "cb3cced46738f1e7fc7f6a7af6537a882a30406021583c69b8ee1533364150d6",
+              "object_sha256": "f90aea79d0f9d1cb4111bc4e8589a0ed2cc22251c1dce625b34bc91e0b228dcf",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.Theorems.Thm_ModularCurve_exists_semisimple_descent_of_trace_det_mem_range_finite",
+              "source_sha256": "3acf7dba609c6b23cf8cc05bd0e78416926d239707f11bea5ff7edb4981b6062",
+              "object_sha256": "755e4a282b884a90a38d78458d23204ac1dd3401f74c53e58a3eb0759329bb11",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.Theorems.Thm_Subgroup_exists_prime_isFrobeniusAt_conj_pow_mem_of_isOpen",
+              "source_sha256": "6aefce85209c01afcc3427d3d6a2447db7f574141a773ebc99f77f083dd3855a",
+              "object_sha256": "3f936abdeaae4bc7156fe1a407e0fbf011fda26dc60dd1b115d449260bf88d32",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.Theorems.Thm_DeligneSerre_exists_isSemisimpleRepresentation_charpoly_map_eq_of_add_mem_range_of_mul_mem_range",
+              "source_sha256": "52fbce028a092b883db7ca5ae717441febce7f2ae3a718f94aa9f8b26fb33270",
+              "object_sha256": "139630c29b8f4b9599d1af99051c19ae3feea3aa6903cdba0ab831e932199152",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.P2M.Util",
+              "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+              "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+              "receipt_reused": true
+            }
+          ]
+        },
+        "card": {
+          "module": "Submission.Supplier.Theorems.Thm_GaloisRep_exists_isSemisimpleRepresentation_charpoly_map_eq_of_trace_det_frobenius_mem_range",
+          "canonical_lines": 27,
+          "canonical_byte_identical_to_supplier": true,
+          "make_exit": 0,
+          "kernel_exit": 0,
+          "kernel_seconds": 58.020606209,
+          "compiler_warnings": 0,
+          "source_unchanged_during_check": true,
+          "printed_final_axiom_closures": [],
+          "separate_final_axiom_audit_pending": true,
+          "direct_dependencies": [
+            {
+              "module": "Submission.Supplier.Definitions.Def_GaloisRep_Residual",
+              "source_sha256": "acaab9dd928d013c9340e77676443b27f1ffc090abea3f139482b8fd2f8e8ff5",
+              "object_sha256": "429ac7b7b2b45f4aee7f1d99d97669e2e968c350566949b758046d25d399fcab",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.Definitions.Def_Deformations_MatrixRepresentation",
+              "source_sha256": "cb3cced46738f1e7fc7f6a7af6537a882a30406021583c69b8ee1533364150d6",
+              "object_sha256": "f90aea79d0f9d1cb4111bc4e8589a0ed2cc22251c1dce625b34bc91e0b228dcf",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.P2M.Util",
+              "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+              "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.P2M.Sol.S_GaloisRep_exists_isSemisimpleRepresentation_charpoly_map_eq_of_trace_det_frobenius_mem_range",
+              "source_sha256": "8a2bdf10a620b971224d0615708452b2ced1dd1583c2888e1c33d1a131fc8b1b",
+              "object_sha256": "8f3c8a2c767a1b81844de7cbf0bc8296894e4b5ee4b4e44c07041dbea5cc035f",
+              "receipt_reused": true
+            }
+          ]
+        }
+      }
+    }
+  },
+  "supplier": "anthropics/fermats-last-theorem",
+  "supplier_commit": "6e837e75355538c7f80bab5b956861e86c4eacc2",
+  "full_original_complete": false,
+  "official_new_solve_credit": 0,
+  "complete_import_replay_and_recursive_axiom_audits_pending": true,
+  "selected_problem": "fermat_last_theorem",
+  "max_active_flt_jobs": 1,
+  "max_active_flt_compilers": 1,
+  "lean_threads": 1,
+  "graph_snapshot": {
+    "compiled": 7947,
+    "failed": 0,
+    "ready": 4365,
+    "root_compiled": false,
+    "workers": 1,
+    "running": {
+      "Submission.Supplier.Theorems.Thm_RingHom_mem_range_of_pow_eq_one": {
+        "pid": 32663,
+        "make_wrapper_pid": 32663,
+        "phase": "canonical_make_queue",
+        "sha256": "8b2a1db91c6af0607ba3e446c88e576683409006537b11939a687fb5e9407038",
+        "configuration": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/d2fc20a7dbfbc9a20c289112-1791886555491581000.configuration.json"
+      }
+    }
+  }
+}
