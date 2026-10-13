@@ -1,0 +1,50 @@
+{
+  "sha256": "6c0538eaad0f955e3ad4ac9ff9217591d0c9fe8ba2eea5f7775b373f6f49f979",
+  "exit": 0,
+  "empty_output_retry_done": false,
+  "source_sha256_after": "6c0538eaad0f955e3ad4ac9ff9217591d0c9fe8ba2eea5f7775b373f6f49f979",
+  "source_unchanged": true,
+  "olean_sha256": "e250110c2fc65d6712e43f9b411c5f0dac8a7fb2b1b68f61e73af842b0bb5e9b",
+  "seconds": 135.43846195899823,
+  "pid": 31371,
+  "command": [
+    "/Users/macstudio/.local/omega-shims/lean",
+    "-j1",
+    "--trust=0",
+    "-Ddebug.skipKernelTC=false",
+    "-R",
+    "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src",
+    "-o",
+    "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-build/lib/lean/Submission/Supplier/Theorems/Thm_WeierstrassCurve_Affine_weilPairing0_self.olean",
+    "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/Theorems/Thm_WeierstrassCurve_Affine_weilPairing0_self.lean"
+  ],
+  "make_wrapper_pid": 89650,
+  "make_exit": 0,
+  "make_entry_failed": false,
+  "cache_binding_valid": true,
+  "canonical_make_running_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/57f4750b04a4fa84853af2d5-1791900011902200000.make-running.json",
+  "canonical_make_terminal_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/57f4750b04a4fa84853af2d5-1791900011902200000.make-terminal.json",
+  "kernel_terminal_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/57f4750b04a4fa84853af2d5-1791900011902200000.kernel/result.json",
+  "direct_dependencies": [
+    {
+      "module": "Submission.Supplier.Definitions.Def_EllipticCurve_WeilPairingFun",
+      "source_sha256": "6b84c76b9e69ece8fd9c13f9e24f1317c61b82835f2661c72e45fdb3f0dd98ea",
+      "object_sha256": "e70c940c319a2a5c540cc24a078c403d9eda868040b378a3d1e30b6f8388f2d0",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.P2M.Util",
+      "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+      "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.P2M.Sol.S_WeierstrassCurve_Affine_weilPairing0_self",
+      "source_sha256": "c77cb024e8262b5a141242b15a505c327e19b47c2b5bbef6fc0cd5c9b5f82ec2",
+      "object_sha256": "c3a94018c67416f8f60d9702f99b2a47038b5d4d5d8be93cb100d1ba6e363aa9",
+      "receipt_reused": true
+    }
+  ],
+  "stdout": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/57f4750b04a4fa84853af2d5-1791900011902200000.kernel/stdout.log",
+  "stderr": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/57f4750b04a4fa84853af2d5-1791900011902200000.kernel/stderr.log"
+}
