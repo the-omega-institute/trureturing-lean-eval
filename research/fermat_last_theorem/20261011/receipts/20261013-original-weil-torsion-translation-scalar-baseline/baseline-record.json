@@ -1,0 +1,123 @@
+{
+  "at": "2026-10-13T13:10:03.297048+00:00",
+  "original_source_card_pairs_actual_make_kernel_passed": true,
+  "canonical_pairs_byte_identical_to_supplier": true,
+  "no_source_edits": true,
+  "no_linter_suppression_added": true,
+  "no_redundant_recompilation": true,
+  "original_statements_hypotheses_and_proofs_preserved": true,
+  "checks": {
+    "WeierstrassCurve_Affine_exists_transEquiv_weilFun_eq": {
+      "proof_summary": "Preserve arbitrary fields F,K with their algebra structure, DecidableEq and algebraic closedness of K, an elliptic Weierstrass curve W over F with the Dedekind-domain coordinate ring of its K-base change, natural n with its cast in K nonzero, and arbitrary points S,T with both original n-torsion hypotheses. Retain existence of a unit c in K with the exact equality transEquiv S (weilFun n T) = algebraMap K (FunctionField) (c : K) times weilFun n T. Preserve the complete 24-line supplier proof: valuation-one of the quotient at every height-one place, the function-field constant criterion, nonzero Weil function and constant, and the Units.mk0 witness. No nonzero S/T condition, characteristic-zero hypothesis or prime-order restriction is added, and the unit-valued witness is not weakened.",
+      "checks": {
+        "source": {
+          "module": "Submission.Supplier.P2M.Sol.S_WeierstrassCurve_Affine_exists_transEquiv_weilFun_eq",
+          "canonical_lines": 24,
+          "canonical_byte_identical_to_supplier": true,
+          "make_exit": 0,
+          "kernel_exit": 0,
+          "kernel_seconds": 103.226121625,
+          "compiler_warnings": 0,
+          "source_unchanged_during_check": true,
+          "printed_final_axiom_closures": [],
+          "separate_final_axiom_audit_pending": true,
+          "direct_dependencies": [
+            {
+              "module": "Submission.Supplier.Definitions.Def_EllipticCurve_WeilPairingFun",
+              "source_sha256": "6b84c76b9e69ece8fd9c13f9e24f1317c61b82835f2661c72e45fdb3f0dd98ea",
+              "object_sha256": "e70c940c319a2a5c540cc24a078c403d9eda868040b378a3d1e30b6f8388f2d0",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.Theorems.Thm_WeierstrassCurve_Affine_valuation_transEquiv_weilFun",
+              "source_sha256": "724406881f46ad95b5247be1734436717b85f750d88fb3c6eb043c3f4f469ad3",
+              "object_sha256": "31faf72c00e816d13308434e32965a938ef12ffbfe5255bcbd8f29c13739d0ad",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.Theorems.Thm_WeierstrassCurve_Affine_valuation_weilFun",
+              "source_sha256": "6d4387b02d61604ccbe7cbbca60ce2c28ab9cc98d3b7c0022916319fb7ca3acc",
+              "object_sha256": "fff6640dc5c9187b2258674ac756441b90338d90673ae647be8e71a062acd511",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.Theorems.Thm_WeierstrassCurve_Affine_weilFun_ne_zero",
+              "source_sha256": "a1ccd9b266cf3ef7a3bfe60962bbdf16250aebdf70eac8cb7e89c7d7781a2c1a",
+              "object_sha256": "d4ee9a69b64de8856c9ff1aa48ef219b8d2658be708323747ae5fb407030df2a",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.Theorems.Thm_WeierstrassCurve_Affine_FunctionField_exists_eq_algebraMap_of_valuation_eq_one",
+              "source_sha256": "362adf6918cd479428cad132620511228746577e53ac15f5be6629cbbc37f0d0",
+              "object_sha256": "65b78e97ecee789c1740ecd423a2ee13bafeac1d56bc38a6adb08ddf82ee17fa",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.P2M.Util",
+              "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+              "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+              "receipt_reused": true
+            }
+          ]
+        },
+        "card": {
+          "module": "Submission.Supplier.Theorems.Thm_WeierstrassCurve_Affine_exists_transEquiv_weilFun_eq",
+          "canonical_lines": 9,
+          "canonical_byte_identical_to_supplier": true,
+          "make_exit": 0,
+          "kernel_exit": 0,
+          "kernel_seconds": 106.121283209,
+          "compiler_warnings": 0,
+          "source_unchanged_during_check": true,
+          "printed_final_axiom_closures": [],
+          "separate_final_axiom_audit_pending": true,
+          "direct_dependencies": [
+            {
+              "module": "Submission.Supplier.Definitions.Def_EllipticCurve_WeilPairingFun",
+              "source_sha256": "6b84c76b9e69ece8fd9c13f9e24f1317c61b82835f2661c72e45fdb3f0dd98ea",
+              "object_sha256": "e70c940c319a2a5c540cc24a078c403d9eda868040b378a3d1e30b6f8388f2d0",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.P2M.Util",
+              "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+              "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.P2M.Sol.S_WeierstrassCurve_Affine_exists_transEquiv_weilFun_eq",
+              "source_sha256": "34838ecbce3d0d0008dcdfe2ecf850203b5f8be73ebc6833ecd5c445ed470c69",
+              "object_sha256": "3164540d3ec4f2061a21503541f185a6c17dddfbf323177ddaa3dc1a1d80903c",
+              "receipt_reused": true
+            }
+          ]
+        }
+      }
+    }
+  },
+  "supplier": "anthropics/fermats-last-theorem",
+  "supplier_commit": "6e837e75355538c7f80bab5b956861e86c4eacc2",
+  "full_original_complete": false,
+  "official_new_solve_credit": 0,
+  "complete_import_replay_and_recursive_axiom_audits_pending": true,
+  "selected_problem": "fermat_last_theorem",
+  "max_active_flt_jobs": 1,
+  "max_active_flt_compilers": 1,
+  "lean_threads": 1,
+  "graph_snapshot": {
+    "compiled": 8010,
+    "failed": 0,
+    "ready": 4358,
+    "root_compiled": false,
+    "workers": 1,
+    "running": {
+      "Submission.Supplier.P2M.Sol.S_WeierstrassCurve_Affine_weilPairing0_add_left": {
+        "pid": 7068,
+        "make_wrapper_pid": 7068,
+        "phase": "canonical_make_queue",
+        "sha256": "d87cf0424ae0f36081760c56ce64fe89b3aa94a64fcddad7fdc531988a332478",
+        "configuration": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/d1672380d3cfe0eee2751796-1791896923730629000.configuration.json"
+      }
+    }
+  }
+}
