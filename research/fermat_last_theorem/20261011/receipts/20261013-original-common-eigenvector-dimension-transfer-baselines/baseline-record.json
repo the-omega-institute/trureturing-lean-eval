@@ -1,0 +1,189 @@
+{
+  "at": "2026-10-13T04:22:24.852246+00:00",
+  "original_source_card_pairs_actual_make_kernel_passed": true,
+  "canonical_pairs_byte_identical_to_supplier": true,
+  "no_source_edits": true,
+  "no_linter_suppression_added": true,
+  "no_redundant_recompilation": true,
+  "original_statements_hypotheses_and_proofs_preserved": true,
+  "checks": {
+    "Module_End_exists_ne_zero_forall_apply_eq_smul_of_dual_comp_eq_smul": {
+      "proof_summary": "For the original arbitrary field K, finite-dimensional K-space M, commutative ring R, ring maps T:R->End_K(M) and a:R->K, and nonzero dual functional mu satisfying mu composed with T(r)=a(r)*mu for every r, preserve existence of a nonzero m with T(r)m=a(r)*m for every r. Retain the original commuting operator identities, nilpotent-kernel descent, Fitting decomposition and strong induction on dimension. Add no algebraic-closure or diagonalizability hypothesis.",
+      "checks": {
+        "source": {
+          "module": "Submission.Supplier.P2M.Sol.S_Module_End_exists_ne_zero_forall_apply_eq_smul_of_dual_comp_eq_smul",
+          "canonical_lines": 196,
+          "canonical_byte_identical_to_supplier": true,
+          "make_exit": 0,
+          "kernel_exit": 0,
+          "kernel_seconds": 8.155242042,
+          "compiler_warnings": 3,
+          "source_unchanged_during_check": true,
+          "printed_final_axiom_closures": [],
+          "separate_final_axiom_audit_pending": true,
+          "direct_dependencies": [
+            {
+              "module": "Submission.Supplier.P2M.Util",
+              "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+              "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+              "receipt_reused": true
+            }
+          ]
+        },
+        "card": {
+          "module": "Submission.Supplier.Theorems.Thm_Module_End_exists_ne_zero_forall_apply_eq_smul_of_dual_comp_eq_smul",
+          "canonical_lines": 11,
+          "canonical_byte_identical_to_supplier": true,
+          "make_exit": 0,
+          "kernel_exit": 0,
+          "kernel_seconds": 92.50862125,
+          "compiler_warnings": 0,
+          "source_unchanged_during_check": true,
+          "printed_final_axiom_closures": [],
+          "separate_final_axiom_audit_pending": true,
+          "direct_dependencies": [
+            {
+              "module": "Submission.Supplier.P2M.Util",
+              "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+              "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.P2M.Sol.S_Module_End_exists_ne_zero_forall_apply_eq_smul_of_dual_comp_eq_smul",
+              "source_sha256": "3db6965ea155a3fb8a9d267166d6b0f3d41a15d8dccec3d46f82e58a59824e68",
+              "object_sha256": "2a6bf417a935fde59136a00ea768378608e74daba0a33a0672dfebaf972168a3",
+              "receipt_reused": true
+            }
+          ]
+        }
+      }
+    },
+    "Module_End_finrank_iInf_maxGenEigenspace_baseChange_eq_mul_prod_rootMultiplicity_of_isAlgClosed": {
+      "proof_summary": "For every original finite-dimensional K-space W, finite index type Q, family U of endomorphisms, family P of polynomials and natural c, retain the exact transfer of the assumed common generalized-eigenspace dimension formula over the original algebraically closed extension Omega1 to every original field extension Omega2 and every eigenvalue tuple lambda. Preserve the full tensor base-change/kernel/dimension proof, finite algebraic intermediate field, its embedding into Omega1, root-multiplicity transport and transcendental case. The Omega1 dimension formula remains an explicit original hypothesis, not a conclusion derived for arbitrary U and P.",
+      "checks": {
+        "source": {
+          "module": "Submission.Supplier.P2M.Sol.S_Module_End_finrank_iInf_maxGenEigenspace_baseChange_eq_mul_prod_rootMultiplicity_of_isAlgClosed",
+          "canonical_lines": 238,
+          "canonical_byte_identical_to_supplier": true,
+          "make_exit": 0,
+          "kernel_exit": 0,
+          "kernel_seconds": 8.342666625,
+          "compiler_warnings": 7,
+          "source_unchanged_during_check": true,
+          "printed_final_axiom_closures": [],
+          "separate_final_axiom_audit_pending": true,
+          "direct_dependencies": [
+            {
+              "module": "Submission.Supplier.P2M.Util",
+              "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+              "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+              "receipt_reused": true
+            }
+          ]
+        },
+        "card": {
+          "module": "Submission.Supplier.Theorems.Thm_Module_End_finrank_iInf_maxGenEigenspace_baseChange_eq_mul_prod_rootMultiplicity_of_isAlgClosed",
+          "canonical_lines": 23,
+          "canonical_byte_identical_to_supplier": true,
+          "make_exit": 0,
+          "kernel_exit": 0,
+          "kernel_seconds": 12.043602416,
+          "compiler_warnings": 0,
+          "source_unchanged_during_check": true,
+          "printed_final_axiom_closures": [],
+          "separate_final_axiom_audit_pending": true,
+          "direct_dependencies": [
+            {
+              "module": "Submission.Supplier.P2M.Util",
+              "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+              "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.P2M.Sol.S_Module_End_finrank_iInf_maxGenEigenspace_baseChange_eq_mul_prod_rootMultiplicity_of_isAlgClosed",
+              "source_sha256": "d472685bf22444f138d063623ec7a260c3dc40bec82ecf3bd6ce5a602a564e7d",
+              "object_sha256": "4f3fcdc97fe34b911544f48c9bb7f71efe91715e0f45e7c0a22f8b5725578a4c",
+              "receipt_reused": true
+            }
+          ]
+        }
+      }
+    },
+    "Module_End_maxGenEigenspace_baseChange_le_eigenspace_of_isAlgClosed": {
+      "proof_summary": "For the original characteristic-zero field K, finite-dimensional K-space W and endomorphism T, retain the exact hypothesis that every maximal generalized eigenspace over the original algebraically closed extension Omega1 is contained in its eigenspace. Transfer that inclusion to every original extension Omega2 and eigenvalue mu. Preserve the complete algebraic intermediate-field construction, embedding into Omega1, tensor/kernel dimension transport, equality of dimensions and transcendental case. Do not omit CharZero or claim semisimplicity without the original Omega1 hypothesis.",
+      "checks": {
+        "source": {
+          "module": "Submission.Supplier.P2M.Sol.S_Module_End_maxGenEigenspace_baseChange_le_eigenspace_of_isAlgClosed",
+          "canonical_lines": 213,
+          "canonical_byte_identical_to_supplier": true,
+          "make_exit": 0,
+          "kernel_exit": 0,
+          "kernel_seconds": 5.466314417,
+          "compiler_warnings": 7,
+          "source_unchanged_during_check": true,
+          "printed_final_axiom_closures": [],
+          "separate_final_axiom_audit_pending": true,
+          "direct_dependencies": [
+            {
+              "module": "Submission.Supplier.P2M.Util",
+              "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+              "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+              "receipt_reused": true
+            }
+          ]
+        },
+        "card": {
+          "module": "Submission.Supplier.Theorems.Thm_Module_End_maxGenEigenspace_baseChange_le_eigenspace_of_isAlgClosed",
+          "canonical_lines": 17,
+          "canonical_byte_identical_to_supplier": true,
+          "make_exit": 0,
+          "kernel_exit": 0,
+          "kernel_seconds": 20.600848125,
+          "compiler_warnings": 0,
+          "source_unchanged_during_check": true,
+          "printed_final_axiom_closures": [],
+          "separate_final_axiom_audit_pending": true,
+          "direct_dependencies": [
+            {
+              "module": "Submission.Supplier.P2M.Util",
+              "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+              "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.P2M.Sol.S_Module_End_maxGenEigenspace_baseChange_le_eigenspace_of_isAlgClosed",
+              "source_sha256": "5c845400106dc986df2d0af3b4a9087f87f2361b899dec5e278e6258597f1aee",
+              "object_sha256": "fd5e210c27076f2913d070c568c73ff1a3c3294815387b972d10e37d3787929c",
+              "receipt_reused": true
+            }
+          ]
+        }
+      }
+    }
+  },
+  "supplier": "anthropics/fermats-last-theorem",
+  "supplier_commit": "6e837e75355538c7f80bab5b956861e86c4eacc2",
+  "full_original_complete": false,
+  "official_new_solve_credit": 0,
+  "complete_import_replay_and_recursive_axiom_audits_pending": true,
+  "selected_problem": "fermat_last_theorem",
+  "max_active_flt_jobs": 1,
+  "max_active_flt_compilers": 1,
+  "lean_threads": 1,
+  "graph_snapshot": {
+    "compiled": 7818,
+    "failed": 0,
+    "ready": 4384,
+    "root_compiled": false,
+    "workers": 1,
+    "running": {
+      "Submission.Supplier.P2M.Sol.S_Module_finrank_eq_mul_of_tensorProduct_linearEquiv_baseChange": {
+        "pid": 77414,
+        "make_wrapper_pid": 76748,
+        "phase": "kernel",
+        "sha256": "4fadf3df056b85ccf35294f7e2d5a7b2356e75e5ec121f46a3b8ff5f4f2cd9f1",
+        "configuration": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/c33e203381e4077ecba3960e-1791865308884419000.configuration.json"
+      }
+    }
+  }
+}
