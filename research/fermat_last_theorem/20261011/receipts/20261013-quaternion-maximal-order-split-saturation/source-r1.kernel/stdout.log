@@ -1,0 +1,39 @@
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_QuaternionAlgebra_isMaximalOrder_of_forall_prime_ne_of_range_eq.lean:132:22: error(lean.unknownIdentifier): Unknown identifier `TensorProduction.inductionOn`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_QuaternionAlgebra_isMaximalOrder_of_forall_prime_ne_of_range_eq.lean:250:8: error: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  ?n • ?b
+in the target expression
+  ↑ℓ • (redMap ℓ φ) z i j = 0
+
+a b : ℚ
+ℓ : ℕ
+inst✝³ : Fact (Nat.Prime ℓ)
+O : Type u_1
+inst✝² : Ring O
+inst✝¹ : Module.Free ℤ O
+inst✝ : Module.Finite ℤ O
+φ : ℤ_[ℓ] ⊗[ℤ] O ≃ₐ[ℤ_[ℓ]] Matrix (Fin 2) (Fin 2) ℤ_[ℓ]
+θ : O →+* ℍ[ℚ,a,b]
+hθ : Function.Injective ⇑θ
+Λ Λ' : Submodule ℤ ℍ[ℚ,a,b]
+hrange : Set.range ⇑θ = ↑Λ
+hΛ' : IsOrder Λ'
+hle : Λ ≤ Λ'
+y : ℍ[ℚ,a,b]
+hy : y ∈ Λ'
+hℓy : ↑ℓ • y ∈ Λ
+x : O
+hx : θ x = ↑ℓ • y
+hsq : ∀ (o : O), ∃ z, x * o * (x * o) = ↑ℓ • z
+o z : O
+hz : x * o * (x * o) = ↑ℓ • z
+i j : Fin 2
+⊢ ↑ℓ • (redMap ℓ φ) z i j = 0
+
+Note: The target expression is not type-correct under the `implicit` transparency level, which may have triggered the failure. This is usually caused by unfolding of semireducible definitions in prior tactic steps. Use `set_option linter.tacticCheckInstances true` to investigate the source of the issue.
+Full error:
+  function expected
+    (redMap ℓ φ) z i
+'P2MW.S_QuaternionAlgebra_isMaximalOrder_of_forall_prime_ne_of_range_eq.solution' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]

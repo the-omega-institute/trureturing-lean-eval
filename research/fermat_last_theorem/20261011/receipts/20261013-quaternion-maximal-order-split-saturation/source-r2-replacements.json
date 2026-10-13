@@ -1,0 +1,22 @@
+[
+  [
+    "    induction t using TensorProduct.induction_on with\n    | zero => exact ⟨0, by simp [redMap_apply, hred]⟩",
+    "    induction t using TensorProduct.inductionOn with"
+  ],
+  [
+    "      rw [map_zsmul (redMap ℓ φ), redMap_apply, e1, map_smul, ← hred, mapMatrix_smul, ← hk,\n        Int.cast_smul_eq_zsmul]",
+    "      rw [map_zsmul (redMap ℓ φ), redMap_apply, e1, map_smul, ← hred, mapMatrix_smul, ← hk]\n      ext i j\n      exact (Int.cast_smul_eq_zsmul (ZMod ℓ) k\n        (red (φ ((1 : ℤ_[ℓ]) ⊗ₜ[ℤ] o)) i j)).symm"
+  ],
+  [
+    "      simp only [← Int.cast_smul_eq_zsmul ℚ, Int.cast_mul, Int.cast_natCast, smul_mul_assoc,\n        smul_mul_smul_comm, mul_smul_comm]",
+    "      simp only [← Int.cast_smul_eq_zsmul ℚ, Int.cast_mul, Int.cast_natCast, smul_mul_assoc,\n        mul_smul_comm]"
+  ],
+  [
+    "    rw [← map_mul, pow_two, ← map_mul, hz, map_zsmul, ← Int.cast_smul_eq_zsmul (ZMod ℓ)]\n    simp",
+    "    rw [← map_mul, pow_two, ← map_mul, hz, map_zsmul]\n    have hchar : ∀ t : ZMod ℓ, (ℓ : ℤ) • t = 0 := by\n      intro t\n      rw [← Int.cast_smul_eq_zsmul (ZMod ℓ), Int.cast_natCast, ZMod.natCast_self, zero_smul]\n    ext i j\n    exact hchar _"
+  ],
+  [
+    "    haveI : Fact q.Prime := ⟨hq⟩",
+    "    have : Fact q.Prime := ⟨hq⟩"
+  ]
+]

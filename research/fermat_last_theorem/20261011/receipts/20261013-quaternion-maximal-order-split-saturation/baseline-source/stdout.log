@@ -1,0 +1,87 @@
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_QuaternionAlgebra_isMaximalOrder_of_forall_prime_ne_of_range_eq.lean:132:22: warning: `TensorProduct.induction_on` has been deprecated: Use `TensorProduction.inductionOn` instead
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_QuaternionAlgebra_isMaximalOrder_of_forall_prime_ne_of_range_eq.lean:140:8: error: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  ↑?n • ?b
+in the target expression
+  k • red (φ (1 ⊗ₜ[ℤ] o)) = ↑k • PadicInt.toZMod.mapMatrix (φ (1 ⊗ₜ[ℤ] o))
+
+case tmul
+O : Type u_1
+inst✝¹ : Ring O
+ℓ : ℕ
+inst✝ : Fact (Nat.Prime ℓ)
+φ : ℤ_[ℓ] ⊗[ℤ] O ≃ₐ[ℤ_[ℓ]] Matrix (Fin 2) (Fin 2) ℤ_[ℓ]
+red : Matrix (Fin 2) (Fin 2) ℤ_[ℓ] →+* Matrix (Fin 2) (Fin 2) (ZMod ℓ) := PadicInt.toZMod.mapMatrix
+hred : red = PadicInt.toZMod.mapMatrix
+c : ℤ_[ℓ]
+o : O
+k : ℤ
+hk : ↑k = PadicInt.toZMod c
+e1 : c ⊗ₜ[ℤ] o = c • 1 ⊗ₜ[ℤ] o
+⊢ k • red (φ (1 ⊗ₜ[ℤ] o)) = ↑k • PadicInt.toZMod.mapMatrix (φ (1 ⊗ₜ[ℤ] o))
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_QuaternionAlgebra_isMaximalOrder_of_forall_prime_ne_of_range_eq.lean:245:56: error(lean.synthInstanceFailed): failed to synthesize instance of type class
+  Module (ZMod ℓ) (Matrix (Fin 2) (Fin 2) (ZMod ℓ))
+
+Hint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_QuaternionAlgebra_isMaximalOrder_of_forall_prime_ne_of_range_eq.lean:240:87: error: unsolved goals
+a b : ℚ
+ℓ : ℕ
+inst✝³ : Fact (Nat.Prime ℓ)
+O : Type u_1
+inst✝² : Ring O
+inst✝¹ : Module.Free ℤ O
+inst✝ : Module.Finite ℤ O
+φ : ℤ_[ℓ] ⊗[ℤ] O ≃ₐ[ℤ_[ℓ]] Matrix (Fin 2) (Fin 2) ℤ_[ℓ]
+θ : O →+* ℍ[ℚ,a,b]
+hθ : Function.Injective ⇑θ
+Λ Λ' : Submodule ℤ ℍ[ℚ,a,b]
+hrange : Set.range ⇑θ = ↑Λ
+hΛ' : IsOrder Λ'
+hle : Λ ≤ Λ'
+y : ℍ[ℚ,a,b]
+hy : y ∈ Λ'
+hℓy : ↑ℓ • y ∈ Λ
+x : O
+hx : θ x = ↑ℓ • y
+hsq : ∀ (o : O), ∃ z, x * o * (x * o) = ↑ℓ • z
+o z : O
+hz : x * o * (x * o) = ↑ℓ • z
+⊢ 0 • (redMap ℓ φ) z = 0
+
+a b : ℚ
+ℓ : ℕ
+inst✝³ : Fact (Nat.Prime ℓ)
+O : Type u_1
+inst✝² : Ring O
+inst✝¹ : Module.Free ℤ O
+inst✝ : Module.Finite ℤ O
+φ : ℤ_[ℓ] ⊗[ℤ] O ≃ₐ[ℤ_[ℓ]] Matrix (Fin 2) (Fin 2) ℤ_[ℓ]
+θ : O →+* ℍ[ℚ,a,b]
+hθ : Function.Injective ⇑θ
+Λ Λ' : Submodule ℤ ℍ[ℚ,a,b]
+hrange : Set.range ⇑θ = ↑Λ
+hΛ' : IsOrder Λ'
+hle : Λ ≤ Λ'
+y : ℍ[ℚ,a,b]
+hy : y ∈ Λ'
+hℓy : ↑ℓ • y ∈ Λ
+x : O
+hx : θ x = ↑ℓ • y
+hsq : ∀ (o : O), ∃ z, x * o * (x * o) = ↑ℓ • z
+o z : O
+hz : x * o * (x * o) = ↑ℓ • z
+⊢ Module (ZMod ℓ) (Matrix (Fin 2) (Fin 2) (ZMod ℓ))
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_QuaternionAlgebra_isMaximalOrder_of_forall_prime_ne_of_range_eq.lean:236:8: warning: This simp argument is unused:
+  smul_mul_smul_comm
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [← Int.cast_smul_eq_zsmul ℚ, Int.cast_mul, Int.cast_natCast, smul_mul_assoc, mul_smul_comm]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_QuaternionAlgebra_isMaximalOrder_of_forall_prime_ne_of_range_eq.lean:272:4: warning: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`

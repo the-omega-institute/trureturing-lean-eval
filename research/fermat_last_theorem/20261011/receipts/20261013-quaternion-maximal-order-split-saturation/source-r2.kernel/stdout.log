@@ -1,0 +1,37 @@
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_QuaternionAlgebra_isMaximalOrder_of_forall_prime_ne_of_range_eq.lean:140:13: error(lean.synthInstanceFailed): failed to synthesize instance of type class
+  Module (ZMod ℓ) (ZMod ℓ)
+
+Hint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_QuaternionAlgebra_isMaximalOrder_of_forall_prime_ne_of_range_eq.lean:249:10: error: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  ?n • ?b
+in the target expression
+  ↑ℓ • t = 0
+
+a b : ℚ
+ℓ : ℕ
+inst✝³ : Fact (Nat.Prime ℓ)
+O : Type u_1
+inst✝² : Ring O
+inst✝¹ : Module.Free ℤ O
+inst✝ : Module.Finite ℤ O
+φ : ℤ_[ℓ] ⊗[ℤ] O ≃ₐ[ℤ_[ℓ]] Matrix (Fin 2) (Fin 2) ℤ_[ℓ]
+θ : O →+* ℍ[ℚ,a,b]
+hθ : Function.Injective ⇑θ
+Λ Λ' : Submodule ℤ ℍ[ℚ,a,b]
+hrange : Set.range ⇑θ = ↑Λ
+hΛ' : IsOrder Λ'
+hle : Λ ≤ Λ'
+y : ℍ[ℚ,a,b]
+hy : y ∈ Λ'
+hℓy : ↑ℓ • y ∈ Λ
+x : O
+hx : θ x = ↑ℓ • y
+hsq : ∀ (o : O), ∃ z, x * o * (x * o) = ↑ℓ • z
+o z : O
+hz : x * o * (x * o) = ↑ℓ • z
+t : ZMod ℓ
+⊢ ↑ℓ • t = 0
+'P2MW.S_QuaternionAlgebra_isMaximalOrder_of_forall_prime_ne_of_range_eq.solution' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]

@@ -1,0 +1,62 @@
+{
+  "at": "2026-10-13T09:13:36.171601+00:00",
+  "checks": {
+    "source": {
+      "module": "Submission.Supplier.P2M.Sol.S_QuaternionAlgebra_isMaximalOrder_of_forall_prime_ne_of_range_eq",
+      "make_exit": 0,
+      "kernel_exit": 0,
+      "kernel_seconds": 83.84975387499999,
+      "compiler_warnings": 0,
+      "final_standard3_audit_passed": true,
+      "printed_final_axiom_closures": [
+        {
+          "declaration": "P2MW.S_QuaternionAlgebra_isMaximalOrder_of_forall_prime_ne_of_range_eq.solution",
+          "recursive_axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "original_canonical_lines": 307,
+      "repaired_canonical_lines": 315,
+      "original_final_statement_and_full_module_proof_preserved": true
+    },
+    "card": {
+      "module": "Submission.Supplier.Theorems.Thm_QuaternionAlgebra_isMaximalOrder_of_forall_prime_ne_of_range_eq",
+      "make_exit": 0,
+      "kernel_exit": 0,
+      "kernel_seconds": 55.693279084,
+      "compiler_warnings": 0,
+      "final_standard3_audit_passed": true,
+      "printed_final_axiom_closures": [
+        {
+          "declaration": "QuaternionAlgebra.isMaximalOrder_of_forall_prime_ne_of_range_eq",
+          "recursive_axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "original_canonical_lines": 20,
+      "repaired_canonical_lines": 22,
+      "original_final_statement_and_full_module_proof_preserved": true
+    }
+  },
+  "proof_summary": "For an arbitrary natural prime p, an arbitrary ring O finite and free as an integer module, local splitting into two-by-two p-adic integer matrices at every prime ell different from p, and the original p-saturation condition on every x with integral quadratic characteristic relation and the indicated p and p^2 coefficient divisibilities, retain maximality of any integer quaternion order Lambda equal to the range of an injective ring hom theta from O, for arbitrary rational quaternion parameters a,b. Preserve the full p-saturation argument, surjectivity of reduction of the split algebra, nilpotence and trace test on all two-by-two finite-field matrices, extraction of divisibility in the integer basis, and induction removing every prime factor of the denominator. No hypothesis is removed, assumed as the conclusion, or strengthened.",
+  "original_statements_hypotheses_and_full_proofs_preserved": true,
+  "repaired_source_card_pair_actual_make_kernel_passed": true,
+  "source_card_actual_final_standard3": true,
+  "no_linter_suppression_added": true,
+  "baseline_source_actual_exit": 1,
+  "supplier": "anthropics/fermats-last-theorem",
+  "supplier_commit": "6e837e75355538c7f80bab5b956861e86c4eacc2",
+  "selected_problem": "fermat_last_theorem",
+  "full_original_complete": false,
+  "official_new_solve_credit": 0,
+  "full_root_import_replay_and_axiom_audit_pending": true,
+  "max_active_flt_jobs": 1,
+  "max_active_flt_compilers": 1,
+  "lean_threads": 1
+}
