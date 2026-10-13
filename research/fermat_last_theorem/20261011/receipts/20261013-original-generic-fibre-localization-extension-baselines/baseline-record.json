@@ -1,0 +1,168 @@
+{
+  "at": "2026-10-13T05:03:24.698749+00:00",
+  "original_source_card_pairs_actual_make_kernel_passed": true,
+  "canonical_pairs_byte_identical_to_supplier": true,
+  "no_source_edits": true,
+  "no_linter_suppression_added": true,
+  "no_redundant_recompilation": true,
+  "original_statements_hypotheses_and_proofs_preserved": true,
+  "checks": {
+    "NeronModelInfra_genericFibreRestrict_injective_of_flat_of_isSeparated": {
+      "proof_summary": "For every original commutative integral domain R, fraction field K, arbitrary schemes X and T over Spec R with original separated target morphism f and flat source morphism t, retain injectivity of the exact genericFibreRestrict map. Preserve the full equality-of-morphisms proof using the equalizer as a closed immersion, its zero scheme-theoretic kernel, its isomorphism and epimorphism; retain fraction-field inclusion dominance and flat pullback scheme-theoretic dominance. Do not restrict R to a discrete valuation ring, assume smoothness or finite presentation, or claim existence of a Neron model from this injectivity theorem.",
+      "checks": {
+        "source": {
+          "module": "Submission.Supplier.P2M.Sol.S_NeronModelInfra_genericFibreRestrict_injective_of_flat_of_isSeparated",
+          "canonical_lines": 68,
+          "canonical_byte_identical_to_supplier": true,
+          "make_exit": 0,
+          "kernel_exit": 0,
+          "kernel_seconds": 81.178452167,
+          "compiler_warnings": 6,
+          "source_unchanged_during_check": true,
+          "printed_final_axiom_closures": [],
+          "separate_final_axiom_audit_pending": true,
+          "direct_dependencies": [
+            {
+              "module": "Submission.Supplier.Definitions.Def_AlgebraicGeometry_NeronModelPropertyBundleCarrier",
+              "source_sha256": "0b23142f01863da372f21d95bd1636b18becf4e9e57a44e4168d760e80e22d3f",
+              "object_sha256": "7c5f9f5466b8b8e249f9d2cdd6396c1e9ac6aecb01f7e0bfd28b2bea25db4361",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.P2M.Util",
+              "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+              "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+              "receipt_reused": true
+            }
+          ]
+        },
+        "card": {
+          "module": "Submission.Supplier.Theorems.Thm_NeronModelInfra_genericFibreRestrict_injective_of_flat_of_isSeparated",
+          "canonical_lines": 16,
+          "canonical_byte_identical_to_supplier": true,
+          "make_exit": 0,
+          "kernel_exit": 0,
+          "kernel_seconds": 87.314337834,
+          "compiler_warnings": 0,
+          "source_unchanged_during_check": true,
+          "printed_final_axiom_closures": [],
+          "separate_final_axiom_audit_pending": true,
+          "direct_dependencies": [
+            {
+              "module": "Submission.Supplier.Definitions.Def_AlgebraicGeometry_NeronModelPropertyBundleCarrier",
+              "source_sha256": "0b23142f01863da372f21d95bd1636b18becf4e9e57a44e4168d760e80e22d3f",
+              "object_sha256": "7c5f9f5466b8b8e249f9d2cdd6396c1e9ac6aecb01f7e0bfd28b2bea25db4361",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.P2M.Util",
+              "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+              "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.P2M.Sol.S_NeronModelInfra_genericFibreRestrict_injective_of_flat_of_isSeparated",
+              "source_sha256": "781d9a6db5f9ed2614e645b90ad91e84e115b2485a8b88bf9042161666c5e582",
+              "object_sha256": "0c80f6a5773e4adeb9bf667aa1f549d22da06578ac69d8dd5e16a48c590c53d9",
+              "receipt_reused": true
+            }
+          ]
+        }
+      }
+    },
+    "NeronModelInfra_existsUnique_extension_of_exists_isLocalization_atPrime": {
+      "proof_summary": "For every original Noetherian commutative integral domain R, fraction field K, schemes X and T over Spec R with original separated locally finite type target f and flat locally finite type source t, and arbitrary original generic-fibre morphism v, retain the exact maximal-ideal hypothesis providing localization A, algebra/scalar-tower structures and a local morphism gA compatible with every original j. Conclude existence of exactly one global SchemeHomOver morphism restricting to v. Preserve all 421 original lines: local pullback maps, localization stalk isomorphisms, faithfully flat injectivity, spreading out and its uniqueness, neighbourhood extension, overlap compatibility, open-cover gluing, the auxiliary Dedekind Neron-bundle theorem and the complete final general Noetherian theorem. Do not replace the exact local compatibility hypothesis by an unproved existence claim, add smoothness or Dedekind assumptions to the final theorem, or omit flatness, separation or finite-type hypotheses.",
+      "checks": {
+        "source": {
+          "module": "Submission.Supplier.P2M.Sol.S_NeronModelInfra_existsUnique_extension_of_exists_isLocalization_atPrime",
+          "canonical_lines": 421,
+          "canonical_byte_identical_to_supplier": true,
+          "make_exit": 0,
+          "kernel_exit": 0,
+          "kernel_seconds": 49.828831709,
+          "compiler_warnings": 13,
+          "source_unchanged_during_check": true,
+          "printed_final_axiom_closures": [],
+          "separate_final_axiom_audit_pending": true,
+          "direct_dependencies": [
+            {
+              "module": "Submission.Supplier.Definitions.Def_AlgebraicGeometry_NeronModelPropertyBundleCarrier",
+              "source_sha256": "0b23142f01863da372f21d95bd1636b18becf4e9e57a44e4168d760e80e22d3f",
+              "object_sha256": "7c5f9f5466b8b8e249f9d2cdd6396c1e9ac6aecb01f7e0bfd28b2bea25db4361",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.Theorems.Thm_NeronModelInfra_genericFibreRestrict_injective_of_flat_of_isSeparated",
+              "source_sha256": "ae770d8a3a1b02504b314b628c788b64ad940fcff7099d4c7b73c44c692a1a24",
+              "object_sha256": "61e68d2581ee29fcfd1fef0a8419101f328e7d001f7d2890c97ddc0288a3bf8e",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.P2M.Util",
+              "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+              "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+              "receipt_reused": true
+            }
+          ]
+        },
+        "card": {
+          "module": "Submission.Supplier.Theorems.Thm_NeronModelInfra_existsUnique_extension_of_exists_isLocalization_atPrime",
+          "canonical_lines": 28,
+          "canonical_byte_identical_to_supplier": true,
+          "make_exit": 0,
+          "kernel_exit": 0,
+          "kernel_seconds": 80.442938959,
+          "compiler_warnings": 0,
+          "source_unchanged_during_check": true,
+          "printed_final_axiom_closures": [],
+          "separate_final_axiom_audit_pending": true,
+          "direct_dependencies": [
+            {
+              "module": "Submission.Supplier.Definitions.Def_AlgebraicGeometry_NeronModelPropertyBundleCarrier",
+              "source_sha256": "0b23142f01863da372f21d95bd1636b18becf4e9e57a44e4168d760e80e22d3f",
+              "object_sha256": "7c5f9f5466b8b8e249f9d2cdd6396c1e9ac6aecb01f7e0bfd28b2bea25db4361",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.P2M.Util",
+              "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+              "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.P2M.Sol.S_NeronModelInfra_existsUnique_extension_of_exists_isLocalization_atPrime",
+              "source_sha256": "724a5ece459277e6ea34d7300467af0ade2360d61152d2ad4c9682b903bde22c",
+              "object_sha256": "22fcc9b8a65078b2a46ca8aeb6d22eee0b42a75ff5976ed040a5740d1132649c",
+              "receipt_reused": true
+            }
+          ]
+        }
+      }
+    }
+  },
+  "supplier": "anthropics/fermats-last-theorem",
+  "supplier_commit": "6e837e75355538c7f80bab5b956861e86c4eacc2",
+  "full_original_complete": false,
+  "official_new_solve_credit": 0,
+  "complete_import_replay_and_recursive_axiom_audits_pending": true,
+  "selected_problem": "fermat_last_theorem",
+  "max_active_flt_jobs": 1,
+  "max_active_flt_compilers": 1,
+  "lean_threads": 1,
+  "graph_snapshot": {
+    "compiled": 7828,
+    "failed": 0,
+    "ready": 4384,
+    "root_compiled": false,
+    "workers": 1,
+    "running": {
+      "Submission.Supplier.P2M.Sol.S_GoodReductionJacobian_RelativeGroupLaw_exists_relativeGroupLaw_glued_charts_mul_eq": {
+        "pid": 21568,
+        "make_wrapper_pid": 21568,
+        "phase": "canonical_make_queue",
+        "sha256": "67863cf614e7037cfddda760a1741f88f3241ca53a6df73f2296345c8c752b3b",
+        "configuration": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/70979e82fe64b23ff3a5d7c2-1791867776954155000.configuration.json"
+      }
+    }
+  }
+}
