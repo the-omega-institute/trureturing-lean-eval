@@ -1,0 +1,87 @@
+{
+  "at": "2026-10-13T10:57:29.591451+00:00",
+  "original_source_card_pairs_actual_make_kernel_passed": true,
+  "canonical_pairs_byte_identical_to_supplier": true,
+  "no_source_edits": true,
+  "no_linter_suppression_added": true,
+  "no_redundant_recompilation": true,
+  "original_statements_hypotheses_and_proofs_preserved": true,
+  "checks": {
+    "Submodule_exists_isPerfPair_dotProduct_of_saturated": {
+      "proof_summary": "For an arbitrary finite index type iota, arbitrary integer module L, saturated orthogonal submodules B and E of integer coordinate vectors, and the original maps f and X with all original orthogonality, kernel, representative-existence and saturation hypotheses, retain an integer-valued bilinear perfect pairing p with the exact formula p x y = X x dot f y. Preserve the complete 395-line proof through Smith normal form, projections, orthogonal complements and quotient duality. No finiteness or freeness assumption on L, nonempty-index assumption, rational relaxation, scalar factor or weakened nondegeneracy conclusion is added.",
+      "checks": {
+        "source": {
+          "module": "Submission.Supplier.P2M.Sol.S_Submodule_exists_isPerfPair_dotProduct_of_saturated",
+          "canonical_lines": 395,
+          "canonical_byte_identical_to_supplier": true,
+          "make_exit": 0,
+          "kernel_exit": 0,
+          "kernel_seconds": 46.5192285,
+          "compiler_warnings": 7,
+          "source_unchanged_during_check": true,
+          "printed_final_axiom_closures": [],
+          "separate_final_axiom_audit_pending": true,
+          "direct_dependencies": [
+            {
+              "module": "Submission.Supplier.P2M.Util",
+              "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+              "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+              "receipt_reused": true
+            }
+          ]
+        },
+        "card": {
+          "module": "Submission.Supplier.Theorems.Thm_Submodule_exists_isPerfPair_dotProduct_of_saturated",
+          "canonical_lines": 18,
+          "canonical_byte_identical_to_supplier": true,
+          "make_exit": 0,
+          "kernel_exit": 0,
+          "kernel_seconds": 45.960948875,
+          "compiler_warnings": 0,
+          "source_unchanged_during_check": true,
+          "printed_final_axiom_closures": [],
+          "separate_final_axiom_audit_pending": true,
+          "direct_dependencies": [
+            {
+              "module": "Submission.Supplier.P2M.Util",
+              "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+              "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.P2M.Sol.S_Submodule_exists_isPerfPair_dotProduct_of_saturated",
+              "source_sha256": "f6b67a47caaf409d870bc199be9cbed05b3e1f7ca2f6aa17d9fc37df8580d886",
+              "object_sha256": "45567546d216d77034810dffce334e922376561c44ba334b951cc593008cbf72",
+              "receipt_reused": true
+            }
+          ]
+        }
+      }
+    }
+  },
+  "supplier": "anthropics/fermats-last-theorem",
+  "supplier_commit": "6e837e75355538c7f80bab5b956861e86c4eacc2",
+  "full_original_complete": false,
+  "official_new_solve_credit": 0,
+  "complete_import_replay_and_recursive_axiom_audits_pending": true,
+  "selected_problem": "fermat_last_theorem",
+  "max_active_flt_jobs": 1,
+  "max_active_flt_compilers": 1,
+  "lean_threads": 1,
+  "graph_snapshot": {
+    "compiled": 7958,
+    "failed": 0,
+    "ready": 4360,
+    "root_compiled": false,
+    "workers": 1,
+    "running": {
+      "Submission.Supplier.P2M.Sol.S_Transcendental_exists_irreducible_evalEval_eq_zero_and_derivative_ne_zero": {
+        "pid": 51429,
+        "make_wrapper_pid": 51429,
+        "phase": "canonical_make_queue",
+        "sha256": "0c0c3ce92ac12c64d19168acddb55e0ab601d129f74f435f1abfd54f0ba8a803",
+        "configuration": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/9be6626a3186d4a2deffc65c-1791888979821496000.configuration.json"
+      }
+    }
+  }
+}
