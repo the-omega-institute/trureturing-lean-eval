@@ -1,0 +1,150 @@
+{
+  "at": "2026-10-13T09:37:35.941387+00:00",
+  "original_source_card_pairs_actual_make_kernel_passed": true,
+  "canonical_pairs_byte_identical_to_supplier": true,
+  "no_source_edits": true,
+  "no_linter_suppression_added": true,
+  "no_redundant_recompilation": true,
+  "original_statements_hypotheses_and_proofs_preserved": true,
+  "checks": {
+    "Rep_exists_relationModuleInt_iota_comp_eq_of_forall_hom_eq_sum_rho": {
+      "proof_summary": "For arbitrary finite group H, prime p, integer representation C with the original invariant norm-divisibility hypothesis, finite p-torsion trivial-action representation B0, and the original relation-module morphism phi and additive map psi with phi given by the full rho-sum formula, retain existence of a morphism chi from the free integer representation extending phi along the original relation-module inclusion. Preserve construction using integer coordinate relations, norm averaging and the full extension equation; no extra freeness, semisimplicity or splitting hypothesis is added.",
+      "checks": {
+        "source": {
+          "module": "Submission.Supplier.P2M.Sol.S_Rep_exists_relationModuleInt_iota_comp_eq_of_forall_hom_eq_sum_rho",
+          "canonical_lines": 271,
+          "canonical_byte_identical_to_supplier": true,
+          "make_exit": 0,
+          "kernel_exit": 0,
+          "kernel_seconds": 44.565875958,
+          "compiler_warnings": 1,
+          "source_unchanged_during_check": true,
+          "printed_final_axiom_closures": [],
+          "separate_final_axiom_audit_pending": true,
+          "direct_dependencies": [
+            {
+              "module": "Submission.Supplier.Definitions.Def_GroupCohomology_RelationModule",
+              "source_sha256": "cd8558154467fbc21d49369cdb4639ddeb600ba3c7ecd661a0cba786335dfa38",
+              "object_sha256": "d3ea43ca430577f069644bb2a990e3e47d0883876d96758de2997ca1ea88a319",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.P2M.Util",
+              "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+              "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+              "receipt_reused": true
+            }
+          ]
+        },
+        "card": {
+          "module": "Submission.Supplier.Theorems.Thm_Rep_exists_relationModuleInt_iota_comp_eq_of_forall_hom_eq_sum_rho",
+          "canonical_lines": 16,
+          "canonical_byte_identical_to_supplier": true,
+          "make_exit": 0,
+          "kernel_exit": 0,
+          "kernel_seconds": 6.771355083,
+          "compiler_warnings": 0,
+          "source_unchanged_during_check": true,
+          "printed_final_axiom_closures": [],
+          "separate_final_axiom_audit_pending": true,
+          "direct_dependencies": [
+            {
+              "module": "Submission.Supplier.Definitions.Def_GroupCohomology_RelationModule",
+              "source_sha256": "cd8558154467fbc21d49369cdb4639ddeb600ba3c7ecd661a0cba786335dfa38",
+              "object_sha256": "d3ea43ca430577f069644bb2a990e3e47d0883876d96758de2997ca1ea88a319",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.P2M.Util",
+              "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+              "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.P2M.Sol.S_Rep_exists_relationModuleInt_iota_comp_eq_of_forall_hom_eq_sum_rho",
+              "source_sha256": "060f1fd53d2dc7433636badcfe5c6a39c4b72cb761eef72d399ed71b93a43049",
+              "object_sha256": "ce4cbd5c29f49807ed3df68768bbcc40f8bc0467d4110e57c156f9771c1a32fa",
+              "receipt_reused": true
+            }
+          ]
+        }
+      }
+    },
+    "Rep_exists_res_coind_linearEquiv_coind_comap": {
+      "proof_summary": "For an arbitrary commutative ring k, k-module V, groups G and Gamma in the original independent universes, every group homomorphism r:G->Gamma, normal subgroup U of Gamma and arbitrary section gamma of Gamma/(U join r.range), retain the k-linear equivalence from restriction of the U-coinduced trivial V representation to coinduction from U.comap r of the trivial quotient-indexed V representation. Preserve both inverse constructions, linearity, full G-action intertwining and evaluation at every f,h,t as f(gamma t * r h), with no finiteness, injectivity or surjectivity hypothesis added.",
+      "checks": {
+        "source": {
+          "module": "Submission.Supplier.P2M.Sol.S_Rep_exists_res_coind_linearEquiv_coind_comap",
+          "canonical_lines": 199,
+          "canonical_byte_identical_to_supplier": true,
+          "make_exit": 0,
+          "kernel_exit": 0,
+          "kernel_seconds": 50.990385958,
+          "compiler_warnings": 0,
+          "source_unchanged_during_check": true,
+          "printed_final_axiom_closures": [],
+          "separate_final_axiom_audit_pending": true,
+          "direct_dependencies": [
+            {
+              "module": "Submission.Supplier.P2M.Util",
+              "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+              "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+              "receipt_reused": true
+            }
+          ]
+        },
+        "card": {
+          "module": "Submission.Supplier.Theorems.Thm_Rep_exists_res_coind_linearEquiv_coind_comap",
+          "canonical_lines": 23,
+          "canonical_byte_identical_to_supplier": true,
+          "make_exit": 0,
+          "kernel_exit": 0,
+          "kernel_seconds": 45.24294462500001,
+          "compiler_warnings": 0,
+          "source_unchanged_during_check": true,
+          "printed_final_axiom_closures": [],
+          "separate_final_axiom_audit_pending": true,
+          "direct_dependencies": [
+            {
+              "module": "Submission.Supplier.P2M.Util",
+              "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+              "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.P2M.Sol.S_Rep_exists_res_coind_linearEquiv_coind_comap",
+              "source_sha256": "c1d4a49a49d3dbb130916fc85513896f97f717f0d6f139b2a9e86c6e530cd70d",
+              "object_sha256": "e70ddecc40647a48d662d56ade70794f5fed457ca4506485595a2b1aee73a6c5",
+              "receipt_reused": true
+            }
+          ]
+        }
+      }
+    }
+  },
+  "supplier": "anthropics/fermats-last-theorem",
+  "supplier_commit": "6e837e75355538c7f80bab5b956861e86c4eacc2",
+  "full_original_complete": false,
+  "official_new_solve_credit": 0,
+  "complete_import_replay_and_recursive_axiom_audits_pending": true,
+  "selected_problem": "fermat_last_theorem",
+  "max_active_flt_jobs": 1,
+  "max_active_flt_compilers": 1,
+  "lean_threads": 1,
+  "graph_snapshot": {
+    "compiled": 7925,
+    "failed": 0,
+    "ready": 4373,
+    "root_compiled": false,
+    "workers": 1,
+    "running": {
+      "Submission.Supplier.Theorems.Thm_Rep_finiteDimensional_coind_and_finrank_coind_eq_index_mul": {
+        "pid": 12200,
+        "make_wrapper_pid": 12200,
+        "phase": "canonical_make_queue",
+        "sha256": "66d176f0b6a95b75b24832f5e036c47aa4f1c0772bdab793eb49e7a2a188951d",
+        "configuration": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/72526e0fa8bbe7e8b4b45f09-1791884229340376000.configuration.json"
+      }
+    }
+  }
+}
