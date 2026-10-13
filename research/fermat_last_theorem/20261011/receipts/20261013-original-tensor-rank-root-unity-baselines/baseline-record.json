@@ -1,0 +1,138 @@
+{
+  "at": "2026-10-13T04:30:55.178661+00:00",
+  "original_source_card_pairs_actual_make_kernel_passed": true,
+  "canonical_pairs_byte_identical_to_supplier": true,
+  "no_source_edits": true,
+  "no_linter_suppression_added": true,
+  "no_redundant_recompilation": true,
+  "original_statements_hypotheses_and_proofs_preserved": true,
+  "checks": {
+    "Module_finrank_eq_mul_of_tensorProduct_linearEquiv_baseChange": {
+      "proof_summary": "For the original field kappa, finite kappa-algebras B and C with the original B-algebra/scalar-tower structures, finite kappa-module D, faithfully flat B-module C and explicit C-linear equivalence C tensor_B C equiv C tensor_kappa D, retain finrank_kappa(C)=finrank_kappa(D)*finrank_kappa(B). Preserve the subsingleton case, stalk-rank transport and faithfully flat spectrum surjectivity, Artinian nilradical decomposition, local quotient freeness and finite-sum dimension calculation. Do not replace faithful flatness, omit finiteness or assume B or C is a field.",
+      "checks": {
+        "source": {
+          "module": "Submission.Supplier.P2M.Sol.S_Module_finrank_eq_mul_of_tensorProduct_linearEquiv_baseChange",
+          "canonical_lines": 110,
+          "canonical_byte_identical_to_supplier": true,
+          "make_exit": 0,
+          "kernel_exit": 0,
+          "kernel_seconds": 36.983213208,
+          "compiler_warnings": 11,
+          "source_unchanged_during_check": true,
+          "printed_final_axiom_closures": [],
+          "separate_final_axiom_audit_pending": true,
+          "direct_dependencies": [
+            {
+              "module": "Submission.Supplier.P2M.Util",
+              "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+              "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+              "receipt_reused": true
+            }
+          ]
+        },
+        "card": {
+          "module": "Submission.Supplier.Theorems.Thm_Module_finrank_eq_mul_of_tensorProduct_linearEquiv_baseChange",
+          "canonical_lines": 16,
+          "canonical_byte_identical_to_supplier": true,
+          "make_exit": 0,
+          "kernel_exit": 0,
+          "kernel_seconds": 73.160694208,
+          "compiler_warnings": 0,
+          "source_unchanged_during_check": true,
+          "printed_final_axiom_closures": [],
+          "separate_final_axiom_audit_pending": true,
+          "direct_dependencies": [
+            {
+              "module": "Submission.Supplier.P2M.Util",
+              "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+              "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.P2M.Sol.S_Module_finrank_eq_mul_of_tensorProduct_linearEquiv_baseChange",
+              "source_sha256": "4fadf3df056b85ccf35294f7e2d5a7b2356e75e5ec121f46a3b8ff5f4f2cd9f1",
+              "object_sha256": "477705f0098838c96456c94d13fd6b4aa120056145c378cbc5292dd8bd473fc1",
+              "receipt_reused": true
+            }
+          ]
+        }
+      }
+    },
+    "MonoidAlgebra_exists_equiv_withConv_algHom_rootsOfUnity_zmod": {
+      "proof_summary": "For every original characteristic-zero field K and nonzero natural n, retain the complete equivalence between convolution algebra homomorphisms from the group algebra K[Multiplicative(ZMod n)] to AlgebraicClosure(K) and nth roots of unity. Preserve compatibility with convolution multiplication and every original Galois automorphism under the exact pointwise relation between f and g. Retain the generator-evaluation construction, nonzero value, power relations, explicit inverse root homomorphism, injectivity and surjectivity. Do not restrict n to primes or weaken the Galois compatibility.",
+      "checks": {
+        "source": {
+          "module": "Submission.Supplier.P2M.Sol.S_MonoidAlgebra_exists_equiv_withConv_algHom_rootsOfUnity_zmod",
+          "canonical_lines": 130,
+          "canonical_byte_identical_to_supplier": true,
+          "make_exit": 0,
+          "kernel_exit": 0,
+          "kernel_seconds": 47.180662042,
+          "compiler_warnings": 4,
+          "source_unchanged_during_check": true,
+          "printed_final_axiom_closures": [],
+          "separate_final_axiom_audit_pending": true,
+          "direct_dependencies": [
+            {
+              "module": "Submission.Supplier.P2M.Util",
+              "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+              "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+              "receipt_reused": true
+            }
+          ]
+        },
+        "card": {
+          "module": "Submission.Supplier.Theorems.Thm_MonoidAlgebra_exists_equiv_withConv_algHom_rootsOfUnity_zmod",
+          "canonical_lines": 13,
+          "canonical_byte_identical_to_supplier": true,
+          "make_exit": 0,
+          "kernel_exit": 0,
+          "kernel_seconds": 141.19805275,
+          "compiler_warnings": 0,
+          "source_unchanged_during_check": true,
+          "printed_final_axiom_closures": [],
+          "separate_final_axiom_audit_pending": true,
+          "direct_dependencies": [
+            {
+              "module": "Submission.Supplier.P2M.Util",
+              "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+              "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.P2M.Sol.S_MonoidAlgebra_exists_equiv_withConv_algHom_rootsOfUnity_zmod",
+              "source_sha256": "ed36f6739e1ddc98cc76a33be00992ff7a7e0d51fca09b150446448254c7cccd",
+              "object_sha256": "d83eb75191756e9353a33a3e5adc15820e99abc78de6ba5cc50d6d46fad0d72a",
+              "receipt_reused": true
+            }
+          ]
+        }
+      }
+    }
+  },
+  "supplier": "anthropics/fermats-last-theorem",
+  "supplier_commit": "6e837e75355538c7f80bab5b956861e86c4eacc2",
+  "full_original_complete": false,
+  "official_new_solve_credit": 0,
+  "complete_import_replay_and_recursive_axiom_audits_pending": true,
+  "selected_problem": "fermat_last_theorem",
+  "max_active_flt_jobs": 1,
+  "max_active_flt_compilers": 1,
+  "lean_threads": 1,
+  "graph_snapshot": {
+    "compiled": 7822,
+    "failed": 0,
+    "ready": 4382,
+    "root_compiled": false,
+    "workers": 1,
+    "running": {
+      "Submission.Supplier.P2M.Sol.S_MvPolynomial_abv_eval_div_sub_eval_div_le": {
+        "pid": 29401,
+        "make_wrapper_pid": 29401,
+        "phase": "canonical_make_queue",
+        "sha256": "4dde0208b361c150f5e031662ac56be9a4983b0274ccb2b5d5ab6fb6dfba5379",
+        "configuration": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/24e16f7a44e44602b281aeee-1791865832269435000.configuration.json"
+      }
+    }
+  }
+}
