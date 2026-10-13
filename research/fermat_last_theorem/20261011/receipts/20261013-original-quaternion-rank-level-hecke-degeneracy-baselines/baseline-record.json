@@ -1,0 +1,492 @@
+{
+  "at": "2026-10-13T08:13:20.904377+00:00",
+  "original_source_card_pairs_actual_make_kernel_passed": true,
+  "canonical_pairs_byte_identical_to_supplier": true,
+  "no_source_edits": true,
+  "no_linter_suppression_added": true,
+  "no_redundant_recompilation": true,
+  "original_statements_hypotheses_and_proofs_preserved": true,
+  "checks": {
+    "QuaternionAlgebra_IsOrder_finrank_eq_four": {
+      "proof_summary": "For arbitrary rational parameters a,b and any integer quaternion order Lambda, retain Module.finrank Z Lambda = 4. Preserve the lattice and rank argument without adding nonzero-parameter or division-algebra assumptions.",
+      "checks": {
+        "source": {
+          "module": "Submission.Supplier.P2M.Sol.S_QuaternionAlgebra_IsOrder_finrank_eq_four",
+          "canonical_lines": 15,
+          "canonical_byte_identical_to_supplier": true,
+          "make_exit": 0,
+          "kernel_exit": 0,
+          "kernel_seconds": 24.194369667,
+          "compiler_warnings": 1,
+          "source_unchanged_during_check": true,
+          "printed_final_axiom_closures": [],
+          "separate_final_axiom_audit_pending": true,
+          "direct_dependencies": [
+            {
+              "module": "Submission.Supplier.Definitions.Def_QuaternionAlgebra_Order",
+              "source_sha256": "6e9f5cec2a5578c8c6661468e6cbc05396673dca4d3154232c83c70ff2f2c9f0",
+              "object_sha256": "174883405aed78b65c0b29cebfe82caa97e95bd7c1f3970c96bb730f414bfe31",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.P2M.Util",
+              "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+              "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+              "receipt_reused": true
+            }
+          ]
+        },
+        "card": {
+          "module": "Submission.Supplier.Theorems.Thm_QuaternionAlgebra_IsOrder_finrank_eq_four",
+          "canonical_lines": 9,
+          "canonical_byte_identical_to_supplier": true,
+          "make_exit": 0,
+          "kernel_exit": 0,
+          "kernel_seconds": 5.581775958000001,
+          "compiler_warnings": 0,
+          "source_unchanged_during_check": true,
+          "printed_final_axiom_closures": [],
+          "separate_final_axiom_audit_pending": true,
+          "direct_dependencies": [
+            {
+              "module": "Submission.Supplier.Definitions.Def_QuaternionAlgebra_Order",
+              "source_sha256": "6e9f5cec2a5578c8c6661468e6cbc05396673dca4d3154232c83c70ff2f2c9f0",
+              "object_sha256": "174883405aed78b65c0b29cebfe82caa97e95bd7c1f3970c96bb730f414bfe31",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.P2M.Util",
+              "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+              "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.P2M.Sol.S_QuaternionAlgebra_IsOrder_finrank_eq_four",
+              "source_sha256": "a5a31b6f20538a9fa96e3ec2e81617d6e75d0b994005c6976abd7f8aaaebe629",
+              "object_sha256": "b2b34f256780d9e358fd14e2cef337abe1b577000c4bc04069448dfa833a6ccd",
+              "receipt_reused": true
+            }
+          ]
+        }
+      }
+    },
+    "CerednikDrinfeld_conj_mem_levelHeckeUSet_iff_of_mem_primeHeckeSet": {
+      "proof_summary": "For arbitrary rational quaternion parameters, integer orders Lambda and R with R <= Lambda, nonzero coprime naturals q and ell, any n in primeHeckeSet R q, and every finite quaternion idele beta evaluating to 1 at all places away from ell, retain that n^-1*beta*n belongs to levelHeckeUSet Lambda R ell if and only if beta does. Preserve the complete 996-line supplier proof and both directions; q and ell are not restricted to primes.",
+      "checks": {
+        "source": {
+          "module": "Submission.Supplier.P2M.Sol.S_CerednikDrinfeld_conj_mem_levelHeckeUSet_iff_of_mem_primeHeckeSet",
+          "canonical_lines": 996,
+          "canonical_byte_identical_to_supplier": true,
+          "make_exit": 0,
+          "kernel_exit": 0,
+          "kernel_seconds": 15.968754334,
+          "compiler_warnings": 9,
+          "source_unchanged_during_check": true,
+          "printed_final_axiom_closures": [],
+          "separate_final_axiom_audit_pending": true,
+          "direct_dependencies": [
+            {
+              "module": "Submission.Supplier.Definitions.Def_QuaternionAlgebra_ClassSetHecke",
+              "source_sha256": "adaa936c4532290c5efcf55643e44aa259009ca6a9603b23072a7ea1c05dc6a1",
+              "object_sha256": "4a49725364e0f0ca82da16de91201f18790c82e11fda52794d7acd26223ce798",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.Definitions.Def_QuaternionAlgebra_Order",
+              "source_sha256": "6e9f5cec2a5578c8c6661468e6cbc05396673dca4d3154232c83c70ff2f2c9f0",
+              "object_sha256": "174883405aed78b65c0b29cebfe82caa97e95bd7c1f3970c96bb730f414bfe31",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.Definitions.Def_Submodule_LocalBox",
+              "source_sha256": "ab2c6d1b38ba27a7aac5a2e001e38b01c1b230839b8dc8b077620dfc9077e9f9",
+              "object_sha256": "b75864e2f9b0bc0ff1290cb0bac083f61e17fb37287b144edc3c433f7d443bd6",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.Definitions.Def_CerednikDrinfeld_ClassSetGraph",
+              "source_sha256": "bc221161ee6bf11ac19c23053d031cfaf0a9e76af2b65a3e5f2d03a9e6430add",
+              "object_sha256": "3acb394c850dfe135db8d3bf539c39a05bcc873db4242afc73f276c115bc2734",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.Definitions.Def_QuaternionAlgebra_EichlerOrder",
+              "source_sha256": "616666b45c5e5c83ff980cb8b286d35eaa0580c94707feb98a30a33f2b3cf19c",
+              "object_sha256": "0331ea06b2b270a4e9fd47ef316eadfd1667dd342bd3b5f2f313850569d0cac7",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.Theorems.Thm_Submodule_finiteAdeleBox_conjByFiniteIdele",
+              "source_sha256": "2ba9274839aad9b57f10e31458e1f22aca5a2f6baba17e036afcd26d44cbd59e",
+              "object_sha256": "e1fdd3be08d3dca1373e375712414685a514e83c2a75f89752e054c3ee9f2fc3",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.Theorems.Thm_Submodule_exists_units_finiteAdeleEvalAt_eq",
+              "source_sha256": "0a69a53b99a63cf7d7b1c16fcf920345d51b22d7be5b5bb8139a2022e4b3dd3d",
+              "object_sha256": "2b4b9b75536077092145e3b71484634b06f3ead4e82e480caf88744aa3acc95e",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.Theorems.Thm_QuaternionAlgebra_IsOrder_conjByFiniteIdele",
+              "source_sha256": "861eedeb4133a5a12c18efb857d0262b816e6b5eb995ee5d3df8c1374945a77d",
+              "object_sha256": "650825fe3f70be6cde55d62221fe3f81ca139b5aed86cfeb95c9f77878d743d3",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.Theorems.Thm_QuaternionAlgebra_IsOrder_finite_setOf_exists_mem_quotientMk_eq_of_subset_primeHeckeSet",
+              "source_sha256": "77f4bcb469a28881cc58d5b04fe0ab6a46abacdfd385fb52cdbbefedf2b2c6df",
+              "object_sha256": "45b78cee62d6579abbb4f7b11378baccdc9dcbf05a71cc543c77b7782167d515",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.Theorems.Thm_Submodule_mem_finiteAdeleBox_iff_forall_finiteAdeleEvalAt_mem_localBox",
+              "source_sha256": "5c2534162bf86f90567fb2a942de214344b059f2504cc627a516852ae83f2127",
+              "object_sha256": "a07d74af5e446365dbda86b0ed565f34acf6d9ff6cb4c8787b853de59a7fd650",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.Theorems.Thm_QuaternionAlgebra_IsOrder_mem_finiteIdeleStabilizer_iff_forall_map_finiteAdeleEvalAt_mem_localBoxUnits",
+              "source_sha256": "47b385bcaa7f7529e9a21f5ffd8796b4345500fbb98cc3d5d5ade4431b493c7e",
+              "object_sha256": "1426402a9024f3ca214bf5c9a390e7fce39a25f4e28e92844d91ec6446823e8a",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.Definitions.Def_Submodule_FiniteAdeleBox",
+              "source_sha256": "a0a065269cf12ce6241d24c92ab0438408a7ef84fa645a4db82f33df4baa8be9",
+              "object_sha256": "28bf6d2c7adf8aefdc2eed5486666e98b2d24c8f84b3e5c1ff113550cffd8205",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.Theorems.Thm_Submodule_mem_localBox_conjByFiniteIdele_iff",
+              "source_sha256": "408ff2c3513402e14767302d93d8aca5db87469c35836031cb4fcfff1de6ee30",
+              "object_sha256": "14d04ba8a23d40be5439cf217ab5c459c9c00da2b092bc1b25e0dcf05bd31404",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.Theorems.Thm_QuaternionAlgebra_IsOrder_exists_basis_span_eq",
+              "source_sha256": "3df74b6227092866c18c8a8dafe5a977bc8f0e4583a1e737249287e8e02f7be6",
+              "object_sha256": "fcd83e76245c3b5db45fd580ab66db0959c1544357a17dec12bde1661e0079df",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.P2M.Util",
+              "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+              "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+              "receipt_reused": true
+            }
+          ]
+        },
+        "card": {
+          "module": "Submission.Supplier.Theorems.Thm_CerednikDrinfeld_conj_mem_levelHeckeUSet_iff_of_mem_primeHeckeSet",
+          "canonical_lines": 21,
+          "canonical_byte_identical_to_supplier": true,
+          "make_exit": 0,
+          "kernel_exit": 0,
+          "kernel_seconds": 30.319567334,
+          "compiler_warnings": 0,
+          "source_unchanged_during_check": true,
+          "printed_final_axiom_closures": [],
+          "separate_final_axiom_audit_pending": true,
+          "direct_dependencies": [
+            {
+              "module": "Submission.Supplier.Definitions.Def_CerednikDrinfeld_ClassSetGraph",
+              "source_sha256": "bc221161ee6bf11ac19c23053d031cfaf0a9e76af2b65a3e5f2d03a9e6430add",
+              "object_sha256": "3acb394c850dfe135db8d3bf539c39a05bcc873db4242afc73f276c115bc2734",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.Definitions.Def_QuaternionAlgebra_Order",
+              "source_sha256": "6e9f5cec2a5578c8c6661468e6cbc05396673dca4d3154232c83c70ff2f2c9f0",
+              "object_sha256": "174883405aed78b65c0b29cebfe82caa97e95bd7c1f3970c96bb730f414bfe31",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.Definitions.Def_Submodule_LocalBox",
+              "source_sha256": "ab2c6d1b38ba27a7aac5a2e001e38b01c1b230839b8dc8b077620dfc9077e9f9",
+              "object_sha256": "b75864e2f9b0bc0ff1290cb0bac083f61e17fb37287b144edc3c433f7d443bd6",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.P2M.Util",
+              "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+              "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.P2M.Sol.S_CerednikDrinfeld_conj_mem_levelHeckeUSet_iff_of_mem_primeHeckeSet",
+              "source_sha256": "8fe87cd415b0e72b7c184e9d5accff0814ca7c98eaae3a9c769e4b1759a211d3",
+              "object_sha256": "a8945b818c6326db0a5942e2d3dc74f889a6d67981a2879baf76de6da9c294ec",
+              "receipt_reused": true
+            }
+          ]
+        }
+      }
+    },
+    "CerednikDrinfeld_mem_levelHeckeUSet_iff_mem_levelHeckeUSet_of_forall_localBox_eq": {
+      "proof_summary": "For arbitrary rational quaternion parameters and integer orders S <= R <= Lambda, every nonzero natural ell, equality of the local boxes of S and R at every place dividing ell, and every finite quaternion idele beta evaluating to 1 at all places away from ell, retain equivalence of membership in levelHeckeUSet Lambda S ell and levelHeckeUSet Lambda R ell. Preserve the complete 997-line supplier proof and both directions without adding a prime-ell assumption.",
+      "checks": {
+        "source": {
+          "module": "Submission.Supplier.P2M.Sol.S_CerednikDrinfeld_mem_levelHeckeUSet_iff_mem_levelHeckeUSet_of_forall_localBox_eq",
+          "canonical_lines": 997,
+          "canonical_byte_identical_to_supplier": true,
+          "make_exit": 0,
+          "kernel_exit": 0,
+          "kernel_seconds": 54.561025792,
+          "compiler_warnings": 9,
+          "source_unchanged_during_check": true,
+          "printed_final_axiom_closures": [],
+          "separate_final_axiom_audit_pending": true,
+          "direct_dependencies": [
+            {
+              "module": "Submission.Supplier.Definitions.Def_QuaternionAlgebra_ClassSetHecke",
+              "source_sha256": "adaa936c4532290c5efcf55643e44aa259009ca6a9603b23072a7ea1c05dc6a1",
+              "object_sha256": "4a49725364e0f0ca82da16de91201f18790c82e11fda52794d7acd26223ce798",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.Definitions.Def_QuaternionAlgebra_Order",
+              "source_sha256": "6e9f5cec2a5578c8c6661468e6cbc05396673dca4d3154232c83c70ff2f2c9f0",
+              "object_sha256": "174883405aed78b65c0b29cebfe82caa97e95bd7c1f3970c96bb730f414bfe31",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.Definitions.Def_Submodule_LocalBox",
+              "source_sha256": "ab2c6d1b38ba27a7aac5a2e001e38b01c1b230839b8dc8b077620dfc9077e9f9",
+              "object_sha256": "b75864e2f9b0bc0ff1290cb0bac083f61e17fb37287b144edc3c433f7d443bd6",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.Definitions.Def_CerednikDrinfeld_ClassSetGraph",
+              "source_sha256": "bc221161ee6bf11ac19c23053d031cfaf0a9e76af2b65a3e5f2d03a9e6430add",
+              "object_sha256": "3acb394c850dfe135db8d3bf539c39a05bcc873db4242afc73f276c115bc2734",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.Definitions.Def_QuaternionAlgebra_EichlerOrder",
+              "source_sha256": "616666b45c5e5c83ff980cb8b286d35eaa0580c94707feb98a30a33f2b3cf19c",
+              "object_sha256": "0331ea06b2b270a4e9fd47ef316eadfd1667dd342bd3b5f2f313850569d0cac7",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.Theorems.Thm_Submodule_finiteAdeleBox_conjByFiniteIdele",
+              "source_sha256": "2ba9274839aad9b57f10e31458e1f22aca5a2f6baba17e036afcd26d44cbd59e",
+              "object_sha256": "e1fdd3be08d3dca1373e375712414685a514e83c2a75f89752e054c3ee9f2fc3",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.Theorems.Thm_Submodule_exists_units_finiteAdeleEvalAt_eq",
+              "source_sha256": "0a69a53b99a63cf7d7b1c16fcf920345d51b22d7be5b5bb8139a2022e4b3dd3d",
+              "object_sha256": "2b4b9b75536077092145e3b71484634b06f3ead4e82e480caf88744aa3acc95e",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.Theorems.Thm_QuaternionAlgebra_IsOrder_conjByFiniteIdele",
+              "source_sha256": "861eedeb4133a5a12c18efb857d0262b816e6b5eb995ee5d3df8c1374945a77d",
+              "object_sha256": "650825fe3f70be6cde55d62221fe3f81ca139b5aed86cfeb95c9f77878d743d3",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.Theorems.Thm_QuaternionAlgebra_IsOrder_finite_setOf_exists_mem_quotientMk_eq_of_subset_primeHeckeSet",
+              "source_sha256": "77f4bcb469a28881cc58d5b04fe0ab6a46abacdfd385fb52cdbbefedf2b2c6df",
+              "object_sha256": "45b78cee62d6579abbb4f7b11378baccdc9dcbf05a71cc543c77b7782167d515",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.Theorems.Thm_Submodule_mem_finiteAdeleBox_iff_forall_finiteAdeleEvalAt_mem_localBox",
+              "source_sha256": "5c2534162bf86f90567fb2a942de214344b059f2504cc627a516852ae83f2127",
+              "object_sha256": "a07d74af5e446365dbda86b0ed565f34acf6d9ff6cb4c8787b853de59a7fd650",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.Theorems.Thm_QuaternionAlgebra_IsOrder_mem_finiteIdeleStabilizer_iff_forall_map_finiteAdeleEvalAt_mem_localBoxUnits",
+              "source_sha256": "47b385bcaa7f7529e9a21f5ffd8796b4345500fbb98cc3d5d5ade4431b493c7e",
+              "object_sha256": "1426402a9024f3ca214bf5c9a390e7fce39a25f4e28e92844d91ec6446823e8a",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.Definitions.Def_Submodule_FiniteAdeleBox",
+              "source_sha256": "a0a065269cf12ce6241d24c92ab0438408a7ef84fa645a4db82f33df4baa8be9",
+              "object_sha256": "28bf6d2c7adf8aefdc2eed5486666e98b2d24c8f84b3e5c1ff113550cffd8205",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.Theorems.Thm_Submodule_mem_localBox_conjByFiniteIdele_iff",
+              "source_sha256": "408ff2c3513402e14767302d93d8aca5db87469c35836031cb4fcfff1de6ee30",
+              "object_sha256": "14d04ba8a23d40be5439cf217ab5c459c9c00da2b092bc1b25e0dcf05bd31404",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.Theorems.Thm_QuaternionAlgebra_IsOrder_exists_basis_span_eq",
+              "source_sha256": "3df74b6227092866c18c8a8dafe5a977bc8f0e4583a1e737249287e8e02f7be6",
+              "object_sha256": "fcd83e76245c3b5db45fd580ab66db0959c1544357a17dec12bde1661e0079df",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.P2M.Util",
+              "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+              "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+              "receipt_reused": true
+            }
+          ]
+        },
+        "card": {
+          "module": "Submission.Supplier.Theorems.Thm_CerednikDrinfeld_mem_levelHeckeUSet_iff_mem_levelHeckeUSet_of_forall_localBox_eq",
+          "canonical_lines": 21,
+          "canonical_byte_identical_to_supplier": true,
+          "make_exit": 0,
+          "kernel_exit": 0,
+          "kernel_seconds": 30.723526500000002,
+          "compiler_warnings": 0,
+          "source_unchanged_during_check": true,
+          "printed_final_axiom_closures": [],
+          "separate_final_axiom_audit_pending": true,
+          "direct_dependencies": [
+            {
+              "module": "Submission.Supplier.Definitions.Def_CerednikDrinfeld_ClassSetGraph",
+              "source_sha256": "bc221161ee6bf11ac19c23053d031cfaf0a9e76af2b65a3e5f2d03a9e6430add",
+              "object_sha256": "3acb394c850dfe135db8d3bf539c39a05bcc873db4242afc73f276c115bc2734",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.Definitions.Def_QuaternionAlgebra_Order",
+              "source_sha256": "6e9f5cec2a5578c8c6661468e6cbc05396673dca4d3154232c83c70ff2f2c9f0",
+              "object_sha256": "174883405aed78b65c0b29cebfe82caa97e95bd7c1f3970c96bb730f414bfe31",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.Definitions.Def_Submodule_LocalBox",
+              "source_sha256": "ab2c6d1b38ba27a7aac5a2e001e38b01c1b230839b8dc8b077620dfc9077e9f9",
+              "object_sha256": "b75864e2f9b0bc0ff1290cb0bac083f61e17fb37287b144edc3c433f7d443bd6",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.P2M.Util",
+              "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+              "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.P2M.Sol.S_CerednikDrinfeld_mem_levelHeckeUSet_iff_mem_levelHeckeUSet_of_forall_localBox_eq",
+              "source_sha256": "3c1e9173a13b771773cbb5bb46494d5054dd6aaf3620244608e2b50506f471e9",
+              "object_sha256": "50fc180261d179b727f7f3c1181b1afc6ca9d74cb7532ffa2b51eb1d8f905f45",
+              "receipt_reused": true
+            }
+          ]
+        }
+      }
+    },
+    "CerednikDrinfeld_jointDelta_classSetEdgeHecke_mulVecLin_eq_classSetVertexHecke_mulVecLin_jointDelta_of_ne": {
+      "proof_summary": "Retain the exact degeneracy-map/Hecke commutation theorem for the full original N,q,q-prime setup, definiteness and ramification assumption, maximal order Lambda, level-N Eichler order R <= Lambda, finite class-set and decidable-equality instances, finite quaternion idele n in the q-prime-Hecke set with meetOrder of Eichler level N*q, every prime ell different from q, each of the two degeneracy maps and every integer-valued edge function x. Preserve the full proof and both branches according to whether ell divides N; no narrower class of functions or additional coprimality assumption is added.",
+      "checks": {
+        "source": {
+          "module": "Submission.Supplier.P2M.Sol.S_CerednikDrinfeld_jointDelta_classSetEdgeHecke_mulVecLin_eq_classSetVertexHecke_mulVecLin_jointDelta_of_ne",
+          "canonical_lines": 55,
+          "canonical_byte_identical_to_supplier": true,
+          "make_exit": 0,
+          "kernel_exit": 0,
+          "kernel_seconds": 11.729103459,
+          "compiler_warnings": 8,
+          "source_unchanged_during_check": true,
+          "printed_final_axiom_closures": [],
+          "separate_final_axiom_audit_pending": true,
+          "direct_dependencies": [
+            {
+              "module": "Submission.Supplier.Definitions.Def_CerednikDrinfeld_ClassSetGraph",
+              "source_sha256": "bc221161ee6bf11ac19c23053d031cfaf0a9e76af2b65a3e5f2d03a9e6430add",
+              "object_sha256": "3acb394c850dfe135db8d3bf539c39a05bcc873db4242afc73f276c115bc2734",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.Definitions.Def_QuaternionAlgebra_EichlerOrder",
+              "source_sha256": "616666b45c5e5c83ff980cb8b286d35eaa0580c94707feb98a30a33f2b3cf19c",
+              "object_sha256": "0331ea06b2b270a4e9fd47ef316eadfd1667dd342bd3b5f2f313850569d0cac7",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.Theorems.Thm_CerednikDrinfeld_pushforward_classSetHeckeMatrix_primeHeckeSet_meetOrder_mulVecLin",
+              "source_sha256": "dd6ed50b4ee4d4cfc667ed85fdaf84ec5a3d4ccf5fbaa6eb87fe25af61698e82",
+              "object_sha256": "7c37220003b30f5a6575ed3cb6cb363956d2a91b3ba4fdbb558dfd2fa04b3297",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.Theorems.Thm_CerednikDrinfeld_pushforward_classSetHeckeMatrix_levelHeckeUSet_meetOrder_mulVecLin",
+              "source_sha256": "aae72a3e40ea9293ebbe9b0ed8410487b9e0e0cf6787efae29647874f0d36ef1",
+              "object_sha256": "9080866199a36df90bb09d1faed7cc060db88269f3410b2978c2e56f1b43635a",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.P2M.Util",
+              "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+              "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+              "receipt_reused": true
+            }
+          ]
+        },
+        "card": {
+          "module": "Submission.Supplier.Theorems.Thm_CerednikDrinfeld_jointDelta_classSetEdgeHecke_mulVecLin_eq_classSetVertexHecke_mulVecLin_jointDelta_of_ne",
+          "canonical_lines": 24,
+          "canonical_byte_identical_to_supplier": true,
+          "make_exit": 0,
+          "kernel_exit": 0,
+          "kernel_seconds": 79.490640333,
+          "compiler_warnings": 0,
+          "source_unchanged_during_check": true,
+          "printed_final_axiom_closures": [],
+          "separate_final_axiom_audit_pending": true,
+          "direct_dependencies": [
+            {
+              "module": "Submission.Supplier.Definitions.Def_CerednikDrinfeld_ClassSetGraph",
+              "source_sha256": "bc221161ee6bf11ac19c23053d031cfaf0a9e76af2b65a3e5f2d03a9e6430add",
+              "object_sha256": "3acb394c850dfe135db8d3bf539c39a05bcc873db4242afc73f276c115bc2734",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.Definitions.Def_QuaternionAlgebra_EichlerOrder",
+              "source_sha256": "616666b45c5e5c83ff980cb8b286d35eaa0580c94707feb98a30a33f2b3cf19c",
+              "object_sha256": "0331ea06b2b270a4e9fd47ef316eadfd1667dd342bd3b5f2f313850569d0cac7",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.P2M.Util",
+              "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+              "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.P2M.Sol.S_CerednikDrinfeld_jointDelta_classSetEdgeHecke_mulVecLin_eq_classSetVertexHecke_mulVecLin_jointDelta_of_ne",
+              "source_sha256": "456162ee531cf9cd1473980acb086da503d1b113da8a8fc2c1c0ed4dddf5b1bb",
+              "object_sha256": "65544086fd7030263c4ad10295745e16aca5fa1057ee72b3b2e70172f114a83b",
+              "receipt_reused": true
+            }
+          ]
+        }
+      }
+    }
+  },
+  "supplier": "anthropics/fermats-last-theorem",
+  "supplier_commit": "6e837e75355538c7f80bab5b956861e86c4eacc2",
+  "full_original_complete": false,
+  "official_new_solve_credit": 0,
+  "complete_import_replay_and_recursive_axiom_audits_pending": true,
+  "selected_problem": "fermat_last_theorem",
+  "max_active_flt_jobs": 1,
+  "max_active_flt_compilers": 1,
+  "lean_threads": 1,
+  "graph_snapshot": {
+    "compiled": 7898,
+    "failed": 0,
+    "ready": 4381,
+    "root_compiled": false,
+    "workers": 1,
+    "running": {
+      "Submission.Supplier.P2M.Sol.S_QuaternionAlgebra_IsMaximalOrder_exists_localBox_iff_generalLinearGroup_conj_mem_adicCompletionIntegers": {
+        "pid": 59422,
+        "make_wrapper_pid": 33042,
+        "phase": "kernel",
+        "sha256": "f0fd96b08e01a35cb4fa1484b5ac32dfa8a9edefcf8abd4b96400917091d84da",
+        "configuration": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/1aff2e94f96b03fbf69877fe-1791879093482816000.configuration.json"
+      }
+    }
+  }
+}
