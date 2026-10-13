@@ -1,0 +1,9 @@
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_Transcendental_exists_irreducible_evalEval_eq_zero_and_derivative_ne_zero.lean:118:18: warning: `Polynomial.natDegree_eq_zero_of_derivative_eq_zero` has been deprecated: Use `Polynomial.derivative_eq_zero` instead
+
+Note: The updated constant has a different type:
+  ∀ {R : Type u} [inst : Semiring R] {p : R[X]} [IsAddTorsionFree R], derivative p = 0 ↔ p.natDegree = 0
+instead of
+  ∀ {R : Type u} [inst : Semiring R] {p : R[X]} [IsAddTorsionFree R], derivative p = 0 → p.natDegree = 0
+'P2MW.S_Transcendental_exists_irreducible_evalEval_eq_zero_and_derivative_ne_zero.solution' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
