@@ -1,0 +1,117 @@
+{
+  "at": "2026-10-13T12:51:25.176698+00:00",
+  "original_source_card_pairs_actual_make_kernel_passed": true,
+  "canonical_pairs_byte_identical_to_supplier": true,
+  "no_source_edits": true,
+  "no_linter_suppression_added": true,
+  "no_redundant_recompilation": true,
+  "original_statements_hypotheses_and_proofs_preserved": true,
+  "checks": {
+    "WeierstrassCurve_Affine_ncard_fibSet": {
+      "proof_summary": "Preserve arbitrary fields F,K with their algebra structure, algebraic closedness and DecidableEq of K, an elliptic Weierstrass curve W over F, natural n whose cast in K is nonzero, and arbitrary affine point Q after base change. Retain exactly (fibSet W K n Q).ncard equal to n squared. Preserve the complete 70-line supplier source, including finite torsion, its exact n-squared cardinality, point-division surjectivity, the identification of each fiber with the translate of the torsion set by a chosen preimage, and the finite-set cardinality conversion. No nonzero condition on Q, prime-order restriction, characteristic-zero hypothesis or Dedekind-domain condition is added.",
+      "checks": {
+        "source": {
+          "module": "Submission.Supplier.P2M.Sol.S_WeierstrassCurve_Affine_ncard_fibSet",
+          "canonical_lines": 70,
+          "canonical_byte_identical_to_supplier": true,
+          "make_exit": 0,
+          "kernel_exit": 0,
+          "kernel_seconds": 66.298240958,
+          "compiler_warnings": 5,
+          "source_unchanged_during_check": true,
+          "printed_final_axiom_closures": [],
+          "separate_final_axiom_audit_pending": true,
+          "direct_dependencies": [
+            {
+              "module": "Submission.Supplier.Definitions.Def_EllipticCurve_WeilPairingFun",
+              "source_sha256": "6b84c76b9e69ece8fd9c13f9e24f1317c61b82835f2661c72e45fdb3f0dd98ea",
+              "object_sha256": "e70c940c319a2a5c540cc24a078c403d9eda868040b378a3d1e30b6f8388f2d0",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.Theorems.Thm_WeierstrassCurve_card_torsion_of_isAlgClosed",
+              "source_sha256": "08beb9c961c3cef004d00c72f409511ea7f265260c3d76e24f2aa3b27be45d65",
+              "object_sha256": "cacb708cd78c398395e5deaa86b369f553147b68eb85277f68a20bb5bec05119",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.Theorems.Thm_WeierstrassCurve_Affine_Point_exists_zsmul_eq_of_isAlgClosed",
+              "source_sha256": "a6ad1b36af8066f3772ca1baab0576ff99179e30b676af78b449cf3798472f51",
+              "object_sha256": "56e27157e1a11d43071c5366867efd975230730cb258faf1fb1930c81d36f2f4",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.Theorems.Thm_WeierstrassCurve_Affine_fibSet_finite",
+              "source_sha256": "d1eb150b8392ed471931cd634b3910cf6e1e19bbd29456498bb68bfc45e7a47f",
+              "object_sha256": "21cad728c0bec9ad50293451979f0ef35e01afddde777bd77f5b60fce622d9a2",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.P2M.Util",
+              "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+              "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+              "receipt_reused": true
+            }
+          ]
+        },
+        "card": {
+          "module": "Submission.Supplier.Theorems.Thm_WeierstrassCurve_Affine_ncard_fibSet",
+          "canonical_lines": 9,
+          "canonical_byte_identical_to_supplier": true,
+          "make_exit": 0,
+          "kernel_exit": 0,
+          "kernel_seconds": 62.582370833000006,
+          "compiler_warnings": 0,
+          "source_unchanged_during_check": true,
+          "printed_final_axiom_closures": [],
+          "separate_final_axiom_audit_pending": true,
+          "direct_dependencies": [
+            {
+              "module": "Submission.Supplier.Definitions.Def_EllipticCurve_WeilPairingFun",
+              "source_sha256": "6b84c76b9e69ece8fd9c13f9e24f1317c61b82835f2661c72e45fdb3f0dd98ea",
+              "object_sha256": "e70c940c319a2a5c540cc24a078c403d9eda868040b378a3d1e30b6f8388f2d0",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.P2M.Util",
+              "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+              "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.P2M.Sol.S_WeierstrassCurve_Affine_ncard_fibSet",
+              "source_sha256": "7e0c513077fd997a05f81ffcbaa39af3e9502547c1651b03e3a709327f7c0b68",
+              "object_sha256": "da448eebe249774c7d097fe08832a5c3f3bb4d2d63835e5313545fe0ac0c4b62",
+              "receipt_reused": true
+            }
+          ]
+        }
+      }
+    }
+  },
+  "supplier": "anthropics/fermats-last-theorem",
+  "supplier_commit": "6e837e75355538c7f80bab5b956861e86c4eacc2",
+  "full_original_complete": false,
+  "official_new_solve_credit": 0,
+  "complete_import_replay_and_recursive_axiom_audits_pending": true,
+  "selected_problem": "fermat_last_theorem",
+  "max_active_flt_jobs": 1,
+  "max_active_flt_compilers": 1,
+  "lean_threads": 1,
+  "graph_snapshot": {
+    "compiled": 8006,
+    "failed": 0,
+    "ready": 4354,
+    "root_compiled": false,
+    "workers": 1,
+    "running": {
+      "Submission.Supplier.P2M.Sol.S_WeierstrassCurve_Affine_valuation_transEquiv_weilFun": {
+        "pid": 53985,
+        "make_wrapper_pid": 53985,
+        "phase": "canonical_make_queue",
+        "sha256": "9ecaa34c73ac4fcf519946da984151de6bdcf7d6a75bf40d0eecf2994f1d2a7e",
+        "configuration": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/e405d33b37d111ff3af14a7e-1791895797795285000.configuration.json"
+      }
+    }
+  }
+}
