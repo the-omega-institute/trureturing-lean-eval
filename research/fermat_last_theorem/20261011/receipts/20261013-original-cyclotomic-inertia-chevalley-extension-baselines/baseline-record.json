@@ -1,0 +1,179 @@
+{
+  "at": "2026-10-13T11:38:00.970895+00:00",
+  "original_source_card_pairs_actual_make_kernel_passed": true,
+  "canonical_pairs_byte_identical_to_supplier": true,
+  "no_source_edits": true,
+  "no_linter_suppression_added": true,
+  "no_redundant_recompilation": true,
+  "original_statements_hypotheses_and_proofs_preserved": true,
+  "checks": {
+    "ValuationSubring_exists_mem_inertiaSubgroupIn_cycloChar_ne_one": {
+      "proof_summary": "Preserve arbitrary prime q, both the odd-prime m=q case and q=2,m=8 case, arbitrary cyclotomic-character monoid homomorphism satisfying its full root-of-unity action and arbitrary nontrivial character into units of an arbitrary field K. For every valuation subring A lying over q, retain existence of an inertia element on which the character is nontrivial, together with the original order-two character corollary giving value minus one. Preserve the complete 80-line supplier proof and all original hypotheses; no odd-characteristic or extra field assumptions are added.",
+      "checks": {
+        "source": {
+          "module": "Submission.Supplier.P2M.Sol.S_ValuationSubring_exists_mem_inertiaSubgroupIn_cycloChar_ne_one",
+          "canonical_lines": 80,
+          "canonical_byte_identical_to_supplier": true,
+          "make_exit": 0,
+          "kernel_exit": 0,
+          "kernel_seconds": 27.821062,
+          "compiler_warnings": 2,
+          "source_unchanged_during_check": true,
+          "printed_final_axiom_closures": [
+            {
+              "declaration": "P2MW.S_ValuationSubring_exists_mem_inertiaSubgroupIn_cycloChar_ne_one.solution",
+              "recursive_axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "declaration": "P2MW.S_ValuationSubring_exists_mem_inertiaSubgroupIn_cycloChar_ne_one.solution_corollary_neg_one",
+              "recursive_axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            }
+          ],
+          "separate_final_axiom_audit_pending": false,
+          "direct_dependencies": [
+            {
+              "module": "Submission.Supplier.Definitions.Def_FLTPrelim_Ramification",
+              "source_sha256": "00fe8d0d63a3bcd209efde3539d0fdce08cad1c4b4b2e5b15ed18efc273b0441",
+              "object_sha256": "9c8ceef3342e5a6b5af8eda270ac74239e1012faec3128daa560373353d1ae90",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.Theorems.Thm_ValuationSubring_exists_mem_inertiaSubgroupIn_apply_eq_pow",
+              "source_sha256": "7327672fe3212678668b11ca5fb5a6d602a7da088522c4760ad036462f0b8b50",
+              "object_sha256": "3594493bae0869a901d67d4a3dbc8d4b0493e47cf0a849d76b789c59806f8b04",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.Theorems.Thm_ValuationSubring_exists_mem_inertiaSubgroupIn_apply_eq_pow_of_pow_eight_eq_one",
+              "source_sha256": "847b4d4792cc2e21f684198ee22947b5b83f9156e921a9dd8a5ad503b4f51c05",
+              "object_sha256": "11d322f0119a425cc90ca6cc494163ca47375b9cc3bda397530d3d4787844c41",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.P2M.Util",
+              "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+              "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+              "receipt_reused": true
+            }
+          ]
+        },
+        "card": {
+          "module": "Submission.Supplier.Theorems.Thm_ValuationSubring_exists_mem_inertiaSubgroupIn_cycloChar_ne_one",
+          "canonical_lines": 13,
+          "canonical_byte_identical_to_supplier": true,
+          "make_exit": 0,
+          "kernel_exit": 0,
+          "kernel_seconds": 3.309483125,
+          "compiler_warnings": 0,
+          "source_unchanged_during_check": true,
+          "printed_final_axiom_closures": [],
+          "separate_final_axiom_audit_pending": true,
+          "direct_dependencies": [
+            {
+              "module": "Submission.Supplier.Definitions.Def_FLTPrelim_Ramification",
+              "source_sha256": "00fe8d0d63a3bcd209efde3539d0fdce08cad1c4b4b2e5b15ed18efc273b0441",
+              "object_sha256": "9c8ceef3342e5a6b5af8eda270ac74239e1012faec3128daa560373353d1ae90",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.P2M.Util",
+              "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+              "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.P2M.Sol.S_ValuationSubring_exists_mem_inertiaSubgroupIn_cycloChar_ne_one",
+              "source_sha256": "749a7d906b7c4bf18de07781a92b17c8e51627df8832aba1d0a30ae14dfbf367",
+              "object_sha256": "11d6e955951047dc2245fc9d9937862c380512b928e85f55c674311e59df3267",
+              "receipt_reused": true
+            }
+          ]
+        }
+      }
+    },
+    "ValuationSubring_exists_ringHom_extend_of_isAlgClosed": {
+      "proof_summary": "Preserve arbitrary fields L and Omega with Omega algebraically closed, arbitrary subring R of L and arbitrary ring homomorphism phi from R to Omega. Retain a valuation subring O of L containing R and ring homomorphism psi from O to Omega extending phi exactly, with kernel exactly the maximal ideal of O. Preserve the complete 343-line maximal-graph, Zorn and polynomial-root extension proof. No algebraicity, finite-dimensionality, injectivity, completeness or additional hypothesis on L,R or phi is added.",
+      "checks": {
+        "source": {
+          "module": "Submission.Supplier.P2M.Sol.S_ValuationSubring_exists_ringHom_extend_of_isAlgClosed",
+          "canonical_lines": 343,
+          "canonical_byte_identical_to_supplier": true,
+          "make_exit": 0,
+          "kernel_exit": 0,
+          "kernel_seconds": 48.34368375,
+          "compiler_warnings": 10,
+          "source_unchanged_during_check": true,
+          "printed_final_axiom_closures": [],
+          "separate_final_axiom_audit_pending": true,
+          "direct_dependencies": [
+            {
+              "module": "Submission.Supplier.P2M.Util",
+              "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+              "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+              "receipt_reused": true
+            }
+          ]
+        },
+        "card": {
+          "module": "Submission.Supplier.Theorems.Thm_ValuationSubring_exists_ringHom_extend_of_isAlgClosed",
+          "canonical_lines": 8,
+          "canonical_byte_identical_to_supplier": true,
+          "make_exit": 0,
+          "kernel_exit": 0,
+          "kernel_seconds": 19.938934875,
+          "compiler_warnings": 0,
+          "source_unchanged_during_check": true,
+          "printed_final_axiom_closures": [],
+          "separate_final_axiom_audit_pending": true,
+          "direct_dependencies": [
+            {
+              "module": "Submission.Supplier.P2M.Util",
+              "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+              "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.P2M.Sol.S_ValuationSubring_exists_ringHom_extend_of_isAlgClosed",
+              "source_sha256": "cd2994c2c9445b189fe508fbdb0656a62dd8a37b79c708a2c107465008a2ff1a",
+              "object_sha256": "f1b7203632a2155cb06670a5055c3101474420ca4bf2cd3ef21bccbe0655067a",
+              "receipt_reused": true
+            }
+          ]
+        }
+      }
+    }
+  },
+  "supplier": "anthropics/fermats-last-theorem",
+  "supplier_commit": "6e837e75355538c7f80bab5b956861e86c4eacc2",
+  "full_original_complete": false,
+  "official_new_solve_credit": 0,
+  "complete_import_replay_and_recursive_axiom_audits_pending": true,
+  "selected_problem": "fermat_last_theorem",
+  "max_active_flt_jobs": 1,
+  "max_active_flt_compilers": 1,
+  "lean_threads": 1,
+  "graph_snapshot": {
+    "compiled": 7972,
+    "failed": 0,
+    "ready": 4356,
+    "root_compiled": false,
+    "workers": 1,
+    "running": {
+      "Submission.Supplier.P2M.Sol.S_IsAlgClosed_exists_valuationSubring_ringHom_retraction_forall_valuation_eq_one": {
+        "pid": 42348,
+        "make_wrapper_pid": 42348,
+        "phase": "canonical_make_queue",
+        "sha256": "682760790c597d81240db956bae5afb0a6afa03a2ae5899b60292c9c67868684",
+        "configuration": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/0c03e4dfdc42ec71ee8f1ad7-1791891433444901000.configuration.json"
+      }
+    }
+  }
+}

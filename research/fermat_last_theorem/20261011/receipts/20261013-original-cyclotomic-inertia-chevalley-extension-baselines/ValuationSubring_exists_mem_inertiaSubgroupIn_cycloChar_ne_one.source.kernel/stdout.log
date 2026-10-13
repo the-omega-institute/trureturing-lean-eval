@@ -1,0 +1,48 @@
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_ValuationSubring_exists_mem_inertiaSubgroupIn_cycloChar_ne_one.lean:26:2: warning: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_ValuationSubring_exists_mem_inertiaSubgroupIn_cycloChar_ne_one.lean:40:2: warning: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+ValuationSubring.exists_mem_inertiaSubgroupIn_apply_eq_pow_of_pow_eight_eq_one : ∀
+  (A : ValuationSubring (AlgebraicClosure ℚ)),
+  A.LiesOverPrime 2 →
+    ∀ (u : (ZMod 8)ˣ),
+      ∃ σ ∈ ValuationSubring.inertiaSubgroupIn ℚ A, ∀ (μ : AlgebraicClosure ℚ), μ ^ 8 = 1 → σ μ = μ ^ (↑u).val
+solution : ∀ (q : ℕ),
+  Nat.Prime q →
+    ∀ (m : ℕ),
+      Odd q ∧ m = q ∨ q = 2 ∧ m = 8 →
+        ∀ (cyc : Gal(AlgebraicClosure ℚ/ℚ) →* (ZMod m)ˣ),
+          (∀ (σ : Gal(AlgebraicClosure ℚ/ℚ)) (μ : AlgebraicClosure ℚ), μ ^ m = 1 → σ μ = μ ^ (↑(cyc σ)).val) →
+            ∀ {K : Type} [inst : Field K] (χ : (ZMod m)ˣ →* Kˣ),
+              χ ≠ 1 →
+                ∀ (A : ValuationSubring (AlgebraicClosure ℚ)),
+                  A.LiesOverPrime q → ∃ σ ∈ ValuationSubring.inertiaSubgroupIn ℚ A, χ (cyc σ) ≠ 1
+solution_corollary_neg_one : ∀ (q : ℕ),
+  Nat.Prime q →
+    ∀ (m : ℕ),
+      Odd q ∧ m = q ∨ q = 2 ∧ m = 8 →
+        ∀ (cyc : Gal(AlgebraicClosure ℚ/ℚ) →* (ZMod m)ˣ),
+          (∀ (σ : Gal(AlgebraicClosure ℚ/ℚ)) (μ : AlgebraicClosure ℚ), μ ^ m = 1 → σ μ = μ ^ (↑(cyc σ)).val) →
+            ∀ {K : Type} [inst : Field K] (χ : (ZMod m)ˣ →* Kˣ),
+              (∀ (u : (ZMod m)ˣ), χ u * χ u = 1) →
+                χ ≠ 1 →
+                  ∀ (A : ValuationSubring (AlgebraicClosure ℚ)),
+                    A.LiesOverPrime q → ∃ σ ∈ ValuationSubring.inertiaSubgroupIn ℚ A, χ (cyc σ) = -1
+'P2MW.S_ValuationSubring_exists_mem_inertiaSubgroupIn_cycloChar_ne_one.solution' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'P2MW.S_ValuationSubring_exists_mem_inertiaSubgroupIn_cycloChar_ne_one.solution_corollary_neg_one' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
