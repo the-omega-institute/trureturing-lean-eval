@@ -1,0 +1,62 @@
+{
+  "at": "2026-10-13T16:43:22.160369+00:00",
+  "checks": {
+    "source": {
+      "module": "Submission.Supplier.P2M.Sol.S_WeierstrassCurve_exists_atP_filtration_of_multiplicativeReduction",
+      "make_exit": 0,
+      "kernel_exit": 0,
+      "kernel_seconds": 43.466678917,
+      "compiler_warnings": 0,
+      "final_standard3_audit_passed": true,
+      "printed_final_axiom_closures": [
+        {
+          "declaration": "P2MW.S_WeierstrassCurve_exists_atP_filtration_of_multiplicativeReduction.solution",
+          "recursive_axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "original_canonical_lines": 321,
+      "repaired_canonical_lines": 323,
+      "original_final_statement_and_full_module_proof_preserved": true
+    },
+    "card": {
+      "module": "Submission.Supplier.Theorems.Thm_WeierstrassCurve_exists_atP_filtration_of_multiplicativeReduction",
+      "make_exit": 0,
+      "kernel_exit": 0,
+      "kernel_seconds": 30.583684709,
+      "compiler_warnings": 0,
+      "final_standard3_audit_passed": true,
+      "printed_final_axiom_closures": [
+        {
+          "declaration": "WeierstrassCurve.exists_atP_filtration_of_multiplicativeReduction",
+          "recursive_axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "original_canonical_lines": 24,
+      "repaired_canonical_lines": 26,
+      "original_final_statement_and_full_module_proof_preserved": true
+    }
+  },
+  "proof_summary": "Preserve the complete supplier source and theorem card for arbitrary integral Weierstrass W with nonzero discriminant, every odd prime dividing its discriminant but not c4, every valuation above p and every positive m. Retain exact p-power torsion membership in the zero component, cardinality, decomposition stability and absorption of every inertia difference, including the full torsion lifting, cyclicity and determinant-contradiction argument. Replace only the diagnosed unit-coercion rewrite with exact existing Units.coe_neg_one and fix eight warning-directed proposition instances. Require actual zero-warning source/card make/kernel exits zero, exact STANDARD3 and matching current source dependency.",
+  "original_statements_hypotheses_and_full_proofs_preserved": true,
+  "repaired_source_card_pair_actual_make_kernel_passed": true,
+  "source_card_actual_final_standard3": true,
+  "no_linter_suppression_added": true,
+  "baseline_source_actual_exit": 1,
+  "supplier": "anthropics/fermats-last-theorem",
+  "supplier_commit": "6e837e75355538c7f80bab5b956861e86c4eacc2",
+  "selected_problem": "fermat_last_theorem",
+  "full_original_complete": false,
+  "official_new_solve_credit": 0,
+  "full_root_import_replay_and_axiom_audit_pending": true,
+  "max_active_flt_jobs": 1,
+  "max_active_flt_compilers": 1,
+  "lean_threads": 1
+}
