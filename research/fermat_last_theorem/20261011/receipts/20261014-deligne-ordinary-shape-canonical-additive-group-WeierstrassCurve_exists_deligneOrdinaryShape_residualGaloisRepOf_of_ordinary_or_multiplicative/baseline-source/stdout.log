@@ -1,0 +1,67 @@
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_WeierstrassCurve_exists_deligneOrdinaryShape_residualGaloisRepOf_of_ordinary_or_multiplicative.lean:54:2: warning: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_WeierstrassCurve_exists_deligneOrdinaryShape_residualGaloisRepOf_of_ordinary_or_multiplicative.lean:110:2: error: unsolved goals
+case refine_5
+p : ℕ
+inst✝¹ : Fact (Nat.Prime p)
+ρ₀ : ResidualGaloisRep (ZMod p)
+hordP : (GaloisRepAdic.ofResidualGaloisRep ρ₀).IsOrdinaryAt p
+hdet : (GaloisRepAdic.ofResidualGaloisRep ρ₀).DetIsCyclotomic p
+k : Type
+inst✝ : Field k
+ι : ZMod p →+* k
+ρ : Gal(AlgebraicClosure ℚ/ℚ) →* GL (Fin 2) k
+b : Module.Basis (Fin 2) k (ResidualGaloisRep.baseChangeAlong ι ρ₀).V
+hρ : ∀ (σ : Gal(AlgebraicClosure ℚ/ℚ)), ↑(ρ σ) = (LinearMap.toMatrix b b) ((ResidualGaloisRep.baseChangeAlong ι ρ₀).ρ σ)
+P : ValuationSubring (AlgebraicClosure ℚ)
+hP : P.LiesOverPrime p
+frob : Gal(AlgebraicClosure ℚ/ℚ)
+hfrob : P.IsFrobeniusAt frob p
+χ : ↥(ValuationSubring.decompositionSubgroup ℚ P) →* k
+hχ :
+  ∀ (σ : ↥(ValuationSubring.decompositionSubgroup ℚ P)),
+    ∃ a, (∀ (μ : AlgebraicClosure ℚ), μ ^ p = 1 → ↑σ μ = μ ^ a) ∧ χ σ = ↑a
+b₀ : Module.Basis (Fin 2) (ZMod p) (GaloisRepAdic.ofResidualGaloisRep ρ₀).V
+hstab :
+  ∀ σ ∈ ValuationSubring.decompositionSubgroup ℚ P,
+    ∀ v ∈ ZMod p ∙ b₀ 0, ((GaloisRepAdic.ofResidualGaloisRep ρ₀).ρ σ) v ∈ ZMod p ∙ b₀ 0
+hinert :
+  ∀ σ ∈ ValuationSubring.inertiaSubgroupIn ℚ P,
+    ∀ (v : (GaloisRepAdic.ofResidualGaloisRep ρ₀).V), ((GaloisRepAdic.ofResidualGaloisRep ρ₀).ρ σ) v - v ∈ ZMod p ∙ b₀ 0
+this : Algebra (ZMod p) k := ι.toAlgebra
+N : Gal(AlgebraicClosure ℚ/ℚ) → Matrix (Fin 2) (Fin 2) (ZMod p) :=
+  fun σ => (LinearMap.toMatrix b₀ b₀) ((GaloisRepAdic.ofResidualGaloisRep ρ₀).ρ σ)
+hNdef : N = fun σ => (LinearMap.toMatrix b₀ b₀) ((GaloisRepAdic.ofResidualGaloisRep ρ₀).ρ σ)
+b₂ : Module.Basis (Fin 2) k (ResidualGaloisRep.baseChangeAlong ι ρ₀).V := Algebra.TensorProduct.basis k b₀
+hρ' :
+  ∀ (σ : Gal(AlgebraicClosure ℚ/ℚ)),
+    (ResidualGaloisRep.baseChangeAlong ι ρ₀).ρ σ = LinearMap.baseChange k ((GaloisRepAdic.ofResidualGaloisRep ρ₀).ρ σ)
+hmat :
+  ∀ (σ : Gal(AlgebraicClosure ℚ/ℚ)),
+    (LinearMap.toMatrix b₂ b₂) ((ResidualGaloisRep.baseChangeAlong ι ρ₀).ρ σ) = (N σ).map ⇑ι
+hconj : ∀ (σ : Gal(AlgebraicClosure ℚ/ℚ)), b₂.toMatrix ⇑b * ↑(ρ σ) * b.toMatrix ⇑b₂ = (N σ).map ⇑ι
+g : GL (Fin 2) k := { val := b₂.toMatrix ⇑b, inv := b.toMatrix ⇑b₂, val_inv := ⋯, inv_val := ⋯ }
+hg :
+  ∀ (τ : ↥(ValuationSubring.decompositionSubgroup ℚ P)),
+    ↑(g * (ρ.comp (ValuationSubring.decompositionSubgroup ℚ P).subtype) τ * g⁻¹) = (N ↑τ).map ⇑ι
+hN10 : ∀ σ ∈ ValuationSubring.decompositionSubgroup ℚ P, N σ 1 0 = 0
+hN11 : ∀ σ ∈ ValuationSubring.inertiaSubgroupIn ℚ P, N σ 1 1 = 1
+hNdet : ∀ (σ : Gal(AlgebraicClosure ℚ/ℚ)), (N σ).det = LinearMap.det ((GaloisRepAdic.ofResidualGaloisRep ρ₀).ρ σ)
+hdetχ :
+  ∀ (τ : ↥(ValuationSubring.decompositionSubgroup ℚ P)),
+    ι (LinearMap.det ((GaloisRepAdic.ofResidualGaloisRep ρ₀).ρ ↑τ)) = χ τ
+h5 : ι (N frob 0 0 * N frob 1 1 - N frob 0 1 * 0) = χ ⟨frob, ⋯⟩
+⊢ ι (N frob 0 0 * N frob 1 1) = ι (N frob 0 0 * N frob 1 1 - 0)
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_WeierstrassCurve_exists_deligneOrdinaryShape_residualGaloisRepOf_of_ordinary_or_multiplicative.lean:117:25: warning: This simp argument is unused:
+  sub_zero
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [mul_zero, Nat.add_one_sub_one, pow_one, mul_one]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`

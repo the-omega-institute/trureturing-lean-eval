@@ -1,0 +1,56 @@
+{
+  "sha256": "c4d3ebfede7fb36ba31693af62747988c353993670dbf8166e5dd1430c0bd492",
+  "exit": 0,
+  "empty_output_retry_done": false,
+  "source_sha256_after": "c4d3ebfede7fb36ba31693af62747988c353993670dbf8166e5dd1430c0bd492",
+  "source_unchanged": true,
+  "olean_sha256": "3398fb94fd6212144e581b8b9dd6761e7537337df06692eef78b4e9f558ee8e3",
+  "seconds": 156.52075504099776,
+  "pid": 78283,
+  "command": [
+    "/Users/macstudio/.local/omega-shims/lean",
+    "-j1",
+    "--trust=0",
+    "-Ddebug.skipKernelTC=false",
+    "-R",
+    "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src",
+    "-o",
+    "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-build/lib/lean/Submission/Supplier/Theorems/Thm_WeierstrassCurve_exists_deligneOrdinaryShape_residualGaloisRepOf_of_ordinary_or_multiplicative.olean",
+    "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/Theorems/Thm_WeierstrassCurve_exists_deligneOrdinaryShape_residualGaloisRepOf_of_ordinary_or_multiplicative.lean"
+  ],
+  "make_wrapper_pid": 35761,
+  "make_exit": 0,
+  "make_entry_failed": false,
+  "cache_binding_valid": true,
+  "canonical_make_running_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/2c99d591593163cfa37b9afc-1791913249740209000.make-running.json",
+  "canonical_make_terminal_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/2c99d591593163cfa37b9afc-1791913249740209000.make-terminal.json",
+  "kernel_terminal_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/2c99d591593163cfa37b9afc-1791913249740209000.kernel/result.json",
+  "direct_dependencies": [
+    {
+      "module": "Submission.Supplier.Definitions.Def_GaloisRep_Residual",
+      "source_sha256": "acaab9dd928d013c9340e77676443b27f1ffc090abea3f139482b8fd2f8e8ff5",
+      "object_sha256": "429ac7b7b2b45f4aee7f1d99d97669e2e968c350566949b758046d25d399fcab",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Definitions.Def_GaloisRep_DeligneOrdinaryShape",
+      "source_sha256": "787a921e223503b850fcb40cfb1a41bef288521531f41f4980ae4170e318df32",
+      "object_sha256": "ce86ede7be7f4320ba56b381288ac3fa5f858c46e01e787f14fb7fc6029d2027",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.P2M.Util",
+      "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+      "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.P2M.Sol.S_WeierstrassCurve_exists_deligneOrdinaryShape_residualGaloisRepOf_of_ordinary_or_multiplicative",
+      "source_sha256": "f5d82be027305da4abfb5c44d340800b2772b602cea142c794cae8a304b6dd25",
+      "object_sha256": "4c905af418d8fed827ac6f3eb1e2a4780db0e7278d6bd2ed2560f734be7ee7ad",
+      "receipt_reused": true
+    }
+  ],
+  "stdout": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/2c99d591593163cfa37b9afc-1791913249740209000.kernel/stdout.log",
+  "stderr": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/2c99d591593163cfa37b9afc-1791913249740209000.kernel/stderr.log"
+}

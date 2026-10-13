@@ -1,0 +1,56 @@
+{
+  "sha256": "20e2c2696e0c21e3523fadb61285d722963e5644b83577f17a09e4048c2f9460",
+  "exit": 1,
+  "empty_output_retry_done": false,
+  "source_sha256_after": "20e2c2696e0c21e3523fadb61285d722963e5644b83577f17a09e4048c2f9460",
+  "source_unchanged": true,
+  "olean_sha256": null,
+  "seconds": 90.43324929099981,
+  "pid": 57937,
+  "command": [
+    "/Users/macstudio/.local/omega-shims/lean",
+    "-j1",
+    "--trust=0",
+    "-Ddebug.skipKernelTC=false",
+    "-R",
+    "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src",
+    "-o",
+    "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-build/lib/lean/Submission/Supplier/P2M/Sol/S_WeierstrassCurve_exists_deligneOrdinaryShape_residualGaloisRepOf_of_ordinary_or_multiplicative.olean",
+    "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_WeierstrassCurve_exists_deligneOrdinaryShape_residualGaloisRepOf_of_ordinary_or_multiplicative.lean"
+  ],
+  "make_wrapper_pid": 38976,
+  "make_exit": 2,
+  "make_entry_failed": false,
+  "cache_binding_valid": true,
+  "canonical_make_running_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/938770d88eafc490a6244ae9-1791912789218890000.make-running.json",
+  "canonical_make_terminal_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/938770d88eafc490a6244ae9-1791912789218890000.make-terminal.json",
+  "kernel_terminal_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/938770d88eafc490a6244ae9-1791912789218890000.kernel/result.json",
+  "direct_dependencies": [
+    {
+      "module": "Submission.Supplier.Theorems.Thm_WeierstrassCurve_ofResidualGaloisRep_residualGaloisRepOf_isOrdinaryAt",
+      "source_sha256": "9c4c92d1097153063168dc0b2633613d4e9daf3539934d7576392762ac327e1b",
+      "object_sha256": "6eda45654b1a028c73c52dea250fc270a922bbf5263237d7410a33065f0e9473",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Theorems.Thm_WeierstrassCurve_ofResidualGaloisRep_residualGaloisRepOf_detIsCyclotomic",
+      "source_sha256": "54447806e3d6081a6c03e8726cd4ab452ca76f6847afb9da2a3d844cd6d27674",
+      "object_sha256": "cdc4c25895ca878fe511b1ec8edcfa1558d073592dc5cbf12a1a6c122359a0b0",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Definitions.Def_GaloisRep_DeligneOrdinaryShape",
+      "source_sha256": "787a921e223503b850fcb40cfb1a41bef288521531f41f4980ae4170e318df32",
+      "object_sha256": "ce86ede7be7f4320ba56b381288ac3fa5f858c46e01e787f14fb7fc6029d2027",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.P2M.Util",
+      "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+      "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+      "receipt_reused": true
+    }
+  ],
+  "stdout": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/938770d88eafc490a6244ae9-1791912789218890000.kernel/stdout.log",
+  "stderr": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/938770d88eafc490a6244ae9-1791912789218890000.kernel/stderr.log"
+}

@@ -1,0 +1,62 @@
+{
+  "at": "2026-10-13T17:43:51.523400+00:00",
+  "checks": {
+    "source": {
+      "module": "Submission.Supplier.P2M.Sol.S_WeierstrassCurve_exists_deligneOrdinaryShape_residualGaloisRepOf_of_ordinary_or_multiplicative",
+      "make_exit": 0,
+      "kernel_exit": 0,
+      "kernel_seconds": 70.49912537499999,
+      "compiler_warnings": 0,
+      "final_standard3_audit_passed": true,
+      "printed_final_axiom_closures": [
+        {
+          "declaration": "P2MW.S_WeierstrassCurve_exists_deligneOrdinaryShape_residualGaloisRepOf_of_ordinary_or_multiplicative.solution",
+          "recursive_axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "original_canonical_lines": 145,
+      "repaired_canonical_lines": 148,
+      "original_final_statement_and_full_module_proof_preserved": true
+    },
+    "card": {
+      "module": "Submission.Supplier.Theorems.Thm_WeierstrassCurve_exists_deligneOrdinaryShape_residualGaloisRepOf_of_ordinary_or_multiplicative",
+      "make_exit": 0,
+      "kernel_exit": 0,
+      "kernel_seconds": 81.495867042,
+      "compiler_warnings": 0,
+      "final_standard3_audit_passed": true,
+      "printed_final_axiom_closures": [
+        {
+          "declaration": "WeierstrassCurve.exists_deligneOrdinaryShape_residualGaloisRepOf_of_ordinary_or_multiplicative",
+          "recursive_axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "original_canonical_lines": 38,
+      "repaired_canonical_lines": 40,
+      "original_final_statement_and_full_module_proof_preserved": true
+    }
+  },
+  "proof_summary": "Preserve the complete 145-line supplier source and 38-line theorem card for every odd prime p, arbitrary finite coefficient field k and embedding ZMod p to k, every integral semistable W with nonzero discriminant and the original ordinary-or-multiplicative condition, exact torsion cardinality and finite Galois level, every matrix basis and representation, valuation and Frobenius, and every original cyclotomic character. Retain the exact Deligne ordinary shape with weights 2 and 1, full stable-line/inertia arguments, tensor-product basis transport, GL2 conjugation, cyclotomic determinant and all Frobenius entries. Select (ZMod.commRing p).toAddCommGroup locally to keep scalar determinant arithmetic canonical, fix the local Algebra declaration and append recursive axiom queries. All original statements, hypotheses and proof branches remain. Require actual current source/card canonical make/kernel zero, zero warnings, exactly STANDARD3 and matching dependency receipts.",
+  "original_statements_hypotheses_and_full_proofs_preserved": true,
+  "repaired_source_card_pair_actual_make_kernel_passed": true,
+  "source_card_actual_final_standard3": true,
+  "no_linter_suppression_added": true,
+  "baseline_source_actual_exit": 1,
+  "supplier": "anthropics/fermats-last-theorem",
+  "supplier_commit": "6e837e75355538c7f80bab5b956861e86c4eacc2",
+  "selected_problem": "fermat_last_theorem",
+  "full_original_complete": false,
+  "official_new_solve_credit": 0,
+  "full_root_import_replay_and_axiom_audit_pending": true,
+  "max_active_flt_jobs": 1,
+  "max_active_flt_compilers": 1,
+  "lean_threads": 1
+}
