@@ -1,0 +1,37 @@
+[
+  [
+    "    convert hcomp using 1\n    rfl\n    rfl",
+    "    convert hcomp using 1\n    rfl",
+    1
+  ],
+  [
+    "MonoidHom.coe_coe",
+    "MonoidHom.coe_ofClass",
+    2
+  ],
+  [
+    "if_neg hij",
+    "ite_eq_right hij",
+    1
+  ],
+  [
+    "Set.mem_setOf_eq",
+    "Set.mem_ofPred_eq",
+    2
+  ],
+  [
+    "haveI : Nontrivial (n → k) := Function.nontrivial",
+    "have : Nontrivial (n → k) := Function.nontrivial",
+    2
+  ],
+  [
+    "haveI : Finite K := Finite.of_injective _ (algebraMap K L).injective",
+    "have : Finite K := Finite.of_injective _ (algebraMap K L).injective",
+    1
+  ],
+  [
+    "haveI : Fintype K := Fintype.ofFinite K",
+    "have : Fintype K := Fintype.ofFinite K",
+    1
+  ]
+]
