@@ -1,0 +1,168 @@
+{
+  "sha256": "3c392a148f882845289fbf36d27d4bae1512ade4feeff2001aad101985e8cd66",
+  "exit": 0,
+  "empty_output_retry_done": false,
+  "source_sha256_after": "3c392a148f882845289fbf36d27d4bae1512ade4feeff2001aad101985e8cd66",
+  "source_unchanged": true,
+  "olean_sha256": "8b51bce5d5b3c10ec4e2ac8c28b457ab1bc1e06f5f4049e08d9d01d3bd78ff14",
+  "seconds": 63.160546417,
+  "pid": 77943,
+  "command": [
+    "/Users/macstudio/.local/omega-shims/lean",
+    "-j1",
+    "--trust=0",
+    "-Ddebug.skipKernelTC=false",
+    "-R",
+    "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src",
+    "-o",
+    "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-build/lib/lean/Submission/Supplier/P2M/Sol/S_ModularCurve_mem_regularDifferentialsBar_of_coeffMap_diffQExpBar_eq_qExpansion.olean",
+    "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_ModularCurve_mem_regularDifferentialsBar_of_coeffMap_diffQExpBar_eq_qExpansion.lean"
+  ],
+  "make_wrapper_pid": null,
+  "make_exit": 0,
+  "make_entry_failed": false,
+  "cache_binding_valid": true,
+  "canonical_make_running_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/official-layout/terminal-proof-repairs/20261013-regular-differential-membership-attribute-repair/source-r1.make-running.json",
+  "canonical_make_terminal_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/official-layout/terminal-proof-repairs/20261013-regular-differential-membership-attribute-repair/source-r1.make-terminal.json",
+  "kernel_terminal_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/official-layout/terminal-proof-repairs/20261013-regular-differential-membership-attribute-repair/source-r1.kernel/result.json",
+  "direct_dependencies": [
+    {
+      "module": "Submission.Supplier.Definitions.Def_ModularCurve_HeckeDifferential",
+      "source_sha256": "a34f18b5a49eaf16d7107c3652eb2e82caad584697ab4b0369c75f69b37c5224",
+      "object_sha256": "024a5ba0ba490f347e0ecc878fe44526edd7fc8821592ee7a7009fed434a14b6",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Definitions.Def_FLTPrelim_Modularity",
+      "source_sha256": "cd80952a6230452e6aaa5edf715476e07b302f0997d2402dfcf314c5c07d2219",
+      "object_sha256": "f469fdbf80c45b247e2d1cb30e2d93a46b3bc393fe5f91f8fa89e627ae837b77",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Definitions.Def_AlgebraicCurve_Differentials",
+      "source_sha256": "540bd569a395a460d435f1e9a8aee3a89376d6dc094ace7fca6a6ccc35229907",
+      "object_sha256": "23bbd6ba97d4e9ff7b6a64950b1d65169d3e366c57e43ee8931ddca959f9c4d2",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Definitions.Def_AlgebraicCurve_DivisorClassGroup",
+      "source_sha256": "8fc70ab3a82322ac3cb5fe26687036d7b9780a29474e6073cac2d6e349ec5024",
+      "object_sha256": "1c9faf1a7d5f522313fe11f4af5ba43d1cecaea92684949b3029e60ac2c8179d",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Definitions.Def_ModularCurve_QExpansionDiff",
+      "source_sha256": "fb602ef00ccf8bf629c85cd87cf78710d02863dbd467a322dbc3ad481b32bc6e",
+      "object_sha256": "17c7e53e2be743bef28d4f0283f0be9b3dbef93ffd15c51562ff68bdc3e3a982",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Definitions.Def_ModularCurve_QAdicPlace",
+      "source_sha256": "6b6fa2244e329c8ed4fd1a53a4b2a891d510ff9713f017e0477f76dea6d3a6f6",
+      "object_sha256": "e099f9b78a1d30a7bee0b898138fb008365c7606ef66fb091eddc6cb751db2da",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Definitions.Def_ModularCurve_ArithmeticGalois",
+      "source_sha256": "cade4d61ac77f0764e6b3a4d00c6c861facec5f0ef78ea7020e88f67c52b5142",
+      "object_sha256": "c4a968ad27aaa51a49b69e88bed485c95d91052f1b180c3d9c13d3d5bb75d405",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Theorems.Thm_AlgebraicCurve_regularDiffs_eq_regularDifferentials",
+      "source_sha256": "cfe2ca93bc05bc6df62cf5964203c4c28cdbf218c41661762e12a8133b4b66d7",
+      "object_sha256": "3eb9ba47aa5ef1106abd697e9fb7abd55a0b43f729019c698ead4821a8e4f9b6",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Theorems.Thm_KaehlerDifferential_exists_unique_smul_D_of_transcendental",
+      "source_sha256": "4ff8d0f45ab865d4968b3259c9c2e4e4455a2fcf29a63b45e8e55f3219ec957f",
+      "object_sha256": "fd9c7aa95cce2bdf952ffe8afa5b6c69b3e6680a266108789a60b18590829e03",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Theorems.Thm_AlgebraicCurve_Place_ordDiff_smul_D_nonneg_of_ord_pow_six_mul_pow_four_mul_sub_1728_pow_three_nonneg",
+      "source_sha256": "62cf6392ed15c8167b1bcf3b3771a71a8a6bb1ac497448f8bf2b49ee2b7b88e1",
+      "object_sha256": "283563cfb90ae16579bd128b865c985e38ddd0c74b302f534ee5a9fe954e0fd7",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Theorems.Thm_AlgebraicCurve_Place_ord_nonneg_of_isIntegral_adjoin_of_ord_nonneg",
+      "source_sha256": "571edd12ae52fc3b1f3825fdd8e092d0f5da764cd1cae03dbd9cdc01a8e4ad45",
+      "object_sha256": "7968f0cace9bef33edd62ce2b88d9e51f44c10f67b51885e60dd29e4fa98ff66",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Theorems.Thm_ModularCurve_ordDiff_smul_D_coeffEmb_jq_nonneg_iff",
+      "source_sha256": "38b30eadadd7f445720cba5103a1c87984796b030369d41b94f244e3bd6fad67",
+      "object_sha256": "45dc95a9ec33c69510ea2f204988e3001ce7fcd40eb5c957691339e4f52bd4c5",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Theorems.Thm_AlgebraicCurve_isIntegral_adjoin_intermediateField_mk",
+      "source_sha256": "26b6a4e292e50676720e7f419c4d543d1d48562d16d2cfeb87cff719eb8eedc7",
+      "object_sha256": "a92ecad69b4dc17f06f375de41d9af96ca6d668fa55fe1ba7f32a97eac9ba04c",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Theorems.Thm_ModularCurve_finiteDimensional_adjoin_coeffEmb_jq_full",
+      "source_sha256": "12b62afec5220fef10a2075be89eb31d6c81518f801238e749d6ee2afba4c144",
+      "object_sha256": "cbf3f1846dff76e17b0f1403741443e91fcc4fd247dd9a03f1574961336a9006",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Theorems.Thm_ModularCurve_transcendental_coeffEmb_jq",
+      "source_sha256": "2935177854b05bf34e09ad328218c42b1835f6824f23ddb54b683b48ac51e299",
+      "object_sha256": "8557f2787ecb6ca0c2458daff4a4d3134879a48ead72f24cd2cc921b6724291c",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Theorems.Thm_ModularCurve_essFiniteType_modularFunctionFieldBar",
+      "source_sha256": "4f4b648f3b85e254e764e332426dbff02a74f169ff5d0f37e02cfe83837ca30e",
+      "object_sha256": "4bd3af16a17261fba9876a69843519b67df1b722445c3b8c4b104ba76f9d82d1",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Theorems.Thm_ModularCurve_isCurveOver_modularFunctionFieldBar",
+      "source_sha256": "5f4e55e87ab324cdad23358138b375bf439ff13182e2ff800af3b3e7c18595a1",
+      "object_sha256": "5f18359c025e5b72eb9f05acdbf0cb46b98c40669e3e36b3c939f71d2a6afe28",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Theorems.Thm_ModularCurve_isSeparable_adjoin_coeffEmb_jq_full",
+      "source_sha256": "cb0da0d73b87f73cefe970cfcc785d10e9563a0a7387dc44cdb780ee5b44b8e6",
+      "object_sha256": "efaed12d00de5b4a08250ac1163b1a8d0d47b4b2ad5d1e3d8bbfb5999293f06c",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Theorems.Thm_ModularCurve_isIntegral_adjoin_of_isIntegral_adjoin_coeffMap",
+      "source_sha256": "95e91ac02d43599eb2f42139022b6dd6edeb65f126cb6e90d70e968c95552611",
+      "object_sha256": "41cbafebd53074e02dae9e6aa45fe5fcfe0437de847c6d919c5d15f7f97e69fd",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Theorems.Thm_ModularCurve_one_sub_ord_le_ord_of_coeffMap_mul_thetaL_eq_qExpansion",
+      "source_sha256": "91774b2955fb362ca8169fc4eb4c727fe2bec9e81227439e7001cf81abfc62c2",
+      "object_sha256": "1f779b0098b17e00c7b25d75eecac12e870bb733fe57f374e65650e52cd4b746",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Theorems.Thm_ModularCurve_isIntegral_adjoin_coeffEmb_jq_of_mul_thetaL_eq_qExpansion",
+      "source_sha256": "d75bd6782f390158efc2b25d863fccfafe1a88c0afa424b67fe9afe3227ee9cf",
+      "object_sha256": "a63f865d88282bf2f892c2e2b887c3b7c0779255a74299e6e7d839dc43436d1a",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.P2M.Util",
+      "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+      "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+      "receipt_reused": true
+    }
+  ],
+  "stdout": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/official-layout/terminal-proof-repairs/20261013-regular-differential-membership-attribute-repair/source-r1.kernel/stdout.log",
+  "stderr": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/official-layout/terminal-proof-repairs/20261013-regular-differential-membership-attribute-repair/source-r1.kernel/stderr.log",
+  "selected_source_module_kernel_verified": true,
+  "final_standard3_actual_printed": true,
+  "retry_pending": false,
+  "full_original_proof_verified": false
+}

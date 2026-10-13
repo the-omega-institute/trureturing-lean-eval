@@ -1,0 +1,96 @@
+{
+  "at": "2026-10-13T03:28:31.740279+00:00",
+  "repaired_source_card_pair_actual_make_kernel_passed": true,
+  "original_final_statements_preserved": true,
+  "full_original_module_proof_retained": true,
+  "no_linter_suppression_added": true,
+  "checks": {
+    "source": {
+      "module": "Submission.Supplier.P2M.Sol.S_ModularCurve_mem_regularDifferentialsBar_of_coeffMap_diffQExpBar_eq_qExpansion",
+      "make_exit": 0,
+      "kernel_exit": 0,
+      "kernel_seconds": 63.160546417,
+      "compiler_warnings": 0,
+      "printed_final_axiom_closures": [
+        {
+          "declaration": "P2MW.S_ModularCurve_mem_regularDifferentialsBar_of_coeffMap_diffQExpBar_eq_qExpansion.solution",
+          "recursive_axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "final_standard3_audit_passed": true,
+      "original_canonical_lines": 118,
+      "repaired_canonical_lines": 120,
+      "original_final_statement_preserved": true
+    },
+    "card": {
+      "module": "Submission.Supplier.Theorems.Thm_ModularCurve_mem_regularDifferentialsBar_of_coeffMap_diffQExpBar_eq_qExpansion",
+      "make_exit": 0,
+      "kernel_exit": 0,
+      "kernel_seconds": 81.916915458,
+      "compiler_warnings": 0,
+      "printed_final_axiom_closures": [
+        {
+          "declaration": "ModularCurve.mem_regularDifferentialsBar_of_coeffMap_diffQExpBar_eq_qExpansion",
+          "recursive_axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "final_standard3_audit_passed": true,
+      "original_canonical_lines": 18,
+      "repaired_canonical_lines": 20,
+      "original_final_statement_preserved": true
+    }
+  },
+  "repair": "Preserve the existing watcher removals. Remove all seven unrelated numerical eisensteinNumerator blacklist entries and the eta constant coefficient entry from source/card attributes. Actual prior checks rejected nineteen, seventeen, eleven, five and the eta name; the other three are unrelated header entries, not independently established missing names. Change only five local proposition haveI bindings to have. Print final source and card axiom closures.",
+  "prior_actual_failed_checks": [
+    {
+      "configuration": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/13a514c0af1d454d70981e72-1791861020504633000.configuration.json",
+      "exit": 1,
+      "unknown_names": [
+        "ModularCurve.eisensteinNumerator_nineteen",
+        "ModularCurve.constantCoeff_dedekindEtaUnitQ"
+      ],
+      "warnings": 5
+    },
+    {
+      "configuration": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/13a514c0af1d454d70981e72-1791861060817094000.configuration.json",
+      "exit": 1,
+      "unknown_names": [
+        "ModularCurve.eisensteinNumerator_seventeen"
+      ],
+      "warnings": 5
+    },
+    {
+      "configuration": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/13a514c0af1d454d70981e72-1791861165080758000.configuration.json",
+      "exit": 1,
+      "unknown_names": [
+        "ModularCurve.eisensteinNumerator_eleven"
+      ],
+      "warnings": 5
+    },
+    {
+      "configuration": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/13a514c0af1d454d70981e72-1791861254750661000.configuration.json",
+      "exit": 1,
+      "unknown_names": [
+        "ModularCurve.eisensteinNumerator_five"
+      ],
+      "warnings": 5
+    }
+  ],
+  "proof_summary": "For the original nonzero natural level N, embedding from AlgebraicClosure Q to C, weight-two Gamma0 N cusp form f and arbitrary Kaehler differential omega, preserve the original coefficient-mapped diffQExpBar equality and conclusion omega is in regularDifferentialsBar N. Retain decomposition as y times D(j), the zero case, the negative j-valuation branch using the original order bound and the finite branch using the original integrality/valuation lemma. No hypotheses or conclusions change.",
+  "supplier": "anthropics/fermats-last-theorem",
+  "supplier_commit": "6e837e75355538c7f80bab5b956861e86c4eacc2",
+  "full_original_complete": false,
+  "official_new_solve_credit": 0,
+  "complete_import_replay_and_full_root_audits_pending": true,
+  "max_active_flt_jobs": 1,
+  "max_active_flt_compilers": 1,
+  "lean_threads": 1
+}
