@@ -1,0 +1,150 @@
+{
+  "at": "2026-10-13T09:46:54.497159+00:00",
+  "original_source_card_pairs_actual_make_kernel_passed": true,
+  "canonical_pairs_byte_identical_to_supplier": true,
+  "no_source_edits": true,
+  "no_linter_suppression_added": true,
+  "no_redundant_recompilation": true,
+  "original_statements_hypotheses_and_proofs_preserved": true,
+  "checks": {
+    "Rep_finiteDimensional_coind_and_finrank_coind_eq_index_mul": {
+      "proof_summary": "For arbitrary field k and group G in the original universe, any finite-index subgroup S, and any finite-dimensional k-representation N of S, retain finite-dimensionality of Rep.coind S.subtype N and the exact finrank formula S.index * Module.finrank k N. Preserve the full right-coset representative linear equivalence, both inverse proofs, and quotient-index cardinality conversion. No finite-G, normal-S, positive-rank or characteristic restriction is added.",
+      "checks": {
+        "source": {
+          "module": "Submission.Supplier.P2M.Sol.S_Rep_finiteDimensional_coind_and_finrank_coind_eq_index_mul",
+          "canonical_lines": 70,
+          "canonical_byte_identical_to_supplier": true,
+          "make_exit": 0,
+          "kernel_exit": 0,
+          "kernel_seconds": 6.30043,
+          "compiler_warnings": 3,
+          "source_unchanged_during_check": true,
+          "printed_final_axiom_closures": [],
+          "separate_final_axiom_audit_pending": true,
+          "direct_dependencies": [
+            {
+              "module": "Submission.Supplier.P2M.Util",
+              "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+              "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+              "receipt_reused": true
+            }
+          ]
+        },
+        "card": {
+          "module": "Submission.Supplier.Theorems.Thm_Rep_finiteDimensional_coind_and_finrank_coind_eq_index_mul",
+          "canonical_lines": 13,
+          "canonical_byte_identical_to_supplier": true,
+          "make_exit": 0,
+          "kernel_exit": 0,
+          "kernel_seconds": 20.859108499999998,
+          "compiler_warnings": 0,
+          "source_unchanged_during_check": true,
+          "printed_final_axiom_closures": [],
+          "separate_final_axiom_audit_pending": true,
+          "direct_dependencies": [
+            {
+              "module": "Submission.Supplier.P2M.Util",
+              "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+              "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.P2M.Sol.S_Rep_finiteDimensional_coind_and_finrank_coind_eq_index_mul",
+              "source_sha256": "c7465accbd117ff2c8685dad62954cbfb37cd229fec6c5b7308c1dfa87ab9c85",
+              "object_sha256": "532de841aea189a98c1f82ccb53f2d0f34f0ba6a495c066025d9384a68032ae6",
+              "receipt_reused": true
+            }
+          ]
+        }
+      }
+    },
+    "Rep_finrank_groupCohomology_zero_ofMulAction": {
+      "proof_summary": "For an arbitrary group G and any finite G-set X, retain that the integer-module finrank of degree-zero group cohomology of Rep.ofMulActionFinsupp Z G X equals Nat.card of the orbit quotient. Preserve the complete invariant-function equivalence with integer functions on the orbit quotient, both inverse proofs, and transport through H0Iso. No finite-group, transitivity, freeness or nonempty-set hypothesis is added.",
+      "checks": {
+        "source": {
+          "module": "Submission.Supplier.P2M.Sol.S_Rep_finrank_groupCohomology_zero_ofMulAction",
+          "canonical_lines": 51,
+          "canonical_byte_identical_to_supplier": true,
+          "make_exit": 0,
+          "kernel_exit": 0,
+          "kernel_seconds": 51.010435125,
+          "compiler_warnings": 1,
+          "source_unchanged_during_check": true,
+          "printed_final_axiom_closures": [],
+          "separate_final_axiom_audit_pending": true,
+          "direct_dependencies": [
+            {
+              "module": "Submission.Supplier.P2M.Util",
+              "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+              "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.Definitions.Def_Compat_Mathlib430",
+              "source_sha256": "a58d9381cd9404d0b839ea4ba3af943d86bd555c4d505cd8a7d997f15521edff",
+              "object_sha256": "722c1cb719e738a8ad2bdeee80f1c24f636bdcea713cdf9510747b59f11cd71a",
+              "receipt_reused": true
+            }
+          ]
+        },
+        "card": {
+          "module": "Submission.Supplier.Theorems.Thm_Rep_finrank_groupCohomology_zero_ofMulAction",
+          "canonical_lines": 9,
+          "canonical_byte_identical_to_supplier": true,
+          "make_exit": 0,
+          "kernel_exit": 0,
+          "kernel_seconds": 75.84641270799999,
+          "compiler_warnings": 0,
+          "source_unchanged_during_check": true,
+          "printed_final_axiom_closures": [],
+          "separate_final_axiom_audit_pending": true,
+          "direct_dependencies": [
+            {
+              "module": "Submission.Supplier.P2M.Util",
+              "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+              "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.P2M.Sol.S_Rep_finrank_groupCohomology_zero_ofMulAction",
+              "source_sha256": "8f983f6bfd8f26fdd7ccc481aa6bf2f0256733e05aec35084d3fce2b97c0cba0",
+              "object_sha256": "48cfe87108495e6efa138e878711ed3e0553799b60eec60a70f0e08fc2cc5fc9",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.Definitions.Def_Compat_Mathlib430",
+              "source_sha256": "a58d9381cd9404d0b839ea4ba3af943d86bd555c4d505cd8a7d997f15521edff",
+              "object_sha256": "722c1cb719e738a8ad2bdeee80f1c24f636bdcea713cdf9510747b59f11cd71a",
+              "receipt_reused": true
+            }
+          ]
+        }
+      }
+    }
+  },
+  "supplier": "anthropics/fermats-last-theorem",
+  "supplier_commit": "6e837e75355538c7f80bab5b956861e86c4eacc2",
+  "full_original_complete": false,
+  "official_new_solve_credit": 0,
+  "complete_import_replay_and_recursive_axiom_audits_pending": true,
+  "selected_problem": "fermat_last_theorem",
+  "max_active_flt_jobs": 1,
+  "max_active_flt_compilers": 1,
+  "lean_threads": 1,
+  "graph_snapshot": {
+    "compiled": 7930,
+    "failed": 0,
+    "ready": 4371,
+    "root_compiled": false,
+    "workers": 1,
+    "running": {
+      "Submission.Supplier.P2M.Sol.S_Rep_nonempty_invariants_coind_linearEquiv_invariants": {
+        "pid": 28606,
+        "make_wrapper_pid": 28606,
+        "phase": "canonical_make_queue",
+        "sha256": "861236d9d6adaec1c039e58312cfda4cde787b94fd2ae1d91519117631d5b40d",
+        "configuration": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/83b394582e279817462328be-1791884777799241000.configuration.json"
+      }
+    }
+  }
+}
