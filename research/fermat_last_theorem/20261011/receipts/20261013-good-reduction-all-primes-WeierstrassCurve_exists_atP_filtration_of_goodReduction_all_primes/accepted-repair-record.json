@@ -1,0 +1,62 @@
+{
+  "at": "2026-10-13T15:59:15.161000+00:00",
+  "checks": {
+    "source": {
+      "module": "Submission.Supplier.P2M.Sol.S_WeierstrassCurve_exists_atP_filtration_of_goodReduction_all_primes",
+      "make_exit": 0,
+      "kernel_exit": 0,
+      "kernel_seconds": 73.055013167,
+      "compiler_warnings": 0,
+      "final_standard3_audit_passed": true,
+      "printed_final_axiom_closures": [
+        {
+          "declaration": "P2MW.S_WeierstrassCurve_exists_atP_filtration_of_goodReduction_all_primes.solution",
+          "recursive_axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "original_canonical_lines": 582,
+      "repaired_canonical_lines": 584,
+      "original_final_statement_and_full_module_proof_preserved": true
+    },
+    "card": {
+      "module": "Submission.Supplier.Theorems.Thm_WeierstrassCurve_exists_atP_filtration_of_goodReduction_all_primes",
+      "make_exit": 0,
+      "kernel_exit": 0,
+      "kernel_seconds": 8.02508475,
+      "compiler_warnings": 0,
+      "final_standard3_audit_passed": true,
+      "printed_final_axiom_closures": [
+        {
+          "declaration": "WeierstrassCurve.exists_atP_filtration_of_goodReduction_all_primes",
+          "recursive_axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "original_canonical_lines": 27,
+      "repaired_canonical_lines": 29,
+      "original_final_statement_and_full_module_proof_preserved": true
+    }
+  },
+  "proof_summary": "Preserve the full 582-line all-primes supplier source and 27-line theorem card, arbitrary integral Weierstrass W, every prime p not dividing its discriminant, every valuation above p, the original affine p-torsion point with integral x-coordinate, and every natural m including zero. Retain exact filtration membership, cardinality p^m, decomposition-group stability and absorption of all inertia differences on p^m-torsion. Preserve the characteristic-two integral model, residue discriminant proof, unique nonzero two-torsion argument, reduction-map range and kernel cardinality estimate, the odd-prime determinant contradiction, and all torsion lifting/cyclicity/valuation arguments. Replace only the diagnosed unit-coercion rewrite with the existing exact Units.coe_neg_one theorem, fix twelve warning-directed proposition declarations, and append final queries. Require actual zero-warning source/card make/kernel exits zero, exact STANDARD3, and matching current source dependency.",
+  "original_statements_hypotheses_and_full_proofs_preserved": true,
+  "repaired_source_card_pair_actual_make_kernel_passed": true,
+  "source_card_actual_final_standard3": true,
+  "no_linter_suppression_added": true,
+  "baseline_source_actual_exit": 1,
+  "supplier": "anthropics/fermats-last-theorem",
+  "supplier_commit": "6e837e75355538c7f80bab5b956861e86c4eacc2",
+  "selected_problem": "fermat_last_theorem",
+  "full_original_complete": false,
+  "official_new_solve_credit": 0,
+  "full_root_import_replay_and_axiom_audit_pending": true,
+  "max_active_flt_jobs": 1,
+  "max_active_flt_compilers": 1,
+  "lean_threads": 1
+}
