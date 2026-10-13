@@ -1,0 +1,47 @@
+[
+  [
+    "\n  haveI : NeZero p := ⟨hp.out.ne_zero⟩\n",
+    "\n  have : NeZero p := ⟨hp.out.ne_zero⟩\n",
+    1
+  ],
+  [
+    "\n  haveI : Fact p.Prime := ⟨hp⟩\n",
+    "\n  have : Fact p.Prime := ⟨hp⟩\n",
+    2
+  ],
+  [
+    "\n    haveI : Nontrivial (Submodule.torsionBy ℤ (E.baseChange K).toAffine.Point p) :=\n",
+    "\n    have : Nontrivial (Submodule.torsionBy ℤ (E.baseChange K).toAffine.Point p) :=\n",
+    1
+  ],
+  [
+    "\n  haveI : Module.Finite (ZMod p) (Submodule.torsionBy ℤ (E.baseChange K).toAffine.Point p) :=\n",
+    "\n  have : Module.Finite (ZMod p) (Submodule.torsionBy ℤ (E.baseChange K).toAffine.Point p) :=\n",
+    1
+  ],
+  [
+    "  let brow : Submodule.torsionBy ℤ (W'⁄K).Point p →\n",
+    "  let : Module (ZMod p) (ZMod p) := Semiring.toModule\n  let brow : Submodule.torsionBy ℤ (W'⁄K).Point p →\n",
+    1
+  ],
+  [
+    "  let b : Submodule.torsionBy ℤ (W'⁄K).Point p →ₗ[ZMod p]\n",
+    "  let : AddCommGroup\n      (Submodule.torsionBy ℤ (W'⁄K).Point p →ₗ[ZMod p] ZMod p) :=\n    LinearMap.addCommGroup\n  let b : Submodule.torsionBy ℤ (W'⁄K).Point p →ₗ[ZMod p]\n",
+    1
+  ],
+  [
+    "    AddMonoidHom.toZModLinearMap p (AddMonoidHom.mk' (fun Q => dlog (B' P Q)) (bfun_add_right P))",
+    "    AddMonoidHom.toZModLinearMap (M := Submodule.torsionBy ℤ (W'⁄K).Point p) (M₁ := ZMod p) p\n      (AddMonoidHom.mk' (fun Q => dlog (B' P Q)) (bfun_add_right P))",
+    1
+  ],
+  [
+    "    LinearMap.addCommGroup\n  let b :",
+    "    LinearMap.addCommGroup\n  let : Module (ZMod p)\n      (Submodule.torsionBy ℤ (W'⁄K).Point p →ₗ[ZMod p] ZMod p) := LinearMap.module\n  let b :",
+    1
+  ],
+  [
+    "    AddMonoidHom.toZModLinearMap p\n      (AddMonoidHom.mk' brow",
+    "    AddMonoidHom.toZModLinearMap (M := Submodule.torsionBy ℤ (W'⁄K).Point p)\n      (M₁ := Submodule.torsionBy ℤ (W'⁄K).Point p →ₗ[ZMod p] ZMod p) p\n      (AddMonoidHom.mk' brow",
+    1
+  ]
+]

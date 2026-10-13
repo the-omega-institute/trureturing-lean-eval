@@ -1,0 +1,62 @@
+{
+  "at": "2026-10-13T17:38:34.296345+00:00",
+  "checks": {
+    "source": {
+      "module": "Submission.Supplier.P2M.Sol.S_WeierstrassCurve_det_galoisRepModuleEnd_frobenius_eq",
+      "make_exit": 0,
+      "kernel_exit": 0,
+      "kernel_seconds": 16.234591083,
+      "compiler_warnings": 0,
+      "final_standard3_audit_passed": true,
+      "printed_final_axiom_closures": [
+        {
+          "declaration": "P2MW.S_WeierstrassCurve_det_galoisRepModuleEnd_frobenius_eq.solution",
+          "recursive_axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "original_canonical_lines": 252,
+      "repaired_canonical_lines": 263,
+      "original_final_statement_and_full_module_proof_preserved": true
+    },
+    "card": {
+      "module": "Submission.Supplier.Theorems.Thm_WeierstrassCurve_det_galoisRepModuleEnd_frobenius_eq",
+      "make_exit": 0,
+      "kernel_exit": 0,
+      "kernel_seconds": 8.344180957999999,
+      "compiler_warnings": 0,
+      "final_standard3_audit_passed": true,
+      "printed_final_axiom_closures": [
+        {
+          "declaration": "WeierstrassCurve.det_galoisRepModuleEnd_frobenius_eq",
+          "recursive_axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "original_canonical_lines": 15,
+      "repaired_canonical_lines": 17,
+      "original_final_statement_and_full_module_proof_preserved": true
+    }
+  },
+  "proof_summary": "Preserve the complete 252-line supplier source and 15-line theorem card, arbitrary rational elliptic E, primes p and ell with ell different from p, arbitrary valuation above ell and Frobenius automorphism. Retain the exact residual determinant equality to ell in ZMod p, the full general alternating-pairing theorem with arbitrary R,S,K universes, primitive-root discrete logarithm, bilinear pairing, Galois twist and algebraically closed field construction. Retain both original additive-hom-to-linear-map conversions with explicit domain and codomain carriers. Select the canonical ZMod additive group locally using (ZMod.commRing p).toAddCommGroup, then make the existing scalar self-module and hom-space additive-group/module structures explicit using Semiring.toModule, LinearMap.addCommGroup and LinearMap.module, fix all warning-directed proposition declarations, and append final recursive axiom queries. Require actual source/card canonical make/kernel exits zero, zero warnings and exact STANDARD3; all original hypotheses and full proofs remain.",
+  "original_statements_hypotheses_and_full_proofs_preserved": true,
+  "repaired_source_card_pair_actual_make_kernel_passed": true,
+  "source_card_actual_final_standard3": true,
+  "no_linter_suppression_added": true,
+  "baseline_source_actual_exit": 1,
+  "supplier": "anthropics/fermats-last-theorem",
+  "supplier_commit": "6e837e75355538c7f80bab5b956861e86c4eacc2",
+  "selected_problem": "fermat_last_theorem",
+  "full_original_complete": false,
+  "official_new_solve_credit": 0,
+  "full_root_import_replay_and_axiom_audit_pending": true,
+  "max_active_flt_jobs": 1,
+  "max_active_flt_compilers": 1,
+  "lean_threads": 1
+}

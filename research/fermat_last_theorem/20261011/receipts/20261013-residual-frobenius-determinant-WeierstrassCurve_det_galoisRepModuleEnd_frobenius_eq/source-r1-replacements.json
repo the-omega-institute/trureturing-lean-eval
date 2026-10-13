@@ -1,0 +1,27 @@
+[
+  [
+    "    AddMonoidHom.toZModLinearMap p (AddMonoidHom.mk' (fun Q => dlog (B' P Q)) (bfun_add_right P))\n  let b : Submodule.torsionBy ℤ (W'⁄K).Point p →ₗ[ZMod p]\n      (Submodule.torsionBy ℤ (W'⁄K).Point p →ₗ[ZMod p] ZMod p) :=\n    AddMonoidHom.toZModLinearMap p\n      (AddMonoidHom.mk' brow (by\n        intro P P'\n        ext Q\n        show dlog (B' (P + P') Q) = dlog (B' P Q) + dlog (B' P' Q)\n        exact bfun_add_left P P' Q))",
+    "    let f : Submodule.torsionBy ℤ (W'⁄K).Point p →+ ZMod p :=\n      AddMonoidHom.mk' (fun Q => dlog (B' P Q)) (bfun_add_right P)\n    { f with\n      map_smul' := by\n        intro c Q\n        rw [← ZMod.intCast_zmod_cast c]\n        simp only [Int.cast_smul_eq_zsmul, map_zsmul] }\n  let b : Submodule.torsionBy ℤ (W'⁄K).Point p →ₗ[ZMod p]\n      (Submodule.torsionBy ℤ (W'⁄K).Point p →ₗ[ZMod p] ZMod p) :=\n    let f : Submodule.torsionBy ℤ (W'⁄K).Point p →+\n        (Submodule.torsionBy ℤ (W'⁄K).Point p →ₗ[ZMod p] ZMod p) :=\n      AddMonoidHom.mk' brow (by\n        intro P P'\n        ext Q\n        show dlog (B' (P + P') Q) = dlog (B' P Q) + dlog (B' P' Q)\n        exact bfun_add_left P P' Q)\n    { f with\n      map_smul' := by\n        intro c P\n        rw [← ZMod.intCast_zmod_cast c]\n        simp only [Int.cast_smul_eq_zsmul, map_zsmul] }",
+    1
+  ],
+  [
+    "\n  haveI : NeZero p := ⟨hp.out.ne_zero⟩\n",
+    "\n  have : NeZero p := ⟨hp.out.ne_zero⟩\n",
+    1
+  ],
+  [
+    "\n  haveI : Fact p.Prime := ⟨hp⟩\n",
+    "\n  have : Fact p.Prime := ⟨hp⟩\n",
+    2
+  ],
+  [
+    "\n    haveI : Nontrivial (Submodule.torsionBy ℤ (E.baseChange K).toAffine.Point p) :=\n",
+    "\n    have : Nontrivial (Submodule.torsionBy ℤ (E.baseChange K).toAffine.Point p) :=\n",
+    1
+  ],
+  [
+    "\n  haveI : Module.Finite (ZMod p) (Submodule.torsionBy ℤ (E.baseChange K).toAffine.Point p) :=\n",
+    "\n  have : Module.Finite (ZMod p) (Submodule.torsionBy ℤ (E.baseChange K).toAffine.Point p) :=\n",
+    1
+  ]
+]

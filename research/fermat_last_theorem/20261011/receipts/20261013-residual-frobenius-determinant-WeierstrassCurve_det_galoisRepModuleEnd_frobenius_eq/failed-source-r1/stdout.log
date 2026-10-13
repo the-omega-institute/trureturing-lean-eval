@@ -1,0 +1,127 @@
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_WeierstrassCurve_det_galoisRepModuleEnd_frobenius_eq.lean:146:19: error: unsolved goals
+R : Type r
+S : Type s
+K : Type v
+inst✝⁷ : CommRing R
+inst✝⁶ : CommRing S
+inst✝⁵ : Field K
+inst✝⁴ : DecidableEq K
+W' : Affine R
+inst✝³ : Algebra R S
+inst✝² : Algebra R K
+inst✝¹ : Algebra S K
+inst✝ : IsScalarTower R S K
+p : ℕ
+hp : Fact (Nat.Prime p)
+e : Module.Basis (Fin 2) (ZMod p) ↥(Submodule.torsionBy ℤ W'⟮K⟯ ↑p)
+B : ↥(Submodule.torsionBy ℤ W'⟮K⟯ ↑p) → ↥(Submodule.torsionBy ℤ W'⟮K⟯ ↑p) → Kˣ
+hB : IsWeilPairing S W' p B
+σ : K ≃ₐ[S] K
+q : ℕ
+hσ : ∀ (ζ : K), ζ ^ p = 1 → σ ζ = ζ ^ q
+this : NeZero p
+P₀ Q₀ : ↥(Submodule.torsionBy ℤ W'⟮K⟯ ↑p)
+ζ : Kˣ := B P₀ Q₀
+hζ_ne : ζ ≠ 1
+hζ_def : ζ = B P₀ Q₀
+hζ_pow : ζ ^ p = 1
+horder : orderOf ζ = p
+hζ_prim : IsPrimitiveRoot ζ p
+hmem' : ∀ (P Q : ↥(Submodule.torsionBy ℤ W'⟮K⟯ ↑p)), B P Q ∈ Subgroup.zpowers ζ
+dlog : ↥(Subgroup.zpowers ζ) → ZMod p := fun x => hζ_prim.zmodEquivZPowers.symm (Additive.ofMul x)
+hdlog_def : dlog = fun x => hζ_prim.zmodEquivZPowers.symm (Additive.ofMul x)
+dlog_mul : ∀ (x y : ↥(Subgroup.zpowers ζ)), dlog (x * y) = dlog x + dlog y
+dlog_one : dlog 1 = 0
+dlog_pow : ∀ (x : ↥(Subgroup.zpowers ζ)) (m : ℕ), dlog (x ^ m) = ↑m * dlog x
+dlog_inj : Function.Injective dlog
+B' : ↥(Submodule.torsionBy ℤ W'⟮K⟯ ↑p) → ↥(Submodule.torsionBy ℤ W'⟮K⟯ ↑p) → ↥(Subgroup.zpowers ζ) :=
+  fun P Q => ⟨B P Q, ⋯⟩
+hB'_def : B' = fun P Q => ⟨B P Q, ⋯⟩
+bfun_add_left : ∀ (P P' Q : ↥(Submodule.torsionBy ℤ W'⟮K⟯ ↑p)), dlog (B' (P + P') Q) = dlog (B' P Q) + dlog (B' P' Q)
+bfun_add_right : ∀ (P Q Q' : ↥(Submodule.torsionBy ℤ W'⟮K⟯ ↑p)), dlog (B' P (Q + Q')) = dlog (B' P Q) + dlog (B' P Q')
+P : ↥(Submodule.torsionBy ℤ W'⟮K⟯ ↑p)
+f : ↥(Submodule.torsionBy ℤ W'⟮K⟯ ↑p) →+ ZMod p := AddMonoidHom.mk' (fun Q => dlog (B' P Q)) ⋯
+c : ZMod p
+Q : ↥(Submodule.torsionBy ℤ W'⟮K⟯ ↑p)
+⊢ (↑f).toFun (c.cast • Q) = (RingHom.id (ZMod p)) ↑c.cast • (↑f).toFun Q
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_WeierstrassCurve_det_galoisRepModuleEnd_frobenius_eq.lean:154:6: error(lean.synthInstanceFailed): failed to synthesize instance of type class
+  AddGroup (↥(Submodule.torsionBy ℤ W'⟮K⟯ ↑p) →ₗ[ZMod p] ZMod p)
+
+Hint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_WeierstrassCurve_det_galoisRepModuleEnd_frobenius_eq.lean:157:8: error: 'show' tactic failed, pattern
+  dlog (B' (P + P') Q) = dlog (B' P Q) + dlog (B' P' Q)
+is not definitionally equal to target
+  (brow (P + P')) Q = (brow P + brow P') Q
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_WeierstrassCurve_det_galoisRepModuleEnd_frobenius_eq.lean:160:19: error: unsolved goals
+R : Type r
+S : Type s
+K : Type v
+inst✝⁷ : CommRing R
+inst✝⁶ : CommRing S
+inst✝⁵ : Field K
+inst✝⁴ : DecidableEq K
+W' : Affine R
+inst✝³ : Algebra R S
+inst✝² : Algebra R K
+inst✝¹ : Algebra S K
+inst✝ : IsScalarTower R S K
+p : ℕ
+hp : Fact (Nat.Prime p)
+e : Module.Basis (Fin 2) (ZMod p) ↥(Submodule.torsionBy ℤ W'⟮K⟯ ↑p)
+B : ↥(Submodule.torsionBy ℤ W'⟮K⟯ ↑p) → ↥(Submodule.torsionBy ℤ W'⟮K⟯ ↑p) → Kˣ
+hB : IsWeilPairing S W' p B
+σ : K ≃ₐ[S] K
+q : ℕ
+hσ : ∀ (ζ : K), ζ ^ p = 1 → σ ζ = ζ ^ q
+this : NeZero p
+P₀ Q₀ : ↥(Submodule.torsionBy ℤ W'⟮K⟯ ↑p)
+ζ : Kˣ := B P₀ Q₀
+hζ_ne : ζ ≠ 1
+hζ_def : ζ = B P₀ Q₀
+hζ_pow : ζ ^ p = 1
+horder : orderOf ζ = p
+hζ_prim : IsPrimitiveRoot ζ p
+hmem' : ∀ (P Q : ↥(Submodule.torsionBy ℤ W'⟮K⟯ ↑p)), B P Q ∈ Subgroup.zpowers ζ
+dlog : ↥(Subgroup.zpowers ζ) → ZMod p := fun x => hζ_prim.zmodEquivZPowers.symm (Additive.ofMul x)
+hdlog_def : dlog = fun x => hζ_prim.zmodEquivZPowers.symm (Additive.ofMul x)
+dlog_mul : ∀ (x y : ↥(Subgroup.zpowers ζ)), dlog (x * y) = dlog x + dlog y
+dlog_one : dlog 1 = 0
+dlog_pow : ∀ (x : ↥(Subgroup.zpowers ζ)) (m : ℕ), dlog (x ^ m) = ↑m * dlog x
+dlog_inj : Function.Injective dlog
+B' : ↥(Submodule.torsionBy ℤ W'⟮K⟯ ↑p) → ↥(Submodule.torsionBy ℤ W'⟮K⟯ ↑p) → ↥(Subgroup.zpowers ζ) :=
+  fun P Q => ⟨B P Q, ⋯⟩
+hB'_def : B' = fun P Q => ⟨B P Q, ⋯⟩
+bfun_add_left : ∀ (P P' Q : ↥(Submodule.torsionBy ℤ W'⟮K⟯ ↑p)), dlog (B' (P + P') Q) = dlog (B' P Q) + dlog (B' P' Q)
+bfun_add_right : ∀ (P Q Q' : ↥(Submodule.torsionBy ℤ W'⟮K⟯ ↑p)), dlog (B' P (Q + Q')) = dlog (B' P Q) + dlog (B' P Q')
+brow : ↥(Submodule.torsionBy ℤ W'⟮K⟯ ↑p) → ↥(Submodule.torsionBy ℤ W'⟮K⟯ ↑p) →ₗ[ZMod p] ZMod p :=
+  fun P =>
+    let f := AddMonoidHom.mk' (fun Q => dlog (B' P Q)) ⋯;
+    { toFun := (↑f).toFun, map_add' := ⋯, map_smul' := ⋯ }
+f : ↥(Submodule.torsionBy ℤ W'⟮K⟯ ↑p) →+ ↥(Submodule.torsionBy ℤ W'⟮K⟯ ↑p) →ₗ[ZMod p] ZMod p := sorry
+c : ZMod p
+P : ↥(Submodule.torsionBy ℤ W'⟮K⟯ ↑p)
+⊢ (↑f).toFun (c.cast • P) = (RingHom.id (ZMod p)) ↑c.cast • (↑f).toFun P
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_WeierstrassCurve_det_galoisRepModuleEnd_frobenius_eq.lean:164:60: error: Type mismatch
+  rfl
+has type
+  ?m.781 = ?m.781
+but is expected to have type
+  (b x✝¹) x✝ = dlog (B' x✝¹ x✝)
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_WeierstrassCurve_det_galoisRepModuleEnd_frobenius_eq.lean:149:43: warning: This simp argument is unused:
+  map_zsmul
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [Int.cast_smul_eq_zsmul]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_WeierstrassCurve_det_galoisRepModuleEnd_frobenius_eq.lean:163:43: warning: This simp argument is unused:
+  map_zsmul
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [Int.cast_smul_eq_zsmul]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+'P2MW.S_WeierstrassCurve_det_galoisRepModuleEnd_frobenius_eq.solution' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
