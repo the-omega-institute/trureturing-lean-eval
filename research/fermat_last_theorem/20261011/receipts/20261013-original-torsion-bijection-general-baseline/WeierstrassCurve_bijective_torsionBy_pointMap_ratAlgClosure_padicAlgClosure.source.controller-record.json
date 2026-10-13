@@ -1,0 +1,68 @@
+{
+  "sha256": "920284951cee326ee7d6cb864f210437e8fdf7f5bc1fa5197276601d9d3ee7a9",
+  "exit": 0,
+  "empty_output_retry_done": false,
+  "source_sha256_after": "920284951cee326ee7d6cb864f210437e8fdf7f5bc1fa5197276601d9d3ee7a9",
+  "source_unchanged": true,
+  "olean_sha256": "96bb2100d55f9d929f079a91ba1097657f030f991d394eff3b7078a0d2cc90bc",
+  "seconds": 158.47939824999958,
+  "pid": 68561,
+  "command": [
+    "/Users/macstudio/.local/omega-shims/lean",
+    "-j1",
+    "--trust=0",
+    "-Ddebug.skipKernelTC=false",
+    "-R",
+    "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src",
+    "-o",
+    "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-build/lib/lean/Submission/Supplier/P2M/Sol/S_WeierstrassCurve_bijective_torsionBy_pointMap_ratAlgClosure_padicAlgClosure.olean",
+    "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_WeierstrassCurve_bijective_torsionBy_pointMap_ratAlgClosure_padicAlgClosure.lean"
+  ],
+  "make_wrapper_pid": 62007,
+  "make_exit": 0,
+  "make_entry_failed": false,
+  "cache_binding_valid": true,
+  "canonical_make_running_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/4dce0da36b0cd40ce1d761dd-1791893553679600000.make-running.json",
+  "canonical_make_terminal_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/4dce0da36b0cd40ce1d761dd-1791893553679600000.make-terminal.json",
+  "kernel_terminal_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/4dce0da36b0cd40ce1d761dd-1791893553679600000.kernel/result.json",
+  "direct_dependencies": [
+    {
+      "module": "Submission.Supplier.Definitions.Def_GaloisRep_Flat",
+      "source_sha256": "59474ee379b00b70196dff4825d4fad20a309928a2d3214dabb17a67091c48c6",
+      "object_sha256": "f436f36b8f04c55cebc0b3ca453de19377ed018bd09cce31db752d9a181881a5",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Definitions.Def_GaloisRep_Residual",
+      "source_sha256": "acaab9dd928d013c9340e77676443b27f1ffc090abea3f139482b8fd2f8e8ff5",
+      "object_sha256": "429ac7b7b2b45f4aee7f1d99d97669e2e968c350566949b758046d25d399fcab",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Definitions.Def_FLTPrelim_GaloisRep",
+      "source_sha256": "fc0cb3d111b0d87e9c0b5be473858fa25c7d444fc6865ba1d05b6d9994700ff4",
+      "object_sha256": "d5a2340c2252cf4831dee6d0e2a52c4081c0958d63ff920d267a4db6240b48b5",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Theorems.Thm_WeierstrassCurve_bijective_torsionBy_pointMap_ratAlgClosure_padicAlgClosure_of_isElliptic",
+      "source_sha256": "c320b8055cc19d4e1ff0c3a85d11e698263cdd0865d5c4bcf925a71207728f7c",
+      "object_sha256": "45e77aef516ca5429026a8baf175b7df761970f7c306bbe451dae8f32349d02c",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Theorems.Thm_WeierstrassCurve_bijective_torsionBy_pointMap_ratAlgClosure_padicAlgClosure_of_not_isElliptic",
+      "source_sha256": "1386eb3604da1b096584e015533efa4aa35be8acd5b19c1d10982100ec28c87b",
+      "object_sha256": "b209a1a1549cfdeec60ae55591ae43ccb9ebefd3927caeabdd541d071a5e793e",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.P2M.Util",
+      "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+      "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+      "receipt_reused": true
+    }
+  ],
+  "stdout": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/4dce0da36b0cd40ce1d761dd-1791893553679600000.kernel/stdout.log",
+  "stderr": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/4dce0da36b0cd40ce1d761dd-1791893553679600000.kernel/stderr.log"
+}
