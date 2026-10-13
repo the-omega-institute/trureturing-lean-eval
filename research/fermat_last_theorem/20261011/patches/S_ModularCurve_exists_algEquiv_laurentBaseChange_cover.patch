@@ -1,0 +1,118 @@
+--- supplier-original/P2M/Sol/S_ModularCurve_exists_algEquiv_laurentBaseChange_cover.lean
++++ source/P2M/Sol/S_ModularCurve_exists_algEquiv_laurentBaseChange_cover.lean
+@@ -307,6 +307,18 @@
+ 
+ variable (hLD : LDabs K φ) {ι : Type u} (b : Module.Basis ι ℚ F) (σ : F ≃+* F)
+ 
++omit [Algebra ℚ F] in
++private theorem fractionRing_Rg :
++    IsFractionRing (Rg K φ) (IntermediateField.adjoin K (Set.range φ)) := by
++  infer_instance
++
++omit [Algebra ℚ F] in
++private theorem scalarTower_Rg :
++    IsScalarTower K (Rg K φ) (IntermediateField.adjoin K (Set.range φ)) := by
++  infer_instance
++
++attribute [local instance] fractionRing_Rg scalarTower_Rg
++
+ private def τ : IntermediateField.adjoin K (Set.range φ) ≃ₐ[K] IntermediateField.adjoin K (Set.range φ) :=
+   IsFractionRing.algEquivOfAlgEquiv (ρ K φ hLD b σ)
+ 
+@@ -320,6 +332,15 @@
+   rw [e, τ, IsFractionRing.algEquivOfAlgEquiv_algebraMap, ρ_mk]
+   rfl
+ 
++include hLD b in
++private theorem exists_tau :
++    ∃ f : IntermediateField.adjoin K (Set.range φ) ≃ₐ[K]
++        IntermediateField.adjoin K (Set.range φ),
++      ∀ y : F,
++        ((f ⟨φ y, IntermediateField.subset_adjoin K _ ⟨y, rfl⟩⟩ :
++          IntermediateField.adjoin K (Set.range φ)) : E) = φ (σ y) := by
++  exact ⟨τ K φ hLD b σ, coe_τ_mk K φ hLD b σ⟩
++
+ end Tau
+ 
+ private theorem exists_cover (hLD : LDabs K φ) (σ : F ≃+* F) (M : IntermediateField K E)
+@@ -327,9 +348,51 @@
+     ∃ τ : M ≃ₐ[K] M, ∀ y : F,
+       ((τ ⟨φ y, hM ▸ IntermediateField.subset_adjoin K _ ⟨y, rfl⟩⟩ : M) : E) = φ (σ y) := by
+   subst hM
+-  exact ⟨τ K φ hLD (Module.Basis.ofVectorSpace ℚ F) σ, coe_τ_mk K φ hLD _ σ⟩
++  exact exists_tau K φ hLD (Module.Basis.ofVectorSpace ℚ F) σ
+ 
+ end Abstract
++
++private theorem exists_recastAlgEquiv {K A : Type*} [CommSemiring K]
++    (s t : Semiring A) (a : @Algebra K A _ s) (b : @Algebra K A _ t)
++    (hadd : (letI := s; HAdd.hAdd : A → A → A) =
++      (letI := t; HAdd.hAdd : A → A → A))
++    (hmul : (letI := s; HMul.hMul : A → A → A) =
++      (letI := t; HMul.hMul : A → A → A))
++    (hmap : ∀ r : K, a.algebraMap r = b.algebraMap r)
++    (f : @AlgEquiv K A A _ s s a a) :
++    ∃ g : @AlgEquiv K A A _ t t b b, ∀ x : A, g x = f x := by
++  have hsemiring : s = t := Semiring.ext hadd hmul
++  subst t
++  have halgebra : a = b := Algebra.algebra_ext a b hmap
++  subst b
++  exact ⟨f, fun _ => rfl⟩
++
++private theorem exists_cover_for_instances
++    (K : Type*) {E F : Type*} [Field K] [Field E] [Algebra K E]
++    [Field F] [Algebra ℚ F] (φ : F →+* E) (hLD : LDabs K φ) (σ : F ≃+* F)
++    (M : IntermediateField K E) (hM : M = IntermediateField.adjoin K (Set.range φ))
++    (s : Semiring M) (a : @Algebra K M _ s)
++    (hadd : (letI := (SubsemiringClass.toCommSemiring M).toSemiring;
++        HAdd.hAdd : M → M → M) = (letI := s; HAdd.hAdd : M → M → M))
++    (hmul : (letI := (SubsemiringClass.toCommSemiring M).toSemiring;
++        HMul.hMul : M → M → M) = (letI := s; HMul.hMul : M → M → M))
++    (hmap : ∀ r : K,
++      (IntermediateField.algebra' (R' := K) M).algebraMap r = a.algebraMap r)
++    (ψ : F → E) (hψ : ∀ y : F, ψ y ∈ M) (hφ : ∀ y : F, φ y = ψ y) :
++    ∃ τ : @AlgEquiv K M M _ s s a a,
++      ∀ y : F, ((τ ⟨ψ y, hψ y⟩ : M) : E) = ψ (σ y) := by
++  obtain ⟨τ, hτ⟩ := exists_cover K φ hLD σ M hM
++  obtain ⟨τ', hτ'⟩ := exists_recastAlgEquiv
++    (SubsemiringClass.toCommSemiring M).toSemiring s
++    (IntermediateField.algebra' (R' := K) M) a hadd hmul hmap τ
++  refine ⟨τ', fun y => ?_⟩
++  have hx : (⟨φ y, hM ▸ IntermediateField.subset_adjoin K _ ⟨y, rfl⟩⟩ : M) =
++      ⟨ψ y, hψ y⟩ := Subtype.ext (hφ y)
++  calc
++    ((τ' ⟨ψ y, hψ y⟩ : M) : E)
++        = ((τ ⟨ψ y, hψ y⟩ : M) : E) := congrArg Subtype.val (hτ' _)
++    _ = φ (σ y) := by rw [← hx]; exact hτ y
++    _ = ψ (σ y) := hφ _
+ 
+ section Concrete
+ 
+@@ -364,12 +427,15 @@
+               ModularCurve.coeffEmb_mem_laurentBaseChange L y.2⟩ :
+             ↥(ModularCurve.laurentBaseChange L F₀)) : LaurentSeries L)
+           = ModularCurve.coeffEmb L ((σ₀ y : ↥F₀) : LaurentSeries ℚ) := by
+-  obtain ⟨τ, hτ⟩ :=
+-    exists_cover L (φ₀ L F₀) hLD σ₀ (laurentBaseChange L F₀) (laurentBaseChange_eq_adjoin L F₀)
+-  refine ⟨τ, fun y => ?_⟩
+-  have h := hτ y
+-  simp only [φ₀_apply] at h
+-  exact h
++  refine exists_cover_for_instances L (φ₀ L F₀) hLD σ₀ (laurentBaseChange L F₀)
++    (laurentBaseChange_eq_adjoin L F₀) _ _ ?_ ?_ ?_
++    (fun y => coeffEmb L (y : LaurentSeries ℚ))
++    (fun y => coeffEmb_mem_laurentBaseChange L y.2)
++    (fun y => φ₀_apply L F₀ y)
++  · rfl
++  · rfl
++  · intro r
++    rfl
+ 
+ end Concrete
+ 
+@@ -421,3 +487,5 @@
+ 
+ end
+ p2m_reactivate "P2MW.S_ModularCurve_exists_algEquiv_laurentBaseChange_cover.S3d"
++
++#print axioms P2MW.S_ModularCurve_exists_algEquiv_laurentBaseChange_cover.solution

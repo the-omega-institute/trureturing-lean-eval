@@ -118,3 +118,5 @@ unchanged, and the complete final module passed canonical single-job make and
 kernel checks (kernel 29.61 seconds), with empty stdout and stderr. Original and
 final source, the patch, and failed and successful receipts are retained under
 `receipts/ModularCurve-canonical-divisor-theorem-card/`.
+
+The Laurent base-change covering theorem now passes complete source and theorem-card checks, with zero warnings and actual final standard-three axiom closures on both. The original universal statement is unchanged. The proof transports equal semiring/algebra instances with Mathlib extensionality over abstract fields, then specializes to Laurent series; the original generator equation is retained. Source/card checks took 44.073515334 seconds and the actual card time recorded in `receipts/20261013-laurent-cover-abstract-instance-transport/repair-record.json`. Full FLT root replay, independent export audits and official acceptance remain pending.

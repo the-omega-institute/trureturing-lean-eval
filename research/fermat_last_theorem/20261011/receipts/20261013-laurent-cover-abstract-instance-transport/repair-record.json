@@ -1,0 +1,47 @@
+{
+  "at": "2026-10-13T01:09:52.769889+00:00",
+  "target": "ModularCurve.exists_algEquiv_laurentBaseChange_cover",
+  "full_original_module_source_card_accepted": true,
+  "full_FLT_original_complete": false,
+  "official_new_solve_credit": 0,
+  "original_solution_signature_unchanged": true,
+  "card_theorem_and_proof_body_byte_identical_before_axiom_footer": true,
+  "supplier": "anthropics/fermats-last-theorem",
+  "supplier_commit": "6e837e75355538c7f80bab5b956861e86c4eacc2",
+  "checks": {
+    "source": {
+      "make_exit": 0,
+      "kernel_exit": 0,
+      "kernel_seconds": 44.073515334,
+      "warnings": 0,
+      "printed_final_declaration": "P2MW.S_ModularCurve_exists_algEquiv_laurentBaseChange_cover.solution",
+      "recursive_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "source_unchanged": true
+    },
+    "card": {
+      "make_exit": 0,
+      "kernel_exit": 0,
+      "kernel_seconds": 44.915080958,
+      "warnings": 0,
+      "printed_final_declaration": "ModularCurve.exists_algEquiv_laurentBaseChange_cover",
+      "recursive_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "source_unchanged": true
+    }
+  },
+  "proof_change": "The original basis/fraction-ring covering construction is retained. Semiring.ext and Algebra.algebra_ext transport between equal semiring/algebra instances. That transport and its generator equations are checked over abstract fields before the concrete Laurent specialization. Destination instances cannot shadow the explicitly selected original instances. No new hypotheses or scope restrictions are added to the final theorem.",
+  "original_scope": "Every original field L and Q-algebra structure, every intermediate field F0 of LaurentSeries Q, every ring automorphism sigma0, and every y in F0.",
+  "jobs": 1,
+  "compilers": 1,
+  "lean_threads": 1,
+  "validation": "canonical make lean / omega-gate; --trust=0; debug.skipKernelTC=false; actual printed final STANDARD3 closure for source and card",
+  "independent_review": "No returned independent verdict; local Codex implementation and actual Lean/kernel validation. One earlier legacy Pro request timed out locally while the remote task was dispatched; no duplicate request or consensus claim.",
+  "full_root_replay_comparator_nanoda_and_official_acceptance": "pending"
+}
