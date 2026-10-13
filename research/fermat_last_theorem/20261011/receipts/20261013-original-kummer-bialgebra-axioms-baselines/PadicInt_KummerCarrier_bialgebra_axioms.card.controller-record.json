@@ -1,0 +1,50 @@
+{
+  "sha256": "a6b92b63d802ad120d9cb9f1dd0aa99fc332cece4c0e9ce00f118662c0f7217f",
+  "exit": 0,
+  "empty_output_retry_done": false,
+  "source_sha256_after": "a6b92b63d802ad120d9cb9f1dd0aa99fc332cece4c0e9ce00f118662c0f7217f",
+  "source_unchanged": true,
+  "olean_sha256": "edefb9eb4bb5abcc2665bb8786498a178ebeae7e88f1315b09c519aff7369bda",
+  "seconds": 118.894986625,
+  "pid": 99889,
+  "command": [
+    "/Users/macstudio/.local/omega-shims/lean",
+    "-j1",
+    "--trust=0",
+    "-Ddebug.skipKernelTC=false",
+    "-R",
+    "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src",
+    "-o",
+    "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-build/lib/lean/Submission/Supplier/Theorems/Thm_PadicInt_KummerCarrier_bialgebra_axioms.olean",
+    "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/Theorems/Thm_PadicInt_KummerCarrier_bialgebra_axioms.lean"
+  ],
+  "make_wrapper_pid": 52102,
+  "make_exit": 0,
+  "make_entry_failed": false,
+  "cache_binding_valid": true,
+  "canonical_make_running_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/2ca9f68614298c1e58cc7753-1791873704915595000.make-running.json",
+  "canonical_make_terminal_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/2ca9f68614298c1e58cc7753-1791873704915595000.make-terminal.json",
+  "kernel_terminal_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/2ca9f68614298c1e58cc7753-1791873704915595000.kernel/result.json",
+  "direct_dependencies": [
+    {
+      "module": "Submission.Supplier.Definitions.Def_PadicInt_KummerCarrier",
+      "source_sha256": "6f36254902fdc8ba1a6756abcdcc22b26f8f822cc1dede08b6a3b31acc3d9380",
+      "object_sha256": "47de58411cd2826e9b14be0f8c1a003e27633a3a6901874710390a48f33db8c1",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.P2M.Util",
+      "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+      "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.P2M.Sol.S_PadicInt_KummerCarrier_bialgebra_axioms",
+      "source_sha256": "aa1df1c3faeb1673f24596186aa3b99ad6dbdb3ece580bb6b37f99188f9fcd7a",
+      "object_sha256": "e7f0d8a0fc7272e37fe655f3ff9cf863dceb87e8682dd1f3dac7359023742b19",
+      "receipt_reused": true
+    }
+  ],
+  "stdout": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/2ca9f68614298c1e58cc7753-1791873704915595000.kernel/stdout.log",
+  "stderr": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/2ca9f68614298c1e58cc7753-1791873704915595000.kernel/stderr.log"
+}
