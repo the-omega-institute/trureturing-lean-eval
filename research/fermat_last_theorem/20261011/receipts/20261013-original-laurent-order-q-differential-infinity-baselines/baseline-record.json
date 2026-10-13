@@ -1,0 +1,303 @@
+{
+  "at": "2026-10-13T04:03:20.879459+00:00",
+  "original_source_card_pairs_actual_make_kernel_passed": true,
+  "canonical_pairs_byte_identical_to_supplier": true,
+  "no_source_edits": true,
+  "no_linter_suppression_added": true,
+  "no_redundant_recompilation": true,
+  "original_statements_hypotheses_and_proofs_preserved": true,
+  "checks": {
+    "ModularCurve_order_sum_algebraMap_mul_coeffMap": {
+      "proof_summary": "For the original arbitrary fields K,Kprime, ring map sigma, nonempty finite index set s, coefficients c satisfying the exact original K-linear independence condition, and Laurent series f_i nonzero on s, preserve both nonvanishing of the coefficient-mapped weighted sum and its order equal to the minimum of the original f_i orders. Retain the original coefficient-sum identity, nonzero leading coefficient and vanishing of all lower coefficients. The existing source final recursive axiom query actually printed STANDARD3.",
+      "checks": {
+        "source": {
+          "module": "Submission.Supplier.P2M.Sol.S_ModularCurve_order_sum_algebraMap_mul_coeffMap",
+          "canonical_lines": 68,
+          "canonical_byte_identical_to_supplier": true,
+          "make_exit": 0,
+          "kernel_exit": 0,
+          "kernel_seconds": 3.248414167,
+          "compiler_warnings": 0,
+          "source_unchanged_during_check": true,
+          "printed_final_axiom_closures": [
+            {
+              "declaration": "P2MW.S_ModularCurve_order_sum_algebraMap_mul_coeffMap.solution",
+              "recursive_axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            }
+          ],
+          "separate_final_axiom_audit_pending": false,
+          "direct_dependencies": [
+            {
+              "module": "Submission.Supplier.Definitions.Def_AlgebraicCurve_DivisorClassGroup",
+              "source_sha256": "8fc70ab3a82322ac3cb5fe26687036d7b9780a29474e6073cac2d6e349ec5024",
+              "object_sha256": "1c9faf1a7d5f522313fe11f4af5ba43d1cecaea92684949b3029e60ac2c8179d",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.Definitions.Def_ModularCurve_LaurentCoeff",
+              "source_sha256": "b669bf23529a8efa8e14cf704c3ef062c9dc7d12a964ea3ae43f6b9d5660fec0",
+              "object_sha256": "92decff74b33d21abf9b9d6512ceb1fa0d0af5f13d86e1b9bb7b4b3837e94e59",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.P2M.Util",
+              "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+              "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+              "receipt_reused": true
+            }
+          ]
+        },
+        "card": {
+          "module": "Submission.Supplier.Theorems.Thm_ModularCurve_order_sum_algebraMap_mul_coeffMap",
+          "canonical_lines": 12,
+          "canonical_byte_identical_to_supplier": true,
+          "make_exit": 0,
+          "kernel_exit": 0,
+          "kernel_seconds": 3.01854975,
+          "compiler_warnings": 0,
+          "source_unchanged_during_check": true,
+          "printed_final_axiom_closures": [],
+          "separate_final_axiom_audit_pending": true,
+          "direct_dependencies": [
+            {
+              "module": "Submission.Supplier.Definitions.Def_AlgebraicCurve_DivisorClassGroup",
+              "source_sha256": "8fc70ab3a82322ac3cb5fe26687036d7b9780a29474e6073cac2d6e349ec5024",
+              "object_sha256": "1c9faf1a7d5f522313fe11f4af5ba43d1cecaea92684949b3029e60ac2c8179d",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.Definitions.Def_ModularCurve_LaurentCoeff",
+              "source_sha256": "b669bf23529a8efa8e14cf704c3ef062c9dc7d12a964ea3ae43f6b9d5660fec0",
+              "object_sha256": "92decff74b33d21abf9b9d6512ceb1fa0d0af5f13d86e1b9bb7b4b3837e94e59",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.P2M.Util",
+              "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+              "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.P2M.Sol.S_ModularCurve_order_sum_algebraMap_mul_coeffMap",
+              "source_sha256": "6f355a53da9d393bfe90d4cfe694946e99093988d1fcfd753b3ff01fb423ac7d",
+              "object_sha256": "00903ca602fb8e513d355aa84fb5f70bb1c2611c45244dd47ba6f28486625b9d",
+              "receipt_reused": true
+            }
+          ]
+        }
+      }
+    },
+    "ModularCurve_qExpansionDiffAlong_smul_map": {
+      "proof_summary": "For all original fields K,F,Fprime,L, their exact algebra and scalar-tower instances, the K-algebra map sigma:Fprime->LaurentSeries(L), arbitrary h in Fprime and differential omega in Omega(F/K), preserve qExpansionDiffAlong(sigma)(h times map(omega))=sigma(h)*qExpansionDiffAlong(sigma composed with the tower inclusion)(omega). Retain the full original differential construction/uniqueness, trace-differential construction, tensor-product argument and functorial map proof. Add no separability hypothesis to the final statement. The existing source final axiom query actually printed STANDARD3, with its original seven warnings retained.",
+      "checks": {
+        "source": {
+          "module": "Submission.Supplier.P2M.Sol.S_ModularCurve_qExpansionDiffAlong_smul_map",
+          "canonical_lines": 167,
+          "canonical_byte_identical_to_supplier": true,
+          "make_exit": 0,
+          "kernel_exit": 0,
+          "kernel_seconds": 19.738359083000002,
+          "compiler_warnings": 7,
+          "source_unchanged_during_check": true,
+          "printed_final_axiom_closures": [
+            {
+              "declaration": "P2MW.S_ModularCurve_qExpansionDiffAlong_smul_map.solution",
+              "recursive_axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            }
+          ],
+          "separate_final_axiom_audit_pending": false,
+          "direct_dependencies": [
+            {
+              "module": "Submission.Supplier.Definitions.Def_ModularCurve_QExpansionDiff",
+              "source_sha256": "fb602ef00ccf8bf629c85cd87cf78710d02863dbd467a322dbc3ad481b32bc6e",
+              "object_sha256": "17c7e53e2be743bef28d4f0283f0be9b3dbef93ffd15c51562ff68bdc3e3a982",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.P2M.Util",
+              "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+              "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+              "receipt_reused": true
+            }
+          ]
+        },
+        "card": {
+          "module": "Submission.Supplier.Theorems.Thm_ModularCurve_qExpansionDiffAlong_smul_map",
+          "canonical_lines": 5,
+          "canonical_byte_identical_to_supplier": true,
+          "make_exit": 0,
+          "kernel_exit": 0,
+          "kernel_seconds": 8.160263917,
+          "compiler_warnings": 0,
+          "source_unchanged_during_check": true,
+          "printed_final_axiom_closures": [],
+          "separate_final_axiom_audit_pending": true,
+          "direct_dependencies": [
+            {
+              "module": "Submission.Supplier.Definitions.Def_ModularCurve_QExpansionDiff",
+              "source_sha256": "fb602ef00ccf8bf629c85cd87cf78710d02863dbd467a322dbc3ad481b32bc6e",
+              "object_sha256": "17c7e53e2be743bef28d4f0283f0be9b3dbef93ffd15c51562ff68bdc3e3a982",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.P2M.Util",
+              "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+              "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.P2M.Sol.S_ModularCurve_qExpansionDiffAlong_smul_map",
+              "source_sha256": "fb3c63e352cc3623969d6be283ed67f72942c188fe5ce09dfa97bd50042131af",
+              "object_sha256": "26a5b01559040d830f3c3e309e18c158f630d8d4194354497290e9485e88ad1e",
+              "receipt_reused": true
+            }
+          ]
+        }
+      }
+    },
+    "ModularCurve_smul_charLGeomPlaceEquiv_placeInfty_of_smul_jqModC": {
+      "proof_summary": "For every original field K with DecidableEq(RatFunc(K)), semilinear automorphism g of the level-one modular function field and the exact original condition that g fixes the jqModC generator, retain that g fixes the infinity place transported by charLGeomPlaceEquiv. Preserve the original rational-function/place transport, order calculations and uniqueness of the infinity place of negative X-order. Add no algebraic-closure or trivial-base-automorphism hypothesis.",
+      "checks": {
+        "source": {
+          "module": "Submission.Supplier.P2M.Sol.S_ModularCurve_smul_charLGeomPlaceEquiv_placeInfty_of_smul_jqModC",
+          "canonical_lines": 182,
+          "canonical_byte_identical_to_supplier": true,
+          "make_exit": 0,
+          "kernel_exit": 0,
+          "kernel_seconds": 57.131465874999996,
+          "compiler_warnings": 0,
+          "source_unchanged_during_check": true,
+          "printed_final_axiom_closures": [],
+          "separate_final_axiom_audit_pending": true,
+          "direct_dependencies": [
+            {
+              "module": "Submission.Supplier.Definitions.Def_ModularCurve_SpecializeModuli",
+              "source_sha256": "cc3eed665dcad0e2f3152257c38625a72b6f676f411e36611d64e1a86ce5941f",
+              "object_sha256": "0ed6c27a76d9e4642765ba5d4a8413dccf6fd80ea72157f3ecad6bababc6d61b",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.Definitions.Def_AlgebraicCurve_RatFuncPlaceInfty",
+              "source_sha256": "bdd80985a35b467a0ca18ab39759e44aae8033447932c58bacceac7bf22019ca",
+              "object_sha256": "8bb073d279b72610cbf43ca6ae8ecc84872c6d467e10dc7560f9c9ea5f69358b",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.Definitions.Def_AlgebraicCurve_BaseChangeGalois",
+              "source_sha256": "295976f732fc41de900b80b9a0c33241cfff2d377d0da96518004dd78436cd06",
+              "object_sha256": "7ffb25b0b0797827cf7402e46133b91270063e48e77e29925c38e235e58d1265",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.Theorems.Thm_AlgebraicCurve_RationalFunctionField_eq_ofHeightOneSpectrum_or_eq_placeInfty",
+              "source_sha256": "782a4ae087bae4669350346d16c1e08e517e8c1b4839d23a7a387e06aec0fee5",
+              "object_sha256": "1ab25fe842a390b075332b4e0c9580f7ead594238f0e7ab65d21a3dd0916a7ec",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.Theorems.Thm_AlgebraicCurve_RationalFunctionField_eq_placeOfPoint_or_eq_placeInfty",
+              "source_sha256": "1dee3628a39b4d97e0e3ffa69ba49bc5890ae009ecc1097ca694c558ff88afce",
+              "object_sha256": "69760e196229fc5d82814a5191f17802b44784057dc4cd5f5d103a1603f6641a",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.Theorems.Thm_AlgebraicCurve_RationalFunctionField_ord_ofHeightOneSpectrum_of_span",
+              "source_sha256": "21943bfbb8f0f23882ce1f05d1f94e9578e6ca801ca159ee9a0d14463e2598dc",
+              "object_sha256": "0016a4eec253a7d4470610d4f5edfe843034c373db4d2463da6acc220f2b3068",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.Theorems.Thm_AlgebraicCurve_RationalFunctionField_ord_placeInfty_algebraMap",
+              "source_sha256": "43575f6a9c0c737e5e43fd2fdd59f656869af7966704690cb972ebaeb4f009f5",
+              "object_sha256": "b18f24c615cb764e28bbc0f4c712ee73820b34f322edfb0d0d53983a8e165ab1",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.P2M.Util",
+              "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+              "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+              "receipt_reused": true
+            }
+          ]
+        },
+        "card": {
+          "module": "Submission.Supplier.Theorems.Thm_ModularCurve_smul_charLGeomPlaceEquiv_placeInfty_of_smul_jqModC",
+          "canonical_lines": 14,
+          "canonical_byte_identical_to_supplier": true,
+          "make_exit": 0,
+          "kernel_exit": 0,
+          "kernel_seconds": 35.233813542,
+          "compiler_warnings": 0,
+          "source_unchanged_during_check": true,
+          "printed_final_axiom_closures": [],
+          "separate_final_axiom_audit_pending": true,
+          "direct_dependencies": [
+            {
+              "module": "Submission.Supplier.Definitions.Def_ModularCurve_SpecializeModuli",
+              "source_sha256": "cc3eed665dcad0e2f3152257c38625a72b6f676f411e36611d64e1a86ce5941f",
+              "object_sha256": "0ed6c27a76d9e4642765ba5d4a8413dccf6fd80ea72157f3ecad6bababc6d61b",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.Definitions.Def_AlgebraicCurve_RatFuncPlaceInfty",
+              "source_sha256": "bdd80985a35b467a0ca18ab39759e44aae8033447932c58bacceac7bf22019ca",
+              "object_sha256": "8bb073d279b72610cbf43ca6ae8ecc84872c6d467e10dc7560f9c9ea5f69358b",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.Definitions.Def_AlgebraicCurve_BaseChangeGalois",
+              "source_sha256": "295976f732fc41de900b80b9a0c33241cfff2d377d0da96518004dd78436cd06",
+              "object_sha256": "7ffb25b0b0797827cf7402e46133b91270063e48e77e29925c38e235e58d1265",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.P2M.Util",
+              "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+              "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.P2M.Sol.S_ModularCurve_smul_charLGeomPlaceEquiv_placeInfty_of_smul_jqModC",
+              "source_sha256": "2dd8830df2f573c9546307e7d9ddb554bc8a179ea19e42ae9e3ed357963306f2",
+              "object_sha256": "1209a1e46fe7e88c368fb73a5e2f547fbea4c13d456e6c51fd88d19a28883e99",
+              "receipt_reused": true
+            }
+          ]
+        }
+      }
+    }
+  },
+  "supplier": "anthropics/fermats-last-theorem",
+  "supplier_commit": "6e837e75355538c7f80bab5b956861e86c4eacc2",
+  "full_original_complete": false,
+  "official_new_solve_credit": 0,
+  "complete_import_replay_and_recursive_axiom_audits_pending": true,
+  "selected_problem": "fermat_last_theorem",
+  "max_active_flt_jobs": 1,
+  "max_active_flt_compilers": 1,
+  "lean_threads": 1,
+  "graph_snapshot": {
+    "compiled": 7806,
+    "failed": 0,
+    "ready": 4389,
+    "root_compiled": false,
+    "workers": 1,
+    "running": {
+      "Submission.Supplier.P2M.Sol.S_ModularForm_exists_gamma0_coe_eq_serreDerivative": {
+        "pid": 50984,
+        "make_wrapper_pid": 50984,
+        "phase": "canonical_make_queue",
+        "sha256": "540fb93fb6e3cb0b05bdb4a6748cb081d59de278c9a3a82f34004a7f4afd7982",
+        "configuration": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/931adc3316cf04fbfcf97ca2-1791864170085419000.configuration.json"
+      }
+    }
+  }
+}

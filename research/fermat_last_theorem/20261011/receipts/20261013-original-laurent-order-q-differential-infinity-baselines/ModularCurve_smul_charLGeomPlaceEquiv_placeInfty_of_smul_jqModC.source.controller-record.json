@@ -1,0 +1,80 @@
+{
+  "sha256": "2dd8830df2f573c9546307e7d9ddb554bc8a179ea19e42ae9e3ed357963306f2",
+  "exit": 0,
+  "empty_output_retry_done": false,
+  "source_sha256_after": "2dd8830df2f573c9546307e7d9ddb554bc8a179ea19e42ae9e3ed357963306f2",
+  "source_unchanged": true,
+  "olean_sha256": "1209a1e46fe7e88c368fb73a5e2f547fbea4c13d456e6c51fd88d19a28883e99",
+  "seconds": 197.21169791599982,
+  "pid": 5248,
+  "command": [
+    "/Users/macstudio/.local/omega-shims/lean",
+    "-j1",
+    "--trust=0",
+    "-Ddebug.skipKernelTC=false",
+    "-R",
+    "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src",
+    "-o",
+    "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-build/lib/lean/Submission/Supplier/P2M/Sol/S_ModularCurve_smul_charLGeomPlaceEquiv_placeInfty_of_smul_jqModC.olean",
+    "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_ModularCurve_smul_charLGeomPlaceEquiv_placeInfty_of_smul_jqModC.lean"
+  ],
+  "make_wrapper_pid": 77045,
+  "make_exit": 0,
+  "make_entry_failed": false,
+  "cache_binding_valid": true,
+  "canonical_make_running_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/8ed594e68f8bf6bd11c31804-1791863854344212000.make-running.json",
+  "canonical_make_terminal_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/8ed594e68f8bf6bd11c31804-1791863854344212000.make-terminal.json",
+  "kernel_terminal_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/8ed594e68f8bf6bd11c31804-1791863854344212000.kernel/result.json",
+  "direct_dependencies": [
+    {
+      "module": "Submission.Supplier.Definitions.Def_ModularCurve_SpecializeModuli",
+      "source_sha256": "cc3eed665dcad0e2f3152257c38625a72b6f676f411e36611d64e1a86ce5941f",
+      "object_sha256": "0ed6c27a76d9e4642765ba5d4a8413dccf6fd80ea72157f3ecad6bababc6d61b",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Definitions.Def_AlgebraicCurve_RatFuncPlaceInfty",
+      "source_sha256": "bdd80985a35b467a0ca18ab39759e44aae8033447932c58bacceac7bf22019ca",
+      "object_sha256": "8bb073d279b72610cbf43ca6ae8ecc84872c6d467e10dc7560f9c9ea5f69358b",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Definitions.Def_AlgebraicCurve_BaseChangeGalois",
+      "source_sha256": "295976f732fc41de900b80b9a0c33241cfff2d377d0da96518004dd78436cd06",
+      "object_sha256": "7ffb25b0b0797827cf7402e46133b91270063e48e77e29925c38e235e58d1265",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Theorems.Thm_AlgebraicCurve_RationalFunctionField_eq_ofHeightOneSpectrum_or_eq_placeInfty",
+      "source_sha256": "782a4ae087bae4669350346d16c1e08e517e8c1b4839d23a7a387e06aec0fee5",
+      "object_sha256": "1ab25fe842a390b075332b4e0c9580f7ead594238f0e7ab65d21a3dd0916a7ec",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Theorems.Thm_AlgebraicCurve_RationalFunctionField_eq_placeOfPoint_or_eq_placeInfty",
+      "source_sha256": "1dee3628a39b4d97e0e3ffa69ba49bc5890ae009ecc1097ca694c558ff88afce",
+      "object_sha256": "69760e196229fc5d82814a5191f17802b44784057dc4cd5f5d103a1603f6641a",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Theorems.Thm_AlgebraicCurve_RationalFunctionField_ord_ofHeightOneSpectrum_of_span",
+      "source_sha256": "21943bfbb8f0f23882ce1f05d1f94e9578e6ca801ca159ee9a0d14463e2598dc",
+      "object_sha256": "0016a4eec253a7d4470610d4f5edfe843034c373db4d2463da6acc220f2b3068",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Theorems.Thm_AlgebraicCurve_RationalFunctionField_ord_placeInfty_algebraMap",
+      "source_sha256": "43575f6a9c0c737e5e43fd2fdd59f656869af7966704690cb972ebaeb4f009f5",
+      "object_sha256": "b18f24c615cb764e28bbc0f4c712ee73820b34f322edfb0d0d53983a8e165ab1",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.P2M.Util",
+      "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+      "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+      "receipt_reused": true
+    }
+  ],
+  "stdout": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/8ed594e68f8bf6bd11c31804-1791863854344212000.kernel/stdout.log",
+  "stderr": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/8ed594e68f8bf6bd11c31804-1791863854344212000.kernel/stderr.log"
+}
