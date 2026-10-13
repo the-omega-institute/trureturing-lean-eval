@@ -1,0 +1,158 @@
+{
+  "at": "2026-10-13T04:49:12.923162+00:00",
+  "repaired_source_card_pair_actual_make_kernel_passed": true,
+  "original_final_statements_preserved": true,
+  "full_original_module_proof_retained": true,
+  "no_linter_suppression_added": true,
+  "checks": {
+    "source": {
+      "module": "Submission.Supplier.P2M.Sol.S_MvPolynomial_abv_eval_div_sub_eval_div_le",
+      "make_exit": 0,
+      "kernel_exit": 0,
+      "kernel_seconds": 123.035354541,
+      "compiler_warnings": 0,
+      "printed_final_axiom_closures": [
+        {
+          "declaration": "P2MW.S_MvPolynomial_abv_eval_div_sub_eval_div_le.solution",
+          "recursive_axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "final_standard3_audit_passed": true,
+      "original_canonical_lines": 154,
+      "repaired_canonical_lines": 157,
+      "original_final_statement_preserved": true
+    },
+    "card": {
+      "module": "Submission.Supplier.Theorems.Thm_MvPolynomial_abv_eval_div_sub_eval_div_le",
+      "make_exit": 0,
+      "kernel_exit": 0,
+      "kernel_seconds": 86.685801666,
+      "compiler_warnings": 0,
+      "printed_final_axiom_closures": [
+        {
+          "declaration": "MvPolynomial.abv_eval_div_sub_eval_div_le",
+          "recursive_axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "final_standard3_audit_passed": true,
+      "original_canonical_lines": 17,
+      "repaired_canonical_lines": 19,
+      "original_final_statement_preserved": true
+    }
+  },
+  "repair": "Retain the prior Finset.prod_le_one to Finset.prod_le_one\u2080 API repair. Replace the actual deprecated mul_le_one\u2080 helper call by its exact constituent proof from the pinned Mathlib source: mul_le_of_le_one_left followed by transitivity. Append actual final source and card axiom queries; no linter suppression.",
+  "baseline_checks": {
+    "source": {
+      "at": "2026-10-13T04:33:51.256808+00:00",
+      "configuration": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/24e16f7a44e44602b281aeee-1791865832269435000.configuration.json",
+      "configuration_sha256": "899d314087abf5ea688862b69f89bc86b31f14eadecea2467fc4d04413dc3d00",
+      "source": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_MvPolynomial_abv_eval_div_sub_eval_div_le.lean",
+      "source_sha256": "4dde0208b361c150f5e031662ac56be9a4983b0274ccb2b5d5ab6fb6dfba5379",
+      "canonical_common": "/Users/macstudio/omega/trureturing/.git",
+      "official_dependency_partition": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/official-deps",
+      "toolchain": "leanprover/lean4:v4.35.0-rc3",
+      "mathlib_revision": "5e0c4e5239cb0a2d86d68a884bf52cfd963fce22",
+      "make_entry_required": true,
+      "phase": "compile_source",
+      "full_original_proof_verified": false,
+      "official_solve_credit": 0,
+      "command": [
+        "/Users/macstudio/.local/omega-shims/lean",
+        "-j1",
+        "--trust=0",
+        "-Ddebug.skipKernelTC=false",
+        "-R",
+        "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src",
+        "-o",
+        "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-build/lib/lean/Submission/Supplier/P2M/Sol/S_MvPolynomial_abv_eval_div_sub_eval_div_le.olean",
+        "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_MvPolynomial_abv_eval_div_sub_eval_div_le.lean"
+      ],
+      "memory_admission": {
+        "workers": 1,
+        "reasons": [
+          "user requires one job; no memory gate"
+        ],
+        "sample": {},
+        "memory_limit_enforced": false
+      },
+      "compiler_pid": 94637,
+      "memory_guard": {
+        "mode": "single_job_no_memory_gate",
+        "memory_limit_enforced": false,
+        "resource_cancellation": null,
+        "actual_exit": 0,
+        "proof_completion_claimed": false
+      },
+      "exit": 0,
+      "seconds": 57.025841791,
+      "source_unchanged": true,
+      "object_sha256": "6a9758c534722dfdd2024b281625091dddb99c8d4973a29ed3c62de4fc05fe5c",
+      "ended_at": "2026-10-13T04:34:48.285446+00:00"
+    },
+    "card": {
+      "at": "2026-10-13T04:37:05.485141+00:00",
+      "configuration": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/8733063b3287700e68c1f031-1791866101450944000.configuration.json",
+      "configuration_sha256": "288ed04bbd1be8aed3151fd283e16ec7db69322742fcfe4c93f181c21ca4daea",
+      "source": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/Theorems/Thm_MvPolynomial_abv_eval_div_sub_eval_div_le.lean",
+      "source_sha256": "1c893f44289b28fc03a00d37aa75b3b4f82210c394d545359b101a7b98fde922",
+      "canonical_common": "/Users/macstudio/omega/trureturing/.git",
+      "official_dependency_partition": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/official-deps",
+      "toolchain": "leanprover/lean4:v4.35.0-rc3",
+      "mathlib_revision": "5e0c4e5239cb0a2d86d68a884bf52cfd963fce22",
+      "make_entry_required": true,
+      "phase": "compile_source",
+      "full_original_proof_verified": false,
+      "official_solve_credit": 0,
+      "command": [
+        "/Users/macstudio/.local/omega-shims/lean",
+        "-j1",
+        "--trust=0",
+        "-Ddebug.skipKernelTC=false",
+        "-R",
+        "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src",
+        "-o",
+        "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-build/lib/lean/Submission/Supplier/Theorems/Thm_MvPolynomial_abv_eval_div_sub_eval_div_le.olean",
+        "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/Theorems/Thm_MvPolynomial_abv_eval_div_sub_eval_div_le.lean"
+      ],
+      "memory_admission": {
+        "workers": 1,
+        "reasons": [
+          "user requires one job; no memory gate"
+        ],
+        "sample": {},
+        "memory_limit_enforced": false
+      },
+      "compiler_pid": 69510,
+      "memory_guard": {
+        "mode": "single_job_no_memory_gate",
+        "memory_limit_enforced": false,
+        "resource_cancellation": null,
+        "actual_exit": 0,
+        "proof_completion_claimed": false
+      },
+      "exit": 0,
+      "seconds": 76.66945783300001,
+      "source_unchanged": true,
+      "object_sha256": "7f5edc3c5f8751906cbbc52fe659c17f2df04d24296f861efa0a261fbe7b5a46",
+      "ended_at": "2026-10-13T04:38:22.155644+00:00"
+    }
+  },
+  "proof_summary": "For every original field K with nonarchimedean real absolute value mu, arbitrary finite variable count r, polynomials A and B, coefficient bounds CA and CB and unit-polydisc points x and v, retain the nonzero B(v) and exact strict closeness hypothesis. Conclude mu(B(x))=mu(B(v)) and the original rational-function difference bound with denominator mu(B(v)) squared, numerator maximum max(CA*mu(B(v)), CB*mu(A(v))) and the coordinate supremum. Preserve finite ultrametric sums, product and geometric-sum monomial estimates, polynomial evaluation bounds, dominance, nonzero denominator and rational difference identity. The complete final theorem statement and proof body are byte-identical to the supplier; only the auxiliary helper APIs and final query commands differ.",
+  "library_search": "Read-only search of native trureturing D5/Reg Lean files found no exact abv_eval_div_sub_eval, abv_eval_sub_eval or abv_monomial_sub match. Reuse the complete supplier proof and the pinned Mathlib constituent inequality.",
+  "supplier": "anthropics/fermats-last-theorem",
+  "supplier_commit": "6e837e75355538c7f80bab5b956861e86c4eacc2",
+  "full_original_complete": false,
+  "official_new_solve_credit": 0,
+  "complete_import_replay_and_full_root_audits_pending": true,
+  "max_active_flt_jobs": 1,
+  "max_active_flt_compilers": 1,
+  "lean_threads": 1
+}

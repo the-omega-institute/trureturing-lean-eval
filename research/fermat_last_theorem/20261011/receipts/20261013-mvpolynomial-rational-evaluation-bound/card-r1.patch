@@ -1,0 +1,8 @@
+--- supplier-original-card.lean
++++ candidate-canonical-card-r1.lean
+@@ -15,3 +15,5 @@
+       μ (MvPolynomial.eval x A / MvPolynomial.eval x B - MvPolynomial.eval v A / MvPolynomial.eval v B)
+         ≤ max (CA * μ (MvPolynomial.eval v B)) (CB * μ (MvPolynomial.eval v A)) / μ (MvPolynomial.eval v B) ^ 2
+           * ⨆ l, μ (x l - v l) := by p2m_exact_reverting @_root_.P2MW.S_MvPolynomial_abv_eval_div_sub_eval_div_le.solution
++
++#print axioms MvPolynomial.abv_eval_div_sub_eval_div_le

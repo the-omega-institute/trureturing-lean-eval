@@ -1,0 +1,27 @@
+--- supplier-original-source.lean
++++ candidate-canonical-source-r1.lean
+@@ -46,7 +46,7 @@
+       refine (hμ _ _).trans (max_le ?_ ?_)
+       · rw [map_mul]; exact (mul_le_mul (ha i) ih (apply_nonneg _ _) zero_le_one).trans_eq (one_mul _)
+       · rw [map_mul, map_prod]
+-        exact (mul_le_mul (hab i) (Finset.prod_le_one (fun j _ => apply_nonneg _ _) fun j _ => hb j)
++        exact (mul_le_mul (hab i) (Finset.prod_le_one₀ (fun j _ => apply_nonneg _ _) fun j _ => hb j)
+           (Finset.prod_nonneg fun j _ => apply_nonneg _ _) (iSup_nonneg μ x v)).trans_eq (mul_one _)
+ 
+   have hpa : ∀ i, μ (x i ^ m i) ≤ 1 := fun i => by rw [map_pow]; exact pow_le_one₀ (apply_nonneg _ _) (hx i)
+@@ -60,7 +60,8 @@
+       have hgeom : μ (∑ j ∈ Finset.range (k + 1), x i ^ j * v i ^ (k + 1 - 1 - j)) ≤ 1 := by
+         refine abv_sum_le μ hμ _ _ zero_le_one fun j _ => ?_
+         rw [map_mul, map_pow, map_pow]
+-        exact mul_le_one₀ (pow_le_one₀ (apply_nonneg _ _) (hx i)) (pow_nonneg (apply_nonneg _ _) _)
++        exact (mul_le_of_le_one_left (pow_nonneg (apply_nonneg _ _) _)
++          (pow_le_one₀ (apply_nonneg _ _) (hx i))).trans
+           (pow_le_one₀ (apply_nonneg _ _) (hv i))
+       exact (mul_le_mul hgeom (abv_sub_le_iSup μ x v i) (apply_nonneg _ _) zero_le_one).trans_eq (one_mul _)
+   simpa only [Finsupp.prod] using key m.support (fun i => x i ^ m i) (fun i => v i ^ m i) hpa hpb hpab
+@@ -152,3 +153,5 @@
+   calc μ ((Ax - Av) * Bv - Av * (Bx - Bv)) ≤ max (CA * μ Bv) (CB * μ Av) * D := hnum
+     _ = max (CA * μ Bv) (CB * μ Av) / μ Bv ^ 2 * D * μ Bv ^ 2 := by
+         field_simp
++
++#print axioms P2MW.S_MvPolynomial_abv_eval_div_sub_eval_div_le.solution
