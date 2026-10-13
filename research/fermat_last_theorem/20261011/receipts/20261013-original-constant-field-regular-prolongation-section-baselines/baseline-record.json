@@ -1,0 +1,168 @@
+{
+  "at": "2026-10-13T12:03:20.531198+00:00",
+  "original_source_card_pairs_actual_make_kernel_passed": true,
+  "canonical_pairs_byte_identical_to_supplier": true,
+  "no_source_edits": true,
+  "no_linter_suppression_added": true,
+  "no_redundant_recompilation": true,
+  "original_statements_hypotheses_and_proofs_preserved": true,
+  "checks": {
+    "AlgebraicCurve_exists_regularProlongation_retraction_of_constantField_valuationSubring": {
+      "proof_summary": "Preserve arbitrary fields K,F,K-prime,F-prime with the full compatible algebra and scalar-tower structures, algebraically closed K, both original one-variable function-field finite-generation hypotheses and the full K-prime-adjoin image-of-F generation condition. Preserve the arbitrary valuation subring A of K-prime containing K and its ring retraction sigma with exact maximal-ideal kernel and pointwise identity on K. Retain a valuation subring O of F-prime and ring map rho to F, exact constant-field membership equivalence O restricted to K-prime equals A, exact maximal-ideal kernel, rho agreeing with sigma on A scalars, regular scaling of every nonzero F-prime element by a K-prime scalar with nonzero rho, and exact retraction on all F elements. Preserve the complete 300-line tensor-product, primitive-factor, Chevalley-extension and residue-range descent supplier proof. No additional algebraic-closedness of K-prime, linear-disjointness, characteristic, Galois, discreteness or completeness hypotheses are added.",
+      "checks": {
+        "source": {
+          "module": "Submission.Supplier.P2M.Sol.S_AlgebraicCurve_exists_regularProlongation_retraction_of_constantField_valuationSubring",
+          "canonical_lines": 300,
+          "canonical_byte_identical_to_supplier": true,
+          "make_exit": 0,
+          "kernel_exit": 0,
+          "kernel_seconds": 11.837470374999999,
+          "compiler_warnings": 3,
+          "source_unchanged_during_check": true,
+          "printed_final_axiom_closures": [],
+          "separate_final_axiom_audit_pending": true,
+          "direct_dependencies": [
+            {
+              "module": "Submission.Supplier.Theorems.Thm_ValuationSubring_exists_ringHom_extend_of_isAlgClosed",
+              "source_sha256": "fe29c6ec6f20cbcaca83cfb356e158356236528df41a0519fb623594042fe4cf",
+              "object_sha256": "20387672ec886c95605975f62f33e4a77a3e0e9f96e6dbe7babe13a2c8816c6e",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.Theorems.Thm_AlgebraicCurve_linearIndependent_of_constantFieldExtension_of_isAlgClosed",
+              "source_sha256": "bd17498c317e2116da5c380aca90110eac38bf3f72f08cf64a46be8d50b92865",
+              "object_sha256": "9f5b5eccd271fae0d378bd8f70764995c144d8c2f854e5a0714d29dce0e825f2",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.Definitions.Def_AlgebraicCurve_RegularProlongation",
+              "source_sha256": "283c25212d4cbc4a8b85abe5eb0e425ec6fdcfe848b528498a62ce81ad0d3353",
+              "object_sha256": "dfee5fa1dc70faa7bd7794ab68f4d0df1a24740302bfa351ba38b4918f9e0ad8",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.Theorems.Thm_ValuationSubring_tensorProduct_exists_primitive_factor",
+              "source_sha256": "6ac50c6d848da6acf744a6fef477b4172208fd1e67d4096b1c1232170b7bfa7c",
+              "object_sha256": "85d361d18138a6c4443e5a1b8fce63f6ef9109d4c674e14d35c64e2c26a4d7d0",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.P2M.Util",
+              "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+              "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+              "receipt_reused": true
+            }
+          ]
+        },
+        "card": {
+          "module": "Submission.Supplier.Theorems.Thm_AlgebraicCurve_exists_regularProlongation_retraction_of_constantField_valuationSubring",
+          "canonical_lines": 24,
+          "canonical_byte_identical_to_supplier": true,
+          "make_exit": 0,
+          "kernel_exit": 0,
+          "kernel_seconds": 45.98603175,
+          "compiler_warnings": 0,
+          "source_unchanged_during_check": true,
+          "printed_final_axiom_closures": [],
+          "separate_final_axiom_audit_pending": true,
+          "direct_dependencies": [
+            {
+              "module": "Submission.Supplier.P2M.Util",
+              "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+              "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.P2M.Sol.S_AlgebraicCurve_exists_regularProlongation_retraction_of_constantField_valuationSubring",
+              "source_sha256": "5c497e9c92e0794dc7f3f37109f42380d485111388796ac839cd50f2da7df97e",
+              "object_sha256": "47df04b865de523d2ca6115ca8fcf581ebd7253718a53ae946214ea63c99ee95",
+              "receipt_reused": true
+            }
+          ]
+        }
+      }
+    },
+    "AlgebraicCurve_exists_valuationSubring_section_of_constantField_valuationSubring": {
+      "proof_summary": "Preserve arbitrary fields K,F,K-prime,F-prime with the full compatible algebra and scalar-tower structures, algebraically closed K, both original one-variable function-field finite-generation hypotheses and the full K-prime-adjoin image-of-F generation condition. Preserve the arbitrary valuation subring A of K-prime containing K and its ring retraction sigma with exact maximal-ideal kernel and pointwise identity on K. Retain all four output properties of O and rho: exact retraction on all F elements, maximal-ideal kernel, regular scaling for every nonzero F-prime element, and image of every O-contained K-prime scalar in the K-scalar range in F. Preserve the complete 34-line supplier proof with no omitted output condition or additional field assumptions.",
+      "checks": {
+        "source": {
+          "module": "Submission.Supplier.P2M.Sol.S_AlgebraicCurve_exists_valuationSubring_section_of_constantField_valuationSubring",
+          "canonical_lines": 34,
+          "canonical_byte_identical_to_supplier": true,
+          "make_exit": 0,
+          "kernel_exit": 0,
+          "kernel_seconds": 30.284383124999998,
+          "compiler_warnings": 0,
+          "source_unchanged_during_check": true,
+          "printed_final_axiom_closures": [],
+          "separate_final_axiom_audit_pending": true,
+          "direct_dependencies": [
+            {
+              "module": "Submission.Supplier.Theorems.Thm_AlgebraicCurve_exists_regularProlongation_retraction_of_constantField_valuationSubring",
+              "source_sha256": "b5256f8c40c63a52e540b7aa772451f08b92caea5a223f19b9ff8759b9f7af40",
+              "object_sha256": "fd7f1a32f5a493fbd67f273b21b3f1a0e0d584838a477c47e96d15f978d13dea",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.P2M.Util",
+              "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+              "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+              "receipt_reused": true
+            }
+          ]
+        },
+        "card": {
+          "module": "Submission.Supplier.Theorems.Thm_AlgebraicCurve_exists_valuationSubring_section_of_constantField_valuationSubring",
+          "canonical_lines": 23,
+          "canonical_byte_identical_to_supplier": true,
+          "make_exit": 0,
+          "kernel_exit": 0,
+          "kernel_seconds": 92.717966125,
+          "compiler_warnings": 0,
+          "source_unchanged_during_check": true,
+          "printed_final_axiom_closures": [],
+          "separate_final_axiom_audit_pending": true,
+          "direct_dependencies": [
+            {
+              "module": "Submission.Supplier.P2M.Util",
+              "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+              "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.P2M.Sol.S_AlgebraicCurve_exists_valuationSubring_section_of_constantField_valuationSubring",
+              "source_sha256": "9d6d472e07940014277f27c03ac092af0482adcc94bb02e48c35cb01d72ccd69",
+              "object_sha256": "1634a4c4523401ce790df601c6e9dd89ce2f19ab0388b0c6af34fb486a92ffe5",
+              "receipt_reused": true
+            }
+          ]
+        }
+      }
+    }
+  },
+  "supplier": "anthropics/fermats-last-theorem",
+  "supplier_commit": "6e837e75355538c7f80bab5b956861e86c4eacc2",
+  "full_original_complete": false,
+  "official_new_solve_credit": 0,
+  "complete_import_replay_and_recursive_axiom_audits_pending": true,
+  "selected_problem": "fermat_last_theorem",
+  "max_active_flt_jobs": 1,
+  "max_active_flt_compilers": 1,
+  "lean_threads": 1,
+  "graph_snapshot": {
+    "compiled": 7987,
+    "failed": 0,
+    "ready": 4353,
+    "root_compiled": false,
+    "workers": 1,
+    "running": {
+      "Submission.Supplier.Theorems.Thm_AlgebraicCurve_exists_constantReduction_of_constantFieldExtension": {
+        "pid": 4534,
+        "make_wrapper_pid": 4534,
+        "phase": "canonical_make_queue",
+        "sha256": "df458bcaf30c2a6fcb93cab21820ce663984b01221ffb93290d6f36ba3e55b7d",
+        "configuration": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/af4368379d1435ecb44c8c20-1791892912123804000.configuration.json"
+      }
+    }
+  }
+}
