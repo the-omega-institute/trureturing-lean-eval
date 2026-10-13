@@ -1,0 +1,62 @@
+[
+  [
+    "            rw [mul_smul, neg_smul]",
+    "            rw [mul_smul]\n            exact congrArg (fun z : V => ((b : ℤ) : ZMod p)⁻¹ • z)\n              (neg_smul ((a : ℤ) : ZMod p) v).symm",
+    1
+  ],
+  [
+    "SetLike.exists_of_lt",
+    "IsConcreteLE.exists_of_lt",
+    1
+  ],
+  [
+    "rw [dif_pos hm]",
+    "rw [dite_eq_left hm]",
+    1
+  ],
+  [
+    "\n  haveI := finite_torsionBy hcard m\n",
+    "\n  have := finite_torsionBy hcard m\n",
+    1
+  ],
+  [
+    "\n  haveI := filt_finite hcard F P hFiff hm\n",
+    "\n  have := filt_finite hcard F P hFiff hm\n",
+    1
+  ],
+  [
+    "\n  haveI := filt_finite hcard F P hFiff (by omega : 1 ≤ m+1)\n",
+    "\n  have := filt_finite hcard F P hFiff (by omega : 1 ≤ m+1)\n",
+    1
+  ],
+  [
+    "\n  haveI := filt_finite hcard F P hFiff (le_refl 1)\n",
+    "\n  have := filt_finite hcard F P hFiff (le_refl 1)\n",
+    1
+  ],
+  [
+    "\n  haveI : Nontrivial (F 1) := Finite.one_lt_card_iff_nontrivial.mp hp\n",
+    "\n  have : Nontrivial (F 1) := Finite.one_lt_card_iff_nontrivial.mp hp\n",
+    1
+  ],
+  [
+    "\n  haveI := finite_torsionBy hcard 1\n",
+    "\n  have := finite_torsionBy hcard 1\n",
+    1
+  ],
+  [
+    "\n  letI : Module (ZMod p) (torsionBy ℤ M ((p ^ 1 : ℕ) : ℤ)) := AddCommGroup.zmodModule hmod\n",
+    "\n  let : Module (ZMod p) (torsionBy ℤ M ((p ^ 1 : ℕ) : ℤ)) := AddCommGroup.zmodModule hmod\n",
+    1
+  ],
+  [
+    "\n  haveI : NeZero (p ^ m) := ⟨pow_ne_zero _ (Fact.out : p.Prime).ne_zero⟩\n",
+    "\n  have : NeZero (p ^ m) := ⟨pow_ne_zero _ (Fact.out : p.Prime).ne_zero⟩\n",
+    1
+  ],
+  [
+    "\n      haveI := filt_finite hcard F P hFiff hn\n",
+    "\n      have := filt_finite hcard F P hFiff hn\n",
+    1
+  ]
+]

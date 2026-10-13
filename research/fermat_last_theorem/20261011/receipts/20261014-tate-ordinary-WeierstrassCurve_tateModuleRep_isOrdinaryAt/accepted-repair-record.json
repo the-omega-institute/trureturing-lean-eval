@@ -1,0 +1,62 @@
+{
+  "at": "2026-10-13T16:35:52.285455+00:00",
+  "checks": {
+    "source": {
+      "module": "Submission.Supplier.P2M.Sol.S_WeierstrassCurve_tateModuleRep_isOrdinaryAt",
+      "make_exit": 0,
+      "kernel_exit": 0,
+      "kernel_seconds": 11.079512875,
+      "compiler_warnings": 0,
+      "final_standard3_audit_passed": true,
+      "printed_final_axiom_closures": [
+        {
+          "declaration": "P2MW.S_WeierstrassCurve_tateModuleRep_isOrdinaryAt.solution",
+          "recursive_axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "original_canonical_lines": 421,
+      "repaired_canonical_lines": 425,
+      "original_final_statement_and_full_module_proof_preserved": true
+    },
+    "card": {
+      "module": "Submission.Supplier.Theorems.Thm_WeierstrassCurve_tateModuleRep_isOrdinaryAt",
+      "make_exit": 0,
+      "kernel_exit": 0,
+      "kernel_seconds": 82.025564542,
+      "compiler_warnings": 0,
+      "final_standard3_audit_passed": true,
+      "printed_final_axiom_closures": [
+        {
+          "declaration": "WeierstrassCurve.tateModuleRep_isOrdinaryAt",
+          "recursive_axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "original_canonical_lines": 15,
+      "repaired_canonical_lines": 17,
+      "original_final_statement_and_full_module_proof_preserved": true
+    }
+  },
+  "proof_summary": "Preserve the complete supplier source and theorem card for arbitrary semistable integral Weierstrass W with nonzero discriminant, every prime p, original torsion-cardinality and good/multiplicative ordinarity assumptions. Retain arbitrary additive-group filtrations, multiplication-by-p surjectivity, coherent inverse-limit sequences, construction of the free rank-one line and two-element Tate basis, and p-adic coefficient divisibility. In the finite ZMod p module independence proof, replace only the failed scalar-negation rewrite with an explicit congrArg of inverse scalar action applied to neg_smul.symm. Fix nine warning-directed proposition declarations and the two deprecated APIs. Require actual zero-warning source/card make/kernel exits zero, exact STANDARD3 and matching current source dependency.",
+  "original_statements_hypotheses_and_full_proofs_preserved": true,
+  "repaired_source_card_pair_actual_make_kernel_passed": true,
+  "source_card_actual_final_standard3": true,
+  "no_linter_suppression_added": true,
+  "baseline_source_actual_exit": 1,
+  "supplier": "anthropics/fermats-last-theorem",
+  "supplier_commit": "6e837e75355538c7f80bab5b956861e86c4eacc2",
+  "selected_problem": "fermat_last_theorem",
+  "full_original_complete": false,
+  "official_new_solve_credit": 0,
+  "full_root_import_replay_and_axiom_audit_pending": true,
+  "max_active_flt_jobs": 1,
+  "max_active_flt_compilers": 1,
+  "lean_threads": 1
+}

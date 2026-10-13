@@ -1,0 +1,106 @@
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_WeierstrassCurve_tateModuleRep_isOrdinaryAt.lean:77:2: warning: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_WeierstrassCurve_tateModuleRep_isOrdinaryAt.lean:109:2: warning: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_WeierstrassCurve_tateModuleRep_isOrdinaryAt.lean:110:2: warning: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_WeierstrassCurve_tateModuleRep_isOrdinaryAt.lean:180:2: warning: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_WeierstrassCurve_tateModuleRep_isOrdinaryAt.lean:183:2: warning: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_WeierstrassCurve_tateModuleRep_isOrdinaryAt.lean:202:23: warning: `SetLike.exists_of_lt` has been deprecated: Use `IsConcreteLE.exists_of_lt` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.exists_of_lt` to `IsConcreteLE.exists_of_lt x`).
+
+Hint: Replace the deprecated name:
+  S̵e̵t̵L̵i̵k̵e̵.̵e̵x̵i̵s̵t̵s̵_̵o̵f̵_̵l̵t̵I̲s̲C̲o̲n̲c̲r̲e̲t̲e̲L̲E̲.̲e̲x̲i̲s̲t̲s̲_̲o̲f̲_̲l̲t̲
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_WeierstrassCurve_tateModuleRep_isOrdinaryAt.lean:221:26: error: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  -?r • ?x
+in the target expression
+  (↑b)⁻¹ • -(↑a • v) = (↑b)⁻¹ • -↑a • v
+
+p : ℕ
+inst✝³ : Fact (Nat.Prime p)
+V : Type
+inst✝² : AddCommGroup V
+inst✝¹ : Module (ZMod p) V
+inst✝ : Finite V
+hV : Nat.card V = p ^ 2
+v : V
+hv : v ≠ 0
+hp : Nat.Prime p
+hrank : finrank (ZMod p) V = 2
+hspan : ZMod p ∙ v ≠ ⊤
+w : V
+hw : w ∉ ZMod p ∙ v
+a b : ℤ
+hab : ↑a • v + ↑b • w = 0
+hb : ¬↑b = 0
+hbw : ↑b • w = -(↑a • v)
+⊢ (↑b)⁻¹ • -(↑a • v) = (↑b)⁻¹ • -↑a • v
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_WeierstrassCurve_tateModuleRep_isOrdinaryAt.lean:231:2: warning: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_WeierstrassCurve_tateModuleRep_isOrdinaryAt.lean:236:2: warning: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_WeierstrassCurve_tateModuleRep_isOrdinaryAt.lean:260:2: warning: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_WeierstrassCurve_tateModuleRep_isOrdinaryAt.lean:317:6: warning: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_WeierstrassCurve_tateModuleRep_isOrdinaryAt.lean:405:6: warning: `dif_pos` has been deprecated: Use `dite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  d̵i̵f̵_̵p̵o̵s̵d̲i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
