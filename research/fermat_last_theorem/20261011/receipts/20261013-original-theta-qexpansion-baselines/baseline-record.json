@@ -1,0 +1,192 @@
+{
+  "at": "2026-10-13T02:29:54.705170+00:00",
+  "original_source_card_pairs_actual_make_kernel_passed": true,
+  "canonical_pairs_byte_identical_to_supplier": true,
+  "no_source_edits": true,
+  "no_linter_suppression_added": true,
+  "no_redundant_recompilation": true,
+  "original_statements_hypotheses_and_proofs_preserved": true,
+  "checks": {
+    "ModularCurve_theta_coeff": {
+      "proof_summary": "For every original commutative ring R, Laurent series f and integer k, preserve the exact coefficient identity for q times the Laurent derivative: k acts on f.coeff k. No field, characteristic-zero, nonzero-series or nonnegative-index restriction is added. Preserve the original derivative, product, order, qExpand and qTwist proofs and all original examples without editing them.",
+      "checks": {
+        "source": {
+          "module": "Submission.Supplier.P2M.Sol.S_ModularCurve_theta_coeff",
+          "canonical_lines": 185,
+          "canonical_byte_identical_to_supplier": true,
+          "make_exit": 0,
+          "kernel_exit": 0,
+          "kernel_seconds": 48.038149667,
+          "compiler_warnings": 13,
+          "source_unchanged_during_check": true,
+          "printed_final_axiom_closures": [
+            {
+              "declaration": "P2MW.S_ModularCurve_theta_coeff.solution",
+              "recursive_axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            }
+          ],
+          "separate_final_axiom_audit_pending": false,
+          "direct_dependencies": [
+            {
+              "module": "Submission.Supplier.Definitions.Def_ModularCurve_PhiGen",
+              "source_sha256": "83d500ef00084ac6c6a4f75718d9e34a473ce477215d81d572fcae6cf718a347",
+              "object_sha256": "6a4dc9e0d4cc4ec2336f248b72e75d8038bcb861df1d99964a5c5ff98b940760",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.Theorems.Thm_ModularCurve_PhiGen_sum_qTwist_coeff",
+              "source_sha256": "833bc24f0c762ee8e70107199d1040449bf762ecc610049d238b3127a6f6b928",
+              "object_sha256": "fc7bd91ccd176d54acf2d2bab8be832c20ad68d19b625cc140e87eeefcfa7c9f",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.P2M.Util",
+              "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+              "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+              "receipt_reused": true
+            }
+          ]
+        },
+        "card": {
+          "module": "Submission.Supplier.Theorems.Thm_ModularCurve_theta_coeff",
+          "canonical_lines": 9,
+          "canonical_byte_identical_to_supplier": true,
+          "make_exit": 0,
+          "kernel_exit": 0,
+          "kernel_seconds": 31.936852125,
+          "compiler_warnings": 0,
+          "source_unchanged_during_check": true,
+          "printed_final_axiom_closures": [],
+          "separate_final_axiom_audit_pending": true,
+          "direct_dependencies": [
+            {
+              "module": "Submission.Supplier.Definitions.Def_ModularCurve_PhiGen",
+              "source_sha256": "83d500ef00084ac6c6a4f75718d9e34a473ce477215d81d572fcae6cf718a347",
+              "object_sha256": "6a4dc9e0d4cc4ec2336f248b72e75d8038bcb861df1d99964a5c5ff98b940760",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.P2M.Util",
+              "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+              "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.P2M.Sol.S_ModularCurve_theta_coeff",
+              "source_sha256": "f76510d6767acd0ebd5e9881d982cd7975fb8c5053f7590aeb628ddcc3423739",
+              "object_sha256": "48e86383f05c31b7fcc66b61bbac6284488fea40be8e70a0bd9192c431dde057",
+              "receipt_reused": true
+            }
+          ]
+        }
+      }
+    },
+    "ModularCurve_coe_qExpansion_normalizedDerivOfComplex": {
+      "proof_summary": "For every original function F from the upper half-plane to C, preserve its period-one hypothesis, manifold holomorphy hypothesis and boundedness at imaginary infinity. The qExpansion of its normalized complex derivative, coerced to Laurent series, equals thetaL applied to the original qExpansion. Retain the full original analytic q-parameter and cusp-function derivation, including the negative-coefficient case, without additional assumptions.",
+      "checks": {
+        "source": {
+          "module": "Submission.Supplier.P2M.Sol.S_ModularCurve_coe_qExpansion_normalizedDerivOfComplex",
+          "canonical_lines": 247,
+          "canonical_byte_identical_to_supplier": true,
+          "make_exit": 0,
+          "kernel_exit": 0,
+          "kernel_seconds": 24.714399458,
+          "compiler_warnings": 3,
+          "source_unchanged_during_check": true,
+          "printed_final_axiom_closures": [
+            {
+              "declaration": "P2MW.S_ModularCurve_coe_qExpansion_normalizedDerivOfComplex.solution",
+              "recursive_axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            }
+          ],
+          "separate_final_axiom_audit_pending": false,
+          "direct_dependencies": [
+            {
+              "module": "Submission.Supplier.Definitions.Def_ModularCurve_QExpansionDiff",
+              "source_sha256": "fb602ef00ccf8bf629c85cd87cf78710d02863dbd467a322dbc3ad481b32bc6e",
+              "object_sha256": "17c7e53e2be743bef28d4f0283f0be9b3dbef93ffd15c51562ff68bdc3e3a982",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.Theorems.Thm_ModularCurve_theta_coeff",
+              "source_sha256": "25159718cae47fc7d3a35e5c8f28f63f348e6c8ac1e74299754b0d7f819b04e3",
+              "object_sha256": "e06be727849f7ae4580114a70fb2811cce718648c6a8def1c326b9eb6a4dacdc",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.P2M.Util",
+              "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+              "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+              "receipt_reused": true
+            }
+          ]
+        },
+        "card": {
+          "module": "Submission.Supplier.Theorems.Thm_ModularCurve_coe_qExpansion_normalizedDerivOfComplex",
+          "canonical_lines": 20,
+          "canonical_byte_identical_to_supplier": true,
+          "make_exit": 0,
+          "kernel_exit": 0,
+          "kernel_seconds": 30.503240291999997,
+          "compiler_warnings": 0,
+          "source_unchanged_during_check": true,
+          "printed_final_axiom_closures": [],
+          "separate_final_axiom_audit_pending": true,
+          "direct_dependencies": [
+            {
+              "module": "Submission.Supplier.Definitions.Def_ModularCurve_QExpansionDiff",
+              "source_sha256": "fb602ef00ccf8bf629c85cd87cf78710d02863dbd467a322dbc3ad481b32bc6e",
+              "object_sha256": "17c7e53e2be743bef28d4f0283f0be9b3dbef93ffd15c51562ff68bdc3e3a982",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.P2M.Util",
+              "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+              "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.P2M.Sol.S_ModularCurve_coe_qExpansion_normalizedDerivOfComplex",
+              "source_sha256": "6fa60a88dab7f4ad8bec98b6d450910961570130f7a2d182536662bbb8cdd5c2",
+              "object_sha256": "6d5fe3bd952ceba327d6e9f1b3f4ee0550aec45d5d0eb5f3ba7b595073230f93",
+              "receipt_reused": true
+            }
+          ]
+        }
+      }
+    }
+  },
+  "supplier": "anthropics/fermats-last-theorem",
+  "supplier_commit": "6e837e75355538c7f80bab5b956861e86c4eacc2",
+  "full_original_complete": false,
+  "official_new_solve_credit": 0,
+  "complete_import_replay_and_recursive_axiom_audits_pending": true,
+  "selected_problem": "fermat_last_theorem",
+  "max_active_flt_jobs": 1,
+  "max_active_flt_compilers": 1,
+  "lean_threads": 1,
+  "graph_snapshot": {
+    "compiled": 7752,
+    "failed": 0,
+    "ready": 4393,
+    "root_compiled": false,
+    "workers": 1,
+    "running": {
+      "Submission.Supplier.P2M.Sol.S_ModularForm_exists_rankinCohen_one_qExpansion_eq": {
+        "pid": 71388,
+        "make_wrapper_pid": 59256,
+        "phase": "kernel",
+        "sha256": "980bb08496c2a552983b108475e2f54832e48f5a5a1b93911190c19ce419a4fa",
+        "configuration": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/e0d8c791d9144182ebe5d995-1791858476602070000.configuration.json"
+      }
+    }
+  }
+}
