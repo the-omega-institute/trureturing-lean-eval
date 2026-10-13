@@ -1,0 +1,135 @@
+{
+  "at": "2026-10-13T06:52:27.726731+00:00",
+  "original_source_card_pairs_actual_make_kernel_passed": true,
+  "canonical_pairs_byte_identical_to_supplier": true,
+  "no_source_edits": true,
+  "no_linter_suppression_added": true,
+  "no_redundant_recompilation": true,
+  "original_statements_hypotheses_and_proofs_preserved": true,
+  "checks": {
+    "PadicInt_exists_finiteFlat_kummerHopf_withConv_aeval": {
+      "proof_summary": "For arbitrary natural prime p, every p-adic scalar u with norm one, every primitive p-th root zeta in the algebraic closure and every eta with eta^p equal to u after scalar extension, retain an existential commutative Hopf algebra H over the p-adic integers that is module-finite, module-flat and cocommutative. Retain the full equivalence between ZMod p times ZMod p and all algebraic-closure-valued algebra homomorphisms equipped with convolution, its additive-to-multiplicative law and a polynomial lift satisfying the original simultaneous evaluation equation for all i, j and h. Preserve conversion of norm-one u to its integral unit, the original bialgebra and antipode assembly, the exact scalar-tower root transport, the point equivalence, convolution law and polynomial evaluation proof. No prime, root or unit restriction is added. The canonical source and theorem card retain the supplier original.",
+      "checks": {
+        "source": {
+          "module": "Submission.Supplier.P2M.Sol.S_PadicInt_exists_finiteFlat_kummerHopf_withConv_aeval",
+          "canonical_lines": 76,
+          "canonical_byte_identical_to_supplier": true,
+          "make_exit": 0,
+          "kernel_exit": 0,
+          "kernel_seconds": 47.102501292,
+          "compiler_warnings": 3,
+          "source_unchanged_during_check": true,
+          "printed_final_axiom_closures": [],
+          "separate_final_axiom_audit_pending": true,
+          "direct_dependencies": [
+            {
+              "module": "Submission.Supplier.Definitions.Def_GaloisRep_Flat",
+              "source_sha256": "59474ee379b00b70196dff4825d4fad20a309928a2d3214dabb17a67091c48c6",
+              "object_sha256": "f436f36b8f04c55cebc0b3ca453de19377ed018bd09cce31db752d9a181881a5",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.Definitions.Def_FLTPrelim_GaloisRep",
+              "source_sha256": "fc0cb3d111b0d87e9c0b5be473858fa25c7d444fc6865ba1d05b6d9994700ff4",
+              "object_sha256": "d5a2340c2252cf4831dee6d0e2a52c4081c0958d63ff920d267a4db6240b48b5",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.Definitions.Def_PadicInt_KummerCarrier",
+              "source_sha256": "6f36254902fdc8ba1a6756abcdcc22b26f8f822cc1dede08b6a3b31acc3d9380",
+              "object_sha256": "47de58411cd2826e9b14be0f8c1a003e27633a3a6901874710390a48f33db8c1",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.Theorems.Thm_PadicInt_KummerCarrier_bialgebra_axioms",
+              "source_sha256": "a6b92b63d802ad120d9cb9f1dd0aa99fc332cece4c0e9ce00f118662c0f7217f",
+              "object_sha256": "edefb9eb4bb5abcc2665bb8786498a178ebeae7e88f1315b09c519aff7369bda",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.Theorems.Thm_PadicInt_KummerCarrier_exists_antipode",
+              "source_sha256": "e90171a5ff15239cbb7d2d86faf721eeeb2e105cf3c711dc03043a31a7f59c43",
+              "object_sha256": "58101bda198dc6ee8a390855b6a66afeb7d07b115e78bc3506cb00366ae13756",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.Theorems.Thm_PadicInt_KummerCarrier_evalAt_bijective_convHom",
+              "source_sha256": "a77ae611a8bab03efb8410636b5759d4a122109be3d5d3d9de005567033e6270",
+              "object_sha256": "0dae92a64a3a3e41cd83c8c124fd20001e3edd2b9e0188d3d6a2aec7216e382a",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.P2M.Util",
+              "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+              "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+              "receipt_reused": true
+            }
+          ]
+        },
+        "card": {
+          "module": "Submission.Supplier.Theorems.Thm_PadicInt_exists_finiteFlat_kummerHopf_withConv_aeval",
+          "canonical_lines": 22,
+          "canonical_byte_identical_to_supplier": true,
+          "make_exit": 0,
+          "kernel_exit": 0,
+          "kernel_seconds": 44.132912417,
+          "compiler_warnings": 0,
+          "source_unchanged_during_check": true,
+          "printed_final_axiom_closures": [],
+          "separate_final_axiom_audit_pending": true,
+          "direct_dependencies": [
+            {
+              "module": "Submission.Supplier.Definitions.Def_GaloisRep_Flat",
+              "source_sha256": "59474ee379b00b70196dff4825d4fad20a309928a2d3214dabb17a67091c48c6",
+              "object_sha256": "f436f36b8f04c55cebc0b3ca453de19377ed018bd09cce31db752d9a181881a5",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.Definitions.Def_FLTPrelim_GaloisRep",
+              "source_sha256": "fc0cb3d111b0d87e9c0b5be473858fa25c7d444fc6865ba1d05b6d9994700ff4",
+              "object_sha256": "d5a2340c2252cf4831dee6d0e2a52c4081c0958d63ff920d267a4db6240b48b5",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.P2M.Util",
+              "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+              "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.P2M.Sol.S_PadicInt_exists_finiteFlat_kummerHopf_withConv_aeval",
+              "source_sha256": "bb7f1e3aa115e429facd23d305f38a968eec3c3c3f0a9e48429f4726dad8b362",
+              "object_sha256": "9916adbfc74da5f9a4ea77e54e07f78007b06f23d0d0596839633fee84276a61",
+              "receipt_reused": true
+            }
+          ]
+        }
+      }
+    }
+  },
+  "supplier": "anthropics/fermats-last-theorem",
+  "supplier_commit": "6e837e75355538c7f80bab5b956861e86c4eacc2",
+  "full_original_complete": false,
+  "official_new_solve_credit": 0,
+  "complete_import_replay_and_recursive_axiom_audits_pending": true,
+  "selected_problem": "fermat_last_theorem",
+  "max_active_flt_jobs": 1,
+  "max_active_flt_compilers": 1,
+  "lean_threads": 1,
+  "graph_snapshot": {
+    "compiled": 7864,
+    "failed": 0,
+    "ready": 4376,
+    "root_compiled": false,
+    "workers": 1,
+    "running": {
+      "Submission.Supplier.P2M.Sol.S_PadicInt_exists_finiteFlat_kummerHopf_withConv_equiv_of_nnnorm_eq_one": {
+        "pid": 33126,
+        "make_wrapper_pid": 33126,
+        "phase": "canonical_make_queue",
+        "sha256": "40c778e4ac1ccf65f2d515288a168acf64ab86c80541848db678e8032cfa86a9",
+        "configuration": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/78f02f1ae4fad1eda4fb6b71-1791874306606492000.configuration.json"
+      }
+    }
+  }
+}
