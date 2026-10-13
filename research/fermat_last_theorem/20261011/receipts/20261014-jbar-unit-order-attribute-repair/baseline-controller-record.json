@@ -1,0 +1,200 @@
+{
+  "sha256": "7238e33d4e7325768b5b75007f8f629e6dd4378ab960ca3d64abd226d236588d",
+  "exit": 1,
+  "empty_output_retry_done": false,
+  "source_sha256_after": "7238e33d4e7325768b5b75007f8f629e6dd4378ab960ca3d64abd226d236588d",
+  "source_unchanged": true,
+  "olean_sha256": null,
+  "seconds": 210.92340687499382,
+  "pid": 49135,
+  "command": [
+    "/Users/macstudio/.local/omega-shims/lean",
+    "-j1",
+    "--trust=0",
+    "-Ddebug.skipKernelTC=false",
+    "-R",
+    "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src",
+    "-o",
+    "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-build/lib/lean/Submission/Supplier/P2M/Sol/S_ModularCurve_natCard_ord_jBar_eq_one_eq_nuThree.olean",
+    "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_ModularCurve_natCard_ord_jBar_eq_one_eq_nuThree.lean"
+  ],
+  "make_wrapper_pid": 26161,
+  "make_exit": 2,
+  "make_entry_failed": false,
+  "cache_binding_valid": true,
+  "canonical_make_running_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/cc6f3d9a0362ecfceec789c0-1791921202250988000.make-running.json",
+  "canonical_make_terminal_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/cc6f3d9a0362ecfceec789c0-1791921202250988000.make-terminal.json",
+  "kernel_terminal_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/cc6f3d9a0362ecfceec789c0-1791921202250988000.kernel/result.json",
+  "direct_dependencies": [
+    {
+      "module": "Submission.Supplier.Definitions.Def_ModularCurve_MazurStepThreeInputs",
+      "source_sha256": "834994bc7619ba099324ab267fda810468194544150c624737991c8162fddb0b",
+      "object_sha256": "93d50f87bed6bece6b5b9ee22883bb7e252a91e8fa1f855412e759fb8c363f83",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Definitions.Def_AlgebraicCurve_DivisorClassGroup",
+      "source_sha256": "8fc70ab3a82322ac3cb5fe26687036d7b9780a29474e6073cac2d6e349ec5024",
+      "object_sha256": "1c9faf1a7d5f522313fe11f4af5ba43d1cecaea92684949b3029e60ac2c8179d",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Definitions.Def_AlgebraicCurve_DivisorPushPull",
+      "source_sha256": "daa1fbdeab98c440d37f72720548c5fd10745b60b7cbc36a5a04e5483be73a59",
+      "object_sha256": "b693772adf0804c08110013e03bf945da43c87fa1c2ad44b1aa696aecd74c3d5",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Theorems.Thm_ModularCurve_sum_ord_jBar_sub_eq_dedekindPsi",
+      "source_sha256": "e757c26d3e9c8130989dc00e26902510cd0ec3e85ec9ba9744753109ff1babd8",
+      "object_sha256": "7c85b2c5fe6203046d2f6bf3c183393efa94281108b217dcc55e9bdaf1c08d52",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Theorems.Thm_ModularCurve_exists_finset_ord_jBar_sub_pos",
+      "source_sha256": "0d7f01b6051e542b719236b044116a34517dfbbaba3956d69b5f9f12362ec569",
+      "object_sha256": "b30dc2e4e776a2b8ad99719c66af3daa2fea87f8be93db4ade94ffcf1924def1",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Theorems.Thm_ModularCurve_deg_eq_one_modularFunctionFieldBar",
+      "source_sha256": "2c6a37ffbfc5908bfdb9ec137c274527efe7d2a56e811b9ac57f9c5090ab3c6f",
+      "object_sha256": "0f2290c3ecf50aef946d8173d743f2579eec70d201503db8925362dc2b190d79",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Theorems.Thm_ModularCurve_nonempty_equiv_place_pos_ord_algHom_integralClosure",
+      "source_sha256": "82c0b7e53e5bfe42dda872b786eb3af889be83902ab9f0f633080d202f4bd975",
+      "object_sha256": "21808b62e05291a18ac4aa51a1605c3482d1a18d46362e0fd3192d22668996a3",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Theorems.Thm_AlgebraicCurve_Place_sum_ramificationIndex_mul_inertiaDeg",
+      "source_sha256": "a50a35e3d4374bea4d916856ddec0233330da1be60807d979c2b5a8a3d77f794",
+      "object_sha256": "a09ede88b5564410f7119bcf9b382c72825928d5f61a289180bea0f444b8b29a",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Definitions.Def_ModularCurve_JLinePlaces",
+      "source_sha256": "ff35a06fe2a23361907d3178afc95797966520760f0556713ff83ab4e545602d",
+      "object_sha256": "fc848153ea4f27937dadc2a93d4873cf36ce60356caa6369f85a418cb51cd37f",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Definitions.Def_ModularCurve_GenusNumerics",
+      "source_sha256": "1bb8c32d3eac5f62fe7f86de914837543cdf0af8c18ae08d2768fb287d1980d3",
+      "object_sha256": "c47cd2663ba21ac13deeefcf0de3ec4c4dd1e8804203bd7ca6474233b0e00d11",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Definitions.Def_ModularCurve_ModuliPoint",
+      "source_sha256": "fa0f8f344b6ad5222cf5919cda59224cb71bfe0c25e3e38051fcce389e262275",
+      "object_sha256": "099e6ba2f5f9ed3f982fcb932d6f9fcb140fe6f3ebdcc9a9857b9a4f31412649",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Theorems.Thm_ModularCurve_finrank_jAdjoin_modularFunctionField_eq_dedekindPsi",
+      "source_sha256": "56ce6322d50c7717299444bff67d68c6c29774230aa5c179e3ef315f384d1bb4",
+      "object_sha256": "124e31d9e5628c22a80c958288330eba2f004f2d62fee3685432baed4d5041c3",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Theorems.Thm_ModularCurve_two_mul_natCard_moduliPoint_j_eq_1728_eq_dedekindPsi_add_nuTwo",
+      "source_sha256": "87c6dca154d49ead483b3def408881f77ec806e7c4e7f43da6cfaa8b34de3c70",
+      "object_sha256": "c56dd2d3840374d450b385e6d967fda95917e17f0c70e0aae16c484f07d3394d",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Theorems.Thm_ModularCurve_three_mul_natCard_moduliPoint_j_eq_zero_eq_dedekindPsi_add_two_mul_nuThree",
+      "source_sha256": "3867d48a96cc0b98e2463ff73fc17aaedd18c87edbb8ed87550184fcb50fd84f",
+      "object_sha256": "7635ca0352c965cf256d62fc0b8c8352d979e12d3e954cfecb8fa412d09a099f",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Theorems.Thm_ModularCurve_relfinrank_full_eq_dedekindPsi",
+      "source_sha256": "27536fc1f904e47198d0768dd7d637fd8855ee6dadcceba98137a27e250de744",
+      "object_sha256": "1f37de2f6e28d983f93ede1ee9e12fd9c4025d029c00e007d23a33197909fe6f",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Theorems.Thm_ModularCurve_relfinrank_laurentBaseChange_modularFunctionFieldFull",
+      "source_sha256": "bd695e79432a5777bea73845845b87b6d0c2f423b7de860bbb55a774624be6ca",
+      "object_sha256": "3d76bf1a255ba5f0ac6e6e76832e444b56617d7cfacb5f866152fc23c6452abb",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Theorems.Thm_ModularCurve_dedekindPsi_pos",
+      "source_sha256": "7c766f161f1965a36be46ee7bf8fcbd2426b4fd2ce3f0c4002e1c21cc556768e",
+      "object_sha256": "0ea735f5dcd12c6ec4b585517957cbeec0e08080218f17dd5cebc5513558d2d7",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Theorems.Thm_AlgebraicCurve_Place_inertiaDeg_pos_of_finiteDimensional",
+      "source_sha256": "893e6d7d1ed125886dfc1deb082673b37f6abec0cbc212f067e0184e24e347b6",
+      "object_sha256": "1acccccb67d8bf44d4a18341f61671e9cf17ecdf730e5ebaa4bcf93490880c63",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Theorems.Thm_AlgebraicCurve_RationalFunctionField_deg_ne_zero",
+      "source_sha256": "878fe2afa4e34af33333ca6ac47bb11d8cbb1d9d5396b1155a61485bee2b9062",
+      "object_sha256": "0a0a489cb360bbd287f31467100abf08efca0fb974e2e5b463d79aaa524f0628",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Theorems.Thm_ModularCurve_restrict_eq_jLinePlace1728_iff",
+      "source_sha256": "fb5cffdcb2d24223f0c00c893ca4b2e4892786665f6a339138ef972353d40485",
+      "object_sha256": "33c68d790c4b8a8147adbfa02302ddb3be67d28a372cc81906c9b8dfe620ed36",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Theorems.Thm_ModularCurve_restrict_eq_jLinePlaceZero_iff",
+      "source_sha256": "a843889c50817184d10ece4161eca8581b15cf5dba8a909a7989f3320a834e43",
+      "object_sha256": "de02b16e321a031a424ae0f511fce223fdbbf99c00b046916dd6337f27e7e66f",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Theorems.Thm_ModularCurve_restrict_eq_jLinePlaceInfty_iff",
+      "source_sha256": "cbd403c51f0d8b8ab56c647ef4d688e602637d10f71804ee1407a527ddc6aed8",
+      "object_sha256": "eb3bb066b4dfd66ba91e13d121469e263b64a079175300f6fbcba85f1af5951a",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Theorems.Thm_ModularCurve_ramificationIndex_eq_ord_sub_of_restrict_eq_jLinePlace1728",
+      "source_sha256": "cb89e9769953a66393209b1d83d444e22b36db8b252a53459330267c3ae968a9",
+      "object_sha256": "07814a20819556d2f8b5a22535e781842a5ca2d9469ca7dc1c8dafdac6d960eb",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Theorems.Thm_ModularCurve_ramificationIndex_eq_ord_of_restrict_eq_jLinePlaceZero",
+      "source_sha256": "a73bd646db8fee9e34ec5d592e092e6ddcccad04975e5f1b6618263522069060",
+      "object_sha256": "21c1d7588a9bf8e3d92b21cf6a02ebe521091d4e53d1cfa323ff266d8a4791fb",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Theorems.Thm_ModularCurve_exists_irreducible_ramificationIndex_eq_ord_aeval_of_restrict_ne_jLinePlaces",
+      "source_sha256": "92432b244b6f441e12d24df98535aacc3c8708bdf7ab22a407ab1839c4fa781a",
+      "object_sha256": "8b08e5301fd23a2eae21a04c324a5caa21618b7e210d029651926c30b4641f4a",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Theorems.Thm_ModularCurve_deg_jLinePlace1728",
+      "source_sha256": "b68f316bfd8a0de5e9df864245182ca0e278c966b9814b1f14c5d7ddb0fba476",
+      "object_sha256": "4b59417bcc25fa922bd5a00dba848945b753479ce940def4fb32fcc2d0c5e2c6",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Theorems.Thm_ModularCurve_deg_jLinePlaceZero",
+      "source_sha256": "ea225cc3b7e4b5f8c0ec98961bb18ae5b21fd5e16f8c4801b2d4af256e1ca8ba",
+      "object_sha256": "24011dc0719fd1486ab30c7b108c43eb0404a1d9556557f9e2a0c97b763a5489",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.P2M.Util",
+      "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+      "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+      "receipt_reused": true
+    }
+  ],
+  "stdout": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/cc6f3d9a0362ecfceec789c0-1791921202250988000.kernel/stdout.log",
+  "stderr": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/cc6f3d9a0362ecfceec789c0-1791921202250988000.kernel/stderr.log"
+}
