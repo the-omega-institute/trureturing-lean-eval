@@ -1,0 +1,10 @@
+[
+  [
+    "  haveI : Normal ℚ (AlgebraicClosure ℚ) := by\n    convert @IsAlgClosure.normal ℚ (AlgebraicClosure ℚ) _ _ (AlgebraicClosure.instAlgebra ℚ) inferInstance\n    rfl",
+    "  have : Normal ℚ (AlgebraicClosure ℚ) := by\n    exact @IsAlgClosure.normal ℚ (AlgebraicClosure ℚ) _ _ (AlgebraicClosure.instAlgebra ℚ) inferInstance"
+  ],
+  [
+    "  rw [← @IntermediateField.restrictNormalHom_ker ℚ (AlgebraicClosure ℚ) _ _ _ F ‹Normal ℚ F›, MonoidHom.comap_ker]\n  rfl\n",
+    "  rw [← @IntermediateField.restrictNormalHom_ker ℚ (AlgebraicClosure ℚ) _ _ _ F ‹Normal ℚ F›, MonoidHom.comap_ker]\n"
+  ]
+]
