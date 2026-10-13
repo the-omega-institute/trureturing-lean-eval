@@ -1,0 +1,16 @@
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_QuaternionAlgebra_IsMaximalOrder_exists_pair_localBox_iff_conj_diagonal_pow_mem_adicCompletionIntegers.lean:59:10: error: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  Valued.v ↑?r
+in the target expression
+  Valued.v ((algebraMap (𝓞 ℚ) (Kv v)) ↑ℓ) = WithZero.exp (-1)
+
+v : HeightOneSpectrum (𝓞 ℚ)
+ℓ : ℕ
+hℓ : Nat.Prime ℓ
+hℓv : ↑ℓ ∈ v.asIdeal
+hval : v.intValuation ↑ℓ = WithZero.exp (-1)
+hY : ↑ℓ = (algebraMap (𝓞 ℚ) (Kv v)) ↑ℓ
+⊢ Valued.v ((algebraMap (𝓞 ℚ) (Kv v)) ↑ℓ) = WithZero.exp (-1)
+'P2MW.S_QuaternionAlgebra_IsMaximalOrder_exists_pair_localBox_iff_conj_diagonal_pow_mem_adicCompletionIntegers.solution' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]

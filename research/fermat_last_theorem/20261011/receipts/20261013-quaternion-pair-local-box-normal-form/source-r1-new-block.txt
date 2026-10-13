@@ -1,0 +1,3 @@
+  have hY : (ℓ : Kv v) = algebraMap (𝓞 ℚ) (Kv v) (ℓ : 𝓞 ℚ) := by simp
+  rw [hY, HeightOneSpectrum.valuedAdicCompletion_eq_valuation,
+    HeightOneSpectrum.valuation_of_algebraMap, hval]

@@ -1,0 +1,62 @@
+{
+  "at": "2026-10-13T08:33:18.405736+00:00",
+  "checks": {
+    "source": {
+      "module": "Submission.Supplier.P2M.Sol.S_QuaternionAlgebra_IsMaximalOrder_exists_pair_localBox_iff_conj_diagonal_pow_mem_adicCompletionIntegers",
+      "make_exit": 0,
+      "kernel_exit": 0,
+      "kernel_seconds": 70.205619541,
+      "compiler_warnings": 0,
+      "final_standard3_audit_passed": true,
+      "printed_final_axiom_closures": [
+        {
+          "declaration": "P2MW.S_QuaternionAlgebra_IsMaximalOrder_exists_pair_localBox_iff_conj_diagonal_pow_mem_adicCompletionIntegers.solution",
+          "recursive_axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "original_canonical_lines": 354,
+      "repaired_canonical_lines": 357,
+      "original_final_statement_and_full_module_proof_preserved": true
+    },
+    "card": {
+      "module": "Submission.Supplier.Theorems.Thm_QuaternionAlgebra_IsMaximalOrder_exists_pair_localBox_iff_conj_diagonal_pow_mem_adicCompletionIntegers",
+      "make_exit": 0,
+      "kernel_exit": 0,
+      "kernel_seconds": 20.501205417,
+      "compiler_warnings": 0,
+      "final_standard3_audit_passed": true,
+      "printed_final_axiom_closures": [
+        {
+          "declaration": "QuaternionAlgebra.IsMaximalOrder.exists_pair_localBox_iff_conj_diagonal_pow_mem_adicCompletionIntegers",
+          "recursive_axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "original_canonical_lines": 41,
+      "repaired_canonical_lines": 43,
+      "original_final_statement_and_full_module_proof_preserved": true
+    }
+  },
+  "proof_summary": "For arbitrary rational quaternion parameters a,b, any two maximal integer orders Lambda1,Lambda2, every height-one place v containing a natural prime ell, and every split matrix ring equivalence phi preserving scalar matrices, retain one common natural e and both orientations of local-box normal form: an invertible h identifies the first box with integral 2-by-2 matrices and the second box with the conjugate by diag(1,ell^e), and an independently chosen invertible h-prime gives the reversed orientation using the same e. All equivalences range over every quaternion in the local tensor algebra. Preserve the full denominator-clearing, Cartan decomposition, frame conversion and symmetric flip proof; e=0 is retained and no extra ramification or coprimality assumption is added.",
+  "original_statements_hypotheses_and_full_proofs_preserved": true,
+  "repaired_source_card_pair_actual_make_kernel_passed": true,
+  "source_card_actual_final_standard3": true,
+  "no_linter_suppression_added": true,
+  "baseline_source_actual_exit": 1,
+  "supplier": "anthropics/fermats-last-theorem",
+  "supplier_commit": "6e837e75355538c7f80bab5b956861e86c4eacc2",
+  "selected_problem": "fermat_last_theorem",
+  "full_original_complete": false,
+  "official_new_solve_credit": 0,
+  "full_root_import_replay_and_axiom_audit_pending": true,
+  "max_active_flt_jobs": 1,
+  "max_active_flt_compilers": 1,
+  "lean_threads": 1
+}

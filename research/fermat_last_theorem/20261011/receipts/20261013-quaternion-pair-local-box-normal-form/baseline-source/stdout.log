@@ -1,0 +1,34 @@
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_QuaternionAlgebra_IsMaximalOrder_exists_pair_localBox_iff_conj_diagonal_pow_mem_adicCompletionIntegers.lean:61:8: error: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  { toCompletion := ↑(WithVal.toVal (HeightOneSpectrum.valuation ℚ v) ↑↑ℓ) }
+in the target expression
+  ↑ℓ = { toCompletion := ↑((WithVal.equiv (HeightOneSpectrum.valuation ℚ v)).symm ↑↑ℓ) }
+
+v : HeightOneSpectrum (𝓞 ℚ)
+ℓ : ℕ
+hℓ : Nat.Prime ℓ
+hℓv : ↑ℓ ∈ v.asIdeal
+hval : v.intValuation ↑ℓ = WithZero.exp (-1)
+h : (algebraMap ℚ (Kv v)) ↑↑ℓ = { toCompletion := ↑(WithVal.toVal (HeightOneSpectrum.valuation ℚ v) ↑↑ℓ) }
+⊢ ↑ℓ = { toCompletion := ↑((WithVal.equiv (HeightOneSpectrum.valuation ℚ v)).symm ↑↑ℓ) }
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_QuaternionAlgebra_IsMaximalOrder_exists_pair_localBox_iff_conj_diagonal_pow_mem_adicCompletionIntegers.lean:63:64: error: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  (HeightOneSpectrum.valuation ?m.111 ?v) ↑?r
+in the target expression
+  (HeightOneSpectrum.valuation ℚ v) ((WithVal.equiv (HeightOneSpectrum.valuation ℚ v)).symm ↑↑ℓ).ofVal =
+    WithZero.exp (-1)
+
+v : HeightOneSpectrum (𝓞 ℚ)
+ℓ : ℕ
+hℓ : Nat.Prime ℓ
+hℓv : ↑ℓ ∈ v.asIdeal
+hval : v.intValuation ↑ℓ = WithZero.exp (-1)
+hY : ↑ℓ = { toCompletion := ↑((WithVal.equiv (HeightOneSpectrum.valuation ℚ v)).symm ↑↑ℓ) }
+⊢ (HeightOneSpectrum.valuation ℚ v) ((WithVal.equiv (HeightOneSpectrum.valuation ℚ v)).symm ↑↑ℓ).ofVal =
+    WithZero.exp (-1)
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_QuaternionAlgebra_IsMaximalOrder_exists_pair_localBox_iff_conj_diagonal_pow_mem_adicCompletionIntegers.lean:350:2: warning: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`

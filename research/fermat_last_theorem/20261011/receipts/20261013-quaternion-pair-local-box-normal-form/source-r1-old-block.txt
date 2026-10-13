@@ -1,0 +1,6 @@
+  have hY : (ℓ : Kv v) = ↑((WithVal.equiv (HeightOneSpectrum.valuation ℚ v)).symm ((ℓ : 𝓞 ℚ) : ℚ)) := by
+    have h := congrFun (HeightOneSpectrum.algebraMap_adicCompletion (𝓞 ℚ) ℚ v (S := ℚ)) ((ℓ : 𝓞 ℚ) : ℚ)
+    simp only [Function.comp_apply, Algebra.algebraMap_self, RingHom.id_apply] at h
+    rw [← h]
+    simp
+  rw [hY, HeightOneSpectrum.valuedAdicCompletion_eq_valuation', HeightOneSpectrum.valuation_of_algebraMap, hval]
