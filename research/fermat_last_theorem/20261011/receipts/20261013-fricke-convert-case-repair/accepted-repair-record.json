@@ -1,0 +1,61 @@
+{
+  "at": "2026-10-13T01:51:10.489485+00:00",
+  "repaired_source_card_pair_actual_make_kernel_passed": true,
+  "original_final_statements_and_proof_bodies_preserved": true,
+  "full_original_module_proof_retained": true,
+  "no_linter_suppression_added": true,
+  "checks": {
+    "source": {
+      "module": "Submission.Supplier.P2M.Sol.S_ModularCurve_exists_isFrickeAutFull_of_neZero",
+      "make_exit": 0,
+      "kernel_exit": 0,
+      "kernel_seconds": 68.856361166,
+      "compiler_warnings": 0,
+      "printed_final_axiom_closures": [
+        {
+          "declaration": "P2MW.S_ModularCurve_exists_isFrickeAutFull_of_neZero.solution",
+          "recursive_axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "final_standard3_audit_passed": true,
+      "original_canonical_lines": 497,
+      "repaired_canonical_lines": 498,
+      "original_final_statement_and_proof_body_preserved": true
+    },
+    "card": {
+      "module": "Submission.Supplier.Theorems.Thm_ModularCurve_exists_isFrickeAutFull_of_neZero",
+      "make_exit": 0,
+      "kernel_exit": 0,
+      "kernel_seconds": 44.242284833,
+      "compiler_warnings": 0,
+      "printed_final_axiom_closures": [
+        {
+          "declaration": "ModularCurve.exists_isFrickeAutFull_of_neZero",
+          "recursive_axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "final_standard3_audit_passed": true,
+      "original_canonical_lines": 11,
+      "repaired_canonical_lines": 13,
+      "original_final_statement_and_proof_body_preserved": true
+    }
+  },
+  "repair": "Remove the obsolete e'_4 case after convert h using 2: the current elaborator already discharges that reflexive branch, leaving the original ring-homomorphism equality proof. Replace three deprecated dif_neg uses with dite_eq_right and use have for the NeZero proposition. Print the actual final recursive axiom closures of solution and card.",
+  "proof_summary": "For every nonzero natural level N, retain the full construction of a rational algebra automorphism of modularFunctionFieldFull N satisfying IsFrickeAutFull. Preserve modular-polynomial factorization, primitive-root slots, adjoin-root field maps, inverse and generator equations, and the final full-field algebra equivalence. No new hypothesis or weakened conclusion.",
+  "supplier": "anthropics/fermats-last-theorem",
+  "supplier_commit": "6e837e75355538c7f80bab5b956861e86c4eacc2",
+  "full_original_complete": false,
+  "official_new_solve_credit": 0,
+  "complete_import_replay_and_full_root_audits_pending": true,
+  "max_active_flt_jobs": 1,
+  "max_active_flt_compilers": 1,
+  "lean_threads": 1
+}
