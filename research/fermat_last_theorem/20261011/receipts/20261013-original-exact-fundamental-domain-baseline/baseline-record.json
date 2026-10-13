@@ -1,0 +1,87 @@
+{
+  "at": "2026-10-13T10:41:59.611955+00:00",
+  "original_source_card_pairs_actual_make_kernel_passed": true,
+  "canonical_pairs_byte_identical_to_supplier": true,
+  "no_source_edits": true,
+  "no_linter_suppression_added": true,
+  "no_redundant_recompilation": true,
+  "original_statements_hypotheses_and_proofs_preserved": true,
+  "checks": {
+    "Subgroup_exists_exact_fundamental_domain_of_secondCountableTopology": {
+      "proof_summary": "For an arbitrary second-countable topological group G and subgroup Gamma satisfying exactly the original open-neighborhood condition V intersect Gamma equals the identity singleton, preserve existence of an exact fundamental domain F written as a countable union of differences of open sets, together with a unique Gamma multiplier carrying every point of G into F. Preserve the complete 208-line proof via the countable translate cover, earliest orbit-meeting index and uniqueness across pieces. No Hausdorff, local compactness, measure, countable-subgroup or almost-everywhere replacement is added.",
+      "checks": {
+        "source": {
+          "module": "Submission.Supplier.P2M.Sol.S_Subgroup_exists_exact_fundamental_domain_of_secondCountableTopology",
+          "canonical_lines": 208,
+          "canonical_byte_identical_to_supplier": true,
+          "make_exit": 0,
+          "kernel_exit": 0,
+          "kernel_seconds": 17.013451458000002,
+          "compiler_warnings": 2,
+          "source_unchanged_during_check": true,
+          "printed_final_axiom_closures": [],
+          "separate_final_axiom_audit_pending": true,
+          "direct_dependencies": [
+            {
+              "module": "Submission.Supplier.P2M.Util",
+              "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+              "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+              "receipt_reused": true
+            }
+          ]
+        },
+        "card": {
+          "module": "Submission.Supplier.Theorems.Thm_Subgroup_exists_exact_fundamental_domain_of_secondCountableTopology",
+          "canonical_lines": 12,
+          "canonical_byte_identical_to_supplier": true,
+          "make_exit": 0,
+          "kernel_exit": 0,
+          "kernel_seconds": 14.081204,
+          "compiler_warnings": 0,
+          "source_unchanged_during_check": true,
+          "printed_final_axiom_closures": [],
+          "separate_final_axiom_audit_pending": true,
+          "direct_dependencies": [
+            {
+              "module": "Submission.Supplier.P2M.Util",
+              "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+              "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.P2M.Sol.S_Subgroup_exists_exact_fundamental_domain_of_secondCountableTopology",
+              "source_sha256": "f8a314f1babc1cf73ea52f94db0b8b0b051f0173597c8aa4a2b3f3202eda4d73",
+              "object_sha256": "a63c4432e60133e263edaccd257e4bff8c76f7089faf773f708bbc8aca0818f7",
+              "receipt_reused": true
+            }
+          ]
+        }
+      }
+    }
+  },
+  "supplier": "anthropics/fermats-last-theorem",
+  "supplier_commit": "6e837e75355538c7f80bab5b956861e86c4eacc2",
+  "full_original_complete": false,
+  "official_new_solve_credit": 0,
+  "complete_import_replay_and_recursive_axiom_audits_pending": true,
+  "selected_problem": "fermat_last_theorem",
+  "max_active_flt_jobs": 1,
+  "max_active_flt_compilers": 1,
+  "lean_threads": 1,
+  "graph_snapshot": {
+    "compiled": 7954,
+    "failed": 0,
+    "ready": 4362,
+    "root_compiled": false,
+    "workers": 1,
+    "running": {
+      "Submission.Supplier.P2M.Sol.S_Subgroup_exists_wild_tame_unramified_chain_of_le": {
+        "pid": 36235,
+        "make_wrapper_pid": 36235,
+        "phase": "canonical_make_queue",
+        "sha256": "bce8975238ceef396e6dacf0450c2135f8dd1de0637945759adb25968a989a3d",
+        "configuration": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/f22d0e8cb8960bbf36aa13cf-1791888083295889000.configuration.json"
+      }
+    }
+  }
+}
