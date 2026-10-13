@@ -1,0 +1,29 @@
+test_actual_saved_api_r2_native_receipts (test_runtime_receipts.RuntimeReceipts) ... ok
+test_actual_saved_gate_make_kernel_receipts (test_runtime_receipts.RuntimeReceipts) ... ok
+test_changed_job_without_same_invocation_receipt (test_runtime_receipts.RuntimeReceipts) ... ok
+test_coherent_runtime_with_all_decoded_facets (test_runtime_receipts.RuntimeReceipts) ... ok
+test_decoder_receipt_missing_module (test_runtime_receipts.RuntimeReceipts) ... ok
+test_decoder_receipt_omits_private_facet (test_runtime_receipts.RuntimeReceipts) ... ok
+test_different_waited_child (test_runtime_receipts.RuntimeReceipts) ... ok
+test_exact_stage_dependency_inventory_missing_facet (test_runtime_receipts.RuntimeReceipts) ... ok
+test_failed_make_or_kernel (test_runtime_receipts.RuntimeReceipts) ... ok
+test_failed_native_after_successful_stage_flags (test_runtime_receipts.RuntimeReceipts) ... ok
+test_inconsistent_make_running_and_terminal (test_runtime_receipts.RuntimeReceipts) ... ok
+test_kernel_command_cannot_bypass_gate_or_kernel_checks (test_runtime_receipts.RuntimeReceipts) ... ok
+test_kernel_requires_make_entry (test_runtime_receipts.RuntimeReceipts) ... ok
+test_mismatched_native_running_receipt (test_runtime_receipts.RuntimeReceipts) ... ok
+test_missing_native_terminal (test_runtime_receipts.RuntimeReceipts) ... ok
+test_missing_or_wrong_gate_admission (test_runtime_receipts.RuntimeReceipts) ... ok
+test_runtime_finishes_after_waited_native (test_runtime_receipts.RuntimeReceipts) ... ok
+test_stages_outside_this_runtime (test_runtime_receipts.RuntimeReceipts) ... ok
+test_unbound_decoded_output (test_runtime_receipts.RuntimeReceipts) ... ok
+test_unsubmitted_source_hidden_in_lake (test_runtime_receipts.RuntimeReceipts) ... ok
+test_inside_make_accepts_gate_under_current_host_policy (test_nanoda_gate.NanodaGate) ... ok
+test_inside_make_rejects_missing_gate_or_wrong_toolchain (test_nanoda_gate.NanodaGate) ... ok
+test_queue_accepts_current_host_policy_and_reenters_gate (test_nanoda_gate.NanodaGate) ... ok
+test_queue_rejects_disabled_gate_before_launch (test_nanoda_gate.NanodaGate) ... ok
+
+----------------------------------------------------------------------
+Ran 24 tests in 0.342s
+
+OK

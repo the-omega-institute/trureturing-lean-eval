@@ -1,0 +1,24 @@
+{
+  "at": "2026-10-13T18:31:36.823613+00:00",
+  "selected_problem": "fermat_last_theorem",
+  "canonical_runtime_directory": "/Users/macstudio/omega/research/lean-eval-01a124c1-52fb-7761-a67c-75fc0610196f/full-root-nanoda",
+  "archive_directory": "/Users/macstudio/omega/research/lean-eval-01a124c1-52fb-7761-a67c-75fc0610196f/flt-source-checkpoint/research/fermat_last_theorem/20261011/tools/full-root-nanoda",
+  "validation_command": [
+    "/usr/bin/python3",
+    "-m",
+    "unittest",
+    "-v",
+    "test_runtime_receipts.py",
+    "test_nanoda_gate.py"
+  ],
+  "validation_cwd": "/Users/macstudio/omega/research/lean-eval-01a124c1-52fb-7761-a67c-75fc0610196f/full-root-nanoda",
+  "actual_test_exit": 0,
+  "tests_passed": 24,
+  "gate_tests_launches_mocked": true,
+  "actual_current_make_kernel_receipts_covered_by_runtime_tests": true,
+  "additional_compiler_launched": false,
+  "scope": "Archive the canonical runtime Python tools and actual regression results. The runtime entry remains the canonical directory above; this source checkpoint is not a build tree. The launcher uses existing make lean/omega-gate, clears inherited admission, retains the pinned toolchain and full-root one-job ceiling, and accepts the current LEAN_SKIP_LOCK=1 host policy. The executor requires held gate admission and the configured toolchain. Existing source/object/dependency bindings, exact statement, full Nanoda export checks, permitted axioms and one-thread verification remain.",
+  "full_original_complete": false,
+  "official_new_solve_credit": 0,
+  "actual_full_root_nanoda_run_pending": true
+}

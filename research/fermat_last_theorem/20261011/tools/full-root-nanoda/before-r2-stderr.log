@@ -1,0 +1,37 @@
+test_inside_make_accepts_gate_under_current_host_policy (test_nanoda_gate.NanodaGate) ... FAIL
+test_inside_make_rejects_missing_gate_or_wrong_toolchain (test_nanoda_gate.NanodaGate) ... ok
+test_queue_accepts_current_host_policy_and_reenters_gate (test_nanoda_gate.NanodaGate) ... FAIL
+test_queue_rejects_disabled_gate_before_launch (test_nanoda_gate.NanodaGate) ... FAIL
+
+======================================================================
+FAIL: test_inside_make_accepts_gate_under_current_host_policy (test_nanoda_gate.NanodaGate)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/macstudio/omega/research/lean-eval-01a124c1-52fb-7761-a67c-75fc0610196f/full-root-nanoda/test_nanoda_gate.py", line 82, in test_inside_make_accepts_gate_under_current_host_policy
+    consumer.execute(path)
+  File "/Users/macstudio/omega/research/lean-eval-01a124c1-52fb-7761-a67c-75fc0610196f/full-root-nanoda/run_full_root_nanoda.py", line 403, in execute
+    assert os.environ.get('LEAN_SKIP_LOCK') != '1' and os.environ.get('LEAN_NUM_THREADS') == '1'
+AssertionError
+
+======================================================================
+FAIL: test_queue_accepts_current_host_policy_and_reenters_gate (test_nanoda_gate.NanodaGate)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/macstudio/omega/research/lean-eval-01a124c1-52fb-7761-a67c-75fc0610196f/full-root-nanoda/test_nanoda_gate.py", line 38, in test_queue_accepts_current_host_policy_and_reenters_gate
+    code = consumer.queue(self.directory / 'package', self.directory / 'evidence')
+  File "/Users/macstudio/omega/research/lean-eval-01a124c1-52fb-7761-a67c-75fc0610196f/full-root-nanoda/run_full_root_nanoda.py", line 518, in queue
+    assert environment.get('LEAN_SKIP_LOCK') != '1'
+AssertionError
+
+======================================================================
+FAIL: test_queue_rejects_disabled_gate_before_launch (test_nanoda_gate.NanodaGate)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/macstudio/omega/research/lean-eval-01a124c1-52fb-7761-a67c-75fc0610196f/full-root-nanoda/test_nanoda_gate.py", line 62, in test_queue_rejects_disabled_gate_before_launch
+    consumer.queue(self.directory / 'package', self.directory / 'evidence')
+AssertionError: AssertionError not raised
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.036s
+
+FAILED (failures=3)
