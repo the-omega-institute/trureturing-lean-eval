@@ -1,0 +1,73 @@
+{
+  "at": "2026-10-13T01:18:52.375005+00:00",
+  "original_source_card_pairs_passed": true,
+  "no_source_change": true,
+  "no_warning_suppression_or_recompile_added": true,
+  "checks": {
+    "ModularCurve_coeffMap_mem_modularFunctionFieldC": {
+      "source": {
+        "make_exit": 0,
+        "kernel_exit": 0,
+        "kernel_seconds": 31.740720707999998,
+        "original_lines": 1003,
+        "original_warnings": 8,
+        "canonical_byte_identical_to_supplier": true,
+        "actual_printed_axioms": [
+          {
+            "declaration": "P2MW.S_ModularCurve_coeffMap_mem_modularFunctionFieldC.solution",
+            "recursive_axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          }
+        ],
+        "separate_final_axiom_audit_pending": false
+      },
+      "card": {
+        "make_exit": 0,
+        "kernel_exit": 0,
+        "kernel_seconds": 23.190753792,
+        "original_lines": 18,
+        "original_warnings": 0,
+        "canonical_byte_identical_to_supplier": true,
+        "actual_printed_axioms": [],
+        "separate_final_axiom_audit_pending": true
+      }
+    },
+    "ModularCurve_frobeniusPullbackModL_frobeniusPushforwardModL": {
+      "source": {
+        "make_exit": 0,
+        "kernel_exit": 0,
+        "kernel_seconds": 41.243546832999996,
+        "original_lines": 16,
+        "original_warnings": 0,
+        "canonical_byte_identical_to_supplier": true,
+        "actual_printed_axioms": [],
+        "separate_final_axiom_audit_pending": true
+      },
+      "card": {
+        "make_exit": 0,
+        "kernel_exit": 0,
+        "kernel_seconds": 33.240893083,
+        "original_lines": 12,
+        "original_warnings": 0,
+        "canonical_byte_identical_to_supplier": true,
+        "actual_printed_axioms": [],
+        "separate_final_axiom_audit_pending": true
+      }
+    }
+  },
+  "coefficient_reduction_scope": "Retain the original fields L and K, valuation ring O inside L with hO, res : O -> K, nonzero N, original degree=dedekindPsi hypothesis hdeg, member x and original Laurent-series lift y. The conclusion places coeffMap res y in modularFunctionFieldC K N.",
+  "frobenius_scope": "Every original algebraically closed field K of prime characteristic ell, nonzero level N with ell not dividing N, and y in JZeroC K N: frobeniusPullbackModL(frobeniusPushforwardModL y)=ell smul y.",
+  "supplier": "anthropics/fermats-last-theorem",
+  "supplier_commit": "6e837e75355538c7f80bab5b956861e86c4eacc2",
+  "source_reuse": true,
+  "controller_kept_running": true,
+  "jobs": 1,
+  "compilers": 1,
+  "lean_threads": 1,
+  "full_original_FLT_complete": false,
+  "official_new_solve_credit": 0,
+  "full_root_replay_comparator_nanoda_official_acceptance": "pending"
+}
