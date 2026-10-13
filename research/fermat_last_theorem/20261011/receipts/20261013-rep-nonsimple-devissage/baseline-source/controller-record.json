@@ -1,0 +1,50 @@
+{
+  "sha256": "ebe949ba5be82b8bbc0a323993d2553630a848e662379572174767af27324247",
+  "exit": 1,
+  "empty_output_retry_done": false,
+  "source_sha256_after": "ebe949ba5be82b8bbc0a323993d2553630a848e662379572174767af27324247",
+  "source_unchanged": true,
+  "olean_sha256": null,
+  "seconds": 278.84726591699973,
+  "pid": 53316,
+  "command": [
+    "/Users/macstudio/.local/omega-shims/lean",
+    "-j1",
+    "--trust=0",
+    "-Ddebug.skipKernelTC=false",
+    "-R",
+    "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src",
+    "-o",
+    "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-build/lib/lean/Submission/Supplier/P2M/Sol/S_Rep_exists_devissage_of_not_simple.olean",
+    "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_Rep_exists_devissage_of_not_simple.lean"
+  ],
+  "make_wrapper_pid": 39178,
+  "make_exit": 2,
+  "make_entry_failed": false,
+  "cache_binding_valid": true,
+  "canonical_make_running_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/d25e2e3dc938812b6be0a25d-1791881869149808000.make-running.json",
+  "canonical_make_terminal_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/d25e2e3dc938812b6be0a25d-1791881869149808000.make-terminal.json",
+  "kernel_terminal_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/d25e2e3dc938812b6be0a25d-1791881869149808000.kernel/result.json",
+  "direct_dependencies": [
+    {
+      "module": "Submission.Supplier.Definitions.Def_GroupCohomology_ContinuousH2",
+      "source_sha256": "ba2bef00cc25e4291c572686ab15d40de26367864cdf950b2e4cbbaebee234b1",
+      "object_sha256": "060f989d75ea782244200fae88e609b67279db7bf63256466ef1dba3f5eb10f4",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Definitions.Def_GroupCohomology_LevelSubgroup",
+      "source_sha256": "699550b8f0210d3d9e9041ce265a5b0619ae652c74df1cd35bc3d4e428bbb058",
+      "object_sha256": null,
+      "receipt_reused": false
+    },
+    {
+      "module": "Submission.Supplier.P2M.Util",
+      "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+      "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+      "receipt_reused": true
+    }
+  ],
+  "stdout": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/d25e2e3dc938812b6be0a25d-1791881869149808000.kernel/stdout.log",
+  "stderr": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/d25e2e3dc938812b6be0a25d-1791881869149808000.kernel/stderr.log"
+}
