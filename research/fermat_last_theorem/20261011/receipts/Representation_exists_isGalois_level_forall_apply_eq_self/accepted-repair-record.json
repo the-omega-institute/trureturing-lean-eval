@@ -1,0 +1,62 @@
+{
+  "at": "2026-10-13T10:03:43.276304+00:00",
+  "checks": {
+    "source": {
+      "module": "Submission.Supplier.P2M.Sol.S_Representation_exists_isGalois_level_forall_apply_eq_self",
+      "make_exit": 0,
+      "kernel_exit": 0,
+      "kernel_seconds": 72.692768125,
+      "compiler_warnings": 0,
+      "final_standard3_audit_passed": true,
+      "printed_final_axiom_closures": [
+        {
+          "declaration": "P2MW.S_Representation_exists_isGalois_level_forall_apply_eq_self.solution",
+          "recursive_axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "original_canonical_lines": 45,
+      "repaired_canonical_lines": 46,
+      "original_final_statement_and_full_module_proof_preserved": true
+    },
+    "card": {
+      "module": "Submission.Supplier.Theorems.Thm_Representation_exists_isGalois_level_forall_apply_eq_self",
+      "make_exit": 0,
+      "kernel_exit": 0,
+      "kernel_seconds": 8.110032542,
+      "compiler_warnings": 0,
+      "final_standard3_audit_passed": true,
+      "printed_final_axiom_closures": [
+        {
+          "declaration": "Representation.exists_isGalois_level_forall_apply_eq_self",
+          "recursive_axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "original_canonical_lines": 12,
+      "repaired_canonical_lines": 14,
+      "original_final_statement_and_full_module_proof_preserved": true
+    }
+  },
+  "proof_summary": "Preserve the full supplier theorem statement, all original hypotheses, supporting lemmas and proof. Replace only the identical Normal proof convert/rfl block with direct exact of the same IsAlgClosure.normal theorem, update proposition-valued haveI to have while retaining computational Fintype haveI, and append final source/card recursive axiom queries. Every source/card result below is from an actual canonical make/kernel run; pending supplier pairs are not accepted.",
+  "original_statements_hypotheses_and_full_proofs_preserved": true,
+  "repaired_source_card_pair_actual_make_kernel_passed": true,
+  "source_card_actual_final_standard3": true,
+  "no_linter_suppression_added": true,
+  "baseline_source_actual_exit": null,
+  "supplier": "anthropics/fermats-last-theorem",
+  "supplier_commit": "6e837e75355538c7f80bab5b956861e86c4eacc2",
+  "selected_problem": "fermat_last_theorem",
+  "full_original_complete": false,
+  "official_new_solve_credit": 0,
+  "full_root_import_replay_and_axiom_audit_pending": true,
+  "max_active_flt_jobs": 1,
+  "max_active_flt_compilers": 1,
+  "lean_threads": 1
+}
