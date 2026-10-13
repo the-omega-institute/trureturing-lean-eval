@@ -1,0 +1,74 @@
+{
+  "sha256": "cd4c38d9cae351072fd9275ce035dd83e939cfeaf8551a2b7a8259ecc09e1002",
+  "exit": 0,
+  "empty_output_retry_done": false,
+  "source_sha256_after": "cd4c38d9cae351072fd9275ce035dd83e939cfeaf8551a2b7a8259ecc09e1002",
+  "source_unchanged": true,
+  "olean_sha256": "807219db255b4557799c8e5e56e9d8b95dbb59949ad4963cf205ee2eb4ed4e05",
+  "seconds": 165.16640958300013,
+  "pid": 66382,
+  "command": [
+    "/Users/macstudio/.local/omega-shims/lean",
+    "-j1",
+    "--trust=0",
+    "-Ddebug.skipKernelTC=false",
+    "-R",
+    "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src",
+    "-o",
+    "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-build/lib/lean/Submission/Supplier/P2M/Sol/S_WeierstrassCurve_Affine_eq_zero_of_forall_transEquiv_eq.olean",
+    "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_WeierstrassCurve_Affine_eq_zero_of_forall_transEquiv_eq.lean"
+  ],
+  "make_wrapper_pid": 15727,
+  "make_exit": 0,
+  "make_entry_failed": false,
+  "cache_binding_valid": true,
+  "canonical_make_running_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/f286c0ff542278dc2615c256-1791894990384754000.make-running.json",
+  "canonical_make_terminal_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/f286c0ff542278dc2615c256-1791894990384754000.make-terminal.json",
+  "kernel_terminal_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/f286c0ff542278dc2615c256-1791894990384754000.kernel/result.json",
+  "direct_dependencies": [
+    {
+      "module": "Submission.Supplier.Definitions.Def_EllipticCurve_FunctionFieldPullback",
+      "source_sha256": "49cdf22275b60852b9f15eeb276244a5abce1e6963c7a00253ec3fe3299e348a",
+      "object_sha256": "ec89563cb2c86e835e26c042c6c6f05e1f0334e03aeae4ba0b24478d1c0eaba3",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Theorems.Thm_WeierstrassCurve_card_torsion_of_isAlgClosed",
+      "source_sha256": "08beb9c961c3cef004d00c72f409511ea7f265260c3d76e24f2aa3b27be45d65",
+      "object_sha256": "cacb708cd78c398395e5deaa86b369f553147b68eb85277f68a20bb5bec05119",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Theorems.Thm_IsDedekindDomain_HeightOneSpectrum_exists_eq_span_singleton_of_map_eq",
+      "source_sha256": "b78308a886db6ab60ba6cbe07548fa06806ed0d97677e36bd3e76d4e294ca924",
+      "object_sha256": "3d1756fc5cbce12a9958bd5c22a0e3835b75e35d71095a268ff8fe0c56d0e2be",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Theorems.Thm_WeierstrassCurve_Affine_finrank_fieldRange_mulPull_le",
+      "source_sha256": "cd9cba7c75772a97fa3306601f6c1fa4f3c1efb150cfc1e9529fe5ab50f56de5",
+      "object_sha256": "f9180c379c403d6506b044ec7d66fbbbf2e83917b42492af3056e091e8efca1c",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Theorems.Thm_WeierstrassCurve_Affine_Point_exists_zsmul_eq_of_isAlgClosed",
+      "source_sha256": "a6ad1b36af8066f3772ca1baab0576ff99179e30b676af78b449cf3798472f51",
+      "object_sha256": "56e27157e1a11d43071c5366867efd975230730cb258faf1fb1930c81d36f2f4",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Theorems.Thm_WeierstrassCurve_Affine_zsmul_genericPoint_good",
+      "source_sha256": "351575f5a82f6c46ca1d4d7d37a55d20ddbb9e503c2fdcc345555f791b7a1afc",
+      "object_sha256": "2adbdb20b4f2c23e75ebaf374527519dcbb8e244625e67d2098530a94606ab06",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.P2M.Util",
+      "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+      "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+      "receipt_reused": true
+    }
+  ],
+  "stdout": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/f286c0ff542278dc2615c256-1791894990384754000.kernel/stdout.log",
+  "stderr": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/f286c0ff542278dc2615c256-1791894990384754000.kernel/stderr.log"
+}

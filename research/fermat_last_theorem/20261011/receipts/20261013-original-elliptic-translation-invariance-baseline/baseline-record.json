@@ -1,0 +1,129 @@
+{
+  "at": "2026-10-13T12:45:59.369405+00:00",
+  "original_source_card_pairs_actual_make_kernel_passed": true,
+  "canonical_pairs_byte_identical_to_supplier": true,
+  "no_source_edits": true,
+  "no_linter_suppression_added": true,
+  "no_redundant_recompilation": true,
+  "original_statements_hypotheses_and_proofs_preserved": true,
+  "checks": {
+    "WeierstrassCurve_Affine_eq_zero_of_forall_transEquiv_eq": {
+      "proof_summary": "Preserve arbitrary fields F,K with their algebra structure, DecidableEq and algebraic closedness of K, elliptic Weierstrass curve W over F and the Dedekind-domain coordinate ring of its K-base change, natural n with its cast in K nonzero, and the full valuation pullback hypothesis for every nonzero point P with nP nonzero, every function h and every natural level k. Preserve arbitrary target point T, function g with the exact valuation profile exp(-1) when nP equals T and 1 otherwise, and invariance of g under translation by every n-torsion point. Retain exactly the conclusion T equals zero. Preserve the complete 150-line supplier source and all supporting lemmas: point-division surjectivity, n-squared torsion-cardinality and pullback-degree comparison, equality of pullback range with the torsion-translation fixed field, transfer across the surjective height-one-spectrum map, the resulting principal ideal and the zero divisor-class criterion. No valuation condition, translation-invariance condition, field hypothesis or Dedekind hypothesis is omitted or weakened.",
+      "checks": {
+        "source": {
+          "module": "Submission.Supplier.P2M.Sol.S_WeierstrassCurve_Affine_eq_zero_of_forall_transEquiv_eq",
+          "canonical_lines": 150,
+          "canonical_byte_identical_to_supplier": true,
+          "make_exit": 0,
+          "kernel_exit": 0,
+          "kernel_seconds": 77.526971042,
+          "compiler_warnings": 6,
+          "source_unchanged_during_check": true,
+          "printed_final_axiom_closures": [],
+          "separate_final_axiom_audit_pending": true,
+          "direct_dependencies": [
+            {
+              "module": "Submission.Supplier.Definitions.Def_EllipticCurve_FunctionFieldPullback",
+              "source_sha256": "49cdf22275b60852b9f15eeb276244a5abce1e6963c7a00253ec3fe3299e348a",
+              "object_sha256": "ec89563cb2c86e835e26c042c6c6f05e1f0334e03aeae4ba0b24478d1c0eaba3",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.Theorems.Thm_WeierstrassCurve_card_torsion_of_isAlgClosed",
+              "source_sha256": "08beb9c961c3cef004d00c72f409511ea7f265260c3d76e24f2aa3b27be45d65",
+              "object_sha256": "cacb708cd78c398395e5deaa86b369f553147b68eb85277f68a20bb5bec05119",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.Theorems.Thm_IsDedekindDomain_HeightOneSpectrum_exists_eq_span_singleton_of_map_eq",
+              "source_sha256": "b78308a886db6ab60ba6cbe07548fa06806ed0d97677e36bd3e76d4e294ca924",
+              "object_sha256": "3d1756fc5cbce12a9958bd5c22a0e3835b75e35d71095a268ff8fe0c56d0e2be",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.Theorems.Thm_WeierstrassCurve_Affine_finrank_fieldRange_mulPull_le",
+              "source_sha256": "cd9cba7c75772a97fa3306601f6c1fa4f3c1efb150cfc1e9529fe5ab50f56de5",
+              "object_sha256": "f9180c379c403d6506b044ec7d66fbbbf2e83917b42492af3056e091e8efca1c",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.Theorems.Thm_WeierstrassCurve_Affine_Point_exists_zsmul_eq_of_isAlgClosed",
+              "source_sha256": "a6ad1b36af8066f3772ca1baab0576ff99179e30b676af78b449cf3798472f51",
+              "object_sha256": "56e27157e1a11d43071c5366867efd975230730cb258faf1fb1930c81d36f2f4",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.Theorems.Thm_WeierstrassCurve_Affine_zsmul_genericPoint_good",
+              "source_sha256": "351575f5a82f6c46ca1d4d7d37a55d20ddbb9e503c2fdcc345555f791b7a1afc",
+              "object_sha256": "2adbdb20b4f2c23e75ebaf374527519dcbb8e244625e67d2098530a94606ab06",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.P2M.Util",
+              "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+              "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+              "receipt_reused": true
+            }
+          ]
+        },
+        "card": {
+          "module": "Submission.Supplier.Theorems.Thm_WeierstrassCurve_Affine_eq_zero_of_forall_transEquiv_eq",
+          "canonical_lines": 9,
+          "canonical_byte_identical_to_supplier": true,
+          "make_exit": 0,
+          "kernel_exit": 0,
+          "kernel_seconds": 39.467736375,
+          "compiler_warnings": 0,
+          "source_unchanged_during_check": true,
+          "printed_final_axiom_closures": [],
+          "separate_final_axiom_audit_pending": true,
+          "direct_dependencies": [
+            {
+              "module": "Submission.Supplier.Definitions.Def_EllipticCurve_FunctionFieldPullback",
+              "source_sha256": "49cdf22275b60852b9f15eeb276244a5abce1e6963c7a00253ec3fe3299e348a",
+              "object_sha256": "ec89563cb2c86e835e26c042c6c6f05e1f0334e03aeae4ba0b24478d1c0eaba3",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.P2M.Util",
+              "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+              "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.P2M.Sol.S_WeierstrassCurve_Affine_eq_zero_of_forall_transEquiv_eq",
+              "source_sha256": "cd4c38d9cae351072fd9275ce035dd83e939cfeaf8551a2b7a8259ecc09e1002",
+              "object_sha256": "807219db255b4557799c8e5e56e9d8b95dbb59949ad4963cf205ee2eb4ed4e05",
+              "receipt_reused": true
+            }
+          ]
+        }
+      }
+    }
+  },
+  "supplier": "anthropics/fermats-last-theorem",
+  "supplier_commit": "6e837e75355538c7f80bab5b956861e86c4eacc2",
+  "full_original_complete": false,
+  "official_new_solve_credit": 0,
+  "complete_import_replay_and_recursive_axiom_audits_pending": true,
+  "selected_problem": "fermat_last_theorem",
+  "max_active_flt_jobs": 1,
+  "max_active_flt_compilers": 1,
+  "lean_threads": 1,
+  "graph_snapshot": {
+    "compiled": 8004,
+    "failed": 0,
+    "ready": 4353,
+    "root_compiled": false,
+    "workers": 1,
+    "running": {
+      "Submission.Supplier.P2M.Sol.S_WeierstrassCurve_Affine_ncard_fibSet": {
+        "pid": 7766,
+        "make_wrapper_pid": 7766,
+        "phase": "canonical_make_queue",
+        "sha256": "7e0c513077fd997a05f81ffcbaa39af3e9502547c1651b03e3a709327f7c0b68",
+        "configuration": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/e8ce82df9984e9511de72346-1791895488857943000.configuration.json"
+      }
+    }
+  }
+}
