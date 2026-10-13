@@ -1,0 +1,357 @@
+{
+  "at": "2026-10-13T03:35:57.525082+00:00",
+  "original_source_card_pairs_actual_make_kernel_passed": true,
+  "canonical_pairs_byte_identical_to_supplier": true,
+  "no_source_edits": true,
+  "no_linter_suppression_added": true,
+  "no_redundant_recompilation": true,
+  "original_statements_hypotheses_and_proofs_preserved": true,
+  "checks": {
+    "ModularCurve_isIntegral_adjoin_coeffEmb_jq_inv_pow_of_cuspForm_mul_thetaL_pow_eq_qExpansion": {
+      "proof_summary": "For every original nonzero natural level N and arbitrary natural m, weight-2m Gamma0(N) cusp form f and complex Laurent series Y with Y*theta(j)^m=qExpansion(f), retain integrality of Y^(2*N)*j^(m*N+1)*(j-1728)^(m*N) over C[j inverse]. Preserve the original full modular-form norm, polynomial coefficient, Lagrange interpolation, analytic qExpansion and field-identity proof. Add no positive-m or nonzero-f/Y restrictions.",
+      "checks": {
+        "source": {
+          "module": "Submission.Supplier.P2M.Sol.S_ModularCurve_isIntegral_adjoin_coeffEmb_jq_inv_pow_of_cuspForm_mul_thetaL_pow_eq_qExpansion",
+          "canonical_lines": 677,
+          "canonical_byte_identical_to_supplier": true,
+          "make_exit": 0,
+          "kernel_exit": 0,
+          "kernel_seconds": 13.831051708,
+          "compiler_warnings": 8,
+          "source_unchanged_during_check": true,
+          "printed_final_axiom_closures": [],
+          "separate_final_axiom_audit_pending": true,
+          "direct_dependencies": [
+            {
+              "module": "Submission.Supplier.Definitions.Def_ModularCurve_X0",
+              "source_sha256": "c38cb223f906b47b683743f598f9b13b15ea7fb7c5bddea00c85b1b20bd04306",
+              "object_sha256": "765403721e410e108317117782eed7fb7e462656e4b61c9796a09425971b78cf",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.Definitions.Def_ModularCurve_LaurentCoeff",
+              "source_sha256": "b669bf23529a8efa8e14cf704c3ef062c9dc7d12a964ea3ae43f6b9d5660fec0",
+              "object_sha256": "92decff74b33d21abf9b9d6512ceb1fa0d0af5f13d86e1b9bb7b4b3837e94e59",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.Definitions.Def_ModularCurve_QExpansionDiff",
+              "source_sha256": "fb602ef00ccf8bf629c85cd87cf78710d02863dbd467a322dbc3ad481b32bc6e",
+              "object_sha256": "17c7e53e2be743bef28d4f0283f0be9b3dbef93ffd15c51562ff68bdc3e3a982",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.Definitions.Def_ModularCurve_JqCoeff",
+              "source_sha256": "7334dfa90713b4611aeefdd810ac66290653bc06ed0998f63792a8070ec06daf",
+              "object_sha256": "49efd5e907b46b445bebd74910bc77acc46bd8868d4b11f2810c9adf55f95005",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.Theorems.Thm_ModularForm_exists_qExpansion_eq_aeval_mul_pow_levelOne",
+              "source_sha256": "42fa6dcdd6a181fb2231c1508566af26cd51835da98decf96535c39661285285",
+              "object_sha256": "0ea9535471332b4ed5c9bb7d31430bcd61e998d264c7b22bdc7c6ae23ed0414f",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.Theorems.Thm_omegaRow_T2",
+              "source_sha256": "1576c94c30c02bde5085e856832bba2052fd69b9291131871b6d865f88b63618",
+              "object_sha256": "f7ddd365849c55b2dada6b6d87b1c0d7e8425605c5981c65545f88412ebb51f4",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.Theorems.Thm_ModularCurve_jqModC_eq_qExpansion_E4_cube_div_discriminant",
+              "source_sha256": "d74d5ae89f54b1eb03f219d99689e8bf46fd599a53da4c566631bcfece06e321",
+              "object_sha256": "7d652d5f6b58a68281b811913fbe79f9503288c65b2af637af7375c939ad454e",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.P2M.Util",
+              "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+              "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+              "receipt_reused": true
+            }
+          ]
+        },
+        "card": {
+          "module": "Submission.Supplier.Theorems.Thm_ModularCurve_isIntegral_adjoin_coeffEmb_jq_inv_pow_of_cuspForm_mul_thetaL_pow_eq_qExpansion",
+          "canonical_lines": 19,
+          "canonical_byte_identical_to_supplier": true,
+          "make_exit": 0,
+          "kernel_exit": 0,
+          "kernel_seconds": 48.317122459,
+          "compiler_warnings": 0,
+          "source_unchanged_during_check": true,
+          "printed_final_axiom_closures": [],
+          "separate_final_axiom_audit_pending": true,
+          "direct_dependencies": [
+            {
+              "module": "Submission.Supplier.Definitions.Def_ModularCurve_X0",
+              "source_sha256": "c38cb223f906b47b683743f598f9b13b15ea7fb7c5bddea00c85b1b20bd04306",
+              "object_sha256": "765403721e410e108317117782eed7fb7e462656e4b61c9796a09425971b78cf",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.Definitions.Def_ModularCurve_LaurentCoeff",
+              "source_sha256": "b669bf23529a8efa8e14cf704c3ef062c9dc7d12a964ea3ae43f6b9d5660fec0",
+              "object_sha256": "92decff74b33d21abf9b9d6512ceb1fa0d0af5f13d86e1b9bb7b4b3837e94e59",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.Definitions.Def_ModularCurve_QExpansionDiff",
+              "source_sha256": "fb602ef00ccf8bf629c85cd87cf78710d02863dbd467a322dbc3ad481b32bc6e",
+              "object_sha256": "17c7e53e2be743bef28d4f0283f0be9b3dbef93ffd15c51562ff68bdc3e3a982",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.P2M.Util",
+              "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+              "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.P2M.Sol.S_ModularCurve_isIntegral_adjoin_coeffEmb_jq_inv_pow_of_cuspForm_mul_thetaL_pow_eq_qExpansion",
+              "source_sha256": "113a4d313418fddfc4e1a6bb93a1aa954dcd1ccec362c844bf669c6d0192f6cd",
+              "object_sha256": "85108b42c16dfb338ef1bcae60aa2882169cd803082b6bf7d842331108ac933d",
+              "receipt_reused": true
+            }
+          ]
+        }
+      }
+    },
+    "ModularCurve_isIntegral_adjoin_coeffEmb_jq_inv_of_mul_thetaL_pow_eq_qExpansion": {
+      "proof_summary": "For every original nonzero level N, arbitrary natural m, weight-2m Gamma0(N) modular form f and complex Laurent series Y with Y*theta(j)^m=qExpansion(f), retain integrality of Y^2*j^m*(j-1728)^m over C[j inverse]. Preserve the full original norm/interpolation engine and squaring the modular form in its final weight-4m construction. Do not replace the modular-form hypothesis by a cusp-form hypothesis or require m>=1.",
+      "checks": {
+        "source": {
+          "module": "Submission.Supplier.P2M.Sol.S_ModularCurve_isIntegral_adjoin_coeffEmb_jq_inv_of_mul_thetaL_pow_eq_qExpansion",
+          "canonical_lines": 661,
+          "canonical_byte_identical_to_supplier": true,
+          "make_exit": 0,
+          "kernel_exit": 0,
+          "kernel_seconds": 50.771914249999995,
+          "compiler_warnings": 8,
+          "source_unchanged_during_check": true,
+          "printed_final_axiom_closures": [],
+          "separate_final_axiom_audit_pending": true,
+          "direct_dependencies": [
+            {
+              "module": "Submission.Supplier.Definitions.Def_ModularCurve_X0",
+              "source_sha256": "c38cb223f906b47b683743f598f9b13b15ea7fb7c5bddea00c85b1b20bd04306",
+              "object_sha256": "765403721e410e108317117782eed7fb7e462656e4b61c9796a09425971b78cf",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.Definitions.Def_ModularCurve_LaurentCoeff",
+              "source_sha256": "b669bf23529a8efa8e14cf704c3ef062c9dc7d12a964ea3ae43f6b9d5660fec0",
+              "object_sha256": "92decff74b33d21abf9b9d6512ceb1fa0d0af5f13d86e1b9bb7b4b3837e94e59",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.Definitions.Def_ModularCurve_QExpansionDiff",
+              "source_sha256": "fb602ef00ccf8bf629c85cd87cf78710d02863dbd467a322dbc3ad481b32bc6e",
+              "object_sha256": "17c7e53e2be743bef28d4f0283f0be9b3dbef93ffd15c51562ff68bdc3e3a982",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.Definitions.Def_ModularCurve_JqCoeff",
+              "source_sha256": "7334dfa90713b4611aeefdd810ac66290653bc06ed0998f63792a8070ec06daf",
+              "object_sha256": "49efd5e907b46b445bebd74910bc77acc46bd8868d4b11f2810c9adf55f95005",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.Theorems.Thm_ModularForm_exists_qExpansion_eq_aeval_mul_pow_levelOne",
+              "source_sha256": "42fa6dcdd6a181fb2231c1508566af26cd51835da98decf96535c39661285285",
+              "object_sha256": "0ea9535471332b4ed5c9bb7d31430bcd61e998d264c7b22bdc7c6ae23ed0414f",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.Theorems.Thm_omegaRow_T2",
+              "source_sha256": "1576c94c30c02bde5085e856832bba2052fd69b9291131871b6d865f88b63618",
+              "object_sha256": "f7ddd365849c55b2dada6b6d87b1c0d7e8425605c5981c65545f88412ebb51f4",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.Theorems.Thm_ModularCurve_jqModC_eq_qExpansion_E4_cube_div_discriminant",
+              "source_sha256": "d74d5ae89f54b1eb03f219d99689e8bf46fd599a53da4c566631bcfece06e321",
+              "object_sha256": "7d652d5f6b58a68281b811913fbe79f9503288c65b2af637af7375c939ad454e",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.P2M.Util",
+              "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+              "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+              "receipt_reused": true
+            }
+          ]
+        },
+        "card": {
+          "module": "Submission.Supplier.Theorems.Thm_ModularCurve_isIntegral_adjoin_coeffEmb_jq_inv_of_mul_thetaL_pow_eq_qExpansion",
+          "canonical_lines": 19,
+          "canonical_byte_identical_to_supplier": true,
+          "make_exit": 0,
+          "kernel_exit": 0,
+          "kernel_seconds": 6.424698167,
+          "compiler_warnings": 0,
+          "source_unchanged_during_check": true,
+          "printed_final_axiom_closures": [],
+          "separate_final_axiom_audit_pending": true,
+          "direct_dependencies": [
+            {
+              "module": "Submission.Supplier.Definitions.Def_ModularCurve_X0",
+              "source_sha256": "c38cb223f906b47b683743f598f9b13b15ea7fb7c5bddea00c85b1b20bd04306",
+              "object_sha256": "765403721e410e108317117782eed7fb7e462656e4b61c9796a09425971b78cf",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.Definitions.Def_ModularCurve_LaurentCoeff",
+              "source_sha256": "b669bf23529a8efa8e14cf704c3ef062c9dc7d12a964ea3ae43f6b9d5660fec0",
+              "object_sha256": "92decff74b33d21abf9b9d6512ceb1fa0d0af5f13d86e1b9bb7b4b3837e94e59",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.Definitions.Def_ModularCurve_QExpansionDiff",
+              "source_sha256": "fb602ef00ccf8bf629c85cd87cf78710d02863dbd467a322dbc3ad481b32bc6e",
+              "object_sha256": "17c7e53e2be743bef28d4f0283f0be9b3dbef93ffd15c51562ff68bdc3e3a982",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.P2M.Util",
+              "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+              "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.P2M.Sol.S_ModularCurve_isIntegral_adjoin_coeffEmb_jq_inv_of_mul_thetaL_pow_eq_qExpansion",
+              "source_sha256": "f29ed4882f8346a183812a48a94054d0f9ebfee179c4e9a9e8e38cc7891abc95",
+              "object_sha256": "c521cb626e5455993bf90900828b384d976edd664fa658d2fc90c6f2b02c13ce",
+              "receipt_reused": true
+            }
+          ]
+        }
+      }
+    },
+    "ModularCurve_isIntegral_adjoin_coeffEmb_jq_inv_of_coeffMap_mul_thetaL_pow_eq_qExpansion": {
+      "proof_summary": "For every original field K with a Q-algebra structure, ring homomorphism sigma from K to C, nonzero natural level N, arbitrary natural m, weight-2m Gamma0(N) modular form f and K-valued Laurent series y satisfying coeffMap(sigma,y)*theta(j)^m=qExpansion(f), retain integrality of y^2*j_K^m*(j_K-1728)^m over K[j_K inverse]. Preserve the original descent through coefficient-map integrality and the exact map-inverse, rational embedding and 1728 identities. Add no algebraic-closure, cusp-form or positive-m restriction.",
+      "checks": {
+        "source": {
+          "module": "Submission.Supplier.P2M.Sol.S_ModularCurve_isIntegral_adjoin_coeffEmb_jq_inv_of_coeffMap_mul_thetaL_pow_eq_qExpansion",
+          "canonical_lines": 32,
+          "canonical_byte_identical_to_supplier": true,
+          "make_exit": 0,
+          "kernel_exit": 0,
+          "kernel_seconds": 7.835432583,
+          "compiler_warnings": 0,
+          "source_unchanged_during_check": true,
+          "printed_final_axiom_closures": [],
+          "separate_final_axiom_audit_pending": true,
+          "direct_dependencies": [
+            {
+              "module": "Submission.Supplier.Definitions.Def_ModularCurve_X0",
+              "source_sha256": "c38cb223f906b47b683743f598f9b13b15ea7fb7c5bddea00c85b1b20bd04306",
+              "object_sha256": "765403721e410e108317117782eed7fb7e462656e4b61c9796a09425971b78cf",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.Definitions.Def_ModularCurve_LaurentCoeff",
+              "source_sha256": "b669bf23529a8efa8e14cf704c3ef062c9dc7d12a964ea3ae43f6b9d5660fec0",
+              "object_sha256": "92decff74b33d21abf9b9d6512ceb1fa0d0af5f13d86e1b9bb7b4b3837e94e59",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.Definitions.Def_ModularCurve_QExpansionDiff",
+              "source_sha256": "fb602ef00ccf8bf629c85cd87cf78710d02863dbd467a322dbc3ad481b32bc6e",
+              "object_sha256": "17c7e53e2be743bef28d4f0283f0be9b3dbef93ffd15c51562ff68bdc3e3a982",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.Theorems.Thm_ModularCurve_isIntegral_adjoin_of_isIntegral_adjoin_coeffMap",
+              "source_sha256": "95e91ac02d43599eb2f42139022b6dd6edeb65f126cb6e90d70e968c95552611",
+              "object_sha256": "41cbafebd53074e02dae9e6aa45fe5fcfe0437de847c6d919c5d15f7f97e69fd",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.Theorems.Thm_ModularCurve_isIntegral_adjoin_coeffEmb_jq_inv_of_mul_thetaL_pow_eq_qExpansion",
+              "source_sha256": "c178c145f28db259ffe9e720077e367dbcd0e75b3d1f460d6d3b1e5008481be6",
+              "object_sha256": "985638b97c58b4bd433f13235df32701835cd592f898c710d53c130b3ccfea68",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.P2M.Util",
+              "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+              "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+              "receipt_reused": true
+            }
+          ]
+        },
+        "card": {
+          "module": "Submission.Supplier.Theorems.Thm_ModularCurve_isIntegral_adjoin_coeffEmb_jq_inv_of_coeffMap_mul_thetaL_pow_eq_qExpansion",
+          "canonical_lines": 19,
+          "canonical_byte_identical_to_supplier": true,
+          "make_exit": 0,
+          "kernel_exit": 0,
+          "kernel_seconds": 43.305142958,
+          "compiler_warnings": 0,
+          "source_unchanged_during_check": true,
+          "printed_final_axiom_closures": [],
+          "separate_final_axiom_audit_pending": true,
+          "direct_dependencies": [
+            {
+              "module": "Submission.Supplier.Definitions.Def_ModularCurve_X0",
+              "source_sha256": "c38cb223f906b47b683743f598f9b13b15ea7fb7c5bddea00c85b1b20bd04306",
+              "object_sha256": "765403721e410e108317117782eed7fb7e462656e4b61c9796a09425971b78cf",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.Definitions.Def_ModularCurve_LaurentCoeff",
+              "source_sha256": "b669bf23529a8efa8e14cf704c3ef062c9dc7d12a964ea3ae43f6b9d5660fec0",
+              "object_sha256": "92decff74b33d21abf9b9d6512ceb1fa0d0af5f13d86e1b9bb7b4b3837e94e59",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.Definitions.Def_ModularCurve_QExpansionDiff",
+              "source_sha256": "fb602ef00ccf8bf629c85cd87cf78710d02863dbd467a322dbc3ad481b32bc6e",
+              "object_sha256": "17c7e53e2be743bef28d4f0283f0be9b3dbef93ffd15c51562ff68bdc3e3a982",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.P2M.Util",
+              "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+              "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.P2M.Sol.S_ModularCurve_isIntegral_adjoin_coeffEmb_jq_inv_of_coeffMap_mul_thetaL_pow_eq_qExpansion",
+              "source_sha256": "5ae1efa99e9406ce00f6c4f4a61a9814154b759133212df1fdb3860e94da813a",
+              "object_sha256": "9f00a4414667c36ef133c46db1cc48433b4cc499c3677f62dc032c8f70d9cb6d",
+              "receipt_reused": true
+            }
+          ]
+        }
+      }
+    }
+  },
+  "supplier": "anthropics/fermats-last-theorem",
+  "supplier_commit": "6e837e75355538c7f80bab5b956861e86c4eacc2",
+  "full_original_complete": false,
+  "official_new_solve_credit": 0,
+  "complete_import_replay_and_recursive_axiom_audits_pending": true,
+  "selected_problem": "fermat_last_theorem",
+  "max_active_flt_jobs": 1,
+  "max_active_flt_compilers": 1,
+  "lean_threads": 1,
+  "graph_snapshot": {
+    "compiled": 7783,
+    "failed": 0,
+    "ready": 4397,
+    "root_compiled": false,
+    "workers": 1,
+    "running": {
+      "Submission.Supplier.Theorems.Thm_ModularCurve_isIntegral_adjoin_coeffEmb_jq_of_mul_thetaL_pow_eq_qExpansion": {
+        "pid": 81196,
+        "make_wrapper_pid": 76962,
+        "phase": "kernel",
+        "sha256": "746dcdfe02e33630bc5c45b70aab28edb8e978c74524ad61bc73099f41060dc0",
+        "configuration": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/259e6f7f64e9f034e662941c-1791862529002739000.configuration.json"
+      }
+    }
+  }
+}
