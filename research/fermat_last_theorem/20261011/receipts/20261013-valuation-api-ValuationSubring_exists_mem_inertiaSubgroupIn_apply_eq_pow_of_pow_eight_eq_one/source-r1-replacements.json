@@ -1,0 +1,182 @@
+[
+  [
+    "      convert hq0 using 2\n      rfl\n      rfl",
+    "      convert hq0 using 2\n      rfl",
+    1
+  ],
+  [
+    "MulSemiringAction.toRingEquiv_apply,",
+    "MulSemiringAction.toRingEquiv_apply_apply,",
+    2
+  ],
+  [
+    "\n  haveI : FiniteDimensional ℚ F :=\n",
+    "\n  have : FiniteDimensional ℚ F :=\n",
+    1
+  ],
+  [
+    "\n  haveI : Algebra.IsAlgebraic L (AlgebraicClosure ℚ) := Algebra.IsAlgebraic.tower_top (K := ℚ) L\n",
+    "\n  have : Algebra.IsAlgebraic L (AlgebraicClosure ℚ) := Algebra.IsAlgebraic.tower_top (K := ℚ) L\n",
+    1
+  ],
+  [
+    "\n  haveI : Algebra.IsIntegral L (AlgebraicClosure ℚ) :=\n",
+    "\n  have : Algebra.IsIntegral L (AlgebraicClosure ℚ) :=\n",
+    1
+  ],
+  [
+    "\n  haveI : Normal L (AlgebraicClosure ℚ) := Normal.tower_top_of_normal ℚ L _\n",
+    "\n  have : Normal L (AlgebraicClosure ℚ) := Normal.tower_top_of_normal ℚ L _\n",
+    1
+  ],
+  [
+    "\n  haveI : Algebra.IsSeparable L (AlgebraicClosure ℚ) :=\n",
+    "\n  have : Algebra.IsSeparable L (AlgebraicClosure ℚ) :=\n",
+    1
+  ],
+  [
+    "\n  haveI : IsGalois L (AlgebraicClosure ℚ) := ⟨⟩\n",
+    "\n  have : IsGalois L (AlgebraicClosure ℚ) := ⟨⟩\n",
+    1
+  ],
+  [
+    "\n  letI actG : MulSemiringAction (AlgebraicClosure ℚ ≃ₐ[ℚ] AlgebraicClosure ℚ)\n",
+    "\n  let actG : MulSemiringAction (AlgebraicClosure ℚ ≃ₐ[ℚ] AlgebraicClosure ℚ)\n",
+    1
+  ],
+  [
+    "\n  letI actGI : DistribMulAction (AlgebraicClosure ℚ ≃ₐ[ℚ] AlgebraicClosure ℚ)\n",
+    "\n  let actGI : DistribMulAction (AlgebraicClosure ℚ ≃ₐ[ℚ] AlgebraicClosure ℚ)\n",
+    1
+  ],
+  [
+    "\n  letI mulActGI : MulAction (AlgebraicClosure ℚ ≃ₐ[ℚ] AlgebraicClosure ℚ)\n",
+    "\n  let mulActGI : MulAction (AlgebraicClosure ℚ ≃ₐ[ℚ] AlgebraicClosure ℚ)\n",
+    1
+  ],
+  [
+    "\n  letI dsmulGI : DistribSMul (AlgebraicClosure ℚ ≃ₐ[ℚ] AlgebraicClosure ℚ)\n",
+    "\n  let dsmulGI : DistribSMul (AlgebraicClosure ℚ ≃ₐ[ℚ] AlgebraicClosure ℚ)\n",
+    1
+  ],
+  [
+    "\n  letI smulzGI : SMulZeroClass (AlgebraicClosure ℚ ≃ₐ[ℚ] AlgebraicClosure ℚ)\n",
+    "\n  let smulzGI : SMulZeroClass (AlgebraicClosure ℚ ≃ₐ[ℚ] AlgebraicClosure ℚ)\n",
+    1
+  ],
+  [
+    "\n  letI smulGI : SMul (AlgebraicClosure ℚ ≃ₐ[ℚ] AlgebraicClosure ℚ)\n",
+    "\n  let smulGI : SMul (AlgebraicClosure ℚ ≃ₐ[ℚ] AlgebraicClosure ℚ)\n",
+    1
+  ],
+  [
+    "\n  letI algOB : Algebra (𝓞 L) (integralClosure ℤ (AlgebraicClosure ℚ)) := f.toAlgebra\n",
+    "\n  let algOB : Algebra (𝓞 L) (integralClosure ℤ (AlgebraicClosure ℚ)) := f.toAlgebra\n",
+    1
+  ],
+  [
+    "\n  haveI : IsScalarTower (𝓞 L) (integralClosure ℤ (AlgebraicClosure ℚ)) (AlgebraicClosure ℚ) :=\n",
+    "\n  have : IsScalarTower (𝓞 L) (integralClosure ℤ (AlgebraicClosure ℚ)) (AlgebraicClosure ℚ) :=\n",
+    1
+  ],
+  [
+    "\n  haveI h𝔔lies : 𝔔.LiesOver Q := ⟨by\n",
+    "\n  have h𝔔lies : 𝔔.LiesOver Q := ⟨by\n",
+    1
+  ],
+  [
+    "\n  letI actL : MulSemiringAction (AlgebraicClosure ℚ ≃ₐ[L] AlgebraicClosure ℚ)\n",
+    "\n  let actL : MulSemiringAction (AlgebraicClosure ℚ ≃ₐ[L] AlgebraicClosure ℚ)\n",
+    1
+  ],
+  [
+    "\n  letI actLI : DistribMulAction (AlgebraicClosure ℚ ≃ₐ[L] AlgebraicClosure ℚ)\n",
+    "\n  let actLI : DistribMulAction (AlgebraicClosure ℚ ≃ₐ[L] AlgebraicClosure ℚ)\n",
+    1
+  ],
+  [
+    "\n  letI mulActLI : MulAction (AlgebraicClosure ℚ ≃ₐ[L] AlgebraicClosure ℚ)\n",
+    "\n  let mulActLI : MulAction (AlgebraicClosure ℚ ≃ₐ[L] AlgebraicClosure ℚ)\n",
+    1
+  ],
+  [
+    "\n  letI dsmulLI : DistribSMul (AlgebraicClosure ℚ ≃ₐ[L] AlgebraicClosure ℚ)\n",
+    "\n  let dsmulLI : DistribSMul (AlgebraicClosure ℚ ≃ₐ[L] AlgebraicClosure ℚ)\n",
+    1
+  ],
+  [
+    "\n  letI smulzLI : SMulZeroClass (AlgebraicClosure ℚ ≃ₐ[L] AlgebraicClosure ℚ)\n",
+    "\n  let smulzLI : SMulZeroClass (AlgebraicClosure ℚ ≃ₐ[L] AlgebraicClosure ℚ)\n",
+    1
+  ],
+  [
+    "\n  letI smulLI : SMul (AlgebraicClosure ℚ ≃ₐ[L] AlgebraicClosure ℚ)\n",
+    "\n  let smulLI : SMul (AlgebraicClosure ℚ ≃ₐ[L] AlgebraicClosure ℚ)\n",
+    1
+  ],
+  [
+    "\n  haveI : SMulCommClass (AlgebraicClosure ℚ ≃ₐ[L] AlgebraicClosure ℚ) (𝓞 L)\n",
+    "\n  have : SMulCommClass (AlgebraicClosure ℚ ≃ₐ[L] AlgebraicClosure ℚ) (𝓞 L)\n",
+    1
+  ],
+  [
+    "\n  letI : TopologicalSpace (integralClosure ℤ (AlgebraicClosure ℚ)) := ⊥\n",
+    "\n  let : TopologicalSpace (integralClosure ℤ (AlgebraicClosure ℚ)) := ⊥\n",
+    1
+  ],
+  [
+    "\n  haveI : DiscreteTopology (integralClosure ℤ (AlgebraicClosure ℚ)) := ⟨rfl⟩\n",
+    "\n  have : DiscreteTopology (integralClosure ℤ (AlgebraicClosure ℚ)) := ⟨rfl⟩\n",
+    1
+  ],
+  [
+    "\n    haveI : FiniteDimensional L (IntermediateField.adjoin L {(b : AlgebraicClosure ℚ)}) :=\n",
+    "\n    have : FiniteDimensional L (IntermediateField.adjoin L {(b : AlgebraicClosure ℚ)}) :=\n",
+    1
+  ],
+  [
+    "\n  haveI : ContinuousSMul (AlgebraicClosure ℚ ≃ₐ[L] AlgebraicClosure ℚ)\n",
+    "\n  have : ContinuousSMul (AlgebraicClosure ℚ ≃ₐ[L] AlgebraicClosure ℚ)\n",
+    1
+  ],
+  [
+    "\n  haveI : Algebra.IsInvariant (𝓞 L) (integralClosure ℤ (AlgebraicClosure ℚ))\n",
+    "\n  have : Algebra.IsInvariant (𝓞 L) (integralClosure ℤ (AlgebraicClosure ℚ))\n",
+    1
+  ],
+  [
+    "\n  haveI : Fact p.Prime := ⟨hp⟩\n",
+    "\n  have : Fact p.Prime := ⟨hp⟩\n",
+    1
+  ],
+  [
+    "\n  haveI := A.primeBelow_liesOver L hp hA\n",
+    "\n  have := A.primeBelow_liesOver L hp hA\n",
+    1
+  ],
+  [
+    "\n  haveI := A.isMaximal_primeBelow L hp hA\n",
+    "\n  have := A.isMaximal_primeBelow L hp hA\n",
+    1
+  ],
+  [
+    "\n  haveI : NeZero (8 : ℕ) := ⟨by norm_num⟩\n",
+    "\n  have : NeZero (8 : ℕ) := ⟨by norm_num⟩\n",
+    1
+  ],
+  [
+    "\n  haveI : FiniteDimensional ℚ L :=\n",
+    "\n  have : FiniteDimensional ℚ L :=\n",
+    1
+  ],
+  [
+    "\n  haveI : IsCyclotomicExtension {8} ℚ L := hζ.intermediateField_adjoin_isCyclotomicExtension ℚ\n",
+    "\n  have : IsCyclotomicExtension {8} ℚ L := hζ.intermediateField_adjoin_isCyclotomicExtension ℚ\n",
+    1
+  ],
+  [
+    "\n  haveI : IsGalois ℚ L := IsCyclotomicExtension.isGalois {8} ℚ L\n",
+    "\n  have : IsGalois ℚ L := IsCyclotomicExtension.isGalois {8} ℚ L\n",
+    1
+  ]
+]

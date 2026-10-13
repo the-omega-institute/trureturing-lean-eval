@@ -1,0 +1,7 @@
+solution : ∀ (A : ValuationSubring (AlgebraicClosure ℚ)),
+  A.LiesOverPrime 2 →
+    ∀ (u : (ZMod 8)ˣ),
+      ∃ σ ∈ ValuationSubring.inertiaSubgroupIn ℚ A, ∀ (μ : AlgebraicClosure ℚ), μ ^ 8 = 1 → σ μ = μ ^ (↑u).val
+'P2MW.S_ValuationSubring_exists_mem_inertiaSubgroupIn_apply_eq_pow_of_pow_eight_eq_one.solution' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
