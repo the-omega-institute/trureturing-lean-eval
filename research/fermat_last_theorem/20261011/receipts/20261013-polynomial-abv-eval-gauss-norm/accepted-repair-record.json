@@ -1,0 +1,62 @@
+{
+  "at": "2026-10-13T07:44:59.044008+00:00",
+  "checks": {
+    "source": {
+      "module": "Submission.Supplier.P2M.Sol.S_Polynomial_abv_eval_le_gaussNorm",
+      "make_exit": 0,
+      "kernel_exit": 0,
+      "kernel_seconds": 84.127234959,
+      "compiler_warnings": 0,
+      "final_standard3_audit_passed": true,
+      "printed_final_axiom_closures": [
+        {
+          "declaration": "P2MW.S_Polynomial_abv_eval_le_gaussNorm.solution",
+          "recursive_axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "original_canonical_lines": 21,
+      "repaired_canonical_lines": 23,
+      "original_final_statement_and_full_module_proof_preserved": true
+    },
+    "card": {
+      "module": "Submission.Supplier.Theorems.Thm_Polynomial_abv_eval_le_gaussNorm",
+      "make_exit": 0,
+      "kernel_exit": 0,
+      "kernel_seconds": 6.3229563749999995,
+      "compiler_warnings": 0,
+      "final_standard3_audit_passed": true,
+      "printed_final_axiom_closures": [
+        {
+          "declaration": "Polynomial.abv_eval_le_gaussNorm",
+          "recursive_axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "original_canonical_lines": 11,
+      "repaired_canonical_lines": 13,
+      "original_final_statement_and_full_module_proof_preserved": true
+    }
+  },
+  "proof_summary": "For any commutative ring R, any nonarchimedean real absolute value v, every nonnegative real c, any polynomial p and any z with v(z) <= c, retain v(p.eval z) <= p.gaussNorm v c, including the subsingleton-ring case. Preserve the finite-sum domination and coefficient-wise Gauss-norm bound.",
+  "original_statements_hypotheses_and_full_proofs_preserved": true,
+  "repaired_source_card_pair_actual_make_kernel_passed": true,
+  "source_card_actual_final_standard3": true,
+  "no_linter_suppression_added": true,
+  "baseline_source_actual_exit": 1,
+  "supplier": "anthropics/fermats-last-theorem",
+  "supplier_commit": "6e837e75355538c7f80bab5b956861e86c4eacc2",
+  "selected_problem": "fermat_last_theorem",
+  "full_original_complete": false,
+  "official_new_solve_credit": 0,
+  "full_root_import_replay_and_axiom_audit_pending": true,
+  "max_active_flt_jobs": 1,
+  "max_active_flt_compilers": 1,
+  "lean_threads": 1
+}

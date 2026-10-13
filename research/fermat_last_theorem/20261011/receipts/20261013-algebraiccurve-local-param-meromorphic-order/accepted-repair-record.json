@@ -1,0 +1,62 @@
+{
+  "at": "2026-10-13T07:44:59.194198+00:00",
+  "checks": {
+    "source": {
+      "module": "Submission.Supplier.P2M.Sol.S_AlgebraicCurve_Place_exists_localParam_meromorphicOrderAt_evalAt_eq_ord_complex",
+      "make_exit": 0,
+      "kernel_exit": 0,
+      "kernel_seconds": 68.026212083,
+      "compiler_warnings": 0,
+      "final_standard3_audit_passed": true,
+      "printed_final_axiom_closures": [
+        {
+          "declaration": "P2MW.S_AlgebraicCurve_Place_exists_localParam_meromorphicOrderAt_evalAt_eq_ord_complex.solution",
+          "recursive_axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "original_canonical_lines": 1142,
+      "repaired_canonical_lines": 1144,
+      "original_final_statement_and_full_module_proof_preserved": true
+    },
+    "card": {
+      "module": "Submission.Supplier.Theorems.Thm_AlgebraicCurve_Place_exists_localParam_meromorphicOrderAt_evalAt_eq_ord_complex",
+      "make_exit": 0,
+      "kernel_exit": 0,
+      "kernel_seconds": 40.549564333,
+      "compiler_warnings": 0,
+      "final_standard3_audit_passed": true,
+      "printed_final_axiom_closures": [
+        {
+          "declaration": "AlgebraicCurve.Place.exists_localParam_meromorphicOrderAt_evalAt_eq_ord_complex",
+          "recursive_axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "original_canonical_lines": 23,
+      "repaired_canonical_lines": 25,
+      "original_final_statement_and_full_module_proof_preserved": true
+    }
+  },
+  "proof_summary": "For every field F over Complex satisfying the original finite-generation and IsCurveOver assumptions, every place v and every t of order one, retain a positive-radius family gamma with gamma(0)=v, order-one t-z at every point of the ball, and for every nonzero f and every point of that ball a meromorphic evaluation germ whose meromorphic order is the place order, with analyticity when that order is nonnegative. Preserve the full Laurent-series realization, algebraicity, coefficient growth, convergence, rational-place evaluation and uniform local-parameter construction.",
+  "original_statements_hypotheses_and_full_proofs_preserved": true,
+  "repaired_source_card_pair_actual_make_kernel_passed": true,
+  "source_card_actual_final_standard3": true,
+  "no_linter_suppression_added": true,
+  "baseline_source_actual_exit": 1,
+  "supplier": "anthropics/fermats-last-theorem",
+  "supplier_commit": "6e837e75355538c7f80bab5b956861e86c4eacc2",
+  "selected_problem": "fermat_last_theorem",
+  "full_original_complete": false,
+  "official_new_solve_credit": 0,
+  "full_root_import_replay_and_axiom_audit_pending": true,
+  "max_active_flt_jobs": 1,
+  "max_active_flt_compilers": 1,
+  "lean_threads": 1
+}

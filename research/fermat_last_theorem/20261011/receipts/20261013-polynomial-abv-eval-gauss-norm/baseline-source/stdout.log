@@ -1,0 +1,15 @@
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_Polynomial_abv_eval_le_gaussNorm.lean:24:14: error: Type mismatch
+  p.coeff i * z ^ i
+has type
+  R
+of sort `Type u_1` but is expected to have type
+  ∀ (b : ℕ), ?m.50 (i + b) ≤ max (?m.50 i) (?m.50 b)
+of sort `Prop`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_Polynomial_abv_eval_le_gaussNorm.lean:23:69: error: Application type mismatch: The argument
+  hv
+has type
+  IsNonarchimedean ⇑v
+of sort `Prop` but is expected to have type
+  ℕ → ℕ
+of sort `Type` in the application
+  @IsNonarchimedean.finset_image_add_of_nonempty ℕ ℕ ?m.48 ?m.49 ?m.50 hv
