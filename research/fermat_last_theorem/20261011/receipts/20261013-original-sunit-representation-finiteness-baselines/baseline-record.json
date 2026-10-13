@@ -1,0 +1,111 @@
+{
+  "at": "2026-10-13T05:43:33.524700+00:00",
+  "original_source_card_pairs_actual_make_kernel_passed": true,
+  "canonical_pairs_byte_identical_to_supplier": true,
+  "no_source_edits": true,
+  "no_linter_suppression_added": true,
+  "no_redundant_recompilation": true,
+  "original_statements_hypotheses_and_proofs_preserved": true,
+  "checks": {
+    "NumberField_SUnits_moduleFinite_sUnitsRep": {
+      "proof_summary": "For the original number fields E and K with Algebra E K and arbitrary finite set S of height-one primes of the integer ring of E, retain Module.Finite over the integers for the original S-unit representation sUnitsRep E K S. Preserve finiteness of placesAbove via finite unions of Dedekind-domain primesOver fibres, the original M4aHerbrand S-unit finite-generation result, exact S-unit membership identification, the full additive equivalence with the S-unit submodule and transfer through its integer-linear equivalence. Retain both original number-field hypotheses and arbitrary S; no Galois assumption or rank formula is added.",
+      "checks": {
+        "source": {
+          "module": "Submission.Supplier.P2M.Sol.S_NumberField_SUnits_moduleFinite_sUnitsRep",
+          "canonical_lines": 54,
+          "canonical_byte_identical_to_supplier": true,
+          "make_exit": 0,
+          "kernel_exit": 0,
+          "kernel_seconds": 18.1444485,
+          "compiler_warnings": 2,
+          "source_unchanged_during_check": true,
+          "printed_final_axiom_closures": [],
+          "separate_final_axiom_audit_pending": true,
+          "direct_dependencies": [
+            {
+              "module": "Submission.Supplier.Definitions.Def_NumberField_SUnitsModule",
+              "source_sha256": "f0cafc0c6bfd454ea1037bcb34c4f469c4cd4cce2e18ce57e18f8b2a2b25192e",
+              "object_sha256": "99fc483fe2fd4b3ed713c517d2eac2ab3905379480f64b185adc9dd70c94578f",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.Theorems.Thm_M4aHerbrand_finrank_sUnit_eq",
+              "source_sha256": "e4ebfe047c11f816c8e85c349ea7071dc4cf4d277259583a4dc53ea0106b7475",
+              "object_sha256": "755e04c11f558706be8ec526929b3a9430443d4439e7699fa4d5806fd6237244",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.Theorems.Thm_NumberField_SUnits_sUnits_eq_unit",
+              "source_sha256": "232547d49f3a1b656c7d3020d3cdf5615f0cf29806e9a66238b841668d149afa",
+              "object_sha256": "fe7d3f8e291ab2ebbda2c9d4eb841dac1f57874aac2e216628aac7abefe3a3d6",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.P2M.Util",
+              "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+              "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+              "receipt_reused": true
+            }
+          ]
+        },
+        "card": {
+          "module": "Submission.Supplier.Theorems.Thm_NumberField_SUnits_moduleFinite_sUnitsRep",
+          "canonical_lines": 10,
+          "canonical_byte_identical_to_supplier": true,
+          "make_exit": 0,
+          "kernel_exit": 0,
+          "kernel_seconds": 122.22836649999999,
+          "compiler_warnings": 0,
+          "source_unchanged_during_check": true,
+          "printed_final_axiom_closures": [],
+          "separate_final_axiom_audit_pending": true,
+          "direct_dependencies": [
+            {
+              "module": "Submission.Supplier.Definitions.Def_NumberField_SUnitsModule",
+              "source_sha256": "f0cafc0c6bfd454ea1037bcb34c4f469c4cd4cce2e18ce57e18f8b2a2b25192e",
+              "object_sha256": "99fc483fe2fd4b3ed713c517d2eac2ab3905379480f64b185adc9dd70c94578f",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.P2M.Util",
+              "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+              "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.P2M.Sol.S_NumberField_SUnits_moduleFinite_sUnitsRep",
+              "source_sha256": "48b44d3e2d90b01f7b44d30f7adb0232e3c4b85ef3c7269c0d257c849185fcb3",
+              "object_sha256": "2aba5e46935ec17ec7567e666406eb58406ab2364ce171540acd6399be7bcf1c",
+              "receipt_reused": true
+            }
+          ]
+        }
+      }
+    }
+  },
+  "supplier": "anthropics/fermats-last-theorem",
+  "supplier_commit": "6e837e75355538c7f80bab5b956861e86c4eacc2",
+  "full_original_complete": false,
+  "official_new_solve_credit": 0,
+  "complete_import_replay_and_recursive_axiom_audits_pending": true,
+  "selected_problem": "fermat_last_theorem",
+  "max_active_flt_jobs": 1,
+  "max_active_flt_compilers": 1,
+  "lean_threads": 1,
+  "graph_snapshot": {
+    "compiled": 7850,
+    "failed": 0,
+    "ready": 4378,
+    "root_compiled": false,
+    "workers": 1,
+    "running": {
+      "Submission.Supplier.P2M.Sol.S_NumberField_SUnits_finrank_groupCohomology_zero_sUnitsRep_add_one": {
+        "pid": 61929,
+        "make_wrapper_pid": 61929,
+        "phase": "canonical_make_queue",
+        "sha256": "9c64b4b76d565b06c33da0af439883a16ed52af0da431207d0517d25d4f2ecff",
+        "configuration": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/05cafe51bd67356f7724af33-1791870171121006000.configuration.json"
+      }
+    }
+  }
+}
