@@ -1,0 +1,168 @@
+{
+  "at": "2026-10-13T10:11:48.135481+00:00",
+  "original_source_card_pairs_actual_make_kernel_passed": true,
+  "canonical_pairs_byte_identical_to_supplier": true,
+  "no_source_edits": true,
+  "no_linter_suppression_added": true,
+  "no_redundant_recompilation": true,
+  "original_statements_hypotheses_and_proofs_preserved": true,
+  "checks": {
+    "Representation_exists_basis_toMatrix_mem_subfield_of_trace_det_mem_of_hasEigenvalue": {
+      "proof_summary": "For an arbitrary field Omega, two-dimensional irreducible representation rho of an arbitrary group, subfield F containing all traces and determinants, and a nonscalar group element with an eigenvalue in F, preserve existence of one basis for which every coefficient of every representation matrix belongs to F. Preserve the full original statement and complete 291-line proof; no characteristic, finiteness, closure or additional eigenvalue hypothesis is added.",
+      "checks": {
+        "source": {
+          "module": "Submission.Supplier.P2M.Sol.S_Representation_exists_basis_toMatrix_mem_subfield_of_trace_det_mem_of_hasEigenvalue",
+          "canonical_lines": 291,
+          "canonical_byte_identical_to_supplier": true,
+          "make_exit": 0,
+          "kernel_exit": 0,
+          "kernel_seconds": 44.14596825,
+          "compiler_warnings": 2,
+          "source_unchanged_during_check": true,
+          "printed_final_axiom_closures": [],
+          "separate_final_axiom_audit_pending": true,
+          "direct_dependencies": [
+            {
+              "module": "Submission.Supplier.P2M.Util",
+              "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+              "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+              "receipt_reused": true
+            }
+          ]
+        },
+        "card": {
+          "module": "Submission.Supplier.Theorems.Thm_Representation_exists_basis_toMatrix_mem_subfield_of_trace_det_mem_of_hasEigenvalue",
+          "canonical_lines": 14,
+          "canonical_byte_identical_to_supplier": true,
+          "make_exit": 0,
+          "kernel_exit": 0,
+          "kernel_seconds": 6.859544833,
+          "compiler_warnings": 0,
+          "source_unchanged_during_check": true,
+          "printed_final_axiom_closures": [],
+          "separate_final_axiom_audit_pending": true,
+          "direct_dependencies": [
+            {
+              "module": "Submission.Supplier.P2M.Util",
+              "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+              "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.P2M.Sol.S_Representation_exists_basis_toMatrix_mem_subfield_of_trace_det_mem_of_hasEigenvalue",
+              "source_sha256": "b5f527dce3906301ac7d11de79777933052441a2ebb6b3936e99b35fa61c0729",
+              "object_sha256": "b59ae2ee267200a78f9e8e1c292a3f1ce2446c5985646c309040cdcd213711f2",
+              "receipt_reused": true
+            }
+          ]
+        }
+      }
+    },
+    "ModularCurve_exists_semisimple_descent_of_trace_det_mem_range_finite": {
+      "proof_summary": "For the original fields K,L, algebra K to L, prime p, algebraically closed Omega of characteristic p, finite field k embedded into Omega, and two-dimensional irreducible finite-image representation rho of L/K automorphisms with every trace and determinant in the embedding range and the original cyclotomic determinant, retain a two-dimensional k representation with cyclotomic determinant, kernel containment, all trace and determinant equalities, and an invariant complement to every invariant submodule. Preserve every original hypothesis and the complete proof; no stronger irreducibility, semisimplicity or characteristic hypothesis is added.",
+      "checks": {
+        "source": {
+          "module": "Submission.Supplier.P2M.Sol.S_ModularCurve_exists_semisimple_descent_of_trace_det_mem_range_finite",
+          "canonical_lines": 403,
+          "canonical_byte_identical_to_supplier": true,
+          "make_exit": 0,
+          "kernel_exit": 0,
+          "kernel_seconds": 19.51753325,
+          "compiler_warnings": 14,
+          "source_unchanged_during_check": true,
+          "printed_final_axiom_closures": [],
+          "separate_final_axiom_audit_pending": true,
+          "direct_dependencies": [
+            {
+              "module": "Submission.Supplier.Definitions.Def_ModularCurve_ResidualRealization",
+              "source_sha256": "b10a4d732cd1323132c4dfbc13014535ceab66d6a97e8b700ec3292360b7855b",
+              "object_sha256": "1cfa7e9b951d36a54e163b6e18cacc84ffa6127b5c40b7a7c6880b1e9c943f28",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.Theorems.Thm_Representation_exists_basis_toMatrix_mem_subfield_of_trace_det_mem_of_hasEigenvalue",
+              "source_sha256": "d31c4bc13087f41871d500ecdbc6ee9d28c75087135113b1812bf4ce554801a5",
+              "object_sha256": "2f3c20a99a1ed862d4f18b240e50740715f22fe80f6950f621afdfc2fd2fbf86",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.Theorems.Thm_Representation_span_range_eq_top_of_isIrreducible",
+              "source_sha256": "c545123caf5ca9913dd52d6b5aff5d114f3531afc40446e83b3e4b93602daa81",
+              "object_sha256": "b8054f678af90b158eb8dee672c7ef1da97400c4ebe771b61ad9c1099a4a6b92",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.Theorems.Thm_Representation_exists_conj_eq_map_of_charpoly_coeff_mem_range_of_finite_of_span_range_eq_top",
+              "source_sha256": "59df7efc199f66d807aefdb11ad86ba07f2a27414b56479dddeacd2de53e3d81",
+              "object_sha256": "c0fbc9868381300c168122b9b45783af69f5407b0b55e70264c58b538e283cca",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.P2M.Util",
+              "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+              "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+              "receipt_reused": true
+            }
+          ]
+        },
+        "card": {
+          "module": "Submission.Supplier.Theorems.Thm_ModularCurve_exists_semisimple_descent_of_trace_det_mem_range_finite",
+          "canonical_lines": 23,
+          "canonical_byte_identical_to_supplier": true,
+          "make_exit": 0,
+          "kernel_exit": 0,
+          "kernel_seconds": 55.773635041000006,
+          "compiler_warnings": 0,
+          "source_unchanged_during_check": true,
+          "printed_final_axiom_closures": [],
+          "separate_final_axiom_audit_pending": true,
+          "direct_dependencies": [
+            {
+              "module": "Submission.Supplier.Definitions.Def_ModularCurve_ResidualRealization",
+              "source_sha256": "b10a4d732cd1323132c4dfbc13014535ceab66d6a97e8b700ec3292360b7855b",
+              "object_sha256": "1cfa7e9b951d36a54e163b6e18cacc84ffa6127b5c40b7a7c6880b1e9c943f28",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.P2M.Util",
+              "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+              "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.P2M.Sol.S_ModularCurve_exists_semisimple_descent_of_trace_det_mem_range_finite",
+              "source_sha256": "bcaa8b57b84da207f7a756d372e540c7368d809daa8757ebc837e89e218c7bc2",
+              "object_sha256": "31fc4f368976e2ad4785ccf0424a3e1f1b0a20873486cb5292adf8725dfe96c6",
+              "receipt_reused": true
+            }
+          ]
+        }
+      }
+    }
+  },
+  "supplier": "anthropics/fermats-last-theorem",
+  "supplier_commit": "6e837e75355538c7f80bab5b956861e86c4eacc2",
+  "full_original_complete": false,
+  "official_new_solve_credit": 0,
+  "complete_import_replay_and_recursive_axiom_audits_pending": true,
+  "selected_problem": "fermat_last_theorem",
+  "max_active_flt_jobs": 1,
+  "max_active_flt_compilers": 1,
+  "lean_threads": 1,
+  "graph_snapshot": {
+    "compiled": 7945,
+    "failed": 0,
+    "ready": 4366,
+    "root_compiled": false,
+    "workers": 1,
+    "running": {
+      "Submission.Supplier.Theorems.Thm_GaloisRep_exists_isSemisimpleRepresentation_charpoly_map_eq_of_trace_det_frobenius_mem_range": {
+        "pid": 66807,
+        "make_wrapper_pid": 66807,
+        "phase": "canonical_make_queue",
+        "sha256": "c0c6a05ad2b0b6023cd549adea26df352625bd0e6519ea37b499b1352e1eb3dd",
+        "configuration": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/8eab56edf160578908b36483-1791886253915441000.configuration.json"
+      }
+    }
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "at": "2026-10-13T10:07:36.260065+00:00",
+  "configuration": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/00b671ae5abd2ad109f7553a-1791886047043223000.configuration.json",
+  "configuration_sha256": "c90f258eb3851cbd94a64da46c06c62fbd61eadc251f748532fb911f4c01dcb0",
+  "source": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/Theorems/Thm_ModularCurve_exists_semisimple_descent_of_trace_det_mem_range_finite.lean",
+  "source_sha256": "3acf7dba609c6b23cf8cc05bd0e78416926d239707f11bea5ff7edb4981b6062",
+  "canonical_common": "/Users/macstudio/omega/trureturing/.git",
+  "official_dependency_partition": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/official-deps",
+  "toolchain": "leanprover/lean4:v4.35.0-rc3",
+  "mathlib_revision": "5e0c4e5239cb0a2d86d68a884bf52cfd963fce22",
+  "make_entry_required": true,
+  "phase": "compile_source",
+  "full_original_proof_verified": false,
+  "official_solve_credit": 0,
+  "command": [
+    "/Users/macstudio/.local/omega-shims/lean",
+    "-j1",
+    "--trust=0",
+    "-Ddebug.skipKernelTC=false",
+    "-R",
+    "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src",
+    "-o",
+    "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-build/lib/lean/Submission/Supplier/Theorems/Thm_ModularCurve_exists_semisimple_descent_of_trace_det_mem_range_finite.olean",
+    "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/Theorems/Thm_ModularCurve_exists_semisimple_descent_of_trace_det_mem_range_finite.lean"
+  ],
+  "memory_admission": {
+    "workers": 1,
+    "reasons": [
+      "user requires one job; no memory gate"
+    ],
+    "sample": {},
+    "memory_limit_enforced": false
+  },
+  "compiler_pid": 72646,
+  "memory_guard": {
+    "mode": "single_job_no_memory_gate",
+    "memory_limit_enforced": false,
+    "resource_cancellation": null,
+    "actual_exit": 0,
+    "proof_completion_claimed": false
+  },
+  "exit": 0,
+  "seconds": 55.773635041000006,
+  "source_unchanged": true,
+  "object_sha256": "755e4a282b884a90a38d78458d23204ac1dd3401f74c53e58a3eb0759329bb11",
+  "ended_at": "2026-10-13T10:08:32.036837+00:00"
+}
