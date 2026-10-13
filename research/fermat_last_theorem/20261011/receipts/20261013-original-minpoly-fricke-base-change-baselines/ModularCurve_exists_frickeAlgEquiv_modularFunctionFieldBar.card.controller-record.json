@@ -1,0 +1,50 @@
+{
+  "sha256": "bbdd55f9f41337816e4e1157adb94faacad635f17e25fa489f2aeff72acecff9",
+  "exit": 0,
+  "empty_output_retry_done": false,
+  "source_sha256_after": "bbdd55f9f41337816e4e1157adb94faacad635f17e25fa489f2aeff72acecff9",
+  "source_unchanged": true,
+  "olean_sha256": "80f74c92fa94e620d6a88a9425bbfa985591126b32fd27f6564e64afe3fd71c1",
+  "seconds": 22.522974707999992,
+  "pid": 1504,
+  "command": [
+    "/Users/macstudio/.local/omega-shims/lean",
+    "-j1",
+    "--trust=0",
+    "-Ddebug.skipKernelTC=false",
+    "-R",
+    "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src",
+    "-o",
+    "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-build/lib/lean/Submission/Supplier/Theorems/Thm_ModularCurve_exists_frickeAlgEquiv_modularFunctionFieldBar.olean",
+    "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/Theorems/Thm_ModularCurve_exists_frickeAlgEquiv_modularFunctionFieldBar.lean"
+  ],
+  "make_wrapper_pid": 96480,
+  "make_exit": 0,
+  "make_entry_failed": false,
+  "cache_binding_valid": true,
+  "canonical_make_running_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/f42ea4426aa09cb161b269fb-1791856462216428000.make-running.json",
+  "canonical_make_terminal_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/f42ea4426aa09cb161b269fb-1791856462216428000.make-terminal.json",
+  "kernel_terminal_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/f42ea4426aa09cb161b269fb-1791856462216428000.kernel/result.json",
+  "direct_dependencies": [
+    {
+      "module": "Submission.Supplier.Definitions.Def_ModularCurve_ArithmeticGalois",
+      "source_sha256": "cade4d61ac77f0764e6b3a4d00c6c861facec5f0ef78ea7020e88f67c52b5142",
+      "object_sha256": "c4a968ad27aaa51a49b69e88bed485c95d91052f1b180c3d9c13d3d5bb75d405",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.P2M.Util",
+      "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+      "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.P2M.Sol.S_ModularCurve_exists_frickeAlgEquiv_modularFunctionFieldBar",
+      "source_sha256": "4d544b621c476b93e5a46d563a96338f83a8ebb4a552fd90c7421d0fe390ea78",
+      "object_sha256": "be517fedc62520fa07e21daab22900147ba881eb26eeb871a0a0920ba67c3a8d",
+      "receipt_reused": true
+    }
+  ],
+  "stdout": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/f42ea4426aa09cb161b269fb-1791856462216428000.kernel/stdout.log",
+  "stderr": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/f42ea4426aa09cb161b269fb-1791856462216428000.kernel/stderr.log"
+}

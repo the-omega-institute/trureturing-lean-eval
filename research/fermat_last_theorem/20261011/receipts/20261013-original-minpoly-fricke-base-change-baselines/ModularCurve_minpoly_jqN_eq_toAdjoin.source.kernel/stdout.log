@@ -1,0 +1,5 @@
+@ModularCurve.finrank_adjoin_jqN_eq : ∀ {N : ℕ} [inst : NeZero.{0} N] (data : ModularCurve.ModularPolynomialData N),
+  ModularCurve.PhiIrreducible data →
+    Eq.{1} (Module.finrank.{0, 0} ↥ℚ⟮ModularCurve.jq⟯ ↥(↥ℚ⟮ModularCurve.jq⟯)⟮ModularCurve.jqN N⟯)
+      (ModularCurve.dedekindPsi N)
+'P2MW.S_ModularCurve_minpoly_jqN_eq_toAdjoin.solution' depends on axioms: [propext, Classical.choice, Quot.sound]
