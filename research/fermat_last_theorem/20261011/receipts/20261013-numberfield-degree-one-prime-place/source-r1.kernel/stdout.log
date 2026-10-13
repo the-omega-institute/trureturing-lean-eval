@@ -1,0 +1,17 @@
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_NumberField_exists_heightOneSpectrum_notMem_and_extension_ne_and_inertiaDeg_eq_one_and_ramificationIdx_eq_one.lean:31:26: warning: `dif_pos` has been deprecated: Use `dite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  d̵i̵f̵_̵p̵o̵s̵d̲i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_NumberField_exists_heightOneSpectrum_notMem_and_extension_ne_and_inertiaDeg_eq_one_and_ramificationIdx_eq_one.lean:166:6: error(lean.synthInstanceFailed): failed to synthesize instance of type class
+  IsPrincipalIdealRing (𝓞 ℚ)
+
+Hint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_NumberField_exists_heightOneSpectrum_notMem_and_extension_ne_and_inertiaDeg_eq_one_and_ramificationIdx_eq_one.lean:168:4: error: 'change' tactic failed, pattern
+  (kerPlace φ).asIdeal.ramificationIdx (𝓞 ℚ) * (kerPlace φ).asIdeal.inertiaDeg (𝓞 ℚ) = Module.finrank (𝓞 ℚ) (𝓞 K)
+is not definitionally equal to target
+  (↑default).ramificationIdx (𝓞 ℚ) * (↑default).inertiaDeg (𝓞 ℚ) = Module.finrank (𝓞 ℚ) (𝓞 K)
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_NumberField_exists_heightOneSpectrum_notMem_and_extension_ne_and_inertiaDeg_eq_one_and_ramificationIdx_eq_one.lean:191:0: error: The quotient inertia definition changed
+'P2MW.S_NumberField_exists_heightOneSpectrum_notMem_and_extension_ne_and_inertiaDeg_eq_one_and_ramificationIdx_eq_one.solution' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]

@@ -1,0 +1,111 @@
+{
+  "at": "2026-10-13T06:22:36.216775+00:00",
+  "repaired_source_card_pair_actual_make_kernel_passed": true,
+  "original_final_statements_preserved": true,
+  "full_original_module_proof_retained": true,
+  "no_linter_suppression_added": true,
+  "checks": {
+    "source": {
+      "module": "Submission.Supplier.P2M.Sol.S_NumberField_exists_heightOneSpectrum_notMem_and_extension_ne_and_inertiaDeg_eq_one_and_ramificationIdx_eq_one",
+      "make_exit": 0,
+      "kernel_exit": 0,
+      "kernel_seconds": 90.037747792,
+      "compiler_warnings": 0,
+      "printed_final_axiom_closures": [
+        {
+          "declaration": "P2MW.S_NumberField_exists_heightOneSpectrum_notMem_and_extension_ne_and_inertiaDeg_eq_one_and_ramificationIdx_eq_one.solution",
+          "recursive_axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "final_standard3_audit_passed": true,
+      "original_canonical_lines": 141,
+      "repaired_canonical_lines": 202,
+      "original_final_statement_preserved": true
+    },
+    "card": {
+      "module": "Submission.Supplier.Theorems.Thm_NumberField_exists_heightOneSpectrum_notMem_and_extension_ne_and_inertiaDeg_eq_one_and_ramificationIdx_eq_one",
+      "make_exit": 0,
+      "kernel_exit": 0,
+      "kernel_seconds": 54.933035958,
+      "compiler_warnings": 0,
+      "printed_final_axiom_closures": [
+        {
+          "declaration": "NumberField.exists_heightOneSpectrum_notMem_and_extension_ne_and_inertiaDeg_eq_one_and_ramificationIdx_eq_one",
+          "recursive_axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "final_standard3_audit_passed": true,
+      "original_canonical_lines": 17,
+      "repaired_canonical_lines": 34,
+      "original_final_statement_preserved": true
+    }
+  },
+  "repair": "Resolve the observed scalar-subtraction rewrite with explicit _root_.sub_self. Preserve the original quotient inertia body under a nondeprecated name, including its zero branch when not lying over. Migrate the old sum formula to sum_ramification_inertia_eq_finrank with singleton prime transport and IsIntegralClosure.rank. Prefer have in proposition proofs. Actual Lean Meta checks prove old/new inertia functions and final types definitionally equal; no deprecated proof constant is invoked through reflection. Both final recursive axiom queries actually print STANDARD3.",
+  "baseline_checks": {
+    "source": {
+      "at": "2026-10-13T05:54:48.284567+00:00",
+      "configuration": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/3012119c9231161f858b1bd4-1791870806440376000.configuration.json",
+      "configuration_sha256": "915e42a1da984e561cf8ecae10e30a6a099b88513ceb498256611e597407dacc",
+      "source": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_NumberField_exists_heightOneSpectrum_notMem_and_extension_ne_and_inertiaDeg_eq_one_and_ramificationIdx_eq_one.lean",
+      "source_sha256": "6bfe2a9b43f594b443718a71769d39f21c487f9b99c2e5ad0010bdc593c70f6a",
+      "canonical_common": "/Users/macstudio/omega/trureturing/.git",
+      "official_dependency_partition": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/official-deps",
+      "toolchain": "leanprover/lean4:v4.35.0-rc3",
+      "mathlib_revision": "5e0c4e5239cb0a2d86d68a884bf52cfd963fce22",
+      "make_entry_required": true,
+      "phase": "compile_source",
+      "full_original_proof_verified": false,
+      "official_solve_credit": 0,
+      "command": [
+        "/Users/macstudio/.local/omega-shims/lean",
+        "-j1",
+        "--trust=0",
+        "-Ddebug.skipKernelTC=false",
+        "-R",
+        "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src",
+        "-o",
+        "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-build/lib/lean/Submission/Supplier/P2M/Sol/S_NumberField_exists_heightOneSpectrum_notMem_and_extension_ne_and_inertiaDeg_eq_one_and_ramificationIdx_eq_one.olean",
+        "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_NumberField_exists_heightOneSpectrum_notMem_and_extension_ne_and_inertiaDeg_eq_one_and_ramificationIdx_eq_one.lean"
+      ],
+      "memory_admission": {
+        "workers": 1,
+        "reasons": [
+          "user requires one job; no memory gate"
+        ],
+        "sample": {},
+        "memory_limit_enforced": false
+      },
+      "compiler_pid": 43010,
+      "memory_guard": {
+        "mode": "single_job_no_memory_gate",
+        "memory_limit_enforced": false,
+        "resource_cancellation": null,
+        "actual_exit": 1,
+        "proof_completion_claimed": false
+      },
+      "exit": 1,
+      "seconds": 24.509101459,
+      "source_unchanged": true,
+      "object_sha256": null,
+      "ended_at": "2026-10-13T05:55:12.794352+00:00"
+    }
+  },
+  "proof_summary": "Retain arbitrary number field K with 2 <= finrank Q K, arbitrary finite excluded rational-prime set F, a prime outside F with two distinct extensions, original quotient inertia degree one for the selected extension, and ramification index one for every extension above that prime. Retain infinite degree-one prime homomorphisms, exclusion of different-ideal ramified places, quotient surjectivity to prove inertia degree one, and the degree-sum contradiction producing the second extension. No Galois assumption or weaker conclusion is added.",
+  "library_search": "Native trureturing analytic number-field search found no matching complete statement or compatible old quotient-inertia definition. Reuse the full supplier proof and pinned Mathlib nondeprecated sum formula, maximal quotient inertia formula and integral closure rank.",
+  "supplier": "anthropics/fermats-last-theorem",
+  "supplier_commit": "6e837e75355538c7f80bab5b956861e86c4eacc2",
+  "full_original_complete": false,
+  "official_new_solve_credit": 0,
+  "complete_import_replay_and_full_root_audits_pending": true,
+  "max_active_flt_jobs": 1,
+  "max_active_flt_compilers": 1,
+  "lean_threads": 1
+}
