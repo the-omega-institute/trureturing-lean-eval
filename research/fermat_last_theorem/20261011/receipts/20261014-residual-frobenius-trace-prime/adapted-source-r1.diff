@@ -1,0 +1,99 @@
+--- Submission/Supplier/P2M/Sol/S_ResidualGaloisRep_exists_prime_modEq_one_isFrobeniusAt_trace_ne_add_one_of_isAbsolutelyIrreducible.lean
++++ Submission/Supplier/P2M/Sol/S_ResidualGaloisRep_exists_prime_modEq_one_isFrobeniusAt_trace_ne_add_one_of_isAbsolutelyIrreducible.lean
+@@ -118,7 +118,7 @@
+     (∃ L : Submodule K V, L ≠ ⊥ ∧ L ≠ ⊤ ∧ ∀ g, ∀ v ∈ L, ρ g v ∈ L) ∨
+       (∀ g g' : G, ρ g * ρ g' = ρ g' * ρ g) := by
+   classical
+-  haveI : Module.Finite K V := Module.finite_of_finrank_eq_succ h2
++  have : Module.Finite K V := Module.finite_of_finrank_eq_succ h2
+   have hinv : ∀ g, ρ g * ρ g⁻¹ = 1 := fun g => by rw [← map_mul, mul_inv_cancel, map_one]
+   by_cases hK : ∃ h₀ ∈ H, LinearMap.det (ρ h₀) = 1 ∧ ρ h₀ ≠ 1
+   ·
+@@ -261,13 +261,13 @@
+     (h : (∃ L : Submodule K V, L ≠ ⊥ ∧ L ≠ ⊤ ∧ ∀ g, ∀ v ∈ L, ρ g v ∈ L) ∨
+       (∀ g g' : G, ρ g * ρ g' = ρ g' * ρ g)) : False := by
+   classical
+-  haveI : Module.Finite K V := Module.finite_of_finrank_eq_succ h2
++  have : Module.Finite K V := Module.finite_of_finrank_eq_succ h2
+   rcases h with ⟨L, hLbot, hLtop, hLstab⟩ | hcomm
+   · rcases hirr L hLstab with h | h
+     · exact hLbot h
+     · exact hLtop h
+   · have hpos : 0 < finrank K V := by omega
+-    haveI : Nontrivial V := Module.nontrivial_of_finrank_pos hpos
++    have : Nontrivial V := Module.nontrivial_of_finrank_pos hpos
+     obtain ⟨v₁, hv₁⟩ := exists_ne (0 : V)
+     have hscal : ∀ g, ∃ c : K, ρ g = c • (1 : Module.End K V) := by
+       intro g₁
+@@ -383,7 +383,6 @@
+ theorem normal_algebraicClosure_rat : Normal ℚ (AlgebraicClosure ℚ) := by
+   convert @IsAlgClosure.normal ℚ (AlgebraicClosure ℚ) _ _ (AlgebraicClosure.instAlgebra ℚ)
+     inferInstance
+-  exact Subsingleton.elim _ _
+ 
+ lemma modEq_one_of_conj_mem_muFix (N : ℕ) [NeZero N] {ℓ : ℕ} (hℓ : ℓ.Prime) (hℓN : ¬ ℓ ∣ N)
+     {A : ValuationSubring Qb} {τ : Γ} (hA : A.LiesOverPrime ℓ) (hτ : A.IsFrobeniusAt τ ℓ)
+@@ -410,13 +409,13 @@
+ theorem exists_galois_level (L : IntermediateField ℚ Qb) [FiniteDimensional ℚ L] (N : ℕ) [NeZero N] :
+     ∃ F : IntermediateField ℚ Qb, FiniteDimensional ℚ F ∧ Normal ℚ F ∧ L ≤ F ∧
+       ∀ σ : Γ, (∀ x ∈ F, σ x = x) → σ ∈ muFix N := by
+-  haveI := normal_algebraicClosure_rat
+-  haveI := isIntegral_algebraicClosure_rat
++  have := normal_algebraicClosure_rat
++  have := isIntegral_algebraicClosure_rat
+   obtain ⟨ζ₀, hζ₀⟩ := exists_isPrimitiveRoot N
+-  haveI : FiniteDimensional ℚ (IntermediateField.adjoin ℚ ({ζ₀} : Set Qb)) :=
++  have : FiniteDimensional ℚ (IntermediateField.adjoin ℚ ({ζ₀} : Set Qb)) :=
+     IntermediateField.adjoin.finiteDimensional (Algebra.IsIntegral.isIntegral ζ₀)
+   let K₀ : IntermediateField ℚ Qb := L ⊔ IntermediateField.adjoin ℚ ({ζ₀} : Set Qb)
+-  haveI : FiniteDimensional ℚ K₀ := IntermediateField.finiteDimensional_sup L _
++  have : FiniteDimensional ℚ K₀ := IntermediateField.finiteDimensional_sup L _
+   refine ⟨IntermediateField.normalClosure ℚ K₀ Qb, inferInstance,
+     normalClosure.normal ℚ K₀ Qb, le_sup_left.trans (IntermediateField.le_normalClosure K₀), ?_⟩
+   intro σ hσ
+@@ -446,22 +445,22 @@
+   have hρ'apply : ∀ σ, ρ'.ρ σ = (ρ.ρ σ).baseChange K := fun σ => rfl
+   have h2 : finrank K ρ'.V = 2 := ρ'.finrank_eq
+   have h2k : finrank k ρ.V = 2 := ρ.finrank_eq
+-  haveI : Module.Finite K ρ'.V := Module.finite_of_finrank_eq_succ h2
+-  haveI : Module.Finite k ρ.V := Module.finite_of_finrank_eq_succ h2k
++  have : Module.Finite K ρ'.V := Module.finite_of_finrank_eq_succ h2
++  have : Module.Finite k ρ.V := Module.finite_of_finrank_eq_succ h2k
+   let bK : Basis (Fin 2) K ρ'.V := Module.finBasisOfFinrankEq K ρ'.V h2
+ 
+   have htrK : ∀ σ, LinearMap.trace K ρ'.V (ρ'.ρ σ) = algebraMap k K (LinearMap.trace k ρ.V (ρ.ρ σ)) := by
+     intro σ; rw [hρ'apply, LinearMap.trace_baseChange]
+ 
+-  haveI : NeZero (N * p) := ⟨Nat.mul_ne_zero (NeZero.ne N) hp.ne_zero⟩
++  have : NeZero (N * p) := ⟨Nat.mul_ne_zero (NeZero.ne N) hp.ne_zero⟩
+ 
+   obtain ⟨L, hLfd, hL⟩ := ρ'.factorsThroughFiniteLevel
+-  haveI := hLfd
++  have := hLfd
+   obtain ⟨F, hFfd, hFn, hLF, hFmu⟩ := exists_galois_level L (N * p)
+-  haveI := hFfd
+-  haveI := hFn
+-  haveI : IsGalois ℚ F := { }
+-  haveI : NumberField F := { }
++  have := hFfd
++  have := hFn
++  have : IsGalois ℚ F := { }
++  have : NumberField F := { }
+   have hinv : ∀ g, ρ'.ρ g * ρ'.ρ g⁻¹ = 1 := fun g => by rw [← map_mul, mul_inv_cancel, map_one]
+ 
+   have hkerF : ∀ u : AlgebraicClosure ℚ ≃ₐ[ℚ] AlgebraicClosure ℚ,
+@@ -508,7 +507,7 @@
+       map_ofNat]
+ 
+   have two_ne : (2 : K) ≠ 0 := by
+-    haveI : CharP K p := charP_of_injective_algebraMap (algebraMap k K).injective p
++    have : CharP K p := charP_of_injective_algebraMap (algebraMap k K).injective p
+     intro h
+     have : (p : ℕ) ∣ 2 := by
+       rw [← CharP.cast_eq_zero_iff K p 2]
+@@ -543,3 +542,5 @@
+       ℓ.Prime ∧ ℓ ∉ S ∧ ¬ ℓ ∣ N ∧ ℓ ≡ 1 [MOD N] ∧ A.LiesOverPrime ℓ ∧ A.IsFrobeniusAt σ ℓ ∧
+         LinearMap.trace k ρ.V (ρ.ρ σ) ≠ (ℓ : k) + 1 :=
+   EisTrace.main p hp2 ρ hρ N S
++
++#print axioms P2MW.S_ResidualGaloisRep_exists_prime_modEq_one_isFrobeniusAt_trace_ne_add_one_of_isAbsolutelyIrreducible.solution
