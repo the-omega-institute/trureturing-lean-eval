@@ -1,0 +1,165 @@
+{
+  "at": "2026-10-14T13:59:28.862048+00:00",
+  "problem": "fermat_last_theorem",
+  "actual_checks": [
+    {
+      "module": "Submission.Supplier.P2M.Sol.S_AutomorphicForm_SmoothCuspRealizationAt_isIdeleClassChar_and_admitsModulus_level_and_continuous_of_genuine",
+      "role": "source",
+      "make_exit": 0,
+      "kernel_exit": 0,
+      "kernel_seconds": 60.518865,
+      "original_warnings": 1,
+      "canonical_lines": 199,
+      "canonical_byte_identical_to_supplier": true,
+      "adapted_source_differs_only_in_import_prefix_and_saved_settings": true,
+      "source_unchanged_during_check": true,
+      "dependency_receipts_match_current_controller": true,
+      "all_direct_dependencies_have_object_receipts": true,
+      "printed_recursive_axioms": {
+        "P2MW.S_AutomorphicForm_SmoothCuspRealizationAt_isIdeleClassChar_and_admitsModulus_level_and_continuous_of_genuine.solution": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      "whole_root_recursive_axiom_audit_pending": true,
+      "kernel_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/8973163e57b2e4bec93103db-1791985939299400000.kernel/result.json",
+      "make_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/8973163e57b2e4bec93103db-1791985939299400000.make-terminal.json",
+      "controller_record": {
+        "sha256": "87cae6aae6090a058b5b29f8175bd505b6c1f6a7e54a33c78caf6f66feee7fba",
+        "exit": 0,
+        "empty_output_retry_done": false,
+        "source_sha256_after": "87cae6aae6090a058b5b29f8175bd505b6c1f6a7e54a33c78caf6f66feee7fba",
+        "source_unchanged": true,
+        "olean_sha256": "3f92b47468d069544d021e35cb1c6629d4c4efb8c48ebba23265a10e85c2d003",
+        "seconds": 75.97310237499914,
+        "pid": 89545,
+        "command": [
+          "/Users/macstudio/.local/omega-shims/lean",
+          "-j1",
+          "--trust=0",
+          "-Ddebug.skipKernelTC=false",
+          "-R",
+          "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src",
+          "-o",
+          "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-build/lib/lean/Submission/Supplier/P2M/Sol/S_AutomorphicForm_SmoothCuspRealizationAt_isIdeleClassChar_and_admitsModulus_level_and_continuous_of_genuine.olean",
+          "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_AutomorphicForm_SmoothCuspRealizationAt_isIdeleClassChar_and_admitsModulus_level_and_continuous_of_genuine.lean"
+        ],
+        "make_wrapper_pid": 87009,
+        "make_exit": 0,
+        "make_entry_failed": false,
+        "cache_binding_valid": true,
+        "canonical_make_running_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/8973163e57b2e4bec93103db-1791985939299400000.make-running.json",
+        "canonical_make_terminal_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/8973163e57b2e4bec93103db-1791985939299400000.make-terminal.json",
+        "kernel_terminal_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/8973163e57b2e4bec93103db-1791985939299400000.kernel/result.json",
+        "direct_dependencies": [
+          {
+            "module": "Submission.Supplier.Definitions.Def_AutomorphicForm_ProductionPinsGeneral",
+            "source_sha256": "f92ced842fd85cc8658791bca73445874e603d7d853d280534bd0bf6b68e253c",
+            "object_sha256": "590798ec5a81970130b476851dcec411fed8c2390d6bb3e10dc558c2195a613f",
+            "receipt_reused": true
+          },
+          {
+            "module": "Submission.Supplier.Definitions.Def_HeckeCharacter_FiniteOrder",
+            "source_sha256": "7b8ced79799dd902bdee53c3b3fd3af274e968ca47e9317bb376b3f7d8de7301",
+            "object_sha256": "cfc28669cfab23c8a3781d1d029342a3468c0ed91bc3095a9b299a69ce51f775",
+            "receipt_reused": true
+          },
+          {
+            "module": "Submission.Supplier.P2M.Util",
+            "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+            "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+            "receipt_reused": true
+          }
+        ],
+        "stdout": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/8973163e57b2e4bec93103db-1791985939299400000.kernel/stdout.log",
+        "stderr": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/8973163e57b2e4bec93103db-1791985939299400000.kernel/stderr.log"
+      },
+      "existing_printed_queries_standard_axioms_only": true
+    },
+    {
+      "module": "Submission.Supplier.Theorems.Thm_AutomorphicForm_SmoothCuspRealizationAt_isIdeleClassChar_and_admitsModulus_level_and_continuous_of_genuine",
+      "role": "card",
+      "make_exit": 0,
+      "kernel_exit": 0,
+      "kernel_seconds": 65.999980666,
+      "original_warnings": 0,
+      "canonical_lines": 21,
+      "canonical_byte_identical_to_supplier": true,
+      "adapted_source_differs_only_in_import_prefix_and_saved_settings": true,
+      "source_unchanged_during_check": true,
+      "dependency_receipts_match_current_controller": true,
+      "all_direct_dependencies_have_object_receipts": true,
+      "printed_recursive_axioms": {},
+      "whole_root_recursive_axiom_audit_pending": true,
+      "kernel_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/854726a16ba2e249593d0f4c-1791986023193597000.kernel/result.json",
+      "make_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/854726a16ba2e249593d0f4c-1791986023193597000.make-terminal.json",
+      "controller_record": {
+        "sha256": "dd567411570169aeac9e591875c701ca31fa30ab22ff4cec40a70e578fb8ff0f",
+        "exit": 0,
+        "empty_output_retry_done": false,
+        "source_sha256_after": "dd567411570169aeac9e591875c701ca31fa30ab22ff4cec40a70e578fb8ff0f",
+        "source_unchanged": true,
+        "olean_sha256": "67d97be5c62020cb89935cd956cafc05169fbda585cba4df1ed865af75d147fd",
+        "seconds": 79.44065070900251,
+        "pid": 49958,
+        "command": [
+          "/Users/macstudio/.local/omega-shims/lean",
+          "-j1",
+          "--trust=0",
+          "-Ddebug.skipKernelTC=false",
+          "-R",
+          "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src",
+          "-o",
+          "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-build/lib/lean/Submission/Supplier/Theorems/Thm_AutomorphicForm_SmoothCuspRealizationAt_isIdeleClassChar_and_admitsModulus_level_and_continuous_of_genuine.olean",
+          "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/Theorems/Thm_AutomorphicForm_SmoothCuspRealizationAt_isIdeleClassChar_and_admitsModulus_level_and_continuous_of_genuine.lean"
+        ],
+        "make_wrapper_pid": 44887,
+        "make_exit": 0,
+        "make_entry_failed": false,
+        "cache_binding_valid": true,
+        "canonical_make_running_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/854726a16ba2e249593d0f4c-1791986023193597000.make-running.json",
+        "canonical_make_terminal_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/854726a16ba2e249593d0f4c-1791986023193597000.make-terminal.json",
+        "kernel_terminal_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/854726a16ba2e249593d0f4c-1791986023193597000.kernel/result.json",
+        "direct_dependencies": [
+          {
+            "module": "Submission.Supplier.Definitions.Def_AutomorphicForm_ProductionPinsGeneral",
+            "source_sha256": "f92ced842fd85cc8658791bca73445874e603d7d853d280534bd0bf6b68e253c",
+            "object_sha256": "590798ec5a81970130b476851dcec411fed8c2390d6bb3e10dc558c2195a613f",
+            "receipt_reused": true
+          },
+          {
+            "module": "Submission.Supplier.Definitions.Def_HeckeCharacter_FiniteOrder",
+            "source_sha256": "7b8ced79799dd902bdee53c3b3fd3af274e968ca47e9317bb376b3f7d8de7301",
+            "object_sha256": "cfc28669cfab23c8a3781d1d029342a3468c0ed91bc3095a9b299a69ce51f775",
+            "receipt_reused": true
+          },
+          {
+            "module": "Submission.Supplier.P2M.Util",
+            "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+            "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+            "receipt_reused": true
+          },
+          {
+            "module": "Submission.Supplier.P2M.Sol.S_AutomorphicForm_SmoothCuspRealizationAt_isIdeleClassChar_and_admitsModulus_level_and_continuous_of_genuine",
+            "source_sha256": "87cae6aae6090a058b5b29f8175bd505b6c1f6a7e54a33c78caf6f66feee7fba",
+            "object_sha256": "3f92b47468d069544d021e35cb1c6629d4c4efb8c48ebba23265a10e85c2d003",
+            "receipt_reused": true
+          }
+        ],
+        "stdout": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/854726a16ba2e249593d0f4c-1791986023193597000.kernel/stdout.log",
+        "stderr": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/854726a16ba2e249593d0f4c-1791986023193597000.kernel/stderr.log"
+      },
+      "existing_printed_queries_standard_axioms_only": null
+    }
+  ],
+  "full_source_card_pair_verified": true,
+  "original_statements_hypotheses_and_all_proof_branches_preserved": true,
+  "source_edits_this_turn": false,
+  "new_compilers_spawned": 0,
+  "max_active_flt_jobs": 1,
+  "lean_threads": 1,
+  "gate_reservation_gb": 35,
+  "full_original_complete": false,
+  "official_new_solve_credit": 0
+}
