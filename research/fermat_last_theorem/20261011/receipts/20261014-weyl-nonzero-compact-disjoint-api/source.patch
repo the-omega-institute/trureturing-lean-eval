@@ -1,0 +1,139 @@
+--- source.before.lean
++++ source.after.lean
+@@ -101,13 +101,13 @@
+       rw [map_one, map_one]
+       exact hall {v} v (Finset.mem_singleton_self v)
+     rw [this]; exact h1V
+-  obtain ⟨S₂, hS₂⟩ := ((isCompact_Cpt F).inter_right hV.isClosed_compl).elim_directed_family_closed t htc hst hdir
++  obtain ⟨S₂, hS₂⟩ := ((isCompact_Cpt F).inter_right hV.isClosed_compl).elim_directed_family_closed t htc (Set.disjoint_iff_inter_eq_empty.mpr hst) hdir
+   refine ⟨S₂, fun k hk1 hk2 hk3 g => ?_⟩
+   have hkC : k ∈ Cpt F := mem_Cpt F hk1 hk2
+   have hkV : k ∈ V := by
+     by_contra hnot
+     have : k ∈ (Cpt F ∩ Vᶜ) ∩ t S₂ := ⟨⟨hkC, hnot⟩, hk3⟩
+-    rw [hS₂] at this; exact this
++    rw [Set.disjoint_iff_inter_eq_empty.mp hS₂] at this; exact this
+   have hstab : (⟨k, hk1⟩ : finiteAdelicGL2Subgroup F) ∈ MulAction.stabilizer (finiteAdelicGL2Subgroup F)
+       (RightTranslationFn.mk φ₀ : RightTranslationFn (AdelicGL2 (𝓞 F) F) ℂ) := by
+     have : (⟨k, hk1⟩ : finiteAdelicGL2Subgroup F) ∈ Subtype.val ⁻¹' V := hkV
+@@ -118,7 +118,8 @@
+ 
+ variable (S₂ : Finset (HeightOneSpectrum (𝓞 F)))
+ 
+-theorem compl_le : (cofinite : Filter (HeightOneSpectrum (𝓞 F))) ≤ 𝓟 ((↑S₂ : Set (HeightOneSpectrum (𝓞 F)))ᶜ) :=
++theorem compl_le (F : Type) [Field F] [NumberField F]
++    (S₂ : Finset (HeightOneSpectrum (𝓞 F))) : (cofinite : Filter (HeightOneSpectrum (𝓞 F))) ≤ 𝓟 ((↑S₂ : Set (HeightOneSpectrum (𝓞 F)))ᶜ) :=
+   Filter.le_principal_iff.mpr S₂.finite_toSet.compl_mem_cofinite
+ 
+ def secP (b : ∀ v : S₂, (v : HeightOneSpectrum (𝓞 F)).adicCompletion F) :
+@@ -128,7 +129,7 @@
+     rw [Filter.eventually_principal]
+     intro v hv
+     rw [Set.mem_compl_iff, Finset.mem_coe] at hv
+-    simp only [dif_neg hv]
++    simp only [dite_eq_right hv]
+     exact zero_mem _⟩
+ 
+ def sec (b : ∀ v : S₂, (v : HeightOneSpectrum (𝓞 F)).adicCompletion F) : FiniteAdeleRing (𝓞 F) F :=
+@@ -137,7 +138,7 @@
+ theorem sec_apply_of_mem (b : ∀ v : S₂, (v : HeightOneSpectrum (𝓞 F)).adicCompletion F) {v : HeightOneSpectrum (𝓞 F)} (hv : v ∈ S₂) :
+     sec F S₂ b v = b ⟨v, hv⟩ := by
+   change (if h : v ∈ S₂ then (b ⟨v, h⟩ : v.adicCompletion F) else (0 : v.adicCompletion F)) = _
+-  rw [dif_pos hv]
++  rw [dite_eq_left hv]
+ 
+ theorem continuous_sec : Continuous (sec F S₂) := by
+   refine (RestrictedProduct.continuous_inclusion (compl_le F S₂)).comp ?_
+@@ -145,13 +146,13 @@
+   intro v
+   change Continuous fun b : (∀ v : S₂, (v : HeightOneSpectrum (𝓞 F)).adicCompletion F) => (if h : v ∈ S₂ then (b ⟨v, h⟩ : v.adicCompletion F) else (0 : v.adicCompletion F))
+   by_cases hv : v ∈ S₂
+-  · simp only [dif_pos hv]; exact continuous_apply _
+-  · simp only [dif_neg hv]; exact continuous_const
++  · simp only [dite_eq_left hv]; exact continuous_apply _
++  · simp only [dite_eq_right hv]; exact continuous_const
+ 
+ theorem sec_apply_of_not_mem (b : ∀ v : S₂, (v : HeightOneSpectrum (𝓞 F)).adicCompletion F) {v : HeightOneSpectrum (𝓞 F)} (hv : v ∉ S₂) :
+     sec F S₂ b v = 0 := by
+   change (if h : v ∈ S₂ then (b ⟨v, h⟩ : v.adicCompletion F) else (0 : v.adicCompletion F)) = _
+-  rw [dif_neg hv]
++  rw [dite_eq_right hv]
+ 
+ variable (S : Finset (HeightOneSpectrum (𝓞 F)))
+ 
+@@ -190,10 +191,10 @@
+   split_ifs with hv
+   · ext i j : 1
+     show (if v ∈ S then (1 : Matrix (Fin 2) (Fin 2) (v.adicCompletion F)) i j else (M i j).2 v) = _
+-    rw [if_pos hv]
++    rw [ite_eq_left hv]
+   · ext i j : 1
+     show (if v ∈ S then (1 : Matrix (Fin 2) (Fin 2) (v.adicCompletion F)) i j else (M i j).2 v) = _
+-    rw [if_neg hv]
++    rw [ite_eq_right hv]
+     rfl
+ 
+ def awayMatHom : Matrix (Fin 2) (Fin 2) (AdeleRing (𝓞 F) F) →* Matrix (Fin 2) (Fin 2) (AdeleRing (𝓞 F) F) where
+@@ -223,9 +224,9 @@
+       if v ∈ S then 1 else finComponent (𝓞 F) F v (glFin (𝓞 F) F g) := by
+   split_ifs with hv
+   · refine Units.ext ?_
+-    rw [coe_finComponent_glFin, coe_awayPart, evFin_awayMat, if_pos hv]; rfl
++    rw [coe_finComponent_glFin, coe_awayPart, evFin_awayMat, ite_eq_left hv]; rfl
+   · refine Units.ext ?_
+-    rw [coe_finComponent_glFin, coe_awayPart, evFin_awayMat, if_neg hv, coe_finComponent_glFin]
++    rw [coe_finComponent_glFin, coe_awayPart, evFin_awayMat, ite_eq_right hv, coe_finComponent_glFin]
+ 
+ theorem glFin_awayPart_mem {h : AdelicGL2 (𝓞 F) F}
+     (hint : ∀ v ∉ S, ∀ i j, ((h : Matrix (Fin 2) (Fin 2) (AdeleRing (𝓞 F) F)) i j).2 v ∈ v.adicCompletionIntegers F ∧
+@@ -295,7 +296,8 @@
+   simp only [Matrix.GeneralLinearGroup.coe_mul, coe_adelicWeyl, unipotentGL2_coe]
+   simp [Matrix.mul_apply, Fin.sum_univ_two]
+ 
+-theorem exists_ne_zero_mem_arch (w : InfinitePlace F) {t : Set w.Completion} (ht : IsOpen t) (h0 : (0 : w.Completion) ∈ t) :
++theorem exists_ne_zero_mem_arch (F : Type) [Field F] [NumberField F]
++    (w : InfinitePlace F) {t : Set w.Completion} (ht : IsOpen t) (h0 : (0 : w.Completion) ∈ t) :
+     ∃ x ∈ t, x ≠ 0 := by
+   obtain ⟨r, hr, hball⟩ := Metric.isOpen_iff.mp ht 0 h0
+ 
+@@ -334,7 +336,7 @@
+     (hφc : Continuous φ) (hφf : IsKfSmooth F φ) (hne : ∃ g, φ g ≠ 0) :
+     ∃ x : AdeleRing (𝓞 F) F, φ ((adelicWeyl (𝓞 F) F)⁻¹ * unipotentGL2 x) ≠ 0 := by
+   by_contra hall
+-  push_neg at hall
++  push Not at hall
+ 
+   have hvan : ∀ (g : AdelicGL2 (𝓞 F) F) (c : (AdeleRing (𝓞 F) F)ˣ),
+       (c : AdeleRing (𝓞 F) F) = (g : Matrix (Fin 2) (Fin 2) (AdeleRing (𝓞 F) F)) 1 0 → φ g = 0 := by
+@@ -358,7 +360,7 @@
+   have hgood : ∀ v ∉ T, ∀ i j, ((g₀ : Matrix (Fin 2) (Fin 2) (AdeleRing (𝓞 F) F)) i j).2 v ∈ v.adicCompletionIntegers F ∧
+       (((g₀⁻¹ : AdelicGL2 (𝓞 F) F) : Matrix (Fin 2) (Fin 2) (AdeleRing (𝓞 F) F)) i j).2 v ∈ v.adicCompletionIntegers F := by
+     intro v hv i j
+-    rw [hTdef, Set.Finite.mem_toFinset, Set.mem_setOf_eq, not_not] at hv
++    rw [hTdef, Set.Finite.mem_toFinset, Set.mem_ofPred_eq, not_not] at hv
+     exact hv (i, j)
+ 
+   obtain ⟨S₂, hS₂⟩ := exists_finset_fixing F φ hφf
+@@ -386,14 +388,14 @@
+   set g₁ := g₀ * m with hg₁def
+   have hφg₁ : φ g₁ = φ g₀ :=
+     hS₂ m (glArch_awayPart F S h) (glFin_awayPart_mem F S hhint)
+-      (fun v hv => by rw [hmdef, finComponent_awayPart, if_pos (Finset.mem_union_left _ hv)]) g₀
++      (fun v hv => by rw [hmdef, finComponent_awayPart, ite_eq_left (Finset.mem_union_left _ hv)]) g₀
+ 
+   set a : AdeleRing (𝓞 F) F := (g₁ : Matrix (Fin 2) (Fin 2) (AdeleRing (𝓞 F) F)) 1 0 with hadef
+   set d : AdeleRing (𝓞 F) F := (g₁ : Matrix (Fin 2) (Fin 2) (AdeleRing (𝓞 F) F)) 1 1 with hddef
+   have hoff : ∀ v ∉ S, a.2 v = 1 ∧ d.2 v = 0 := by
+     intro v hv
+     have hfc : finComponent (𝓞 F) F v (glFin (𝓞 F) F g₁) = finComponent (𝓞 F) F v (glFin (𝓞 F) F (adelicWeyl (𝓞 F) F)) := by
+-      rw [hg₁def, map_mul, map_mul, hmdef, finComponent_awayPart, if_neg hv, hhdef, map_mul, map_mul, map_inv, map_inv,
++      rw [hg₁def, map_mul, map_mul, hmdef, finComponent_awayPart, ite_eq_right hv, hhdef, map_mul, map_mul, map_inv, map_inv,
+         mul_inv_cancel_left]
+     have e10 := congrArg (fun M : GL (Fin 2) (v.adicCompletion F) => (M : Matrix (Fin 2) (Fin 2) (v.adicCompletion F)) 1 0) hfc
+     have e11 := congrArg (fun M : GL (Fin 2) (v.adicCompletion F) => (M : Matrix (Fin 2) (Fin 2) (v.adicCompletion F)) 1 1) hfc
+@@ -512,3 +514,5 @@
+     ∃ x : AdeleRing (𝓞 F) F, φ ((adelicWeyl (𝓞 F) F)⁻¹ * unipotentGL2 x) ≠ 0 := by
+   intro α hα s φ hφ hφc hφf hne
+   exact WITNESS.main F α hα s φ hφ hφc hφf hne
++
++#print axioms P2MW.S_AutomorphicForm_exists_apply_weylInv_mul_unipotentGL2_ne_zero_of_isInducedSection_of_isKfSmooth.solution
