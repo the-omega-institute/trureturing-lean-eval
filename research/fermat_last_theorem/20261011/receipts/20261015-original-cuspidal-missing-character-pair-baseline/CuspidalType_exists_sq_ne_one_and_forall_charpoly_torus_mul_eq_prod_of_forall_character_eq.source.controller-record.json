@@ -1,0 +1,86 @@
+{
+  "sha256": "1febd5796ca691fede2ac15eeb378f6587df342b4796cf2de7c2aed6332c1f66",
+  "exit": 0,
+  "empty_output_retry_done": false,
+  "source_sha256_after": "1febd5796ca691fede2ac15eeb378f6587df342b4796cf2de7c2aed6332c1f66",
+  "source_unchanged": true,
+  "olean_sha256": "a18a7707ae654a9ed654465c60c15d3c86de6155757a76e4f147aaf7ec995474",
+  "seconds": 80.3228951669953,
+  "pid": 43571,
+  "command": [
+    "/Users/macstudio/.local/omega-shims/lean",
+    "-j1",
+    "--trust=0",
+    "-Ddebug.skipKernelTC=false",
+    "-R",
+    "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src",
+    "-o",
+    "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-build/lib/lean/Submission/Supplier/P2M/Sol/S_CuspidalType_exists_sq_ne_one_and_forall_charpoly_torus_mul_eq_prod_of_forall_character_eq.olean",
+    "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_CuspidalType_exists_sq_ne_one_and_forall_charpoly_torus_mul_eq_prod_of_forall_character_eq.lean"
+  ],
+  "make_wrapper_pid": 33978,
+  "make_exit": 0,
+  "make_entry_failed": false,
+  "cache_binding_valid": true,
+  "canonical_make_running_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/62219a21170d4d0af4e54612-1792001915307027000.make-running.json",
+  "canonical_make_terminal_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/62219a21170d4d0af4e54612-1792001915307027000.make-terminal.json",
+  "kernel_terminal_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/62219a21170d4d0af4e54612-1792001915307027000.kernel/result.json",
+  "direct_dependencies": [
+    {
+      "module": "Submission.Supplier.Definitions.Def_CuspidalType_IsCuspidalOfType",
+      "source_sha256": "bf3b7dcb09ad1804f2dc7e10f1dff72f3bcedd5dbe97cd8c98a545a2ae1a6317",
+      "object_sha256": "f0ae7c7645e0e76829a3907f5a7375d5ff25b02179c9530400cc22dea55b441b",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Theorems.Thm_Representation_exists_multiplicity_of_isCyclic",
+      "source_sha256": "f0bbc98f28a645177e0594d9cb76985de2840b1861b0d32d077b77f901889642",
+      "object_sha256": "57649fc73dc2dca7d80c6cceb8a3465a590f818aae235f10f96790097332e2f5",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Theorems.Thm_CuspidalType_torus_unitsMap_algebraMap",
+      "source_sha256": "c545d89710521c77f66ccad8d6145eb437eda18576af1f80f73989fa828832f6",
+      "object_sha256": "c3f29e3d239719d94d40e9089451b90c288a5bf571db9c36e57dd151ceba5078",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Theorems.Thm_CuspidalType_sum_character_torus_and_sum_character_torus_mul_character_torus_inv",
+      "source_sha256": "64ffd2c0d8104842dc68865e7368402eaa3010201623dbcbc40e48812d37b66c",
+      "object_sha256": "9abdee25c9eb31389268897fb77575e3eea6f3c2df71f4db83ead61e1acaaea7",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Theorems.Thm_Finsupp_forall_apply_le_one_and_apply_one_eq_one_of_sum_eq_card_of_sum_mul_eq",
+      "source_sha256": "319041a99cade86c3cebe00ff946a6df998bf84fa51e08770c8009e05b5819e5",
+      "object_sha256": "b4e8cf939394d25d19817e2f912e7bb603d8c4741aa1e629467a603a271f339c",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Theorems.Thm_CuspidalType_finsupp_apply_pow_eq_of_forall_character_torus_eq_sum",
+      "source_sha256": "c22b5b45fa0f01e8fc0800d681cec05ab39be526a4647b1ae31376a26a174194",
+      "object_sha256": "bba30582d3df77ce85c06ebf9a8a0ee5b5360022a90f536eac96d553899e6c5d",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Theorems.Thm_CuspidalType_exists_finset_monoidHom_mem_iff_forall_apply_eq_one_and_card_eq",
+      "source_sha256": "59eae2d8233baeaa6a5543578d6e832309d7e1c1230a32055cf808f3d914ac3e",
+      "object_sha256": "e045a894521e578f03b7e8ddccfcd86d9d095d46da55ba4a4d77880695a30319",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Theorems.Thm_CuspidalType_exists_sq_ne_one_and_forall_apply_eq_zero_iff_of_card_eq_of_forall_apply_pow_eq",
+      "source_sha256": "632061754ea0081dc205c6f6add1687813dc3be497edacf3ec16c33ef5ffbac3",
+      "object_sha256": "ae1d527c028347a86a5a17d71e822a2368cb6ed71e19b5efcebd75c442bc053e",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.P2M.Util",
+      "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+      "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+      "receipt_reused": true
+    }
+  ],
+  "stdout": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/62219a21170d4d0af4e54612-1792001915307027000.kernel/stdout.log",
+  "stderr": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/62219a21170d4d0af4e54612-1792001915307027000.kernel/stderr.log"
+}
