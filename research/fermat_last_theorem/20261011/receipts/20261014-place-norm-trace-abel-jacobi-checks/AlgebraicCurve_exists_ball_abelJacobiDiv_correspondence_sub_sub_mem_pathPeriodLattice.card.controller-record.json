@@ -1,0 +1,80 @@
+{
+  "sha256": "6f900d6bfb43b258b87a6da2b179434e747904d3fe67b5f363b3852dc75771aa",
+  "exit": 0,
+  "empty_output_retry_done": false,
+  "source_sha256_after": "6f900d6bfb43b258b87a6da2b179434e747904d3fe67b5f363b3852dc75771aa",
+  "source_unchanged": true,
+  "olean_sha256": "1202afe0ffef451f7c98509e5323b7ba2915d51f3862672a35349ac1b926c22f",
+  "seconds": 55.87260233300185,
+  "pid": 60545,
+  "command": [
+    "/Users/macstudio/.local/omega-shims/lean",
+    "-j1",
+    "--trust=0",
+    "-Ddebug.skipKernelTC=false",
+    "-R",
+    "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src",
+    "-o",
+    "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-build/lib/lean/Submission/Supplier/Theorems/Thm_AlgebraicCurve_exists_ball_abelJacobiDiv_correspondence_sub_sub_mem_pathPeriodLattice.olean",
+    "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/Theorems/Thm_AlgebraicCurve_exists_ball_abelJacobiDiv_correspondence_sub_sub_mem_pathPeriodLattice.lean"
+  ],
+  "make_wrapper_pid": 54661,
+  "make_exit": 0,
+  "make_entry_failed": false,
+  "cache_binding_valid": true,
+  "canonical_make_running_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/1d274e3d7a20e88dee7b5ffc-1791974781573741000.make-running.json",
+  "canonical_make_terminal_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/1d274e3d7a20e88dee7b5ffc-1791974781573741000.make-terminal.json",
+  "kernel_terminal_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/1d274e3d7a20e88dee7b5ffc-1791974781573741000.kernel/result.json",
+  "direct_dependencies": [
+    {
+      "module": "Submission.Supplier.Definitions.Def_AlgebraicCurve_Correspondence",
+      "source_sha256": "22d43195e5e1e56a79944d3f469e206b1dbea2f6727f6e0e0bccbc151f220881",
+      "object_sha256": "c99c86ef38a52c80a3925a267b8c93ae03a81f20f54c6c6e8d2d2fb01743b08c",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Definitions.Def_AlgebraicCurve_DifferentialPushPull",
+      "source_sha256": "79812266658e7d4198a735ecf120802e1c02ee7fce089cf91a20139281906394",
+      "object_sha256": "7a7edd07c520c456ac9856250aa50bae5c155eeb7f83694eae78bf805f71101c",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Definitions.Def_AlgebraicCurve_IsCurveOver",
+      "source_sha256": "3d53c0528c8bc1ae3b59135d2dc1a76d8abbd68c829305a8f4a8d584c3796553",
+      "object_sha256": "e059f779f8f2ce4be7ecc33e0af4e4d4e1629cd5eb8f0516c569e5b236d3539d",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Definitions.Def_AlgebraicCurve_PlaceEvaluation",
+      "source_sha256": "fdfbe8ba0ace6720310749dab44668a69f9b5e5b8bd10702632f48b50309e5ba",
+      "object_sha256": "eac4d654f8f11e9c00b836bf940d1348f6eb9a4ec4a96b99c9c1b0efba0ecf63",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Definitions.Def_AlgebraicCurve_RegularDifferentials",
+      "source_sha256": "621311a063241a754ccc18aa74f96eca60e6b33cc9d894ef81b59b034abb2ed0",
+      "object_sha256": "39fc0f2e8ab4b2e03919abf00481a60682b30a6be1180eca7af8debdc6135a8f",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Definitions.Def_AlgebraicCurve_ComplexLineIntegral",
+      "source_sha256": "c661f7c0b927bb3039c61dbaaced1fbe26641539976a9c3d2094480b10859793",
+      "object_sha256": "171dc471f24088540e02ba6cf600a14ab2b3f31377a5ddc71bd2594231551020",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.P2M.Util",
+      "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+      "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.P2M.Sol.S_AlgebraicCurve_exists_ball_abelJacobiDiv_correspondence_sub_sub_mem_pathPeriodLattice",
+      "source_sha256": "76a98f3e5b3863720f1d1853476fccfea4a7875d2a333142053e454684b3a840",
+      "object_sha256": "e79cc10b8046921a2070576accfaab0d6e7c7701c9a440baa11c2067ff4619fb",
+      "receipt_reused": true
+    }
+  ],
+  "stdout": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/1d274e3d7a20e88dee7b5ffc-1791974781573741000.kernel/stdout.log",
+  "stderr": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/1d274e3d7a20e88dee7b5ffc-1791974781573741000.kernel/stderr.log"
+}
