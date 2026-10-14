@@ -1,0 +1,722 @@
+--- Submission/Supplier/P2M/Sol/S_NumberField_exists_completedRayL_functionalEquation_of_modulus_top.lean
++++ Submission/Supplier/P2M/Sol/S_NumberField_exists_completedRayL_functionalEquation_of_modulus_top.lean
+@@ -153,10 +153,12 @@
+             ({w : InfinitePlace K // IsComplex w} → ℂ)).symm)).trans
+       (WithLp.linearEquiv 2 ℝ _).symm)
+ 
++omit [NumberField K] in
+ private theorem mixedConjDil_apply_fst (x : euclidean.mixedSpace K) :
+     (mixedConjDil K x).fst = x.fst := by
+   simp [mixedConjDil, LinearEquiv.trans_apply, LinearEquiv.prodCongr_apply]
+ 
++omit [NumberField K] in
+ private theorem mixedConjDil_apply_snd (x : euclidean.mixedSpace K)
+     (w : {w : InfinitePlace K // IsComplex w}) :
+     (mixedConjDil K x).snd w = 2 * (starRingEnd ℂ) (x.snd w) := by
+@@ -525,7 +527,7 @@
+ private theorem cubeTile_preimage (n : d → ℤ) :
+     (fun x : d → ℝ => x + intVec n) ⁻¹' cubeTile n = unitCube (d := d) := by
+   ext x
+-  simp only [Set.mem_preimage, cubeTile, unitCube, Set.mem_setOf_eq, Pi.add_apply,
++  simp only [Set.mem_preimage, cubeTile, unitCube, Set.mem_ofPred_eq, Pi.add_apply,
+     Set.mem_Ioc, intVec]
+   exact forall_congr' fun i => by constructor <;> intro h <;> constructor <;> linarith [h.1, h.2]
+ 
+@@ -573,7 +575,7 @@
+ include h_norm
+ 
+ private theorem integrable_of_summable_translate_norm : Integrable (⇑f) := by
+-  haveI : (volume : Measure (d → ℝ)).IsAddHaarMeasure := isAddHaarMeasure_volume_pi d
++  have : (volume : Measure (d → ℝ)).IsAddHaarMeasure := isAddHaarMeasure_volume_pi d
+   refine ⟨(map_continuous f).aestronglyMeasurable, ?_⟩
+   rw [hasFiniteIntegral_iff_enorm]
+   have hsplit : ∫⁻ x, ‖f x‖ₑ
+@@ -609,7 +611,7 @@
+ 
+ private theorem mFourierCoeff_periodization (m : d → ℤ) :
+     UnitAddTorus.mFourierCoeff (⇑(periodization h_norm)) m = piFourier (⇑f) m := by
+-  haveI : (volume : Measure (d → ℝ)).IsAddHaarMeasure := isAddHaarMeasure_volume_pi d
++  have : (volume : Measure (d → ℝ)).IsAddHaarMeasure := isAddHaarMeasure_volume_pi d
+   have hS0 : {x : d → ℝ | ∀ i, x i ∈ Set.Ioc ((fun _ => (0:ℝ)) i) ((fun _ => (0:ℝ)) i + 1)}
+       = unitCube (d := d) := by
+     ext x; simp [unitCube]
+@@ -1078,7 +1080,7 @@
+   rw [Filter.eventually_cofinite]
+   refine Set.Finite.subset (Set.finite_singleton 0) ?_
+   intro v hv
+-  simp only [Set.mem_setOf_eq, not_le] at hv
++  simp only [Set.mem_ofPred_eq, not_le] at hv
+   rcases eq_or_ne v 0 with h0 | h0
+   · exact h0
+   exfalso
+@@ -1297,7 +1299,7 @@
+   have hset : {I : (Ideal (𝓞 K))⁰ |
+       absNorm (I : Ideal (𝓞 K)) ≤ s ∧ ClassGroup.mk0 I = C}.Finite :=
+     (finite_setOf_absNorm_le₀ ⌊s⌋₊).subset fun I hI => Nat.le_floor hI.1
+-  haveI : Fintype {I : (Ideal (𝓞 K))⁰ //
++  have : Fintype {I : (Ideal (𝓞 K))⁰ //
+       absNorm (I : Ideal (𝓞 K)) ≤ s ∧ ClassGroup.mk0 I = C} := hset.fintype
+   have key : Nat.card {I : (Ideal (𝓞 K))⁰ //
+       absNorm (I : Ideal (𝓞 K)) ≤ s ∧ ClassGroup.mk0 I = C} =
+@@ -2473,14 +2475,14 @@
+   have hmk : Units.mk0 (I * J) hIJ = Units.mk0 I hI * Units.mk0 J hJ := Units.ext rfl
+   have hIJc : Units.mk0 (I * J) hIJ ∈ coprimeToModulus K 𝔣 := by
+     rw [hmk]; exact mul_mem hIc hJc
+-  rw [chiIdeal, dif_pos hIJ, dif_pos hIJc, chiIdeal, dif_pos hI, dif_pos hIc, chiIdeal, dif_pos hJ, dif_pos hJc,
++  rw [chiIdeal, dite_eq_left hIJ, dite_eq_left hIJc, chiIdeal, dite_eq_left hI, dite_eq_left hIc, chiIdeal, dite_eq_left hJ, dite_eq_left hJc,
+     ← map_mul, ← map_mul]
+   congr 2
+   exact Subtype.ext hmk
+ 
+ private theorem chiIdeal_ne_zero_of_mem {I : FractionalIdeal (𝓞 K)⁰ K} (hI : I ≠ 0)
+     (hIc : Units.mk0 I hI ∈ coprimeToModulus K 𝔣) : chiIdeal K 𝔣 χ I ≠ 0 := by
+-  rw [chiIdeal, dif_pos hI, dif_pos hIc]
++  rw [chiIdeal, dite_eq_left hI, dite_eq_left hIc]
+   set g := NarrowRayClassGroup.mk K 𝔣 ⟨Units.mk0 I hI, hIc⟩
+   intro h
+   have : χ g * χ g⁻¹ = 1 := by rw [← map_mul, mul_inv_cancel, map_one]
+@@ -2489,10 +2491,10 @@
+ 
+ private theorem chiIdeal_eq_zero_of_not_mem {I : FractionalIdeal (𝓞 K)⁰ K} (hI : I ≠ 0)
+     (hIc : Units.mk0 I hI ∉ coprimeToModulus K 𝔣) : chiIdeal K 𝔣 χ I = 0 := by
+-  rw [chiIdeal, dif_pos hI, dif_neg hIc]
++  rw [chiIdeal, dite_eq_left hI, dite_eq_right hIc]
+ 
+ private theorem chiIdeal_zero : chiIdeal K 𝔣 χ 0 = 0 := by
+-  rw [chiIdeal, dif_neg (not_not.mpr rfl)]
++  rw [chiIdeal, dite_eq_right (not_not.mpr rfl)]
+ 
+ private theorem prin_mem_coprime_of_mul {α δ : 𝓞 K} (hα : α ≠ 0) (hδ : δ ≠ 0)
+     (h : Units.mk0 (prinFI K (α * δ)) (prinFI_ne_zero K (mul_ne_zero hα hδ)) ∈ coprimeToModulus K 𝔣) :
+@@ -2867,8 +2869,8 @@
+     (hcc : Units.mk0 (prinFI K c) (prinFI_ne_zero K hc) ∈ coprimeToModulus K 𝔣) :
+     gaussCore χ h𝔣 S y = chiFin K 𝔣 χ S c * gaussCore χ h𝔣 S ((c : K) * y) := by
+   obtain ⟨u, hu⟩ := isUnit_mk_of_coprime h𝔣 hc hcc
+-  letI := Ideal.finiteQuotientOfFreeOfNeBot 𝔣 h𝔣
+-  letI : Fintype (𝓞 K ⧸ 𝔣) := Fintype.ofFinite _
++  let := Ideal.finiteQuotientOfFreeOfNeBot 𝔣 h𝔣
++  let : Fintype (𝓞 K ⧸ 𝔣) := Fintype.ofFinite _
+   unfold gaussCore
+   rw [Finset.mul_sum]
+ 
+@@ -3009,8 +3011,8 @@
+ 
+ private theorem norm_chiIdeal_of_mem (h𝔣 : 𝔣 ≠ ⊥) {I : FractionalIdeal (𝓞 K)⁰ K} (hI : I ≠ 0)
+     (hIc : Units.mk0 I hI ∈ coprimeToModulus K 𝔣) : ‖chiIdeal K 𝔣 χ I‖ = 1 := by
+-  haveI := Deep.NTSupply.finite K h𝔣
+-  rw [chiIdeal, dif_pos hI, dif_pos hIc]
++  have := Deep.NTSupply.finite K h𝔣
++  rw [chiIdeal, dite_eq_left hI, dite_eq_left hIc]
+   set g := NarrowRayClassGroup.mk K 𝔣 ⟨Units.mk0 I hI, hIc⟩
+   have hfin : IsOfFinOrder (χ g) := χ.isOfFinOrder (isOfFinOrder_of_finite g)
+   exact Complex.norm_eq_one_of_pow_eq_one (pow_orderOf_eq_one (χ g)) hfin.orderOf_pos.ne'
+@@ -3430,17 +3432,17 @@
+       (∑ i ∈ S, (∏ j ∈ S.erase i, ((⟪e j, w⟫_ℝ : ℝ) : ℂ)) • (Complex.ofRealCLM.comp (innerSL ℝ (e i)))) w := by
+   have h := HasFDerivAt.finsetProd (u := S) (g := fun i (x : E) => ((⟪e i, x⟫_ℝ : ℝ) : ℂ))
+     (g' := fun i => Complex.ofRealCLM.comp (innerSL ℝ (e i))) (x := w) fun i _ => hasFDerivAt_innerC (e i) w
+-  convert h using 1 <;> rfl
++  convert h using 1 ; rfl
+ 
+ omit [FiniteDimensional ℝ E] [MeasurableSpace E] [BorelSpace E] in
+ private theorem polyS_fderiv_apply_eq_zero [DecidableEq σ] (he : Orthonormal ℝ e) (S : Finset σ) (w : E)
+     {u : σ} (hu : u ∉ S) :
+     (∑ i ∈ S, (∏ j ∈ S.erase i, ((⟪e j, w⟫_ℝ : ℝ) : ℂ)) • (Complex.ofRealCLM.comp (innerSL ℝ (e i)))) (e u) = 0 := by
+-  rw [ContinuousLinearMap.sum_apply]
++  rw [sum_apply]
+   refine Finset.sum_eq_zero fun i hi => ?_
+   have hne : i ≠ u := fun h => hu (h ▸ hi)
+-  rw [ContinuousLinearMap.smul_apply, ContinuousLinearMap.comp_apply, innerSL_apply_apply,
+-    Complex.ofRealCLM_apply, orthonormal_iff_ite.mp he i u, if_neg hne]
++  rw [smul_apply, ContinuousLinearMap.comp_apply, innerSL_apply_apply,
++    Complex.ofRealCLM_apply, orthonormal_iff_ite.mp he i u, ite_eq_right hne]
+   simp
+ 
+ omit [FiniteDimensional ℝ E] [MeasurableSpace E] [BorelSpace E] in
+@@ -3461,8 +3463,8 @@
+       * Complex.exp (-(π : ℂ) / t * ((‖x‖ ^ 2 : ℝ) : ℂ)) := by
+     funext x; simp [gaussFT]
+   rw [hfun]
+-  convert hexp.const_mul ((1 / (t : ℂ)) ^ ((Module.finrank ℝ E : ℂ) / 2)) using 1 <;> try rfl
+-  simp only [smul_smul, smul_eq_mul]
++  convert hexp.const_mul ((1 / (t : ℂ)) ^ ((Module.finrank ℝ E : ℂ) / 2)) using 1 ; try rfl
++  simp only [smul_smul]
+   congr 1
+   push_cast
+   ring
+@@ -3489,7 +3491,7 @@
+             • (Complex.ofRealCLM.comp (innerSL ℝ (e i)))))) (e u)
+       = C * polyS e S w * gaussFT t w * (-(π : ℂ) / t) * (2 * ((⟪w, e u⟫_ℝ : ℝ) : ℂ)) := by
+   have h0 := polyS_fderiv_apply_eq_zero e he S w hu
+-  simp only [ContinuousLinearMap.smul_apply, ContinuousLinearMap.add_apply, h0,
++  simp only [smul_apply, add_apply, h0,
+     ContinuousLinearMap.comp_apply, innerSL_apply_apply, Complex.ofRealCLM_apply, smul_eq_mul]
+   push_cast
+   ring
+@@ -4148,15 +4150,16 @@
+ private def raySub : AddSubgroup ↥((𝔞 : FractionalIdeal (𝓞 K)⁰ K) : Submodule (𝓞 K) K) where
+   carrier := {u | (u : K) ∈ (𝔣 : FractionalIdeal (𝓞 K)⁰ K) * (𝔞 : FractionalIdeal (𝓞 K)⁰ K)}
+   add_mem' := fun {a b} ha hb => by
+-    rw [Set.mem_setOf_eq, ← FractionalIdeal.mem_coe] at ha hb ⊢
++    rw [Set.mem_ofPred_eq, ← FractionalIdeal.mem_coe] at ha hb ⊢
+     exact add_mem ha hb
+   zero_mem' := by
+-    rw [Set.mem_setOf_eq, ← FractionalIdeal.mem_coe]
++    rw [Set.mem_ofPred_eq, ← FractionalIdeal.mem_coe]
+     exact zero_mem _
+   neg_mem' := fun {a} ha => by
+-    rw [Set.mem_setOf_eq, ← FractionalIdeal.mem_coe] at ha ⊢
++    rw [Set.mem_ofPred_eq, ← FractionalIdeal.mem_coe] at ha ⊢
+     exact neg_mem ha
+ 
++omit [NumberField K] in
+ private theorem mem_raySub {u : ↥((𝔞 : FractionalIdeal (𝓞 K)⁰ K) : Submodule (𝓞 K) K)} :
+     u ∈ raySub K 𝔣 𝔞
+       ↔ (u : K) ∈ (𝔣 : FractionalIdeal (𝓞 K)⁰ K) * (𝔞 : FractionalIdeal (𝓞 K)⁰ K) :=
+@@ -5232,21 +5235,21 @@
+ private theorem hasSum_prod_of_fintype {α β E : Type*} [Finite α] [AddCommMonoid E] [TopologicalSpace E]
+     [ContinuousAdd E] {F : β → E} {S : E} (hF : HasSum F S) :
+     HasSum (fun p : α × β => F p.2) (Nat.card α • S) := by
+-  haveI := Fintype.ofFinite α
++  have := Fintype.ofFinite α
+   rw [Nat.card_eq_fintype_card]
+   have key : (fun p : α × β => F p.2) = fun p => ∑ a : α, (if p.1 = a then F p.2 else 0) := by
+-    funext p; rw [Finset.sum_ite_eq, if_pos (Finset.mem_univ _)]
++    funext p; rw [Finset.sum_ite_eq, ite_eq_left (Finset.mem_univ _)]
+   rw [key, ← Finset.card_univ, ← Finset.sum_const]
+   refine hasSum_sum fun a _ => ?_
+   have hinj : Function.Injective (fun b : β => (a, b)) := fun b b' hbb' => (Prod.mk.inj hbb').2
+   refine (hinj.hasSum_iff ?_).mp ?_
+   · rintro ⟨a', b⟩ hnot
+-    rw [if_neg]
++    rw [ite_eq_right]
+     rintro rfl
+     exact hnot ⟨b, rfl⟩
+   · convert hF using 1
+     funext b
+-    exact if_pos rfl
++    exact ite_eq_left rfl
+ 
+ private theorem hasSum_units_setIntegral_foldDomain {E : Type*} [NormedAddCommGroup E] [NormedSpace ℝ E]
+     {h : realSpace K → E} (hh : IntegrableOn h (orthant K) (torusHaar K)) :
+@@ -5276,7 +5279,7 @@
+ private theorem tsum_units_setLIntegral_foldDomain (g : realSpace K → ℝ≥0∞) :
+     ∑' u : (𝓞 K)ˣ, ∫⁻ t in foldDomain K, g (unitTorus K u t) ∂(torusHaar K)
+       = torsionOrder K * ∫⁻ t in orthant K, g t ∂(torusHaar K) := by
+-  haveI : Fintype (torsion K) := Fintype.ofFinite _
++  have : Fintype (torsion K) := Fintype.ofFinite _
+   rw [← Equiv.tsum_eq (unitsEquiv K)]
+   simp_rw [unitTorus_unitsEquiv]
+   rw [ENNReal.tsum_prod', tsum_fintype]
+@@ -5443,9 +5446,9 @@
+       invFun := fun y => ⟨⟨y.1, y.2.1⟩, y.2.2⟩
+       left_inv := fun x => Subtype.ext (Subtype.ext rfl)
+       right_inv := fun y => Subtype.ext rfl }
+-  haveI : Finite ((fun I : {I : (Ideal (𝓞 K))⁰ // ClassGroup.mk0 I = C} =>
++  have : Finite ((fun I : {I : (Ideal (𝓞 K))⁰ // ClassGroup.mk0 I = C} =>
+       Ideal.absNorm (I.1 : Ideal (𝓞 K))) ⁻¹' {n} : Set _) := Finite.of_equiv _ e.symm
+-  haveI := Fintype.ofFinite ((fun I : {I : (Ideal (𝓞 K))⁰ // ClassGroup.mk0 I = C} =>
++  have := Fintype.ofFinite ((fun I : {I : (Ideal (𝓞 K))⁰ // ClassGroup.mk0 I = C} =>
+       Ideal.absNorm (I.1 : Ideal (𝓞 K))) ⁻¹' {n} : Set _)
+   have hconst : ∀ x : ((fun I : {I : (Ideal (𝓞 K))⁰ // ClassGroup.mk0 I = C} =>
+       Ideal.absNorm (I.1 : Ideal (𝓞 K))) ⁻¹' {n} : Set _),
+@@ -5467,7 +5470,7 @@
+     fun I => Ideal.absNorm (I.1 : Ideal (𝓞 K)) with hν
+   rw [← (Equiv.sigmaFiberEquiv ν).summable_iff]
+   refine (summable_sigma_of_nonneg (fun _ => norm_nonneg _)).mpr ⟨fun n => ?_, ?_⟩
+-  · haveI : Finite {x : {I : (Ideal (𝓞 K))⁰ // ClassGroup.mk0 I = C} // ν x = n} :=
++  · have : Finite {x : {I : (Ideal (𝓞 K))⁰ // ClassGroup.mk0 I = C} // ν x = n} :=
+       Finite.of_equiv _
+         (show {I : (Ideal (𝓞 K))⁰ //
+             ClassGroup.mk0 I = C ∧ Ideal.absNorm (I : Ideal (𝓞 K)) = n} ≃
+@@ -5476,7 +5479,7 @@
+             invFun := fun x => ⟨x.1.1, x.1.2, x.2⟩
+             left_inv := fun y => Subtype.ext rfl
+             right_inv := fun x => Subtype.ext (Subtype.ext rfl) })
+-    haveI := Fintype.ofFinite {x : {I : (Ideal (𝓞 K))⁰ // ClassGroup.mk0 I = C} // ν x = n}
++    have := Fintype.ofFinite {x : {I : (Ideal (𝓞 K))⁰ // ClassGroup.mk0 I = C} // ν x = n}
+     exact (hasSum_fintype _).summable
+   ·
+     have hLS := (lseriesSummable_classZetaCoeff K C hs).norm
+@@ -5583,7 +5586,7 @@
+ 
+ omit [NumberField K] in
+ private theorem measurable_inv_realSpace : Measurable (Inv.inv : realSpace K → realSpace K) :=
+-  measurable_pi_lambda _ fun w => (measurable_pi_apply w).inv
++  Measurable.of_eval fun w => (measurable_pi_apply w).inv
+ 
+ private theorem lintegral_comp_inv_torusHaar {g : realSpace K → ℝ≥0∞} (hg : Measurable g) :
+     ∫⁻ t, g t⁻¹ ∂(torusHaar K) = ∫⁻ t, g t ∂(torusHaar K) := by
+@@ -5939,6 +5942,7 @@
+ variable (S : Finset {w : InfinitePlace K // IsReal w})
+ variable (𝔞 : (FractionalIdeal (𝓞 K)⁰ K)ˣ)
+ 
++omit [NumberField K] in
+ private theorem unit_mul_mem_fracIdeal (u : (𝓞 K)ˣ) {x : K}
+     (hx : x ∈ (𝔞 : FractionalIdeal (𝓞 K)⁰ K)) :
+     ((u : 𝓞 K) : K) * x ∈ (𝔞 : FractionalIdeal (𝓞 K)⁰ K) := by
+@@ -6098,8 +6102,8 @@
+ private theorem measurableSet_highBox : MeasurableSet (highBox K) := by
+   refine MeasurableSet.univ_pi fun w => ?_
+   by_cases hw : w = w₀
+-  · rw [if_pos hw]; exact measurableSet_Ici
+-  · rw [if_neg hw]; exact measurableSet_Ico
++  · rw [ite_eq_left hw]; exact measurableSet_Ici
++  · rw [ite_eq_right hw]; exact measurableSet_Ico
+ 
+ private theorem highHalf_eq_image :
+     foldDomain K ∩ {t : realSpace K | 1 ≤ torusNorm K t}
+@@ -6125,8 +6129,8 @@
+   have hmeas : Measurable fun x : realSpace K => G (Real.exp (x w₀) ^ Module.finrank ℚ K) :=
+     hG.comp (by fun_prop)
+   rw [highBox, volume_pi, Measure.restrict_pi_pi, lintegral_eq_lmarginal_univ 0,
+-    lmarginal_erase' _ hmeas (Finset.mem_univ w₀), if_pos rfl]
+-  simp_rw [Function.update_self, lmarginal, lintegral_const, Measure.pi_univ, if_neg
++    lmarginal_erase' _ hmeas (Finset.mem_univ w₀), ite_eq_left rfl]
++  simp_rw [Function.update_self, lmarginal, lintegral_const, Measure.pi_univ, ite_eq_right
+     (Finset.ne_of_mem_erase (Subtype.prop _)), Measure.restrict_apply_univ, Real.volume_Ico,
+     sub_zero, ENNReal.ofReal_ofNat, Finset.prod_const, Finset.card_univ, Fintype.card_coe,
+     Finset.card_erase_of_mem (Finset.mem_univ _), Finset.card_univ]
+@@ -6207,7 +6211,7 @@
+     · rfl
+     · intro w hw
+       have hw' : w ≠ w₀ := Finset.ne_of_mem_erase hw
+-      simp only [if_neg hw']
++      simp only [ite_eq_right hw']
+       rw [integral_const, measureReal_restrict_apply_univ, Real.volume_real_Ico_of_le zero_le_two,
+         sub_zero, Complex.real_smul, mul_one, Complex.ofReal_ofNat]
+   have hbox : ∫ x in highBox K, (((Real.exp (x w₀) ^ Module.finrank ℚ K : ℝ)) : ℂ) ^ (-z)
+@@ -6218,13 +6222,13 @@
+               w (x w) := by
+       funext x
+       simp only []
+-      rw [Finset.prod_ite_eq' (Finset.univ : Finset (InfinitePlace K)) w₀, if_pos (Finset.mem_univ _)]
++      rw [Finset.prod_ite_eq' (Finset.univ : Finset (InfinitePlace K)) w₀, ite_eq_left (Finset.mem_univ _)]
+     rw [hf, highBox, volume_pi, Measure.restrict_pi_pi, integral_fintype_prod_eq_prod
+       (f := fun (w : InfinitePlace K) (u : ℝ) =>
+         if w = w₀ then (((Real.exp u ^ Module.finrank ℚ K : ℝ)) : ℂ) ^ (-z) else (1 : ℂ))
+       (μ := fun w => volume.restrict (if w = w₀ then Set.Ici (0 : ℝ) else Set.Ico 0 2)),
+       ← Finset.mul_prod_erase Finset.univ _ (Finset.mem_univ w₀)]
+-    simp only [if_true]
++    simp only [ite_true]
+     rw [integral_Ici_exp_pow_cpow_neg K hz, hrest, mul_comm]
+   rw [highHalf_eq_image, setIntegral_image_expMapBasis_torusHaar]
+   simp_rw [torusNorm_expMapBasis]
+@@ -6447,7 +6451,7 @@
+       fun i _ => ?_
+     have hxi : x i.1 ∈ Set.Ico (0 : ℝ) 2 := by
+       have h := (Set.mem_univ_pi.mp hx) i.1
+-      rw [if_neg i.2] at h
++      rw [ite_eq_right i.2] at h
+       exact h
+     rcases le_or_gt 1 (A w i) with h1 | h1
+     · exact (min_le_left _ _).trans (Real.one_le_rpow h1 hxi.1)
+@@ -6839,7 +6843,7 @@
+           * t v.1 ^ (if h : (v:InfinitePlace K).IsReal then
+             (if ⟨v.1, h⟩ ∈ S then (1:ℝ)/2 else 0) else 0))) = 1 from
+       Finset.prod_eq_one fun v _ => by
+-        rw [dif_neg (not_isReal_iff_isComplex.mpr v.2), dif_neg (not_isReal_iff_isComplex.mpr v.2),
++        rw [dite_eq_right (not_isReal_iff_isComplex.mpr v.2), dite_eq_right (not_isReal_iff_isComplex.mpr v.2),
+           pow_zero, Real.rpow_zero, mul_one],
+     mul_one,
+     ← Finset.prod_filter_mul_prod_filter_not (Finset.univ : Finset {w : InfinitePlace K // IsReal w})
+@@ -6852,12 +6856,12 @@
+           * t v.1 ^ (if h : (v:InfinitePlace K).IsReal then
+             (if ⟨v.1, h⟩ ∈ S then (1:ℝ)/2 else 0) else 0))) = 1 from
+       Finset.prod_eq_one fun v hv => by
+-        rw [dif_pos v.2, if_neg (Finset.mem_filter.mp hv).2,
+-          dif_pos v.2, if_neg (Finset.mem_filter.mp hv).2, pow_zero, Real.rpow_zero, mul_one],
++        rw [dite_eq_left v.2, ite_eq_right (Finset.mem_filter.mp hv).2,
++          dite_eq_left v.2, ite_eq_right (Finset.mem_filter.mp hv).2, pow_zero, Real.rpow_zero, mul_one],
+     mul_one]
+   refine Finset.prod_congr rfl fun v hv => ?_
+   have hvS : (⟨v.1, v.2⟩ : {w : InfinitePlace K // IsReal w}) ∈ S := by simpa using hv
+-  rw [dif_pos v.2, if_pos hvS, dif_pos v.2, if_pos hvS, pow_one, ← Real.sqrt_eq_rpow]
++  rw [dite_eq_left v.2, ite_eq_left hvS, dite_eq_left v.2, ite_eq_left hvS, pow_one, ← Real.sqrt_eq_rpow]
+ 
+ private theorem density_mul_rayMajKernel_eq_prod (c : ℝ) (y : K) (σ : ℝ) {t : realSpace K}
+     (ht : t ∈ orthant K) :
+@@ -7000,7 +7004,7 @@
+     (I : {I : (Ideal (𝓞 K))⁰ // ClassGroup.mk0 I = (ClassGroup.mk K 𝔞)⁻¹}) :
+     FractionalIdeal.spanSingleton (𝓞 K)⁰ (fracIdealGen K 𝔞 I)
+       = ((𝔞 * FractionalIdeal.mk0 K I : (FractionalIdeal (𝓞 K)⁰ K)ˣ) : FractionalIdeal (𝓞 K)⁰ K) := by
+-  haveI := instIsPrincipal_fracIdealProd K 𝔞 I
++  have := instIsPrincipal_fracIdealProd K 𝔞 I
+   refine FractionalIdeal.coeToSubmodule_injective ?_
+   show (↑(FractionalIdeal.spanSingleton (𝓞 K)⁰ (fracIdealGen K 𝔞 I)) : Submodule (𝓞 K) K) = _
+   rw [FractionalIdeal.coe_spanSingleton, fracIdealGen, Submodule.IsPrincipal.span_singleton_generator]
+@@ -7164,10 +7168,12 @@
+     (Equiv.optionCongr (Equiv.subtypeEquivRight fun _x =>
+       ⟨fun h h0 => h (Subtype.ext h0), fun h h0 => h (congrArg Subtype.val h0)⟩))
+ 
++omit [NumberField K] in
+ private theorem fracIdealNonzeroEquiv_symm_none :
+     (((fracIdealNonzeroEquiv K 𝔞).symm none : (𝔞 : FractionalIdeal (𝓞 K)⁰ K)) : K) = 0 := by
+   rfl
+ 
++omit [NumberField K] in
+ private theorem fracIdealNonzeroEquiv_symm_some (x : {x : (𝔞 : FractionalIdeal (𝓞 K)⁰ K) // (x : K) ≠ 0}) :
+     (((fracIdealNonzeroEquiv K 𝔞).symm (some x) : (𝔞 : FractionalIdeal (𝓞 K)⁰ K)) : K)
+       = (x.1 : K) := by
+@@ -7438,7 +7444,7 @@
+       by_cases hdvd : v.asIdeal ∣ 𝔣
+       · have hlt : v.asIdeal ^ (c v + 1) < v.asIdeal ^ (c v) :=
+           Ideal.pow_right_strictAnti v.asIdeal v.ne_bot v.isPrime.ne_top (Nat.lt_succ_self _)
+-        obtain ⟨x, hx1, hx2⟩ := SetLike.exists_of_lt hlt
++        obtain ⟨x, hx1, hx2⟩ := IsConcreteLE.exists_of_lt hlt
+         exact ⟨x, fun _ => ⟨hx1, hx2⟩, fun h => absurd hdvd h⟩
+       · exact ⟨0, fun h => absurd h hdvd, fun _ => rfl⟩
+     choose xv hxv𝔣 hxv0 using hpick
+@@ -7673,7 +7679,7 @@
+ private def levelIdeal (y : K) : Ideal (𝓞 K) where
+   carrier := {x | (x : K) * y ∈ FractionalIdeal.dual ℤ ℚ (1 : FractionalIdeal (𝓞 K)⁰ K)}
+   add_mem' := fun {a b} ha hb => by
+-    simp only [Set.mem_setOf_eq] at ha hb ⊢
++    simp only [Set.mem_ofPred_eq] at ha hb ⊢
+     rw [show ((a + b : 𝓞 K) : K) * y = (a : K) * y + (b : K) * y by push_cast; ring]
+     exact FractionalIdeal.mem_coe.mp (Submodule.add_mem _ (FractionalIdeal.mem_coe.mpr ha) (FractionalIdeal.mem_coe.mpr hb))
+   zero_mem' := by
+@@ -7681,7 +7687,7 @@
+     rw [show ((0 : 𝓞 K) : K) = 0 from map_zero (algebraMap (𝓞 K) K), zero_mul]
+     exact FractionalIdeal.mem_coe.mp (Submodule.zero_mem _)
+   smul_mem' := fun c x hx => by
+-    simp only [Set.mem_setOf_eq, smul_eq_mul] at hx ⊢
++    simp only [Set.mem_ofPred_eq, smul_eq_mul] at hx ⊢
+     rw [show ((c * x : 𝓞 K) : K) * y = (c : 𝓞 K) • ((x : K) * y) by rw [Algebra.smul_def]; push_cast; ring]
+     exact FractionalIdeal.mem_coe.mp (Submodule.smul_mem _ c (FractionalIdeal.mem_coe.mpr hx))
+ 
+@@ -7731,7 +7737,7 @@
+     have h𝔣𝔮 : 𝔣 = 𝔮 := le_antisymm (h𝔮 ▸ Ideal.mul_le_right) hle
+     have : v.asIdeal * 𝔮 = 1 * 𝔮 := by rw [← h𝔮, one_mul]; exact h𝔣𝔮
+     exact v.isPrime.ne_top ((mul_right_cancel₀ h𝔮0 this).trans Ideal.one_eq_top)
+-  obtain ⟨x, hx𝔮, hx𝔣⟩ := SetLike.not_le_iff_exists.mp hnle
++  obtain ⟨x, hx𝔮, hx𝔣⟩ := IsConcreteLE.not_le_iff_exists.mp hnle
+   apply hx𝔣
+   rw [← heq, mem_levelIdeal]
+ 
+@@ -8254,7 +8260,7 @@
+                     * ((Real.exp (-π * c * rayDilForm K t'
+                         ((v : euclidean.mixedSpace K) + bridgeRep K 𝔣 x₀ a)) : ℝ) : ℂ) := by
+   classical
+-  haveI : Fintype (↥((𝔞 : FractionalIdeal (𝓞 K)⁰ K) : Submodule (𝓞 K) K) ⧸ raySub K 𝔣 𝔞) :=
++  have : Fintype (↥((𝔞 : FractionalIdeal (𝓞 K)⁰ K) : Submodule (𝓞 K) K) ⧸ raySub K 𝔣 𝔞) :=
+     Fintype.ofEquiv _ (cosetIndexEquiv K 𝔣 χ 𝔞 h𝔣 hx₀)
+   set e₀ : ↥((𝔞 : FractionalIdeal (𝓞 K)⁰ K) : Submodule (𝓞 K) K)
+       ≃ ↥(𝔞 : FractionalIdeal (𝓞 K)⁰ K) :=
+@@ -8438,9 +8444,9 @@
+     ‖uWeight K 𝔣 χ S 𝔞 x‖ ≤ ‖rayWeight K 𝔣 χ 𝔞 x‖ := by
+   by_cases hx : x = 0
+   · subst hx
+-    rw [uWeight, rayWeight, if_pos rfl, if_neg h𝔣', FractionalIdeal.spanSingleton_zero,
++    rw [uWeight, rayWeight, ite_eq_left rfl, ite_eq_right h𝔣', FractionalIdeal.spanSingleton_zero,
+       zero_mul, chiIdeal_zero, zero_mul, norm_zero]
+-  · rw [uWeight, rayWeight, if_neg hx, norm_mul]
++  · rw [uWeight, rayWeight, ite_eq_right hx, norm_mul]
+     by_cases hs : signAt K S x = 0
+     · rw [hs, norm_zero, mul_zero]
+       exact norm_nonneg _
+@@ -8583,9 +8589,9 @@
+                       ((placeScale K (rayFlatScaleVec K c t')
+                           (rayFlatScaleVec_pos K hc ht')).symm (dualPt K (z : K)))) := by
+   classical
+-  haveI : DiscreteTopology (dilRayLattice K 𝔣 𝔞 h𝔣) :=
++  have : DiscreteTopology (dilRayLattice K 𝔣 𝔞 h𝔣) :=
+     inferInstanceAs (DiscreteTopology (dilLattice K (rayModIdeal K 𝔣 𝔞 h𝔣)))
+-  haveI : IsZLattice ℝ (dilRayLattice K 𝔣 𝔞 h𝔣) :=
++  have : IsZLattice ℝ (dilRayLattice K 𝔣 𝔞 h𝔣) :=
+     inferInstanceAs (IsZLattice ℝ (dilLattice K (rayModIdeal K 𝔣 𝔞 h𝔣)))
+   rw [weightedOddCoset_poisson (realUnit K)
+       (scaleLattice K (rayFlatScaleVec K c t') (rayFlatScaleVec_pos K hc ht')
+@@ -8715,9 +8721,9 @@
+     rw [Pi.inv_apply]
+     exact inv_pos.mpr (htw w)
+   have hc : 0 < rayScale K 𝔣 𝔞 := rayScale_pos K 𝔣 h𝔣 𝔞
+-  haveI : DiscreteTopology (dilRayLattice K 𝔣 𝔞 h𝔣) :=
++  have : DiscreteTopology (dilRayLattice K 𝔣 𝔞 h𝔣) :=
+     inferInstanceAs (DiscreteTopology (dilLattice K (rayModIdeal K 𝔣 𝔞 h𝔣)))
+-  haveI : IsZLattice ℝ (dilRayLattice K 𝔣 𝔞 h𝔣) :=
++  have : IsZLattice ℝ (dilRayLattice K 𝔣 𝔞 h𝔣) :=
+     inferInstanceAs (IsZLattice ℝ (dilLattice K (rayModIdeal K 𝔣 𝔞 h𝔣)))
+ 
+   rw [rayFoldMellinIntegrand,
+@@ -8833,11 +8839,11 @@
+         ?_).symm).trans (tsum_congr fun z => ?_)
+     · intro z hz
+       by_contra h0
+-      simp only [Set.mem_setOf_eq, not_not] at h0
+-      exact hz (if_pos (Subtype.ext h0))
++      simp only [Set.mem_ofPred_eq, not_not] at h0
++      exact hz (ite_eq_left (Subtype.ext h0))
+     · have hz2 : (z : ↥(rayDualIdeal K 𝔣 h𝔣 𝔞 : FractionalIdeal (𝓞 K)⁰ K))
+           ≠ ⟨0, FractionalIdeal.zero_mem _⟩ := fun h0 => z.2 (by simp [h0])
+-      exact if_neg hz2]
++      exact ite_eq_right hz2]
+ 
+   rw [rayInvDual, rayInvPolarCoeff, rayInvConst, rayMellinWeight, rayMellinWeight,
+     gaussFT_zero_eq_inv_sqrt_pow K hc]
+@@ -9011,7 +9017,7 @@
+         ?_)).symm
+     intro z hz
+     by_contra h0
+-    simp only [Set.mem_setOf_eq, not_not] at h0
++    simp only [Set.mem_ofPred_eq, not_not] at h0
+     refine hz ?_
+     have hz0 : z = ⟨0, FractionalIdeal.zero_mem _⟩ := Subtype.ext h0
+     rw [hz0]
+@@ -9296,7 +9302,10 @@
+     exact congrArg (‖·‖ₑ) (rayOrbitKernel_unit_mul K 𝔣 χ S 𝔞 c s p.2 t (fracIdealGen K 𝔞 p.1))
+   refine Summable.of_norm_bounded (ENNReal.summable_toReal hfin') fun p => ?_
+   exact (toReal_enorm _).symm.trans_le (ENNReal.toReal_mono
+-    (ne_top_of_le_ne_top hfin' (ENNReal.le_tsum p)) (enorm_integral_le_lintegral_enorm _))
++    (ne_top_of_le_ne_top hfin' (ENNReal.le_tsum
++      (f := fun q : ({I : (Ideal (𝓞 K))⁰ // ClassGroup.mk0 I = (ClassGroup.mk K 𝔞)⁻¹} × (𝓞 K)ˣ) =>
++        ∫⁻ t in foldDomain K, ‖rayOrbitKernel K 𝔣 χ S 𝔞 c (fracIdealGen K 𝔞 q.1) s
++          (unitTorus K q.2 t)‖ₑ ∂(torusHaar K)) p)) (enorm_integral_le_lintegral_enorm _))
+ 
+ private theorem rayFoldMellin_unfold (h𝔣 : 𝔣 ≠ ⊥) (c : ℝ) (hc : 0 < c) {s : ℂ} (hs : 1 < s.re) :
+     rayFoldMellin K 𝔣 χ S 𝔞 c s
+@@ -9403,7 +9412,7 @@
+     show (∏ v : {w : InfinitePlace K // IsComplex w}, ((t v.1 : ℝ) : ℂ)
+           ^ (if h : IsReal v.1 then (if ⟨v.1, h⟩ ∈ S then z else 0) else 0)) = 1 from
+       Finset.prod_eq_one fun v _ => by
+-        rw [dif_neg (not_isReal_iff_isComplex.mpr v.2), Complex.cpow_zero],
++        rw [dite_eq_right (not_isReal_iff_isComplex.mpr v.2), Complex.cpow_zero],
+     mul_one,
+     ← Finset.prod_filter_mul_prod_filter_not (Finset.univ : Finset {w : InfinitePlace K // IsReal w})
+       (· ∈ S),
+@@ -9412,11 +9421,11 @@
+           (Finset.univ : Finset {w : InfinitePlace K // IsReal w}),
+         ((t v.1 : ℝ) : ℂ) ^ (if h : IsReal v.1 then (if ⟨v.1, h⟩ ∈ S then z else 0) else 0)) = 1 from
+       Finset.prod_eq_one fun v hv => by
+-        rw [dif_pos v.2, if_neg (Finset.mem_filter.mp hv).2, Complex.cpow_zero],
++        rw [dite_eq_left v.2, ite_eq_right (Finset.mem_filter.mp hv).2, Complex.cpow_zero],
+     mul_one]
+   refine Finset.prod_congr rfl fun v hv => ?_
+   have hvS : (⟨v.1, v.2⟩ : {w : InfinitePlace K // IsReal w}) ∈ S := by simpa using hv
+-  rw [dif_pos v.2, if_pos hvS]
++  rw [dite_eq_left v.2, ite_eq_left hvS]
+ 
+ private theorem density_mul_rayGaussian_eq_prod (c : ℝ) {x : K} (s : ℂ) {t : realSpace K}
+     (ht : ∀ w, 0 < t w) :
+@@ -9530,7 +9539,7 @@
+         * Complex.Gamma (rayPlaceExp K S s w.1)
+       = Gammaℝ (s + 1) := by
+   have hvS : (⟨w.1, w.2⟩ : {w : InfinitePlace K // IsReal w}) ∈ S := by simpa using hw
+-  rw [rayPlaceExp, dif_pos w.2, if_pos hvS, mult_isReal, Nat.cast_one, Nat.cast_one, mul_one,
++  rw [rayPlaceExp, dite_eq_left w.2, ite_eq_left hvS, mult_isReal, Nat.cast_one, Nat.cast_one, mul_one,
+     one_mul, show s / 2 + 1 / 2 = (s + 1) / 2 by ring, Gammaℝ_def, neg_div]
+ 
+ omit [NumberField K] in
+@@ -9540,7 +9549,7 @@
+         * Complex.Gamma (rayPlaceExp K S s w.1)
+       = Gammaℝ s := by
+   have hvS : (⟨w.1, w.2⟩ : {w : InfinitePlace K // IsReal w}) ∉ S := by simpa using hw
+-  rw [rayPlaceExp, dif_pos w.2, if_neg hvS, mult_isReal, Nat.cast_one, Nat.cast_one, mul_one,
++  rw [rayPlaceExp, dite_eq_left w.2, ite_eq_right hvS, mult_isReal, Nat.cast_one, Nat.cast_one, mul_one,
+     one_mul, add_zero, Gammaℝ_def, neg_div]
+ 
+ omit [NumberField K] in
+@@ -9549,7 +9558,7 @@
+     ((Real.pi * (mult w.1 : ℝ) : ℝ) : ℂ) ^ (-rayPlaceExp K S s w.1)
+         * Complex.Gamma (rayPlaceExp K S s w.1)
+       = Gammaℂ s / 2 := by
+-  rw [rayPlaceExp, dif_neg (not_isReal_iff_isComplex.mpr w.2), mult_isComplex, Nat.cast_ofNat,
++  rw [rayPlaceExp, dite_eq_right (not_isReal_iff_isComplex.mpr w.2), mult_isComplex, Nat.cast_ofNat,
+     Nat.cast_ofNat, add_zero, show (2 : ℂ) * (s / 2) = s by ring, Gammaℂ_def,
+     mul_comm Real.pi 2]
+   push_cast
+@@ -9593,17 +9602,17 @@
+     (fun w => if h : IsReal w then (if ⟨w, h⟩ ∈ S then (1 : ℂ) / 2 else 0) else 0),
+     show (∑ w : {w : InfinitePlace K // IsComplex w},
+         if h : IsReal w.1 then (if ⟨w.1, h⟩ ∈ S then (1 : ℂ) / 2 else 0) else 0) = 0 from
+-      Finset.sum_eq_zero fun w _ => dif_neg (not_isReal_iff_isComplex.mpr w.2),
++      Finset.sum_eq_zero fun w _ => dite_eq_right (not_isReal_iff_isComplex.mpr w.2),
+     add_zero,
+     ← Finset.sum_filter_add_sum_filter_not (Finset.univ : Finset {w : InfinitePlace K // IsReal w})
+       (· ∈ S),
+     show (∑ w ∈ Finset.filter (¬ · ∈ S) (Finset.univ : Finset {w : InfinitePlace K // IsReal w}),
+         if h : IsReal w.1 then (if ⟨w.1, h⟩ ∈ S then (1 : ℂ) / 2 else 0) else 0) = 0 from
+       Finset.sum_eq_zero fun w hw => by
+-        rw [dif_pos w.2, if_neg (by simpa using (Finset.mem_filter.mp hw).2)],
++        rw [dite_eq_left w.2, ite_eq_right (by simpa using (Finset.mem_filter.mp hw).2)],
+     add_zero, Finset.filter_mem_eq_inter, Finset.univ_inter,
+     Finset.sum_congr rfl (fun w hw => by
+-      rw [dif_pos w.2, if_pos (show (⟨w.1, w.2⟩ : {w : InfinitePlace K // IsReal w}) ∈ S by
++      rw [dite_eq_left w.2, ite_eq_left (show (⟨w.1, w.2⟩ : {w : InfinitePlace K // IsReal w}) ∈ S by
+         simpa using hw)]),
+     Finset.sum_const, nsmul_eq_mul]
+ 
+@@ -9686,7 +9695,7 @@
+       show (∏ w : {w : InfinitePlace K // IsComplex w}, (((w.1 g) ^ 2 : ℝ) : ℂ)
+             ^ (-(if h : IsReal w.1 then (if ⟨w.1, h⟩ ∈ S then (1 : ℂ) / 2 else 0) else 0))) = 1
+         from Finset.prod_eq_one fun w _ => by
+-          rw [dif_neg (not_isReal_iff_isComplex.mpr w.2), neg_zero, Complex.cpow_zero],
++          rw [dite_eq_right (not_isReal_iff_isComplex.mpr w.2), neg_zero, Complex.cpow_zero],
+       mul_one,
+       ← Finset.prod_filter_mul_prod_filter_not
+         (Finset.univ : Finset {w : InfinitePlace K // IsReal w}) (· ∈ S),
+@@ -9694,13 +9703,13 @@
+           (((w.1 g) ^ 2 : ℝ) : ℂ)
+             ^ (-(if h : IsReal w.1 then (if ⟨w.1, h⟩ ∈ S then (1 : ℂ) / 2 else 0) else 0))) = 1
+         from Finset.prod_eq_one fun w hw => by
+-          rw [dif_pos w.2, if_neg (by simpa using (Finset.mem_filter.mp hw).2), neg_zero,
++          rw [dite_eq_left w.2, ite_eq_right (by simpa using (Finset.mem_filter.mp hw).2), neg_zero,
+             Complex.cpow_zero],
+       mul_one, Finset.filter_mem_eq_inter, Finset.univ_inter, ← Finset.prod_inv_distrib]
+     refine Finset.prod_congr rfl fun v hv => ?_
+     have hvg : 0 < (v : InfinitePlace K) g := pos_iff.mpr hg0
+-    rw [dif_pos v.2,
+-      if_pos (show (⟨v.1, v.2⟩ : {w : InfinitePlace K // IsReal w}) ∈ S by simpa using hv),
++    rw [dite_eq_left v.2,
++      ite_eq_left (show (⟨v.1, v.2⟩ : {w : InfinitePlace K // IsReal w}) ∈ S by simpa using hv),
+       show -((1 : ℂ) / 2) = ((1 / 2 : ℝ) : ℂ) * (-1 : ℂ) by push_cast; ring,
+       Complex.cpow_mul_ofReal_nonneg (sq_nonneg _), ← Real.sqrt_eq_rpow,
+       Real.sqrt_sq hvg.le, Complex.cpow_neg_one]
+@@ -9867,7 +9876,7 @@
+   · exact Summable.of_finite
+ 
+ private theorem rayZetaCoeff_zero (C : NarrowRayClassGroup K 𝔣) : rayZetaCoeff K 𝔣 C 0 = 0 := by
+-  haveI : IsEmpty {I : (Ideal (𝓞 K))⁰ // Ideal.absNorm (I : Ideal (𝓞 K)) = 0 ∧
++  have : IsEmpty {I : (Ideal (𝓞 K))⁰ // Ideal.absNorm (I : Ideal (𝓞 K)) = 0 ∧
+       ∃ hc : FractionalIdeal.mk0 K I ∈ coprimeToModulus K 𝔣,
+         NarrowRayClassGroup.mk K 𝔣 ⟨FractionalIdeal.mk0 K I, hc⟩ = C} :=
+     ⟨fun I => nonZeroDivisors.coe_ne_zero I.1
+@@ -9888,14 +9897,14 @@
+       invFun := fun y => ⟨⟨y.1, y.2.2⟩, y.2.1⟩
+       left_inv := fun x => Subtype.ext (Subtype.ext rfl)
+       right_inv := fun y => Subtype.ext rfl }
+-  haveI : Finite {I : (Ideal (𝓞 K))⁰ // Ideal.absNorm (I : Ideal (𝓞 K)) = n ∧
++  have : Finite {I : (Ideal (𝓞 K))⁰ // Ideal.absNorm (I : Ideal (𝓞 K)) = n ∧
+       ∃ hc : FractionalIdeal.mk0 K I ∈ coprimeToModulus K 𝔣,
+         NarrowRayClassGroup.mk K 𝔣 ⟨FractionalIdeal.mk0 K I, hc⟩ = C} :=
+     Set.Finite.to_subtype <|
+-      (Ideal.finite_setOf_absNorm_le₀ n).subset fun _ hI => le_of_eq hI.1
+-  haveI : Finite ((fun I : rayClassSet K 𝔣 C => Ideal.absNorm (I.1 : Ideal (𝓞 K))) ⁻¹' {n}
++      (Ideal.finite_setOfPred_absNorm_le₀ n).subset fun _ hI => le_of_eq hI.1
++  have : Finite ((fun I : rayClassSet K 𝔣 C => Ideal.absNorm (I.1 : Ideal (𝓞 K))) ⁻¹' {n}
+       : Set _) := Finite.of_equiv _ e.symm
+-  haveI := Fintype.ofFinite ((fun I : rayClassSet K 𝔣 C =>
++  have := Fintype.ofFinite ((fun I : rayClassSet K 𝔣 C =>
+       Ideal.absNorm (I.1 : Ideal (𝓞 K))) ⁻¹' {n} : Set _)
+   have hconst : ∀ x : ((fun I : rayClassSet K 𝔣 C =>
+       Ideal.absNorm (I.1 : Ideal (𝓞 K))) ⁻¹' {n} : Set _),
+@@ -9944,7 +9953,7 @@
+   · have hin : Units.mk0 _ h0 ∈ coprimeToModulus K 𝔣 := by rw [hmk]; exact hc
+     have hval : chiIdeal K 𝔣 χ (FractionalIdeal.mk0 K I)
+         = χ (NarrowRayClassGroup.mk K 𝔣 ⟨FractionalIdeal.mk0 K I, hc⟩) := by
+-      rw [chiIdeal, dif_pos h0, dif_pos hin]
++      rw [chiIdeal, dite_eq_left h0, dite_eq_left hin]
+       exact congrArg (χ ∘ NarrowRayClassGroup.mk K 𝔣) (Subtype.ext hmk)
+     have hI : I ∈ rayClassSet K 𝔣 (NarrowRayClassGroup.mk K 𝔣 ⟨FractionalIdeal.mk0 K I, hc⟩) :=
+       ⟨hc, rfl⟩
+@@ -9971,8 +9980,8 @@
+           * ((Ideal.absNorm (I.1 : Ideal (𝓞 K)) : ℂ)) ^ (-s)
+       = rayClassLSeries K 𝔣 χ s := by
+   classical
+-  haveI : Finite (NarrowRayClassGroup K 𝔣) := finite K h𝔣
+-  haveI := @Fintype.ofFinite _ (finite K h𝔣)
++  have : Finite (NarrowRayClassGroup K 𝔣) := finite K h𝔣
++  have := @Fintype.ofFinite _ (finite K h𝔣)
+ 
+   have hbij' : Function.Bijective fun i => (ClassGroup.mk K (𝔞' i))⁻¹ :=
+     (Function.bijective_iff_existsUnique _).mpr fun C =>
+@@ -10018,7 +10027,7 @@
+ private theorem topChiUnitsHom_eq_chiIdeal (χT : NarrowRayClassGroup K (⊤ : Ideal (𝓞 K)) →* ℂ)
+     (I : (FractionalIdeal (𝓞 K)⁰ K)ˣ) :
+     topChiUnitsHom K χT I = chiIdeal K ⊤ χT (I : FractionalIdeal (𝓞 K)⁰ K) := by
+-  rw [chiIdeal, dif_pos I.ne_zero, dif_pos (mem_coprimeToModulus_top K (Units.mk0 _ I.ne_zero))]
++  rw [chiIdeal, dite_eq_left I.ne_zero, dite_eq_left (mem_coprimeToModulus_top K (Units.mk0 _ I.ne_zero))]
+   exact congrArg (χT ∘ NarrowRayClassGroup.mk K ⊤) (Subtype.ext (Units.ext rfl))
+ 
+ private theorem topChiUnitsHom_principal (χT : NarrowRayClassGroup K (⊤ : Ideal (𝓞 K)) →* ℂ)
+@@ -10231,7 +10240,7 @@
+   · subst hx
+     rw [uWeight_apply_zero, norm_zero]
+     exact norm_nonneg _
+-  · rw [uWeight, rayWeight, if_neg hx, norm_mul]
++  · rw [uWeight, rayWeight, ite_eq_right hx, norm_mul]
+     by_cases hs : signAt K S x = 0
+     · rw [hs, norm_zero, mul_zero]
+       exact norm_nonneg _
+@@ -10378,9 +10387,9 @@
+                     ((placeScale K (rayFlatScaleVec K c t')
+                         (rayFlatScaleVec_pos K hc ht')).symm (dualPt K (z : K)))) := by
+   classical
+-  haveI : DiscreteTopology (dilRayLattice K ⊤ 𝔞 top_ne_bot) :=
++  have : DiscreteTopology (dilRayLattice K ⊤ 𝔞 top_ne_bot) :=
+     inferInstanceAs (DiscreteTopology (dilLattice K (rayModIdeal K ⊤ 𝔞 top_ne_bot)))
+-  haveI : IsZLattice ℝ (dilRayLattice K ⊤ 𝔞 top_ne_bot) :=
++  have : IsZLattice ℝ (dilRayLattice K ⊤ 𝔞 top_ne_bot) :=
+     inferInstanceAs (IsZLattice ℝ (dilLattice K (rayModIdeal K ⊤ 𝔞 top_ne_bot)))
+   have hP := oddTranslatedTheta_poisson (realUnit K)
+     (scaleLattice K (rayFlatScaleVec K c t') (rayFlatScaleVec_pos K hc ht')
+@@ -10407,9 +10416,9 @@
+     rw [Pi.inv_apply]
+     exact inv_pos.mpr (htw w)
+   have hc : 0 < rayScale K ⊤ 𝔞 := rayScale_pos K ⊤ top_ne_bot 𝔞
+-  haveI : DiscreteTopology (dilRayLattice K ⊤ 𝔞 top_ne_bot) :=
++  have : DiscreteTopology (dilRayLattice K ⊤ 𝔞 top_ne_bot) :=
+     inferInstanceAs (DiscreteTopology (dilLattice K (rayModIdeal K ⊤ 𝔞 top_ne_bot)))
+-  haveI : IsZLattice ℝ (dilRayLattice K ⊤ 𝔞 top_ne_bot) :=
++  have : IsZLattice ℝ (dilRayLattice K ⊤ 𝔞 top_ne_bot) :=
+     inferInstanceAs (IsZLattice ℝ (dilLattice K (rayModIdeal K ⊤ 𝔞 top_ne_bot)))
+   have hx₀ne : x₀ ≠ 0 := by
+     intro h0
+@@ -10448,10 +10457,10 @@
+                   * torusForm K t⁻¹ (mixedEmbedding K (x : K))) : ℝ) : ℂ)) := by
+       intro x
+       by_cases hx : x = (⟨0, FractionalIdeal.zero_mem _⟩ : ↥(𝔞 : FractionalIdeal (𝓞 K)⁰ K))
+-      · rw [if_pos hx, hx, show ((⟨0, FractionalIdeal.zero_mem _⟩ : ↥(𝔞 : FractionalIdeal (𝓞 K)⁰ K)) : K) = 0 from rfl,
++      · rw [ite_eq_left hx, hx, show ((⟨0, FractionalIdeal.zero_mem _⟩ : ↥(𝔞 : FractionalIdeal (𝓞 K)⁰ K)) : K) = 0 from rfl,
+           rayFoldSummand, uWeight_apply_zero, zero_mul, zero_mul, zero_add, hg0]
+       · have hxK : (x : K) ≠ 0 := fun h0 => hx (Subtype.ext h0)
+-        rw [if_neg hx, add_zero, rayFoldSummand, hUx _ hxK, mul_assoc]
++        rw [ite_eq_right hx, add_zero, rayFoldSummand, hUx _ hxK, mul_assoc]
+     have hT := Equiv.tsum_eq (topIdealLatticeEquiv K 𝔞)
+       (fun v : ↥(dilRayLattice K ⊤ 𝔞 top_ne_bot) =>
+         polyS (realUnit K) S (v : euclidean.mixedSpace K)
+@@ -10547,11 +10556,11 @@
+         ?_).symm).trans (tsum_congr fun z => ?_)
+     · intro z hz
+       by_contra h0
+-      simp only [Set.mem_setOf_eq, not_not] at h0
+-      exact hz (if_pos (Subtype.ext h0))
++      simp only [Set.mem_ofPred_eq, not_not] at h0
++      exact hz (ite_eq_left (Subtype.ext h0))
+     · have hz2 : (z : ↥(rayDualIdeal K ⊤ top_ne_bot 𝔞 : FractionalIdeal (𝓞 K)⁰ K))
+           ≠ ⟨0, FractionalIdeal.zero_mem _⟩ := fun h0 => z.2 (by simp [h0])
+-      exact if_neg hz2]
++      exact ite_eq_right hz2]
+ 
+   rw [topInvDual, rayInvPolarCoeff, rayInvConst, topInvPolar0, hUx 1 one_ne_zero, neg_div,
+     rayMellinWeight, rayMellinWeight, gaussFT_zero_eq_inv_sqrt_pow K hc]
+@@ -10623,13 +10632,13 @@
+ 
+   rcases Finset.eq_empty_or_nonempty S with hSe | hSne
+   · simp only [hSe, Finset.prod_empty, Finset.card_empty, pow_zero, raySWeight, polyS_realUnit,
+-      Complex.ofReal_one, inv_one, one_mul, mul_one, if_true]
++      Complex.ofReal_one, inv_one, one_mul, mul_one, ite_true]
+     ring
+   · have hp00 : polyS (realUnit K) S 0 = 0 := by
+       obtain ⟨v, hv⟩ := hSne
+       rw [polyS_realUnit]
+       exact Finset.prod_eq_zero hv (by simp)
+-    rw [if_neg (Finset.nonempty_iff_ne_empty.mp hSne)]
++    rw [ite_eq_right (Finset.nonempty_iff_ne_empty.mp hSne)]
+     simp only [hp00, mul_zero, zero_mul, zero_add, add_zero, sub_zero, neg_zero]
+     have hSW0 : raySWeight K S t ≠ 0 := by
+       rw [raySWeight]
+@@ -10697,7 +10706,7 @@
+   ·
+     refine ⟨Finset.sum_eq_zero fun i _ => ?_, Finset.sum_eq_zero fun i _ => ?_⟩
+     · rw [rayInvPolarCoeff_eq_zero_of_ne_empty K ⊤ χ S (𝔞 i) top_ne_bot (x₀ i) hS, mul_zero]
+-    · rw [topInvPolar0, if_neg hS, neg_zero, mul_zero]
++    · rw [topInvPolar0, ite_eq_right hS, neg_zero, mul_zero]
+ 
+ end TopSlice
+ p2m_reactivate "P2MW.S_NumberField_exists_completedRayL_functionalEquation_of_modulus_top.Deep P2MW.S_NumberField_exists_completedRayL_functionalEquation_of_modulus_top.Deep.Analytic P2MW.S_NumberField_exists_completedRayL_functionalEquation_of_modulus_top.M4aP2 P2MW.S_NumberField_exists_completedRayL_functionalEquation_of_modulus_top.M4aTorus"
+@@ -11639,3 +11648,5 @@
+         Λ' s = M4aTorus.completedRayL K ⊤ ((starRingEnd ℂ).toMonoidHom.comp χ) S s) ∧
+       (∀ s : ℂ, Λ (1 - s) = W * Λ' s) :=
+   M4aTorus.WallSol.exists_fe_top K hχ hpar
++
++#print axioms P2MW.S_NumberField_exists_completedRayL_functionalEquation_of_modulus_top.solution
