@@ -1,0 +1,23 @@
+import Submission.Supplier.Definitions.Def_CerednikDrinfeld_DrinfeldHolomorphic
+import Submission.Supplier.Definitions.Def_CerednikDrinfeld_DiscreteProjectiveAction
+import Submission.Supplier.P2M.Util
+import Submission.Supplier.P2M.Sol.S_CerednikDrinfeld_Omega_countable_of_isDiscrete
+
+-- Elaborator settings from the recovered exact-pin FLT controller.
+set_option autoImplicit false
+set_option maxHeartbeats 4000000
+set_option synthInstance.maxHeartbeats 400000
+set_option backward.isDefEq.respectTransparency.types false
+set_option debug.skipKernelTC false
+-- End recovered elaborator settings.
+
+set_option autoImplicit false
+
+open scoped MatrixGroups
+open CerednikDrinfeld.Omega
+
+theorem CerednikDrinfeld.Omega.countable_of_isDiscrete
+    {K₀ : Type} [Field K₀] {K : Type} [Field K] [Algebra K₀ K]
+    {Γ₀ : Type} [LinearOrderedCommGroupWithZero Γ₀] [Valued K Γ₀]
+    (ϖ : PseudoUniformizer K₀ K) {G : Type} [Group G] (ρ : G →* PGL(2, K₀)) (hρ : IsDiscrete K ρ) :
+    Countable G := by p2m_exact_reverting @_root_.P2MW.S_CerednikDrinfeld_Omega_countable_of_isDiscrete.solution

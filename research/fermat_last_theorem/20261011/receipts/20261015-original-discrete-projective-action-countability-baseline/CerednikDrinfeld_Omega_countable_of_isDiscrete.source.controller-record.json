@@ -1,0 +1,50 @@
+{
+  "sha256": "5fba2e030c6cf5a364682393221f53988e2a27283cd02005a19d798b6d7b97a2",
+  "exit": 0,
+  "empty_output_retry_done": false,
+  "source_sha256_after": "5fba2e030c6cf5a364682393221f53988e2a27283cd02005a19d798b6d7b97a2",
+  "source_unchanged": true,
+  "olean_sha256": "c00315c7f9bc2a048ca69501841e265e85a555684839d095a71f65c714674462",
+  "seconds": 99.13125070800015,
+  "pid": 57496,
+  "command": [
+    "/Users/macstudio/.local/omega-shims/lean",
+    "-j1",
+    "--trust=0",
+    "-Ddebug.skipKernelTC=false",
+    "-R",
+    "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src",
+    "-o",
+    "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-build/lib/lean/Submission/Supplier/P2M/Sol/S_CerednikDrinfeld_Omega_countable_of_isDiscrete.olean",
+    "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_CerednikDrinfeld_Omega_countable_of_isDiscrete.lean"
+  ],
+  "make_wrapper_pid": 92746,
+  "make_exit": 0,
+  "make_entry_failed": false,
+  "cache_binding_valid": true,
+  "canonical_make_running_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/c3ebb593cf1488c7bf9dc611-1791994407053730000.make-running.json",
+  "canonical_make_terminal_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/c3ebb593cf1488c7bf9dc611-1791994407053730000.make-terminal.json",
+  "kernel_terminal_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/c3ebb593cf1488c7bf9dc611-1791994407053730000.kernel/result.json",
+  "direct_dependencies": [
+    {
+      "module": "Submission.Supplier.Definitions.Def_CerednikDrinfeld_DrinfeldHolomorphic",
+      "source_sha256": "95286ecc0027a282bd387517ea46d96c94e63c7a6c821a6b0aa064e675cf9f65",
+      "object_sha256": "55ff12256b6ad44ff907aa3235fad67f90c0126bcc5884bf302983c992473746",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Definitions.Def_CerednikDrinfeld_DiscreteProjectiveAction",
+      "source_sha256": "b02d0d144264b6fbdf2ec7dfe9a1dda2f12159001d3aa1a8ffdc402179b70bad",
+      "object_sha256": "1590cbcc5e35366de8a2718b080be756c3c6444909e69d54935ffc08a12b2cff",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.P2M.Util",
+      "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+      "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+      "receipt_reused": true
+    }
+  ],
+  "stdout": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/c3ebb593cf1488c7bf9dc611-1791994407053730000.kernel/stdout.log",
+  "stderr": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/c3ebb593cf1488c7bf9dc611-1791994407053730000.kernel/stderr.log"
+}
