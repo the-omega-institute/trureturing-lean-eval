@@ -1,0 +1,80 @@
+{
+  "sha256": "b0dcb3cbf29ea084357a91e14e31cf6a1a64a46f5449c36c20bf52026862b10c",
+  "exit": 0,
+  "empty_output_retry_done": false,
+  "source_sha256_after": "b0dcb3cbf29ea084357a91e14e31cf6a1a64a46f5449c36c20bf52026862b10c",
+  "source_unchanged": true,
+  "olean_sha256": "b2a018adf453d518921f00c3a4e61187e3d666a22c518c1e5f17e1cf061ec898",
+  "seconds": 63.653359792006086,
+  "pid": 69691,
+  "command": [
+    "/Users/macstudio/.local/omega-shims/lean",
+    "-j1",
+    "--trust=0",
+    "-Ddebug.skipKernelTC=false",
+    "-R",
+    "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src",
+    "-o",
+    "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-build/lib/lean/Submission/Supplier/P2M/Sol/S_FrobeniusEndo_kerDeg_frobEnd_line_one_pos_and_eq_finiteField.olean",
+    "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_FrobeniusEndo_kerDeg_frobEnd_line_one_pos_and_eq_finiteField.lean"
+  ],
+  "make_wrapper_pid": 64990,
+  "make_exit": 0,
+  "make_entry_failed": false,
+  "cache_binding_valid": true,
+  "canonical_make_running_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/9087e19625748d3762dd95d0-1792003558661671000.make-running.json",
+  "canonical_make_terminal_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/9087e19625748d3762dd95d0-1792003558661671000.make-terminal.json",
+  "kernel_terminal_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/9087e19625748d3762dd95d0-1792003558661671000.kernel/result.json",
+  "direct_dependencies": [
+    {
+      "module": "Submission.Supplier.Definitions.Def_EllipticCurve_FrobeniusEndo",
+      "source_sha256": "06805f5f83c1fbf1c79ecb4e581f5cd89740035d167f6c44231ffd3c27c44463",
+      "object_sha256": "4e5aac1fedbb97188ac9815641257f91b6bdb5160d6185d51dc445ad5881fcf7",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Theorems.Thm_WeierstrassCurve_Affine_Point_card_ker_eq_max_natDegree",
+      "source_sha256": "81bc324da6ac1543ea2800509b28251fb694fa9aeda6dc5478eba25f46311fa4",
+      "object_sha256": "1ba0184ebab5d1df8a8107f80d6f578fe94f8693a1699e056882e269fd573fd8",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Theorems.Thm_WeierstrassCurve_Affine_Point_natDegree_parallelogram_law",
+      "source_sha256": "826b7fa27930f1fe2760393ef742640662f0219493bba2d415266ee329ac8a62",
+      "object_sha256": "8abb64954843f042eb91dadcea336fab1b496d0b66c7d83492aa07a9fa6967dd",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Theorems.Thm_FrobeniusEndo_exists_x_linePencil_frobEnd_mul_collision_sq",
+      "source_sha256": "979971a4058a586eae04f5b22db43787e046291f2427f75bc5b80dc4ef6fba7d",
+      "object_sha256": "979243002ae756480e86d229b7d93add734fbb29527fa10056330f4097fb3dfb",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Theorems.Thm_WeierstrassCurve_Affine_Point_zsmul_x_mul_psi_sq",
+      "source_sha256": "318bff862fdd48b2e75fde63c7b5645c06599eef4c58e782ba9bf32d11a7bbd0",
+      "object_sha256": "2981494f6c2a3990e8130d29251614d7801320977c4ce74e1039eddd45ec6d6b",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Theorems.Thm_WeierstrassCurve_Affine_Point_smul_some_eq_zero_iff",
+      "source_sha256": "32d5441ff72d770413c517d6773bd9e508c8ad5b926c90cfb7ef3b69c44bf18b",
+      "object_sha256": "3e4eb026135d2c4494dbf43ad38a66530f8084e40500b42f5fece5585de831d9",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Theorems.Thm_WeierstrassCurve_isCoprime_Phi_PsiSq",
+      "source_sha256": "e509c4c2cfb149913af87f00179d5310b0606512e026938b37fdba2db4f90cb8",
+      "object_sha256": "c93fa545fa0af2baf6782773fdcfdec66cc2e5bba4c6db3368728382f6754255",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.P2M.Util",
+      "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+      "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+      "receipt_reused": true
+    }
+  ],
+  "stdout": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/9087e19625748d3762dd95d0-1792003558661671000.kernel/stdout.log",
+  "stderr": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/9087e19625748d3762dd95d0-1792003558661671000.kernel/stderr.log"
+}
