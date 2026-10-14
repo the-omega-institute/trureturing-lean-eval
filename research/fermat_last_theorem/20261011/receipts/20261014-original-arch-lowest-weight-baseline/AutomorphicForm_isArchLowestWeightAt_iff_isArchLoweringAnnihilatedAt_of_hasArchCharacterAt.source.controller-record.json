@@ -1,0 +1,68 @@
+{
+  "sha256": "8faaa00129a91632cbbd85dfcf99fe372cb670d65e3b98ea22cfc6696d5d94db",
+  "exit": 0,
+  "empty_output_retry_done": false,
+  "source_sha256_after": "8faaa00129a91632cbbd85dfcf99fe372cb670d65e3b98ea22cfc6696d5d94db",
+  "source_unchanged": true,
+  "olean_sha256": "718866ec35fb53acb6a99af1bc627f42b0d33128945f218a141b25c9bf9d92a7",
+  "seconds": 94.27685858299992,
+  "pid": 36030,
+  "command": [
+    "/Users/macstudio/.local/omega-shims/lean",
+    "-j1",
+    "--trust=0",
+    "-Ddebug.skipKernelTC=false",
+    "-R",
+    "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src",
+    "-o",
+    "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-build/lib/lean/Submission/Supplier/P2M/Sol/S_AutomorphicForm_isArchLowestWeightAt_iff_isArchLoweringAnnihilatedAt_of_hasArchCharacterAt.olean",
+    "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_AutomorphicForm_isArchLowestWeightAt_iff_isArchLoweringAnnihilatedAt_of_hasArchCharacterAt.lean"
+  ],
+  "make_wrapper_pid": 23804,
+  "make_exit": 0,
+  "make_entry_failed": false,
+  "cache_binding_valid": true,
+  "canonical_make_running_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/676450682ef1969de8eac08c-1791965885891462000.make-running.json",
+  "canonical_make_terminal_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/676450682ef1969de8eac08c-1791965885891462000.make-terminal.json",
+  "kernel_terminal_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/676450682ef1969de8eac08c-1791965885891462000.kernel/result.json",
+  "direct_dependencies": [
+    {
+      "module": "Submission.Supplier.Definitions.Def_AutomorphicForm_ArchLowestWeight",
+      "source_sha256": "b99cdf560538a4d8ad1de53d53f477a2b27527ae70f9dc3436da7ff573365ccc",
+      "object_sha256": "9e06dcfdd8be1ad3822d6b42fa2bbbb0d683b139222f3e5883b021827c50eda6",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Definitions.Def_AutomorphicForm_ArchLoweringAnnihilated",
+      "source_sha256": "52261e1fe48b2d6ff932540410094b96c4b2428522c6429f086d814fb0bd8457",
+      "object_sha256": "ec8589bcfe91c75915a5aeb62c7dedf91cc83dd59b85077eea7d30192b6c5f5a",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Theorems.Thm_AutomorphicForm_mdifferentiable_im_cpow_mul_iff_forall_lowering_fderiv_eq",
+      "source_sha256": "4ce1134a72995d32c280cb0fb16972cd11f72fcc6578b8f64d0e3f083d747f28",
+      "object_sha256": "9487cf6cca9619472fc8c5ebe5873927de73644630e7895bed5f085e5d4f9534",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Theorems.Thm_AutomorphicForm_contDiffAt_of_mdifferentiable_im_cpow_mul_of_weight_of_central",
+      "source_sha256": "785e72c80a49993434b1974b0e3a9a14b5172d3f3ea546f99e8bd06c86b858d7",
+      "object_sha256": "2fee18ee7ad7377b6134d900d7e40caf5633eae245a304be20ca967135c710f8",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Theorems.Thm_AutomorphicForm_lowering_fderiv_mul_rotation_eq_exp_mul_of_weight",
+      "source_sha256": "ef6caf526ae32c47c886d419f68d44be0b2fd2fe0b846e578fb637670484cb81",
+      "object_sha256": "5f0a343157303f1fa6b8bb6b55c36d23a3b7ac2d06d03c3e11a11fa611b23cc1",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.P2M.Util",
+      "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+      "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+      "receipt_reused": true
+    }
+  ],
+  "stdout": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/676450682ef1969de8eac08c-1791965885891462000.kernel/stdout.log",
+  "stderr": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/676450682ef1969de8eac08c-1791965885891462000.kernel/stderr.log"
+}

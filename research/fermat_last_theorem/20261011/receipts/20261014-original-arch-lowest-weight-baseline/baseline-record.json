@@ -1,0 +1,143 @@
+{
+  "at": "2026-10-14T08:23:50.781255+00:00",
+  "original_source_card_pairs_actual_make_kernel_passed": true,
+  "canonical_pairs_byte_identical_to_supplier": true,
+  "no_source_edits": true,
+  "no_linter_suppression_added": true,
+  "no_redundant_recompilation": true,
+  "original_statements_hypotheses_and_proofs_preserved": true,
+  "checks": {
+    "AutomorphicForm_isArchLowestWeightAt_iff_isArchLoweringAnnihilatedAt_of_hasArchCharacterAt": {
+      "proof_summary": "Preserve both directions of the complete lowest-weight/lowering-annihilation equivalence for arbitrary original number field, real place, integer weight, continuous adelic function and central character. Retain the zero-function branch, continuous character exponential construction, real-place transport, rotation and scalar identities, derivative transformation, nonzero-eigenvalue contradiction and reverse holomorphic reconstruction.",
+      "checks": {
+        "source": {
+          "module": "Submission.Supplier.P2M.Sol.S_AutomorphicForm_isArchLowestWeightAt_iff_isArchLoweringAnnihilatedAt_of_hasArchCharacterAt",
+          "canonical_lines": 672,
+          "canonical_byte_identical_to_supplier": true,
+          "make_exit": 0,
+          "kernel_exit": 0,
+          "kernel_seconds": 66.580852875,
+          "compiler_warnings": 5,
+          "source_unchanged_during_check": true,
+          "printed_final_axiom_closures": [],
+          "separate_final_axiom_audit_pending": true,
+          "direct_dependencies": [
+            {
+              "module": "Submission.Supplier.Definitions.Def_AutomorphicForm_ArchLowestWeight",
+              "source_sha256": "b99cdf560538a4d8ad1de53d53f477a2b27527ae70f9dc3436da7ff573365ccc",
+              "object_sha256": "9e06dcfdd8be1ad3822d6b42fa2bbbb0d683b139222f3e5883b021827c50eda6",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.Definitions.Def_AutomorphicForm_ArchLoweringAnnihilated",
+              "source_sha256": "52261e1fe48b2d6ff932540410094b96c4b2428522c6429f086d814fb0bd8457",
+              "object_sha256": "ec8589bcfe91c75915a5aeb62c7dedf91cc83dd59b85077eea7d30192b6c5f5a",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.Theorems.Thm_AutomorphicForm_mdifferentiable_im_cpow_mul_iff_forall_lowering_fderiv_eq",
+              "source_sha256": "4ce1134a72995d32c280cb0fb16972cd11f72fcc6578b8f64d0e3f083d747f28",
+              "object_sha256": "9487cf6cca9619472fc8c5ebe5873927de73644630e7895bed5f085e5d4f9534",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.Theorems.Thm_AutomorphicForm_contDiffAt_of_mdifferentiable_im_cpow_mul_of_weight_of_central",
+              "source_sha256": "785e72c80a49993434b1974b0e3a9a14b5172d3f3ea546f99e8bd06c86b858d7",
+              "object_sha256": "2fee18ee7ad7377b6134d900d7e40caf5633eae245a304be20ca967135c710f8",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.Theorems.Thm_AutomorphicForm_lowering_fderiv_mul_rotation_eq_exp_mul_of_weight",
+              "source_sha256": "ef6caf526ae32c47c886d419f68d44be0b2fd2fe0b846e578fb637670484cb81",
+              "object_sha256": "5f0a343157303f1fa6b8bb6b55c36d23a3b7ac2d06d03c3e11a11fa611b23cc1",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.P2M.Util",
+              "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+              "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+              "receipt_reused": true
+            }
+          ]
+        },
+        "card": {
+          "module": "Submission.Supplier.Theorems.Thm_AutomorphicForm_isArchLowestWeightAt_iff_isArchLoweringAnnihilatedAt_of_hasArchCharacterAt",
+          "canonical_lines": 19,
+          "canonical_byte_identical_to_supplier": true,
+          "make_exit": 0,
+          "kernel_exit": 0,
+          "kernel_seconds": 134.666535834,
+          "compiler_warnings": 0,
+          "source_unchanged_during_check": true,
+          "printed_final_axiom_closures": [],
+          "separate_final_axiom_audit_pending": true,
+          "direct_dependencies": [
+            {
+              "module": "Submission.Supplier.Definitions.Def_AutomorphicForm_ArchLowestWeight",
+              "source_sha256": "b99cdf560538a4d8ad1de53d53f477a2b27527ae70f9dc3436da7ff573365ccc",
+              "object_sha256": "9e06dcfdd8be1ad3822d6b42fa2bbbb0d683b139222f3e5883b021827c50eda6",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.Definitions.Def_AutomorphicForm_ArchLoweringAnnihilated",
+              "source_sha256": "52261e1fe48b2d6ff932540410094b96c4b2428522c6429f086d814fb0bd8457",
+              "object_sha256": "ec8589bcfe91c75915a5aeb62c7dedf91cc83dd59b85077eea7d30192b6c5f5a",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.P2M.Util",
+              "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+              "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.P2M.Sol.S_AutomorphicForm_isArchLowestWeightAt_iff_isArchLoweringAnnihilatedAt_of_hasArchCharacterAt",
+              "source_sha256": "8faaa00129a91632cbbd85dfcf99fe372cb670d65e3b98ea22cfc6696d5d94db",
+              "object_sha256": "718866ec35fb53acb6a99af1bc627f42b0d33128945f218a141b25c9bf9d92a7",
+              "receipt_reused": true
+            }
+          ]
+        }
+      }
+    }
+  },
+  "supplier": "anthropics/fermats-last-theorem",
+  "supplier_commit": "6e837e75355538c7f80bab5b956861e86c4eacc2",
+  "full_original_complete": false,
+  "official_new_solve_credit": 0,
+  "complete_import_replay_and_recursive_axiom_audits_pending": true,
+  "selected_problem": "fermat_last_theorem",
+  "canonical_lexical_integrity_scan": {
+    "observed_at": "2026-10-14T07:21:59.476314+00:00",
+    "canonical_lean_files_covered": 60473,
+    "matching_files": 0,
+    "scope": [
+      "P2M/Sol",
+      "Theorems",
+      "Definitions",
+      "P2M/Util.lean"
+    ],
+    "ignore_rules_disabled": true,
+    "pattern": "^\\s*(axiom|constant)\\s|\\b(sorry|admit)\\b",
+    "formal_recursive_axiom_audit_still_pending": true
+  },
+  "max_active_flt_jobs": 1,
+  "max_active_flt_compilers": 1,
+  "lean_threads": 1,
+  "graph_snapshot": {
+    "compiled": 8301,
+    "failed": 0,
+    "ready": 4404,
+    "root_compiled": false,
+    "workers": 1,
+    "running": {
+      "Submission.Supplier.Definitions.Def_JacJ1_ChartAlgebra": {
+        "pid": 43851,
+        "make_wrapper_pid": 36661,
+        "phase": "kernel",
+        "sha256": "175ad495f05690d0e238e46595fd34f08f36560d9ae24949780b88f4720622e5",
+        "configuration": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/047c378a7de55b42871c4e7a-1791966200203570000.configuration.json"
+      }
+    }
+  }
+}
