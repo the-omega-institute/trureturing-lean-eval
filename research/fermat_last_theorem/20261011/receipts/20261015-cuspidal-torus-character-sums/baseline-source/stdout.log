@@ -1,0 +1,80 @@
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_CuspidalType_sum_character_torus_and_sum_character_torus_mul_character_torus_inv.lean:50:77: error: unsolved goals
+q : ℕ
+inst✝ : Fact (Nat.Prime q)
+t : ZMod q
+⊢ -t = -t
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_CuspidalType_sum_character_torus_and_sum_character_torus_mul_character_torus_inv.lean:76:23: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_CuspidalType_sum_character_torus_and_sum_character_torus_mul_character_torus_inv.lean:76:10: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_CuspidalType_sum_character_torus_and_sum_character_torus_mul_character_torus_inv.lean:76:23: warning: Unused tactic linter: `ring` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+Try this:
+  [apply] ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_CuspidalType_sum_character_torus_and_sum_character_torus_mul_character_torus_inv.lean:80:53: error: unsolved goals
+q : ℕ
+inst✝ : Fact (Nat.Prime q)
+a d : (ZMod q)ˣ
+s : ZMod q
+⊢ -(X * C ↑a) - X * C ↑d + X ^ 2 + C ↑a * C ↑d - C 0 = -(X * C ↑a) - X * C ↑d + X ^ 2 + C ↑a * C ↑d
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_CuspidalType_sum_character_torus_and_sum_character_torus_mul_character_torus_inv.lean:83:29: warning: This simp argument is unused:
+  Matrix.head_cons
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [Matrix.of_apply, Matrix.cons_val', Matrix.cons_val_zero, Matrix.cons_val_one, Matrix.empty_val',
+    Matrix.cons_val_fin_one, Matrix.head_fin_const]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_CuspidalType_sum_character_torus_and_sum_character_torus_mul_character_torus_inv.lean:83:47: warning: This simp argument is unused:
+  Matrix.head_fin_const
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [Matrix.of_apply, Matrix.cons_val', Matrix.cons_val_zero, Matrix.cons_val_one, Matrix.empty_val',
+    Matrix.cons_val_fin_one, Matrix.head_cons]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_CuspidalType_sum_character_torus_and_sum_character_torus_mul_character_torus_inv.lean:84:50: warning: This simp argument is unused:
+  sub_zero
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [map_add, map_mul, map_sub, mul_zero]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_CuspidalType_sum_character_torus_and_sum_character_torus_mul_character_torus_inv.lean:180:0: warning: automatically included section variable(s) unused in theorem `P2MW.S_CuspidalType_sum_character_torus_and_sum_character_torus_mul_character_torus_inv.Ws23NV3C7.character_of_isPar`:
+  [FiniteDimensional K V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [FiniteDimensional K V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_CuspidalType_sum_character_torus_and_sum_character_torus_mul_character_torus_inv.lean:191:0: warning: automatically included section variable(s) unused in theorem `P2MW.S_CuspidalType_sum_character_torus_and_sum_character_torus_mul_character_torus_inv.Ws23NV3C7.character_of_not_isPar`:
+  [FiniteDimensional K V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [FiniteDimensional K V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_CuspidalType_sum_character_torus_and_sum_character_torus_mul_character_torus_inv.lean:258:94: warning: Variable name `c` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _c
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_CuspidalType_sum_character_torus_and_sum_character_torus_mul_character_torus_inv.lean:258:96: warning: Variable name `c'` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _c'
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_CuspidalType_sum_character_torus_and_sum_character_torus_mul_character_torus_inv.lean:295:0: warning: automatically included section variable(s) unused in theorem `P2MW.S_CuspidalType_sum_character_torus_and_sum_character_torus_mul_character_torus_inv.Ws23NV3C7.main`:
+  [IsAlgClosed K]
+  [Nontrivial V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [IsAlgClosed K] [Nontrivial V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`

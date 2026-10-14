@@ -1,0 +1,74 @@
+{
+  "sha256": "e11ac0c79b1fa2f1a607f34711b907949ae3a405bb59aa450df61737689b0ee3",
+  "exit": 0,
+  "empty_output_retry_done": false,
+  "source_sha256_after": "e11ac0c79b1fa2f1a607f34711b907949ae3a405bb59aa450df61737689b0ee3",
+  "source_unchanged": true,
+  "olean_sha256": "ffe3c84ec4bc73d242d5c76bf2438c8ad70c57812683fcbc5147815f0745ecc5",
+  "seconds": 82.15541450000455,
+  "pid": 83266,
+  "command": [
+    "/Users/macstudio/.local/omega-shims/lean",
+    "-j1",
+    "--trust=0",
+    "-Ddebug.skipKernelTC=false",
+    "-R",
+    "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src",
+    "-o",
+    "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-build/lib/lean/Submission/Supplier/P2M/Sol/S_CuspidalType_sum_character_torus_and_sum_character_torus_mul_character_torus_inv.olean",
+    "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_CuspidalType_sum_character_torus_and_sum_character_torus_mul_character_torus_inv.lean"
+  ],
+  "make_wrapper_pid": 79366,
+  "make_exit": 0,
+  "make_entry_failed": false,
+  "cache_binding_valid": true,
+  "canonical_make_running_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/be89256b5a6d9eac075cb8e4-1792001370915332000.make-running.json",
+  "canonical_make_terminal_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/be89256b5a6d9eac075cb8e4-1792001370915332000.make-terminal.json",
+  "kernel_terminal_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/be89256b5a6d9eac075cb8e4-1792001370915332000.kernel/result.json",
+  "direct_dependencies": [
+    {
+      "module": "Submission.Supplier.Definitions.Def_CuspidalType_IsCuspidalOfType",
+      "source_sha256": "bf3b7dcb09ad1804f2dc7e10f1dff72f3bcedd5dbe97cd8c98a545a2ae1a6317",
+      "object_sha256": "f0ae7c7645e0e76829a3907f5a7375d5ff25b02179c9530400cc22dea55b441b",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Theorems.Thm_CuspidalType_NV3Arch_sum_elliptic_eq",
+      "source_sha256": "9b360d54d9e02e74d86983257a6b18d07835c167ca1f485bbc2bdae7bed6c087",
+      "object_sha256": "2bb495273d19052ea27bb3ae10c052af4f708d6747d1607549a21a27f8161d46",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Theorems.Thm_CuspidalType_torus_unitsMap_algebraMap",
+      "source_sha256": "c545d89710521c77f66ccad8d6145eb437eda18576af1f80f73989fa828832f6",
+      "object_sha256": "c3f29e3d239719d94d40e9089451b90c288a5bf571db9c36e57dd151ceba5078",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Theorems.Thm_CuspidalType_exists_conj_apply_one_zero_eq_zero_of_isRoot_charpoly",
+      "source_sha256": "869e8d4bc5b3549e29dcd8f44c0b7fdafbe50c97314e7a2dc00d5635b25d0d42",
+      "object_sha256": "619f27243f30b4ec7f79829bac8bc8e3d4f5f2509286188400f810f12e37fff6",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Theorems.Thm_CuspidalType_eq_scalarElem_mul_unipotent_or_eq_unipotent_mul_scalarElem_mul_diagElem_of_apply_one_zero_eq_zero",
+      "source_sha256": "247335ca92dc30d874e7f28415caab14639e481ff779aa44499ae58b1e03aaff",
+      "object_sha256": "5a5ec785f2d9c6577b6a48db403ab1431e0572577702e86d0281d5d9c3c34231",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Theorems.Thm_CuspidalType_natCard_not_mem_center_and_charpoly_eq_X_sub_C_sq",
+      "source_sha256": "aa6f4684a139880e251d6dae4cd6b063396934be920ae73f2c9bfe42b25b7145",
+      "object_sha256": "900b03f878072ade684b090a64c2935d407222a10dfb7a5afeead90b1fd4fd77",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.P2M.Util",
+      "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+      "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+      "receipt_reused": true
+    }
+  ],
+  "stdout": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/be89256b5a6d9eac075cb8e4-1792001370915332000.kernel/stdout.log",
+  "stderr": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/be89256b5a6d9eac075cb8e4-1792001370915332000.kernel/stderr.log"
+}
