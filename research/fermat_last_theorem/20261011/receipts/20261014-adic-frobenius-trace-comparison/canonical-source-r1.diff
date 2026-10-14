@@ -1,0 +1,36 @@
+--- P2M/Sol/S_GaloisRepAdic_trace_eq_of_trace_frobenius_eq.lean
++++ P2M/Sol/S_GaloisRepAdic_trace_eq_of_trace_frobenius_eq.lean
+@@ -86,18 +86,18 @@
+         ρ₂.trace σ - ρ₂.trace τ ∈ (maximalIdeal A) ^ m := by
+   obtain ⟨L₁, hL₁fin, hL₁⟩ := ρ₁.isAdicContinuous m
+   obtain ⟨L₂, hL₂fin, hL₂⟩ := ρ₂.isAdicContinuous m
+-  haveI := hL₁fin
+-  haveI := hL₂fin
+-  haveI : IsAlgClosure ℚ (AlgebraicClosure ℚ) := by convert AlgebraicClosure.instIsAlgClosure ℚ; rfl; rfl
+-  haveI : Normal ℚ (AlgebraicClosure ℚ) := IsAlgClosure.normal ℚ _
++  have := hL₁fin
++  have := hL₂fin
++  have : IsAlgClosure ℚ (AlgebraicClosure ℚ) := by exact AlgebraicClosure.instIsAlgClosure ℚ
++  have : Normal ℚ (AlgebraicClosure ℚ) := IsAlgClosure.normal ℚ _
+   let L' : IntermediateField ℚ (AlgebraicClosure ℚ) := L₁ ⊔ L₂
+-  haveI : FiniteDimensional ℚ L' := IntermediateField.finiteDimensional_sup L₁ L₂
++  have : FiniteDimensional ℚ L' := IntermediateField.finiteDimensional_sup L₁ L₂
+   let F : IntermediateField ℚ (AlgebraicClosure ℚ) :=
+     IntermediateField.normalClosure ℚ L' (AlgebraicClosure ℚ)
+-  haveI : FiniteDimensional ℚ F := normalClosure.is_finiteDimensional ℚ L' (AlgebraicClosure ℚ)
+-  haveI : NumberField F := ⟨⟩
+-  haveI : Normal ℚ F := normalClosure.normal ℚ L' (AlgebraicClosure ℚ)
+-  haveI : IsGalois ℚ F := ⟨⟩
++  have : FiniteDimensional ℚ F := normalClosure.is_finiteDimensional ℚ L' (AlgebraicClosure ℚ)
++  have : NumberField F := ⟨⟩
++  have : Normal ℚ F := normalClosure.normal ℚ L' (AlgebraicClosure ℚ)
++  have : IsGalois ℚ F := ⟨⟩
+   let H : Subgroup (AlgebraicClosure ℚ ≃ₐ[ℚ] AlgebraicClosure ℚ) :=
+     levelStab ρ₁ ((maximalIdeal A) ^ m) ⊓ levelStab ρ₂ ((maximalIdeal A) ^ m)
+   have hL₁F : L₁ ≤ F := (le_sup_left : L₁ ≤ L').trans (IntermediateField.le_normalClosure L')
+@@ -158,3 +158,5 @@
+     (σ : AlgebraicClosure ℚ ≃ₐ[ℚ] AlgebraicClosure ℚ) :
+     ρ₁.trace σ = ρ₂.trace σ :=
+   AdicTraceChebAsm.main ρ₁ ρ₂ S hfrob σ
++
++#print axioms P2MW.S_GaloisRepAdic_trace_eq_of_trace_frobenius_eq.solution
