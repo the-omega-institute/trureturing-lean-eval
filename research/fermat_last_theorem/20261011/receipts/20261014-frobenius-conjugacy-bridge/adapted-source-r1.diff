@@ -1,0 +1,67 @@
+--- Submission/Supplier/P2M/Sol/S_FrobeniusDensity_exists_isFrobeniusAt_conj_mem_of_le_ker.lean
++++ Submission/Supplier/P2M/Sol/S_FrobeniusDensity_exists_isFrobeniusAt_conj_mem_of_le_ker.lean
+@@ -89,7 +89,7 @@
+     algebraMap F L (algebraMap (𝓞 F) F x) ∈ A := by
+   have hint : IsIntegral ℤ (algebraMap F L (algebraMap (𝓞 F) F x)) :=
+     (RingOfIntegers.isIntegral_coe x).map ((algebraMap F L).toIntAlgHom)
+-  haveI : IsScalarTower ℤ A L := IsScalarTower.of_algebraMap_eq fun n => by
++  have : IsScalarTower ℤ A L := IsScalarTower.of_algebraMap_eq fun n => by
+     simp only [algebraMap_int_eq, eq_intCast, map_intCast]
+   have hintA : IsIntegral A (algebraMap F L (algebraMap (𝓞 F) F x)) := hint.tower_top
+   obtain ⟨a, ha⟩ := IsIntegrallyClosed.isIntegral_iff.mp hintA
+@@ -114,7 +114,7 @@
+ 
+ scoped instance : (placeIdeal A F).IsPrime := by
+   unfold placeIdeal
+-  haveI : (IsLocalRing.maximalIdeal A).IsPrime := (IsLocalRing.maximalIdeal.isMaximal A).isPrime
++  have : (IsLocalRing.maximalIdeal A).IsPrime := (IsLocalRing.maximalIdeal.isMaximal A).isPrime
+   exact Ideal.IsPrime.comap _
+ 
+ variable {q : ℕ}
+@@ -208,8 +208,8 @@
+ 
+ theorem finite_setOf_isPrime_le {I : Ideal (𝓞 F)} (hI : I ≠ ⊥) :
+     {Q : Ideal (𝓞 F) | Q.IsPrime ∧ I ≤ Q}.Finite := by
+-  haveI : Finite ((𝓞 F) ⧸ I) := Ideal.finiteQuotientOfFreeOfNeBot I hI
+-  haveI : Finite (Ideal ((𝓞 F) ⧸ I)) :=
++  have : Finite ((𝓞 F) ⧸ I) := Ideal.finiteQuotientOfFreeOfNeBot I hI
++  have : Finite (Ideal ((𝓞 F) ⧸ I)) :=
+     Finite.of_injective (fun J : Ideal ((𝓞 F) ⧸ I) => (J : Set ((𝓞 F) ⧸ I)))
+       fun _ _ h => SetLike.coe_injective h
+   refine Set.Finite.of_finite_image (f := fun Q => Q.map (Ideal.Quotient.mk I))
+@@ -311,13 +311,9 @@
+ section Bridge
+ 
+ scoped instance isAlgebraicQbar : Algebra.IsAlgebraic ℚ (AlgebraicClosure ℚ) := by
+-  convert AlgebraicClosure.isAlgebraic ℚ
+-  rfl
+-  rfl
++  exact AlgebraicClosure.isAlgebraic ℚ
+ scoped instance isAlgClosureQbar : IsAlgClosure ℚ (AlgebraicClosure ℚ) := by
+-  convert AlgebraicClosure.instIsAlgClosure ℚ
+-  rfl
+-  rfl
++  exact AlgebraicClosure.instIsAlgClosure ℚ
+ scoped instance normalQbar : Normal ℚ (AlgebraicClosure ℚ) := IsAlgClosure.normal ℚ _
+ 
+ variable (F : Type) [Field F] [NumberField F] [IsGalois ℚ F]
+@@ -344,10 +340,10 @@
+   have hℓQ : (ℓ : 𝓞 F) ∈ Q := natCast_mem_placeIdeal A F hA
+   have hτQ : IsArithFrobAt ℤ (AlgEquiv.restrictNormalHom F τ) Q :=
+     isArithFrobAt_restrictNormalHom_of_isFrobeniusAt F A hℓ hA hτ
+-  haveI hPprime : P.IsPrime := hPmax.isPrime
+-  haveI hfinQ : Finite ((𝓞 F) ⧸ Q) :=
++  have hPprime : P.IsPrime := hPmax.isPrime
++  have hfinQ : Finite ((𝓞 F) ⧸ Q) :=
+     Ideal.finiteQuotientOfFreeOfNeBot _ (placeIdeal_ne_bot A F hℓ hA)
+-  haveI hfinP : Finite ((𝓞 F) ⧸ P) :=
++  have hfinP : Finite ((𝓞 F) ⧸ P) :=
+     Ideal.finiteQuotientOfFreeOfNeBot _ (ne_bot_of_natCast_mem F hℓ hℓP)
+ 
+   have hτeq : AlgEquiv.restrictNormalHom F τ = arithFrobAt ℤ (F ≃ₐ[ℚ] F) Q := by
+@@ -388,3 +384,5 @@
+       (τ g : AlgebraicClosure ℚ ≃ₐ[ℚ] AlgebraicClosure ℚ),
+       ℓ.Prime ∧ ℓ ∉ S ∧ A.LiesOverPrime ℓ ∧ A.IsFrobeniusAt τ ℓ ∧ g * τ * g⁻¹ * σ⁻¹ ∈ H :=
+   P2mChebotarevConj.exists_of_ker_le F hker S σ
++
++#print axioms P2MW.S_FrobeniusDensity_exists_isFrobeniusAt_conj_mem_of_le_ker.solution

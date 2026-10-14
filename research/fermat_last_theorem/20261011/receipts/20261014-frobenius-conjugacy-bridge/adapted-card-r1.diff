@@ -1,0 +1,8 @@
+--- Submission/Supplier/Theorems/Thm_FrobeniusDensity_exists_isFrobeniusAt_conj_mem_of_le_ker.lean
++++ Submission/Supplier/Theorems/Thm_FrobeniusDensity_exists_isFrobeniusAt_conj_mem_of_le_ker.lean
+@@ -22,3 +22,5 @@
+     ∃ (ℓ : ℕ) (A : ValuationSubring (AlgebraicClosure ℚ))
+       (τ g : AlgebraicClosure ℚ ≃ₐ[ℚ] AlgebraicClosure ℚ),
+       ℓ.Prime ∧ ℓ ∉ S ∧ A.LiesOverPrime ℓ ∧ A.IsFrobeniusAt τ ℓ ∧ g * τ * g⁻¹ * σ⁻¹ ∈ H := by p2m_exact_reverting @_root_.P2MW.S_FrobeniusDensity_exists_isFrobeniusAt_conj_mem_of_le_ker.solution
++
++#print axioms FrobeniusDensity.exists_isFrobeniusAt_conj_mem_of_le_ker
