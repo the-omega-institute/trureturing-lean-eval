@@ -1,0 +1,40 @@
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_CerednikDrinfeld_Mumford_exists_presentation_conj_apply_eq_of_apply_eq_pathCycle.lean:31:19: warning: `SimpleGraph.IsAcyclic.path_unique` has been deprecated: Use `SimpleGraph.IsAcyclic.subsingleton_path` instead
+
+Note: The updated constant has a different type:
+  ∀ {V : Type u_1} {G : SimpleGraph V}, G.IsAcyclic → ∀ (u v : V), Subsingleton (G.Path u v)
+instead of
+  ∀ {V : Type u_1} {G : SimpleGraph V}, G.IsAcyclic → ∀ {v w : V} (p q : G.Path v w), p = q
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_CerednikDrinfeld_Mumford_exists_presentation_conj_apply_eq_of_apply_eq_pathCycle.lean:43:41: warning: `SimpleGraph.IsAcyclic.path_unique` has been deprecated: Use `SimpleGraph.IsAcyclic.subsingleton_path` instead
+
+Note: The updated constant has a different type:
+  ∀ {V : Type u_1} {G : SimpleGraph V}, G.IsAcyclic → ∀ (u v : V), Subsingleton (G.Path u v)
+instead of
+  ∀ {V : Type u_1} {G : SimpleGraph V}, G.IsAcyclic → ∀ {v w : V} (p q : G.Path v w), p = q
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_CerednikDrinfeld_Mumford_exists_presentation_conj_apply_eq_of_apply_eq_pathCycle.lean:46:41: warning: `SimpleGraph.IsAcyclic.path_unique` has been deprecated: Use `SimpleGraph.IsAcyclic.subsingleton_path` instead
+
+Note: The updated constant has a different type:
+  ∀ {V : Type u_1} {G : SimpleGraph V}, G.IsAcyclic → ∀ (u v : V), Subsingleton (G.Path u v)
+instead of
+  ∀ {V : Type u_1} {G : SimpleGraph V}, G.IsAcyclic → ∀ {v w : V} (p q : G.Path v w), p = q
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_CerednikDrinfeld_Mumford_exists_presentation_conj_apply_eq_of_apply_eq_pathCycle.lean:53:57: warning: `SimpleGraph.Walk.concat_isPath_iff` has been deprecated: Use `SimpleGraph.Walk.isPath_concat` instead
+
+Hint: Replace the deprecated name:
+  S̵i̵m̵p̵l̵e̵G̵r̵a̵p̵h̵.̵W̵a̵l̵k̵.̵c̵o̵n̵c̵a̵t̵_̵i̵s̵P̵a̵t̵h̵_̵i̵f̵f̵S̲i̲m̲p̲l̲e̲G̲r̲a̲p̲h̲.̲W̲a̲l̲k̲.̲i̲s̲P̲a̲t̲h̲_̲c̲o̲n̲c̲a̲t̲
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_CerednikDrinfeld_Mumford_exists_presentation_conj_apply_eq_of_apply_eq_pathCycle.lean:54:25: warning: `SimpleGraph.IsAcyclic.path_unique` has been deprecated: Use `SimpleGraph.IsAcyclic.subsingleton_path` instead
+
+Note: The updated constant has a different type:
+  ∀ {V : Type u_1} {G : SimpleGraph V}, G.IsAcyclic → ∀ (u v : V), Subsingleton (G.Path u v)
+instead of
+  ∀ {V : Type u_1} {G : SimpleGraph V}, G.IsAcyclic → ∀ {v w : V} (p q : G.Path v w), p = q
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_CerednikDrinfeld_Mumford_exists_presentation_conj_apply_eq_of_apply_eq_pathCycle.lean:219:0: warning: automatically included section variable(s) unused in theorem `P2MW.S_CerednikDrinfeld_Mumford_exists_presentation_conj_apply_eq_of_apply_eq_pathCycle.ConjT.walkCycle_apply`:
+  [GraphAction P 𝒯]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [GraphAction P 𝒯] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_CerednikDrinfeld_Mumford_exists_presentation_conj_apply_eq_of_apply_eq_pathCycle.lean:257:22: warning: Variable name `hadj` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hadj
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
