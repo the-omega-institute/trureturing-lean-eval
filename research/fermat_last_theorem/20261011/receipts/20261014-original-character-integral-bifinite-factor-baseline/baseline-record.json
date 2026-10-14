@@ -1,0 +1,127 @@
+{
+  "at": "2026-10-14T15:18:13.442648+00:00",
+  "original_source_card_pairs_actual_make_kernel_passed": true,
+  "canonical_pairs_byte_identical_to_supplier": true,
+  "no_source_edits": true,
+  "no_linter_suppression_added": true,
+  "no_redundant_recompilation": true,
+  "original_statements_hypotheses_and_proofs_preserved": true,
+  "checks": {
+    "AutomorphicForm_isArchTestFactor_and_isArchFactorBiFinite_ofChar_integral_of_isArchTestFactor": {
+      "proof_summary": "Preserve arbitrary number field, continuous character at every infinite place, arbitrary finite bi-invariant Borel measure and component-compatible group homomorphism. Full two-sided character-weighted integral retains both IsArchTestFactor and IsArchFactorBiFinite conclusions; retain compact support, smoothness and both left/right type submodule proofs.",
+      "checks": {
+        "source": {
+          "module": "Submission.Supplier.P2M.Sol.S_AutomorphicForm_isArchTestFactor_and_isArchFactorBiFinite_ofChar_integral_of_isArchTestFactor",
+          "canonical_lines": 1207,
+          "canonical_byte_identical_to_supplier": true,
+          "make_exit": 0,
+          "kernel_exit": 0,
+          "kernel_seconds": 75.688885,
+          "compiler_warnings": 18,
+          "source_unchanged_during_check": true,
+          "printed_final_axiom_closures": [],
+          "separate_final_axiom_audit_pending": true,
+          "direct_dependencies": [
+            {
+              "module": "Submission.Supplier.Definitions.Def_AutomorphicForm_IsotypicCuspSpace",
+              "source_sha256": "a98dbbf1bd891679a98b7b5a411f9b5ca91384899977186a53a384ee27916dc7",
+              "object_sha256": "f29c67f4c799cee346ac34f42b8c14720797b7c8adc27bd96fb12ccc9535a63a",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.Definitions.Def_AutomorphicForm_FactorizableTestFn",
+              "source_sha256": "0560c57b64f7610c7b1b0f44c6eff63b8c24a6a101db29c2153141dc15f75318",
+              "object_sha256": "5a3877bad6775cc0cfcd20ae5b28505d44154c29ce2d2cb572121c96cc926d91",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.P2M.Util",
+              "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+              "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+              "receipt_reused": true
+            }
+          ],
+          "unreceipted_cached_dependency_metadata": []
+        },
+        "card": {
+          "module": "Submission.Supplier.Theorems.Thm_AutomorphicForm_isArchTestFactor_and_isArchFactorBiFinite_ofChar_integral_of_isArchTestFactor",
+          "canonical_lines": 29,
+          "canonical_byte_identical_to_supplier": true,
+          "make_exit": 0,
+          "kernel_exit": 0,
+          "kernel_seconds": 91.966738875,
+          "compiler_warnings": 0,
+          "source_unchanged_during_check": true,
+          "printed_final_axiom_closures": [],
+          "separate_final_axiom_audit_pending": true,
+          "direct_dependencies": [
+            {
+              "module": "Submission.Supplier.Definitions.Def_AutomorphicForm_IsotypicCuspSpace",
+              "source_sha256": "a98dbbf1bd891679a98b7b5a411f9b5ca91384899977186a53a384ee27916dc7",
+              "object_sha256": "f29c67f4c799cee346ac34f42b8c14720797b7c8adc27bd96fb12ccc9535a63a",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.Definitions.Def_AutomorphicForm_FactorizableTestFn",
+              "source_sha256": "0560c57b64f7610c7b1b0f44c6eff63b8c24a6a101db29c2153141dc15f75318",
+              "object_sha256": "5a3877bad6775cc0cfcd20ae5b28505d44154c29ce2d2cb572121c96cc926d91",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.P2M.Util",
+              "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+              "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.P2M.Sol.S_AutomorphicForm_isArchTestFactor_and_isArchFactorBiFinite_ofChar_integral_of_isArchTestFactor",
+              "source_sha256": "d2c6884220edcdd219278b54a135b705687db41219f4ccca543e17c972c0c7d1",
+              "object_sha256": "ebaba09181b22e36def9795b2a4f818a6dd207ba0e0266a961064e16e49e480d",
+              "receipt_reused": true
+            }
+          ],
+          "unreceipted_cached_dependency_metadata": []
+        }
+      }
+    }
+  },
+  "supplier": "anthropics/fermats-last-theorem",
+  "supplier_commit": "6e837e75355538c7f80bab5b956861e86c4eacc2",
+  "full_original_complete": false,
+  "official_new_solve_credit": 0,
+  "complete_import_replay_and_recursive_axiom_audits_pending": true,
+  "selected_problem": "fermat_last_theorem",
+  "canonical_lexical_integrity_scan": {
+    "observed_at": "2026-10-14T07:21:59.476314+00:00",
+    "canonical_lean_files_covered": 60473,
+    "matching_files": 0,
+    "scope": [
+      "P2M/Sol",
+      "Theorems",
+      "Definitions",
+      "P2M/Util.lean"
+    ],
+    "ignore_rules_disabled": true,
+    "pattern": "^\\s*(axiom|constant)\\s|\\b(sorry|admit)\\b",
+    "formal_recursive_axiom_audit_still_pending": true
+  },
+  "max_active_flt_jobs": 1,
+  "max_active_flt_compilers": 1,
+  "lean_threads": 1,
+  "graph_snapshot": {
+    "compiled": 8540,
+    "failed": 0,
+    "ready": 4390,
+    "root_compiled": false,
+    "workers": 1,
+    "running": {
+      "Submission.Supplier.Theorems.Thm_AutomorphicForm_isArchTestFactor_of_contDiff_of_hasCompactSupport_of_tsupport_subset_isUnit_det": {
+        "pid": 56952,
+        "make_wrapper_pid": 56952,
+        "phase": "canonical_make_queue",
+        "sha256": "b67f5a4b2084a6c1661ca0efe2d1b5a58bc7735d233596e2617eefbf6f8a94c7",
+        "configuration": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/2c8e26e29f45999a14f03866-1791991060682363000.configuration.json"
+      }
+    }
+  }
+}
