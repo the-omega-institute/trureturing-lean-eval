@@ -1,0 +1,163 @@
+{
+  "at": "2026-10-14T15:42:13.240102+00:00",
+  "original_source_card_pairs_actual_make_kernel_passed": true,
+  "canonical_pairs_byte_identical_to_supplier": true,
+  "no_source_edits": true,
+  "no_linter_suppression_added": true,
+  "no_redundant_recompilation": true,
+  "original_statements_hypotheses_and_proofs_preserved": true,
+  "checks": {
+    "AutomorphicForm_whittakerCoefficient_unipotentGL2_mul": {
+      "proof_summary": "Preserve arbitrary number fields, production pins, principal-invariant additive character, original periodicity at the fixed group point and every frequency/adelic shift. Retain countability of the principal subgroup, translated fundamental-domain integral equality, conditional-measure normalization and full Whittaker unipotent-transformation formula without adding continuity or integrability assumptions.",
+      "checks": {
+        "source": {
+          "module": "Submission.Supplier.P2M.Sol.S_AutomorphicForm_whittakerCoefficient_unipotentGL2_mul",
+          "canonical_lines": 123,
+          "canonical_byte_identical_to_supplier": true,
+          "make_exit": 0,
+          "kernel_exit": 0,
+          "kernel_seconds": 43.797202833,
+          "compiler_warnings": 1,
+          "source_unchanged_during_check": true,
+          "printed_final_axiom_closures": [],
+          "separate_final_axiom_audit_pending": true,
+          "direct_dependencies": [
+            {
+              "module": "Submission.Supplier.Definitions.Def_AutomorphicForm_WhittakerCoefficient",
+              "source_sha256": "a524696a3fb200b6bc237a7a6ca14ba848120f3410bb03360cdcd523bd5c526c",
+              "object_sha256": null,
+              "receipt_reused": false
+            },
+            {
+              "module": "Submission.Supplier.Definitions.Def_NumberField_AdelicBox",
+              "source_sha256": "286d2f475bce1fe1d29bd907480fa7eb9f67b47ad961d1f789765d2b9a9f5d3f",
+              "object_sha256": "f341d3e7fb4d2df5316ff12651a8c9789cdfe510c63fe8ddceb3c5ee4a4680a8",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.P2M.Util",
+              "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+              "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+              "receipt_reused": true
+            }
+          ],
+          "unreceipted_cached_dependency_metadata": [
+            {
+              "module": "Submission.Supplier.Definitions.Def_AutomorphicForm_WhittakerCoefficient",
+              "source_sha256": "a524696a3fb200b6bc237a7a6ca14ba848120f3410bb03360cdcd523bd5c526c",
+              "object_sha256": null,
+              "receipt_reused": false,
+              "source_path": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/Definitions/Def_AutomorphicForm_WhittakerCoefficient.lean",
+              "object_path": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-build/lib/lean/Submission/Supplier/Definitions/Def_AutomorphicForm_WhittakerCoefficient.olean",
+              "source_metadata": {
+                "size": 2623,
+                "mtime_ns": 1791389120444613109
+              },
+              "object_metadata": {
+                "size": 89624,
+                "mtime_ns": 1791511741026208330
+              },
+              "individual_object_binding_unavailable": true
+            }
+          ]
+        },
+        "card": {
+          "module": "Submission.Supplier.Theorems.Thm_AutomorphicForm_whittakerCoefficient_unipotentGL2_mul",
+          "canonical_lines": 27,
+          "canonical_byte_identical_to_supplier": true,
+          "make_exit": 0,
+          "kernel_exit": 0,
+          "kernel_seconds": 51.742008292,
+          "compiler_warnings": 0,
+          "source_unchanged_during_check": true,
+          "printed_final_axiom_closures": [],
+          "separate_final_axiom_audit_pending": true,
+          "direct_dependencies": [
+            {
+              "module": "Submission.Supplier.Definitions.Def_AutomorphicForm_WhittakerCoefficient",
+              "source_sha256": "a524696a3fb200b6bc237a7a6ca14ba848120f3410bb03360cdcd523bd5c526c",
+              "object_sha256": null,
+              "receipt_reused": false
+            },
+            {
+              "module": "Submission.Supplier.Definitions.Def_NumberField_AdelicBox",
+              "source_sha256": "286d2f475bce1fe1d29bd907480fa7eb9f67b47ad961d1f789765d2b9a9f5d3f",
+              "object_sha256": "f341d3e7fb4d2df5316ff12651a8c9789cdfe510c63fe8ddceb3c5ee4a4680a8",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.P2M.Util",
+              "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+              "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.P2M.Sol.S_AutomorphicForm_whittakerCoefficient_unipotentGL2_mul",
+              "source_sha256": "58cfde0a2aad3d0b37a02abbf9339193863cd1cc17ea68553ac67de0c8e29d5d",
+              "object_sha256": "5138248b08c3eaaebac15ea808e4fdb68d319c67ae1fd181bbc7c0a329ca22c0",
+              "receipt_reused": true
+            }
+          ],
+          "unreceipted_cached_dependency_metadata": [
+            {
+              "module": "Submission.Supplier.Definitions.Def_AutomorphicForm_WhittakerCoefficient",
+              "source_sha256": "a524696a3fb200b6bc237a7a6ca14ba848120f3410bb03360cdcd523bd5c526c",
+              "object_sha256": null,
+              "receipt_reused": false,
+              "source_path": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/Definitions/Def_AutomorphicForm_WhittakerCoefficient.lean",
+              "object_path": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-build/lib/lean/Submission/Supplier/Definitions/Def_AutomorphicForm_WhittakerCoefficient.olean",
+              "source_metadata": {
+                "size": 2623,
+                "mtime_ns": 1791389120444613109
+              },
+              "object_metadata": {
+                "size": 89624,
+                "mtime_ns": 1791511741026208330
+              },
+              "individual_object_binding_unavailable": true
+            }
+          ]
+        }
+      }
+    }
+  },
+  "supplier": "anthropics/fermats-last-theorem",
+  "supplier_commit": "6e837e75355538c7f80bab5b956861e86c4eacc2",
+  "full_original_complete": false,
+  "official_new_solve_credit": 0,
+  "complete_import_replay_and_recursive_axiom_audits_pending": true,
+  "selected_problem": "fermat_last_theorem",
+  "canonical_lexical_integrity_scan": {
+    "observed_at": "2026-10-14T07:21:59.476314+00:00",
+    "canonical_lean_files_covered": 60473,
+    "matching_files": 0,
+    "scope": [
+      "P2M/Sol",
+      "Theorems",
+      "Definitions",
+      "P2M/Util.lean"
+    ],
+    "ignore_rules_disabled": true,
+    "pattern": "^\\s*(axiom|constant)\\s|\\b(sorry|admit)\\b",
+    "formal_recursive_axiom_audit_still_pending": true
+  },
+  "max_active_flt_jobs": 1,
+  "max_active_flt_compilers": 1,
+  "lean_threads": 1,
+  "graph_snapshot": {
+    "compiled": 8555,
+    "failed": 0,
+    "ready": 4385,
+    "root_compiled": false,
+    "workers": 1,
+    "running": {
+      "Submission.Supplier.P2M.Sol.S_AutomorphicForm_whittakerCoefficient_finset_sum_mul_unipotentGL2_diagOne_mul": {
+        "pid": 61898,
+        "make_wrapper_pid": 55504,
+        "phase": "kernel",
+        "sha256": "172f1d589abc6753a4656116de3d8649948935b17b06a3a92e5d77d9f61aaf2e",
+        "configuration": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/3e3e45ad24f6364412d7427b-1791992464583885000.configuration.json"
+      }
+    }
+  }
+}
