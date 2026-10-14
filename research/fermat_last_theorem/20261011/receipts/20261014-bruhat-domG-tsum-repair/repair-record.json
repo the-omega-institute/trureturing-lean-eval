@@ -1,0 +1,272 @@
+{
+  "at": "2026-10-14T14:16:46.899990+00:00",
+  "problem": "fermat_last_theorem",
+  "repair": "make ENNReal.le_tsum summand explicit and unfold domG; fix actual deprecation/style warnings; remove card optional instance directive rejected by compiler",
+  "actual_checks": [
+    {
+      "module": "Submission.Supplier.P2M.Sol.S_AutomorphicForm_bruhatTransversal_summand_norm_summable_of_re_gt_half",
+      "role": "source",
+      "make_exit": 0,
+      "kernel_exit": 0,
+      "kernel_seconds": 72.363065084,
+      "warnings": 0,
+      "canonical_lines": 2766,
+      "source_unchanged_during_check": true,
+      "original_theorem_statements_byte_identical": true,
+      "card_proof_body_byte_identical": null,
+      "available_dependency_receipts_match_current_controller": true,
+      "all_direct_dependencies_have_object_receipts": true,
+      "unreceipted_cached_dependencies": [],
+      "printed_recursive_axioms": {
+        "P2MW.S_AutomorphicForm_bruhatTransversal_summand_norm_summable_of_re_gt_half.AutomorphicForm.bruhatTransversal_summand_norm_summable_of_re_gt_half_impl": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "P2MW.S_AutomorphicForm_bruhatTransversal_summand_norm_summable_of_re_gt_half.AutomorphicForm.WeylIntegrable.bruhatTransversal_norm_le_summable_uniform": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "P2MW.S_AutomorphicForm_bruhatTransversal_summand_norm_summable_of_re_gt_half.AutomorphicForm.WeylIntegrable.bruhatTransversal_summand_norm_summable": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "P2MW.S_AutomorphicForm_bruhatTransversal_summand_norm_summable_of_re_gt_half.AutomorphicForm.WeylIntegrable.jE1_hole": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "P2MW.S_AutomorphicForm_bruhatTransversal_summand_norm_summable_of_re_gt_half.AutomorphicForm.WeylIntegrable.summable_rpow_Dy_algebraMap": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "P2MW.S_AutomorphicForm_bruhatTransversal_summand_norm_summable_of_re_gt_half.AutomorphicForm.WeylIntegrable.S2_finite": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "P2MW.S_AutomorphicForm_bruhatTransversal_summand_norm_summable_of_re_gt_half.AutomorphicForm.WeylIntegrable.Dy_translate_le": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "P2MW.S_AutomorphicForm_bruhatTransversal_summand_norm_summable_of_re_gt_half.AutomorphicForm.WeylIntegrable.norm_apply_weyl_unipotent_le": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "P2MW.S_AutomorphicForm_bruhatTransversal_summand_norm_summable_of_re_gt_half.AutomorphicForm.WeylIntegrable.lintegral_domG_lt_top": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "P2MW.S_AutomorphicForm_bruhatTransversal_summand_norm_summable_of_re_gt_half.AutomorphicForm.WeylIntegrable.weylIntertwiningIntegrand_integrable_of_re_gt_half_impl": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "P2MW.S_AutomorphicForm_bruhatTransversal_summand_norm_summable_of_re_gt_half.NumberField.AdeleRing.distribHaarChar_eq_prod_norm_pow_mult_of_snd_eq_one_impl": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "P2MW.S_AutomorphicForm_bruhatTransversal_summand_norm_summable_of_re_gt_half.solution": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      "final_target_standard_axioms_verified": true,
+      "whole_root_recursive_axiom_audit_pending": true,
+      "kernel_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/39e2f10eafd582c6d84d40fd-1791986772716063000.kernel/result.json",
+      "make_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/39e2f10eafd582c6d84d40fd-1791986772716063000.make-terminal.json",
+      "controller_record": {
+        "sha256": "8b33c3481590dc2b281824262af24db940f3f77c506ccda71f530b3da2f0411f",
+        "exit": 0,
+        "empty_output_retry_done": false,
+        "source_sha256_after": "8b33c3481590dc2b281824262af24db940f3f77c506ccda71f530b3da2f0411f",
+        "source_unchanged": true,
+        "olean_sha256": "b4bc04efa901ec87563648d5cf6ba2055fa42205355a85bc593ef97a6ba14dc9",
+        "seconds": 87.81562675000168,
+        "pid": 44823,
+        "command": [
+          "/Users/macstudio/.local/omega-shims/lean",
+          "-j1",
+          "--trust=0",
+          "-Ddebug.skipKernelTC=false",
+          "-R",
+          "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src",
+          "-o",
+          "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-build/lib/lean/Submission/Supplier/P2M/Sol/S_AutomorphicForm_bruhatTransversal_summand_norm_summable_of_re_gt_half.olean",
+          "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_AutomorphicForm_bruhatTransversal_summand_norm_summable_of_re_gt_half.lean"
+        ],
+        "make_wrapper_pid": 38185,
+        "make_exit": 0,
+        "make_entry_failed": false,
+        "cache_binding_valid": true,
+        "canonical_make_running_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/39e2f10eafd582c6d84d40fd-1791986772716063000.make-running.json",
+        "canonical_make_terminal_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/39e2f10eafd582c6d84d40fd-1791986772716063000.make-terminal.json",
+        "kernel_terminal_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/39e2f10eafd582c6d84d40fd-1791986772716063000.kernel/result.json",
+        "direct_dependencies": [
+          {
+            "module": "Submission.Supplier.Definitions.Def_AutomorphicForm_InducedSection",
+            "source_sha256": "7d3d7eebe9f44552541bbf5619274c78a26e77695490d6b0ece96284ec10b3e2",
+            "object_sha256": "220be1648f1e3923a0c1998bf6f4d332b1f8200692d0803772ff3146b5bbbb91",
+            "receipt_reused": true
+          },
+          {
+            "module": "Submission.Supplier.Definitions.Def_AutomorphicForm_EtaFamily",
+            "source_sha256": "8243650ea3c624e7aa2f4b4dc3f233e979f6dd72f76de97f1db2fb91b136d79e",
+            "object_sha256": "c3c831c4e565000825e73c4202e32025799472f6face780636b9ddb27489a361",
+            "receipt_reused": true
+          },
+          {
+            "module": "Submission.Supplier.Definitions.Def_AutomorphicForm_WeylIntertwining",
+            "source_sha256": "b0bf04b32b554a1f95a827d342ac0355ec2a02bca29a2acc971b9deb3c5fd575",
+            "object_sha256": "95785c1fba94b575920c10c34e16757c3033c2723d9c22c8a8997a8cec994578",
+            "receipt_reused": true
+          },
+          {
+            "module": "Submission.Supplier.Definitions.Def_NumberField_AdelicHaar",
+            "source_sha256": "094c4798004b34b5de79ac153482cada33fd2d568217e482f57ae64130a67c5f",
+            "object_sha256": "56f8cb3975fb1e2f7c289b534529067dad86940b3623882fff7ad256240b9f63",
+            "receipt_reused": true
+          },
+          {
+            "module": "Submission.Supplier.Definitions.Def_NumberField_AdelicBox",
+            "source_sha256": "286d2f475bce1fe1d29bd907480fa7eb9f67b47ad961d1f789765d2b9a9f5d3f",
+            "object_sha256": "f341d3e7fb4d2df5316ff12651a8c9789cdfe510c63fe8ddceb3c5ee4a4680a8",
+            "receipt_reused": true
+          },
+          {
+            "module": "Submission.Supplier.Definitions.Def_Mathlib_LinearAlgebra_Countable",
+            "source_sha256": "5d4943a26a24e290f1c71070a8604372498a5635366f2f71e6e859d4acc860a0",
+            "object_sha256": "c48edbf8136c22c2b0bb4a8f6c56e5ba3df25ee6a9be7e3a599e25a82a26aaef",
+            "receipt_reused": true
+          },
+          {
+            "module": "Submission.Supplier.P2M.Util",
+            "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+            "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+            "receipt_reused": true
+          }
+        ],
+        "stdout": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/39e2f10eafd582c6d84d40fd-1791986772716063000.kernel/stdout.log",
+        "stderr": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/39e2f10eafd582c6d84d40fd-1791986772716063000.kernel/stderr.log"
+      }
+    },
+    {
+      "module": "Submission.Supplier.Theorems.Thm_AutomorphicForm_bruhatTransversal_summand_norm_summable_of_re_gt_half",
+      "role": "card",
+      "make_exit": 0,
+      "kernel_exit": 0,
+      "kernel_seconds": 57.533475042,
+      "warnings": 0,
+      "canonical_lines": 27,
+      "source_unchanged_during_check": true,
+      "original_theorem_statements_byte_identical": true,
+      "card_proof_body_byte_identical": true,
+      "available_dependency_receipts_match_current_controller": true,
+      "all_direct_dependencies_have_object_receipts": true,
+      "unreceipted_cached_dependencies": [],
+      "printed_recursive_axioms": {
+        "AutomorphicForm.bruhatTransversal_summand_norm_summable_of_re_gt_half": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      "final_target_standard_axioms_verified": true,
+      "whole_root_recursive_axiom_audit_pending": true,
+      "kernel_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/3a919e038f23872960db7607-1791987214292450000.kernel/result.json",
+      "make_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/3a919e038f23872960db7607-1791987214292450000.make-terminal.json",
+      "controller_record": {
+        "sha256": "55a7985fda7c48abb11c7a64b4fa68bc2e0d584ce24abc8b4b923d1717e6fb1a",
+        "exit": 0,
+        "empty_output_retry_done": false,
+        "source_sha256_after": "55a7985fda7c48abb11c7a64b4fa68bc2e0d584ce24abc8b4b923d1717e6fb1a",
+        "source_unchanged": true,
+        "olean_sha256": "109b1f5dec4016ed21a2989f3f0148c96d7be5bc07c74690e0bd69683528cc55",
+        "seconds": 81.21078279100038,
+        "pid": 25291,
+        "command": [
+          "/Users/macstudio/.local/omega-shims/lean",
+          "-j1",
+          "--trust=0",
+          "-Ddebug.skipKernelTC=false",
+          "-R",
+          "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src",
+          "-o",
+          "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-build/lib/lean/Submission/Supplier/Theorems/Thm_AutomorphicForm_bruhatTransversal_summand_norm_summable_of_re_gt_half.olean",
+          "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/Theorems/Thm_AutomorphicForm_bruhatTransversal_summand_norm_summable_of_re_gt_half.lean"
+        ],
+        "make_wrapper_pid": 19625,
+        "make_exit": 0,
+        "make_entry_failed": false,
+        "cache_binding_valid": true,
+        "canonical_make_running_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/3a919e038f23872960db7607-1791987214292450000.make-running.json",
+        "canonical_make_terminal_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/3a919e038f23872960db7607-1791987214292450000.make-terminal.json",
+        "kernel_terminal_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/3a919e038f23872960db7607-1791987214292450000.kernel/result.json",
+        "direct_dependencies": [
+          {
+            "module": "Submission.Supplier.Definitions.Def_AutomorphicForm_InducedSection",
+            "source_sha256": "7d3d7eebe9f44552541bbf5619274c78a26e77695490d6b0ece96284ec10b3e2",
+            "object_sha256": "220be1648f1e3923a0c1998bf6f4d332b1f8200692d0803772ff3146b5bbbb91",
+            "receipt_reused": true
+          },
+          {
+            "module": "Submission.Supplier.Definitions.Def_AutomorphicForm_EtaFamily",
+            "source_sha256": "8243650ea3c624e7aa2f4b4dc3f233e979f6dd72f76de97f1db2fb91b136d79e",
+            "object_sha256": "c3c831c4e565000825e73c4202e32025799472f6face780636b9ddb27489a361",
+            "receipt_reused": true
+          },
+          {
+            "module": "Submission.Supplier.Definitions.Def_AutomorphicForm_WeylIntertwining",
+            "source_sha256": "b0bf04b32b554a1f95a827d342ac0355ec2a02bca29a2acc971b9deb3c5fd575",
+            "object_sha256": "95785c1fba94b575920c10c34e16757c3033c2723d9c22c8a8997a8cec994578",
+            "receipt_reused": true
+          },
+          {
+            "module": "Submission.Supplier.Definitions.Def_NumberField_AdelicHaar",
+            "source_sha256": "094c4798004b34b5de79ac153482cada33fd2d568217e482f57ae64130a67c5f",
+            "object_sha256": "56f8cb3975fb1e2f7c289b534529067dad86940b3623882fff7ad256240b9f63",
+            "receipt_reused": true
+          },
+          {
+            "module": "Submission.Supplier.P2M.Util",
+            "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+            "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+            "receipt_reused": true
+          },
+          {
+            "module": "Submission.Supplier.P2M.Sol.S_AutomorphicForm_bruhatTransversal_summand_norm_summable_of_re_gt_half",
+            "source_sha256": "8b33c3481590dc2b281824262af24db940f3f77c506ccda71f530b3da2f0411f",
+            "object_sha256": "b4bc04efa901ec87563648d5cf6ba2055fa42205355a85bc593ef97a6ba14dc9",
+            "receipt_reused": true
+          }
+        ],
+        "stdout": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/3a919e038f23872960db7607-1791987214292450000.kernel/stdout.log",
+        "stderr": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/3a919e038f23872960db7607-1791987214292450000.kernel/stderr.log"
+      }
+    }
+  ],
+  "full_source_card_pair_verified": true,
+  "original_statements_hypotheses_and_all_mathematical_branches_preserved": true,
+  "edited_source_and_card_zero_warnings": true,
+  "source_baseline_warning_count": 53,
+  "source_baseline_actual_kernel_exit": 1,
+  "source_baseline_actual_make_exit": 2,
+  "failed_source_sorryAx_propagation_removed": true,
+  "final_queries_standard_axioms_only": true,
+  "dead_duplicate_final_tactic_removed": true,
+  "new_compilers_spawned": 0,
+  "controller_restarted": false,
+  "max_active_flt_jobs": 1,
+  "lean_threads": 1,
+  "gate_reservation_gb": 35,
+  "full_original_complete": false,
+  "official_new_solve_credit": 0
+}

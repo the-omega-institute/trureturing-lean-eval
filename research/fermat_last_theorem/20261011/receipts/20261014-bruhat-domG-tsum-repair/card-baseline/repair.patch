@@ -1,0 +1,16 @@
+--- baseline-adapted.lean
++++ Thm_AutomorphicForm_bruhatTransversal_summand_norm_summable_of_re_gt_half.lean
+@@ -13,7 +13,6 @@
+ set_option backward.isDefEq.respectTransparency.types false
+ set_option debug.skipKernelTC false
+ -- End recovered elaborator settings.
+-attribute [-instance] instCountableOfNumberField_definitions
+ 
+ open MeasureTheory NumberField NumberField.AdelicHaar
+ open AutomorphicForm
+@@ -32,3 +31,5 @@
+       (g : AdelicGL2 (𝓞 F) F),
+     Summable (fun ξ : F => ‖φ (adelicWeyl (𝓞 F) F
+       * unipotentGL2 (algebraMap F (AdeleRing (𝓞 F) F) ξ) * g)‖) := by p2m_exact_reverting @_root_.P2MW.S_AutomorphicForm_bruhatTransversal_summand_norm_summable_of_re_gt_half.solution
++
++#print axioms AutomorphicForm.bruhatTransversal_summand_norm_summable_of_re_gt_half

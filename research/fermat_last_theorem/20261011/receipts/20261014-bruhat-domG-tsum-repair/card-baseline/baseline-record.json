@@ -1,0 +1,83 @@
+{
+  "at": "2026-10-14T14:12:13.553175+00:00",
+  "module": "Submission.Supplier.Theorems.Thm_AutomorphicForm_bruhatTransversal_summand_norm_summable_of_re_gt_half",
+  "baseline_record": {
+    "sha256": "caaf34b64fdaa513d3386a5b558bf56bc5063d598e3bd0a60c6d7fcef2448a1b",
+    "exit": 1,
+    "empty_output_retry_done": false,
+    "source_sha256_after": "caaf34b64fdaa513d3386a5b558bf56bc5063d598e3bd0a60c6d7fcef2448a1b",
+    "source_unchanged": true,
+    "olean_sha256": null,
+    "seconds": 143.52747441599786,
+    "pid": 72715,
+    "command": [
+      "/Users/macstudio/.local/omega-shims/lean",
+      "-j1",
+      "--trust=0",
+      "-Ddebug.skipKernelTC=false",
+      "-R",
+      "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src",
+      "-o",
+      "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-build/lib/lean/Submission/Supplier/Theorems/Thm_AutomorphicForm_bruhatTransversal_summand_norm_summable_of_re_gt_half.olean",
+      "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/Theorems/Thm_AutomorphicForm_bruhatTransversal_summand_norm_summable_of_re_gt_half.lean"
+    ],
+    "make_wrapper_pid": 24284,
+    "make_exit": 2,
+    "make_entry_failed": false,
+    "cache_binding_valid": true,
+    "canonical_make_running_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/3a919e038f23872960db7607-1791986870205592000.make-running.json",
+    "canonical_make_terminal_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/3a919e038f23872960db7607-1791986870205592000.make-terminal.json",
+    "kernel_terminal_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/3a919e038f23872960db7607-1791986870205592000.kernel/result.json",
+    "direct_dependencies": [
+      {
+        "module": "Submission.Supplier.Definitions.Def_AutomorphicForm_InducedSection",
+        "source_sha256": "7d3d7eebe9f44552541bbf5619274c78a26e77695490d6b0ece96284ec10b3e2",
+        "object_sha256": "220be1648f1e3923a0c1998bf6f4d332b1f8200692d0803772ff3146b5bbbb91",
+        "receipt_reused": true
+      },
+      {
+        "module": "Submission.Supplier.Definitions.Def_AutomorphicForm_EtaFamily",
+        "source_sha256": "8243650ea3c624e7aa2f4b4dc3f233e979f6dd72f76de97f1db2fb91b136d79e",
+        "object_sha256": "c3c831c4e565000825e73c4202e32025799472f6face780636b9ddb27489a361",
+        "receipt_reused": true
+      },
+      {
+        "module": "Submission.Supplier.Definitions.Def_AutomorphicForm_WeylIntertwining",
+        "source_sha256": "b0bf04b32b554a1f95a827d342ac0355ec2a02bca29a2acc971b9deb3c5fd575",
+        "object_sha256": "95785c1fba94b575920c10c34e16757c3033c2723d9c22c8a8997a8cec994578",
+        "receipt_reused": true
+      },
+      {
+        "module": "Submission.Supplier.Definitions.Def_NumberField_AdelicHaar",
+        "source_sha256": "094c4798004b34b5de79ac153482cada33fd2d568217e482f57ae64130a67c5f",
+        "object_sha256": "56f8cb3975fb1e2f7c289b534529067dad86940b3623882fff7ad256240b9f63",
+        "receipt_reused": true
+      },
+      {
+        "module": "Submission.Supplier.P2M.Util",
+        "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+        "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+        "receipt_reused": true
+      },
+      {
+        "module": "Submission.Supplier.P2M.Sol.S_AutomorphicForm_bruhatTransversal_summand_norm_summable_of_re_gt_half",
+        "source_sha256": "8b33c3481590dc2b281824262af24db940f3f77c506ccda71f530b3da2f0411f",
+        "object_sha256": "b4bc04efa901ec87563648d5cf6ba2055fa42205355a85bc593ef97a6ba14dc9",
+        "receipt_reused": true
+      }
+    ],
+    "stdout": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/3a919e038f23872960db7607-1791986870205592000.kernel/stdout.log",
+    "stderr": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/3a919e038f23872960db7607-1791986870205592000.kernel/stderr.log"
+  },
+  "kernel_exit": 1,
+  "make_exit": 2,
+  "source_binding_reused": "caaf34b64fdaa513d3386a5b558bf56bc5063d598e3bd0a60c6d7fcef2448a1b",
+  "actual_error": "Unknown constant instCountableOfNumberField_definitions",
+  "change": "remove only failed optional instance-attribute directive; add final theorem axiom query",
+  "original_statement_and_proof_body_byte_identical": true,
+  "validation_pending": true,
+  "controller_restarted": false,
+  "new_compilers_spawned": 0,
+  "full_original_complete": false,
+  "official_new_solve_credit": 0
+}
