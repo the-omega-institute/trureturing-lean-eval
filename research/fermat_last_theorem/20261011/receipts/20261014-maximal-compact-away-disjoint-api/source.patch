@@ -1,0 +1,16 @@
+--- source.before.lean
++++ source.after.lean
+@@ -80,9 +80,11 @@
+         have hw := mem_maximalCompactAway_iff.mp (hkall {w})
+         rw [hw.2.2 w (Finset.mem_singleton_self w), map_one, map_one]
+     rw [hk1]; exact h1
+-  obtain ⟨S₀, hS₀⟩ := hcpt.elim_directed_family_closed t htc hinter hdir
++  obtain ⟨S₀, hS₀⟩ := hcpt.elim_directed_family_closed t htc (Set.disjoint_iff_inter_eq_empty.mpr hinter) hdir
+   refine ⟨S₀, fun k hk => hW'W ?_⟩
+   by_contra hkW
+   have : k ∈ (t ∅ ∩ W'ᶜ) ∩ t S₀ := ⟨⟨hanti ∅ S₀ (Finset.empty_subset _) hk, hkW⟩, hk⟩
+-  rw [hS₀] at this
++  rw [Set.disjoint_iff_inter_eq_empty.mp hS₀] at this
+   exact this
++
++#print axioms P2MW.S_AutomorphicForm_exists_maximalCompactAway_subset_of_mem_nhds_one.solution
