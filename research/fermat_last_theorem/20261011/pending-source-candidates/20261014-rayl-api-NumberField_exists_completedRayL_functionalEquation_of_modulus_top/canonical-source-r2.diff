@@ -1,0 +1,104 @@
+--- P2M/Sol/S_NumberField_exists_completedRayL_functionalEquation_of_modulus_top.lean
++++ P2M/Sol/S_NumberField_exists_completedRayL_functionalEquation_of_modulus_top.lean
+@@ -1290,7 +1290,7 @@
+   classical
+   have hset : {I : (Ideal (𝓞 K))⁰ |
+       absNorm (I : Ideal (𝓞 K)) ≤ s ∧ ClassGroup.mk0 I = C}.Finite :=
+-    (finite_setOf_absNorm_le₀ ⌊s⌋₊).subset fun I hI => Nat.le_floor hI.1
++    (finite_setOfPred_absNorm_le₀ ⌊s⌋₊).subset fun I hI => Nat.le_floor hI.1
+   have : Fintype {I : (Ideal (𝓞 K))⁰ //
+       absNorm (I : Ideal (𝓞 K)) ≤ s ∧ ClassGroup.mk0 I = C} := hset.fintype
+   have key : Nat.card {I : (Ideal (𝓞 K))⁰ //
+@@ -1356,7 +1356,7 @@
+     Finite {I : (Ideal (𝓞 K))⁰ //
+       ClassGroup.mk0 I = C ∧ Ideal.absNorm (I : Ideal (𝓞 K)) = n} :=
+   Set.Finite.to_subtype <|
+-    (finite_setOf_absNorm_le₀ n).subset fun _ hI => le_of_eq hI.2
++    (finite_setOfPred_absNorm_le₀ n).subset fun _ hI => le_of_eq hI.2
+ 
+ end Deep.Analytic
+ p2m_reactivate "P2MW.S_NumberField_exists_completedRayL_functionalEquation_of_modulus_top.Deep P2MW.S_NumberField_exists_completedRayL_functionalEquation_of_modulus_top.Deep.Analytic"
+@@ -4797,7 +4797,7 @@
+ 
+ private theorem measurableSet_orthant : MeasurableSet (orthant K) := by
+   have : orthant K = ⋂ w, {t : realSpace K | 0 < t w} := by
+-    ext t; simp only [mem_orthant, mem_iInter, mem_setOf_eq]
++    ext t; simp only [mem_orthant, mem_iInter, mem_ofPred_eq]
+   rw [this]
+   exact MeasurableSet.iInter fun w => measurableSet_lt measurable_const (measurable_pi_apply w)
+ 
+@@ -4833,7 +4833,7 @@
+ 
+ private theorem measurableEmbedding_expMapBasis :
+     MeasurableEmbedding (expMapBasis : realSpace K → realSpace K) :=
+-  (expMapBasis.to_isOpenEmbedding (expMapBasis_source K)).measurableEmbedding
++  (expMapBasis.isOpenEmbedding (expMapBasis_source K)).measurableEmbedding
+ 
+ private theorem measurable_expMapBasis : Measurable (expMapBasis : realSpace K → realSpace K) :=
+   (continuous_expMapBasis K).measurable
+@@ -4842,7 +4842,7 @@
+   have : foldBox K = ⋂ w : {w : InfinitePlace K // w ≠ w₀},
+       (fun x : realSpace K => x w.1) ⁻¹' Ico (0 : ℝ) 2 := by
+     ext x
+-    simp only [foldBox, mem_setOf_eq, mem_iInter, mem_preimage, Subtype.forall]
++    simp only [foldBox, mem_ofPred_eq, mem_iInter, mem_preimage, Subtype.forall]
+   rw [this]
+   exact MeasurableSet.iInter fun w => measurableSet_Ico.preimage (measurable_pi_apply w.1)
+ 
+@@ -5713,7 +5713,7 @@
+     foldDomain K = (foldDomain K ∩ {t : realSpace K | 1 ≤ torusNorm K t})
+         ∪ (foldDomain K ∩ {t : realSpace K | 1 ≤ torusNorm K t⁻¹}) := by
+   ext t
+-  simp only [mem_union, mem_inter_iff, mem_setOf_eq]
++  simp only [mem_union, mem_inter_iff, mem_ofPred_eq]
+   constructor
+   · intro ht
+     rcases le_or_gt 1 (torusNorm K t) with h | h
+@@ -5758,7 +5758,7 @@
+     (LinearMap.ker (LinearMap.proj (R := ℝ) (φ := fun _ : InfinitePlace K => ℝ)
+       dirichletUnitTheorem.w₀)) ?_)))
+   · intro x hx
+-    rw [mem_preimage, mem_setOf_eq, torusNorm_expMapBasis,
++    rw [mem_preimage, mem_ofPred_eq, torusNorm_expMapBasis,
+       ← Real.exp_nat_mul, Real.exp_eq_one_iff, mul_eq_zero] at hx
+     simpa using hx.resolve_left (Nat.cast_ne_zero.mpr Module.finrank_pos.ne')
+   · intro h
+@@ -5771,18 +5771,18 @@
+       (foldDomain K ∩ {t : realSpace K | 1 ≤ torusNorm K t⁻¹}) := by
+   refine measure_mono_null ?_ (torusHaar_torusNorm_eq_one K)
+   rintro t ⟨⟨ht, hge⟩, ht', hge'⟩
+-  rw [mem_setOf_eq, torusNorm_inv] at hge'
++  rw [mem_ofPred_eq, torusNorm_inv] at hge'
+   have hN := torusNorm_pos K (foldDomain_subset_orthant K ht)
+   exact le_antisymm ((one_le_inv_iff₀.mp hge').2) hge
+ 
+ private theorem mem_highHalf_inv_iff (t : realSpace K) :
+     t⁻¹ ∈ {t' : realSpace K | 1 ≤ torusNorm K t'} ↔ t ∈ {t' | 1 ≤ torusNorm K t'⁻¹} := by
+-  simp only [mem_setOf_eq, torusNorm_inv]
++  simp only [mem_ofPred_eq, torusNorm_inv]
+ 
+ private theorem unitTorus_mem_highHalf_iff (u : (𝓞 K)ˣ) (t : realSpace K) :
+     unitTorus K u t ∈ {t' : realSpace K | 1 ≤ torusNorm K t'} ↔
+       t ∈ {t' : realSpace K | 1 ≤ torusNorm K t'} := by
+-  simp only [mem_setOf_eq, torusNorm_unitTorus]
++  simp only [mem_ofPred_eq, torusNorm_unitTorus]
+ 
+ private theorem setIntegral_foldDomainLowHalf_eq_highHalf_comp_inv {E : Type*} [NormedAddCommGroup E]
+     [NormedSpace ℝ E] {f : realSpace K → E} (hinv : ∀ u t, f (unitTorus K u t) = f t) :
+@@ -5813,7 +5813,7 @@
+       = Set.univ.pi fun w => if w = dirichletUnitTheorem.w₀ then Set.Ici (0 : ℝ)
+           else Set.Ico 0 2 := by
+   ext x
+-  simp only [foldBox, mem_inter_iff, mem_setOf_eq, mem_preimage, mem_univ_pi]
++  simp only [foldBox, mem_inter_iff, mem_ofPred_eq, mem_preimage, mem_univ_pi]
+   rw [torusNorm_expMapBasis, one_le_pow_iff_of_nonneg (Real.exp_nonneg _) Module.finrank_pos.ne',
+     Real.one_le_exp_iff]
+   constructor
+@@ -5954,6 +5954,7 @@
+     rw [show ((u : 𝓞 K) : K) * (((u⁻¹ : (𝓞 K)ˣ) : 𝓞 K) : K) = 1 by
+       rw [← map_mul, Units.mul_inv, map_one], one_mul])
+ 
++omit [NumberField K] in
+ private theorem unitMulFracIdealEquiv_apply (u : (𝓞 K)ˣ) (x : (𝔞 : FractionalIdeal (𝓞 K)⁰ K)) :
+     ((unitMulFracIdealEquiv K 𝔞 u x : (𝔞 : FractionalIdeal (𝓞 K)⁰ K)) : K)
+       = ((u : 𝓞 K) : K) * (x : K) := rfl
