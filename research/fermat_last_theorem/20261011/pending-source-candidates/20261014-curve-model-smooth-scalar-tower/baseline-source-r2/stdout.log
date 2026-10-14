@@ -1,0 +1,63 @@
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/Definitions/Def_AlgebraicCurve_CurveModelSmooth.lean:258:4: error: Type mismatch
+  IsScalarTower.of_algebraMap_eq fun a =>
+    Eq.mpr
+      (_root_.id
+        (congrArg (fun _a => _a = (algebraMap L L) _a) (IsScalarTower.algebraMap_apply K (↥(chartRing K {s})) L a)))
+      (Eq.mpr
+        (_root_.id
+          (congrArg (fun _a => _a = (algebraMap L L) _a)
+            (IsScalarTower.algebraMap_apply (↥(chartRing K {s})) (Localization.Away t) L
+              ((algebraMap K ↥(chartRing K {s})) a))))
+        (Eq.mpr
+          (_root_.id
+            (congrArg
+              (fun _a =>
+                (algebraMap (Localization.Away t) L) _a = (algebraMap L L) ((algebraMap (Localization.Away t) L) _a))
+              (Eq.symm (IsScalarTower.algebraMap_apply K (↥(chartRing K {s})) (Localization.Away t) a))))
+          (Eq.refl ((algebraMap (Localization.Away t) L) ((algebraMap K (Localization.Away t)) a)))))
+has type
+  IsScalarTower K L L
+but is expected to have type
+  IsScalarTower K (Localization.Away t) L
+'AlgebraicCurve.CurveModel.smoothOfRelativeDimension_one_Spec_polynomial' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AlgebraicCurve.CurveModel.exists_mem_and_maximalIdeal_eq_span' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AlgebraicCurve.CurveModel.transcendental_of_mem' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AlgebraicCurve.CurveModel.formallySmooth_chartRing_localization_closed' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AlgebraicCurve.CurveModel.formallySmooth_chartRing_localization_bot' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AlgebraicCurve.CurveModel.chartRing_isSmoothAt' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AlgebraicCurve.CurveModel.isStandardSmoothOfRelativeDimension_adjoin_single' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AlgebraicCurve.CurveModel.rank_kaehler_eq_of_formallyEtale' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AlgebraicCurve.CurveModel.rank_kaehler_intermediateField_adjoin_single' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AlgebraicCurve.CurveModel.rank_kaehler_eq_one_of_finite_adjoin' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AlgebraicCurve.CurveModel.rank_kaehler_chartRing_localization_away_eq_one' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+'AlgebraicCurve.CurveModel.formallySmooth_chartRing' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AlgebraicCurve.CurveModel.locally_isStandardSmoothOfRelativeDimension_one_chartRing' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+'AlgebraicCurve.CurveModel.smoothOfRelativeDimension_one_Spec_chartRing' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+'AlgebraicCurve.CurveModel.freeSubmersivePresentation' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AlgebraicCurve.CurveModel.isStandardSmoothOfRelativeDimension_polynomial' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AlgebraicCurve.CurveModel.chartRing_finitePresentation' depends on axioms: [propext, Classical.choice, Quot.sound]
