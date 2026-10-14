@@ -1,0 +1,44 @@
+{
+  "sha256": "a6ad73dbb448e9d7ee2d1c6c91684b9acd3fb0ad42d34e5db11c894aaf8afa72",
+  "exit": 0,
+  "empty_output_retry_done": false,
+  "source_sha256_after": "a6ad73dbb448e9d7ee2d1c6c91684b9acd3fb0ad42d34e5db11c894aaf8afa72",
+  "source_unchanged": true,
+  "olean_sha256": "865062bc21fe9f7263c1f952f683cc599145145c09c65cf07e69ef5aad2e4dc8",
+  "seconds": 136.28120516700073,
+  "pid": 54414,
+  "command": [
+    "/Users/macstudio/.local/omega-shims/lean",
+    "-j1",
+    "--trust=0",
+    "-Ddebug.skipKernelTC=false",
+    "-R",
+    "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src",
+    "-o",
+    "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-build/lib/lean/Submission/Supplier/Theorems/Thm_NumberField_exists_prime_isArithFrobAt_of_isGalois.olean",
+    "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/Theorems/Thm_NumberField_exists_prime_isArithFrobAt_of_isGalois.lean"
+  ],
+  "make_wrapper_pid": 42164,
+  "make_exit": 0,
+  "make_entry_failed": false,
+  "cache_binding_valid": true,
+  "canonical_make_running_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/2f6276f44f37990dd2eaa9c0-1791962489204614000.make-running.json",
+  "canonical_make_terminal_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/2f6276f44f37990dd2eaa9c0-1791962489204614000.make-terminal.json",
+  "kernel_terminal_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/2f6276f44f37990dd2eaa9c0-1791962489204614000.kernel/result.json",
+  "direct_dependencies": [
+    {
+      "module": "Submission.Supplier.P2M.Util",
+      "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+      "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.P2M.Sol.S_NumberField_exists_prime_isArithFrobAt_of_isGalois",
+      "source_sha256": "c510b7817b2ea8003dd0750f6a740a03a5aa516549d84fc6c51223638c5b82a4",
+      "object_sha256": "e4b4eabc0c80c6e4ac8821ab3dfdd48b3478ee19159f5e74fbafde92ee2fdc1d",
+      "receipt_reused": true
+    }
+  ],
+  "stdout": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/2f6276f44f37990dd2eaa9c0-1791962489204614000.kernel/stdout.log",
+  "stderr": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/2f6276f44f37990dd2eaa9c0-1791962489204614000.kernel/stderr.log"
+}

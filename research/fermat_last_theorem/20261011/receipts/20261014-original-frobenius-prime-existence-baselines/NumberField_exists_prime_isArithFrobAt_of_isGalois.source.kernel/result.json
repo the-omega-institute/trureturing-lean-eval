@@ -1,0 +1,47 @@
+{
+  "at": "2026-10-14T07:20:41.870408+00:00",
+  "configuration": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/1849db9d04856dc805a5abf3-1791962439395120000.configuration.json",
+  "configuration_sha256": "5a075adba6d3408f5b9a8c86155409bf168cf6ac7d45448c6faf0fa4a933cebb",
+  "source": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_NumberField_exists_prime_isArithFrobAt_of_isGalois.lean",
+  "source_sha256": "c510b7817b2ea8003dd0750f6a740a03a5aa516549d84fc6c51223638c5b82a4",
+  "canonical_common": "/Users/macstudio/omega/trureturing/.git",
+  "official_dependency_partition": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/official-deps",
+  "toolchain": "leanprover/lean4:v4.35.0-rc3",
+  "mathlib_revision": "5e0c4e5239cb0a2d86d68a884bf52cfd963fce22",
+  "make_entry_required": true,
+  "phase": "compile_source",
+  "full_original_proof_verified": false,
+  "official_solve_credit": 0,
+  "command": [
+    "/Users/macstudio/.local/omega-shims/lean",
+    "-j1",
+    "--trust=0",
+    "-Ddebug.skipKernelTC=false",
+    "-R",
+    "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src",
+    "-o",
+    "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-build/lib/lean/Submission/Supplier/P2M/Sol/S_NumberField_exists_prime_isArithFrobAt_of_isGalois.olean",
+    "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_NumberField_exists_prime_isArithFrobAt_of_isGalois.lean"
+  ],
+  "memory_admission": {
+    "workers": 1,
+    "reasons": [
+      "user requires one job; no memory gate"
+    ],
+    "sample": {},
+    "memory_limit_enforced": false
+  },
+  "compiler_pid": 20578,
+  "memory_guard": {
+    "mode": "single_job_no_memory_gate",
+    "memory_limit_enforced": false,
+    "resource_cancellation": null,
+    "actual_exit": 0,
+    "proof_completion_claimed": false
+  },
+  "exit": 0,
+  "seconds": 35.710089083,
+  "source_unchanged": true,
+  "object_sha256": "e4b4eabc0c80c6e4ac8821ab3dfdd48b3478ee19159f5e74fbafde92ee2fdc1d",
+  "ended_at": "2026-10-14T07:21:17.583577+00:00"
+}
