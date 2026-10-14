@@ -1,0 +1,50 @@
+{
+  "sha256": "84ddda79a5cc697afa2f7ff2f553bd987e07b7a92f5e665c56abf67f23bec878",
+  "exit": 0,
+  "empty_output_retry_done": false,
+  "source_sha256_after": "84ddda79a5cc697afa2f7ff2f553bd987e07b7a92f5e665c56abf67f23bec878",
+  "source_unchanged": true,
+  "olean_sha256": "10ff5afc6c9e0e2a339eb8bd2b2c7436d69659ca854455da7819b23fb7cc760a",
+  "seconds": 63.26913129100103,
+  "pid": 4286,
+  "command": [
+    "/Users/macstudio/.local/omega-shims/lean",
+    "-j1",
+    "--trust=0",
+    "-Ddebug.skipKernelTC=false",
+    "-R",
+    "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src",
+    "-o",
+    "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-build/lib/lean/Submission/Supplier/Theorems/Thm_GaloisRep_sub_mul_log_le_tsum_rpow_neg_of_frobenius_mem_of_surjective.olean",
+    "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/Theorems/Thm_GaloisRep_sub_mul_log_le_tsum_rpow_neg_of_frobenius_mem_of_surjective.lean"
+  ],
+  "make_wrapper_pid": 97546,
+  "make_exit": 0,
+  "make_entry_failed": false,
+  "cache_binding_valid": true,
+  "canonical_make_running_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/1256789553e51fb0b1033957-1791961613086094000.make-running.json",
+  "canonical_make_terminal_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/1256789553e51fb0b1033957-1791961613086094000.make-terminal.json",
+  "kernel_terminal_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/1256789553e51fb0b1033957-1791961613086094000.kernel/result.json",
+  "direct_dependencies": [
+    {
+      "module": "Submission.Supplier.Definitions.Def_GaloisRep_Residual",
+      "source_sha256": "acaab9dd928d013c9340e77676443b27f1ffc090abea3f139482b8fd2f8e8ff5",
+      "object_sha256": "429ac7b7b2b45f4aee7f1d99d97669e2e968c350566949b758046d25d399fcab",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.P2M.Util",
+      "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+      "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.P2M.Sol.S_GaloisRep_sub_mul_log_le_tsum_rpow_neg_of_frobenius_mem_of_surjective",
+      "source_sha256": "d9f850aa01012ba9ab72d0f51567919c433c6abf01e906836ea45cb1994ebc11",
+      "object_sha256": "5baf184899d7ae8a3c99f85f581396fd57128416b6b299a87912170ca8afe876",
+      "receipt_reused": true
+    }
+  ],
+  "stdout": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/1256789553e51fb0b1033957-1791961613086094000.kernel/stdout.log",
+  "stderr": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/1256789553e51fb0b1033957-1791961613086094000.kernel/stderr.log"
+}
