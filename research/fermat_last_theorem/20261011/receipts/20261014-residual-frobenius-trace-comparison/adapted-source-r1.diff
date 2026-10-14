@@ -1,0 +1,36 @@
+--- Submission/Supplier/P2M/Sol/S_ResidualGaloisRep_trace_eq_of_trace_frobenius_eq.lean
++++ Submission/Supplier/P2M/Sol/S_ResidualGaloisRep_trace_eq_of_trace_frobenius_eq.lean
+@@ -31,18 +31,18 @@
+     LinearMap.trace k ρ₁.V (ρ₁.ρ σ) = LinearMap.trace k ρ₂.V (ρ₂.ρ σ) := by
+   obtain ⟨L₁, hL₁fin, hL₁⟩ := ρ₁.factorsThroughFiniteLevel
+   obtain ⟨L₂, hL₂fin, hL₂⟩ := ρ₂.factorsThroughFiniteLevel
+-  haveI := hL₁fin
+-  haveI := hL₂fin
+-  haveI : IsAlgClosure ℚ (AlgebraicClosure ℚ) := by convert AlgebraicClosure.instIsAlgClosure ℚ; rfl; rfl
+-  haveI : Normal ℚ (AlgebraicClosure ℚ) := IsAlgClosure.normal ℚ _
++  have := hL₁fin
++  have := hL₂fin
++  have : IsAlgClosure ℚ (AlgebraicClosure ℚ) := by exact AlgebraicClosure.instIsAlgClosure ℚ
++  have : Normal ℚ (AlgebraicClosure ℚ) := IsAlgClosure.normal ℚ _
+   let L' : IntermediateField ℚ (AlgebraicClosure ℚ) := L₁ ⊔ L₂
+-  haveI : FiniteDimensional ℚ L' := IntermediateField.finiteDimensional_sup L₁ L₂
++  have : FiniteDimensional ℚ L' := IntermediateField.finiteDimensional_sup L₁ L₂
+   let F : IntermediateField ℚ (AlgebraicClosure ℚ) :=
+     IntermediateField.normalClosure ℚ L' (AlgebraicClosure ℚ)
+-  haveI : FiniteDimensional ℚ F := normalClosure.is_finiteDimensional ℚ L' (AlgebraicClosure ℚ)
+-  haveI : NumberField F := ⟨⟩
+-  haveI : Normal ℚ F := normalClosure.normal ℚ L' (AlgebraicClosure ℚ)
+-  haveI : IsGalois ℚ F := ⟨⟩
++  have : FiniteDimensional ℚ F := normalClosure.is_finiteDimensional ℚ L' (AlgebraicClosure ℚ)
++  have : NumberField F := ⟨⟩
++  have : Normal ℚ F := normalClosure.normal ℚ L' (AlgebraicClosure ℚ)
++  have : IsGalois ℚ F := ⟨⟩
+   let H : Subgroup (AlgebraicClosure ℚ ≃ₐ[ℚ] AlgebraicClosure ℚ) := ρ₁.ρ.ker ⊓ ρ₂.ρ.ker
+   have hL₁F : L₁ ≤ F := (le_sup_left : L₁ ≤ L').trans (IntermediateField.le_normalClosure L')
+   have hL₂F : L₂ ≤ F := (le_sup_right : L₂ ≤ L').trans (IntermediateField.le_normalClosure L')
+@@ -83,3 +83,5 @@
+     (σ : AlgebraicClosure ℚ ≃ₐ[ℚ] AlgebraicClosure ℚ) :
+     LinearMap.trace k ρ₁.V (ρ₁.ρ σ) = LinearMap.trace k ρ₂.V (ρ₂.ρ σ) :=
+   TrFrobAsm.main ρ₁ ρ₂ S hfrob σ
++
++#print axioms P2MW.S_ResidualGaloisRep_trace_eq_of_trace_frobenius_eq.solution

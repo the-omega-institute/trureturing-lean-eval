@@ -1,0 +1,50 @@
+{
+  "sha256": "644ec4a044e6c7971274794a6d207ec93f013b9e4d11d9fbe80b024ff59455db",
+  "exit": 1,
+  "empty_output_retry_done": false,
+  "source_sha256_after": "644ec4a044e6c7971274794a6d207ec93f013b9e4d11d9fbe80b024ff59455db",
+  "source_unchanged": true,
+  "olean_sha256": null,
+  "seconds": 52.994127792000654,
+  "pid": 42030,
+  "command": [
+    "/Users/macstudio/.local/omega-shims/lean",
+    "-j1",
+    "--trust=0",
+    "-Ddebug.skipKernelTC=false",
+    "-R",
+    "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src",
+    "-o",
+    "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-build/lib/lean/Submission/Supplier/P2M/Sol/S_ResidualGaloisRep_trace_eq_of_trace_frobenius_eq.olean",
+    "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_ResidualGaloisRep_trace_eq_of_trace_frobenius_eq.lean"
+  ],
+  "make_wrapper_pid": 39558,
+  "make_exit": 2,
+  "make_entry_failed": false,
+  "cache_binding_valid": true,
+  "canonical_make_running_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/1cdb481b033d3f6f89032094-1791963292486289000.make-running.json",
+  "canonical_make_terminal_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/1cdb481b033d3f6f89032094-1791963292486289000.make-terminal.json",
+  "kernel_terminal_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/1cdb481b033d3f6f89032094-1791963292486289000.kernel/result.json",
+  "direct_dependencies": [
+    {
+      "module": "Submission.Supplier.Definitions.Def_GaloisRep_Residual",
+      "source_sha256": "acaab9dd928d013c9340e77676443b27f1ffc090abea3f139482b8fd2f8e8ff5",
+      "object_sha256": "429ac7b7b2b45f4aee7f1d99d97669e2e968c350566949b758046d25d399fcab",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Theorems.Thm_FrobeniusDensity_exists_isFrobeniusAt_conj_mem_of_le_ker",
+      "source_sha256": "d4a7463dff461b98716bffa39a4ed326e3355898d61232a17c04accebb6fb921",
+      "object_sha256": "e80ce68dcd6d376cdc01458be1a9edbfe39687b0b0c49e3f8d420af43875992e",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.P2M.Util",
+      "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+      "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+      "receipt_reused": true
+    }
+  ],
+  "stdout": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/1cdb481b033d3f6f89032094-1791963292486289000.kernel/stdout.log",
+  "stderr": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/1cdb481b033d3f6f89032094-1791963292486289000.kernel/stderr.log"
+}
