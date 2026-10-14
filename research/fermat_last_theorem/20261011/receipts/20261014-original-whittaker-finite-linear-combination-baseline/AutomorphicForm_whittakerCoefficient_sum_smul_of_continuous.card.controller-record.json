@@ -1,0 +1,56 @@
+{
+  "sha256": "4fd7e61730823fbcbd3e2287eb724032282d0efd509db335df1b3e8990db3d67",
+  "exit": 0,
+  "empty_output_retry_done": false,
+  "source_sha256_after": "4fd7e61730823fbcbd3e2287eb724032282d0efd509db335df1b3e8990db3d67",
+  "source_unchanged": true,
+  "olean_sha256": "1a9621a88edbb5022496f34cd9ce3288cd2b96b51e87685a4be6e5728ef32433",
+  "seconds": 72.54464462499891,
+  "pid": 1458,
+  "command": [
+    "/Users/macstudio/.local/omega-shims/lean",
+    "-j1",
+    "--trust=0",
+    "-Ddebug.skipKernelTC=false",
+    "-R",
+    "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src",
+    "-o",
+    "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-build/lib/lean/Submission/Supplier/Theorems/Thm_AutomorphicForm_whittakerCoefficient_sum_smul_of_continuous.olean",
+    "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/Theorems/Thm_AutomorphicForm_whittakerCoefficient_sum_smul_of_continuous.lean"
+  ],
+  "make_wrapper_pid": 99800,
+  "make_exit": 0,
+  "make_entry_failed": false,
+  "cache_binding_valid": true,
+  "canonical_make_running_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/3e5385c5b638752b8b52cecc-1791992237537094000.make-running.json",
+  "canonical_make_terminal_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/3e5385c5b638752b8b52cecc-1791992237537094000.make-terminal.json",
+  "kernel_terminal_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/3e5385c5b638752b8b52cecc-1791992237537094000.kernel/result.json",
+  "direct_dependencies": [
+    {
+      "module": "Submission.Supplier.Definitions.Def_AutomorphicForm_ProductionPinsGeneral",
+      "source_sha256": "f92ced842fd85cc8658791bca73445874e603d7d853d280534bd0bf6b68e253c",
+      "object_sha256": "590798ec5a81970130b476851dcec411fed8c2390d6bb3e10dc558c2195a613f",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Definitions.Def_AutomorphicForm_WhittakerCoefficient",
+      "source_sha256": "a524696a3fb200b6bc237a7a6ca14ba848120f3410bb03360cdcd523bd5c526c",
+      "object_sha256": null,
+      "receipt_reused": false
+    },
+    {
+      "module": "Submission.Supplier.P2M.Util",
+      "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+      "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.P2M.Sol.S_AutomorphicForm_whittakerCoefficient_sum_smul_of_continuous",
+      "source_sha256": "f515a872a1d4425efb5f6b616d4cf2da8b7f4e31ecaaa68d44b08f809dce4fef",
+      "object_sha256": "925c24deef393de3874be9b986f4bb8599f210ea99ce19bb0f4bdfbe6049e6b0",
+      "receipt_reused": true
+    }
+  ],
+  "stdout": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/3e5385c5b638752b8b52cecc-1791992237537094000.kernel/stdout.log",
+  "stderr": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/3e5385c5b638752b8b52cecc-1791992237537094000.kernel/stderr.log"
+}
