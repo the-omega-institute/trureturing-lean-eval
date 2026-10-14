@@ -1,0 +1,62 @@
+{
+  "sha256": "fe38f06717eda61ec785b4d019ccef0fa1b11dc83c6a86dd3982f3ad05a9bc79",
+  "exit": 0,
+  "empty_output_retry_done": false,
+  "source_sha256_after": "fe38f06717eda61ec785b4d019ccef0fa1b11dc83c6a86dd3982f3ad05a9bc79",
+  "source_unchanged": true,
+  "olean_sha256": "d976c7378e6e6bbb887959ffaac07ddfb2dec6f77f7586198c3c199921d2ba43",
+  "seconds": 76.96592245900047,
+  "pid": 86237,
+  "command": [
+    "/Users/macstudio/.local/omega-shims/lean",
+    "-j1",
+    "--trust=0",
+    "-Ddebug.skipKernelTC=false",
+    "-R",
+    "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src",
+    "-o",
+    "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-build/lib/lean/Submission/Supplier/P2M/Sol/S_Rep_tateDelta_comp_tateDelta_eq_neg.olean",
+    "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_Rep_tateDelta_comp_tateDelta_eq_neg.lean"
+  ],
+  "make_wrapper_pid": 79748,
+  "make_exit": 0,
+  "make_entry_failed": false,
+  "cache_binding_valid": true,
+  "canonical_make_running_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/46e7536fac8e9d58fa621099-1791958200802480000.make-running.json",
+  "canonical_make_terminal_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/46e7536fac8e9d58fa621099-1791958200802480000.make-terminal.json",
+  "kernel_terminal_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/46e7536fac8e9d58fa621099-1791958200802480000.kernel/result.json",
+  "direct_dependencies": [
+    {
+      "module": "Submission.Supplier.Definitions.Def_GroupCohomology_TateCohomology",
+      "source_sha256": "945d08a532ddf3320bc429f4d1c13cc1e331a24479fb3c1ee501d3fb74a345e3",
+      "object_sha256": null,
+      "receipt_reused": false
+    },
+    {
+      "module": "Submission.Supplier.Definitions.Def_GroupCohomology_TateSeam",
+      "source_sha256": "da641e68f33e1f2f8b330ea7e740cb2c8542dcc18c5b1fcc0591b206912a2133",
+      "object_sha256": "9722d0da5e28026661b0fcd11a8adf8d6272cb984ebc68e10f97aecdb181e1b6",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Definitions.Def_GroupCohomology_TateDimensionShift",
+      "source_sha256": "af6947d2299af8fac5a2c825bc297fe7f4f04ca96ee41572fe58ea22d235a7bc",
+      "object_sha256": "56b5ea6aca0deda73c7051d1d825f0443d1788cd095d294d9b55fec0c2c506cc",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Definitions.Def_GroupCohomology_TateShiftMaps",
+      "source_sha256": "de5509563b9147fb63a78bcf7837f1fdff275b9fefeec46051aa6bd6d2537548",
+      "object_sha256": "b4d8e5d2f63695d8992eba36aad82b796c8b1e57ea04d3347f59ad994045cee3",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.P2M.Util",
+      "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+      "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+      "receipt_reused": true
+    }
+  ],
+  "stdout": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/46e7536fac8e9d58fa621099-1791958200802480000.kernel/stdout.log",
+  "stderr": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/46e7536fac8e9d58fa621099-1791958200802480000.kernel/stderr.log"
+}
