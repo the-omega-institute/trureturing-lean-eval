@@ -1,0 +1,127 @@
+{
+  "at": "2026-10-14T15:11:47.629298+00:00",
+  "original_source_card_pairs_actual_make_kernel_passed": true,
+  "canonical_pairs_byte_identical_to_supplier": true,
+  "no_source_edits": true,
+  "no_linter_suppression_added": true,
+  "no_redundant_recompilation": true,
+  "original_statements_hypotheses_and_proofs_preserved": true,
+  "checks": {
+    "AutomorphicForm_isArchSmoothAt_of_mdifferentiable_cpow_mul_descent_of_hasArchCharacterAt": {
+      "proof_summary": "Preserve arbitrary number field and real place, original integer archimedean character, arbitrary complex scalar and descent exponents, full positive-scalar transformation law, holomorphic descent at every group point and full IsArchSmoothAt conclusion. Retain both positive- and negative-determinant smoothness branches.",
+      "checks": {
+        "source": {
+          "module": "Submission.Supplier.P2M.Sol.S_AutomorphicForm_isArchSmoothAt_of_mdifferentiable_cpow_mul_descent_of_hasArchCharacterAt",
+          "canonical_lines": 516,
+          "canonical_byte_identical_to_supplier": true,
+          "make_exit": 0,
+          "kernel_exit": 0,
+          "kernel_seconds": 74.178861416,
+          "compiler_warnings": 1,
+          "source_unchanged_during_check": true,
+          "printed_final_axiom_closures": [],
+          "separate_final_axiom_audit_pending": true,
+          "direct_dependencies": [
+            {
+              "module": "Submission.Supplier.Definitions.Def_AutomorphicForm_ArchLowestWeight",
+              "source_sha256": "b99cdf560538a4d8ad1de53d53f477a2b27527ae70f9dc3436da7ff573365ccc",
+              "object_sha256": "9e06dcfdd8be1ad3822d6b42fa2bbbb0d683b139222f3e5883b021827c50eda6",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.Definitions.Def_AutomorphicForm_ArchDerivCasimir",
+              "source_sha256": "c2fbb522171ad400dc16ff0e78548a8f0326540ee9d9d4f41aa7ed42ad759384",
+              "object_sha256": "76b0bb05da8a953a7e16c9bed1194f31c2a39674688ab7c170cb10b1d72fb779",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.P2M.Util",
+              "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+              "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+              "receipt_reused": true
+            }
+          ],
+          "unreceipted_cached_dependency_metadata": []
+        },
+        "card": {
+          "module": "Submission.Supplier.Theorems.Thm_AutomorphicForm_isArchSmoothAt_of_mdifferentiable_cpow_mul_descent_of_hasArchCharacterAt",
+          "canonical_lines": 23,
+          "canonical_byte_identical_to_supplier": true,
+          "make_exit": 0,
+          "kernel_exit": 0,
+          "kernel_seconds": 52.649145334,
+          "compiler_warnings": 0,
+          "source_unchanged_during_check": true,
+          "printed_final_axiom_closures": [],
+          "separate_final_axiom_audit_pending": true,
+          "direct_dependencies": [
+            {
+              "module": "Submission.Supplier.Definitions.Def_AutomorphicForm_ArchLowestWeight",
+              "source_sha256": "b99cdf560538a4d8ad1de53d53f477a2b27527ae70f9dc3436da7ff573365ccc",
+              "object_sha256": "9e06dcfdd8be1ad3822d6b42fa2bbbb0d683b139222f3e5883b021827c50eda6",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.Definitions.Def_AutomorphicForm_ArchDerivCasimir",
+              "source_sha256": "c2fbb522171ad400dc16ff0e78548a8f0326540ee9d9d4f41aa7ed42ad759384",
+              "object_sha256": "76b0bb05da8a953a7e16c9bed1194f31c2a39674688ab7c170cb10b1d72fb779",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.P2M.Util",
+              "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+              "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.P2M.Sol.S_AutomorphicForm_isArchSmoothAt_of_mdifferentiable_cpow_mul_descent_of_hasArchCharacterAt",
+              "source_sha256": "0d88c4f5ce0b5a3cc9fd9963212120593906cb733f4936f3afef95f73d730b81",
+              "object_sha256": "b58c3b3fcd35e678ffd8bea1607402719d33e631d9408e0fd97cf7e811110ea3",
+              "receipt_reused": true
+            }
+          ],
+          "unreceipted_cached_dependency_metadata": []
+        }
+      }
+    }
+  },
+  "supplier": "anthropics/fermats-last-theorem",
+  "supplier_commit": "6e837e75355538c7f80bab5b956861e86c4eacc2",
+  "full_original_complete": false,
+  "official_new_solve_credit": 0,
+  "complete_import_replay_and_recursive_axiom_audits_pending": true,
+  "selected_problem": "fermat_last_theorem",
+  "canonical_lexical_integrity_scan": {
+    "observed_at": "2026-10-14T07:21:59.476314+00:00",
+    "canonical_lean_files_covered": 60473,
+    "matching_files": 0,
+    "scope": [
+      "P2M/Sol",
+      "Theorems",
+      "Definitions",
+      "P2M/Util.lean"
+    ],
+    "ignore_rules_disabled": true,
+    "pattern": "^\\s*(axiom|constant)\\s|\\b(sorry|admit)\\b",
+    "formal_recursive_axiom_audit_still_pending": true
+  },
+  "max_active_flt_jobs": 1,
+  "max_active_flt_compilers": 1,
+  "lean_threads": 1,
+  "graph_snapshot": {
+    "compiled": 8537,
+    "failed": 0,
+    "ready": 4391,
+    "root_compiled": false,
+    "workers": 1,
+    "running": {
+      "Submission.Supplier.P2M.Sol.S_AutomorphicForm_isArchTestFactor_and_isArchFactorBiFinite_ofChar_integral_of_isArchTestFactor": {
+        "pid": 49959,
+        "make_wrapper_pid": 49959,
+        "phase": "canonical_make_queue",
+        "sha256": "d2c6884220edcdd219278b54a135b705687db41219f4ccca543e17c972c0c7d1",
+        "configuration": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/ea6b6de86d87396bfb5539d7-1791990653527436000.configuration.json"
+      }
+    }
+  }
+}
