@@ -1,0 +1,50 @@
+{
+  "sha256": "5cfd0f2384ca916747c9584e7dfc43150a6ad093b2dc17360866dcbd42eaebb0",
+  "exit": 0,
+  "empty_output_retry_done": false,
+  "source_sha256_after": "5cfd0f2384ca916747c9584e7dfc43150a6ad093b2dc17360866dcbd42eaebb0",
+  "source_unchanged": true,
+  "olean_sha256": "2dba5bb5bd029be9cc82ce2220ca32f4125aefa3c9c471b87108607c59dd21f6",
+  "seconds": 151.0981095409952,
+  "pid": 28632,
+  "command": [
+    "/Users/macstudio/.local/omega-shims/lean",
+    "-j1",
+    "--trust=0",
+    "-Ddebug.skipKernelTC=false",
+    "-R",
+    "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src",
+    "-o",
+    "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-build/lib/lean/Submission/Supplier/Theorems/Thm_CerednikDrinfeld_Omega_crossRatio_pmoebius.olean",
+    "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/Theorems/Thm_CerednikDrinfeld_Omega_crossRatio_pmoebius.lean"
+  ],
+  "make_wrapper_pid": 44603,
+  "make_exit": 0,
+  "make_entry_failed": false,
+  "cache_binding_valid": true,
+  "canonical_make_running_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/6b77141e05ab1d33a1c19a55-1791994679235519000.make-running.json",
+  "canonical_make_terminal_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/6b77141e05ab1d33a1c19a55-1791994679235519000.make-terminal.json",
+  "kernel_terminal_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/6b77141e05ab1d33a1c19a55-1791994679235519000.kernel/result.json",
+  "direct_dependencies": [
+    {
+      "module": "Submission.Supplier.Definitions.Def_CerednikDrinfeld_DrinfeldUpperHalfPlane",
+      "source_sha256": "aa4460af58778217a1c7a8740ff4debaed0a39d77d11a72851088bb84be341d6",
+      "object_sha256": "5e77e054d7379c2177943e6c07c3962bf02cb8bfaccffc996fdc425111396900",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.P2M.Util",
+      "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+      "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.P2M.Sol.S_CerednikDrinfeld_Omega_crossRatio_pmoebius",
+      "source_sha256": "e22aaa15626639e25248fe487c3818a406ff80912b737383f83fd8837651e2e2",
+      "object_sha256": "704b43670fd9a3a53a231dec41aa855115cdea2ccb71f3b83dc515bb110d6e4a",
+      "receipt_reused": true
+    }
+  ],
+  "stdout": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/6b77141e05ab1d33a1c19a55-1791994679235519000.kernel/stdout.log",
+  "stderr": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/6b77141e05ab1d33a1c19a55-1791994679235519000.kernel/stderr.log"
+}
