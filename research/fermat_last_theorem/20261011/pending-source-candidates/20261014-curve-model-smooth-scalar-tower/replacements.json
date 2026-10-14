@@ -1,0 +1,146 @@
+[
+  [
+    "  haveI := IsLocalization.AtPrime.isDiscreteValuationRing_of_dedekind_domain A h𝔪",
+    "  have := IsLocalization.AtPrime.isDiscreteValuationRing_of_dedekind_domain A h𝔪"
+  ],
+  [
+    "  haveI h𝔪max : 𝔪.IsMaximal := Ideal.IsPrime.isMaximal inferInstance h𝔪",
+    "  have h𝔪max : 𝔪.IsMaximal := Ideal.IsPrime.isMaximal inferInstance h𝔪"
+  ],
+  [
+    "  letI alg : Algebra K[X] (chartRing K ({s} : Set L)) :=",
+    "  let alg : Algebra K[X] (chartRing K ({s} : Set L)) :="
+  ],
+  [
+    "  haveI : IsScalarTower K K[X] (chartRing K ({s} : Set L)) :=",
+    "  have : IsScalarTower K K[X] (chartRing K ({s} : Set L)) :="
+  ],
+  [
+    "  haveI : IsScalarTower K K[X] (Localization.AtPrime 𝔪) :=",
+    "  have : IsScalarTower K K[X] (Localization.AtPrime 𝔪) :="
+  ],
+  [
+    "  haveI : Module.IsTorsionFree K[X] (chartRing K ({s} : Set L)) :=",
+    "  have : Module.IsTorsionFree K[X] (chartRing K ({s} : Set L)) :="
+  ],
+  [
+    "  haveI : Module.Flat K[X] (chartRing K ({s} : Set L)) := inferInstance",
+    "  have : Module.Flat K[X] (chartRing K ({s} : Set L)) := inferInstance"
+  ],
+  [
+    "  haveI : Algebra.FiniteType K[X] (chartRing K ({s} : Set L)) :=",
+    "  have : Algebra.FiniteType K[X] (chartRing K ({s} : Set L)) :="
+  ],
+  [
+    "  haveI : Algebra.FinitePresentation K[X] (chartRing K ({s} : Set L)) :=",
+    "  have : Algebra.FinitePresentation K[X] (chartRing K ({s} : Set L)) :="
+  ],
+  [
+    "  haveI : (𝔪.under K[X]).IsMaximal :=",
+    "  have : (𝔪.under K[X]).IsMaximal :="
+  ],
+  [
+    "  letI := Localization.AtPrime.algebraOfLiesOver (𝔪.under K[X]) 𝔪",
+    "  let := Localization.AtPrime.algebraOfLiesOver (𝔪.under K[X]) 𝔪"
+  ],
+  [
+    "  haveI : CharZero (K[X] ⧸ 𝔪.under K[X]) :=",
+    "  have : CharZero (K[X] ⧸ 𝔪.under K[X]) :="
+  ],
+  [
+    "  haveI : Module.Finite K (chartRing K ({s} : Set L) ⧸ 𝔪) :=",
+    "  have : Module.Finite K (chartRing K ({s} : Set L) ⧸ 𝔪) :="
+  ],
+  [
+    "  haveI : Module.Finite (K[X] ⧸ 𝔪.under K[X]) (chartRing K ({s} : Set L) ⧸ 𝔪) :=",
+    "  have : Module.Finite (K[X] ⧸ 𝔪.under K[X]) (chartRing K ({s} : Set L) ⧸ 𝔪) :="
+  ],
+  [
+    "  haveI : Algebra.IsAlgebraic (K[X] ⧸ 𝔪.under K[X]) (chartRing K ({s} : Set L) ⧸ 𝔪) :=",
+    "  have : Algebra.IsAlgebraic (K[X] ⧸ 𝔪.under K[X]) (chartRing K ({s} : Set L) ⧸ 𝔪) :="
+  ],
+  [
+    "  haveI : Algebra.IsSeparable (K[X] ⧸ 𝔪.under K[X]) (chartRing K ({s} : Set L) ⧸ 𝔪) :=",
+    "  have : Algebra.IsSeparable (K[X] ⧸ 𝔪.under K[X]) (chartRing K ({s} : Set L) ⧸ 𝔪) :="
+  ],
+  [
+    "  haveI : Algebra.IsUnramifiedAt K[X] 𝔪 := by",
+    "  have : Algebra.IsUnramifiedAt K[X] 𝔪 := by"
+  ],
+  [
+    "  haveI : Algebra.IsEtaleAt K[X] 𝔪 := Algebra.IsEtaleAt.of_isUnramifiedAt_of_flat 𝔪",
+    "  have : Algebra.IsEtaleAt K[X] 𝔪 := Algebra.IsEtaleAt.of_isUnramifiedAt_of_flat 𝔪"
+  ],
+  [
+    "  haveI : Algebra.FormallySmooth K[X] (Localization.AtPrime 𝔪) := inferInstance",
+    "  have : Algebra.FormallySmooth K[X] (Localization.AtPrime 𝔪) := inferInstance"
+  ],
+  [
+    "  haveI : IsLocalization (⊥ : Ideal A).primeCompl L :=",
+    "  have : IsLocalization (⊥ : Ideal A).primeCompl L :="
+  ],
+  [
+    "  haveI : PerfectField K := .ofCharZero",
+    "  have : PerfectField K := .ofCharZero"
+  ],
+  [
+    "  haveI : EssFiniteType (↥A) L :=",
+    "  have : EssFiniteType (↥A) L :="
+  ],
+  [
+    "  haveI : EssFiniteType K L := EssFiniteType.comp K (↥A) L",
+    "  have : EssFiniteType K L := EssFiniteType.comp K (↥A) L"
+  ],
+  [
+    "  haveI : FormallyEtale B C := FormallyEtale.of_isLocalization (Rₘ := C) M",
+    "  have : FormallyEtale B C := FormallyEtale.of_isLocalization (Rₘ := C) M"
+  ],
+  [
+    "  haveI : IsLocalizedModule M ((KaehlerDifferential.map K K B C).restrictScalars B) :=",
+    "  have : IsLocalizedModule M ((KaehlerDifferential.map K K B C).restrictScalars B) :="
+  ],
+  [
+    "  haveI := isStandardSmoothOfRelativeDimension_adjoin_single K s hs",
+    "  have := isStandardSmoothOfRelativeDimension_adjoin_single K s hs"
+  ],
+  [
+    "  haveI : CharZero K⟮s⟯ := charZero_of_injective_algebraMap (algebraMap K K⟮s⟯).injective",
+    "  have : CharZero K⟮s⟯ := charZero_of_injective_algebraMap (algebraMap K K⟮s⟯).injective"
+  ],
+  [
+    "  haveI : Algebra.IsSeparable K⟮s⟯ L := Algebra.IsSeparable.of_integral K⟮s⟯ L",
+    "  have : Algebra.IsSeparable K⟮s⟯ L := Algebra.IsSeparable.of_integral K⟮s⟯ L"
+  ],
+  [
+    "  haveI : FormallyEtale (↥K⟮s⟯) L := FormallyEtale.of_isSeparable (↥K⟮s⟯) L",
+    "  have : FormallyEtale (↥K⟮s⟯) L := FormallyEtale.of_isSeparable (↥K⟮s⟯) L"
+  ],
+  [
+    "  haveI : IsDomain (Localization.Away t) :=",
+    "  have : IsDomain (Localization.Away t) :="
+  ],
+  [
+    "  letI : Algebra (Localization.Away t) L :=",
+    "  let : Algebra (Localization.Away t) L :="
+  ],
+  [
+    "  haveI : IsScalarTower (chartRing K ({s} : Set L)) (Localization.Away t) L :=",
+    "  have : IsScalarTower (chartRing K ({s} : Set L)) (Localization.Away t) L :="
+  ],
+  [
+    "  haveI : Algebra.Smooth K (chartRing K ({s} : Set L)) :=",
+    "  have : Algebra.Smooth K (chartRing K ({s} : Set L)) :="
+  ],
+  [
+    "  haveI := hstd t htσ",
+    "  have := hstd t htσ"
+  ],
+  [
+    "  haveI : IsDomain (Localization.Away t) := IsLocalization.isDomain_of_le_nonZeroDivisors",
+    "  have : IsDomain (Localization.Away t) := IsLocalization.isDomain_of_le_nonZeroDivisors"
+  ],
+  [
+    "  haveI : IsScalarTower K (Localization.Away t) L :=\n    IsScalarTower.of_algebraMap_eq fun a => by\n      rw [IsScalarTower.algebraMap_apply K (↥(chartRing K ({s} : Set L))) L,\n        IsScalarTower.algebraMap_apply (↥(chartRing K ({s} : Set L))) (Localization.Away t) L,\n        ← IsScalarTower.algebraMap_apply K (↥(chartRing K ({s} : Set L))) (Localization.Away t)]",
+    "  have : IsScalarTower K (Localization.Away t) L :=\n    IsScalarTower.of_algebraMap_eq fun a => by\n      rw [IsScalarTower.algebraMap_apply K (↥(chartRing K ({s} : Set L))) L,\n        IsScalarTower.algebraMap_apply (↥(chartRing K ({s} : Set L))) (Localization.Away t) L,\n        ← IsScalarTower.algebraMap_apply K (↥(chartRing K ({s} : Set L))) (Localization.Away t)]\n      rfl"
+  ]
+]
