@@ -1,0 +1,115 @@
+{
+  "at": "2026-10-14T17:40:45.272715+00:00",
+  "original_source_card_pairs_actual_make_kernel_passed": true,
+  "canonical_pairs_byte_identical_to_supplier": true,
+  "no_source_edits": true,
+  "no_linter_suppression_added": true,
+  "no_redundant_recompilation": true,
+  "original_statements_hypotheses_and_proofs_preserved": true,
+  "checks": {
+    "CuspidalType_exists_conj_eq_torus": {
+      "proof_summary": "Preserve every prime q, arbitrary GL2(q) matrix with the full no-characteristic-root hypothesis over the base field, exact conjugating element, nonbase quadratic-field unit and torus conclusion. Retain generic companion conjugacy, characteristic-polynomial equality via trace and determinant, irreducibility of the degree-two polynomial, full AdjoinRoot power-basis cardinality and Galois-field algebra equivalence, nonbase and nonzero root proofs, and minpoly/characteristic-polynomial equality. No odd-prime, characteristic-zero or extra separability hypothesis is added.",
+      "checks": {
+        "source": {
+          "module": "Submission.Supplier.P2M.Sol.S_CuspidalType_exists_conj_eq_torus",
+          "canonical_lines": 170,
+          "canonical_byte_identical_to_supplier": true,
+          "make_exit": 0,
+          "kernel_exit": 0,
+          "kernel_seconds": 7.7481670000000005,
+          "compiler_warnings": 3,
+          "source_unchanged_during_check": true,
+          "printed_final_axiom_closures": [],
+          "separate_final_axiom_audit_pending": true,
+          "direct_dependencies": [
+            {
+              "module": "Submission.Supplier.Definitions.Def_CuspidalType_IsCuspidalOfType",
+              "source_sha256": "bf3b7dcb09ad1804f2dc7e10f1dff72f3bcedd5dbe97cd8c98a545a2ae1a6317",
+              "object_sha256": "f0ae7c7645e0e76829a3907f5a7375d5ff25b02179c9530400cc22dea55b441b",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.P2M.Util",
+              "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+              "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+              "receipt_reused": true
+            }
+          ],
+          "unreceipted_cached_dependency_metadata": []
+        },
+        "card": {
+          "module": "Submission.Supplier.Theorems.Thm_CuspidalType_exists_conj_eq_torus",
+          "canonical_lines": 13,
+          "canonical_byte_identical_to_supplier": true,
+          "make_exit": 0,
+          "kernel_exit": 0,
+          "kernel_seconds": 52.803064167,
+          "compiler_warnings": 0,
+          "source_unchanged_during_check": true,
+          "printed_final_axiom_closures": [],
+          "separate_final_axiom_audit_pending": true,
+          "direct_dependencies": [
+            {
+              "module": "Submission.Supplier.Definitions.Def_CuspidalType_IsCuspidalOfType",
+              "source_sha256": "bf3b7dcb09ad1804f2dc7e10f1dff72f3bcedd5dbe97cd8c98a545a2ae1a6317",
+              "object_sha256": "f0ae7c7645e0e76829a3907f5a7375d5ff25b02179c9530400cc22dea55b441b",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.P2M.Util",
+              "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+              "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.P2M.Sol.S_CuspidalType_exists_conj_eq_torus",
+              "source_sha256": "fc066ca6c3e783e39fdced78c8ce1cadd7d84cac044e6f5f48e165ace37302fa",
+              "object_sha256": "f641c81e0544b504e30b6416481c63365eb0ed3602dc628da2c4f5a9f4e38643",
+              "receipt_reused": true
+            }
+          ],
+          "unreceipted_cached_dependency_metadata": []
+        }
+      }
+    }
+  },
+  "supplier": "anthropics/fermats-last-theorem",
+  "supplier_commit": "6e837e75355538c7f80bab5b956861e86c4eacc2",
+  "full_original_complete": false,
+  "official_new_solve_credit": 0,
+  "complete_import_replay_and_recursive_axiom_audits_pending": true,
+  "selected_problem": "fermat_last_theorem",
+  "canonical_lexical_integrity_scan": {
+    "observed_at": "2026-10-14T07:21:59.476314+00:00",
+    "canonical_lean_files_covered": 60473,
+    "matching_files": 0,
+    "scope": [
+      "P2M/Sol",
+      "Theorems",
+      "Definitions",
+      "P2M/Util.lean"
+    ],
+    "ignore_rules_disabled": true,
+    "pattern": "^\\s*(axiom|constant)\\s|\\b(sorry|admit)\\b",
+    "formal_recursive_axiom_audit_still_pending": true
+  },
+  "max_active_flt_jobs": 1,
+  "max_active_flt_compilers": 1,
+  "lean_threads": 1,
+  "graph_snapshot": {
+    "compiled": 8624,
+    "failed": 0,
+    "ready": 4359,
+    "root_compiled": false,
+    "workers": 1,
+    "running": {
+      "Submission.Supplier.Theorems.Thm_CuspidalType_NV3Arch_sum_elliptic_eq": {
+        "pid": 29705,
+        "make_wrapper_pid": 25728,
+        "phase": "kernel",
+        "sha256": "9b360d54d9e02e74d86983257a6b18d07835c167ca1f485bbc2bdae7bed6c087",
+        "configuration": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/c1d92d187319e3435117cc2b-1791999608483666000.configuration.json"
+      }
+    }
+  }
+}
