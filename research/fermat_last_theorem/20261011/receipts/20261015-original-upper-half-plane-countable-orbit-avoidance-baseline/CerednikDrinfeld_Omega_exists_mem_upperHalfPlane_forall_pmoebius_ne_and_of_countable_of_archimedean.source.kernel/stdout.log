@@ -1,0 +1,22 @@
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_CerednikDrinfeld_Omega_exists_mem_upperHalfPlane_forall_pmoebius_ne_and_of_countable_of_archimedean.lean:105:17: warning: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_CerednikDrinfeld_Omega_exists_mem_upperHalfPlane_forall_pmoebius_ne_and_of_countable_of_archimedean.lean:109:33: warning: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_CerednikDrinfeld_Omega_exists_mem_upperHalfPlane_forall_pmoebius_ne_and_of_countable_of_archimedean.lean:139:59: warning: `Valuation.IsEquiv.val_eq` has been deprecated: Use `Valuation.IsEquiv.eq_iff` instead
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_CerednikDrinfeld_Omega_exists_mem_upperHalfPlane_forall_pmoebius_ne_and_of_countable_of_archimedean.lean:141:53: warning: `Valuation.IsEquiv.val_eq` has been deprecated: Use `Valuation.IsEquiv.eq_iff` instead
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_CerednikDrinfeld_Omega_exists_mem_upperHalfPlane_forall_pmoebius_ne_and_of_countable_of_archimedean.lean:194:46: warning: Variable name `hb` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hb
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
