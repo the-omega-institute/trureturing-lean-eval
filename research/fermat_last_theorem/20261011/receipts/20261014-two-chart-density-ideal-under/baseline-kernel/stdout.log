@@ -1,0 +1,137 @@
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_AlgebraicCurve_TwoChartIntegralModel_dense_range_chart_pullback_of_not_isOpen_singleton.lean:120:2: warning: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_AlgebraicCurve_TwoChartIntegralModel_dense_range_chart_pullback_of_not_isOpen_singleton.lean:121:2: warning: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_AlgebraicCurve_TwoChartIntegralModel_dense_range_chart_pullback_of_not_isOpen_singleton.lean:152:22: warning: `TensorProduct.induction_on` has been deprecated: Use `TensorProduction.inductionOn` instead
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_AlgebraicCurve_TwoChartIntegralModel_dense_range_chart_pullback_of_not_isOpen_singleton.lean:163:2: warning: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_AlgebraicCurve_TwoChartIntegralModel_dense_range_chart_pullback_of_not_isOpen_singleton.lean:166:4: warning: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_AlgebraicCurve_TwoChartIntegralModel_dense_range_chart_pullback_of_not_isOpen_singleton.lean:168:8: error: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  Ideal.comap (algebraMap κ (κ ⊗[R] ↥S ⧸ I)) P
+in the target expression
+  (Ideal.under κ P).IsMaximal
+
+R : Type u
+inst✝⁵ : CommRing R
+F : Type u
+inst✝⁴ : Field F
+inst✝³ : Algebra R F
+S : Subalgebra R F
+s : F
+hs : s ∈ S
+hint : ∀ (x : ↥S), _root_.IsIntegral ↥R[s] ↑x
+κ : Type u
+inst✝² : Field κ
+inst✝¹ : Algebra R κ
+inst✝ : Algebra.FiniteType κ (κ ⊗[R] ↥S)
+t : κ ⊗[R] ↥S := 1 ⊗ₜ[R] ⟨s, hs⟩
+ht : t = 1 ⊗ₜ[R] ⟨s, hs⟩
+I : Ideal (κ ⊗[R] ↥S) := Ideal.span {t}
+hI : I = Ideal.span {t}
+A : Subalgebra R F := R[s]
+hA : A = R[s]
+hAS : A ≤ S
+θ : ↥A →+* κ ⊗[R] ↥S ⧸ I :=
+  (Ideal.Quotient.mk I).comp (Algebra.TensorProduct.includeRight.comp (Subalgebra.inclusion hAS).toRingHom)
+hθ : ∀ (a : ↥A), θ a ∈ Set.range ⇑(algebraMap κ (κ ⊗[R] ↥S ⧸ I))
+this✝¹ : Algebra ↥A ↥S := (Subalgebra.inclusion hAS).toAlgebra
+this✝ : IsScalarTower (↥A) (↥S) F
+hgen : ∀ (x : ↥S), (Ideal.Quotient.mk I) (1 ⊗ₜ[R] x) ∈ integralClosure κ (κ ⊗[R] ↥S ⧸ I)
+htop : integralClosure κ (κ ⊗[R] ↥S ⧸ I) = ⊤
+hintQ : Algebra.IsIntegral κ (κ ⊗[R] ↥S ⧸ I)
+P : Ideal (κ ⊗[R] ↥S ⧸ I)
+hP this : P.IsPrime
+⊢ (Ideal.under κ P).IsMaximal
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_AlgebraicCurve_TwoChartIntegralModel_dense_range_chart_pullback_of_not_isOpen_singleton.lean:165:2: warning: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_AlgebraicCurve_TwoChartIntegralModel_dense_range_chart_pullback_of_not_isOpen_singleton.lean:170:2: warning: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_AlgebraicCurve_TwoChartIntegralModel_dense_range_chart_pullback_of_not_isOpen_singleton.lean:171:2: warning: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_AlgebraicCurve_TwoChartIntegralModel_dense_range_chart_pullback_of_not_isOpen_singleton.lean:172:2: warning: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_AlgebraicCurve_TwoChartIntegralModel_dense_range_chart_pullback_of_not_isOpen_singleton.lean:174:5: warning: `IsArtinianRing.setOf_isPrime_finite` has been deprecated: Use `IsArtinianRing.setOfPred_isPrime_finite` instead
+
+Hint: Replace the deprecated name:
+  IsArtinianRing.setOfP̲r̲e̲d̲_isPrime_finite
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_AlgebraicCurve_TwoChartIntegralModel_dense_range_chart_pullback_of_not_isOpen_singleton.lean:173:2: warning: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_AlgebraicCurve_TwoChartIntegralModel_dense_range_chart_pullback_of_not_isOpen_singleton.lean:218:2: warning: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_AlgebraicCurve_TwoChartIntegralModel_dense_range_chart_pullback_of_not_isOpen_singleton.lean:219:2: warning: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_AlgebraicCurve_TwoChartIntegralModel_dense_range_chart_pullback_of_not_isOpen_singleton.lean:259:2: warning: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
