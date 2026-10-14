@@ -1,0 +1,12 @@
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_Deformation_DieudonneModule_exists_hondaSystem_L_eq_fontaineHodge.lean:99:3: error: Application type mismatch: The argument
+  OrderEmbedding.wellFoundedLT (twistEmb p k A N)
+has type
+  WellFoundedLT (Submodule (WittVector p k) (Twist p k A N))
+but is expected to have type
+  ∀ (a : Submodule (WittVector p k) (Twist p k A N)), Acc (fun x1 x2 => x1 < x2) a
+in the application
+  WellFounded.intro (OrderEmbedding.wellFoundedLT (twistEmb p k A N))
+'P2MW.S_Deformation_DieudonneModule_exists_hondaSystem_L_eq_fontaineHodge.solution' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]

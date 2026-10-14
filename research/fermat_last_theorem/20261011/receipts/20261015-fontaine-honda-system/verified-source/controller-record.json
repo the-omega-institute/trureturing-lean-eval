@@ -1,0 +1,98 @@
+{
+  "sha256": "2c8a3b14fcfb579cbfa588f89393c10e42b88ae585cb605ac75b5ad964abeeec",
+  "exit": 0,
+  "empty_output_retry_done": false,
+  "source_sha256_after": "2c8a3b14fcfb579cbfa588f89393c10e42b88ae585cb605ac75b5ad964abeeec",
+  "source_unchanged": true,
+  "olean_sha256": "4bf127904398ffb03ac6b161ee9736f89f5f5e23866a9d074692543e6432c296",
+  "seconds": 54.072117333998904,
+  "pid": 38915,
+  "command": [
+    "/Users/macstudio/.local/omega-shims/lean",
+    "-j1",
+    "--trust=0",
+    "-Ddebug.skipKernelTC=false",
+    "-R",
+    "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src",
+    "-o",
+    "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-build/lib/lean/Submission/Supplier/P2M/Sol/S_Deformation_DieudonneModule_exists_hondaSystem_L_eq_fontaineHodge.olean",
+    "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_Deformation_DieudonneModule_exists_hondaSystem_L_eq_fontaineHodge.lean"
+  ],
+  "make_wrapper_pid": 37606,
+  "make_exit": 0,
+  "make_entry_failed": false,
+  "cache_binding_valid": true,
+  "canonical_make_running_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/48857cc415be45e1f2e40a17-1792003172825685000.make-running.json",
+  "canonical_make_terminal_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/48857cc415be45e1f2e40a17-1792003172825685000.make-terminal.json",
+  "kernel_terminal_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/48857cc415be45e1f2e40a17-1792003172825685000.kernel/result.json",
+  "direct_dependencies": [
+    {
+      "module": "Submission.Supplier.Definitions.Def_Dieudonne_DatumAndHonda",
+      "source_sha256": "3e559961fffd0aac4a33d1280c27c51417b841901ec9fb36e48df7af0fd70ba8",
+      "object_sha256": null,
+      "receipt_reused": false
+    },
+    {
+      "module": "Submission.Supplier.Definitions.Def_Dieudonne_WittVectorHom",
+      "source_sha256": "f6a1006495ad9ffb9cea9ae644f4136c750ce1e3f084da31e1807ad334f668f8",
+      "object_sha256": "85435d3f34cb952c85fc44a98556e8581262696210fc9d6b8a85f3214b7f7b22",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Definitions.Def_Dieudonne_WittHomColimit",
+      "source_sha256": "9abf778309eca3cb5c41d71689d9ae8dc40380c4a8e4b1172c78f30ffffa61b2",
+      "object_sha256": "dae50ba60af4ac220cd35ac35c4304cffc08e5bb3d6f88204dce59e84b328648",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Definitions.Def_Dieudonne_FontaineHodge",
+      "source_sha256": "686f372db425e5b55b9409d4eb59444bbc463faed1ef70255cdd15625afd08d2",
+      "object_sha256": "446adba07fd28ca8c164aa9fdcde494eae7e2ee71aaa684c53b3c447d0b4b510",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Theorems.Thm_Deformation_DieudonneModule_exists_surjective_of",
+      "source_sha256": "113038ee4ca323ce360f4d8966c2247065983c4ef940d8efe3d07a61bc225478",
+      "object_sha256": "185ebf4e59431a7a1e9364bbbaf5c6a2c6a7ef6c6a52174a8b9cd3052cdddbc2",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Theorems.Thm_Deformation_DieudonneModule_eq_zero_of_mem_fontaineHodge_of_verschiebung_eq_zero",
+      "source_sha256": "7a682137c462568293225235bfee399ab4d5ff64efdb23e618202f35340f2fa0",
+      "object_sha256": "45984608d9b551475ffae905d6c96e8c34e7e886b21fc76b6c5b539c72b006ed",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Theorems.Thm_Deformation_DieudonneModule_exists_mem_fontaineHodge_frobenius_eq_smul",
+      "source_sha256": "8f57279ee87135ce848ca7e559a39b67b1906eaceb1bf1fa7c6440c6d112b421",
+      "object_sha256": "d9c675c7433912d7386293d5f86c387db1bbb49bc22f89aa0d3c8d11ed975b2b",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Theorems.Thm_Deformation_DieudonneModule_exists_mem_fontaineHodge_verschiebung_eq_of_frobenius_eq_zero",
+      "source_sha256": "ac5c0301bbf72628f31248e1e0cd22249a25900ed9441a4a0985d828315ec50c",
+      "object_sha256": "dd8c8e595ba19cbd13c686510e46637dca1b23adbe5ae6ac80f34d8dec83c200",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Theorems.Thm_Deformation_DieudonneModule_exists_mem_fontaineHodge_add_eq_of_smul_eq_zero",
+      "source_sha256": "b7257f610f14d2c24e43c66cef5bb6180777dc3e2ba8346190fb650e78ba9cec",
+      "object_sha256": "02575574d0498669da5259fee3c1289d23bb43287a565650e79037c8becc3616",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Theorems.Thm_Deformation_HondaSystem_range_sup_eq_top_of_isArtinian_of_isNoetherian",
+      "source_sha256": "c22cd43ab28c8dc85241a54c32b98e123c8f633ab6e9dec4a287ec77dd339737",
+      "object_sha256": "0bed6913241de6daaf166390b7d20d334127268e353a78c474158e30f35caa00",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.P2M.Util",
+      "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+      "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+      "receipt_reused": true
+    }
+  ],
+  "stdout": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/48857cc415be45e1f2e40a17-1792003172825685000.kernel/stdout.log",
+  "stderr": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/48857cc415be45e1f2e40a17-1792003172825685000.kernel/stderr.log"
+}

@@ -1,0 +1,20 @@
+{
+  "at": "2026-10-14T18:36:47.542686+00:00",
+  "source_module": "Submission.Supplier.P2M.Sol.S_Deformation_DieudonneModule_exists_hondaSystem_L_eq_fontaineHodge",
+  "candidate_revision": "r1",
+  "source_card_actual_verification_pending": true,
+  "main_statements_and_all_original_hypotheses_and_proof_branches_preserved": true,
+  "actual_baseline_errors": 1,
+  "actual_baseline_warnings": 8,
+  "repair": "OrderEmbedding.wellFoundedLT already returns the required WellFounded relation, so remove only the obsolete wf projection. Replace deprecated if_neg by ite_eq_right and seven proof-mode haveI declarations by have. Preserve the original Honda-system theorem, all hypotheses including hrank, the Witt-module Artinian/Noetherian induction, exact sequence, semilinear F/V operators, all four assembly obligations, special-fibre scalar closure and finite-level surjection. trureturing search found no full Honda substitute; reuse the upstream order-embedding well-foundedness proof directly. Existing supplier linter settings are preserved; no new suppression is added.",
+  "no_warning_suppression_added": true,
+  "active_import_closure_checked": [
+    "Submission.Supplier.P2M.Sol.S_DrinfeldCurve_ncard_setOf_ellTwistedFrobenius_affineFixed"
+  ],
+  "new_compilers_spawned": 0,
+  "controller_restarted": false,
+  "max_active_flt_jobs": 1,
+  "lean_threads": 1,
+  "full_original_complete": false,
+  "official_new_solve_credit": 0
+}
