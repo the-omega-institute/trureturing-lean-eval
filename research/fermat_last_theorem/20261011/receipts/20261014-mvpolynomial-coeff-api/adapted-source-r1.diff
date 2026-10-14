@@ -1,0 +1,17 @@
+--- Submission/Supplier/Definitions/Def_MvPolynomial_LogMahlerMeasure.lean
++++ Submission/Supplier/Definitions/Def_MvPolynomial_LogMahlerMeasure.lean
+@@ -131,7 +131,7 @@
+   (measurable_log_norm_eval_circleMap P).aestronglyMeasurable
+ 
+ theorem norm_eval_circleMap_le_sum_norm_coeff (P : MvPolynomial (Fin n) ℂ) (θ : Fin n → ℝ) :
+-    ‖eval (fun i ↦ circleMap 0 1 (θ i)) P‖ ≤ ∑ m ∈ P.support, ‖coeff m P‖ := by
++    ‖eval (fun i ↦ circleMap 0 1 (θ i)) P‖ ≤ ∑ m ∈ P.support, ‖P.coeff m‖ := by
+   rw [eval_eq]
+   refine (norm_sum_le _ _).trans (le_of_eq (Finset.sum_congr rfl fun m _ ↦ ?_))
+   simp [norm_prod, norm_pow]
+@@ -167,3 +167,5 @@
+ end MvPolynomial
+ 
+ end
++
++#print axioms MvPolynomial.norm_eval_circleMap_le_sum_norm_coeff
