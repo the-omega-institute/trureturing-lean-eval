@@ -1,0 +1,115 @@
+{
+  "at": "2026-10-14T16:03:24.828725+00:00",
+  "original_source_card_pairs_actual_make_kernel_passed": true,
+  "canonical_pairs_byte_identical_to_supplier": true,
+  "no_source_edits": true,
+  "no_linter_suppression_added": true,
+  "no_redundant_recompilation": true,
+  "original_statements_hypotheses_and_proofs_preserved": true,
+  "checks": {
+    "CerednikDrinfeld_Mumford_exists_periodDatum_apply_eq_of_surjective_of_forall_ker": {
+      "proof_summary": "Preserve arbitrary finite edge set, graph degeneracy data, group and surjective abelianization homomorphism, both original fields and their algebra, arbitrary order homomorphism, symmetric multiplicative pairing, full kernel-triviality and Gram/order hypotheses. Keep both Abelianization lifts, choice of section, left and right kernel/congruence arguments, bilinearity over integers, symmetry, order compatibility and full pair evaluation formula.",
+      "checks": {
+        "source": {
+          "module": "Submission.Supplier.P2M.Sol.S_CerednikDrinfeld_Mumford_exists_periodDatum_apply_eq_of_surjective_of_forall_ker",
+          "canonical_lines": 183,
+          "canonical_byte_identical_to_supplier": true,
+          "make_exit": 0,
+          "kernel_exit": 0,
+          "kernel_seconds": 44.771625542,
+          "compiler_warnings": 0,
+          "source_unchanged_during_check": true,
+          "printed_final_axiom_closures": [],
+          "separate_final_axiom_audit_pending": true,
+          "direct_dependencies": [
+            {
+              "module": "Submission.Supplier.Definitions.Def_CerednikDrinfeld_MumfordPeriod",
+              "source_sha256": "a3c255f99dcf87003438faf81a186d5ea788ddc8794e93bd9a04cd22351b2d51",
+              "object_sha256": "1658967eb186b656117deb3d37795fc247470bec2de0930bf1e66d87e81ff35d",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.P2M.Util",
+              "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+              "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+              "receipt_reused": true
+            }
+          ],
+          "unreceipted_cached_dependency_metadata": []
+        },
+        "card": {
+          "module": "Submission.Supplier.Theorems.Thm_CerednikDrinfeld_Mumford_exists_periodDatum_apply_eq_of_surjective_of_forall_ker",
+          "canonical_lines": 20,
+          "canonical_byte_identical_to_supplier": true,
+          "make_exit": 0,
+          "kernel_exit": 0,
+          "kernel_seconds": 41.599813874999995,
+          "compiler_warnings": 0,
+          "source_unchanged_during_check": true,
+          "printed_final_axiom_closures": [],
+          "separate_final_axiom_audit_pending": true,
+          "direct_dependencies": [
+            {
+              "module": "Submission.Supplier.Definitions.Def_CerednikDrinfeld_MumfordPeriod",
+              "source_sha256": "a3c255f99dcf87003438faf81a186d5ea788ddc8794e93bd9a04cd22351b2d51",
+              "object_sha256": "1658967eb186b656117deb3d37795fc247470bec2de0930bf1e66d87e81ff35d",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.P2M.Util",
+              "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+              "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.P2M.Sol.S_CerednikDrinfeld_Mumford_exists_periodDatum_apply_eq_of_surjective_of_forall_ker",
+              "source_sha256": "391c987157aa9033151bdc18b7b3c0c2bab2bcdbb417a352a421391447ae8547",
+              "object_sha256": "f7e5f9d42b14c5f852e663dd7d6adc7ef4f9e997211b81294e48b93070960ced",
+              "receipt_reused": true
+            }
+          ],
+          "unreceipted_cached_dependency_metadata": []
+        }
+      }
+    }
+  },
+  "supplier": "anthropics/fermats-last-theorem",
+  "supplier_commit": "6e837e75355538c7f80bab5b956861e86c4eacc2",
+  "full_original_complete": false,
+  "official_new_solve_credit": 0,
+  "complete_import_replay_and_recursive_axiom_audits_pending": true,
+  "selected_problem": "fermat_last_theorem",
+  "canonical_lexical_integrity_scan": {
+    "observed_at": "2026-10-14T07:21:59.476314+00:00",
+    "canonical_lean_files_covered": 60473,
+    "matching_files": 0,
+    "scope": [
+      "P2M/Sol",
+      "Theorems",
+      "Definitions",
+      "P2M/Util.lean"
+    ],
+    "ignore_rules_disabled": true,
+    "pattern": "^\\s*(axiom|constant)\\s|\\b(sorry|admit)\\b",
+    "formal_recursive_axiom_audit_still_pending": true
+  },
+  "max_active_flt_jobs": 1,
+  "max_active_flt_compilers": 1,
+  "lean_threads": 1,
+  "graph_snapshot": {
+    "compiled": 8569,
+    "failed": 0,
+    "ready": 4378,
+    "root_compiled": false,
+    "workers": 1,
+    "running": {
+      "Submission.Supplier.P2M.Sol.S_CerednikDrinfeld_Mumford_exists_presentation_conj_apply_eq_of_apply_eq_pathCycle": {
+        "pid": 28655,
+        "make_wrapper_pid": 24122,
+        "phase": "kernel",
+        "sha256": "db5351c95fd2bc268d2b9206df67a9a5ef5da50dcbe0e318bb9ac2ca7b94d67b",
+        "configuration": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/83bc3434b5d32aa2580eee44-1791993782867331000.configuration.json"
+      }
+    }
+  }
+}
