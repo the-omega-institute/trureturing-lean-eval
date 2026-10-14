@@ -1,0 +1,14 @@
+{
+  "at": "2026-10-14T17:39:04.602478+00:00",
+  "status": "baseline-preserved-before-focused-repair",
+  "source": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_CuspidalType_exists_conj_apply_one_zero_eq_zero_of_isRoot_charpoly.lean",
+  "source_sha256_before": "7f758b0587671e689fc787937c96057aed5a804cc99f19ce2809fb6618f74392",
+  "backup": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/source-repairs/S_CuspidalType_exists_conj_apply_one_zero_eq_zero_of_isRoot_charpoly.baseline-7f758b0587671e68.lean",
+  "failed_kernel_result": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/e63151a3b8986e9f0e7456c4-1791998872627657000.kernel/result.json",
+  "diagnosis": [
+    "hQP residual -v1*v0\u207b\u00b9*v0 + v1 = 0",
+    "hPQ residual v1*v0\u207b\u00b9 + -(v1*v0\u207b\u00b9) = 0",
+    "final conjugation entry linear_combination does not normalize inverse products"
+  ],
+  "repair_plan": "Use field_simp [ha] for inverse matrix identities; rewrite final entry through e0/e1 with a commutative calc and field_simp [ha]."
+}

@@ -1,0 +1,19 @@
+{
+  "at": "2026-10-14T17:39:34.975851+00:00",
+  "source_module": "Submission.Supplier.P2M.Sol.S_CuspidalType_exists_conj_apply_one_zero_eq_zero_of_isRoot_charpoly",
+  "candidate_revision": "r1",
+  "source_card_actual_verification_pending": true,
+  "main_statements_and_all_original_hypotheses_and_proof_branches_preserved": true,
+  "actual_baseline_errors": 3,
+  "repair": "Retain original eigenvector construction and both zero/nonzero first-coordinate branches. Close the two inverse-matrix residual entries with explicit inverse cancellation and additive inverse identities. Replace only the failing final linear_combination normalization by direct distributivity, e0/e1 transport and inverse cancellation. Searched trureturing eigenvector and characteristic-polynomial results first; none substitutes this full two-branch matrix construction. Reuse upstream Matrix.exists_mulVec_eq_zero_iff and standard ring identities.",
+  "no_warning_suppression_added": true,
+  "active_import_closure_checked": [
+    "Submission.Supplier.P2M.Sol.S_CuspidalType_NV3Arch_sum_elliptic_eq"
+  ],
+  "new_compilers_spawned": 0,
+  "controller_restarted": false,
+  "max_active_flt_jobs": 1,
+  "lean_threads": 1,
+  "full_original_complete": false,
+  "official_new_solve_credit": 0
+}

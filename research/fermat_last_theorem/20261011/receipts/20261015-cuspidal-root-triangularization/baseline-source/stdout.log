@@ -1,0 +1,64 @@
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_CuspidalType_exists_conj_apply_one_zero_eq_zero_of_isRoot_charpoly.lean:61:28: error: unsolved goals
+case «1».«0»
+q : ℕ
+inst✝ : Fact (Nat.Prime q)
+g : GL2 q
+x : ZMod q
+G : Matrix (Fin 2) (Fin 2) (ZMod q) := ↑g
+hx : G.charpoly.IsRoot x
+hG : G = ↑g
+hdet : ((scalar (Fin 2)) x - G).det = 0
+v : Fin 2 → ZMod q
+hv0 : v ≠ 0
+hv : ((scalar (Fin 2)) x - G) *ᵥ v = 0
+hGv : ∀ (i : Fin 2), (G *ᵥ v) i = x * v i
+e0 : G 0 0 * v 0 + G 0 1 * v 1 = x * v 0
+e1 : G 1 0 * v 0 + G 1 1 * v 1 = x * v 1
+ha : ¬v 0 = 0
+P : Matrix (Fin 2) (Fin 2) (ZMod q) := !![v 0, 0; v 1, 1]
+Q : Matrix (Fin 2) (Fin 2) (ZMod q) := !![(v 0)⁻¹, 0; -(v 1 * (v 0)⁻¹), 1]
+⊢ -(v 1 * (v 0)⁻¹) * v 0 + v 1 = 0
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_CuspidalType_exists_conj_apply_one_zero_eq_zero_of_isRoot_charpoly.lean:63:28: error: unsolved goals
+case «1».«0»
+q : ℕ
+inst✝ : Fact (Nat.Prime q)
+g : GL2 q
+x : ZMod q
+G : Matrix (Fin 2) (Fin 2) (ZMod q) := ↑g
+hx : G.charpoly.IsRoot x
+hG : G = ↑g
+hdet : ((scalar (Fin 2)) x - G).det = 0
+v : Fin 2 → ZMod q
+hv0 : v ≠ 0
+hv : ((scalar (Fin 2)) x - G) *ᵥ v = 0
+hGv : ∀ (i : Fin 2), (G *ᵥ v) i = x * v i
+e0 : G 0 0 * v 0 + G 0 1 * v 1 = x * v 0
+e1 : G 1 0 * v 0 + G 1 1 * v 1 = x * v 1
+ha : ¬v 0 = 0
+P : Matrix (Fin 2) (Fin 2) (ZMod q) := !![v 0, 0; v 1, 1]
+Q : Matrix (Fin 2) (Fin 2) (ZMod q) := !![(v 0)⁻¹, 0; -(v 1 * (v 0)⁻¹), 1]
+hQP : Q * P = 1
+⊢ v 1 * (v 0)⁻¹ + -(v 1 * (v 0)⁻¹) = 0
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_CuspidalType_exists_conj_apply_one_zero_eq_zero_of_isRoot_charpoly.lean:73:4: error: ring failed, ring expressions not equal
+q : ℕ
+inst✝ : Fact (Nat.Prime q)
+g : GL2 q
+x : ZMod q
+G : Matrix (Fin 2) (Fin 2) (ZMod q) := ⋯
+hx : G.charpoly.IsRoot x
+hG : G = ↑g
+hdet : ((scalar (Fin 2)) x - G).det = 0
+v : Fin 2 → ZMod q
+hv0 : v ≠ 0
+hv : ((scalar (Fin 2)) x - G) *ᵥ v = 0
+hGv : ∀ (i : Fin 2), (G *ᵥ v) i = x * v i
+e0 : G 0 0 * v 0 + G 0 1 * v 1 = x * v 0
+e1 : G 1 0 * v 0 + G 1 1 * v 1 = x * v 1
+ha : ¬v 0 = 0
+P : Matrix (Fin 2) (Fin 2) (ZMod q) := ⋯
+Q : Matrix (Fin 2) (Fin 2) (ZMod q) := ⋯
+hQP : Q * P = 1
+hPQ : P * Q = 1
+hinv : (v 0)⁻¹ * v 0 = 1
+hval : (Q * G * P) 1 0 = (-(v 1 * (v 0)⁻¹) * G 0 0 + G 1 0) * v 0 + (-(v 1 * (v 0)⁻¹) * G 0 1 + G 1 1) * v 1
+⊢ -(v 1 * (v 0)⁻¹) * v 0 * x - v 0 * -(x * v 1) * (v 0)⁻¹ + v 1 * x + -(x * v 1) = 0
