@@ -1,0 +1,151 @@
+{
+  "at": "2026-10-14T17:41:45.645320+00:00",
+  "original_source_card_pairs_actual_make_kernel_passed": true,
+  "canonical_pairs_byte_identical_to_supplier": true,
+  "no_source_edits": true,
+  "no_linter_suppression_added": true,
+  "no_redundant_recompilation": true,
+  "original_statements_hypotheses_and_proofs_preserved": true,
+  "checks": {
+    "CuspidalType_NV3Arch_sum_elliptic_eq": {
+      "proof_summary": "Preserve every prime q, the full supplied finite unit-type instance, arbitrary commutative coefficient ring and every conjugacy-invariant function. Retain the full quadratic-field Frobenius fixed-point argument, both regular conjugate parameters, centralizer cardinality q^2-1, both mutually inverse fibre bijections, disjoint two-piece fibre decomposition of size 2*(q^2-1), exact conjugacy image and complete finite-sum double counting. No division by either cardinality and no characteristic-zero, odd-prime or nonzero-scalar assumption is added.",
+      "checks": {
+        "source": {
+          "module": "Submission.Supplier.P2M.Sol.S_CuspidalType_NV3Arch_sum_elliptic_eq",
+          "canonical_lines": 270,
+          "canonical_byte_identical_to_supplier": true,
+          "make_exit": 0,
+          "kernel_exit": 0,
+          "kernel_seconds": 39.059715542,
+          "compiler_warnings": 1,
+          "source_unchanged_during_check": true,
+          "printed_final_axiom_closures": [],
+          "separate_final_axiom_audit_pending": true,
+          "direct_dependencies": [
+            {
+              "module": "Submission.Supplier.Definitions.Def_CuspidalType_IsCuspidalOfType",
+              "source_sha256": "bf3b7dcb09ad1804f2dc7e10f1dff72f3bcedd5dbe97cd8c98a545a2ae1a6317",
+              "object_sha256": "f0ae7c7645e0e76829a3907f5a7375d5ff25b02179c9530400cc22dea55b441b",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.Theorems.Thm_CuspidalType_exists_conj_eq_torus",
+              "source_sha256": "853f1ad5f17099a5d34cd694dae2ec40aae50bfeb325f2f2d046e177ecfc8888",
+              "object_sha256": "f04254a61ef353d4d6c8c5bccd6a23c35252f2ef89087936dd6c257b68b535d8",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.Theorems.Thm_CuspidalType_mul_torus_eq_torus_mul_iff",
+              "source_sha256": "992fd02e1d41cc2edbaa4c862c8d0803b84f4bc95bce9ad2f7198e6ce09e73ed",
+              "object_sha256": "cfd0e0eb8469d0820f874c748902f0d3e32463cf4f0a8baff36005ffc5fa812d",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.Theorems.Thm_CuspidalType_eq_or_eq_pow_of_isConj_torus",
+              "source_sha256": "42423c1c65df073abb7b8c76afe693c281e61ef8d4fec5be218ee284ef4d6463",
+              "object_sha256": "97f1c25824eb391ef53d249b35b12aa5c7a57e01681d22f93ffc98992de66c34",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.Theorems.Thm_CuspidalType_exists_conj_torus_eq_torus_pow",
+              "source_sha256": "33d1b21ff0c0f3fc93608d2e41484f2d671eb81867c5390ca2cbd61887fe7324",
+              "object_sha256": "0fc400209feaf55226a60e384af56986b4c57ad2348bee5310f0878821f287db",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.Theorems.Thm_CuspidalType_not_isRoot_charpoly_torus",
+              "source_sha256": "06c8e48f87fb5004d987626ee29838aae19bff0dcdf4e9b4d2951668d0509407",
+              "object_sha256": "5f07f7bbd307d54d2fa430610eb2f5a16f1043a0e9909cfb5dcf45e1cbdcdb4a",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.Theorems.Thm_CuspidalType_torus_injective",
+              "source_sha256": "75c9d9c8faaa5173596c4ca2264130df9016a007fda35ffbc10c0a86e373907a",
+              "object_sha256": "0cfb5d190de272c24752bd7fa357ca263b45f7c830c04ff416be67522cd6d990",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.P2M.Util",
+              "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+              "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+              "receipt_reused": true
+            }
+          ],
+          "unreceipted_cached_dependency_metadata": []
+        },
+        "card": {
+          "module": "Submission.Supplier.Theorems.Thm_CuspidalType_NV3Arch_sum_elliptic_eq",
+          "canonical_lines": 19,
+          "canonical_byte_identical_to_supplier": true,
+          "make_exit": 0,
+          "kernel_exit": 0,
+          "kernel_seconds": 39.103706917000004,
+          "compiler_warnings": 0,
+          "source_unchanged_during_check": true,
+          "printed_final_axiom_closures": [],
+          "separate_final_axiom_audit_pending": true,
+          "direct_dependencies": [
+            {
+              "module": "Submission.Supplier.Definitions.Def_CuspidalType_IsCuspidalOfType",
+              "source_sha256": "bf3b7dcb09ad1804f2dc7e10f1dff72f3bcedd5dbe97cd8c98a545a2ae1a6317",
+              "object_sha256": "f0ae7c7645e0e76829a3907f5a7375d5ff25b02179c9530400cc22dea55b441b",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.P2M.Util",
+              "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+              "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.P2M.Sol.S_CuspidalType_NV3Arch_sum_elliptic_eq",
+              "source_sha256": "64142ba2e7bbb670ae65f47f5919eeee962a5c25de1632e75097068c607602f8",
+              "object_sha256": "77dcd0ae27c73d2b9a33b559386c170e36d817b3cb4cbf248673c8a4fae7ab6d",
+              "receipt_reused": true
+            }
+          ],
+          "unreceipted_cached_dependency_metadata": []
+        }
+      }
+    }
+  },
+  "supplier": "anthropics/fermats-last-theorem",
+  "supplier_commit": "6e837e75355538c7f80bab5b956861e86c4eacc2",
+  "full_original_complete": false,
+  "official_new_solve_credit": 0,
+  "complete_import_replay_and_recursive_axiom_audits_pending": true,
+  "selected_problem": "fermat_last_theorem",
+  "canonical_lexical_integrity_scan": {
+    "observed_at": "2026-10-14T07:21:59.476314+00:00",
+    "canonical_lean_files_covered": 60473,
+    "matching_files": 0,
+    "scope": [
+      "P2M/Sol",
+      "Theorems",
+      "Definitions",
+      "P2M/Util.lean"
+    ],
+    "ignore_rules_disabled": true,
+    "pattern": "^\\s*(axiom|constant)\\s|\\b(sorry|admit)\\b",
+    "formal_recursive_axiom_audit_still_pending": true
+  },
+  "max_active_flt_jobs": 1,
+  "max_active_flt_compilers": 1,
+  "lean_threads": 1,
+  "graph_snapshot": {
+    "compiled": 8625,
+    "failed": 0,
+    "ready": 4358,
+    "root_compiled": false,
+    "workers": 1,
+    "running": {
+      "Submission.Supplier.P2M.Sol.S_CuspidalType_exists_conj_apply_one_zero_eq_zero_of_isRoot_charpoly": {
+        "pid": 59122,
+        "make_wrapper_pid": 56217,
+        "phase": "kernel",
+        "sha256": "393fb60eef4d64ee3f0392f511167dc8b436b9e28abcdfe2acce5e8dd8a3fae6",
+        "configuration": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/e63151a3b8986e9f0e7456c4-1791999672765633000.configuration.json"
+      }
+    }
+  }
+}
