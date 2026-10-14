@@ -1,0 +1,630 @@
+{
+  "at": "2026-10-14T06:08:17.910179+00:00",
+  "original_source_card_pairs_actual_make_kernel_passed": true,
+  "canonical_pairs_byte_identical_to_supplier": true,
+  "no_source_edits": true,
+  "no_linter_suppression_added": true,
+  "no_redundant_recompilation": true,
+  "original_statements_hypotheses_and_proofs_preserved": true,
+  "checks": {
+    "ModularCurve_isMonicOfOrder_sharpUnitSeries": {
+      "proof_summary": "Preserve every nonzero natural level and exact Laurent-series order minus the Eisenstein numerator. Retain the complete monic eta-product/q-expansion nonzero and cancellation proof, with no prime-level restriction.",
+      "checks": {
+        "source": {
+          "module": "Submission.Supplier.P2M.Sol.S_ModularCurve_isMonicOfOrder_sharpUnitSeries",
+          "canonical_lines": 43,
+          "canonical_byte_identical_to_supplier": true,
+          "make_exit": 0,
+          "kernel_exit": 0,
+          "kernel_seconds": 29.3251825,
+          "compiler_warnings": 0,
+          "source_unchanged_during_check": true,
+          "printed_final_axiom_closures": [],
+          "separate_final_axiom_audit_pending": true,
+          "direct_dependencies": [
+            {
+              "module": "Submission.Supplier.Definitions.Def_ModularCurve_EtaQuotient",
+              "source_sha256": "db23d8108e6c6d1ffce1af0977707ff370c2f6609bf6e8bb85a9438ed25167d5",
+              "object_sha256": "20c39966a760afdeea8f3472e0b9ca16a45358ee712eac1f2e312b3f4f5e29df",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.P2M.Util",
+              "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+              "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+              "receipt_reused": true
+            }
+          ]
+        },
+        "card": {
+          "module": "Submission.Supplier.Theorems.Thm_ModularCurve_isMonicOfOrder_sharpUnitSeries",
+          "canonical_lines": 5,
+          "canonical_byte_identical_to_supplier": true,
+          "make_exit": 0,
+          "kernel_exit": 0,
+          "kernel_seconds": 19.510936042,
+          "compiler_warnings": 0,
+          "source_unchanged_during_check": true,
+          "printed_final_axiom_closures": [],
+          "separate_final_axiom_audit_pending": true,
+          "direct_dependencies": [
+            {
+              "module": "Submission.Supplier.Definitions.Def_ModularCurve_EtaQuotient",
+              "source_sha256": "db23d8108e6c6d1ffce1af0977707ff370c2f6609bf6e8bb85a9438ed25167d5",
+              "object_sha256": "20c39966a760afdeea8f3472e0b9ca16a45358ee712eac1f2e312b3f4f5e29df",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.P2M.Util",
+              "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+              "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.P2M.Sol.S_ModularCurve_isMonicOfOrder_sharpUnitSeries",
+              "source_sha256": "7cae2b3a9591ae1d574e1e479d897491d694ad78613a353acbaa16c1e5350362",
+              "object_sha256": "e421b1ac1b6e90a3d39902be88fa7aef3acda08955db6a5bae658b41361a59b8",
+              "receipt_reused": true
+            }
+          ]
+        }
+      }
+    },
+    "ModularCurve_hasSum_sharpUnitSeries_qParam": {
+      "proof_summary": "Preserve every nonzero natural level and every upper-half-plane point. Retain all 502 source lines, the complete Euler-product/Taylor construction, Laurent coefficient uniqueness and root-of-power descent, inverse expansion, T/S/U transformation and finite-root continuous character proof; keep the original convergent sum conclusion.",
+      "checks": {
+        "source": {
+          "module": "Submission.Supplier.P2M.Sol.S_ModularCurve_hasSum_sharpUnitSeries_qParam",
+          "canonical_lines": 502,
+          "canonical_byte_identical_to_supplier": true,
+          "make_exit": 0,
+          "kernel_exit": 0,
+          "kernel_seconds": 11.532628417,
+          "compiler_warnings": 1,
+          "source_unchanged_during_check": true,
+          "printed_final_axiom_closures": [],
+          "separate_final_axiom_audit_pending": true,
+          "direct_dependencies": [
+            {
+              "module": "Submission.Supplier.Definitions.Def_ModularCurve_EtaQuotient",
+              "source_sha256": "db23d8108e6c6d1ffce1af0977707ff370c2f6609bf6e8bb85a9438ed25167d5",
+              "object_sha256": "20c39966a760afdeea8f3472e0b9ca16a45358ee712eac1f2e312b3f4f5e29df",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.Definitions.Def_ModularCurve_LaurentCoeff",
+              "source_sha256": "b669bf23529a8efa8e14cf704c3ef062c9dc7d12a964ea3ae43f6b9d5660fec0",
+              "object_sha256": "92decff74b33d21abf9b9d6512ceb1fa0d0af5f13d86e1b9bb7b4b3837e94e59",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.Theorems.Thm_ModularCurve_hasSum_modularUnitSeries_qParam",
+              "source_sha256": "b6ea1f5b68cfa9dbb62d3aac4e46f3927a8536e1b52d0e54e37c5e9ec5456413",
+              "object_sha256": "e06106dae03805f854c198ad6bf83c6751dd22b538a6903d18bcaa05ca58290e",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.Theorems.Thm_ModularCurve_hasSum_qParam_mul_laurent",
+              "source_sha256": "4ebbe24691f1be871684bf3dd92a478e0762745c0c6610c6534d446120e8e26e",
+              "object_sha256": "4be0893fc280c28ade4edbcdba8f528d30b481d6207ba376fb4267e5f12d92bf",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.Theorems.Thm_ModularCurve_laurent_qParam_coeff_unique",
+              "source_sha256": "1175ded002dab7f73d6d0551ec1d3d23d938358b467e8cb902f9185eddaf2f3a",
+              "object_sha256": "1472f5f0b8d5222fa1217e2f5ac5b3b8d10c19a42a6b9434000a09a321dbc844",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.Theorems.Thm_ModularCurve_sharpUnitSeries_pow_sharpIndex",
+              "source_sha256": "c189bdbe1540b0879aac9eabc3d829787f42c3dea96dfe760eb4ed3699a268aa",
+              "object_sha256": "1172da3a186961865cea02247066082a87a5bd3083bef24a3768a1d27d2b648f",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.Theorems.Thm_ModularCurve_isMonicOfOrder_sharpUnitSeries",
+              "source_sha256": "971dcc1ba6ac11cdc3519b54911c5bb2993aa1ecdf9b3caf35772e54cb0e8b39",
+              "object_sha256": "f8991c665a44fb39443218f37fb7b4a8268e4a80833a214e771f3bd912bc1ad4",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.Theorems.Thm_ModularCurve_discriminant_div_discriminant_heckeDiagMatrix_smul",
+              "source_sha256": "1c57da3ae9dd23eb1a174d4a0dce46e64ac64fe04bd4bd8d962023e6d9d617d8",
+              "object_sha256": "466eee65985158726455a02b763b9a495209ad78df248a3a3199ee3844099a9b",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.P2M.Util",
+              "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+              "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+              "receipt_reused": true
+            }
+          ]
+        },
+        "card": {
+          "module": "Submission.Supplier.Theorems.Thm_ModularCurve_hasSum_sharpUnitSeries_qParam",
+          "canonical_lines": 6,
+          "canonical_byte_identical_to_supplier": true,
+          "make_exit": 0,
+          "kernel_exit": 0,
+          "kernel_seconds": 27.376153917,
+          "compiler_warnings": 0,
+          "source_unchanged_during_check": true,
+          "printed_final_axiom_closures": [],
+          "separate_final_axiom_audit_pending": true,
+          "direct_dependencies": [
+            {
+              "module": "Submission.Supplier.Definitions.Def_ModularCurve_EtaQuotient",
+              "source_sha256": "db23d8108e6c6d1ffce1af0977707ff370c2f6609bf6e8bb85a9438ed25167d5",
+              "object_sha256": "20c39966a760afdeea8f3472e0b9ca16a45358ee712eac1f2e312b3f4f5e29df",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.P2M.Util",
+              "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+              "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.P2M.Sol.S_ModularCurve_hasSum_sharpUnitSeries_qParam",
+              "source_sha256": "253ac3b726a2dd65f2332845275affb8aa07af28c4577e16868c2d980647cbe4",
+              "object_sha256": "41dd317308c4345fdc1e0f7ee8406e5b38a2b7136debe2200fb6bca21f03967b",
+              "receipt_reused": true
+            }
+          ]
+        }
+      }
+    },
+    "ModularCurve_hasSum_sharpUnitSeries_inv_qParam": {
+      "proof_summary": "Preserve every nonzero natural level, every upper-half-plane point and the complete inverse Laurent sum. The entire supporting proof prefix matches the fully reviewed primary expansion source after namespace normalization; final solution and card are read separately. No source edit or truncated convergence domain.",
+      "checks": {
+        "source": {
+          "module": "Submission.Supplier.P2M.Sol.S_ModularCurve_hasSum_sharpUnitSeries_inv_qParam",
+          "canonical_lines": 502,
+          "canonical_byte_identical_to_supplier": true,
+          "make_exit": 0,
+          "kernel_exit": 0,
+          "kernel_seconds": 26.767073958,
+          "compiler_warnings": 1,
+          "source_unchanged_during_check": true,
+          "printed_final_axiom_closures": [],
+          "separate_final_axiom_audit_pending": true,
+          "direct_dependencies": [
+            {
+              "module": "Submission.Supplier.Definitions.Def_ModularCurve_EtaQuotient",
+              "source_sha256": "db23d8108e6c6d1ffce1af0977707ff370c2f6609bf6e8bb85a9438ed25167d5",
+              "object_sha256": "20c39966a760afdeea8f3472e0b9ca16a45358ee712eac1f2e312b3f4f5e29df",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.Definitions.Def_ModularCurve_LaurentCoeff",
+              "source_sha256": "b669bf23529a8efa8e14cf704c3ef062c9dc7d12a964ea3ae43f6b9d5660fec0",
+              "object_sha256": "92decff74b33d21abf9b9d6512ceb1fa0d0af5f13d86e1b9bb7b4b3837e94e59",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.Theorems.Thm_ModularCurve_hasSum_modularUnitSeries_qParam",
+              "source_sha256": "b6ea1f5b68cfa9dbb62d3aac4e46f3927a8536e1b52d0e54e37c5e9ec5456413",
+              "object_sha256": "e06106dae03805f854c198ad6bf83c6751dd22b538a6903d18bcaa05ca58290e",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.Theorems.Thm_ModularCurve_hasSum_qParam_mul_laurent",
+              "source_sha256": "4ebbe24691f1be871684bf3dd92a478e0762745c0c6610c6534d446120e8e26e",
+              "object_sha256": "4be0893fc280c28ade4edbcdba8f528d30b481d6207ba376fb4267e5f12d92bf",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.Theorems.Thm_ModularCurve_laurent_qParam_coeff_unique",
+              "source_sha256": "1175ded002dab7f73d6d0551ec1d3d23d938358b467e8cb902f9185eddaf2f3a",
+              "object_sha256": "1472f5f0b8d5222fa1217e2f5ac5b3b8d10c19a42a6b9434000a09a321dbc844",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.Theorems.Thm_ModularCurve_sharpUnitSeries_pow_sharpIndex",
+              "source_sha256": "c189bdbe1540b0879aac9eabc3d829787f42c3dea96dfe760eb4ed3699a268aa",
+              "object_sha256": "1172da3a186961865cea02247066082a87a5bd3083bef24a3768a1d27d2b648f",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.Theorems.Thm_ModularCurve_isMonicOfOrder_sharpUnitSeries",
+              "source_sha256": "971dcc1ba6ac11cdc3519b54911c5bb2993aa1ecdf9b3caf35772e54cb0e8b39",
+              "object_sha256": "f8991c665a44fb39443218f37fb7b4a8268e4a80833a214e771f3bd912bc1ad4",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.Theorems.Thm_ModularCurve_discriminant_div_discriminant_heckeDiagMatrix_smul",
+              "source_sha256": "1c57da3ae9dd23eb1a174d4a0dce46e64ac64fe04bd4bd8d962023e6d9d617d8",
+              "object_sha256": "466eee65985158726455a02b763b9a495209ad78df248a3a3199ee3844099a9b",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.P2M.Util",
+              "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+              "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+              "receipt_reused": true
+            }
+          ]
+        },
+        "card": {
+          "module": "Submission.Supplier.Theorems.Thm_ModularCurve_hasSum_sharpUnitSeries_inv_qParam",
+          "canonical_lines": 6,
+          "canonical_byte_identical_to_supplier": true,
+          "make_exit": 0,
+          "kernel_exit": 0,
+          "kernel_seconds": 17.473547958,
+          "compiler_warnings": 0,
+          "source_unchanged_during_check": true,
+          "printed_final_axiom_closures": [],
+          "separate_final_axiom_audit_pending": true,
+          "direct_dependencies": [
+            {
+              "module": "Submission.Supplier.Definitions.Def_ModularCurve_EtaQuotient",
+              "source_sha256": "db23d8108e6c6d1ffce1af0977707ff370c2f6609bf6e8bb85a9438ed25167d5",
+              "object_sha256": "20c39966a760afdeea8f3472e0b9ca16a45358ee712eac1f2e312b3f4f5e29df",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.P2M.Util",
+              "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+              "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.P2M.Sol.S_ModularCurve_hasSum_sharpUnitSeries_inv_qParam",
+              "source_sha256": "902f9ee21cc84c3d191d89df0e67d4fabf59f1e7f98c08bfc3683f1396920469",
+              "object_sha256": "4158bfc6c692e29ab6c9c46b734e03bf6389c59dda0f5b08f46605f42f9484cd",
+              "receipt_reused": true
+            }
+          ]
+        }
+      }
+    },
+    "ModularCurve_hasSum_smul_sharpUnitSeries_inv_qParam": {
+      "proof_summary": "Preserve the full S-transform expansion with the original level-dependent power scalar and inverse series for every nonzero level and upper-half-plane point. Supporting proof prefix exactly matches the reviewed primary source after namespace normalization; original final statement and proof remain unchanged.",
+      "checks": {
+        "source": {
+          "module": "Submission.Supplier.P2M.Sol.S_ModularCurve_hasSum_smul_sharpUnitSeries_inv_qParam",
+          "canonical_lines": 502,
+          "canonical_byte_identical_to_supplier": true,
+          "make_exit": 0,
+          "kernel_exit": 0,
+          "kernel_seconds": 30.1475755,
+          "compiler_warnings": 1,
+          "source_unchanged_during_check": true,
+          "printed_final_axiom_closures": [],
+          "separate_final_axiom_audit_pending": true,
+          "direct_dependencies": [
+            {
+              "module": "Submission.Supplier.Definitions.Def_ModularCurve_EtaQuotient",
+              "source_sha256": "db23d8108e6c6d1ffce1af0977707ff370c2f6609bf6e8bb85a9438ed25167d5",
+              "object_sha256": "20c39966a760afdeea8f3472e0b9ca16a45358ee712eac1f2e312b3f4f5e29df",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.Definitions.Def_ModularCurve_LaurentCoeff",
+              "source_sha256": "b669bf23529a8efa8e14cf704c3ef062c9dc7d12a964ea3ae43f6b9d5660fec0",
+              "object_sha256": "92decff74b33d21abf9b9d6512ceb1fa0d0af5f13d86e1b9bb7b4b3837e94e59",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.Theorems.Thm_ModularCurve_hasSum_modularUnitSeries_qParam",
+              "source_sha256": "b6ea1f5b68cfa9dbb62d3aac4e46f3927a8536e1b52d0e54e37c5e9ec5456413",
+              "object_sha256": "e06106dae03805f854c198ad6bf83c6751dd22b538a6903d18bcaa05ca58290e",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.Theorems.Thm_ModularCurve_hasSum_qParam_mul_laurent",
+              "source_sha256": "4ebbe24691f1be871684bf3dd92a478e0762745c0c6610c6534d446120e8e26e",
+              "object_sha256": "4be0893fc280c28ade4edbcdba8f528d30b481d6207ba376fb4267e5f12d92bf",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.Theorems.Thm_ModularCurve_laurent_qParam_coeff_unique",
+              "source_sha256": "1175ded002dab7f73d6d0551ec1d3d23d938358b467e8cb902f9185eddaf2f3a",
+              "object_sha256": "1472f5f0b8d5222fa1217e2f5ac5b3b8d10c19a42a6b9434000a09a321dbc844",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.Theorems.Thm_ModularCurve_sharpUnitSeries_pow_sharpIndex",
+              "source_sha256": "c189bdbe1540b0879aac9eabc3d829787f42c3dea96dfe760eb4ed3699a268aa",
+              "object_sha256": "1172da3a186961865cea02247066082a87a5bd3083bef24a3768a1d27d2b648f",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.Theorems.Thm_ModularCurve_isMonicOfOrder_sharpUnitSeries",
+              "source_sha256": "971dcc1ba6ac11cdc3519b54911c5bb2993aa1ecdf9b3caf35772e54cb0e8b39",
+              "object_sha256": "f8991c665a44fb39443218f37fb7b4a8268e4a80833a214e771f3bd912bc1ad4",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.Theorems.Thm_ModularCurve_discriminant_div_discriminant_heckeDiagMatrix_smul",
+              "source_sha256": "1c57da3ae9dd23eb1a174d4a0dce46e64ac64fe04bd4bd8d962023e6d9d617d8",
+              "object_sha256": "466eee65985158726455a02b763b9a495209ad78df248a3a3199ee3844099a9b",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.P2M.Util",
+              "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+              "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+              "receipt_reused": true
+            }
+          ]
+        },
+        "card": {
+          "module": "Submission.Supplier.Theorems.Thm_ModularCurve_hasSum_smul_sharpUnitSeries_inv_qParam",
+          "canonical_lines": 6,
+          "canonical_byte_identical_to_supplier": true,
+          "make_exit": 0,
+          "kernel_exit": 0,
+          "kernel_seconds": 25.148330208999997,
+          "compiler_warnings": 0,
+          "source_unchanged_during_check": true,
+          "printed_final_axiom_closures": [],
+          "separate_final_axiom_audit_pending": true,
+          "direct_dependencies": [
+            {
+              "module": "Submission.Supplier.Definitions.Def_ModularCurve_EtaQuotient",
+              "source_sha256": "db23d8108e6c6d1ffce1af0977707ff370c2f6609bf6e8bb85a9438ed25167d5",
+              "object_sha256": "20c39966a760afdeea8f3472e0b9ca16a45358ee712eac1f2e312b3f4f5e29df",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.P2M.Util",
+              "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+              "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.P2M.Sol.S_ModularCurve_hasSum_smul_sharpUnitSeries_inv_qParam",
+              "source_sha256": "f84b59147dd70b5da1b35ab26633f2aa81c015a44647993a6bf0b68691d46675",
+              "object_sha256": "f3ce2d5b0edd6bb95c6100a1df74913a884afd223dd1f2780fc928787c956d6f",
+              "receipt_reused": true
+            }
+          ]
+        }
+      }
+    },
+    "ModularCurve_hasSum_smul_sharpUnitSeries_qParam": {
+      "proof_summary": "Preserve the full inverse S-transform expansion, original inverse power scalar, every nonzero natural level and upper-half-plane point. Complete supporting proof prefix matches the reviewed primary source after namespace normalization; no branch or original assumption is removed.",
+      "checks": {
+        "source": {
+          "module": "Submission.Supplier.P2M.Sol.S_ModularCurve_hasSum_smul_sharpUnitSeries_qParam",
+          "canonical_lines": 502,
+          "canonical_byte_identical_to_supplier": true,
+          "make_exit": 0,
+          "kernel_exit": 0,
+          "kernel_seconds": 25.861206958,
+          "compiler_warnings": 1,
+          "source_unchanged_during_check": true,
+          "printed_final_axiom_closures": [],
+          "separate_final_axiom_audit_pending": true,
+          "direct_dependencies": [
+            {
+              "module": "Submission.Supplier.Definitions.Def_ModularCurve_EtaQuotient",
+              "source_sha256": "db23d8108e6c6d1ffce1af0977707ff370c2f6609bf6e8bb85a9438ed25167d5",
+              "object_sha256": "20c39966a760afdeea8f3472e0b9ca16a45358ee712eac1f2e312b3f4f5e29df",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.Definitions.Def_ModularCurve_LaurentCoeff",
+              "source_sha256": "b669bf23529a8efa8e14cf704c3ef062c9dc7d12a964ea3ae43f6b9d5660fec0",
+              "object_sha256": "92decff74b33d21abf9b9d6512ceb1fa0d0af5f13d86e1b9bb7b4b3837e94e59",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.Theorems.Thm_ModularCurve_hasSum_modularUnitSeries_qParam",
+              "source_sha256": "b6ea1f5b68cfa9dbb62d3aac4e46f3927a8536e1b52d0e54e37c5e9ec5456413",
+              "object_sha256": "e06106dae03805f854c198ad6bf83c6751dd22b538a6903d18bcaa05ca58290e",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.Theorems.Thm_ModularCurve_hasSum_qParam_mul_laurent",
+              "source_sha256": "4ebbe24691f1be871684bf3dd92a478e0762745c0c6610c6534d446120e8e26e",
+              "object_sha256": "4be0893fc280c28ade4edbcdba8f528d30b481d6207ba376fb4267e5f12d92bf",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.Theorems.Thm_ModularCurve_laurent_qParam_coeff_unique",
+              "source_sha256": "1175ded002dab7f73d6d0551ec1d3d23d938358b467e8cb902f9185eddaf2f3a",
+              "object_sha256": "1472f5f0b8d5222fa1217e2f5ac5b3b8d10c19a42a6b9434000a09a321dbc844",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.Theorems.Thm_ModularCurve_sharpUnitSeries_pow_sharpIndex",
+              "source_sha256": "c189bdbe1540b0879aac9eabc3d829787f42c3dea96dfe760eb4ed3699a268aa",
+              "object_sha256": "1172da3a186961865cea02247066082a87a5bd3083bef24a3768a1d27d2b648f",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.Theorems.Thm_ModularCurve_isMonicOfOrder_sharpUnitSeries",
+              "source_sha256": "971dcc1ba6ac11cdc3519b54911c5bb2993aa1ecdf9b3caf35772e54cb0e8b39",
+              "object_sha256": "f8991c665a44fb39443218f37fb7b4a8268e4a80833a214e771f3bd912bc1ad4",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.Theorems.Thm_ModularCurve_discriminant_div_discriminant_heckeDiagMatrix_smul",
+              "source_sha256": "1c57da3ae9dd23eb1a174d4a0dce46e64ac64fe04bd4bd8d962023e6d9d617d8",
+              "object_sha256": "466eee65985158726455a02b763b9a495209ad78df248a3a3199ee3844099a9b",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.P2M.Util",
+              "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+              "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+              "receipt_reused": true
+            }
+          ]
+        },
+        "card": {
+          "module": "Submission.Supplier.Theorems.Thm_ModularCurve_hasSum_smul_sharpUnitSeries_qParam",
+          "canonical_lines": 6,
+          "canonical_byte_identical_to_supplier": true,
+          "make_exit": 0,
+          "kernel_exit": 0,
+          "kernel_seconds": 3.4843278339999997,
+          "compiler_warnings": 0,
+          "source_unchanged_during_check": true,
+          "printed_final_axiom_closures": [],
+          "separate_final_axiom_audit_pending": true,
+          "direct_dependencies": [
+            {
+              "module": "Submission.Supplier.Definitions.Def_ModularCurve_EtaQuotient",
+              "source_sha256": "db23d8108e6c6d1ffce1af0977707ff370c2f6609bf6e8bb85a9438ed25167d5",
+              "object_sha256": "20c39966a760afdeea8f3472e0b9ca16a45358ee712eac1f2e312b3f4f5e29df",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.P2M.Util",
+              "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+              "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.P2M.Sol.S_ModularCurve_hasSum_smul_sharpUnitSeries_qParam",
+              "source_sha256": "6c892fd509bb1c43016274e66e05453a3ba341eb99f277c394da191235d0e8ba",
+              "object_sha256": "d62da61607273bb28d0de122fccd324790b6b8fde488924a035c55a8a5f9aa97",
+              "receipt_reused": true
+            }
+          ]
+        }
+      }
+    },
+    "ModularCurve_sharpUnitSeries_mem_modularFunctionField": {
+      "proof_summary": "Preserve the exact original prime-level/invariance membership claim and the full supporting integral-series/integral-inverse and Fricke action statements. Retain all original invariance and membership hypotheses and all original instance/simp adjustments; do not replace function-field membership with mere Laurent-series membership.",
+      "checks": {
+        "source": {
+          "module": "Submission.Supplier.P2M.Sol.S_ModularCurve_sharpUnitSeries_mem_modularFunctionField",
+          "canonical_lines": 63,
+          "canonical_byte_identical_to_supplier": true,
+          "make_exit": 0,
+          "kernel_exit": 0,
+          "kernel_seconds": 22.889814875,
+          "compiler_warnings": 0,
+          "source_unchanged_during_check": true,
+          "printed_final_axiom_closures": [],
+          "separate_final_axiom_audit_pending": true,
+          "direct_dependencies": [
+            {
+              "module": "Submission.Supplier.Definitions.Def_ModularCurve_EtaQuotient",
+              "source_sha256": "db23d8108e6c6d1ffce1af0977707ff370c2f6609bf6e8bb85a9438ed25167d5",
+              "object_sha256": "20c39966a760afdeea8f3472e0b9ca16a45358ee712eac1f2e312b3f4f5e29df",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.Definitions.Def_ModularCurve_AtkinLehner",
+              "source_sha256": "86a6add57b6cdaafd0ba232299e3e283eed57344a2c35fd740de22ba54dd2a56",
+              "object_sha256": "ee4ec58972a34ba1ba7e8822609fd8ec4137a289ff33ff91f1008731bb8395a9",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.Theorems.Thm_ModularCurve_mem_modularFunctionField_of_hasSum_of_gamma0_invariant",
+              "source_sha256": "62fe10bf0502417af3f46479849bda449b51f4c09da31df6c4732e7d0ec52121",
+              "object_sha256": "263c8b5d8b20753ce52bcc6e32b6060d4f4adf08f7dc30a01a0656956c01731a",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.Theorems.Thm_ModularCurve_isIntegral_adjoin_jq_of_hasSum_of_gamma0_invariant",
+              "source_sha256": "c09acb57b27595ee111f97a39809cc5faf84261fda3a9822adc5da16a0806c83",
+              "object_sha256": "5302fb94e15fa2f2dc71878a47b1e6a99d8862dc31586e19486bc6552c65b7ec",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.Theorems.Thm_ModularCurve_coe_frickeInvolutionFull_eq_of_hasSum_of_gamma0_invariant",
+              "source_sha256": "c308af326419ba754f4851c7825fde575fe6a91c0299aad295a3421e9297eed7",
+              "object_sha256": "8ec717fe13602a9a7d0529973927dd31c36bdf056dfbf0337ac588551924038a",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.Theorems.Thm_ModularCurve_hasSum_sharpUnitSeries_qParam",
+              "source_sha256": "ff8abb782cbaa678d1161710bde75ea49ac8d7b439d59fec6bbd98ce55088cfa",
+              "object_sha256": "62be6264ad9c42faf9a45344261ed2909842b47d21a33f6a40501fd378e3007b",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.Theorems.Thm_ModularCurve_hasSum_smul_sharpUnitSeries_inv_qParam",
+              "source_sha256": "da746eadf35cd6af7e1de06e5480793b37337d7be86e3c82b144d64c7374b87a",
+              "object_sha256": "a7b68cf55daebe1d4dfd20ead7559b8e117b2e33e38b5101ec72a78f9691c653",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.Theorems.Thm_ModularCurve_hasSum_sharpUnitSeries_inv_qParam",
+              "source_sha256": "7ad5f211584728889dec78b08f138c354d94d4bfc2af1057031e461d42227f1d",
+              "object_sha256": "1dd2aec86b476b433eacac9756727820e3bac5fd5fdd4ef974673e880502537b",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.Theorems.Thm_ModularCurve_hasSum_smul_sharpUnitSeries_qParam",
+              "source_sha256": "4b48b835d5b954339cc063261389c34cbda7a2837742dc0ba83a9b277a3cc75a",
+              "object_sha256": "cabfc3356581af96c118f945e3a8ef86688dfcc07968c6025503568840e0c265",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.P2M.Util",
+              "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+              "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+              "receipt_reused": true
+            }
+          ]
+        },
+        "card": {
+          "module": "Submission.Supplier.Theorems.Thm_ModularCurve_sharpUnitSeries_mem_modularFunctionField",
+          "canonical_lines": 8,
+          "canonical_byte_identical_to_supplier": true,
+          "make_exit": 0,
+          "kernel_exit": 0,
+          "kernel_seconds": 30.354301167,
+          "compiler_warnings": 0,
+          "source_unchanged_during_check": true,
+          "printed_final_axiom_closures": [],
+          "separate_final_axiom_audit_pending": true,
+          "direct_dependencies": [
+            {
+              "module": "Submission.Supplier.Definitions.Def_ModularCurve_EtaQuotient",
+              "source_sha256": "db23d8108e6c6d1ffce1af0977707ff370c2f6609bf6e8bb85a9438ed25167d5",
+              "object_sha256": "20c39966a760afdeea8f3472e0b9ca16a45358ee712eac1f2e312b3f4f5e29df",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.P2M.Util",
+              "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+              "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.P2M.Sol.S_ModularCurve_sharpUnitSeries_mem_modularFunctionField",
+              "source_sha256": "64f11661e4ba2c6778bd72740e61442978f62db45d781cbac9f765506feba924",
+              "object_sha256": "475265d903d694525fce7b2dadb1d21bc0ec72d3eb66a0a837ccd421e89d3047",
+              "receipt_reused": true
+            }
+          ]
+        }
+      }
+    }
+  },
+  "supplier": "anthropics/fermats-last-theorem",
+  "supplier_commit": "6e837e75355538c7f80bab5b956861e86c4eacc2",
+  "full_original_complete": false,
+  "official_new_solve_credit": 0,
+  "complete_import_replay_and_recursive_axiom_audits_pending": true,
+  "selected_problem": "fermat_last_theorem",
+  "max_active_flt_jobs": 1,
+  "max_active_flt_compilers": 1,
+  "lean_threads": 1,
+  "graph_snapshot": {
+    "compiled": 8222,
+    "failed": 0,
+    "ready": 4392,
+    "root_compiled": false,
+    "workers": 1,
+    "running": {
+      "Submission.Supplier.P2M.Sol.S_ModularCurve_heckeBetaHBar_pins_and_smul_pullbackAlongHom_of_qExpand_pins": {
+        "pid": 11712,
+        "make_wrapper_pid": 8318,
+        "phase": "kernel",
+        "sha256": "d6b3323f92c60c77bda977c526d1fc9df5404a91d26e39a6f0106ff39ffd8de7",
+        "configuration": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/5ebbc4f043fac43e8f6ba624-1791958055589731000.configuration.json"
+      }
+    }
+  }
+}
