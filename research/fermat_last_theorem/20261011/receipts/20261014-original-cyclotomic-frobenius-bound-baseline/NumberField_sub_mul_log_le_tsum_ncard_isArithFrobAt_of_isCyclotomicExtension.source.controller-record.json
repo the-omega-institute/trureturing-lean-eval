@@ -1,0 +1,62 @@
+{
+  "sha256": "e010b91f242319335466a21963eb0ee8c40f62a421065b061bf29e630157fb33",
+  "exit": 0,
+  "empty_output_retry_done": false,
+  "source_sha256_after": "e010b91f242319335466a21963eb0ee8c40f62a421065b061bf29e630157fb33",
+  "source_unchanged": true,
+  "olean_sha256": "b82911211f3a7f1677c7582c6534d6b5f8f69da1371d215421a1a3af042f8d9a",
+  "seconds": 70.6696011669992,
+  "pid": 55349,
+  "command": [
+    "/Users/macstudio/.local/omega-shims/lean",
+    "-j1",
+    "--trust=0",
+    "-Ddebug.skipKernelTC=false",
+    "-R",
+    "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src",
+    "-o",
+    "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-build/lib/lean/Submission/Supplier/P2M/Sol/S_NumberField_sub_mul_log_le_tsum_ncard_isArithFrobAt_of_isCyclotomicExtension.olean",
+    "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_NumberField_sub_mul_log_le_tsum_ncard_isArithFrobAt_of_isCyclotomicExtension.lean"
+  ],
+  "make_wrapper_pid": 51113,
+  "make_exit": 0,
+  "make_entry_failed": false,
+  "cache_binding_valid": true,
+  "canonical_make_running_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/8d4b7cd3e3ca61b8bde33acd-1791961176667252000.make-running.json",
+  "canonical_make_terminal_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/8d4b7cd3e3ca61b8bde33acd-1791961176667252000.make-terminal.json",
+  "kernel_terminal_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/8d4b7cd3e3ca61b8bde33acd-1791961176667252000.kernel/result.json",
+  "direct_dependencies": [
+    {
+      "module": "Submission.Supplier.Definitions.Def_FrobeniusDensity_PrimeSums",
+      "source_sha256": "a933695b06cb77767ee067ac6c7d9f97e07c1867c51d15fa41f0f54e346658ea",
+      "object_sha256": "6d3c6444e00c609cb26d732ce9d3b18379e6a6212303180d42a2387bf5498cad",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Definitions.Def_NumberField_PrimeNormSums",
+      "source_sha256": "14336abc175bf1aae5abf22616de3909ca0af8e1d3da98ae8ffb429185f0338a",
+      "object_sha256": "dfc31fba56fc3dcfab367933b91e484befc7bf4687da9e7271ac380f819927ad",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Theorems.Thm_FrobeniusDensity_tailSum_le",
+      "source_sha256": "1552657e8ecc74042a247dd8238ed933acfc0fa281ad28fa463b5a83bc91d017",
+      "object_sha256": "5e86707d6449ca99efd182f10ba0ced82072cbd33d4cf56b945fe3016a9f4432",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Theorems.Thm_NumberField_exists_forall_abs_tsum_absNorm_rpow_neg_sub_inv_finrank_mul_log_le_of_isCyclotomicExtension",
+      "source_sha256": "b18ee00956126589ba944d04cdf7378cbd84070992da35233b0acd9dcee50b20",
+      "object_sha256": "c4e4607bd6de2b262bfdb0a5e45cc8702999c3bd46d5480b83406e56c01707cc",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.P2M.Util",
+      "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+      "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+      "receipt_reused": true
+    }
+  ],
+  "stdout": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/8d4b7cd3e3ca61b8bde33acd-1791961176667252000.kernel/stdout.log",
+  "stderr": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/8d4b7cd3e3ca61b8bde33acd-1791961176667252000.kernel/stderr.log"
+}
