@@ -1,0 +1,115 @@
+{
+  "at": "2026-10-14T16:10:47.703624+00:00",
+  "original_source_card_pairs_actual_make_kernel_passed": true,
+  "canonical_pairs_byte_identical_to_supplier": true,
+  "no_source_edits": true,
+  "no_linter_suppression_added": true,
+  "no_redundant_recompilation": true,
+  "original_statements_hypotheses_and_proofs_preserved": true,
+  "checks": {
+    "CerednikDrinfeld_Mumford_invariantFieldOf_sup_map_conj_eq_inf_and_relfinrank_eq_relIndex": {
+      "proof_summary": "Preserve arbitrary field, group, domain algebra and compatible semiring action; original subgroup/conjugator, intersection containment, normalization, nonzero relative index and both fixing-element hypotheses. Retain both conclusions, the faithful finite quotient action and kernel comparison, all fixed-field/subfield/intermediate-field identifications, both compositum inclusions via finite Galois correspondence, tower/cardinality/index argument and transport back to the original fraction field.",
+      "checks": {
+        "source": {
+          "module": "Submission.Supplier.P2M.Sol.S_CerednikDrinfeld_Mumford_invariantFieldOf_sup_map_conj_eq_inf_and_relfinrank_eq_relIndex",
+          "canonical_lines": 320,
+          "canonical_byte_identical_to_supplier": true,
+          "make_exit": 0,
+          "kernel_exit": 0,
+          "kernel_seconds": 30.578856208999998,
+          "compiler_warnings": 7,
+          "source_unchanged_during_check": true,
+          "printed_final_axiom_closures": [],
+          "separate_final_axiom_audit_pending": true,
+          "direct_dependencies": [
+            {
+              "module": "Submission.Supplier.Definitions.Def_CerednikDrinfeld_MumfordQuotient",
+              "source_sha256": "6838caf52dca86502e4bae6d6009ee25a5c3120d0aeb3175bae12cbf6870ab5b",
+              "object_sha256": "80e42d4000e82e9afbd97d54f003ea23cce9bc7022750e254a82769780179f45",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.P2M.Util",
+              "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+              "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+              "receipt_reused": true
+            }
+          ],
+          "unreceipted_cached_dependency_metadata": []
+        },
+        "card": {
+          "module": "Submission.Supplier.Theorems.Thm_CerednikDrinfeld_Mumford_invariantFieldOf_sup_map_conj_eq_inf_and_relfinrank_eq_relIndex",
+          "canonical_lines": 22,
+          "canonical_byte_identical_to_supplier": true,
+          "make_exit": 0,
+          "kernel_exit": 0,
+          "kernel_seconds": 16.893333667,
+          "compiler_warnings": 0,
+          "source_unchanged_during_check": true,
+          "printed_final_axiom_closures": [],
+          "separate_final_axiom_audit_pending": true,
+          "direct_dependencies": [
+            {
+              "module": "Submission.Supplier.Definitions.Def_CerednikDrinfeld_MumfordQuotient",
+              "source_sha256": "6838caf52dca86502e4bae6d6009ee25a5c3120d0aeb3175bae12cbf6870ab5b",
+              "object_sha256": "80e42d4000e82e9afbd97d54f003ea23cce9bc7022750e254a82769780179f45",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.P2M.Util",
+              "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+              "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.P2M.Sol.S_CerednikDrinfeld_Mumford_invariantFieldOf_sup_map_conj_eq_inf_and_relfinrank_eq_relIndex",
+              "source_sha256": "a4c4e79c4deb263e0d567b0fed602dced80bbf8ae9a2442f957a4c46812a2f4d",
+              "object_sha256": "5312673bbafb4fd804befafe382f0bd947b8d357c1ba2a1a8dd2793a8be284e4",
+              "receipt_reused": true
+            }
+          ],
+          "unreceipted_cached_dependency_metadata": []
+        }
+      }
+    }
+  },
+  "supplier": "anthropics/fermats-last-theorem",
+  "supplier_commit": "6e837e75355538c7f80bab5b956861e86c4eacc2",
+  "full_original_complete": false,
+  "official_new_solve_credit": 0,
+  "complete_import_replay_and_recursive_axiom_audits_pending": true,
+  "selected_problem": "fermat_last_theorem",
+  "canonical_lexical_integrity_scan": {
+    "observed_at": "2026-10-14T07:21:59.476314+00:00",
+    "canonical_lean_files_covered": 60473,
+    "matching_files": 0,
+    "scope": [
+      "P2M/Sol",
+      "Theorems",
+      "Definitions",
+      "P2M/Util.lean"
+    ],
+    "ignore_rules_disabled": true,
+    "pattern": "^\\s*(axiom|constant)\\s|\\b(sorry|admit)\\b",
+    "formal_recursive_axiom_audit_still_pending": true
+  },
+  "max_active_flt_jobs": 1,
+  "max_active_flt_compilers": 1,
+  "lean_threads": 1,
+  "graph_snapshot": {
+    "compiled": 8575,
+    "failed": 0,
+    "ready": 4375,
+    "root_compiled": false,
+    "workers": 1,
+    "running": {
+      "Submission.Supplier.P2M.Sol.S_CerednikDrinfeld_Omega_apply_mem_map_of_forall_exists_pmoebius_eq_pmoebius": {
+        "pid": 37711,
+        "make_wrapper_pid": 32140,
+        "phase": "kernel",
+        "sha256": "af7ce1b3764956cf5c34e400446b789570519bf0fbcb773407980fed2f68d490",
+        "configuration": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/68e252597f204b23f1bfb9b6-1791994218007217000.configuration.json"
+      }
+    }
+  }
+}
