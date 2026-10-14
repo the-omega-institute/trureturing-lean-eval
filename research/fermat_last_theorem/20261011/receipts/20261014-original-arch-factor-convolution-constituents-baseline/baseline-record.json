@@ -1,0 +1,393 @@
+{
+  "at": "2026-10-14T14:37:23.717343+00:00",
+  "problem": "fermat_last_theorem",
+  "checks": {
+    "AutomorphicForm_contDiff_apply_unipotentGL2_mixedSpace_mul_of_isArchSmoothAt_rat": {
+      "proof_summary": "Retain rational real-place hypothesis and ContDiff order Module.finrank \u211a \u211a + 1.",
+      "checks": {
+        "source": {
+          "module": "Submission.Supplier.P2M.Sol.S_AutomorphicForm_contDiff_apply_unipotentGL2_mixedSpace_mul_of_isArchSmoothAt_rat",
+          "canonical_lines": 171,
+          "canonical_byte_identical_to_supplier": true,
+          "make_exit": 0,
+          "kernel_exit": 0,
+          "kernel_seconds": 63.262590375,
+          "compiler_warnings": 0,
+          "no_source_edits": true,
+          "printed_recursive_axioms": [],
+          "final_declaration": "P2MW.S_AutomorphicForm_contDiff_apply_unipotentGL2_mixedSpace_mul_of_isArchSmoothAt_rat.solution",
+          "separate_final_axiom_audit_pending": true,
+          "unreceipted_cached_dependencies": [
+            {
+              "module": "Submission.Supplier.Definitions.Def_AutomorphicForm_WhittakerCoefficient",
+              "controller_source_binding": "a524696a3fb200b6bc237a7a6ca14ba848120f3410bb03360cdcd523bd5c526c",
+              "object_receipt_available": false,
+              "source_metadata": {
+                "size": 2623,
+                "mtime_ns": 1791389120444613109
+              },
+              "object_metadata": {
+                "size": 89624,
+                "mtime_ns": 1791511741026208330
+              }
+            }
+          ],
+          "direct_dependencies": [
+            {
+              "module": "Submission.Supplier.Definitions.Def_NumberField_AdelicBox",
+              "source_sha256": "286d2f475bce1fe1d29bd907480fa7eb9f67b47ad961d1f789765d2b9a9f5d3f",
+              "object_sha256": "f341d3e7fb4d2df5316ff12651a8c9789cdfe510c63fe8ddceb3c5ee4a4680a8",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.Definitions.Def_AutomorphicForm_SmoothAutomorphicFnAt",
+              "source_sha256": "df18f8d677cfaef69c6485bf9f41d2f4260c26926903e1590f50faf58d5452d7",
+              "object_sha256": "a1b8b61729f1eece2b9e1c0eed10cc7495acf64eb817d5854e9e15f0f2f229d1",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.Definitions.Def_AutomorphicForm_WhittakerCoefficient",
+              "source_sha256": "a524696a3fb200b6bc237a7a6ca14ba848120f3410bb03360cdcd523bd5c526c",
+              "object_sha256": null,
+              "receipt_reused": false
+            },
+            {
+              "module": "Submission.Supplier.Definitions.Def_NumberField_AdelicLevel",
+              "source_sha256": "b2abbefdbcc0befdce3eba26e743768681de7830f30af7a32bdd667e91f15731",
+              "object_sha256": "1981db2375bbafba16ced1c3ef8e299fa4b2f3b34cc21e7c486a23422e4d9dc5",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.Definitions.Def_M4aHerbrand_IdeleClassVocab",
+              "source_sha256": "4b9c8e33b00884f8d88c28b4ea7ed2766409118b798b0a8463672755a5d147fd",
+              "object_sha256": "f1d59aaa94e3d23e509081bfeec9bffd2584a7dfcc312e3b0a7c87bebe842550",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.Definitions.Def_AutomorphicForm_ArchDerivCasimir",
+              "source_sha256": "c2fbb522171ad400dc16ff0e78548a8f0326540ee9d9d4f41aa7ed42ad759384",
+              "object_sha256": "76b0bb05da8a953a7e16c9bed1194f31c2a39674688ab7c170cb10b1d72fb779",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.P2M.Util",
+              "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+              "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+              "receipt_reused": true
+            }
+          ]
+        },
+        "card": {
+          "module": "Submission.Supplier.Theorems.Thm_AutomorphicForm_contDiff_apply_unipotentGL2_mixedSpace_mul_of_isArchSmoothAt_rat",
+          "canonical_lines": 21,
+          "canonical_byte_identical_to_supplier": true,
+          "make_exit": 0,
+          "kernel_exit": 0,
+          "kernel_seconds": 60.070544,
+          "compiler_warnings": 0,
+          "no_source_edits": true,
+          "printed_recursive_axioms": [],
+          "final_declaration": "AutomorphicForm.contDiff_apply_unipotentGL2_mixedSpace_mul_of_isArchSmoothAt_rat",
+          "separate_final_axiom_audit_pending": true,
+          "unreceipted_cached_dependencies": [
+            {
+              "module": "Submission.Supplier.Definitions.Def_AutomorphicForm_WhittakerCoefficient",
+              "controller_source_binding": "a524696a3fb200b6bc237a7a6ca14ba848120f3410bb03360cdcd523bd5c526c",
+              "object_receipt_available": false,
+              "source_metadata": {
+                "size": 2623,
+                "mtime_ns": 1791389120444613109
+              },
+              "object_metadata": {
+                "size": 89624,
+                "mtime_ns": 1791511741026208330
+              }
+            }
+          ],
+          "direct_dependencies": [
+            {
+              "module": "Submission.Supplier.Definitions.Def_NumberField_AdelicBox",
+              "source_sha256": "286d2f475bce1fe1d29bd907480fa7eb9f67b47ad961d1f789765d2b9a9f5d3f",
+              "object_sha256": "f341d3e7fb4d2df5316ff12651a8c9789cdfe510c63fe8ddceb3c5ee4a4680a8",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.Definitions.Def_AutomorphicForm_SmoothAutomorphicFnAt",
+              "source_sha256": "df18f8d677cfaef69c6485bf9f41d2f4260c26926903e1590f50faf58d5452d7",
+              "object_sha256": "a1b8b61729f1eece2b9e1c0eed10cc7495acf64eb817d5854e9e15f0f2f229d1",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.Definitions.Def_AutomorphicForm_WhittakerCoefficient",
+              "source_sha256": "a524696a3fb200b6bc237a7a6ca14ba848120f3410bb03360cdcd523bd5c526c",
+              "object_sha256": null,
+              "receipt_reused": false
+            },
+            {
+              "module": "Submission.Supplier.Definitions.Def_NumberField_AdelicLevel",
+              "source_sha256": "b2abbefdbcc0befdce3eba26e743768681de7830f30af7a32bdd667e91f15731",
+              "object_sha256": "1981db2375bbafba16ced1c3ef8e299fa4b2f3b34cc21e7c486a23422e4d9dc5",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.Definitions.Def_M4aHerbrand_IdeleClassVocab",
+              "source_sha256": "4b9c8e33b00884f8d88c28b4ea7ed2766409118b798b0a8463672755a5d147fd",
+              "object_sha256": "f1d59aaa94e3d23e509081bfeec9bffd2584a7dfcc312e3b0a7c87bebe842550",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.Definitions.Def_AutomorphicForm_ArchDerivCasimir",
+              "source_sha256": "c2fbb522171ad400dc16ff0e78548a8f0326540ee9d9d4f41aa7ed42ad759384",
+              "object_sha256": "76b0bb05da8a953a7e16c9bed1194f31c2a39674688ab7c170cb10b1d72fb779",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.P2M.Util",
+              "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+              "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.P2M.Sol.S_AutomorphicForm_contDiff_apply_unipotentGL2_mixedSpace_mul_of_isArchSmoothAt_rat",
+              "source_sha256": "176f07ff942fd712f9e7f911794a0bf40e3bf9f00400364341fde766eaf67cf1",
+              "object_sha256": "f32e60efb562f9df7d3c9f0b7414798bc3efd958bb9f5d729bb8f503df3fd9a3",
+              "receipt_reused": true
+            }
+          ]
+        }
+      }
+    },
+    "AutomorphicForm_continuous_and_hasCompactSupport_of_isFactorizableTestFn": {
+      "proof_summary": "Retain both continuity and compact support for all factorizable test function hypotheses.",
+      "checks": {
+        "source": {
+          "module": "Submission.Supplier.P2M.Sol.S_AutomorphicForm_continuous_and_hasCompactSupport_of_isFactorizableTestFn",
+          "canonical_lines": 126,
+          "canonical_byte_identical_to_supplier": true,
+          "make_exit": 0,
+          "kernel_exit": 0,
+          "kernel_seconds": 69.17737870799999,
+          "compiler_warnings": 0,
+          "no_source_edits": true,
+          "printed_recursive_axioms": [],
+          "final_declaration": "P2MW.S_AutomorphicForm_continuous_and_hasCompactSupport_of_isFactorizableTestFn.solution",
+          "separate_final_axiom_audit_pending": true,
+          "unreceipted_cached_dependencies": [],
+          "direct_dependencies": [
+            {
+              "module": "Submission.Supplier.Definitions.Def_AutomorphicForm_FactorizableTestFn",
+              "source_sha256": "0560c57b64f7610c7b1b0f44c6eff63b8c24a6a101db29c2153141dc15f75318",
+              "object_sha256": "5a3877bad6775cc0cfcd20ae5b28505d44154c29ce2d2cb572121c96cc926d91",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.P2M.Util",
+              "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+              "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+              "receipt_reused": true
+            }
+          ]
+        },
+        "card": {
+          "module": "Submission.Supplier.Theorems.Thm_AutomorphicForm_continuous_and_hasCompactSupport_of_isFactorizableTestFn",
+          "canonical_lines": 8,
+          "canonical_byte_identical_to_supplier": true,
+          "make_exit": 0,
+          "kernel_exit": 0,
+          "kernel_seconds": 62.2414755,
+          "compiler_warnings": 0,
+          "no_source_edits": true,
+          "printed_recursive_axioms": [],
+          "final_declaration": "AutomorphicForm.continuous_and_hasCompactSupport_of_isFactorizableTestFn",
+          "separate_final_axiom_audit_pending": true,
+          "unreceipted_cached_dependencies": [],
+          "direct_dependencies": [
+            {
+              "module": "Submission.Supplier.Definitions.Def_AutomorphicForm_FactorizableTestFn",
+              "source_sha256": "0560c57b64f7610c7b1b0f44c6eff63b8c24a6a101db29c2153141dc15f75318",
+              "object_sha256": "5a3877bad6775cc0cfcd20ae5b28505d44154c29ce2d2cb572121c96cc926d91",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.P2M.Util",
+              "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+              "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.P2M.Sol.S_AutomorphicForm_continuous_and_hasCompactSupport_of_isFactorizableTestFn",
+              "source_sha256": "9953943fb9c56d91452ecb088c29f58637b0197dfd38babb9add733ac980717f",
+              "object_sha256": "246fad59ef495cd70e2c44ce633c3aa94da33f27060caa12e1d239269eb2e26e",
+              "receipt_reused": true
+            }
+          ]
+        }
+      }
+    },
+    "AutomorphicForm_exists_isArchFactorBiFinite_rightConv_ne_zero_and_norm_sub_le_of_isCompact": {
+      "proof_summary": "Retain nonzero convolution, arch-cut membership, compact-set uniform error \u2264 \u03b7 and all test-factor hypotheses.",
+      "checks": {
+        "source": {
+          "module": "Submission.Supplier.P2M.Sol.S_AutomorphicForm_exists_isArchFactorBiFinite_rightConv_ne_zero_and_norm_sub_le_of_isCompact",
+          "canonical_lines": 2021,
+          "canonical_byte_identical_to_supplier": true,
+          "make_exit": 0,
+          "kernel_exit": 0,
+          "kernel_seconds": 64.221949125,
+          "compiler_warnings": 29,
+          "no_source_edits": true,
+          "printed_recursive_axioms": [],
+          "final_declaration": "P2MW.S_AutomorphicForm_exists_isArchFactorBiFinite_rightConv_ne_zero_and_norm_sub_le_of_isCompact.solution",
+          "separate_final_axiom_audit_pending": true,
+          "unreceipted_cached_dependencies": [],
+          "direct_dependencies": [
+            {
+              "module": "Submission.Supplier.Definitions.Def_AutomorphicForm_IsotypicCuspSpace",
+              "source_sha256": "a98dbbf1bd891679a98b7b5a411f9b5ca91384899977186a53a384ee27916dc7",
+              "object_sha256": "f29c67f4c799cee346ac34f42b8c14720797b7c8adc27bd96fb12ccc9535a63a",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.Definitions.Def_AutomorphicForm_FactorizableTestFn",
+              "source_sha256": "0560c57b64f7610c7b1b0f44c6eff63b8c24a6a101db29c2153141dc15f75318",
+              "object_sha256": "5a3877bad6775cc0cfcd20ae5b28505d44154c29ce2d2cb572121c96cc926d91",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.Theorems.Thm_AutomorphicForm_continuous_and_hasCompactSupport_of_isFactorizableTestFn",
+              "source_sha256": "311777c9f6a95a3355220e56c488e43584adc759070a1c2c0b724a6b4278583d",
+              "object_sha256": "8ca964ba094ab5a6fab1a73b2513bffbefae1c783b8782e1fa2382e3981389d5",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.P2M.Util",
+              "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+              "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+              "receipt_reused": true
+            }
+          ]
+        },
+        "card": {
+          "module": "Submission.Supplier.Theorems.Thm_AutomorphicForm_exists_isArchFactorBiFinite_rightConv_ne_zero_and_norm_sub_le_of_isCompact",
+          "canonical_lines": 22,
+          "canonical_byte_identical_to_supplier": true,
+          "make_exit": 0,
+          "kernel_exit": 0,
+          "kernel_seconds": 53.924522458,
+          "compiler_warnings": 0,
+          "no_source_edits": true,
+          "printed_recursive_axioms": [],
+          "final_declaration": "AutomorphicForm.exists_isArchFactorBiFinite_rightConv_ne_zero_and_norm_sub_le_of_isCompact",
+          "separate_final_axiom_audit_pending": true,
+          "unreceipted_cached_dependencies": [],
+          "direct_dependencies": [
+            {
+              "module": "Submission.Supplier.Definitions.Def_AutomorphicForm_IsotypicCuspSpace",
+              "source_sha256": "a98dbbf1bd891679a98b7b5a411f9b5ca91384899977186a53a384ee27916dc7",
+              "object_sha256": "f29c67f4c799cee346ac34f42b8c14720797b7c8adc27bd96fb12ccc9535a63a",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.Definitions.Def_AutomorphicForm_FactorizableTestFn",
+              "source_sha256": "0560c57b64f7610c7b1b0f44c6eff63b8c24a6a101db29c2153141dc15f75318",
+              "object_sha256": "5a3877bad6775cc0cfcd20ae5b28505d44154c29ce2d2cb572121c96cc926d91",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.P2M.Util",
+              "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+              "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.P2M.Sol.S_AutomorphicForm_exists_isArchFactorBiFinite_rightConv_ne_zero_and_norm_sub_le_of_isCompact",
+              "source_sha256": "dc5cf06942a9bfb0372c3384f6c84b8fe74971b08c18bb831b78c5143c439203",
+              "object_sha256": "58138a27d790a73cfb5cfa5b6b179a9ee45d01f08aa70285a407f14cf2c11d5b",
+              "receipt_reused": true
+            }
+          ]
+        }
+      }
+    },
+    "AutomorphicForm_CuspidalConstituent_exists_subset_iSupIndep_iSup_eq_of_finset_isCuspConstituent": {
+      "proof_summary": "Retain original finite-family subset, iSupIndep and equality of the complete iSup.",
+      "checks": {
+        "source": {
+          "module": "Submission.Supplier.P2M.Sol.S_AutomorphicForm_CuspidalConstituent_exists_subset_iSupIndep_iSup_eq_of_finset_isCuspConstituent",
+          "canonical_lines": 150,
+          "canonical_byte_identical_to_supplier": true,
+          "make_exit": 0,
+          "kernel_exit": 0,
+          "kernel_seconds": 6.1928737080000005,
+          "compiler_warnings": 2,
+          "no_source_edits": true,
+          "printed_recursive_axioms": [],
+          "final_declaration": "P2MW.S_AutomorphicForm_CuspidalConstituent_exists_subset_iSupIndep_iSup_eq_of_finset_isCuspConstituent.solution",
+          "separate_final_axiom_audit_pending": true,
+          "unreceipted_cached_dependencies": [],
+          "direct_dependencies": [
+            {
+              "module": "Submission.Supplier.Definitions.Def_AutomorphicForm_CuspidalConstituent",
+              "source_sha256": "b90afc8b0472a84befbc1825010a0e2ad380a7fb2601968c5f9f7fa8fce45911",
+              "object_sha256": "a4edd3c1e6e3b4c3d3249443b8cbd6a2484acf97b59439bed134bb3ed1abcff2",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.Theorems.Thm_AutomorphicForm_continuous_and_hasCompactSupport_of_isFactorizableTestFn",
+              "source_sha256": "311777c9f6a95a3355220e56c488e43584adc759070a1c2c0b724a6b4278583d",
+              "object_sha256": "8ca964ba094ab5a6fab1a73b2513bffbefae1c783b8782e1fa2382e3981389d5",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.P2M.Util",
+              "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+              "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+              "receipt_reused": true
+            }
+          ]
+        },
+        "card": {
+          "module": "Submission.Supplier.Theorems.Thm_AutomorphicForm_CuspidalConstituent_exists_subset_iSupIndep_iSup_eq_of_finset_isCuspConstituent",
+          "canonical_lines": 18,
+          "canonical_byte_identical_to_supplier": true,
+          "make_exit": 0,
+          "kernel_exit": 0,
+          "kernel_seconds": 60.114227541999995,
+          "compiler_warnings": 0,
+          "no_source_edits": true,
+          "printed_recursive_axioms": [],
+          "final_declaration": "AutomorphicForm.CuspidalConstituent.exists_subset_iSupIndep_iSup_eq_of_finset_isCuspConstituent",
+          "separate_final_axiom_audit_pending": true,
+          "unreceipted_cached_dependencies": [],
+          "direct_dependencies": [
+            {
+              "module": "Submission.Supplier.Definitions.Def_AutomorphicForm_CuspidalConstituent",
+              "source_sha256": "b90afc8b0472a84befbc1825010a0e2ad380a7fb2601968c5f9f7fa8fce45911",
+              "object_sha256": "a4edd3c1e6e3b4c3d3249443b8cbd6a2484acf97b59439bed134bb3ed1abcff2",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.P2M.Util",
+              "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+              "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.P2M.Sol.S_AutomorphicForm_CuspidalConstituent_exists_subset_iSupIndep_iSup_eq_of_finset_isCuspConstituent",
+              "source_sha256": "f389b1ae3df874247066d92a0b1af751802203ffce285c34c53997841c0d8920",
+              "object_sha256": "e034a927284c93e6ae3a8321fdbca7aec517ecc203be8f84435569224957a6f3",
+              "receipt_reused": true
+            }
+          ]
+        }
+      }
+    }
+  },
+  "all_four_original_source_card_pairs_make_kernel_passed": true,
+  "no_source_edits": true,
+  "no_redundant_compilation": true,
+  "no_extra_hashing": true,
+  "full_original_complete": false,
+  "official_new_solve_credit": 0,
+  "complete_root_import_replay_and_recursive_axiom_audit_pending": true
+}
