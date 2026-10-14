@@ -1,0 +1,16 @@
+--- baseline-adapted.lean
++++ Thm_AutomorphicForm_constantTerm_adelicBox_unipotentGL2_mul.lean
+@@ -11,7 +11,6 @@
+ set_option backward.isDefEq.respectTransparency.types false
+ set_option debug.skipKernelTC false
+ -- End recovered elaborator settings.
+-attribute [-instance] instCountableOfNumberField_definitions
+ 
+ theorem AutomorphicForm.constantTerm_adelicBox_unipotentGL2_mul (K : Type) [Field K] [NumberField K]
+     {φ : AutomorphicForm.AdelicGL2 (NumberField.RingOfIntegers K) K → ℂ}
+@@ -34,3 +33,5 @@
+             (NumberField.AdelicHaar.adelicAddHaar (NumberField.RingOfIntegers K) K)
+             (NumberField.AdelicBox.adelicBox K))
+           (fun x => AutomorphicForm.unipotentGL2 x) φ g := by p2m_exact_reverting @_root_.P2MW.S_AutomorphicForm_constantTerm_adelicBox_unipotentGL2_mul.solution
++
++#print axioms AutomorphicForm.constantTerm_adelicBox_unipotentGL2_mul
