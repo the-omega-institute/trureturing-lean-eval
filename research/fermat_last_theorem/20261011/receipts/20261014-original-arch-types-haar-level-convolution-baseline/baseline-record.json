@@ -1,0 +1,268 @@
+{
+  "at": "2026-10-14T14:49:08.292971+00:00",
+  "problem": "fermat_last_theorem",
+  "checks": {
+    "AutomorphicForm_exists_archTypeFamily_isArchFactorBiFinite_of_finiteDimensional_span_range": {
+      "proof_summary": "Preserve arbitrary field, both finite-dimensional translation-span hypotheses, and a common ArchTypeFamily giving both factor types.",
+      "checks": {
+        "source": {
+          "module": "Submission.Supplier.P2M.Sol.S_AutomorphicForm_exists_archTypeFamily_isArchFactorBiFinite_of_finiteDimensional_span_range",
+          "canonical_lines": 215,
+          "make_exit": 0,
+          "kernel_exit": 0,
+          "kernel_seconds": 59.497964209,
+          "compiler_warnings": 2,
+          "canonical_byte_identical_to_supplier": true,
+          "adaptation_only_original_import_prefix_and_recovered_options": true,
+          "printed_recursive_axioms": [],
+          "separate_final_axiom_audit_pending": true,
+          "unreceipted_cached_dependencies": [],
+          "direct_dependencies": [
+            {
+              "module": "Submission.Supplier.Definitions.Def_AutomorphicForm_IsotypicCuspSpace",
+              "source_sha256": "a98dbbf1bd891679a98b7b5a411f9b5ca91384899977186a53a384ee27916dc7",
+              "object_sha256": "f29c67f4c799cee346ac34f42b8c14720797b7c8adc27bd96fb12ccc9535a63a",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.P2M.Util",
+              "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+              "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+              "receipt_reused": true
+            }
+          ]
+        },
+        "card": {
+          "module": "Submission.Supplier.Theorems.Thm_AutomorphicForm_exists_archTypeFamily_isArchFactorBiFinite_of_finiteDimensional_span_range",
+          "canonical_lines": 16,
+          "make_exit": 0,
+          "kernel_exit": 0,
+          "kernel_seconds": 80.728574083,
+          "compiler_warnings": 0,
+          "canonical_byte_identical_to_supplier": true,
+          "adaptation_only_original_import_prefix_and_recovered_options": true,
+          "printed_recursive_axioms": [],
+          "separate_final_axiom_audit_pending": true,
+          "unreceipted_cached_dependencies": [],
+          "direct_dependencies": [
+            {
+              "module": "Submission.Supplier.Definitions.Def_AutomorphicForm_IsotypicCuspSpace",
+              "source_sha256": "a98dbbf1bd891679a98b7b5a411f9b5ca91384899977186a53a384ee27916dc7",
+              "object_sha256": "f29c67f4c799cee346ac34f42b8c14720797b7c8adc27bd96fb12ccc9535a63a",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.P2M.Util",
+              "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+              "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.P2M.Sol.S_AutomorphicForm_exists_archTypeFamily_isArchFactorBiFinite_of_finiteDimensional_span_range",
+              "source_sha256": "f7d941c19939c380ed25a2e93e7a275ea723b92e8fef9a6e912cb2921a037eb1",
+              "object_sha256": "946fcc84e6bdb75780157eb9394700237a1a853f47a5b2237bfbc07cf532a376",
+              "receipt_reused": true
+            }
+          ]
+        }
+      }
+    },
+    "AutomorphicForm_exists_forall_adelicGLHaar_image2_unipotentGL2_mul_mul_le_of_isCompact": {
+      "proof_summary": "Preserve the complete nonnegative uniform adelic Haar bound for the image of the closed adelic box times each centre-cut Siegel point times the arbitrary compact set.",
+      "checks": {
+        "source": {
+          "module": "Submission.Supplier.P2M.Sol.S_AutomorphicForm_exists_forall_adelicGLHaar_image2_unipotentGL2_mul_mul_le_of_isCompact",
+          "canonical_lines": 317,
+          "make_exit": 0,
+          "kernel_exit": 0,
+          "kernel_seconds": 72.786613666,
+          "compiler_warnings": 2,
+          "canonical_byte_identical_to_supplier": true,
+          "adaptation_only_original_import_prefix_and_recovered_options": true,
+          "printed_recursive_axioms": [],
+          "separate_final_axiom_audit_pending": true,
+          "unreceipted_cached_dependencies": [],
+          "direct_dependencies": [
+            {
+              "module": "Submission.Supplier.Definitions.Def_AutomorphicForm_CentreCutSiegelSet",
+              "source_sha256": "259fd965bbbe66e7faa8cbfb22eb3a3ffe3da71830f68b3a67de2b2f7679464a",
+              "object_sha256": "00b3f3861fd90f88136eee7530c706e48be791dca7baea79fe9fd1c90f76e788",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.Definitions.Def_AutomorphicForm_ConstantTerm",
+              "source_sha256": "2d4e46dfd36da20b366436215b3bed9b3c8e4f492504cd138be31b309bf86259",
+              "object_sha256": "02248420bca11fe48b4dab328fdc23b128fd9ba98f82887bdd3439164f3f1a74",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.Definitions.Def_NumberField_AdelicBox",
+              "source_sha256": "286d2f475bce1fe1d29bd907480fa7eb9f67b47ad961d1f789765d2b9a9f5d3f",
+              "object_sha256": "f341d3e7fb4d2df5316ff12651a8c9789cdfe510c63fe8ddceb3c5ee4a4680a8",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.P2M.Util",
+              "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+              "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+              "receipt_reused": true
+            }
+          ]
+        },
+        "card": {
+          "module": "Submission.Supplier.Theorems.Thm_AutomorphicForm_exists_forall_adelicGLHaar_image2_unipotentGL2_mul_mul_le_of_isCompact",
+          "canonical_lines": 18,
+          "make_exit": 0,
+          "kernel_exit": 0,
+          "kernel_seconds": 68.752175291,
+          "compiler_warnings": 0,
+          "canonical_byte_identical_to_supplier": true,
+          "adaptation_only_original_import_prefix_and_recovered_options": true,
+          "printed_recursive_axioms": [],
+          "separate_final_axiom_audit_pending": true,
+          "unreceipted_cached_dependencies": [],
+          "direct_dependencies": [
+            {
+              "module": "Submission.Supplier.Definitions.Def_AutomorphicForm_CentreCutSiegelSet",
+              "source_sha256": "259fd965bbbe66e7faa8cbfb22eb3a3ffe3da71830f68b3a67de2b2f7679464a",
+              "object_sha256": "00b3f3861fd90f88136eee7530c706e48be791dca7baea79fe9fd1c90f76e788",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.Definitions.Def_AutomorphicForm_ConstantTerm",
+              "source_sha256": "2d4e46dfd36da20b366436215b3bed9b3c8e4f492504cd138be31b309bf86259",
+              "object_sha256": "02248420bca11fe48b4dab328fdc23b128fd9ba98f82887bdd3439164f3f1a74",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.Definitions.Def_NumberField_AdelicBox",
+              "source_sha256": "286d2f475bce1fe1d29bd907480fa7eb9f67b47ad961d1f789765d2b9a9f5d3f",
+              "object_sha256": "f341d3e7fb4d2df5316ff12651a8c9789cdfe510c63fe8ddceb3c5ee4a4680a8",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.P2M.Util",
+              "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+              "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.P2M.Sol.S_AutomorphicForm_exists_forall_adelicGLHaar_image2_unipotentGL2_mul_mul_le_of_isCompact",
+              "source_sha256": "1e031f6cfeb5a64bcf3b909c38890b2becc135a2908afde6fb1c1a0bb84176d3",
+              "object_sha256": "96d976cab76323a6299fac2c21219307f5b76747fc4eabfd03fd5adbd722e87e",
+              "receipt_reused": true
+            }
+          ]
+        }
+      }
+    },
+    "AutomorphicForm_exists_isFactorizableTestFn_rightConv_ne_zero_of_levelOne_invariant": {
+      "proof_summary": "Preserve nonzero level ideal, continuity, nonzero input, level invariance, factorizable test function, its full invariance and support decomposition, and nonzero convolution.",
+      "checks": {
+        "source": {
+          "module": "Submission.Supplier.P2M.Sol.S_AutomorphicForm_exists_isFactorizableTestFn_rightConv_ne_zero_of_levelOne_invariant",
+          "canonical_lines": 508,
+          "make_exit": 0,
+          "kernel_exit": 0,
+          "kernel_seconds": 63.407604875,
+          "compiler_warnings": 3,
+          "canonical_byte_identical_to_supplier": true,
+          "adaptation_only_original_import_prefix_and_recovered_options": true,
+          "printed_recursive_axioms": [],
+          "separate_final_axiom_audit_pending": true,
+          "unreceipted_cached_dependencies": [],
+          "direct_dependencies": [
+            {
+              "module": "Submission.Supplier.Definitions.Def_AutomorphicForm_RightConvolution",
+              "source_sha256": "67d45a9ec9b733583f031255c30d250fb7bac130bdc73fbf23ff1f445a3e6094",
+              "object_sha256": "c7baf6e554a9cb78fb21b7d95096b47aaee19c2c6585f6dc9eadc9e8eae08a5e",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.Definitions.Def_AutomorphicForm_FactorizableTestFn",
+              "source_sha256": "0560c57b64f7610c7b1b0f44c6eff63b8c24a6a101db29c2153141dc15f75318",
+              "object_sha256": "5a3877bad6775cc0cfcd20ae5b28505d44154c29ce2d2cb572121c96cc926d91",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.Definitions.Def_AutomorphicForm_SmoothAutomorphicFnAt",
+              "source_sha256": "df18f8d677cfaef69c6485bf9f41d2f4260c26926903e1590f50faf58d5452d7",
+              "object_sha256": "a1b8b61729f1eece2b9e1c0eed10cc7495acf64eb817d5854e9e15f0f2f229d1",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.Definitions.Def_AutomorphicForm_ArchType",
+              "source_sha256": "daaf9156a04625301a95c37fb3ff7d29d36b02262cfbf3d8006ad9968e84feec",
+              "object_sha256": "acc039653f113eb1fea6daaeb5a1869b0dcdde23d2ec7af7501aece272749cb1",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.Theorems.Thm_AutomorphicForm_continuous_and_hasCompactSupport_of_isFactorizableTestFn",
+              "source_sha256": "311777c9f6a95a3355220e56c488e43584adc759070a1c2c0b724a6b4278583d",
+              "object_sha256": "8ca964ba094ab5a6fab1a73b2513bffbefae1c783b8782e1fa2382e3981389d5",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.P2M.Util",
+              "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+              "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+              "receipt_reused": true
+            }
+          ]
+        },
+        "card": {
+          "module": "Submission.Supplier.Theorems.Thm_AutomorphicForm_exists_isFactorizableTestFn_rightConv_ne_zero_of_levelOne_invariant",
+          "canonical_lines": 20,
+          "make_exit": 0,
+          "kernel_exit": 0,
+          "kernel_seconds": 55.973197125,
+          "compiler_warnings": 0,
+          "canonical_byte_identical_to_supplier": true,
+          "adaptation_only_original_import_prefix_and_recovered_options": true,
+          "printed_recursive_axioms": [],
+          "separate_final_axiom_audit_pending": true,
+          "unreceipted_cached_dependencies": [],
+          "direct_dependencies": [
+            {
+              "module": "Submission.Supplier.Definitions.Def_AutomorphicForm_RightConvolution",
+              "source_sha256": "67d45a9ec9b733583f031255c30d250fb7bac130bdc73fbf23ff1f445a3e6094",
+              "object_sha256": "c7baf6e554a9cb78fb21b7d95096b47aaee19c2c6585f6dc9eadc9e8eae08a5e",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.Definitions.Def_AutomorphicForm_FactorizableTestFn",
+              "source_sha256": "0560c57b64f7610c7b1b0f44c6eff63b8c24a6a101db29c2153141dc15f75318",
+              "object_sha256": "5a3877bad6775cc0cfcd20ae5b28505d44154c29ce2d2cb572121c96cc926d91",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.Definitions.Def_AutomorphicForm_SmoothAutomorphicFnAt",
+              "source_sha256": "df18f8d677cfaef69c6485bf9f41d2f4260c26926903e1590f50faf58d5452d7",
+              "object_sha256": "a1b8b61729f1eece2b9e1c0eed10cc7495acf64eb817d5854e9e15f0f2f229d1",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.P2M.Util",
+              "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+              "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.P2M.Sol.S_AutomorphicForm_exists_isFactorizableTestFn_rightConv_ne_zero_of_levelOne_invariant",
+              "source_sha256": "8bf5bb45f3f17d19481a7e96dd17cb977877b8e92c5239c8dc53a08b968e5c32",
+              "object_sha256": "7c1f792e553d23afd924c74f7edf5518804470337b049e7d23722088a584f9c0",
+              "receipt_reused": true
+            }
+          ]
+        }
+      }
+    }
+  },
+  "all_three_original_source_card_pairs_make_kernel_passed": true,
+  "no_source_edits": true,
+  "no_redundant_compilation": true,
+  "no_extra_hashing": true,
+  "full_original_complete": false,
+  "official_new_solve_credit": 0,
+  "complete_root_import_replay_and_recursive_axiom_audit_pending": true
+}
