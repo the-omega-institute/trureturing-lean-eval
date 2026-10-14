@@ -1,0 +1,210 @@
+{
+  "at": "2026-10-14T06:56:57.280901+00:00",
+  "original_source_card_pairs_actual_make_kernel_passed": true,
+  "canonical_pairs_byte_identical_to_supplier": true,
+  "no_source_edits": true,
+  "no_linter_suppression_added": true,
+  "no_redundant_recompilation": true,
+  "original_statements_hypotheses_and_proofs_preserved": true,
+  "checks": {
+    "NumberField_exists_completedRayL_functionalEquation_of_primitive": {
+      "proof_summary": "Retain the full primitive-character functional equation over arbitrary-universe number fields, the ideal/fractional-ideal/ray-class transport equivalences, parity and primitivity transport, all trivial/nontrivial and top/proper-modulus branches, the Dedekind-zeta case and nonzero root-number proof. Complete supplier-original source remains byte-identical; inherited warnings and original linter settings are reported, not edited.",
+      "checks": {
+        "source": {
+          "module": "Submission.Supplier.P2M.Sol.S_NumberField_exists_completedRayL_functionalEquation_of_primitive",
+          "canonical_lines": 1055,
+          "canonical_byte_identical_to_supplier": true,
+          "make_exit": 0,
+          "kernel_exit": 0,
+          "kernel_seconds": 58.917800958,
+          "compiler_warnings": 32,
+          "source_unchanged_during_check": true,
+          "printed_final_axiom_closures": [],
+          "separate_final_axiom_audit_pending": true,
+          "direct_dependencies": [
+            {
+              "module": "Submission.Supplier.Definitions.Def_NumberField_CompletedRayL",
+              "source_sha256": "5f02bb3cdada7cbaaa3f0e895d998bb17fa32b8ea6aa767b2c09e0a71b830556",
+              "object_sha256": "892a8648c3190725fc6c91d3c2e09a254a1910a3250b459bc1842e9a13695ea2",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.Definitions.Def_NumberField_RayCharacterData",
+              "source_sha256": "4e4a836d6fa5877251ca2a08bc6ee154c0f42045419cc8e483a4db1065a75d7e",
+              "object_sha256": "ae10950d4f45d3159f9a61443ecb74e48a20124590c46d966d4f8936beed6e48",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.Theorems.Thm_M4aTorus_completedRayL_fe",
+              "source_sha256": "72bed64486594346be6916d00b5e40803c67a84a8b87ecd2f59888f2123cb7ba",
+              "object_sha256": "ab513d416fc3d3af2276be20304d03a49bf0d4dc7789c2c50fa8db783ffe5947",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.Theorems.Thm_NumberField_exists_completedDedekindZeta_package",
+              "source_sha256": "4742539b3cfde61bd771d8b0332962b896eb49f026212e6e36282a308f59231d",
+              "object_sha256": "07e2739439e8bd85d822fa90b38905f630c0c042c4426529df45b433f3c29c94",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.Theorems.Thm_NumberField_exists_isGaussDatum",
+              "source_sha256": "8d0b2f17e4afc60cd611cc93d69b337e36b1107bbef2e96d3ff4836a4a5ff078",
+              "object_sha256": "3809849e1c270594957351fa31611179fe176236d48a154d629b32dd9d893fc6",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.Theorems.Thm_NumberField_exists_completedRayL_functionalEquation_of_modulus_top",
+              "source_sha256": "355cf8ec709443e7910dd71c4bc6747fd969ef8c1e8ceb005e5dbffc82e1db53",
+              "object_sha256": "301738436123ceab4098400274ccca6e2336da357f72caef8f95be23fb0501a7",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.P2M.Util",
+              "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+              "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+              "receipt_reused": true
+            }
+          ]
+        },
+        "card": {
+          "module": "Submission.Supplier.Theorems.Thm_NumberField_exists_completedRayL_functionalEquation_of_primitive",
+          "canonical_lines": 30,
+          "canonical_byte_identical_to_supplier": true,
+          "make_exit": 0,
+          "kernel_exit": 0,
+          "kernel_seconds": 43.705521125,
+          "compiler_warnings": 0,
+          "source_unchanged_during_check": true,
+          "printed_final_axiom_closures": [],
+          "separate_final_axiom_audit_pending": true,
+          "direct_dependencies": [
+            {
+              "module": "Submission.Supplier.Definitions.Def_NumberField_CompletedRayL",
+              "source_sha256": "5f02bb3cdada7cbaaa3f0e895d998bb17fa32b8ea6aa767b2c09e0a71b830556",
+              "object_sha256": "892a8648c3190725fc6c91d3c2e09a254a1910a3250b459bc1842e9a13695ea2",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.P2M.Util",
+              "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+              "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.P2M.Sol.S_NumberField_exists_completedRayL_functionalEquation_of_primitive",
+              "source_sha256": "f0f9861031999c9f25a69c1034ab6e9e2eafdad61ca63cdf1ff6d0cb07cb690e",
+              "object_sha256": "d70f7830894117cc90b9533dc77432d0363885663e162b5a22edfa09c62533cb",
+              "receipt_reused": true
+            }
+          ]
+        }
+      }
+    },
+    "NumberField_exists_differentiable_eq_rayClassLSeries_of_ne_one": {
+      "proof_summary": "Retain every original nonzero modulus, nontrivial ray character and parity hypothesis. Preserve the entire reciprocal Gamma-factor construction, its exact cancellation on the right half-plane and the full differentiable continuation conclusion; no primitivity assumption is added.",
+      "checks": {
+        "source": {
+          "module": "Submission.Supplier.P2M.Sol.S_NumberField_exists_differentiable_eq_rayClassLSeries_of_ne_one",
+          "canonical_lines": 102,
+          "canonical_byte_identical_to_supplier": true,
+          "make_exit": 0,
+          "kernel_exit": 0,
+          "kernel_seconds": 57.264286125000005,
+          "compiler_warnings": 0,
+          "source_unchanged_during_check": true,
+          "printed_final_axiom_closures": [],
+          "separate_final_axiom_audit_pending": true,
+          "direct_dependencies": [
+            {
+              "module": "Submission.Supplier.Definitions.Def_NumberField_CompletedRayL",
+              "source_sha256": "5f02bb3cdada7cbaaa3f0e895d998bb17fa32b8ea6aa767b2c09e0a71b830556",
+              "object_sha256": "892a8648c3190725fc6c91d3c2e09a254a1910a3250b459bc1842e9a13695ea2",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.Definitions.Def_NumberField_RayCharacterData",
+              "source_sha256": "4e4a836d6fa5877251ca2a08bc6ee154c0f42045419cc8e483a4db1065a75d7e",
+              "object_sha256": "ae10950d4f45d3159f9a61443ecb74e48a20124590c46d966d4f8936beed6e48",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.Theorems.Thm_M4aTorus_completedRayL_fe",
+              "source_sha256": "72bed64486594346be6916d00b5e40803c67a84a8b87ecd2f59888f2123cb7ba",
+              "object_sha256": "ab513d416fc3d3af2276be20304d03a49bf0d4dc7789c2c50fa8db783ffe5947",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.P2M.Util",
+              "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+              "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+              "receipt_reused": true
+            }
+          ]
+        },
+        "card": {
+          "module": "Submission.Supplier.Theorems.Thm_NumberField_exists_differentiable_eq_rayClassLSeries_of_ne_one",
+          "canonical_lines": 16,
+          "canonical_byte_identical_to_supplier": true,
+          "make_exit": 0,
+          "kernel_exit": 0,
+          "kernel_seconds": 58.508217959,
+          "compiler_warnings": 0,
+          "source_unchanged_during_check": true,
+          "printed_final_axiom_closures": [],
+          "separate_final_axiom_audit_pending": true,
+          "direct_dependencies": [
+            {
+              "module": "Submission.Supplier.Definitions.Def_NumberField_CompletedRayL",
+              "source_sha256": "5f02bb3cdada7cbaaa3f0e895d998bb17fa32b8ea6aa767b2c09e0a71b830556",
+              "object_sha256": "892a8648c3190725fc6c91d3c2e09a254a1910a3250b459bc1842e9a13695ea2",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.Definitions.Def_NumberField_RayCharacterData",
+              "source_sha256": "4e4a836d6fa5877251ca2a08bc6ee154c0f42045419cc8e483a4db1065a75d7e",
+              "object_sha256": "ae10950d4f45d3159f9a61443ecb74e48a20124590c46d966d4f8936beed6e48",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.P2M.Util",
+              "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+              "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.P2M.Sol.S_NumberField_exists_differentiable_eq_rayClassLSeries_of_ne_one",
+              "source_sha256": "7f3aa99f2102af889ac9c27dc92bdd3230e8f5fd4f2ef6fbaa52c6c89739e9ec",
+              "object_sha256": "85ca6fb016394485c8941bd34199aca7ff122428e658503db02c26bc60177684",
+              "receipt_reused": true
+            }
+          ]
+        }
+      }
+    }
+  },
+  "supplier": "anthropics/fermats-last-theorem",
+  "supplier_commit": "6e837e75355538c7f80bab5b956861e86c4eacc2",
+  "full_original_complete": false,
+  "official_new_solve_credit": 0,
+  "complete_import_replay_and_recursive_axiom_audits_pending": true,
+  "selected_problem": "fermat_last_theorem",
+  "max_active_flt_jobs": 1,
+  "max_active_flt_compilers": 1,
+  "lean_threads": 1,
+  "graph_snapshot": {
+    "compiled": 8249,
+    "failed": 0,
+    "ready": 4400,
+    "root_compiled": false,
+    "workers": 1,
+    "running": {
+      "Submission.Supplier.P2M.Sol.S_NumberField_exists_forall_abs_tsum_absNorm_rpow_neg_sub_inv_finrank_mul_log_le_of_isCyclotomicExtension": {
+        "pid": 76127,
+        "make_wrapper_pid": 69235,
+        "phase": "kernel",
+        "sha256": "e7284829271b90f0dae445fcdebb6af75935219621e27246120456571f80ad17",
+        "configuration": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/fa3e6df664e2ae2fb1ef18a0-1791960982537547000.configuration.json"
+      }
+    }
+  }
+}
