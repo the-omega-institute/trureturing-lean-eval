@@ -1,0 +1,30 @@
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_CuspForm_qCoeff_zero_eq_zero_gamma1.lean:20:2: warning: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_CuspForm_qCoeff_zero_eq_zero_gamma1.lean:27:8: warning: This simp argument is unused:
+  Matrix.head_cons
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [ModularGroup.coe_T, Matrix.cons_val_zero, Matrix.cons_val_one, Matrix.head_fin_const]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_CuspForm_qCoeff_zero_eq_zero_gamma1.lean:27:26: warning: This simp argument is unused:
+  Matrix.head_fin_const
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [ModularGroup.coe_T, Matrix.cons_val_zero, Matrix.cons_val_one, Matrix.head_cons]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_CuspForm_qCoeff_zero_eq_zero_gamma1.lean:36:51: warning: This simp argument is unused:
+  Matrix.head_cons
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [Matrix.GeneralLinearGroup.upperRightHom, ModularGroup.coe_T, Matrix.SpecialLinearGroup.mapGL,
+    Matrix.SpecialLinearGroup.toGL, Matrix.cons_val_zero, Matrix.cons_val_one]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
