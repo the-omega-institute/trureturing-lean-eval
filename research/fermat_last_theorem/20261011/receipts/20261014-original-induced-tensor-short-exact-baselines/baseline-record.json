@@ -1,0 +1,197 @@
+{
+  "at": "2026-10-14T05:30:14.377528+00:00",
+  "checks": {
+    "Rep_shortExact_map_tensorLeft_indBot": {
+      "proof_summary": "For arbitrary common universe u, commutative ring k, group G and short complex X of k-linear G-representations, preserve the full claim that short exactness after tensorLeft with the original representation implies short exactness after tensorLeft with its induction from the trivial subgroup. Retain the complete trivial-coinvariant kernel proof, finsupp/tensor linear equivalences, flat-module ladder transfer, map commutation and full original proof; add no representation-flatness or finiteness assumption.",
+      "checks": {
+        "source": {
+          "module": "Submission.Supplier.P2M.Sol.S_Rep_shortExact_map_tensorLeft_indBot",
+          "canonical_lines": 128,
+          "canonical_byte_identical_to_supplier": true,
+          "make_exit": 0,
+          "kernel_exit": 0,
+          "kernel_seconds": 54.887854665999996,
+          "compiler_warnings": 1,
+          "source_unchanged_during_check": true,
+          "separate_final_axiom_audit_pending": true,
+          "direct_dependencies": [
+            {
+              "module": "Submission.Supplier.Definitions.Def_GroupCohomology_TateCohomology",
+              "source_sha256": "945d08a532ddf3320bc429f4d1c13cc1e331a24479fb3c1ee501d3fb74a345e3",
+              "object_sha256": null,
+              "receipt_reused": false
+            },
+            {
+              "module": "Submission.Supplier.Definitions.Def_GroupCohomology_TateDimensionShift",
+              "source_sha256": "af6947d2299af8fac5a2c825bc297fe7f4f04ca96ee41572fe58ea22d235a7bc",
+              "object_sha256": "56b5ea6aca0deda73c7051d1d825f0443d1788cd095d294d9b55fec0c2c506cc",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.P2M.Util",
+              "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+              "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.Definitions.Def_Compat_Mathlib430",
+              "source_sha256": "a58d9381cd9404d0b839ea4ba3af943d86bd555c4d505cd8a7d997f15521edff",
+              "object_sha256": "722c1cb719e738a8ad2bdeee80f1c24f636bdcea713cdf9510747b59f11cd71a",
+              "receipt_reused": true
+            }
+          ]
+        },
+        "card": {
+          "module": "Submission.Supplier.Theorems.Thm_Rep_shortExact_map_tensorLeft_indBot",
+          "canonical_lines": 12,
+          "canonical_byte_identical_to_supplier": true,
+          "make_exit": 0,
+          "kernel_exit": 0,
+          "kernel_seconds": 57.78596225,
+          "compiler_warnings": 0,
+          "source_unchanged_during_check": true,
+          "separate_final_axiom_audit_pending": true,
+          "direct_dependencies": [
+            {
+              "module": "Submission.Supplier.Definitions.Def_GroupCohomology_TateCohomology",
+              "source_sha256": "945d08a532ddf3320bc429f4d1c13cc1e331a24479fb3c1ee501d3fb74a345e3",
+              "object_sha256": null,
+              "receipt_reused": false
+            },
+            {
+              "module": "Submission.Supplier.Definitions.Def_GroupCohomology_TateDimensionShift",
+              "source_sha256": "af6947d2299af8fac5a2c825bc297fe7f4f04ca96ee41572fe58ea22d235a7bc",
+              "object_sha256": "56b5ea6aca0deda73c7051d1d825f0443d1788cd095d294d9b55fec0c2c506cc",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.P2M.Util",
+              "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+              "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.P2M.Sol.S_Rep_shortExact_map_tensorLeft_indBot",
+              "source_sha256": "423d6b8e8542e7f640b47a76c42c30351fc910a8a83dcce07d2d85daa34fd036",
+              "object_sha256": "b9a719e5e4078c54d66ed7b4d977c81841762a7d4bb57b6e77705caaf2129267",
+              "receipt_reused": true
+            }
+          ]
+        }
+      }
+    },
+    "Rep_shortExact_map_tensorRight_indBot": {
+      "proof_summary": "For arbitrary common universe u, commutative ring k, group G and short complex X of k-linear G-representations, preserve the full claim that short exactness after tensorRight with the original representation implies short exactness after tensorRight with its induction from the trivial subgroup. Retain the complete trivial-coinvariant kernel proof, finsupp/tensor linear equivalences, flat-module ladder transfer, map commutation and full original proof; add no representation-flatness or finiteness assumption.",
+      "checks": {
+        "source": {
+          "module": "Submission.Supplier.P2M.Sol.S_Rep_shortExact_map_tensorRight_indBot",
+          "canonical_lines": 128,
+          "canonical_byte_identical_to_supplier": true,
+          "make_exit": 0,
+          "kernel_exit": 0,
+          "kernel_seconds": 47.052702042,
+          "compiler_warnings": 1,
+          "source_unchanged_during_check": true,
+          "separate_final_axiom_audit_pending": true,
+          "direct_dependencies": [
+            {
+              "module": "Submission.Supplier.Definitions.Def_GroupCohomology_TateCohomology",
+              "source_sha256": "945d08a532ddf3320bc429f4d1c13cc1e331a24479fb3c1ee501d3fb74a345e3",
+              "object_sha256": null,
+              "receipt_reused": false
+            },
+            {
+              "module": "Submission.Supplier.Definitions.Def_GroupCohomology_TateDimensionShift",
+              "source_sha256": "af6947d2299af8fac5a2c825bc297fe7f4f04ca96ee41572fe58ea22d235a7bc",
+              "object_sha256": "56b5ea6aca0deda73c7051d1d825f0443d1788cd095d294d9b55fec0c2c506cc",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.P2M.Util",
+              "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+              "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.Definitions.Def_Compat_Mathlib430",
+              "source_sha256": "a58d9381cd9404d0b839ea4ba3af943d86bd555c4d505cd8a7d997f15521edff",
+              "object_sha256": "722c1cb719e738a8ad2bdeee80f1c24f636bdcea713cdf9510747b59f11cd71a",
+              "receipt_reused": true
+            }
+          ]
+        },
+        "card": {
+          "module": "Submission.Supplier.Theorems.Thm_Rep_shortExact_map_tensorRight_indBot",
+          "canonical_lines": 12,
+          "canonical_byte_identical_to_supplier": true,
+          "make_exit": 0,
+          "kernel_exit": 0,
+          "kernel_seconds": 95.690815,
+          "compiler_warnings": 0,
+          "source_unchanged_during_check": true,
+          "separate_final_axiom_audit_pending": true,
+          "direct_dependencies": [
+            {
+              "module": "Submission.Supplier.Definitions.Def_GroupCohomology_TateCohomology",
+              "source_sha256": "945d08a532ddf3320bc429f4d1c13cc1e331a24479fb3c1ee501d3fb74a345e3",
+              "object_sha256": null,
+              "receipt_reused": false
+            },
+            {
+              "module": "Submission.Supplier.Definitions.Def_GroupCohomology_TateDimensionShift",
+              "source_sha256": "af6947d2299af8fac5a2c825bc297fe7f4f04ca96ee41572fe58ea22d235a7bc",
+              "object_sha256": "56b5ea6aca0deda73c7051d1d825f0443d1788cd095d294d9b55fec0c2c506cc",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.P2M.Util",
+              "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+              "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.P2M.Sol.S_Rep_shortExact_map_tensorRight_indBot",
+              "source_sha256": "b5064cdd2b82aa7005ba4573f81ddb64a6e7813b09117d2b9ed33345e1fcd4f0",
+              "object_sha256": "d2c6bdccd9a202d7d20709d80a0b0b3fb2a4da03527f14f90fbfa0c5c8a7d183",
+              "receipt_reused": true
+            }
+          ]
+        }
+      }
+    }
+  },
+  "original_source_card_pairs_actual_make_kernel_passed": true,
+  "canonical_pairs_byte_identical_to_supplier": true,
+  "no_source_edits": true,
+  "no_linter_suppression_added": true,
+  "no_redundant_recompilation": true,
+  "original_statements_hypotheses_and_proofs_preserved": true,
+  "supplier": "anthropics/fermats-last-theorem",
+  "supplier_commit": "6e837e75355538c7f80bab5b956861e86c4eacc2",
+  "full_original_complete": false,
+  "official_new_solve_credit": 0,
+  "complete_import_replay_and_recursive_axiom_audits_pending": true,
+  "new_accepted_repair": false,
+  "next_accepted_repair": "r168",
+  "selected_problem": "fermat_last_theorem",
+  "max_active_flt_jobs": 1,
+  "max_active_flt_compilers": 1,
+  "lean_threads": 1,
+  "gate_request_GB": 35,
+  "graph_snapshot": {
+    "compiled": 8175,
+    "failed": 1,
+    "ready": 4387,
+    "root_compiled": false,
+    "workers": 1,
+    "running": {
+      "Submission.Supplier.P2M.Sol.S_Rep_tateDelta_comp_tateDelta_eq_neg_of_hom": {
+        "pid": 51270,
+        "make_wrapper_pid": 51270,
+        "phase": "canonical_make_queue",
+        "sha256": "533aa29a8c7ad139bd2671a23a0d8ae9d4040245b31ffb996cb813447bcc031f",
+        "configuration": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/70f37556867bf501371f6f9b-1791955811785887000.configuration.json"
+      }
+    }
+  }
+}
