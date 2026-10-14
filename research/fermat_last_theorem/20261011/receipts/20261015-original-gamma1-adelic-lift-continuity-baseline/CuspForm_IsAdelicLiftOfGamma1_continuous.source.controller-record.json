@@ -1,0 +1,74 @@
+{
+  "sha256": "94a2a14a4c75827c35a7e5d91cd77e63d7b92d2fc6e46d1a14707445d7f6b7ae",
+  "exit": 0,
+  "empty_output_retry_done": false,
+  "source_sha256_after": "94a2a14a4c75827c35a7e5d91cd77e63d7b92d2fc6e46d1a14707445d7f6b7ae",
+  "source_unchanged": true,
+  "olean_sha256": "c97392ba6d8fb5d08067c2f2bcf356c2055c2f33c78ad9a21368eaebf5307e3f",
+  "seconds": 65.12447129199427,
+  "pid": 43610,
+  "command": [
+    "/Users/macstudio/.local/omega-shims/lean",
+    "-j1",
+    "--trust=0",
+    "-Ddebug.skipKernelTC=false",
+    "-R",
+    "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src",
+    "-o",
+    "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-build/lib/lean/Submission/Supplier/P2M/Sol/S_CuspForm_IsAdelicLiftOfGamma1_continuous.olean",
+    "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_CuspForm_IsAdelicLiftOfGamma1_continuous.lean"
+  ],
+  "make_wrapper_pid": 40671,
+  "make_exit": 0,
+  "make_entry_failed": false,
+  "cache_binding_valid": true,
+  "canonical_make_running_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/8ecd36803a1226a9955a03d3-1791997097864635000.make-running.json",
+  "canonical_make_terminal_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/8ecd36803a1226a9955a03d3-1791997097864635000.make-terminal.json",
+  "kernel_terminal_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/8ecd36803a1226a9955a03d3-1791997097864635000.kernel/result.json",
+  "direct_dependencies": [
+    {
+      "module": "Submission.Supplier.Definitions.Def_CuspForm_PrimitiveFormGamma1",
+      "source_sha256": "2cd85ad70b38b85986817b937ea383aa9660d2740a7e2df3b3bd3f03d22c2467",
+      "object_sha256": null,
+      "receipt_reused": false
+    },
+    {
+      "module": "Submission.Supplier.Definitions.Def_CuspForm_AdelicLiftGamma1",
+      "source_sha256": "9ef16f6f04f586e0c9885003ab8b00ea6d9b8ec12cba047afa1cd621cee6cb6f",
+      "object_sha256": "31e6de09c88bfec846285620a9e82aba3e1968e891da0fe54b9a7649d4389753",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Definitions.Def_CuspForm_AdelicLift",
+      "source_sha256": "5de40ae353dd962cc2efeb8427be45980d72968e95bd6888e7a54aa3fc07f764",
+      "object_sha256": "57a55d4f8cb392d088729a693eeb875105b940341468becafcd9b81f6e1d9015",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Definitions.Def_CuspForm_Newforms",
+      "source_sha256": "038ffb0534cb0d69dd4d32975f5910d02e5c2e91edf8776d1a0153b10c2eb713",
+      "object_sha256": "9c52ed2ea48466c20a5f0d8ba9c6e8f19711fc3a1f6027584e55dd5044e94968",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Definitions.Def_AutomorphicForm_CuspidalConstituent",
+      "source_sha256": "b90afc8b0472a84befbc1825010a0e2ad380a7fb2601968c5f9f7fa8fce45911",
+      "object_sha256": "a4edd3c1e6e3b4c3d3249443b8cbd6a2484acf97b59439bed134bb3ed1abcff2",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Theorems.Thm_NumberField_AdelicLevel_exists_globalPoints_mul_mem_levelOne_rat",
+      "source_sha256": "79b2e90ffbc6e5c015ad8fc4fc720a126634e18eadf092000420ee3c6ac7f83a",
+      "object_sha256": "7ad59f62321ad80001374071aa685c1fb8cccedcffec62fcfab79e9558677289",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.P2M.Util",
+      "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+      "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+      "receipt_reused": true
+    }
+  ],
+  "stdout": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/8ecd36803a1226a9955a03d3-1791997097864635000.kernel/stdout.log",
+  "stderr": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/8ecd36803a1226a9955a03d3-1791997097864635000.kernel/stderr.log"
+}
