@@ -1,0 +1,205 @@
+{
+  "at": "2026-10-14T17:03:21.758878+00:00",
+  "original_source_card_pairs_actual_make_kernel_passed": true,
+  "canonical_pairs_byte_identical_to_supplier": true,
+  "no_source_edits": true,
+  "no_linter_suppression_added": true,
+  "no_redundant_recompilation": true,
+  "original_statements_hypotheses_and_proofs_preserved": true,
+  "checks": {
+    "CuspForm_IsAdelicLiftOfGamma1_exists_forall_norm_le": {
+      "proof_summary": "Preserve the original nonzero level, weight-two Gamma1 cusp form and full adelic-lift structure, obtaining one real constant bounding the lift on every adelic GL2 element. Retain the complete original helper block, including rational integral-matrix and SL2 reconstruction, archimedean and finite factor identities, strong approximation decomposition, exact slash-action norm identity and original cusp-form bound. The main proof uses its own archimedean norm-bound lemma and global decomposition, without assuming continuity or a prior bound for the lift.",
+      "checks": {
+        "source": {
+          "module": "Submission.Supplier.P2M.Sol.S_CuspForm_IsAdelicLiftOfGamma1_exists_forall_norm_le",
+          "canonical_lines": 372,
+          "canonical_byte_identical_to_supplier": true,
+          "make_exit": 0,
+          "kernel_exit": 0,
+          "kernel_seconds": 54.762217833,
+          "compiler_warnings": 2,
+          "source_unchanged_during_check": true,
+          "printed_final_axiom_closures": [],
+          "separate_final_axiom_audit_pending": true,
+          "direct_dependencies": [
+            {
+              "module": "Submission.Supplier.Definitions.Def_CuspForm_PrimitiveFormGamma1",
+              "source_sha256": "2cd85ad70b38b85986817b937ea383aa9660d2740a7e2df3b3bd3f03d22c2467",
+              "object_sha256": null,
+              "receipt_reused": false
+            },
+            {
+              "module": "Submission.Supplier.Definitions.Def_CuspForm_AdelicLiftGamma1",
+              "source_sha256": "9ef16f6f04f586e0c9885003ab8b00ea6d9b8ec12cba047afa1cd621cee6cb6f",
+              "object_sha256": "31e6de09c88bfec846285620a9e82aba3e1968e891da0fe54b9a7649d4389753",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.Definitions.Def_CuspForm_AdelicLift",
+              "source_sha256": "5de40ae353dd962cc2efeb8427be45980d72968e95bd6888e7a54aa3fc07f764",
+              "object_sha256": "57a55d4f8cb392d088729a693eeb875105b940341468becafcd9b81f6e1d9015",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.Definitions.Def_CuspForm_Newforms",
+              "source_sha256": "038ffb0534cb0d69dd4d32975f5910d02e5c2e91edf8776d1a0153b10c2eb713",
+              "object_sha256": "9c52ed2ea48466c20a5f0d8ba9c6e8f19711fc3a1f6027584e55dd5044e94968",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.Definitions.Def_AutomorphicForm_CuspidalConstituent",
+              "source_sha256": "b90afc8b0472a84befbc1825010a0e2ad380a7fb2601968c5f9f7fa8fce45911",
+              "object_sha256": "a4edd3c1e6e3b4c3d3249443b8cbd6a2484acf97b59439bed134bb3ed1abcff2",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.Theorems.Thm_NumberField_AdelicLevel_exists_globalPoints_mul_mem_levelOne_rat",
+              "source_sha256": "79b2e90ffbc6e5c015ad8fc4fc720a126634e18eadf092000420ee3c6ac7f83a",
+              "object_sha256": "7ad59f62321ad80001374071aa685c1fb8cccedcffec62fcfab79e9558677289",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.P2M.Util",
+              "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+              "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+              "receipt_reused": true
+            }
+          ],
+          "unreceipted_cached_dependency_metadata": [
+            {
+              "module": "Submission.Supplier.Definitions.Def_CuspForm_PrimitiveFormGamma1",
+              "source_sha256": "2cd85ad70b38b85986817b937ea383aa9660d2740a7e2df3b3bd3f03d22c2467",
+              "object_sha256": null,
+              "receipt_reused": false,
+              "source_path": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/Definitions/Def_CuspForm_PrimitiveFormGamma1.lean",
+              "object_path": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-build/lib/lean/Submission/Supplier/Definitions/Def_CuspForm_PrimitiveFormGamma1.olean",
+              "source_metadata": {
+                "size": 3800,
+                "mtime_ns": 1791389095620984680
+              },
+              "object_metadata": {
+                "size": 73400,
+                "mtime_ns": 1791452609931904527
+              },
+              "individual_object_binding_unavailable": true
+            }
+          ]
+        },
+        "card": {
+          "module": "Submission.Supplier.Theorems.Thm_CuspForm_IsAdelicLiftOfGamma1_exists_forall_norm_le",
+          "canonical_lines": 19,
+          "canonical_byte_identical_to_supplier": true,
+          "make_exit": 0,
+          "kernel_exit": 0,
+          "kernel_seconds": 40.519462625,
+          "compiler_warnings": 0,
+          "source_unchanged_during_check": true,
+          "printed_final_axiom_closures": [],
+          "separate_final_axiom_audit_pending": true,
+          "direct_dependencies": [
+            {
+              "module": "Submission.Supplier.Definitions.Def_CuspForm_PrimitiveFormGamma1",
+              "source_sha256": "2cd85ad70b38b85986817b937ea383aa9660d2740a7e2df3b3bd3f03d22c2467",
+              "object_sha256": null,
+              "receipt_reused": false
+            },
+            {
+              "module": "Submission.Supplier.Definitions.Def_CuspForm_AdelicLiftGamma1",
+              "source_sha256": "9ef16f6f04f586e0c9885003ab8b00ea6d9b8ec12cba047afa1cd621cee6cb6f",
+              "object_sha256": "31e6de09c88bfec846285620a9e82aba3e1968e891da0fe54b9a7649d4389753",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.Definitions.Def_CuspForm_AdelicLift",
+              "source_sha256": "5de40ae353dd962cc2efeb8427be45980d72968e95bd6888e7a54aa3fc07f764",
+              "object_sha256": "57a55d4f8cb392d088729a693eeb875105b940341468becafcd9b81f6e1d9015",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.Definitions.Def_CuspForm_Newforms",
+              "source_sha256": "038ffb0534cb0d69dd4d32975f5910d02e5c2e91edf8776d1a0153b10c2eb713",
+              "object_sha256": "9c52ed2ea48466c20a5f0d8ba9c6e8f19711fc3a1f6027584e55dd5044e94968",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.Definitions.Def_AutomorphicForm_CuspidalConstituent",
+              "source_sha256": "b90afc8b0472a84befbc1825010a0e2ad380a7fb2601968c5f9f7fa8fce45911",
+              "object_sha256": "a4edd3c1e6e3b4c3d3249443b8cbd6a2484acf97b59439bed134bb3ed1abcff2",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.P2M.Util",
+              "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+              "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.P2M.Sol.S_CuspForm_IsAdelicLiftOfGamma1_exists_forall_norm_le",
+              "source_sha256": "f10065dd0767ed15b98a3cf936fb713458dc7e3f305ab7992b9ebb68f1dd492c",
+              "object_sha256": "abcf457b3a74506f83ba6080bcb1edd2712bea53e4da4b64ba52158afd0c27ea",
+              "receipt_reused": true
+            }
+          ],
+          "unreceipted_cached_dependency_metadata": [
+            {
+              "module": "Submission.Supplier.Definitions.Def_CuspForm_PrimitiveFormGamma1",
+              "source_sha256": "2cd85ad70b38b85986817b937ea383aa9660d2740a7e2df3b3bd3f03d22c2467",
+              "object_sha256": null,
+              "receipt_reused": false,
+              "source_path": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/Definitions/Def_CuspForm_PrimitiveFormGamma1.lean",
+              "object_path": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-build/lib/lean/Submission/Supplier/Definitions/Def_CuspForm_PrimitiveFormGamma1.olean",
+              "source_metadata": {
+                "size": 3800,
+                "mtime_ns": 1791389095620984680
+              },
+              "object_metadata": {
+                "size": 73400,
+                "mtime_ns": 1791452609931904527
+              },
+              "individual_object_binding_unavailable": true
+            }
+          ]
+        }
+      }
+    }
+  },
+  "supplier": "anthropics/fermats-last-theorem",
+  "supplier_commit": "6e837e75355538c7f80bab5b956861e86c4eacc2",
+  "full_original_complete": false,
+  "official_new_solve_credit": 0,
+  "complete_import_replay_and_recursive_axiom_audits_pending": true,
+  "selected_problem": "fermat_last_theorem",
+  "canonical_lexical_integrity_scan": {
+    "observed_at": "2026-10-14T07:21:59.476314+00:00",
+    "canonical_lean_files_covered": 60473,
+    "matching_files": 0,
+    "scope": [
+      "P2M/Sol",
+      "Theorems",
+      "Definitions",
+      "P2M/Util.lean"
+    ],
+    "ignore_rules_disabled": true,
+    "pattern": "^\\s*(axiom|constant)\\s|\\b(sorry|admit)\\b",
+    "formal_recursive_axiom_audit_still_pending": true
+  },
+  "max_active_flt_jobs": 1,
+  "max_active_flt_compilers": 1,
+  "lean_threads": 1,
+  "graph_snapshot": {
+    "compiled": 8605,
+    "failed": 0,
+    "ready": 4367,
+    "root_compiled": false,
+    "workers": 1,
+    "running": {
+      "Submission.Supplier.P2M.Sol.S_CuspForm_IsAdelicLiftOfGamma1_isKfSmooth": {
+        "pid": 84539,
+        "make_wrapper_pid": 82993,
+        "phase": "kernel",
+        "sha256": "ea8454078566d1c3f77e66fb76e77c00bcebcd5fac8c65e17739f4df6230031b",
+        "configuration": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/e247aa63ec28d98148993fa5-1791997382276322000.configuration.json"
+      }
+    }
+  }
+}
