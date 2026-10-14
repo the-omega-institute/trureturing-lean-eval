@@ -1,0 +1,216 @@
+{
+  "at": "2026-10-14T15:27:48.619639+00:00",
+  "original_source_card_pairs_actual_make_kernel_passed": true,
+  "canonical_pairs_byte_identical_to_supplier": true,
+  "no_source_edits": true,
+  "no_linter_suppression_added": true,
+  "no_redundant_recompilation": true,
+  "original_statements_hypotheses_and_proofs_preserved": true,
+  "checks": {
+    "AutomorphicForm_isFactorizableTestFn_chiDet_mul_of_continuous_of_isOfFinOrder": {
+      "proof_summary": "Preserve arbitrary number fields, every continuous finite-order idele character and factorizable test function. Retain finite-range local constancy, archimedean/finite factorization, smooth separation of compact fibers and the complete factorizable-test-function conclusion.",
+      "checks": {
+        "source": {
+          "module": "Submission.Supplier.P2M.Sol.S_AutomorphicForm_isFactorizableTestFn_chiDet_mul_of_continuous_of_isOfFinOrder",
+          "canonical_lines": 219,
+          "canonical_byte_identical_to_supplier": true,
+          "make_exit": 0,
+          "kernel_exit": 0,
+          "kernel_seconds": 115.030511041,
+          "compiler_warnings": 5,
+          "source_unchanged_during_check": true,
+          "printed_final_axiom_closures": [],
+          "separate_final_axiom_audit_pending": true,
+          "direct_dependencies": [
+            {
+              "module": "Submission.Supplier.Definitions.Def_AutomorphicForm_FactorizableTestFn",
+              "source_sha256": "0560c57b64f7610c7b1b0f44c6eff63b8c24a6a101db29c2153141dc15f75318",
+              "object_sha256": "5a3877bad6775cc0cfcd20ae5b28505d44154c29ce2d2cb572121c96cc926d91",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.Definitions.Def_AutomorphicForm_AdelicLsXi",
+              "source_sha256": "bc9b5e05da1dd21c90324b1143b1a7f97370f1323ec858ac20c8f3d0290e6364",
+              "object_sha256": "e69066b8355869845e4599ecf1bed5400d58ba701c31195c1f1615fdd4d66156",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.P2M.Util",
+              "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+              "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+              "receipt_reused": true
+            }
+          ],
+          "unreceipted_cached_dependency_metadata": []
+        },
+        "card": {
+          "module": "Submission.Supplier.Theorems.Thm_AutomorphicForm_isFactorizableTestFn_chiDet_mul_of_continuous_of_isOfFinOrder",
+          "canonical_lines": 16,
+          "canonical_byte_identical_to_supplier": true,
+          "make_exit": 0,
+          "kernel_exit": 0,
+          "kernel_seconds": 52.9460325,
+          "compiler_warnings": 0,
+          "source_unchanged_during_check": true,
+          "printed_final_axiom_closures": [],
+          "separate_final_axiom_audit_pending": true,
+          "direct_dependencies": [
+            {
+              "module": "Submission.Supplier.Definitions.Def_AutomorphicForm_FactorizableTestFn",
+              "source_sha256": "0560c57b64f7610c7b1b0f44c6eff63b8c24a6a101db29c2153141dc15f75318",
+              "object_sha256": "5a3877bad6775cc0cfcd20ae5b28505d44154c29ce2d2cb572121c96cc926d91",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.Definitions.Def_AutomorphicForm_AdelicLsXi",
+              "source_sha256": "bc9b5e05da1dd21c90324b1143b1a7f97370f1323ec858ac20c8f3d0290e6364",
+              "object_sha256": "e69066b8355869845e4599ecf1bed5400d58ba701c31195c1f1615fdd4d66156",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.P2M.Util",
+              "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+              "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.P2M.Sol.S_AutomorphicForm_isFactorizableTestFn_chiDet_mul_of_continuous_of_isOfFinOrder",
+              "source_sha256": "53d91b68941a331d346d64c7f49c58376642fe1b477ea4eb74ce176e21548b3a",
+              "object_sha256": "c292b369bb5fd5bfe49cd2fbab1130fb8dfabfb4fedd92f2ac93548d99d284d0",
+              "receipt_reused": true
+            }
+          ],
+          "unreceipted_cached_dependency_metadata": []
+        }
+      }
+    },
+    "AutomorphicForm_isSmoothCuspAutomorphicFnAt_twistedCentralChar_fnTwist_productionPinsOf": {
+      "proof_summary": "Preserve arbitrary production pins, central character, finite-order Hecke character and smooth cusp automorphic function. Retain determinant/unipotent invariance, constant-term vanishing, open-kernel finite smoothness, norm-one and L2 arguments, together with the full twisted-central-character conclusion.",
+      "checks": {
+        "source": {
+          "module": "Submission.Supplier.P2M.Sol.S_AutomorphicForm_isSmoothCuspAutomorphicFnAt_twistedCentralChar_fnTwist_productionPinsOf",
+          "canonical_lines": 131,
+          "canonical_byte_identical_to_supplier": true,
+          "make_exit": 0,
+          "kernel_exit": 0,
+          "kernel_seconds": 54.136630125,
+          "compiler_warnings": 5,
+          "source_unchanged_during_check": true,
+          "printed_final_axiom_closures": [],
+          "separate_final_axiom_audit_pending": true,
+          "direct_dependencies": [
+            {
+              "module": "Submission.Supplier.Definitions.Def_AutomorphicForm_CuspidalConstituent",
+              "source_sha256": "b90afc8b0472a84befbc1825010a0e2ad380a7fb2601968c5f9f7fa8fce45911",
+              "object_sha256": "a4edd3c1e6e3b4c3d3249443b8cbd6a2484acf97b59439bed134bb3ed1abcff2",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.Definitions.Def_AutomorphicForm_FnTwist",
+              "source_sha256": "3a8cd72b03187d930c5fd93be3777a343c141a7d217e1c07c68b9bde509034b0",
+              "object_sha256": "f0bde351f5c4451f22a3968d12852adb87b6c0ec61b7d0f045aa692a8b5be742",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.Definitions.Def_HeckeCharacter_FiniteOrder",
+              "source_sha256": "7b8ced79799dd902bdee53c3b3fd3af274e968ca47e9317bb376b3f7d8de7301",
+              "object_sha256": "cfc28669cfab23c8a3781d1d029342a3468c0ed91bc3095a9b299a69ce51f775",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.P2M.Util",
+              "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+              "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+              "receipt_reused": true
+            }
+          ],
+          "unreceipted_cached_dependency_metadata": []
+        },
+        "card": {
+          "module": "Submission.Supplier.Theorems.Thm_AutomorphicForm_isSmoothCuspAutomorphicFnAt_twistedCentralChar_fnTwist_productionPinsOf",
+          "canonical_lines": 19,
+          "canonical_byte_identical_to_supplier": true,
+          "make_exit": 0,
+          "kernel_exit": 0,
+          "kernel_seconds": 66.008465875,
+          "compiler_warnings": 0,
+          "source_unchanged_during_check": true,
+          "printed_final_axiom_closures": [],
+          "separate_final_axiom_audit_pending": true,
+          "direct_dependencies": [
+            {
+              "module": "Submission.Supplier.Definitions.Def_AutomorphicForm_CuspidalConstituent",
+              "source_sha256": "b90afc8b0472a84befbc1825010a0e2ad380a7fb2601968c5f9f7fa8fce45911",
+              "object_sha256": "a4edd3c1e6e3b4c3d3249443b8cbd6a2484acf97b59439bed134bb3ed1abcff2",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.Definitions.Def_AutomorphicForm_FnTwist",
+              "source_sha256": "3a8cd72b03187d930c5fd93be3777a343c141a7d217e1c07c68b9bde509034b0",
+              "object_sha256": "f0bde351f5c4451f22a3968d12852adb87b6c0ec61b7d0f045aa692a8b5be742",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.Definitions.Def_HeckeCharacter_FiniteOrder",
+              "source_sha256": "7b8ced79799dd902bdee53c3b3fd3af274e968ca47e9317bb376b3f7d8de7301",
+              "object_sha256": "cfc28669cfab23c8a3781d1d029342a3468c0ed91bc3095a9b299a69ce51f775",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.P2M.Util",
+              "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+              "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.P2M.Sol.S_AutomorphicForm_isSmoothCuspAutomorphicFnAt_twistedCentralChar_fnTwist_productionPinsOf",
+              "source_sha256": "9cdd77f249a2a74605cf1023f0c9ad2328d6e1ba8faacb88566f846dd86eee40",
+              "object_sha256": "d4e4e729e40e08e12ea8ad884224c09a62d46e013f3b3b07a01b17bb62505f4f",
+              "receipt_reused": true
+            }
+          ],
+          "unreceipted_cached_dependency_metadata": []
+        }
+      }
+    }
+  },
+  "supplier": "anthropics/fermats-last-theorem",
+  "supplier_commit": "6e837e75355538c7f80bab5b956861e86c4eacc2",
+  "full_original_complete": false,
+  "official_new_solve_credit": 0,
+  "complete_import_replay_and_recursive_axiom_audits_pending": true,
+  "selected_problem": "fermat_last_theorem",
+  "canonical_lexical_integrity_scan": {
+    "observed_at": "2026-10-14T07:21:59.476314+00:00",
+    "canonical_lean_files_covered": 60473,
+    "matching_files": 0,
+    "scope": [
+      "P2M/Sol",
+      "Theorems",
+      "Definitions",
+      "P2M/Util.lean"
+    ],
+    "ignore_rules_disabled": true,
+    "pattern": "^\\s*(axiom|constant)\\s|\\b(sorry|admit)\\b",
+    "formal_recursive_axiom_audit_still_pending": true
+  },
+  "max_active_flt_jobs": 1,
+  "max_active_flt_compilers": 1,
+  "lean_threads": 1,
+  "graph_snapshot": {
+    "compiled": 8545,
+    "failed": 0,
+    "ready": 4388,
+    "root_compiled": false,
+    "workers": 1,
+    "running": {
+      "Submission.Supplier.P2M.Sol.S_AutomorphicForm_CuspidalConstituent_isCuspConstituent_twistedCentralChar_span_image_fnTwist": {
+        "pid": 85604,
+        "make_wrapper_pid": 80906,
+        "phase": "kernel",
+        "sha256": "fc724d32a9e6aa5d5299dc78197d6dd2993d77a75e22a462281879693fd1cc6e",
+        "configuration": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/100cbac47cb972f47ee2419d-1791991613310917000.configuration.json"
+      }
+    }
+  }
+}
