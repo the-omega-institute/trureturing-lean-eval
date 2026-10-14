@@ -1,0 +1,136 @@
+{
+  "at": "2026-10-14T14:56:51.136185+00:00",
+  "problem": "fermat_last_theorem",
+  "full_source_card_pair_verified": true,
+  "actual_checks": [
+    {
+      "module": "Submission.Supplier.P2M.Sol.S_AutomorphicForm_exists_isOpen_forall_exists_apply_eq_sum_of_isArchKFinite_of_continuous",
+      "role": "source",
+      "make_exit": 0,
+      "kernel_exit": 0,
+      "kernel_seconds": 70.93705533400001,
+      "warnings": 0,
+      "canonical_lines": 1523,
+      "original_final_statement_preserved": true,
+      "original_card_proof_body_preserved": false,
+      "printed_recursive_axioms": {
+        "_private.Submission.Supplier.P2M.Sol.S_AutomorphicForm_exists_isOpen_forall_exists_apply_eq_sum_of_isArchKFinite_of_continuous.0.P2MW.S_AutomorphicForm_exists_isOpen_forall_exists_apply_eq_sum_of_isArchKFinite_of_continuous.CoefficientSpan.finiteDimensional_coeffSpan": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "_private.Submission.Supplier.P2M.Sol.S_AutomorphicForm_exists_isOpen_forall_exists_apply_eq_sum_of_isArchKFinite_of_continuous.0.P2MW.S_AutomorphicForm_exists_isOpen_forall_exists_apply_eq_sum_of_isArchKFinite_of_continuous.CoefficientSpan.span_le_coeffSpan_of_intertwiner": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "_private.Submission.Supplier.P2M.Sol.S_AutomorphicForm_exists_isOpen_forall_exists_apply_eq_sum_of_isArchKFinite_of_continuous.0.P2MW.S_AutomorphicForm_exists_isOpen_forall_exists_apply_eq_sum_of_isArchKFinite_of_continuous.SliceSpan.finiteDimensional_pi_const": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "_private.Submission.Supplier.P2M.Sol.S_AutomorphicForm_exists_isOpen_forall_exists_apply_eq_sum_of_isArchKFinite_of_continuous.0.P2MW.S_AutomorphicForm_exists_isOpen_forall_exists_apply_eq_sum_of_isArchKFinite_of_continuous.SliceSpan.exists_forall_mem_exists_forall_eq_sum": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "P2MW.S_AutomorphicForm_exists_isOpen_forall_exists_apply_eq_sum_of_isArchKFinite_of_continuous.solution": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      "final_target_standard_axioms_verified": true,
+      "direct_dependencies": [
+        {
+          "module": "Submission.Supplier.Definitions.Def_AutomorphicForm_SmoothAutomorphicFnAt",
+          "source_sha256": "df18f8d677cfaef69c6485bf9f41d2f4260c26926903e1590f50faf58d5452d7",
+          "object_sha256": "a1b8b61729f1eece2b9e1c0eed10cc7495acf64eb817d5854e9e15f0f2f229d1",
+          "receipt_reused": true
+        },
+        {
+          "module": "Submission.Supplier.Definitions.Def_AutomorphicForm_ArchKFinite",
+          "source_sha256": "21a9c7b8492281c1db4434c7f9625f7ada761b37c6fa151f8235e578d18e7837",
+          "object_sha256": "de4e2e7bae315b42b256eb0f779767379a808a0b7e12de68e7a840cb26c6d286",
+          "receipt_reused": true
+        },
+        {
+          "module": "Submission.Supplier.Definitions.Def_NumberField_AdelicBox",
+          "source_sha256": "286d2f475bce1fe1d29bd907480fa7eb9f67b47ad961d1f789765d2b9a9f5d3f",
+          "object_sha256": "f341d3e7fb4d2df5316ff12651a8c9789cdfe510c63fe8ddceb3c5ee4a4680a8",
+          "receipt_reused": true
+        },
+        {
+          "module": "Submission.Supplier.P2M.Util",
+          "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+          "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+          "receipt_reused": true
+        }
+      ],
+      "unreceipted_cached_dependencies": [],
+      "unreceipted_cached_dependency_metadata": [],
+      "kernel_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/a0afb6d1afd94358a391ce4a-1791989585949584000.kernel/result.json",
+      "make_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/a0afb6d1afd94358a391ce4a-1791989585949584000.make-terminal.json"
+    },
+    {
+      "module": "Submission.Supplier.Theorems.Thm_AutomorphicForm_exists_isOpen_forall_exists_apply_eq_sum_of_isArchKFinite_of_continuous",
+      "role": "card",
+      "make_exit": 0,
+      "kernel_exit": 0,
+      "kernel_seconds": 54.88175575,
+      "warnings": 0,
+      "canonical_lines": 22,
+      "original_final_statement_preserved": true,
+      "original_card_proof_body_preserved": true,
+      "printed_recursive_axioms": {
+        "AutomorphicForm.exists_isOpen_forall_exists_apply_eq_sum_of_isArchKFinite_of_continuous": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      "final_target_standard_axioms_verified": true,
+      "direct_dependencies": [
+        {
+          "module": "Submission.Supplier.Definitions.Def_AutomorphicForm_SmoothAutomorphicFnAt",
+          "source_sha256": "df18f8d677cfaef69c6485bf9f41d2f4260c26926903e1590f50faf58d5452d7",
+          "object_sha256": "a1b8b61729f1eece2b9e1c0eed10cc7495acf64eb817d5854e9e15f0f2f229d1",
+          "receipt_reused": true
+        },
+        {
+          "module": "Submission.Supplier.Definitions.Def_AutomorphicForm_ArchKFinite",
+          "source_sha256": "21a9c7b8492281c1db4434c7f9625f7ada761b37c6fa151f8235e578d18e7837",
+          "object_sha256": "de4e2e7bae315b42b256eb0f779767379a808a0b7e12de68e7a840cb26c6d286",
+          "receipt_reused": true
+        },
+        {
+          "module": "Submission.Supplier.P2M.Util",
+          "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+          "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+          "receipt_reused": true
+        },
+        {
+          "module": "Submission.Supplier.P2M.Sol.S_AutomorphicForm_exists_isOpen_forall_exists_apply_eq_sum_of_isArchKFinite_of_continuous",
+          "source_sha256": "b146b3e926a03e1682ddbae9f9ba86ac7e34351b1f45b3c9a86259e8531aeb5b",
+          "object_sha256": "887b86f4aedd7f8489b1a76d86dc423b93914547f40272e7a4c2feab75200fad",
+          "receipt_reused": true
+        }
+      ],
+      "unreceipted_cached_dependencies": [],
+      "unreceipted_cached_dependency_metadata": [],
+      "kernel_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/0d8af413de84209c703aecfc-1791989683661148000.kernel/result.json",
+      "make_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/0d8af413de84209c703aecfc-1791989683661148000.make-terminal.json"
+    }
+  ],
+  "edited_files_zero_warnings": true,
+  "all_mathematical_branches_preserved": true,
+  "source_reuse": "Set.disjoint_iff_inter_eq_empty for finite-subfamily compactness input/output",
+  "new_compilers_spawned": 0,
+  "controller_restarted": false,
+  "max_active_flt_jobs": 1,
+  "lean_threads": 1,
+  "gate_reservation_gb": 35,
+  "full_original_complete": false,
+  "official_new_solve_credit": 0,
+  "whole_root_recursive_axiom_audit_pending": true
+}

@@ -1,0 +1,117 @@
+--- source.before.lean
++++ source.after.lean
+@@ -3,7 +3,7 @@
+ import Submission.Supplier.Definitions.Def_NumberField_AdelicBox
+ import Mathlib.Algebra.Group.Pointwise.Set.Basic
+ import Mathlib.Analysis.Complex.Basic
+-import Mathlib.Data.Complex.Basic
++import Mathlib.Basic.Complex.Basic
+ import Mathlib.Data.Fintype.EquivFin
+ import Mathlib.LinearAlgebra.FiniteDimensional.Basic
+ import Mathlib.LinearAlgebra.FiniteDimensional.Defs
+@@ -152,9 +152,9 @@
+     rw [Submodule.span_le]
+     rintro _ ⟨k, hk, rfl⟩
+     exact ht k hk
+-  haveI : FiniteDimensional ℂ (Submodule.span ℂ (t : Set (G → ℂ))) :=
++  have : FiniteDimensional ℂ (Submodule.span ℂ (t : Set (G → ℂ))) :=
+     FiniteDimensional.span_of_finite ℂ t.finite_toSet
+-  haveI hW : FiniteDimensional ℂ (Submodule.span ℂ X) := Submodule.finiteDimensional_of_le hle
++  have hW : FiniteDimensional ℂ (Submodule.span ℂ X) := Submodule.finiteDimensional_of_le hle
+   have hfg : (Submodule.span ℂ X).FG := (Submodule.fg_iff_finiteDimensional _).mpr hW
+   obtain ⟨s, hs⟩ := hfg
+ 
+@@ -270,8 +270,8 @@
+     rw [Fintype.card_fin] at h1
+     omega
+ 
+-  haveI : BaireSpace U₀ := hU₀.baireSpace
+-  haveI : Nonempty U₀ := hne.to_subtype
++  have : BaireSpace U₀ := hU₀.baireSpace
++  have : Nonempty U₀ := hne.to_subtype
+   let F : ℕ → Set U₀ := fun m =>
+     ⋂ (κ : Fin (m + 1) → G) (_ : ∀ j, κ j ∈ Q) (x : Fin (m + 1) → G),
+       {s : U₀ | (Matrix.of fun i j => u s.1 (x i * κ j)).det = 0}
+@@ -424,7 +424,7 @@
+     rw [Submodule.span_le]
+     rintro _ ⟨s, rfl⟩
+     exact hV s.1 s.2
+-  haveI : FiniteDimensional ℂ (Submodule.span ℂ (Set.range f)) :=
++  have : FiniteDimensional ℂ (Submodule.span ℂ (Set.range f)) :=
+     Submodule.finiteDimensional_of_le hle
+   obtain ⟨t, htf, hspan⟩ := (Submodule.fg_span_iff_fg_span_finset_subset (R := ℂ) (Set.range f)).mp
+     ((Module.Finite.iff_fg (R := ℂ)).mp inferInstance)
+@@ -523,7 +523,7 @@
+               + ‖x * (k : Matrix (Fin 2) (Fin 2) K) 0 1 + y * (k : Matrix (Fin 2) (Fin 2) K) 1 1‖ ^ 2
+               = ‖x‖ ^ 2 + ‖y‖ ^ 2} := by
+     ext k
+-    simp only [IsRowIsometry, Set.mem_setOf_eq, Set.mem_inter_iff, Set.mem_iInter]
++    simp only [IsRowIsometry, Set.mem_ofPred_eq, Set.mem_inter_iff, Set.mem_iInter]
+   rw [hset]
+   refine (isClosed_eq Units.continuous_val.matrix_det.norm continuous_const).inter ?_
+   refine isClosed_iInter fun x => isClosed_iInter fun y => isClosed_eq ?_ continuous_const
+@@ -563,7 +563,7 @@
+   have hset : (Kinf F : Set (GL (Fin 2) (InfiniteAdeleRing F)))
+       = ⋂ w : InfinitePlace F, archComponent F w ⁻¹' {k | IsRowIsometry k} := by
+     ext k
+-    simp only [SetLike.mem_coe, mem_Kinf_iff, Set.mem_iInter, Set.mem_preimage, Set.mem_setOf_eq]
++    simp only [SetLike.mem_coe, mem_Kinf_iff, Set.mem_iInter, Set.mem_preimage, Set.mem_ofPred_eq]
+   rw [hset]
+   exact isClosed_iInter fun w => isClosed_setOf_isRowIsometry.preimage (continuous_archComponent F w)
+ 
+@@ -574,7 +574,7 @@
+   NumberField.AdelicBox.properSpace_completion F w
+ 
+ private theorem isCompact_box : IsCompact (box F) := by
+-  haveI : ∀ w : InfinitePlace F, ProperSpace w.Completion := properSpace_completion_w F
++  have : ∀ w : InfinitePlace F, ProperSpace w.Completion := properSpace_completion_w F
+   have hset : box F = Set.pi Set.univ (fun _ : Fin 2 => Set.pi Set.univ (fun _ : Fin 2 =>
+       Set.pi Set.univ (fun w : InfinitePlace F => Metric.closedBall (0 : w.Completion) 1))) := by
+     ext m
+@@ -835,7 +835,7 @@
+   have h2 : ContinuousOn (fun p : ℂ × Q => ρ p.1 p.2⁻¹) (U ×ˢ Set.univ) :=
+     hρ_cont.comp (continuous_fst.prodMk continuous_snd.inv).continuousOn
+       (fun p hp => ⟨hp.1, Set.mem_univ _⟩)
+-  rw [continuousOn_iff_continuous_restrict] at h1 h2 ⊢
++  rw [continuousOn_iff_continuous_domRestrict] at h1 h2 ⊢
+   exact (h1.matrix_mul h2).matrix_elem i j
+ 
+ variable (μ : Measure Q) [IsProbabilityMeasure μ]
+@@ -1105,7 +1105,7 @@
+   set C : ℕ → Set ℂ := fun n => ⋂ g, ⋂ k ∈ S n, {s : ℂ | u s (g * k) = u s g} with hC
+   have hmemC : ∀ n s, s ∈ C n ↔ RightInvariantOn (S n) (u s) := by
+     intro n s
+-    simp only [hC, Set.mem_iInter, Set.mem_setOf_eq, RightInvariantOn]
++    simp only [hC, Set.mem_iInter, Set.mem_ofPred_eq, RightInvariantOn]
+   have hCclosed : ∀ n, IsClosed (C n) := by
+     intro n
+     refine isClosed_iInter fun g => isClosed_iInter fun k => isClosed_iInter fun _ => ?_
+@@ -1194,7 +1194,7 @@
+       have h := (hxI (m - 1)).1
+       rwa [Nat.sub_add_cancel (Nat.one_le_iff_ne_zero.mpr hm)] at h
+     exact (hxI 0).2 (hx0 ▸ h0)
+-  obtain ⟨u, hu⟩ := hS.elim_finite_subfamily_closed t htc hst
++  obtain ⟨u, hu⟩ := hS.elim_finite_subfamily_closed t htc (Set.disjoint_iff_inter_eq_empty.mpr hst)
+   refine ⟨∏ k ∈ u, (k + 1), Finset.prod_ne_zero_iff.mpr fun k _ => Nat.succ_ne_zero k,
+     fun x hx => ?_⟩
+   by_contra hxO
+@@ -1205,7 +1205,7 @@
+     rw [hsplit, Nat.cast_mul] at hx
+     exact idealBall_span_mul_subset F (Nat.cast_ne_zero.mpr (Nat.succ_ne_zero k))
+       (Nat.cast_ne_zero.mpr (Finset.prod_ne_zero_iff.mpr fun i _ => Nat.succ_ne_zero i)) hx
+-  rw [hu] at hxall
++  rw [Set.disjoint_iff_inter_eq_empty.mp hu] at hxall
+   exact hxall
+ 
+ private noncomputable def liftFin (X : Matrix (Fin 2) (Fin 2) (IsDedekindDomain.FiniteAdeleRing (𝓞 F) F)) :
+@@ -1517,8 +1517,8 @@
+       ∃ q : Kinf F, ∃ c ∈ T, ∃ h ∈ ((Subgroup.closure (LevelInvariance.congrSet F n) :
+         Subgroup (AdelicGL2 (𝓞 F) F)) : Set (AdelicGL2 (𝓞 F) F)), k = incl F q * c * h :=
+     fun k hk => exists_exists_mem_exists_mem_eq_incl_mul_mul F T _ hT₂ k hk.1 hk.2
+-  haveI : FiniteDimensional ℂ (CoefficientSpan.coeffSpan (ρ s₀)) := CoefficientSpan.finiteDimensional_coeffSpan (ρ s₀)
+-  haveI : FiniteDimensional ℂ (Submodule.pi Set.univ fun _ : T => CoefficientSpan.coeffSpan (ρ s₀)) :=
++  have : FiniteDimensional ℂ (CoefficientSpan.coeffSpan (ρ s₀)) := CoefficientSpan.finiteDimensional_coeffSpan (ρ s₀)
++  have : FiniteDimensional ℂ (Submodule.pi Set.univ fun _ : T => CoefficientSpan.coeffSpan (ρ s₀)) :=
+     SliceSpan.finiteDimensional_pi_const _
+   obtain ⟨m, σ, -, hσ⟩ :=
+     SliceSpan.exists_forall_mem_exists_forall_eq_sum (⇑(incl F)) T _ _ hcover φ U₃ hinv

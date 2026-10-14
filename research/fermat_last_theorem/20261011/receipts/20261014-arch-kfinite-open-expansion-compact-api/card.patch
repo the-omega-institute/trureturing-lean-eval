@@ -1,0 +1,8 @@
+--- card.before.lean
++++ card.after.lean
+@@ -26,3 +26,5 @@
+         glFin (𝓞 F) F k ∈ finiteIntegralGL2 (𝓞 F) F →
+         (∀ w : InfinitePlace F, IsRowIsometry (archComponent F w (glArch (𝓞 F) F k))) →
+         φ s k = ∑ i, c i * φ (σ i) k := by p2m_exact_reverting @_root_.P2MW.S_AutomorphicForm_exists_isOpen_forall_exists_apply_eq_sum_of_isArchKFinite_of_continuous.solution
++
++#print axioms AutomorphicForm.exists_isOpen_forall_exists_apply_eq_sum_of_isArchKFinite_of_continuous
