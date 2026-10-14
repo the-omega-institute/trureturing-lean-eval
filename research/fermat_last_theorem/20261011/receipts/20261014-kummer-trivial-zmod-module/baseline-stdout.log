@@ -1,0 +1,213 @@
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_groupCohomology_mem_levelCoboundaries2_of_pow_mem_and_exists_pow_sub_mem_of_zsmul_mem.lean:37:31: error(lean.synthInstanceFailed): failed to synthesize instance of type class
+  Module (ZMod p) (ZMod p)
+
+Hint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_groupCohomology_mem_levelCoboundaries2_of_pow_mem_and_exists_pow_sub_mem_of_zsmul_mem.lean:98:2: warning: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_groupCohomology_mem_levelCoboundaries2_of_pow_mem_and_exists_pow_sub_mem_of_zsmul_mem.lean:116:108: error: Application type mismatch: The argument
+  w
+has type
+  ↥D → ZMod p
+but is expected to have type
+  ↑↧(↥D → ↑(Tr p D))
+in the application
+  (ModuleCat.Hom.hom (d₁₂ (Tr p D))) w
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_groupCohomology_mem_levelCoboundaries2_of_pow_mem_and_exists_pow_sub_mem_of_zsmul_mem.lean:121:62: warning: This simp argument is unused:
+  Rep.trivial_ρ_apply
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [d₁₂_hom_apply, expo₁, expo, Function.comp_apply, Representation.trivial_apply, Rep.res_obj_ρ,
+    MonoidHom.coe_comp, Subgroup.coe_subtype, ρ_chi' p D ζ hζ hD]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_groupCohomology_mem_levelCoboundaries2_of_pow_mem_and_exists_pow_sub_mem_of_zsmul_mem.lean:121:83: warning: This simp argument is unused:
+  Representation.trivial_apply
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [d₁₂_hom_apply, expo₁, expo, Function.comp_apply, Rep.trivial_ρ_apply, Rep.res_obj_ρ,
+    MonoidHom.coe_comp, Subgroup.coe_subtype, ρ_chi' p D ζ hζ hD]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_groupCohomology_mem_levelCoboundaries2_of_pow_mem_and_exists_pow_sub_mem_of_zsmul_mem.lean:122:4: warning: This simp argument is unused:
+  Rep.res_obj_ρ
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [d₁₂_hom_apply, expo₁, expo, Function.comp_apply, Rep.trivial_ρ_apply, Representation.trivial_apply,
+    MonoidHom.coe_comp, Subgroup.coe_subtype, ρ_chi' p D ζ hζ hD]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_groupCohomology_mem_levelCoboundaries2_of_pow_mem_and_exists_pow_sub_mem_of_zsmul_mem.lean:126:91: error(lean.synthInstanceFailed): failed to synthesize instance of type class
+  Membership (↥D × ↥D → ZMod p) (Submodule (ZMod p) (↥D × ↥D → ↑(Tr p D)))
+
+Hint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_groupCohomology_mem_levelCoboundaries2_of_pow_mem_and_exists_pow_sub_mem_of_zsmul_mem.lean:128:55: error: Application type mismatch: The argument
+  z
+has type
+  ↥D × ↥D → ZMod p
+but is expected to have type
+  ↥D × ↥D → ↑(Tr p D)
+in the application
+  mem_cocycles₂_iff z
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_groupCohomology_mem_levelCoboundaries2_of_pow_mem_and_exists_pow_sub_mem_of_zsmul_mem.lean:147:2: warning: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_groupCohomology_mem_levelCoboundaries2_of_pow_mem_and_exists_pow_sub_mem_of_zsmul_mem.lean:148:62: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_groupCohomology_mem_levelCoboundaries2_of_pow_mem_and_exists_pow_sub_mem_of_zsmul_mem.lean:148:62: warning: Unused tactic linter: `first
+| rfl
+| exact Subsingleton.elim _ _` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_groupCohomology_mem_levelCoboundaries2_of_pow_mem_and_exists_pow_sub_mem_of_zsmul_mem.lean:160:2: warning: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_groupCohomology_mem_levelCoboundaries2_of_pow_mem_and_exists_pow_sub_mem_of_zsmul_mem.lean:162:2: warning: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_groupCohomology_mem_levelCoboundaries2_of_pow_mem_and_exists_pow_sub_mem_of_zsmul_mem.lean:163:2: warning: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_groupCohomology_mem_levelCoboundaries2_of_pow_mem_and_exists_pow_sub_mem_of_zsmul_mem.lean:165:2: warning: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_groupCohomology_mem_levelCoboundaries2_of_pow_mem_and_exists_pow_sub_mem_of_zsmul_mem.lean:218:2: warning: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_groupCohomology_mem_levelCoboundaries2_of_pow_mem_and_exists_pow_sub_mem_of_zsmul_mem.lean:221:2: warning: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_groupCohomology_mem_levelCoboundaries2_of_pow_mem_and_exists_pow_sub_mem_of_zsmul_mem.lean:251:28: error(lean.synthInstanceFailed): failed to synthesize instance of type class
+  Membership (↥D × ↥D → ZMod p) (Submodule (ZMod p) (↥D × ↥D → ↑(Tr p D)))
+
+Hint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_groupCohomology_mem_levelCoboundaries2_of_pow_mem_and_exists_pow_sub_mem_of_zsmul_mem.lean:292:71: warning: `MonoidHom.coe_coe` has been deprecated: Use `MonoidHom.coe_ofClass` instead
+
+Hint: Replace the deprecated name:
+  M̵o̵n̵o̵i̵d̵H̵o̵m̵.̵c̵o̵e̵_̵c̵o̵e̵M̲o̲n̲o̲i̲d̲H̲o̲m̲.̲c̲o̲e̲_̲o̲f̲C̲l̲a̲s̲s̲
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_groupCohomology_mem_levelCoboundaries2_of_pow_mem_and_exists_pow_sub_mem_of_zsmul_mem.lean:354:61: warning: `MonoidHom.coe_coe` has been deprecated: Use `MonoidHom.coe_ofClass` instead
+
+Hint: Replace the deprecated name:
+  M̵o̵n̵o̵i̵d̵H̵o̵m̵.̵c̵o̵e̵_̵c̵o̵e̵M̲o̲n̲o̲i̲d̲H̲o̲m̲.̲c̲o̲e̲_̲o̲f̲C̲l̲a̲s̲s̲
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_groupCohomology_mem_levelCoboundaries2_of_pow_mem_and_exists_pow_sub_mem_of_zsmul_mem.lean:365:2: warning: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_groupCohomology_mem_levelCoboundaries2_of_pow_mem_and_exists_pow_sub_mem_of_zsmul_mem.lean:377:28: warning: `MonoidHom.coe_coe` has been deprecated: Use `MonoidHom.coe_ofClass` instead
+
+Hint: Replace the deprecated name:
+  M̵o̵n̵o̵i̵d̵H̵o̵m̵.̵c̵o̵e̵_̵c̵o̵e̵M̲o̲n̲o̲i̲d̲H̲o̲m̲.̲c̲o̲e̲_̲o̲f̲C̲l̲a̲s̲s̲
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_groupCohomology_mem_levelCoboundaries2_of_pow_mem_and_exists_pow_sub_mem_of_zsmul_mem.lean:390:43: error(lean.synthInstanceFailed): failed to synthesize instance of type class
+  Membership (↥D × ↥D → ZMod p) (Submodule (ZMod p) (↥D × ↥D → ↑(Tr p D)))
+
+Hint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_groupCohomology_mem_levelCoboundaries2_of_pow_mem_and_exists_pow_sub_mem_of_zsmul_mem.lean:392:4: error(lean.synthInstanceFailed): failed to synthesize instance of type class
+  Membership (↥D × ↥D → ZMod p) (Submodule (ZMod p) (↥D × ↥D → ↑(Tr p D)))
+
+Hint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_groupCohomology_mem_levelCoboundaries2_of_pow_mem_and_exists_pow_sub_mem_of_zsmul_mem.lean:411:2: warning: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_groupCohomology_mem_levelCoboundaries2_of_pow_mem_and_exists_pow_sub_mem_of_zsmul_mem.lean:414:2: warning: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_groupCohomology_mem_levelCoboundaries2_of_pow_mem_and_exists_pow_sub_mem_of_zsmul_mem.lean:417:2: warning: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_groupCohomology_mem_levelCoboundaries2_of_pow_mem_and_exists_pow_sub_mem_of_zsmul_mem.lean:450:32: error: Application type mismatch: The argument
+  w
+has type
+  ↥D → ZMod p
+but is expected to have type
+  ↑↧(↥D → ↑(Tr p D))
+in the application
+  (ModuleCat.Hom.hom (d₁₂ (Tr p D))) w
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_groupCohomology_mem_levelCoboundaries2_of_pow_mem_and_exists_pow_sub_mem_of_zsmul_mem.lean:450:36: error: Type mismatch
+  z
+has type
+  ↥D × ↥D → ZMod p
+but is expected to have type
+  ↑↧(↥D × ↥D → ↑(Tr p D))
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_groupCohomology_mem_levelCoboundaries2_of_pow_mem_and_exists_pow_sub_mem_of_zsmul_mem.lean:457:47: error: Application type mismatch: The argument
+  w
+has type
+  ↥D → ZMod p
+but is expected to have type
+  ?m.816 → ↑?m.819
+in the application
+  Exists.intro w
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_groupCohomology_mem_levelCoboundaries2_of_pow_mem_and_exists_pow_sub_mem_of_zsmul_mem.lean:466:5: warning: Ambiguous namespace `P2MKloc`: it is interpreted as `_root_.P2MW.S_groupCohomology_mem_levelCoboundaries2_of_pow_mem_and_exists_pow_sub_mem_of_zsmul_mem.P2MKloc` because this `open` occurs inside `namespace P2MW.S_groupCohomology_mem_levelCoboundaries2_of_pow_mem_and_exists_pow_sub_mem_of_zsmul_mem`, while `_root_.P2MKloc` is silently not opened. Specify the namespace unambiguously, e.g. `_root_.P2MW.S_groupCohomology_mem_levelCoboundaries2_of_pow_mem_and_exists_pow_sub_mem_of_zsmul_mem.P2MKloc`. The warning can sometimes also be addressed by moving the `open` outside of the surrounding `namespace`.
+
+Note: This linter can be disabled with `set_option linter.ambiguousOpen false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_groupCohomology_mem_levelCoboundaries2_of_pow_mem_and_exists_pow_sub_mem_of_zsmul_mem.lean:470:59: error(lean.synthInstanceFailed): failed to synthesize instance of type class
+  Module (ZMod p) (ZMod p)
+
+Hint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_groupCohomology_mem_levelCoboundaries2_of_pow_mem_and_exists_pow_sub_mem_of_zsmul_mem.lean:473:40: error(lean.synthInstanceFailed): failed to synthesize instance of type class
+  Module (ZMod p) (ZMod p)
+
+Hint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_groupCohomology_mem_levelCoboundaries2_of_pow_mem_and_exists_pow_sub_mem_of_zsmul_mem.lean:477:60: error(lean.synthInstanceFailed): failed to synthesize instance of type class
+  Module (ZMod p) (ZMod p)
+
+Hint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.

@@ -1,0 +1,35 @@
+import Mathlib
+import Submission.Supplier.Definitions.Def_GroupCohomology_ContinuousH2
+import Submission.Supplier.P2M.Util
+import Submission.Supplier.P2M.Sol.S_groupCohomology_mem_levelCoboundaries2_of_pow_mem_and_exists_pow_sub_mem_of_zsmul_mem
+
+-- Elaborator settings from the recovered exact-pin FLT controller.
+set_option autoImplicit false
+set_option maxHeartbeats 4000000
+set_option synthInstance.maxHeartbeats 400000
+set_option backward.isDefEq.respectTransparency.types false
+set_option debug.skipKernelTC false
+-- End recovered elaborator settings.
+attribute [-instance] groupCohomology.normal_comap_fixingSubgroup groupCohomology.finiteIndex_comap_fixingSubgroup
+
+set_option autoImplicit false
+open CategoryTheory groupCohomology
+
+local instance zmodAddCommGroup (p : ℕ) : AddCommGroup (ZMod p) :=
+  (ZMod.commRing p).toAddCommGroup
+
+theorem groupCohomology.mem_levelCoboundaries2_of_pow_mem_and_exists_pow_sub_mem_of_zsmul_mem
+    {p : ℕ} [Fact p.Prime] (D : Subgroup (AlgebraicClosure ℚ ≃ₐ[ℚ] AlgebraicClosure ℚ))
+    (ζ : (AlgebraicClosure ℚ)ˣ) (hζ : IsPrimitiveRoot ζ p) (hD : ∀ σ ∈ D, σ • ζ = ζ) :
+    (∀ z : ↥D × ↥D → ZMod p, z ∈ levelCocycles₂ D.subtype (Rep.trivial (ZMod p) ↥D (ZMod p)) →
+      (fun g => Additive.ofMul (ζ ^ (z g).val) : ↥D × ↥D → Additive (AlgebraicClosure ℚ)ˣ) ∈
+        levelCoboundaries₂ D.subtype (Rep.res D.subtype (Rep.ofAlgebraAutOnUnits ℚ (AlgebraicClosure ℚ))) →
+      z ∈ levelCoboundaries₂ D.subtype (Rep.trivial (ZMod p) ↥D (ZMod p))) ∧
+    (∀ X : ↥D × ↥D → Additive (AlgebraicClosure ℚ)ˣ,
+      X ∈ levelCocycles₂ D.subtype (Rep.res D.subtype (Rep.ofAlgebraAutOnUnits ℚ (AlgebraicClosure ℚ))) →
+      (p : ℤ) • X ∈ levelCoboundaries₂ D.subtype (Rep.res D.subtype (Rep.ofAlgebraAutOnUnits ℚ (AlgebraicClosure ℚ))) →
+      ∃ z : ↥D × ↥D → ZMod p, z ∈ levelCocycles₂ D.subtype (Rep.trivial (ZMod p) ↥D (ZMod p)) ∧
+        X - (fun g => Additive.ofMul (ζ ^ (z g).val)) ∈
+          levelCoboundaries₂ D.subtype (Rep.res D.subtype (Rep.ofAlgebraAutOnUnits ℚ (AlgebraicClosure ℚ)))) := by p2m_exact_reverting @_root_.P2MW.S_groupCohomology_mem_levelCoboundaries2_of_pow_mem_and_exists_pow_sub_mem_of_zsmul_mem.solution
+
+#print axioms groupCohomology.mem_levelCoboundaries2_of_pow_mem_and_exists_pow_sub_mem_of_zsmul_mem

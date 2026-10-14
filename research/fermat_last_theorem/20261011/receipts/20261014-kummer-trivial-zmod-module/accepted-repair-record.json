@@ -1,0 +1,75 @@
+{
+  "at": "2026-10-14T05:21:20.965116+00:00",
+  "repair_number": "r167",
+  "name": "groupCohomology_mem_levelCoboundaries2_of_pow_mem_and_exists_pow_sub_mem_of_zsmul_mem",
+  "source_revision": "r5",
+  "checks": {
+    "source": {
+      "module": "Submission.Supplier.P2M.Sol.S_groupCohomology_mem_levelCoboundaries2_of_pow_mem_and_exists_pow_sub_mem_of_zsmul_mem",
+      "make_exit": 0,
+      "kernel_exit": 0,
+      "kernel_seconds": 53.118947291,
+      "make_seconds": 59.920268167,
+      "compiler_warnings": 0,
+      "final_standard3_audit_passed": true,
+      "printed_final_axiom_closures": [
+        {
+          "declaration": "P2MW.S_groupCohomology_mem_levelCoboundaries2_of_pow_mem_and_exists_pow_sub_mem_of_zsmul_mem.solution",
+          "recursive_axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "original_canonical_lines": 472,
+      "repaired_canonical_lines": 477,
+      "original_final_statement_and_full_module_proof_preserved": true,
+      "kernel_terminal_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/a9afc6e19da935e18edcec91-1791954958574637000.kernel/result.json",
+      "canonical_make_terminal_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/a9afc6e19da935e18edcec91-1791954958574637000.make-terminal.json"
+    },
+    "card": {
+      "module": "Submission.Supplier.Theorems.Thm_groupCohomology_mem_levelCoboundaries2_of_pow_mem_and_exists_pow_sub_mem_of_zsmul_mem",
+      "make_exit": 0,
+      "kernel_exit": 0,
+      "kernel_seconds": 65.076721,
+      "make_seconds": 74.016501042,
+      "compiler_warnings": 0,
+      "final_standard3_audit_passed": true,
+      "printed_final_axiom_closures": [
+        {
+          "declaration": "groupCohomology.mem_levelCoboundaries2_of_pow_mem_and_exists_pow_sub_mem_of_zsmul_mem",
+          "recursive_axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "original_canonical_lines": 22,
+      "repaired_canonical_lines": 27,
+      "original_final_statement_and_full_module_proof_preserved": true,
+      "kernel_terminal_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/05958daee9e33de1a19ff630-1791955042325911000.kernel/result.json",
+      "canonical_make_terminal_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/05958daee9e33de1a19ff630-1791955042325911000.make-terminal.json"
+    }
+  },
+  "proof_summary": "Pin the local additive group from ZMod.commRing to avoid the actual nondefinitional simple-nilpotent additive-group instance selected by Rep.trivial. Preserve both original level-cocycle/coboundary conclusions, arbitrary subgroup D, prime and primitive-root hypotheses, roots, finite-level descent and complete Hilbert 90 proof. Normalize haveI to have, reuse the same normalClosure.normal proof, update MonoidHom.coe_ofClass, qualify the helper namespace and remove only three kernel-reported unused simp arguments. Full final source/card statements and proof text are byte-identical to the supplier originals; all supporting branches retained.",
+  "original_statements_hypotheses_and_full_proofs_preserved": true,
+  "new_main_hypotheses": 0,
+  "new_linter_suppressions": 0,
+  "repaired_source_card_pair_actual_make_kernel_passed": true,
+  "source_card_actual_final_standard3": true,
+  "card_dependency_matches_final_source_receipt": true,
+  "supplier": "anthropics/fermats-last-theorem",
+  "supplier_commit": "6e837e75355538c7f80bab5b956861e86c4eacc2",
+  "selected_problem": "fermat_last_theorem",
+  "full_original_complete": false,
+  "official_new_solve_credit": 0,
+  "full_root_import_replay_and_axiom_audit_pending": true,
+  "max_active_flt_jobs": 1,
+  "max_active_flt_compilers": 1,
+  "lean_threads": 1,
+  "gate_request_GB": 35,
+  "producer": "Codex primary agent; no subagents, Pro or independent consensus",
+  "skill_context": "formal-thinking-and-answer"
+}
