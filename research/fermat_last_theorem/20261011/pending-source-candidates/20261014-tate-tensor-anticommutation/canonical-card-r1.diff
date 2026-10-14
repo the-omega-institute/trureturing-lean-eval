@@ -1,0 +1,8 @@
+--- baseline
++++ candidate
+@@ -18,3 +18,5 @@
+     (hC₂ : (Y.map (MonoidalCategory.tensorLeft X.X₂)).ShortExact)
+     (hC₃ : (Y.map (MonoidalCategory.tensorLeft X.X₃)).ShortExact) (n : ℤ) :
+     Rep.tateδ hR₃ n ≫ Rep.tateδ hC₁ (n + 1) = -(Rep.tateδ hC₃ n ≫ Rep.tateδ hR₁ (n + 1)) := by p2m_exact_reverting @_root_.P2MW.S_Rep_tateDelta_comp_tateDelta_eq_neg.solution
++
++#print axioms Rep.tateDelta_comp_tateDelta_eq_neg

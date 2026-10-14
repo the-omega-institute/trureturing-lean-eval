@@ -1,0 +1,55 @@
+--- baseline
++++ candidate
+@@ -55,7 +55,7 @@
+ 
+ theorem exists_lift {S : ShortComplex (Rep.{u} k G)} (hS : S.ShortExact) (n : ℕ) (z : (Fin n → G) → S.X₃) :
+     ∃ y : (Fin n → G) → S.X₂, ∀ τ, S.g.hom (y τ) = z τ := by
+-  haveI := hS.epi_g
++  have := hS.epi_g
+   obtain ⟨y, hy⟩ := (ModuleCat.epi_iff_surjective _).1 (cochainsMap_id_f_map_epi S.g n) z
+   exact ⟨y, fun τ => by rw [← cochainsMap_id_f_apply S.g n y τ]; exact congrFun hy τ⟩
+ 
+@@ -71,8 +71,7 @@
+ 
+ theorem exchange {A A' B B' : Rep.{u} k G} (f : A ⟶ A') (g : B ⟶ B') (t : (A ⊗ B : Rep.{u} k G)) :
+     (A' ◁ g).hom ((f ▷ B).hom t) = (f ▷ B').hom ((A ◁ g).hom t) := by
+-  induction t using TensorProduct.induction_on with
+-  | zero => simp only [map_zero]
++  induction t using TensorProduct.inductionOn with
+   | tmul a b => rfl
+   | add t t' ht ht' => simp only [map_add, ht, ht']
+ 
+@@ -275,8 +274,7 @@
+     mR (A' ◁ g) n (mR (f ▷ B) n t) = mR (f ▷ B') n (mR (A ◁ g) n t) := by
+   refine Finsupp.ext fun a => ?_
+   rw [mR_apply, mR_apply, mR_apply, mR_apply]
+-  induction t a using TensorProduct.induction_on with
+-  | zero => simp only [map_zero]
++  induction t a using TensorProduct.inductionOn with
+   | tmul a b => rfl
+   | add t t' ht ht' => simp only [map_add, ht, ht']
+ 
+@@ -495,8 +493,7 @@
+ 
+ theorem exchange {A A' B B' : Rep.{u} k G} (f : A ⟶ A') (g : B ⟶ B') (t : (A ⊗ B : Rep.{u} k G)) :
+     (A' ◁ g).hom ((f ▷ B).hom t) = (f ▷ B').hom ((A ◁ g).hom t) := by
+-  induction t using TensorProduct.induction_on with
+-  | zero => simp only [map_zero]
++  induction t using TensorProduct.inductionOn with
+   | tmul a b => rfl
+   | add t t' ht ht' => simp only [map_add, ht, ht']
+ 
+@@ -717,7 +714,6 @@
+     rw [hsR, Rep.coe_seamθ_apply]
+     show _ = Representation.Coinvariants.mk _ ((X.X₁ ◁ Y.g).hom b₀)
+     rw [hb₀]
+-    rfl
+   have hθC : Rep.tateδneg2 hC₃ ((groupHomology.H1π (X.X₃ ⊗ Y.X₃)).hom γ)
+       = Rep.seamθ (X.map (tensorRight Y.X₁)) ⟨b₂, hNb₂⟩ := by
+     apply Subtype.ext
+@@ -853,3 +849,5 @@
+   | Int.negSucc 1 => exact P2mS26AG.regime_neg_two hR₁ hR₂ hR₃ hC₁ hC₂ hC₃
+   | Int.negSucc 2 => exact P2mS26AG.regime_neg_three hR₁ hR₂ hR₃ hC₁ hC₂ hC₃
+   | Int.negSucc (m + 3) => exact P2mS26AG.regime_neg hR₁ hR₂ hR₃ hC₁ hC₂ hC₃ m
++
++#print axioms P2MW.S_Rep_tateDelta_comp_tateDelta_eq_neg.solution
