@@ -1,0 +1,575 @@
+{
+  "at": "2026-10-14T12:17:55.341798+00:00",
+  "problem": "fermat_last_theorem",
+  "actual_checks": [
+    {
+      "module": "Submission.Supplier.P2M.Sol.S_AlgebraicCurve_isPrimitiveAlong_comp_extChartAt_of_hasDerivAt_readDifferential",
+      "role": "source",
+      "make_exit": 0,
+      "kernel_exit": 0,
+      "kernel_seconds": 70.10856762499999,
+      "original_warnings": 10,
+      "canonical_lines": 553,
+      "canonical_byte_identical_to_supplier": true,
+      "source_unchanged_during_check": true,
+      "dependency_receipts_match_current_controller": true,
+      "kernel_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/0d2c355fc825f9242031243b-1791979559266411000.kernel/result.json",
+      "make_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/0d2c355fc825f9242031243b-1791979559266411000.make-terminal.json",
+      "controller_record": {
+        "sha256": "17984da6a0b8cdbd00ddffc096258a0341af2aed81ff65b581f651bbe1538c7f",
+        "exit": 0,
+        "empty_output_retry_done": false,
+        "source_sha256_after": "17984da6a0b8cdbd00ddffc096258a0341af2aed81ff65b581f651bbe1538c7f",
+        "source_unchanged": true,
+        "olean_sha256": "73de2cc9dfbbf20f1d6ec0799d2ce9574448416c9b7c24d91c802e56c9567fff",
+        "seconds": 100.99234458399951,
+        "pid": 62961,
+        "command": [
+          "/Users/macstudio/.local/omega-shims/lean",
+          "-j1",
+          "--trust=0",
+          "-Ddebug.skipKernelTC=false",
+          "-R",
+          "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src",
+          "-o",
+          "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-build/lib/lean/Submission/Supplier/P2M/Sol/S_AlgebraicCurve_isPrimitiveAlong_comp_extChartAt_of_hasDerivAt_readDifferential.olean",
+          "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_AlgebraicCurve_isPrimitiveAlong_comp_extChartAt_of_hasDerivAt_readDifferential.lean"
+        ],
+        "make_wrapper_pid": 57060,
+        "make_exit": 0,
+        "make_entry_failed": false,
+        "cache_binding_valid": true,
+        "canonical_make_running_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/0d2c355fc825f9242031243b-1791979559266411000.make-running.json",
+        "canonical_make_terminal_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/0d2c355fc825f9242031243b-1791979559266411000.make-terminal.json",
+        "kernel_terminal_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/0d2c355fc825f9242031243b-1791979559266411000.kernel/result.json",
+        "direct_dependencies": [
+          {
+            "module": "Submission.Supplier.Definitions.Def_AlgebraicCurve_DivisorClassGroup",
+            "source_sha256": "8fc70ab3a82322ac3cb5fe26687036d7b9780a29474e6073cac2d6e349ec5024",
+            "object_sha256": "1c9faf1a7d5f522313fe11f4af5ba43d1cecaea92684949b3029e60ac2c8179d",
+            "receipt_reused": true
+          },
+          {
+            "module": "Submission.Supplier.Definitions.Def_AlgebraicCurve_IsCurveOver",
+            "source_sha256": "3d53c0528c8bc1ae3b59135d2dc1a76d8abbd68c829305a8f4a8d584c3796553",
+            "object_sha256": "e059f779f8f2ce4be7ecc33e0af4e4d4e1629cd5eb8f0516c569e5b236d3539d",
+            "receipt_reused": true
+          },
+          {
+            "module": "Submission.Supplier.Definitions.Def_AlgebraicCurve_CanonicalDivisor",
+            "source_sha256": "db011569245b3fb395fe9d53f37523c208595ab245d48226a44b965f18245981",
+            "object_sha256": "c37425b70f3982cfe2531919c203eedd2523f9d7739f1cb6dec60403b3a0c5e5",
+            "receipt_reused": true
+          },
+          {
+            "module": "Submission.Supplier.Definitions.Def_AlgebraicCurve_PlaceEvaluation",
+            "source_sha256": "fdfbe8ba0ace6720310749dab44668a69f9b5e5b8bd10702632f48b50309e5ba",
+            "object_sha256": "eac4d654f8f11e9c00b836bf940d1348f6eb9a4ec4a96b99c9c1b0efba0ecf63",
+            "receipt_reused": true
+          },
+          {
+            "module": "Submission.Supplier.Definitions.Def_AlgebraicCurve_RegularDifferentials",
+            "source_sha256": "621311a063241a754ccc18aa74f96eca60e6b33cc9d894ef81b59b034abb2ed0",
+            "object_sha256": "39fc0f2e8ab4b2e03919abf00481a60682b30a6be1180eca7af8debdc6135a8f",
+            "receipt_reused": true
+          },
+          {
+            "module": "Submission.Supplier.Definitions.Def_AlgebraicCurve_ComplexLineIntegral",
+            "source_sha256": "c661f7c0b927bb3039c61dbaaced1fbe26641539976a9c3d2094480b10859793",
+            "object_sha256": "171dc471f24088540e02ba6cf600a14ab2b3f31377a5ddc71bd2594231551020",
+            "receipt_reused": true
+          },
+          {
+            "module": "Submission.Supplier.Theorems.Thm_AlgebraicCurve_Place_analyticAt_evalAt_extChartAt_symm_of_mem",
+            "source_sha256": "beb0fd81790d91a63d7dc9b698a481c1b6a64945414f4bcefe1b69bf08d75c27",
+            "object_sha256": "f732af2a623801e0eec412726772b71a352659f9b200d9c962c11a06af0c62e2",
+            "receipt_reused": true
+          },
+          {
+            "module": "Submission.Supplier.Theorems.Thm_AlgebraicCurve_dCoordGenerates_of_isCurveOver",
+            "source_sha256": "5e55288340d3ea7728d20b18cd130cd412c7123f986262cd00f7a60a2c83c190",
+            "object_sha256": "ab3574cbc74f9b3a96c5a2c445d970fff81adb01aab2da54dd7ec4ab0e065897",
+            "receipt_reused": true
+          },
+          {
+            "module": "Submission.Supplier.Theorems.Thm_AlgebraicCurve_essFiniteType_of_transcendental_of_finiteDimensional",
+            "source_sha256": "8f402aa00cf873a6fa5cbdf286cc2d156f092f28590d1801c9fa676da6e180cf",
+            "object_sha256": "2d98ea1e43ee6c5854dc0a694f1db7703b7d7c03c5fcbc143c977705b2f0112a",
+            "receipt_reused": true
+          },
+          {
+            "module": "Submission.Supplier.P2M.Util",
+            "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+            "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+            "receipt_reused": true
+          }
+        ],
+        "stdout": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/0d2c355fc825f9242031243b-1791979559266411000.kernel/stdout.log",
+        "stderr": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/0d2c355fc825f9242031243b-1791979559266411000.kernel/stderr.log"
+      },
+      "whole_root_recursive_axiom_audit_pending": true
+    },
+    {
+      "module": "Submission.Supplier.Theorems.Thm_AlgebraicCurve_isPrimitiveAlong_comp_extChartAt_of_hasDerivAt_readDifferential",
+      "role": "card",
+      "make_exit": 0,
+      "kernel_exit": 0,
+      "kernel_seconds": 59.352722625000006,
+      "original_warnings": 0,
+      "canonical_lines": 36,
+      "canonical_byte_identical_to_supplier": true,
+      "source_unchanged_during_check": true,
+      "dependency_receipts_match_current_controller": true,
+      "kernel_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/659e95018ac75a24ec4e1143-1791979669448644000.kernel/result.json",
+      "make_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/659e95018ac75a24ec4e1143-1791979669448644000.make-terminal.json",
+      "controller_record": {
+        "sha256": "20d5d30e852db7b0e6c81a992a083d4f6eb010ee7d691d984cbcae730dde075a",
+        "exit": 0,
+        "empty_output_retry_done": false,
+        "source_sha256_after": "20d5d30e852db7b0e6c81a992a083d4f6eb010ee7d691d984cbcae730dde075a",
+        "source_unchanged": true,
+        "olean_sha256": "aaa65af92cf0c002a7bc13aa15e60e78d56bc6631fd94717199de8cadda729c5",
+        "seconds": 153.55167145900123,
+        "pid": 88840,
+        "command": [
+          "/Users/macstudio/.local/omega-shims/lean",
+          "-j1",
+          "--trust=0",
+          "-Ddebug.skipKernelTC=false",
+          "-R",
+          "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src",
+          "-o",
+          "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-build/lib/lean/Submission/Supplier/Theorems/Thm_AlgebraicCurve_isPrimitiveAlong_comp_extChartAt_of_hasDerivAt_readDifferential.olean",
+          "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/Theorems/Thm_AlgebraicCurve_isPrimitiveAlong_comp_extChartAt_of_hasDerivAt_readDifferential.lean"
+        ],
+        "make_wrapper_pid": 29525,
+        "make_exit": 0,
+        "make_entry_failed": false,
+        "cache_binding_valid": true,
+        "canonical_make_running_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/659e95018ac75a24ec4e1143-1791979669448644000.make-running.json",
+        "canonical_make_terminal_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/659e95018ac75a24ec4e1143-1791979669448644000.make-terminal.json",
+        "kernel_terminal_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/659e95018ac75a24ec4e1143-1791979669448644000.kernel/result.json",
+        "direct_dependencies": [
+          {
+            "module": "Submission.Supplier.Definitions.Def_AlgebraicCurve_DivisorClassGroup",
+            "source_sha256": "8fc70ab3a82322ac3cb5fe26687036d7b9780a29474e6073cac2d6e349ec5024",
+            "object_sha256": "1c9faf1a7d5f522313fe11f4af5ba43d1cecaea92684949b3029e60ac2c8179d",
+            "receipt_reused": true
+          },
+          {
+            "module": "Submission.Supplier.Definitions.Def_AlgebraicCurve_IsCurveOver",
+            "source_sha256": "3d53c0528c8bc1ae3b59135d2dc1a76d8abbd68c829305a8f4a8d584c3796553",
+            "object_sha256": "e059f779f8f2ce4be7ecc33e0af4e4d4e1629cd5eb8f0516c569e5b236d3539d",
+            "receipt_reused": true
+          },
+          {
+            "module": "Submission.Supplier.Definitions.Def_AlgebraicCurve_CanonicalDivisor",
+            "source_sha256": "db011569245b3fb395fe9d53f37523c208595ab245d48226a44b965f18245981",
+            "object_sha256": "c37425b70f3982cfe2531919c203eedd2523f9d7739f1cb6dec60403b3a0c5e5",
+            "receipt_reused": true
+          },
+          {
+            "module": "Submission.Supplier.Definitions.Def_AlgebraicCurve_PlaceEvaluation",
+            "source_sha256": "fdfbe8ba0ace6720310749dab44668a69f9b5e5b8bd10702632f48b50309e5ba",
+            "object_sha256": "eac4d654f8f11e9c00b836bf940d1348f6eb9a4ec4a96b99c9c1b0efba0ecf63",
+            "receipt_reused": true
+          },
+          {
+            "module": "Submission.Supplier.Definitions.Def_AlgebraicCurve_RegularDifferentials",
+            "source_sha256": "621311a063241a754ccc18aa74f96eca60e6b33cc9d894ef81b59b034abb2ed0",
+            "object_sha256": "39fc0f2e8ab4b2e03919abf00481a60682b30a6be1180eca7af8debdc6135a8f",
+            "receipt_reused": true
+          },
+          {
+            "module": "Submission.Supplier.Definitions.Def_AlgebraicCurve_ComplexLineIntegral",
+            "source_sha256": "c661f7c0b927bb3039c61dbaaced1fbe26641539976a9c3d2094480b10859793",
+            "object_sha256": "171dc471f24088540e02ba6cf600a14ab2b3f31377a5ddc71bd2594231551020",
+            "receipt_reused": true
+          },
+          {
+            "module": "Submission.Supplier.P2M.Util",
+            "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+            "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+            "receipt_reused": true
+          },
+          {
+            "module": "Submission.Supplier.P2M.Sol.S_AlgebraicCurve_isPrimitiveAlong_comp_extChartAt_of_hasDerivAt_readDifferential",
+            "source_sha256": "17984da6a0b8cdbd00ddffc096258a0341af2aed81ff65b581f651bbe1538c7f",
+            "object_sha256": "73de2cc9dfbbf20f1d6ec0799d2ce9574448416c9b7c24d91c802e56c9567fff",
+            "receipt_reused": true
+          }
+        ],
+        "stdout": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/659e95018ac75a24ec4e1143-1791979669448644000.kernel/stdout.log",
+        "stderr": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/659e95018ac75a24ec4e1143-1791979669448644000.kernel/stderr.log"
+      },
+      "whole_root_recursive_axiom_audit_pending": true
+    },
+    {
+      "module": "Submission.Supplier.P2M.Sol.S_AlgebraicCurve_exists_meromorphicOrderAt_eq_of_forall_pathIntegral_eq_two_pi_I_mul",
+      "role": "source",
+      "make_exit": 0,
+      "kernel_exit": 0,
+      "kernel_seconds": 55.316375084,
+      "original_warnings": 17,
+      "canonical_lines": 1129,
+      "canonical_byte_identical_to_supplier": true,
+      "source_unchanged_during_check": true,
+      "dependency_receipts_match_current_controller": true,
+      "kernel_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/d352742ec3794597640e118d-1791979832870116000.kernel/result.json",
+      "make_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/d352742ec3794597640e118d-1791979832870116000.make-terminal.json",
+      "controller_record": {
+        "sha256": "84e7068949a627ee44a852b790685f9d0d67a0468e2b3208888311d6b197593d",
+        "exit": 0,
+        "empty_output_retry_done": false,
+        "source_sha256_after": "84e7068949a627ee44a852b790685f9d0d67a0468e2b3208888311d6b197593d",
+        "source_unchanged": true,
+        "olean_sha256": "db3d74f0a472766512946c1c92278023266b577a6c04ea0b7f262b4b0d8800f0",
+        "seconds": 85.27573408399985,
+        "pid": 89946,
+        "command": [
+          "/Users/macstudio/.local/omega-shims/lean",
+          "-j1",
+          "--trust=0",
+          "-Ddebug.skipKernelTC=false",
+          "-R",
+          "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src",
+          "-o",
+          "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-build/lib/lean/Submission/Supplier/P2M/Sol/S_AlgebraicCurve_exists_meromorphicOrderAt_eq_of_forall_pathIntegral_eq_two_pi_I_mul.olean",
+          "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_AlgebraicCurve_exists_meromorphicOrderAt_eq_of_forall_pathIntegral_eq_two_pi_I_mul.lean"
+        ],
+        "make_wrapper_pid": 82715,
+        "make_exit": 0,
+        "make_entry_failed": false,
+        "cache_binding_valid": true,
+        "canonical_make_running_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/d352742ec3794597640e118d-1791979832870116000.make-running.json",
+        "canonical_make_terminal_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/d352742ec3794597640e118d-1791979832870116000.make-terminal.json",
+        "kernel_terminal_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/d352742ec3794597640e118d-1791979832870116000.kernel/result.json",
+        "direct_dependencies": [
+          {
+            "module": "Submission.Supplier.Definitions.Def_AlgebraicCurve_DivisorClassGroup",
+            "source_sha256": "8fc70ab3a82322ac3cb5fe26687036d7b9780a29474e6073cac2d6e349ec5024",
+            "object_sha256": "1c9faf1a7d5f522313fe11f4af5ba43d1cecaea92684949b3029e60ac2c8179d",
+            "receipt_reused": true
+          },
+          {
+            "module": "Submission.Supplier.Definitions.Def_AlgebraicCurve_IsCurveOver",
+            "source_sha256": "3d53c0528c8bc1ae3b59135d2dc1a76d8abbd68c829305a8f4a8d584c3796553",
+            "object_sha256": "e059f779f8f2ce4be7ecc33e0af4e4d4e1629cd5eb8f0516c569e5b236d3539d",
+            "receipt_reused": true
+          },
+          {
+            "module": "Submission.Supplier.Definitions.Def_AlgebraicCurve_CanonicalDivisor",
+            "source_sha256": "db011569245b3fb395fe9d53f37523c208595ab245d48226a44b965f18245981",
+            "object_sha256": "c37425b70f3982cfe2531919c203eedd2523f9d7739f1cb6dec60403b3a0c5e5",
+            "receipt_reused": true
+          },
+          {
+            "module": "Submission.Supplier.Definitions.Def_AlgebraicCurve_PlaceEvaluation",
+            "source_sha256": "fdfbe8ba0ace6720310749dab44668a69f9b5e5b8bd10702632f48b50309e5ba",
+            "object_sha256": "eac4d654f8f11e9c00b836bf940d1348f6eb9a4ec4a96b99c9c1b0efba0ecf63",
+            "receipt_reused": true
+          },
+          {
+            "module": "Submission.Supplier.Definitions.Def_AlgebraicCurve_RegularDifferentials",
+            "source_sha256": "621311a063241a754ccc18aa74f96eca60e6b33cc9d894ef81b59b034abb2ed0",
+            "object_sha256": "39fc0f2e8ab4b2e03919abf00481a60682b30a6be1180eca7af8debdc6135a8f",
+            "receipt_reused": true
+          },
+          {
+            "module": "Submission.Supplier.Definitions.Def_AlgebraicCurve_ComplexLineIntegral",
+            "source_sha256": "c661f7c0b927bb3039c61dbaaced1fbe26641539976a9c3d2094480b10859793",
+            "object_sha256": "171dc471f24088540e02ba6cf600a14ab2b3f31377a5ddc71bd2594231551020",
+            "receipt_reused": true
+          },
+          {
+            "module": "Submission.Supplier.Theorems.Thm_AlgebraicCurve_Place_analyticAt_evalAt_extChartAt_symm_of_mem",
+            "source_sha256": "beb0fd81790d91a63d7dc9b698a481c1b6a64945414f4bcefe1b69bf08d75c27",
+            "object_sha256": "f732af2a623801e0eec412726772b71a352659f9b200d9c962c11a06af0c62e2",
+            "receipt_reused": true
+          },
+          {
+            "module": "Submission.Supplier.Theorems.Thm_AlgebraicCurve_dCoordGenerates_of_isCurveOver",
+            "source_sha256": "5e55288340d3ea7728d20b18cd130cd412c7123f986262cd00f7a60a2c83c190",
+            "object_sha256": "ab3574cbc74f9b3a96c5a2c445d970fff81adb01aab2da54dd7ec4ab0e065897",
+            "receipt_reused": true
+          },
+          {
+            "module": "Submission.Supplier.Theorems.Thm_AlgebraicCurve_essFiniteType_of_transcendental_of_finiteDimensional",
+            "source_sha256": "8f402aa00cf873a6fa5cbdf286cc2d156f092f28590d1801c9fa676da6e180cf",
+            "object_sha256": "2d98ea1e43ee6c5854dc0a694f1db7703b7d7c03c5fcbc143c977705b2f0112a",
+            "receipt_reused": true
+          },
+          {
+            "module": "Submission.Supplier.Theorems.Thm_AlgebraicCurve_exists_isPrimitiveAlong_of_forall_ordDifferential_nonneg",
+            "source_sha256": "bb7aef55c0b6580adfb9de18b3408fda642919b176f065c3a92a94962c44c011",
+            "object_sha256": "db4fa7a23668903fe787c242e4c8b30c60fb14354f4852cb4bf6cce7f6c45209",
+            "receipt_reused": true
+          },
+          {
+            "module": "Submission.Supplier.Theorems.Thm_AlgebraicCurve_isPrimitiveAlong_comp_extChartAt_of_hasDerivAt_readDifferential",
+            "source_sha256": "20d5d30e852db7b0e6c81a992a083d4f6eb010ee7d691d984cbcae730dde075a",
+            "object_sha256": "aaa65af92cf0c002a7bc13aa15e60e78d56bc6631fd94717199de8cadda729c5",
+            "receipt_reused": true
+          },
+          {
+            "module": "Submission.Supplier.P2M.Util",
+            "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+            "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+            "receipt_reused": true
+          }
+        ],
+        "stdout": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/d352742ec3794597640e118d-1791979832870116000.kernel/stdout.log",
+        "stderr": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/d352742ec3794597640e118d-1791979832870116000.kernel/stderr.log"
+      },
+      "whole_root_recursive_axiom_audit_pending": true
+    },
+    {
+      "module": "Submission.Supplier.Theorems.Thm_AlgebraicCurve_exists_meromorphicOrderAt_eq_of_forall_pathIntegral_eq_two_pi_I_mul",
+      "role": "card",
+      "make_exit": 0,
+      "kernel_exit": 0,
+      "kernel_seconds": 76.393596959,
+      "original_warnings": 0,
+      "canonical_lines": 34,
+      "canonical_byte_identical_to_supplier": true,
+      "source_unchanged_during_check": true,
+      "dependency_receipts_match_current_controller": true,
+      "kernel_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/4bd7de374cffca6407a01ffe-1791979924796524000.kernel/result.json",
+      "make_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/4bd7de374cffca6407a01ffe-1791979924796524000.make-terminal.json",
+      "controller_record": {
+        "sha256": "d69fa42ee0981efc7f9d676c0b25fe1bc310ba3f60dc4d4c79e4b41e0fcc0acd",
+        "exit": 0,
+        "empty_output_retry_done": false,
+        "source_sha256_after": "d69fa42ee0981efc7f9d676c0b25fe1bc310ba3f60dc4d4c79e4b41e0fcc0acd",
+        "source_unchanged": true,
+        "olean_sha256": "17a9778eda35c2c6ea1eaf1c6fd1ffe312aa1a61e34d014548eb719faad47a8e",
+        "seconds": 107.07991791699897,
+        "pid": 23059,
+        "command": [
+          "/Users/macstudio/.local/omega-shims/lean",
+          "-j1",
+          "--trust=0",
+          "-Ddebug.skipKernelTC=false",
+          "-R",
+          "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src",
+          "-o",
+          "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-build/lib/lean/Submission/Supplier/Theorems/Thm_AlgebraicCurve_exists_meromorphicOrderAt_eq_of_forall_pathIntegral_eq_two_pi_I_mul.olean",
+          "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/Theorems/Thm_AlgebraicCurve_exists_meromorphicOrderAt_eq_of_forall_pathIntegral_eq_two_pi_I_mul.lean"
+        ],
+        "make_wrapper_pid": 85449,
+        "make_exit": 0,
+        "make_entry_failed": false,
+        "cache_binding_valid": true,
+        "canonical_make_running_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/4bd7de374cffca6407a01ffe-1791979924796524000.make-running.json",
+        "canonical_make_terminal_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/4bd7de374cffca6407a01ffe-1791979924796524000.make-terminal.json",
+        "kernel_terminal_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/4bd7de374cffca6407a01ffe-1791979924796524000.kernel/result.json",
+        "direct_dependencies": [
+          {
+            "module": "Submission.Supplier.Definitions.Def_AlgebraicCurve_DivisorClassGroup",
+            "source_sha256": "8fc70ab3a82322ac3cb5fe26687036d7b9780a29474e6073cac2d6e349ec5024",
+            "object_sha256": "1c9faf1a7d5f522313fe11f4af5ba43d1cecaea92684949b3029e60ac2c8179d",
+            "receipt_reused": true
+          },
+          {
+            "module": "Submission.Supplier.Definitions.Def_AlgebraicCurve_IsCurveOver",
+            "source_sha256": "3d53c0528c8bc1ae3b59135d2dc1a76d8abbd68c829305a8f4a8d584c3796553",
+            "object_sha256": "e059f779f8f2ce4be7ecc33e0af4e4d4e1629cd5eb8f0516c569e5b236d3539d",
+            "receipt_reused": true
+          },
+          {
+            "module": "Submission.Supplier.Definitions.Def_AlgebraicCurve_CanonicalDivisor",
+            "source_sha256": "db011569245b3fb395fe9d53f37523c208595ab245d48226a44b965f18245981",
+            "object_sha256": "c37425b70f3982cfe2531919c203eedd2523f9d7739f1cb6dec60403b3a0c5e5",
+            "receipt_reused": true
+          },
+          {
+            "module": "Submission.Supplier.Definitions.Def_AlgebraicCurve_PlaceEvaluation",
+            "source_sha256": "fdfbe8ba0ace6720310749dab44668a69f9b5e5b8bd10702632f48b50309e5ba",
+            "object_sha256": "eac4d654f8f11e9c00b836bf940d1348f6eb9a4ec4a96b99c9c1b0efba0ecf63",
+            "receipt_reused": true
+          },
+          {
+            "module": "Submission.Supplier.Definitions.Def_AlgebraicCurve_RegularDifferentials",
+            "source_sha256": "621311a063241a754ccc18aa74f96eca60e6b33cc9d894ef81b59b034abb2ed0",
+            "object_sha256": "39fc0f2e8ab4b2e03919abf00481a60682b30a6be1180eca7af8debdc6135a8f",
+            "receipt_reused": true
+          },
+          {
+            "module": "Submission.Supplier.Definitions.Def_AlgebraicCurve_ComplexLineIntegral",
+            "source_sha256": "c661f7c0b927bb3039c61dbaaced1fbe26641539976a9c3d2094480b10859793",
+            "object_sha256": "171dc471f24088540e02ba6cf600a14ab2b3f31377a5ddc71bd2594231551020",
+            "receipt_reused": true
+          },
+          {
+            "module": "Submission.Supplier.P2M.Util",
+            "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+            "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+            "receipt_reused": true
+          },
+          {
+            "module": "Submission.Supplier.P2M.Sol.S_AlgebraicCurve_exists_meromorphicOrderAt_eq_of_forall_pathIntegral_eq_two_pi_I_mul",
+            "source_sha256": "84e7068949a627ee44a852b790685f9d0d67a0468e2b3208888311d6b197593d",
+            "object_sha256": "db3d74f0a472766512946c1c92278023266b577a6c04ea0b7f262b4b0d8800f0",
+            "receipt_reused": true
+          }
+        ],
+        "stdout": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/4bd7de374cffca6407a01ffe-1791979924796524000.kernel/stdout.log",
+        "stderr": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/4bd7de374cffca6407a01ffe-1791979924796524000.kernel/stderr.log"
+      },
+      "whole_root_recursive_axiom_audit_pending": true
+    },
+    {
+      "module": "Submission.Supplier.P2M.Sol.S_AlgebraicCurve_isRegularDiff_dlog_of_dvd_ord",
+      "role": "source",
+      "make_exit": 0,
+      "kernel_exit": 0,
+      "kernel_seconds": 55.908740375,
+      "original_warnings": 2,
+      "canonical_lines": 123,
+      "canonical_byte_identical_to_supplier": true,
+      "source_unchanged_during_check": true,
+      "dependency_receipts_match_current_controller": true,
+      "kernel_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/35b48acdd0cae64c713df42d-1791980039451937000.kernel/result.json",
+      "make_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/35b48acdd0cae64c713df42d-1791980039451937000.make-terminal.json",
+      "controller_record": {
+        "sha256": "a84f7eebf3df97ab88edef6b72f240833d5c5e995e325d758b3d85775f1fe6ec",
+        "exit": 0,
+        "empty_output_retry_done": false,
+        "source_sha256_after": "a84f7eebf3df97ab88edef6b72f240833d5c5e995e325d758b3d85775f1fe6ec",
+        "source_unchanged": true,
+        "olean_sha256": "299bf6b84d94d7a376cceaa27f87da7fb8f0dd6b77294cad920754175b1b381d",
+        "seconds": 64.68009650000022,
+        "pid": 43917,
+        "command": [
+          "/Users/macstudio/.local/omega-shims/lean",
+          "-j1",
+          "--trust=0",
+          "-Ddebug.skipKernelTC=false",
+          "-R",
+          "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src",
+          "-o",
+          "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-build/lib/lean/Submission/Supplier/P2M/Sol/S_AlgebraicCurve_isRegularDiff_dlog_of_dvd_ord.olean",
+          "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_AlgebraicCurve_isRegularDiff_dlog_of_dvd_ord.lean"
+        ],
+        "make_wrapper_pid": 34337,
+        "make_exit": 0,
+        "make_entry_failed": false,
+        "cache_binding_valid": true,
+        "canonical_make_running_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/35b48acdd0cae64c713df42d-1791980039451937000.make-running.json",
+        "canonical_make_terminal_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/35b48acdd0cae64c713df42d-1791980039451937000.make-terminal.json",
+        "kernel_terminal_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/35b48acdd0cae64c713df42d-1791980039451937000.kernel/result.json",
+        "direct_dependencies": [
+          {
+            "module": "Submission.Supplier.Definitions.Def_AlgebraicCurve_IsCurveOver",
+            "source_sha256": "3d53c0528c8bc1ae3b59135d2dc1a76d8abbd68c829305a8f4a8d584c3796553",
+            "object_sha256": "e059f779f8f2ce4be7ecc33e0af4e4d4e1629cd5eb8f0516c569e5b236d3539d",
+            "receipt_reused": true
+          },
+          {
+            "module": "Submission.Supplier.Definitions.Def_AlgebraicCurve_Differentials",
+            "source_sha256": "540bd569a395a460d435f1e9a8aee3a89376d6dc094ace7fca6a6ccc35229907",
+            "object_sha256": "23bbd6ba97d4e9ff7b6a64950b1d65169d3e366c57e43ee8931ddca959f9c4d2",
+            "receipt_reused": true
+          },
+          {
+            "module": "Submission.Supplier.Theorems.Thm_AlgebraicCurve_Place_ord_diffCoeff_D_nonneg_of_perfectField",
+            "source_sha256": "75555995f221eaae4414e4c3f3f541a0a7e1d78be899e2e840a01e3a1338a2e5",
+            "object_sha256": "2f7d82ba0b149c201b172c975b6d0319d5a5cdcb2e66174fd56c5573efc93df3",
+            "receipt_reused": true
+          },
+          {
+            "module": "Submission.Supplier.Theorems.Thm_AlgebraicCurve_Place_D_ne_zero_of_ord_eq_one",
+            "source_sha256": "9f5f17994d5b7ef5f7a8265dc228613318b5cfd745fda5eb90b8571b1e5355d6",
+            "object_sha256": "9ad96ccde3160c84bca51e084a51dae83f3af98a2c52e5c323500f5bf89b5665",
+            "receipt_reused": true
+          },
+          {
+            "module": "Submission.Supplier.P2M.Util",
+            "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+            "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+            "receipt_reused": true
+          }
+        ],
+        "stdout": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/35b48acdd0cae64c713df42d-1791980039451937000.kernel/stdout.log",
+        "stderr": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/35b48acdd0cae64c713df42d-1791980039451937000.kernel/stderr.log"
+      },
+      "whole_root_recursive_axiom_audit_pending": true
+    },
+    {
+      "module": "Submission.Supplier.Theorems.Thm_AlgebraicCurve_isRegularDiff_dlog_of_dvd_ord",
+      "role": "card",
+      "make_exit": 0,
+      "kernel_exit": 0,
+      "kernel_seconds": 71.91738062499999,
+      "original_warnings": 0,
+      "canonical_lines": 22,
+      "canonical_byte_identical_to_supplier": true,
+      "source_unchanged_during_check": true,
+      "dependency_receipts_match_current_controller": true,
+      "kernel_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/19e519d24c579acf47953a7c-1791980121561180000.kernel/result.json",
+      "make_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/19e519d24c579acf47953a7c-1791980121561180000.make-terminal.json",
+      "controller_record": {
+        "sha256": "e8dccca13ddef1a44f430c22329fd030103db14d76814b1397c5169bc5e3d299",
+        "exit": 0,
+        "empty_output_retry_done": false,
+        "source_sha256_after": "e8dccca13ddef1a44f430c22329fd030103db14d76814b1397c5169bc5e3d299",
+        "source_unchanged": true,
+        "olean_sha256": "4a0b8064bdeacc740df5cf2f926f4b24387df331d2aa78899ce6ead72df6a5c8",
+        "seconds": 112.2855215419986,
+        "pid": 24273,
+        "command": [
+          "/Users/macstudio/.local/omega-shims/lean",
+          "-j1",
+          "--trust=0",
+          "-Ddebug.skipKernelTC=false",
+          "-R",
+          "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src",
+          "-o",
+          "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-build/lib/lean/Submission/Supplier/Theorems/Thm_AlgebraicCurve_isRegularDiff_dlog_of_dvd_ord.olean",
+          "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/Theorems/Thm_AlgebraicCurve_isRegularDiff_dlog_of_dvd_ord.lean"
+        ],
+        "make_wrapper_pid": 16648,
+        "make_exit": 0,
+        "make_entry_failed": false,
+        "cache_binding_valid": true,
+        "canonical_make_running_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/19e519d24c579acf47953a7c-1791980121561180000.make-running.json",
+        "canonical_make_terminal_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/19e519d24c579acf47953a7c-1791980121561180000.make-terminal.json",
+        "kernel_terminal_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/19e519d24c579acf47953a7c-1791980121561180000.kernel/result.json",
+        "direct_dependencies": [
+          {
+            "module": "Submission.Supplier.Definitions.Def_AlgebraicCurve_IsCurveOver",
+            "source_sha256": "3d53c0528c8bc1ae3b59135d2dc1a76d8abbd68c829305a8f4a8d584c3796553",
+            "object_sha256": "e059f779f8f2ce4be7ecc33e0af4e4d4e1629cd5eb8f0516c569e5b236d3539d",
+            "receipt_reused": true
+          },
+          {
+            "module": "Submission.Supplier.Definitions.Def_AlgebraicCurve_Differentials",
+            "source_sha256": "540bd569a395a460d435f1e9a8aee3a89376d6dc094ace7fca6a6ccc35229907",
+            "object_sha256": "23bbd6ba97d4e9ff7b6a64950b1d65169d3e366c57e43ee8931ddca959f9c4d2",
+            "receipt_reused": true
+          },
+          {
+            "module": "Submission.Supplier.P2M.Util",
+            "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+            "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+            "receipt_reused": true
+          },
+          {
+            "module": "Submission.Supplier.P2M.Sol.S_AlgebraicCurve_isRegularDiff_dlog_of_dvd_ord",
+            "source_sha256": "a84f7eebf3df97ab88edef6b72f240833d5c5e995e325d758b3d85775f1fe6ec",
+            "object_sha256": "299bf6b84d94d7a376cceaa27f87da7fb8f0dd6b77294cad920754175b1b381d",
+            "receipt_reused": true
+          }
+        ],
+        "stdout": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/19e519d24c579acf47953a7c-1791980121561180000.kernel/stdout.log",
+        "stderr": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/19e519d24c579acf47953a7c-1791980121561180000.kernel/stderr.log"
+      },
+      "whole_root_recursive_axiom_audit_pending": true
+    }
+  ],
+  "source_edits_this_turn": false,
+  "new_compilers_spawned": 0,
+  "max_active_flt_jobs": 1,
+  "full_original_complete": false,
+  "official_new_solve_credit": 0
+}
