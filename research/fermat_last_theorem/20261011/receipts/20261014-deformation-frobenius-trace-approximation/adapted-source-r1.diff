@@ -1,0 +1,78 @@
+--- Submission/Supplier/P2M/Sol/S_GaloisRep_DeformationRingData_exists_mem_adjoin_trace_frobenius_sub_mem_maximalIdeal_pow.lean
++++ Submission/Supplier/P2M/Sol/S_GaloisRep_DeformationRingData_exists_mem_adjoin_trace_frobenius_sub_mem_maximalIdeal_pow.lean
+@@ -72,8 +72,8 @@
+       rw [hpow 2 le_rfl, SModEq.bot] at h
+       rw [hpow n hn.le, SModEq.bot]
+       exact h.symm⟩
+-  haveI := hH
+-  haveI := hP
++  have := hH
++  have := hP
+   exact ⟨⟩
+ 
+ end General
+@@ -99,7 +99,7 @@
+     (D.ρ.baseChangeAlong (f : D.R →+* A) hf).residual.IsAbsolutelyIrreducible ∧
+     (D.ρ.baseChangeAlong (f : D.R →+* A) hf).residual.IsEquiv
+       (ρbar.baseChangeAlong (ResidueField.map (algebraMap 𝒪 A))) := by
+-  haveI := hf
++  have := hf
+   set ρA := D.ρ.baseChangeAlong (f : D.R →+* A) hf
+   set ρbA := ρbar.baseChangeAlong (ResidueField.map (algebraMap 𝒪 A))
+   have habs : ρbA.IsAbsolutelyIrreducible := D.absIrr.baseChangeAlong _
+@@ -184,15 +184,15 @@
+       ∃ τ : AlgebraicClosure ℚ ≃ₐ[ℚ] AlgebraicClosure ℚ, P.IsFrobeniusAt τ ℓ ∧
+         ρ.trace σ - ρ.trace τ ∈ (maximalIdeal A) ^ n := by
+   obtain ⟨L, hLfin, hL⟩ := ρ.isAdicContinuous n
+-  haveI := hLfin
+-  haveI : IsAlgClosure ℚ (AlgebraicClosure ℚ) := by convert AlgebraicClosure.instIsAlgClosure ℚ; rfl; rfl
+-  haveI : Normal ℚ (AlgebraicClosure ℚ) := IsAlgClosure.normal ℚ _
+-  haveI : FiniteDimensional ℚ (IntermediateField.normalClosure ℚ L (AlgebraicClosure ℚ)) :=
++  have := hLfin
++  have : IsAlgClosure ℚ (AlgebraicClosure ℚ) := by exact AlgebraicClosure.instIsAlgClosure ℚ
++  have : Normal ℚ (AlgebraicClosure ℚ) := IsAlgClosure.normal ℚ _
++  have : FiniteDimensional ℚ (IntermediateField.normalClosure ℚ L (AlgebraicClosure ℚ)) :=
+     normalClosure.is_finiteDimensional ℚ L (AlgebraicClosure ℚ)
+-  haveI : NumberField (IntermediateField.normalClosure ℚ L (AlgebraicClosure ℚ)) := ⟨⟩
+-  haveI : Normal ℚ (IntermediateField.normalClosure ℚ L (AlgebraicClosure ℚ)) :=
++  have : NumberField (IntermediateField.normalClosure ℚ L (AlgebraicClosure ℚ)) := ⟨⟩
++  have : Normal ℚ (IntermediateField.normalClosure ℚ L (AlgebraicClosure ℚ)) :=
+     normalClosure.normal ℚ L (AlgebraicClosure ℚ)
+-  haveI : IsGalois ℚ (IntermediateField.normalClosure ℚ L (AlgebraicClosure ℚ)) := ⟨⟩
++  have : IsGalois ℚ (IntermediateField.normalClosure ℚ L (AlgebraicClosure ℚ)) := ⟨⟩
+   have hker : (AlgEquiv.restrictNormalHom (F := ℚ) (K₁ := AlgebraicClosure ℚ)
+       (IntermediateField.normalClosure ℚ L (AlgebraicClosure ℚ))).ker ≤ levelStab ρ ((maximalIdeal A) ^ n) := by
+     intro x hx
+@@ -306,7 +306,7 @@
+     by_contra hx
+     exact hz ((IsUnit.map (Ideal.Quotient.mk (K D))) (not_not.mp fun h => hx h))
+   · rintro ⟨x, hx, rfl⟩
+-    haveI := isLocalHom_mk D
++    have := isLocalHom_mk D
+     exact map_nonunit (Ideal.Quotient.mk (K D)) x hx
+ 
+ theorem maximalIdeal_quot_sq : (maximalIdeal (D.R ⧸ K D)) ^ 2 = ⊥ := by
+@@ -325,7 +325,7 @@
+ scoped instance : IsLocalHom (algebraMap 𝒪 (D.R ⧸ K D)) := by
+   have : algebraMap 𝒪 (D.R ⧸ K D) = (Ideal.Quotient.mk (K D)).comp (algebraMap 𝒪 D.R) := rfl
+   rw [this]
+-  haveI := isLocalHom_mk D
++  have := isLocalHom_mk D
+   exact RingHom.isLocalHom_comp _ _
+ 
+ theorem residue_quot_surjective :
+@@ -336,7 +336,7 @@
+   refine ⟨lift D x, ?_⟩
+   change residue _ (Ideal.Quotient.mk (K D) (algebraMap 𝒪 D.R (lift D x))) = residue _ _
+   rw [← sub_eq_zero, ← map_sub, residue_eq_zero_iff, ← map_sub]
+-  haveI := isLocalHom_mk D
++  have := isLocalHom_mk D
+   refine map_nonunit (Ideal.Quotient.mk (K D)) _ ?_
+   rw [← neg_sub]
+   exact (Submodule.neg_mem_iff _).mpr (sub_lift_mem D x)
+@@ -533,3 +533,5 @@
+   have : x - b' = (x - b) + (b - b') := by abel
+   rw [this]
+   exact Ideal.add_mem _ hxb h2
++
++#print axioms P2MW.S_GaloisRep_DeformationRingData_exists_mem_adjoin_trace_frobenius_sub_mem_maximalIdeal_pow.solution

@@ -1,0 +1,104 @@
+{
+  "sha256": "d9e24a7dde31cee7dceb4466bd442783431e292d25aa92fa57d5052dfed7079b",
+  "exit": 1,
+  "empty_output_retry_done": false,
+  "source_sha256_after": "d9e24a7dde31cee7dceb4466bd442783431e292d25aa92fa57d5052dfed7079b",
+  "source_unchanged": true,
+  "olean_sha256": null,
+  "seconds": 76.482975541001,
+  "pid": 51626,
+  "command": [
+    "/Users/macstudio/.local/omega-shims/lean",
+    "-j1",
+    "--trust=0",
+    "-Ddebug.skipKernelTC=false",
+    "-R",
+    "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src",
+    "-o",
+    "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-build/lib/lean/Submission/Supplier/P2M/Sol/S_GaloisRep_DeformationRingData_exists_mem_adjoin_trace_frobenius_sub_mem_maximalIdeal_pow.olean",
+    "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_GaloisRep_DeformationRingData_exists_mem_adjoin_trace_frobenius_sub_mem_maximalIdeal_pow.lean"
+  ],
+  "make_wrapper_pid": 46903,
+  "make_exit": 2,
+  "make_entry_failed": false,
+  "cache_binding_valid": true,
+  "canonical_make_running_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/90241cf7d8ec0faff22bf510-1791963134936910000.make-running.json",
+  "canonical_make_terminal_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/90241cf7d8ec0faff22bf510-1791963134936910000.make-terminal.json",
+  "kernel_terminal_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/90241cf7d8ec0faff22bf510-1791963134936910000.kernel/result.json",
+  "direct_dependencies": [
+    {
+      "module": "Submission.Supplier.Definitions.Def_GaloisRep_DeformationRingData",
+      "source_sha256": "fe2ca280b0e4e6b9f91de6e57e6944f5e0a7b635344981d3bd96e1bae2fb5682",
+      "object_sha256": "822b060f43d148bcdb12f562f0049cb10055144543c51bf5897b472131f0608d",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Theorems.Thm_FrobeniusDensity_exists_isFrobeniusAt_conj_mem_of_le_ker",
+      "source_sha256": "d4a7463dff461b98716bffa39a4ed326e3355898d61232a17c04accebb6fb921",
+      "object_sha256": "e80ce68dcd6d376cdc01458be1a9edbfe39687b0b0c49e3f8d420af43875992e",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Theorems.Thm_GaloisRepAdic_isEquiv_of_residual_isAbsolutelyIrreducible_of_trace_eq",
+      "source_sha256": "42982f89cd5780a6f20e152b500ddb49bbc77f9fe6a143e3fa9113520a481c7c",
+      "object_sha256": "e2a917ce5dffffb6c771e8604d4b356445c0ef93e4651db335b001566ead18d0",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Theorems.Thm_GaloisRep_DeformationRingData_algHom_eq_of_isEquiv",
+      "source_sha256": "958e5cf3d9d04a99f391fd03787f2dfd6e435f5360f96ef7ed8a2f098a6d0ef4",
+      "object_sha256": "7f1748c8547bcd60d8e08527f81d18a024c7050746f63ed391774fe566f30eeb",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Theorems.Thm_ResidualGaloisRep_IsAbsolutelyIrreducible_baseChangeAlong",
+      "source_sha256": "54c4ddc897822ac5f91cca33a505b34f44a49e31bc8daf87a22018775b7a1be8",
+      "object_sha256": "3a57636d497739fa174db8590f9ef4f88ed04a6b7ecae817fe65cdddc53b1a63",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Theorems.Thm_ResidualGaloisRep_isEquiv_of_isAbsolutelyIrreducible_of_charpoly_eq",
+      "source_sha256": "3308a0e0c6875242a07453cbb8d19a784b88ed3cc83f5f6a06d14639bcabae98",
+      "object_sha256": "8d4d160961ff46d78a16c6f695a0dc2363dd000bad8bc679bc9786bafd5de85e",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Theorems.Thm_ResidualGaloisRep_isAbsolutelyIrreducible_of_isAbsolutelyIrreducible_of_charpoly_eq",
+      "source_sha256": "c35b4cc19db315ddecf3b934d6e849b5e6977cedb38d5bd053ec7504cb7469e3",
+      "object_sha256": "704ecda88f20c5338cf57f2e10c0b56c9711483244e9e8c0eb1bdcf241060e0c",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Theorems.Thm_ResidualGaloisRep_charpoly_baseChangeAlong",
+      "source_sha256": "79183542c87fd7786eadbd25414febf930d2c12f5c05688382ba4a2ef29b2bb7",
+      "object_sha256": "39aecdc1c056e3c5c24d6bc3c1206cd5d35e27c7cfdb86010121a4e1bd337b70",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Theorems.Thm_GaloisRepAdic_charpoly_residual",
+      "source_sha256": "da1f163cfe5c7231a778eae2a43677664b02bbd74c2a4266d7d277664c2d7bcf",
+      "object_sha256": "def421a1da71b18d9ce26b8b67c76c17c7c79b7995fc58119359f572cadb0c14",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Theorems.Thm_GaloisRepAdic_charpoly_baseChangeAlong",
+      "source_sha256": "bf2abcc774b7b8635b6b53dd57acd240e7a7352bcbb552d7838d129e71b7ee81",
+      "object_sha256": "c3db2b1213d6071f73c255616befea4d515d9a299f7ef17a0cc6e0071b6dfdeb",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Theorems.Thm_GaloisRepAdic_trace_baseChangeAlong",
+      "source_sha256": "cea2e4f809888b10f152b6af6eec482c9d073e667195b460cd1b6be20507aa44",
+      "object_sha256": "a9b5dcec23c572f8cde7ec150503ced7d7b566f1c560a5f967a94c91262b1d78",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.P2M.Util",
+      "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+      "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+      "receipt_reused": true
+    }
+  ],
+  "stdout": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/90241cf7d8ec0faff22bf510-1791963134936910000.kernel/stdout.log",
+  "stderr": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/90241cf7d8ec0faff22bf510-1791963134936910000.kernel/stderr.log"
+}
