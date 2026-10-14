@@ -1,0 +1,115 @@
+{
+  "at": "2026-10-14T15:50:36.989660+00:00",
+  "original_source_card_pairs_actual_make_kernel_passed": true,
+  "canonical_pairs_byte_identical_to_supplier": true,
+  "no_source_edits": true,
+  "no_linter_suppression_added": true,
+  "no_redundant_recompilation": true,
+  "original_statements_hypotheses_and_proofs_preserved": true,
+  "checks": {
+    "CerednikDrinfeld_BruhatTits_faithfulSMul_projGenLinGroup_vertex": {
+      "proof_summary": "Preserve arbitrary discrete valuation domain and its fraction field, with the full faithful projective-linear action on every Bruhat-Tits vertex. Retain module-colength exactness and scaling, homothetic lattice comparison, all uniformizer powers, off-diagonal divisibility, diagonal equality, centrality and projective quotient arguments.",
+      "checks": {
+        "source": {
+          "module": "Submission.Supplier.P2M.Sol.S_CerednikDrinfeld_BruhatTits_faithfulSMul_projGenLinGroup_vertex",
+          "canonical_lines": 544,
+          "canonical_byte_identical_to_supplier": true,
+          "make_exit": 0,
+          "kernel_exit": 0,
+          "kernel_seconds": 59.263574542,
+          "compiler_warnings": 3,
+          "source_unchanged_during_check": true,
+          "printed_final_axiom_closures": [],
+          "separate_final_axiom_audit_pending": true,
+          "direct_dependencies": [
+            {
+              "module": "Submission.Supplier.Definitions.Def_CerednikDrinfeld_BruhatTitsTree",
+              "source_sha256": "6eaa42030c6912186cb4d259fba702a23416f2d30bb5eed68bfcc11c1b4187e0",
+              "object_sha256": "302a468d43e9f1b8ac2851f89b1a9bbe5f89669e9e35788954c1522d5f676982",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.P2M.Util",
+              "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+              "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+              "receipt_reused": true
+            }
+          ],
+          "unreceipted_cached_dependency_metadata": []
+        },
+        "card": {
+          "module": "Submission.Supplier.Theorems.Thm_CerednikDrinfeld_BruhatTits_faithfulSMul_projGenLinGroup_vertex",
+          "canonical_lines": 14,
+          "canonical_byte_identical_to_supplier": true,
+          "make_exit": 0,
+          "kernel_exit": 0,
+          "kernel_seconds": 62.08665875,
+          "compiler_warnings": 0,
+          "source_unchanged_during_check": true,
+          "printed_final_axiom_closures": [],
+          "separate_final_axiom_audit_pending": true,
+          "direct_dependencies": [
+            {
+              "module": "Submission.Supplier.Definitions.Def_CerednikDrinfeld_BruhatTitsTree",
+              "source_sha256": "6eaa42030c6912186cb4d259fba702a23416f2d30bb5eed68bfcc11c1b4187e0",
+              "object_sha256": "302a468d43e9f1b8ac2851f89b1a9bbe5f89669e9e35788954c1522d5f676982",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.P2M.Util",
+              "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+              "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.P2M.Sol.S_CerednikDrinfeld_BruhatTits_faithfulSMul_projGenLinGroup_vertex",
+              "source_sha256": "8d01c28d4ecd68a400ac73a0bef140eb655fea66923da80e72eca44496bd6a7b",
+              "object_sha256": "0a913d64bbd634f8da7437111a14ef870548ef0d1b2852bca318047a3b5602e4",
+              "receipt_reused": true
+            }
+          ],
+          "unreceipted_cached_dependency_metadata": []
+        }
+      }
+    }
+  },
+  "supplier": "anthropics/fermats-last-theorem",
+  "supplier_commit": "6e837e75355538c7f80bab5b956861e86c4eacc2",
+  "full_original_complete": false,
+  "official_new_solve_credit": 0,
+  "complete_import_replay_and_recursive_axiom_audits_pending": true,
+  "selected_problem": "fermat_last_theorem",
+  "canonical_lexical_integrity_scan": {
+    "observed_at": "2026-10-14T07:21:59.476314+00:00",
+    "canonical_lean_files_covered": 60473,
+    "matching_files": 0,
+    "scope": [
+      "P2M/Sol",
+      "Theorems",
+      "Definitions",
+      "P2M/Util.lean"
+    ],
+    "ignore_rules_disabled": true,
+    "pattern": "^\\s*(axiom|constant)\\s|\\b(sorry|admit)\\b",
+    "formal_recursive_axiom_audit_still_pending": true
+  },
+  "max_active_flt_jobs": 1,
+  "max_active_flt_compilers": 1,
+  "lean_threads": 1,
+  "graph_snapshot": {
+    "compiled": 8561,
+    "failed": 0,
+    "ready": 4382,
+    "root_compiled": false,
+    "workers": 1,
+    "running": {
+      "Submission.Supplier.P2M.Sol.S_CerednikDrinfeld_CosetGraph_exists_normal_finiteIndex_awayUnits_forall_eq_one_add_smul": {
+        "pid": 12982,
+        "make_wrapper_pid": 12982,
+        "phase": "canonical_make_queue",
+        "sha256": "cadbb61ef4f0d42e05e28a36a0dfa4134532231d19afd6ecc0ae680d7e3c6443",
+        "configuration": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/09c05b4ec7064d3204a96f57-1791992992266740000.configuration.json"
+      }
+    }
+  }
+}
