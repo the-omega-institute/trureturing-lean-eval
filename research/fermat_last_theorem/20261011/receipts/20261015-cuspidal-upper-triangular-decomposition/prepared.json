@@ -1,0 +1,19 @@
+{
+  "at": "2026-10-14T17:22:10.512160+00:00",
+  "source_module": "Submission.Supplier.P2M.Sol.S_CuspidalType_eq_scalarElem_mul_unipotent_or_eq_unipotent_mul_scalarElem_mul_diagElem_of_apply_one_zero_eq_zero",
+  "candidate_revision": "r1",
+  "source_card_actual_verification_pending": true,
+  "main_statements_and_all_original_hypotheses_and_proof_branches_preserved": true,
+  "actual_baseline_errors": 1,
+  "repair": "Use the original two-by-two determinant formula and lower-left-zero hypothesis, then close the subtraction by direct sub_zero instead of rewriting the ill-typed intermediate coercion. Searched trureturing matrix determinant proofs first and reused the upstream Matrix.det_fin_two. Preserve both equal-diagonal and distinct-diagonal branches, nonzero diagonal unit construction and all explicit matrix factorization conclusions.",
+  "no_warning_suppression_added": true,
+  "active_import_closure_checked": [
+    "Submission.Supplier.Theorems.Thm_CuspForm_IsAdelicLiftOf_exists_cuspForm_gamma_inf_gamma0_apply_mul_padicToAdelic_diagOne_eq_slash_of_mem_span_of_mem_fixedSubmodule"
+  ],
+  "new_compilers_spawned": 0,
+  "controller_restarted": false,
+  "max_active_flt_jobs": 1,
+  "lean_threads": 1,
+  "full_original_complete": false,
+  "official_new_solve_credit": 0
+}
