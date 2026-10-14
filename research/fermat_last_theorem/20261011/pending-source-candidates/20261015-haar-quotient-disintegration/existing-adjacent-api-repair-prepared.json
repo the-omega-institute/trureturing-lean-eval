@@ -1,0 +1,14 @@
+{
+  "at": "2026-10-14T18:59:13+00:00",
+  "source_module": "Submission.Supplier.P2M.Sol.S_HaarQuotient_lintegral_eq_lintegral_lintegral_mul_out",
+  "candidate_revision": "r1",
+  "baseline_source_sha256": "71c77e0f804eec1bafe0a9227f1eebfd8dcbcaf115cdf7bc078fa32907da4bf0",
+  "candidate_source_sha256": "7c964b509b9c1237e65bf016a1939c6dc72fd202830ecf7011a7fd976ea931f3",
+  "actual_baseline_errors": 2,
+  "actual_baseline_warnings": 23,
+  "repair": "Reuse the already verified adjacent P2M repair: make ENNReal.le_tsum explicit with f := fun n : \u2115 => coef H \u03bcH n * \u03bcH (slice H n g), and provide continuous_inv.measurable.aemeasurable to Measure.map_smul. Preserve all Haar quotient, density, symmetry, fundamental-domain, and core theorem branches.",
+  "analogous_verified_source": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/P2M/Sol/S_HaarQuotient_setLIntegral_eq_lintegral_setLIntegral_mul_out.lean",
+  "no_warning_suppression_added": true,
+  "new_compilers_spawned": 0,
+  "canonical_verification_pending": true
+}
