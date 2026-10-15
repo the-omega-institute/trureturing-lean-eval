@@ -1,0 +1,117 @@
+{
+  "verified_at": "2026-10-15T09:46:21.301382+00:00",
+  "repository": "the-omega-institute/trureturing-lean-eval",
+  "run_id": 37886148074,
+  "run_url": "https://github.com/the-omega-institute/trureturing-lean-eval/actions/runs/37886148074",
+  "run_source_commit": "d5efc2d26739d757d9587acf80e8c12961112f33",
+  "current_fixture_branch_sha": "d5efc2d26739d757d9587acf80e8c12961112f33",
+  "fixture_branch": "codex/packed-source-fixture-20261009",
+  "workflow_trigger": "push limited to the fixture branch and fixture/workflow paths; no workflow_dispatch exists",
+  "runner_labels": [
+    "ubuntu-latest"
+  ],
+  "artifact_id": 11596710889,
+  "artifact_zip_sha256": "b4f95ccec51154d8cc2e8dd53127cce89c38bec03c91786ebc1471ce26399dec",
+  "artifact_digest_matches_GitHub": true,
+  "receipt_log_hash_matches": true,
+  "fixed_tool_source_pins": {
+    "lean4export": "076e8e57707e813375e8f9da8bf989799ace9680",
+    "comparator": "d03acab154d269c06e60e4de7e4cc85deebff94b",
+    "nanoda": "68d5ca9db226849b41a6fff59d796ff19d0a8840"
+  },
+  "landrun_source_pin": "5ed4a3db3a4ad930d577215c6b9abaa19df7f99f",
+  "toolchain": "leanprover/lean4:v4.35.0-rc3",
+  "required_acceptance_markers": {
+    "Running nanoda kernel on solution": true,
+    "nanoda kernel accepts the solution": true,
+    "Lean default kernel accepts the solution": true,
+    "Your solution is okay!": true,
+    "PACKED_ORIGINAL_ROOT actual Submission": true,
+    "no self import; no intermediate root olean; kernel trust 0": true
+  },
+  "source_files_byte_hashes": {
+    ".github/workflows/packed-source-fixture.yml": {
+      "blob": "def94efdcf98abd82295f4896f1cf4cd1738e995",
+      "sha256": "3c30d78b7432f3c92241603c2f04041bba53521784b0e60c63ccde081065aedb"
+    },
+    "packed-source-fixture/lean-toolchain": {
+      "blob": "f0e00b3338bac0d6f050d9a64e277314a9f7830f",
+      "sha256": "bc84812c94489d1e3e191baa1dc10d5eb684382d7fe9d2a5ab085e72c1c67e47"
+    },
+    "packed-source-fixture/run_linux_fixture.py": {
+      "blob": "1914c4128423373bd831036b9748e62f69c459de",
+      "sha256": "2cba62e84004342d2bc9b25652161ae9984c42728b5ca4f4d2f5579b5bbb421a"
+    },
+    "packed-source-fixture/WorkspaceTest.lean": {
+      "blob": "b1647073478963b72dc169ce6bb3b7b20666bd81",
+      "sha256": "17bd1978ec5ec46b151a616ae626d14cef01fcb6ce90a2d104dffae9a95e40df"
+    }
+  },
+  "evidence_files": [
+    {
+      "path": "run.json",
+      "sha256": "b9ef91e87f66e809c6117e2eb11c5ec25cb400b510abc8b032e7d4910ed911d8",
+      "bytes": 14557
+    },
+    {
+      "path": "jobs.json",
+      "sha256": "999b5da132db7af62200e5c19e9375e2af5ee83597fc56e18d637c8ee6f95acb",
+      "bytes": 3730
+    },
+    {
+      "path": "artifact-metadata.json",
+      "sha256": "f529579133dd327156e91a48724f0677a1aae4e8c59c7c369fea84f185dad463",
+      "bytes": 779
+    },
+    {
+      "path": "official-terminal.zip",
+      "sha256": "b4f95ccec51154d8cc2e8dd53127cce89c38bec03c91786ebc1471ce26399dec",
+      "bytes": 3621
+    },
+    {
+      "path": "official-fixture-receipt.json",
+      "sha256": "4b9cd025c346ff813ee053e6ede4c1a5c91c603bec4f1495e158aee403a80839",
+      "bytes": 5879
+    },
+    {
+      "path": "official-fixture.log",
+      "sha256": "df04b1b7c9a694207755239023b42e9ee7c03d9e59738d5d456ad8e71bdea722",
+      "bytes": 1840
+    },
+    {
+      "path": "workflow.yml",
+      "sha256": "3c30d78b7432f3c92241603c2f04041bba53521784b0e60c63ccde081065aedb",
+      "bytes": 3956
+    },
+    {
+      "path": "lean-toolchain",
+      "sha256": "bc84812c94489d1e3e191baa1dc10d5eb684382d7fe9d2a5ab085e72c1c67e47",
+      "bytes": 29
+    },
+    {
+      "path": "run_linux_fixture.py",
+      "sha256": "2cba62e84004342d2bc9b25652161ae9984c42728b5ca4f4d2f5579b5bbb421a",
+      "bytes": 3613
+    },
+    {
+      "path": "WorkspaceTest.lean",
+      "sha256": "17bd1978ec5ec46b151a616ae626d14cef01fcb6ce90a2d104dffae9a95e40df",
+      "bytes": 4595
+    },
+    {
+      "path": "current-fixture-branch-ref.json",
+      "sha256": "fb1f14866a9831d7fdc3bce92af11118f6c09452c76a16b7b1ca7933b254b2a4",
+      "bytes": 489
+    }
+  ],
+  "proven_scope": "Historical successful Linux run of the original forced-Nanoda comparator harness on a same-name root source-only fixture with the exact current Lean toolchain and official tool pins.",
+  "limitations": [
+    "This tests the fixture, not the full FLT proof.",
+    "The October 9 runner is not a current reserved host or a new run.",
+    "Full FLT root compilation, recursive root axiom audit, package/resource constraints and official acceptance remain pending."
+  ],
+  "new_compilers_or_workflows_started": false,
+  "source_files_or_owner_index_modified": false,
+  "NyxID_inventory_boundary": "CLI node list could not authenticate: refresh_token_expired; node availability was not determined. No raw credentials were read or emitted.",
+  "official_solve_credit": 0
+}

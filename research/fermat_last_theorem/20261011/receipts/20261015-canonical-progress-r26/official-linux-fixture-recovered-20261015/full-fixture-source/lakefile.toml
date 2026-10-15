@@ -1,0 +1,20 @@
+name = "packed_fixture"
+testDriver = "workspace_test"
+defaultTargets = ["Challenge", "Solution", "Submission"]
+allowNonModules = true
+
+[leanOptions]
+autoImplicit = false
+
+[[lean_lib]]
+name = "Challenge"
+
+[[lean_lib]]
+name = "Solution"
+
+[[lean_lib]]
+name = "Submission"
+
+[[lean_exe]]
+name = "workspace_test"
+root = "WorkspaceTest"
