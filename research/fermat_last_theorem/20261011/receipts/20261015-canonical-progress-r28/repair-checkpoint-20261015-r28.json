@@ -1,0 +1,178 @@
+{
+  "checkpoint_at": "2026-10-15T10:06:35.321725+00:00",
+  "previous_checkpoint": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/source-repairs/repair-checkpoint-20261015-r27.json",
+  "target": "Submission.fermat_last_theorem : FermatLastTheorem",
+  "selected_problem": "fermat_last_theorem",
+  "controller_pid": 88158,
+  "live_owner_processes": {
+    "controller": {
+      "pid": 88158,
+      "process": "88158 88157 S    05:54:09 224256 /Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/Resources/Python.app/Contents/MacOS/Python -u /Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006.py --workers 1 --poll-seconds 10 --canonical-make-entry --retry-empty-failures"
+    },
+    "root_audit_watcher": {
+      "pid": 19598,
+      "process": "19598     1 Ss   05:52:23 101792 /Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/Resources/Python.app/Contents/MacOS/Python -u /Users/macstudio/omega/.lean-eval-recovery-20261007/flt/watch_root.py"
+    }
+  },
+  "accepted_repairs": [
+    "cusp-adelic-lift-arithmetic-repair-r2-accepted.json",
+    "cuspidal-upper-triangular-decomposition-r1-accepted.json",
+    "S_CuspidalType_exists_conj_apply_one_zero_eq_zero_of_isRoot_charpoly-r3-accepted.json",
+    "S_CuspidalType_IsCuspidalOfType_exists_charpoly_eq_map_and_charpoly_ind_eq_X_sub_one_sq_mul_map-r3-accepted.json",
+    "S_Deformation_DieudonneModule_exists_hondaSystem_L_eq_fontaineHodge-r2-accepted.json",
+    "S_HaarQuotient_lintegral_eq_lintegral_lintegral_mul_out-r1-accepted.json",
+    "S_HopfAlgebra_signTwist_comul_mul_padicInt-r2-accepted.json",
+    "S_HopfAlgebra_signTwist_comul_coassoc_padicInt-r1-warning-cleanup-accepted.json",
+    "S_HopfAlgebra_exists_signTwist_linearEquiv_padicInt_of_odd-r1-warning-cleanup-accepted.json",
+    "S_HaarQuotient_lintegral_eq_lintegral_lintegral_mul_out-r2-warning-cleanup-accepted.json",
+    "S_HeckeEis_exists_map_mul_eq_add_add_upperRightMulLowerRight_mul_of_three_dvd-r2-accepted.json",
+    "S_HeckeEis_exists_isEigensystemH1_one_natCast_mul_of_isEigensystemH1_one_of_three_dvd-r2-accepted.json",
+    "S_HeckeEis_exists_isEigensystemH1_one_of_isEigensystemH1_gamma0NebenRep-r5-accepted.json",
+    "S_LanglandsTunnell_Converse_MellinUniqueness_eq_of_laplace_eq_of_boundedOnStrips-r2-accepted.json",
+    "Thm_LanglandsTunnell_fnTwist_gaussSumFn_level_invariant-r1-accepted.json",
+    "S_LanglandsTunnell_whittaker_ode_splitTorus_of_isArchSmoothAt_of_archCasimirAt_eq-r3-accepted.json",
+    "Thm_AutomorphicForm_exists_mem_adelicBorel_mul_eq-r1-accepted.json",
+    "S_AutomorphicForm_exists_mem_maximalCompactAt_apply_diagOne_mul_ne_zero_of_apply_ne_zero-r1-accepted.json",
+    "S_AutomorphicForm_continuousOn_of_isInducedSection_of_continuousOn_maximalCompact-r1-accepted.json",
+    "S_MeasureTheory_Measure_exists_eq_smul_map_smul_of_forall_map_smul_eq_of_isCompact_stabilizer-owner-r1-independently-accepted.json",
+    "S_ModularCurve_CharPModel_FibreModel_spPlace_d0_jN-owner-r1-independently-accepted-remote.json",
+    "S_ModularCurve_CharPModel_FibreModel_spPlace_surjective-owner-r1-independently-accepted-remote.json",
+    "S_ModularCurve_CupPairing_cuspSum_eq_sum_finsum_of_le-owner-r1-independently-accepted-remote.json",
+    "S_ModularCurve_FullLevel_eval_gl2Jac_scalarElem_eq_diamondHBar_inv_eval_pow-owner-r1-independently-accepted-remote.json",
+    "S_ModularCurve_periodMap_traceLin-owner-r2-independently-accepted-remote.json",
+    "S_CuspForm_IsNormalizedEigenform_exists_H1_diamondRaw_eq_smul_heckeT_eq_smul_of_mem_fixedSubmodule_fnTwist-owner-r2-independently-accepted-remote.json"
+  ],
+  "this_checkpoint_new_repairs": [],
+  "this_checkpoint_repair_scope": "Three exact supplier source/card pairs independently verified; no shared Lean source edits or new repair claims.",
+  "graph": {
+    "sources": 60469,
+    "compiled": 8913,
+    "ready": 4327,
+    "failed": 0,
+    "pending_sources": 0,
+    "root_compiled": false
+  },
+  "running_snapshot": {
+    "Submission.Supplier.P2M.Sol.S_ModularCurve_PlaceSpecialization_spPic0_eq_of_sp_eq": {
+      "pid": 8949,
+      "make_wrapper_pid": 1195,
+      "phase": "kernel",
+      "sha256": "d7b4ec459bb892b6971ce90157866a66e8930235e679d19bc930af2ea41aba76",
+      "configuration": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/ece1271ec769473ed2fc2ed0-1792058727333481000.configuration.json"
+    }
+  },
+  "pending_repairs": [],
+  "new_canonical_progress": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/source-repairs/canonical-progress-20261015-after-r27-complete-pairs.json",
+  "this_checkpoint_progress_evidence": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/source-repairs/canonical-progress-20261015-after-r27-complete-pairs.json",
+  "this_checkpoint_verified_canonical_invocations": 6,
+  "raw_canonical_evidence": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/source-repairs/canonical-evidence-20261015-r28.json",
+  "raw_canonical_evidence_sha256": "82616539d69090f10904f6c5cbcb928357a52375b413cf2516d9161cfa6d6d68",
+  "continuation_receipt_selection": {
+    "event_floor_checkpoint": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/source-repairs/repair-checkpoint-20261015-r15.json",
+    "exclude_verified_progress_files": [
+      "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/source-repairs/canonical-progress-20261015-after-r15-final.json",
+      "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/source-repairs/canonical-progress-20261015-after-r16-final.json",
+      "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/source-repairs/canonical-progress-20261015-after-r17.json",
+      "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/source-repairs/canonical-progress-20261015-after-r18.json",
+      "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/source-repairs/canonical-progress-20261015-after-r19-final.json",
+      "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/source-repairs/canonical-progress-20261015-after-r20-complete-pairs.json",
+      "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/source-repairs/canonical-progress-20261015-after-r21-final.json",
+      "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/source-repairs/canonical-progress-20261015-after-r22-final.json",
+      "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/source-repairs/canonical-progress-20261015-after-r23-final.json",
+      "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/source-repairs/canonical-progress-20261015-after-r24-complete-pairs.json",
+      "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/source-repairs/canonical-progress-20261015-after-r25-complete-pairs.json",
+      "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/source-repairs/canonical-progress-20261015-after-r26-final.json",
+      "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/source-repairs/canonical-progress-20261015-after-r27-complete-pairs.json"
+    ],
+    "invocation_identity": "kernel_terminal_receipt from event equals canonical_kernel_result in progress evidence",
+    "instruction": "The current verify-canonical-progress.py reads these selection fields automatically. Run it with --after this checkpoint and a fresh --output path. It excludes exact already verified kernel invocations and leaves terminal events without matching state records pending; no compiler replay is needed."
+  },
+  "unmodified_supplier_warning_audit": [
+    {
+      "module": "Submission.Supplier.P2M.Sol.S_ModularCurve_two_mul_finrank_cuspForm_le_finrank_parabolicHoms",
+      "warning_count": 3
+    },
+    {
+      "module": "Submission.Supplier.P2M.Sol.S_ModularCurve_PhiGen_weightTwo_coeff_sum_slots",
+      "warning_count": 13
+    }
+  ],
+  "warning_cleanup_scope": "Sixteen warnings belong to exact supplier inputs unmodified by this session; no edited file is being declared warning-free.",
+  "session_changes": {
+    "lean_sources_edited": false,
+    "owner_checkout_or_git_index_mutated": false,
+    "new_worktree_created": false,
+    "existing_controller_and_root_watcher_reused": true,
+    "new_compiler_or_controller_started_by_this_session": false
+  },
+  "new_worktrees_created": 0,
+  "active_verification_worktree_preserved": true,
+  "source_edits_by_this_session": 0,
+  "source_owner_git_index_touched": false,
+  "canonical_common": "/Users/macstudio/omega/trureturing/.git",
+  "root_source_sha256": "1c90d8a13faa543f63ea79b3eea15e95d33b723991b1efbd54846bff88f44b23",
+  "next_gap": "Continue the existing sole FLT controller; diagnose exact terminal failures against current source hashes. Full original root, recursive root axiom audit, full-scale source packaging and official comparator/Nanoda acceptance remain outstanding.",
+  "resource_policy": "Existing single FLT job/compiler, -j1 --trust=0 -Ddebug.skipKernelTC=false; canonical make lean through omega-gate.",
+  "prior_official_tool_readiness_checkpoint": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/source-repairs/repair-checkpoint-20261015-r21.json",
+  "full_original_proof_verified": false,
+  "official_acceptance": false,
+  "this_checkpoint_original_or_official_solve_credit": 0,
+  "remote_owner_checkpoints": [
+    {
+      "receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/source-repairs/period-map-trace-owner-20261015-remote/remote-verified.json",
+      "commit": "e16c4edc528fe2ebea4fd1aa274792095fd7dae9",
+      "files_byte_verified": 37
+    },
+    {
+      "receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/source-repairs/twisted-period-owner-20261015-remote/remote-verified.json",
+      "commit": "366bfd4b754adf19d97b2019668c83f0ab0bfa74",
+      "files_byte_verified": 40
+    }
+  ],
+  "original_supplier_solution_fidelity_audit": {
+    "path": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/source-repairs/period-dimension-PhiGen-original-solution-audit-20261015.json",
+    "sha256": "e81acc7efdc489f94fbb89dc7780e1b7ef59e1c4aee809aa8239f2be7072b83f",
+    "module_count": 3,
+    "scope": "Complete final solution statements/proofs for paired-period range, the cusp-form/parabolic-hom dimension inequality and the weight-two coefficient sum remain identical to retained supplier originals. This is not official comparator evidence."
+  },
+  "this_checkpoint_invocations_with_printed_axioms": [
+    "Submission.Supplier.P2M.Sol.S_ModularCurve_PhiGen_weightTwo_coeff_sum_slots"
+  ],
+  "this_checkpoint_invocations_without_printed_axioms": [
+    "Submission.Supplier.P2M.Sol.S_ModularCurve_range_periodHomPair_le_parabolicHoms",
+    "Submission.Supplier.Theorems.Thm_ModularCurve_range_periodHomPair_le_parabolicHoms",
+    "Submission.Supplier.P2M.Sol.S_ModularCurve_two_mul_finrank_cuspForm_le_finrank_parabolicHoms",
+    "Submission.Supplier.Theorems.Thm_ModularCurve_two_mul_finrank_cuspForm_le_finrank_parabolicHoms",
+    "Submission.Supplier.Theorems.Thm_ModularCurve_PhiGen_weightTwo_coeff_sum_slots"
+  ],
+  "historical_official_linux_fixture": {
+    "run_id": 37886148074,
+    "run_url": "https://github.com/the-omega-institute/trureturing-lean-eval/actions/runs/37886148074",
+    "immutable_source_commit": "d5efc2d26739d757d9587acf80e8c12961112f33",
+    "receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/source-repairs/official-linux-fixture-recovered-20261015/independently-verified.json",
+    "receipt_sha256": "21f8a2faf551363f4c742723a8c8b1a88dd6e33caceebdd8abea14e95496da0d",
+    "all_source_provenance_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/source-repairs/official-linux-fixture-recovered-20261015/all-fixture-sources-independently-verified.json",
+    "all_source_provenance_receipt_sha256": "b7a756b175134faf4739647beb0be564676dfeb001fd17db246fe6d28c80c428",
+    "historical_input_source_files_byte_verified": 15,
+    "unchanged_forced_nanoda_harness_sha256": "17bd1978ec5ec46b151a616ae626d14cef01fcb6ce90a2d104dffae9a95e40df",
+    "harness_equals_retained_official_harness": true,
+    "artifact_zip_sha256": "b4f95ccec51154d8cc2e8dd53127cce89c38bec03c91786ebc1471ce26399dec",
+    "artifact_digest_matches_GitHub": true,
+    "toolchain": "leanprover/lean4:v4.35.0-rc3",
+    "source_tool_pins": {
+      "lean4export": "076e8e57707e813375e8f9da8bf989799ace9680",
+      "comparator": "d03acab154d269c06e60e4de7e4cc85deebff94b",
+      "nanoda": "68d5ca9db226849b41a6fff59d796ff19d0a8840"
+    },
+    "landrun_source_pin": "5ed4a3db3a4ad930d577215c6b9abaa19df7f99f",
+    "proven_scope": "Historical successful Linux run of the original forced-Nanoda comparator harness on a same-name root source-only fixture with the exact current Lean toolchain and official tool pins.",
+    "limitations": [
+      "This tests the fixture, not the full FLT proof.",
+      "The October 9 runner is not a current reserved host or a new run.",
+      "Full FLT root compilation, recursive root axiom audit, package/resource constraints and official acceptance remain pending."
+    ],
+    "new_compiler_or_workflow_started": false,
+    "full_FLT_acceptance": false,
+    "official_solve_credit": 0
+  }
+}
