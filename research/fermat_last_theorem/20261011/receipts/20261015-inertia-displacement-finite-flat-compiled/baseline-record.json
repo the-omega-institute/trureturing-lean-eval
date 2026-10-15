@@ -1,0 +1,121 @@
+{
+  "at": "2026-10-15T04:27:08.563198+00:00",
+  "original_source_card_pairs_actual_make_kernel_passed": true,
+  "canonical_pairs_byte_identical_to_supplier": false,
+  "no_source_edits": true,
+  "no_linter_suppression_added": true,
+  "no_redundant_recompilation": true,
+  "original_statements_hypotheses_and_proofs_preserved": true,
+  "checks": {
+    "GaloisRep_exists_finset_forall_dvr_finiteFlat_inertia_displacement_quotient_of_finiteFlatHopf": {
+      "proof_summary": "Preserve arbitrary prime q, cocommutative finite-flat Hopf model over the q-localized rationals, the full character-group equivalence and Galois action, every valuation subring and all DVR/nonunit hypotheses. Retain the finite inertia coefficient field, fixed polynomial, descent, quotient construction and counit-neighbourhood compatibility.",
+      "checks": {
+        "source": {
+          "module": "Submission.Supplier.P2M.Sol.S_GaloisRep_exists_finset_forall_dvr_finiteFlat_inertia_displacement_quotient_of_finiteFlatHopf",
+          "canonical_lines": 706,
+          "canonical_byte_identical_to_supplier": false,
+          "port_change": "remove unavailable instance name from attribute command only",
+          "make_exit": 0,
+          "kernel_exit": 0,
+          "kernel_seconds": 63.742345042000004,
+          "compiler_warnings": 20,
+          "source_unchanged_during_check": true,
+          "printed_final_axiom_closures": [],
+          "separate_final_axiom_audit_pending": true,
+          "direct_dependencies": [
+            {
+              "module": "Submission.Supplier.Definitions.Def_GaloisRep_Flat",
+              "source_sha256": "59474ee379b00b70196dff4825d4fad20a309928a2d3214dabb17a67091c48c6",
+              "object_sha256": "f436f36b8f04c55cebc0b3ca453de19377ed018bd09cce31db752d9a181881a5",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.Definitions.Def_FLTPrelim_Ramification",
+              "source_sha256": "00fe8d0d63a3bcd209efde3539d0fdce08cad1c4b4b2e5b15ed18efc273b0441",
+              "object_sha256": "9c8ceef3342e5a6b5af8eda270ac74239e1012faec3128daa560373353d1ae90",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.Theorems.Thm_HopfAlgebra_exists_finiteFlat_quotient_of_forall_fixing_smul_mem",
+              "source_sha256": "f0a0e27f50affb1199ad84a59c2f22b6cfa38970e3aa4fa51140532649abcf7f",
+              "object_sha256": "7d497ad83fee2e845c96e4c22f5aa71addf50fe55cfe73ffbe2a1c80dace692b",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.P2M.Util",
+              "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+              "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+              "receipt_reused": true
+            }
+          ],
+          "unreceipted_cached_dependency_metadata": []
+        },
+        "card": {
+          "module": "Submission.Supplier.Theorems.Thm_GaloisRep_exists_finset_forall_dvr_finiteFlat_inertia_displacement_quotient_of_finiteFlatHopf",
+          "canonical_lines": 44,
+          "canonical_byte_identical_to_supplier": false,
+          "port_change": "remove unavailable instance name from attribute command only",
+          "make_exit": 0,
+          "kernel_exit": 0,
+          "kernel_seconds": 51.390298208000004,
+          "compiler_warnings": 0,
+          "source_unchanged_during_check": true,
+          "printed_final_axiom_closures": [],
+          "separate_final_axiom_audit_pending": true,
+          "direct_dependencies": [
+            {
+              "module": "Submission.Supplier.Definitions.Def_GaloisRep_Flat",
+              "source_sha256": "59474ee379b00b70196dff4825d4fad20a309928a2d3214dabb17a67091c48c6",
+              "object_sha256": "f436f36b8f04c55cebc0b3ca453de19377ed018bd09cce31db752d9a181881a5",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.Definitions.Def_FLTPrelim_Ramification",
+              "source_sha256": "00fe8d0d63a3bcd209efde3539d0fdce08cad1c4b4b2e5b15ed18efc273b0441",
+              "object_sha256": "9c8ceef3342e5a6b5af8eda270ac74239e1012faec3128daa560373353d1ae90",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.P2M.Util",
+              "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+              "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+              "receipt_reused": true
+            },
+            {
+              "module": "Submission.Supplier.P2M.Sol.S_GaloisRep_exists_finset_forall_dvr_finiteFlat_inertia_displacement_quotient_of_finiteFlatHopf",
+              "source_sha256": "5f4e907a4a29ff0ba353376ea369892daa04346d9625ac6e1577abdeff650a03",
+              "object_sha256": "e801000dcab4caeef97906849430c05faf2b8a2298146ce59bc5a45d51cee36e",
+              "receipt_reused": true
+            }
+          ],
+          "unreceipted_cached_dependency_metadata": []
+        }
+      }
+    }
+  },
+  "supplier": "anthropics/fermats-last-theorem",
+  "supplier_commit": "6e837e75355538c7f80bab5b956861e86c4eacc2",
+  "full_original_complete": false,
+  "official_new_solve_credit": 0,
+  "complete_import_replay_and_recursive_axiom_audits_pending": true,
+  "selected_problem": "fermat_last_theorem",
+  "max_active_flt_jobs": 1,
+  "max_active_flt_compilers": 1,
+  "lean_threads": 1,
+  "graph_snapshot": {
+    "compiled": 8693,
+    "failed": 0,
+    "ready": 4343,
+    "root_compiled": false,
+    "workers": 1,
+    "running": {
+      "Submission.Supplier.P2M.Sol.S_HopfAlgebra_signTwist_comul_mul_padicInt": {
+        "pid": 13160,
+        "make_wrapper_pid": 13160,
+        "phase": "canonical_make_queue",
+        "sha256": "355f18ef8d14245a97f888c4969482083eef509c7472d2d1d0d6fe4964ad0c86",
+        "configuration": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/28adaa370ef3144434c26fff-1792038389033776000.configuration.json"
+      }
+    }
+  }
+}

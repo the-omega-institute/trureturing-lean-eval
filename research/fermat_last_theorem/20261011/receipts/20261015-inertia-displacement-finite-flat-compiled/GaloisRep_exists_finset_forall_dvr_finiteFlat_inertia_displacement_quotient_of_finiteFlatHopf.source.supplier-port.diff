@@ -1,0 +1,11 @@
+--- supplier-original
++++ canonical-port
+@@ -10,7 +10,7 @@
+ import Theorems.Thm_HopfAlgebra_exists_finiteFlat_quotient_of_forall_fixing_smul_mem
+ import P2M.Util
+ namespace P2MW.S_GaloisRep_exists_finset_forall_dvr_finiteFlat_inertia_displacement_quotient_of_finiteFlatHopf
+-attribute [-instance] instIsScalarTowerTensorProduct_definitions AlgebraicClosure.Rat.isGalois
++attribute [-instance] AlgebraicClosure.Rat.isGalois
+ attribute [-simp] closureCounit_apply genericFibreAlgHom_tmul tensorInclusion_closureComul coe_closureAntipode_apply tensorToGenericFibre_tmul tensorInclusion_tmul mem_flatClosure_iff
+ 
+ open scoped TensorProduct
