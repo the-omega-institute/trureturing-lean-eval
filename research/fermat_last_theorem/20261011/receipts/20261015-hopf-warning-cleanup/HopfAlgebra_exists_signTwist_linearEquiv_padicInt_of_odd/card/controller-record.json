@@ -1,0 +1,50 @@
+{
+  "sha256": "798b685e882fedf8839c5c9a41cfe4519ee35378ea1bbfab2a0452e10fb147af",
+  "exit": 0,
+  "empty_output_retry_done": false,
+  "source_sha256_after": "798b685e882fedf8839c5c9a41cfe4519ee35378ea1bbfab2a0452e10fb147af",
+  "source_unchanged": true,
+  "olean_sha256": "813ff1dff3eb37e1aff360d37e8f1e7acc1254dfce24090dbdf4772fdaf84f58",
+  "seconds": 56.65428441699987,
+  "pid": 74750,
+  "command": [
+    "/Users/macstudio/.local/omega-shims/lean",
+    "-j1",
+    "--trust=0",
+    "-Ddebug.skipKernelTC=false",
+    "-R",
+    "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src",
+    "-o",
+    "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-build/lib/lean/Submission/Supplier/Theorems/Thm_HopfAlgebra_exists_signTwist_linearEquiv_padicInt_of_odd.olean",
+    "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/Theorems/Thm_HopfAlgebra_exists_signTwist_linearEquiv_padicInt_of_odd.lean"
+  ],
+  "make_wrapper_pid": 72252,
+  "make_exit": 0,
+  "make_entry_failed": false,
+  "cache_binding_valid": true,
+  "canonical_make_running_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/38956052c733fe117b9d733f-1792040011904080000.make-running.json",
+  "canonical_make_terminal_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/38956052c733fe117b9d733f-1792040011904080000.make-terminal.json",
+  "kernel_terminal_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/38956052c733fe117b9d733f-1792040011904080000.kernel/result.json",
+  "direct_dependencies": [
+    {
+      "module": "Submission.Supplier.Definitions.Def_GaloisRep_Flat",
+      "source_sha256": "59474ee379b00b70196dff4825d4fad20a309928a2d3214dabb17a67091c48c6",
+      "object_sha256": "f436f36b8f04c55cebc0b3ca453de19377ed018bd09cce31db752d9a181881a5",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.P2M.Util",
+      "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+      "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.P2M.Sol.S_HopfAlgebra_exists_signTwist_linearEquiv_padicInt_of_odd",
+      "source_sha256": "52e34387754f861604cabf6b591330ef63559d4d45bd900841508a16dcb3ee32",
+      "object_sha256": "175c33bae75db68a38bca37644a72d080244d966fc6e89767660fa83c4863710",
+      "receipt_reused": true
+    }
+  ],
+  "stdout": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/38956052c733fe117b9d733f-1792040011904080000.kernel/stdout.log",
+  "stderr": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/38956052c733fe117b9d733f-1792040011904080000.kernel/stderr.log"
+}
