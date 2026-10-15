@@ -1,0 +1,39 @@
+{
+  "at": "2026-10-15T11:07:33.831679+00:00",
+  "checks": {
+    "source": {
+      "module": "Submission.Supplier.P2M.Sol.S_ModularCurve_exists_traceCensus",
+      "make_exit": 0,
+      "kernel_exit": 0,
+      "kernel_seconds": 73.362892209,
+      "warnings": 0,
+      "recursive_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "current_dependency_receipts_match": true
+    },
+    "card": {
+      "module": "Submission.Supplier.Theorems.Thm_ModularCurve_exists_traceCensus",
+      "make_exit": 0,
+      "kernel_exit": 0,
+      "kernel_seconds": 56.623031667,
+      "warnings": 0,
+      "recursive_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "current_dependency_receipts_match": true
+    }
+  },
+  "full_original_statement_and_all_hypotheses_preserved": true,
+  "full_cyclotomic_Laurent_embeddings_minpoly_classification_and_trace_sum_proof_preserved": true,
+  "repair": "Import the existing ModularUnit definition module that owns the numerical simp lemmas referenced by the original attribute configuration, preserving every original attribute entry; update nine local proposition-instance bindings, one deprecated dependent-if reduction and one unnecessary tactic sequence focus. Retain the full cyclotomic construction, Laurent-series generators, minimal-polynomial and embedding classification, and trace-as-sum proof.",
+  "no_linter_suppression_added": true,
+  "max_active_flt_jobs": 1,
+  "lean_threads": 1,
+  "full_original_complete": false,
+  "official_new_solve_credit": 0
+}
