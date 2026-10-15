@@ -51,18 +51,13 @@ theorem solution
 
   have hcocomm_a : ∀ a : H, (TensorProduct.comm ℤ_[p] H H) (Δ a) = Δ a := by
     have hlm : (TensorProduct.comm ℤ_[p] H H).toLinearMap ∘ₗ Δ = Δ := by
-      first
-      | exact hcocomm
-      | exact hcocomm.1
-      | exact hcocomm.comm_comul
-      | exact hcocomm.comm_comp_comul
-      | exact Coalgebra.IsCocomm.comm_comp_comul (R := ℤ_[p]) (A := H)
-      | · have := hcocomm; unfold Coalgebra.IsCocomm at this; exact this
+      exact hcocomm.1
     exact fun a => LinearMap.congr_fun hlm a
 
   have hι2 : ∀ a : H, ι (ι a) = a := fun a => HopfAlgebra.antipode_antipode a
   have hιmul : ∀ a b : H, ι (a * b) = ι a * ι b := fun a b => by
-    have := HopfAlgebra.antipode_mul (R := ℤ_[p]) a b; simpa [ι, mul_comm] using this
+    have := HopfAlgebra.antipode_mul_antidistrib (R := ℤ_[p]) a b
+    simpa [ι, mul_comm] using this
   have hι1 : ι 1 = 1 := HopfAlgebra.antipode_one
   have hPm_def : ∀ a : H, Pm a = t • (a - ι a) := fun a => rfl
   have hPm1 : Pm 1 = 0 := by rw [hPm_def, hι1, sub_self, smul_zero]
@@ -90,7 +85,7 @@ theorem solution
   have hμ0 : ∀ a, μ' 0 a = 0 := fun a => by
     simp only [hμdef, zero_mul, hPm0, smul_zero, add_zero]
   have hμld : ∀ a b c, μ' a (b + c) = μ' a b + μ' a c := fun a b c => by
-    simp only [hμdef, mul_add, map_add, add_mul, smul_add]; abel
+    simp only [hμdef, mul_add, map_add, smul_add]; abel
   have hμrd : ∀ a b c, μ' (a + b) c = μ' a c + μ' b c := fun a b c => by
     rw [hμcomm, hμld, hμcomm a, hμcomm b]
   have hPm_μ' : ∀ a b, Pm (μ' a b) = Pm (a * b) := fun a b => by
@@ -101,7 +96,7 @@ theorem solution
     have h2 : μ' a (μ' b c) = a * μ' b c + (d₀-1) • (Pm a * Pm (b*c)) := by
       rw [hμdef a (μ' b c), hPm_μ']
     rw [h1, h2, hμdef a b, hμdef b c]
-    simp only [hPm_def, hιmul, smul_sub, sub_mul, mul_sub, Algebra.smul_def]
+    simp only [hPm_def, hιmul, sub_mul, mul_sub, Algebra.smul_def]
     ring
   have hμ_smul : ∀ (c : ℤ_[p]) (x : H), c • x = μ' (φ c) x := fun c x => by
     rw [hμdef, hPm_φ, zero_mul, smul_zero, add_zero]; exact Algebra.smul_def c x
@@ -128,7 +123,7 @@ theorem solution
     have h0 : (LinearMap.rTensor H ε) ((TensorProduct.map Pm Pm) (Δ a)) = 0 := by
       have : (LinearMap.rTensor H ε).comp (TensorProduct.map Pm Pm)
           = TensorProduct.map (ε.comp Pm) Pm := by
-        ext x y; simp [LinearMap.rTensor_tmul, TensorProduct.map_tmul]
+        ext x y; simp [TensorProduct.map_tmul]
       rw [← LinearMap.comp_apply, this,
           show ε.comp Pm = 0 from LinearMap.ext hε_Pm]
       simp
@@ -139,7 +134,7 @@ theorem solution
     have h0 : (LinearMap.lTensor H ε) ((TensorProduct.map Pm Pm) (Δ a)) = 0 := by
       have : (LinearMap.lTensor H ε).comp (TensorProduct.map Pm Pm)
           = TensorProduct.map Pm (ε.comp Pm) := by
-        ext x y; simp [LinearMap.lTensor_tmul, TensorProduct.map_tmul]
+        ext x y; simp [TensorProduct.map_tmul]
       rw [← LinearMap.comp_apply, this,
           show ε.comp Pm = 0 from LinearMap.ext hε_Pm]
       simp
@@ -152,8 +147,7 @@ theorem solution
     have hcmap : ∀ X : H⊗[ℤ_[p]]H, (TensorProduct.comm ℤ_[p] H H) ((TensorProduct.map Pm Pm) X)
         = (TensorProduct.map Pm Pm) ((TensorProduct.comm ℤ_[p] H H) X) := by
       intro X
-      induction X using TensorProduct.induction_on with
-      | zero => simp
+      induction X using TensorProduct.inductionOn with
       | tmul x y => simp [TensorProduct.comm_tmul, TensorProduct.map_tmul]
       | add x y hx hy => simp only [map_add, hx, hy]
     rw [hΔ'def, map_add, (TensorProduct.comm ℤ_[p] H H).map_smul, hcocomm_a, hcmap,
@@ -185,8 +179,8 @@ theorem solution
           map_zero' := φ.map_zero, map_add' := φ.map_add }
       commutes' := fun c x => hμcomm _ _
       smul := (· • ·), smul_def' := hμ_smul }
-  haveI scc' : SMulCommClass ℤ_[p] H H := ⟨hscc_pf⟩
-  haveI ist' : IsScalarTower ℤ_[p] H H := ⟨hist_pf⟩
+  have scc' : SMulCommClass ℤ_[p] H H := ⟨hscc_pf⟩
+  have ist' : IsScalarTower ℤ_[p] H H := ⟨hist_pf⟩
 
   have hmul_eq : ∀ a b : H, @HMul.hMul H H H instHMul a b = μ' a b := fun a b => rfl
   have hmul'_new_eq : (LinearMap.mul' ℤ_[p] H : H⊗[ℤ_[p]]H →ₗ[ℤ_[p]] H) = μ'ₗ := by
@@ -194,18 +188,16 @@ theorem solution
     show μ' a b = μ'ₗ (a ⊗ₜ b)
     exact (hμ'ₗ a b).symm
   have hφₗ_new : (Algebra.linearMap ℤ_[p] H : ℤ_[p] →ₗ[ℤ_[p]] H) = φₗ := by
-    ext c; rfl
+    ext; rfl
 
   have hmul2_new : ∀ X Y : H⊗[ℤ_[p]]H,
       X * Y
       = (TensorProduct.map μ'ₗ μ'ₗ)
           ((TensorProduct.tensorTensorTensorComm ℤ_[p] H H H H) (X ⊗ₜ Y)) := by
     intro X Y
-    induction X using TensorProduct.induction_on with
-    | zero => simp only [zero_mul, TensorProduct.zero_tmul, LinearEquiv.map_zero, LinearMap.map_zero]
+    induction X using TensorProduct.inductionOn with
     | tmul x₁ x₂ =>
-      induction Y using TensorProduct.induction_on with
-      | zero => simp only [mul_zero, TensorProduct.tmul_zero, LinearEquiv.map_zero, LinearMap.map_zero]
+      induction Y using TensorProduct.inductionOn with
       | tmul y₁ y₂ =>
         rw [TensorProduct.tensorTensorTensorComm_tmul, TensorProduct.map_tmul, hμ'ₗ, hμ'ₗ,
           Algebra.TensorProduct.tmul_mul_tmul, hmul_eq, hmul_eq]
@@ -252,14 +244,12 @@ theorem solution
       map_smul' := fun _ _ => rfl, left_inv := fun _ => rfl, right_inv := fun _ => rfl }
   have he_id : ∀ X : H⊗[ℤ_[p]]H, (TensorProduct.map (e:H→ₗ[ℤ_[p]]H) e) X = X := by
     intro X
-    induction X using TensorProduct.induction_on with
-    | zero => simp | tmul x y => rfl | add x y hx hy => simp only [map_add, hx, hy]
+    induction X using TensorProduct.inductionOn with
+    | tmul x y => rfl
+    | add x y hx hy => simp only [map_add, hx, hy]
 
   refine ⟨H, cr', ha', hfin, hflat, ?_, e, ?_, ?_, ?_, ?_, ?_⟩
-  · first
-    | exact ⟨LinearMap.ext hcocomm'⟩
-    | exact LinearMap.ext hcocomm'
-    | · constructor; exact LinearMap.ext hcocomm'
+  · exact ⟨LinearMap.ext hcocomm'⟩
   · rfl
   · intro a b; rfl
   · intro a; rfl
@@ -267,3 +257,5 @@ theorem solution
   · intro a
     rw [he_id]
     rfl
+
+#print axioms P2MW.S_HopfAlgebra_exists_signTwist_linearEquiv_padicInt_of_odd.solution

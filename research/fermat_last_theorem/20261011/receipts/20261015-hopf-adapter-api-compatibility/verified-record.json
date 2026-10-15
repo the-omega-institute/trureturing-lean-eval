@@ -1,0 +1,77 @@
+{
+  "at": "2026-10-15T04:54:56.063507+00:00",
+  "checks": {
+    "HopfAlgebra_signTwist_comul_coassoc_padicInt": {
+      "source": {
+        "module": "Submission.Supplier.P2M.Sol.S_HopfAlgebra_signTwist_comul_coassoc_padicInt",
+        "make_exit": 0,
+        "kernel_exit": 0,
+        "kernel_seconds": 55.516879917,
+        "warnings": 0,
+        "printed_recursive_axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "separate_final_axiom_audit_pending": false,
+        "direct_dependency_receipts_match": true,
+        "original_statement_preserved": true
+      },
+      "card": {
+        "module": "Submission.Supplier.Theorems.Thm_HopfAlgebra_signTwist_comul_coassoc_padicInt",
+        "make_exit": 0,
+        "kernel_exit": 0,
+        "kernel_seconds": 67.440278042,
+        "warnings": 0,
+        "printed_recursive_axioms": null,
+        "separate_final_axiom_audit_pending": true,
+        "direct_dependency_receipts_match": true,
+        "original_statement_preserved": true
+      }
+    },
+    "HopfAlgebra_exists_signTwist_linearEquiv_padicInt_of_odd": {
+      "source": {
+        "module": "Submission.Supplier.P2M.Sol.S_HopfAlgebra_exists_signTwist_linearEquiv_padicInt_of_odd",
+        "make_exit": 0,
+        "kernel_exit": 0,
+        "kernel_seconds": 49.368212208,
+        "warnings": 0,
+        "printed_recursive_axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "separate_final_axiom_audit_pending": false,
+        "direct_dependency_receipts_match": true,
+        "original_statement_preserved": true
+      },
+      "card": {
+        "module": "Submission.Supplier.Theorems.Thm_HopfAlgebra_exists_signTwist_linearEquiv_padicInt_of_odd",
+        "make_exit": 0,
+        "kernel_exit": 0,
+        "kernel_seconds": 45.394464292,
+        "warnings": 0,
+        "printed_recursive_axioms": null,
+        "separate_final_axiom_audit_pending": true,
+        "direct_dependency_receipts_match": true,
+        "original_statement_preserved": true
+      }
+    }
+  },
+  "selected_problem": "fermat_last_theorem",
+  "observation": "Retain already installed and now verified supplier adapters; this archival step edits no active Lean source and starts no compiler.",
+  "observed_adapter_changes": [
+    "Current TensorProduct.inductionOn recursor",
+    "Current antipode_mul_antidistrib API",
+    "Remove unused proof alternatives and simp arguments"
+  ],
+  "adapter_edit_author_not_independently_attributed": true,
+  "canonical_sources_byte_identical_to_supplier": true,
+  "supplier": "anthropics/fermats-last-theorem@6e837e75355538c7f80bab5b956861e86c4eacc2",
+  "full_original_complete": false,
+  "official_new_solve_credit": 0,
+  "full_root_and_final_card_axiom_audits_pending": true,
+  "max_active_flt_jobs": 1,
+  "max_active_flt_compilers": 1,
+  "lean_threads": 1
+}

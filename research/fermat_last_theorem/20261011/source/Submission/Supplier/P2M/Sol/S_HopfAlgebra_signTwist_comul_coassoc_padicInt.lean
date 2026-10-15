@@ -46,8 +46,7 @@ theorem solution
     rw [hι2, ← smul_neg, neg_sub]
 
   have hQιι : ∀ X, Q ((TensorProduct.map ι ι) X) = Q X := fun X => by
-    induction X using TensorProduct.induction_on with
-    | zero => simp
+    induction X using TensorProduct.inductionOn with
     | tmul x y =>
       simp only [Q, TensorProduct.map_tmul, hPmι_a, neg_neg,
         TensorProduct.neg_tmul, TensorProduct.tmul_neg]
@@ -60,14 +59,12 @@ theorem solution
     rw [this, Q.map_smul, map_sub, hQιι, sub_self, smul_zero]
 
   have hrQΔQ : ∀ X, (LinearMap.rTensor H (Q.comp Δ)) (Q X) = 0 := fun X => by
-    induction X using TensorProduct.induction_on with
-    | zero => simp
+    induction X using TensorProduct.inductionOn with
     | tmul x y => simp only [Q, TensorProduct.map_tmul, LinearMap.rTensor_tmul,
         LinearMap.comp_apply, hQΔPm, TensorProduct.zero_tmul]
     | add x y hx hy => simp only [map_add, hx, hy, add_zero]
   have hlQΔQ : ∀ X, (LinearMap.lTensor H (Q.comp Δ)) (Q X) = 0 := fun X => by
-    induction X using TensorProduct.induction_on with
-    | zero => simp
+    induction X using TensorProduct.inductionOn with
     | tmul x y => simp only [Q, TensorProduct.map_tmul, LinearMap.lTensor_tmul,
         LinearMap.comp_apply, hQΔPm, TensorProduct.tmul_zero]
     | add x y hx hy => simp only [map_add, hx, hy, add_zero]
@@ -100,3 +97,5 @@ theorem solution
       add_zero, add_zero]
 
   rw [add_assoc, add_assoc, ← smul_add, ← smul_add, hI1 a]
+
+#print axioms P2MW.S_HopfAlgebra_signTwist_comul_coassoc_padicInt.solution
