@@ -1,0 +1,39 @@
+{
+  "at": "2026-10-15T11:09:49.470602+00:00",
+  "checks": {
+    "source": {
+      "module": "Submission.Supplier.P2M.Sol.S_ModularCurve_finiteDimensional_extendScalars_full_prime",
+      "make_exit": 0,
+      "kernel_exit": 0,
+      "kernel_seconds": 50.781438,
+      "warnings": 0,
+      "recursive_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "current_dependency_receipts_match": true
+    },
+    "card": {
+      "module": "Submission.Supplier.Theorems.Thm_ModularCurve_finiteDimensional_extendScalars_full_prime",
+      "make_exit": 0,
+      "kernel_exit": 0,
+      "kernel_seconds": 53.194628958,
+      "warnings": 0,
+      "recursive_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "current_dependency_receipts_match": true
+    }
+  },
+  "full_original_statement_and_all_hypotheses_preserved": true,
+  "full_prime_extension_relative_degree_and_finite_dimensional_proof_preserved": true,
+  "repair": "Import the existing ModularUnit definition module, preserving every original attribute entry and the entire original proof body establishing relative degree ell plus one and finite dimensionality.",
+  "no_linter_suppression_added": true,
+  "max_active_flt_jobs": 1,
+  "lean_threads": 1,
+  "full_original_complete": false,
+  "official_new_solve_credit": 0
+}
