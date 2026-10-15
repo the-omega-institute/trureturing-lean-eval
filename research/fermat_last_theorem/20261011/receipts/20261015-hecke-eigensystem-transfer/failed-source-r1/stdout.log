@@ -1,0 +1,35 @@
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_HeckeEis_exists_isEigensystemH1_one_natCast_mul_of_isEigensystemH1_one_of_three_dvd.lean:827:8: error: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  ∑ x ∈ ?m.345, (?f x - ?g x)
+in the target expression
+  ∑ x, (phi M g + phi M (Quotient.out x) - phi M (Quotient.out (g • x))) = ↑(ℓ + 1) * phi M g
+
+M : ℕ
+h3M : 3 ∣ M
+κ : Type u_1
+inst✝² : CommRing κ
+inst✝¹ : CharP κ 3
+x : Additive ↥(Gamma0 M) →+ κ
+hx : ∀ (δ : ↥(Gamma0 M)), 3 ∣ ↑↑δ 0 1 → x (Additive.ofMul δ) = 0
+ℓ : ℕ
+inst✝ : NeZero ℓ
+hℓ : Nat.Prime ℓ
+hℓM : ¬ℓ ∣ M
+this : Fintype (↥(Gamma0 M) ⧸ heckeUpper M ℓ) := Subgroup.fintypeQuotientOfFiniteIndex
+hℓ3 : ↑ℓ ≠ 0
+hcard : Fintype.card (↥(Gamma0 M) ⧸ heckeUpper M ℓ) = ℓ + 1
+g' : Additive ↥(Gamma0 M)
+g : ↥(Gamma0 M) := Additive.toMul g'
+hg : g = Additive.toMul g'
+hg' : g' = Additive.ofMul g
+hterm :
+  ∀ (q : ↥(Gamma0 M) ⧸ heckeUpper M ℓ),
+    x (Additive.ofMul ((heckeConj M ℓ) (transferAux (heckeUpper M ℓ) g q))) =
+      ↑ℓ * (cst κ) (phi M ↑(transferAux (heckeUpper M ℓ) g q)) * x (Additive.ofMul (Tg M))
+hq :
+  ∀ (q : ↥(Gamma0 M) ⧸ heckeUpper M ℓ),
+    phi M ↑(transferAux (heckeUpper M ℓ) g q) = phi M g + phi M (Quotient.out q) - phi M (Quotient.out (g • q))
+⊢ ∑ x, (phi M g + phi M (Quotient.out x) - phi M (Quotient.out (g • x))) = ↑(ℓ + 1) * phi M g
+'P2MW.S_HeckeEis_exists_isEigensystemH1_one_natCast_mul_of_isEigensystemH1_one_of_three_dvd.solution' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]

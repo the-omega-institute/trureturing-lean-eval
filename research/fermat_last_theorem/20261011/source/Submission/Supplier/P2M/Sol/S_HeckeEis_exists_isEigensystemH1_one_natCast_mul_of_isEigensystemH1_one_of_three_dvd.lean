@@ -824,8 +824,23 @@ theorem heckeOperatorHom_eq_of_vanish (hx : ∀ δ : Gamma0 M, (3 : ℤ) ∣ (δ
         from rfl, phi_mul M h3M, phi_mul M h3M, phi_inv M h3M]
       abel
     simp_rw [hq]
-    rw [Finset.sum_sub_distrib, Finset.sum_add_distrib]
-    simp only [Finset.sum_const, Finset.card_univ, hcard, nsmul_eq_mul]
+    have hsub :
+        (∑ q : Gamma0 M ⧸ heckeUpper M ℓ, (phi M g + phi M q.out - phi M (g • q).out)) =
+          (∑ q : Gamma0 M ⧸ heckeUpper M ℓ, (phi M g + phi M q.out)) -
+            ∑ q : Gamma0 M ⧸ heckeUpper M ℓ, phi M (g • q).out :=
+      _root_.Finset.sum_sub_distrib
+        (fun q : Gamma0 M ⧸ heckeUpper M ℓ => phi M g + phi M q.out)
+        (fun q : Gamma0 M ⧸ heckeUpper M ℓ => phi M (g • q).out)
+    have hadd :
+        (∑ q : Gamma0 M ⧸ heckeUpper M ℓ, (phi M g + phi M q.out)) =
+          (∑ _q : Gamma0 M ⧸ heckeUpper M ℓ, phi M g) +
+            ∑ q : Gamma0 M ⧸ heckeUpper M ℓ, phi M q.out :=
+      _root_.Finset.sum_add_distrib
+    have hconst : (∑ _q : Gamma0 M ⧸ heckeUpper M ℓ, phi M g) =
+        ((ℓ + 1 : ℕ) : ZMod 3) * phi M g := by
+      rw [Finset.sum_const, Finset.card_univ, hcard]
+      exact _root_.nsmul_eq_mul _ _
+    rw [hsub, hadd, hconst]
     rw [Fintype.sum_bijective (g • ·) (MulAction.bijective g)
       (fun q : Gamma0 M ⧸ heckeUpper M ℓ => phi M (g • q).out) (fun q : Gamma0 M ⧸ heckeUpper M ℓ => phi M q.out)
       fun q => rfl]
