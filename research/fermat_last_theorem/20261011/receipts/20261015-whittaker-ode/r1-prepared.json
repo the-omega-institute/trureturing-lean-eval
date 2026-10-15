@@ -1,0 +1,18 @@
+{
+  "prepared_at": "2026-10-15T06:29:10.203098+00:00",
+  "module": "Submission.Supplier.P2M.Sol.S_LanglandsTunnell_whittaker_ode_splitTorus_of_isArchSmoothAt_of_archCasimirAt_eq",
+  "candidate_revision": "r1-prepared",
+  "baseline_source_sha256": "6840a05d7a57f6fb34e146fdeb9060c4f723c4ba8eecfa7a8bbbf3fae3723baa",
+  "candidate_source_sha256": "5a401eff22c0f13554e68ffab655aa1f7d59373d943188fdd4fe45a13a6888df",
+  "card_source_sha256": "23f6197cb8c2b352d9498ab29acd2fc2614f0e5b13297899ac518f2b4a949f9f",
+  "repairs": [
+    "Source owner replaced the three failing derivative-coefficient rfl tactics by simp, retaining the valid function-equality rfl goals.",
+    "Source owner replaced two deprecated dif_pos references by dite_eq_left; one is inside the public solution proof body.",
+    "Source owner added source/card axiom prints; this session verified the exact diff against failed source hash."
+  ],
+  "solution_statement_preserved": true,
+  "solution_body_change": "Only deprecated lemma dif_pos -> dite_eq_left; original argument and hypotheses preserved.",
+  "validation": "Pending same-controller canonical retry; no separate compiler or controller",
+  "full_original_proof_verified": false,
+  "official_solve_credit": 0
+}

@@ -1,0 +1,17 @@
+{
+  "prepared_at": "2026-10-15T06:30:21.205898+00:00",
+  "module": "Submission.Supplier.P2M.Sol.S_LanglandsTunnell_whittaker_ode_splitTorus_of_isArchSmoothAt_of_archCasimirAt_eq",
+  "candidate_revision": "r2-prepared",
+  "previous_candidate_sha256": "5a401eff22c0f13554e68ffab655aa1f7d59373d943188fdd4fe45a13a6888df",
+  "candidate_source_sha256": "b3ad36feb60d99d52657eece67db87d2bd9e70d149bf2060e7fc3acfce5385f7",
+  "repairs": [
+    "The rotation derivative passed r1; leave it unchanged.",
+    "For the two torus derivatives, convert already discharged function equality. Apply simp [mul_comm] directly to each remaining coefficient goal."
+  ],
+  "solution_statement_preserved": true,
+  "solution_body_unchanged_from_r1": true,
+  "solution_body_change_from_baseline": "Only deprecated dif_pos -> dite_eq_left.",
+  "validation": "Pending same-controller canonical retry",
+  "full_original_proof_verified": false,
+  "official_solve_credit": 0
+}
