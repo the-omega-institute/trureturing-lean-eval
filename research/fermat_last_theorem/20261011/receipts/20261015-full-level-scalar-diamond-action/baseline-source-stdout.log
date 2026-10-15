@@ -1,0 +1,87 @@
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_ModularCurve_FullLevel_eval_gl2Jac_scalarElem_eq_diamondHBar_inv_eval_pow.lean:151:2: warning: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_ModularCurve_FullLevel_eval_gl2Jac_scalarElem_eq_diamondHBar_inv_eval_pow.lean:155:2: warning: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_ModularCurve_FullLevel_eval_gl2Jac_scalarElem_eq_diamondHBar_inv_eval_pow.lean:366:42: warning: `MonoidHom.coe_coe` has been deprecated: Use `MonoidHom.coe_ofClass` instead
+
+Hint: Replace the deprecated name:
+  M̵o̵n̵o̵i̵d̵H̵o̵m̵.̵c̵o̵e̵_̵c̵o̵e̵M̲o̲n̲o̲i̲d̲H̲o̲m̲.̲c̲o̲e̲_̲o̲f̲C̲l̲a̲s̲s̲
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_ModularCurve_FullLevel_eval_gl2Jac_scalarElem_eq_diamondHBar_inv_eval_pow.lean:371:60: warning: `MonoidHom.coe_coe` has been deprecated: Use `MonoidHom.coe_ofClass` instead
+
+Hint: Replace the deprecated name:
+  M̵o̵n̵o̵i̵d̵H̵o̵m̵.̵c̵o̵e̵_̵c̵o̵e̵M̲o̲n̲o̲i̲d̲H̲o̲m̲.̲c̲o̲e̲_̲o̲f̲C̲l̲a̲s̲s̲
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_ModularCurve_FullLevel_eval_gl2Jac_scalarElem_eq_diamondHBar_inv_eval_pow.lean:396:4: error: ring failed, ring expressions not equal
+q : ℕ
+inst✝¹ : Fact (Nat.Prime q)
+M' : ℕ
+inst✝ : NeZero M'
+d : ℕ
+hdq : d.Coprime q
+hd : d.Coprime (q ^ 2 * M')
+hqN : q ∣ q ^ 2 * M'
+γ₀ : ↥(Gamma0 (q ^ 2 * M'))
+hγ₀ : (CohCarrier.gamma0Units (q ^ 2 * M')) γ₀ = (ZMod.unitOfCoprime d hd)⁻¹
+hc : ↑(↑↑γ₀ 1 0) = 0
+he : ↑(↑↑γ₀ 1 1) = ↑(ZMod.unitOfCoprime d hd)⁻¹
+hdet : ↑↑γ₀ 0 0 * ↑↑γ₀ 1 1 - ↑↑γ₀ 0 1 * ↑↑γ₀ 1 0 = 1
+ha : ↑(↑↑γ₀ 0 0) = ↑d
+a₁ : ℤ := ⋯
+ha₁ : a₁ = ↑(↑(ZMod.unitOfCoprime d hdq)⁻¹).val
+t : ℤ := ⋯
+ht : t = -(↑↑γ₀ 0 1 * a₁)
+hcast : ∀ (z : ℤ), (ZMod.castHom hqN (ZMod q)) ↑z = ↑z
+hcastN : ∀ (n : ℕ), (ZMod.castHom hqN (ZMod q)) ↑n = ↑n
+huq : (ZMod.unitsMap hqN) (ZMod.unitOfCoprime d hd) = ZMod.unitOfCoprime d hdq
+huq' : (ZMod.castHom hqN (ZMod q)) ↑(ZMod.unitOfCoprime d hd)⁻¹ = ↑(ZMod.unitOfCoprime d hdq)⁻¹
+h00 : ↑(↑γ₀ * ModularGroup.T ^ t) 0 0 = ↑↑γ₀ 0 0
+h01 : ↑(↑γ₀ * ModularGroup.T ^ t) 0 1 = ↑↑γ₀ 0 0 * t + ↑↑γ₀ 0 1
+h10 : ↑(↑γ₀ * ModularGroup.T ^ t) 1 0 = ↑↑γ₀ 1 0
+h11 : ↑(↑γ₀ * ModularGroup.T ^ t) 1 1 = ↑↑γ₀ 1 0 * t + ↑↑γ₀ 1 1
+hcq : ↑(↑↑γ₀ 1 0) = 0
+haq : ↑(↑↑γ₀ 0 0) = ↑d
+heq : ↑(↑↑γ₀ 1 1) = ↑(ZMod.unitOfCoprime d hdq)⁻¹
+ha₁q : ↑a₁ = ↑(ZMod.unitOfCoprime d hdq)⁻¹
+hu : ↑d * ↑(ZMod.unitOfCoprime d hdq)⁻¹ = 1
+⊢ -(↑d * ↑(↑↑γ₀ 0 1) * ↑(ZMod.unitOfCoprime d hdq)⁻¹) - ↑d * ↑(ZMod.unitOfCoprime d hdq)⁻¹ * -↑(↑↑γ₀ 0 1) +
+        ↑(↑↑γ₀ 0 1) +
+      -↑(↑↑γ₀ 0 1) =
+    0
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_ModularCurve_FullLevel_eval_gl2Jac_scalarElem_eq_diamondHBar_inv_eval_pow.lean:445:6: error: ring failed, ring expressions not equal
+q : ℕ
+inst✝¹ : Fact (Nat.Prime q)
+M' : ℕ
+inst✝ : NeZero M'
+hG : GL2Laws q M'
+d : ℕ
+hdq : d.Coprime q
+hd : d.Coprime (q ^ 2 * M')
+x : Jac q M'
+ζ : Idx q
+γ : SL(2, ℤ)
+hγN : γ ∈ Gamma0 (q ^ 2 * M')
+h11N : ↑(↑γ 1 1) = ↑(ZMod.unitOfCoprime d hd)⁻¹
+h00 : ↑(↑γ 0 0) = ↑d
+h01 : ↑(↑γ 0 1) = 0
+h10 : ↑(↑γ 1 0) = 0
+hγM' : γ ∈ Gamma0 M'
+u : (ZMod q)ˣ := ⋯
+h11 : ↑(↑γ 1 1) = ↑u⁻¹
+hu_def : u = ZMod.unitOfCoprime d hdq
+h00' : ↑(↑γ 0 0) = ↑u
+hred : ∀ (i j : Fin 2), ↑((redQ q) γ) i j = ↑(↑γ i j)
+hsc : ∀ (i j : Fin 2), ↑((CuspidalType.scalarElem q) u) i j = diagonal (fun x => ↑u) i j
+hd1 : ∀ (i j : Fin 2), ↑(diagOneElem q (u ^ 2)) i j = !![1, 0; 0, ↑(u ^ 2)] i j
+hu : ↑u⁻¹ * ↑u = 1
+⊢ ↑u - ↑u * -↑u * ↑u⁻¹ - ↑u ^ 2 * ↑u⁻¹ + -↑u = 0

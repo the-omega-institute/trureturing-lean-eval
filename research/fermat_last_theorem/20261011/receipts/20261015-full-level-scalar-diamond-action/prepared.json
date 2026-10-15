@@ -1,0 +1,31 @@
+{
+  "at": "2026-10-15T08:43:09.799903+00:00",
+  "name": "ModularCurve_FullLevel_eval_gl2Jac_scalarElem_eq_diamondHBar_inv_eval_pow",
+  "source_module": "Submission.Supplier.P2M.Sol.S_ModularCurve_FullLevel_eval_gl2Jac_scalarElem_eq_diamondHBar_inv_eval_pow",
+  "card_declaration": "ModularCurve.FullLevel.eval_gl2Jac_scalarElem_eq_diamondHBar_inv_eval_pow",
+  "original_source_lines": 460,
+  "repair": "Prove both unit-inverse identities by explicit associativity and inverse rewrites instead of failing linear_combination; fix two actual haveI style warnings and two deprecated MonoidHom aliases.",
+  "line_edits": [
+    {
+      "line": 143,
+      "before": "  haveI : Algebra.IsAlgebraic \u211a (AlgebraicClosure \u211a) := AlgebraicClosure.isAlgebraic \u211a\n",
+      "after": "  have : Algebra.IsAlgebraic \u211a (AlgebraicClosure \u211a) := AlgebraicClosure.isAlgebraic \u211a\n"
+    },
+    {
+      "line": 147,
+      "before": "  haveI : NeZero ((q : \u2115) : \u211a) := \u27e8by exact_mod_cast hqpos.ne'\u27e9\n",
+      "after": "  have : NeZero ((q : \u2115) : \u211a) := \u27e8by exact_mod_cast hqpos.ne'\u27e9\n"
+    },
+    {
+      "before": "    linear_combination (-(((\u03b3\u2080 : SL(2, \u2124)) 0 1 : \u2124) : ZMod q)) * hu\n",
+      "after": "    rw [mul_neg, mul_left_comm, hu, mul_one, neg_add_cancel]\n"
+    },
+    {
+      "before": "      linear_combination (-(u : ZMod q)) * hu\n",
+      "after": "      rw [zero_mul, zero_add, pow_two, \u2190 mul_assoc, hu, one_mul]\n"
+    }
+  ],
+  "original_statement_all_hypotheses_and_full_cyclotomic_embedding_lift_matrix_factorization_and_Jacobian_action_proof_preserved": true,
+  "new_compilers_spawned": 0,
+  "actual_source_card_make_kernel_verification_pending": true
+}
