@@ -1,0 +1,39 @@
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_LanglandsTunnell_whittaker_ode_splitTorus_of_isArchSmoothAt_of_archCasimirAt_eq.lean:275:6: error: Tactic `rfl` failed: The left-hand side
+  2 * y
+is not definitionally equal to the right-hand side
+  y * (rexp (2 * 0) * (2 * 1))
+
+case e'_9
+F : GL (Fin 2) ℝ → ℂ
+y : ℝ
+hy : 0 < y
+f : ℝ → ℂ := fun y => F (splitTorusGL2 (Real.log y / 2))
+hf : DifferentiableAt ℝ f y
+hfdef : f = fun y => F (splitTorusGL2 (Real.log y / 2))
+hfun : (fun t => F (splitTorusGL2 (Real.log y / 2) * splitTorusGL2 t)) = fun t => f (y * rexp (2 * t))
+h : HasDerivAt (fun y_1 => y * rexp (2 * y_1)) (y * (rexp (2 * 0) * (2 * 1))) 0
+⊢ 2 * y = y * (rexp (2 * 0) * (2 * 1))
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_LanglandsTunnell_whittaker_ode_splitTorus_of_isArchSmoothAt_of_archCasimirAt_eq.lean:276:4: error: No goals to be solved
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_LanglandsTunnell_whittaker_ode_splitTorus_of_isArchSmoothAt_of_archCasimirAt_eq.lean:302:6: error: Tactic `rfl` failed: The left-hand side
+  2 * y
+is not definitionally equal to the right-hand side
+  y * (rexp (2 * 0) * (2 * 1))
+
+case e'_9
+F : GL (Fin 2) ℝ → ℂ
+y : ℝ
+hy : 0 < y
+f : ℝ → ℂ := fun y => F (splitTorusGL2 (Real.log y / 2))
+hf : ∀ (y' : ℝ), 0 < y' → DifferentiableAt ℝ f y'
+hf2 : DifferentiableAt ℝ (deriv f) y
+hfdef : f = fun y => F (splitTorusGL2 (Real.log y / 2))
+hfun :
+  (fun t => deriv (fun s => F (splitTorusGL2 (Real.log y / 2) * splitTorusGL2 t * splitTorusGL2 s)) 0) = fun t =>
+    2 * ↑(y * rexp (2 * t)) * deriv f (y * rexp (2 * t))
+h : HasDerivAt (fun y_1 => y * rexp (2 * y_1)) (y * (rexp (2 * 0) * (2 * 1))) 0
+⊢ 2 * y = y * (rexp (2 * 0) * (2 * 1))
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_LanglandsTunnell_whittaker_ode_splitTorus_of_isArchSmoothAt_of_archCasimirAt_eq.lean:303:4: error: No goals to be solved
+'P2MW.S_LanglandsTunnell_whittaker_ode_splitTorus_of_isArchSmoothAt_of_archCasimirAt_eq.solution' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]

@@ -1,0 +1,56 @@
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_LanglandsTunnell_whittaker_ode_splitTorus_of_isArchSmoothAt_of_archCasimirAt_eq.lean:183:4: error: Tactic `rfl` failed: The left-hand side
+  -Complex.I
+is not definitionally equal to the right-hand side
+  ↑0 + ↑(-(1 * (√(1 + 0 ^ 2))⁻¹ + id 0 * 0)) * Complex.I
+
+case e'_9
+hre : HasDerivAt (fun y => ↑(√(1 + y ^ 2))⁻¹) (↑0) 0
+him : HasDerivAt (fun y => ↑(-(id y * (√(1 + y ^ 2))⁻¹))) (↑(-(1 * (√(1 + 0 ^ 2))⁻¹ + id 0 * 0))) 0
+h :
+  HasDerivAt (fun i => ↑(√(1 + i ^ 2))⁻¹ + ↑(-(id i * (√(1 + i ^ 2))⁻¹)) * Complex.I)
+    (↑0 + ↑(-(1 * (√(1 + 0 ^ 2))⁻¹ + id 0 * 0)) * Complex.I) 0
+⊢ -Complex.I = ↑0 + ↑(-(1 * (√(1 + 0 ^ 2))⁻¹ + id 0 * 0)) * Complex.I
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_LanglandsTunnell_whittaker_ode_splitTorus_of_isArchSmoothAt_of_archCasimirAt_eq.lean:184:2: error: No goals to be solved
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_LanglandsTunnell_whittaker_ode_splitTorus_of_isArchSmoothAt_of_archCasimirAt_eq.lean:276:6: error: Tactic `rfl` failed: The left-hand side
+  2 * y
+is not definitionally equal to the right-hand side
+  y * (rexp (2 * 0) * (2 * 1))
+
+case e'_9
+F : GL (Fin 2) ℝ → ℂ
+y : ℝ
+hy : 0 < y
+f : ℝ → ℂ := fun y => F (splitTorusGL2 (Real.log y / 2))
+hf : DifferentiableAt ℝ f y
+hfdef : f = fun y => F (splitTorusGL2 (Real.log y / 2))
+hfun : (fun t => F (splitTorusGL2 (Real.log y / 2) * splitTorusGL2 t)) = fun t => f (y * rexp (2 * t))
+h : HasDerivAt (fun y_1 => y * rexp (2 * y_1)) (y * (rexp (2 * 0) * (2 * 1))) 0
+⊢ 2 * y = y * (rexp (2 * 0) * (2 * 1))
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_LanglandsTunnell_whittaker_ode_splitTorus_of_isArchSmoothAt_of_archCasimirAt_eq.lean:277:4: error: No goals to be solved
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_LanglandsTunnell_whittaker_ode_splitTorus_of_isArchSmoothAt_of_archCasimirAt_eq.lean:304:6: error: Tactic `rfl` failed: The left-hand side
+  2 * y
+is not definitionally equal to the right-hand side
+  y * (rexp (2 * 0) * (2 * 1))
+
+case e'_9
+F : GL (Fin 2) ℝ → ℂ
+y : ℝ
+hy : 0 < y
+f : ℝ → ℂ := fun y => F (splitTorusGL2 (Real.log y / 2))
+hf : ∀ (y' : ℝ), 0 < y' → DifferentiableAt ℝ f y'
+hf2 : DifferentiableAt ℝ (deriv f) y
+hfdef : f = fun y => F (splitTorusGL2 (Real.log y / 2))
+hfun :
+  (fun t => deriv (fun s => F (splitTorusGL2 (Real.log y / 2) * splitTorusGL2 t * splitTorusGL2 s)) 0) = fun t =>
+    2 * ↑(y * rexp (2 * t)) * deriv f (y * rexp (2 * t))
+h : HasDerivAt (fun y_1 => y * rexp (2 * y_1)) (y * (rexp (2 * 0) * (2 * 1))) 0
+⊢ 2 * y = y * (rexp (2 * 0) * (2 * 1))
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_LanglandsTunnell_whittaker_ode_splitTorus_of_isArchSmoothAt_of_archCasimirAt_eq.lean:305:4: error: No goals to be solved
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_LanglandsTunnell_whittaker_ode_splitTorus_of_isArchSmoothAt_of_archCasimirAt_eq.lean:382:6: warning: `dif_pos` has been deprecated: Use `dite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  d̵i̵f̵_̵p̵o̵s̵d̲i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_LanglandsTunnell_whittaker_ode_splitTorus_of_isArchSmoothAt_of_archCasimirAt_eq.lean:555:20: warning: `dif_pos` has been deprecated: Use `dite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  d̵i̵f̵_̵p̵o̵s̵d̲i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
