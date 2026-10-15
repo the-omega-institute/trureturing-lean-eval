@@ -1,0 +1,359 @@
+{
+  "at": "2026-10-15T08:14:52.455554+00:00",
+  "name": "ModularCurve_CharPModel_FibreModel_spPlace_surjective",
+  "source_module": "Submission.Supplier.P2M.Sol.S_ModularCurve_CharPModel_FibreModel_spPlace_surjective",
+  "original_source_lines": 4118,
+  "removed_only_minus_simp_header_names": [
+    "ModularCurve.constantCoeff_dedekindEtaUnitQ",
+    "ModularCurve.eisensteinNumerator_eleven",
+    "ModularCurve.eisensteinNumerator_five",
+    "ModularCurve.eisensteinNumerator_nineteen",
+    "ModularCurve.eisensteinNumerator_seven",
+    "ModularCurve.eisensteinNumerator_seventeen",
+    "ModularCurve.eisensteinNumerator_thirteen",
+    "ModularCurve.eisensteinNumerator_twentythree"
+  ],
+  "style_edits": 64,
+  "deprecated_api_edits": 3,
+  "exact_line_edits": [
+    {
+      "line": 552,
+      "before": "  haveI := hadj\n",
+      "after": "  have := hadj\n"
+    },
+    {
+      "line": 654,
+      "before": "    haveI := hne\n",
+      "after": "    have := hne\n"
+    },
+    {
+      "line": 672,
+      "before": "  haveI := hdne\n",
+      "after": "  have := hdne\n"
+    },
+    {
+      "line": 689,
+      "before": "  haveI : Finite \u21a5(barGenSet N) := (barGenSet_finite N).to_subtype\n",
+      "after": "  have : Finite \u21a5(barGenSet N) := (barGenSet_finite N).to_subtype\n"
+    },
+    {
+      "line": 818,
+      "before": "  letI : Algebra S B := (Subring.inclusion hSB).toAlgebra\n",
+      "after": "  let : Algebra S B := (Subring.inclusion hSB).toAlgebra\n"
+    },
+    {
+      "line": 820,
+      "before": "  haveI : FaithfulSMul S B := (faithfulSMul_iff_algebraMap_injective S B).mpr fun a b h => by\n",
+      "after": "  have : FaithfulSMul S B := (faithfulSMul_iff_algebraMap_injective S B).mpr fun a b h => by\n"
+    },
+    {
+      "line": 824,
+      "before": "  haveI : Algebra.IsIntegral S B := \u27e8fun b => by\n",
+      "after": "  have : Algebra.IsIntegral S B := \u27e8fun b => by\n"
+    },
+    {
+      "line": 832,
+      "before": "  haveI : Q.LiesOver q := \u27e8by rw [Ideal.under_def, \u2190 hQ]; rfl\u27e9\n",
+      "after": "  have : Q.LiesOver q := \u27e8by rw [Ideal.under_def, \u2190 hQ]; rfl\u27e9\n"
+    },
+    {
+      "line": 1434,
+      "before": "  haveI : Algebra.IsAlgebraic A R := Algebra.IsIntegral.isAlgebraic\n",
+      "after": "  have : Algebra.IsAlgebraic A R := Algebra.IsIntegral.isAlgebraic\n"
+    },
+    {
+      "line": 1491,
+      "before": "  letI alg : Algebra A (B \u29f8 \ud835\udd2d) := ((Ideal.Quotient.mk \ud835\udd2d).comp cB).toAlgebra\n",
+      "after": "  let alg : Algebra A (B \u29f8 \ud835\udd2d) := ((Ideal.Quotient.mk \ud835\udd2d).comp cB).toAlgebra\n"
+    },
+    {
+      "line": 1531,
+      "before": "  haveI hintq : Algebra.IsIntegral A (B \u29f8 \ud835\udd2d) := by\n",
+      "after": "  have hintq : Algebra.IsIntegral A (B \u29f8 \ud835\udd2d) := by\n"
+    },
+    {
+      "line": 1557,
+      "before": "  haveI : FaithfulSMul A (B \u29f8 \ud835\udd2d) := by\n",
+      "after": "  have : FaithfulSMul A (B \u29f8 \ud835\udd2d) := by\n"
+    },
+    {
+      "line": 2205,
+      "before": "  haveI : IsIntegrallyClosed S := A.isIntegrallyClosed_closure hj\n",
+      "after": "  have : IsIntegrallyClosed S := A.isIntegrallyClosed_closure hj\n"
+    },
+    {
+      "line": 2221,
+      "before": "  haveI hp\u2080 : p\u2080.IsPrime := by\n",
+      "after": "  have hp\u2080 : p\u2080.IsPrime := by\n"
+    },
+    {
+      "line": 2225,
+      "before": "  haveI hp : p.IsPrime := Ideal.map_isPrime_of_equiv e\n",
+      "after": "  have hp : p.IsPrime := Ideal.map_isPrime_of_equiv e\n"
+    },
+    {
+      "line": 2239,
+      "before": "  haveI := h\ud835\udd2d\n",
+      "after": "  have := h\ud835\udd2d\n"
+    },
+    {
+      "line": 2279,
+      "before": "  haveI : IsDedekindDomain R := isDedekindDomain_integralClosure_adjoin hj\n",
+      "after": "  have : IsDedekindDomain R := isDedekindDomain_integralClosure_adjoin hj\n"
+    },
+    {
+      "line": 2280,
+      "before": "  haveI : IsFractionRing R F := isFractionRing_integralClosure_adjoin hj\n",
+      "after": "  have : IsFractionRing R F := isFractionRing_integralClosure_adjoin hj\n"
+    },
+    {
+      "line": 2336,
+      "before": "  haveI : IsDedekindDomain (Algebra.adjoin K ({x} : Set E)) := isDedekindDomain_adjoin_singleton hx\n",
+      "after": "  have : IsDedekindDomain (Algebra.adjoin K ({x} : Set E)) := isDedekindDomain_adjoin_singleton hx\n"
+    },
+    {
+      "line": 2337,
+      "before": "  haveI : FaithfulSMul (Algebra.adjoin K ({x} : Set E)) E :=\n",
+      "after": "  have : FaithfulSMul (Algebra.adjoin K ({x} : Set E)) E :=\n"
+    },
+    {
+      "line": 2339,
+      "before": "  haveI : IsFractionRing (Algebra.adjoin K ({x} : Set E)) E := by\n",
+      "after": "  have : IsFractionRing (Algebra.adjoin K ({x} : Set E)) E := by\n"
+    },
+    {
+      "line": 2385,
+      "before": "  haveI : FiniteDimensional K K\u27eexbar\u27ef := IntermediateField.adjoin.finiteDimensional hint\n",
+      "after": "  have : FiniteDimensional K K\u27eexbar\u27ef := IntermediateField.adjoin.finiteDimensional hint\n"
+    },
+    {
+      "line": 2671,
+      "before": "  haveI hmax : (fm.centreFin w hwFin).IsMaximal := fm.centreFin_isMaximal w hwFin\n",
+      "after": "  have hmax : (fm.centreFin w hwFin).IsMaximal := fm.centreFin_isMaximal w hwFin\n"
+    },
+    {
+      "line": 2673,
+      "before": "  haveI hPmax : (fm.piFin.imagePrime (fm.centreFin w hwFin)).IsMaximal :=\n",
+      "after": "  have hPmax : (fm.piFin.imagePrime (fm.centreFin w hwFin)).IsMaximal :=\n"
+    },
+    {
+      "line": 2675,
+      "before": "  haveI hPprime : (fm.piFin.imagePrime (fm.centreFin w hwFin)).IsPrime := hPmax.isPrime\n",
+      "after": "  have hPprime : (fm.piFin.imagePrime (fm.centreFin w hwFin)).IsPrime := hPmax.isPrime\n"
+    },
+    {
+      "line": 2713,
+      "before": "  haveI hFD : FiniteDimensional\n",
+      "after": "  have hFD : FiniteDimensional\n"
+    },
+    {
+      "line": 2716,
+      "before": "  haveI hSep : Algebra.IsSeparable\n",
+      "after": "  have hSep : Algebra.IsSeparable\n"
+    },
+    {
+      "line": 2719,
+      "before": "  haveI hDed : IsDedekindDomain (lineClosure k N) :=\n",
+      "after": "  have hDed : IsDedekindDomain (lineClosure k N) :=\n"
+    },
+    {
+      "line": 2722,
+      "before": "  haveI hFrac : IsFractionRing (lineClosure k N) (modularFunctionFieldC k N) :=\n",
+      "after": "  have hFrac : IsFractionRing (lineClosure k N) (modularFunctionFieldC k N) :=\n"
+    },
+    {
+      "line": 2835,
+      "before": "  haveI hmax : (fm.centreInf w hwInf).IsMaximal := fm.centreInf_isMaximal w hwInf\n",
+      "after": "  have hmax : (fm.centreInf w hwInf).IsMaximal := fm.centreInf_isMaximal w hwInf\n"
+    },
+    {
+      "line": 2837,
+      "before": "  haveI hPmax : (fm.piInf.imagePrime (fm.centreInf w hwInf)).IsMaximal :=\n",
+      "after": "  have hPmax : (fm.piInf.imagePrime (fm.centreInf w hwInf)).IsMaximal :=\n"
+    },
+    {
+      "line": 2839,
+      "before": "  haveI hPprime : (fm.piInf.imagePrime (fm.centreInf w hwInf)).IsPrime := hPmax.isPrime\n",
+      "after": "  have hPprime : (fm.piInf.imagePrime (fm.centreInf w hwInf)).IsPrime := hPmax.isPrime\n"
+    },
+    {
+      "line": 2874,
+      "before": "  haveI hFD : FiniteDimensional\n",
+      "after": "  have hFD : FiniteDimensional\n"
+    },
+    {
+      "line": 2879,
+      "before": "  haveI hSep : Algebra.IsSeparable\n",
+      "after": "  have hSep : Algebra.IsSeparable\n"
+    },
+    {
+      "line": 2884,
+      "before": "  haveI hDed : IsDedekindDomain (lineClosureInf k N) :=\n",
+      "after": "  have hDed : IsDedekindDomain (lineClosureInf k N) :=\n"
+    },
+    {
+      "line": 2887,
+      "before": "  haveI hFrac : IsFractionRing (lineClosureInf k N) (modularFunctionFieldC k N) :=\n",
+      "after": "  have hFrac : IsFractionRing (lineClosureInf k N) (modularFunctionFieldC k N) :=\n"
+    },
+    {
+      "line": 2916,
+      "before": "  haveI hFD : FiniteDimensional\n",
+      "after": "  have hFD : FiniteDimensional\n"
+    },
+    {
+      "line": 2922,
+      "before": "  haveI h1 : Module.Finite\n",
+      "after": "  have h1 : Module.Finite\n"
+    },
+    {
+      "line": 2928,
+      "before": "  haveI h2 : Module.Finite (AlgebraicClosure \u211a)\n",
+      "after": "  have h2 : Module.Finite (AlgebraicClosure \u211a)\n"
+    },
+    {
+      "line": 2954,
+      "before": "  haveI h3 : Module.Finite (AlgebraicClosure \u211a) w.ResidueField :=\n",
+      "after": "  have h3 : Module.Finite (AlgebraicClosure \u211a) w.ResidueField :=\n"
+    },
+    {
+      "line": 3063,
+      "before": "  haveI hFD : FiniteDimensional k\n",
+      "after": "  have hFD : FiniteDimensional k\n"
+    },
+    {
+      "line": 3073,
+      "before": "    haveI : Algebra.IsIntegral k\n",
+      "after": "    have : Algebra.IsIntegral k\n"
+    },
+    {
+      "line": 3087,
+      "before": "  haveI hFD : FiniteDimensional (AlgebraicClosure \u211a)\n",
+      "after": "  have hFD : FiniteDimensional (AlgebraicClosure \u211a)\n"
+    },
+    {
+      "line": 3099,
+      "before": "    haveI : Algebra.IsIntegral (AlgebraicClosure \u211a)\n",
+      "after": "    have : Algebra.IsIntegral (AlgebraicClosure \u211a)\n"
+    },
+    {
+      "line": 3635,
+      "before": "  haveI : IsAlgClosed k := A.isAlgClosed_of_surjective red hred\n",
+      "after": "  have : IsAlgClosed k := A.isAlgClosed_of_surjective red hred\n"
+    },
+    {
+      "line": 3637,
+      "before": "  haveI hFD : FiniteDimensional\n",
+      "after": "  have hFD : FiniteDimensional\n"
+    },
+    {
+      "line": 3640,
+      "before": "  haveI h1 : Module.Finite\n",
+      "after": "  have h1 : Module.Finite\n"
+    },
+    {
+      "line": 3645,
+      "before": "  haveI h2 : Module.Finite k\n",
+      "after": "  have h2 : Module.Finite k\n"
+    },
+    {
+      "line": 3667,
+      "before": "  haveI h3 : Module.Finite k v'.ResidueField :=\n",
+      "after": "  have h3 : Module.Finite k v'.ResidueField :=\n"
+    },
+    {
+      "line": 3678,
+      "before": "  haveI : (RingHom.ker \u03c1).IsPrime := RingHom.ker_isPrime \u03c1\n",
+      "after": "  have : (RingHom.ker \u03c1).IsPrime := RingHom.ker_isPrime \u03c1\n"
+    },
+    {
+      "line": 3730,
+      "before": "  haveI hFDbar : FiniteDimensional\n",
+      "after": "  have hFDbar : FiniteDimensional\n"
+    },
+    {
+      "line": 3736,
+      "before": "  haveI hCZ : CharZero (IntermediateField.adjoin (AlgebraicClosure \u211a)\n",
+      "after": "  have hCZ : CharZero (IntermediateField.adjoin (AlgebraicClosure \u211a)\n"
+    },
+    {
+      "line": 3741,
+      "before": "  haveI hSepBar : Algebra.IsSeparable\n",
+      "after": "  have hSepBar : Algebra.IsSeparable\n"
+    },
+    {
+      "line": 3777,
+      "before": "  haveI hSepLine : Algebra.IsSeparable\n",
+      "after": "  have hSepLine : Algebra.IsSeparable\n"
+    },
+    {
+      "line": 3781,
+      "before": "  haveI hDed : IsDedekindDomain (lineClosure k N) :=\n",
+      "after": "  have hDed : IsDedekindDomain (lineClosure k N) :=\n"
+    },
+    {
+      "line": 3784,
+      "before": "  haveI hFrac : IsFractionRing (lineClosure k N) (modularFunctionFieldC k N) :=\n",
+      "after": "  have hFrac : IsFractionRing (lineClosure k N) (modularFunctionFieldC k N) :=\n"
+    },
+    {
+      "line": 3907,
+      "before": "  haveI : (RingHom.ker \u03c1).IsPrime := RingHom.ker_isPrime \u03c1\n",
+      "after": "  have : (RingHom.ker \u03c1).IsPrime := RingHom.ker_isPrime \u03c1\n"
+    },
+    {
+      "line": 3965,
+      "before": "  haveI hFDbar : FiniteDimensional\n",
+      "after": "  have hFDbar : FiniteDimensional\n"
+    },
+    {
+      "line": 3972,
+      "before": "  haveI hCZ : CharZero (IntermediateField.adjoin (AlgebraicClosure \u211a)\n",
+      "after": "  have hCZ : CharZero (IntermediateField.adjoin (AlgebraicClosure \u211a)\n"
+    },
+    {
+      "line": 3977,
+      "before": "  haveI hSepBar : Algebra.IsSeparable\n",
+      "after": "  have hSepBar : Algebra.IsSeparable\n"
+    },
+    {
+      "line": 4041,
+      "before": "  haveI hSepLine : Algebra.IsSeparable\n",
+      "after": "  have hSepLine : Algebra.IsSeparable\n"
+    },
+    {
+      "line": 4046,
+      "before": "  haveI hFDLine : FiniteDimensional\n",
+      "after": "  have hFDLine : FiniteDimensional\n"
+    },
+    {
+      "line": 4051,
+      "before": "  haveI hDed : IsDedekindDomain (lineClosureInf k N) :=\n",
+      "after": "  have hDed : IsDedekindDomain (lineClosureInf k N) :=\n"
+    },
+    {
+      "line": 4054,
+      "before": "  haveI hFrac : IsFractionRing (lineClosureInf k N) (modularFunctionFieldC k N) :=\n",
+      "after": "  have hFrac : IsFractionRing (lineClosureInf k N) (modularFunctionFieldC k N) :=\n"
+    },
+    {
+      "line": 1442,
+      "before": "      refine Ideal.eq_bot_of_comap_eq_bot (R := A) ?_\n",
+      "after": "      refine Ideal.eq_bot_of_under_eq_bot (R := A) ?_\n"
+    },
+    {
+      "line": 3180,
+      "before": "    rw [dif_pos h]\n",
+      "after": "    rw [dite_eq_left h]\n"
+    },
+    {
+      "line": 3207,
+      "before": "    rw [dif_neg h]\n",
+      "after": "    rw [dite_eq_right h]\n"
+    }
+  ],
+  "original_statements_all_hypotheses_and_full_proof_preserved": true,
+  "active_import_closure_excludes_target": true,
+  "new_compilers_spawned": 0,
+  "actual_source_card_make_kernel_validation_pending": true
+}
