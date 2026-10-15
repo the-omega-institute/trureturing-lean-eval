@@ -1,0 +1,39 @@
+{
+  "at": "2026-10-15T09:24:57.649843+00:00",
+  "checks": {
+    "source": {
+      "module": "Submission.Supplier.P2M.Sol.S_ModularCurve_periodMap_traceLin",
+      "make_exit": 0,
+      "kernel_exit": 0,
+      "kernel_seconds": 86.73954412500001,
+      "warnings": 0,
+      "recursive_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "current_dependency_receipts_match": true
+    },
+    "card": {
+      "module": "Submission.Supplier.Theorems.Thm_ModularCurve_periodMap_traceLin",
+      "make_exit": 0,
+      "kernel_exit": 0,
+      "kernel_seconds": 47.923786791000005,
+      "warnings": 0,
+      "recursive_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "current_dependency_receipts_match": true
+    }
+  },
+  "full_original_statement_and_all_hypotheses_preserved": true,
+  "full_coset_bijection_trace_derivative_transfer_and_periodMap_proof_preserved": true,
+  "repair": "Normalize the ZMod inverse product and apply typed additive cancellation and replace a failed conversion with an explicit integer polynomial identity; fix three actual local binding warnings while preserving the full coset trace and periodMap construction.",
+  "no_linter_suppression_added": true,
+  "max_active_flt_jobs": 1,
+  "lean_threads": 1,
+  "full_original_complete": false,
+  "official_new_solve_credit": 0
+}

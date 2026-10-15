@@ -1,0 +1,80 @@
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_ModularCurve_periodMap_traceLin.lean:229:2: warning: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_ModularCurve_periodMap_traceLin.lean:280:10: error: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  -?a * ?b
+in the target expression
+  ↑A + -↑A * (↑C)⁻¹ * ↑C = 0
+
+M q : ℕ
+W : ModularForm.AtkinLehnerDatum M q
+hq : Nat.Prime q
+this : Fact (Nat.Prime q)
+hqR : ¬↑q ∣ ↑W.R
+hM : ↑M = ↑q * ↑W.R
+g : ↥(Gamma0 W.R)
+A : ℤ := ↑↑g 0 0
+hA : A = ↑↑g 0 0
+C : ℤ := ↑↑g 1 0
+hC : C = ↑↑g 1 0
+hRC : ↑W.R ∣ C
+hcop : IsCoprime ↑q ↑W.R
+crit : ∀ (i : Option (Fin q)), ↑M ∣ ↑(rep W i * ↑g) 1 0 → cosetOf W i = ↑g
+entry : ∀ (i : Option (Fin q)), ↑(rep W i * ↑g) 1 0 = ↑(rep W i) 1 0 * A + ↑(rep W i) 1 1 * C
+hqC : ¬↑q ∣ C
+hC0 : ↑C ≠ 0
+jz : ZMod q := -↑A * (↑C)⁻¹
+j : Fin q := ⟨jz.val, ⋯⟩
+hj : ↑↑j = jz
+⊢ ↑A + -↑A * (↑C)⁻¹ * ↑C = 0
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_ModularCurve_periodMap_traceLin.lean:287:6: error: Tactic `rfl` failed: The left-hand side
+  ↑W.R * A + (↑W.R * ↑↑j + ↑q) * C
+is not definitionally equal to the right-hand side
+  ↑W.R * (A + ↑↑j * C) + ↑q * C
+
+case e'_4
+M q : ℕ
+W : ModularForm.AtkinLehnerDatum M q
+hq : Nat.Prime q
+this : Fact (Nat.Prime q)
+hqR : ¬↑q ∣ ↑W.R
+hM : ↑M = ↑q * ↑W.R
+g : ↥(Gamma0 W.R)
+A : ℤ := ↑↑g 0 0
+hA : A = ↑↑g 0 0
+C : ℤ := ↑↑g 1 0
+hC : C = ↑↑g 1 0
+hRC : ↑W.R ∣ C
+hcop : IsCoprime ↑q ↑W.R
+crit : ∀ (i : Option (Fin q)), ↑M ∣ ↑(rep W i * ↑g) 1 0 → cosetOf W i = ↑g
+entry : ∀ (i : Option (Fin q)), ↑(rep W i * ↑g) 1 0 = ↑(rep W i) 1 0 * A + ↑(rep W i) 1 1 * C
+hqC : ¬↑q ∣ C
+hC0 : ↑C ≠ 0
+jz : ZMod q := -↑A * (↑C)⁻¹
+j : Fin q := ⟨jz.val, ⋯⟩
+hqpart : ↑q ∣ A + ↑↑j * C
+h1 : ↑q * ↑W.R ∣ ↑W.R * (A + ↑↑j * C)
+h2 : ↑q * ↑W.R ∣ ↑q * C
+⊢ ↑W.R * A + (↑W.R * ↑↑j + ↑q) * C = ↑W.R * (A + ↑↑j * C) + ↑q * C
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_ModularCurve_periodMap_traceLin.lean:288:4: error: No goals to be solved
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_ModularCurve_periodMap_traceLin.lean:418:2: warning: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_ModularCurve_periodMap_traceLin.lean:419:2: warning: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`

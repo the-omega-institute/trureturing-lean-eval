@@ -1,0 +1,49 @@
+--- baseline
++++ candidate
+@@ -218,7 +218,7 @@
+     omega
+ 
+ theorem cosetOf_surjective : Function.Surjective (cosetOf (M := M) W) := by
+-  haveI : Fact q.Prime := ⟨hq⟩
++  have : Fact q.Prime := ⟨hq⟩
+   have hqR := not_q_dvd_R W hq
+   have hM : (M : ℤ) = q * W.R := by exact_mod_cast W.hM
+   intro x
+@@ -269,15 +269,16 @@
+         exact ZMod.natCast_zmod_val jz
+       rw [hj]
+       simp only [jz]
+-      rw [neg_mul, neg_mul, mul_assoc, inv_mul_cancel₀ hC0, mul_one, add_neg_cancel]
++      rw [mul_assoc, inv_mul_cancel₀ hC0, mul_one, add_neg_cancel]
+     have h1 : (q : ℤ) * W.R ∣ W.R * (A + ((j : ℕ) : ℤ) * C) := by
+       rw [mul_comm (q : ℤ)]
+       exact mul_dvd_mul_left _ hqpart
+     have h2 : (q : ℤ) * W.R ∣ (q : ℤ) * C := by
+       exact mul_dvd_mul_left _ hRC
+-    convert dvd_add h1 h2 using 1
+-    · rfl
+-    ring
++    have hsum : (W.R : ℤ) * A + (W.R * ((j : ℕ) : ℤ) + q) * C =
++        W.R * (A + ((j : ℕ) : ℤ) * C) + q * C := by ring
++    rw [hsum]
++    exact dvd_add h1 h2
+ 
+ theorem cosetOf_bijective [NeZero M] : Function.Bijective (cosetOf (M := M) W) :=
+   ⟨cosetOf_injective W hq, cosetOf_surjective W hq⟩
+@@ -407,8 +408,8 @@
+       HeckeEis.coresHom ((Gamma0 M).subgroupOf (Gamma0 W.R))
+         (HeckeEis.pullbackHom ((Gamma0 W.R).subtype.subgroupComap (Gamma0 M))
+           (ModularCurve.periodMap M f)) := by
+-  haveI : NeZero W.R := ⟨W.R_pos.ne'⟩
+-  letI : Fintype (↥(Gamma0 W.R) ⧸ (Gamma0 M).subgroupOf (Gamma0 W.R)) :=
++  have : NeZero W.R := ⟨W.R_pos.ne'⟩
++  let : Fintype (↥(Gamma0 W.R) ⧸ (Gamma0 M).subgroupOf (Gamma0 W.R)) :=
+     ((Gamma0 M).subgroupOf (Gamma0 W.R)).fintypeQuotientOfFiniteIndex
+   obtain ⟨F, hFd, -, hFeq, -⟩ := ModularCurve.Period.CuspForm.exists_equivariantPrimitive_gamma0 f
+   have hTd : ∀ τ : UpperHalfPlane, HasDerivAt (traceSum (Gamma0 W.R) (Gamma0 M) F ∘ UpperHalfPlane.ofComplex)
+@@ -425,3 +426,5 @@
+         (Additive.ofMul γ)
+   rw [ModularCurve.Period.traceSum_period_eq hFeq γ, HeckeEis.coresHom_apply]
+   exact Fintype.sum_bijective (fun x => γ⁻¹ • x) (MulAction.bijective γ⁻¹) _ _ fun x => rfl
++
++#print axioms P2MW.S_ModularCurve_periodMap_traceLin.solution

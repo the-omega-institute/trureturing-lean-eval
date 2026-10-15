@@ -1,0 +1,12 @@
+--- r1
++++ r2
+@@ -269,7 +269,8 @@
+         exact ZMod.natCast_zmod_val jz
+       rw [hj]
+       simp only [jz]
+-      rw [mul_assoc, inv_mul_cancel₀ hC0, mul_one, add_neg_cancel]
++      rw [mul_assoc, inv_mul_cancel₀ hC0, mul_one]
++      exact add_neg_cancel (A : ZMod q)
+     have h1 : (q : ℤ) * W.R ∣ W.R * (A + ((j : ℕ) : ℤ) * C) := by
+       rw [mul_comm (q : ℤ)]
+       exact mul_dvd_mul_left _ hqpart
