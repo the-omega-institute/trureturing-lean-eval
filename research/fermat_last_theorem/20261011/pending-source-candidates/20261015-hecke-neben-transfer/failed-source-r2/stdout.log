@@ -1,0 +1,150 @@
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_HeckeEis_exists_isEigensystemH1_one_of_isEigensystemH1_gamma0NebenRep.lean:328:15: warning: automatically included section variable(s) unused in theorem `P2MW.S_HeckeEis_exists_isEigensystemH1_one_of_isEigensystemH1_gamma0NebenRep.TwistMain.rhoW_apply`:
+  [CharP κ p]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [CharP κ p] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_HeckeEis_exists_isEigensystemH1_one_of_isEigensystemH1_gamma0NebenRep.lean:345:0: warning: automatically included section variable(s) unused in theorem `P2MW.S_HeckeEis_exists_isEigensystemH1_one_of_isEigensystemH1_gamma0NebenRep.TwistMain.isCompat_W`:
+  [CharP κ p]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [CharP κ p] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_HeckeEis_exists_isEigensystemH1_one_of_isEigensystemH1_gamma0NebenRep.lean:375:0: warning: automatically included section variable(s) unused in theorem `P2MW.S_HeckeEis_exists_isEigensystemH1_one_of_isEigensystemH1_gamma0NebenRep.TwistMain.ev0_rhoW`:
+  [CharP κ p]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [CharP κ p] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_HeckeEis_exists_isEigensystemH1_one_of_isEigensystemH1_gamma0NebenRep.lean:383:0: warning: automatically included section variable(s) unused in theorem `P2MW.S_HeckeEis_exists_isEigensystemH1_one_of_isEigensystemH1_gamma0NebenRep.TwistMain.cocycle_one`:
+  [CharP κ p]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [CharP κ p] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_HeckeEis_exists_isEigensystemH1_one_of_isEigensystemH1_gamma0NebenRep.lean:415:10: error: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  -(aP p M γ * bP p M γ) * dP p M γ
+in the target expression
+  bP p M γ + -(aP p M γ * bP p M γ) * dP p M γ = 0
+
+p : ℕ
+inst✝² : Fact (Nat.Prime p)
+M : ℕ
+hpM : p ∣ M
+κ : Type u_1
+inst✝¹ : CommRing κ
+inst✝ : CharP κ p
+z : ↥(Gamma0 M) → ZMod p → κ
+hz : z ∈ coeffCocycles (rhoW p M hpM κ)
+h0 : ∀ (h : ↥(Gamma0 M)), ↑p ∣ ↑↑h 0 1 → z h 0 = 0
+f : ZMod p → κ := fun u => z (Tg M ^ ↑u.val) u
+γ : ↥(Gamma0 M)
+n : ℤ := ↑(pt p M γ).val
+hn : n = ↑(pt p M γ).val
+hncast : ↑n = pt p M γ
+h : ↥(Gamma0 M) := (Tg M ^ n)⁻¹ * γ
+hh : h = (Tg M ^ n)⁻¹ * γ
+hγ : γ = Tg M ^ n * h
+hprod : aP p M γ * bP p M γ * dP p M γ = bP p M γ
+⊢ bP p M γ + -(aP p M γ * bP p M γ) * dP p M γ = 0
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_HeckeEis_exists_isEigensystemH1_one_of_isEigensystemH1_gamma0NebenRep.lean:427:4: error: ring failed, ring expressions not equal
+p : ℕ
+inst✝² : Fact (Nat.Prime p)
+M : ℕ
+hpM : p ∣ M
+κ : Type u_1
+inst✝¹ : CommRing κ
+inst✝ : CharP κ p
+z : ↥(Gamma0 M) → ZMod p → κ
+hz : z ∈ coeffCocycles (rhoW p M hpM κ)
+h0 : ∀ (h : ↥(Gamma0 M)), ↑p ∣ ↑↑h 0 1 → z h 0 = 0
+f : ZMod p → κ := ⋯
+hkey : ∀ (γ : ↥(Gamma0 M)), z γ (pt p M γ) = f (pt p M γ)
+γ δ : ↥(Gamma0 M)
+h1 : aP p M δ * dP p M δ = 1
+⊢ dP p M γ * aP p M δ * -bP p M γ * dP p M δ + dP p M γ * bP p M γ - aP p M δ * dP p M δ * -(dP p M γ * bP p M γ) +
+      -(dP p M γ * bP p M γ) =
+    0
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_HeckeEis_exists_isEigensystemH1_one_of_isEigensystemH1_gamma0NebenRep.lean:435:8: error: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  aP p M γ * (dP p M γ * (dP p M γ * u - bP p M γ)) - -bP p M γ
+in the target expression
+  aP p M γ * (aP p M γ * (dP p M γ * (dP p M γ * u - bP p M γ)) - -bP p M γ) = u
+
+p : ℕ
+inst✝² : Fact (Nat.Prime p)
+M : ℕ
+hpM : p ∣ M
+κ : Type u_1
+inst✝¹ : CommRing κ
+inst✝ : CharP κ p
+z : ↥(Gamma0 M) → ZMod p → κ
+hz : z ∈ coeffCocycles (rhoW p M hpM κ)
+h0 : ∀ (h : ↥(Gamma0 M)), ↑p ∣ ↑↑h 0 1 → z h 0 = 0
+f : ZMod p → κ := fun u => z (Tg M ^ ↑u.val) u
+hkey : ∀ (γ : ↥(Gamma0 M)), z γ (pt p M γ) = f (pt p M γ)
+hmove : ∀ (γ δ : ↥(Gamma0 M)), pt p M (γ⁻¹ * δ) = dP p M γ * (dP p M γ * pt p M δ - bP p M γ)
+γ : ↥(Gamma0 M)
+u : ZMod p
+h1 : aP p M γ * dP p M γ = 1
+hcancel : ∀ (v : ZMod p), aP p M γ * (dP p M γ * v) = v
+⊢ aP p M γ * (aP p M γ * (dP p M γ * (dP p M γ * u - bP p M γ)) - -bP p M γ) = u
+Try this:
+  [apply] ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_HeckeEis_exists_isEigensystemH1_one_of_isEigensystemH1_gamma0NebenRep.lean:582:105: error: unsolved goals
+case e_a
+p : ℕ
+inst✝² : Fact (Nat.Prime p)
+M : ℕ
+hpM : p ∣ M
+κ : Type u_1
+inst✝¹ : Field κ
+inst✝ : CharP κ p
+γ : ↥(Gamma0 M)
+n : ℕ
+u : ZMod p
+⊢ -((cst p κ) (dP p M γ) * (cst p κ) (bP p M γ)) + (cst p κ) (dP p M γ) ^ 2 * (cst p κ) u =
+    (cst p κ) (dP p M γ) ^ 2 * (cst p κ) u + (cst p κ) (-(dP p M γ * bP p M γ))
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_HeckeEis_exists_isEigensystemH1_one_of_isEigensystemH1_gamma0NebenRep.lean:586:33: warning: This simp argument is unused:
+  map_neg
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [map_mul, map_sub]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_HeckeEis_exists_isEigensystemH1_one_of_isEigensystemH1_gamma0NebenRep.lean:598:95: error: unsolved goals
+p : ℕ
+inst✝² : Fact (Nat.Prime p)
+M : ℕ
+hpM : p ∣ M
+κ : Type u_1
+inst✝¹ : Field κ
+inst✝ : CharP κ p
+n : ℕ
+u : ZMod p
+⊢ (u.cast - (-1).cast) ^ n = (u.cast + 1) ^ n
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_HeckeEis_exists_isEigensystemH1_one_of_isEigensystemH1_gamma0NebenRep.lean:848:15: warning: automatically included section variable(s) unused in theorem `P2MW.S_HeckeEis_exists_isEigensystemH1_one_of_isEigensystemH1_gamma0NebenRep.TwistMain.coe_rhoWk`:
+  [NeZero M]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [NeZero M] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_HeckeEis_exists_isEigensystemH1_one_of_isEigensystemH1_gamma0NebenRep.lean:863:0: warning: automatically included section variable(s) unused in theorem `P2MW.S_HeckeEis_exists_isEigensystemH1_one_of_isEigensystemH1_gamma0NebenRep.TwistMain.isCompat_Wk`:
+  [NeZero M]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [NeZero M] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_HeckeEis_exists_isEigensystemH1_one_of_isEigensystemH1_gamma0NebenRep.lean:965:0: warning: automatically included section variable(s) unused in theorem `P2MW.S_HeckeEis_exists_isEigensystemH1_one_of_isEigensystemH1_gamma0NebenRep.TwistMain.final`:
+  [NeZero M]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [NeZero M] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+'P2MW.S_HeckeEis_exists_isEigensystemH1_one_of_isEigensystemH1_gamma0NebenRep.solution' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]

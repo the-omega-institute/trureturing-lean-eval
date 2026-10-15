@@ -283,14 +283,13 @@ end Trivial
 
 section W
 
-variable (p : ℕ) [Fact p.Prime] (M : ℕ) (hpM : p ∣ M) (κ : Type*) [CommRing κ] [CharP κ p]
+variable (p : ℕ) [Fact p.Prime] (M : ℕ) (hpM : p ∣ M) (κ : Type*) [CommRing κ]
 
 def rhoFun (γ : Gamma0 M) : (ZMod p → κ) →ₗ[κ] (ZMod p → κ) where
   toFun f u := f (dP p M γ * (dP p M γ * u - bP p M γ))
   map_add' _ _ := rfl
   map_smul' _ _ := rfl
 
-omit [CharP κ p] in
 @[scoped simp] theorem rhoFun_apply (γ : Gamma0 M) (f : ZMod p → κ) (u : ZMod p) :
     rhoFun p M κ γ f u = f (dP p M γ * (dP p M γ * u - bP p M γ)) := rfl
 
@@ -326,10 +325,8 @@ def aW (ℓ : ℕ) : (ZMod p → κ) →ₗ[κ] (ZMod p → κ) where
   map_add' _ _ := rfl
   map_smul' _ _ := rfl
 
-omit [CharP κ p] in
 @[scoped simp] theorem aW_apply (ℓ : ℕ) (f : ZMod p → κ) (u : ZMod p) : aW p κ ℓ f u = f ((ℓ : ZMod p)⁻¹ * u) := rfl
 
-omit [CharP κ p] in
 theorem aW_comm (ℓ ℓ' : ℕ) : aW p κ ℓ ∘ₗ aW p κ ℓ' = aW p κ ℓ' ∘ₗ aW p κ ℓ := by
   refine LinearMap.ext fun f => funext fun u => ?_
   simp only [LinearMap.comp_apply, aW_apply]
@@ -357,10 +354,8 @@ def ev0 : (ZMod p → κ) →ₗ[κ] κ where
   map_add' _ _ := rfl
   map_smul' _ _ := rfl
 
-omit [CharP κ p] in
 @[scoped simp] theorem ev0_apply (f : ZMod p → κ) : ev0 p κ f = f 0 := rfl
 
-omit [CharP κ p] in
 theorem ev0_aW (ℓ : ℕ) : ev0 p κ ∘ₗ aW p κ ℓ = (1 : κ) • ev0 p κ := by
   refine LinearMap.ext fun f => ?_
   simp
@@ -405,7 +400,9 @@ theorem mem_coeffCoboundaries_of_forall_apply_zero {z : Gamma0 M → ZMod p → 
         calc
           _ = (aP p M γ * dP p M γ) * bP p M γ := by ac_rfl
           _ = _ := by rw [aP_mul_dP p M hpM γ, _root_.one_mul]
-      rw [_root_.neg_mul (aP p M γ * bP p M γ) (dP p M γ), hprod]
+      have hneg : -(aP p M γ * bP p M γ) * dP p M γ =
+          -((aP p M γ * bP p M γ) * dP p M γ) := _root_.neg_mul _ _
+      rw [hneg, hprod]
       exact _root_.add_neg_cancel _
     have hzh : z h 0 = 0 := h0 h ((ZMod.intCast_zmod_eq_zero_iff_dvd _ _).mp hbh)
     have h1 : z γ = z (Tg M ^ n) + rhoW p M hpM κ (Tg M ^ n) (z h) := by
@@ -417,7 +414,22 @@ theorem mem_coeffCoboundaries_of_forall_apply_zero {z : Gamma0 M → ZMod p → 
     intro γ δ
     rw [pt, aP_mul p M hpM, bP_mul, aP_inv p M, bP_inv, pt]
     have h1 := aP_mul_dP p M hpM δ
-    linear_combination (-(dP p M γ * bP p M γ)) * h1
+    have hcross : (dP p M γ * aP p M δ) * ((-bP p M γ) * dP p M δ) =
+        -(dP p M γ * bP p M γ) := by
+      calc
+        _ = (aP p M δ * dP p M δ) * (dP p M γ * (-bP p M γ)) := by ac_rfl
+        _ = dP p M γ * (-bP p M γ) := by rw [h1, _root_.one_mul]
+        _ = _ := _root_.mul_neg _ _
+    have hlead : (dP p M γ * aP p M δ) * (dP p M γ * bP p M δ) =
+        dP p M γ * (dP p M γ * (aP p M δ * bP p M δ)) := by ac_rfl
+    have hdist : dP p M γ * (dP p M γ * (aP p M δ * bP p M δ) - bP p M γ) =
+        dP p M γ * (dP p M γ * (aP p M δ * bP p M δ)) - dP p M γ * bP p M γ :=
+      _root_.mul_sub _ _ _
+    have hsub :
+        dP p M γ * (dP p M γ * (aP p M δ * bP p M δ)) - dP p M γ * bP p M γ =
+          dP p M γ * (dP p M γ * (aP p M δ * bP p M δ)) + -(dP p M γ * bP p M γ) :=
+      _root_.sub_eq_add_neg _ _
+    rw [_root_.mul_add, hcross, hlead, hdist, hsub]
   have hback : ∀ (γ : Gamma0 M) (u : ZMod p),
       dP p M γ⁻¹ * (dP p M γ⁻¹ * (dP p M γ * (dP p M γ * u - bP p M γ)) - bP p M γ⁻¹) = u := by
     intro γ u
@@ -425,9 +437,9 @@ theorem mem_coeffCoboundaries_of_forall_apply_zero {z : Gamma0 M → ZMod p → 
     have h1 := aP_mul_dP p M hpM γ
     have hcancel (v : ZMod p) : aP p M γ * (dP p M γ * v) = v := by
       rw [← _root_.mul_assoc, h1, _root_.one_mul]
-    rw [_root_.sub_neg_eq_add
-      (aP p M γ * (dP p M γ * (dP p M γ * u - bP p M γ))) (bP p M γ)]
-    rw [hcancel, _root_.sub_add_cancel (dP p M γ * u) (bP p M γ), hcancel]
+    have hneg (x y : ZMod p) : x - -y = x + y := _root_.sub_neg_eq_add x y
+    have hsub (x y : ZMod p) : x - y + y = x := _root_.sub_add_cancel x y
+    rw [hneg, hcancel, hsub, hcancel]
   refine (mem_coeffCoboundaries_iff _ _).mpr ⟨-f, funext fun γ => funext fun u => ?_⟩
 
   set δ : Gamma0 M := Tg M ^ (u.val : ℤ) with hδ
@@ -576,7 +588,12 @@ theorem rhoW_mono (γ : Gamma0 M) (n : ℕ) :
     funext u
     rw [rhoW_apply, mono_apply]
     congr 1
-    simp only [map_mul, map_sub, map_neg]
+    have hneg : cst p κ (-(dP p M γ * bP p M γ)) =
+        -(cst p κ (dP p M γ) * cst p κ (bP p M γ)) :=
+      (_root_.map_neg (cst p κ) (dP p M γ * bP p M γ)).trans
+        (congrArg (fun t : κ => -t) (_root_.map_mul (cst p κ) (dP p M γ) (bP p M γ)))
+    rw [hneg]
+    simp only [map_mul, map_sub]
     ring
   rw [h, affine_pow_eq_sum]
   refine Finset.sum_congr rfl fun m _ => ?_
@@ -592,7 +609,14 @@ theorem rhoW_Tinv_mono (n : ℕ) :
     funext u
     rw [rhoW_apply, mono_apply, dP_inv p M, bP_inv, show Tg M = Tg M ^ (1 : ℤ) from (zpow_one _).symm,
       aP_Tg_zpow, bP_Tg_zpow]
-    simp
+    simp only [Int.cast_one, _root_.one_mul]
+    have hsub (x y : ZMod p) : cst p κ (x - y) = cst p κ x - cst p κ y :=
+      _root_.map_sub (cst p κ) x y
+    have hneg : cst p κ (-(1 : ZMod p)) = -(1 : κ) :=
+      (_root_.map_neg (cst p κ) (1 : ZMod p)).trans
+        (congrArg (fun t : κ => -t) (_root_.map_one (cst p κ)))
+    rw [hsub, hneg]
+    exact congrArg (fun t : κ => t ^ n) (_root_.sub_neg_eq_add _ _)
   rw [h, affine_pow_eq_sum]
   refine Finset.sum_congr rfl fun m _ => ?_
   simp
@@ -838,6 +862,7 @@ noncomputable def rhoWk {j : ℕ} (hj : j < p) : Representation κ (Gamma0 M) �
   map_one' := LinearMap.ext fun f => Subtype.ext (by simp)
   map_mul' γ γ' := LinearMap.ext fun f => Subtype.ext (by simp)
 
+omit [NeZero M] in
 @[scoped simp] theorem coe_rhoWk {j : ℕ} (hj : j < p) (γ : Gamma0 M) (f : ↥(Wk p κ j)) :
     ((rhoWk p M hpM κ hj γ f : ↥(Wk p κ j)) : ZMod p → κ) = rhoW p M hpM κ γ f := rfl
 
@@ -853,6 +878,7 @@ theorem natCast_zmod_ne_zero {ℓ : ℕ} (hℓ : ℓ.Prime) (hℓM : ¬ ℓ ∣ 
   intro h
   exact hℓM (((Nat.prime_dvd_prime_iff_eq Fact.out hℓ).mp h) ▸ hpM)
 
+omit [NeZero M] in
 theorem isCompat_Wk {j : ℕ} (hj : j < p) (ℓ : ℕ) [NeZero ℓ] (hℓ0 : (ℓ : ZMod p) ≠ 0) :
     IsCompat M ℓ (rhoWk p M hpM κ hj) (aWk p κ j ℓ) := by
   intro u
@@ -955,6 +981,7 @@ theorem layer (h6 : (6 : κ) ≠ 0) {j : ℕ} (hj : j < p) (τ : ℕ → κ)
     exact HeckeEis.isEigensystemH1_of_isEigensystemH1_of_surjective M h6 S₀ (rhoW p M hpM κ)
       (rhoWk p M hpM κ hj) (aW p κ) (aWk p κ j) haW hcommW π' hπ'ρ hπ'a e.symm.surjective τ hpull
 
+omit [NeZero M] [CharP κ p] in
 theorem final {τ mu : ℕ → κ} (hτ : IsEigensystemH1 M (rhoW p M hpM κ) (aW p κ) S₀ τ)
     (hmu : ∀ ℓ : ℕ, ℓ.Prime → ¬ ℓ ∣ M → ℓ ∉ S₀ → τ ℓ = mu ℓ) :
     IsEigensystemH1 (M * p) (1 : Representation κ (Gamma0 (M * p)) κ) (fun _ => LinearMap.id) (insert p S₀) mu := by

@@ -1,0 +1,14 @@
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_HeckeEis_exists_isEigensystemH1_one_of_isEigensystemH1_gamma0NebenRep.lean:619:4: error: 'change' tactic failed, pattern
+  (cst p κ) (u - -1) ^ n = (1 * (cst p κ) u + 1) ^ n
+is not definitionally equal to target
+  (cst p κ) (1 * (1 * u - -↑1)) ^ n = (1 * (cst p κ) u + 1) ^ n
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_HeckeEis_exists_isEigensystemH1_one_of_isEigensystemH1_gamma0NebenRep.lean:992:0: warning: automatically included section variable(s) unused in theorem `P2MW.S_HeckeEis_exists_isEigensystemH1_one_of_isEigensystemH1_gamma0NebenRep.TwistMain.final`:
+  [CharP κ p]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [CharP κ p] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+'P2MW.S_HeckeEis_exists_isEigensystemH1_one_of_isEigensystemH1_gamma0NebenRep.solution' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
