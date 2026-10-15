@@ -1,0 +1,58 @@
+{
+  "observed_at": "2026-10-15T06:52:49.772341+00:00",
+  "scope": "Read-only official tool prerequisite check; no compiler or controller launched",
+  "checks": [
+    {
+      "successful_build_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/seventh-carrier-official-exporter-build/result.json",
+      "receipt_sha256": "33c3819f8b8b4d6f4d69a1e43847c974ee66fcd9b8797d5cb13cf6cc463df6bd",
+      "historical_build_exit": 0,
+      "binary": "/Users/macstudio/omega/lean-eval-trusted-tools/flt-v435/lean4export/.lake/build/bin/lean4export",
+      "binary_exists_now": false,
+      "recorded_binary_sha256": "f53101d4659427b9479348b3a0ea8f0a0855abd5125505f41054b6e8dbc2dfa9",
+      "current_binary_sha256": null,
+      "current_matches_successful_build": false,
+      "source_revision_now": "076e8e57707e813375e8f9da8bf989799ace9680",
+      "source_tree_exists": true
+    },
+    {
+      "successful_build_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/seventh-carrier-official-nanoda-sdk-retry/result.json",
+      "receipt_sha256": "e046cff9632d042e5b31da73b43ca193ef47691e1e24885ccee6e602a581a1df",
+      "historical_build_exit": 0,
+      "binary": "/Users/macstudio/omega/lean-eval-trusted-tools/flt-v435/nanoda_lib/target/release/nanoda_bin",
+      "binary_exists_now": true,
+      "recorded_binary_sha256": "ce0d6519831f9406550a40ee477a78fc1037e250854c5ba0997e2b6886ecd824",
+      "current_binary_sha256": "ce0d6519831f9406550a40ee477a78fc1037e250854c5ba0997e2b6886ecd824",
+      "current_matches_successful_build": true,
+      "source_revision_now": "68d5ca9db226849b41a6fff59d796ff19d0a8840",
+      "source_tree_exists": true
+    }
+  ],
+  "exporter_build_cache_exists": false,
+  "exporter_removal_cause": "Not established by this observation",
+  "path_tools": {
+    "comparator": null,
+    "landrun": null,
+    "lean4export": null,
+    "nanoda_bin": null,
+    "docker": null,
+    "colima": null,
+    "podman": null
+  },
+  "next_tool_action": "Use the existing immutable retained binary through COMPARATOR_LEAN4EXPORT for later official checks; do not rebuild exporter. Comparator and landrun remain required.",
+  "flt_controller_reused": 88158,
+  "flt_graph": {
+    "compiled": 8783,
+    "ready": 4330,
+    "failed": 0,
+    "root_compiled": false
+  },
+  "official_acceptance": false,
+  "mathematical_route_unchanged": true,
+  "followup_at": "2026-10-15T06:58:27.107683+00:00",
+  "previous_observation": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/source-repairs/official-tool-preflight-20261015T065249Z.json",
+  "exporter_retained_binary": "/Users/macstudio/omega/lean-eval-trusted-tools/flt-v435/retained-bin/lean4export-f53101d4659427b9479348b3a0ea8f0a0855abd5125505f41054b6e8dbc2dfa9",
+  "exporter_retained_binary_sha256": "f53101d4659427b9479348b3a0ea8f0a0855abd5125505f41054b6e8dbc2dfa9",
+  "exporter_retained_matches_successful_build": true,
+  "exporter_rebuild_required": false,
+  "interpretation": "The old .lake build path is absent, but the exact successful binary is retained outside .lake. Earlier missing-path observation did not establish absence of every retained binary."
+}

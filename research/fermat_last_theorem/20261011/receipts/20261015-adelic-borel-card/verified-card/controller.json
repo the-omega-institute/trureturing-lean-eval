@@ -1,0 +1,62 @@
+{
+  "sha256": "7d2eec85dc6be4a3a525ab676a7d518952b439d38328b7d81ef9f6db6463cc1e",
+  "exit": 0,
+  "empty_output_retry_done": false,
+  "source_sha256_after": "7d2eec85dc6be4a3a525ab676a7d518952b439d38328b7d81ef9f6db6463cc1e",
+  "source_unchanged": true,
+  "olean_sha256": "4e1a7f57686ab335849184c2ff2b11189198661555ab6fe04bb07820d2c77346",
+  "seconds": 60.541921458001525,
+  "pid": 51194,
+  "command": [
+    "/Users/macstudio/.local/omega-shims/lean",
+    "-j1",
+    "--trust=0",
+    "-Ddebug.skipKernelTC=false",
+    "-R",
+    "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src",
+    "-o",
+    "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-build/lib/lean/Submission/Supplier/Theorems/Thm_AutomorphicForm_exists_mem_adelicBorel_mul_eq.olean",
+    "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/Theorems/Thm_AutomorphicForm_exists_mem_adelicBorel_mul_eq.lean"
+  ],
+  "make_wrapper_pid": 46768,
+  "make_exit": 0,
+  "make_entry_failed": false,
+  "cache_binding_valid": true,
+  "canonical_make_running_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/50bada2395472670144e92d0-1792047518251105000.make-running.json",
+  "canonical_make_terminal_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/50bada2395472670144e92d0-1792047518251105000.make-terminal.json",
+  "kernel_terminal_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/50bada2395472670144e92d0-1792047518251105000.kernel/result.json",
+  "direct_dependencies": [
+    {
+      "module": "Submission.Supplier.Definitions.Def_AutomorphicForm_BorelSubgroup",
+      "source_sha256": "60e0f0fd8caed43418907aa6f48360bfd46ba5f3debc82b0ee313b5617a310cd",
+      "object_sha256": null,
+      "receipt_reused": false
+    },
+    {
+      "module": "Submission.Supplier.Definitions.Def_NumberField_AdelicLevel",
+      "source_sha256": "b2abbefdbcc0befdce3eba26e743768681de7830f30af7a32bdd667e91f15731",
+      "object_sha256": "1981db2375bbafba16ced1c3ef8e299fa4b2f3b34cc21e7c486a23422e4d9dc5",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Definitions.Def_AutomorphicForm_RowIsometryInvariance",
+      "source_sha256": "541f683de66c95af2050e255d657beef6fa3cbd5b65f65d03197f9a74e7928f4",
+      "object_sha256": "acec774bd44616367f22dbfdb6c68ecc5a82b8ab99c7902adccbc7fafc8329d0",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.P2M.Util",
+      "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+      "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.P2M.Sol.S_AutomorphicForm_exists_mem_adelicBorel_mul_eq",
+      "source_sha256": "98688d1dd8f35df8703b0b6eb7add6000f1f5cb36a8f62f7a1ad10f96c210e76",
+      "object_sha256": "9cdb0ab6b8a24f72b3c7fc167d059d1bc281fd40ee35559b1cd384f9bc545270",
+      "receipt_reused": true
+    }
+  ],
+  "stdout": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/50bada2395472670144e92d0-1792047518251105000.kernel/stdout.log",
+  "stderr": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/50bada2395472670144e92d0-1792047518251105000.kernel/stderr.log"
+}

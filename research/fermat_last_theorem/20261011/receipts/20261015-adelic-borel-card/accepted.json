@@ -1,0 +1,83 @@
+{
+  "module": "Submission.Supplier.Theorems.Thm_AutomorphicForm_exists_mem_adelicBorel_mul_eq",
+  "source_sha256": "7d2eec85dc6be4a3a525ab676a7d518952b439d38328b7d81ef9f6db6463cc1e",
+  "object_sha256": "4e1a7f57686ab335849184c2ff2b11189198661555ab6fe04bb07820d2c77346",
+  "kernel_exit": 0,
+  "make_exit": 0,
+  "warnings": 0,
+  "recursive_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "axiom_output": "'AutomorphicForm.exists_mem_adelicBorel_mul_eq' depends on axioms: [propext, Classical.choice, Quot.sound]",
+  "canonical_kernel_result": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/50bada2395472670144e92d0-1792047518251105000.kernel/result.json",
+  "canonical_make_terminal": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/50bada2395472670144e92d0-1792047518251105000.make-terminal.json",
+  "canonical_configuration_sha256": "765f5eae62a606cf215ef50e94816d9b4cee8635baf0af3d26edcf12ca6d1104",
+  "direct_dependency_bindings_current": true,
+  "direct_dependency_checks": [
+    {
+      "module": "Submission.Supplier.Definitions.Def_AutomorphicForm_BorelSubgroup",
+      "source_sha256": "60e0f0fd8caed43418907aa6f48360bfd46ba5f3debc82b0ee313b5617a310cd",
+      "object_sha256": "18f0da9e9d5a791e66da91353ecc77e3b67c77c86c1088b2cb1a5dcdd7095631",
+      "recorded_object_hash_available": false,
+      "dependency_cache_origin": "Preexisting cache validated by controller import-closure source/object timestamps; no individual receipt in state"
+    },
+    {
+      "module": "Submission.Supplier.Definitions.Def_NumberField_AdelicLevel",
+      "source_sha256": "b2abbefdbcc0befdce3eba26e743768681de7830f30af7a32bdd667e91f15731",
+      "object_sha256": "1981db2375bbafba16ced1c3ef8e299fa4b2f3b34cc21e7c486a23422e4d9dc5",
+      "recorded_object_hash_available": true,
+      "dependency_exit0_receipt_current": true
+    },
+    {
+      "module": "Submission.Supplier.Definitions.Def_AutomorphicForm_RowIsometryInvariance",
+      "source_sha256": "541f683de66c95af2050e255d657beef6fa3cbd5b65f65d03197f9a74e7928f4",
+      "object_sha256": "acec774bd44616367f22dbfdb6c68ecc5a82b8ab99c7902adccbc7fafc8329d0",
+      "recorded_object_hash_available": true,
+      "dependency_exit0_receipt_current": true
+    },
+    {
+      "module": "Submission.Supplier.P2M.Util",
+      "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+      "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+      "recorded_object_hash_available": true,
+      "dependency_exit0_receipt_current": true
+    },
+    {
+      "module": "Submission.Supplier.P2M.Sol.S_AutomorphicForm_exists_mem_adelicBorel_mul_eq",
+      "source_sha256": "98688d1dd8f35df8703b0b6eb7add6000f1f5cb36a8f62f7a1ad10f96c210e76",
+      "object_sha256": "9cdb0ab6b8a24f72b3c7fc167d059d1bc281fd40ee35559b1cd384f9bc545270",
+      "recorded_object_hash_available": true,
+      "dependency_exit0_receipt_current": true
+    }
+  ],
+  "candidate_revision": "r1-accepted",
+  "accepted_at": "2026-10-15T07:00:40.428671+00:00",
+  "accepted_source_sha256": "7d2eec85dc6be4a3a525ab676a7d518952b439d38328b7d81ef9f6db6463cc1e",
+  "accepted_object_sha256": "4e1a7f57686ab335849184c2ff2b11189198661555ab6fe04bb07820d2c77346",
+  "public_statement_and_proof_body_preserved": true,
+  "proof_checks": {
+    "threads": 1,
+    "trust": 0,
+    "skipKernelTC": false
+  },
+  "repair_scope": "Three attribute target names changed from _definitions to imported _submission; added recursive axiom print.",
+  "implementation_validation": {
+    "module": "Submission.Supplier.P2M.Sol.S_AutomorphicForm_exists_mem_adelicBorel_mul_eq",
+    "source_sha256": "98688d1dd8f35df8703b0b6eb7add6000f1f5cb36a8f62f7a1ad10f96c210e76",
+    "object_sha256": "9cdb0ab6b8a24f72b3c7fc167d059d1bc281fd40ee35559b1cd384f9bc545270",
+    "source_edited": false,
+    "make_exit": 0,
+    "kernel_exit": 0,
+    "warnings": 0,
+    "canonical_configuration": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/3d57f41f1734b016bed601d2-1792047264408253000.configuration.json",
+    "canonical_configuration_sha256": "9c1cf31c0d8cf26e7befb2bca6f8e1d8d0a6e16501884e2f74e06eee81e7b3d3",
+    "canonical_make_terminal": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/3d57f41f1734b016bed601d2-1792047264408253000.make-terminal.json",
+    "canonical_kernel_result": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/3d57f41f1734b016bed601d2-1792047264408253000.kernel/result.json",
+    "recursive_axioms_evidence": "Covered by the accepted theorem card recursive axiom output, whose direct dependency is this exact implementation object."
+  },
+  "full_original_proof_verified": false,
+  "official_solve_credit": 0,
+  "source_owner_git_index_touched": false
+}
