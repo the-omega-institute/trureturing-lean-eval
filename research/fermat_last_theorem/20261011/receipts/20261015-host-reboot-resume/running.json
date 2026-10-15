@@ -1,0 +1,47 @@
+{
+  "started_at": "2026-10-15T04:12:26.571635+00:00",
+  "launcher_pid": 88154,
+  "command": [
+    "/Library/Developer/CommandLineTools/usr/bin/python3",
+    "-u",
+    "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/run_controller.py",
+    "--canonical-make-entry",
+    "--retry-empty-failures"
+  ],
+  "configuration": "/Users/macstudio/omega/research/lean-eval-01a124c1-52fb-7761-a67c-75fc0610196f/resume-single-flt-queued-20261015T041226Z/configuration.json",
+  "configuration_sha256": "e772dfdb576c6f9fab27cf39143e308c83bd550e99b5b1102d95250909997ba8",
+  "source_build_entry": "one source per existing worktree make lean",
+  "controller_sha256": "b96929e23b01c708dafb301ddfb04c7379face38a8bb5c7f9d4c5405f05acf7b",
+  "saved_graph_nodes": 60469,
+  "saved_records": 8569,
+  "limit": {
+    "legacy_carrier_compilers": 1,
+    "heavy_jobs": 1,
+    "threads": 1,
+    "memory_parallelism": {
+      "at": "2026-10-11T08:37:51.906222+00:00",
+      "authorization": "User latest: \u55ef \u4f60\u8fd9\u91cc\u9700\u8981\u786e\u4fdd\u5c31\u662f\u53ea\u5355\u4e2a\u4f5c\u4e1a\u53bb\u8fd0\u884c \u6211\u6ca1\u6709\u7ed9\u4f60\u4e0a\u5185\u5b58\u9501 \u4f60\u8dd1\u5c31\u884c \u53ea\u8981\u662f\u5355\u4e2a",
+      "scope": "this LeanEval campaign; current original remains FLT",
+      "system_threshold_bytes": 70000000000,
+      "system_threshold_unit": "decimal GB; conservative physical occupancy includes compressor and file cache",
+      "max_parallel_jobs": 1,
+      "max_lean_threads": 1,
+      "extra_job_reserve_bytes": 8000000000,
+      "parallel_footprint_budget_bytes": 24000000000,
+      "absolute_owned_footprint_ceiling_bytes": 40000000000,
+      "parallel_swap_ceiling_bytes": 4294967296,
+      "sample_seconds": 10,
+      "unknown_measurements": "serial; do not infer a low footprint from RSS",
+      "large_jobs": "single job; original whole-root and known 35GB kernels are exclusive",
+      "over_budget": "cancel exact excess compiler with saved source/command/native terminal; never SIGSTOP large heap, never kill another campaign",
+      "canonical_build_lock": "omega-gate now owns machine admission; this thread remains one job",
+      "legacy_numeric_1_1_1": "kept for admitted existing canonical carriers; not an instruction banning low-memory independent work",
+      "guard": "/Users/macstudio/omega/.lean-eval-recovery-20261007/adaptive-memory-guard.py",
+      "guard_sha256": "2d907f787dcbb0fd17139fb77eee1628e035fdbd86e52878190400b4de498535",
+      "mode": "single_job_no_memory_gate",
+      "memory_limit_enforced": false
+    }
+  },
+  "official_solve_credit": 0,
+  "wrapper_pid": 88157
+}
