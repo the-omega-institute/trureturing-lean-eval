@@ -1,0 +1,156 @@
+{
+  "module": "Submission.Supplier.P2M.Sol.S_ModularCurve_CharPModel_FibreModel_spPlace_surjective",
+  "source_sha256": "f309711cbc4853aaccbfc1a4fcd1ba4fdbe02ef5a0e92da452e40304f7e7d44b",
+  "object_sha256": "1f4efd3b5e78e488b58e60d54ceaba06b621a91d57ffa0ed59cb5ffac1c69498",
+  "kernel_exit": 0,
+  "make_exit": 0,
+  "warnings": 0,
+  "recursive_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "axiom_output": "'P2MW.S_ModularCurve_CharPModel_FibreModel_spPlace_surjective.solution' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]",
+  "canonical_kernel_result": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/96851b19d8da694992692aca-1792052154737745000.kernel/result.json",
+  "canonical_make_terminal": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/96851b19d8da694992692aca-1792052154737745000.make-terminal.json",
+  "canonical_configuration_sha256": "6103e710da857d85affc55eb767a1959fcc096774142cb3e93d9e73a5f5344e5",
+  "direct_dependency_bindings_current": true,
+  "direct_dependency_checks": [
+    {
+      "module": "Submission.Supplier.Definitions.Def_ModularCurve_JqCoeff",
+      "source_sha256": "7334dfa90713b4611aeefdd810ac66290653bc06ed0998f63792a8070ec06daf",
+      "object_sha256": "49efd5e907b46b445bebd74910bc77acc46bd8868d4b11f2810c9adf55f95005",
+      "recorded_object_hash_available": true,
+      "dependency_exit0_receipt_current": true
+    },
+    {
+      "module": "Submission.Supplier.Definitions.Def_ModularCurve_LaurentCoeff",
+      "source_sha256": "b669bf23529a8efa8e14cf704c3ef062c9dc7d12a964ea3ae43f6b9d5660fec0",
+      "object_sha256": "92decff74b33d21abf9b9d6512ceb1fa0d0af5f13d86e1b9bb7b4b3837e94e59",
+      "recorded_object_hash_available": true,
+      "dependency_exit0_receipt_current": true
+    },
+    {
+      "module": "Submission.Supplier.Definitions.Def_ModularCurve_PhiGen",
+      "source_sha256": "83d500ef00084ac6c6a4f75718d9e34a473ce477215d81d572fcae6cf718a347",
+      "object_sha256": "6a4dc9e0d4cc4ec2336f248b72e75d8038bcb861df1d99964a5c5ff98b940760",
+      "recorded_object_hash_available": true,
+      "dependency_exit0_receipt_current": true
+    },
+    {
+      "module": "Submission.Supplier.Definitions.Def_AlgebraicCurve_DivisorClassGroup",
+      "source_sha256": "8fc70ab3a82322ac3cb5fe26687036d7b9780a29474e6073cac2d6e349ec5024",
+      "object_sha256": "1c9faf1a7d5f522313fe11f4af5ba43d1cecaea92684949b3029e60ac2c8179d",
+      "recorded_object_hash_available": true,
+      "dependency_exit0_receipt_current": true
+    },
+    {
+      "module": "Submission.Supplier.Theorems.Thm_ModularCurve_transcendental_coeffEmb_jq",
+      "source_sha256": "2935177854b05bf34e09ad328218c42b1835f6824f23ddb54b683b48ac51e299",
+      "object_sha256": "8557f2787ecb6ca0c2458daff4a4d3134879a48ead72f24cd2cc921b6724291c",
+      "recorded_object_hash_available": true,
+      "dependency_exit0_receipt_current": true
+    },
+    {
+      "module": "Submission.Supplier.Theorems.Thm_ModularCurve_transcendental_jqModC",
+      "source_sha256": "63c40c117bdf0b7883cb875a3b9cc329918e8d1927ad3f03ba25e70fe78b4ba4",
+      "object_sha256": "660112617632b14327206f78b094a6bdb22f8afc87610647f58e109a5f50a4a0",
+      "recorded_object_hash_available": true,
+      "dependency_exit0_receipt_current": true
+    },
+    {
+      "module": "Submission.Supplier.Definitions.Def_AlgebraicCurve_PlacesOverDVR",
+      "source_sha256": "b4701d5cb63e6b2a0ac510222270539538ad65fc07696f1fad107918efc53e11",
+      "object_sha256": "40db65cd3839274cc0f40b6f8116892db97a9865a14bad49f536fe686e382c32",
+      "recorded_object_hash_available": true,
+      "dependency_exit0_receipt_current": true
+    },
+    {
+      "module": "Submission.Supplier.Theorems.Thm_AlgebraicCurve_Place_finite_residueField_of_finiteDimensional",
+      "source_sha256": "6f7cfab053a6db6620bee20cdf91d637bd26a1a6e342157dca4e6735e809d3a2",
+      "object_sha256": "795b67c11220b5227fbb38dec40e1aa19eed85bb981d63926c5d78db30b38945",
+      "recorded_object_hash_available": true,
+      "dependency_exit0_receipt_current": true
+    },
+    {
+      "module": "Submission.Supplier.Definitions.Def_ModularCurve_FibreModel",
+      "source_sha256": "6fc589648311659bd8e80bc62359bcb0182ea5505cae04395226ffa230226856",
+      "object_sha256": "81dc149bcdb26fa11f0d60b48aa399861b6628bb7ee6251440568059aba99181",
+      "recorded_object_hash_available": true,
+      "dependency_exit0_receipt_current": true
+    },
+    {
+      "module": "Submission.Supplier.Definitions.Def_ModularCurve_SpecializationMap",
+      "source_sha256": "6212bed09a4053d8b6a19790eb1de5fe339cd516fd7e2b1b0611862231048c3c",
+      "object_sha256": "ee3ac07a43ebc005e481774ee2c9f191ad35377b4b023d4fb9308d7c0ab2314b",
+      "recorded_object_hash_available": true,
+      "dependency_exit0_receipt_current": true
+    },
+    {
+      "module": "Submission.Supplier.P2M.Util",
+      "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+      "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+      "recorded_object_hash_available": true,
+      "dependency_exit0_receipt_current": true
+    }
+  ],
+  "accepted_at": "2026-10-15T08:22:38.861584+00:00",
+  "accepted_source_sha256": "f309711cbc4853aaccbfc1a4fcd1ba4fdbe02ef5a0e92da452e40304f7e7d44b",
+  "accepted_object_sha256": "1f4efd3b5e78e488b58e60d54ceaba06b621a91d57ffa0ed59cb5ffac1c69498",
+  "candidate_revision": "owner-r1-independently-accepted",
+  "card_validation": {
+    "module": "Submission.Supplier.Theorems.Thm_ModularCurve_CharPModel_FibreModel_spPlace_surjective",
+    "source_sha256": "ca7ddbb5d7b9796c482900ea264c9a6387070f45cf1457f942740c494bcce226",
+    "object_sha256": "8194c196b19ba7365fba0f5ea2dea4fe6d5f5168221ff0b4c6e54f758d28e4d1",
+    "kernel_exit": 0,
+    "make_exit": 0,
+    "warnings": 0,
+    "recursive_axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "axiom_output": "'ModularCurve.CharPModel.FibreModel.spPlace_surjective' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "canonical_kernel_result": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/2a8313cd4e306234e60222f9-1792052458850294000.kernel/result.json",
+    "canonical_make_terminal": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/2a8313cd4e306234e60222f9-1792052458850294000.make-terminal.json",
+    "canonical_configuration_sha256": "5f286c6907aa1d65eb55ce2b0d78444b05023a6ab2e24643fc60d1030a2550a5",
+    "direct_dependency_bindings_current": true,
+    "direct_dependency_checks": [
+      {
+        "module": "Submission.Supplier.Definitions.Def_ModularCurve_SpecializationMap",
+        "source_sha256": "6212bed09a4053d8b6a19790eb1de5fe339cd516fd7e2b1b0611862231048c3c",
+        "object_sha256": "ee3ac07a43ebc005e481774ee2c9f191ad35377b4b023d4fb9308d7c0ab2314b",
+        "recorded_object_hash_available": true,
+        "dependency_exit0_receipt_current": true
+      },
+      {
+        "module": "Submission.Supplier.P2M.Util",
+        "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+        "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+        "recorded_object_hash_available": true,
+        "dependency_exit0_receipt_current": true
+      },
+      {
+        "module": "Submission.Supplier.P2M.Sol.S_ModularCurve_CharPModel_FibreModel_spPlace_surjective",
+        "source_sha256": "f309711cbc4853aaccbfc1a4fcd1ba4fdbe02ef5a0e92da452e40304f7e7d44b",
+        "object_sha256": "1f4efd3b5e78e488b58e60d54ceaba06b621a91d57ffa0ed59cb5ffac1c69498",
+        "recorded_object_hash_available": true,
+        "dependency_exit0_receipt_current": true
+      }
+    ]
+  },
+  "source_validation_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/source-repairs/S_ModularCurve_CharPModel_FibreModel_spPlace_surjective-owner-r1-independent-source-validation.json",
+  "source_validation_sha256": "a98de23dd1bcca99f8b5ee2000a607c16db3249364b2e4ba52e41fc780eeac0a",
+  "proof_checks": {
+    "threads": 1,
+    "trust": 0,
+    "skipKernelTC": false
+  },
+  "all_statement_and_hypotheses_preserved": true,
+  "final_solution_statement_and_body_unchanged": true,
+  "helper_proof_bodies_changed_for_warning_cleanup": true,
+  "attribution": "All shared Lean edits performed by source-owner session; this session independently verified exact edits and both canonical results.",
+  "source_edits_by_this_session": 0,
+  "full_original_proof_verified": false,
+  "official_solve_credit": 0
+}

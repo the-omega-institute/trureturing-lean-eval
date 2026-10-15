@@ -1,0 +1,1053 @@
+{
+  "checkpoint_at": "2026-10-15T08:13:23.406808+00:00",
+  "controller_pid": 88158,
+  "target": "Submission.fermat_last_theorem : FermatLastTheorem",
+  "accepted_repairs": [
+    "cusp-adelic-lift-arithmetic-repair-r2-accepted.json",
+    "cuspidal-upper-triangular-decomposition-r1-accepted.json",
+    "S_CuspidalType_exists_conj_apply_one_zero_eq_zero_of_isRoot_charpoly-r3-accepted.json",
+    "S_CuspidalType_IsCuspidalOfType_exists_charpoly_eq_map_and_charpoly_ind_eq_X_sub_one_sq_mul_map-r3-accepted.json",
+    "S_Deformation_DieudonneModule_exists_hondaSystem_L_eq_fontaineHodge-r2-accepted.json",
+    "S_HaarQuotient_lintegral_eq_lintegral_lintegral_mul_out-r1-accepted.json",
+    "S_HopfAlgebra_signTwist_comul_mul_padicInt-r2-accepted.json",
+    "S_HopfAlgebra_signTwist_comul_coassoc_padicInt-r1-warning-cleanup-accepted.json",
+    "S_HopfAlgebra_exists_signTwist_linearEquiv_padicInt_of_odd-r1-warning-cleanup-accepted.json",
+    "S_HaarQuotient_lintegral_eq_lintegral_lintegral_mul_out-r2-warning-cleanup-accepted.json",
+    "S_HeckeEis_exists_map_mul_eq_add_add_upperRightMulLowerRight_mul_of_three_dvd-r2-accepted.json",
+    "S_HeckeEis_exists_isEigensystemH1_one_natCast_mul_of_isEigensystemH1_one_of_three_dvd-r2-accepted.json",
+    "S_HeckeEis_exists_isEigensystemH1_one_of_isEigensystemH1_gamma0NebenRep-r5-accepted.json",
+    "S_LanglandsTunnell_Converse_MellinUniqueness_eq_of_laplace_eq_of_boundedOnStrips-r2-accepted.json",
+    "Thm_LanglandsTunnell_fnTwist_gaussSumFn_level_invariant-r1-accepted.json",
+    "S_LanglandsTunnell_whittaker_ode_splitTorus_of_isArchSmoothAt_of_archCasimirAt_eq-r3-accepted.json",
+    "Thm_AutomorphicForm_exists_mem_adelicBorel_mul_eq-r1-accepted.json",
+    "S_AutomorphicForm_exists_mem_maximalCompactAt_apply_diagOne_mul_ne_zero_of_apply_ne_zero-r1-accepted.json",
+    "S_AutomorphicForm_continuousOn_of_isInducedSection_of_continuousOn_maximalCompact-r1-accepted.json",
+    "S_MeasureTheory_Measure_exists_eq_smul_map_smul_of_forall_map_smul_eq_of_isCompact_stabilizer-owner-r1-independently-accepted.json",
+    "S_ModularCurve_CharPModel_FibreModel_spPlace_d0_jN-owner-r1-independently-accepted-remote.json"
+  ],
+  "graph": {
+    "sources": 60469,
+    "compiled": 8837,
+    "ready": 4321,
+    "failed": 0,
+    "pending_sources": 0,
+    "root_compiled": false
+  },
+  "status_graph": {
+    "root": "Submission",
+    "official_mathlib": "5e0c4e5239cb0a2d86d68a884bf52cfd963fce22",
+    "sources": 60469,
+    "pending_sources": 0,
+    "compiled": 8837,
+    "ready": 4321,
+    "failed": 0,
+    "root_compiled": false,
+    "io_unavailable_nodes": 0,
+    "external_writers": {},
+    "make_entry_failed_nodes": 0,
+    "memory_admission": {
+      "workers": 1,
+      "reasons": [
+        "user requires one job; no memory gate"
+      ],
+      "sample": {},
+      "memory_limit_enforced": false
+    },
+    "workers": 1,
+    "canonical_build_batch_owned": false,
+    "canonical_build_queue_waiting": false
+  },
+  "root_source_sha256": "1c90d8a13faa543f63ea79b3eea15e95d33b723991b1efbd54846bff88f44b23",
+  "next_gap": "Continue same sole FLT controller and current spPlace_surjective implementation/card. Full exact root, recursive root axiom audit and official Linux comparator/Nanoda acceptance remain incomplete.",
+  "running_snapshot": {
+    "Submission.Supplier.P2M.Sol.S_ModularCurve_CharPModel_FibreModel_spPlace_surjective": {
+      "pid": 4788,
+      "make_wrapper_pid": 94466,
+      "phase": "kernel",
+      "sha256": "145ce1e19344cea2f91ae8bad3ff6a35977b240a1bb894d6903ec7b2bd6a5bed",
+      "configuration": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/96851b19d8da694992692aca-1792051710264322000.configuration.json"
+    }
+  },
+  "pending_repair": null,
+  "source_checkpoint_verified_remote": {
+    "repository": "the-omega-institute/trureturing-lean-eval",
+    "base_commit": "3a432726ade76d9e955e28ec679a4389cc6e5574",
+    "branch": "checkpoint/flt-hopf-warning-cleanup-01a124be-20261015",
+    "commit": "09813d5c332c5391b11b80f2f7dd937891525629",
+    "files": 31,
+    "snapshot": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/source-repairs/hopf-warning-cleanup-20261015",
+    "working_checkout_index_used": false,
+    "remote_verified": true,
+    "verified_at": "2026-10-15T04:56:04.564478+00:00",
+    "verification": "Authenticated gh api returned exact commit SHA, title, file count and matching remote branch ref.",
+    "url": "https://github.com/the-omega-institute/trureturing-lean-eval/commit/09813d5c332c5391b11b80f2f7dd937891525629",
+    "matching_sources_in_owner_checkpoint_commit": "3a432726ade76d9e955e28ec679a4389cc6e5574",
+    "owner_checkpoint_verification": "Local git blob SHA256 equals each accepted source hash; authenticated gh api verified the containing remote commit."
+  },
+  "warnings_still_pending": [],
+  "static_admission_scan": {
+    "pattern": "rg -w axiom|sorry|admit over Lean source files",
+    "matches": [
+      {
+        "path": "Challenge.lean",
+        "line": 8,
+        "token": "sorry"
+      }
+    ],
+    "challenge_template_imported_by_Submission": false,
+    "scope": "static text scan; exact-root recursive kernel axiom audit remains pending"
+  },
+  "warning_cleanup_scope": "The two edited Hopf modules only; this does not claim that every untouched supplier file is warning-free.",
+  "unmodified_supplier_warnings_observed": [
+    {
+      "module": "Submission.Supplier.P2M.Sol.S_HopfAlgebra_exists_signTwist_withConv_equiv_padicInt_of_odd_of_not_isSquare",
+      "warning_count": 6,
+      "scope": "Unmodified recovered supplier baseline; not one of the two edited modules."
+    },
+    {
+      "module": "Submission.Supplier.P2M.Sol.S_LanglandsTunnell_fnTwist_gaussSumFn_level_invariant",
+      "warning_count": 13,
+      "scope": "Unmodified implementation baseline; edited theorem card has zero warnings."
+    },
+    {
+      "module": "Submission.Supplier.P2M.Sol.S_WeierstrassCurve_forall_galoisRepAdic_residual_isAbsolutelyIrreducible_and_isOdd_of_modRepIsIrreducible_of_congruent",
+      "warning_count": 7,
+      "scope": "Unmodified supplier baseline; not one of the five edited files in this checkpoint."
+    },
+    {
+      "module": "Submission.Supplier.Theorems.Thm_WeierstrassCurve_forall_galoisRepAdic_residual_isAbsolutelyIrreducible_and_isOdd_of_modRepIsIrreducible_of_congruent",
+      "warning_count": 3,
+      "scope": "Unmodified supplier baseline; not one of the five edited files in this checkpoint."
+    },
+    {
+      "module": "Submission.Supplier.P2M.Sol.S_WeierstrassCurve_trace_frobenius_tateModule_eq_card_add_one_sub",
+      "warning_count": 3,
+      "scope": "Unmodified supplier baseline; not one of the five edited files in this checkpoint."
+    },
+    {
+      "module": "Submission.Supplier.P2M.Sol.S_LocalGL2_existsUnique_algHom_heckeIndicator_eq",
+      "warning_count": 7,
+      "scope": "Unmodified supplier baseline; not one of the five edited files in this checkpoint."
+    },
+    {
+      "module": "Submission.Supplier.P2M.Sol.S_LocalGL2_exists_basis_heckeIndicator_zpow",
+      "warning_count": 6,
+      "scope": "Unmodified supplier baseline; not one of the five edited files in this checkpoint."
+    },
+    {
+      "module": "Submission.Supplier.P2M.Sol.S_LocalGL2_iwasawa_decomposition",
+      "warning_count": 2,
+      "scope": "Unmodified supplier baseline; not one of the five edited files in this checkpoint."
+    },
+    {
+      "module": "Submission.Supplier.P2M.Sol.S_LocalNewvector_indicator_borelCell_mem_of_integralBorelInvariant_of_rightTranslate_stable",
+      "warning_count": 41,
+      "scope": "Unmodified supplier baseline during this checkpoint; invariant-measure repair source and card have zero warnings."
+    },
+    {
+      "module": "Submission.Supplier.P2M.Sol.S_LocalNewvector_mem_of_isLocallyConstant_of_borelInvariant_of_rightTranslate_stable",
+      "warning_count": 13,
+      "scope": "Unmodified supplier baseline during this checkpoint; invariant-measure repair source and card have zero warnings."
+    },
+    {
+      "module": "Submission.Supplier.P2M.Sol.S_Matrix_charpoly_of_uString",
+      "warning_count": 9,
+      "scope": "Unmodified supplier baseline during this checkpoint; invariant-measure repair source and card have zero warnings."
+    },
+    {
+      "module": "Submission.Supplier.P2M.Sol.S_Matrix_exists_transpose_mul_mul_eq_J",
+      "warning_count": 11,
+      "scope": "Unmodified supplier baseline during this checkpoint; invariant-measure repair source and card have zero warnings."
+    },
+    {
+      "module": "Submission.Supplier.P2M.Sol.S_MeasureTheory_exists_continuous_integral_subgroup_mul_eq_one",
+      "warning_count": 3,
+      "scope": "Unmodified supplier baseline during this checkpoint; invariant-measure repair source and card have zero warnings."
+    },
+    {
+      "module": "Submission.Supplier.P2M.Sol.S_AutomorphicForm_exists_isSectionFn_and_isLocallyConstant_of_isRegularSemisimple_of_isLocalTestFn",
+      "warning_count": 11,
+      "scope": "Unmodified supplier source; this session did not edit any Lean file."
+    },
+    {
+      "module": "Submission.Supplier.P2M.Sol.S_MeasureTheory_integral_mul_eq_integral_mul_of_integral_subgroup_translate_eq_one",
+      "warning_count": 4,
+      "scope": "Unmodified supplier source; this session did not edit any Lean file."
+    },
+    {
+      "module": "Submission.Supplier.P2M.Sol.S_MeasureTheory_lintegral_mul_comp_eq_tsum_zpow_mul_setLIntegral_of_measure_image_eq_mul",
+      "warning_count": 1,
+      "scope": "Unmodified supplier source; this session did not edit any Lean file."
+    },
+    {
+      "module": "Submission.Supplier.P2M.Sol.S_HaarQuotient_integrable_and_integral_mul_comp_out_eq_tsum_mul_setIntegral_of_mem_normalizer",
+      "warning_count": 2,
+      "scope": "Unmodified supplier source; this session did not edit any Lean file."
+    },
+    {
+      "module": "Submission.Supplier.P2M.Sol.S_ModPForms_modPCusp_eq_bot_of_neg",
+      "warning_count": 1,
+      "scope": "Unmodified supplier source; this session did not edit any Lean file."
+    },
+    {
+      "module": "Submission.Supplier.P2M.Sol.S_ModPForms_modPMod_eq_bot_of_neg",
+      "warning_count": 2,
+      "scope": "Unmodified supplier source; this session did not edit any Lean file."
+    },
+    {
+      "module": "Submission.Supplier.P2M.Sol.S_ModPForms_heckePS_mem_modPCusp",
+      "warning_count": 2,
+      "scope": "Unmodified supplier source; this session did not edit any Lean file."
+    },
+    {
+      "module": "Submission.Supplier.P2M.Sol.S_ModPForms_heckePS_mem_modPMod",
+      "warning_count": 2,
+      "scope": "Unmodified supplier source; this session did not edit any Lean file."
+    },
+    {
+      "module": "Submission.Supplier.P2M.Sol.S_ModularCurve_CharPModel_FibreModel_spPic0_compat",
+      "warning_count": 1,
+      "scope": "Unmodified supplier source. Independently accepted source-owner jN repair source/card have zero warnings."
+    }
+  ],
+  "haar_remote_source_checkpoint": {
+    "repository": "the-omega-institute/trureturing-lean-eval",
+    "commit": "d2454c1dac28ffe25fd71f3006f671bec8d121b8",
+    "verification": "Authenticated gh api returned full SHA and matching title after source-owner push.",
+    "url": "https://github.com/the-omega-institute/trureturing-lean-eval/commit/d2454c1dac28ffe25fd71f3006f671bec8d121b8"
+  },
+  "root_audit_watcher_observed": {
+    "pid": 19598,
+    "exact_script": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/watch_root.py",
+    "canonical_make_door_used_by_audit": true,
+    "root_audit_triggered": false
+  },
+  "cup_three_acceptance": {
+    "module": "Submission.Supplier.P2M.Sol.S_HeckeEis_exists_map_mul_eq_add_add_upperRightMulLowerRight_mul_of_three_dvd",
+    "candidate_revision": "r2-accepted",
+    "accepted_at": "2026-10-15T05:19:03.398472+00:00",
+    "accepted_source_sha256": "e306317a3e62a79937729c66c616e7d4515a0e0e36245396e7fb79d77daef018",
+    "accepted_object_sha256": "2adeb169b4beae8e2ca9920b19ba42ab726acc1f739233bd175606ffdbb99ac1",
+    "canonical_kernel_result": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/0b76d10f83a2cc26512285c4-1792041474791295000.kernel/result.json",
+    "canonical_make_terminal": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/0b76d10f83a2cc26512285c4-1792041474791295000.make-terminal.json",
+    "canonical_configuration_sha256": "79fd4ae3055c9cad31c55950dc6b6210bc853012e226de7be4b15d1f352ce79b",
+    "kernel_exit": 0,
+    "make_exit": 0,
+    "warnings": 0,
+    "axiom_output": "'P2MW.S_HeckeEis_exists_map_mul_eq_add_add_upperRightMulLowerRight_mul_of_three_dvd.solution' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]",
+    "recursive_axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "direct_dependency_receipts_current": true,
+    "proof_checks": {
+      "threads": 1,
+      "trust": 0,
+      "skipKernelTC": false
+    },
+    "solution_statement_and_body_preserved": true,
+    "full_original_proof_verified": false,
+    "official_solve_credit": 0,
+    "card_validation": {
+      "module": "Submission.Supplier.Theorems.Thm_HeckeEis_exists_map_mul_eq_add_add_upperRightMulLowerRight_mul_of_three_dvd",
+      "kernel_exit": 0,
+      "make_exit": 0,
+      "warnings": 0,
+      "source_sha256": "3df9609b73f47d0b1e1efcdd3c7ec6ed1629ad3f8447e13383366603daa4a2ba",
+      "object_sha256": "bf8040055e294954d8d19aa51346fb0788a0deaff882c3efcf8eefe8ec50dd9b",
+      "canonical_kernel_result": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/4b393494328ccbb67cf9cdec-1792041560315252000.kernel/result.json",
+      "canonical_make_terminal": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/4b393494328ccbb67cf9cdec-1792041560315252000.make-terminal.json",
+      "canonical_configuration_sha256": "13d625d246c779654f81c8d15826a07069adc64aa2262d4346cd0ba8af936ecf",
+      "recursive_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "direct_dependency_receipts_current": true
+    },
+    "remote_source_checkpoint": {
+      "repository": "the-omega-institute/trureturing-lean-eval",
+      "commit": "ceaf5c316b86753aa9855fa97a2eba5f84e18376",
+      "verification": "Remote gh api returned full SHA and matching title; local immutable git blob SHA256 matches accepted source.",
+      "source_and_prepared_candidate_preserved": true,
+      "acceptance_receipt_archival_in_this_commit": false,
+      "url": "https://github.com/the-omega-institute/trureturing-lean-eval/commit/ceaf5c316b86753aa9855fa97a2eba5f84e18376"
+    },
+    "remote_acceptance_checkpoint": {
+      "repository": "the-omega-institute/trureturing-lean-eval",
+      "commit": "eeb8e7f3f0a7440b1b9c416ec46e2ff02288545a",
+      "source_sha256_verified": true,
+      "verification": "Authenticated gh api returned full SHA/title; immutable git blob SHA256 equals accepted source. Source/card acceptance archive committed by source owner.",
+      "url": "https://github.com/the-omega-institute/trureturing-lean-eval/commit/eeb8e7f3f0a7440b1b9c416ec46e2ff02288545a"
+    }
+  },
+  "eigensystem_transfer_acceptance": {
+    "module": "Submission.Supplier.P2M.Sol.S_HeckeEis_exists_isEigensystemH1_one_natCast_mul_of_isEigensystemH1_one_of_three_dvd",
+    "candidate_revision": "r2-accepted",
+    "accepted_at": "2026-10-15T05:34:07.881736+00:00",
+    "verified_at": "2026-10-15T05:36:01.046598+00:00",
+    "accepted_source_sha256": "786ba74f45b0bdbe83d18f8057a996de72d769454dc92e6fa85cc4c82cc35f80",
+    "accepted_object_sha256": "bb7cd31b8cbda5ed7193adae69282deda2826cecd6af935aee18b782e34d391a",
+    "canonical_kernel_result": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/3891e90d5867040872f79bce-1792042381885351000.kernel/result.json",
+    "canonical_make_terminal": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/3891e90d5867040872f79bce-1792042381885351000.make-terminal.json",
+    "canonical_configuration_sha256": "79ab266156c0dc3c7d14a8f0a2a61fdf4f5182aff32760230b0f562c272d401a",
+    "kernel_exit": 0,
+    "make_exit": 0,
+    "warnings": 0,
+    "recursive_axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "axiom_output": "'P2MW.S_HeckeEis_exists_isEigensystemH1_one_natCast_mul_of_isEigensystemH1_one_of_three_dvd.solution' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]",
+    "direct_dependency_bindings_current": true,
+    "proof_checks": {
+      "threads": 1,
+      "trust": 0,
+      "skipKernelTC": false
+    },
+    "solution_statement_and_body_preserved": true,
+    "card_validation": {
+      "module": "Submission.Supplier.Theorems.Thm_HeckeEis_exists_isEigensystemH1_one_natCast_mul_of_isEigensystemH1_one_of_three_dvd",
+      "kernel_exit": 0,
+      "make_exit": 0,
+      "warnings": 0,
+      "source_sha256": "c63c61501cd3ae43160eaef2e324eb315b121b6c52fa5bb20ebdaeb5f993a480",
+      "object_sha256": "5c48b3d89d0ac7afed7a202eb96f2395a4bcd3f7ee1b019f9076badf6788b62c",
+      "canonical_kernel_result": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/ad9714e40ff670362000129c-1792042459260163000.kernel/result.json",
+      "canonical_make_terminal": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/ad9714e40ff670362000129c-1792042459260163000.make-terminal.json",
+      "canonical_configuration_sha256": "6f4a0c5546b47bed5df9affbdb739f6685314d83bc2e3c511e05cf32b50a3612",
+      "recursive_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "direct_dependency_bindings_current": true
+    },
+    "full_original_proof_verified": false,
+    "official_solve_credit": 0,
+    "remote_acceptance_checkpoint": {
+      "repository": "the-omega-institute/trureturing-lean-eval",
+      "commit": "b7d7e2de62d37226494034ab386331b614d962bb",
+      "url": "https://github.com/the-omega-institute/trureturing-lean-eval/commit/b7d7e2de62d37226494034ab386331b614d962bb",
+      "source_and_card_hashes_verified": true,
+      "verification": "Authenticated gh api returned exact commit and source/card evidence archive paths; immutable local git blobs match both accepted SHA256 values. Owner checkpoint index untouched.",
+      "verified_at": "2026-10-15T05:36:31.404144+00:00"
+    }
+  },
+  "neben_transfer_acceptance": {
+    "module": "Submission.Supplier.P2M.Sol.S_HeckeEis_exists_isEigensystemH1_one_of_isEigensystemH1_gamma0NebenRep",
+    "source_sha256": "3f6ef0ab199f2345143c19b0f2c493113fb5f9671a34bba1cf2b270f6a9ca049",
+    "object_sha256": "90e70116c5ded71e35aa3de380410df8eec9d84a9108618d4ef8997e3ae18d50",
+    "kernel_exit": 0,
+    "make_exit": 0,
+    "warnings": 0,
+    "recursive_axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "axiom_output": "'P2MW.S_HeckeEis_exists_isEigensystemH1_one_of_isEigensystemH1_gamma0NebenRep.solution' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]",
+    "canonical_kernel_result": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/6464bbfc0b0ee41885e3dd49-1792043426878966000.kernel/result.json",
+    "canonical_make_terminal": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/6464bbfc0b0ee41885e3dd49-1792043426878966000.make-terminal.json",
+    "canonical_configuration_sha256": "e399bddb00dd4bb16a14e607ee58aebcffd106eb2e89dcbca66e4e4aeba173dd",
+    "direct_dependency_bindings_current": true,
+    "direct_dependency_checks": [
+      {
+        "module": "Submission.Supplier.Definitions.Def_Gamma0HeckeOperatorHom",
+        "source_sha256": "a3dd5ba42426a016a1f7906ec17f8f63e109e5db4b07ef18160375bb9d3e499d",
+        "object_sha256": "fb7a089a396da30008911bf751aa544f3b351dd0a8129c83a6b97c134a2df47d",
+        "recorded_object_hash_available": true,
+        "dependency_exit0_receipt_current": true
+      },
+      {
+        "module": "Submission.Supplier.Definitions.Def_Gamma0CoeffCohomology",
+        "source_sha256": "e2e73dc31be6b4c85b0e0ada78717f4ba3e482be7019a447b3910134c9189d0a",
+        "object_sha256": "9be901d82151d2ac363f07b055e0e79c182bf3a1fd0e813808b3f34fdf42275e",
+        "recorded_object_hash_available": false,
+        "dependency_cache_origin": "Preexisting cache validated by controller import-closure source/object timestamps; no individual receipt in state"
+      },
+      {
+        "module": "Submission.Supplier.Definitions.Def_Gamma0CoeffCohomologyEigen",
+        "source_sha256": "0920b6e5efee806a47ee3d472c1554d9a09567f971d577a495c2e25c2aad515c",
+        "object_sha256": "f7b4d843b8662d8dbd8041d03eea24055428f9b70a7e06a3a0f406d392a899c9",
+        "recorded_object_hash_available": true,
+        "dependency_exit0_receipt_current": true
+      },
+      {
+        "module": "Submission.Supplier.Definitions.Def_HeckeEis_Gamma0NebenRep",
+        "source_sha256": "df99a8dc87ab24a48caf1094040ca530ab5265ff676d9ea1131768a1f0275124",
+        "object_sha256": "e0667d560e6aa09db419c1afb4059233156ec8444e32396c7d67fc60698a5d1d",
+        "recorded_object_hash_available": true,
+        "dependency_exit0_receipt_current": true
+      },
+      {
+        "module": "Submission.Supplier.Theorems.Thm_HeckeEis_coeffHeckeFun_mem_coeffCocycles",
+        "source_sha256": "186c10220fdaf550592f4c96259407b7fb4b97a5039389ec151b2d4b4f72c7a6",
+        "object_sha256": "983dba96ec67b9014205bea7c2612038d85e6b7a556f8cbcff5d000c7403d9a5",
+        "recorded_object_hash_available": true,
+        "dependency_exit0_receipt_current": true
+      },
+      {
+        "module": "Submission.Supplier.Theorems.Thm_HeckeEis_coeffHeckeFun_mem_coeffCoboundaries",
+        "source_sha256": "c6e29341ed056aefbadba6060a9771c21c5925bd8903b9b841492704c30715c4",
+        "object_sha256": "72d3713090d77d582c97771683452397628f48a878ef64baa31158ee339de3ef",
+        "recorded_object_hash_available": true,
+        "dependency_exit0_receipt_current": true
+      },
+      {
+        "module": "Submission.Supplier.Theorems.Thm_HeckeEis_exists_addMonoidHom_functional_cocycle_smul_heckeOperatorHom_mul_eq",
+        "source_sha256": "a56900f6cbb2cac812f98e0a28d6bae23e53dee936aaecd82a1710f51f70ec6b",
+        "object_sha256": "9b1adb31cfde6f714b4ed39380908c666fe3e3996d14ae1663d31731d56b061c",
+        "recorded_object_hash_available": true,
+        "dependency_exit0_receipt_current": true
+      },
+      {
+        "module": "Submission.Supplier.Theorems.Thm_HeckeEis_isEigensystemH1_of_isEigensystemH1_of_surjective",
+        "source_sha256": "a32d0bd21d6a787dab3ae11bdce8b023db73efbfa49c707a07fc8548fcb634c5",
+        "object_sha256": "09931b8aea02248865e922a4120d818164389000f2b4796c24a63bd3304f852a",
+        "recorded_object_hash_available": true,
+        "dependency_exit0_receipt_current": true
+      },
+      {
+        "module": "Submission.Supplier.Theorems.Thm_HeckeEis_isEigensystemH1_or_of_isEigensystemH1_of_injective",
+        "source_sha256": "c84df907405298ca57b02c32bcd03ba0a53417e74cf886c1a94d41348209c3e4",
+        "object_sha256": "cfc458401f2baab7d7247317a40da53bf67424295836cea0ebf3bf09a9a5bb10",
+        "recorded_object_hash_available": true,
+        "dependency_exit0_receipt_current": true
+      },
+      {
+        "module": "Submission.Supplier.Theorems.Thm_HeckeEis_isEigensystemH1_one_natCast_add_one",
+        "source_sha256": "713e1f488c9be8ee18a1bae163113edeaed1546c2fcc4cd13ef8fc62cabda7f6",
+        "object_sha256": "7dd02d715fe907409e38107f80c2206368cf0856f25b9411ce3384554b35444a",
+        "recorded_object_hash_available": true,
+        "dependency_exit0_receipt_current": true
+      },
+      {
+        "module": "Submission.Supplier.Theorems.Thm_HeckeEis_exists_isEigensystemH1_one_natCast_mul_of_isEigensystemH1_one_of_three_dvd",
+        "source_sha256": "c63c61501cd3ae43160eaef2e324eb315b121b6c52fa5bb20ebdaeb5f993a480",
+        "object_sha256": "5c48b3d89d0ac7afed7a202eb96f2395a4bcd3f7ee1b019f9076badf6788b62c",
+        "recorded_object_hash_available": true,
+        "dependency_exit0_receipt_current": true
+      },
+      {
+        "module": "Submission.Supplier.P2M.Util",
+        "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+        "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+        "recorded_object_hash_available": true,
+        "dependency_exit0_receipt_current": true
+      }
+    ],
+    "candidate_revision": "r5-accepted",
+    "accepted_at": "2026-10-15T05:54:38.004880+00:00",
+    "accepted_source_sha256": "3f6ef0ab199f2345143c19b0f2c493113fb5f9671a34bba1cf2b270f6a9ca049",
+    "accepted_object_sha256": "90e70116c5ded71e35aa3de380410df8eec9d84a9108618d4ef8997e3ae18d50",
+    "proof_checks": {
+      "threads": 1,
+      "trust": 0,
+      "skipKernelTC": false
+    },
+    "solution_statement_and_body_preserved": true,
+    "card_validation": {
+      "module": "Submission.Supplier.Theorems.Thm_HeckeEis_exists_isEigensystemH1_one_of_isEigensystemH1_gamma0NebenRep",
+      "source_sha256": "080b39e7e5a9eade76c618f5892ee6a275dc7d81bd79842f7306151a880760ce",
+      "object_sha256": "2edd48c74b3df20a3a2a42f652a086b029e299fc90270fab3c48a0fefbc21da1",
+      "kernel_exit": 0,
+      "make_exit": 0,
+      "warnings": 0,
+      "recursive_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "axiom_output": "'HeckeEis.exists_isEigensystemH1_one_of_isEigensystemH1_gamma0NebenRep' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]",
+      "canonical_kernel_result": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/ff1e922b86497a12dc1ca8c6-1792043559354162000.kernel/result.json",
+      "canonical_make_terminal": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/ff1e922b86497a12dc1ca8c6-1792043559354162000.make-terminal.json",
+      "canonical_configuration_sha256": "fb5505ee11f363fe602741a8528353a86f70045df89e991d6ddb5adcc8590a2f",
+      "direct_dependency_bindings_current": true,
+      "direct_dependency_checks": [
+        {
+          "module": "Submission.Supplier.Definitions.Def_Gamma0CoeffCohomology",
+          "source_sha256": "e2e73dc31be6b4c85b0e0ada78717f4ba3e482be7019a447b3910134c9189d0a",
+          "object_sha256": "9be901d82151d2ac363f07b055e0e79c182bf3a1fd0e813808b3f34fdf42275e",
+          "recorded_object_hash_available": false,
+          "dependency_cache_origin": "Preexisting cache validated by controller import-closure source/object timestamps; no individual receipt in state"
+        },
+        {
+          "module": "Submission.Supplier.Definitions.Def_Gamma0CoeffCohomologyEigen",
+          "source_sha256": "0920b6e5efee806a47ee3d472c1554d9a09567f971d577a495c2e25c2aad515c",
+          "object_sha256": "f7b4d843b8662d8dbd8041d03eea24055428f9b70a7e06a3a0f406d392a899c9",
+          "recorded_object_hash_available": true,
+          "dependency_exit0_receipt_current": true
+        },
+        {
+          "module": "Submission.Supplier.Definitions.Def_HeckeEis_Gamma0NebenRep",
+          "source_sha256": "df99a8dc87ab24a48caf1094040ca530ab5265ff676d9ea1131768a1f0275124",
+          "object_sha256": "e0667d560e6aa09db419c1afb4059233156ec8444e32396c7d67fc60698a5d1d",
+          "recorded_object_hash_available": true,
+          "dependency_exit0_receipt_current": true
+        },
+        {
+          "module": "Submission.Supplier.P2M.Util",
+          "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+          "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+          "recorded_object_hash_available": true,
+          "dependency_exit0_receipt_current": true
+        },
+        {
+          "module": "Submission.Supplier.P2M.Sol.S_HeckeEis_exists_isEigensystemH1_one_of_isEigensystemH1_gamma0NebenRep",
+          "source_sha256": "3f6ef0ab199f2345143c19b0f2c493113fb5f9671a34bba1cf2b270f6a9ca049",
+          "object_sha256": "90e70116c5ded71e35aa3de380410df8eec9d84a9108618d4ef8997e3ae18d50",
+          "recorded_object_hash_available": true,
+          "dependency_exit0_receipt_current": true
+        }
+      ]
+    },
+    "full_original_proof_verified": false,
+    "official_solve_credit": 0,
+    "remote_source_checkpoint": {
+      "repository": "the-omega-institute/trureturing-lean-eval",
+      "commit": "eb66bb3c369f81fba196c7e83c9be245ade24ef9",
+      "source_sha256_verified": true,
+      "verification": "Authenticated gh api returned exact commit; immutable local git source blob SHA256 equals accepted source.",
+      "acceptance_receipt_archival_in_this_commit": false,
+      "url": "https://github.com/the-omega-institute/trureturing-lean-eval/commit/eb66bb3c369f81fba196c7e83c9be245ade24ef9"
+    },
+    "remote_acceptance_checkpoint": {
+      "repository": "the-omega-institute/trureturing-lean-eval",
+      "commit": "f5e308ed2a9cab909ae2e36d9603816b49c4b0c3",
+      "url": "https://github.com/the-omega-institute/trureturing-lean-eval/commit/f5e308ed2a9cab909ae2e36d9603816b49c4b0c3",
+      "verified_at": "2026-10-15T05:55:04.173691+00:00",
+      "source_and_card_hashes_verified": true,
+      "immutable_blob_sha256": {
+        "candidate-adapted-source-r5.lean": "3f6ef0ab199f2345143c19b0f2c493113fb5f9671a34bba1cf2b270f6a9ca049",
+        "candidate-adapted-card-r1.lean": "080b39e7e5a9eade76c618f5892ee6a275dc7d81bd79842f7306151a880760ce",
+        "verified-source/result.json": "276156e607af3d2c8ad921b85ee840b21b88e04fcef97c8999b6c3571d20a161",
+        "verified-card/result.json": "00e83689d2fdef5eb4d1220a598eec7278af8d6eb41f97c7f8058cd725811b67"
+      },
+      "verification": "Authenticated gh api returned exact commit and source/card evidence archive paths; immutable Git blob hashes equal accepted source/card source and current canonical result receipts. Source-owner index untouched."
+    }
+  },
+  "mellin_uniqueness_acceptance": {
+    "module": "Submission.Supplier.P2M.Sol.S_LanglandsTunnell_Converse_MellinUniqueness_eq_of_laplace_eq_of_boundedOnStrips",
+    "source_sha256": "2f7cfe38dc869d7051caa1e4e2f492a398916d7bc3acac40e1318b491e3c473f",
+    "object_sha256": "63ab7990fa8ee73b0d9bc6cff09ae760699bcb9075b8db4a44fb534f6f6863da",
+    "kernel_exit": 0,
+    "make_exit": 0,
+    "warnings": 0,
+    "recursive_axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "axiom_output": "'P2MW.S_LanglandsTunnell_Converse_MellinUniqueness_eq_of_laplace_eq_of_boundedOnStrips.solution' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]",
+    "canonical_kernel_result": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/e8e62a1ca71de25f13c8f623-1792044969034874000.kernel/result.json",
+    "canonical_make_terminal": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/e8e62a1ca71de25f13c8f623-1792044969034874000.make-terminal.json",
+    "canonical_configuration_sha256": "cfc4a7e2d87d097a4005443c0d37954a7813999d3656353be41576b4c837dcc2",
+    "direct_dependency_bindings_current": true,
+    "direct_dependency_checks": [
+      {
+        "module": "Submission.Supplier.Definitions.Def_LanglandsTunnell_HonestLDatum",
+        "source_sha256": "8277328f72e0aa7af389b73b9c68d9c09c65efeda5acec49ffb766743c2eca90",
+        "object_sha256": "2b04c826ab938aa026075ad8126322618875db2ec92f9e8e067f1c11e8fab5f6",
+        "recorded_object_hash_available": false,
+        "dependency_cache_origin": "Preexisting cache validated by controller import-closure source/object timestamps; no individual receipt in state"
+      },
+      {
+        "module": "Submission.Supplier.P2M.Util",
+        "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+        "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+        "recorded_object_hash_available": true,
+        "dependency_exit0_receipt_current": true
+      }
+    ],
+    "candidate_revision": "r2-accepted",
+    "accepted_at": "2026-10-15T06:19:51.731937+00:00",
+    "accepted_source_sha256": "2f7cfe38dc869d7051caa1e4e2f492a398916d7bc3acac40e1318b491e3c473f",
+    "accepted_object_sha256": "63ab7990fa8ee73b0d9bc6cff09ae760699bcb9075b8db4a44fb534f6f6863da",
+    "card_validation": {
+      "module": "Submission.Supplier.Theorems.Thm_LanglandsTunnell_Converse_MellinUniqueness_eq_of_laplace_eq_of_boundedOnStrips",
+      "source_sha256": "3d54734fbfb3b8f013bff4cd8b31d20f962d33bb328ab73b4531b73c8f9baf3d",
+      "object_sha256": "2a6768e4eeaf713cf13fca37ebb02ece1635a8f74f222567b0b09365da46ee93",
+      "kernel_exit": 0,
+      "make_exit": 0,
+      "warnings": 0,
+      "recursive_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "axiom_output": "'LanglandsTunnell.Converse.MellinUniqueness.eq_of_laplace_eq_of_boundedOnStrips' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]",
+      "canonical_kernel_result": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/8d0e58a33b8a9c93919b2295-1792045008222746000.kernel/result.json",
+      "canonical_make_terminal": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/8d0e58a33b8a9c93919b2295-1792045008222746000.make-terminal.json",
+      "canonical_configuration_sha256": "b09a8696c502712fe79b5deb05fb4e2bd7f46995a0f504f67de6b943a09ee279",
+      "direct_dependency_bindings_current": true,
+      "direct_dependency_checks": [
+        {
+          "module": "Submission.Supplier.Definitions.Def_LanglandsTunnell_HonestLDatum",
+          "source_sha256": "8277328f72e0aa7af389b73b9c68d9c09c65efeda5acec49ffb766743c2eca90",
+          "object_sha256": "2b04c826ab938aa026075ad8126322618875db2ec92f9e8e067f1c11e8fab5f6",
+          "recorded_object_hash_available": false,
+          "dependency_cache_origin": "Preexisting cache validated by controller import-closure source/object timestamps; no individual receipt in state"
+        },
+        {
+          "module": "Submission.Supplier.P2M.Util",
+          "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+          "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+          "recorded_object_hash_available": true,
+          "dependency_exit0_receipt_current": true
+        },
+        {
+          "module": "Submission.Supplier.P2M.Sol.S_LanglandsTunnell_Converse_MellinUniqueness_eq_of_laplace_eq_of_boundedOnStrips",
+          "source_sha256": "2f7cfe38dc869d7051caa1e4e2f492a398916d7bc3acac40e1318b491e3c473f",
+          "object_sha256": "63ab7990fa8ee73b0d9bc6cff09ae760699bcb9075b8db4a44fb534f6f6863da",
+          "recorded_object_hash_available": true,
+          "dependency_exit0_receipt_current": true
+        }
+      ]
+    },
+    "proof_checks": {
+      "threads": 1,
+      "trust": 0,
+      "skipKernelTC": false
+    },
+    "solution_statement_and_body_preserved": true,
+    "repair_attribution": "Proof repair and axiom print additions made by source-owner session; this session independently diagnosed and verified the exact final repair and canonical receipts.",
+    "verification_code": {
+      "path": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/source-repairs/verify-neben-transfer-r5.py",
+      "sha256": "d78692ee77a934b26fa0f391a37f5df9f40a448df7f1247e0d3777ce0692c14e",
+      "scope": "Reuse only existing verification helpers; no compiler or file-emitting top-level verification code was executed."
+    },
+    "full_original_proof_verified": false,
+    "official_solve_credit": 0,
+    "remote_acceptance_checkpoint": {
+      "repository": "the-omega-institute/trureturing-lean-eval",
+      "commit": "ec2e2c9bd8ef9695eca138546d2ca0dadf937d9b",
+      "url": "https://github.com/the-omega-institute/trureturing-lean-eval/commit/ec2e2c9bd8ef9695eca138546d2ca0dadf937d9b",
+      "verified_at": "2026-10-15T06:20:42.344933+00:00",
+      "source_and_card_hashes_verified": true,
+      "immutable_blob_sha256": {
+        "research/fermat_last_theorem/20261011/source/Submission/Supplier/P2M/Sol/S_LanglandsTunnell_Converse_MellinUniqueness_eq_of_laplace_eq_of_boundedOnStrips.lean": "2f7cfe38dc869d7051caa1e4e2f492a398916d7bc3acac40e1318b491e3c473f",
+        "research/fermat_last_theorem/20261011/source/Submission/Supplier/Theorems/Thm_LanglandsTunnell_Converse_MellinUniqueness_eq_of_laplace_eq_of_boundedOnStrips.lean": "3d54734fbfb3b8f013bff4cd8b31d20f962d33bb328ab73b4531b73c8f9baf3d",
+        "research/fermat_last_theorem/20261011/receipts/20261015-mellin-uniqueness/verified-source/kernel.json": "990fb4868ba492483d1a59b4e4ff76dded14203cbc1d4dff7a650b77142029a3",
+        "research/fermat_last_theorem/20261011/receipts/20261015-mellin-uniqueness/verified-source/make.json": "1e100d5c38019e0d6f58fbe927dc4f7dbc9e584b9a0e3d4bd0d214240becb136",
+        "research/fermat_last_theorem/20261011/receipts/20261015-mellin-uniqueness/verified-card/kernel.json": "fee483c6e802c690170d455c18d5af4c4f0ac328ee8c8e8c59103bd7b7bc1877",
+        "research/fermat_last_theorem/20261011/receipts/20261015-mellin-uniqueness/verified-card/make.json": "e3e3bf1ab57c2d66aae3f355aa47a7e6e51e72ab7433abe049a5283469d9aa6f"
+      },
+      "verification": "Authenticated gh api returned exact remote commit and archive paths; immutable Git blob hashes match both accepted source files and source/card canonical kernel/make receipts. Source-owner index untouched."
+    }
+  },
+  "gauss_sum_card_acceptance": {
+    "module": "Submission.Supplier.Theorems.Thm_LanglandsTunnell_fnTwist_gaussSumFn_level_invariant",
+    "source_sha256": "cf23b1b2b10eb62d93a42f23f0a09c16df2ce5b33b015fdbe11cc37a92279cd2",
+    "object_sha256": "9bb30e414dea626d20bcae3668973d1dee793f2ec907c740cda6ba3b486d5853",
+    "kernel_exit": 0,
+    "make_exit": 0,
+    "warnings": 0,
+    "recursive_axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "axiom_output": "'LanglandsTunnell.fnTwist_gaussSumFn_level_invariant' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "canonical_kernel_result": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/c1976311afc4a397c03fbdd1-1792045199356613000.kernel/result.json",
+    "canonical_make_terminal": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/c1976311afc4a397c03fbdd1-1792045199356613000.make-terminal.json",
+    "canonical_configuration_sha256": "cb1cadc6a563bf48ea5cd2cff1ea113f4170149c648326504f81b5a19d06998d",
+    "direct_dependency_bindings_current": true,
+    "direct_dependency_checks": [
+      {
+        "module": "Submission.Supplier.Definitions.Def_AutomorphicForm_FnTwist",
+        "source_sha256": "3a8cd72b03187d930c5fd93be3777a343c141a7d217e1c07c68b9bde509034b0",
+        "object_sha256": "f0bde351f5c4451f22a3968d12852adb87b6c0ec61b7d0f045aa692a8b5be742",
+        "recorded_object_hash_available": true,
+        "dependency_exit0_receipt_current": true
+      },
+      {
+        "module": "Submission.Supplier.Definitions.Def_AutomorphicForm_GaussTwist",
+        "source_sha256": "5857eea7415a8ac56b45e656c1c56e978fb8bb4c4a98ccc6c05c08bca2afb685",
+        "object_sha256": "f9483e759c825ca43f97c42b17f9f9eb254da6b6559d81d3c7bd2783b6cd9b05",
+        "recorded_object_hash_available": true,
+        "dependency_exit0_receipt_current": true
+      },
+      {
+        "module": "Submission.Supplier.Definitions.Def_AutomorphicForm_ProductionPinsCompact",
+        "source_sha256": "bcdc630ede58740a62ace2e75b10afa439cb880285cdb66353f6ad5144dc50a0",
+        "object_sha256": "0c3bac3884304abf80ddef66877a5dbc9b051d7b631fbbeff0d55c5be61cd745",
+        "recorded_object_hash_available": true,
+        "dependency_exit0_receipt_current": true
+      },
+      {
+        "module": "Submission.Supplier.P2M.Util",
+        "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+        "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+        "recorded_object_hash_available": true,
+        "dependency_exit0_receipt_current": true
+      },
+      {
+        "module": "Submission.Supplier.P2M.Sol.S_LanglandsTunnell_fnTwist_gaussSumFn_level_invariant",
+        "source_sha256": "2dd246abb5ddae7bbc22c71884a7e9f3e2d0a3ca8122f2fbc4ae976389d4c3c0",
+        "object_sha256": "600666bdda0b28af089ab0a6c09d753b17d3d397512a30c327014282f7dd4c15",
+        "recorded_object_hash_available": true,
+        "dependency_exit0_receipt_current": true
+      }
+    ],
+    "candidate_revision": "r1-accepted",
+    "accepted_at": "2026-10-15T06:22:07.854256+00:00",
+    "accepted_source_sha256": "cf23b1b2b10eb62d93a42f23f0a09c16df2ce5b33b015fdbe11cc37a92279cd2",
+    "accepted_object_sha256": "9bb30e414dea626d20bcae3668973d1dee793f2ec907c740cda6ba3b486d5853",
+    "proof_checks": {
+      "threads": 1,
+      "trust": 0,
+      "skipKernelTC": false
+    },
+    "public_theorem_statement_and_body_preserved": true,
+    "implementation_source_validation": {
+      "module": "Submission.Supplier.P2M.Sol.S_LanglandsTunnell_fnTwist_gaussSumFn_level_invariant",
+      "source_sha256": "2dd246abb5ddae7bbc22c71884a7e9f3e2d0a3ca8122f2fbc4ae976389d4c3c0",
+      "object_sha256": "600666bdda0b28af089ab0a6c09d753b17d3d397512a30c327014282f7dd4c15",
+      "kernel_exit": 0,
+      "make_exit": 0,
+      "canonical_kernel_result": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/fbe7e5d841499e186121d073-1792044833219869000.kernel/result.json",
+      "canonical_make_terminal": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/fbe7e5d841499e186121d073-1792044833219869000.make-terminal.json",
+      "canonical_configuration_sha256": "abed9c245a78b5159063fa86e027f3ac8fb2fe825db737ab974e32db27090819",
+      "warnings": 13,
+      "recursive_axioms_verified_through_card": true,
+      "source_axiom_print_present": false
+    },
+    "actual_instance_name_evidence": {
+      "object": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-build/lib/lean/Submission/Supplier/Definitions/Def_AbstractHeckeOperator.olean",
+      "object_sha256": "0da10b20ed76b9f6a6ea2d44addb3d734208a4d151024cac04401e62c4e68d26",
+      "names": [
+        "FixedPoints.instMulActionElemFixedPointsOfSMulCommClass_submission",
+        "FixedPoints.instSMulElemFixedPointsOfSMulCommClass_submission",
+        "FixedPoints.instAddCommMonoidElemFixedPoints_submission"
+      ]
+    },
+    "full_original_proof_verified": false,
+    "official_solve_credit": 0,
+    "remote_acceptance_checkpoint": {
+      "repository": "the-omega-institute/trureturing-lean-eval",
+      "branch": "checkpoint/flt-gauss-sum-card-01a124be-20261015",
+      "commit": "3fcdf0c80f3524c14a1dc3c47cd4196108ca848e",
+      "url": "https://github.com/the-omega-institute/trureturing-lean-eval/commit/3fcdf0c80f3524c14a1dc3c47cd4196108ca848e",
+      "verified_at": "2026-10-15T06:25:37.998896+00:00",
+      "source_and_card_hashes_verified": true,
+      "files_verified": 19,
+      "manifest": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/source-repairs/gauss-sum-level-card-20261015-archive/manifest.json",
+      "working_checkout_index_used": false,
+      "verification": "Authenticated gh API returned exact commit SHA and matching remote branch ref; every archived immutable Git blob matches the prepared manifest."
+    },
+    "source_owner_remote_checkpoint": {
+      "commit": "b20bb3525e82b958c5ec0cd241a444d0370e448d",
+      "remote_verified": true,
+      "verification": "Authenticated gh API returned exact source-owner commit and matching title; this acceptance archive is its child and immutable source/card blobs match accepted hashes."
+    }
+  },
+  "whittaker_ode_acceptance": {
+    "module": "Submission.Supplier.P2M.Sol.S_LanglandsTunnell_whittaker_ode_splitTorus_of_isArchSmoothAt_of_archCasimirAt_eq",
+    "source_sha256": "e2e0ac4847888ddaa6565fec72210433afc092002391661fb938aec8d7619380",
+    "object_sha256": "edb8fee3ffd2b4721c71722341a0a2b6d786bfd882b260e2647d0940e8331d70",
+    "kernel_exit": 0,
+    "make_exit": 0,
+    "warnings": 0,
+    "recursive_axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "axiom_output": "'P2MW.S_LanglandsTunnell_whittaker_ode_splitTorus_of_isArchSmoothAt_of_archCasimirAt_eq.solution' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]",
+    "canonical_kernel_result": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/64a692554562cd26c629f818-1792045984977409000.kernel/result.json",
+    "canonical_make_terminal": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/64a692554562cd26c629f818-1792045984977409000.make-terminal.json",
+    "canonical_configuration_sha256": "dbd01872e2729d943b789ef2aadcce5b10afaa25f08f8fc3b5995aaa78e1b6d5",
+    "direct_dependency_bindings_current": true,
+    "direct_dependency_checks": [
+      {
+        "module": "Submission.Supplier.Definitions.Def_AutomorphicForm_ArchDerivCasimir",
+        "source_sha256": "c2fbb522171ad400dc16ff0e78548a8f0326540ee9d9d4f41aa7ed42ad759384",
+        "object_sha256": "76b0bb05da8a953a7e16c9bed1194f31c2a39674688ab7c170cb10b1d72fb779",
+        "recorded_object_hash_available": true,
+        "dependency_exit0_receipt_current": true
+      },
+      {
+        "module": "Submission.Supplier.P2M.Util",
+        "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+        "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+        "recorded_object_hash_available": true,
+        "dependency_exit0_receipt_current": true
+      }
+    ],
+    "candidate_revision": "r3-accepted",
+    "accepted_at": "2026-10-15T06:37:11.940157+00:00",
+    "accepted_source_sha256": "e2e0ac4847888ddaa6565fec72210433afc092002391661fb938aec8d7619380",
+    "accepted_object_sha256": "edb8fee3ffd2b4721c71722341a0a2b6d786bfd882b260e2647d0940e8331d70",
+    "card_validation": {
+      "module": "Submission.Supplier.Theorems.Thm_LanglandsTunnell_whittaker_ode_splitTorus_of_isArchSmoothAt_of_archCasimirAt_eq",
+      "source_sha256": "23f6197cb8c2b352d9498ab29acd2fc2614f0e5b13297899ac518f2b4a949f9f",
+      "object_sha256": "7e250392fcbc23ab439ee7b9f75b0295087d28bc7a8d100b1f78b05ca663c168",
+      "kernel_exit": 0,
+      "make_exit": 0,
+      "warnings": 0,
+      "recursive_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "axiom_output": "'LanglandsTunnell.whittaker_ode_splitTorus_of_isArchSmoothAt_of_archCasimirAt_eq' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]",
+      "canonical_kernel_result": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/12d6cf5f64deb5548c105f6c-1792046103798952000.kernel/result.json",
+      "canonical_make_terminal": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/12d6cf5f64deb5548c105f6c-1792046103798952000.make-terminal.json",
+      "canonical_configuration_sha256": "10e1e951644a5d2e6cbb0753474ec16439b18c7ff6dbbb2c27af536b4600088b",
+      "direct_dependency_bindings_current": true,
+      "direct_dependency_checks": [
+        {
+          "module": "Submission.Supplier.Definitions.Def_AutomorphicForm_ArchDerivCasimir",
+          "source_sha256": "c2fbb522171ad400dc16ff0e78548a8f0326540ee9d9d4f41aa7ed42ad759384",
+          "object_sha256": "76b0bb05da8a953a7e16c9bed1194f31c2a39674688ab7c170cb10b1d72fb779",
+          "recorded_object_hash_available": true,
+          "dependency_exit0_receipt_current": true
+        },
+        {
+          "module": "Submission.Supplier.P2M.Util",
+          "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+          "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+          "recorded_object_hash_available": true,
+          "dependency_exit0_receipt_current": true
+        },
+        {
+          "module": "Submission.Supplier.P2M.Sol.S_LanglandsTunnell_whittaker_ode_splitTorus_of_isArchSmoothAt_of_archCasimirAt_eq",
+          "source_sha256": "e2e0ac4847888ddaa6565fec72210433afc092002391661fb938aec8d7619380",
+          "object_sha256": "edb8fee3ffd2b4721c71722341a0a2b6d786bfd882b260e2647d0940e8331d70",
+          "recorded_object_hash_available": true,
+          "dependency_exit0_receipt_current": true
+        }
+      ]
+    },
+    "proof_checks": {
+      "threads": 1,
+      "trust": 0,
+      "skipKernelTC": false
+    },
+    "solution_statement_preserved": true,
+    "solution_body_change": "Only deprecated dif_pos -> dite_eq_left; proof structure and original hypotheses unchanged.",
+    "repair_attribution": "Source-owner session repaired rotation derivative and deprecated lemma references; this session repaired both torus derivative convert blocks and removed the resulting two linter warnings. Source/card axiom outputs and direct bindings verified independently.",
+    "full_original_proof_verified": false,
+    "official_solve_credit": 0,
+    "remote_acceptance_checkpoint": {
+      "repository": "the-omega-institute/trureturing-lean-eval",
+      "branch": "checkpoint/flt-whittaker-ode-01a124be-20261015",
+      "commit": "a5d00568d5f4e72b90c7596e148fef7aee5b3236",
+      "url": "https://github.com/the-omega-institute/trureturing-lean-eval/commit/a5d00568d5f4e72b90c7596e148fef7aee5b3236",
+      "verified_at": "2026-10-15T06:38:47.800504+00:00",
+      "source_and_card_hashes_verified": true,
+      "files_verified": 25,
+      "manifest": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/source-repairs/whittaker-ode-20261015-archive/manifest.json",
+      "working_checkout_index_used": false,
+      "verification": "Authenticated gh api returned exact remote commit and matching branch ref; all 25 immutable Git blob hashes match the prepared manifest."
+    }
+  },
+  "previous_checkpoint": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/source-repairs/repair-checkpoint-20261015-r18.json",
+  "this_checkpoint_new_repairs": [
+    "S_MeasureTheory_Measure_exists_eq_smul_map_smul_of_forall_map_smul_eq_of_isCompact_stabilizer-owner-r1-independently-accepted.json"
+  ],
+  "this_checkpoint_repair_scope": "Independently diagnosed and verified the source-owner repair for invariant measure under a transitive action with compact stabilizer. Its existing orbit-map measurability discharges map_smul; six proof-valued haveI bindings were normalized to have. This session CAS detected the owner edit before any shared source write.",
+  "new_remote_acceptance_archives": [
+    {
+      "repository": "the-omega-institute/trureturing-lean-eval",
+      "branch": "checkpoint/flt-adelic-borel-card-01a124be-20261015",
+      "base_commit": "7d760af2425f714c1c48e631ab2b499310a28316",
+      "commit": "7515b530e76ad638878d11312a05635d130487ff",
+      "verified_at": "2026-10-15T07:01:41.209148+00:00",
+      "verification": "Authenticated GitHub API confirmed exact commit and branch ref; downloaded every immutable file at this commit and checked all 24 SHA256 hashes.",
+      "url": "https://github.com/the-omega-institute/trureturing-lean-eval/commit/7515b530e76ad638878d11312a05635d130487ff",
+      "files": 24
+    },
+    {
+      "repository": "the-omega-institute/trureturing-lean-eval",
+      "branch": "checkpoint/flt-automorphic-fixedpoints-01a124be-20261015",
+      "base_commit": "448c9dbb2217f4c3ebfa0696bbe0ce1856e9d95b",
+      "commit": "41cf32f65dad11819f90d42ba1073f9d11861957",
+      "verified_at": "2026-10-15T07:08:56.005666+00:00",
+      "verification": "Authenticated GitHub API confirmed exact commit and branch ref; every one of 51 immutable files was downloaded at this commit and its SHA256 verified.",
+      "url": "https://github.com/the-omega-institute/trureturing-lean-eval/commit/41cf32f65dad11819f90d42ba1073f9d11861957",
+      "files": 51
+    }
+  ],
+  "official_tool_preflight_resolved": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/source-repairs/official-tool-preflight-20261015-retained-exporter-resolved.json",
+  "exporter_rebuild_required": false,
+  "tool_status": "Exact successful exporter binary retained outside .lake; Nanoda binary matches successful build. Official comparator and landrun remain required.",
+  "new_worktrees_created": false,
+  "active_verification_worktree_preserved": true,
+  "source_owner_git_index_touched": false,
+  "this_checkpoint_original_or_official_solve_credit": 0,
+  "live_owner_processes": {
+    "88158": "88158 88157 S    03:17:01 /Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/Resources/Python.app/Contents/MacOS/Python -u /Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006.py --workers 1 --poll-seconds 10 --canonical-make-entry --retry-empty-failures",
+    "19598": "19598     1 Ss   03:15:15 /Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/Resources/Python.app/Contents/MacOS/Python -u /Users/macstudio/omega/.lean-eval-recovery-20261007/flt/watch_root.py"
+  },
+  "unmodified_supplier_warning_audit": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/source-repairs/canonical-progress-20261015-after-r13.json",
+  "source_edits_by_this_session": 0,
+  "this_checkpoint_verified_canonical_invocations": 17,
+  "this_checkpoint_progress_evidence": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/source-repairs/canonical-progress-20261015-after-r14-final.json",
+  "invariant_measure_owner_repair_acceptance": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/source-repairs/S_MeasureTheory_Measure_exists_eq_smul_map_smul_of_forall_map_smul_eq_of_isCompact_stabilizer-owner-r1-independently-accepted.json",
+  "invariant_measure_remote_checkpoint": {
+    "repository": "the-omega-institute/trureturing-lean-eval",
+    "commit": "c51c5ce666227f6853e45d878ed80a2d3cd41f2f",
+    "files": 31,
+    "all_changed_immutable_file_hashes_verified": true,
+    "files_sha256": {
+      "research/fermat_last_theorem/20261011/receipts/20261015-invariant-measure-compact-stabilizer/baseline-adapted-card.lean": "8acafc5bf94bf6835c7ef32fdfd099b621ea3d487d315c803816744a7c771101",
+      "research/fermat_last_theorem/20261011/receipts/20261015-invariant-measure-compact-stabilizer/baseline-adapted-source.lean": "d787e798c0551cbf35c591a9fdd8f80a6a6b88ede8abd0ae892776336319d559",
+      "research/fermat_last_theorem/20261011/receipts/20261015-invariant-measure-compact-stabilizer/baseline-canonical-card.lean": "b947d887e81f5443e8b02f012075a00655a6e400b4ff8eb423c21a5156aba7a1",
+      "research/fermat_last_theorem/20261011/receipts/20261015-invariant-measure-compact-stabilizer/baseline-canonical-source.lean": "7890984a8ad566f84d396dafdb1a7864599113cf0ed86e08a0e5ebb243129d71",
+      "research/fermat_last_theorem/20261011/receipts/20261015-invariant-measure-compact-stabilizer/baseline-source-controller-record.json": "d2ba9b622526c1986527a7503fb2595aaebf628bfe0f5f0667a3b9f880426ead",
+      "research/fermat_last_theorem/20261011/receipts/20261015-invariant-measure-compact-stabilizer/baseline-source-kernel-result.json": "4ddc527ecb67a192a18e647a8d071fbe550c08cfb3d30e60613a27bb782fc2a7",
+      "research/fermat_last_theorem/20261011/receipts/20261015-invariant-measure-compact-stabilizer/baseline-source-make-terminal.json": "14ca5c829d70553a78308e4f6fe5d0d2d9771cdcb23e6b0d56a16665f1745a3d",
+      "research/fermat_last_theorem/20261011/receipts/20261015-invariant-measure-compact-stabilizer/baseline-source-stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "research/fermat_last_theorem/20261011/receipts/20261015-invariant-measure-compact-stabilizer/baseline-source-stdout.log": "f503bc417f4ca414f3ff7e1a449a85ff0ac5ae7dd142033fca5924dc2c06bbb1",
+      "research/fermat_last_theorem/20261011/receipts/20261015-invariant-measure-compact-stabilizer/candidate-adapted-card-r1.lean": "1c9ec6614aa95a93b3682696f9ce67209c15a92ee3b56b7292ca9d2884713813",
+      "research/fermat_last_theorem/20261011/receipts/20261015-invariant-measure-compact-stabilizer/candidate-adapted-source-r1.lean": "ae93cc625ee9e66b03507fdf67881044654cf9b12fec7f8ee107c718a721be97",
+      "research/fermat_last_theorem/20261011/receipts/20261015-invariant-measure-compact-stabilizer/candidate-canonical-card-r1.lean": "ea7a9b441354d751bbcaea1d7ebe97f195f7fcc9760a311b8ef5af57a511e1e3",
+      "research/fermat_last_theorem/20261011/receipts/20261015-invariant-measure-compact-stabilizer/candidate-canonical-source-r1.lean": "b4d050b0291d37d16abac764b799f51e3224524c1c8ccc18d167e0e857d02583",
+      "research/fermat_last_theorem/20261011/receipts/20261015-invariant-measure-compact-stabilizer/prepared.json": "0d99c6e21f331e0fcc61c3626035dcff247c01ab369e414fa263b62f01046714",
+      "research/fermat_last_theorem/20261011/receipts/20261015-invariant-measure-compact-stabilizer/verified-card/configuration.json": "037f61093302e8e55320a3bf0dce8b2e167c1be9dc5b7d7f434e0a851de9d34d",
+      "research/fermat_last_theorem/20261011/receipts/20261015-invariant-measure-compact-stabilizer/verified-card/controller.json": "93dcca1bd5e185463963dda1f5052ef78cbaaef6f961a609177a738639296d5a",
+      "research/fermat_last_theorem/20261011/receipts/20261015-invariant-measure-compact-stabilizer/verified-card/kernel.json": "99fd1726ad124f1d09917c324b958467d0a48ebfd855ad63149c35bff544097a",
+      "research/fermat_last_theorem/20261011/receipts/20261015-invariant-measure-compact-stabilizer/verified-card/make.json": "1b5bdc12a029d9978aed88a5bad0e8512fddcd34eb4317e008c9f5075f1af9cd",
+      "research/fermat_last_theorem/20261011/receipts/20261015-invariant-measure-compact-stabilizer/verified-card/stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "research/fermat_last_theorem/20261011/receipts/20261015-invariant-measure-compact-stabilizer/verified-card/stdout.log": "9fd22b953996f07a6019d0afe499181c1106e05c679d794739f4b4bf844a12ba",
+      "research/fermat_last_theorem/20261011/receipts/20261015-invariant-measure-compact-stabilizer/verified-record.json": "2d3d8bfcb116cbc520294516f0a42a1f7f4f478a5606733cbeaae2fc25ed6f16",
+      "research/fermat_last_theorem/20261011/receipts/20261015-invariant-measure-compact-stabilizer/verified-source/configuration.json": "d5efe06ee4e60f83ddce717291a1e93bc1fec8c7209de4310a793fb629929347",
+      "research/fermat_last_theorem/20261011/receipts/20261015-invariant-measure-compact-stabilizer/verified-source/controller.json": "f787f4431af5dfa31d1d02f99ea0f758cda6f1afba9addee65ea1ec1d4ddf4ee",
+      "research/fermat_last_theorem/20261011/receipts/20261015-invariant-measure-compact-stabilizer/verified-source/kernel.json": "54d0b2dba4863bf6605fb9b8e9fa2425c1d9167fb137036e5d55f54745e23192",
+      "research/fermat_last_theorem/20261011/receipts/20261015-invariant-measure-compact-stabilizer/verified-source/make.json": "c16039421224d48dd20efb4960f215bcbce47623c7b5dc35047e247a6ac93292",
+      "research/fermat_last_theorem/20261011/receipts/20261015-invariant-measure-compact-stabilizer/verified-source/stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "research/fermat_last_theorem/20261011/receipts/20261015-invariant-measure-compact-stabilizer/verified-source/stdout.log": "39c8542e9f09eef67eb68107c9930fcfc7929fba9089983e16d7af55cd1370db",
+      "research/fermat_last_theorem/20261011/source/P2M/Sol/S_MeasureTheory_Measure_exists_eq_smul_map_smul_of_forall_map_smul_eq_of_isCompact_stabilizer.lean": "b4d050b0291d37d16abac764b799f51e3224524c1c8ccc18d167e0e857d02583",
+      "research/fermat_last_theorem/20261011/source/Submission/Supplier/P2M/Sol/S_MeasureTheory_Measure_exists_eq_smul_map_smul_of_forall_map_smul_eq_of_isCompact_stabilizer.lean": "ae93cc625ee9e66b03507fdf67881044654cf9b12fec7f8ee107c718a721be97",
+      "research/fermat_last_theorem/20261011/source/Submission/Supplier/Theorems/Thm_MeasureTheory_Measure_exists_eq_smul_map_smul_of_forall_map_smul_eq_of_isCompact_stabilizer.lean": "1c9ec6614aa95a93b3682696f9ce67209c15a92ee3b56b7292ca9d2884713813",
+      "research/fermat_last_theorem/20261011/source/Theorems/Thm_MeasureTheory_Measure_exists_eq_smul_map_smul_of_forall_map_smul_eq_of_isCompact_stabilizer.lean": "ea7a9b441354d751bbcaea1d7ebe97f195f7fcc9760a311b8ef5af57a511e1e3"
+    },
+    "verification": "Authenticated GitHub API returned the exact commit. Every changed file was downloaded at that immutable ref; SHA256 agrees with its local Git blob. Adapted source/card hashes also equal independently accepted canonical inputs.",
+    "url": "https://github.com/the-omega-institute/trureturing-lean-eval/commit/c51c5ce666227f6853e45d878ed80a2d3cd41f2f"
+  },
+  "new_canonical_progress": {
+    "receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/source-repairs/canonical-progress-20261015-after-r18.json",
+    "successful_invocations_independently_verified": 6,
+    "includes_independently_accepted_source_owner_jN_repair": true,
+    "root_or_official_acceptance": false
+  },
+  "new_tool_boundary": {
+    "receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/source-repairs/official-landrun-platform-boundary-20261015.json",
+    "verified_fact": "Pinned landrun requires Linux Landlock; Darwin host has no compatible Linux runtime found on current PATH. Native installation alone does not satisfy the official sandbox.",
+    "next_step": "Complete same FLT root; use compatible Linux or official Linux submission evaluation for required comparator/Nanoda acceptance."
+  },
+  "session_changes": {
+    "lean_sources_edited": false,
+    "owner_checkout_or_git_index_mutated": false,
+    "new_worktree_created": false,
+    "existing_controller_and_root_watcher_reused": true,
+    "new_compiler_or_controller_started_by_this_session": false,
+    "source_owner_repair_independently_accepted": true,
+    "baseline_reconstructed_and_sha256_verified": true,
+    "status_correction": "A cleared failed-count was briefly mistaken for a successful repaired-source record; corrected immediately. Only exact paired canonical make/kernel terminal receipts support this acceptance."
+  },
+  "prior_canonical_progress": {
+    "receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/source-repairs/canonical-progress-20261015-after-r17.json",
+    "successful_invocations_independently_verified": 6,
+    "remote_archive": {
+      "verified_at": "2026-10-15T07:57:20.746983+00:00",
+      "repository": "the-omega-institute/trureturing-lean-eval",
+      "commit": "599dce26d843850d3ce9e987884296b682e7b992",
+      "branch": "checkpoint/flt-canonical-progress-01a124be-20261015-r16",
+      "remote_branch_matches": true,
+      "remote_immutable_files_sha256_verified": 45,
+      "owner_checkout_or_index_mutated": false,
+      "url": "https://github.com/the-omega-institute/trureturing-lean-eval/commit/599dce26d843850d3ce9e987884296b682e7b992"
+    },
+    "root_or_official_acceptance": false
+  },
+  "continuation_receipt_selection": {
+    "event_floor_checkpoint": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/source-repairs/repair-checkpoint-20261015-r15.json",
+    "exclude_verified_progress_files": [
+      "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/source-repairs/canonical-progress-20261015-after-r15-final.json",
+      "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/source-repairs/canonical-progress-20261015-after-r16-final.json",
+      "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/source-repairs/canonical-progress-20261015-after-r17.json",
+      "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/source-repairs/canonical-progress-20261015-after-r18.json"
+    ],
+    "invocation_identity": "kernel_terminal_receipt from event equals canonical_kernel_result in progress evidence",
+    "instruction": "The current verify-canonical-progress.py reads these selection fields automatically. Run it with --after this checkpoint and a fresh --output path. It excludes exact already verified kernel invocations and leaves terminal events without matching state records pending; no compiler replay is needed."
+  },
+  "modular_curve_jN_specialization_acceptance": {
+    "receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/source-repairs/S_ModularCurve_CharPModel_FibreModel_spPlace_d0_jN-owner-r1-independently-accepted-remote.json",
+    "source_sha256": "f8c45e4071369c50c1d900d3d5c980a2427f502255d1940ff33eb51a317e4005",
+    "object_sha256": "479fdafe7a499180b2225e5606a4c8f6e416387249e29396d894acf5c0a2e8a3",
+    "card_validation": {
+      "module": "Submission.Supplier.Theorems.Thm_ModularCurve_CharPModel_FibreModel_spPlace_d0_jN",
+      "source_sha256": "f92406bac8424bd9f5fb02d8094b45df8966f3ce9012f11373eb1e33145f125e",
+      "object_sha256": "e8db2ff2b8009fa07fc1ba34291685e3c4508d1e01a9750d5983f0a0b13bc622",
+      "kernel_exit": 0,
+      "make_exit": 0,
+      "warnings": 0,
+      "recursive_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "axiom_output": "'ModularCurve.CharPModel.FibreModel.spPlace_d0_jN' depends on axioms: [propext, Classical.choice, Quot.sound]",
+      "canonical_kernel_result": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/36bf90bdbb7287f451e2adaf-1792051633623007000.kernel/result.json",
+      "canonical_make_terminal": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/36bf90bdbb7287f451e2adaf-1792051633623007000.make-terminal.json",
+      "canonical_configuration_sha256": "370ebbbf205d57dcf7a32eb2694f08b8874bc3b54f1d56b42aa1443dead0fcc3",
+      "direct_dependency_bindings_current": true,
+      "direct_dependency_checks": [
+        {
+          "module": "Submission.Supplier.Definitions.Def_ModularCurve_SpecializationMap",
+          "source_sha256": "6212bed09a4053d8b6a19790eb1de5fe339cd516fd7e2b1b0611862231048c3c",
+          "object_sha256": "ee3ac07a43ebc005e481774ee2c9f191ad35377b4b023d4fb9308d7c0ab2314b",
+          "recorded_object_hash_available": true,
+          "dependency_exit0_receipt_current": true
+        },
+        {
+          "module": "Submission.Supplier.P2M.Util",
+          "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+          "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+          "recorded_object_hash_available": true,
+          "dependency_exit0_receipt_current": true
+        },
+        {
+          "module": "Submission.Supplier.P2M.Sol.S_ModularCurve_CharPModel_FibreModel_spPlace_d0_jN",
+          "source_sha256": "f8c45e4071369c50c1d900d3d5c980a2427f502255d1940ff33eb51a317e4005",
+          "object_sha256": "479fdafe7a499180b2225e5606a4c8f6e416387249e29396d894acf5c0a2e8a3",
+          "recorded_object_hash_available": true,
+          "dependency_exit0_receipt_current": true
+        }
+      ]
+    },
+    "make_and_kernel_exits": [
+      0,
+      0
+    ],
+    "warnings": 0,
+    "recursive_axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "public_statements_preserved": true,
+    "source_proof_body_byte_identical": false,
+    "card_statement_and_body_preserved": true,
+    "repair_attribution": "Source-owner session applied the repair; this session independently diagnosed and verified it. Own candidate preparation stopped before writes after a count assertion.",
+    "shared_source_mutations_by_this_session": 0,
+    "remote_source_checkpoint": {
+      "verified_at": "2026-10-15T08:11:13.664333+00:00",
+      "repository": "the-omega-institute/trureturing-lean-eval",
+      "commit": "5314a4c50c3a39313b197e03e421a050051d2ee8",
+      "branch": "lane/math/flt-port-checkpoint-01a124bc-20261011",
+      "remote_branch_matches": true,
+      "remote_immutable_files_sha256_verified": 31,
+      "accepted_source_and_card_hashes_match": true,
+      "owner_checkout_or_index_mutated": false,
+      "owner_index_sha256_before": "fa3c8ac6fc67feab9fc5fe0f13d1cac01991e09626920110cf03c2bf60dcb386",
+      "owner_index_sha256_after": "fa3c8ac6fc67feab9fc5fe0f13d1cac01991e09626920110cf03c2bf60dcb386",
+      "url": "https://github.com/the-omega-institute/trureturing-lean-eval/commit/5314a4c50c3a39313b197e03e421a050051d2ee8"
+    }
+  }
+}

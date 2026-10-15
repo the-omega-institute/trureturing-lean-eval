@@ -1,0 +1,47 @@
+{
+  "at": "2026-10-15T08:25:43.861385+00:00",
+  "configuration": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/53ffdaf0cb210dc4be4a78c8-1792052736251401000.configuration.json",
+  "configuration_sha256": "00ad8edaa06791bca0612e9972f3d38b2ca273faddf2ffae6bd0ac15397c19e2",
+  "source": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_ModularCurve_CupPairing_cuspSum_eq_sum_finsum_of_le.lean",
+  "source_sha256": "6d008595afce0b51cdc92ca4b5e667349b71d39181e7d1eb7cff630584a5389f",
+  "canonical_common": "/Users/macstudio/omega/trureturing/.git",
+  "official_dependency_partition": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/official-deps",
+  "toolchain": "leanprover/lean4:v4.35.0-rc3",
+  "mathlib_revision": "5e0c4e5239cb0a2d86d68a884bf52cfd963fce22",
+  "make_entry_required": true,
+  "phase": "compile_source",
+  "full_original_proof_verified": false,
+  "official_solve_credit": 0,
+  "command": [
+    "/Users/macstudio/.local/omega-shims/lean",
+    "-j1",
+    "--trust=0",
+    "-Ddebug.skipKernelTC=false",
+    "-R",
+    "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src",
+    "-o",
+    "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-build/lib/lean/Submission/Supplier/P2M/Sol/S_ModularCurve_CupPairing_cuspSum_eq_sum_finsum_of_le.olean",
+    "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_ModularCurve_CupPairing_cuspSum_eq_sum_finsum_of_le.lean"
+  ],
+  "memory_admission": {
+    "workers": 1,
+    "reasons": [
+      "user requires one job; no memory gate"
+    ],
+    "sample": {},
+    "memory_limit_enforced": false
+  },
+  "compiler_pid": 8705,
+  "memory_guard": {
+    "mode": "single_job_no_memory_gate",
+    "memory_limit_enforced": false,
+    "resource_cancellation": null,
+    "actual_exit": 0,
+    "proof_completion_claimed": false
+  },
+  "exit": 0,
+  "seconds": 50.839160209,
+  "source_unchanged": true,
+  "object_sha256": "36cdf13e70f9edbc4d119be76d0b6ea3a4ae3ff255e05446c362d34d14609ab4",
+  "ended_at": "2026-10-15T08:26:34.702065+00:00"
+}

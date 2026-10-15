@@ -1,0 +1,93 @@
+{
+  "module": "Submission.Supplier.P2M.Sol.S_ModularCurve_CupPairing_cuspSum_eq_sum_finsum_of_le",
+  "source_sha256": "6d008595afce0b51cdc92ca4b5e667349b71d39181e7d1eb7cff630584a5389f",
+  "object_sha256": "36cdf13e70f9edbc4d119be76d0b6ea3a4ae3ff255e05446c362d34d14609ab4",
+  "kernel_exit": 0,
+  "make_exit": 0,
+  "warnings": 0,
+  "recursive_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "axiom_output": "'P2MW.S_ModularCurve_CupPairing_cuspSum_eq_sum_finsum_of_le.solution' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]",
+  "canonical_kernel_result": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/53ffdaf0cb210dc4be4a78c8-1792052736251401000.kernel/result.json",
+  "canonical_make_terminal": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/53ffdaf0cb210dc4be4a78c8-1792052736251401000.make-terminal.json",
+  "canonical_configuration_sha256": "00ad8edaa06791bca0612e9972f3d38b2ca273faddf2ffae6bd0ac15397c19e2",
+  "direct_dependency_bindings_current": true,
+  "direct_dependency_checks": [
+    {
+      "module": "Submission.Supplier.Definitions.Def_ModularCurve_PDPairing",
+      "source_sha256": "31b6a8f1c9aaf77fa31f9a9ea928922126c4a123e356e15dad90b9f3e4f93f1e",
+      "object_sha256": "ab9a1a6459a54077c4f88aa9b6417859bf35349a0d13d87bc4ba4a3421666b1c",
+      "recorded_object_hash_available": true,
+      "dependency_exit0_receipt_current": true
+    },
+    {
+      "module": "Submission.Supplier.P2M.Util",
+      "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+      "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+      "recorded_object_hash_available": true,
+      "dependency_exit0_receipt_current": true
+    }
+  ],
+  "accepted_at": "2026-10-15T08:28:44.182128+00:00",
+  "accepted_source_sha256": "6d008595afce0b51cdc92ca4b5e667349b71d39181e7d1eb7cff630584a5389f",
+  "accepted_object_sha256": "36cdf13e70f9edbc4d119be76d0b6ea3a4ae3ff255e05446c362d34d14609ab4",
+  "candidate_revision": "owner-r1-independently-accepted",
+  "card_validation": {
+    "module": "Submission.Supplier.Theorems.Thm_ModularCurve_CupPairing_cuspSum_eq_sum_finsum_of_le",
+    "source_sha256": "2039a5df298be24b5e60fda21597df7a6086a3a3f4430cbfd2bd68ed6f3b07ed",
+    "object_sha256": "9c12ee446717d9ed377decc79170ba375c145d71bd5517d03dc9a67bbaf515d4",
+    "kernel_exit": 0,
+    "make_exit": 0,
+    "warnings": 0,
+    "recursive_axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "axiom_output": "'ModularCurve.CupPairing.cuspSum_eq_sum_finsum_of_le' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "canonical_kernel_result": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/003d306841dcc520acaa88a9-1792052811837964000.kernel/result.json",
+    "canonical_make_terminal": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/003d306841dcc520acaa88a9-1792052811837964000.make-terminal.json",
+    "canonical_configuration_sha256": "2327e97ed4d20c157eca97850d8ba4c572bf8d7d7934b96acb19ff446a9aa34d",
+    "direct_dependency_bindings_current": true,
+    "direct_dependency_checks": [
+      {
+        "module": "Submission.Supplier.Definitions.Def_ModularCurve_PDPairing",
+        "source_sha256": "31b6a8f1c9aaf77fa31f9a9ea928922126c4a123e356e15dad90b9f3e4f93f1e",
+        "object_sha256": "ab9a1a6459a54077c4f88aa9b6417859bf35349a0d13d87bc4ba4a3421666b1c",
+        "recorded_object_hash_available": true,
+        "dependency_exit0_receipt_current": true
+      },
+      {
+        "module": "Submission.Supplier.P2M.Util",
+        "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+        "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+        "recorded_object_hash_available": true,
+        "dependency_exit0_receipt_current": true
+      },
+      {
+        "module": "Submission.Supplier.P2M.Sol.S_ModularCurve_CupPairing_cuspSum_eq_sum_finsum_of_le",
+        "source_sha256": "6d008595afce0b51cdc92ca4b5e667349b71d39181e7d1eb7cff630584a5389f",
+        "object_sha256": "36cdf13e70f9edbc4d119be76d0b6ea3a4ae3ff255e05446c362d34d14609ab4",
+        "recorded_object_hash_available": true,
+        "dependency_exit0_receipt_current": true
+      }
+    ]
+  },
+  "source_validation_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/source-repairs/S_ModularCurve_CupPairing_cuspSum_eq_sum_finsum_of_le-owner-r1-independent-source-validation.json",
+  "source_validation_sha256": "6a0703c001bcc50759544c7d1f243fbebb7806b696896552880ad4b2177db500",
+  "proof_checks": {
+    "threads": 1,
+    "trust": 0,
+    "skipKernelTC": false
+  },
+  "all_statement_and_hypotheses_preserved": true,
+  "final_solution_statement_and_body_unchanged": true,
+  "helper_proof_bodies_changed": true,
+  "attribution": "All shared Lean edits performed by source-owner session; this session independently diagnosed the API error and verified exact edits and both canonical results.",
+  "source_edits_by_this_session": 0,
+  "full_original_proof_verified": false,
+  "official_solve_credit": 0
+}
