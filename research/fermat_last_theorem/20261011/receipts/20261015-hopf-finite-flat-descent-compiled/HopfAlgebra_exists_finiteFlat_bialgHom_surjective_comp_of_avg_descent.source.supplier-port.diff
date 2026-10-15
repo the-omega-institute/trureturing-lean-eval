@@ -1,0 +1,172 @@
+--- supplier-original
++++ canonical-port
+@@ -67,10 +67,10 @@
+     tensorInclusion3 B
+         (TensorProduct.assoc R (flatClosure B) (flatClosure B) (flatClosure B) w)
+       = TensorProduct.assoc R G G G (tensorInclusion3' B w) := by
+-  induction w with
++  induction w using TensorProduct.induction_on with
+   | zero => simp
+   | tmul a z =>
+-      induction a with
++      induction a using TensorProduct.induction_on with
+       | zero => simp
+       | tmul x y => simp
+       | add a₁ a₂ h₁ h₂ =>
+@@ -80,10 +80,10 @@
+ theorem tensorInclusion_mul {B : Subalgebra F (F ⊗[R] G)}
+     (z w : (flatClosure B) ⊗[R] (flatClosure B)) :
+     tensorInclusion B (z * w) = tensorInclusion B z * tensorInclusion B w := by
+-  induction z with
++  induction z using TensorProduct.induction_on with
+   | zero => simp
+   | tmul x y =>
+-      induction w with
++      induction w using TensorProduct.induction_on with
+       | zero => simp
+       | tmul x' y' =>
+           simp [Algebra.TensorProduct.tmul_mul_tmul]
+@@ -99,7 +99,7 @@
+     (z : (flatClosure B) ⊗[R] (flatClosure B)) :
+     ((LinearMap.mul' R (flatClosure B) z : flatClosure B) : G)
+       = LinearMap.mul' R G (tensorInclusion B z) := by
+-  induction z with
++  induction z using TensorProduct.induction_on with
+   | zero => simp
+   | tmul x y => simp [LinearMap.mul'_apply]
+   | add a₁ a₂ h₁ h₂ => simp [map_add, h₁, h₂]
+@@ -116,7 +116,7 @@
+     (z : (flatClosure B) ⊗[R] (flatClosure B)) :
+     tensorInclusion3' B ((closureComul hB).rTensor (flatClosure B) z)
+       = (Coalgebra.comul (R := R) (A := G)).rTensor G (tensorInclusion B z) := by
+-  induction z with
++  induction z using TensorProduct.induction_on with
+   | zero => simp
+   | tmul x y => simp [LinearMap.rTensor_tmul]
+   | add a₁ a₂ h₁ h₂ => simp [map_add, h₁, h₂]
+@@ -127,7 +127,7 @@
+     (z : (flatClosure B) ⊗[R] (flatClosure B)) :
+     tensorInclusion3 B ((closureComul hB).lTensor (flatClosure B) z)
+       = (Coalgebra.comul (R := R) (A := G)).lTensor G (tensorInclusion B z) := by
+-  induction z with
++  induction z using TensorProduct.induction_on with
+   | zero => simp
+   | tmul x y => simp [LinearMap.lTensor_tmul]
+   | add a₁ a₂ h₁ h₂ => simp [map_add, h₁, h₂]
+@@ -137,7 +137,7 @@
+     ((flatClosure B).val.toLinearMap.lTensor R)
+         ((closureCounit B).rTensor (flatClosure B) z)
+       = (Coalgebra.counit (R := R) (A := G)).rTensor G (tensorInclusion B z) := by
+-  induction z with
++  induction z using TensorProduct.induction_on with
+   | zero => simp
+   | tmul x y => simp [LinearMap.rTensor_tmul, LinearMap.lTensor_tmul]
+   | add a₁ a₂ h₁ h₂ => simp [map_add, h₁, h₂]
+@@ -147,7 +147,7 @@
+     ((flatClosure B).val.toLinearMap.rTensor R)
+         ((closureCounit B).lTensor (flatClosure B) z)
+       = (Coalgebra.counit (R := R) (A := G)).lTensor G (tensorInclusion B z) := by
+-  induction z with
++  induction z using TensorProduct.induction_on with
+   | zero => simp
+   | tmul x y => simp [LinearMap.rTensor_tmul, LinearMap.lTensor_tmul]
+   | add a₁ a₂ h₁ h₂ => simp [map_add, h₁, h₂]
+@@ -259,7 +259,7 @@
+     (hB' : IsAntipodeStable R F B) (z : (flatClosure B) ⊗[R] (flatClosure B)) :
+     tensorInclusion B ((closureAntipode hB').rTensor (flatClosure B) z)
+       = (HopfAlgebra.antipode R (A := G)).rTensor G (tensorInclusion B z) := by
+-  induction z with
++  induction z using TensorProduct.induction_on with
+   | zero => simp
+   | tmul x y => simp [LinearMap.rTensor_tmul]
+   | add a₁ a₂ h₁ h₂ => simp [map_add, h₁, h₂]
+@@ -268,7 +268,7 @@
+     (hB' : IsAntipodeStable R F B) (z : (flatClosure B) ⊗[R] (flatClosure B)) :
+     tensorInclusion B ((closureAntipode hB').lTensor (flatClosure B) z)
+       = (HopfAlgebra.antipode R (A := G)).lTensor G (tensorInclusion B z) := by
+-  induction z with
++  induction z using TensorProduct.induction_on with
+   | zero => simp
+   | tmul x y => simp [LinearMap.lTensor_tmul]
+   | add a₁ a₂ h₁ h₂ => simp [map_add, h₁, h₂]
+@@ -337,7 +337,7 @@
+     (z : (flatClosure B) ⊗[R] (flatClosure B)) :
+     tensorInclusion B (TensorProduct.comm R (flatClosure B) (flatClosure B) z)
+       = TensorProduct.comm R G G (tensorInclusion B z) := by
+-  induction z with
++  induction z using TensorProduct.induction_on with
+   | zero => simp
+   | tmul x y => simp [TensorProduct.comm_tmul]
+   | add a₁ a₂ h₁ h₂ => simp [map_add, h₁, h₂]
+@@ -521,7 +521,7 @@
+ 
+ lemma eq_sum_coord_tmul [Fintype ι] (b : Module.Basis ι R P) (z : N ⊗[R] P) :
+     z = ∑ j, (TensorProduct.rid R N ((b.coord j).lTensor N z)) ⊗ₜ[R] b j := by
+-  induction z with
++  induction z using TensorProduct.induction_on with
+   | zero => simp
+   | tmul n g =>
+       conv_lhs => rw [← b.sum_repr g, TensorProduct.tmul_sum]
+@@ -534,7 +534,7 @@
+ 
+ lemma eq_sum_tmul_coord [Fintype ι] (b : Module.Basis ι R P) (z : P ⊗[R] N) :
+     z = ∑ j, b j ⊗ₜ[R] (TensorProduct.lid R N ((b.coord j).rTensor N z)) := by
+-  induction z with
++  induction z using TensorProduct.induction_on with
+   | zero => simp
+   | tmul g n =>
+       conv_lhs => rw [← b.sum_repr g, TensorProduct.sum_tmul]
+@@ -548,7 +548,7 @@
+ lemma apply_rid_lTensor_coord (b : Module.Basis ι R P) (j : ι) (f : N →ₗ[R] M) (z : N ⊗[R] P) :
+     f (TensorProduct.rid R N ((b.coord j).lTensor N z))
+       = TensorProduct.rid R M ((b.coord j).lTensor M (f.rTensor P z)) := by
+-  induction z with
++  induction z using TensorProduct.induction_on with
+   | zero => simp only [map_zero]
+   | tmul n g =>
+       simp only [LinearMap.lTensor_tmul, LinearMap.rTensor_tmul, TensorProduct.rid_tmul, map_smul]
+@@ -557,7 +557,7 @@
+ lemma apply_lid_rTensor_coord (b : Module.Basis ι R P) (j : ι) (f : N →ₗ[R] M) (z : P ⊗[R] N) :
+     f (TensorProduct.lid R N ((b.coord j).rTensor N z))
+       = TensorProduct.lid R M ((b.coord j).rTensor M (f.lTensor P z)) := by
+-  induction z with
++  induction z using TensorProduct.induction_on with
+   | zero => simp only [map_zero]
+   | tmul g n =>
+       simp only [LinearMap.lTensor_tmul, LinearMap.rTensor_tmul, TensorProduct.lid_tmul, map_smul]
+@@ -601,7 +601,7 @@
+ lemma rTensor_includeRight_eq (w : G ⊗[R] G) :
+     (Algebra.TensorProduct.includeRight : G →ₐ[R] L ⊗[R] G).toLinearMap.rTensor G w
+       = (TensorProduct.assoc R L G G).symm ((1 : L) ⊗ₜ[R] w) := by
+-  induction w with
++  induction w using TensorProduct.induction_on with
+   | zero => simp only [LinearMap.map_zero, TensorProduct.tmul_zero, LinearEquiv.map_zero]
+   | tmul x y =>
+       rw [LinearMap.rTensor_tmul, AlgHom.toLinearMap_apply,
+@@ -614,7 +614,7 @@
+           (TensorProduct.map (TensorProduct.comm R L G).toLinearMap LinearMap.id
+             ((Algebra.TensorProduct.includeRight : G →ₐ[R] L ⊗[R] G).toLinearMap.rTensor G
+               w)) := by
+-  induction w with
++  induction w using TensorProduct.induction_on with
+   | zero => simp only [LinearMap.map_zero, LinearEquiv.map_zero]
+   | tmul x y =>
+       simp only [LinearMap.lTensor_tmul, LinearMap.rTensor_tmul, AlgHom.toLinearMap_apply,
+@@ -854,7 +854,7 @@
+ 
+ omit [Bialgebra R G] in
+ lemma tmul_one_mul [Algebra R G] (c : L) (x : L ⊗[R] G) : (c ⊗ₜ[R] (1 : G)) * x = c • x := by
+-  induction x with
++  induction x using TensorProduct.induction_on with
+   | zero => rw [mul_zero, smul_zero]
+   | tmul a b =>
+       rw [Algebra.TensorProduct.tmul_mul_tmul, one_mul, TensorProduct.smul_tmul', smul_eq_mul]
+@@ -1232,7 +1232,7 @@
+     {G : Type} [CommRing G] [Algebra R G]
+     (B : Subalgebra F (F ⊗[R] G)) (x : (flatClosure B) ⊗[R] (flatClosure B)) :
+     Algebra.TensorProduct.map (flatClosure B).val (flatClosure B).val x = tensorInclusion B x := by
+-  induction x with
++  induction x using TensorProduct.induction_on with
+   | zero => simp only [map_zero]
+   | tmul a b => rfl
+   | add a b ha hb => simp only [map_add, ha, hb]

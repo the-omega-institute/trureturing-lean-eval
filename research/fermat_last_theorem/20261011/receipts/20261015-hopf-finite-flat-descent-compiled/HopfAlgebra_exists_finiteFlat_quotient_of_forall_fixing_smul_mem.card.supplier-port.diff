@@ -1,0 +1,11 @@
+--- supplier-original
++++ canonical-port
+@@ -1,7 +1,7 @@
+ import Definitions.Def_GaloisRep_Flat
+ import P2M.Util
+ import P2M.Sol.S_HopfAlgebra_exists_finiteFlat_quotient_of_forall_fixing_smul_mem
+-attribute [-instance] instIsScalarTowerTensorProduct_definitions AlgebraicClosure.Rat.isGalois
++attribute [-instance] AlgebraicClosure.Rat.isGalois
+ attribute [-simp] closureCounit_apply genericFibreAlgHom_tmul tensorInclusion_closureComul coe_closureAntipode_apply tensorToGenericFibre_tmul tensorInclusion_tmul mem_flatClosure_iff
+ 
+ theorem HopfAlgebra.exists_finiteFlat_quotient_of_forall_fixing_smul_mem
