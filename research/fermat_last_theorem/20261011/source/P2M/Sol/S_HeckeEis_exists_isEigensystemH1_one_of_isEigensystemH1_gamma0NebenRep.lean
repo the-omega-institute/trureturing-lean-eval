@@ -11,6 +11,7 @@ import Theorems.Thm_HeckeEis_isEigensystemH1_or_of_isEigensystemH1_of_injective
 import Theorems.Thm_HeckeEis_isEigensystemH1_one_natCast_add_one
 import Theorems.Thm_HeckeEis_exists_isEigensystemH1_one_natCast_mul_of_isEigensystemH1_one_of_three_dvd
 import P2M.Util
+
 namespace P2MW.S_HeckeEis_exists_isEigensystemH1_one_of_isEigensystemH1_gamma0NebenRep
 
 set_option autoImplicit false
@@ -298,7 +299,8 @@ def rhoW : Representation κ (Gamma0 M) (ZMod p → κ) where
   map_one' := by
     refine LinearMap.ext fun f => funext fun u => ?_
     rw [rhoFun_apply, dP_one, bP_one]
-    simp only [_root_.one_mul, _root_.sub_zero, Module.End.one_apply]
+    simp only [_root_.one_mul, Module.End.one_apply]
+    exact congrArg f (_root_.sub_zero u)
   map_mul' γ γ' := by
     refine LinearMap.ext fun f => funext fun u => ?_
     rw [Module.End.mul_apply, rhoFun_apply, rhoFun_apply, rhoFun_apply, dP_mul p M hpM, bP_mul]
@@ -308,9 +310,13 @@ def rhoW : Representation κ (Gamma0 M) (ZMod p → κ) where
       calc
         _ = (aP p M γ * dP p M γ) * (dP p M γ' * bP p M γ') := by ring
         _ = _ := by rw [aP_mul_dP p M hpM γ, _root_.one_mul]
+    have hlead : (dP p M γ * dP p M γ') * ((dP p M γ * dP p M γ') * u) =
+        dP p M γ' * (dP p M γ' * (dP p M γ * (dP p M γ * u))) := by ac_rfl
+    have htail : (dP p M γ * dP p M γ') * (bP p M γ * dP p M γ') =
+        dP p M γ' * (dP p M γ' * (dP p M γ * bP p M γ)) := by ac_rfl
     simp only [_root_.mul_sub, _root_.mul_add]
-    rw [_root_.sub_add_eq_sub_sub, hcancel, _root_.sub_sub_comm]
-    congr 2 <;> ring
+    rw [hcancel, hlead, htail]
+    exact _root_.sub_add_eq_sub_sub_swap _ _ _
 
 @[scoped simp] theorem rhoW_apply (γ : Gamma0 M) (f : ZMod p → κ) (u : ZMod p) :
     rhoW p M hpM κ γ f u = f (dP p M γ * (dP p M γ * u - bP p M γ)) := rfl
@@ -395,7 +401,12 @@ theorem mem_coeffCoboundaries_of_forall_apply_zero {z : Gamma0 M → ZMod p → 
     have hγ : γ = Tg M ^ n * h := by rw [hh, mul_inv_cancel_left]
     have hbh : bP p M h = 0 := by
       rw [hh, bP_mul, aP_inv p M, bP_inv, dP_Tg_zpow, bP_Tg_zpow, hncast, pt, one_mul]
-      linear_combination (-bP p M γ) * aP_mul_dP p M hpM γ
+      have hprod : (aP p M γ * bP p M γ) * dP p M γ = bP p M γ := by
+        calc
+          _ = (aP p M γ * dP p M γ) * bP p M γ := by ac_rfl
+          _ = _ := by rw [aP_mul_dP p M hpM γ, _root_.one_mul]
+      rw [_root_.neg_mul (aP p M γ * bP p M γ) (dP p M γ), hprod]
+      exact _root_.add_neg_cancel _
     have hzh : z h 0 = 0 := h0 h ((ZMod.intCast_zmod_eq_zero_iff_dvd _ _).mp hbh)
     have h1 : z γ = z (Tg M ^ n) + rhoW p M hpM κ (Tg M ^ n) (z h) := by
       conv_lhs => rw [hγ]
@@ -412,7 +423,11 @@ theorem mem_coeffCoboundaries_of_forall_apply_zero {z : Gamma0 M → ZMod p → 
     intro γ u
     rw [dP_inv p M, bP_inv]
     have h1 := aP_mul_dP p M hpM γ
-    linear_combination (aP p M γ * dP p M γ * u + u - aP p M γ * bP p M γ) * h1
+    have hcancel (v : ZMod p) : aP p M γ * (dP p M γ * v) = v := by
+      rw [← _root_.mul_assoc, h1, _root_.one_mul]
+    rw [_root_.sub_neg_eq_add
+      (aP p M γ * (dP p M γ * (dP p M γ * u - bP p M γ))) (bP p M γ)]
+    rw [hcancel, _root_.sub_add_cancel (dP p M γ * u) (bP p M γ), hcancel]
   refine (mem_coeffCoboundaries_iff _ _).mpr ⟨-f, funext fun γ => funext fun u => ?_⟩
 
   set δ : Gamma0 M := Tg M ^ (u.val : ℤ) with hδ
@@ -799,8 +814,6 @@ theorem exists_dP_eq (u₀ : (ZMod p)ˣ) : ∃ γ : Gamma0 M, dP p M γ = u₀ :
   · show (((d : ℤ)) : ZMod p) = _
     rw [Int.cast_natCast, hd_cast]
 
-include hpM in
-
 theorem sub_one_dvd_of_forall_pow_eq_one (n : ℕ) (h : ∀ γ : Gamma0 M, (dP p M γ) ^ n = 1) : (p - 1) ∣ n := by
   obtain ⟨g, hg⟩ := IsCyclic.exists_generator (α := (ZMod p)ˣ)
   have horder : orderOf g = p - 1 := by
@@ -919,7 +932,7 @@ theorem layer (h6 : (6 : κ) ≠ 0) {j : ℕ} (hj : j < p) (τ : ℕ → κ)
     · exact Or.inl hW
     · refine Or.inr ⟨hj1, ?_, heis⟩
 
-      apply sub_one_dvd_of_forall_pow_eq_one p M hpM
+      apply sub_one_dvd_of_forall_pow_eq_one p M
       intro γ
       have hmem := hinv γ
       rw [hrange] at hmem
