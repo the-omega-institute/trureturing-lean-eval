@@ -1,0 +1,42 @@
+{
+  "at": "2026-10-15T04:37:55.786180+00:00",
+  "repair_author": "01a124bc-deaf-76d1-841d-b1deb6f5cab8",
+  "supplier_original_preserved_in_baseline": true,
+  "supplier_tensor_double_induction_argument_preserved": true,
+  "final_revision": "r2",
+  "source_card_actual_verification_passed": true,
+  "original_main_statements_and_complete_tensor_calculation_preserved": true,
+  "checks": {
+    "source": {
+      "module": "Submission.Supplier.P2M.Sol.S_HopfAlgebra_signTwist_comul_mul_padicInt",
+      "make_exit": 0,
+      "kernel_exit": 0,
+      "kernel_seconds": 44.418325415999995,
+      "warnings": 0,
+      "recursive_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "dependency_receipts_match_current_controller": true
+    },
+    "card": {
+      "module": "Submission.Supplier.Theorems.Thm_HopfAlgebra_signTwist_comul_mul_padicInt",
+      "make_exit": 0,
+      "kernel_exit": 0,
+      "kernel_seconds": 52.349867542000005,
+      "warnings": 0,
+      "recursive_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "dependency_receipts_match_current_controller": true
+    }
+  },
+  "new_compilers_spawned": 0,
+  "max_active_flt_jobs": 1,
+  "lean_threads": 1,
+  "full_original_complete": false,
+  "official_new_solve_credit": 0
+}

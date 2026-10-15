@@ -1,0 +1,25 @@
+{
+  "at": "2026-10-15T04:36:07.572098+00:00",
+  "revision": "r2",
+  "source_verification_pending": true,
+  "card_verification_against_r2_source_pending": true,
+  "r1_source_card_make_kernel_exits": [
+    0,
+    0,
+    0,
+    0
+  ],
+  "r1_source_warnings": 6,
+  "r1_card_warnings": 0,
+  "r1_source_and_card_recursive_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "repair": "Remove the observed unused alternative p-adic norm tactic branch and redundant try rfl; preserve the verified primary norm calculation and full tensor calculation.",
+  "installation_observation": "Canonical view was advanced to the saved r2 candidate; adapted view already matched r2 at installation readback. No unexpected source change was overwritten.",
+  "new_compilers_spawned": 0,
+  "max_active_flt_jobs": 1,
+  "full_original_complete": false,
+  "official_new_solve_credit": 0
+}
