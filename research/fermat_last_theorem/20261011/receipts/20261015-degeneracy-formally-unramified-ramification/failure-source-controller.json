@@ -1,0 +1,62 @@
+{
+  "sha256": "0d5c96c853b93f80bacd9e8ff7ac9bc602370f2413ef914c92463228017ed231",
+  "exit": 1,
+  "empty_output_retry_done": false,
+  "source_sha256_after": "0d5c96c853b93f80bacd9e8ff7ac9bc602370f2413ef914c92463228017ed231",
+  "source_unchanged": true,
+  "olean_sha256": null,
+  "seconds": 263.3448475419973,
+  "pid": 52368,
+  "command": [
+    "/Users/macstudio/.local/omega-shims/lean",
+    "-j1",
+    "--trust=0",
+    "-Ddebug.skipKernelTC=false",
+    "-R",
+    "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src",
+    "-o",
+    "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-build/lib/lean/Submission/Supplier/P2M/Sol/S_ModularCurve_XHDRModelAtP_ramificationIndexAlong_degeneracyEmb_pointEquivPlace_eq_one_of_formallyUnramified.olean",
+    "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_ModularCurve_XHDRModelAtP_ramificationIndexAlong_degeneracyEmb_pointEquivPlace_eq_one_of_formallyUnramified.lean"
+  ],
+  "make_wrapper_pid": 38869,
+  "make_exit": 2,
+  "make_entry_failed": false,
+  "cache_binding_valid": true,
+  "canonical_make_running_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/18bf4ed1aede1b605f710f90-1792059632458262000.make-running.json",
+  "canonical_make_terminal_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/18bf4ed1aede1b605f710f90-1792059632458262000.make-terminal.json",
+  "kernel_terminal_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/18bf4ed1aede1b605f710f90-1792059632458262000.kernel/result.json",
+  "direct_dependencies": [
+    {
+      "module": "Submission.Supplier.Definitions.Def_ModularCurve_XHDRModelAtP",
+      "source_sha256": "96355f0824eabb23ede96ffdbf806c297a75e6e927199074a73279f52bce9fde",
+      "object_sha256": "34a3f9c89069b9c1025062e124bb7e8dbff7f146fee741be589041e24ccc6c82",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Definitions.Def_AlgebraicCurve_Correspondence",
+      "source_sha256": "22d43195e5e1e56a79944d3f469e206b1dbea2f6727f6e0e0bccbc151f220881",
+      "object_sha256": "c99c86ef38a52c80a3925a267b8c93ae03a81f20f54c6c6e8d2d2fb01743b08c",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Theorems.Thm_ModularCurve_XHDRModelAtP_fromSpecStalk_genericPoint_comp_eq_specMap_ffEquiv_degeneracyEmb_of_chartPin",
+      "source_sha256": "4f0bb5435ca905c51e68002c9d0109fdbfa0969620f3ed233e0d8b353c02c8e6",
+      "object_sha256": "e0d65334e96389ef48ef9d692600593018376b3d6c809cd1f08601c7d4a12176",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Theorems.Thm_AlgebraicCurve_CurveModel_ramificationIndexAlong_pointEquivPlace_eq_one_of_formallyUnramified",
+      "source_sha256": "831fda23cd73eddcb5855067c73a9cf01c979bbbaa4f69f3553565a1656e7a98",
+      "object_sha256": "2be5c23a55fc91b0eec1619163c3a0525d1794be09d9486102dcbb088e1deb51",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.P2M.Util",
+      "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+      "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+      "receipt_reused": true
+    }
+  ],
+  "stdout": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/18bf4ed1aede1b605f710f90-1792059632458262000.kernel/stdout.log",
+  "stderr": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/18bf4ed1aede1b605f710f90-1792059632458262000.kernel/stderr.log"
+}
