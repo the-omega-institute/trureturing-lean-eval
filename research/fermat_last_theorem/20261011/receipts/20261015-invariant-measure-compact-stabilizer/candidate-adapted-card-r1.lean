@@ -1,0 +1,29 @@
+import Mathlib
+import Submission.Supplier.P2M.Util
+import Submission.Supplier.P2M.Sol.S_MeasureTheory_Measure_exists_eq_smul_map_smul_of_forall_map_smul_eq_of_isCompact_stabilizer
+
+-- Elaborator settings from the recovered exact-pin FLT controller.
+set_option autoImplicit false
+set_option maxHeartbeats 4000000
+set_option synthInstance.maxHeartbeats 400000
+set_option backward.isDefEq.respectTransparency.types false
+set_option debug.skipKernelTC false
+-- End recovered elaborator settings.
+
+set_option autoImplicit false
+
+open MeasureTheory
+open scoped ENNReal
+
+theorem MeasureTheory.Measure.exists_eq_smul_map_smul_of_forall_map_smul_eq_of_isCompact_stabilizer
+    {L : Type*} [Group L] [TopologicalSpace L] [IsTopologicalGroup L] [LocallyCompactSpace L]
+    [SecondCountableTopology L] [MeasurableSpace L] [BorelSpace L]
+    (μL : Measure L) [μL.IsHaarMeasure]
+    {X : Type*} [TopologicalSpace X] [T2Space X] [LocallyCompactSpace X] [MeasurableSpace X] [BorelSpace X]
+    [MulAction L X] [ContinuousSMul L X] [MulAction.IsPretransitive L X]
+    (x₀ : X) (hx₀ : IsCompact (MulAction.stabilizer L x₀ : Set L))
+    (σ : Measure X) [IsFiniteMeasureOnCompacts σ]
+    (hσ : ∀ g : L, σ.map (fun x : X => g • x) = σ) :
+    ∃ c : ℝ≥0∞, c ≠ ∞ ∧ σ = c • μL.map (fun g : L => g • x₀) := by p2m_exact_reverting @_root_.P2MW.S_MeasureTheory_Measure_exists_eq_smul_map_smul_of_forall_map_smul_eq_of_isCompact_stabilizer.solution
+
+#print axioms MeasureTheory.Measure.exists_eq_smul_map_smul_of_forall_map_smul_eq_of_isCompact_stabilizer

@@ -1,0 +1,106 @@
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_MeasureTheory_Measure_exists_eq_smul_map_smul_of_forall_map_smul_eq_of_isCompact_stabilizer.lean:92:2: warning: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_MeasureTheory_Measure_exists_eq_smul_map_smul_of_forall_map_smul_eq_of_isCompact_stabilizer.lean:100:2: warning: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_MeasureTheory_Measure_exists_eq_smul_map_smul_of_forall_map_smul_eq_of_isCompact_stabilizer.lean:101:2: warning: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_MeasureTheory_Measure_exists_eq_smul_map_smul_of_forall_map_smul_eq_of_isCompact_stabilizer.lean:106:2: warning: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_MeasureTheory_Measure_exists_eq_smul_map_smul_of_forall_map_smul_eq_of_isCompact_stabilizer.lean:178:2: warning: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_MeasureTheory_Measure_exists_eq_smul_map_smul_of_forall_map_smul_eq_of_isCompact_stabilizer.lean:196:2: warning: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_MeasureTheory_Measure_exists_eq_smul_map_smul_of_forall_map_smul_eq_of_isCompact_stabilizer.lean:86:64: error: unsolved goals
+case hf
+L : Type u_1
+inst✝¹⁶ : Group L
+inst✝¹⁵ : TopologicalSpace L
+inst✝¹⁴ : IsTopologicalGroup L
+inst✝¹³ : LocallyCompactSpace L
+inst✝¹² : SecondCountableTopology L
+inst✝¹¹ : MeasurableSpace L
+inst✝¹⁰ : BorelSpace L
+μL : Measure L
+inst✝⁹ : μL.IsHaarMeasure
+X : Type u_2
+inst✝⁸ : TopologicalSpace X
+inst✝⁷ : T2Space X
+inst✝⁶ : LocallyCompactSpace X
+inst✝⁵ : MeasurableSpace X
+inst✝⁴ : BorelSpace X
+inst✝³ : MulAction L X
+inst✝² : ContinuousSMul L X
+inst✝¹ : IsPretransitive L X
+x₀ : X
+hx₀ : IsCompact ↑(stabilizer L x₀)
+σ : Measure X
+inst✝ : IsFiniteMeasureOnCompacts σ
+hσ : ∀ (g : L), Measure.map (fun x => g • x) σ = σ
+S : Subgroup L
+hS : S = stabilizer L x₀
+hmemS : ∀ {l : L}, l ∈ S ↔ l • x₀ = x₀
+hScpt : IsCompact ↑S
+this✝⁴ : CompactSpace ↥S
+hπc : Continuous[inst✝¹⁵, inst✝⁸] fun g => g • x₀
+hπm : Measurable fun g => g • x₀
+hSclosed : IsClosed[inst✝¹⁵] ↑S
+this✝³ : LocallyCompactSpace ↥S
+this✝² : SecondCountableTopology ↥S
+K₀ : TopologicalSpace.PositiveCompacts ↥S := { carrier := univ, isCompact' := ⋯, interior_nonempty' := ⋯ }
+μS : Measure ↥S := Measure.haarMeasure K₀
+this✝¹ : IsProbabilityMeasure μS
+hπo : IsOpenMap fun g => g • x₀
+sec : X → L
+hsec : ∀ (x : X), sec x • x₀ = x
+hfib : ∀ (x : X) (t : ↥S), (sec x * ↑t) • x₀ = x
+hF_eq : ∀ (A : Set L) (l l' : L), l • x₀ = l' • x₀ → fib μS A l = fib μS A l'
+hF_sec : ∀ (A : Set L) (l : L), fib μS A (sec (l • x₀)) = fib μS A l
+hG_open : ∀ (U : Set L), IsOpen[inst✝¹⁵] U → Measurable fun x => fib μS U (sec x)
+hG : ∀ (A : Set L), MeasurableSet A → Measurable fun x => fib μS A (sec x)
+k : X → Measure L := fun x => Measure.map (fun t => sec x * ↑t) μS
+hk_apply : ∀ (x : X) (A : Set L), MeasurableSet A → (k x) A = fib μS A (sec x)
+hk : Measurable k
+ν : Measure L := σ.bind k
+hν : ∀ (A : Set L), MeasurableSet A → ν A = ∫⁻ (x : X), fib μS A (sec x) ∂σ
+this✝ : IsFiniteMeasureOnCompacts ν
+this : ν.IsMulLeftInvariant
+hmap : Measure.map (fun g => g • x₀) ν = σ
+c : NNReal
+hc : ν = c • μL
+⊢ AEMeasurable (fun g => g • x₀) μL
