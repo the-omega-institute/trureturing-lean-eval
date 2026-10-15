@@ -1,0 +1,59 @@
+{
+  "at": "2026-10-15T08:04:06.176687+00:00",
+  "source_module": "Submission.Supplier.P2M.Sol.S_ModularCurve_CharPModel_FibreModel_spPlace_d0_jN",
+  "candidate_revision": "r1",
+  "repair": "Reuse the previously verified eight-entry numerical header blacklist repair; retain all other minus-instance and minus-simp settings. Fix exactly five terminally reported proof-valued haveI bindings and remove only the two terminally reported unreachable tactic alternatives. Add final source/card recursive axiom queries.",
+  "reused_repair": "/Users/macstudio/omega/research/lean-eval-01a124c1-52fb-7761-a67c-75fc0610196f/prepare-jbar-unit-order-attribute-repair-20261014.py",
+  "removed_header_names": [
+    "ModularCurve.constantCoeff_dedekindEtaUnitQ",
+    "ModularCurve.eisensteinNumerator_eleven",
+    "ModularCurve.eisensteinNumerator_five",
+    "ModularCurve.eisensteinNumerator_nineteen",
+    "ModularCurve.eisensteinNumerator_seven",
+    "ModularCurve.eisensteinNumerator_seventeen",
+    "ModularCurve.eisensteinNumerator_thirteen",
+    "ModularCurve.eisensteinNumerator_twentythree"
+  ],
+  "style_edits": [
+    {
+      "canonical_line": 513,
+      "before": "  haveI := hadj\n",
+      "after": "  have := hadj\n"
+    },
+    {
+      "canonical_line": 1243,
+      "before": "  haveI hFD : FiniteDimensional k\n",
+      "after": "  have hFD : FiniteDimensional k\n"
+    },
+    {
+      "canonical_line": 1253,
+      "before": "    haveI : Algebra.IsIntegral k\n",
+      "after": "    have : Algebra.IsIntegral k\n"
+    },
+    {
+      "canonical_line": 1267,
+      "before": "  haveI hFD : FiniteDimensional (AlgebraicClosure \u211a)\n",
+      "after": "  have hFD : FiniteDimensional (AlgebraicClosure \u211a)\n"
+    },
+    {
+      "canonical_line": 1279,
+      "before": "    haveI : Algebra.IsIntegral (AlgebraicClosure \u211a)\n",
+      "after": "    have : Algebra.IsIntegral (AlgebraicClosure \u211a)\n"
+    }
+  ],
+  "actual_baseline_errors": 1,
+  "actual_baseline_warnings": 9,
+  "source_card_actual_verification_pending": true,
+  "main_statements_and_all_original_hypotheses_preserved": true,
+  "full_valuation_residue_modular_polynomial_separability_transcendence_integrality_and_both_finite_infinite_branches_preserved": true,
+  "no_warning_suppression_added": true,
+  "active_import_closure_checked": [
+    "Submission.Supplier.Theorems.Thm_ModularCurve_CharPModel_FibreModel_spPlace_d7_dictInfty_of_level"
+  ],
+  "new_compilers_spawned": 0,
+  "controller_restarted": false,
+  "max_active_flt_jobs": 1,
+  "lean_threads": 1,
+  "full_original_complete": false,
+  "official_new_solve_credit": 0
+}
