@@ -1,0 +1,748 @@
+{
+  "observed_at": "2026-10-15T09:26:22.195048+00:00",
+  "previous_checkpoint": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/source-repairs/repair-checkpoint-20261015-r23.json",
+  "graph_snapshot": {
+    "compiled": 8883,
+    "ready": 4334,
+    "failed": 0,
+    "root_compiled": false
+  },
+  "running_snapshot": {
+    "Submission.Supplier.P2M.Sol.S_ModularCurve_periodMap_rescaleLin_apply": {
+      "pid": 82311,
+      "make_wrapper_pid": 82311,
+      "phase": "canonical_make_queue",
+      "sha256": "3972b51c0cc25b0a065a09650169adc1ec5261d29bee178139b5087a28a40463",
+      "configuration": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/1baaca8d2813bc83ce14f2d5-1792056343012939000.configuration.json"
+    }
+  },
+  "invocation_selection": {
+    "event_floor_checkpoint": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/source-repairs/repair-checkpoint-20261015-r15.json",
+    "exclude_verified_progress_files": [
+      "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/source-repairs/canonical-progress-20261015-after-r15-final.json",
+      "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/source-repairs/canonical-progress-20261015-after-r16-final.json",
+      "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/source-repairs/canonical-progress-20261015-after-r17.json",
+      "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/source-repairs/canonical-progress-20261015-after-r18.json",
+      "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/source-repairs/canonical-progress-20261015-after-r19-final.json",
+      "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/source-repairs/canonical-progress-20261015-after-r20-complete-pairs.json",
+      "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/source-repairs/canonical-progress-20261015-after-r21-final.json",
+      "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/source-repairs/canonical-progress-20261015-after-r22-final.json"
+    ],
+    "excluded_invocation_count": 62,
+    "identity_key": "canonical_kernel_result"
+  },
+  "new_verified_canonical_invocations": [
+    {
+      "module": "Submission.Supplier.P2M.Sol.S_ModularCurve_Period_CuspForm_periodHom_ne_zero_of_ne_zero",
+      "source_sha256": "cce59f0f860e398c9df4c56605f60c77700226bafaafe50ae1d9154f05f640eb",
+      "object_sha256": "2953992f38bcf46c98b8a692f7389639debf269341cf33e5267fb1bd88141ca6",
+      "make_exit": 0,
+      "kernel_exit": 0,
+      "warning_count": 0,
+      "stderr_nonempty": false,
+      "configuration": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/7476155d03e5f75daa6b96bb-1792055304219307000.configuration.json",
+      "configuration_sha256": "344cea1326ecfa34da72a55eb49261b893368dca31ca622ae1469a6f1cd7dac9",
+      "canonical_make_terminal": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/7476155d03e5f75daa6b96bb-1792055304219307000.make-terminal.json",
+      "canonical_kernel_result": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/7476155d03e5f75daa6b96bb-1792055304219307000.kernel/result.json",
+      "kernel_result_sha256": "fccb3cb28e7a17c5a6f3d9d45d95ae73ea6461902a30d83f65d86aa7c906169a",
+      "canonical_make_terminal_sha256": "57890b7e4f3b6b48b5d5c6b4100f55766b52f74755b021f3b5e4ff626d91d58a",
+      "stdout_sha256": "977b106dc3cca24d5da7cbe85263d2dea66839023d8c7624c7961eb6938c5b43",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "recursive_axioms_printed": [
+        [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      ],
+      "direct_dependency_hashes_current": true,
+      "direct_dependencies": [
+        {
+          "module": "Submission.Supplier.Definitions.Def_ModularCurve_PeriodMapBundled",
+          "source_sha256": "3067a7dad3e8b56dae4c62afb592ba4a935bdd96cfaae824e3615a3b5ca52fca",
+          "object_sha256": "0ecf7666eeb1ae41142eb9ed7f07656d1a646851ecd767c9bc39e2404c1f88c6",
+          "individual_controller_receipt": true
+        },
+        {
+          "module": "Submission.Supplier.Theorems.Thm_ModularCurve_Period_CuspForm_exists_equivariantPrimitive_gamma0",
+          "source_sha256": "cee19fe5ea29e1530d370ff1b64bad513227a07a5f83b522b93a7eeca81a2693",
+          "object_sha256": "affba465ebf1a3826e3ebf8606ba49e5cea14ba5985bfa9ed7606fbb36a52486",
+          "individual_controller_receipt": true
+        },
+        {
+          "module": "Submission.Supplier.Theorems.Thm_ModularCurve_Period_IsEquivariantPrimitive_periodHom_eq_of_hasDerivAt",
+          "source_sha256": "06c5a93d3f4d1b305db7f1caffd36abf6ae42d5faaaa4cc8f1ce43444f1d54c7",
+          "object_sha256": "4a1edd945a92a170d754fa2c03f0c1abd93d20b9012129dbbf26efa92246e015",
+          "individual_controller_receipt": true
+        },
+        {
+          "module": "Submission.Supplier.P2M.Util",
+          "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+          "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+          "individual_controller_receipt": true
+        }
+      ],
+      "proof_checks": {
+        "threads": 1,
+        "trust": 0,
+        "skipKernelTC": false
+      },
+      "official_acceptance": false
+    },
+    {
+      "module": "Submission.Supplier.Theorems.Thm_ModularCurve_Period_CuspForm_periodHom_ne_zero_of_ne_zero",
+      "source_sha256": "c0ef64b005b61c86e91e4d7ee913831c55ba8164fd23f12b6f6980aa55a72910",
+      "object_sha256": "b38a781975529c1399ef92f345d41cb4767c3b8bdd66d54298a2bf40fbf8d7da",
+      "make_exit": 0,
+      "kernel_exit": 0,
+      "warning_count": 0,
+      "stderr_nonempty": false,
+      "configuration": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/969e7595504e8640b93caca0-1792055357102336000.configuration.json",
+      "configuration_sha256": "cc6b4acf534b7a0bf9ea42869fdb21188b943d2e46e0737cbd6e1bb8679b6e04",
+      "canonical_make_terminal": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/969e7595504e8640b93caca0-1792055357102336000.make-terminal.json",
+      "canonical_kernel_result": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/969e7595504e8640b93caca0-1792055357102336000.kernel/result.json",
+      "kernel_result_sha256": "e71d1b3b0f289b103be1348db53d240263f322ba4622bd08a0dafc7b593b5e60",
+      "canonical_make_terminal_sha256": "1facc14d5826900c7c38b38cb13d4d9cb2a884d685e83b35580f1ff3d01cc2d7",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "recursive_axioms_printed": null,
+      "direct_dependency_hashes_current": true,
+      "direct_dependencies": [
+        {
+          "module": "Submission.Supplier.Definitions.Def_ModularCurve_PeriodMapBundled",
+          "source_sha256": "3067a7dad3e8b56dae4c62afb592ba4a935bdd96cfaae824e3615a3b5ca52fca",
+          "object_sha256": "0ecf7666eeb1ae41142eb9ed7f07656d1a646851ecd767c9bc39e2404c1f88c6",
+          "individual_controller_receipt": true
+        },
+        {
+          "module": "Submission.Supplier.P2M.Util",
+          "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+          "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+          "individual_controller_receipt": true
+        },
+        {
+          "module": "Submission.Supplier.P2M.Sol.S_ModularCurve_Period_CuspForm_periodHom_ne_zero_of_ne_zero",
+          "source_sha256": "cce59f0f860e398c9df4c56605f60c77700226bafaafe50ae1d9154f05f640eb",
+          "object_sha256": "2953992f38bcf46c98b8a692f7389639debf269341cf33e5267fb1bd88141ca6",
+          "individual_controller_receipt": true
+        }
+      ],
+      "proof_checks": {
+        "threads": 1,
+        "trust": 0,
+        "skipKernelTC": false
+      },
+      "official_acceptance": false
+    },
+    {
+      "module": "Submission.Supplier.P2M.Sol.S_ModularCurve_periodMap_eq_periodHom",
+      "source_sha256": "2dd482528288acaf82dce8b8061ecb4c209568e35aa3709533c688f151ac696d",
+      "object_sha256": "01d4c00de0ff528feda7798102f1f779124f66a0a5d8a3e3c6440d016616bb17",
+      "make_exit": 0,
+      "kernel_exit": 0,
+      "warning_count": 0,
+      "stderr_nonempty": false,
+      "configuration": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/432177236ff8f82f9f446c58-1792055425393318000.configuration.json",
+      "configuration_sha256": "5639306313d18405a3fb9a83781c459895f9dcb436f94e42eade3e26b6af7ae1",
+      "canonical_make_terminal": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/432177236ff8f82f9f446c58-1792055425393318000.make-terminal.json",
+      "canonical_kernel_result": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/432177236ff8f82f9f446c58-1792055425393318000.kernel/result.json",
+      "kernel_result_sha256": "72e9cdd3d59fc58194705273ffdd52efff0b5b21e6f130c753d0276a83cd1bb7",
+      "canonical_make_terminal_sha256": "a649b8379c6c79cb2054f98f0a7df3644fc02b3b38376ecfc05979b867dc5b75",
+      "stdout_sha256": "d55616cc4ac9567a9d2c4b0a47fd37617b90e6b4cb3e5dfa8c9b1b9de75501b9",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "recursive_axioms_printed": [
+        [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      ],
+      "direct_dependency_hashes_current": true,
+      "direct_dependencies": [
+        {
+          "module": "Submission.Supplier.Definitions.Def_ModularCurve_PeriodMapBundled",
+          "source_sha256": "3067a7dad3e8b56dae4c62afb592ba4a935bdd96cfaae824e3615a3b5ca52fca",
+          "object_sha256": "0ecf7666eeb1ae41142eb9ed7f07656d1a646851ecd767c9bc39e2404c1f88c6",
+          "individual_controller_receipt": true
+        },
+        {
+          "module": "Submission.Supplier.Theorems.Thm_ModularCurve_Period_CuspForm_exists_equivariantPrimitive_gamma0",
+          "source_sha256": "cee19fe5ea29e1530d370ff1b64bad513227a07a5f83b522b93a7eeca81a2693",
+          "object_sha256": "affba465ebf1a3826e3ebf8606ba49e5cea14ba5985bfa9ed7606fbb36a52486",
+          "individual_controller_receipt": true
+        },
+        {
+          "module": "Submission.Supplier.Theorems.Thm_ModularCurve_Period_IsEquivariantPrimitive_periodHom_eq_of_hasDerivAt",
+          "source_sha256": "06c5a93d3f4d1b305db7f1caffd36abf6ae42d5faaaa4cc8f1ce43444f1d54c7",
+          "object_sha256": "4a1edd945a92a170d754fa2c03f0c1abd93d20b9012129dbbf26efa92246e015",
+          "individual_controller_receipt": true
+        },
+        {
+          "module": "Submission.Supplier.P2M.Util",
+          "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+          "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+          "individual_controller_receipt": true
+        }
+      ],
+      "proof_checks": {
+        "threads": 1,
+        "trust": 0,
+        "skipKernelTC": false
+      },
+      "official_acceptance": false
+    },
+    {
+      "module": "Submission.Supplier.Theorems.Thm_ModularCurve_periodMap_eq_periodHom",
+      "source_sha256": "eefcee129314b728028fa8cddac364a1b8d4a70a183c3826656c1d43f708a844",
+      "object_sha256": "d9595f4829fa5d46f1af25cdd31768c5e6247e837cb1d58e2b8feb953f3332e4",
+      "make_exit": 0,
+      "kernel_exit": 0,
+      "warning_count": 0,
+      "stderr_nonempty": false,
+      "configuration": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/160b4f5dd77528149eae0e87-1792055482337421000.configuration.json",
+      "configuration_sha256": "3fd52bc91f105c2efe00ca544bb274ef2d3fb617c7d3c9d82500418c4af7085e",
+      "canonical_make_terminal": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/160b4f5dd77528149eae0e87-1792055482337421000.make-terminal.json",
+      "canonical_kernel_result": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/160b4f5dd77528149eae0e87-1792055482337421000.kernel/result.json",
+      "kernel_result_sha256": "04c92650ad9246cf368f1d95ba63db748c2d432aee65c60bbb82a78e7636a2ab",
+      "canonical_make_terminal_sha256": "d2383c1fc933c976bee55e20a0880f77556312f23f9341ea8291143d050f4694",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "recursive_axioms_printed": null,
+      "direct_dependency_hashes_current": true,
+      "direct_dependencies": [
+        {
+          "module": "Submission.Supplier.Definitions.Def_ModularCurve_PeriodMapBundled",
+          "source_sha256": "3067a7dad3e8b56dae4c62afb592ba4a935bdd96cfaae824e3615a3b5ca52fca",
+          "object_sha256": "0ecf7666eeb1ae41142eb9ed7f07656d1a646851ecd767c9bc39e2404c1f88c6",
+          "individual_controller_receipt": true
+        },
+        {
+          "module": "Submission.Supplier.P2M.Util",
+          "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+          "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+          "individual_controller_receipt": true
+        },
+        {
+          "module": "Submission.Supplier.P2M.Sol.S_ModularCurve_periodMap_eq_periodHom",
+          "source_sha256": "2dd482528288acaf82dce8b8061ecb4c209568e35aa3709533c688f151ac696d",
+          "object_sha256": "01d4c00de0ff528feda7798102f1f779124f66a0a5d8a3e3c6440d016616bb17",
+          "individual_controller_receipt": true
+        }
+      ],
+      "proof_checks": {
+        "threads": 1,
+        "trust": 0,
+        "skipKernelTC": false
+      },
+      "official_acceptance": false
+    },
+    {
+      "module": "Submission.Supplier.P2M.Sol.S_ModularCurve_periodMap_atkinLehnerLin_apply",
+      "source_sha256": "df741c4632a27c40df533852359255e0fbe93e1bc9bdef7b77cb5f63602f39f8",
+      "object_sha256": "19d36768361508cc6f5f9ed23c43496a925f1dabe5d06be7b48525b61507dda1",
+      "make_exit": 0,
+      "kernel_exit": 0,
+      "warning_count": 0,
+      "stderr_nonempty": false,
+      "configuration": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/9a51cd0221e7e65ce7da2ee8-1792055543175320000.configuration.json",
+      "configuration_sha256": "1627bd8ed675be553bf74b6a224943a4b37f6a9865a93410dd82e8ac03ed95cc",
+      "canonical_make_terminal": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/9a51cd0221e7e65ce7da2ee8-1792055543175320000.make-terminal.json",
+      "canonical_kernel_result": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/9a51cd0221e7e65ce7da2ee8-1792055543175320000.kernel/result.json",
+      "kernel_result_sha256": "c22fa1989351ebe7ad10cb034526d0382e9867492d3a258e27a6d379862536f6",
+      "canonical_make_terminal_sha256": "409f2551349df502fe0c8dfe8a11a104c01a152fcdd0feda5d25bc134a695c2b",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "recursive_axioms_printed": null,
+      "direct_dependency_hashes_current": true,
+      "direct_dependencies": [
+        {
+          "module": "Submission.Supplier.Definitions.Def_ModularCurve_PeriodTransfer",
+          "source_sha256": "cdb121a0c92ba1b5b461f1b2c1f97d1c75712ffa8dcdb27cb03677bdd550a865",
+          "object_sha256": "2e44b6759a092a5cb649a4e9e9e7918369f0c000c33895b333dc927776185a4c",
+          "individual_controller_receipt": true
+        },
+        {
+          "module": "Submission.Supplier.Definitions.Def_CuspForm_AtkinLehnerOperator",
+          "source_sha256": "f7b375873d40678d18e8b6062aae995b9fe7d54efcd4cf313f3cb99089460c0f",
+          "object_sha256": "9b4c52e2597e4b83a079a939e5a72e902d0e7db21d2a37633ab912e2f9e81b87",
+          "individual_controller_receipt": true
+        },
+        {
+          "module": "Submission.Supplier.Theorems.Thm_ModularCurve_periodMap_eq_periodHom",
+          "source_sha256": "eefcee129314b728028fa8cddac364a1b8d4a70a183c3826656c1d43f708a844",
+          "object_sha256": "d9595f4829fa5d46f1af25cdd31768c5e6247e837cb1d58e2b8feb953f3332e4",
+          "individual_controller_receipt": true
+        },
+        {
+          "module": "Submission.Supplier.Theorems.Thm_ModularCurve_Period_CuspForm_exists_equivariantPrimitive_gamma0",
+          "source_sha256": "cee19fe5ea29e1530d370ff1b64bad513227a07a5f83b522b93a7eeca81a2693",
+          "object_sha256": "affba465ebf1a3826e3ebf8606ba49e5cea14ba5985bfa9ed7606fbb36a52486",
+          "individual_controller_receipt": true
+        },
+        {
+          "module": "Submission.Supplier.P2M.Util",
+          "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+          "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+          "individual_controller_receipt": true
+        }
+      ],
+      "proof_checks": {
+        "threads": 1,
+        "trust": 0,
+        "skipKernelTC": false
+      },
+      "official_acceptance": false
+    },
+    {
+      "module": "Submission.Supplier.Theorems.Thm_ModularCurve_periodMap_atkinLehnerLin_apply",
+      "source_sha256": "b9d0226dcea1267b8055a48c19c8cb847afc74804e22d97a441ae3d1c8bff66d",
+      "object_sha256": "67cc2861e19dd5f72e4e0371c6a54c3498476c97303254f6bdc94c1d6092771b",
+      "make_exit": 0,
+      "kernel_exit": 0,
+      "warning_count": 0,
+      "stderr_nonempty": false,
+      "configuration": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/269d2f5ab0db45e738ed3ed3-1792055625895191000.configuration.json",
+      "configuration_sha256": "ef58cb6a28155af0886497650370e2ab29da1daccbd613b58f8f3e9518c7536b",
+      "canonical_make_terminal": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/269d2f5ab0db45e738ed3ed3-1792055625895191000.make-terminal.json",
+      "canonical_kernel_result": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/269d2f5ab0db45e738ed3ed3-1792055625895191000.kernel/result.json",
+      "kernel_result_sha256": "ca2c1ecc6549ba7134bf753804b4ebfbafffe6135fc9a321cf7fcab4467e9ea1",
+      "canonical_make_terminal_sha256": "107c3110092b6611e7ea7ce77e3febcdd12125244ceb4ee1a409d0c57e392dc9",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "recursive_axioms_printed": null,
+      "direct_dependency_hashes_current": true,
+      "direct_dependencies": [
+        {
+          "module": "Submission.Supplier.Definitions.Def_ModularCurve_PeriodMapBundled",
+          "source_sha256": "3067a7dad3e8b56dae4c62afb592ba4a935bdd96cfaae824e3615a3b5ca52fca",
+          "object_sha256": "0ecf7666eeb1ae41142eb9ed7f07656d1a646851ecd767c9bc39e2404c1f88c6",
+          "individual_controller_receipt": true
+        },
+        {
+          "module": "Submission.Supplier.Definitions.Def_CuspForm_AtkinLehnerOperator",
+          "source_sha256": "f7b375873d40678d18e8b6062aae995b9fe7d54efcd4cf313f3cb99089460c0f",
+          "object_sha256": "9b4c52e2597e4b83a079a939e5a72e902d0e7db21d2a37633ab912e2f9e81b87",
+          "individual_controller_receipt": true
+        },
+        {
+          "module": "Submission.Supplier.P2M.Util",
+          "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+          "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+          "individual_controller_receipt": true
+        },
+        {
+          "module": "Submission.Supplier.P2M.Sol.S_ModularCurve_periodMap_atkinLehnerLin_apply",
+          "source_sha256": "df741c4632a27c40df533852359255e0fbe93e1bc9bdef7b77cb5f63602f39f8",
+          "object_sha256": "19d36768361508cc6f5f9ed23c43496a925f1dabe5d06be7b48525b61507dda1",
+          "individual_controller_receipt": true
+        }
+      ],
+      "proof_checks": {
+        "threads": 1,
+        "trust": 0,
+        "skipKernelTC": false
+      },
+      "official_acceptance": false
+    },
+    {
+      "module": "Submission.Supplier.P2M.Sol.S_CuspForm_IsNormalizedEigenform_exists_H1_diamondRaw_eq_smul_heckeT_eq_smul_of_mem_fixedSubmodule_fnTwist",
+      "source_sha256": "f27960f9e24ecd7b33556d9fb323eafd76d69124a3e9b49d46a728966121b950",
+      "object_sha256": "d8f921866483b5bddf261e8d844229b597e396d2590d152a6ecdbf371d1e608f",
+      "make_exit": 0,
+      "kernel_exit": 0,
+      "warning_count": 0,
+      "stderr_nonempty": false,
+      "configuration": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/51763a2e3bb4dd424c7dbf18-1792055925041075000.configuration.json",
+      "configuration_sha256": "bc795beb31c30ca09d50d33b80dcb706a880e3b74967fa6b02b47b0b814982e5",
+      "canonical_make_terminal": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/51763a2e3bb4dd424c7dbf18-1792055925041075000.make-terminal.json",
+      "canonical_kernel_result": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/51763a2e3bb4dd424c7dbf18-1792055925041075000.kernel/result.json",
+      "kernel_result_sha256": "c3c1ed973ac4d24c421b08111ff729d1dc730002a3e580751c2dfc2aa9bd4607",
+      "canonical_make_terminal_sha256": "5caad6c649a02a1304445fd05531b4235253ed89859db71f5400763e7ebf2fd3",
+      "stdout_sha256": "3ad2363a858468090de1759fe112fac331233efd6bcc27220eaff7598f256352",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "recursive_axioms_printed": [
+        [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      ],
+      "direct_dependency_hashes_current": true,
+      "direct_dependencies": [
+        {
+          "module": "Submission.Supplier.Definitions.Def_CuspForm_Newforms",
+          "source_sha256": "038ffb0534cb0d69dd4d32975f5910d02e5c2e91edf8776d1a0153b10c2eb713",
+          "object_sha256": "9c52ed2ea48466c20a5f0d8ba9c6e8f19711fc3a1f6027584e55dd5044e94968",
+          "individual_controller_receipt": true
+        },
+        {
+          "module": "Submission.Supplier.Definitions.Def_CuspForm_AdelicLift",
+          "source_sha256": "5de40ae353dd962cc2efeb8427be45980d72968e95bd6888e7a54aa3fc07f764",
+          "object_sha256": "57a55d4f8cb392d088729a693eeb875105b940341468becafcd9b81f6e1d9015",
+          "individual_controller_receipt": true
+        },
+        {
+          "module": "Submission.Supplier.Definitions.Def_LocalNewvector_AdelicSpanCarrier",
+          "source_sha256": "b9a8c834045a62e0c43a02f357b8c1a19334af215bb8d4372e37d650e454e767",
+          "object_sha256": "1f94967f7a11261edd5279088c1bae8d9bc83901bfcc6e1a1ce6ed25d9904b80",
+          "individual_controller_receipt": true
+        },
+        {
+          "module": "Submission.Supplier.Definitions.Def_AutomorphicForm_FnTwist",
+          "source_sha256": "3a8cd72b03187d930c5fd93be3777a343c141a7d217e1c07c68b9bde509034b0",
+          "object_sha256": "f0bde351f5c4451f22a3968d12852adb87b6c0ec61b7d0f045aa692a8b5be742",
+          "individual_controller_receipt": true
+        },
+        {
+          "module": "Submission.Supplier.Definitions.Def_HeckeCharacter_FiniteOrder",
+          "source_sha256": "7b8ced79799dd902bdee53c3b3fd3af274e968ca47e9317bb376b3f7d8de7301",
+          "object_sha256": "cfc28669cfab23c8a3781d1d029342a3468c0ed91bc3095a9b299a69ce51f775",
+          "individual_controller_receipt": true
+        },
+        {
+          "module": "Submission.Supplier.Definitions.Def_AutomorphicForm_HeckeEigenfunction",
+          "source_sha256": "6c5cee010db5e236b87cbf61b4113856d522ec091837587b39d58698b4b1da1b",
+          "object_sha256": "33c4015391aba2afad7ac5fa600996e907ddca28b2a433ac549a90c184de3ee3",
+          "individual_controller_receipt": true
+        },
+        {
+          "module": "Submission.Supplier.Definitions.Def_AdelicDock_LocalEmbedding",
+          "source_sha256": "8dd7d0ec1dfab8c88a8cc7de14be8d9a65ae4ab5458530bb25f42f6742b4ae47",
+          "object_sha256": "0d9a261afbc1ecca88149032c76920e6a9b20319ef4f272e47f0f73f5fd181f2",
+          "individual_controller_receipt": true
+        },
+        {
+          "module": "Submission.Supplier.Definitions.Def_CohCarrier_Level",
+          "source_sha256": "f153a8d16b5962fd7bc39c58257bcc87660e656712c65df73420b9c6f5fe41f7",
+          "object_sha256": "9238d03ad828e4a8d14782c0b931dd9d803d2ca916c6cf3247ff632280d52872",
+          "individual_controller_receipt": true
+        },
+        {
+          "module": "Submission.Supplier.Definitions.Def_ModularCurve_PeriodMap",
+          "source_sha256": "5acf4e570629a49b529fed25d764bd7de9120a51dbc1f80018650cd937a0aed5",
+          "object_sha256": "012e8618e75b0f93bbcd3f9b2facf43aed4d813b74f4af3f22ac146c9a154835",
+          "individual_controller_receipt": true
+        },
+        {
+          "module": "Submission.Supplier.Theorems.Thm_NumberField_AdelicLevel_exists_globalPoints_mul_mem_levelOne_rat",
+          "source_sha256": "79b2e90ffbc6e5c015ad8fc4fc720a126634e18eadf092000420ee3c6ac7f83a",
+          "object_sha256": "7ad59f62321ad80001374071aa685c1fb8cccedcffec62fcfab79e9558677289",
+          "individual_controller_receipt": true
+        },
+        {
+          "module": "Submission.Supplier.Definitions.Def_ModularForm_HeckeOperator",
+          "source_sha256": "20baff864009cb329b3acc99122be19f306fd99643f79b447f7e67cfac37301c",
+          "object_sha256": "fce69e9b4d07765a4f4e03a9ed858c6aed52c89e920248e5bf2467b64a8f9760",
+          "individual_controller_receipt": true
+        },
+        {
+          "module": "Submission.Supplier.Theorems.Thm_CuspForm_IsNormalizedEigenform_heckeTLin_apply_eq_qCoeff_smul",
+          "source_sha256": "df584d422c3194df633e0e6f1bad90a1df129e1bfa173939255cfc16ab47a0ab",
+          "object_sha256": "2ab6171c7503f95cb86343338a282b9540e12e4588606d9e060885dc4634946e",
+          "individual_controller_receipt": true
+        },
+        {
+          "module": "Submission.Supplier.Theorems.Thm_CuspForm_IsAdelicLiftOf_levelZero_inv",
+          "source_sha256": "b98bc8663b8f109b481e8a1d1fc75536b0138a726ddd2398d96f6a5cbd46e9fe",
+          "object_sha256": "5ad0dbe1d39f87356603f05fcd27b54cd9cc67b44485482d27ba40f41c223721",
+          "individual_controller_receipt": true
+        },
+        {
+          "module": "Submission.Supplier.Definitions.Def_DirichletCharacter_DirichletIdeleChar",
+          "source_sha256": "be2baca9e9c25af68e15c1f415b17fb71fec74c84982abd229bdda9f3b7c883c",
+          "object_sha256": "d87413dc1489ac54c59b66ab1fa15f7cd9665bb7306a1e7eec11bf0d1f46d3e4",
+          "individual_controller_receipt": true
+        },
+        {
+          "module": "Submission.Supplier.Theorems.Thm_HeckeCharacter_IsFiniteOrderHeckeChar_exists_dirichletIdeleChar_eq_of_admitsModulus",
+          "source_sha256": "a76e94930b146f382643049c17815f0ea1eee4d89c3540f6c5174f038d5d922e",
+          "object_sha256": "af753a69617ce23b398fd09b120ec3de22b8e1f964fc0ac05eab17540d3b71c3",
+          "individual_controller_receipt": true
+        },
+        {
+          "module": "Submission.Supplier.Definitions.Def_ModularCurve_PeriodTransfer",
+          "source_sha256": "cdb121a0c92ba1b5b461f1b2c1f97d1c75712ffa8dcdb27cb03677bdd550a865",
+          "object_sha256": "2e44b6759a092a5cb649a4e9e9e7918369f0c000c33895b333dc927776185a4c",
+          "individual_controller_receipt": true
+        },
+        {
+          "module": "Submission.Supplier.Theorems.Thm_ModularCurve_Period_IsEquivariantPrimitive_periodHom_eq_of_hasDerivAt",
+          "source_sha256": "06c5a93d3f4d1b305db7f1caffd36abf6ae42d5faaaa4cc8f1ce43444f1d54c7",
+          "object_sha256": "4a1edd945a92a170d754fa2c03f0c1abd93d20b9012129dbbf26efa92246e015",
+          "individual_controller_receipt": true
+        },
+        {
+          "module": "Submission.Supplier.Definitions.Def_ModularCurve_PeriodMapBundled",
+          "source_sha256": "3067a7dad3e8b56dae4c62afb592ba4a935bdd96cfaae824e3615a3b5ca52fca",
+          "object_sha256": "0ecf7666eeb1ae41142eb9ed7f07656d1a646851ecd767c9bc39e2404c1f88c6",
+          "individual_controller_receipt": true
+        },
+        {
+          "module": "Submission.Supplier.Theorems.Thm_ModularCurve_Period_CuspForm_exists_equivariantPrimitive_gamma0",
+          "source_sha256": "cee19fe5ea29e1530d370ff1b64bad513227a07a5f83b522b93a7eeca81a2693",
+          "object_sha256": "affba465ebf1a3826e3ebf8606ba49e5cea14ba5985bfa9ed7606fbb36a52486",
+          "individual_controller_receipt": true
+        },
+        {
+          "module": "Submission.Supplier.Theorems.Thm_ModularCurve_Period_IsEquivariantPrimitive_isParabolicHom_periodHom",
+          "source_sha256": "65d95178e0b06544c30eb527b48f08b1759141f0edc4f9dd9d35fc36ef07de0a",
+          "object_sha256": "06501adcfb6ad30cd673ef21243f7e3bae2add6c634ef9bb2225d1227f12419d",
+          "individual_controller_receipt": true
+        },
+        {
+          "module": "Submission.Supplier.P2M.Util",
+          "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+          "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+          "individual_controller_receipt": true
+        }
+      ],
+      "proof_checks": {
+        "threads": 1,
+        "trust": 0,
+        "skipKernelTC": false
+      },
+      "official_acceptance": false
+    },
+    {
+      "module": "Submission.Supplier.P2M.Sol.S_ModularCurve_periodMap_traceLin",
+      "source_sha256": "f2a457cbb4747967476fc34510dc71f05c470aa56f4771c209b134bd44886255",
+      "object_sha256": "e8c28e338f4bcf79a21380280584c8e9e0f808c45ee9178ed5862a1f6aa546f0",
+      "make_exit": 0,
+      "kernel_exit": 0,
+      "warning_count": 0,
+      "stderr_nonempty": false,
+      "configuration": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/a95b4fbffe330ea4f1b72d4b-1792056046436167000.configuration.json",
+      "configuration_sha256": "b098b61f20da433459fcfd8f03b165a45094d90e67aa18b321ddba302341cda8",
+      "canonical_make_terminal": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/a95b4fbffe330ea4f1b72d4b-1792056046436167000.make-terminal.json",
+      "canonical_kernel_result": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/a95b4fbffe330ea4f1b72d4b-1792056046436167000.kernel/result.json",
+      "kernel_result_sha256": "b6936f6f1eb3f73bdf44c197abc3c88272128bdb1a875d87b538a43208658815",
+      "canonical_make_terminal_sha256": "8b2622de455a41b27c2c3304f29b09e22ebf7c6e228ec6389547b6c5cc2a5168",
+      "stdout_sha256": "5d9fa07a849104bf810a1ef4ef856b8aa26ed2ee0f9752bf17d36c7fd9c0aca3",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "recursive_axioms_printed": [
+        [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      ],
+      "direct_dependency_hashes_current": true,
+      "direct_dependencies": [
+        {
+          "module": "Submission.Supplier.Definitions.Def_ModularCurve_PeriodTransfer",
+          "source_sha256": "cdb121a0c92ba1b5b461f1b2c1f97d1c75712ffa8dcdb27cb03677bdd550a865",
+          "object_sha256": "2e44b6759a092a5cb649a4e9e9e7918369f0c000c33895b333dc927776185a4c",
+          "individual_controller_receipt": true
+        },
+        {
+          "module": "Submission.Supplier.Definitions.Def_CuspForm_LevelLoweringTrace",
+          "source_sha256": "5b90e6c3e021a8155b6c308af4c3dc2dce79b7c25e46d63698ed674290b33b3a",
+          "object_sha256": "9ac4fc86f33780b6be402e4edb4e7339dc617d1162a9f55cf250f8d89c69a1f2",
+          "individual_controller_receipt": true
+        },
+        {
+          "module": "Submission.Supplier.Definitions.Def_Gamma0HeckeOperatorHom",
+          "source_sha256": "a3dd5ba42426a016a1f7906ec17f8f63e109e5db4b07ef18160375bb9d3e499d",
+          "object_sha256": "fb7a089a396da30008911bf751aa544f3b351dd0a8129c83a6b97c134a2df47d",
+          "individual_controller_receipt": true
+        },
+        {
+          "module": "Submission.Supplier.Theorems.Thm_ModularCurve_periodMap_eq_periodHom",
+          "source_sha256": "eefcee129314b728028fa8cddac364a1b8d4a70a183c3826656c1d43f708a844",
+          "object_sha256": "d9595f4829fa5d46f1af25cdd31768c5e6247e837cb1d58e2b8feb953f3332e4",
+          "individual_controller_receipt": true
+        },
+        {
+          "module": "Submission.Supplier.Theorems.Thm_ModularCurve_Period_CuspForm_exists_equivariantPrimitive_gamma0",
+          "source_sha256": "cee19fe5ea29e1530d370ff1b64bad513227a07a5f83b522b93a7eeca81a2693",
+          "object_sha256": "affba465ebf1a3826e3ebf8606ba49e5cea14ba5985bfa9ed7606fbb36a52486",
+          "individual_controller_receipt": true
+        },
+        {
+          "module": "Submission.Supplier.Theorems.Thm_ModularCurve_Period_traceSum_period_eq",
+          "source_sha256": "0fdb0bb3479b21d2041618d128e4d3c078f7ca328519d5d39cf3355c2a31b165",
+          "object_sha256": "857a1aad3a16e9ec9fef9497158e0c24ffbbc4d870a4f7880a12754e0dd2307e",
+          "individual_controller_receipt": true
+        },
+        {
+          "module": "Submission.Supplier.P2M.Util",
+          "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+          "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+          "individual_controller_receipt": true
+        }
+      ],
+      "proof_checks": {
+        "threads": 1,
+        "trust": 0,
+        "skipKernelTC": false
+      },
+      "official_acceptance": false
+    },
+    {
+      "module": "Submission.Supplier.Theorems.Thm_ModularCurve_periodMap_traceLin",
+      "source_sha256": "be6a9c75d6024cf9d3eef29672cb0f61e004415a4d8db4c9d0c25b3593e32f72",
+      "object_sha256": "bc165e5f0ff9a77b155216c547ac31f66c7e6ebfeaabf9434db9815f7d4f84b2",
+      "make_exit": 0,
+      "kernel_exit": 0,
+      "warning_count": 0,
+      "stderr_nonempty": false,
+      "configuration": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/25d91afa2a40a10df2c47045-1792056181662828000.configuration.json",
+      "configuration_sha256": "b3b90c30be39a9dd6124d19ffa1c248fa6e9b6ddcb4c88365625010450328039",
+      "canonical_make_terminal": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/25d91afa2a40a10df2c47045-1792056181662828000.make-terminal.json",
+      "canonical_kernel_result": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/25d91afa2a40a10df2c47045-1792056181662828000.kernel/result.json",
+      "kernel_result_sha256": "06a4c43d38bc9dddd43ad2a73b94ab6e574df9574310dd08d7c52612b5c23ee7",
+      "canonical_make_terminal_sha256": "849b5e28724c745d0c6955747ccaa0ba24d9bc64e52d10f0e1db0843c45bf605",
+      "stdout_sha256": "da63578f48681fa86827577571b466581e3a0ed1908123b618a64546c55b11b3",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "recursive_axioms_printed": [
+        [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      ],
+      "direct_dependency_hashes_current": true,
+      "direct_dependencies": [
+        {
+          "module": "Submission.Supplier.Definitions.Def_ModularCurve_PeriodMapBundled",
+          "source_sha256": "3067a7dad3e8b56dae4c62afb592ba4a935bdd96cfaae824e3615a3b5ca52fca",
+          "object_sha256": "0ecf7666eeb1ae41142eb9ed7f07656d1a646851ecd767c9bc39e2404c1f88c6",
+          "individual_controller_receipt": true
+        },
+        {
+          "module": "Submission.Supplier.Definitions.Def_CuspForm_LevelLoweringTrace",
+          "source_sha256": "5b90e6c3e021a8155b6c308af4c3dc2dce79b7c25e46d63698ed674290b33b3a",
+          "object_sha256": "9ac4fc86f33780b6be402e4edb4e7339dc617d1162a9f55cf250f8d89c69a1f2",
+          "individual_controller_receipt": true
+        },
+        {
+          "module": "Submission.Supplier.Definitions.Def_Gamma0HeckeOperatorHom",
+          "source_sha256": "a3dd5ba42426a016a1f7906ec17f8f63e109e5db4b07ef18160375bb9d3e499d",
+          "object_sha256": "fb7a089a396da30008911bf751aa544f3b351dd0a8129c83a6b97c134a2df47d",
+          "individual_controller_receipt": true
+        },
+        {
+          "module": "Submission.Supplier.P2M.Util",
+          "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+          "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+          "individual_controller_receipt": true
+        },
+        {
+          "module": "Submission.Supplier.P2M.Sol.S_ModularCurve_periodMap_traceLin",
+          "source_sha256": "f2a457cbb4747967476fc34510dc71f05c470aa56f4771c209b134bd44886255",
+          "object_sha256": "e8c28e338f4bcf79a21380280584c8e9e0f808c45ee9178ed5862a1f6aa546f0",
+          "individual_controller_receipt": true
+        }
+      ],
+      "proof_checks": {
+        "threads": 1,
+        "trust": 0,
+        "skipKernelTC": false
+      },
+      "official_acceptance": false
+    },
+    {
+      "module": "Submission.Supplier.Theorems.Thm_CuspForm_IsNormalizedEigenform_exists_H1_diamondRaw_eq_smul_heckeT_eq_smul_of_mem_fixedSubmodule_fnTwist",
+      "source_sha256": "751aa25709ba0ebb2ebff651ff862b423c2fca38e4b0aea7302280087d69d217",
+      "object_sha256": "9138b0c13c61fec97e25c9e73d9e9f6234bea50e5fa3f1e246440ee6344eb1a9",
+      "make_exit": 0,
+      "kernel_exit": 0,
+      "warning_count": 0,
+      "stderr_nonempty": false,
+      "configuration": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/6a348a02aba393624017a759-1792056255452164000.configuration.json",
+      "configuration_sha256": "e597d13615c299ff013ac751199f5881814688d9e0dec10c90c20e4504794b93",
+      "canonical_make_terminal": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/6a348a02aba393624017a759-1792056255452164000.make-terminal.json",
+      "canonical_kernel_result": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/6a348a02aba393624017a759-1792056255452164000.kernel/result.json",
+      "kernel_result_sha256": "174aba3e53aed41c6e81c5a853db3b1bab81f144c49114c8a2059bf01a2e7bea",
+      "canonical_make_terminal_sha256": "79ad8345742d69e4816df03e5d8ea092309c856f4c9d699129bfcb3972eca200",
+      "stdout_sha256": "7b3b734da0c1726955e2a7076efbe4036919f0629a8976172eb6c5842159e272",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "recursive_axioms_printed": [
+        [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      ],
+      "direct_dependency_hashes_current": true,
+      "direct_dependencies": [
+        {
+          "module": "Submission.Supplier.Definitions.Def_CuspForm_Newforms",
+          "source_sha256": "038ffb0534cb0d69dd4d32975f5910d02e5c2e91edf8776d1a0153b10c2eb713",
+          "object_sha256": "9c52ed2ea48466c20a5f0d8ba9c6e8f19711fc3a1f6027584e55dd5044e94968",
+          "individual_controller_receipt": true
+        },
+        {
+          "module": "Submission.Supplier.Definitions.Def_CuspForm_AdelicLift",
+          "source_sha256": "5de40ae353dd962cc2efeb8427be45980d72968e95bd6888e7a54aa3fc07f764",
+          "object_sha256": "57a55d4f8cb392d088729a693eeb875105b940341468becafcd9b81f6e1d9015",
+          "individual_controller_receipt": true
+        },
+        {
+          "module": "Submission.Supplier.Definitions.Def_LocalNewvector_AdelicSpanCarrier",
+          "source_sha256": "b9a8c834045a62e0c43a02f357b8c1a19334af215bb8d4372e37d650e454e767",
+          "object_sha256": "1f94967f7a11261edd5279088c1bae8d9bc83901bfcc6e1a1ce6ed25d9904b80",
+          "individual_controller_receipt": true
+        },
+        {
+          "module": "Submission.Supplier.Definitions.Def_AutomorphicForm_FnTwist",
+          "source_sha256": "3a8cd72b03187d930c5fd93be3777a343c141a7d217e1c07c68b9bde509034b0",
+          "object_sha256": "f0bde351f5c4451f22a3968d12852adb87b6c0ec61b7d0f045aa692a8b5be742",
+          "individual_controller_receipt": true
+        },
+        {
+          "module": "Submission.Supplier.Definitions.Def_HeckeCharacter_FiniteOrder",
+          "source_sha256": "7b8ced79799dd902bdee53c3b3fd3af274e968ca47e9317bb376b3f7d8de7301",
+          "object_sha256": "cfc28669cfab23c8a3781d1d029342a3468c0ed91bc3095a9b299a69ce51f775",
+          "individual_controller_receipt": true
+        },
+        {
+          "module": "Submission.Supplier.Definitions.Def_AutomorphicForm_HeckeEigenfunction",
+          "source_sha256": "6c5cee010db5e236b87cbf61b4113856d522ec091837587b39d58698b4b1da1b",
+          "object_sha256": "33c4015391aba2afad7ac5fa600996e907ddca28b2a433ac549a90c184de3ee3",
+          "individual_controller_receipt": true
+        },
+        {
+          "module": "Submission.Supplier.Definitions.Def_AdelicDock_LocalEmbedding",
+          "source_sha256": "8dd7d0ec1dfab8c88a8cc7de14be8d9a65ae4ab5458530bb25f42f6742b4ae47",
+          "object_sha256": "0d9a261afbc1ecca88149032c76920e6a9b20319ef4f272e47f0f73f5fd181f2",
+          "individual_controller_receipt": true
+        },
+        {
+          "module": "Submission.Supplier.Definitions.Def_CohCarrier_Level",
+          "source_sha256": "f153a8d16b5962fd7bc39c58257bcc87660e656712c65df73420b9c6f5fe41f7",
+          "object_sha256": "9238d03ad828e4a8d14782c0b931dd9d803d2ca916c6cf3247ff632280d52872",
+          "individual_controller_receipt": true
+        },
+        {
+          "module": "Submission.Supplier.Definitions.Def_ModularCurve_PeriodMap",
+          "source_sha256": "5acf4e570629a49b529fed25d764bd7de9120a51dbc1f80018650cd937a0aed5",
+          "object_sha256": "012e8618e75b0f93bbcd3f9b2facf43aed4d813b74f4af3f22ac146c9a154835",
+          "individual_controller_receipt": true
+        },
+        {
+          "module": "Submission.Supplier.P2M.Util",
+          "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+          "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+          "individual_controller_receipt": true
+        },
+        {
+          "module": "Submission.Supplier.P2M.Sol.S_CuspForm_IsNormalizedEigenform_exists_H1_diamondRaw_eq_smul_heckeT_eq_smul_of_mem_fixedSubmodule_fnTwist",
+          "source_sha256": "f27960f9e24ecd7b33556d9fb323eafd76d69124a3e9b49d46a728966121b950",
+          "object_sha256": "d8f921866483b5bddf261e8d844229b597e396d2590d152a6ecdbf371d1e608f",
+          "individual_controller_receipt": true
+        }
+      ],
+      "proof_checks": {
+        "threads": 1,
+        "trust": 0,
+        "skipKernelTC": false
+      },
+      "official_acceptance": false
+    }
+  ],
+  "shared_sources_edited_by_this_verifier": false,
+  "events_awaiting_matching_state_record": [],
+  "warning_scope": "Warning counts belong to the exact unmodified supplier inputs; absent axiom output is not a root audit.",
+  "root_or_official_acceptance": false
+}

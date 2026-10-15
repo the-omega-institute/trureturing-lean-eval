@@ -1,0 +1,146 @@
+{
+  "accepted_at": "2026-10-15T09:24:36.966838+00:00",
+  "module": "Submission.Supplier.P2M.Sol.S_ModularCurve_periodMap_traceLin",
+  "source_validation": {
+    "module": "Submission.Supplier.P2M.Sol.S_ModularCurve_periodMap_traceLin",
+    "source_sha256": "f2a457cbb4747967476fc34510dc71f05c470aa56f4771c209b134bd44886255",
+    "object_sha256": "e8c28e338f4bcf79a21380280584c8e9e0f808c45ee9178ed5862a1f6aa546f0",
+    "kernel_exit": 0,
+    "make_exit": 0,
+    "warnings": 0,
+    "recursive_axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "axiom_output": "'P2MW.S_ModularCurve_periodMap_traceLin.solution' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "canonical_kernel_result": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/a95b4fbffe330ea4f1b72d4b-1792056046436167000.kernel/result.json",
+    "canonical_make_terminal": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/a95b4fbffe330ea4f1b72d4b-1792056046436167000.make-terminal.json",
+    "canonical_configuration_sha256": "b098b61f20da433459fcfd8f03b165a45094d90e67aa18b321ddba302341cda8",
+    "direct_dependency_bindings_current": true,
+    "direct_dependency_checks": [
+      {
+        "module": "Submission.Supplier.Definitions.Def_ModularCurve_PeriodTransfer",
+        "source_sha256": "cdb121a0c92ba1b5b461f1b2c1f97d1c75712ffa8dcdb27cb03677bdd550a865",
+        "object_sha256": "2e44b6759a092a5cb649a4e9e9e7918369f0c000c33895b333dc927776185a4c",
+        "recorded_object_hash_available": true,
+        "dependency_exit0_receipt_current": true
+      },
+      {
+        "module": "Submission.Supplier.Definitions.Def_CuspForm_LevelLoweringTrace",
+        "source_sha256": "5b90e6c3e021a8155b6c308af4c3dc2dce79b7c25e46d63698ed674290b33b3a",
+        "object_sha256": "9ac4fc86f33780b6be402e4edb4e7339dc617d1162a9f55cf250f8d89c69a1f2",
+        "recorded_object_hash_available": true,
+        "dependency_exit0_receipt_current": true
+      },
+      {
+        "module": "Submission.Supplier.Definitions.Def_Gamma0HeckeOperatorHom",
+        "source_sha256": "a3dd5ba42426a016a1f7906ec17f8f63e109e5db4b07ef18160375bb9d3e499d",
+        "object_sha256": "fb7a089a396da30008911bf751aa544f3b351dd0a8129c83a6b97c134a2df47d",
+        "recorded_object_hash_available": true,
+        "dependency_exit0_receipt_current": true
+      },
+      {
+        "module": "Submission.Supplier.Theorems.Thm_ModularCurve_periodMap_eq_periodHom",
+        "source_sha256": "eefcee129314b728028fa8cddac364a1b8d4a70a183c3826656c1d43f708a844",
+        "object_sha256": "d9595f4829fa5d46f1af25cdd31768c5e6247e837cb1d58e2b8feb953f3332e4",
+        "recorded_object_hash_available": true,
+        "dependency_exit0_receipt_current": true
+      },
+      {
+        "module": "Submission.Supplier.Theorems.Thm_ModularCurve_Period_CuspForm_exists_equivariantPrimitive_gamma0",
+        "source_sha256": "cee19fe5ea29e1530d370ff1b64bad513227a07a5f83b522b93a7eeca81a2693",
+        "object_sha256": "affba465ebf1a3826e3ebf8606ba49e5cea14ba5985bfa9ed7606fbb36a52486",
+        "recorded_object_hash_available": true,
+        "dependency_exit0_receipt_current": true
+      },
+      {
+        "module": "Submission.Supplier.Theorems.Thm_ModularCurve_Period_traceSum_period_eq",
+        "source_sha256": "0fdb0bb3479b21d2041618d128e4d3c078f7ca328519d5d39cf3355c2a31b165",
+        "object_sha256": "857a1aad3a16e9ec9fef9497158e0c24ffbbc4d870a4f7880a12754e0dd2307e",
+        "recorded_object_hash_available": true,
+        "dependency_exit0_receipt_current": true
+      },
+      {
+        "module": "Submission.Supplier.P2M.Util",
+        "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+        "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+        "recorded_object_hash_available": true,
+        "dependency_exit0_receipt_current": true
+      }
+    ]
+  },
+  "card_validation": {
+    "module": "Submission.Supplier.Theorems.Thm_ModularCurve_periodMap_traceLin",
+    "source_sha256": "be6a9c75d6024cf9d3eef29672cb0f61e004415a4d8db4c9d0c25b3593e32f72",
+    "object_sha256": "bc165e5f0ff9a77b155216c547ac31f66c7e6ebfeaabf9434db9815f7d4f84b2",
+    "kernel_exit": 0,
+    "make_exit": 0,
+    "warnings": 0,
+    "recursive_axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "axiom_output": "'ModularCurve.periodMap_traceLin' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "canonical_kernel_result": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/25d91afa2a40a10df2c47045-1792056181662828000.kernel/result.json",
+    "canonical_make_terminal": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/25d91afa2a40a10df2c47045-1792056181662828000.make-terminal.json",
+    "canonical_configuration_sha256": "b3b90c30be39a9dd6124d19ffa1c248fa6e9b6ddcb4c88365625010450328039",
+    "direct_dependency_bindings_current": true,
+    "direct_dependency_checks": [
+      {
+        "module": "Submission.Supplier.Definitions.Def_ModularCurve_PeriodMapBundled",
+        "source_sha256": "3067a7dad3e8b56dae4c62afb592ba4a935bdd96cfaae824e3615a3b5ca52fca",
+        "object_sha256": "0ecf7666eeb1ae41142eb9ed7f07656d1a646851ecd767c9bc39e2404c1f88c6",
+        "recorded_object_hash_available": true,
+        "dependency_exit0_receipt_current": true
+      },
+      {
+        "module": "Submission.Supplier.Definitions.Def_CuspForm_LevelLoweringTrace",
+        "source_sha256": "5b90e6c3e021a8155b6c308af4c3dc2dce79b7c25e46d63698ed674290b33b3a",
+        "object_sha256": "9ac4fc86f33780b6be402e4edb4e7339dc617d1162a9f55cf250f8d89c69a1f2",
+        "recorded_object_hash_available": true,
+        "dependency_exit0_receipt_current": true
+      },
+      {
+        "module": "Submission.Supplier.Definitions.Def_Gamma0HeckeOperatorHom",
+        "source_sha256": "a3dd5ba42426a016a1f7906ec17f8f63e109e5db4b07ef18160375bb9d3e499d",
+        "object_sha256": "fb7a089a396da30008911bf751aa544f3b351dd0a8129c83a6b97c134a2df47d",
+        "recorded_object_hash_available": true,
+        "dependency_exit0_receipt_current": true
+      },
+      {
+        "module": "Submission.Supplier.P2M.Util",
+        "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+        "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+        "recorded_object_hash_available": true,
+        "dependency_exit0_receipt_current": true
+      },
+      {
+        "module": "Submission.Supplier.P2M.Sol.S_ModularCurve_periodMap_traceLin",
+        "source_sha256": "f2a457cbb4747967476fc34510dc71f05c470aa56f4771c209b134bd44886255",
+        "object_sha256": "e8c28e338f4bcf79a21380280584c8e9e0f808c45ee9178ed5862a1f6aa546f0",
+        "recorded_object_hash_available": true,
+        "dependency_exit0_receipt_current": true
+      }
+    ]
+  },
+  "source_owner": "Separate source-owner session; no shared Lean source edits by this independent verifier.",
+  "final_theorem_statement_preserved": true,
+  "helper_proof_changes": "Remove redundant negation rewrites, use explicit add_neg_cancel over ZMod, prove the integer distributivity equality explicitly, and clean the three reported local-instance warnings.",
+  "shared_source_edits_by_this_session": 0,
+  "full_original_proof_verified": false,
+  "official_solve_credit": 0,
+  "remote_source_checkpoint": {
+    "verified_at": "2026-10-15T09:28:27.783079+00:00",
+    "repository": "the-omega-institute/trureturing-lean-eval",
+    "commit": "e16c4edc528fe2ebea4fd1aa274792095fd7dae9",
+    "remote_commit_sha_verified": true,
+    "downloaded_unique_git_blobs": 30,
+    "accepted_source_and_card_sha256_match_remote_blobs": true,
+    "source_edits_owned_by": "Separate source-owner session",
+    "source_edits_by_this_session": 0,
+    "url": "https://github.com/the-omega-institute/trureturing-lean-eval/commit/e16c4edc528fe2ebea4fd1aa274792095fd7dae9",
+    "full_original_or_official_acceptance": false
+  }
+}
