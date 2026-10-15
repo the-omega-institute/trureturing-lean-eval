@@ -1,0 +1,32 @@
+--- r1
++++ r2
+@@ -224,7 +224,8 @@
+     have hjp : j < p := ZMod.val_lt _
+     have htj : ‖t - (j : ℤ_[p])‖ < 1 := by
+       have h1 : PadicInt.toZMod (t - (j : ℤ_[p])) = 0 := by
+-        rw [map_sub, map_natCast, hj, ZMod.natCast_zmod_val, _root_.sub_self]
++        rw [map_sub, map_natCast, hj, ZMod.natCast_zmod_val]
++        exact sub_self (PadicInt.toZMod t)
+       have h2 : t - (j : ℤ_[p]) ∈ RingHom.ker (PadicInt.toZMod (p := p)) := RingHom.mem_ker.mpr h1
+       rw [PadicInt.ker_toZMod] at h2
+       exact PadicInt.mem_nonunits.mp ((IsLocalRing.mem_maximalIdeal _).mp h2)
+@@ -1991,7 +1992,8 @@
+ private theorem valued_padicRingEquiv_coe_sub_one_le {u : ℤ_[q]ˣ} (hu : PadicInt.toZMod (u : ℤ_[q]) = 1) :
+     Valued.v (padicRingEquiv q ((u : ℤ_[q]) : ℚ_[q]) - 1) ≤ WithZero.exp (-1 : ℤ) := by
+   have hker : (u : ℤ_[q]) - 1 ∈ RingHom.ker (PadicInt.toZMod : ℤ_[q] →+* ZMod q) := by
+-    rw [RingHom.mem_ker, map_sub, hu, map_one, _root_.sub_self]
++    rw [RingHom.mem_ker, map_sub, hu, map_one]
++    exact sub_self (1 : ZMod q)
+   rw [PadicInt.ker_toZMod, PadicInt.maximalIdeal_eq_span_p, Ideal.mem_span_singleton] at hker
+   obtain ⟨w, hw⟩ := hker
+   have hcoe : padicRingEquiv q ((u : ℤ_[q]) : ℚ_[q]) - 1 =
+@@ -2155,7 +2157,8 @@
+     PadicInt.toZMod x = 1 := by
+   have hmem : x - 1 ∈ IsLocalRing.maximalIdeal ℤ_[q] :=
+     (IsLocalRing.mem_maximalIdeal _).mpr (PadicInt.mem_nonunits.mpr hx)
+-  rwa [← PadicInt.ker_toZMod, RingHom.mem_ker, map_sub, map_one, _root_.sub_eq_zero] at hmem
++  rw [← PadicInt.ker_toZMod, RingHom.mem_ker, map_sub, map_one] at hmem
++  exact sub_eq_zero.mp hmem
+ 
+ private theorem chiSq_eq_one_of_norm_sub_one_lt_one {q : ℕ} [Fact q.Prime]
+     (hξmod : HeckeCharacter.AdmitsModulus ℚ ξ (ratLevel q)) (u : ℤ_[q]ˣ) (hu : ‖(u : ℤ_[q]) - 1‖ < 1) :

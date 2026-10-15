@@ -1,0 +1,408 @@
+--- baseline
++++ candidate
+@@ -103,7 +103,7 @@
+     (F ∣[(2 : ℤ)] g) τ = F (g • τ) * ((g.val.det : ℝ) : ℂ) / denom g τ ^ 2 := by
+   have hdet : 0 < g.det.val := by rwa [Matrix.GeneralLinearGroup.val_det_apply]
+   have hσ : UpperHalfPlane.σ g (F (g • τ)) = F (g • τ) := by
+-    rw [UpperHalfPlane.σ, if_pos hdet]
++    rw [UpperHalfPlane.σ, ite_eq_left hdet]
+     rfl
+   rw [ModularForm.slash_apply, hσ, abs_of_pos hdet, Matrix.GeneralLinearGroup.val_det_apply,
+     show ((2 : ℤ) - 1) = 1 by norm_num, zpow_one, zpow_neg, zpow_ofNat, div_eq_mul_inv]
+@@ -121,7 +121,6 @@
+   have hcomp := houter.comp (↑τ : ℂ) (hasStrictDerivAt_smul hg τ).hasDerivAt
+   rw [← hfun] at hcomp
+   convert hcomp using 1
+-  all_goals try rfl
+   rw [slash_two_apply_of_det_pos F g hg τ]
+   ring
+ 
+@@ -225,7 +224,7 @@
+     have hjp : j < p := ZMod.val_lt _
+     have htj : ‖t - (j : ℤ_[p])‖ < 1 := by
+       have h1 : PadicInt.toZMod (t - (j : ℤ_[p])) = 0 := by
+-        rw [map_sub, map_natCast, hj, ZMod.natCast_zmod_val, sub_self]
++        rw [map_sub, map_natCast, hj, ZMod.natCast_zmod_val, _root_.sub_self]
+       have h2 : t - (j : ℤ_[p]) ∈ RingHom.ker (PadicInt.toZMod (p := p)) := RingHom.mem_ker.mpr h1
+       rw [PadicInt.ker_toZMod] at h2
+       exact PadicInt.mem_nonunits.mp ((IsLocalRing.mem_maximalIdeal _).mp h2)
+@@ -233,13 +232,21 @@
+       have : b - a * (j : ℤ_[p]) = (b - a * t) + a * (t - (j : ℤ_[p])) := by ring
+       rw [this]
+       have ha1 : ‖a * (t - (j : ℤ_[p]))‖ < 1 := by
+-        rw [norm_mul]; exact mul_lt_one_of_nonneg_of_lt_one_right (PadicInt.norm_le_one a) (norm_nonneg _) htj
++        rw [norm_mul]
++        calc
++          ‖a‖ * ‖t - (j : ℤ_[p])‖ ≤ 1 * ‖t - (j : ℤ_[p])‖ :=
++            mul_le_mul_of_nonneg_right (PadicInt.norm_le_one a) (norm_nonneg _)
++          _ < 1 := by simpa only [one_mul] using htj
+       exact lt_of_le_of_lt (PadicInt.nonarchimedean _ _) (max_lt hbt ha1)
+     have hdj : ‖d - c * (j : ℤ_[p])‖ < 1 := by
+       have : d - c * (j : ℤ_[p]) = (d - c * t) + c * (t - (j : ℤ_[p])) := by ring
+       rw [this]
+       have hc1 : ‖c * (t - (j : ℤ_[p]))‖ < 1 := by
+-        rw [norm_mul]; exact mul_lt_one_of_nonneg_of_lt_one_right (PadicInt.norm_le_one c) (norm_nonneg _) htj
++        rw [norm_mul]
++        calc
++          ‖c‖ * ‖t - (j : ℤ_[p])‖ ≤ 1 * ‖t - (j : ℤ_[p])‖ :=
++            mul_le_mul_of_nonneg_right (PadicInt.norm_le_one c) (norm_nonneg _)
++          _ < 1 := by simpa only [one_mul] using htj
+       exact lt_of_le_of_lt (PadicInt.nonarchimedean _ _) (max_lt hdt hc1)
+     obtain ⟨y₁, hy₁⟩ := (PadicInt.norm_lt_one_iff_dvd _).mp hbj
+     obtain ⟨y₂, hy₂⟩ := (PadicInt.norm_lt_one_iff_dvd _).mp hdj
+@@ -657,7 +664,7 @@
+   refine Units.ext ?_
+   rw [ModularForm.val_heckeMatrix hp.out.ne_zero]
+   ext a b
+-  rw [Matrix.GeneralLinearGroup.map_apply, coe_repQ, repMat, if_pos hi]
++  rw [Matrix.GeneralLinearGroup.map_apply, coe_repQ, repMat, ite_eq_left hi]
+   fin_cases a <;> fin_cases b <;> simp
+ 
+ private theorem map_repQ_last_eq_heckeDiagMatrix :
+@@ -665,7 +672,7 @@
+   refine Units.ext ?_
+   rw [ModularForm.val_heckeDiagMatrix hp.out.ne_zero]
+   ext a b
+-  rw [Matrix.GeneralLinearGroup.map_apply, coe_repQ, repMat, if_neg (by simp)]
++  rw [Matrix.GeneralLinearGroup.map_apply, coe_repQ, repMat, ite_eq_right (by simp)]
+   fin_cases a <;> fin_cases b <;> simp
+ 
+ private theorem finComponent_glFin_globalPoints_repQ (i : Fin (p + 1)) :
+@@ -830,7 +837,7 @@
+   · rw [div_eq_mul_inv, map_mul, ← finAdeleEval_apply, map_mul, finAdeleEval_apply, finAdeleEval_apply]
+     refine mul_mem (algebraMap_mem_adicCompletionIntegers_of_den p hv (Or.inl (Rat.den_intCast n))) ?_
+     refine algebraMap_mem_adicCompletionIntegers_of_den p hv (Or.inr ?_)
+-    rw [Rat.inv_natCast_den, if_neg hp.out.ne_zero]
++    rw [Rat.inv_natCast_den, ite_eq_right hp.out.ne_zero]
+ 
+ private noncomputable def kRep (i : Fin (p + 1)) : GL (Fin 2) (FiniteAdeleRing (𝓞 ℚ) ℚ) :=
+   glFin (𝓞 ℚ) ℚ (globalPoints (𝓞 ℚ) ℚ (repQ p i)) * (ρA p i)⁻¹
+@@ -883,11 +890,10 @@
+   by_cases hv : v = padicPlace p
+   · subst hv
+     rw [← finComponent_apply, hself, Units.val_one, Matrix.one_apply_ne (by decide), map_zero]
+-    exact zero_le'
++    exact zero_le
+   · rw [hne v hv 1 0, hm, map_zero]
+-    change Valued.v ((0 : FiniteAdeleRing (𝓞 ℚ) ℚ) v) ≤ _
+     rw [← finAdeleEval_apply, map_zero, map_zero]
+-    exact zero_le'
++    exact zero_le
+ 
+ private theorem kRep_entry_of_ne {v : HeightOneSpectrum (𝓞 ℚ)} (hv : v ≠ padicPlace p) (i : Fin (p + 1)) (a b : Fin 2) :
+     ((kRep p i : Matrix (Fin 2) (Fin 2) (FiniteAdeleRing (𝓞 ℚ) ℚ)) a b) v
+@@ -976,7 +982,7 @@
+ omit hp in
+ private theorem σ_apply_of_det_pos {g : GL (Fin 2) ℝ} (hg : 0 < (g.det : ℝ)) (z : ℂ) :
+     UpperHalfPlane.σ g z = z := by
+-  rw [UpperHalfPlane.σ, if_pos hg]
++  rw [UpperHalfPlane.σ, ite_eq_left hg]
+   rfl
+ 
+ omit hp in
+@@ -988,7 +994,7 @@
+ 
+ private theorem det_map_repQ (i : Fin (p + 1)) :
+     ((Matrix.GeneralLinearGroup.map (Rat.castHom ℝ) (repQ p i)).det : ℝ) = (p : ℝ) := by
+-  rw [Matrix.GeneralLinearGroup.map_det, Units.coe_map, MonoidHom.coe_coe]
++  rw [Matrix.GeneralLinearGroup.map_det, Units.coe_map, MonoidHom.coe_ofClass]
+   change (Rat.castHom ℝ) (Matrix.det ((repMat p i).map (Int.castRingHom ℚ))) = _
+   rw [show (repMat p i).map (Int.castRingHom ℚ) = (Int.castRingHom ℚ).mapMatrix (repMat p i) from rfl,
+     ← RingHom.map_det, det_repMat, map_natCast, map_natCast]
+@@ -1227,7 +1233,7 @@
+     haveI : Fact (Rat.HeightOneSpectrum.natGenerator v).Prime :=
+       ⟨Rat.HeightOneSpectrum.prime_natGenerator v⟩
+     v = padicPlace (Rat.HeightOneSpectrum.natGenerator v) := by
+-  haveI : Fact (Rat.HeightOneSpectrum.natGenerator v).Prime :=
++  have : Fact (Rat.HeightOneSpectrum.natGenerator v).Prime :=
+     ⟨Rat.HeightOneSpectrum.prime_natGenerator v⟩
+   refine ((Rat.HeightOneSpectrum.primesEquiv (R := 𝓞 ℚ)).symm_apply_apply v).symm.trans ?_
+   exact congrArg _ (Subtype.ext rfl)
+@@ -1253,7 +1259,7 @@
+     (hfac : ∀ ℓ : ℕ, ℓ.Prime → ℓ ≠ q → N.factorization ℓ = M.factorization ℓ)
+     (v : HeightOneSpectrum (𝓞 ℚ)) (hv : v ≠ padicPlace q) :
+     idealBound (𝓞 ℚ) (ratLevel N) v = idealBound (𝓞 ℚ) (ratLevel M) v := by
+-  haveI hℓp : Fact (Rat.HeightOneSpectrum.natGenerator v).Prime :=
++  have hℓp : Fact (Rat.HeightOneSpectrum.natGenerator v).Prime :=
+     ⟨Rat.HeightOneSpectrum.prime_natGenerator v⟩
+   have hvℓ : v = padicPlace (Rat.HeightOneSpectrum.natGenerator v) :=
+     eq_padicPlace_natGenerator v
+@@ -1306,7 +1312,7 @@
+   refine Matrix.GeneralLinearGroup.ext fun i j => ?_
+   rw [Matrix.GeneralLinearGroup.map_apply]
+   simp only [LocalNewvector.centralGL, Units.coe_map, RingHom.toMonoidHom_eq_coe,
+-    MonoidHom.coe_coe, Matrix.algebraMap_matrix_apply,
++    MonoidHom.coe_ofClass, Matrix.algebraMap_matrix_apply,
+     apply_ite (algebraMap ℤ_[q] ℚ_[q]), map_zero]
+   rfl
+ 
+@@ -1365,7 +1371,7 @@
+     have hsc_inv_coe : ((sc⁻¹ : GL (Fin 2) ℤ_[q]) : Matrix (Fin 2) (Fin 2) ℤ_[q])
+         = (↑d⁻¹ : ℤ_[q]) • (1 : Matrix (Fin 2) (Fin 2) ℤ_[q]) := by
+       rw [hsc, ← map_inv]
+-      simp only [Units.coe_map, RingHom.toMonoidHom_eq_coe, MonoidHom.coe_coe,
++      simp only [Units.coe_map, RingHom.toMonoidHom_eq_coe, MonoidHom.coe_ofClass,
+         Algebra.algebraMap_eq_smul_one]
+ 
+     have hk'_row1 : ∀ j, (k' : Matrix (Fin 2) (Fin 2) ℤ_[q]) 1 j
+@@ -1405,7 +1411,7 @@
+   · rw [← finComponent_apply, hgaway v hv, finComponent_apply]; exact hu.integral i j v
+   · rw [← finComponent_apply, hgq, Units.val_one,
+       Matrix.one_apply_ne (by decide : (1 : Fin 2) ≠ 0), map_zero]
+-    exact zero_le'
++    exact zero_le
+   · rw [← finComponent_apply, hgaway v hv, finComponent_apply, ← hsame v hv]
+     exact hu.lowerLeft v
+ 
+@@ -1450,7 +1456,7 @@
+       ((algebraMap ℚ (FiniteAdeleRing (𝓞 ℚ) ℚ)).mapMatrix δ) := by
+   refine ⟨fun i j v => ?_, fun v => ?_⟩
+   all_goals
+-    haveI : Fact (Rat.HeightOneSpectrum.natGenerator v).Prime :=
++    have : Fact (Rat.HeightOneSpectrum.natGenerator v).Prime :=
+       ⟨Rat.HeightOneSpectrum.prime_natGenerator v⟩
+     rw [eq_padicPlace_natGenerator v]
+     set ℓ := Rat.HeightOneSpectrum.natGenerator v
+@@ -1735,7 +1741,7 @@
+     (ht₂ : Valued.v (t₂ : (padicPlace ℓ).adicCompletion ℚ) = WithZero.exp (-1 : ℤ)) :
+     ((ξ (Units.map (finIncl (𝓞 ℚ) ℚ) (localUnit (𝓞 ℚ) ℚ (padicPlace ℓ) t₁)) : ℂˣ) : ℂ) =
+       ((ξ (Units.map (finIncl (𝓞 ℚ) ℚ) (localUnit (𝓞 ℚ) ℚ (padicPlace ℓ) t₂)) : ℂˣ) : ℂ) := by
+-  haveI : NeZero q := ⟨(Fact.out : q.Prime).ne_zero⟩
++  have : NeZero q := ⟨(Fact.out : q.Prime).ne_zero⟩
+   have hmod : HeckeCharacter.AdmitsModulus ℚ ξ (Ideal.span {((q : ℕ) : 𝓞 ℚ)}) := hξmod
+   obtain ⟨χ, hχ⟩ := hξfin.exists_dirichletIdeleChar_eq_of_admitsModulus hmod
+   rw [← hχ, coe_dirichletIdeleChar_map_localUnit χ ℓ hℓq t₁ ht₁, coe_dirichletIdeleChar_map_localUnit χ ℓ hℓq t₂ ht₂]
+@@ -1745,8 +1751,8 @@
+     {ℓ : ℕ} (hℓ : ℓ.Prime) (hℓq : ℓ ≠ q)
+     {u : ℤ_[q]ˣ} (hu : (u : ℤ_[q]) = (ℓ : ℤ_[q])) :
+     ((ξ (AutomorphicForm.uniformizerIdele ℚ (@padicPlace ℓ ⟨hℓ⟩)) : ℂˣ) : ℂ) * ((ξ (unitIdele q u) : ℂˣ) : ℂ) = 1 := by
+-  haveI : NeZero q := ⟨(Fact.out : q.Prime).ne_zero⟩
+-  haveI : Fact ℓ.Prime := ⟨hℓ⟩
++  have : NeZero q := ⟨(Fact.out : q.Prime).ne_zero⟩
++  have : Fact ℓ.Prime := ⟨hℓ⟩
+   have hmod : HeckeCharacter.AdmitsModulus ℚ ξ (Ideal.span {((q : ℕ) : 𝓞 ℚ)}) := hξmod
+   obtain ⟨χ, hχ⟩ := hξfin.exists_dirichletIdeleChar_eq_of_admitsModulus hmod
+   have h1 : ((ξ (AutomorphicForm.uniformizerIdele ℚ (padicPlace ℓ)) : ℂˣ) : ℂ) = χ ((ℓ : ℕ) : ZMod q) := by
+@@ -1854,7 +1860,7 @@
+ private theorem apply_eq_one_of_unitAt_eq_one (ξ : (AdeleRing (𝓞 ℚ) ℚ)ˣ →* ℂˣ)
+     (hξfin : HeckeCharacter.IsFiniteOrderHeckeChar ℚ ξ) (hξmod : HeckeCharacter.AdmitsModulus ℚ ξ (ratLevel q))
+     (x : (AdeleRing (𝓞 ℚ) ℚ)ˣ) (hx : unitAt (padicPlace q) x = 1) : ξ x = 1 := by
+-  haveI : NeZero q := ⟨(Fact.out : q.Prime).ne_zero⟩
++  have : NeZero q := ⟨(Fact.out : q.Prime).ne_zero⟩
+   have hmod : HeckeCharacter.AdmitsModulus ℚ ξ (Ideal.span {((q : ℕ) : 𝓞 ℚ)}) := hξmod
+   obtain ⟨χ, hχ⟩ := hξfin.exists_dirichletIdeleChar_eq_of_admitsModulus hmod
+   have hres : unitResidue q x = 1 := unitResidue_eq_one q fun w hw => by
+@@ -1967,7 +1973,7 @@
+   have hρ : ρ x = 1 := by
+     rw [ρ_eq_archSign_of_snd_eq_one fun w => by rw [hsnd, h1 w]]
+     unfold archSign
+-    rw [if_pos hpos']
++    rw [ite_eq_left hpos']
+   have hunit : unitAt (padicPlace q) x = 1 := by
+     unfold unitAt
+     rw [hρ, map_one, inv_one, mul_one, hsnd, h1]
+@@ -1985,7 +1991,7 @@
+ private theorem valued_padicRingEquiv_coe_sub_one_le {u : ℤ_[q]ˣ} (hu : PadicInt.toZMod (u : ℤ_[q]) = 1) :
+     Valued.v (padicRingEquiv q ((u : ℤ_[q]) : ℚ_[q]) - 1) ≤ WithZero.exp (-1 : ℤ) := by
+   have hker : (u : ℤ_[q]) - 1 ∈ RingHom.ker (PadicInt.toZMod : ℤ_[q] →+* ZMod q) := by
+-    rw [RingHom.mem_ker, map_sub, hu, map_one, sub_self]
++    rw [RingHom.mem_ker, map_sub, hu, map_one, _root_.sub_self]
+   rw [PadicInt.ker_toZMod, PadicInt.maximalIdeal_eq_span_p, Ideal.mem_span_singleton] at hker
+   obtain ⟨w, hw⟩ := hker
+   have hcoe : padicRingEquiv q ((u : ℤ_[q]) : ℚ_[q]) - 1 =
+@@ -2014,7 +2020,7 @@
+         rw [localUnit_apply_self, coe_component, idealMultiplicity_padicPlace_ratLevel]
+         exact ⟨valued_padicRingEquiv_coe_unit q u, by simpa using valued_padicRingEquiv_coe_sub_one_le hu⟩
+       · rw [localUnit_apply_of_ne (𝓞 ℚ) ℚ (padicPlace q) _ hv, sub_self, Valuation.map_one, Valuation.map_zero]
+-        exact ⟨rfl, zero_le'⟩
++        exact ⟨rfl, zero_le⟩
+   rw [chiSq_eq_sq, hξ, Units.val_one, one_pow]
+ 
+ end Atoms
+@@ -2104,7 +2110,7 @@
+   have hsc_inv_coe : ((sc⁻¹ : GL (Fin 2) ℤ_[q]) : Matrix (Fin 2) (Fin 2) ℤ_[q])
+       = (↑d⁻¹ : ℤ_[q]) • (1 : Matrix (Fin 2) (Fin 2) ℤ_[q]) := by
+     rw [hsc, ← map_inv]
+-    simp only [Units.coe_map, RingHom.toMonoidHom_eq_coe, MonoidHom.coe_coe,
++    simp only [Units.coe_map, RingHom.toMonoidHom_eq_coe, MonoidHom.coe_ofClass,
+       Algebra.algebraMap_eq_smul_one]
+   have hk'_row1 : ∀ j, (k' : Matrix (Fin 2) (Fin 2) ℤ_[q]) 1 j
+       = (↑d⁻¹ : ℤ_[q]) * (c : Matrix (Fin 2) (Fin 2) ℤ_[q]) 1 j := fun j => by
+@@ -2149,7 +2155,7 @@
+     PadicInt.toZMod x = 1 := by
+   have hmem : x - 1 ∈ IsLocalRing.maximalIdeal ℤ_[q] :=
+     (IsLocalRing.mem_maximalIdeal _).mpr (PadicInt.mem_nonunits.mpr hx)
+-  rwa [← PadicInt.ker_toZMod, RingHom.mem_ker, map_sub, map_one, sub_eq_zero] at hmem
++  rwa [← PadicInt.ker_toZMod, RingHom.mem_ker, map_sub, map_one, _root_.sub_eq_zero] at hmem
+ 
+ private theorem chiSq_eq_one_of_norm_sub_one_lt_one {q : ℕ} [Fact q.Prime]
+     (hξmod : HeckeCharacter.AdmitsModulus ℚ ξ (ratLevel q)) (u : ℤ_[q]ˣ) (hu : ‖(u : ℤ_[q]) - 1‖ < 1) :
+@@ -2608,7 +2614,7 @@
+   rw [Finset.sum_congr rfl fun i _ => hterm i, Fin.sum_univ_castSucc]
+ 
+   have hlast : chiSq q ξ (if ((Fin.last ℓ : Fin (ℓ + 1)) : ℕ) < ℓ then uℓ else 1) = 1 := by
+-    rw [Fin.val_last, if_neg (lt_irrefl ℓ), chiSq_one]
++    rw [Fin.val_last, ite_eq_right (lt_irrefl ℓ), chiSq_one]
+   rw [hlast, one_mul, map_repQ_last_eq_heckeDiagMatrix ℓ]
+ 
+   have hupper : ∀ j : Fin ℓ,
+@@ -2619,7 +2625,7 @@
+         ((F ∣[(2 : ℤ)] ModularForm.heckeMatrix ℓ (j : ℕ)) ∣[(2 : ℤ)] LanglandsTunnell.ratArchGL2 h)
+           UpperHalfPlane.I := by
+     intro j
+-    rw [Fin.val_castSucc, if_pos j.isLt, map_repQ_eq_heckeMatrix ℓ (i := Fin.castSucc j) j.isLt, Fin.val_castSucc]
++    rw [Fin.val_castSucc, ite_eq_left j.isLt, map_repQ_eq_heckeMatrix ℓ (i := Fin.castSucc j) j.isLt, Fin.val_castSucc]
+   rw [Finset.sum_congr rfl fun j _ => hupper j, ← Finset.mul_sum]
+ 
+   rw [SlashAction.add_slash, ModularForm.smul_slash, σ_apply_of_det_pos ((Matrix.mem_glpos _).mp hpos), Pi.add_apply,
+@@ -2686,7 +2692,7 @@
+         (chiSq q ξ uℓ)⁻¹ • F ∣[(2 : ℤ)] ModularForm.heckeDiagMatrix ℓ =
+       ((ξ (AutomorphicForm.uniformizerIdele ℚ (@AdelicDock.padicPlace ℓ ⟨hℓ⟩)) : ℂ) *
+           ModularFormClass.qCoeff g ℓ) • F := by
+-  haveI : Fact ℓ.Prime := ⟨hℓ⟩
++  have : Fact ℓ.Prime := ⟨hℓ⟩
+   have hL : L ≠ 0 := by
+     rintro rfl
+     rw [Nat.factorization_zero, Finsupp.zero_apply] at hq2
+@@ -2698,7 +2704,7 @@
+   have hTg : ModularForm.heckeT 2 ℓ (⇑g) = ModularFormClass.qCoeff g ℓ • (⇑g) := by
+     have h := congrArg (fun f : CuspForm (CongruenceSubgroup.Gamma0 L) 2 => (⇑f : UpperHalfPlane → ℂ))
+       (CuspForm.IsNormalizedEigenform.heckeTLin_apply_eq_qCoeff_smul L g hg ℓ hℓ hℓL)
+-    simpa [CuspForm.coe_heckeTLin_apply, CuspForm.coe_smul] using h
++    simpa [CuspForm.coe_heckeTLin_apply, FunLike.coe_smul] using h
+   have hΦ : heckeAway ℓ (AdelicSpan.self Φ) = ModularFormClass.qCoeff g ℓ • AdelicSpan.self Φ :=
+     heckeAway_self_eq_smul ℓ hL hℓL hΦg (hΦg.levelZero_inv hL) hTg
+ 
+@@ -2756,7 +2762,7 @@
+     heckeT N H ℓ A φ (Additive.ofMul γ) =
+       ∑ q : ↥(GammaH N H) ⧸ GammaHUpper N H ℓ,
+         φ (Additive.ofMul (conjL N H ℓ (transferFactor T γ q))) := by
+-  letI := (GammaHUpper N H ℓ).fintypeQuotientOfFiniteIndex
++  let := (GammaHUpper N H ℓ).fintypeQuotientOfFiniteIndex
+   show Multiplicative.toAdd
+       (MonoidHom.transfer ((AddMonoidHom.toMultiplicativeRight φ).comp (conjL N H ℓ)) γ) = _
+   rw [MonoidHom.transfer_def _ T]
+@@ -2800,7 +2806,7 @@
+     (hFp : IsEquivariantPrimitive (GammaH N H) Fp) (γ : ↥(GammaH N H)) (w : ℍ) :
+     heckeTrace T Fp ((γ : SL(2, ℤ)) • w) - heckeTrace T Fp w =
+       heckeT N H ℓ ℂ hFp.periodHom (Additive.ofMul γ) := by
+-  letI := (GammaHUpper N H ℓ).fintypeQuotientOfFiniteIndex
++  let := (GammaHUpper N H ℓ).fintypeQuotientOfFiniteIndex
+   rw [heckeT_apply_ofMul T]
+   have hterm : ∀ q : ↥(GammaH N H) ⧸ GammaHUpper N H ℓ,
+       Fp (diagGL ℓ • ((((T.2.leftQuotientEquiv q : ↥(GammaH N H)) : SL(2, ℤ)))⁻¹ •
+@@ -2960,7 +2966,7 @@
+ 
+ private theorem cast_apply_01_ne_zero (hℓ : ℓ.Prime) {σ : SL(2, ℤ)}
+     (hσℓ : (σ : Matrix (Fin 2) (Fin 2) ℤ) 1 1 = ℓ) : ((σ 0 1 : ℤ) : ZMod ℓ) ≠ 0 := by
+-  haveI : Fact (1 < ℓ) := ⟨hℓ.one_lt⟩
++  have : Fact (1 < ℓ) := ⟨hℓ.one_lt⟩
+   intro h0
+   have h := Matrix.SpecialLinearGroup.det_coe σ
+   rw [Matrix.det_fin_two] at h
+@@ -2983,7 +2989,7 @@
+         (((T.2.leftQuotientEquiv q : ↥(GammaH N ⊥)) : SL(2, ℤ)))⁻¹)) =
+     ∑ j : Fin ℓ, F ∣[(2 : ℤ)] ModularForm.heckeMatrix ℓ j +
+       F ∣[(2 : ℤ)] (Matrix.SpecialLinearGroup.mapGL ℝ σ * ModularForm.heckeDiagMatrix ℓ) := by
+-  letI := (GammaHUpper N ⊥ ℓ).fintypeQuotientOfFiniteIndex
++  let := (GammaHUpper N ⊥ ℓ).fintypeQuotientOfFiniteIndex
+ 
+   have hmemK : ∀ x : ↥(GammaH N ⊥), x ∈ GammaHUpper N ⊥ ℓ ↔ (((x : SL(2, ℤ)) 0 1 : ℤ) : ZMod ℓ) = 0 :=
+     fun x => by rw [Subgroup.mem_subgroupOf, mem_Gamma0Upper]
+@@ -3081,7 +3087,7 @@
+       ((∑ q : ↥(GammaH N H) ⧸ GammaHUpper N H ℓ,
+         F ∣[(2 : ℤ)] (diagGL ℓ * Matrix.SpecialLinearGroup.mapGL ℝ
+           (((T.2.leftQuotientEquiv q : ↥(GammaH N H)) : SL(2, ℤ)))⁻¹)) τ) ↑τ := by
+-  letI := (GammaHUpper N H ℓ).fintypeQuotientOfFiniteIndex
++  let := (GammaHUpper N H ℓ).fintypeQuotientOfFiniteIndex
+   have hfun : (heckeTrace T Fp ∘ ofComplex) = fun z : ℂ => ∑ q : ↥(GammaH N H) ⧸ GammaHUpper N H ℓ,
+       Fp ((diagGL ℓ * Matrix.SpecialLinearGroup.mapGL ℝ
+         (((T.2.leftQuotientEquiv q : ↥(GammaH N H)) : SL(2, ℤ)))⁻¹) • ofComplex z) := by
+@@ -3110,7 +3116,7 @@
+       ((∑ j : Fin ℓ, F ∣[(2 : ℤ)] ModularForm.heckeMatrix ℓ j +
+         F ∣[(2 : ℤ)] (Matrix.SpecialLinearGroup.mapGL ℝ σ * ModularForm.heckeDiagMatrix ℓ)) τ) ↑τ) :
+     CohCarrier.heckeT N ⊥ ℓ ℂ hFp.periodHom = hGp.periodHom := by
+-  letI := (GammaHUpper N ⊥ ℓ).fintypeQuotientOfFiniteIndex
++  let := (GammaHUpper N ⊥ ℓ).fintypeQuotientOfFiniteIndex
+   rw [← periodHom_heckeTrace (default : (GammaHUpper N ⊥ ℓ).LeftTransversal) hFp]
+   refine IsEquivariantPrimitive.periodHom_eq_of_hasDerivAt _ hGp (fun τ => ?_) hGpF
+   rw [← sum_slash_diagGL_eq hℓ hσ hσℓ hFΓ default]
+@@ -3176,7 +3182,7 @@
+     set βR : GL (Fin 2) ℝ := (β : GL (Fin 2) ℚ).map (Rat.castHom ℝ) with hβR
+     have hβRdet : 0 < βR.val.det := by
+       rw [← Matrix.GeneralLinearGroup.val_det_apply, hβR, Matrix.GeneralLinearGroup.map_det]
+-      simp only [Units.coe_map, MonoidHom.coe_coe, Rat.coe_castHom]
++      simp only [Units.coe_map, MonoidHom.coe_ofClass, Rat.coe_castHom]
+       exact_mod_cast hβ
+     refine ⟨fun w => Gfun (βR • w), fun τ => hasDerivAt_comp_smul_ofComplex_of_det_pos hGg βR hβRdet τ,
+       fun δ => ?_⟩
+@@ -3193,7 +3199,7 @@
+     obtain ⟨Fp₂, h₂, l₂⟩ := ih₂
+     refine ⟨Fp₁ + Fp₂, fun τ => ?_, fun δ => ?_⟩
+     · have := (h₁ τ).add (h₂ τ)
+-      first | exact this | simpa [Function.comp_def] using this | simpa +zetaDelta [Function.comp_def] using this
++      exact this
+     · obtain ⟨L₁, hL₁⟩ := l₁ δ
+       obtain ⟨L₂, hL₂⟩ := l₂ δ
+       exact ⟨L₁ + L₂, by simpa using hL₁.add hL₂⟩
+@@ -3201,7 +3207,7 @@
+     obtain ⟨Fp, h, l⟩ := ih
+     refine ⟨c • Fp, fun τ => ?_, fun δ => ?_⟩
+     · have := (h τ).const_smul c
+-      first | exact this | simpa [Function.comp_def] using this | simpa +zetaDelta [Function.comp_def] using this
++      exact this
+     · obtain ⟨Lim, hLim⟩ := l δ
+       exact ⟨c • Lim, by simpa using hLim.const_smul c⟩
+ 
+@@ -3397,7 +3403,7 @@
+ 
+ private theorem sigma_apply_of_det_pos {A : GL (Fin 2) ℝ} (hA : 0 < A.val.det) (c : ℂ) : UpperHalfPlane.σ A c = c := by
+   have hdet : 0 < A.det.val := by rwa [Matrix.GeneralLinearGroup.val_det_apply]
+-  rw [UpperHalfPlane.σ, if_pos hdet]
++  rw [UpperHalfPlane.σ, ite_eq_left hdet]
+   rfl
+ 
+ private theorem periods
+@@ -3432,14 +3438,14 @@
+   have hL0 : L ≠ 0 := by
+     rintro rfl
+     simp at hq2
+-  haveI : NeZero L := ⟨hL0⟩
++  have : NeZero L := ⟨hL0⟩
+   have hqL : q ∣ L := Nat.dvd_of_factorization_pos (by rw [hq2]; norm_num)
+   have hN0 : L / q ≠ 0 := by
+     intro h
+     rcases (Nat.div_eq_zero_iff).mp h with h | h
+     · exact hqp.ne_zero h
+     · exact absurd (Nat.le_of_dvd (Nat.pos_of_ne_zero hL0) hqL) (not_le.mpr h)
+-  haveI : NeZero (L / q) := ⟨hN0⟩
++  have : NeZero (L / q) := ⟨hN0⟩
+ 
+   obtain ⟨Gfun, hGg, -, -, hGlim⟩ := ModularCurve.Period.CuspForm.exists_equivariantPrimitive_gamma0 g
+   obtain ⟨Fp, hFpF, hFplim⟩ := exists_primitive_of_mem_slashSpanPos g hGg hGlim hFspan
+@@ -3448,8 +3454,8 @@
+   refine ⟨hFp.periodHom, periodHom_ne_zero_of_mem_slashSpanPos hFp hFpF hFplim hF0,
+     mem_parabolicHoms_iff.mpr (hFp.isParabolicHom_periodHom hFplim), fun σ u hu => ?_, fun ℓ hℓ hℓL => ?_⟩
+   · exact diamondRaw_periodHom_eq_smul hFp hFpF σ _ (hdia σ u hu)
+-  · haveI : NeZero ℓ := ⟨hℓ.ne_zero⟩
+-    haveI hℓf : Fact ℓ.Prime := ⟨hℓ⟩
++  · have : NeZero ℓ := ⟨hℓ.ne_zero⟩
++    have hℓf : Fact ℓ.Prime := ⟨hℓ⟩
+     set c : ℂ := ((ξ (AutomorphicForm.uniformizerIdele ℚ (@AdelicDock.padicPlace ℓ ⟨hℓ⟩)) : ℂ) *
+       ModularFormClass.qCoeff g ℓ) with hc
+ 
+@@ -3499,7 +3505,7 @@
+             ModularForm.heckeDiagMatrix ℓ)) τ) ↑τ := by
+       intro τ
+       rw [hsum]
+-      first | exact (hFpF τ).const_smul c | simpa [Function.comp_def] using (hFpF τ).const_smul c | simpa +zetaDelta [Function.comp_def] using (hFpF τ).const_smul c
++      exact (hFpF τ).const_smul c
+     have key := heckeT_periodHom_eq hℓ hσ0 hσ11 hone hFp hFpF hGp hGpF
+     rw [key, periodHom_const_smul hFp c]
+ 
+@@ -3545,3 +3551,5 @@
+     TwistedPeriodDescent.readingCore hq2 Φ hΦg η hηfin hηmod y hy hy0 hfix hcent
+   exact TwistedPeriodDescent.periods g hq2 η F hFspan hF0 hdia hone fun ℓ hℓ hℓL uℓ huℓ =>
+     TwistedPeriodDescent.heckeLaw hg hq2 Φ hΦg η hηfin hηmod y hy F hFspan hread hleft hright hℓ hℓL uℓ huℓ
++
++#print axioms P2MW.S_CuspForm_IsNormalizedEigenform_exists_H1_diamondRaw_eq_smul_heckeT_eq_smul_of_mem_fixedSubmodule_fnTwist.solution

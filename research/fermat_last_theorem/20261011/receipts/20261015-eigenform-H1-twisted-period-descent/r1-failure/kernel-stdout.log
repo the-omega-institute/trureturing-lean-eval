@@ -1,0 +1,55 @@
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_CuspForm_IsNormalizedEigenform_exists_H1_diamondRaw_eq_smul_heckeT_eq_smul_of_mem_fixedSubmodule_fnTwist.lean:235:61: error: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  ?a - ?a
+in the target expression
+  PadicInt.toZMod t - PadicInt.toZMod t = 0
+
+p : ℕ
+hp : Fact (Nat.Prime p)
+m : Matrix (Fin 2) (Fin 2) ℤ_[p]
+hdet : ‖m.det‖ = (↑p)⁻¹
+hp0 : ↑p ≠ 0
+hdet_lt : ‖m.det‖ < 1
+mk_unit : ∀ (k : Matrix (Fin 2) (Fin 2) ℤ_[p]), ↑p * k.det = m.det → ∃ u, ↑u = k
+a : ℤ_[p] := m 0 0
+ha : a = m 0 0
+b : ℤ_[p] := m 0 1
+hb : b = m 0 1
+c : ℤ_[p] := m 1 0
+hc : c = m 1 0
+d : ℤ_[p] := m 1 1
+hd : d = m 1 1
+hm : m = !![a, b; c, d]
+hdet' : m.det = a * d - b * c
+hprim : ‖a‖ = 1 ∨ ‖c‖ = 1
+t : ℤ_[p]
+hbt : ‖b - a * t‖ < 1
+hdt : ‖d - c * t‖ < 1
+j : ℕ := (PadicInt.toZMod t).val
+hj : j = (PadicInt.toZMod t).val
+hjp : j < p
+⊢ PadicInt.toZMod t - PadicInt.toZMod t = 0
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_CuspForm_IsNormalizedEigenform_exists_H1_diamondRaw_eq_smul_heckeT_eq_smul_of_mem_fixedSubmodule_fnTwist.lean:2002:47: error: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  ?a - ?a
+in the target expression
+  1 - 1 = 0
+
+q : ℕ
+inst✝ : Fact (Nat.Prime q)
+u : ℤ_[q]ˣ
+hu : PadicInt.toZMod ↑u = 1
+⊢ 1 - 1 = 0
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_CuspForm_IsNormalizedEigenform_exists_H1_diamondRaw_eq_smul_heckeT_eq_smul_of_mem_fixedSubmodule_fnTwist.lean:2166:65: error: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  @Eq ?m.101 (?m.103 - ?m.104) 0
+in the target expression
+  @Eq (ZMod q) (PadicInt.toZMod x - 1) 0
+
+q : ℕ
+inst✝ : Fact (Nat.Prime q)
+x : ℤ_[q]
+hx : ‖x - 1‖ < 1
+hmem : PadicInt.toZMod x - 1 = 0
+⊢ PadicInt.toZMod x = 1
+'P2MW.S_CuspForm_IsNormalizedEigenform_exists_H1_diamondRaw_eq_smul_heckeT_eq_smul_of_mem_fixedSubmodule_fnTwist.solution' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
