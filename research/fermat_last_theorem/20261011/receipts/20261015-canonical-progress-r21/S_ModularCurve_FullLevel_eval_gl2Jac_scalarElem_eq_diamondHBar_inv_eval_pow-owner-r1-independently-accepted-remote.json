@@ -1,0 +1,116 @@
+{
+  "module": "Submission.Supplier.P2M.Sol.S_ModularCurve_FullLevel_eval_gl2Jac_scalarElem_eq_diamondHBar_inv_eval_pow",
+  "source_sha256": "417c0f629e6681d660cd2cb9765189ce8768dd004a37ba038c6be36fc30a4284",
+  "object_sha256": "e07c7cc426bf497bed7063ccb62607488449cb533f04a2137106baf592b33883",
+  "kernel_exit": 0,
+  "make_exit": 0,
+  "warnings": 0,
+  "recursive_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "axiom_output": "'P2MW.S_ModularCurve_FullLevel_eval_gl2Jac_scalarElem_eq_diamondHBar_inv_eval_pow.solution' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]",
+  "canonical_kernel_result": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/2fbe05a25ebe846224db97d5-1792053803288948000.kernel/result.json",
+  "canonical_make_terminal": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/2fbe05a25ebe846224db97d5-1792053803288948000.make-terminal.json",
+  "canonical_configuration_sha256": "9917cdc998d3bc4ab7736291f52ca74cd2e9c741fdc2d3c1f887b9ec8f23142f",
+  "direct_dependency_bindings_current": true,
+  "direct_dependency_checks": [
+    {
+      "module": "Submission.Supplier.Definitions.Def_ModularCurve_FullLevelJacobian",
+      "source_sha256": "62a041f31a8b9ed9c028be83936cba70856e45a576c4bd714778cc9aaa84906c",
+      "object_sha256": "587af3b5917434c580c311b7c593b5a4e217c0fb9013058ee7f7bad6a7800ec6",
+      "recorded_object_hash_available": true,
+      "dependency_exit0_receipt_current": true
+    },
+    {
+      "module": "Submission.Supplier.Theorems.Thm_ModularCurve_heckeDiamondInputsHAll",
+      "source_sha256": "253f342a5f6c27cbd647166ab55cdfdead24458d97e3a0e23c57f009beb60029",
+      "object_sha256": "380c0f1c50f8e125f0600165c7f545d47159bb5e33d924ccfbcba4122d9ebf68",
+      "recorded_object_hash_available": true,
+      "dependency_exit0_receipt_current": true
+    },
+    {
+      "module": "Submission.Supplier.P2M.Util",
+      "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+      "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+      "recorded_object_hash_available": true,
+      "dependency_exit0_receipt_current": true
+    }
+  ],
+  "accepted_at": "2026-10-15T08:46:22.261163+00:00",
+  "accepted_source_sha256": "417c0f629e6681d660cd2cb9765189ce8768dd004a37ba038c6be36fc30a4284",
+  "accepted_object_sha256": "e07c7cc426bf497bed7063ccb62607488449cb533f04a2137106baf592b33883",
+  "candidate_revision": "owner-r1-independently-accepted",
+  "card_validation": {
+    "module": "Submission.Supplier.Theorems.Thm_ModularCurve_FullLevel_eval_gl2Jac_scalarElem_eq_diamondHBar_inv_eval_pow",
+    "source_sha256": "470db3ee9ec0f58648541bd01a5f2665c3fe36c3817cd5a0a761eec5c1307559",
+    "object_sha256": "cf5eade00eac8745bbed5e2271b6cf644824b1468f660140d0244ee2110546d3",
+    "kernel_exit": 0,
+    "make_exit": 0,
+    "warnings": 0,
+    "recursive_axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "axiom_output": "'ModularCurve.FullLevel.eval_gl2Jac_scalarElem_eq_diamondHBar_inv_eval_pow' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]",
+    "canonical_kernel_result": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/b0553fcacac108b14f240ef0-1792053895331573000.kernel/result.json",
+    "canonical_make_terminal": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/b0553fcacac108b14f240ef0-1792053895331573000.make-terminal.json",
+    "canonical_configuration_sha256": "c63d4c3bfda0cd3cfbcd42a7c9f40dd8ded36c5d5de3fa5728a5341e623e3af6",
+    "direct_dependency_bindings_current": true,
+    "direct_dependency_checks": [
+      {
+        "module": "Submission.Supplier.Definitions.Def_ModularCurve_FullLevelJacobian",
+        "source_sha256": "62a041f31a8b9ed9c028be83936cba70856e45a576c4bd714778cc9aaa84906c",
+        "object_sha256": "587af3b5917434c580c311b7c593b5a4e217c0fb9013058ee7f7bad6a7800ec6",
+        "recorded_object_hash_available": true,
+        "dependency_exit0_receipt_current": true
+      },
+      {
+        "module": "Submission.Supplier.P2M.Util",
+        "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+        "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+        "recorded_object_hash_available": true,
+        "dependency_exit0_receipt_current": true
+      },
+      {
+        "module": "Submission.Supplier.P2M.Sol.S_ModularCurve_FullLevel_eval_gl2Jac_scalarElem_eq_diamondHBar_inv_eval_pow",
+        "source_sha256": "417c0f629e6681d660cd2cb9765189ce8768dd004a37ba038c6be36fc30a4284",
+        "object_sha256": "e07c7cc426bf497bed7063ccb62607488449cb533f04a2137106baf592b33883",
+        "recorded_object_hash_available": true,
+        "dependency_exit0_receipt_current": true
+      }
+    ]
+  },
+  "source_validation_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/source-repairs/S_ModularCurve_FullLevel_eval_gl2Jac_scalarElem_eq_diamondHBar_inv_eval_pow-owner-r1-independent-source-validation.json",
+  "source_validation_sha256": "b1bcdeeac24d73cf662835744e7a557c3f23fd7accb2ae668cd67eaaff8b5b72",
+  "proof_checks": {
+    "threads": 1,
+    "trust": 0,
+    "skipKernelTC": false
+  },
+  "all_statement_and_hypotheses_preserved": true,
+  "final_solution_statement_and_body_unchanged": true,
+  "two_helper_proof_bodies_changed": true,
+  "attribution": "All shared Lean edits performed by source-owner session; this session independently derived the same direct inverse-law rewrites, diagnosed errors, verified exact edits and both canonical results.",
+  "source_edits_by_this_session": 0,
+  "full_original_proof_verified": false,
+  "official_solve_credit": 0,
+  "remote_acceptance_checkpoint": {
+    "verified_at": "2026-10-15T08:47:34.892463+00:00",
+    "repository": "the-omega-institute/trureturing-lean-eval",
+    "commit": "4f8b07896e5bdcd17618ccb9596b600f29ecee0a",
+    "branch": "lane/math/flt-port-checkpoint-01a124bc-20261011",
+    "remote_branch_matches": true,
+    "remote_immutable_files_sha256_verified": 31,
+    "unique_blob_downloads": 25,
+    "accepted_source_and_card_hashes_match": true,
+    "owner_checkout_or_index_mutated": false,
+    "owner_index_sha256_before": "10b5395826d56cd90924895f5074521cb8bd4c0760affbc1be4527614541973d",
+    "owner_index_sha256_after": "10b5395826d56cd90924895f5074521cb8bd4c0760affbc1be4527614541973d",
+    "owner_head_observed": "4f8b07896e5bdcd17618ccb9596b600f29ecee0a",
+    "url": "https://github.com/the-omega-institute/trureturing-lean-eval/commit/4f8b07896e5bdcd17618ccb9596b600f29ecee0a",
+    "verification_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/source-repairs/full-level-scalar-owner-20261015-remote/remote-verified.json"
+  }
+}

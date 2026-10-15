@@ -1,0 +1,49 @@
+{
+  "observed_at": "2026-10-15T08:44:10.089081+00:00",
+  "attribution": "Source-owner session applied every shared Lean edit. This session independently diagnosed the two normalization failures, derived the same direct inverse-law rewrites and verified exact source changes. Zero shared Lean source edits.",
+  "baseline_error_count": 2,
+  "baseline_warning_count": 4,
+  "warned_bindings": [
+    {
+      "line": 151,
+      "column": 2
+    },
+    {
+      "line": 155,
+      "column": 2
+    }
+  ],
+  "deprecated_alias_changes": 2,
+  "helper_proof_replacements": [
+    {
+      "before": "    linear_combination (-(((\u03b3\u2080 : SL(2, \u2124)) 0 1 : \u2124) : ZMod q)) * hu\n",
+      "after": "    rw [mul_neg, mul_left_comm, hu, mul_one, neg_add_cancel]\n"
+    },
+    {
+      "before": "      linear_combination (-(u : ZMod q)) * hu\n",
+      "after": "      rw [zero_mul, zero_add, pow_two, \u2190 mul_assoc, hu, one_mul]\n"
+    }
+  ],
+  "source": {
+    "module": "Submission.Supplier.P2M.Sol.S_ModularCurve_FullLevel_eval_gl2Jac_scalarElem_eq_diamondHBar_inv_eval_pow",
+    "baseline_path": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/official-layout/terminal-proof-repairs/20261015-full-level-scalar-diamond-action/baseline-adapted-source.lean",
+    "baseline_sha256": "4ff37a9fb129e4cb9028418db6c2689e107786666fe5ae9f149bc9c2f298d1d5",
+    "source_path": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_ModularCurve_FullLevel_eval_gl2Jac_scalarElem_eq_diamondHBar_inv_eval_pow.lean",
+    "source_sha256": "417c0f629e6681d660cd2cb9765189ce8768dd004a37ba038c6be36fc30a4284",
+    "owner_candidate_matches": true,
+    "final_statement_and_proof_body_unchanged": true
+  },
+  "card": {
+    "module": "Submission.Supplier.Theorems.Thm_ModularCurve_FullLevel_eval_gl2Jac_scalarElem_eq_diamondHBar_inv_eval_pow",
+    "baseline_path": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/official-layout/terminal-proof-repairs/20261015-full-level-scalar-diamond-action/baseline-adapted-card.lean",
+    "baseline_sha256": "c0304578cd26431fddb35b449ef9b324a7350f22967f55c1b79f5a449409224e",
+    "source_path": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/Theorems/Thm_ModularCurve_FullLevel_eval_gl2Jac_scalarElem_eq_diamondHBar_inv_eval_pow.lean",
+    "source_sha256": "470db3ee9ec0f58648541bd01a5f2665c3fe36c3817cd5a0a761eec5c1307559",
+    "owner_candidate_matches": true,
+    "final_statement_and_proof_body_unchanged": true
+  },
+  "whole_files_match_exact_expected_transforms": true,
+  "no_new_linter_suppression": true,
+  "canonical_recompilation_pending": true,
+  "full_original_or_official_acceptance": false
+}
