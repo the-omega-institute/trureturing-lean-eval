@@ -1,0 +1,44 @@
+{
+  "verified_at": "2026-10-15T10:30:33.377397+00:00",
+  "comparison": "Complete solution telescope and conclusion compared byte-for-byte with retained supplier originals. Exact proof comparison excludes trailing axiom-print commands and blank lines. Source fidelity only; not official comparator evidence.",
+  "modules": [
+    {
+      "module": "Submission.Supplier.P2M.Sol.S_ModularCurve_XHDRModelAtP_fromSpecStalk_genericPoint_comp_eq_specMap_ffEquiv_degeneracyEmb_of_chartPin",
+      "original_supplier_path": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/supplier-original/P2M/Sol/S_ModularCurve_XHDRModelAtP_fromSpecStalk_genericPoint_comp_eq_specMap_ffEquiv_degeneracyEmb_of_chartPin.lean",
+      "original_supplier_sha256": "fb0a4d6b9a6ff8076a54218faf39b3fa84e24c9f46fc45277a97c48f89f2fd5e",
+      "canonical_source_sha256": "fb0a4d6b9a6ff8076a54218faf39b3fa84e24c9f46fc45277a97c48f89f2fd5e",
+      "adapted_source_sha256": "a65c8b5d53a3d71d4134cdadd5f20e98b00dc5aa7e0bd269a7577e5a2879f8e8",
+      "complete_solution_statement_sha256": "c433553cecff7339317e0167844c5fc4484028facccdb0db02101b50974d1ef4",
+      "complete_solution_statement_unchanged": true,
+      "complete_solution_proof_text_unchanged": true,
+      "complete_solution_statement_and_proof_sha256": "6cc4059c54e1739c6cbda8fc830ae58418be83dfc1dd68dfcc5bdb8c5355d6c4",
+      "proof_diff": null
+    },
+    {
+      "module": "Submission.Supplier.P2M.Sol.S_ModularCurve_XHDRModelAtP_smul_frob_mem_ssPlacesQExp_and_frob_smul_frob_eq_of_mem_ssPlacesQExp",
+      "original_supplier_path": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/supplier-original/P2M/Sol/S_ModularCurve_XHDRModelAtP_smul_frob_mem_ssPlacesQExp_and_frob_smul_frob_eq_of_mem_ssPlacesQExp.lean",
+      "original_supplier_sha256": "81ed7a95d181653220fc76d185ba8a592215316b5875f737d4f9a8b29145de51",
+      "canonical_source_sha256": "81ed7a95d181653220fc76d185ba8a592215316b5875f737d4f9a8b29145de51",
+      "adapted_source_sha256": "7c27c2fb45685ce000167d04d358a372d15953a75436bc18e0d79d59d6a9f952",
+      "complete_solution_statement_sha256": "55f4e41a88721c506f0c970abf4ae66b1071ba1340a7e0ef4d42816091790947",
+      "complete_solution_statement_unchanged": true,
+      "complete_solution_proof_text_unchanged": true,
+      "complete_solution_statement_and_proof_sha256": "e52db24409f9bf60c8443377de33eba2f394590b347ab1c427c242ed64bbcb54",
+      "proof_diff": null
+    },
+    {
+      "module": "Submission.Supplier.P2M.Sol.S_ModularCurve_XHDRModelAtP_ramificationIndexAlong_degeneracyEmb_pointEquivPlace_eq_one_of_formallyUnramified",
+      "original_supplier_path": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/supplier-original/P2M/Sol/S_ModularCurve_XHDRModelAtP_ramificationIndexAlong_degeneracyEmb_pointEquivPlace_eq_one_of_formallyUnramified.lean",
+      "original_supplier_sha256": "961b36a9447134d242d391f96993ccba7ed3f0db80a451e3ec1003c2cf1b5123",
+      "canonical_source_sha256": "899cbbc216bb5e8b4b8c6e054d87eeea8bd6b8c62af152295c083e0772bec1fc",
+      "adapted_source_sha256": "5a7fbbe9889fa225b00f5291ba986f171daaee185edf5dad482bb579a7c7db2b",
+      "complete_solution_statement_sha256": "876f9d7edffa7c2a3de8118db8d4e70b6135c75aa151951e19027b92c341d00d",
+      "complete_solution_statement_unchanged": true,
+      "complete_solution_proof_text_unchanged": false,
+      "complete_solution_statement_and_proof_sha256": "44962ad8a0b179bcd8cd3ee9b4ae2c874e14982316cac6e3e4c61cecb6fd67ec",
+      "proof_diff": "--- retained supplier solution\n+++ current adapted solution\n@@ -25,9 +25,9 @@\n     (hyV : (y.1 \u226b \ud835\udd1b.eeta \u226b pullback.fst _ _).base (IsLocalRing.closedPoint (AlgebraicClosure \u211a)) \u2208 V)\n     (hV : FormallyUnramified (V.\u03b9 \u226b \ud835\udd1b.\u03c0.1)) :\n     Place.ramificationIndexAlong \u03b1H (\ud835\udd1b.Meta.pointEquivPlace y) = 1 := by\n-  haveI := \ud835\udd1b.eeta_iso\n-  haveI := hne\u2080\n-  haveI := \ud835\udd1b.Meta_chart_nonempty\n+  have := \ud835\udd1b.eeta_iso\n+  have := hne\u2080\n+  have := \ud835\udd1b.Meta_chart_nonempty\n \n   have hinv\u2080 : inv eeta\u2080 \u226b Meta\u2080.toBase =\n       pullback.snd (toBase p (\u0393N p M H hpM) hj) (Spec.map (CommRingCat.ofHom (algebraMap (R p) (AlgebraicClosure \u211a)))) := by\n@@ -50,13 +50,13 @@\n   have hR\u211a : (algebraMap (R p) (AlgebraicClosure \u211a)).FormallyUnramified := by\n     have hR : (algebraMap (R p) \u211a).FormallyUnramified := by\n       rw [RingHom.formallyUnramified_algebraMap]\n-      haveI : Algebra.FormallyUnramified \u2124 \u211a := Algebra.FormallyUnramified.of_isLocalization (nonZeroDivisors \u2124)\n+      have : Algebra.FormallyUnramified \u2124 \u211a := Algebra.FormallyUnramified.of_isLocalization (nonZeroDivisors \u2124)\n       exact Algebra.FormallyUnramified.of_restrictScalars \u2124 (R p) \u211a\n     have hQ : (algebraMap \u211a (AlgebraicClosure \u211a)).FormallyUnramified := by\n       rw [RingHom.formallyUnramified_algebraMap]\n-      haveI : PerfectField \u211a := PerfectField.ofCharZero\n-      haveI : Algebra.IsAlgebraic \u211a (AlgebraicClosure \u211a) := by convert AlgebraicClosure.isAlgebraic \u211a; rfl; rfl\n-      haveI : Algebra.IsSeparable \u211a (AlgebraicClosure \u211a) := Algebra.IsAlgebraic.isSeparable_of_perfectField\n+      have : PerfectField \u211a := PerfectField.ofCharZero\n+      have : Algebra.IsAlgebraic \u211a (AlgebraicClosure \u211a) := AlgebraicClosure.isAlgebraic \u211a\n+      have : Algebra.IsSeparable \u211a (AlgebraicClosure \u211a) := Algebra.IsAlgebraic.isSeparable_of_perfectField\n       exact Algebra.FormallyUnramified.of_isSeparable \u211a (AlgebraicClosure \u211a)\n     have heq : algebraMap (R p) (AlgebraicClosure \u211a) = (algebraMap \u211a (AlgebraicClosure \u211a)).comp (algebraMap (R p) \u211a) :=\n       IsScalarTower.algebraMap_eq (R p) \u211a (AlgebraicClosure \u211a)\n"
+    }
+  ],
+  "shared_sources_edited_by_this_auditor": false,
+  "official_acceptance": false
+}
