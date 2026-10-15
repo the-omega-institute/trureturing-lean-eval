@@ -1,0 +1,158 @@
+{
+  "sha256": "6e4a8b7f175c2000a7d7fcb38ac8ea3f470d9c1c3818118d7a49795e3c49c704",
+  "exit": 0,
+  "empty_output_retry_done": false,
+  "source_sha256_after": "6e4a8b7f175c2000a7d7fcb38ac8ea3f470d9c1c3818118d7a49795e3c49c704",
+  "source_unchanged": true,
+  "olean_sha256": "d9746828779c820d5dab6824750e64cf23fea3ec16c7b4aa4ad0b855d22c4548",
+  "seconds": 59.62449387500055,
+  "pid": 5642,
+  "command": [
+    "/Users/macstudio/.local/omega-shims/lean",
+    "-j1",
+    "--trust=0",
+    "-Ddebug.skipKernelTC=false",
+    "-R",
+    "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src",
+    "-o",
+    "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-build/lib/lean/Submission/Supplier/P2M/Sol/S_WeierstrassCurve_forall_galoisRepAdic_residual_isAbsolutelyIrreducible_and_isOdd_of_modRepIsIrreducible_of_congruent.olean",
+    "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_WeierstrassCurve_forall_galoisRepAdic_residual_isAbsolutelyIrreducible_and_isOdd_of_modRepIsIrreducible_of_congruent.lean"
+  ],
+  "make_wrapper_pid": 3741,
+  "make_exit": 0,
+  "make_entry_failed": false,
+  "cache_binding_valid": true,
+  "canonical_make_running_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/4300d9546fcd1dd67632f41c-1792046407701170000.make-running.json",
+  "canonical_make_terminal_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/4300d9546fcd1dd67632f41c-1792046407701170000.make-terminal.json",
+  "kernel_terminal_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/4300d9546fcd1dd67632f41c-1792046407701170000.kernel/result.json",
+  "direct_dependencies": [
+    {
+      "module": "Submission.Supplier.Definitions.Def_CuspForm_HeckeGaloisRepDatum",
+      "source_sha256": "055481c514c4fe672f02dec9bfcbe3f344f92f253cd585c41181eb9994752307",
+      "object_sha256": "c82ca784d4cbc46dbb8094044af62186b0239157b872d04c8fd333ec4c770854",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Definitions.Def_CuspForm_Newforms",
+      "source_sha256": "038ffb0534cb0d69dd4d32975f5910d02e5c2e91edf8776d1a0153b10c2eb713",
+      "object_sha256": "9c52ed2ea48466c20a5f0d8ba9c6e8f19711fc3a1f6027584e55dd5044e94968",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Definitions.Def_FLTPrelim_ModularRep",
+      "source_sha256": "d045178939f1ab9a7b8526664c461d91789f2e335edef584d1ad859891d7cc18",
+      "object_sha256": "3672ffb14bd1235f321b277d66b30e306ec8543c762d017c616e6e7d91b7f56e",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Definitions.Def_GaloisRep_Adic",
+      "source_sha256": "f3656c728ed11c2046eea17d2ea14067bb77a73b7559e9f91f7ed8bdf069ea24",
+      "object_sha256": "8ed39737625e03bd3b982d049b1deaba4078439a47720faf02a71bab087ce94f",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Definitions.Def_GaloisRep_ResidualEquiv",
+      "source_sha256": "4065f3378486bfb22de4d4c7886eb770588488095f893e736c2c2df7fee15d0a",
+      "object_sha256": "40f31eb23c1f8f8f3944ca68060ee191e4c543428fc70afcbd190e696708a63d",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Definitions.Def_EllipticCurve_TateModule",
+      "source_sha256": "deedc6fe6dbef085790cc6b09731f30e103f0a18c752375cd6fb1f32ac1f25fb",
+      "object_sha256": "f25141995a1bec6406f6c0c015e2e7910f0116c4bbf0254c0b63a891f2905897",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Theorems.Thm_WeierstrassCurve_residualGaloisRepOf_isIrreducible_iff",
+      "source_sha256": "2201f62b24d72fe20a5885e21cf2ccd884076dbc3628b3f90bbe142f76573f6e",
+      "object_sha256": "8bd7324fb11586c980e6b9069e4ae66194875cbcd0751b3a8ff8ded0462c3008",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Theorems.Thm_WeierstrassCurve_residualGaloisRepOf_isOdd",
+      "source_sha256": "45ac46f2893a23974a2f51bfbb0a0d3e2e81da21aee679b0b9afa2a449271419",
+      "object_sha256": "60e3942d31f34d18abc8dcfe28bfaf75b1d2f4cc15e49632e490c161ab73363c",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Theorems.Thm_ResidualGaloisRep_isAbsolutelyIrreducible_of_isIrreducible_of_isOdd",
+      "source_sha256": "32364768beaefe88c61a2856a7ddad788b1db28c84b92fdf142053fc10f1da7c",
+      "object_sha256": "e88c09796729375e433f63a993d0a951dcbd355f9e5439888eba9437943de765",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Theorems.Thm_ResidualGaloisRep_IsAbsolutelyIrreducible_baseChangeAlong",
+      "source_sha256": "54c4ddc897822ac5f91cca33a505b34f44a49e31bc8daf87a22018775b7a1be8",
+      "object_sha256": "3a57636d497739fa174db8590f9ef4f88ed04a6b7ecae817fe65cdddc53b1a63",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Theorems.Thm_ResidualGaloisRep_IsAbsolutelyIrreducible_of_isEquiv",
+      "source_sha256": "39239af1d2f92f1f1cc7825e85d7aba63b5354b5cb8ae3f0d5d91d1a922b374c",
+      "object_sha256": "f206731f9134da8837f5f2c5a7f2a151544dd833468f807642c77c8f024f54c2",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Theorems.Thm_ResidualGaloisRep_charpoly_eq",
+      "source_sha256": "4c01b0c2b00b66940ef22912b622417f79301ea2ac7349f7487b9487ee425092",
+      "object_sha256": "6737a9c8a02d7766cab2a2220f0b75e99bc4dc55b8a3bf9a24dafab009116340",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Theorems.Thm_ResidualGaloisRep_charpoly_baseChangeAlong",
+      "source_sha256": "79183542c87fd7786eadbd25414febf930d2c12f5c05688382ba4a2ef29b2bb7",
+      "object_sha256": "39aecdc1c056e3c5c24d6bc3c1206cd5d35e27c7cfdb86010121a4e1bd337b70",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Theorems.Thm_WeierstrassCurve_card_torsionBy_eq_sq_of_isAlgClosed",
+      "source_sha256": "877fba7f8cd04d2a15b31efbc4755de530836d9c7450fe1fbdd797c0a0377759",
+      "object_sha256": null,
+      "receipt_reused": false
+    },
+    {
+      "module": "Submission.Supplier.Theorems.Thm_WeierstrassCurve_galoisRepModuleEnd_factorsThroughFiniteLevel",
+      "source_sha256": "3115c369ca3d74a8cb2b3dca8769e7577779cd2979ede7e4bc45edde62cfedba",
+      "object_sha256": "66f45ed91026fe0e35d6279fa49a1883d7ea35a3b84c0d31abe587f41583d838",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Theorems.Thm_WeierstrassCurve_tateModuleRep_charpoly_frobenius",
+      "source_sha256": "f08cde1db506408d98e70c56f29adad1f5b162916c702384d0e31bb81ac47ccb",
+      "object_sha256": "fc4091ee0fff2e58a2b29f44402d5797112fba3a1a134e8ceb4d8fdd02f3641d",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Theorems.Thm_WeierstrassCurve_tateModuleRep_baseChangeAlong_residual_isEquiv",
+      "source_sha256": "8224a1ab52352cf8a120b6d6a830fd395b00df055d976533556da75e13768d7c",
+      "object_sha256": "f65030d6a23e93a15ea0200928b6e3147ad16471839515a5bc83527c01ac0df3",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Theorems.Thm_GaloisRepAdic_charpoly_residual",
+      "source_sha256": "da1f163cfe5c7231a778eae2a43677664b02bbd74c2a4266d7d277664c2d7bcf",
+      "object_sha256": "def421a1da71b18d9ce26b8b67c76c17c7c79b7995fc58119359f572cadb0c14",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Theorems.Thm_GaloisRepAdic_charpoly_baseChangeAlong",
+      "source_sha256": "bf2abcc774b7b8635b6b53dd57acd240e7a7352bcbb552d7838d129e71b7ee81",
+      "object_sha256": "c3db2b1213d6071f73c255616befea4d515d9a299f7ef17a0cc6e0071b6dfdeb",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Theorems.Thm_GaloisRepAdic_residual_isEquiv_and_det_sub_mem_of_charpoly_frobenius_eq",
+      "source_sha256": "f4b568edf33344c35d47876eba7dcebd17a3dd3bbb8e95d4bc3344617cd36d24",
+      "object_sha256": "068c335f7392f13d377147eed0dc271a67c719b6540d9a28df34a0fafc93f2b9",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.P2M.Util",
+      "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+      "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+      "receipt_reused": true
+    }
+  ],
+  "stdout": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/4300d9546fcd1dd67632f41c-1792046407701170000.kernel/stdout.log",
+  "stderr": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/4300d9546fcd1dd67632f41c-1792046407701170000.kernel/stderr.log"
+}
