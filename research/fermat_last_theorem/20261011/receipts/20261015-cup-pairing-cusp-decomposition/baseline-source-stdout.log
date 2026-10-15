@@ -1,0 +1,16 @@
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_ModularCurve_CupPairing_cuspSum_eq_sum_finsum_of_le.lean:38:2: warning: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_ModularCurve_CupPairing_cuspSum_eq_sum_finsum_of_le.lean:40:28: error: Application type mismatch: The argument
+  Equiv.setCongr ?m.61
+has type
+  Set ?m.59 ≃ Set ?m.60
+but is expected to have type
+  ↑(orbit (↥(Subgroup.zpowers a)) (a ^ k • x)) ≃ ↑(orbit (↥(Subgroup.zpowers a)) x)
+in the application
+  Fintype.card_congr (Equiv.setCongr ?m.61)
