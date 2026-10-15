@@ -1,0 +1,31 @@
+{
+  "observed_at": "2026-10-15T07:33:41.535241+00:00",
+  "scope": "Official sandbox runtime prerequisite; no compiler or controller started",
+  "host": {
+    "system": "Darwin",
+    "release": "25.6.0",
+    "machine": "arm64"
+  },
+  "upstream": {
+    "url": "https://raw.githubusercontent.com/zouuup/landrun/5ed4a3db3a4ad930d577215c6b9abaa19df7f99f/README.md",
+    "revision": "5ed4a3db3a4ad930d577215c6b9abaa19df7f99f",
+    "sha256": "de21242d2ef355cc71ea1d0ad0b807fdf5a51c0de1df00029d099a1b55a2f3c0",
+    "copy": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/source-repairs/landrun-pinned-5ed4a3db-README.md",
+    "requirements_quote": "Linux kernel 5.13 or later with Landlock enabled",
+    "network_requirements_quote": "Linux kernel 6.7 or later for network restrictions (TCP bind/connect)"
+  },
+  "tools_on_current_PATH": {
+    "comparator": null,
+    "landrun": null,
+    "docker": null,
+    "podman": null,
+    "colima": null,
+    "limactl": null,
+    "qemu-system-aarch64": null,
+    "tart": null,
+    "vfkit": null
+  },
+  "interpretation": "Pinned landrun requires Linux Landlock; installing a native Darwin executable alone cannot supply the official sandbox. Use an available compatible Linux environment or official Linux submission evaluation after complete exact-root verification. No sandbox bypass is an acceptance substitute.",
+  "mathematical_route": "Continue the same FLT closure through existing controller",
+  "official_acceptance": false
+}

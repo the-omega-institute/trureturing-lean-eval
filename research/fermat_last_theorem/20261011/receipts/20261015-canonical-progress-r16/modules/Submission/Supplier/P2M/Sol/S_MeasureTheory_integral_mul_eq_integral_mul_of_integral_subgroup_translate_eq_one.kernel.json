@@ -1,0 +1,47 @@
+{
+  "at": "2026-10-15T07:31:30.064293+00:00",
+  "configuration": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/52470aa7d2fd11db5db8e51a-1792049433048504000.configuration.json",
+  "configuration_sha256": "fc8ad0611e16f656019f155c775a3085261f792463c5ed07ee1e5f9be22edea5",
+  "source": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_MeasureTheory_integral_mul_eq_integral_mul_of_integral_subgroup_translate_eq_one.lean",
+  "source_sha256": "35416d3cfc925c18fa56282091da2a504a7e3353c1ffc40f42fa2ef1c77312ba",
+  "canonical_common": "/Users/macstudio/omega/trureturing/.git",
+  "official_dependency_partition": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/official-deps",
+  "toolchain": "leanprover/lean4:v4.35.0-rc3",
+  "mathlib_revision": "5e0c4e5239cb0a2d86d68a884bf52cfd963fce22",
+  "make_entry_required": true,
+  "phase": "compile_source",
+  "full_original_proof_verified": false,
+  "official_solve_credit": 0,
+  "command": [
+    "/Users/macstudio/.local/omega-shims/lean",
+    "-j1",
+    "--trust=0",
+    "-Ddebug.skipKernelTC=false",
+    "-R",
+    "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src",
+    "-o",
+    "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-build/lib/lean/Submission/Supplier/P2M/Sol/S_MeasureTheory_integral_mul_eq_integral_mul_of_integral_subgroup_translate_eq_one.olean",
+    "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_MeasureTheory_integral_mul_eq_integral_mul_of_integral_subgroup_translate_eq_one.lean"
+  ],
+  "memory_admission": {
+    "workers": 1,
+    "reasons": [
+      "user requires one job; no memory gate"
+    ],
+    "sample": {},
+    "memory_limit_enforced": false
+  },
+  "compiler_pid": 91857,
+  "memory_guard": {
+    "mode": "single_job_no_memory_gate",
+    "memory_limit_enforced": false,
+    "resource_cancellation": null,
+    "actual_exit": 0,
+    "proof_completion_claimed": false
+  },
+  "exit": 0,
+  "seconds": 55.728204625,
+  "source_unchanged": true,
+  "object_sha256": "69c179f381dd5055b64e2be13494a0a38e7f175654ecae5125069d7f6434b84d",
+  "ended_at": "2026-10-15T07:32:25.794348+00:00"
+}
