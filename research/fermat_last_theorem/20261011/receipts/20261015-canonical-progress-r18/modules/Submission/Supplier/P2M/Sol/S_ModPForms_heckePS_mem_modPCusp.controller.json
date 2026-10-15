@@ -1,0 +1,68 @@
+{
+  "sha256": "cf83d2a95ce5bb50eebf7cc1f2d4f2e6409edf21f4bd6f1ac32feda98bb4f17b",
+  "exit": 0,
+  "empty_output_retry_done": false,
+  "source_sha256_after": "cf83d2a95ce5bb50eebf7cc1f2d4f2e6409edf21f4bd6f1ac32feda98bb4f17b",
+  "source_unchanged": true,
+  "olean_sha256": "a0b80e3b010e506a38592c4cb49b5116757f5f95b32c0482521c60acb495ebee",
+  "seconds": 68.41589012500117,
+  "pid": 942,
+  "command": [
+    "/Users/macstudio/.local/omega-shims/lean",
+    "-j1",
+    "--trust=0",
+    "-Ddebug.skipKernelTC=false",
+    "-R",
+    "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src",
+    "-o",
+    "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-build/lib/lean/Submission/Supplier/P2M/Sol/S_ModPForms_heckePS_mem_modPCusp.olean",
+    "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_ModPForms_heckePS_mem_modPCusp.lean"
+  ],
+  "make_wrapper_pid": 94803,
+  "make_exit": 0,
+  "make_entry_failed": false,
+  "cache_binding_valid": true,
+  "canonical_make_running_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/c2a374d55bff1fdcc6b155a6-1792050459994347000.make-running.json",
+  "canonical_make_terminal_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/c2a374d55bff1fdcc6b155a6-1792050459994347000.make-terminal.json",
+  "kernel_terminal_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/c2a374d55bff1fdcc6b155a6-1792050459994347000.kernel/result.json",
+  "direct_dependencies": [
+    {
+      "module": "Submission.Supplier.Definitions.Def_CuspForm_ModPForms",
+      "source_sha256": "c61b04fce46ee2fa05e2b84b2992c88a297377e9d41605fce09699b0c120de34",
+      "object_sha256": "8db0268f8625f5a470fc3c7bacdb85cc45702491ec1fac5f521c9c94721a1157",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Definitions.Def_ModularForm_HeckeOperatorForms",
+      "source_sha256": "36c108839c251290084675f604becf026e9d5d5dc5883c1cc68eab05f476dc6e",
+      "object_sha256": "57e3313d532c30ec1a08467d128863a317f988d05ae7530f52601862594cc596",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Theorems.Thm_ModularFormClass_qCoeff_heckeT",
+      "source_sha256": "91fb9f06f34d4a24480b6fcf68b969898999de07f092e2b7bee4e5a0a9414d6c",
+      "object_sha256": "52e88eda4f536d4b68495c867d59e98df35ab3e2d104cfee27a1d0d8d43d8a68",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Theorems.Thm_ModPForms_modPMod_eq_bot_of_neg",
+      "source_sha256": "26fb931ef2101b161e364ff066557673d04fcceed37751dcd133652194ef37c5",
+      "object_sha256": "4d966d4a20b4efa5301253c83af89194f7bd9c00fa8cc1b3dd31fb6a207cf819",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Theorems.Thm_ModPForms_modPCusp_eq_bot_of_neg",
+      "source_sha256": "e79935d4c6506add776a2a6493c53b098167ce3080dfb7add7f60f1d4cdb3269",
+      "object_sha256": "2fe86e8c9a61f5fce38ef29a8e15e2ac5519a7431cfee6d7d1922e94d4cea159",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.P2M.Util",
+      "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+      "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+      "receipt_reused": true
+    }
+  ],
+  "stdout": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/c2a374d55bff1fdcc6b155a6-1792050459994347000.kernel/stdout.log",
+  "stderr": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/c2a374d55bff1fdcc6b155a6-1792050459994347000.kernel/stderr.log"
+}
