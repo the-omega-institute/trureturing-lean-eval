@@ -1,0 +1,111 @@
+{
+  "checkpoint_at": "2026-10-15T13:51:14.599179+00:00",
+  "previous_checkpoint": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/source-repairs/repair-checkpoint-20261015-r38.json",
+  "target": "Submission.fermat_last_theorem : FermatLastTheorem",
+  "selected_problem": "fermat_last_theorem",
+  "controller_pid": 88158,
+  "root_audit_watcher_pid": 19598,
+  "graph": {
+    "compiled": 9071,
+    "ready": 4287,
+    "failed": 0,
+    "root_compiled": false
+  },
+  "running_snapshot": {
+    "Submission.Supplier.P2M.Sol.S_ModularCurve_theta_qTwist": {
+      "pid": 32741,
+      "make_wrapper_pid": 32741,
+      "phase": "canonical_make_queue",
+      "sha256": "8839aa8f6b28458c9e1cada731dc67f22c17ccc0fa47ff3c5070bcd1e241e591",
+      "configuration": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/7556a11f414a55155f31a73e-1792072182561278000.configuration.json"
+    }
+  },
+  "new_canonical_progress": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/source-repairs/canonical-progress-20261015-after-r38-native-report-wait.json",
+  "this_checkpoint_progress_evidence": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/source-repairs/canonical-progress-20261015-after-r38-native-report-wait.json",
+  "this_checkpoint_verified_canonical_invocations": 30,
+  "raw_canonical_evidence": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/source-repairs/canonical-evidence-20261015-r39.json",
+  "raw_canonical_evidence_sha256": "0c2f4346ca5b66f09bde20f8dc3231958d84f823139fb4f9ad4846db5773df06",
+  "continuation_receipt_selection": {
+    "event_floor_checkpoint": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/source-repairs/repair-checkpoint-20261015-r15.json",
+    "exclude_verified_progress_files": [
+      "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/source-repairs/canonical-progress-20261015-after-r15-final.json",
+      "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/source-repairs/canonical-progress-20261015-after-r16-final.json",
+      "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/source-repairs/canonical-progress-20261015-after-r17.json",
+      "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/source-repairs/canonical-progress-20261015-after-r18.json",
+      "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/source-repairs/canonical-progress-20261015-after-r19-final.json",
+      "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/source-repairs/canonical-progress-20261015-after-r20-complete-pairs.json",
+      "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/source-repairs/canonical-progress-20261015-after-r21-final.json",
+      "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/source-repairs/canonical-progress-20261015-after-r22-final.json",
+      "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/source-repairs/canonical-progress-20261015-after-r23-final.json",
+      "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/source-repairs/canonical-progress-20261015-after-r24-complete-pairs.json",
+      "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/source-repairs/canonical-progress-20261015-after-r25-complete-pairs.json",
+      "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/source-repairs/canonical-progress-20261015-after-r26-final.json",
+      "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/source-repairs/canonical-progress-20261015-after-r27-complete-pairs.json",
+      "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/source-repairs/canonical-progress-20261015-after-r28-final.json",
+      "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/source-repairs/canonical-progress-20261015-after-r29-final.json",
+      "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/source-repairs/canonical-progress-20261015-after-r30-final.json",
+      "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/source-repairs/canonical-progress-20261015-after-r31-final.json",
+      "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/source-repairs/canonical-progress-20261015-after-r32-final.json",
+      "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/source-repairs/canonical-progress-20261015-after-r33-followup.json",
+      "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/source-repairs/canonical-progress-20261015-after-r34-operator-delivery.json",
+      "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/source-repairs/canonical-progress-20261015-after-r35-native-word.json",
+      "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/source-repairs/canonical-progress-20261015-after-r36-finite-delivery.json",
+      "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/source-repairs/canonical-progress-20261015-after-r37-deduplicated.json",
+      "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/source-repairs/canonical-progress-20261015-after-r38-native-report-wait.json"
+    ],
+    "invocation_identity": "kernel_terminal_receipt from event equals canonical_kernel_result in progress evidence",
+    "instruction": "Run the verifier with --after this checkpoint and a fresh --output. Exclusion list explicitly includes this checkpoint own verified progress and all previous archived exact invocations; no compiler replay."
+  },
+  "warning_audit": [
+    {
+      "module": "Submission.Supplier.P2M.Sol.S_CuspForm_gamma0_weight_two_eq_zero_of_genusFormula_eq_zero",
+      "warning_count": 2
+    },
+    {
+      "module": "Submission.Supplier.P2M.Sol.S_CuspForm_eq_zero_of_level_dvd_four_or_dvd_nine",
+      "warning_count": 5
+    },
+    {
+      "module": "Submission.Supplier.P2M.Sol.S_HeckeEis_finrank_coeffH1par_zero_le_two_mul_genusFormula",
+      "warning_count": 3
+    },
+    {
+      "module": "Submission.Supplier.P2M.Sol.S_ModularCurve_separable_cosetTwoVarPoly",
+      "warning_count": 4
+    },
+    {
+      "module": "Submission.Supplier.P2M.Sol.S_ModularCurve_ModularPolynomialData_exists_reversed_eval2_inv_jq_inv_jqN_eq_zero",
+      "warning_count": 21
+    },
+    {
+      "module": "Submission.Supplier.P2M.Sol.S_ModularCurve_theta_qExpand",
+      "warning_count": 13
+    },
+    {
+      "module": "Submission.Supplier.P2M.Sol.S_ModularCurve_coeffMap_frobenius_inv_mul_thetaL_eq_of_frobeniusPushforwardModL_eq",
+      "warning_count": 13
+    }
+  ],
+  "warning_scope": "Warnings belong to exact supplier sources. This session edited none.",
+  "session_changes": {
+    "lean_sources_edited": false,
+    "owner_checkout_or_git_index_mutated": false,
+    "existing_controller_and_root_watcher_reused": true,
+    "new_compiler_or_controller_started_by_this_session": false
+  },
+  "canonical_common": "/Users/macstudio/omega/trureturing/.git",
+  "resource_policy": "Existing single FLT job/compiler, -j1 --trust=0 -Ddebug.skipKernelTC=false; canonical make lean through omega-gate.",
+  "next_gap": "Continue the existing sole FLT controller and diagnose exact current failures. Full original root, root recursive axiom audit, full-scale source packaging and official comparator/Nanoda acceptance remain outstanding.",
+  "prior_official_tool_readiness_checkpoint": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/source-repairs/repair-checkpoint-20261015-r21.json",
+  "full_original_proof_verified": false,
+  "official_acceptance": false,
+  "this_checkpoint_original_or_official_solve_credit": 0,
+  "prior_archive_commit": "26ce677d8ed71277dd0a62e0bba2f9fd0dca7213",
+  "receipt_selection_correction": {
+    "prior_r37_omitted_own_progress_in_future_exclusions": true,
+    "prior_r37_exact_12_successes_unchanged": true,
+    "derived_selector": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/source-repairs/r37-continuation-selector-for-r38.json",
+    "new_r38_invocations_disjoint_from_all_archived": true,
+    "r38_future_exclusions_include_own_progress": true
+  }
+}
