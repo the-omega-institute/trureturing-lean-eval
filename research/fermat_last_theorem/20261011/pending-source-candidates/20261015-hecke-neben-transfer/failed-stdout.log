@@ -1,0 +1,649 @@
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_HeckeEis_exists_isEigensystemH1_one_of_isEigensystemH1_gamma0NebenRep.lean:42:4: warning: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_HeckeEis_exists_isEigensystemH1_one_of_isEigensystemH1_gamma0NebenRep.lean:46:4: warning: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_HeckeEis_exists_isEigensystemH1_one_of_isEigensystemH1_gamma0NebenRep.lean:78:2: warning: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_HeckeEis_exists_isEigensystemH1_one_of_isEigensystemH1_gamma0NebenRep.lean:98:2: warning: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_HeckeEis_exists_isEigensystemH1_one_of_isEigensystemH1_gamma0NebenRep.lean:143:2: error: Type mismatch
+  Eq.symm h
+has type
+  ↑(↑↑γ 0 0) * ↑(↑↑γ 1 1) - 0 = 1
+but is expected to have type
+  aP p M γ * dP p M γ = 1
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_HeckeEis_exists_isEigensystemH1_one_of_isEigensystemH1_gamma0NebenRep.lean:142:87: warning: This simp argument is unused:
+  sub_zero
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [Int.cast_one, Int.cast_sub, Int.cast_mul, cP_eq_zero p M hpM γ, mul_zero] at h
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_HeckeEis_exists_isEigensystemH1_one_of_isEigensystemH1_gamma0NebenRep.lean:182:0: warning: automatically included section variable(s) unused in theorem `P2MW.S_HeckeEis_exists_isEigensystemH1_one_of_isEigensystemH1_gamma0NebenRep.TwistMain.aP_inv`:
+  hpM
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit hpM in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_HeckeEis_exists_isEigensystemH1_one_of_isEigensystemH1_gamma0NebenRep.lean:195:0: warning: automatically included section variable(s) unused in theorem `P2MW.S_HeckeEis_exists_isEigensystemH1_one_of_isEigensystemH1_gamma0NebenRep.TwistMain.dP_inv`:
+  hpM
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit hpM in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_HeckeEis_exists_isEigensystemH1_one_of_isEigensystemH1_gamma0NebenRep.lean:301:15: warning: automatically included section variable(s) unused in theorem `P2MW.S_HeckeEis_exists_isEigensystemH1_one_of_isEigensystemH1_gamma0NebenRep.TwistMain.rhoFun_apply`:
+  [CharP κ p]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [CharP κ p] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_HeckeEis_exists_isEigensystemH1_one_of_isEigensystemH1_gamma0NebenRep.lean:306:14: error: unsolved goals
+p : ℕ
+inst✝² : Fact (Nat.Prime p)
+M : ℕ
+hpM : p ∣ M
+κ : Type u_1
+inst✝¹ : CommRing κ
+inst✝ : CharP κ p
+f : ZMod p → κ
+u : ZMod p
+⊢ f (u - 0) = f u
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_HeckeEis_exists_isEigensystemH1_one_of_isEigensystemH1_gamma0NebenRep.lean:314:4: error: ring failed, ring expressions not equal
+p : ℕ
+inst✝² : Fact (Nat.Prime p)
+M : ℕ
+hpM : p ∣ M
+κ : Type u_1
+inst✝¹ : CommRing κ
+inst✝ : CharP κ p
+γ γ' : ↥(Gamma0 M)
+f : ZMod p → κ
+u : ZMod p
+⊢ -(dP p M γ * dP p M γ' * aP p M γ * bP p M γ') - dP p M γ * aP p M γ * -(dP p M γ' * bP p M γ') +
+        dP p M γ' * bP p M γ' +
+      -(dP p M γ' * bP p M γ') =
+    0
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_HeckeEis_exists_isEigensystemH1_one_of_isEigensystemH1_gamma0NebenRep.lean:317:13: error: Application type mismatch: The argument
+  hpM
+has type
+  p ∣ M
+of sort `Prop` but is expected to have type
+  Type ?u.20
+of sort `Type (?u.20 + 1)` in the application
+  @rhoW p ?m.5 M hpM
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_HeckeEis_exists_isEigensystemH1_one_of_isEigensystemH1_gamma0NebenRep.lean:324:15: warning: automatically included section variable(s) unused in theorem `P2MW.S_HeckeEis_exists_isEigensystemH1_one_of_isEigensystemH1_gamma0NebenRep.TwistMain.aW_apply`:
+  [CharP κ p]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [CharP κ p] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_HeckeEis_exists_isEigensystemH1_one_of_isEigensystemH1_gamma0NebenRep.lean:326:0: warning: automatically included section variable(s) unused in theorem `P2MW.S_HeckeEis_exists_isEigensystemH1_one_of_isEigensystemH1_gamma0NebenRep.TwistMain.aW_comm`:
+  [CharP κ p]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [CharP κ p] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_HeckeEis_exists_isEigensystemH1_one_of_isEigensystemH1_gamma0NebenRep.lean:331:88: error: Application type mismatch: The argument
+  hpM
+has type
+  p ∣ M
+of sort `Prop` but is expected to have type
+  Type ?u.22
+of sort `Type (?u.22 + 1)` in the application
+  @rhoW p ?m.15 M hpM
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_HeckeEis_exists_isEigensystemH1_one_of_isEigensystemH1_gamma0NebenRep.lean:334:45: warning: This simp argument is unused:
+  rhoW_apply
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [LinearMap.comp_apply, aW_apply]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_HeckeEis_exists_isEigensystemH1_one_of_isEigensystemH1_gamma0NebenRep.lean:353:15: warning: automatically included section variable(s) unused in theorem `P2MW.S_HeckeEis_exists_isEigensystemH1_one_of_isEigensystemH1_gamma0NebenRep.TwistMain.ev0_apply`:
+  [CharP κ p]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [CharP κ p] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_HeckeEis_exists_isEigensystemH1_one_of_isEigensystemH1_gamma0NebenRep.lean:355:0: warning: automatically included section variable(s) unused in theorem `P2MW.S_HeckeEis_exists_isEigensystemH1_one_of_isEigensystemH1_gamma0NebenRep.TwistMain.ev0_aW`:
+  [CharP κ p]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [CharP κ p] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_HeckeEis_exists_isEigensystemH1_one_of_isEigensystemH1_gamma0NebenRep.lean:360:24: error: Application type mismatch: The argument
+  hpM
+has type
+  p ∣ M
+of sort `Prop` but is expected to have type
+  Type ?u.36
+of sort `Type (?u.36 + 1)` in the application
+  @rhoW p ?m.41 M hpM
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_HeckeEis_exists_isEigensystemH1_one_of_isEigensystemH1_gamma0NebenRep.lean:360:45: error: unsolved goals
+p : ℕ
+inst✝² : Fact (Nat.Prime p)
+M : ℕ
+κ : Type u_1
+inst✝¹ : CommRing κ
+inst✝ : CharP κ p
+δ : ↥(Gamma0 M)
+hδ : ↑p ∣ ↑↑δ 0 1
+f : ZMod p → κ
+hb : bP p M δ = 0
+⊢ (sorry ()) f 0 = f 0
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_HeckeEis_exists_isEigensystemH1_one_of_isEigensystemH1_gamma0NebenRep.lean:363:8: warning: This simp argument is unused:
+  hb
+
+Hint: Omit it from the simp argument list.
+  [apply] simp
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_HeckeEis_exists_isEigensystemH1_one_of_isEigensystemH1_gamma0NebenRep.lean:367:82: error: Application type mismatch: The argument
+  hpM
+has type
+  p ∣ M
+of sort `Prop` but is expected to have type
+  Type ?u.24
+of sort `Type (?u.24 + 1)` in the application
+  @rhoW p ?m.15 M hpM
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_HeckeEis_exists_isEigensystemH1_one_of_isEigensystemH1_gamma0NebenRep.lean:367:103: error: unsolved goals
+p : ℕ
+inst✝² : Fact (Nat.Prime p)
+M : ℕ
+κ : Type u_1
+inst✝¹ : CommRing κ
+inst✝ : CharP κ p
+z : ↥(Gamma0 M) → ZMod p → κ
+hz : z ∈ coeffCocycles sorry
+⊢ z 1 = 0
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_HeckeEis_exists_isEigensystemH1_one_of_isEigensystemH1_gamma0NebenRep.lean:373:82: error: Application type mismatch: The argument
+  hpM
+has type
+  p ∣ M
+of sort `Prop` but is expected to have type
+  Type ?u.24
+of sort `Type (?u.24 + 1)` in the application
+  @rhoW p ?m.15 M hpM
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_HeckeEis_exists_isEigensystemH1_one_of_isEigensystemH1_gamma0NebenRep.lean:374:23: error: Application type mismatch: The argument
+  hpM
+has type
+  p ∣ M
+of sort `Prop` but is expected to have type
+  Type ?u.33
+of sort `Type (?u.33 + 1)` in the application
+  @rhoW p ?m.22 M hpM
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_HeckeEis_exists_isEigensystemH1_one_of_isEigensystemH1_gamma0NebenRep.lean:374:43: error: unsolved goals
+p : ℕ
+inst✝² : Fact (Nat.Prime p)
+M : ℕ
+κ : Type u_1
+inst✝¹ : CommRing κ
+inst✝ : CharP κ p
+z : ↥(Gamma0 M) → ZMod p → κ
+hz : z ∈ coeffCocycles sorry
+γ : ↥(Gamma0 M)
+⊢ z γ⁻¹ = -sorry
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_HeckeEis_exists_isEigensystemH1_one_of_isEigensystemH1_gamma0NebenRep.lean:380:38: error: Application type mismatch: The argument
+  hpM
+has type
+  p ∣ M
+of sort `Prop` but is expected to have type
+  Type ?u.24
+of sort `Type (?u.24 + 1)` in the application
+  @rhoW p ?m.15 M hpM
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_HeckeEis_exists_isEigensystemH1_one_of_isEigensystemH1_gamma0NebenRep.lean:382:36: error: Application type mismatch: The argument
+  hpM
+has type
+  p ∣ M
+of sort `Prop` but is expected to have type
+  Type ?u.52
+of sort `Type (?u.52 + 1)` in the application
+  @rhoW p ?m.47 M hpM
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_HeckeEis_exists_isEigensystemH1_one_of_isEigensystemH1_gamma0NebenRep.lean:394:33: error(lean.unknownIdentifier): Unknown identifier `hpM`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_HeckeEis_exists_isEigensystemH1_one_of_isEigensystemH1_gamma0NebenRep.lean:397:44: error(lean.unknownIdentifier): Unknown identifier `hpM`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_HeckeEis_exists_isEigensystemH1_one_of_isEigensystemH1_gamma0NebenRep.lean:400:98: error: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  z h 0
+in the target expression
+  z (Tg M ^ n) (pt p M γ) + ?f 0 (pt p M γ) = f (pt p M γ)
+
+p : ℕ
+inst✝² : Fact (Nat.Prime p)
+M : ℕ
+κ : Type u_1
+inst✝¹ : CommRing κ
+inst✝ : CharP κ p
+z : ↥(Gamma0 M) → ZMod p → κ
+hz : z ∈ coeffCocycles sorry
+h0 : ∀ (h : ↥(Gamma0 M)), ↑p ∣ ↑↑h 0 1 → z h 0 = 0
+f : ZMod p → κ := fun u => z (Tg M ^ ↑u.val) u
+γ : ↥(Gamma0 M)
+n : ℤ := ↑(pt p M γ).val
+hn : n = ↑(pt p M γ).val
+hncast : ↑n = pt p M γ
+h : ↥(Gamma0 M) := (Tg M ^ n)⁻¹ * γ
+hh : h = (Tg M ^ n)⁻¹ * γ
+hγ : γ = Tg M ^ n * h
+hbh : bP p M h = 0
+hzh : z h 0 = 0
+h1 : z γ = z (Tg M ^ n) + sorry
+⊢ z (Tg M ^ n) (pt p M γ) + ?f 0 (pt p M γ) = f (pt p M γ)
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_HeckeEis_exists_isEigensystemH1_one_of_isEigensystemH1_gamma0NebenRep.lean:404:23: error(lean.unknownIdentifier): Unknown identifier `hpM`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_HeckeEis_exists_isEigensystemH1_one_of_isEigensystemH1_gamma0NebenRep.lean:410:19: error(lean.unknownIdentifier): Unknown identifier `hpM`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_HeckeEis_exists_isEigensystemH1_one_of_isEigensystemH1_gamma0NebenRep.lean:464:10: warning: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_HeckeEis_exists_isEigensystemH1_one_of_isEigensystemH1_gamma0NebenRep.lean:492:12: warning: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_HeckeEis_exists_isEigensystemH1_one_of_isEigensystemH1_gamma0NebenRep.lean:494:12: warning: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_HeckeEis_exists_isEigensystemH1_one_of_isEigensystemH1_gamma0NebenRep.lean:547:26: warning: Variable name `m` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _m
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_HeckeEis_exists_isEigensystemH1_one_of_isEigensystemH1_gamma0NebenRep.lean:552:13: error: Application type mismatch: The argument
+  hpM
+has type
+  p ∣ M
+of sort `Prop` but is expected to have type
+  Type ?u.17
+of sort `Type (?u.17 + 1)` in the application
+  @rhoW p ?m.5 M hpM
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_HeckeEis_exists_isEigensystemH1_one_of_isEigensystemH1_gamma0NebenRep.lean:556:20: error(lean.unknownIdentifier): Unknown identifier `hpM`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_HeckeEis_exists_isEigensystemH1_one_of_isEigensystemH1_gamma0NebenRep.lean:559:20: error: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  mono ?p ?κ ?j ?u
+in the target expression
+  ?f (dP p ?M ?γ * (dP p ?M ?γ * ?u✝ - bP p ?M ?γ)) u =
+    ((cst p κ) (dP p M γ) ^ 2 * (cst p κ) u + (cst p κ) (-(dP p M γ * bP p M γ))) ^ n
+
+p : ℕ
+inst✝² : Fact (Nat.Prime p)
+M : ℕ
+κ : Type u_1
+inst✝¹ : Field κ
+inst✝ : CharP κ p
+γ : ↥(Gamma0 M)
+n : ℕ
+u : ZMod p
+⊢ ?f (dP p ?M ?γ * (dP p ?M ?γ * ?u✝ - bP p ?M ?γ)) u =
+    ((cst p κ) (dP p M γ) ^ 2 * (cst p κ) u + (cst p κ) (-(dP p M γ * bP p M γ))) ^ n
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_HeckeEis_exists_isEigensystemH1_one_of_isEigensystemH1_gamma0NebenRep.lean:572:13: error: Application type mismatch: The argument
+  hpM
+has type
+  p ∣ M
+of sort `Prop` but is expected to have type
+  Type ?u.14
+of sort `Type (?u.14 + 1)` in the application
+  @rhoW p ?m.4 M hpM
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_HeckeEis_exists_isEigensystemH1_one_of_isEigensystemH1_gamma0NebenRep.lean:573:18: error(lean.unknownIdentifier): Unknown identifier `M`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_HeckeEis_exists_isEigensystemH1_one_of_isEigensystemH1_gamma0NebenRep.lean:573:20: error(lean.unknownIdentifier): Unknown identifier `hpM`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_HeckeEis_exists_isEigensystemH1_one_of_isEigensystemH1_gamma0NebenRep.lean:573:30: error(lean.unknownIdentifier): Unknown identifier `M`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_HeckeEis_exists_isEigensystemH1_one_of_isEigensystemH1_gamma0NebenRep.lean:575:20: error: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  mono ?p ?κ ?j ?u
+in the target expression
+  ?f (dP p ?M ?γ * (dP p ?M ?γ * ?u✝ - bP p ?M ?γ)) u = (1 * (cst p κ) u + 1) ^ n
+
+p : ℕ
+inst✝² : Fact (Nat.Prime p)
+κ : Type u_1
+inst✝¹ : Field κ
+inst✝ : CharP κ p
+n : ℕ
+u : ZMod p
+⊢ ?f (dP p ?M ?γ * (dP p ?M ?γ * ?u✝ - bP p ?M ?γ)) u = (1 * (cst p κ) u + 1) ^ n
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_HeckeEis_exists_isEigensystemH1_one_of_isEigensystemH1_gamma0NebenRep.lean:583:13: error: Application type mismatch: The argument
+  hpM
+has type
+  p ∣ M
+of sort `Prop` but is expected to have type
+  Type ?u.28
+of sort `Type (?u.28 + 1)` in the application
+  @rhoW p ?m.19 M hpM
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_HeckeEis_exists_isEigensystemH1_one_of_isEigensystemH1_gamma0NebenRep.lean:610:8: warning: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_HeckeEis_exists_isEigensystemH1_one_of_isEigensystemH1_gamma0NebenRep.lean:610:18: warning: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_HeckeEis_exists_isEigensystemH1_one_of_isEigensystemH1_gamma0NebenRep.lean:611:8: warning: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_HeckeEis_exists_isEigensystemH1_one_of_isEigensystemH1_gamma0NebenRep.lean:611:18: warning: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_HeckeEis_exists_isEigensystemH1_one_of_isEigensystemH1_gamma0NebenRep.lean:629:8: warning: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_HeckeEis_exists_isEigensystemH1_one_of_isEigensystemH1_gamma0NebenRep.lean:629:18: warning: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_HeckeEis_exists_isEigensystemH1_one_of_isEigensystemH1_gamma0NebenRep.lean:630:8: warning: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_HeckeEis_exists_isEigensystemH1_one_of_isEigensystemH1_gamma0NebenRep.lean:630:18: warning: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_HeckeEis_exists_isEigensystemH1_one_of_isEigensystemH1_gamma0NebenRep.lean:636:27: error: Application type mismatch: The argument
+  hpM
+has type
+  p ∣ M
+of sort `Prop` but is expected to have type
+  Type ?u.26
+of sort `Type (?u.26 + 1)` in the application
+  @rhoW p ?m.16 M hpM
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_HeckeEis_exists_isEigensystemH1_one_of_isEigensystemH1_gamma0NebenRep.lean:640:36: error(lean.unknownIdentifier): Unknown identifier `hpM`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_HeckeEis_exists_isEigensystemH1_one_of_isEigensystemH1_gamma0NebenRep.lean:644:9: error: unsolved goals
+case zero
+p : ℕ
+inst✝² : Fact (Nat.Prime p)
+M : ℕ
+κ : Type u_1
+inst✝¹ : Field κ
+inst✝ : CharP κ p
+k : Fin p
+γ : ↥(Gamma0 M)
+f : ZMod p → κ
+⊢ (coordW p κ k) (sorry ()) = 0
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_HeckeEis_exists_isEigensystemH1_one_of_isEigensystemH1_gamma0NebenRep.lean:655:10: warning: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_HeckeEis_exists_isEigensystemH1_one_of_isEigensystemH1_gamma0NebenRep.lean:656:10: warning: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_HeckeEis_exists_isEigensystemH1_one_of_isEigensystemH1_gamma0NebenRep.lean:662:19: error: Application type mismatch: The argument
+  hpM
+has type
+  p ∣ M
+of sort `Prop` but is expected to have type
+  Type ?u.29
+of sort `Type (?u.29 + 1)` in the application
+  @rhoW p ?m.18 M hpM
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_HeckeEis_exists_isEigensystemH1_one_of_isEigensystemH1_gamma0NebenRep.lean:669:33: error(lean.unknownIdentifier): Unknown identifier `M`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_HeckeEis_exists_isEigensystemH1_one_of_isEigensystemH1_gamma0NebenRep.lean:669:35: error(lean.unknownIdentifier): Unknown identifier `hpM`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_HeckeEis_exists_isEigensystemH1_one_of_isEigensystemH1_gamma0NebenRep.lean:669:45: error(lean.unknownIdentifier): Unknown identifier `M`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_HeckeEis_exists_isEigensystemH1_one_of_isEigensystemH1_gamma0NebenRep.lean:674:51: error(lean.unknownIdentifier): Unknown identifier `M`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_HeckeEis_exists_isEigensystemH1_one_of_isEigensystemH1_gamma0NebenRep.lean:674:53: error(lean.unknownIdentifier): Unknown identifier `hpM`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_HeckeEis_exists_isEigensystemH1_one_of_isEigensystemH1_gamma0NebenRep.lean:674:63: error(lean.unknownIdentifier): Unknown identifier `M`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_HeckeEis_exists_isEigensystemH1_one_of_isEigensystemH1_gamma0NebenRep.lean:700:4: warning: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_HeckeEis_exists_isEigensystemH1_one_of_isEigensystemH1_gamma0NebenRep.lean:716:38: error(lean.unknownIdentifier): Unknown identifier `M`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_HeckeEis_exists_isEigensystemH1_one_of_isEigensystemH1_gamma0NebenRep.lean:716:40: error(lean.unknownIdentifier): Unknown identifier `hpM`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_HeckeEis_exists_isEigensystemH1_one_of_isEigensystemH1_gamma0NebenRep.lean:716:50: error(lean.unknownIdentifier): Unknown identifier `M`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_HeckeEis_exists_isEigensystemH1_one_of_isEigensystemH1_gamma0NebenRep.lean:718:10: warning: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_HeckeEis_exists_isEigensystemH1_one_of_isEigensystemH1_gamma0NebenRep.lean:730:12: warning: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_HeckeEis_exists_isEigensystemH1_one_of_isEigensystemH1_gamma0NebenRep.lean:735:12: warning: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_HeckeEis_exists_isEigensystemH1_one_of_isEigensystemH1_gamma0NebenRep.lean:738:6: warning: `dif_pos` has been deprecated: Use `dite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  d̵i̵f̵_̵p̵o̵s̵d̲i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_HeckeEis_exists_isEigensystemH1_one_of_isEigensystemH1_gamma0NebenRep.lean:742:2: warning: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_HeckeEis_exists_isEigensystemH1_one_of_isEigensystemH1_gamma0NebenRep.lean:747:8: warning: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_HeckeEis_exists_isEigensystemH1_one_of_isEigensystemH1_gamma0NebenRep.lean:748:8: warning: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_HeckeEis_exists_isEigensystemH1_one_of_isEigensystemH1_gamma0NebenRep.lean:753:35: error: Application type mismatch: The argument
+  hpM
+has type
+  p ∣ M
+of sort `Prop` but is expected to have type
+  Type ?u.33
+of sort `Type (?u.33 + 1)` in the application
+  @rhoW p ?m.19 M hpM
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_HeckeEis_exists_isEigensystemH1_one_of_isEigensystemH1_gamma0NebenRep.lean:755:35: error: Application type mismatch: The argument
+  M
+has type
+  ℕ
+of sort `Type` but is expected to have type
+  Type ?u.56
+of sort `Type (?u.56 + 1)` in the application
+  @exists_sub_smul_mem_Wk_of_Tinv p ?m.54 M
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_HeckeEis_exists_isEigensystemH1_one_of_isEigensystemH1_gamma0NebenRep.lean:755:37: error(lean.unknownIdentifier): Unknown identifier `hpM`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_HeckeEis_exists_isEigensystemH1_one_of_isEigensystemH1_gamma0NebenRep.lean:765:0: warning: automatically included section variable(s) unused in theorem `P2MW.S_HeckeEis_exists_isEigensystemH1_one_of_isEigensystemH1_gamma0NebenRep.TwistMain.exists_dP_eq`:
+  hpM
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit hpM in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_HeckeEis_exists_isEigensystemH1_one_of_isEigensystemH1_gamma0NebenRep.lean:823:23: error: Application type mismatch: The argument
+  hpM
+has type
+  p ∣ M
+of sort `Prop` but is expected to have type
+  Type ?u.41
+of sort `Type (?u.41 + 1)` in the application
+  @rhoW p ?m.66 M hpM
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_HeckeEis_exists_isEigensystemH1_one_of_isEigensystemH1_gamma0NebenRep.lean:824:50: error: unsolved goals
+p : ℕ
+inst✝³ : Fact (Nat.Prime p)
+M : ℕ
+inst✝² : NeZero M
+hpM : p ∣ M
+κ : Type
+inst✝¹ : Field κ
+inst✝ : CharP κ p
+S₀ : Set ℕ
+j : ℕ
+hj : j < p
+f : ↥(Wk p κ j)
+⊢ (sorry ()) f = f
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_HeckeEis_exists_isEigensystemH1_one_of_isEigensystemH1_gamma0NebenRep.lean:825:55: error: unsolved goals
+p : ℕ
+inst✝³ : Fact (Nat.Prime p)
+M : ℕ
+inst✝² : NeZero M
+hpM : p ∣ M
+κ : Type
+inst✝¹ : Field κ
+inst✝ : CharP κ p
+S₀ : Set ℕ
+j : ℕ
+hj : j < p
+γ γ' : ↥(Gamma0 M)
+f : ↥(Wk p κ j)
+⊢ (sorry ()) f = (sorry ()) ((sorry ()) f)
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_HeckeEis_exists_isEigensystemH1_one_of_isEigensystemH1_gamma0NebenRep.lean:828:16: error: Application type mismatch: The argument
+  hpM
+has type
+  p ∣ M
+of sort `Prop` but is expected to have type
+  Type
+of sort `Type 1` in the application
+  @rhoWk p ?m.17 M hpM
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_HeckeEis_exists_isEigensystemH1_one_of_isEigensystemH1_gamma0NebenRep.lean:828:69: error: Application type mismatch: The argument
+  hpM
+has type
+  p ∣ M
+of sort `Prop` but is expected to have type
+  Type ?u.36
+of sort `Type (?u.36 + 1)` in the application
+  @rhoW p ?m.26 M hpM
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_HeckeEis_exists_isEigensystemH1_one_of_isEigensystemH1_gamma0NebenRep.lean:836:0: warning: automatically included section variable(s) unused in theorem `P2MW.S_HeckeEis_exists_isEigensystemH1_one_of_isEigensystemH1_gamma0NebenRep.TwistMain.natCast_zmod_ne_zero`:
+  [NeZero M]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [NeZero M] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_HeckeEis_exists_isEigensystemH1_one_of_isEigensystemH1_gamma0NebenRep.lean:842:28: error: Application type mismatch: The argument
+  hpM
+has type
+  p ∣ M
+of sort `Prop` but is expected to have type
+  Type
+of sort `Type 1` in the application
+  @rhoWk p ?m.19 M hpM
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_HeckeEis_exists_isEigensystemH1_one_of_isEigensystemH1_gamma0NebenRep.lean:845:44: error(lean.unknownIdentifier): Unknown identifier `hpM`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_HeckeEis_exists_isEigensystemH1_one_of_isEigensystemH1_gamma0NebenRep.lean:854:32: error: Application type mismatch: The argument
+  hpM
+has type
+  p ∣ M
+of sort `Prop` but is expected to have type
+  Type ?u.45
+of sort `Type (?u.45 + 1)` in the application
+  @rhoW p ?m.50 M hpM
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_HeckeEis_exists_isEigensystemH1_one_of_isEigensystemH1_gamma0NebenRep.lean:858:52: error: Application type mismatch: The argument
+  hpM
+has type
+  p ∣ M
+of sort `Prop` but is expected to have type
+  Type ?u.126
+of sort `Type (?u.126 + 1)` in the application
+  @rhoW p ?m.148 M hpM
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_HeckeEis_exists_isEigensystemH1_one_of_isEigensystemH1_gamma0NebenRep.lean:859:19: error: Application type mismatch: The argument
+  hpM
+has type
+  p ∣ M
+of sort `Prop` but is expected to have type
+  Type ?u.140
+of sort `Type (?u.140 + 1)` in the application
+  @rhoW p ?m.178 M hpM
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_HeckeEis_exists_isEigensystemH1_one_of_isEigensystemH1_gamma0NebenRep.lean:860:39: error: Application type mismatch: The argument
+  hpM
+has type
+  p ∣ M
+of sort `Prop` but is expected to have type
+  Type ?u.153
+of sort `Type (?u.153 + 1)` in the application
+  @isCompat_W p ?m.193 M hpM
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_HeckeEis_exists_isEigensystemH1_one_of_isEigensystemH1_gamma0NebenRep.lean:862:56: error: Application type mismatch: The argument
+  hpM
+has type
+  p ∣ M
+of sort `Prop` but is expected to have type
+  Type
+of sort `Type 1` in the application
+  @rhoWk p ?m.235 M hpM
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_HeckeEis_exists_isEigensystemH1_one_of_isEigensystemH1_gamma0NebenRep.lean:863:20: error: Application type mismatch: The argument
+  hpM
+has type
+  p ∣ M
+of sort `Prop` but is expected to have type
+  Type
+of sort `Type 1` in the application
+  @rhoWk p ?m.266 M hpM
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_HeckeEis_exists_isEigensystemH1_one_of_isEigensystemH1_gamma0NebenRep.lean:864:40: error: Application type mismatch: The argument
+  hpM
+has type
+  p ∣ M
+of sort `Prop` but is expected to have type
+  Type
+of sort `Type 1` in the application
+  @isCompat_Wk p ?m.283 M ?m.284 hpM
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_HeckeEis_exists_isEigensystemH1_one_of_isEigensystemH1_gamma0NebenRep.lean:943:63: error: Application type mismatch: The argument
+  hpM
+has type
+  p ∣ M
+of sort `Prop` but is expected to have type
+  Type ?u.24
+of sort `Type (?u.24 + 1)` in the application
+  @rhoW p ?m.11 M hpM
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_HeckeEis_exists_isEigensystemH1_one_of_isEigensystemH1_gamma0NebenRep.lean:946:2: warning: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_HeckeEis_exists_isEigensystemH1_one_of_isEigensystemH1_gamma0NebenRep.lean:950:14: error(lean.unknownIdentifier): Unknown identifier `hpM`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_HeckeEis_exists_isEigensystemH1_one_of_isEigensystemH1_gamma0NebenRep.lean:950:73: error(lean.unknownIdentifier): Unknown identifier `hpM`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_HeckeEis_exists_isEigensystemH1_one_of_isEigensystemH1_gamma0NebenRep.lean:957:11: error(lean.unknownIdentifier): Unknown identifier `mem_coeffCoboundaries_of_forall_apply_zero`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_HeckeEis_exists_isEigensystemH1_one_of_isEigensystemH1_gamma0NebenRep.lean:959:4: error: No goals to be solved
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_HeckeEis_exists_isEigensystemH1_one_of_isEigensystemH1_gamma0NebenRep.lean:985:4: warning: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_HeckeEis_exists_isEigensystemH1_one_of_isEigensystemH1_gamma0NebenRep.lean:995:49: error(lean.unknownIdentifier): Unknown identifier `hpM`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_HeckeEis_exists_isEigensystemH1_one_of_isEigensystemH1_gamma0NebenRep.lean:995:83: error(lean.unknownIdentifier): Unknown identifier `hpM`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_HeckeEis_exists_isEigensystemH1_one_of_isEigensystemH1_gamma0NebenRep.lean:1052:20: error: Application type mismatch: The argument
+  hpM
+has type
+  p ∣ M
+of sort `Prop` but is expected to have type
+  Type
+of sort `Type 1` in the application
+  @final p ?m.763 M ?m.764 hpM
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_HeckeEis_exists_isEigensystemH1_one_of_isEigensystemH1_gamma0NebenRep.lean:1071:25: error: Application type mismatch: The argument
+  hpM
+has type
+  p ∣ M
+of sort `Prop` but is expected to have type
+  Type
+of sort `Type 1` in the application
+  @final p ?m.1086 M ?m.1087 hpM
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_HeckeEis_exists_isEigensystemH1_one_of_isEigensystemH1_gamma0NebenRep.lean:1072:12: error: No goals to be solved
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_HeckeEis_exists_isEigensystemH1_one_of_isEigensystemH1_gamma0NebenRep.lean:1090:25: error: Application type mismatch: The argument
+  hpM
+has type
+  p ∣ M
+of sort `Prop` but is expected to have type
+  Type
+of sort `Type 1` in the application
+  @final p ?m.1331 M ?m.1332 hpM
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_HeckeEis_exists_isEigensystemH1_one_of_isEigensystemH1_gamma0NebenRep.lean:1091:12: error: No goals to be solved

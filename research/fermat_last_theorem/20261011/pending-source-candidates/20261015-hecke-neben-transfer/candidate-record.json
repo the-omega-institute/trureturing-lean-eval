@@ -1,0 +1,18 @@
+{
+  "at": "2026-10-15T05:38:55.814535+00:00",
+  "status": "installed-awaiting-existing-single-controller",
+  "revision": "r1",
+  "exact_main_statement": "import Mathlib\nimport Definitions.Def_Gamma0CoeffCohomology\nimport Definitions.Def_Gamma0CoeffCohomologyEigen\nimport Definitions.Def_HeckeEis_Gamma0NebenRep\nimport P2M.Util\nimport P2M.Sol.S_HeckeEis_exists_isEigensystemH1_one_of_isEigensystemH1_gamma0NebenRep\n\nset_option autoImplicit false\n\nopen scoped MatrixGroups\n\ntheorem HeckeEis.exists_isEigensystemH1_one_of_isEigensystemH1_gamma0NebenRep\n    (p : \u2115) [Fact p.Prime] (M : \u2115) [NeZero M] (hpM : p \u2223 M) (S\u2080 : Set \u2115) (e t : \u2115)\n    (het : (p - 1) \u2223 e + 2 * t)\n    (\u03ba : Type) [Field \u03ba] [CharP \u03ba p] (nu : \u2115 \u2192 \u03ba)\n    (hocc : HeckeEis.IsEigensystemH1 M (HeckeEis.gamma0NebenRep p M hpM \u03ba e)\n      (fun _ => LinearMap.id) S\u2080 nu) :\n    \u2203 (M' : \u2115) (mu : \u2115 \u2192 \u03ba), M \u2223 M' \u2227 M' \u2223 M * p \u2227\n      HeckeEis.IsEigensystemH1 M' (1 : Representation \u03ba (CongruenceSubgroup.Gamma0 M') \u03ba)\n        (fun _ => LinearMap.id) (insert p S\u2080) mu \u2227\n      \u2200 \u2113 : \u2115, \u2113.Prime \u2192 \u00ac \u2113 \u2223 M \u2192 \u2113 \u2260 p \u2192 \u2113 \u2209 S\u2080 \u2192 mu \u2113 = (\u2113 : \u03ba) ^ t * nu \u2113 := by p2m_exact_reverting @_root_.P2MW.S_HeckeEis_exists_isEigensystemH1_one_of_isEigensystemH1_gamma0NebenRep.solution\n\n#print axioms HeckeEis.exists_isEigensystemH1_one_of_isEigensystemH1_gamma0NebenRep\n",
+  "source": "supplier full characteristic-p Neben-character untwisting and level-transfer construction",
+  "placement": "Existing exact supplier module; no D5 module or new retained wrapper.",
+  "repairs": [
+    "explicit determinant and identity normalization",
+    "direct positive-product cancellation for representation multiplication",
+    "remove only diagnosed unused section hypotheses and update callers",
+    "clean actual proof-mode instance/deprecated API warnings"
+  ],
+  "max_active_jobs": 1,
+  "new_compilers_spawned": 0,
+  "full_original_complete": false,
+  "official_new_solve_credit": 0
+}
