@@ -1,0 +1,46 @@
+{
+  "at": "2026-10-16T16:09:00.711039+00:00",
+  "name": "CerednikDrinfeld_jointDelta_zero_classSetEdgeHecke_mulVecLin_eq_classSetVertexHecke_mulVecLin_sub_of_mem_primeHeckeSet",
+  "source_replacements": [
+    [
+      "obtain \u27e8\u03b4, u, h\u03b4, hu, hout\u27e9 :=",
+      "obtain \u27e8\u03b4, h\u03b4, u, hu, hout\u27e9 :=",
+      1
+    ],
+    [
+      "haveI",
+      "have",
+      7
+    ],
+    [
+      "if_pos",
+      "ite_eq_left",
+      3
+    ],
+    [
+      "if_neg",
+      "ite_eq_right",
+      3
+    ],
+    [
+      "if_true",
+      "ite_true",
+      1
+    ]
+  ],
+  "baseline_byte_identical_to_pinned_supplier": false,
+  "baseline_difference": "Preexisting normalization removes five obsolete disabled instance names; the remaining instance and all three simp attribute targets are retained.",
+  "full_original_statements_hypotheses_and_all_proof_branches_preserved": true,
+  "no_linter_suppression_added": true,
+  "verification_pending": false,
+  "candidate": "r1",
+  "installed": true,
+  "actual_baseline_errors": 1,
+  "actual_baseline_warnings": 14,
+  "installed_at": "2026-10-16T16:09:00.711204+00:00",
+  "active_import_closure_excluded": [
+    "Submission.Supplier.P2M.Sol.S_QuaternionAlgebra_nonempty_algEquiv_of_isDefiniteRamifiedExactlyAt_of_prime"
+  ],
+  "active_transitive_import_closure_size": 40,
+  "actual_live_descendant_sources": []
+}
