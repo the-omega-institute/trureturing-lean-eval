@@ -1,0 +1,46 @@
+{
+  "at": "2026-10-16T12:46:47.518024+00:00",
+  "name": "Rat_hilbertReciprocity_even_card_not_ternary_isotropic",
+  "source_replacements": [
+    [
+      "    rw [map_sub, map_pow, hsl, hcs, sub_self]",
+      "    rw [map_sub, map_pow, hsl, hcs]\n    exact sub_self (s ^ 2)",
+      1
+    ],
+    [
+      "haveI",
+      "have",
+      2
+    ],
+    [
+      "if_false",
+      "ite_false",
+      2
+    ],
+    [
+      "if_pos",
+      "ite_eq_left",
+      9
+    ],
+    [
+      "if_neg",
+      "ite_eq_right",
+      13
+    ]
+  ],
+  "baseline_byte_identical_to_pinned_supplier": true,
+  "full_original_statements_hypotheses_and_all_proof_branches_preserved": true,
+  "no_linter_suppression_added": true,
+  "verification_pending": false,
+  "candidate": "r1",
+  "active_import_closure_excluded": [
+    "Submission.Supplier.P2M.Sol.S_Deformation_ProartinianCat_isCorepresentable_of_preservesLimits"
+  ],
+  "candidate_already_installed_before_this_goal_turn": true,
+  "candidate_observed_installed_at": "2026-10-16T18:05:04.514990+00:00",
+  "canonical_source_and_card_baselines_byte_identical_to_pinned_supplier": {
+    "source": true,
+    "card": true
+  },
+  "accepted_using_existing_successful_make_and_kernel_receipts": true
+}
