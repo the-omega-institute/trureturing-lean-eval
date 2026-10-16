@@ -1,0 +1,69 @@
+{
+  "at": "2026-10-16T15:35:36.685024+00:00",
+  "name": "ModularCurve_FullLevel_tateGal_mul_tateGL2_comm",
+  "source_replacements": [
+    [
+      "  simp only [Int.cast_sub, Int.cast_mul, Int.cast_one, hq10, h11, mul_one, mul_zero, sub_zero] at this\n  exact this",
+      "  simp only [Int.cast_sub, Int.cast_mul, Int.cast_one, hq10, h11, mul_one, mul_zero] at this\n  exact (sub_zero (((\u03b4 0 0 : \u2124) : ZMod q))).symm.trans this",
+      1
+    ],
+    [
+      "if_pos",
+      "ite_eq_left",
+      1
+    ],
+    [
+      "ModularForm.coe_add",
+      "FunLike.coe_add",
+      4
+    ],
+    [
+      "ModularForm.add_apply",
+      "_root_.add_apply",
+      1
+    ],
+    [
+      "ModularForm.IsGLPos.coe_smul",
+      "FunLike.coe_smul",
+      4
+    ],
+    [
+      "ModularForm.coe_neg",
+      "FunLike.coe_neg",
+      2
+    ],
+    [
+      "ModularForm.coe_sub",
+      "FunLike.coe_sub",
+      1
+    ],
+    [
+      "ModularForm.coe_zero",
+      "FunLike.coe_zero",
+      5
+    ],
+    [
+      "haveI",
+      "have",
+      4
+    ],
+    [
+      "    rw [Matrix.det_mul, Matrix.det_fin_two_of, \u2190 Matrix.GeneralLinearGroup.val_det_apply, one_mul, mul_zero,\n      sub_zero]\n    exact units_mul_inv_val (detU g)",
+      "    rw [Matrix.det_mul, Matrix.det_fin_two_of, \u2190 Matrix.GeneralLinearGroup.val_det_apply, one_mul, mul_zero]\n    exact\n      (congrArg (fun z : ZMod q => (detU g : ZMod q) * z)\n        (sub_zero (((detU g)\u207b\u00b9 : (ZMod q)\u02e3) : ZMod q))).trans\n          (units_mul_inv_val (detU g))",
+      1
+    ]
+  ],
+  "baseline_byte_identical_to_pinned_supplier": true,
+  "full_original_statements_hypotheses_and_all_proof_branches_preserved": true,
+  "no_linter_suppression_added": true,
+  "verification_pending": false,
+  "candidate": "r1",
+  "installed": true,
+  "actual_baseline_errors": 2,
+  "actual_baseline_warnings": 23,
+  "installed_at": "2026-10-16T15:35:55.902999+00:00",
+  "active_import_closure_excluded": [
+    "Submission.Supplier.P2M.Sol.S_ModularCurve_FullLevel_levelAutBar_pow_inv_eq_levelAutBar_of_diag_conj"
+  ],
+  "active_transitive_import_closure_size": 94
+}
