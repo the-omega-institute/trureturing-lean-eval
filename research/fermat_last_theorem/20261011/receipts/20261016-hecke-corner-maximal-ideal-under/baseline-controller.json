@@ -1,0 +1,68 @@
+{
+  "sha256": "7b2458cb07f31271509a5a3876c5d9247bcdc0518307e67b8d871eb665b76163",
+  "exit": 1,
+  "empty_output_retry_done": false,
+  "source_sha256_after": "7b2458cb07f31271509a5a3876c5d9247bcdc0518307e67b8d871eb665b76163",
+  "source_unchanged": true,
+  "olean_sha256": null,
+  "seconds": 76.50997008298873,
+  "pid": 51203,
+  "command": [
+    "/Users/macstudio/.local/omega-shims/lean",
+    "-j1",
+    "--trust=0",
+    "-Ddebug.skipKernelTC=false",
+    "-R",
+    "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src",
+    "-o",
+    "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-build/lib/lean/Submission/Supplier/P2M/Sol/S_CohCarrier_HeckeData_exists_corner_of_genMap_of_forall_isMaximal.olean",
+    "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_CohCarrier_HeckeData_exists_corner_of_genMap_of_forall_isMaximal.lean"
+  ],
+  "make_wrapper_pid": 47915,
+  "make_exit": 2,
+  "make_entry_failed": false,
+  "cache_binding_valid": true,
+  "canonical_make_running_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/7f79ae62087c7e7f59b84452-1792140205801192000.make-running.json",
+  "canonical_make_terminal_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/7f79ae62087c7e7f59b84452-1792140205801192000.make-terminal.json",
+  "kernel_terminal_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/7f79ae62087c7e7f59b84452-1792140205801192000.kernel/result.json",
+  "direct_dependencies": [
+    {
+      "module": "Submission.Supplier.Definitions.Def_CohCarrier_HeckeData",
+      "source_sha256": "73657d1c3a1d41e29d6ba46dd855a760887ec35c8d46d6795c4e2ce7820b3ac1",
+      "object_sha256": "335afe715e20ce76a2623bb4c615b0e98df5f656786b863a97365314429efd3a",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Definitions.Def_IharaLemma_IdempotentSplitting",
+      "source_sha256": "02dd1302db82e05d0112e50cc3b2274651db13c350fdbef09898ab704c94160a",
+      "object_sha256": "1c969ba5a6fc6a4391e2fe5db3242536e8da692e38373b568a01c0b21a2a03ab",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Theorems.Thm_IharaLemma_nonempty_idempotentSplitting_of_finite",
+      "source_sha256": "5d45ea34f88b5086250ab075c38dbdd0ae81d7a7276e084e798f45b451b1b0c6",
+      "object_sha256": "f53e0f5f8576648b930e4ee56ebe2b8272e52b207bcedcfaebcf6f9a291aa2ce",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Theorems.Thm_IharaLemma_IdempotentSplitting_eq_smul_of_smul_eq_zero",
+      "source_sha256": "1fc4b867be754bc95d5292cf1f3236e69a3f9efc0a9750f9915acc4dde105076",
+      "object_sha256": "1a9fe090eb245b47f04d44dbc4cf88ed954a00fbce26da217a451104c0662b90",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Theorems.Thm_IharaLemma_IdempotentSplitting_mem_maxIdeal_iff_apply_toCornerRing_eq_zero",
+      "source_sha256": "677afe1d58f8530aaa87e10a51cf66bab6133a35a43b3f9293dc382585aeb55b",
+      "object_sha256": "fa7fe785d2a935f531786d2d2ab48b35f17847d3c8aa8853bd64113ad051f93f",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.P2M.Util",
+      "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+      "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+      "receipt_reused": true
+    }
+  ],
+  "stdout": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/7f79ae62087c7e7f59b84452-1792140205801192000.kernel/stdout.log",
+  "stderr": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/7f79ae62087c7e7f59b84452-1792140205801192000.kernel/stderr.log"
+}
