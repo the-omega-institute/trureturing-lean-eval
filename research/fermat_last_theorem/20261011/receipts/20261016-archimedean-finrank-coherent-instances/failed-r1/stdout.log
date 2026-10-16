@@ -1,0 +1,28 @@
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_groupCohomology_finrank_invariants_archimedean_add_dualTwist_add_H1_eq.lean:354:67: error: Application type mismatch: The argument
+  TB
+has type
+  @LinearMap (ZMod p) (ZMod p) Field.toSemifield.toSemiring Field.toSemifield.toSemiring (RingHom.id (ZMod p)) (↥B) (↑M)
+    B.addCommMonoid M.hV1.toAddCommMonoid AddSubgroupClass.instZModModule M.hV2
+but is expected to have type
+  @LinearMap (ZMod p) (ZMod p) (ZMod.instField p).toDivisionRing.toSemiring (ZMod.instField p).toDivisionRing.toSemiring
+    (RingHom.id (ZMod p)) ?m.781 ?m.785 AddCommGroup.toAddCommMonoid AddCommGroup.toAddCommMonoid ?m.784 ?m.787
+in the application
+  LinearMap.finrank_range_add_finrank_ker TB
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_groupCohomology_finrank_invariants_archimedean_add_dualTwist_add_H1_eq.lean:364:4: error: Type mismatch: After simplification, term
+  congrArg (fun u => ↑u) (cycloChar_complexConjugation_eq_neg_one p)
+ has type
+  @Eq (ZMod p) (↑((cycloChar p) complexConjugation)) (-1)
+but is expected to have type
+  @Eq (ZMod p) (↑((cycloChar p) complexConjugation)) (-1)
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_groupCohomology_finrank_invariants_archimedean_add_dualTwist_add_H1_eq.lean:366:14: error(lean.synthInstanceFailed): failed to synthesize instance of type class
+  AddCommGroup (Dual (ZMod p) ↑M)
+
+Hint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_groupCohomology_finrank_invariants_archimedean_add_dualTwist_add_H1_eq.lean:397:28: error(lean.synthInstanceFailed): failed to synthesize instance of type class
+  AddCommGroup (Dual (ZMod p) ↑M)
+
+Hint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.
+'P2MW.S_groupCohomology_finrank_invariants_archimedean_add_dualTwist_add_H1_eq.solution' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]

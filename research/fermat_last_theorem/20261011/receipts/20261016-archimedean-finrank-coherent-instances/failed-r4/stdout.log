@@ -1,0 +1,22 @@
+Try this:
+  [apply] abel_nf
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_groupCohomology_finrank_invariants_archimedean_add_dualTwist_add_H1_eq.lean:379:4: error: unsolved goals
+case mp
+p : ℕ
+inst✝¹ : Fact (Nat.Prime p)
+M : Rep.{0, 0, 0} (ZMod p) Gal(AlgebraicClosure ℚ/ℚ)
+inst✝ : FiniteDimensional (ZMod p) ↑M
+this✝¹ : AddCommGroup (Dual (ZMod p) ↑M) := (M.dualTwist (cycloChar p)).hV1
+this✝ : Module (ZMod p) (Dual (ZMod p) ↑M) := (M.dualTwist (cycloChar p)).hV2
+hχ : (cycloChar p) complexConjugation = -1
+φ : Dual (ZMod p) ↑M
+key : ∀ (φ : Dual (ZMod p) ↑M), ((Rep.res archimedeanLoc (M.dualTwist (cycloChar p))).ρ archimedeanGen) φ = -φ ∘ₗ ρc M
+h : ∀ (g : ↥archimedeanDecomposition), ((Rep.res archimedeanLoc (M.dualTwist (cycloChar p))).ρ g) φ = φ
+m : ↑M
+hc : -φ ∘ₗ ρc M = φ
+this : (-φ ∘ₗ ρc M) m = φ m
+⊢ 1 • φ ((ρc M) m) + (1 • (-1 • φ ∘ₗ ρc M) m + 0) = 0
+'P2MW.S_groupCohomology_finrank_invariants_archimedean_add_dualTwist_add_H1_eq.solution' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]

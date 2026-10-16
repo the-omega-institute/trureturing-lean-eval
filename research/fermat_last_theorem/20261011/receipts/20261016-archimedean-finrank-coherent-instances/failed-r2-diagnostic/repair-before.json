@@ -1,0 +1,103 @@
+{
+  "at": "2026-10-16T23:03:32.634632+00:00",
+  "name": "groupCohomology_finrank_invariants_archimedean_add_dualTwist_add_H1_eq",
+  "candidate": "r2",
+  "card_candidate": "r1",
+  "source_replacements": [
+    [
+      "if_pos",
+      "ite_eq_left",
+      5
+    ],
+    [
+      "if_neg",
+      "ite_eq_right",
+      5
+    ],
+    [
+      "all_goals simp [res_ρ_one, res_ρ_gen, gen_ne_one, gen_mul_gen, hρm]",
+      "all_goals simp [gen_ne_one, gen_mul_gen, hρm]",
+      1
+    ],
+    [
+      "LinearMap.finrank_range_add_finrank_ker TB",
+      "LinearMap.finrank_range_add_finrank_ker (K := ZMod p) TB",
+      1
+    ],
+    [
+      "finrank (ZMod p) ↥((Rep.res archimedeanLoc (M.dualTwist (cycloChar p))).ρ.invariants)",
+      "finrank (ZMod p) ((Rep.invariantsFunctor (ZMod p) ↥archimedeanDecomposition).obj (Rep.res archimedeanLoc (M.dualTwist (cycloChar p))))",
+      1
+    ],
+    [
+      "    rw [cycloChar_complexConjugation_eq_neg_one, Units.val_neg, Units.val_one]",
+      "    simpa only [Units.val_neg, Units.val_one] using\n      congrArg (fun u : (ZMod p)ˣ => (u : ZMod p)) (cycloChar_complexConjugation_eq_neg_one p)",
+      1
+    ],
+    [
+      "((Rep.res archimedeanLoc (M.dualTwist (cycloChar p))).ρ.invariants : Submodule (ZMod p) (Module.Dual (ZMod p) M))",
+      "(Representation.invariants (V := Module.Dual (ZMod p) M) (Rep.res archimedeanLoc (M.dualTwist (cycloChar p))).ρ : Submodule (ZMod p) (Module.Dual (ZMod p) M))",
+      1
+    ],
+    [
+      "  rw [heq, add_comm]\n  exact Subspace.finrank_add_finrank_dualAnnihilator_eq _",
+      "  change finrank (ZMod p) ↥(Representation.invariants (V := Module.Dual (ZMod p) M) (Rep.res archimedeanLoc (M.dualTwist (cycloChar p))).ρ)\n    + finrank (ZMod p) ↥(LinearMap.range (Np M)) = finrank (ZMod p) M\n  rw [heq, add_comm]\n  exact Subspace.finrank_add_finrank_dualAnnihilator_eq _",
+      1
+    ],
+    [
+      "finrank (ZMod p) (Rep.res archimedeanLoc (M.dualTwist (cycloChar p))).ρ.invariants",
+      "finrank (ZMod p) ((Rep.invariantsFunctor (ZMod p) ↥archimedeanDecomposition).obj (Rep.res archimedeanLoc (M.dualTwist (cycloChar p))))",
+      1
+    ],
+    [
+      "finrank (ZMod p) (Rep.res (extArithLoc S (Sum.inl ())) (M.dualTwist (cycloChar p))).ρ.invariants",
+      "finrank (ZMod p) ((Rep.invariantsFunctor (ZMod p) ↥archimedeanDecomposition).obj (Rep.res (extArithLoc S (Sum.inl ())) (M.dualTwist (cycloChar p))))",
+      1
+    ],
+    [
+      "namespace P2MW.S_groupCohomology_finrank_invariants_archimedean_add_dualTwist_add_H1_eq\n\nset_option autoImplicit false\n",
+      "namespace P2MW.S_groupCohomology_finrank_invariants_archimedean_add_dualTwist_add_H1_eq\n\nset_option autoImplicit false\nset_option pp.all true\n",
+      1
+    ]
+  ],
+  "card_replacements": [
+    [
+      "finrank (ZMod p) (Rep.res (extArithLoc S (Sum.inl ())) (M.dualTwist (cycloChar p))).ρ.invariants",
+      "finrank (ZMod p) ((Rep.invariantsFunctor (ZMod p) ↥archimedeanDecomposition).obj (Rep.res (extArithLoc S (Sum.inl ())) (M.dualTwist (cycloChar p))))",
+      1
+    ]
+  ],
+  "baseline_byte_identical_to_pinned_supplier": true,
+  "pinned_supplier_source_and_card_preserved": true,
+  "full_original_statements_hypotheses_and_all_proof_branches_preserved": true,
+  "no_linter_suppression_added": true,
+  "verification_pending": true,
+  "installed": true,
+  "installed_at": "2026-10-16T23:07:58.812860+00:00",
+  "actual_failure": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/official-layout/terminal-proof-repairs/20261016-archimedean-finrank-coherent-instances/previous-actual-failure",
+  "change": "Reuse invariantsFunctor for the same dual-twist invariant modules, give V explicitly for the existing submodule equality, pin K for rank-nullity, transport the existing cyclotomic unit equality by congrArg, and update only actual deprecated/unused simp diagnostics. Complete original cohomology/cocycle/annihilator proofs and all hypotheses retained.",
+  "max_active_flt_jobs": 1,
+  "lean_threads": 1,
+  "full_original_complete": false,
+  "official_new_solve_credit": 0,
+  "active_import_closure_excluded": [
+    "Submission.Supplier.Theorems.Thm_ResidualGaloisRep_exists_cocycle_smul_one_surjective_pi_dualLiftModuleActAd"
+  ],
+  "active_transitive_import_closure_size": 25,
+  "actual_live_descendant_sources": [
+    {
+      "pid": 97510,
+      "source": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/Theorems/Thm_ResidualGaloisRep_exists_cocycle_smul_one_surjective_pi_dualLiftModuleActAd.lean"
+    }
+  ],
+  "all_four_canonical_adapted_source_card_modules_excluded": [
+    "P2M.Sol.S_groupCohomology_finrank_invariants_archimedean_add_dualTwist_add_H1_eq",
+    "Submission.Supplier.P2M.Sol.S_groupCohomology_finrank_invariants_archimedean_add_dualTwist_add_H1_eq",
+    "Submission.Supplier.Theorems.Thm_groupCohomology_finrank_invariants_archimedean_add_dualTwist_add_H1_eq",
+    "Theorems.Thm_groupCohomology_finrank_invariants_archimedean_add_dualTwist_add_H1_eq"
+  ],
+  "diagnostic_only": true,
+  "r1_actual_errors": 4,
+  "r1_actual_warnings": 0,
+  "diagnostic_reason": "pp.all exposes the still-hidden instance mismatch in rank-nullity/cyclotomic scalar equality/dual carrier. No mathematical proof edit in this diagnostic revision."
+}

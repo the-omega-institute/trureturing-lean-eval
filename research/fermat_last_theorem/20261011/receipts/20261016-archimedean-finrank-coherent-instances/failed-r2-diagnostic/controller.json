@@ -1,0 +1,62 @@
+{
+  "sha256": "76222ff48b7ab509b16174fe0e8d77c85759d5c13d9063355934d4f63100cfcc",
+  "exit": 1,
+  "empty_output_retry_done": false,
+  "source_sha256_after": "76222ff48b7ab509b16174fe0e8d77c85759d5c13d9063355934d4f63100cfcc",
+  "source_unchanged": true,
+  "olean_sha256": null,
+  "seconds": 175.29466250000405,
+  "pid": 22973,
+  "command": [
+    "/Users/macstudio/.local/omega-shims/lean",
+    "-j1",
+    "--trust=0",
+    "-Ddebug.skipKernelTC=false",
+    "-R",
+    "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src",
+    "-o",
+    "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-build/lib/lean/Submission/Supplier/P2M/Sol/S_groupCohomology_finrank_invariants_archimedean_add_dualTwist_add_H1_eq.olean",
+    "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_groupCohomology_finrank_invariants_archimedean_add_dualTwist_add_H1_eq.lean"
+  ],
+  "make_wrapper_pid": 21012,
+  "make_exit": 2,
+  "make_entry_failed": false,
+  "cache_binding_valid": true,
+  "canonical_make_running_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/051441f3cb2a06af3b990c84-1792192195269548000.make-running.json",
+  "canonical_make_terminal_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/051441f3cb2a06af3b990c84-1792192195269548000.make-terminal.json",
+  "kernel_terminal_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/051441f3cb2a06af3b990c84-1792192195269548000.kernel/result.json",
+  "direct_dependencies": [
+    {
+      "module": "Submission.Supplier.Definitions.Def_GroupCohomology_ContinuousUnramified",
+      "source_sha256": "043332b5cfde215c097e58af5d5becdb67b1aafa6711d65e156d9eb78931ad68",
+      "object_sha256": "a5e6d1d085476ac2b0cae24f241961b3f8f43525140e9217a3beeb698205d63d",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Definitions.Def_GroupCohomology_ContinuousDuality",
+      "source_sha256": "00c6ffc079bcdba78193edf10a1d39d5626253c7aada2b8621e2b5af04346c28",
+      "object_sha256": "056f692b20812ae33577c90f06a278d69aa1bee94b3b746fb22e1a55083aee1b",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Definitions.Def_DualSelmer_ExtConditions",
+      "source_sha256": "c1b2c251df0f5beafe5cd5e5079f48fc890964eede2aae816c4508fe3834786a",
+      "object_sha256": "838fb01ac2d003926c96c374442f289247b4fa2a0921d784ca9ce4eea6ef87cb",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Theorems.Thm_ExtCitation_cycloChar_complexConjugation_eq_neg_one",
+      "source_sha256": "782aec7faa209edd8f51d34295a0b165f960a7f0800d2c764c7f9c063a72da55",
+      "object_sha256": "026e8b61074060cf2e50fb325f517a33bfe6e448e40783f45682c8928503bdce",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.P2M.Util",
+      "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+      "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+      "receipt_reused": true
+    }
+  ],
+  "stdout": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/051441f3cb2a06af3b990c84-1792192195269548000.kernel/stdout.log",
+  "stderr": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/051441f3cb2a06af3b990c84-1792192195269548000.kernel/stderr.log"
+}
