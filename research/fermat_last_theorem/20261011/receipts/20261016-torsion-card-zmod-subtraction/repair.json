@@ -1,0 +1,186 @@
+{
+  "at": "2026-10-16T12:43:44.450170+00:00",
+  "name": "Submodule_natCard_torsionBySet_pow_linear_of_finite_torsionBy",
+  "source_replacements": [
+    [
+      "      ZMod.natCast_zmod_val, sub_self]",
+      "      ZMod.natCast_zmod_val]\n    exact sub_self (PadicInt.toZMod (l i))",
+      1
+    ],
+    [
+      "Set.mem_setOf_eq",
+      "Set.mem_ofPred_eq",
+      2
+    ],
+    [
+      "theorem mem_qTors_iff ",
+      "include hq in\ntheorem mem_qTors_iff ",
+      1
+    ],
+    [
+      "theorem lvl_spec ",
+      "include hq in\ntheorem lvl_spec ",
+      1
+    ],
+    [
+      "theorem lvl_le ",
+      "include hq in\ntheorem lvl_le ",
+      1
+    ],
+    [
+      "theorem pow_smul_eq_zero_of_le ",
+      "include hq in\ntheorem pow_smul_eq_zero_of_le ",
+      1
+    ],
+    [
+      "theorem mem_qTors_of_mem_torsionBySet ",
+      "include hq in\ntheorem mem_qTors_of_mem_torsionBySet ",
+      1
+    ],
+    [
+      "theorem smul_eq_zero_of_sep ",
+      "include hq in\ntheorem smul_eq_zero_of_sep ",
+      1
+    ],
+    [
+      "theorem finite_torsionBySet_qTors ",
+      "include hq in\ntheorem finite_torsionBySet_qTors ",
+      1
+    ],
+    [
+      "  haveI : NeZero (q ^ m) := \u27e8pow_ne_zero _ hq.out.ne_zero\u27e9\n",
+      "  have : NeZero (q ^ m) := \u27e8pow_ne_zero _ hq.out.ne_zero\u27e9\n",
+      1
+    ],
+    [
+      "  haveI : NeZero (q ^ n) := \u27e8pow_ne_zero _ hq.out.ne_zero\u27e9\n",
+      "  have : NeZero (q ^ n) := \u27e8pow_ne_zero _ hq.out.ne_zero\u27e9\n",
+      1
+    ],
+    [
+      "    haveI : Subsingleton {x : G // q ^ 0 \u2022 x = 0} := \u27e8fun a b => Subtype.ext (by\n",
+      "    have : Subsingleton {x : G // q ^ 0 \u2022 x = 0} := \u27e8fun a b => Subtype.ext (by\n",
+      1
+    ],
+    [
+      "    haveI : Finite f.ker := by\n",
+      "    have : Finite f.ker := by\n",
+      1
+    ],
+    [
+      "    haveI : Finite f.range := by\n",
+      "    have : Finite f.range := by\n",
+      1
+    ],
+    [
+      "      haveI := ih\n",
+      "      have := ih\n",
+      1
+    ],
+    [
+      "  haveI := finite_quotient_q q (T := T) hfin\n",
+      "  have := finite_quotient_q q (T := T) hfin\n",
+      1
+    ],
+    [
+      "  haveI : NeZero q := \u27e8hq.out.ne_zero\u27e9\n",
+      "  have : NeZero q := \u27e8hq.out.ne_zero\u27e9\n",
+      1
+    ],
+    [
+      "  haveI : IsNoetherian \u2124_[q] (Module.End \u2124_[q] Y) := inferInstance\n",
+      "  have : IsNoetherian \u2124_[q] (Module.End \u2124_[q] Y) := inferInstance\n",
+      1
+    ],
+    [
+      "  haveI hRfin : Module.Finite \u2124_[q] (Rsub (T := T) (q := q) (Y := Y)) :=\n",
+      "  have hRfin : Module.Finite \u2124_[q] (Rsub (T := T) (q := q) (Y := Y)) :=\n",
+      1
+    ],
+    [
+      "  haveI : IsNoetherianRing (Rsub (T := T) (q := q) (Y := Y)) :=\n",
+      "  have : IsNoetherianRing (Rsub (T := T) (q := q) (Y := Y)) :=\n",
+      1
+    ],
+    [
+      "  haveI : Module.Finite (Rsub (T := T) (q := q) (Y := Y)) Y := Module.Finite.of_restrictScalars_finite \u2124_[q] (Rsub (T := T) (q := q) (Y := Y)) _\n",
+      "  have : Module.Finite (Rsub (T := T) (q := q) (Y := Y)) Y := Module.Finite.of_restrictScalars_finite \u2124_[q] (Rsub (T := T) (q := q) (Y := Y)) _\n",
+      1
+    ],
+    [
+      "  haveI : IsNoetherian \u2124_[q] Y := inferInstance\n",
+      "  have : IsNoetherian \u2124_[q] Y := inferInstance\n",
+      1
+    ],
+    [
+      "  haveI := hfinR; haveI := hN; haveI := hF\n",
+      "  have := hfinR; have := hN; have := hF\n",
+      1
+    ],
+    [
+      "  haveI := finite_pow_torsion q hfinq m\n",
+      "  have := finite_pow_torsion q hfinq m\n",
+      1
+    ],
+    [
+      "  haveI : Module.Finite \u2124_[q] XM := moduleFinite_X q hfinq\n",
+      "  have : Module.Finite \u2124_[q] XM := moduleFinite_X q hfinq\n",
+      1
+    ],
+    [
+      "  haveI hfinF := finite_torsionBySet_qTors q hfinq F m hqF\n",
+      "  have hfinF := finite_torsionBySet_qTors q hfinq F m hqF\n",
+      1
+    ],
+    [
+      "  haveI : Module.Finite \u2124_[q] XM := moduleFinite_X q hfin\n",
+      "  have : Module.Finite \u2124_[q] XM := moduleFinite_X q hfin\n",
+      1
+    ],
+    [
+      "include hq in\ntheorem mem_qTors_iff ",
+      "omit hq in\ntheorem mem_qTors_iff [Fact q.Prime] ",
+      1
+    ],
+    [
+      "include hq in\ntheorem lvl_spec ",
+      "omit hq in\ntheorem lvl_spec [Fact q.Prime] ",
+      1
+    ],
+    [
+      "include hq in\ntheorem lvl_le ",
+      "omit hq in\ntheorem lvl_le [Fact q.Prime] ",
+      1
+    ],
+    [
+      "include hq in\ntheorem pow_smul_eq_zero_of_le ",
+      "omit hq in\ntheorem pow_smul_eq_zero_of_le [Fact q.Prime] ",
+      1
+    ],
+    [
+      "include hq in\ntheorem mem_qTors_of_mem_torsionBySet ",
+      "omit hq in\ntheorem mem_qTors_of_mem_torsionBySet [Fact q.Prime] ",
+      1
+    ],
+    [
+      "include hq in\ntheorem smul_eq_zero_of_sep ",
+      "omit hq in\ntheorem smul_eq_zero_of_sep [Fact q.Prime] ",
+      1
+    ],
+    [
+      "include hq in\ntheorem finite_torsionBySet_qTors ",
+      "omit hq in\ntheorem finite_torsionBySet_qTors [Fact q.Prime] ",
+      1
+    ]
+  ],
+  "baseline_byte_identical_to_pinned_supplier": true,
+  "full_original_statements_hypotheses_and_all_proof_branches_preserved": true,
+  "no_linter_suppression_added": true,
+  "verification_pending": false,
+  "candidate": "r2",
+  "active_import_closure_excluded": [
+    "Submission.Supplier.Theorems.Thm_Deformation_conjStable_liftFunctor"
+  ],
+  "r2_at": "2026-10-16T13:19:19.447263+00:00",
+  "r2_reason": "Actual seven unused-section warnings; retain all original prime hypotheses as anonymous explicit instance binders, without suppression."
+}
