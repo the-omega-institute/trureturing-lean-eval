@@ -1,0 +1,54 @@
+{
+  "at": "2026-10-16T12:44:55.286404+00:00",
+  "name": "ModularCurve_FullLevel_exists_ratCast_slash_conjElem_eq_sum_exp_pow_smul_of_mem_Gamma0",
+  "source_replacements": [
+    [
+      "  simp only [Int.cast_sub, Int.cast_mul, Int.cast_one, hq10, h11, mul_one, mul_zero, sub_zero] at this\n  exact this",
+      "  simp only [Int.cast_sub, Int.cast_mul, Int.cast_one, hq10, h11, mul_one, mul_zero] at this\n  exact (sub_zero (((\u03b4 0 0 : \u2124) : ZMod q))).symm.trans this",
+      1
+    ],
+    [
+      "if_pos",
+      "ite_eq_left",
+      3
+    ],
+    [
+      "    convert h2 using 1 <;> first | (with_reducible_and_instances rfl) | rfl | skip",
+      "    convert h2 using 1",
+      2
+    ],
+    [
+      "ModularForm.coe_add",
+      "FunLike.coe_add",
+      1
+    ],
+    [
+      "ModularForm.IsGLPos.coe_smul",
+      "FunLike.coe_smul",
+      3
+    ],
+    [
+      "  haveI : NeZero M' := \u27e8(M'_ne_zero hqM')\u27e9\n",
+      "  have : NeZero M' := \u27e8(M'_ne_zero hqM')\u27e9\n",
+      1
+    ],
+    [
+      "    haveI : Fact (IsCusp OnePoint.infty (GamR q M')) :=\n",
+      "    have : Fact (IsCusp OnePoint.infty (GamR q M')) :=\n",
+      1
+    ],
+    [
+      "  haveI : NeZero M' := \u27e8W1pRR.M'_ne_zero hqM'\u27e9\n",
+      "  have : NeZero M' := \u27e8W1pRR.M'_ne_zero hqM'\u27e9\n",
+      1
+    ]
+  ],
+  "baseline_byte_identical_to_pinned_supplier": true,
+  "full_original_statements_hypotheses_and_all_proof_branches_preserved": true,
+  "no_linter_suppression_added": true,
+  "verification_pending": false,
+  "candidate": "r1",
+  "active_import_closure_excluded": [
+    "Submission.Supplier.Theorems.Thm_Deformation_ProartinianCat_isAdicTopology_of_isNoetherianRing"
+  ]
+}
