@@ -1,0 +1,55 @@
+{
+  "at": "2026-10-16T22:40:00.439974+00:00",
+  "name": "Rep_finrank_invariants_res_dualTwist_eq",
+  "candidate": "r1",
+  "card_candidate": "r1",
+  "source_replacements": [
+    [
+      "(Rep.res r (M.dualTwist (cycloChar p))).\u03c1.invariants",
+      "((Rep.invariantsFunctor (ZMod p) H).obj (Rep.res r (M.dualTwist (cycloChar p))))",
+      1
+    ],
+    [
+      "((Rep.res r M).dualTwist ((cycloChar p).comp r)).\u03c1.invariants",
+      "((Rep.invariantsFunctor (ZMod p) H).obj ((Rep.res r M).dualTwist ((cycloChar p).comp r)))",
+      1
+    ]
+  ],
+  "card_replacements": [
+    [
+      "(Rep.res r (M.dualTwist (cycloChar p))).\u03c1.invariants",
+      "((Rep.invariantsFunctor (ZMod p) H).obj (Rep.res r (M.dualTwist (cycloChar p))))",
+      1
+    ],
+    [
+      "((Rep.res r M).dualTwist ((cycloChar p).comp r)).\u03c1.invariants",
+      "((Rep.invariantsFunctor (ZMod p) H).obj ((Rep.res r M).dualTwist ((cycloChar p).comp r)))",
+      1
+    ]
+  ],
+  "baseline_byte_identical_to_pinned_supplier": true,
+  "pinned_supplier_source_and_card_preserved": true,
+  "full_original_statements_hypotheses_and_all_proof_branches_preserved": true,
+  "no_linter_suppression_added": true,
+  "verification_pending": false,
+  "installed": true,
+  "installed_at": "2026-10-16T22:40:00.441487+00:00",
+  "actual_failure": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/official-layout/terminal-proof-repairs/20261016-dualtwist-invariant-module-instances/previous-actual-failure",
+  "mathlib_api_evidence": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/official-deps/.lake/packages/mathlib/Mathlib/RepresentationTheory/Invariants.lean",
+  "change": "Use the existing invariantsFunctor module at exactly the two finrank arguments in source/card. Its obj is definitionally the same invariant submodule (obj A := \u21a7A.\u03c1.invariants). All original hypotheses, name/attribute targets, and the complete original linear-equivalence proof are retained.",
+  "max_active_flt_jobs": 1,
+  "lean_threads": 1,
+  "full_original_complete": false,
+  "official_new_solve_credit": 0,
+  "active_import_closure_excluded": [
+    "Submission.Supplier.Theorems.Thm_TWNum_finrank_continuousH2_extArithLoc_inl_eq_zero"
+  ],
+  "active_transitive_import_closure_size": 21,
+  "actual_live_descendant_sources": [],
+  "all_four_canonical_adapted_source_card_modules_excluded": [
+    "P2M.Sol.S_Rep_finrank_invariants_res_dualTwist_eq",
+    "Submission.Supplier.P2M.Sol.S_Rep_finrank_invariants_res_dualTwist_eq",
+    "Submission.Supplier.Theorems.Thm_Rep_finrank_invariants_res_dualTwist_eq",
+    "Theorems.Thm_Rep_finrank_invariants_res_dualTwist_eq"
+  ]
+}
