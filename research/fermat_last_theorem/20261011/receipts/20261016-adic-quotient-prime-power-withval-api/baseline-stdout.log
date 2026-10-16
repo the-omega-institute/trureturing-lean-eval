@@ -1,0 +1,56 @@
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_IsDedekindDomain_HeightOneSpectrum_natCard_adicCompletionIntegers_rat_quotient_span_natCast_eq_prime_pow_factorization.lean:61:8: error: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  { toCompletion := ↑(WithVal.toVal (HeightOneSpectrum.valuation ℚ v) ↑↑m) }
+in the target expression
+  ↑↑m = { toCompletion := ↑((WithVal.equiv (HeightOneSpectrum.valuation ℚ v)).symm ↑↑m) }
+
+v : HeightOneSpectrum (𝓞 ℚ)
+ℓ : ℕ
+hℓ : Nat.Prime ℓ
+hℓv : ↑ℓ ∈ v.asIdeal
+m : ℕ
+hm : ℓ.Coprime m
+hmv : ↑m ∉ v.asIdeal
+hval : v.intValuation ↑m = 1
+h :
+  (algebraMap ℚ (HeightOneSpectrum.adicCompletion ℚ v)) ↑↑m =
+    { toCompletion := ↑(WithVal.toVal (HeightOneSpectrum.valuation ℚ v) ↑↑m) }
+⊢ ↑↑m = { toCompletion := ↑((WithVal.equiv (HeightOneSpectrum.valuation ℚ v)).symm ↑↑m) }
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_IsDedekindDomain_HeightOneSpectrum_natCard_adicCompletionIntegers_rat_quotient_span_natCast_eq_prime_pow_factorization.lean:63:64: error: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  (HeightOneSpectrum.valuation ?m.214 ?v) ↑?r
+in the target expression
+  (HeightOneSpectrum.valuation ℚ v) ((WithVal.equiv (HeightOneSpectrum.valuation ℚ v)).symm ↑↑m).ofVal = 1
+
+v : HeightOneSpectrum (𝓞 ℚ)
+ℓ : ℕ
+hℓ : Nat.Prime ℓ
+hℓv : ↑ℓ ∈ v.asIdeal
+m : ℕ
+hm : ℓ.Coprime m
+hmv : ↑m ∉ v.asIdeal
+hval : v.intValuation ↑m = 1
+hY : ↑↑m = { toCompletion := ↑((WithVal.equiv (HeightOneSpectrum.valuation ℚ v)).symm ↑↑m) }
+⊢ (HeightOneSpectrum.valuation ℚ v) ((WithVal.equiv (HeightOneSpectrum.valuation ℚ v)).symm ↑↑m).ofVal = 1
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_IsDedekindDomain_HeightOneSpectrum_natCard_adicCompletionIntegers_rat_quotient_span_natCast_eq_prime_pow_factorization.lean:100:4: warning: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_IsDedekindDomain_HeightOneSpectrum_natCard_adicCompletionIntegers_rat_quotient_span_natCast_eq_prime_pow_factorization.lean:103:4: warning: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_IsDedekindDomain_HeightOneSpectrum_natCard_adicCompletionIntegers_rat_quotient_span_natCast_eq_prime_pow_factorization.lean:105:4: warning: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`

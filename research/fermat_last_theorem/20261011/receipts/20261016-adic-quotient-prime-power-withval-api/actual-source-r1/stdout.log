@@ -1,0 +1,19 @@
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_IsDedekindDomain_HeightOneSpectrum_natCard_adicCompletionIntegers_rat_quotient_span_natCast_eq_prime_pow_factorization.lean:63:64: error: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  (WithVal.toVal ?v ?x).ofVal
+in the target expression
+  (HeightOneSpectrum.valuation ℚ v) ↑↑m = 1
+
+v : HeightOneSpectrum (𝓞 ℚ)
+ℓ : ℕ
+hℓ : Nat.Prime ℓ
+hℓv : ↑ℓ ∈ v.asIdeal
+m : ℕ
+hm : ℓ.Coprime m
+hmv : ↑m ∉ v.asIdeal
+hval : v.intValuation ↑m = 1
+hY : ↑↑m = { toCompletion := ↑(WithVal.toVal (HeightOneSpectrum.valuation ℚ v) ↑↑m) }
+⊢ (HeightOneSpectrum.valuation ℚ v) ↑↑m = 1
+'P2MW.S_IsDedekindDomain_HeightOneSpectrum_natCard_adicCompletionIntegers_rat_quotient_span_natCast_eq_prime_pow_factorization.solution' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]

@@ -1,0 +1,46 @@
+{
+  "at": "2026-10-16T12:28:50.234415+00:00",
+  "name": "IsDedekindDomain_HeightOneSpectrum_natCard_adicCompletionIntegers_rat_quotient_span_natCast_eq_prime_pow_factorization",
+  "source_replacements": [
+    [
+      "(WithVal.equiv (HeightOneSpectrum.valuation \u211a v)).symm",
+      "WithVal.toVal (HeightOneSpectrum.valuation \u211a v)",
+      1
+    ],
+    [
+      "HeightOneSpectrum.valuedAdicCompletion_eq_valuation', HeightOneSpectrum.valuation_of_algebraMap",
+      "HeightOneSpectrum.valuedAdicCompletion_eq_valuation', WithVal.ofVal_toVal, HeightOneSpectrum.valuation_of_algebraMap",
+      1
+    ],
+    [
+      "haveI",
+      "have",
+      3
+    ],
+    [
+      "HeightOneSpectrum.valuedAdicCompletion_eq_valuation', WithVal.ofVal_toVal, HeightOneSpectrum.valuation_of_algebraMap",
+      "HeightOneSpectrum.valuedAdicCompletion_eq_valuation', HeightOneSpectrum.valuation_of_algebraMap",
+      1
+    ],
+    [
+      "theorem isUnit_natCast_of_coprime (v : HeightOneSpectrum (\ud835\udcde \u211a)) {\u2113 : \u2115} (h\u2113 : \u2113.Prime)",
+      "theorem isUnit_natCast_of_coprime (v : HeightOneSpectrum (\ud835\udcde \u211a)) {\u2113 : \u2115} (_h\u2113 : \u2113.Prime)",
+      1
+    ]
+  ],
+  "baseline_byte_identical_to_pinned_supplier": false,
+  "full_original_statements_hypotheses_and_all_proof_branches_preserved": true,
+  "no_linter_suppression_added": true,
+  "verification_pending": false,
+  "candidate": "r3",
+  "active_import_closure_excluded": [
+    "Submission.Supplier.P2M.Sol.S_ModularCurve_FullLevel_exists_smul_slash_conjElem_eq_sum_exp_pow_smul_of_mem_Gamma0"
+  ],
+  "r2_at": "2026-10-16T14:41:05.386624+00:00",
+  "r2_reason": "Actual r1 rewrite failed after valuedAdicCompletion_eq_valuation already reduced the WithVal wrapper. Remove only the redundant ofVal_toVal rewrite, retaining the original valuation_of_algebraMap and hval proof.",
+  "r2_active_transitive_import_closure_size": 67,
+  "installed": true,
+  "r3_at": "2026-10-16T15:11:41.530065+00:00",
+  "r3_reason": "Actual r2 succeeded with one unused proof-variable warning; retain the original prime hypothesis and rename only its unused local binder to _h\u2113.",
+  "r3_active_transitive_import_closure_size": 90
+}
