@@ -1,0 +1,41 @@
+{
+  "at": "2026-10-16T00:45:34.885246+00:00",
+  "name": "NumberField_mixedEmbedding_exists_forall_tsum_fractionalIdeal_weight_le_rpow_neg",
+  "source_replacements": [
+    [
+      "Finset.one_le_prod fun",
+      "Finset.one_le_prod\u2080 fun",
+      1
+    ],
+    [
+      "Real.finset_prod_rpow",
+      "Real.finsetProd_rpow",
+      2
+    ],
+    [
+      "push_neg at hlt",
+      "push Not at hlt",
+      1
+    ],
+    [
+      "haveI : IsEmpty",
+      "have : IsEmpty",
+      1
+    ]
+  ],
+  "supplier_to_baseline_replacements": [
+    [
+      "Finset.prod_le_prod (",
+      "Finset.prod_le_prod\u2080 (",
+      2
+    ]
+  ],
+  "pinned_supplier_source_and_card_preserved": true,
+  "full_original_statement_hypotheses_and_lattice_summability_proof_preserved": true,
+  "no_linter_suppression_added": true,
+  "verification_pending": false,
+  "candidate": "r1",
+  "active_import_closure_excluded": [
+    "Submission.Supplier.P2M.Sol.S_ModularCurve_JZeroNeronObjectAtP_exists_mem_toricPts_mul_nsmul_eq"
+  ]
+}
