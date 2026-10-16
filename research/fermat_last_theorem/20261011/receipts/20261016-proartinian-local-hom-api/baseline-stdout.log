@@ -1,0 +1,118 @@
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/Definitions/Def_Deformations_IsProartinian.lean:171:56: warning: `SetLike.le_def` has been deprecated: Use `IsConcreteLE.le_iff` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.le_def` to `IsConcreteLE.le_iff x`).
+
+Hint: Replace the deprecated name:
+  S̵e̵t̵L̵i̵k̵e̵.̵l̵e̵_̵d̵e̵f̵I̲s̲C̲o̲n̲c̲r̲e̲t̲e̲L̲E̲.̲l̲e̲_̲i̲f̲f̲
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/Definitions/Def_Deformations_IsProartinian.lean:174:35: error: could not synthesize default value for parameter 'h₂' using tactics
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/Definitions/Def_Deformations_IsProartinian.lean:174:35: error: Tactic `rfl` failed: The left-hand side
+  [IsLocalHom f, ⇑f '' ↑(maximalIdeal R) ⊆ ↑(maximalIdeal S), Ideal.map f (maximalIdeal R) ≤ maximalIdeal S,
+      maximalIdeal R ≤ Ideal.comap f (maximalIdeal S), Ideal.comap f (maximalIdeal S) = maximalIdeal R][2 - 1]?
+is not definitionally equal to the right-hand side
+  some (Ideal.map f (maximalIdeal R) ≤ maximalIdeal S)
+
+R : Type u_2
+S : Type u_3
+inst✝¹⁰ : CommRing R
+inst✝⁹ : IsLocalRing R
+inst✝⁸ : TopologicalSpace R
+inst✝⁷ : IsTopologicalRing R
+inst✝⁶ : IsAdicTopology R
+inst✝⁵ : CommRing S
+inst✝⁴ : IsLocalRing S
+inst✝³ : TopologicalSpace S
+inst✝² : IsTopologicalRing S
+inst✝¹ : IsAdicTopology S
+f : R →+* S
+inst✝ : IsLocalHom f
+n : ℕ
+⊢ [IsLocalHom f, ⇑f '' ↑(maximalIdeal R) ⊆ ↑(maximalIdeal S), Ideal.map f (maximalIdeal R) ≤ maximalIdeal S,
+        maximalIdeal R ≤ Ideal.comap f (maximalIdeal S), Ideal.comap f (maximalIdeal S) = maximalIdeal R][2 - 1]? =
+    some (Ideal.map f (maximalIdeal R) ≤ maximalIdeal S)
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/Definitions/Def_Deformations_IsProartinian.lean:174:35: error: could not synthesize default value for parameter 'x._@.Mathlib.Data.List.TFAE.4142160432._hygCtx._hyg.49' using tactics
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/Definitions/Def_Deformations_IsProartinian.lean:174:35: error: TFAE indices start at 1.
+R : Type u_2
+S : Type u_3
+inst✝¹⁰ : CommRing R
+inst✝⁹ : IsLocalRing R
+inst✝⁸ : TopologicalSpace R
+inst✝⁷ : IsTopologicalRing R
+inst✝⁶ : IsAdicTopology R
+inst✝⁵ : CommRing S
+inst✝⁴ : IsLocalRing S
+inst✝³ : TopologicalSpace S
+inst✝² : IsTopologicalRing S
+inst✝¹ : IsAdicTopology S
+f : R →+* S
+inst✝ : IsLocalHom f
+n : ℕ
+⊢ 0 ≠ 0
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/Definitions/Def_Deformations_IsProartinian.lean:251:40: error: could not synthesize default value for parameter 'h₂' using tactics
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/Definitions/Def_Deformations_IsProartinian.lean:251:40: error: Tactic `rfl` failed: The left-hand side
+  [IsLocalHom f, ⇑f '' ↑(maximalIdeal R) ⊆ ↑(maximalIdeal S), Ideal.map f (maximalIdeal R) ≤ maximalIdeal S,
+      maximalIdeal R ≤ Ideal.comap f (maximalIdeal S), Ideal.comap f (maximalIdeal S) = maximalIdeal R][2 - 1]?
+is not definitionally equal to the right-hand side
+  some (?m.86 ≤ maximalIdeal S)
+
+R : Type u_1
+S : Type u_2
+inst✝¹⁰ : CommRing R
+inst✝⁹ : TopologicalSpace R
+inst✝⁸ : IsTopologicalRing R
+inst✝⁷ : CommRing S
+inst✝⁶ : TopologicalSpace S
+inst✝⁵ : IsTopologicalRing S
+inst✝⁴ : IsLocalRing R
+inst✝³ : IsLocalRing S
+inst✝² : IsAdicTopology R
+f : R →+* S
+inst✝¹ : IsProartinian S
+inst✝ : IsLocalHom f
+I : Ideal S
+hI : IsOpen ↑I
+n : ℕ
+hn : maximalIdeal S ^ n ≤ I
+⊢ [IsLocalHom f, ⇑f '' ↑(maximalIdeal R) ⊆ ↑(maximalIdeal S), Ideal.map f (maximalIdeal R) ≤ maximalIdeal S,
+        maximalIdeal R ≤ Ideal.comap f (maximalIdeal S), Ideal.comap f (maximalIdeal S) = maximalIdeal R][2 - 1]? =
+    some (?m.86 ≤ maximalIdeal S)
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/Definitions/Def_Deformations_IsProartinian.lean:251:40: error: could not synthesize default value for parameter 'x._@.Mathlib.Data.List.TFAE.4142160432._hygCtx._hyg.49' using tactics
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/Definitions/Def_Deformations_IsProartinian.lean:251:40: error: TFAE indices start at 1.
+R : Type u_1
+S : Type u_2
+inst✝¹⁰ : CommRing R
+inst✝⁹ : TopologicalSpace R
+inst✝⁸ : IsTopologicalRing R
+inst✝⁷ : CommRing S
+inst✝⁶ : TopologicalSpace S
+inst✝⁵ : IsTopologicalRing S
+inst✝⁴ : IsLocalRing R
+inst✝³ : IsLocalRing S
+inst✝² : IsAdicTopology R
+f : R →+* S
+inst✝¹ : IsProartinian S
+inst✝ : IsLocalHom f
+I : Ideal S
+hI : IsOpen ↑I
+n : ℕ
+hn : maximalIdeal S ^ n ≤ I
+⊢ 0 ≠ 0
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/Definitions/Def_Deformations_IsProartinian.lean:244:69: error: unsolved goals
+R : Type u_1
+S : Type u_2
+inst✝¹⁰ : CommRing R
+inst✝⁹ : TopologicalSpace R
+inst✝⁸ : IsTopologicalRing R
+inst✝⁷ : CommRing S
+inst✝⁶ : TopologicalSpace S
+inst✝⁵ : IsTopologicalRing S
+inst✝⁴ : IsLocalRing R
+inst✝³ : IsLocalRing S
+inst✝² : IsAdicTopology R
+f : R →+* S
+inst✝¹ : IsProartinian S
+inst✝ : IsLocalHom f
+I : Ideal S
+hI : IsOpen ↑I
+n : ℕ
+hn : maximalIdeal S ^ n ≤ I
+⊢ ∃ ia, True ∧ ∀ x ∈ ↑(maximalIdeal R ^ ia), f x ∈ ↑I

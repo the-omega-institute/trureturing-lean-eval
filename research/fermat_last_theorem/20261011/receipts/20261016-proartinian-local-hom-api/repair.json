@@ -1,0 +1,29 @@
+{
+  "at": "2026-10-16T12:18:19.274759+00:00",
+  "name": "Deformations_IsProartinian",
+  "source_prefix": "Definitions/Def_",
+  "source_replacements": [
+    [
+      "((local_hom_TFAE f).out 0 2).mp \u2039_\u203a",
+      "IsLocalRing.map_maximalIdeal_le f",
+      2
+    ],
+    [
+      "SetLike.le_def",
+      "IsConcreteLE.le_iff",
+      1
+    ]
+  ],
+  "axiom_declarations": [
+    "IsLocalRing.Continuous.of_isLocalHom",
+    "isContinuous_of_isProartinian_of_isLocalHom"
+  ],
+  "baseline_byte_identical_to_pinned_supplier": true,
+  "full_original_statements_hypotheses_and_all_proof_branches_preserved": true,
+  "no_linter_suppression_added": true,
+  "verification_pending": false,
+  "candidate": "r1",
+  "active_import_closure_excluded": [
+    "Submission.Supplier.P2M.Sol.S_ModularCurve_natCard_componentGroup_eq_natAbs_det_diffChar"
+  ]
+}
