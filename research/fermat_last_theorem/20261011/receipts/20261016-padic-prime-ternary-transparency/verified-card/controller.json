@@ -1,0 +1,44 @@
+{
+  "sha256": "3e3eb44d8a40941d2d81e45f6716e1c0fc09058f00b15daa0f9a7d2a81f862a4",
+  "exit": 0,
+  "empty_output_retry_done": false,
+  "source_sha256_after": "3e3eb44d8a40941d2d81e45f6716e1c0fc09058f00b15daa0f9a7d2a81f862a4",
+  "source_unchanged": true,
+  "olean_sha256": "76689c0600be745016b0af56a1c6922a3d6ab81cba4486d74b9da30269db6635",
+  "seconds": 10.163272375008091,
+  "pid": 76393,
+  "command": [
+    "/Users/macstudio/.local/omega-shims/lean",
+    "-j1",
+    "--trust=0",
+    "-Ddebug.skipKernelTC=false",
+    "-R",
+    "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src",
+    "-o",
+    "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-build/lib/lean/Submission/Supplier/Theorems/Thm_Padic_exists_ternary_isotropic_prime_mul_iff_isSquare_of_ne_two.olean",
+    "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/Theorems/Thm_Padic_exists_ternary_isotropic_prime_mul_iff_isSquare_of_ne_two.lean"
+  ],
+  "make_wrapper_pid": 76161,
+  "make_exit": 0,
+  "make_entry_failed": false,
+  "cache_binding_valid": true,
+  "canonical_make_running_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/5202cb085df9136266cf9f2a-1792115142070555000.make-running.json",
+  "canonical_make_terminal_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/5202cb085df9136266cf9f2a-1792115142070555000.make-terminal.json",
+  "kernel_terminal_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/5202cb085df9136266cf9f2a-1792115142070555000.kernel/result.json",
+  "direct_dependencies": [
+    {
+      "module": "Submission.Supplier.P2M.Util",
+      "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+      "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.P2M.Sol.S_Padic_exists_ternary_isotropic_prime_mul_iff_isSquare_of_ne_two",
+      "source_sha256": "be7ab851dbe4c7764f9b929c02fd5093b899cd63b59e16ed82b9a91c14b21172",
+      "object_sha256": "4bd4f3af6e726fbfc0b6e854cef58de62a781a57d1d37f79d8cf66a2190cd186",
+      "receipt_reused": true
+    }
+  ],
+  "stdout": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/5202cb085df9136266cf9f2a-1792115142070555000.kernel/stdout.log",
+  "stderr": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/5202cb085df9136266cf9f2a-1792115142070555000.kernel/stderr.log"
+}

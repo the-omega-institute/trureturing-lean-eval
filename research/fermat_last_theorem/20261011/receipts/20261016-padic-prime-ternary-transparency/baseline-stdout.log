@@ -1,0 +1,40 @@
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_Padic_exists_ternary_isotropic_prime_mul_iff_isSquare_of_ne_two.lean:51:36: error: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  ?a - ?a
+in the target expression
+  s ^ 2 - s ^ 2 = 0
+
+p : ℕ
+hp : Fact (Nat.Prime p)
+hp2 : p ≠ 2
+c : ℤ_[p]
+s : ZMod p
+hs : s ≠ 0
+hcs : PadicInt.toZMod c = s ^ 2
+sl : ℤ_[p]
+hsl : PadicInt.toZMod sl = s
+hslnorm : ‖sl‖ = 1
+htwo : ‖2‖ = 1
+F : ℤ_[p][X] := X ^ 2 - C c
+hF : F = X ^ 2 - C c
+hFeval : (aeval sl) F = sl ^ 2 - c
+hF'eval : (aeval sl) (derivative F) = 2 * sl
+hnormF' : ‖(aeval sl) (derivative F)‖ = 1
+⊢ s ^ 2 - s ^ 2 = 0
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_Padic_exists_ternary_isotropic_prime_mul_iff_isSquare_of_ne_two.lean:130:6: error: Type mismatch: After simplification, term
+  this
+ has type
+  PadicInt.toZMod Z ^ 2 - 0 - PadicInt.toZMod B * PadicInt.toZMod Y ^ 2 = 0
+but is expected to have type
+  PadicInt.toZMod Z ^ 2 - PadicInt.toZMod B * PadicInt.toZMod Y ^ 2 = 0
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_Padic_exists_ternary_isotropic_prime_mul_iff_isSquare_of_ne_two.lean:135:25: error: Type mismatch: After simplification, term
+  hred
+ has type
+  PadicInt.toZMod Z ^ 2 - 0 = 0
+but is expected to have type
+  PadicInt.toZMod Z = 0
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_Padic_exists_ternary_isotropic_prime_mul_iff_isSquare_of_ne_two.lean:148:8: error: Type mismatch: After simplification, term
+  this
+ has type
+  -(PadicInt.toZMod A * PadicInt.toZMod X ^ 2) = 0
+but is expected to have type
+  PadicInt.toZMod A = 0 ∨ PadicInt.toZMod X = 0

@@ -1,0 +1,25 @@
+{
+  "at": "2026-10-16T00:50:58.320641+00:00",
+  "name": "Padic_exists_ternary_isotropic_prime_mul_iff_isSquare_of_ne_two",
+  "source_replacements": [
+    [
+      "theorem exists_sq_eq_of_toZMod_eq_sq",
+      "set_option backward.isDefEq.respectTransparency false in\ntheorem exists_sq_eq_of_toZMod_eq_sq",
+      1
+    ],
+    [
+      "theorem solution",
+      "set_option backward.isDefEq.respectTransparency false in\ntheorem solution",
+      1
+    ]
+  ],
+  "baseline_byte_identical_to_pinned_supplier": true,
+  "full_original_statements_hypotheses_and_all_proof_tactics_preserved": true,
+  "hypothesis": "Definitional transparency mismatch; same local elaborator compatibility setting already used by pinned Mathlib p-adic proofs. Actual cause/fix remains unverified until kernel compilation.",
+  "no_linter_suppression_added": true,
+  "verification_pending": false,
+  "candidate": "r1",
+  "active_import_closure_excluded": [
+    "Submission.Supplier.P2M.Sol.S_ModularCurve_JZeroNeronObjectAtP_natCard_jZeroTorsion_le_mul_of_prime_pow"
+  ]
+}
