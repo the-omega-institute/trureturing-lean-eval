@@ -1,0 +1,18 @@
+{
+  "at": "2026-10-16T00:41:28.686260+00:00",
+  "name": "Polynomial_log_abv_eval_eq_log_gaussNorm_add_sum",
+  "source_replacements": [
+    [
+      "hv.add_eq_max_of_ne hne",
+      "hv.add_eq_max_of_ne (AbsoluteValue.map_neg v) hne"
+    ]
+  ],
+  "original_statements_hypotheses_imports_and_full_factorization_and_log_proof_preserved": true,
+  "baseline_byte_identical_to_pinned_supplier": true,
+  "no_linter_suppression_added": true,
+  "verification_pending": false,
+  "candidate": "r1",
+  "active_import_closure_excluded": [
+    "Submission.Supplier.Definitions.Def_ModularCurve_JZeroNeronObjectAtP"
+  ]
+}

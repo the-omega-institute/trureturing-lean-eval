@@ -1,0 +1,44 @@
+{
+  "sha256": "9ffc9bd4e2209fe5ae374eb573ba0c0aa27d0f7725b71c25b1b1d891b07ca83f",
+  "exit": 0,
+  "empty_output_retry_done": false,
+  "source_sha256_after": "9ffc9bd4e2209fe5ae374eb573ba0c0aa27d0f7725b71c25b1b1d891b07ca83f",
+  "source_unchanged": true,
+  "olean_sha256": "b080efa5817f826562b20a9df28cb80fbdc2ade82cc82fe49b81f4fdc588557a",
+  "seconds": 42.41952916700393,
+  "pid": 86989,
+  "command": [
+    "/Users/macstudio/.local/omega-shims/lean",
+    "-j1",
+    "--trust=0",
+    "-Ddebug.skipKernelTC=false",
+    "-R",
+    "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src",
+    "-o",
+    "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-build/lib/lean/Submission/Supplier/Theorems/Thm_Polynomial_log_abv_eval_eq_log_gaussNorm_add_sum.olean",
+    "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/Theorems/Thm_Polynomial_log_abv_eval_eq_log_gaussNorm_add_sum.lean"
+  ],
+  "make_wrapper_pid": 82856,
+  "make_exit": 0,
+  "make_entry_failed": false,
+  "cache_binding_valid": true,
+  "canonical_make_running_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/c9acf7155a98866d17f2ad20-1792115347713065000.make-running.json",
+  "canonical_make_terminal_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/c9acf7155a98866d17f2ad20-1792115347713065000.make-terminal.json",
+  "kernel_terminal_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/c9acf7155a98866d17f2ad20-1792115347713065000.kernel/result.json",
+  "direct_dependencies": [
+    {
+      "module": "Submission.Supplier.P2M.Util",
+      "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+      "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.P2M.Sol.S_Polynomial_log_abv_eval_eq_log_gaussNorm_add_sum",
+      "source_sha256": "d6f6da8239566e0e7deedc23a5ffe494a3fc4a870d300104e4647247ab09ee9e",
+      "object_sha256": "cb8df38177156f01561b6327bb694f94831bfcd2312ad052b185f528320842c3",
+      "receipt_reused": true
+    }
+  ],
+  "stdout": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/c9acf7155a98866d17f2ad20-1792115347713065000.kernel/stdout.log",
+  "stderr": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/c9acf7155a98866d17f2ad20-1792115347713065000.kernel/stderr.log"
+}
