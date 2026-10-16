@@ -1,0 +1,55 @@
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_AutomorphicForm_isotypicCuspSubmodule_bot_eq_bot_of_productionPinsOf.lean:33:4: warning: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_AutomorphicForm_isotypicCuspSubmodule_bot_eq_bot_of_productionPinsOf.lean:37:13: error: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  Ideal.comap (algebraMap ℤ (𝓞 F)) ⊥
+in the target expression
+  Ideal.under ℤ ⊥ = Ideal.span {↑↑p}
+
+F : Type
+inst✝¹ : Field F
+inst✝ : NumberField F
+p : Nat.Primes
+hp : Prime ↑↑p
+this : (Ideal.span {↑↑p}).IsMaximal
+Q : Ideal (𝓞 F)
+hQmax : Q.IsMaximal
+hQ : Ideal.under ℤ ⊥ = Ideal.span {↑↑p}
+hQ0 : Q = ⊥
+⊢ False
+
+Note: The target expression is not type-correct under the `implicit` transparency level, which may have triggered the failure. This is usually caused by unfolding of semireducible definitions in prior tactic steps. Use `set_option linter.tacticCheckInstances true` to investigate the source of the issue.
+Full error:
+  Application type mismatch: The argument
+    p
+  has type
+    Nat.Primes
+  but is expected to have type
+    { p // Nat.Prime p }
+  in the application
+    ↑p
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_AutomorphicForm_isotypicCuspSubmodule_bot_eq_bot_of_productionPinsOf.lean:40:58: warning: `Nat.infinite_setOf_prime` has been deprecated: Use `Nat.infinite_setOfPred_prime` instead
+
+Hint: Replace the deprecated name:
+  Nat.infinite_setOfP̲r̲e̲d̲_prime
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_AutomorphicForm_isotypicCuspSubmodule_bot_eq_bot_of_productionPinsOf.lean:40:2: warning: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_AutomorphicForm_isotypicCuspSubmodule_bot_eq_bot_of_productionPinsOf.lean:61:2: warning: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
