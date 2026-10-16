@@ -1,0 +1,50 @@
+{
+  "sha256": "ef48c8bb839a7032c3422718afb64b28d0ffe785347dcfea017c483ad3bd35c9",
+  "exit": 1,
+  "empty_output_retry_done": false,
+  "source_sha256_after": "ef48c8bb839a7032c3422718afb64b28d0ffe785347dcfea017c483ad3bd35c9",
+  "source_unchanged": true,
+  "olean_sha256": null,
+  "seconds": 64.5036005830043,
+  "pid": 72126,
+  "command": [
+    "/Users/macstudio/.local/omega-shims/lean",
+    "-j1",
+    "--trust=0",
+    "-Ddebug.skipKernelTC=false",
+    "-R",
+    "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src",
+    "-o",
+    "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-build/lib/lean/Submission/Supplier/Theorems/Thm_IsDedekindDomain_HeightOneSpectrum_exists_algebraMap_eq_mul_sq_adicCompletion.olean",
+    "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/Theorems/Thm_IsDedekindDomain_HeightOneSpectrum_exists_algebraMap_eq_mul_sq_adicCompletion.lean"
+  ],
+  "make_wrapper_pid": 69607,
+  "make_exit": 2,
+  "make_entry_failed": false,
+  "cache_binding_valid": true,
+  "canonical_make_running_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/13d70d62ae51b927febcd176-1792140922517863000.make-running.json",
+  "canonical_make_terminal_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/13d70d62ae51b927febcd176-1792140922517863000.make-terminal.json",
+  "kernel_terminal_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/13d70d62ae51b927febcd176-1792140922517863000.kernel/result.json",
+  "direct_dependencies": [
+    {
+      "module": "Submission.Supplier.Definitions.Def_DedekindDomain_Completion_BaseChange",
+      "source_sha256": "97fda24b09dd7c9bf5ed1482ab8c2947ebdd8ba267d26ae76ee609af2dc97107",
+      "object_sha256": null,
+      "receipt_reused": false
+    },
+    {
+      "module": "Submission.Supplier.P2M.Util",
+      "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+      "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.P2M.Sol.S_IsDedekindDomain_HeightOneSpectrum_exists_algebraMap_eq_mul_sq_adicCompletion",
+      "source_sha256": "36e44c8f0f4cf9720df0081ab72815f89843bdb1ecec1ff14541528cc857dea8",
+      "object_sha256": "c565ab1b14e0dd2042129ebb2ee682c5e4b028aceb3677310fa0fa58de538fc7",
+      "receipt_reused": true
+    }
+  ],
+  "stdout": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/13d70d62ae51b927febcd176-1792140922517863000.kernel/stdout.log",
+  "stderr": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/13d70d62ae51b927febcd176-1792140922517863000.kernel/stderr.log"
+}
