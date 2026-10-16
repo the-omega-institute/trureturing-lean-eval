@@ -81,11 +81,11 @@ structure ExtChainAdmResidual (p : ℕ) [Fact p.Prime]
     (extConditions loc' (ofChar (k := ZMod p) ψ) P U) adm adm'
 
   hsum : ∑ v, finrank (ZMod p) (extConditions loc' (ofChar (k := ZMod p) ψ) P U v)
-    ≤ ∑ v, finrank (ZMod p) (@Representation.invariants (ZMod p) (Γv' v) (ZMod p) _ _ _
-        (Semiring.toModule _) (Rep.res (loc' v) (ofChar (k := ZMod p) ψ)).ρ)
+    ≤ ∑ v, (letI : Module (ZMod p) (Rep.res (loc' v) (ofChar (k := ZMod p) ψ)) := Semiring.toModule
+      finrank (ZMod p) (Rep.res (loc' v) (ofChar (k := ZMod p) ψ)).ρ.invariants)
 
-  hM : finrank (ZMod p) (@Representation.invariants (ZMod p) Γ' (ZMod p) _ _ _
-    (Semiring.toModule _) (ofChar (k := ZMod p) ψ).ρ) = 0
+  hM : (letI : Module (ZMod p) (ofChar (k := ZMod p) ψ) := Semiring.toModule
+      finrank (ZMod p) (ofChar (k := ZMod p) ψ).ρ.invariants) = 0
 
   hM' : finrank (ZMod p) M'.ρ.invariants = 0
 
