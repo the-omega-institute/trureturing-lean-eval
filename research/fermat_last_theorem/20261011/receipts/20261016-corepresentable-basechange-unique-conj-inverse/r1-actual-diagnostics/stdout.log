@@ -1,0 +1,74 @@
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_GaloisRep_algHom_unique_of_baseChangeAlong_isEquiv_of_corepresentableBy.lean:70:20: error: unsolved goals
+case neg.add
+𝒪 : Type
+inst✝¹ : CommRing 𝒪
+inst✝ : IsLocalRing 𝒪
+X Y : ProartinianCat 𝒪
+f : X ⟶ Y
+hf : IsLocalHom (↑f.hom).toRingHom
+τ : Gal(AlgebraicClosure ℚ/ℚ) →ₜ* GL (Fin 2) ↑X
+hcX : StdCont X τ
+hcY : StdCont Y (mapRepn (Fin 2) Gal(AlgebraicClosure ℚ/ℚ) 𝒪 f τ)
+this : Algebra ↑X ↑Y := (↑f.hom).toAlgebra
+σ : Gal(AlgebraicClosure ℚ/ℚ)
+x y : TensorProduct (↑X) (↑Y) (Fin 2 → ↑X)
+hx :
+  ¬x = 0 →
+    (TensorProduct.piScalarRight (↑X) (↑Y) (↑Y) (Fin 2)) ((LinearMap.baseChange (↑Y) (↑(τ σ)).mulVecLin) x) =
+      (↑((Matrix.GeneralLinearGroup.map (↑f.hom).toRingHom) (τ σ))).mulVec
+        ((TensorProduct.piScalarRight (↑X) (↑Y) (↑Y) (Fin 2)) x)
+hy :
+  ¬y = 0 →
+    (TensorProduct.piScalarRight (↑X) (↑Y) (↑Y) (Fin 2)) ((LinearMap.baseChange (↑Y) (↑(τ σ)).mulVecLin) y) =
+      (↑((Matrix.GeneralLinearGroup.map (↑f.hom).toRingHom) (τ σ))).mulVec
+        ((TensorProduct.piScalarRight (↑X) (↑Y) (↑Y) (Fin 2)) y)
+hx0 : ¬x + y = 0
+⊢ ¬y = 0
+
+case neg.add
+𝒪 : Type
+inst✝¹ : CommRing 𝒪
+inst✝ : IsLocalRing 𝒪
+X Y : ProartinianCat 𝒪
+f : X ⟶ Y
+hf : IsLocalHom (↑f.hom).toRingHom
+τ : Gal(AlgebraicClosure ℚ/ℚ) →ₜ* GL (Fin 2) ↑X
+hcX : StdCont X τ
+hcY : StdCont Y (mapRepn (Fin 2) Gal(AlgebraicClosure ℚ/ℚ) 𝒪 f τ)
+this : Algebra ↑X ↑Y := (↑f.hom).toAlgebra
+σ : Gal(AlgebraicClosure ℚ/ℚ)
+x y : TensorProduct (↑X) (↑Y) (Fin 2 → ↑X)
+hx :
+  ¬x = 0 →
+    (TensorProduct.piScalarRight (↑X) (↑Y) (↑Y) (Fin 2)) ((LinearMap.baseChange (↑Y) (↑(τ σ)).mulVecLin) x) =
+      (↑((Matrix.GeneralLinearGroup.map (↑f.hom).toRingHom) (τ σ))).mulVec
+        ((TensorProduct.piScalarRight (↑X) (↑Y) (↑Y) (Fin 2)) x)
+hy :
+  ¬y = 0 →
+    (TensorProduct.piScalarRight (↑X) (↑Y) (↑Y) (Fin 2)) ((LinearMap.baseChange (↑Y) (↑(τ σ)).mulVecLin) y) =
+      (↑((Matrix.GeneralLinearGroup.map (↑f.hom).toRingHom) (τ σ))).mulVec
+        ((TensorProduct.piScalarRight (↑X) (↑Y) (↑Y) (Fin 2)) y)
+hx0 : ¬x + y = 0
+⊢ ¬x = 0
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_GaloisRep_algHom_unique_of_baseChangeAlong_isEquiv_of_corepresentableBy.lean:126:5: warning: Variable name `h𝒟` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _h𝒟
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_GaloisRep_algHom_unique_of_baseChangeAlong_isEquiv_of_corepresentableBy.lean:129:5: warning: Variable name `hρ₀` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hρ₀
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_GaloisRep_algHom_unique_of_baseChangeAlong_isEquiv_of_corepresentableBy.lean:141:28: warning: Variable name `hDA` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hDA
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+'P2MW.S_GaloisRep_algHom_unique_of_baseChangeAlong_isEquiv_of_corepresentableBy.solution' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]

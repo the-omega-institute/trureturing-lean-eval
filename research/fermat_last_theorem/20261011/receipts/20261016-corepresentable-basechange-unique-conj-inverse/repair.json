@@ -1,0 +1,82 @@
+{
+  "at": "2026-10-16T13:33:30.122590+00:00",
+  "name": "GaloisRep_algHom_unique_of_baseChangeAlong_isEquiv_of_corepresentableBy",
+  "source_replacements": [
+    [
+      "lemma mkStd_\u03c1_apply ",
+      "omit [IsLocalRing \ud835\udcaa] in\nlemma mkStd_\u03c1_apply [IsLocalRing \ud835\udcaa] ",
+      1
+    ],
+    [
+      "theorem isEquiv_baseChangeAlong_mkStd ",
+      "omit [IsLocalRing \ud835\udcaa] in\ntheorem isEquiv_baseChangeAlong_mkStd [IsLocalRing \ud835\udcaa] ",
+      1
+    ],
+    [
+      "  letI : Algebra X Y :=",
+      "  let : Algebra X Y :=",
+      1
+    ],
+    [
+      "  letI tA : TopologicalSpace A :=",
+      "  let tA : TopologicalSpace A :=",
+      1
+    ],
+    [
+      "  haveI iA : @IsLocalProartinianAlgebra",
+      "  have iA : @IsLocalProartinianAlgebra",
+      1
+    ],
+    [
+      "  haveI : IsLocalRing.IsAdicTopology (Aobj : Type) :=",
+      "  have : IsLocalRing.IsAdicTopology (Aobj : Type) :=",
+      1
+    ],
+    [
+      "    haveI := h\u03c8",
+      "    have := h\u03c8",
+      1
+    ],
+    [
+      "  induction x using TensorProduct.induction_on with\n  | zero => rw [map_zero, map_zero, Matrix.mulVec_zero]\n  | add x y hx hy => rw [map_add, map_add, hx, hy, map_add, Matrix.mulVec_add]\n  | tmul n v =>\n    rw [LinearMap.baseChange_tmul, Matrix.mulVecLin_apply]\n    funext i\n    rw [TensorProduct.piScalarRight_apply, TensorProduct.piScalarRight_apply,\n      TensorProduct.piScalarRightHom_tmul, TensorProduct.piScalarRightHom_tmul]\n    have hmap : ((Matrix.GeneralLinearGroup.map f.hom.toRingHom (\u03c4 \u03c3) : GL (Fin 2) Y) : Matrix (Fin 2) (Fin 2) Y)\n        = ((\u03c4 \u03c3 : GL (Fin 2) X) : Matrix (Fin 2) (Fin 2) X).map f.hom.toRingHom := by\n      rw [Matrix.GeneralLinearGroup.map, Units.coe_map]; rfl\n    simp only [hmap, Matrix.map_apply, Matrix.mulVec, dotProduct, Algebra.smul_def, RingHom.algebraMap_toAlgebra,\n      map_sum, map_mul, Finset.sum_mul, mul_assoc]\n",
+      "  by_cases hx0 : x = 0\n  \u00b7 subst x\n    rw [map_zero, map_zero, Matrix.mulVec_zero]\n  \u00b7 induction x using TensorProduct.inductionOn with\n    | add x y hx hy => rw [map_add, map_add, hx, hy, map_add, Matrix.mulVec_add]\n    | tmul n v =>\n      rw [LinearMap.baseChange_tmul, Matrix.mulVecLin_apply]\n      funext i\n      rw [TensorProduct.piScalarRight_apply, TensorProduct.piScalarRight_apply,\n        TensorProduct.piScalarRightHom_tmul, TensorProduct.piScalarRightHom_tmul]\n      have hmap : ((Matrix.GeneralLinearGroup.map f.hom.toRingHom (\u03c4 \u03c3) : GL (Fin 2) Y) : Matrix (Fin 2) (Fin 2) Y)\n          = ((\u03c4 \u03c3 : GL (Fin 2) X) : Matrix (Fin 2) (Fin 2) X).map f.hom.toRingHom := by\n        rw [Matrix.GeneralLinearGroup.map, Units.coe_map]; rfl\n      simp only [hmap, Matrix.map_apply, Matrix.mulVec, dotProduct, Algebra.smul_def, RingHom.algebraMap_toAlgebra,\n        map_sum, map_mul, Finset.sum_mul, mul_assoc]\n",
+      1
+    ],
+    [
+      "inv_mem hker",
+      "(conjKer (n := Fin 2) Aobj).inv_mem' hker",
+      1
+    ],
+    [
+      "  \u00b7 induction x using TensorProduct.inductionOn with\n",
+      "  \u00b7 clear hx0\n    induction x using TensorProduct.inductionOn with\n",
+      1
+    ],
+    [
+      "(h\ud835\udc9f : GaloisRep.IsDeformationCondition",
+      "(_h\ud835\udc9f : GaloisRep.IsDeformationCondition",
+      1
+    ],
+    [
+      "(h\u03c1\u2080 : \u2200 \u03c3,",
+      "(_h\u03c1\u2080 : \u2200 \u03c3,",
+      1
+    ],
+    [
+      "(\u03c1A : GaloisRepAdic A) (hDA : \ud835\udc9f \u03c1A)",
+      "(\u03c1A : GaloisRepAdic A) (_hDA : \ud835\udc9f \u03c1A)",
+      1
+    ]
+  ],
+  "baseline_byte_identical_to_pinned_supplier": true,
+  "full_original_statements_hypotheses_and_all_proof_branches_preserved": true,
+  "zero_case_preserved_as_explicit_split_before_current_two_case_tensor_eliminator": true,
+  "no_linter_suppression_added": true,
+  "verification_pending": false,
+  "candidate": "r2",
+  "active_import_closure_excluded": [
+    "Submission.Supplier.P2M.Sol.S_Deformation_reflectedByInjective_liftFunctor"
+  ],
+  "r2_at": "2026-10-16T13:35:41.979343+00:00",
+  "r2_reason": "Clear the zero-case complement before tensor induction so the induction hypotheses are unconditional; retain all three unused original hypotheses with underscore-prefixed binding names."
+}

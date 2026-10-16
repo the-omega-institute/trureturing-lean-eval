@@ -1,0 +1,86 @@
+{
+  "sha256": "239e570e873882cbc0a99e2b6f3aa6c20cacd3c4ce2e9831806ffdbbead038ed",
+  "exit": 0,
+  "empty_output_retry_done": false,
+  "source_sha256_after": "239e570e873882cbc0a99e2b6f3aa6c20cacd3c4ce2e9831806ffdbbead038ed",
+  "source_unchanged": true,
+  "olean_sha256": "fb3a33f3684da51664f2c0dc76b2d9f09fc63eab87d63088f8b79bc88dfa4005",
+  "seconds": 10.185884541002451,
+  "pid": 21488,
+  "command": [
+    "/Users/macstudio/.local/omega-shims/lean",
+    "-j1",
+    "--trust=0",
+    "-Ddebug.skipKernelTC=false",
+    "-R",
+    "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src",
+    "-o",
+    "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-build/lib/lean/Submission/Supplier/P2M/Sol/S_GaloisRep_algHom_unique_of_baseChangeAlong_isEquiv_of_corepresentableBy.olean",
+    "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_GaloisRep_algHom_unique_of_baseChangeAlong_isEquiv_of_corepresentableBy.lean"
+  ],
+  "make_wrapper_pid": 21440,
+  "make_exit": 0,
+  "make_entry_failed": false,
+  "cache_binding_valid": true,
+  "canonical_make_running_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/d3ce166a13c0554f498852a3-1792157804010812000.make-running.json",
+  "canonical_make_terminal_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/d3ce166a13c0554f498852a3-1792157804010812000.make-terminal.json",
+  "kernel_terminal_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/d3ce166a13c0554f498852a3-1792157804010812000.kernel/result.json",
+  "direct_dependencies": [
+    {
+      "module": "Submission.Supplier.Definitions.Def_GaloisRep_DeformationCondition",
+      "source_sha256": "445464db742e40a87b113b6a5aec2d0809cf0aed74230acfbdb208fe3b587b35",
+      "object_sha256": "78e2294b1b507a405d80c9559c0f52a643ea37e6288765112a63416bf0fcfccc",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Definitions.Def_GaloisRep_ConditionLifts",
+      "source_sha256": "016bbba2a0194a8b425c3264d32023a9ce8c708dd1ed58143182784cb603ce74",
+      "object_sha256": "1cd6141bfe55ca98b4b0d840223117e8ec8d3ce6b3a234be5cc7b8a8a7812fd0",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Definitions.Def_Deformations_ConjQuotSubfunctor",
+      "source_sha256": "8d686981eff235820add871bc83287f8b025dba117dcd533466fb1a3d9eb3abc",
+      "object_sha256": "f42bb22304742236a0cea5814539b2930f54fe2d0d39b7a704ff044c12f43705",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Definitions.Def_Representation_AbsolutelyIrreducible",
+      "source_sha256": "7ba9319f44fbe77db9300c2a8c624c036f76a2b2b2b9e8182220434dd6b5750f",
+      "object_sha256": "d97b3391c948a110bd5785ca1ad61e3682c64225a1fbbd3919b9ffb6fbe4f994",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Definitions.Def_Deformations_MatrixRepresentation",
+      "source_sha256": "cb3cced46738f1e7fc7f6a7af6537a882a30406021583c69b8ee1533364150d6",
+      "object_sha256": "f90aea79d0f9d1cb4111bc4e8589a0ed2cc22251c1dce625b34bc91e0b228dcf",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Theorems.Thm_GaloisRepAdic_galoisActionIsAdicContinuous_toLin_of_continuous",
+      "source_sha256": "b052dadc2b2a9ba39f6ee74fbcc6be7c8b8dfa92cb78421b15dc01dd821701f0",
+      "object_sha256": "1b6989ac5c72f3f5df5358e39b83482178bfa39267c73ac619582a3a737eb04a",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Theorems.Thm_Deformation_isLocalProartinianAlgebra_of_isAdicComplete",
+      "source_sha256": "6fefa8c0f98dbd553d730d42ae4539a1dddb42e352a40f6639f0e19434609561",
+      "object_sha256": "13e30f9ccc80087659dc091b98ffaea2ff7dce2da528d3d8bca0bbda94ff1954",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Theorems.Thm_Deformation_exists_residuallyTrivial_conj_of_conj",
+      "source_sha256": "b8f6c0ebdbc44af8e408e0b02828d4a3b4d30068077ae9996e198aeb6acfb211",
+      "object_sha256": "1a7f21952ae70299a021e9d0ebb24e9b19fbad5a3d5711fd5f24af5e57f06f88",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.P2M.Util",
+      "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+      "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+      "receipt_reused": true
+    }
+  ],
+  "stdout": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/d3ce166a13c0554f498852a3-1792157804010812000.kernel/stdout.log",
+  "stderr": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/d3ce166a13c0554f498852a3-1792157804010812000.kernel/stderr.log"
+}
