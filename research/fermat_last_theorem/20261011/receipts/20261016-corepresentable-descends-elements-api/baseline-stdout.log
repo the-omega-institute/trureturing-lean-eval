@@ -1,0 +1,39 @@
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_Deformation_isCorepresentable_conjQuotSubfunctor_of_descends.lean:50:11: warning: `CategoryTheory.CategoryOfElements.homMk` has been deprecated: Use `CategoryTheory.Functor.Elements.homMk` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.homMk` to `Functor.Elements.homMk x`).
+
+Hint: Replace the deprecated name:
+  C̵a̵t̵e̵g̵o̵r̵y̵O̵f̵E̵l̵e̵m̵e̵n̵t̵s̵.̵h̵o̵m̵M̵k̵F̲u̲n̲c̲t̲o̲r̲.̲E̲l̲e̲m̲e̲n̲t̲s̲.̲h̲o̲m̲M̲k̲
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_Deformation_isCorepresentable_conjQuotSubfunctor_of_descends.lean:50:38: error: Application type mismatch: The argument
+  T₀
+has type
+  (Deformation.conjQuotSubfunctor n F).toFunctor.Elements
+of sort `Type (u + 1)` but is expected to have type
+  autoParam
+    ((ConcreteCategory.hom (CategoryTheory.Functor.map ?m.345 ?m.348)) (Functor.Elements.val ?m.346) =
+      Functor.Elements.val ?m.347)
+    Functor.Elements.homMk._auto_1
+of sort `Prop` in the application
+  CategoryOfElements.homMk ?m.348 T₀
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_Deformation_isCorepresentable_conjQuotSubfunctor_of_descends.lean:50:36: error: Application type mismatch: The argument
+  e
+has type
+  (Deformation.conjQuotSubfunctor n F).toFunctor.Elements
+but is expected to have type
+  Functor.Elements.obj ?m.346 ⟶ Functor.Elements.obj ?m.347
+in the application
+  @CategoryOfElements.homMk ?m.343 ?m.344 ?m.345 ?m.346 ?m.347 e
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_Deformation_isCorepresentable_conjQuotSubfunctor_of_descends.lean:53:11: warning: `CategoryTheory.CategoryOfElements.ext` has been deprecated: Use `CategoryTheory.Functor.Elements.hom_ext` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.ext` to `Functor.Elements.hom_ext x`).
+
+Hint: Replace the deprecated name:
+  C̵a̵t̵e̵g̵o̵r̵y̵O̵f̵E̵l̵e̵m̵e̵n̵t̵s̵.̵e̵x̵t̵F̲u̲n̲c̲t̲o̲r̲.̲E̲l̲e̲m̲e̲n̲t̲s̲.̲h̲o̲m̲_̲e̲x̲t̲
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_Deformation_isCorepresentable_conjQuotSubfunctor_of_descends.lean:53:11: error: Function expected at
+  CategoryOfElements.ext ?m.384
+but this term has type
+  ?m.382 = ?m.383
+
+Note: Expected a function because this term is being applied to the argument
+  f
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_Deformation_isCorepresentable_conjQuotSubfunctor_of_descends.lean:54:4: error: No goals to be solved

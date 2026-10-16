@@ -1,0 +1,44 @@
+{
+  "at": "2026-10-16T13:42:41.927603+00:00",
+  "name": "Deformation_isCorepresentable_conjQuotSubfunctor_of_descends",
+  "source_replacements": [
+    [
+      "CategoryOfElements.homMk e T\u2080 (Deformation.TraceAlgebra.\u03b9 \u03c1') h\u03b9",
+      "Functor.Elements.homMk (x := e) (y := T\u2080) (Deformation.TraceAlgebra.\u03b9 \u03c1') h\u03b9",
+      1
+    ],
+    [
+      "CategoryOfElements.ext _ f g ?_",
+      "Functor.Elements.hom_ext ?_",
+      1
+    ],
+    [
+      ".map f.val (Quotient.mk'' \u03c3)",
+      ".map f.hom (Quotient.mk'' \u03c3)",
+      1
+    ],
+    [
+      ".map g.val (Quotient.mk'' \u03c3)",
+      ".map g.hom (Quotient.mk'' \u03c3)",
+      1
+    ],
+    [
+      "congrArg Subtype.val f.2",
+      "congrArg Subtype.val f.map_val",
+      1
+    ],
+    [
+      "congrArg Subtype.val g.2",
+      "congrArg Subtype.val g.map_val",
+      1
+    ]
+  ],
+  "baseline_byte_identical_to_pinned_supplier": true,
+  "full_original_statements_hypotheses_and_all_proof_branches_preserved": true,
+  "no_linter_suppression_added": true,
+  "verification_pending": false,
+  "candidate": "r1",
+  "active_import_closure_excluded": [
+    "Submission.Supplier.P2M.Sol.S_CohCarrier_HeckeData_exists_corner_of_genMap_of_forall_isMaximal"
+  ]
+}
