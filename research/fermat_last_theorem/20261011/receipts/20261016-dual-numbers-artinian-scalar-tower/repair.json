@@ -1,0 +1,33 @@
+{
+  "at": "2026-10-16T13:19:37.421772+00:00",
+  "name": "Deformations_DualNumbers",
+  "source_prefix": "Definitions/Def_",
+  "source_replacements": [
+    [
+      "instance : IsArtinianRing ((\ud835\udcf4 \ud835\udcde)[\u03b5]) :=\n  IsArtinianRing.of_finite (\ud835\udcf4 \ud835\udcde) ((\ud835\udcf4 \ud835\udcde)[\u03b5])",
+      "instance : IsArtinianRing ((\ud835\udcf4 \ud835\udcde)[\u03b5]) := by\n  have : IsScalarTower (\ud835\udcf4 \ud835\udcde) ((\ud835\udcf4 \ud835\udcde)[\u03b5]) ((\ud835\udcf4 \ud835\udcde)[\u03b5]) := IsScalarTower.right\n  exact IsArtinianRing.of_finite (\ud835\udcf4 \ud835\udcde) ((\ud835\udcf4 \ud835\udcde)[\u03b5])",
+      1
+    ],
+    [
+      ":= IsScalarTower.right\n",
+      ":=\n    IsScalarTower.right (R := \ud835\udcf4 \ud835\udcde) (A := (\ud835\udcf4 \ud835\udcde)[\u03b5])\n",
+      1
+    ]
+  ],
+  "axiom_declarations": [
+    "Deformation.ProartinianCat.residue_inl_fst_eq",
+    "Deformation.ProartinianCat.dualNumbers",
+    "Deformation.ProartinianCat.dualNumbersFst",
+    "Deformation.ProartinianCat.eq_dualNumbersFst"
+  ],
+  "baseline_byte_identical_to_pinned_supplier": true,
+  "full_original_statements_hypotheses_and_all_proof_branches_preserved": true,
+  "no_linter_suppression_added": true,
+  "verification_pending": false,
+  "candidate": "r2",
+  "active_import_closure_excluded": [
+    "Submission.Supplier.Theorems.Thm_Deformation_exists_cond_lift_traceAlgebra"
+  ],
+  "r2_at": "2026-10-16T13:25:27.269550+00:00",
+  "r2_reason": "Instantiate the standard scalar-tower theorem at the exact base and algebra to avoid unresolved metavariables at the product-smul/Algebra.toSMul boundary."
+}
