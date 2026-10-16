@@ -1,0 +1,46 @@
+{
+  "at": "2026-10-16T16:10:14.189931+00:00",
+  "name": "CerednikDrinfeld_jointDelta_one_classSetEdgeHecke_mulVecLin_eq_natCast_smul_jointDelta_zero_of_mem_primeHeckeSet",
+  "source_replacements": [
+    [
+      "obtain \u27e8\u03b4, u, h\u03b4, hu, hout\u27e9 :=",
+      "obtain \u27e8\u03b4, h\u03b4, u, hu, hout\u27e9 :=",
+      1
+    ],
+    [
+      "letI",
+      "let",
+      1
+    ],
+    [
+      "if_pos",
+      "ite_eq_left",
+      2
+    ],
+    [
+      "if_neg",
+      "ite_eq_right",
+      2
+    ]
+  ],
+  "baseline_byte_identical_to_pinned_supplier": false,
+  "baseline_difference": "Preexisting instance-header normalization retained unchanged.",
+  "full_original_statements_hypotheses_and_all_proof_branches_preserved": true,
+  "no_linter_suppression_added": true,
+  "verification_pending": false,
+  "candidate": "r1",
+  "installed": true,
+  "actual_baseline_errors": 1,
+  "actual_baseline_warnings": 5,
+  "installed_at": "2026-10-16T16:10:14.190116+00:00",
+  "active_import_closure_excluded": [
+    "Submission.Supplier.Theorems.Thm_CerednikDrinfeld_jointDelta_zero_classSetEdgeHecke_mulVecLin_eq_classSetVertexHecke_mulVecLin_sub_of_mem_primeHeckeSet"
+  ],
+  "active_transitive_import_closure_size": 102,
+  "actual_live_descendant_sources": [
+    {
+      "pid": 7191,
+      "source": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/Theorems/Thm_CerednikDrinfeld_jointDelta_zero_classSetEdgeHecke_mulVecLin_eq_classSetVertexHecke_mulVecLin_sub_of_mem_primeHeckeSet.lean"
+    }
+  ]
+}
