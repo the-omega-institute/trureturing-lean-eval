@@ -1,0 +1,37 @@
+{
+  "at": "2026-10-16T12:18:19.262052+00:00",
+  "name": "Rep_nonempty_dualTwist_dualTwist_iso",
+  "source_prefix": "P2M/Sol/S_",
+  "source_replacements": [
+    [
+      "theorem solution",
+      "set_option backward.isDefEq.respectTransparency.instanceSearchTypes false in\ntheorem solution",
+      1
+    ],
+    [
+      "  exact \u27e8Rep.mkIso (Representation.Equiv.mk e h)\u27e9",
+      "  exact \u27e8Rep.mkIso\n    (X := (M.dualTwist \u03c7).dualTwist \u03c7) (Y := M)\n    (\u03c1 := ((M.dualTwist \u03c7).dualTwist \u03c7).\u03c1) (\u03c3 := M.\u03c1)\n    (Representation.Equiv.mk e h)\u27e9",
+      1
+    ],
+    [
+      "  exact \u27e8Rep.mkIso\n    (X := (M.dualTwist \u03c7).dualTwist \u03c7) (Y := M)\n    (\u03c1 := ((M.dualTwist \u03c7).dualTwist \u03c7).\u03c1) (\u03c3 := M.\u03c1)\n    (Representation.Equiv.mk e h)\u27e9",
+      "  exact \u27e8@Rep.mkIso (ZMod p) \u0393 _ _\n    ((M.dualTwist \u03c7).dualTwist \u03c7) M\n    ((M.dualTwist \u03c7).dualTwist \u03c7).hV1 M.hV1\n    ((M.dualTwist \u03c7).dualTwist \u03c7).hV2 M.hV2\n    ((M.dualTwist \u03c7).dualTwist \u03c7).\u03c1 M.\u03c1\n    (Representation.Equiv.mk e h)\u27e9",
+      1
+    ]
+  ],
+  "axiom_declarations": [
+    "solution"
+  ],
+  "baseline_byte_identical_to_pinned_supplier": true,
+  "full_original_statements_hypotheses_and_all_proof_branches_preserved": true,
+  "no_linter_suppression_added": true,
+  "verification_pending": false,
+  "candidate": "r3",
+  "active_import_closure_excluded": [
+    "Submission.Supplier.P2M.Sol.S_ModularCurve_CharPModel_FibreModel_spPlace_eq_of_forall_residue_sub_mem_nonunits"
+  ],
+  "r2_at": "2026-10-16T13:45:11.410783+00:00",
+  "r2_reason": "Actual mkIso typeclass failure on the unbundled double-dual carrier: instantiate the source/target carriers and representations explicitly from the bundled Rep objects.",
+  "r3_at": "2026-10-16T13:47:43.221444+00:00",
+  "r3_reason": "The actual explicit-carrier attempt still failed AddCommGroup synthesis. Pass both bundled Rep.hV1 and Rep.hV2 fields directly to the existing mkIso constructor; preserve the original evaluation equivalence and equivariance proof."
+}
