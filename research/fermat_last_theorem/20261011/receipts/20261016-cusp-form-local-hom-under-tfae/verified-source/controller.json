@@ -1,0 +1,146 @@
+{
+  "sha256": "7ac03748f83186a73dea206b8b63340dbd6ef4b618827a1838691695d2d17691",
+  "exit": 0,
+  "empty_output_retry_done": false,
+  "source_sha256_after": "7ac03748f83186a73dea206b8b63340dbd6ef4b618827a1838691695d2d17691",
+  "source_unchanged": true,
+  "olean_sha256": "303491e3b15f941dcc03f7c4db56e7cbea50762470db48a7d6faeff53cd06db5",
+  "seconds": 56.61447304200556,
+  "pid": 94831,
+  "command": [
+    "/Users/macstudio/.local/omega-shims/lean",
+    "-j1",
+    "--trust=0",
+    "-Ddebug.skipKernelTC=false",
+    "-R",
+    "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src",
+    "-o",
+    "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-build/lib/lean/Submission/Supplier/P2M/Sol/S_CuspForm_exists_heckeGaloisRepDatum_pi_eq_and_isUnramifiedAt_of_exists_galoisRep_of_point.olean",
+    "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_CuspForm_exists_heckeGaloisRepDatum_pi_eq_and_isUnramifiedAt_of_exists_galoisRep_of_point.lean"
+  ],
+  "make_wrapper_pid": 94676,
+  "make_exit": 0,
+  "make_entry_failed": false,
+  "cache_binding_valid": true,
+  "canonical_make_running_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/401edbe36ff00b498f121118-1792155692193159000.make-running.json",
+  "canonical_make_terminal_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/401edbe36ff00b498f121118-1792155692193159000.make-terminal.json",
+  "kernel_terminal_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/401edbe36ff00b498f121118-1792155692193159000.kernel/result.json",
+  "direct_dependencies": [
+    {
+      "module": "Submission.Supplier.Theorems.Thm_IsLocalRing_isAdicComplete_of_module_finite",
+      "source_sha256": "4d2e5243ef4190f7a036ca81cc3fc9a389a613a478c88eefa9d26f15937cef35",
+      "object_sha256": "04898e6fd82a944ffa602da6441747a41c79694a7ef2c2e4410d1282d4fb3397",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Definitions.Def_CuspForm_HeckeGaloisRepDatum",
+      "source_sha256": "055481c514c4fe672f02dec9bfcbe3f344f92f253cd585c41181eb9994752307",
+      "object_sha256": "c82ca784d4cbc46dbb8094044af62186b0239157b872d04c8fd333ec4c770854",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Theorems.Thm_ResidualGaloisRep_charpoly_baseChangeAlong",
+      "source_sha256": "79183542c87fd7786eadbd25414febf930d2c12f5c05688382ba4a2ef29b2bb7",
+      "object_sha256": "39aecdc1c056e3c5c24d6bc3c1206cd5d35e27c7cfdb86010121a4e1bd337b70",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Theorems.Thm_ResidualGaloisRep_isAbsolutelyIrreducible_iff_span_eq_top",
+      "source_sha256": "c0643cd1693b6a393b5c8aed90e9ed0dd83113a99337f347d9733f2b70d947a7",
+      "object_sha256": "d05889fa0e7ab6b10f6e615c98c1a2cd21263e55364f52e99095c58ee2f296b9",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Theorems.Thm_ResidualGaloisRep_isEquiv_of_isAbsolutelyIrreducible_of_charpoly_eq",
+      "source_sha256": "3308a0e0c6875242a07453cbb8d19a784b88ed3cc83f5f6a06d14639bcabae98",
+      "object_sha256": "8d4d160961ff46d78a16c6f695a0dc2363dd000bad8bc679bc9786bafd5de85e",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Theorems.Thm_ResidualGaloisRep_charpoly_eq_of_charpoly_frobenius_eq",
+      "source_sha256": "ecf61986e5a0896658a33979d1cdbfaced6f033ce3dc6dd60d5a943e6ec09c52",
+      "object_sha256": "8026fc61b46c171bfe25abe6f808c599e0e509c6037520012005edb0177e8f6a",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Theorems.Thm_FrobeniusDensity_statement",
+      "source_sha256": "f1ec83f20258cab91d1fee617eccce925c3cb24a90564e17a267c8cd59fb9f96",
+      "object_sha256": "15cd2561037d99f99ef30afef64926b595b8a38dc2c6c3e048cedd84f67b16ca",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Theorems.Thm_ResidualGaloisRep_IsAbsolutelyIrreducible_baseChangeAlong",
+      "source_sha256": "54c4ddc897822ac5f91cca33a505b34f44a49e31bc8daf87a22018775b7a1be8",
+      "object_sha256": "3a57636d497739fa174db8590f9ef4f88ed04a6b7ecae817fe65cdddc53b1a63",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Definitions.Def_GaloisRep_Adic",
+      "source_sha256": "f3656c728ed11c2046eea17d2ea14067bb77a73b7559e9f91f7ed8bdf069ea24",
+      "object_sha256": "8ed39737625e03bd3b982d049b1deaba4078439a47720faf02a71bab087ce94f",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Theorems.Thm_IsLocalRing_isLocalProartinianAlgebra_adicTopology",
+      "source_sha256": "5d637c9325cd858d28b146e4a874706ee3f516cf559523908a743d492bd0dd88",
+      "object_sha256": "b45bb6fbcabbc2558b6aafaa9fc15450046af6bd8329ad169b33d89a8eda6c00",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Theorems.Thm_FrobeniusDensity_exists_frobenius_conj_pow_of_statement",
+      "source_sha256": "cb58168d93d04f671ea7f8b548295870b95476ab9ce85e202c9577f55d248a91",
+      "object_sha256": "a9ac09b35ac49926a895bc92a69c86c7d2487e22055d53388b77b72566f2d08b",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Definitions.Def_Deformations_LiftFunctor",
+      "source_sha256": "47ef78f2557e6afb70a8c1b0e5b9901645822667536a6a431c21e662f962d45c",
+      "object_sha256": "26e7e85c44f587ea06394ec112c9ba989b451d1440840815f20c17c4c5ccd94f",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Theorems.Thm_GaloisRepAdic_continuous_unitsMap_toMatrix_of_isAdicContinuous",
+      "source_sha256": "43c0f2ac087b2b0ae2a7f49caeb07804a02d8b835d4f58e53d6c422bb9fa613c",
+      "object_sha256": "871798feaad4d9a246e26174487062050245b9db6d6c09efc1b5622d26237c00",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Theorems.Thm_Deformation_TraceAlgebra_descends",
+      "source_sha256": "a7c97039e1d935afae1fbf219bf6df49f18323eec31bc963429f714afdddfa8f",
+      "object_sha256": "63b1254b3d6437b227ac9d8e97584a1df9075b41aca83e1cb9476dcda340c660",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Theorems.Thm_ResidualGaloisRep_isAbsolutelyIrreducible_iff_matrixRepresentation",
+      "source_sha256": "eabc054f993b9446022aac4a8946f0cea36ebb1d4317a4828acd6745b21f245f",
+      "object_sha256": "6177e945e8daff7c4bbb5af2f84c71ad54a69fb6689c7996cd242271f8502372",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Theorems.Thm_IsLocalRing_of_isDomain_of_moduleFinite_of_isAdicComplete",
+      "source_sha256": "6f322977ce29b234dd751336ddd9a11af158a3dddff7c69a4b2c789fcd73e7da",
+      "object_sha256": "079822ccbd5f7660cbc8e040cb4105da46495fec81d81f35aab3ae0bd0c6c2cf",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Theorems.Thm_CuspForm_isReduced_heckeAlgebra_of_primeFactors_subset",
+      "source_sha256": "9dfb64dbbe6fcc49286fd27e6ca787d2679b77510a2bfcc929bde0a7d92c588b",
+      "object_sha256": "3c3c9f8d83efebff24cd3ab86c866f3a5ac6b5b0dcaeff01887c18b44ffe6900",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Theorems.Thm_CuspForm_moduleFinite_heckeAlgebra_two",
+      "source_sha256": "856a14ec0df59edf07c39fb02da821b7ae183874d1eb19c092948799be6425a2",
+      "object_sha256": "2d119d8bcd28e11411bec68b46a0968e44749f31fa065d69caf7c8b57a9c038b",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.P2M.Util",
+      "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+      "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+      "receipt_reused": true
+    }
+  ],
+  "stdout": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/401edbe36ff00b498f121118-1792155692193159000.kernel/stdout.log",
+  "stderr": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/401edbe36ff00b498f121118-1792155692193159000.kernel/stderr.log"
+}

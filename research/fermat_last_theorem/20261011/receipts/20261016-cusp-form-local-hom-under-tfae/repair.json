@@ -1,0 +1,369 @@
+{
+  "at": "2026-10-16T13:06:15.966530+00:00",
+  "name": "CuspForm_exists_heckeGaloisRepDatum_pi_eq_and_isUnramifiedAt_of_exists_galoisRep_of_point",
+  "source_replacements": [
+    [
+      "    refine Ideal.isMaximal_of_isIntegral_of_isMaximal_under (R := \ud835\udcaa) _ ?_\n    rw [hc]",
+      "    refine Ideal.isMaximal_of_isIntegral_of_isMaximal_under (R := \ud835\udcaa) _ ?_\n    rw [Ideal.under_def, hc]",
+      1
+    ],
+    [
+      "    refine Ideal.isMaximal_of_isIntegral_of_isMaximal_under (R := \ud835\udcaa) P ?_\n    rw [hc]",
+      "    refine Ideal.isMaximal_of_isIntegral_of_isMaximal_under (R := \ud835\udcaa) P ?_\n    rw [Ideal.under_def, hc]",
+      1
+    ],
+    [
+      "(local_hom_TFAE f.toRingHom).out 4 0",
+      "(local_hom_TFAE f.toRingHom).out 5 1",
+      1
+    ],
+    [
+      "(local_hom_TFAE (algebraMap \ud835\udcaa (fibreRing \ud835\udcaa R))).out 0 2",
+      "(local_hom_TFAE (algebraMap \ud835\udcaa (fibreRing \ud835\udcaa R))).out 1 3",
+      1
+    ],
+    [
+      "Pi.algHom",
+      "AlgHom.pi",
+      2
+    ],
+    [
+      "\n  haveI : P.IsPrime := hP.1.1\n",
+      "\n  have : P.IsPrime := hP.1.1\n",
+      1
+    ],
+    [
+      "\n  haveI : FaithfulSMul \ud835\udcaa (T \u29f8 P) := (faithfulSMul_iff_algebraMap_injective \ud835\udcaa (T \u29f8 P)).mpr hinj\n",
+      "\n  have : FaithfulSMul \ud835\udcaa (T \u29f8 P) := (faithfulSMul_iff_algebraMap_injective \ud835\udcaa (T \u29f8 P)).mpr hinj\n",
+      2
+    ],
+    [
+      "\n  haveI : Module.Finite \ud835\udcaa (T \u29f8 P) :=\n",
+      "\n  have : Module.Finite \ud835\udcaa (T \u29f8 P) :=\n",
+      2
+    ],
+    [
+      "\n  haveI : CharZero (T \u29f8 P) := charZero_of_injective_algebraMap hinj\n",
+      "\n  have : CharZero (T \u29f8 P) := charZero_of_injective_algebraMap hinj\n",
+      2
+    ],
+    [
+      "\n  haveI : CharZero (FractionRing \ud835\udcaa) :=\n",
+      "\n  have : CharZero (FractionRing \ud835\udcaa) :=\n",
+      2
+    ],
+    [
+      "\n  haveI : Module.IsTorsionFree \ud835\udcaa (T \u29f8 P) :=\n",
+      "\n  have : Module.IsTorsionFree \ud835\udcaa (T \u29f8 P) :=\n",
+      2
+    ],
+    [
+      "\n  letI : Algebra (FractionRing \ud835\udcaa) (FractionRing (T \u29f8 P)) := FractionRing.liftAlgebra _ _\n",
+      "\n  let : Algebra (FractionRing \ud835\udcaa) (FractionRing (T \u29f8 P)) := FractionRing.liftAlgebra _ _\n",
+      2
+    ],
+    [
+      "\n  haveI : IsScalarTower \ud835\udcaa (FractionRing \ud835\udcaa) (FractionRing (T \u29f8 P)) :=\n",
+      "\n  have : IsScalarTower \ud835\udcaa (FractionRing \ud835\udcaa) (FractionRing (T \u29f8 P)) :=\n",
+      2
+    ],
+    [
+      "\n  haveI : IsDedekindDomain (IntClosure \ud835\udcaa P) := isDedekindDomain_intClosure P hinj\n",
+      "\n  have : IsDedekindDomain (IntClosure \ud835\udcaa P) := isDedekindDomain_intClosure P hinj\n",
+      1
+    ],
+    [
+      "\n  haveI : FaithfulSMul \ud835\udcaa (IntClosure \ud835\udcaa P) :=\n",
+      "\n  have : FaithfulSMul \ud835\udcaa (IntClosure \ud835\udcaa P) :=\n",
+      1
+    ],
+    [
+      "\n  haveI := moduleFinite_intClosure P hinj\n",
+      "\n  have := moduleFinite_intClosure P hinj\n",
+      2
+    ],
+    [
+      "\n  haveI := isLocalHom_intClosure P hinj\n",
+      "\n  have := isLocalHom_intClosure P hinj\n",
+      2
+    ],
+    [
+      "\n  haveI : IsNoetherianRing T := Algebra.FiniteType.isNoetherianRing \ud835\udcaa T\n",
+      "\n  have : IsNoetherianRing T := Algebra.FiniteType.isNoetherianRing \ud835\udcaa T\n",
+      1
+    ],
+    [
+      "\n  haveI := hfin.fintype\n",
+      "\n  have := hfin.fintype\n",
+      1
+    ],
+    [
+      "\n  haveI hprime : \u2200 j, ((e j : Ideal T)).IsPrime := fun j => (e j).2.1.1\n",
+      "\n  have hprime : \u2200 j, ((e j : Ideal T)).IsPrime := fun j => (e j).2.1.1\n",
+      1
+    ],
+    [
+      "\n    haveI := moduleFinite_intClosure (\ud835\udcaa := \ud835\udcaa) (e j : Ideal T) (hinj j)\n",
+      "\n    have := moduleFinite_intClosure (\ud835\udcaa := \ud835\udcaa) (e j : Ideal T) (hinj j)\n",
+      1
+    ],
+    [
+      "\n  haveI hlocal : \u2200 j, IsLocalRing (IntClosure \ud835\udcaa (e j : Ideal T)) := fun j => by\n",
+      "\n  have hlocal : \u2200 j, IsLocalRing (IntClosure \ud835\udcaa (e j : Ideal T)) := fun j => by\n",
+      1
+    ],
+    [
+      "\n  haveI : IsNoetherianRing B := IsNoetherianRing.of_finite \ud835\udcaa B\n",
+      "\n  have : IsNoetherianRing B := IsNoetherianRing.of_finite \ud835\udcaa B\n",
+      1
+    ],
+    [
+      "\n  letI : TopologicalSpace B := (maximalIdeal B).adicTopology\n",
+      "\n  let : TopologicalSpace B := (maximalIdeal B).adicTopology\n",
+      1
+    ],
+    [
+      "\n  haveI : Nonempty (Module.Free.ChooseBasisIndex B V) :=\n",
+      "\n  have : Nonempty (Module.Free.ChooseBasisIndex B V) :=\n",
+      1
+    ],
+    [
+      "\n  haveI := hLfin\n",
+      "\n  have := hLfin\n",
+      1
+    ],
+    [
+      "\n  haveI : Fintype t := FiniteDimensional.fintypeBasisIndex b\n",
+      "\n  have : Fintype t := FiniteDimensional.fintypeBasisIndex b\n",
+      1
+    ],
+    [
+      "\n  letI : Algebra k (IsLocalRing.ResidueField \ud835\udcaa') := \u03c6.toAlgebra\n",
+      "\n  let : Algebra k (IsLocalRing.ResidueField \ud835\udcaa') := \u03c6.toAlgebra\n",
+      1
+    ],
+    [
+      "\n  haveI : Module.FinitePresentation \ud835\udcaa' \u03c1.V := Module.finitePresentation_of_projective _ _\n",
+      "\n  have : Module.FinitePresentation \ud835\udcaa' \u03c1.V := Module.finitePresentation_of_projective _ _\n",
+      1
+    ],
+    [
+      "\n  haveI : IsResidueAlgebra \ud835\udcde B' := \u27e8fun y => by\n",
+      "\n  have : IsResidueAlgebra \ud835\udcde B' := \u27e8fun y => by\n",
+      1
+    ],
+    [
+      "\n  letI : TopologicalSpace B' := (IsLocalRing.maximalIdeal B').adicTopology\n",
+      "\n  let : TopologicalSpace B' := (IsLocalRing.maximalIdeal B').adicTopology\n",
+      1
+    ],
+    [
+      "\n  haveI hpa : Deformation.IsLocalProartinianAlgebra \ud835\udcde B' :=\n",
+      "\n  have hpa : Deformation.IsLocalProartinianAlgebra \ud835\udcde B' :=\n",
+      1
+    ],
+    [
+      "\n  haveI : IsLocalRing.IsAdicTopology B' := \u27e8rfl\u27e9\n",
+      "\n  have : IsLocalRing.IsAdicTopology B' := \u27e8rfl\u27e9\n",
+      1
+    ],
+    [
+      "\n  haveI habs' : Representation.IsAbsolutelyIrreducible.{0}\n",
+      "\n  have habs' : Representation.IsAbsolutelyIrreducible.{0}\n",
+      1
+    ],
+    [
+      "\n  haveI hfloc : \u2200 j, IsLocalHom (f j).toRingHom := fun j => isLocalHom_of_algHom (f j)\n",
+      "\n  have hfloc : \u2200 j, IsLocalHom (f j).toRingHom := fun j => isLocalHom_of_algHom (f j)\n",
+      1
+    ],
+    [
+      "\n    haveI := hLfin\n",
+      "\n    have := hLfin\n",
+      1
+    ],
+    [
+      "\n  haveI := hn\n",
+      "\n  have := hn\n",
+      1
+    ],
+    [
+      "\n  letI : \u2200 j, Algebra \ud835\udcaa (R'' j) := fun j =>\n",
+      "\n  let : \u2200 j, Algebra \ud835\udcaa (R'' j) := fun j =>\n",
+      1
+    ],
+    [
+      "\n  haveI : \u2200 j, IsScalarTower \ud835\udcaa (R j) (R'' j) := fun j =>\n",
+      "\n  have : \u2200 j, IsScalarTower \ud835\udcaa (R j) (R'' j) := fun j =>\n",
+      1
+    ],
+    [
+      "\n  haveI : \u2200 j, Module.Finite \ud835\udcaa (R'' j) := fun j => Module.Finite.trans (R j) (R'' j)\n",
+      "\n  have : \u2200 j, Module.Finite \ud835\udcaa (R'' j) := fun j => Module.Finite.trans (R j) (R'' j)\n",
+      1
+    ],
+    [
+      "\n  haveI : \u2200 j, IsLocalHom (algebraMap \ud835\udcaa (R'' j)) := fun j =>\n",
+      "\n  have : \u2200 j, IsLocalHom (algebraMap \ud835\udcaa (R'' j)) := fun j =>\n",
+      1
+    ],
+    [
+      "\n  haveI : CharZero K := charZero_of_injective_algebraMap (IsFractionRing.injective \ud835\udcaa K)\n",
+      "\n  have : CharZero K := charZero_of_injective_algebraMap (IsFractionRing.injective \ud835\udcaa K)\n",
+      1
+    ],
+    [
+      "\n  haveI := hH6 N S hNS\n",
+      "\n  have := hH6 N S hNS\n",
+      1
+    ],
+    [
+      "\n  haveI := hL2' N\n",
+      "\n  have := hL2' N\n",
+      1
+    ],
+    [
+      "\n  haveI : IsReduced T := isReduced_carrier hH6 hL2' N (\u2191S : Set \u2115)\n",
+      "\n  have : IsReduced T := isReduced_carrier hH6 hL2' N (\u2191S : Set \u2115)\n",
+      1
+    ],
+    [
+      "    AlgHom.pi _ _ (fun j => toIntClosure (e j : Ideal T)),",
+      "    AlgHom.pi (R := \ud835\udcaa) (fun j => toIntClosure (e j : Ideal T)),",
+      1
+    ],
+    [
+      "    AlgHom.pi \ud835\udcaa _ fun j =>",
+      "    AlgHom.pi (R := \ud835\udcaa) fun j =>",
+      1
+    ]
+  ],
+  "baseline_byte_identical_to_pinned_supplier": false,
+  "baseline_prior_port_diff": "Source has only two existing isMaximal_of_isIntegral_of_isMaximal_comap to isMaximal_of_isIntegral_of_isMaximal_under API renames. Card differs only in its pre-existing ported attribute lists. Original source and card archived; current attributes retained exactly.",
+  "full_original_statements_hypotheses_and_all_proof_branches_preserved": true,
+  "no_linter_suppression_added": true,
+  "verification_pending": false,
+  "candidate": "r2",
+  "active_import_closure_excluded": [
+    "Submission.Supplier.Theorems.Thm_Deformation_ProartinianCat_isCorepresentable_of_preservesLimits"
+  ],
+  "card_replacements": [
+    [
+      "instMulSemiringActionSubtypeMemIntermediateFieldOfSMulCommClassOfNormal_definitions",
+      "instMulSemiringActionSubtypeMemIntermediateFieldOfSMulCommClassOfNormal_submission",
+      1
+    ],
+    [
+      "IsLocalRing.instDiscreteTopologyQuotientIdealHPowNatMaximalIdeal_definitions",
+      "IsLocalRing.instDiscreteTopologyQuotientIdealHPowNatMaximalIdeal_submission",
+      1
+    ],
+    [
+      "instNumberFieldSubtypeMemIntermediateFieldOfFiniteDimensional_definitions",
+      "instNumberFieldSubtypeMemIntermediateFieldOfFiniteDimensional_submission",
+      1
+    ],
+    [
+      "IsLocalRing.instIsHausdorffMaximalIdealOfIsNoetherianRing_definitions",
+      "IsLocalRing.instIsHausdorffMaximalIdealOfIsNoetherianRing_submission",
+      1
+    ],
+    [
+      "IsLocalRing.instIsPrecompleteMaximalIdealOfCompactSpace_definitions",
+      "IsLocalRing.instIsPrecompleteMaximalIdealOfCompactSpace_submission",
+      1
+    ],
+    [
+      "instIsModuleTopologyMatrixOfFiniteOfIsTopologicalRing_definitions",
+      "instIsModuleTopologyMatrixOfFiniteOfIsTopologicalRing_submission",
+      1
+    ],
+    [
+      "instMulActionContinuousMonoidHomOfContinuousConstSMul_definitions",
+      "instMulActionContinuousMonoidHomOfContinuousConstSMul_submission",
+      1
+    ],
+    [
+      "IsLocalRing.instDiscreteTopologyOfIsArtinianRing_definitions",
+      "IsLocalRing.instDiscreteTopologyOfIsArtinianRing_submission",
+      1
+    ],
+    [
+      "instIsLocalHomContinuousAlgHomToContinuousAlgHom_definitions",
+      "instIsLocalHomContinuousAlgHomToContinuousAlgHom_submission",
+      1
+    ],
+    [
+      "instContinuousConstSMulConjActOfContinuousMul_definitions",
+      "instContinuousConstSMulConjActOfContinuousMul_submission",
+      1
+    ],
+    [
+      "instIsLocalHomResidueFieldRingHomAlgebraMap_definitions",
+      "instIsLocalHomResidueFieldRingHomAlgebraMap_submission",
+      1
+    ],
+    [
+      "instMulActionMonoidHomOfMulDistribMulAction_definitions",
+      "instMulActionMonoidHomOfMulDistribMulAction_submission",
+      1
+    ],
+    [
+      "instFaithfulSMulSubtypeMemValuationSubring_definitions",
+      "instFaithfulSMulSubtypeMemValuationSubring_submission",
+      1
+    ],
+    [
+      "IsLocalRing.instT2SpaceOfIsNoetherianRing_definitions",
+      "IsLocalRing.instT2SpaceOfIsNoetherianRing_submission",
+      1
+    ],
+    [
+      "instIsLocalHomRingHomOfContinuousAlgHom_definitions_1",
+      "instIsLocalHomRingHomOfContinuousAlgHom_submission_1",
+      1
+    ],
+    [
+      "instIsLocalHomRingHomOfContinuousAlgHom_definitions",
+      "instIsLocalHomRingHomOfContinuousAlgHom_submission",
+      1
+    ],
+    [
+      "instMulSemiringActionRingOfIntegers_definitions",
+      "instMulSemiringActionRingOfIntegers_submission",
+      1
+    ],
+    [
+      "IsLocalRing.instNonarchimedeanRing_definitions",
+      "IsLocalRing.instNonarchimedeanRing_submission",
+      1
+    ],
+    [
+      "IsLocalRing.instIsLinearTopology_definitions",
+      "IsLocalRing.instIsLinearTopology_submission",
+      1
+    ],
+    [
+      "instIsLocalHomRingHomToRingHom_definitions_1",
+      "instIsLocalHomRingHomToRingHom_submission_1",
+      1
+    ],
+    [
+      "instIsLocalHomRingHomAlgebraMap_definitions",
+      "instIsLocalHomRingHomAlgebraMap_submission",
+      1
+    ],
+    [
+      "instIsLocalHomRingHomToRingHom_definitions",
+      "instIsLocalHomRingHomToRingHom_submission",
+      1
+    ],
+    [
+      "instFiniteIndexMulOppositeOp_definitions",
+      "instFiniteIndexMulOppositeOp_submission",
+      1
+    ]
+  ],
+  "card_candidate": "r2",
+  "current_attribute_targets_preserved_using_actual_compiled_instance_names": true
+}

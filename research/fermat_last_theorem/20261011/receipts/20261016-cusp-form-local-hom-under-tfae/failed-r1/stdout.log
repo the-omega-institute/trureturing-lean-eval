@@ -1,0 +1,18 @@
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_CuspForm_exists_heckeGaloisRepDatum_pi_eq_and_isUnramifiedAt_of_exists_galoisRep_of_point.lean:251:4: error: Application type mismatch: The argument
+  (AlgHom.pi ?m.348) ?m.350 fun j => toIntClosure ↑(e j)
+has type
+  ?m.341 fun j => toIntClosure ↑(e j)
+but is expected to have type
+  T →ₐ[𝒪] (j : Fin (Fintype.card ↑(minimalPrimes T))) → (fun j => IntClosure 𝒪 ↑(e j)) j
+in the application
+  Exists.intro ((AlgHom.pi ?m.348) ?m.350 fun j => toIntClosure ↑(e j))
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_CuspForm_exists_heckeGaloisRepDatum_pi_eq_and_isUnramifiedAt_of_exists_galoisRep_of_point.lean:2097:4: error: Type mismatch
+  (AlgHom.pi ?m.861) ?m.864 fun j => (IsScalarTower.toAlgHom 𝒪 (R j) (R'' j)).comp ((Pi.evalAlgHom 𝒪 R j).comp ι)
+has type
+  ?m.853 fun j => (IsScalarTower.toAlgHom 𝒪 (R j) (R'' j)).comp ((Pi.evalAlgHom 𝒪 R j).comp ι)
+but is expected to have type
+  T →ₐ[𝒪] (j : Fin n) → R'' j
+'P2MW.S_CuspForm_exists_heckeGaloisRepDatum_pi_eq_and_isUnramifiedAt_of_exists_galoisRep_of_point.solution' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
