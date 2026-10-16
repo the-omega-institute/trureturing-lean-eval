@@ -1,0 +1,108 @@
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_Padic_exists_ternary_isotropic_of_norm_eq_one_of_ne_two.lean:49:36: error: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  ?a - ?a
+in the target expression
+  s ^ 2 - s ^ 2 = 0
+
+p : ℕ
+hp : Fact (Nat.Prime p)
+hp2 : p ≠ 2
+c : ℤ_[p]
+s : ZMod p
+hs : s ≠ 0
+hcs : PadicInt.toZMod c = s ^ 2
+sl : ℤ_[p]
+hsl : PadicInt.toZMod sl = s
+hslnorm : ‖sl‖ = 1
+htwo : ‖2‖ = 1
+F : ℤ_[p][X] := X ^ 2 - C c
+hF : F = X ^ 2 - C c
+hFeval : (aeval sl) F = sl ^ 2 - c
+hF'eval : (aeval sl) (derivative F) = 2 * sl
+hnormF' : ‖(aeval sl) (derivative F)‖ = 1
+⊢ s ^ 2 - s ^ 2 = 0
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_Padic_exists_ternary_isotropic_of_norm_eq_one_of_ne_two.lean:100:25: error: ring failed, ring expressions not equal
+p : ℕ
+inst✝ : Fact (Nat.Prime p)
+hp : p ≠ 2
+a b : ℚ_[p]
+ha : ‖a‖ = 1
+hb : ‖b‖ = 1
+hpr : Nat.Prime p
+a₀ : ℤ_[p] := ⋯
+ha₀ : a₀ = ⟨a, ⋯⟩
+b₀ : ℤ_[p] := ⋯
+hb₀ : b₀ = ⟨b, ⋯⟩
+ha₀n : ‖a₀‖ = 1
+hb₀n : ‖b₀‖ = 1
+hares : PadicInt.toZMod a₀ ≠ 0
+hbres : PadicInt.toZMod b₀ ≠ 0
+hcard : Fintype.card (ZMod p) % 2 = 1
+hf : (X ^ 2 - C (PadicInt.toZMod b₀)).degree = 2
+hg : (C (-PadicInt.toZMod a₀) * X ^ 2).degree = 2
+z₀ x₀ : ZMod p
+hzx : 0 ^ 2 - PadicInt.toZMod b₀ + -PadicInt.toZMod a₀ * x₀ ^ 2 = 0
+hz₀ : z₀ = 0
+hx₀ : x₀ ≠ 0
+u : ℤ_[p]ˣ
+hu : ↑u = a₀
+c : ℤ_[p] := ⋯
+hc : c = -b₀ * ↑u⁻¹
+haures : PadicInt.toZMod a₀ * PadicInt.toZMod ↑u⁻¹ = 1
+⊢ -PadicInt.toZMod a₀ * x₀ ^ 2 - -(PadicInt.toZMod a₀ * x₀ ^ 2) = 0
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_Padic_exists_ternary_isotropic_of_norm_eq_one_of_ne_two.lean:102:6: error: ring failed, ring expressions not equal
+p : ℕ
+inst✝ : Fact (Nat.Prime p)
+hp : p ≠ 2
+a b : ℚ_[p]
+ha : ‖a‖ = 1
+hb : ‖b‖ = 1
+hpr : Nat.Prime p
+a₀ : ℤ_[p] := ⋯
+ha₀ : a₀ = ⟨a, ⋯⟩
+b₀ : ℤ_[p] := ⋯
+hb₀ : b₀ = ⟨b, ⋯⟩
+ha₀n : ‖a₀‖ = 1
+hb₀n : ‖b₀‖ = 1
+hares : PadicInt.toZMod a₀ ≠ 0
+hbres : PadicInt.toZMod b₀ ≠ 0
+hcard : Fintype.card (ZMod p) % 2 = 1
+hf : (X ^ 2 - C (PadicInt.toZMod b₀)).degree = 2
+hg : (C (-PadicInt.toZMod a₀) * X ^ 2).degree = 2
+z₀ x₀ : ZMod p
+hzx : z₀ ^ 2 - PadicInt.toZMod b₀ + -PadicInt.toZMod a₀ * x₀ ^ 2 = 0
+hz₀ : z₀ = 0
+hx₀ : x₀ ≠ 0
+u : ℤ_[p]ˣ
+hu : ↑u = a₀
+c : ℤ_[p] := ⋯
+hc : c = -b₀ * ↑u⁻¹
+haures : PadicInt.toZMod a₀ * PadicInt.toZMod ↑u⁻¹ = 1
+e1 : PadicInt.toZMod b₀ = -(PadicInt.toZMod a₀ * x₀ ^ 2)
+⊢ - -(PadicInt.toZMod a₀ * x₀ ^ 2) * PadicInt.toZMod ↑u⁻¹ - PadicInt.toZMod ↑u⁻¹ * x₀ ^ 2 * PadicInt.toZMod a₀ = 0
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_Padic_exists_ternary_isotropic_of_norm_eq_one_of_ne_two.lean:119:6: error: ring failed, ring expressions not equal
+p : ℕ
+inst✝ : Fact (Nat.Prime p)
+hp : p ≠ 2
+a b : ℚ_[p]
+ha : ‖a‖ = 1
+hb : ‖b‖ = 1
+hpr : Nat.Prime p
+a₀ : ℤ_[p] := ⋯
+ha₀ : a₀ = ⟨a, ⋯⟩
+b₀ : ℤ_[p] := ⋯
+hb₀ : b₀ = ⟨b, ⋯⟩
+ha₀n : ‖a₀‖ = 1
+hb₀n : ‖b₀‖ = 1
+hares : PadicInt.toZMod a₀ ≠ 0
+hbres : PadicInt.toZMod b₀ ≠ 0
+hcard : Fintype.card (ZMod p) % 2 = 1
+hf : (X ^ 2 - C (PadicInt.toZMod b₀)).degree = 2
+hg : (C (-PadicInt.toZMod a₀) * X ^ 2).degree = 2
+z₀ x₀ : ZMod p
+hzx : z₀ ^ 2 - PadicInt.toZMod b₀ + -PadicInt.toZMod a₀ * x₀ ^ 2 = 0
+hz₀ : ¬z₀ = 0
+xl : ℤ_[p]
+hxl : PadicInt.toZMod xl = x₀
+c : ℤ_[p] := ⋯
+hc : c = a₀ * xl ^ 2 + b₀
+⊢ PadicInt.toZMod a₀ * x₀ ^ 2 + x₀ ^ 2 * -PadicInt.toZMod a₀ = 0
