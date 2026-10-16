@@ -1,0 +1,29 @@
+{
+  "at": "2026-10-16T15:43:02.462000+00:00",
+  "name": "ModularCurve_FullLevel_gl2Laws_of_not_dvd",
+  "source_replacements": [
+    [
+      "haveI",
+      "have",
+      4
+    ],
+    [
+      "    rw [Matrix.det_mul, Matrix.det_fin_two_of, \u2190 Matrix.GeneralLinearGroup.val_det_apply, one_mul, mul_zero,\n      sub_zero]\n    exact units_mul_inv_val (detU g)",
+      "    rw [Matrix.det_mul, Matrix.det_fin_two_of, \u2190 Matrix.GeneralLinearGroup.val_det_apply, one_mul, mul_zero]\n    exact\n      (congrArg (fun z : ZMod q => (detU g : ZMod q) * z)\n        (sub_zero (((detU g)\u207b\u00b9 : (ZMod q)\u02e3) : ZMod q))).trans\n          (units_mul_inv_val (detU g))",
+      1
+    ]
+  ],
+  "baseline_byte_identical_to_pinned_supplier": true,
+  "full_original_statements_hypotheses_and_all_proof_branches_preserved": true,
+  "no_linter_suppression_added": true,
+  "verification_pending": false,
+  "candidate": "r1",
+  "installed": true,
+  "actual_baseline_errors": 1,
+  "actual_baseline_warnings": 4,
+  "installed_at": "2026-10-16T15:43:02.645472+00:00",
+  "active_import_closure_excluded": [
+    "Submission.Supplier.P2M.Sol.S_Submodule_relIndex_toAddSubgroup_eq_finprod_relIndex_localBox"
+  ],
+  "active_transitive_import_closure_size": 16
+}
