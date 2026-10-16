@@ -1,0 +1,54 @@
+{
+  "at": "2026-10-16T13:32:05.042285+00:00",
+  "name": "Deformation_exists_weaklyInitial_elements_conjQuotSubfunctor",
+  "source_replacements": [
+    [
+      "FunctorToTypes.naturality",
+      "NatTrans.naturality_apply",
+      2
+    ],
+    [
+      "CategoryOfElements.map",
+      "NatTrans.mapElements",
+      3
+    ],
+    [
+      "p2m_export \"CategoryTheory.CategoryOfElements\" \"map\"",
+      "p2m_export \"CategoryTheory.NatTrans\" \"mapElements\"",
+      1
+    ],
+    [
+      "h\u03b1 Y.1 Y.2",
+      "h\u03b1 Y.obj Y.val",
+      1
+    ],
+    [
+      "F\u2081.elementsMk Y.1 x",
+      "F\u2081.elementsMk Y.obj x",
+      1
+    ],
+    [
+      "\u27e8\u27e8f.1, ?_\u27e9\u27e9",
+      "\u27e8\u27e8f.hom, ?_\u27e9\u27e9",
+      1
+    ],
+    [
+      "F\u2082.map f.1 (\u03b1.app T.1 T.2) = Y.2",
+      "F\u2082.map f.hom (\u03b1.app T.obj T.val) = Y.val",
+      1
+    ],
+    [
+      "NatTrans.naturality_apply, f.2, hx",
+      "NatTrans.naturality_apply, f.map_val, hx",
+      1
+    ]
+  ],
+  "baseline_byte_identical_to_pinned_supplier": true,
+  "full_original_statements_hypotheses_and_all_proof_branches_preserved": true,
+  "no_linter_suppression_added": true,
+  "verification_pending": false,
+  "candidate": "r1",
+  "active_import_closure_excluded": [
+    "Submission.Supplier.P2M.Sol.S_GaloisRep_algHom_unique_of_baseChangeAlong_isEquiv_of_corepresentableBy"
+  ]
+}

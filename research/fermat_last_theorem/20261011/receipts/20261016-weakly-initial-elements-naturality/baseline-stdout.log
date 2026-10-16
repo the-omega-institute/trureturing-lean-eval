@@ -1,0 +1,26 @@
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_Deformation_exists_weaklyInitial_elements_conjQuotSubfunctor.lean:28:15: warning: `CategoryTheory.CategoryOfElements.map` has been deprecated: Use `CategoryTheory.NatTrans.mapElements` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.map` to `NatTrans.mapElements x`).
+
+Hint: Replace the deprecated name:
+  C̵a̵t̵e̵g̵o̵r̵y̵O̵f̵E̵l̵e̵m̵e̵n̵t̵s̵.̵m̵a̵p̵N̲a̲t̲T̲r̲a̲n̲s̲.̲m̲a̲p̲E̲l̲e̲m̲e̲n̲t̲s̲
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_Deformation_exists_weaklyInitial_elements_conjQuotSubfunctor.lean:33:8: error(lean.unknownIdentifier): Unknown identifier `FunctorToTypes.naturality`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_Deformation_exists_weaklyInitial_elements_conjQuotSubfunctor.lean:28:55: error: unsolved goals
+C : Type u
+inst✝ : Category.{v, u} C
+F₁ F₂ : C ⥤ Type w
+α : F₁ ⟶ F₂
+hα : ∀ (X : C), Function.Surjective ⇑(ConcreteCategory.hom (α.app X))
+T : F₁.Elements
+hT : ∀ (X : F₁.Elements), Nonempty (T ⟶ X)
+Y : F₂.Elements
+x : F₁.obj Y.obj
+hx : (ConcreteCategory.hom (α.app Y.obj)) x = Y.val
+f : T ⟶ F₁.elementsMk Y.obj x
+⊢ (ConcreteCategory.hom (F₂.map f.hom)) ((ConcreteCategory.hom (α.app T.obj)) T.val) = Y.val
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_Deformation_exists_weaklyInitial_elements_conjQuotSubfunctor.lean:44:4: warning: `CategoryTheory.CategoryOfElements.map` has been deprecated: Use `CategoryTheory.NatTrans.mapElements` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.map` to `NatTrans.mapElements x`).
+
+Hint: Replace the deprecated name:
+  C̵a̵t̵e̵g̵o̵r̵y̵O̵f̵E̵l̵e̵m̵e̵n̵t̵s̵.̵m̵a̵p̵N̲a̲t̲T̲r̲a̲n̲s̲.̲m̲a̲p̲E̲l̲e̲m̲e̲n̲t̲s̲
