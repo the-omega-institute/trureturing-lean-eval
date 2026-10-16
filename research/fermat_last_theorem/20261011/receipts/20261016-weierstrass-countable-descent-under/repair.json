@@ -1,0 +1,215 @@
+{
+  "at": "2026-10-16T00:49:41.587209+00:00",
+  "name": "WeierstrassCurve_exists_intermediateField_countable_map_eq_and_finrankAlong_eq",
+  "source_replacements": [
+    [
+      "Ideal.eq_bot_of_comap_eq_bot",
+      "Ideal.eq_bot_of_under_eq_bot",
+      1
+    ],
+    [
+      "rw [RingHom.comap_ker, pointPullbackCoordHomTo_comp_algebraMap,",
+      "rw [Ideal.under_def, RingHom.comap_ker, pointPullbackCoordHomTo_comp_algebraMap,",
+      1
+    ],
+    [
+      "    haveI : Module.Finite F[X] W.CoordinateRing :=\n",
+      "    have : Module.Finite F[X] W.CoordinateRing :=\n",
+      1
+    ],
+    [
+      "  haveI : E\u2080.IsElliptic := hE\u2080ell\n",
+      "  have : E\u2080.IsElliptic := hE\u2080ell\n",
+      2
+    ],
+    [
+      "    haveI := h\n",
+      "    have := h\n",
+      1
+    ],
+    [
+      "  haveI hCR : IsDomain (CR \u2297[F] F') := kw_coordinateRingTensor_isDomainGeneralNoAC W F F'\n",
+      "  have hCR : IsDomain (CR \u2297[F] F') := kw_coordinateRingTensor_isDomainGeneralNoAC W F F'\n",
+      1
+    ],
+    [
+      "  letI : Algebra (CR \u2297[F] F') (FF\u2097 \u2297[F] F') :=\n",
+      "  let : Algebra (CR \u2297[F] F') (FF\u2097 \u2297[F] F') :=\n",
+      1
+    ],
+    [
+      "  haveI hst : IsScalarTower CR (CR \u2297[F] F') (FF\u2097 \u2297[F] F') :=\n",
+      "  have hst : IsScalarTower CR (CR \u2297[F] F') (FF\u2097 \u2297[F] F') :=\n",
+      1
+    ],
+    [
+      "  haveI hloc : IsLocalization\n",
+      "  have hloc : IsLocalization\n",
+      1
+    ],
+    [
+      "  letI algD\u03b9 : Algebra FF FF := D.\u03b9.toRingHom.toAlgebra\n",
+      "  let algD\u03b9 : Algebra FF FF := D.\u03b9.toRingHom.toAlgebra\n",
+      1
+    ],
+    [
+      "  letI smulD\u03b9 : SMul FF FF := algD\u03b9.toSMul\n",
+      "  let smulD\u03b9 : SMul FF FF := algD\u03b9.toSMul\n",
+      1
+    ],
+    [
+      "  letI modD\u03b9 : Module FF FF := Algebra.toModule\n",
+      "  let modD\u03b9 : Module FF FF := Algebra.toModule\n",
+      1
+    ],
+    [
+      "  haveI hfinFF : Module.Finite FF FF := D.hfin\n",
+      "  have hfinFF : Module.Finite FF FF := D.hfin\n",
+      1
+    ],
+    [
+      "  haveI hfreeFF : Module.Free FF FF := Module.Free.of_divisionRing FF FF\n",
+      "  have hfreeFF : Module.Free FF FF := Module.Free.of_divisionRing FF FF\n",
+      1
+    ],
+    [
+      "  letI algFr : Algebra FrT FrT := \u03b9Fr.toAlgebra\n",
+      "  let algFr : Algebra FrT FrT := \u03b9Fr.toAlgebra\n",
+      1
+    ],
+    [
+      "  letI smulFr : SMul FrT FrT := algFr.toSMul\n",
+      "  let smulFr : SMul FrT FrT := algFr.toSMul\n",
+      1
+    ],
+    [
+      "  letI modFr : Module FrT FrT := Algebra.toModule\n",
+      "  let modFr : Module FrT FrT := Algebra.toModule\n",
+      1
+    ],
+    [
+      "  haveI : DecidableEq (AlgebraicClosure K\u2080) := Classical.decEq _\n",
+      "  have : DecidableEq (AlgebraicClosure K\u2080) := Classical.decEq _\n",
+      1
+    ],
+    [
+      "  haveI : CharZero (AlgebraicClosure K\u2080) :=\n",
+      "  have : CharZero (AlgebraicClosure K\u2080) :=\n",
+      1
+    ],
+    [
+      "  haveI : CharZero (\u21a5K\u2080) :=\n",
+      "  have : CharZero (\u21a5K\u2080) :=\n",
+      1
+    ],
+    [
+      "  haveI : Algebra.IsAlgebraic (RatFunc K) (RatFunc K) :=\n",
+      "  have : Algebra.IsAlgebraic (RatFunc K) (RatFunc K) :=\n",
+      1
+    ],
+    [
+      "  haveI : Algebra.IsAlgebraic (Polynomial K) (RatFunc K) :=\n",
+      "  have : Algebra.IsAlgebraic (Polynomial K) (RatFunc K) :=\n",
+      1
+    ],
+    [
+      "  haveI : FaithfulSMul (Polynomial K) (RatFunc K) :=\n",
+      "  have : FaithfulSMul (Polynomial K) (RatFunc K) :=\n",
+      1
+    ],
+    [
+      "  haveI : Algebra.IsAlgebraic (RatFunc K) W.FunctionField :=\n",
+      "  have : Algebra.IsAlgebraic (RatFunc K) W.FunctionField :=\n",
+      1
+    ],
+    [
+      "  haveI : FaithfulSMul (RatFunc K) W.FunctionField :=\n",
+      "  have : FaithfulSMul (RatFunc K) W.FunctionField :=\n",
+      1
+    ],
+    [
+      "  letI algIncl : Algebra (\u21a5(K\u2080 : Type uK)\u27eexP\u27ef) (\u21a5\u03b9\u2080.fieldRange) :=\n",
+      "  let algIncl : Algebra (\u21a5(K\u2080 : Type uK)\u27eexP\u27ef) (\u21a5\u03b9\u2080.fieldRange) :=\n",
+      1
+    ],
+    [
+      "  haveI towIncl : IsScalarTower (\u21a5(K\u2080 : Type uK)\u27eexP\u27ef) (\u21a5\u03b9\u2080.fieldRange)\n",
+      "  have towIncl : IsScalarTower (\u21a5(K\u2080 : Type uK)\u27eexP\u27ef) (\u21a5\u03b9\u2080.fieldRange)\n",
+      1
+    ],
+    [
+      "  haveI hfdR : FiniteDimensional (\u21a5\u03b9\u2080.fieldRange) E\u2080.toAffine.FunctionField :=\n",
+      "  have hfdR : FiniteDimensional (\u21a5\u03b9\u2080.fieldRange) E\u2080.toAffine.FunctionField :=\n",
+      1
+    ],
+    [
+      "  letI : Algebra F L := (f.comp (algebraMap F W.FunctionField)).toAlgebra\n",
+      "  let : Algebra F L := (f.comp (algebraMap F W.FunctionField)).toAlgebra\n",
+      1
+    ],
+    [
+      "  haveI hdom : IsDomain ((E\u2080\u2044(K\u2080 : Type uK)).FunctionField \u2297[K\u2080] K) :=\n",
+      "  have hdom : IsDomain ((E\u2080\u2044(K\u2080 : Type uK)).FunctionField \u2297[K\u2080] K) :=\n",
+      1
+    ],
+    [
+      "MonoidHom.coe_coe",
+      "MonoidHom.coe_ofClass",
+      1
+    ],
+    [
+      "if_true",
+      "ite_true",
+      1
+    ],
+    [
+      "    induction t using TensorProduct.induction_on with\n    | zero => simp only [_root_.map_zero]; exact zero_mem _\n",
+      "    induction t using TensorProduct.inductionOn with\n",
+      1
+    ],
+    [
+      "    induction t using TensorProduct.induction_on with\n    | zero => exact \u27e80, by simp\u27e9\n",
+      "    induction t using TensorProduct.inductionOn with\n",
+      1
+    ],
+    [
+      "      induction a using TensorProduct.induction_on with\n      | zero => simp\n",
+      "      induction a using TensorProduct.inductionOn with\n",
+      1
+    ]
+  ],
+  "pinned_supplier_source_and_card_preserved": true,
+  "full_original_statements_hypotheses_attributes_and_function_field_proof_preserved": true,
+  "no_linter_suppression_added": true,
+  "verification_pending": false,
+  "candidate": "r1",
+  "actual_baseline_warnings": 35,
+  "active_import_closure_excluded": [
+    "Submission.Supplier.Theorems.Thm_ModularCurve_JZeroNeronObjectAtP_mem_finPts_iff"
+  ],
+  "card_candidate": "r2",
+  "card_replacements": [
+    [
+      "instIsScalarTowerPolynomialRatFuncFunctionField_definitions",
+      "instIsScalarTowerPolynomialRatFuncFunctionField_submission",
+      1
+    ],
+    [
+      "instAlgebraRatFuncFunctionField_definitions",
+      "instAlgebraRatFuncFunctionField_submission",
+      1
+    ],
+    [
+      "instIsScalarTowerRatFuncFunctionField_definitions",
+      "instIsScalarTowerRatFuncFunctionField_submission",
+      1
+    ],
+    [
+      "\u2203 (hfin\u2080 :",
+      "\u2203 (_hfin\u2080 :",
+      1
+    ]
+  ],
+  "card_rename_evidence": "Current definition-module olean contains all three generated instance names with _submission suffix; preserve each original attribute-removal entry by updating that suffix.",
+  "updated_at": "2026-10-16T12:15:21.688099+00:00"
+}

@@ -1,0 +1,62 @@
+{
+  "sha256": "c665ae827d9e49e02b76fcff42d47037e4136c3377117c030e3bf1215779820b",
+  "exit": 0,
+  "empty_output_retry_done": false,
+  "source_sha256_after": "c665ae827d9e49e02b76fcff42d47037e4136c3377117c030e3bf1215779820b",
+  "source_unchanged": true,
+  "olean_sha256": "dc889b4028d4eadc0f9caf26f9465e4f3ffbe7da179d87cbf572444a48ca6fb5",
+  "seconds": 101.73772270900372,
+  "pid": 65768,
+  "command": [
+    "/Users/macstudio/.local/omega-shims/lean",
+    "-j1",
+    "--trust=0",
+    "-Ddebug.skipKernelTC=false",
+    "-R",
+    "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src",
+    "-o",
+    "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-build/lib/lean/Submission/Supplier/P2M/Sol/S_WeierstrassCurve_exists_intermediateField_countable_map_eq_and_finrankAlong_eq.olean",
+    "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_WeierstrassCurve_exists_intermediateField_countable_map_eq_and_finrankAlong_eq.lean"
+  ],
+  "make_wrapper_pid": 61617,
+  "make_exit": 0,
+  "make_entry_failed": false,
+  "cache_binding_valid": true,
+  "canonical_make_running_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/2301bba366a3858552806600-1792116047833707000.make-running.json",
+  "canonical_make_terminal_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/2301bba366a3858552806600-1792116047833707000.make-terminal.json",
+  "kernel_terminal_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/2301bba366a3858552806600-1792116047833707000.kernel/result.json",
+  "direct_dependencies": [
+    {
+      "module": "Submission.Supplier.Definitions.Def_AlgebraicCurve_Correspondence",
+      "source_sha256": "22d43195e5e1e56a79944d3f469e206b1dbea2f6727f6e0e0bccbc151f220881",
+      "object_sha256": "c99c86ef38a52c80a3925a267b8c93ae03a81f20f54c6c6e8d2d2fb01743b08c",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Definitions.Def_WeierstrassCurve_FunctionFieldQuadratic",
+      "source_sha256": "7c407278b0a0f64dfa10f33696c2cce86495fe9731740dcb5beb2a2b66c891ad",
+      "object_sha256": "e14c85bd4400e1355e8fe5cc76e1af2816824db64b8bf1f61adbba4386c4a97c",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Theorems.Thm_WeierstrassCurve_Affine_adjoin_yCoord_eq_top",
+      "source_sha256": "2b5c01fd659ce08f7eb8aaa71101029d52183ab42cf7038655b14b925f887ea5",
+      "object_sha256": "992d9be652f7007b7c1688ee3cf26f62555c6d945974a5f5002920c79980066a",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Theorems.Thm_WeierstrassCurve_Affine_finiteDimensional_ratFunc_functionField",
+      "source_sha256": "dd9ee461ac4403a861af6f8e82e8c2966ed444cef6bef3e5ec112ced3cf232e5",
+      "object_sha256": "348cdab2f2670ab408b06fa7b0c5919f64c0b1df28d6c8f2b465973b2f625117",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.P2M.Util",
+      "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+      "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+      "receipt_reused": true
+    }
+  ],
+  "stdout": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/2301bba366a3858552806600-1792116047833707000.kernel/stdout.log",
+  "stderr": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/2301bba366a3858552806600-1792116047833707000.kernel/stderr.log"
+}
