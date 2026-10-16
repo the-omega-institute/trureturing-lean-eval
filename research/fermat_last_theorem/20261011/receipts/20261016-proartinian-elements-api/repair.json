@@ -1,0 +1,250 @@
+{
+  "at": "2026-10-16T13:07:04.423618+00:00",
+  "name": "Deformation_ProartinianCat_isCorepresentable_of_preservesLimits",
+  "source_replacements": [
+    [
+      "  \u27e8s.1.toObj, s.2\u27e9",
+      "  F.elementsMk s.1.toObj s.2",
+      1
+    ],
+    [
+      "\u27e8CategoryOfElements.isoMk _ _ e ?_\u27e9",
+      "\u27e8Functor.Elements.isoMk e ?_\u27e9",
+      1
+    ],
+    [
+      "  obj I := \u27e8quotObj I, F.map (quotMk I) X.2\u27e9",
+      "  obj I := F.elementsMk (quotObj I) (F.map (quotMk I) X.2)",
+      1
+    ],
+    [
+      "CategoryOfElements.ext",
+      "Functor.Elements.hom_ext",
+      3
+    ],
+    [
+      "CategoryOfElements.\u03c0",
+      "Functor.Elements.\u03c0",
+      1
+    ],
+    [
+      "FunctorToTypes.map_comp_apply",
+      "Functor.map_comp_apply",
+      1
+    ],
+    [
+      "X.1",
+      "X.obj",
+      10
+    ],
+    [
+      "X.2",
+      "X.val",
+      4
+    ],
+    [
+      "Set.mem_setOf_eq",
+      "Set.mem_ofPred_eq",
+      1
+    ],
+    [
+      "Pi.algHom",
+      "AlgHom.pi",
+      1
+    ],
+    [
+      "    \u00b7 simp only [hS, Set.mem_preimage, Set.mem_singleton_iff] at hb \u22a2",
+      "    \u00b7 simp only [hS, Set.mem_preimage] at hb \u22a2",
+      2
+    ],
+    [
+      "variable {\ud835\udcde : Type u} [CommRing \ud835\udcde] [IsLocalRing \ud835\udcde]",
+      "variable {\ud835\udcde : Type u} [CommRing \ud835\udcde] [hlocal : IsLocalRing \ud835\udcde]",
+      3
+    ],
+    [
+      "variable [Finite (ResidueField \ud835\udcde)]",
+      "variable [hres : Finite (ResidueField \ud835\udcde)]",
+      2
+    ],
+    [
+      "lemma continuous_quotientMk ",
+      "include hlocal in\nlemma continuous_quotientMk ",
+      1
+    ],
+    [
+      "@[scoped simp]\nlemma quotFactor_mk ",
+      "include hlocal in\n@[scoped simp]\nlemma quotFactor_mk ",
+      1
+    ],
+    [
+      "lemma eq_zero_of_forall_mem_openIdx ",
+      "include hlocal in\nlemma eq_zero_of_forall_mem_openIdx ",
+      1
+    ],
+    [
+      "lemma isIso_of_bijective ",
+      "include hlocal hres in\nlemma isIso_of_bijective ",
+      1
+    ],
+    [
+      "lemma exists_iso (A : ProartinianCat \ud835\udcde)",
+      "include hlocal in\nlemma exists_iso (A : ProartinianCat \ud835\udcde)",
+      1
+    ],
+    [
+      "  exact (quotElemConeIsLimit X).lift\n    ((Cones.postcompose (quotStdDiagramComparison X)).obj\n      ((limit.cone (stdInclusion F)).whisker (quotStdDiagram X)))",
+      "  let c : Cone (quotElemDiagram X) :=\n    (Cone.postcompose (quotStdDiagramComparison X)).obj\n      ((limit.cone (stdInclusion F)).whisker (quotStdDiagram X))\n  change c.pt \u27f6 (quotElemCone X).pt\n  exact (quotElemConeIsLimit X).lift c",
+      1
+    ],
+    [
+      "  haveI : T2Space B.carrier := inferInstance\n",
+      "  have : T2Space B.carrier := inferInstance\n",
+      1
+    ],
+    [
+      "    letI : CommRing (ULift.{u} (Fin (Nat.card A.carrier))) := (objEquiv A).commRing\n",
+      "    let : CommRing (ULift.{u} (Fin (Nat.card A.carrier))) := (objEquiv A).commRing\n",
+      1
+    ],
+    [
+      "    letI : TopologicalSpace (ULift.{u} (Fin (Nat.card A.carrier))) := \u22a5\n",
+      "    let : TopologicalSpace (ULift.{u} (Fin (Nat.card A.carrier))) := \u22a5\n",
+      1
+    ],
+    [
+      "    letI : Algebra \ud835\udcde (ULift.{u} (Fin (Nat.card A.carrier))) := (objEquiv A).algebra \ud835\udcde\n",
+      "    let : Algebra \ud835\udcde (ULift.{u} (Fin (Nat.card A.carrier))) := (objEquiv A).algebra \ud835\udcde\n",
+      1
+    ],
+    [
+      "    letI : DiscreteTopology (ULift.{u} (Fin (Nat.card A.carrier))) := \u27e8rfl\u27e9\n",
+      "    let : DiscreteTopology (ULift.{u} (Fin (Nat.card A.carrier))) := \u27e8rfl\u27e9\n",
+      1
+    ],
+    [
+      "    haveI : IsArtinianRing (ULift.{u} (Fin (Nat.card A.carrier))) := isArtinian_of_finite\n",
+      "    have : IsArtinianRing (ULift.{u} (Fin (Nat.card A.carrier))) := isArtinian_of_finite\n",
+      1
+    ],
+    [
+      "    haveI : Nontrivial (ULift.{u} (Fin (Nat.card A.carrier))) :=\n",
+      "    have : Nontrivial (ULift.{u} (Fin (Nat.card A.carrier))) :=\n",
+      1
+    ],
+    [
+      "    haveI : IsLocalRing (ULift.{u} (Fin (Nat.card A.carrier))) := by\n",
+      "    have : IsLocalRing (ULift.{u} (Fin (Nat.card A.carrier))) := by\n",
+      1
+    ],
+    [
+      "    haveI : IsLocalHom (algebraMap \ud835\udcde (ULift.{u} (Fin (Nat.card A.carrier)))) := by\n",
+      "    have : IsLocalHom (algebraMap \ud835\udcde (ULift.{u} (Fin (Nat.card A.carrier)))) := by\n",
+      1
+    ],
+    [
+      "    haveI : IsResidueAlgebra \ud835\udcde (ULift.{u} (Fin (Nat.card A.carrier))) := by\n",
+      "    have : IsResidueAlgebra \ud835\udcde (ULift.{u} (Fin (Nat.card A.carrier))) := by\n",
+      1
+    ],
+    [
+      "  haveI := hX\n",
+      "  have := hX\n",
+      1
+    ],
+    [
+      "AlgHom.pi \ud835\udcde (fun j \u21a6 (D.obj j : Type u)) fun j \u21a6",
+      "AlgHom.pi (R := \ud835\udcde) (A := fun j \u21a6 (D.obj j : Type u)) fun j \u21a6",
+      1
+    ],
+    [
+      "include hlocal in\nlemma continuous_quotientMk :",
+      "omit hlocal in\nlemma continuous_quotientMk [hlocal : IsLocalRing \ud835\udcde] :",
+      1
+    ],
+    [
+      "include hlocal in\n@[scoped simp]\nlemma quotFactor_mk {I J : OpenIdx B}",
+      "omit hlocal in\n@[scoped simp]\nlemma quotFactor_mk [hlocal : IsLocalRing \ud835\udcde] {I J : OpenIdx B}",
+      1
+    ],
+    [
+      "include hlocal in\nlemma eq_zero_of_forall_mem_openIdx {b : B.carrier}",
+      "omit hlocal in\nlemma eq_zero_of_forall_mem_openIdx [hlocal : IsLocalRing \ud835\udcde] {b : B.carrier}",
+      1
+    ],
+    [
+      "include hlocal hres in\nlemma isIso_of_bijective {X Y : ProartinianCat \ud835\udcde}",
+      "omit hlocal hres in\nlemma isIso_of_bijective [hlocal : IsLocalRing \ud835\udcde] [hres : Finite (ResidueField \ud835\udcde)]\n    {X Y : ProartinianCat \ud835\udcde}",
+      1
+    ],
+    [
+      "include hlocal in\nlemma exists_iso (A : ProartinianCat \ud835\udcde)",
+      "omit hlocal in\nlemma exists_iso [hlocal : IsLocalRing \ud835\udcde] (A : ProartinianCat \ud835\udcde)",
+      1
+    ],
+    [
+      "[hlocal : IsLocalRing \ud835\udcde] [Finite (ResidueField \ud835\udcde)]",
+      "[hlocal : IsLocalRing \ud835\udcde] [hfinite : Finite (ResidueField \ud835\udcde)]",
+      1
+    ],
+    [
+      "variable (F : ProartinianCat \ud835\udcde \u2964 Type u) [PreservesLimits F]",
+      "variable (F : ProartinianCat \ud835\udcde \u2964 Type u) [hpres : PreservesLimits F]",
+      1
+    ],
+    [
+      "lemma StdElem.exists_iso (X : F.Elements)",
+      "omit hfinite hpres in\nlemma StdElem.exists_iso [hfinite : Finite (ResidueField \ud835\udcde)] [hpres : PreservesLimits F]\n    (X : F.Elements)",
+      1
+    ],
+    [
+      "FunctorToTypes.map_id_apply _ _",
+      "Functor.map_id_apply F _ _",
+      1
+    ],
+    [
+      "Cones.ext",
+      "Cone.ext",
+      1
+    ],
+    [
+      "lemma continuous_quotientMk [hlocal : IsLocalRing \ud835\udcde]",
+      "lemma continuous_quotientMk [IsLocalRing \ud835\udcde]",
+      1
+    ],
+    [
+      "lemma quotFactor_mk [hlocal : IsLocalRing \ud835\udcde]",
+      "lemma quotFactor_mk [IsLocalRing \ud835\udcde]",
+      1
+    ],
+    [
+      "lemma eq_zero_of_forall_mem_openIdx [hlocal : IsLocalRing \ud835\udcde]",
+      "lemma eq_zero_of_forall_mem_openIdx [IsLocalRing \ud835\udcde]",
+      1
+    ],
+    [
+      "lemma isIso_of_bijective [hlocal : IsLocalRing \ud835\udcde] [hres : Finite (ResidueField \ud835\udcde)]",
+      "lemma isIso_of_bijective [IsLocalRing \ud835\udcde] [Finite (ResidueField \ud835\udcde)]",
+      1
+    ],
+    [
+      "lemma exists_iso [hlocal : IsLocalRing \ud835\udcde]",
+      "lemma exists_iso [IsLocalRing \ud835\udcde]",
+      1
+    ],
+    [
+      "lemma StdElem.exists_iso [hfinite : Finite (ResidueField \ud835\udcde)] [hpres : PreservesLimits F]",
+      "lemma StdElem.exists_iso [Finite (ResidueField \ud835\udcde)] [PreservesLimits F]",
+      1
+    ]
+  ],
+  "baseline_byte_identical_to_pinned_supplier": true,
+  "full_original_statements_hypotheses_and_all_proof_branches_preserved": true,
+  "no_linter_suppression_added": true,
+  "verification_pending": false,
+  "candidate": "r3",
+  "active_import_closure_excluded": [
+    "Submission.Supplier.Theorems.Thm_CuspForm_exists_heckeGaloisRepDatum_pi_eq_and_isUnramifiedAt_of_exists_galoisRep_of_point"
+  ],
+  "r2_preserves_automatically_included_hypotheses_as_explicit_instance_binders": true
+}

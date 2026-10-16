@@ -1,0 +1,232 @@
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_Deformation_ProartinianCat_isCorepresentable_of_preservesLimits.lean:164:6: warning: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
+
+Hint: Replace the deprecated name:
+  S̵e̵t̵.̵m̵e̵m̵_̵s̵e̵t̵O̵f̵_̵e̵q̵S̲e̲t̲.̲m̲e̲m̲_̲o̲f̲P̲r̲e̲d̲_̲e̲q̲
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_Deformation_ProartinianCat_isCorepresentable_of_preservesLimits.lean:254:11: warning: `Pi.algHom` has been deprecated: Use `AlgHom.pi` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.algHom` to `AlgHom.pi x`).
+
+Hint: Replace the deprecated name:
+  P̵i̵.̵a̵l̵g̵H̵o̵m̵A̲l̲g̲H̲o̲m̲.̲p̲i̲
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_Deformation_ProartinianCat_isCorepresentable_of_preservesLimits.lean:386:0: warning: automatically included section variable(s) unused in theorem `P2MW.S_Deformation_ProartinianCat_isCorepresentable_of_preservesLimits.Deformation.ProartinianCat.continuous_quotientMk`:
+  [IsLocalRing 𝓞]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [IsLocalRing 𝓞] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_Deformation_ProartinianCat_isCorepresentable_of_preservesLimits.lean:401:0: warning: automatically included section variable(s) unused in theorem `P2MW.S_Deformation_ProartinianCat_isCorepresentable_of_preservesLimits.Deformation.ProartinianCat.quotFactor_mk`:
+  [IsLocalRing 𝓞]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [IsLocalRing 𝓞] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_Deformation_ProartinianCat_isCorepresentable_of_preservesLimits.lean:439:2: warning: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_Deformation_ProartinianCat_isCorepresentable_of_preservesLimits.lean:436:0: warning: automatically included section variable(s) unused in theorem `P2MW.S_Deformation_ProartinianCat_isCorepresentable_of_preservesLimits.Deformation.ProartinianCat.eq_zero_of_forall_mem_openIdx`:
+  [IsLocalRing 𝓞]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [IsLocalRing 𝓞] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_Deformation_ProartinianCat_isCorepresentable_of_preservesLimits.lean:464:39: warning: This simp argument is unused:
+  Set.mem_singleton_iff
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [hS, Set.mem_preimage] at hb ⊢
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_Deformation_ProartinianCat_isCorepresentable_of_preservesLimits.lean:468:39: warning: This simp argument is unused:
+  Set.mem_singleton_iff
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [hS, Set.mem_preimage] at hb ⊢
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_Deformation_ProartinianCat_isCorepresentable_of_preservesLimits.lean:497:0: warning: automatically included section variable(s) unused in theorem `P2MW.S_Deformation_ProartinianCat_isCorepresentable_of_preservesLimits.Deformation.ProartinianCat.isIso_of_bijective`:
+  [IsLocalRing 𝓞]
+  [Finite (ResidueField 𝓞)]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [IsLocalRing 𝓞] [Finite (ResidueField 𝓞)] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_Deformation_ProartinianCat_isCorepresentable_of_preservesLimits.lean:564:4: warning: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_Deformation_ProartinianCat_isCorepresentable_of_preservesLimits.lean:565:4: warning: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_Deformation_ProartinianCat_isCorepresentable_of_preservesLimits.lean:566:4: warning: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_Deformation_ProartinianCat_isCorepresentable_of_preservesLimits.lean:567:4: warning: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_Deformation_ProartinianCat_isCorepresentable_of_preservesLimits.lean:570:4: warning: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_Deformation_ProartinianCat_isCorepresentable_of_preservesLimits.lean:571:4: warning: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_Deformation_ProartinianCat_isCorepresentable_of_preservesLimits.lean:574:4: warning: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_Deformation_ProartinianCat_isCorepresentable_of_preservesLimits.lean:580:4: warning: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_Deformation_ProartinianCat_isCorepresentable_of_preservesLimits.lean:588:4: warning: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_Deformation_ProartinianCat_isCorepresentable_of_preservesLimits.lean:612:0: warning: automatically included section variable(s) unused in theorem `P2MW.S_Deformation_ProartinianCat_isCorepresentable_of_preservesLimits.Deformation.StdObjData.exists_iso`:
+  [IsLocalRing 𝓞]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [IsLocalRing 𝓞] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_Deformation_ProartinianCat_isCorepresentable_of_preservesLimits.lean:651:2: error: Invalid `⟨...⟩` notation: The expected type `F.1 ?m.18` is not an inductive type
+
+Note: This notation can only be used when the expected type is an inductive type with a single constructor
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_Deformation_ProartinianCat_isCorepresentable_of_preservesLimits.lean:657:2: warning: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_Deformation_ProartinianCat_isCorepresentable_of_preservesLimits.lean:659:34: warning: `CategoryTheory.CategoryOfElements.isoMk` has been deprecated: Use `CategoryTheory.Functor.Elements.isoMk` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.isoMk` to `Functor.Elements.isoMk x`).
+
+Hint: Replace the deprecated name:
+  C̵a̵t̵e̵g̵o̵r̵y̵O̵f̵E̵l̵e̵m̵e̵n̵t̵s̵.̵i̵s̵o̵M̵k̵F̲u̲n̲c̲t̲o̲r̲.̲E̲l̲e̲m̲e̲n̲t̲s̲.̲i̲s̲o̲M̲k̲
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_Deformation_ProartinianCat_isCorepresentable_of_preservesLimits.lean:659:34: error: Function expected at
+  CategoryOfElements.isoMk ?m.78 ?m.79
+but this term has type
+  ?m.76 ≅ ?m.77
+
+Note: Expected a function because this term is being applied to the argument
+  e
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_Deformation_ProartinianCat_isCorepresentable_of_preservesLimits.lean:660:2: error: No goals to be solved
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_Deformation_ProartinianCat_isCorepresentable_of_preservesLimits.lean:679:11: error: Invalid `⟨...⟩` notation: The expected type `F.1 ?m.30` is not an inductive type
+
+Note: This notation can only be used when the expected type is an inductive type with a single constructor
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_Deformation_ProartinianCat_isCorepresentable_of_preservesLimits.lean:681:10: warning: `CategoryTheory.FunctorToTypes.map_comp_apply` has been deprecated: Use `CategoryTheory.Functor.map_comp_apply` instead
+
+Note: The updated constant has a different type:
+  ∀ {C : Type u₁} [inst : Category.{v₁, u₁} C] {D : Type u₂} [inst_1 : Category.{v₂, u₂} D] (self : C ⥤ D) {X Y Z : C}
+    (f : X ⟶ Y) (g : Y ⟶ Z) {F : D → D → Type uF} {carrier : D → Type w}
+    {instFunLike : (X Y : D) → FunLike (F X Y) (carrier X) (carrier Y)} [inst_2 : ConcreteCategory D F]
+    (x : carrier (self.obj X)),
+    (ConcreteCategory.hom (self.map (f ≫ g))) x =
+      (ConcreteCategory.hom (self.map g)) ((ConcreteCategory.hom (self.map f)) x)
+instead of
+  ∀ {C : Type u} [inst : Category.{v, u} C] (F : C ⥤ Type w) {X Y Z : C} (f : X ⟶ Y) (g : Y ⟶ Z) (a : F.obj X),
+    (ConcreteCategory.hom (F.map (f ≫ g))) a = (ConcreteCategory.hom (F.map g)) ((ConcreteCategory.hom (F.map f)) a)
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.map_comp_apply` to `Functor.map_comp_apply x`).
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_Deformation_ProartinianCat_isCorepresentable_of_preservesLimits.lean:683:10: warning: `CategoryTheory.CategoryOfElements.ext` has been deprecated: Use `CategoryTheory.Functor.Elements.hom_ext` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.ext` to `Functor.Elements.hom_ext x`).
+
+Hint: Replace the deprecated name:
+  C̵a̵t̵e̵g̵o̵r̵y̵O̵f̵E̵l̵e̵m̵e̵n̵t̵s̵.̵e̵x̵t̵F̲u̲n̲c̲t̲o̲r̲.̲E̲l̲e̲m̲e̲n̲t̲s̲.̲h̲o̲m̲_̲e̲x̲t̲
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_Deformation_ProartinianCat_isCorepresentable_of_preservesLimits.lean:686:10: warning: `CategoryTheory.CategoryOfElements.ext` has been deprecated: Use `CategoryTheory.Functor.Elements.hom_ext` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.ext` to `Functor.Elements.hom_ext x`).
+
+Hint: Replace the deprecated name:
+  C̵a̵t̵e̵g̵o̵r̵y̵O̵f̵E̵l̵e̵m̵e̵n̵t̵s̵.̵e̵x̵t̵F̲u̲n̲c̲t̲o̲r̲.̲E̲l̲e̲m̲e̲n̲t̲s̲.̲h̲o̲m̲_̲e̲x̲t̲
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_Deformation_ProartinianCat_isCorepresentable_of_preservesLimits.lean:694:14: warning: `CategoryTheory.CategoryOfElements.ext` has been deprecated: Use `CategoryTheory.Functor.Elements.hom_ext` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.ext` to `Functor.Elements.hom_ext x`).
+
+Hint: Replace the deprecated name:
+  C̵a̵t̵e̵g̵o̵r̵y̵O̵f̵E̵l̵e̵m̵e̵n̵t̵s̵.̵e̵x̵t̵F̲u̲n̲c̲t̲o̲r̲.̲E̲l̲e̲m̲e̲n̲t̲s̲.̲h̲o̲m̲_̲e̲x̲t̲
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_Deformation_ProartinianCat_isCorepresentable_of_preservesLimits.lean:692:32: error: Application type mismatch: The argument
+  rfl
+has type
+  ?m.42 = ?m.42
+but is expected to have type
+  autoParam
+    ((ConcreteCategory.hom (F.map (quotMk I))) (((Functor.const (OpenIdx X.obj)).obj X).obj I).val =
+      ((quotElemDiagram X).obj I).val)
+    Functor.Elements.Hom.map_val._autoParam
+in the application
+  { hom := quotMk I, map_val := ⋯ }
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_Deformation_ProartinianCat_isCorepresentable_of_preservesLimits.lean:698:27: warning: `CategoryTheory.CategoryOfElements.π` has been deprecated: Use `CategoryTheory.Functor.Elements.π` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.π` to `Functor.Elements.π x`).
+
+Hint: Replace the deprecated name:
+  C̵a̵t̵e̵g̵o̵r̵y̵O̵f̵E̵l̵e̵m̵e̵n̵t̵s̵.̵π̵F̲u̲n̲c̲t̲o̲r̲.̲E̲l̲e̲m̲e̲n̲t̲s̲.̲π̲
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_Deformation_ProartinianCat_isCorepresentable_of_preservesLimits.lean:698:2: error: failed to synthesize
+  ReflectsLimit (quotElemDiagram X) (CategoryOfElements.π F)
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_Deformation_ProartinianCat_isCorepresentable_of_preservesLimits.lean:746:6: warning: `CategoryTheory.Limits.Cones.postcompose` has been deprecated: Use `CategoryTheory.Limits.Cone.postcompose` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.postcompose` to `Cone.postcompose x`).
+
+Hint: Replace the deprecated name:
+  Cones̵.postcompose
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_Deformation_ProartinianCat_isCorepresentable_of_preservesLimits.lean:745:2: error: Type mismatch
+  (quotElemConeIsLimit X).lift
+    ((Cones.postcompose (quotStdDiagramComparison X)).obj
+      (Cone.whisker (quotStdDiagram X) (limit.cone (stdInclusion F))))
+has type
+  ((Cones.postcompose (quotStdDiagramComparison X)).obj
+        (Cone.whisker (quotStdDiagram X) (limit.cone (stdInclusion F)))).pt ⟶
+    (quotElemCone X).pt
+but is expected to have type
+  weaklyInitialObj F ⟶ X

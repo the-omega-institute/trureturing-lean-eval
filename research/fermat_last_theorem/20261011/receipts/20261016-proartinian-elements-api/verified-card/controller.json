@@ -1,0 +1,50 @@
+{
+  "sha256": "6fe0bba748ae7bbd2752338b19b8fb7be353641743e33de301de3b073ef29036",
+  "exit": 0,
+  "empty_output_retry_done": false,
+  "source_sha256_after": "6fe0bba748ae7bbd2752338b19b8fb7be353641743e33de301de3b073ef29036",
+  "source_unchanged": true,
+  "olean_sha256": "6f48c10e2f532eb8b2a83011f5d3c50c45d2a2364047944e2fcc09d104b42d0c",
+  "seconds": 83.96034137500101,
+  "pid": 73148,
+  "command": [
+    "/Users/macstudio/.local/omega-shims/lean",
+    "-j1",
+    "--trust=0",
+    "-Ddebug.skipKernelTC=false",
+    "-R",
+    "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src",
+    "-o",
+    "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-build/lib/lean/Submission/Supplier/Theorems/Thm_Deformation_ProartinianCat_isCorepresentable_of_preservesLimits.olean",
+    "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/Theorems/Thm_Deformation_ProartinianCat_isCorepresentable_of_preservesLimits.lean"
+  ],
+  "make_wrapper_pid": 72126,
+  "make_exit": 0,
+  "make_entry_failed": false,
+  "cache_binding_valid": true,
+  "canonical_make_running_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/d826b60ee06035a2a5e4fc08-1792156113512243000.make-running.json",
+  "canonical_make_terminal_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/d826b60ee06035a2a5e4fc08-1792156113512243000.make-terminal.json",
+  "kernel_terminal_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/d826b60ee06035a2a5e4fc08-1792156113512243000.kernel/result.json",
+  "direct_dependencies": [
+    {
+      "module": "Submission.Supplier.Definitions.Def_Deformations_ProartinianCat",
+      "source_sha256": "62e9afc5cf31afe9f82569947453a7b82bb2956fd546cd74a1ff39d1e5ca85da",
+      "object_sha256": "3ad0bd5c0b74e15c4505b66681c4dad28bbb9c38ea68d2a19aadcc162cc4b025",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.P2M.Util",
+      "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+      "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.P2M.Sol.S_Deformation_ProartinianCat_isCorepresentable_of_preservesLimits",
+      "source_sha256": "e6f1d02b46e79c0e3b0053c870d15ef00af1365d39866c49a8ba6fda0f96ed82",
+      "object_sha256": "7f87924af4e6a82d2bf5e39447c8801e80f1c3a5b04b364950791b1d2edf5fb3",
+      "receipt_reused": true
+    }
+  ],
+  "stdout": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/d826b60ee06035a2a5e4fc08-1792156113512243000.kernel/stdout.log",
+  "stderr": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/d826b60ee06035a2a5e4fc08-1792156113512243000.kernel/stderr.log"
+}

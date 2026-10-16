@@ -1,0 +1,92 @@
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_Deformation_ProartinianCat_isCorepresentable_of_preservesLimits.lean:254:11: error(lean.synthInstanceFailed): failed to synthesize instance of type class
+  Semiring (J → Type u)
+
+Hint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_Deformation_ProartinianCat_isCorepresentable_of_preservesLimits.lean:264:2: error: Tactic `rfl` failed: The left-hand side
+  (limitLift s ≫ limitProj D j).hom c
+is not definitionally equal to the right-hand side
+  (s.π.app j).hom c
+
+𝓞 : Type u
+inst✝² : CommRing 𝓞
+hlocal : IsLocalRing 𝓞
+J : Type u
+inst✝¹ : Category.{v, u} J
+D : J ⥤ ProartinianCat 𝓞
+hres : Finite (ResidueField 𝓞)
+inst✝ : Nonempty J
+s : Cone D
+j : J
+c : ↑s.pt
+⊢ (limitLift s ≫ limitProj D j).hom c = (s.π.app j).hom c
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_Deformation_ProartinianCat_isCorepresentable_of_preservesLimits.lean:387:0: warning: automatically included section variable(s) unused in theorem `P2MW.S_Deformation_ProartinianCat_isCorepresentable_of_preservesLimits.Deformation.ProartinianCat.continuous_quotientMk`:
+  hlocal
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit hlocal in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_Deformation_ProartinianCat_isCorepresentable_of_preservesLimits.lean:403:0: warning: automatically included section variable(s) unused in theorem `P2MW.S_Deformation_ProartinianCat_isCorepresentable_of_preservesLimits.Deformation.ProartinianCat.quotFactor_mk`:
+  hlocal
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit hlocal in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_Deformation_ProartinianCat_isCorepresentable_of_preservesLimits.lean:439:0: warning: automatically included section variable(s) unused in theorem `P2MW.S_Deformation_ProartinianCat_isCorepresentable_of_preservesLimits.Deformation.ProartinianCat.eq_zero_of_forall_mem_openIdx`:
+  hlocal
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit hlocal in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_Deformation_ProartinianCat_isCorepresentable_of_preservesLimits.lean:487:40: error: Type mismatch
+  hb I
+has type
+  (Ideal.Quotient.mk ↑I) b = ↑x I
+but is expected to have type
+  ↑((limitLift (quotCone B)).hom b) I = ↑x I
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_Deformation_ProartinianCat_isCorepresentable_of_preservesLimits.lean:497:2: error: Type mismatch
+  congrArg (fun y => ↑y I) hab
+has type
+  ↑((limitLift (quotCone B)).hom a) I = ↑((limitLift (quotCone B)).hom b) I
+but is expected to have type
+  (Ideal.Quotient.mk ↑I) a = (Ideal.Quotient.mk ↑I) b
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_Deformation_ProartinianCat_isCorepresentable_of_preservesLimits.lean:501:0: warning: automatically included section variable(s) unused in theorem `P2MW.S_Deformation_ProartinianCat_isCorepresentable_of_preservesLimits.Deformation.ProartinianCat.isIso_of_bijective`:
+  hlocal
+  hres
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit hlocal hres in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_Deformation_ProartinianCat_isCorepresentable_of_preservesLimits.lean:617:0: warning: automatically included section variable(s) unused in theorem `P2MW.S_Deformation_ProartinianCat_isCorepresentable_of_preservesLimits.Deformation.StdObjData.exists_iso`:
+  hlocal
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit hlocal in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_Deformation_ProartinianCat_isCorepresentable_of_preservesLimits.lean:667:8: warning: `CategoryTheory.FunctorToTypes.map_id_apply` has been deprecated: Use `CategoryTheory.Functor.map_id_apply` instead
+
+Note: The updated constant has a different type:
+  ∀ {C : Type u₁} [inst : Category.{v₁, u₁} C] {D : Type u₂} [inst_1 : Category.{v₂, u₂} D] (self : C ⥤ D) (X : C)
+    {F : D → D → Type uF} {carrier : D → Type w} {instFunLike : (X Y : D) → FunLike (F X Y) (carrier X) (carrier Y)}
+    [inst_2 : ConcreteCategory D F] (x : carrier (self.obj X)), (ConcreteCategory.hom (self.map (𝟙 X))) x = x
+instead of
+  ∀ {C : Type u} [inst : Category.{v, u} C] (F : C ⥤ Type w) {X : C} (a : F.obj X),
+    (ConcreteCategory.hom (F.map (𝟙 X))) a = a
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.map_id_apply` to `Functor.map_id_apply x`).
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_Deformation_ProartinianCat_isCorepresentable_of_preservesLimits.lean:660:0: warning: automatically included section variable(s) unused in theorem `P2MW.S_Deformation_ProartinianCat_isCorepresentable_of_preservesLimits.Deformation.OfPreservesLimits.StdElem.exists_iso`:
+  [Finite (ResidueField 𝓞)]
+  [PreservesLimits F]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Finite (ResidueField 𝓞)] [PreservesLimits F] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_Deformation_ProartinianCat_isCorepresentable_of_preservesLimits.lean:705:5: warning: `CategoryTheory.Limits.Cones.ext` has been deprecated: Use `CategoryTheory.Limits.Cone.ext` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.ext` to `Cone.ext x`).
+
+Hint: Replace the deprecated name:
+  Cones̵.ext
+'P2MW.S_Deformation_ProartinianCat_isCorepresentable_of_preservesLimits.solution' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
