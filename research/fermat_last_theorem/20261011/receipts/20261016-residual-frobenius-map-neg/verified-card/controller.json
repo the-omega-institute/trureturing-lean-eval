@@ -1,0 +1,56 @@
+{
+  "sha256": "65e69a66870ae947ba4e96ff069f0c9f1035ae036b65c5cc55d80b8594df97c5",
+  "exit": 0,
+  "empty_output_retry_done": false,
+  "source_sha256_after": "65e69a66870ae947ba4e96ff069f0c9f1035ae036b65c5cc55d80b8594df97c5",
+  "source_unchanged": true,
+  "olean_sha256": "7009476c2f4302073a6d257078096d019a4ec34c5b83fe99d853958f6e8e3f85",
+  "seconds": 53.40753725000832,
+  "pid": 37153,
+  "command": [
+    "/Users/macstudio/.local/omega-shims/lean",
+    "-j1",
+    "--trust=0",
+    "-Ddebug.skipKernelTC=false",
+    "-R",
+    "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src",
+    "-o",
+    "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-build/lib/lean/Submission/Supplier/Theorems/Thm_ResidualGaloisRep_exists_prime_not_dvd_sub_one_trace_frobenius_sq_ne.olean",
+    "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/Theorems/Thm_ResidualGaloisRep_exists_prime_not_dvd_sub_one_trace_frobenius_sq_ne.lean"
+  ],
+  "make_wrapper_pid": 32199,
+  "make_exit": 0,
+  "make_entry_failed": false,
+  "cache_binding_valid": true,
+  "canonical_make_running_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/2646a7c5c7725823aa7203a0-1792155122506070000.make-running.json",
+  "canonical_make_terminal_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/2646a7c5c7725823aa7203a0-1792155122506070000.make-terminal.json",
+  "kernel_terminal_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/2646a7c5c7725823aa7203a0-1792155122506070000.kernel/result.json",
+  "direct_dependencies": [
+    {
+      "module": "Submission.Supplier.Definitions.Def_GaloisRep_LocalConditions",
+      "source_sha256": "966a9ca341b94a89b6daed7c4cb4ef933f48bcabda2305f7387f4c7c3f7b189b",
+      "object_sha256": "bced9ae5abcf0beb1e999617195d5ecc94f40190412553b584491a57e9769534",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Definitions.Def_GaloisRep_Residual",
+      "source_sha256": "acaab9dd928d013c9340e77676443b27f1ffc090abea3f139482b8fd2f8e8ff5",
+      "object_sha256": "429ac7b7b2b45f4aee7f1d99d97669e2e968c350566949b758046d25d399fcab",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.P2M.Util",
+      "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+      "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.P2M.Sol.S_ResidualGaloisRep_exists_prime_not_dvd_sub_one_trace_frobenius_sq_ne",
+      "source_sha256": "27253f04c9c00e829b26846aac219f015ad73ca7832b41441086a5aaa0490b80",
+      "object_sha256": "1842ee90b3b9ec90446982b8c56b09e4130fd3a315ea8739792d6a1165c952d0",
+      "receipt_reused": true
+    }
+  ],
+  "stdout": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/2646a7c5c7725823aa7203a0-1792155122506070000.kernel/stdout.log",
+  "stderr": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/2646a7c5c7725823aa7203a0-1792155122506070000.kernel/stderr.log"
+}

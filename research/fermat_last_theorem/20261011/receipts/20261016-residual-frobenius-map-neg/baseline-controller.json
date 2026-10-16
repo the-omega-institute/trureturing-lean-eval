@@ -1,0 +1,80 @@
+{
+  "sha256": "06e4dbaeb013160dcbe7ee87ac4ce7a406aa5fb531b676cdbdeb282af3830e5b",
+  "exit": 1,
+  "empty_output_retry_done": false,
+  "source_sha256_after": "06e4dbaeb013160dcbe7ee87ac4ce7a406aa5fb531b676cdbdeb282af3830e5b",
+  "source_unchanged": true,
+  "olean_sha256": null,
+  "seconds": 26.14183516599587,
+  "pid": 29561,
+  "command": [
+    "/Users/macstudio/.local/omega-shims/lean",
+    "-j1",
+    "--trust=0",
+    "-Ddebug.skipKernelTC=false",
+    "-R",
+    "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src",
+    "-o",
+    "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-build/lib/lean/Submission/Supplier/P2M/Sol/S_ResidualGaloisRep_exists_prime_not_dvd_sub_one_trace_frobenius_sq_ne.olean",
+    "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_ResidualGaloisRep_exists_prime_not_dvd_sub_one_trace_frobenius_sq_ne.lean"
+  ],
+  "make_wrapper_pid": 29159,
+  "make_exit": 2,
+  "make_entry_failed": false,
+  "cache_binding_valid": true,
+  "canonical_make_running_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/d0cba47dde420b6044945275-1792115687834222000.make-running.json",
+  "canonical_make_terminal_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/d0cba47dde420b6044945275-1792115687834222000.make-terminal.json",
+  "kernel_terminal_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/d0cba47dde420b6044945275-1792115687834222000.kernel/result.json",
+  "direct_dependencies": [
+    {
+      "module": "Submission.Supplier.Definitions.Def_GaloisRep_LocalConditions",
+      "source_sha256": "966a9ca341b94a89b6daed7c4cb4ef933f48bcabda2305f7387f4c7c3f7b189b",
+      "object_sha256": "bced9ae5abcf0beb1e999617195d5ecc94f40190412553b584491a57e9769534",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Definitions.Def_GaloisRep_Residual",
+      "source_sha256": "acaab9dd928d013c9340e77676443b27f1ffc090abea3f139482b8fd2f8e8ff5",
+      "object_sha256": "429ac7b7b2b45f4aee7f1d99d97669e2e968c350566949b758046d25d399fcab",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Theorems.Thm_Subgroup_exists_prime_isFrobeniusAt_conj_pow_mem_conj_mem_of_isOpen",
+      "source_sha256": "fb4a304b08df80508e84c57f91e4948adc3e9f9877e04a303388b60d71cfe934",
+      "object_sha256": "da3ecd1a16c541bd164652a36dcba17d5b210dd08c3a07d4660f32633c34e993",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Theorems.Thm_ResidualGaloisRep_isAbsolutelyIrreducible_iff_span_eq_top",
+      "source_sha256": "c0643cd1693b6a393b5c8aed90e9ed0dd83113a99337f347d9733f2b70d947a7",
+      "object_sha256": "d05889fa0e7ab6b10f6e615c98c1a2cd21263e55364f52e99095c58ee2f296b9",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Theorems.Thm_GlobalGaloisRep_IsUnramifiedAt_exists_apply_eq_apply_conj_of_isFrobeniusAt",
+      "source_sha256": "0ff192dd2a5294c0b7c1d1237d27fcc80808c77f943f50a8a1756966e39d8309",
+      "object_sha256": "9f5f5af715c3fc88bfcaafa7079eb9afee84a443c8e927e54e6a912e3972ff82",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Theorems.Thm_ValuationSubring_IsFrobeniusAt_apply_rootOfUnity_eq_pow",
+      "source_sha256": "1b9aa64c812fef9972c8b25588638fa1508099c3765bc408ae2240572e4d4f9a",
+      "object_sha256": "d39b06f6255340b3e90a5f9b92415f7d5bad8c1f2f7d10a333952d09c4dc544c",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Theorems.Thm_ValuationSubring_exists_isFrobeniusAt_rat",
+      "source_sha256": "ad4bb122c0d7ddbd0662c816d9f9019421319af56d9b2b30a0ef16ade0eb828b",
+      "object_sha256": "a7d38fb957d3c219033e3442515b24c34d4b18f9fa4c161f15774bc31c6fe947",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.P2M.Util",
+      "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+      "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+      "receipt_reused": true
+    }
+  ],
+  "stdout": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/d0cba47dde420b6044945275-1792115687834222000.kernel/stdout.log",
+  "stderr": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/d0cba47dde420b6044945275-1792115687834222000.kernel/stderr.log"
+}

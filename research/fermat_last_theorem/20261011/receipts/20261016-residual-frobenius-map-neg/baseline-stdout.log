@@ -1,0 +1,105 @@
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_ResidualGaloisRep_exists_prime_not_dvd_sub_one_trace_frobenius_sq_ne.lean:511:6: warning: `if_true` has been deprecated: Use `ite_true` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵t̵r̵u̵e̵i̲t̲e̲_̲t̲r̲u̲e̲
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_ResidualGaloisRep_exists_prime_not_dvd_sub_one_trace_frobenius_sq_ne.lean:511:15: warning: `if_false` has been deprecated: Use `ite_false` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵f̵a̵l̵s̵e̵i̲t̲e̲_̲f̲a̲l̲s̲e̲
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_ResidualGaloisRep_exists_prime_not_dvd_sub_one_trace_frobenius_sq_ne.lean:778:2: warning: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_ResidualGaloisRep_exists_prime_not_dvd_sub_one_trace_frobenius_sq_ne.lean:795:2: warning: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_ResidualGaloisRep_exists_prime_not_dvd_sub_one_trace_frobenius_sq_ne.lean:853:29: error: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  ?f (-?a)
+in the target expression
+  φ (-1) = -1
+
+k : Type
+inst✝² : Field k
+ρbar : ResidualGaloisRep k
+b : Module.Basis (Fin 2) k ρbar.V
+inst✝¹ : Fact (Nat.Prime 3)
+inst✝ : CharP k 3
+h2 : 2 ≠ 0
+habs : ρbar.IsAbsolutelyIrreducible
+hdet : (GaloisRepAdic.ofResidualGaloisRep ρbar).DetIsCyclotomic 3
+hTW :
+  ∀ (K : Type) [inst : Field K] [inst_1 : Algebra k K] (G : Subgroup Gal(AlgebraicClosure ℚ/ℚ)),
+    G.index = 2 →
+      ∀ (V : Submodule K (baseChange K ρbar).V), (∀ σ ∈ G, ∀ v ∈ V, ((baseChange K ρbar).ρ σ) v ∈ V) → V = ⊥ ∨ V = ⊤
+ℓ₁ : ℕ
+hℓ₁p : ℓ₁ > 3
+hℓ₁ : Nat.Prime ℓ₁
+hℓ₁a : ↑ℓ₁ = -1
+A₁ : ValuationSubring (AlgebraicClosure ℚ)
+hA₁ : A₁.LiesOverPrime ℓ₁
+τ₁ : Gal(AlgebraicClosure ℚ/ℚ)
+hτ₁ : A₁.IsFrobeniusAt τ₁ ℓ₁
+φ : ZMod 3 →+* k := ZMod.castHom ⋯ k
+⊢ φ (-1) = -1
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_ResidualGaloisRep_exists_prime_not_dvd_sub_one_trace_frobenius_sq_ne.lean:870:25: error: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  ?f (-?a)
+in the target expression
+  φ (-1) = -1
+
+case inr
+k : Type
+inst✝² : Field k
+ρbar : ResidualGaloisRep k
+b : Module.Basis (Fin 2) k ρbar.V
+inst✝¹ : Fact (Nat.Prime 3)
+inst✝ : CharP k 3
+h2 : 2 ≠ 0
+habs : ρbar.IsAbsolutelyIrreducible
+hdet : (GaloisRepAdic.ofResidualGaloisRep ρbar).DetIsCyclotomic 3
+hTW :
+  ∀ (K : Type) [inst : Field K] [inst_1 : Algebra k K] (G : Subgroup Gal(AlgebraicClosure ℚ/ℚ)),
+    G.index = 2 →
+      ∀ (V : Submodule K (baseChange K ρbar).V), (∀ σ ∈ G, ∀ v ∈ V, ((baseChange K ρbar).ρ σ) v ∈ V) → V = ⊥ ∨ V = ⊤
+ℓ₁ : ℕ
+hℓ₁p : ℓ₁ > 3
+hℓ₁ : Nat.Prime ℓ₁
+hℓ₁a : ↑ℓ₁ = -1
+A₁ : ValuationSubring (AlgebraicClosure ℚ)
+hA₁ : A₁.LiesOverPrime ℓ₁
+τ₁ : Gal(AlgebraicClosure ℚ/ℚ)
+hτ₁ : A₁.IsFrobeniusAt τ₁ ℓ₁
+φ : ZMod 3 →+* k := ZMod.castHom ⋯ k
+hdet₁ : ((matRep ρbar b) τ₁).det = -1
+g : Gal(AlgebraicClosure ℚ/ℚ)
+a : ℕ
+ha : LinearMap.det (ρbar.ρ g) = ↑a
+hdg : ((matRep ρbar b) g).det = φ ↑a
+ha0 : ↑a ≠ 0
+hcases : ∀ (x : ZMod 3), x ≠ 0 → x = 1 ∨ x = -1
+h : ↑a = -1
+⊢ φ (-1) = -1
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_ResidualGaloisRep_exists_prime_not_dvd_sub_one_trace_frobenius_sq_ne.lean:963:2: warning: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_ResidualGaloisRep_exists_prime_not_dvd_sub_one_trace_frobenius_sq_ne.lean:1076:2: warning: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`

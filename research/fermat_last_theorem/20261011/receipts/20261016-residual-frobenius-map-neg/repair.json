@@ -1,0 +1,39 @@
+{
+  "at": "2026-10-16T12:50:06.387301+00:00",
+  "name": "ResidualGaloisRep_exists_prime_not_dvd_sub_one_trace_frobenius_sq_ne",
+  "source_replacements": [
+    [
+      "      \u2190 map_natCast \u03c6, h\u2113\u2081a, map_neg, map_one]",
+      "      \u2190 map_natCast \u03c6, h\u2113\u2081a]\n    exact (map_neg \u03c6 (1 : ZMod 3)).trans (congrArg Neg.neg (map_one \u03c6))",
+      1
+    ],
+    [
+      "    \u00b7 right; rw [hdg, h, map_neg, map_one]",
+      "    \u00b7 right\n      rw [hdg, h]\n      exact (map_neg \u03c6 (1 : ZMod 3)).trans (congrArg Neg.neg (map_one \u03c6))",
+      1
+    ],
+    [
+      "if_true",
+      "ite_true",
+      1
+    ],
+    [
+      "if_false",
+      "ite_false",
+      1
+    ],
+    [
+      "haveI",
+      "have",
+      4
+    ]
+  ],
+  "baseline_byte_identical_to_pinned_supplier": true,
+  "full_original_statements_hypotheses_and_all_proof_branches_preserved": true,
+  "no_linter_suppression_added": true,
+  "verification_pending": false,
+  "candidate": "r1",
+  "active_import_closure_excluded": [
+    "Submission.Supplier.P2M.Sol.S_GaloisRepAdic_galoisActionIsAdicContinuous_toLin_of_continuous"
+  ]
+}
