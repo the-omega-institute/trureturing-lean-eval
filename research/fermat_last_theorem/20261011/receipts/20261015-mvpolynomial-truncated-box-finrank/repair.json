@@ -1,0 +1,21 @@
+{
+  "at": "2026-10-15T14:44:51.663463+00:00",
+  "name": "MvPolynomial_finrank_quotient_span_range_X_pow_eq_prod",
+  "failure": "Unknown identifier coeff_zero after MvPolynomial coefficient API change",
+  "source_changes": [
+    "Replace rw [coeff_zero] by change AddMonoidAlgebra.coeff P m = 0, using the definitional coefficient of zero",
+    "Set.mem_setOf_eq -> Set.mem_ofPred_eq"
+  ],
+  "printed_axioms": [
+    "P2MW.S_MvPolynomial_finrank_quotient_span_range_X_pow_eq_prod.solution",
+    "MvPolynomial.finrank_quotient_span_range_X_pow_eq_prod"
+  ],
+  "baseline_byte_identical_to_pinned_supplier": true,
+  "complete_original_statement_hypotheses_and_proof_structure_preserved": true,
+  "active_import_closure_excluded": [
+    "Submission.Supplier.Theorems.Thm_Nat_exists_squarefree_sq_add"
+  ],
+  "imports_and_attributes_unchanged": true,
+  "no_linter_suppression_added": true,
+  "verification_pending": false
+}

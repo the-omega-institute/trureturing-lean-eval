@@ -1,0 +1,41 @@
+{
+  "at": "2026-10-16T00:40:51.770874+00:00",
+  "name": "MvPolynomial_finrank_quotient_span_range_X_pow_eq_prod",
+  "checks": {
+    "source": {
+      "module": "Submission.Supplier.P2M.Sol.S_MvPolynomial_finrank_quotient_span_range_X_pow_eq_prod",
+      "make_exit": 0,
+      "kernel_exit": 0,
+      "kernel_seconds": 36.455030709,
+      "warnings": 0,
+      "recursive_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "current_dependency_receipts_match": true
+    },
+    "card": {
+      "module": "Submission.Supplier.Theorems.Thm_MvPolynomial_finrank_quotient_span_range_X_pow_eq_prod",
+      "make_exit": 0,
+      "kernel_exit": 0,
+      "kernel_seconds": 46.485415333,
+      "warnings": 0,
+      "recursive_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "current_dependency_receipts_match": true
+    }
+  },
+  "baseline_byte_identical_to_pinned_supplier": true,
+  "full_original_statement_and_hypotheses_preserved": true,
+  "complete_support_complement_box_equivalence_and_basis_finrank_proof_preserved": true,
+  "repair": "Use the definitional coefficient of zero and update the actually warned Set membership name; retain the entire original proof.",
+  "no_linter_suppression_added": true,
+  "max_active_flt_jobs": 1,
+  "lean_threads": 1,
+  "full_original_complete": false,
+  "official_new_solve_credit": 0
+}
