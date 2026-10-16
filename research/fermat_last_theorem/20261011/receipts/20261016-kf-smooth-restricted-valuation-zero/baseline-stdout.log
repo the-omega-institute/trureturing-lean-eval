@@ -1,0 +1,40 @@
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_AutomorphicForm_IsKfSmooth_exists_ideal_forall_apply_mul_conj_unipotentGL2_eq.lean:68:14: error: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  @Eq (MonoidWithZeroHom.ValueGroup₀ ?m.171) ((MonoidWithZeroHom.ValueGroup₀.restrict₀ ?m.171) ?m.172) 0
+in the target expression
+  @Eq (↑Valued.v).ValueGroup₀ ((MonoidWithZeroHom.ValueGroup₀.restrict₀ (MonoidWithZeroHom.ofClass Valued.v)) t) 0
+
+F : Type
+inst✝¹ : Field F
+inst✝ : NumberField F
+v : HeightOneSpectrum (𝓞 F)
+U : Set ↥(HeightOneSpectrum.adicCompletionIntegers F v)
+hU : U ∈ 𝓝 0
+u : Set (HeightOneSpectrum.adicCompletion F v)
+huU : Subtype.val ⁻¹' u ⊆ U
+hu : u ∈ 𝓝 0
+γ : (↑Valued.v).ValueGroup₀ˣ
+hγ : {x | Valued.v.restrict x < ↑γ} ⊆ u
+t : HeightOneSpectrum.adicCompletion F v
+ht : (MonoidWithZeroHom.ValueGroup₀.restrict₀ (MonoidWithZeroHom.ofClass Valued.v)) t = ↑γ
+h : Valued.v t = 0
+⊢ (MonoidWithZeroHom.ValueGroup₀.restrict₀ (MonoidWithZeroHom.ofClass Valued.v)) t = 0
+
+Note: The target expression is not type-correct under the `implicit` transparency level, which may have triggered the failure. This is usually caused by unfolding of semireducible definitions in prior tactic steps. Use `set_option linter.tacticCheckInstances true` to investigate the source of the issue.
+Full error:
+  Application type mismatch: The argument
+    (MonoidWithZeroHom.ValueGroup₀.restrict₀ (MonoidWithZeroHom.ofClass Valued.v)) t
+  has type
+    @MonoidWithZeroHom.ValueGroup₀ (HeightOneSpectrum.adicCompletion F v) (WithZero (Multiplicative ℤ))
+      Field.toSemifield.toDivisionSemiring.toGroupWithZero.toMonoidWithZero WithZero.instGroupWithZero.toMonoidWithZero
+      (MonoidWithZeroHom.ofClass Valued.v)
+  but is expected to have type
+    @MonoidWithZeroHom.ValueGroup₀ (HeightOneSpectrum.adicCompletion F v) (WithZero (Multiplicative ℤ))
+      (HeightOneSpectrum.adicCompletion.instField F v).toDivisionRing.toMonoidWithZero
+      WithZero.instLinearOrderedCommGroupWithZeroMultiplicativeInt.toCommGroupWithZero.toGroupWithZero.toMonoidWithZero
+      ↑Valued.v
+  in the application
+    Eq ((MonoidWithZeroHom.ValueGroup₀.restrict₀ (MonoidWithZeroHom.ofClass Valued.v)) t)
+'P2MW.S_AutomorphicForm_IsKfSmooth_exists_ideal_forall_apply_mul_conj_unipotentGL2_eq.solution' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]

@@ -1,0 +1,21 @@
+{
+  "at": "2026-10-16T12:32:40.653599+00:00",
+  "name": "AutomorphicForm_IsKfSmooth_exists_ideal_forall_apply_mul_conj_unipotentGL2_eq",
+  "source_replacements": [
+    [
+      "    apply \u03b3.ne_zero\n    rw [\u2190 ht, MonoidWithZeroHom.ValueGroup\u2080.restrict\u2080_eq_zero_iff]\n    exact h",
+      "    exact \u03b3.ne_zero (ht.symm.trans\n      (MonoidWithZeroHom.ValueGroup\u2080.restrict\u2080_eq_zero_iff.mpr h))",
+      1
+    ]
+  ],
+  "baseline_byte_identical_to_pinned_supplier": true,
+  "full_original_statements_hypotheses_and_all_proof_branches_preserved": true,
+  "no_linter_suppression_added": true,
+  "verification_pending": false,
+  "candidate": "r1",
+  "active_import_closure_excluded": [
+    "Submission.Supplier.P2M.Sol.S_Deformation_TraceAlgebra_descends"
+  ],
+  "pinned_supplier_source_and_card_preserved": true,
+  "pinned_originals_checked_at": "2026-10-16T20:56:56.336323+00:00"
+}
