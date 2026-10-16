@@ -1,0 +1,55 @@
+{
+  "at": "2026-10-16T00:49:41.557471+00:00",
+  "name": "WeierstrassCurve_nonempty_functionField_algEquiv_of_variableChange",
+  "source_replacements": [
+    [
+      "Ideal.eq_bot_of_comap_eq_bot",
+      "Ideal.eq_bot_of_under_eq_bot",
+      1
+    ],
+    [
+      "rw [RingHom.comap_ker, pointPullbackCoordHomTo_comp_algebraMap,",
+      "rw [Ideal.under_def, RingHom.comap_ker, pointPullbackCoordHomTo_comp_algebraMap,",
+      1
+    ],
+    [
+      "    haveI : Module.Finite F[X] W.CoordinateRing :=\n",
+      "    have : Module.Finite F[X] W.CoordinateRing :=\n",
+      1
+    ],
+    [
+      "MonoidHom.coe_coe",
+      "MonoidHom.coe_ofClass",
+      2
+    ]
+  ],
+  "pinned_supplier_source_and_card_preserved": true,
+  "full_original_statements_hypotheses_attributes_and_function_field_proof_preserved": true,
+  "no_linter_suppression_added": true,
+  "verification_pending": false,
+  "candidate": "r1",
+  "actual_baseline_warnings": 4,
+  "active_import_closure_excluded": [
+    "Submission.Supplier.Theorems.Thm_ModularCurve_JZeroNeronObjectAtP_mem_finPts_iff"
+  ],
+  "card_candidate": "r2",
+  "card_replacements": [
+    [
+      "instIsScalarTowerPolynomialRatFuncFunctionField_definitions",
+      "instIsScalarTowerPolynomialRatFuncFunctionField_submission",
+      1
+    ],
+    [
+      "instAlgebraRatFuncFunctionField_definitions",
+      "instAlgebraRatFuncFunctionField_submission",
+      1
+    ],
+    [
+      "instIsScalarTowerRatFuncFunctionField_definitions",
+      "instIsScalarTowerRatFuncFunctionField_submission",
+      1
+    ]
+  ],
+  "card_rename_evidence": "Current definition-module olean contains all three generated instance names with _submission suffix; preserve each original attribute-removal entry by updating that suffix.",
+  "updated_at": "2026-10-16T12:15:21.693814+00:00"
+}

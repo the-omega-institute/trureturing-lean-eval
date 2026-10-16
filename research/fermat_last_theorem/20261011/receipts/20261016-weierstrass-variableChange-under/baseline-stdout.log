@@ -1,0 +1,36 @@
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_WeierstrassCurve_nonempty_functionField_algEquiv_of_variableChange.lean:158:4: warning: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_WeierstrassCurve_nonempty_functionField_algEquiv_of_variableChange.lean:160:11: warning: `Ideal.eq_bot_of_comap_eq_bot` has been deprecated: Use `Ideal.eq_bot_of_under_eq_bot` instead
+
+Hint: Replace the deprecated name:
+  I̵d̵e̵a̵l̵.̵e̵q̵_̵b̵o̵t̵_̵o̵f̵_̵c̵o̵m̵a̵p̵_̵e̵q̵_̵b̵o̵t̵I̲d̲e̲a̲l̲.̲e̲q̲_̲b̲o̲t̲_̲o̲f̲_̲u̲n̲d̲e̲r̲_̲e̲q̲_̲b̲o̲t̲
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_WeierstrassCurve_nonempty_functionField_algEquiv_of_variableChange.lean:161:8: error: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  Ideal.comap ?g (RingHom.ker ?f)
+in the target expression
+  Ideal.under F[X] (RingHom.ker (pointPullbackCoordHomTo h).toRingHom) = ⊥
+
+F : Type u
+inst✝² : Field F
+W : Affine F
+L : Type u
+inst✝¹ : Field L
+inst✝ : Algebra F L
+xP yP : L
+h : (toAffine (W.map (algebraMap F L))).Equation xP yP
+hx : Function.Injective ⇑(aeval xP)
+this : Module.Finite F[X] W.CoordinateRing
+⊢ Ideal.under F[X] (RingHom.ker (pointPullbackCoordHomTo h).toRingHom) = ⊥
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_WeierstrassCurve_nonempty_functionField_algEquiv_of_variableChange.lean:521:48: warning: `MonoidHom.coe_coe` has been deprecated: Use `MonoidHom.coe_ofClass` instead
+
+Hint: Replace the deprecated name:
+  M̵o̵n̵o̵i̵d̵H̵o̵m̵.̵c̵o̵e̵_̵c̵o̵e̵M̲o̲n̲o̲i̲d̲H̲o̲m̲.̲c̲o̲e̲_̲o̲f̲C̲l̲a̲s̲s̲
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_WeierstrassCurve_nonempty_functionField_algEquiv_of_variableChange.lean:527:48: warning: `MonoidHom.coe_coe` has been deprecated: Use `MonoidHom.coe_ofClass` instead
+
+Hint: Replace the deprecated name:
+  M̵o̵n̵o̵i̵d̵H̵o̵m̵.̵c̵o̵e̵_̵c̵o̵e̵M̲o̲n̲o̲i̲d̲H̲o̲m̲.̲c̲o̲e̲_̲o̲f̲C̲l̲a̲s̲s̲
