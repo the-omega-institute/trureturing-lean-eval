@@ -1,0 +1,33 @@
+{
+  "at": "2026-10-16T12:51:34.961513+00:00",
+  "name": "WeierstrassCurve_ProjModel_GroupLawVocabulary",
+  "source_prefix": "Definitions/Def_",
+  "source_replacements": [
+    [
+      "    \u00b7 rw [h0, hzero, MvPolynomial.coeff_zero]",
+      "    \u00b7 rw [h0, hzero]\n      rfl",
+      1
+    ],
+    [
+      "haveI",
+      "have",
+      5
+    ]
+  ],
+  "axiom_declarations": [
+    "WeierstrassProjModel.kw_lrSymOC_isDomain_quotSpanPair",
+    "WeierstrassProjModel.kw_lrSymOC_univ_mem_span",
+    "WeierstrassProjModel.finiteType_gradeZero_of_finiteType_base",
+    "WeierstrassProjModel.kw_lrChart_dehom_isHomogeneous_val",
+    "WeierstrassProjModel.kw_pbac_ambient_irrelevant_le_span_X_CR"
+  ],
+  "baseline_byte_identical_to_pinned_supplier": false,
+  "baseline_prior_port_diff": "Only the existing MvPolynomial.coeff argument-order compatibility macros; archived supplier original. All original statements, hypotheses and proof bodies match.",
+  "full_original_statements_hypotheses_and_all_proof_branches_preserved": true,
+  "no_linter_suppression_added": true,
+  "verification_pending": false,
+  "candidate": "r1",
+  "active_import_closure_excluded": [
+    "Submission.Supplier.P2M.Sol.S_ResidualGaloisRep_exists_prime_not_dvd_sub_one_trace_frobenius_sq_ne"
+  ]
+}
