@@ -1,0 +1,82 @@
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_AlgebraicGeometry_IsFinite_ringKrullDim_stalk_quotient_eq_zero.lean:34:2: warning: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_AlgebraicGeometry_IsFinite_ringKrullDim_stalk_quotient_eq_zero.lean:35:2: warning: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_AlgebraicGeometry_IsFinite_ringKrullDim_stalk_quotient_eq_zero.lean:36:2: warning: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_AlgebraicGeometry_IsFinite_ringKrullDim_stalk_quotient_eq_zero.lean:41:13: error: could not synthesize default value for parameter 'x._@.Mathlib.Data.List.TFAE.4142160432._hygCtx._hyg.49' using tactics
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_AlgebraicGeometry_IsFinite_ringKrullDim_stalk_quotient_eq_zero.lean:41:13: error: TFAE indices start at 1.
+R : Type u_1
+S : Type u_2
+inst✝⁶ : CommRing R
+inst✝⁵ : CommRing S
+inst✝⁴ : IsLocalRing R
+inst✝³ : IsLocalRing S
+inst✝² : Algebra R S
+inst✝¹ : IsLocalHom (algebraMap R S)
+inst✝ : Algebra.QuasiFinite R S
+e : (maximalIdeal R).Fiber S ≃ₐ[R] S ⧸ Ideal.map (algebraMap R S) (maximalIdeal R) :=
+  (Algebra.TensorProduct.congr
+        (AlgEquiv.ofBijective (Ideal.Quotient.liftₐ (maximalIdeal R) (Algebra.ofId R (maximalIdeal R).ResidueField) ⋯)
+            ⋯).symm
+        AlgEquiv.refl).trans
+    ((Algebra.TensorProduct.comm R (R ⧸ maximalIdeal R) S).trans
+      (AlgEquiv.restrictScalars R (Algebra.TensorProduct.quotIdealMapEquivTensorQuot S (maximalIdeal R)).symm))
+this✝ : IsArtinianRing ((maximalIdeal R).Fiber S)
+hA : IsArtinianRing (S ⧸ Ideal.map (algebraMap R S) (maximalIdeal R))
+this : Ring.KrullDimLE 0 (S ⧸ Ideal.map (algebraMap R S) (maximalIdeal R))
+⊢ 0 ≠ 0
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_AlgebraicGeometry_IsFinite_ringKrullDim_stalk_quotient_eq_zero.lean:39:2: warning: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_AlgebraicGeometry_IsFinite_ringKrullDim_stalk_quotient_eq_zero.lean:51:2: warning: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_AlgebraicGeometry_IsFinite_ringKrullDim_stalk_quotient_eq_zero.lean:52:2: warning: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_AlgebraicGeometry_IsFinite_ringKrullDim_stalk_quotient_eq_zero.lean:53:2: warning: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+'P2MW.S_AlgebraicGeometry_IsFinite_ringKrullDim_stalk_quotient_eq_zero.solution' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]

@@ -1,0 +1,35 @@
+{
+  "at": "2026-10-16T12:18:19.282093+00:00",
+  "name": "AlgebraicGeometry_IsFinite_ringKrullDim_stalk_quotient_eq_zero",
+  "source_prefix": "P2M/Sol/S_",
+  "source_replacements": [
+    [
+      "(((local_hom_TFAE (algebraMap R S)).out 0 2 rfl rfl).mp inferInstance)",
+      "(IsLocalRing.map_maximalIdeal_le (algebraMap R S))",
+      1
+    ],
+    [
+      "haveI",
+      "have",
+      6
+    ],
+    [
+      "letI",
+      "let",
+      1
+    ]
+  ],
+  "axiom_declarations": [
+    "solution"
+  ],
+  "baseline_byte_identical_to_pinned_supplier": true,
+  "full_original_statements_hypotheses_and_all_proof_branches_preserved": true,
+  "no_linter_suppression_added": true,
+  "verification_pending": false,
+  "candidate": "r1",
+  "active_import_closure_excluded": [
+    "Submission.Supplier.P2M.Sol.S_ModularCurve_natCard_componentGroup_eq_natAbs_det_diffChar"
+  ],
+  "pinned_supplier_source_and_card_preserved": true,
+  "pinned_originals_checked_at": "2026-10-16T20:44:32.228997+00:00"
+}
