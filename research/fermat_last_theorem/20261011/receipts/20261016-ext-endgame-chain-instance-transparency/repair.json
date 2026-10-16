@@ -1,0 +1,62 @@
+{
+  "at": "2026-10-16T12:18:19.269831+00:00",
+  "name": "ExtEndgame_ChainAdm",
+  "source_prefix": "Definitions/Def_",
+  "source_replacements": [
+    [
+      "(Rep.res (loc' v) (ofChar (k := ZMod p) \u03c8)).\u03c1.invariants",
+      "((Rep.invariantsFunctor (ZMod p) (\u0393v' v)).obj (Rep.res (loc' v) (ofChar (k := ZMod p) \u03c8)))",
+      1
+    ],
+    [
+      "(ofChar (k := ZMod p) \u03c8).\u03c1.invariants",
+      "((Rep.invariantsFunctor (ZMod p) \u0393').obj (ofChar (k := ZMod p) \u03c8))",
+      1
+    ]
+  ],
+  "axiom_declarations": [
+    "ExtCitation.ExtChainAdmResidual.mk"
+  ],
+  "baseline_byte_identical_to_pinned_supplier": true,
+  "full_original_statements_hypotheses_and_all_proof_branches_preserved": true,
+  "no_linter_suppression_added": true,
+  "verification_pending": false,
+  "candidate": "r9",
+  "active_import_closure_excluded": [
+    "Submission.Supplier.Theorems.Thm_AutomorphicForm_memLp_iUnion_centreCutSiegelSet_of_detWindow_le"
+  ],
+  "installed": true,
+  "installed_at": "2026-10-16T21:18:31.880646+00:00",
+  "active_transitive_import_closure_size": 22,
+  "actual_live_descendant_sources": [],
+  "explicit_carrier_evidence": "ofChar is Rep.of of a representation on ZMod p; Rep.res preserves the same V. Both invariant submodules therefore have V := ZMod p by definitional equality.",
+  "discarded_r1": "The prior instance-search transparency option left the same two actual Module synthesis errors; failed make and kernel receipts preserved.",
+  "discarded_r2": "Actual current make/kernel exits 2/1 at configuration 3cdf1957d0be01d02eeb887d-1792179395419070000; specifying only V still failed Module (ZMod p) (ZMod p) twice. Complete failed-r2 receipts preserved.",
+  "explicit_self_module_evidence": "Mathlib Algebra.Module.Defs declares Semiring.toModule, the standard Module R R. Supply that existing instance explicitly to Representation.invariants, keeping original carriers, fields, and all hypotheses.",
+  "r3_prepared_at": "2026-10-16T19:40:10.933337+00:00",
+  "all_four_canonical_adapted_source_card_modules_excluded": [
+    "Definitions.Def_ExtEndgame_ChainAdm",
+    "Submission.Supplier.Definitions.Def_ExtEndgame_ChainAdm",
+    "Submission.Supplier.Theorems.Thm_ExtEndgame_ChainAdm",
+    "Theorems.Thm_ExtEndgame_ChainAdm"
+  ],
+  "discarded_r3": "Actual make/kernel exits 2/1 at configuration 3cdf1957d0be01d02eeb887d-1792181151896471000. Semiring.toModule has implicit carrier; it is itself a Module instance, so the two extra underscore applications were erroneous. Complete failed-r3 receipts preserved.",
+  "r4_prepared_at": "2026-10-16T20:08:22.610764+00:00",
+  "discarded_r4": "Actual make/kernel exits 2/1; explicit self-module resolved synthesis. Both remaining diagnostics require coercing the returned Submodule to its carrier type. Complete failed-r4 receipts preserved.",
+  "r5_prepared_at": "2026-10-16T20:17:27.848307+00:00",
+  "r5_change": "Explicit carrier type coercion at the original hsum and hM invariant-submodule arguments; retain the standard Semiring.toModule instance and every original field/hypothesis.",
+  "discarded_r5": "Actual make/kernel 2/1; both explicit carrier coercions cannot synthesize CoeSort. Full receipts preserved. SetLike for Submodule requires matching standard base algebraic instances.",
+  "r6_change": "Specify the existing standard CommRing, Group, and AddCommGroup arguments to Representation.invariants before its existing self-module argument; avoid implicit additive-group arguments inferred from bundled representations. Preserve all original fields/hypotheses.",
+  "r6_prepared_at": "2026-10-16T20:24:11.350167+00:00",
+  "discarded_r6": "Actual make/kernel 2/1; specifying every standard Representation.invariants instance still produced two cannot-coerce-to-sort diagnostics. Full failed-r6 receipts preserved.",
+  "r7_change": "Give the standard self-module locally at the exact bundled carrier type over the entire original finrank expression, so invariants, its carrier coercion and induced subtype module share the same instance scope. Retain original finrank/invariants expressions, every field and hypothesis.",
+  "r7_prepared_at": "2026-10-16T20:31:18.600332+00:00",
+  "discarded_r7": "Actual make/kernel 2/1, two Module synthesis errors inside both finrank expressions despite explicit locally scoped self-module. Full actual failed-r7 receipts preserved.",
+  "r8_change": "Diagnostic-only pp.all around the structure and synthInstance trace scoped only to hM finrank. Preserve original statements, fields, hypotheses and r7 instance terms; gather actual hidden algebraic instance arguments before next repair.",
+  "r8_prepared_at": "2026-10-16T21:03:36.377951+00:00",
+  "diagnostic_only": false,
+  "discarded_r8": "Diagnostic make/kernel2/1, zero warnings, two errors. Actual fully explicit Module errors use instAddCommGroupOfIsSimpleAddGroupOfIsNilpotent, whereas the bundled representations carry their canonical compatible additive/module instances. Full 2 MB trace and receipts archived.",
+  "r9_change": "Use existing Rep.invariantsFunctor (ZMod p) G .obj for exactly the same invariant carrier, packaged with its coherent ModuleCat instances. Mathlib Invariants.lean:250 defines obj A := ModuleCat.of A.\u03c1.invariants. Retain every original field/hypothesis and remove all diagnostic options.",
+  "r9_prepared_at": "2026-10-16T21:18:31.880646+00:00",
+  "library_api_evidence": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/official-deps/.lake/packages/mathlib/Mathlib/RepresentationTheory/Invariants.lean:250"
+}
