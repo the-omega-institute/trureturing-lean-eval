@@ -1,0 +1,80 @@
+{
+  "at": "2026-10-17T11:44:15.898721+00:00",
+  "name": "CerednikDrinfeld_heckeKernelMap_classSetHeckeData_apply_eq_neg_comp_classSetShift",
+  "candidate": "r1",
+  "card_candidate": "r1",
+  "source_replacements": [
+    [
+      "obtain \u27e8\u03b4, s, h\u03b4, hs, hout\u27e9 :=",
+      "obtain \u27e8\u03b4, h\u03b4, s, hs, hout\u27e9 :=",
+      1
+    ],
+    [
+      "dif_pos",
+      "dite_eq_left",
+      1
+    ],
+    [
+      "if_pos",
+      "ite_eq_left",
+      3
+    ],
+    [
+      "if_neg",
+      "ite_eq_right",
+      2
+    ],
+    [
+      "(hq'N : \u00ac q' \u2223 N)",
+      "(_hq'N : \u00ac q' \u2223 N)",
+      1
+    ],
+    [
+      "(h\u039b : IsMaximalOrder \u039b)",
+      "(_h\u039b : IsMaximalOrder \u039b)",
+      1
+    ],
+    [
+      "(hR\u039b : R \u2264 \u039b)",
+      "(_hR\u039b : R \u2264 \u039b)",
+      1
+    ]
+  ],
+  "card_replacements": [],
+  "baseline_byte_identical_to_pinned_supplier": false,
+  "baseline_difference": "Preexisting normalization removes only five obsolete disabled instance names;the pinned supplier source/card and normalized baseline are both archived.",
+  "preexisting_removed_obsolete_instance_names": [
+    "IsDedekindDomain.HeightOneSpectrum.adicCompletion.instIsDiscreteValuationRingSubtypeMemValuationSubringAdicCompletionIntegers_definitions",
+    "IsDedekindDomain.HeightOneSpectrum.adicCompletion.instDimensionLEOneSubtypeMemValuationSubringAdicCompletionIntegers_definitions",
+    "IsDedekindDomain.HeightOneSpectrum.adicCompletion.instIsPrincipalIdealRingSubtypeMemValuationSubringAdicCompletionIntegers_definitions",
+    "IsDedekindDomain.HeightOneSpectrum.adicCompletion.instIsDiscreteValuationRingSubtypeMemSubringIntegerWithZeroMultiplicativeInt_definitions",
+    "IsDedekindDomain.HeightOneSpectrum.instIsRankOneDiscreteWithZeroMultiplicativeIntAdicCompletionV_definitions"
+  ],
+  "public_card_statement_literal_preserved": true,
+  "solution_statement_only_unused_binder_names_changed": true,
+  "pinned_supplier_source_and_card_preserved": true,
+  "verification_pending": false,
+  "installed": true,
+  "no_linter_suppression_added": true,
+  "complete_original_proof_preserved": true,
+  "full_original_statement_and_hypotheses_preserved": true,
+  "max_active_flt_jobs": 1,
+  "lean_threads": 1,
+  "original_actual_errors": 2,
+  "original_actual_warnings": 9,
+  "original_kernel_seconds": 50.555219958,
+  "change": "Retain the complete original double-coset counting,shift and Hecke-kernel proof. Match pinned DoubleCoset.mk_out_eq_mul binder order delta,hdelta,s,hs;update deprecated if/dif aliases. Preserve all original solution hypotheses/types/conclusion,renaming only three actually unused proof binders with underscore prefixes;literal public card statement unchanged. Pinned supplier differs from existing canonical baseline only by five previously removed obsolete instance attributes. Natural source/card verification pending.",
+  "full_original_complete": false,
+  "official_new_solve_credit": 0,
+  "active_import_closure_excluded": [
+    "Submission.Supplier.P2M.Sol.S_CerednikDrinfeld_CosetGraph_awayUnits_meetOrder_finiteIdeleDiagonal_eq_inf_map_conj"
+  ],
+  "active_transitive_import_closure_size": 70,
+  "actual_live_descendant_sources": [],
+  "all_four_canonical_adapted_source_card_modules_excluded": [
+    "P2M.Sol.S_CerednikDrinfeld_heckeKernelMap_classSetHeckeData_apply_eq_neg_comp_classSetShift",
+    "Submission.Supplier.P2M.Sol.S_CerednikDrinfeld_heckeKernelMap_classSetHeckeData_apply_eq_neg_comp_classSetShift",
+    "Submission.Supplier.Theorems.Thm_CerednikDrinfeld_heckeKernelMap_classSetHeckeData_apply_eq_neg_comp_classSetShift",
+    "Theorems.Thm_CerednikDrinfeld_heckeKernelMap_classSetHeckeData_apply_eq_neg_comp_classSetShift"
+  ]
+}
