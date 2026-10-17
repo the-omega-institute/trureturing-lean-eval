@@ -1,0 +1,68 @@
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_WeierstrassProjModel_projModelStrCR_smooth_of_zChartBridge_of_yChartSmooth.lean:165:21: warning: `MvPolynomial.coeff_zero` has been deprecated: Use `AddMonoidAlgebra.coeff_zero` instead
+
+Note: The updated constant has a different type:
+  ∀ {R : Type u_1} {M : Type u_4} [inst : Semiring R], AddMonoidAlgebra.coeff 0 = 0
+instead of
+  ∀ {R : Type u} {σ : Type u_1} [inst : CommSemiring R], AddMonoidAlgebra.coeff 0 = 0
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.coeff_zero` to `AddMonoidAlgebra.coeff_zero x`).
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_WeierstrassProjModel_projModelStrCR_smooth_of_zChartBridge_of_yChartSmooth.lean:165:4: error: unsolved goals
+case pos
+R : Type
+inst✝ : CommRing R
+p : MvPolynomial (Fin 3) R
+hp : (GradedRing.projZeroRingHom (homogeneousSubmodule (Fin 3) R)) p = 0
+hzero : ↑(((DirectSum.decompose (homogeneousSubmodule (Fin 3) R)) p) 0) = 0
+n : ℕ
+x✝ : n ∈ DFinsupp.support ((DirectSum.decompose (homogeneousSubmodule (Fin 3) R)) p)
+h0 : n = 0
+⊢ 0 0 = 0
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_WeierstrassProjModel_projModelStrCR_smooth_of_zChartBridge_of_yChartSmooth.lean:347:2: warning: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_WeierstrassProjModel_projModelStrCR_smooth_of_zChartBridge_of_yChartSmooth.lean:348:2: warning: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_WeierstrassProjModel_projModelStrCR_smooth_of_zChartBridge_of_yChartSmooth.lean:809:2: warning: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_WeierstrassProjModel_projModelStrCR_smooth_of_zChartBridge_of_yChartSmooth.lean:869:70: warning: This simp argument is unused:
+  Matrix.head_cons
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [kw_no3a_wdp_mprt_acsCR_mkPartial, Matrix.cons_val_one, M, Ideal.mem_comap] at h1
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_WeierstrassProjModel_projModelStrCR_smooth_of_zChartBridge_of_yChartSmooth.lean:870:6: warning: This simp argument is unused:
+  M
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [kw_no3a_wdp_mprt_acsCR_mkPartial, Matrix.cons_val_one, Matrix.head_cons, Ideal.mem_comap] at h1
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_WeierstrassProjModel_projModelStrCR_smooth_of_zChartBridge_of_yChartSmooth.lean:870:9: warning: This simp argument is unused:
+  Ideal.mem_comap
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [kw_no3a_wdp_mprt_acsCR_mkPartial, Matrix.cons_val_one, Matrix.head_cons, M] at h1
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+'P2MW.S_WeierstrassProjModel_projModelStrCR_smooth_of_zChartBridge_of_yChartSmooth.solution' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]

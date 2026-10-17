@@ -1,0 +1,73 @@
+{
+  "at": "2026-10-17T16:51:05.792667+00:00",
+  "name": "WeierstrassProjModel_projModelStrCR_smooth_of_zChartBridge_of_yChartSmooth",
+  "candidate": "r2",
+  "card_candidate": "r1",
+  "source_replacements": [
+    [
+      "      \u2208 Ideal.span {Ideal.Quotient.mk (projModelHomogeneousIdealCR V).toIdeal\n          (X 2 : MvPolynomial (Fin 3) R)} := by",
+      "      \u2208 Ideal.span {(Ideal.Quotient.mk (projModelHomogeneousIdealCR V).toIdeal\n          (X 2 : MvPolynomial (Fin 3) R))} := by",
+      1
+    ],
+    [
+      "  haveI h1 := kw_no3a_wdp_mprt_pmsCR_smooth_toSpecZero V h\n",
+      "  have h1 := kw_no3a_wdp_mprt_pmsCR_smooth_toSpecZero V h\n",
+      1
+    ],
+    [
+      "  haveI h2 := kw_no3a_wdp_mprt_pmsCR_smooth_degreeZero_leg V\n",
+      "  have h2 := kw_no3a_wdp_mprt_pmsCR_smooth_degreeZero_leg V\n",
+      1
+    ],
+    [
+      "  haveI : Nontrivial (Polynomial (Polynomial R) \u29f8 M) :=\n",
+      "  have : Nontrivial (Polynomial (Polynomial R) \u29f8 M) :=\n",
+      1
+    ],
+    [
+      "    \u00b7 rw [h0, hzero, MvPolynomial.coeff_zero]",
+      "    \u00b7 rw [h0, hzero, AddMonoidAlgebra.coeff_zero]\n      rfl",
+      1
+    ],
+    [
+      "    simp only [kw_no3a_wdp_mprt_acsCR_mkPartial, Matrix.cons_val_one, Matrix.head_cons,\n      M, Ideal.mem_comap] at h1",
+      "    simp only [kw_no3a_wdp_mprt_acsCR_mkPartial, Matrix.cons_val_one] at h1",
+      1
+    ]
+  ],
+  "card_replacements": [],
+  "baseline_byte_identical_to_pinned_supplier": true,
+  "pinned_supplier_source_and_card_preserved": true,
+  "verification_pending": false,
+  "installed": true,
+  "no_linter_suppression_added": true,
+  "complete_original_proof_preserved": true,
+  "full_original_statement_and_hypotheses_preserved": true,
+  "max_active_flt_jobs": 1,
+  "lean_threads": 1,
+  "original_terminal_failure_observed": false,
+  "repair_trigger": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/official-layout/terminal-proof-repairs/20261017-projective-smooth-singleton-parser/verified-record.json",
+  "original_source_lines": 897,
+  "change": "Parenthesize the entire element of the same internal singleton-set expression that failed the pinned Lean parser in projective smoothness and base-change pullback. This notation-only repair already passed full make/kernel verification in projective smoothness. Retain the complete original proof, all public statements and every hypothesis. Source/card verification remains pending in the same natural one-job queue;no new compiler or reordered work. Revision r2 retains the complete original897-line proof. Complete the actual zero-coefficient goal after the existing graded-decomposition rewrite with rfl, use current AddMonoidAlgebra.coeff_zero, update3 actually flagged local declarations and remove3 actually unused simp arguments. The original bridge and chart-smoothness hypotheses and final conclusion remain unchanged. Actual r1 failure/sorryAx evidence archived;no sorryAx accepted;current natural source/card verification pending.",
+  "full_original_complete": false,
+  "official_new_solve_credit": 0,
+  "active_import_closure_excluded": [
+    "Submission.Supplier.Theorems.Thm_WittVector_exists_valuationSubring_lift_with_transcendental"
+  ],
+  "active_transitive_import_closure_size": 3,
+  "actual_live_descendant_sources": [
+    {
+      "pid": 77482,
+      "source": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/Theorems/Thm_WittVector_exists_valuationSubring_lift_with_transcendental.lean"
+    }
+  ],
+  "all_four_canonical_adapted_source_card_modules_excluded": [
+    "P2M.Sol.S_WeierstrassProjModel_projModelStrCR_smooth_of_zChartBridge_of_yChartSmooth",
+    "Submission.Supplier.P2M.Sol.S_WeierstrassProjModel_projModelStrCR_smooth_of_zChartBridge_of_yChartSmooth",
+    "Submission.Supplier.Theorems.Thm_WeierstrassProjModel_projModelStrCR_smooth_of_zChartBridge_of_yChartSmooth",
+    "Theorems.Thm_WeierstrassProjModel_projModelStrCR_smooth_of_zChartBridge_of_yChartSmooth"
+  ],
+  "r1_source_actual_errors": 1,
+  "r1_source_actual_warnings": 7,
+  "r1_source_kernel_seconds": 51.124219458
+}
