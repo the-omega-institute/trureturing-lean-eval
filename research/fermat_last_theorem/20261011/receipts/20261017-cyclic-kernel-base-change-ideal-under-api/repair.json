@@ -1,0 +1,293 @@
+{
+  "at": "2026-10-17T14:51:05.655041+00:00",
+  "name": "WeierstrassCurve_Affine_isAddCyclic_ker_pointMapOfPushforward_of_baseChange_algHom",
+  "candidate": "r1",
+  "card_candidate": "r1",
+  "source_replacements": [
+    [
+      "    haveI := hv.centre_isPrime\n",
+      "    have := hv.centre_isPrime\n",
+      1
+    ],
+    [
+      "    haveI hAded : IsDedekindDomain A := by rw [hA]; infer_instance\n",
+      "    have hAded : IsDedekindDomain A := by rw [hA]; infer_instance\n",
+      1
+    ],
+    [
+      "  haveI : HasPrincipalDivisors F W.FunctionField := hasPrincipalDivisors_functionField W\n",
+      "  have : HasPrincipalDivisors F W.FunctionField := hasPrincipalDivisors_functionField W\n",
+      1
+    ],
+    [
+      "  haveI : CharZero V.FunctionField :=\n",
+      "  have : CharZero V.FunctionField :=\n",
+      1
+    ],
+    [
+      "    letI := algebraAlong \u03b9\n",
+      "    let := algebraAlong \u03b9\n",
+      1
+    ],
+    [
+      "    haveI := isScalarTower_along \u03b9\n",
+      "    have := isScalarTower_along \u03b9\n",
+      1
+    ],
+    [
+      "    haveI : Module.Finite V.FunctionField W.FunctionField := hfin\n",
+      "    have : Module.Finite V.FunctionField W.FunctionField := hfin\n",
+      1
+    ],
+    [
+      "  haveI : Countable L.lattice.toAddSubgroup :=\n",
+      "  have : Countable L.lattice.toAddSubgroup :=\n",
+      1
+    ],
+    [
+      "  haveI : Countable ((\u2102 \u29f8 L.lattice.toAddSubgroup) \u00d7 L.lattice.toAddSubgroup) := inferInstance\n",
+      "  have : Countable ((\u2102 \u29f8 L.lattice.toAddSubgroup) \u00d7 L.lattice.toAddSubgroup) := inferInstance\n",
+      1
+    ],
+    [
+      "  haveI : Uncountable \u2102 := Complex.ofReal_injective.uncountable\n",
+      "  have : Uncountable \u2102 := Complex.ofReal_injective.uncountable\n",
+      1
+    ],
+    [
+      "  letI := algebraAlong \u03c6\n",
+      "  let := algebraAlong \u03c6\n",
+      1
+    ],
+    [
+      "  haveI := isScalarTower_along \u03c6\n",
+      "  have := isScalarTower_along \u03c6\n",
+      1
+    ],
+    [
+      "  haveI := isIntegral_along \u03c6 h\u03c6\n",
+      "  have := isIntegral_along \u03c6 h\u03c6\n",
+      1
+    ],
+    [
+      "    haveI : Module.Finite F[X] W.CoordinateRing :=\n",
+      "    have : Module.Finite F[X] W.CoordinateRing :=\n",
+      1
+    ],
+    [
+      "theorem kw_coordinateRingTensor_isDomainGeneralNoAC : IsDomain (CR \u2297[F] F') := by\n  suffices h : IsDomain (F' \u2297[F] CR) by\n    haveI := h\n",
+      "theorem kw_coordinateRingTensor_isDomainGeneralNoAC : IsDomain (CR \u2297[F] F') := by\n  suffices h : IsDomain (F' \u2297[F] CR) by\n    have := h\n",
+      1
+    ],
+    [
+      "  haveI hCR : IsDomain (CR \u2297[F] F') := kw_coordinateRingTensor_isDomainGeneralNoAC W F F'\n",
+      "  have hCR : IsDomain (CR \u2297[F] F') := kw_coordinateRingTensor_isDomainGeneralNoAC W F F'\n",
+      1
+    ],
+    [
+      "  have hCR : IsDomain (CR \u2297[F] F') := kw_coordinateRingTensor_isDomainGeneralNoAC W F F'\n  letI : Algebra (CR \u2297[F] F') (FF\u2097 \u2297[F] F') :=\n",
+      "  have hCR : IsDomain (CR \u2297[F] F') := kw_coordinateRingTensor_isDomainGeneralNoAC W F F'\n  let : Algebra (CR \u2297[F] F') (FF\u2097 \u2297[F] F') :=\n",
+      1
+    ],
+    [
+      "  let : Algebra (CR \u2297[F] F') (FF\u2097 \u2297[F] F') :=\n    (Algebra.TensorProduct.map (IsScalarTower.toAlgHom F CR FF\u2097)\n      (AlgHom.id F F')).toRingHom.toAlgebra\n  haveI hst : IsScalarTower CR (CR \u2297[F] F') (FF\u2097 \u2297[F] F') :=\n",
+      "  let : Algebra (CR \u2297[F] F') (FF\u2097 \u2297[F] F') :=\n    (Algebra.TensorProduct.map (IsScalarTower.toAlgHom F CR FF\u2097)\n      (AlgHom.id F F')).toRingHom.toAlgebra\n  have hst : IsScalarTower CR (CR \u2297[F] F') (FF\u2097 \u2297[F] F') :=\n",
+      1
+    ],
+    [
+      "  have hst : IsScalarTower CR (CR \u2297[F] F') (FF\u2097 \u2297[F] F') :=\n    IsScalarTower.of_algebraMap_eq (R := CR) (S := CR \u2297[F] F') (A := FF\u2097 \u2297[F] F') fun c => by\n      show Algebra.TensorProduct.map (IsScalarTower.toAlgHom F CR FF\u2097) (AlgHom.id F F')\n          (algebraMap CR (CR \u2297[F] F') c) = algebraMap CR (FF\u2097 \u2297[F] F') c\n      rfl\n  haveI hloc : IsLocalization\n",
+      "  have hst : IsScalarTower CR (CR \u2297[F] F') (FF\u2097 \u2297[F] F') :=\n    IsScalarTower.of_algebraMap_eq (R := CR) (S := CR \u2297[F] F') (A := FF\u2097 \u2297[F] F') fun c => by\n      show Algebra.TensorProduct.map (IsScalarTower.toAlgHom F CR FF\u2097) (AlgHom.id F F')\n          (algebraMap CR (CR \u2297[F] F') c) = algebraMap CR (FF\u2097 \u2297[F] F') c\n      rfl\n  have hloc : IsLocalization\n",
+      1
+    ],
+    [
+      "    haveI := h\n",
+      "    have := h\n",
+      1
+    ],
+    [
+      "  haveI hCR : IsDomain (CR \u2297[F] F') := kw_coordinateRingTensor_isDomainGeneral W F F'\n",
+      "  have hCR : IsDomain (CR \u2297[F] F') := kw_coordinateRingTensor_isDomainGeneral W F F'\n",
+      1
+    ],
+    [
+      "  letI : Algebra (CR \u2297[F] F') (FF\u2097 \u2297[F] F') :=\n",
+      "  let : Algebra (CR \u2297[F] F') (FF\u2097 \u2297[F] F') :=\n",
+      1
+    ],
+    [
+      "  haveI hst : IsScalarTower CR (CR \u2297[F] F') (FF\u2097 \u2297[F] F') :=\n",
+      "  have hst : IsScalarTower CR (CR \u2297[F] F') (FF\u2097 \u2297[F] F') :=\n",
+      1
+    ],
+    [
+      "  haveI hloc : IsLocalization\n",
+      "  have hloc : IsLocalization\n",
+      1
+    ],
+    [
+      "  letI alg\u03b9 : Algebra FF' FF := \u03b9\u2080.toRingHom.toAlgebra\n",
+      "  let alg\u03b9 : Algebra FF' FF := \u03b9\u2080.toRingHom.toAlgebra\n",
+      1
+    ],
+    [
+      "  letI mod\u03b9 : Module FF' FF := Algebra.toModule\n",
+      "  let mod\u03b9 : Module FF' FF := Algebra.toModule\n",
+      1
+    ],
+    [
+      "  haveI hfinFF : Module.Finite FF' FF := hfin\u2080\n",
+      "  have hfinFF : Module.Finite FF' FF := hfin\u2080\n",
+      1
+    ],
+    [
+      "  haveI hfreeFF : Module.Free FF' FF := Module.Free.of_divisionRing FF' FF\n",
+      "  have hfreeFF : Module.Free FF' FF := Module.Free.of_divisionRing FF' FF\n",
+      1
+    ],
+    [
+      "  letI algFr : Algebra FrT' FrT := \u03b9Fr.toAlgebra\n",
+      "  let algFr : Algebra FrT' FrT := \u03b9Fr.toAlgebra\n",
+      1
+    ],
+    [
+      "  letI modFr : Module FrT' FrT := Algebra.toModule\n",
+      "  let modFr : Module FrT' FrT := Algebra.toModule\n",
+      1
+    ],
+    [
+      "  haveI hXY_prime : (CoordinateRing.XYIdeal (E\u2080\u2044F).toAffine x (C y)).IsPrime :=\n",
+      "  have hXY_prime : (CoordinateRing.XYIdeal (E\u2080\u2044F).toAffine x (C y)).IsPrime :=\n",
+      1
+    ],
+    [
+      "  letI : Algebra F F' := \u03c3.toRingHom.toAlgebra\n",
+      "  let : Algebra F F' := \u03c3.toRingHom.toAlgebra\n",
+      1
+    ],
+    [
+      "  haveI : IsScalarTower R\u2080 F F' := IsScalarTower.of_algebraMap_eq fun r =>\n",
+      "  have : IsScalarTower R\u2080 F F' := IsScalarTower.of_algebraMap_eq fun r =>\n",
+      1
+    ],
+    [
+      "  haveI : IsDomain ((E\u2080\u2044F).toAffine.FunctionField \u2297[F] F') :=\n",
+      "  have : IsDomain ((E\u2080\u2044F).toAffine.FunctionField \u2297[F] F') :=\n",
+      1
+    ],
+    [
+      "  haveI : IsDomain ((E\u2080'\u2044F).toAffine.FunctionField \u2297[F] F') :=\n",
+      "  have : IsDomain ((E\u2080'\u2044F).toAffine.FunctionField \u2297[F] F') :=\n",
+      1
+    ],
+    [
+      "  haveI : IsDomain ((E\u2080\u2044F\u2081).toAffine.FunctionField \u2297[F\u2081] F\u2082) :=\n",
+      "  have : IsDomain ((E\u2080\u2044F\u2081).toAffine.FunctionField \u2297[F\u2081] F\u2082) :=\n",
+      1
+    ],
+    [
+      "  haveI : IsDomain ((E\u2080'\u2044F\u2081).toAffine.FunctionField \u2297[F\u2081] F\u2082) :=\n",
+      "  have : IsDomain ((E\u2080'\u2044F\u2081).toAffine.FunctionField \u2297[F\u2081] F\u2082) :=\n",
+      1
+    ],
+    [
+      "Ideal.eq_bot_of_comap_eq_bot",
+      "Ideal.eq_bot_of_under_eq_bot",
+      1
+    ],
+    [
+      "rw [RingHom.comap_ker, pointPullbackCoordHomTo_comp_algebraMap",
+      "rw [Ideal.under_def, RingHom.comap_ker, pointPullbackCoordHomTo_comp_algebraMap",
+      1
+    ],
+    [
+      "MonoidHom.coe_coe",
+      "MonoidHom.coe_ofClass",
+      2
+    ],
+    [
+      "if_true",
+      "ite_true",
+      1
+    ],
+    [
+      "TensorProduct.induction_on",
+      "TensorProduct.inductionOn",
+      3
+    ],
+    [
+      "\n    | zero => simp only [map_zero]; exact zero_mem _",
+      "",
+      1
+    ],
+    [
+      "\n    | zero => exact \u27e80, by simp\u27e9",
+      "",
+      1
+    ],
+    [
+      "      induction a using TensorProduct.inductionOn with\n      | zero => simp\n",
+      "      induction a using TensorProduct.inductionOn with\n",
+      1
+    ],
+    [
+      "simpa [Submodule.mem_torsionBy_iff, P\u2080] using this",
+      "simp [Submodule.mem_torsionBy_iff, P\u2080]",
+      1
+    ],
+    [
+      "open Es1a1\n",
+      "open _root_.P2MW.S_WeierstrassCurve_Affine_isAddCyclic_ker_pointMapOfPushforward_of_baseChange_algHom.ModularCurve.Es1a1\n",
+      3
+    ],
+    [
+      "@[scoped simp]\ntheorem placeOfPoint_some [IsDedekindDomain W.CoordinateRing]",
+      "omit [IsDedekindDomain W.CoordinateRing] in\n@[scoped simp]\ntheorem placeOfPoint_some [IsDedekindDomain W.CoordinateRing]",
+      1
+    ],
+    [
+      "theorem eq_of_not_isFinitePlace [IsDedekindDomain W.CoordinateRing]",
+      "omit [IsDedekindDomain W.CoordinateRing] in\ntheorem eq_of_not_isFinitePlace [IsDedekindDomain W.CoordinateRing]",
+      1
+    ]
+  ],
+  "card_replacements": [],
+  "baseline_byte_identical_to_pinned_supplier": false,
+  "pinned_supplier_source_and_card_preserved": true,
+  "preexisting_canonical_source_normalization": [
+    [
+      "    induction t with\n    | zero => simp only [map_zero]; exact zero_mem _",
+      "    induction t using TensorProduct.induction_on with\n    | zero => simp only [map_zero]; exact zero_mem _",
+      1
+    ]
+  ],
+  "canonical_card_byte_identical_to_pinned_supplier": true,
+  "verification_pending": false,
+  "installed": true,
+  "no_linter_suppression_added": true,
+  "complete_original_proof_preserved": true,
+  "full_original_statement_and_hypotheses_preserved": true,
+  "max_active_flt_jobs": 1,
+  "lean_threads": 1,
+  "original_actual_errors": 1,
+  "original_actual_warnings": 50,
+  "original_kernel_seconds": 244.339672833,
+  "change": "Retain the complete original 5357-line curve base-change construction, tensor fraction-field equivalence, finiteness, point-map naturality and cyclic-kernel transport proof. Explicitly unfold the pinned Ideal.under API before the original kernel rewrite and update the renamed theorem/coercion/if aliases. Use the current two-case tensor induction at three sites;the old wrapper already ignores the removed zero branches. Replace only the 37 actually flagged haveI/letI declarations. Explicitly open the three already-selected ModularCurve.Es1a1 namespaces. Omit automatic duplicate Dedekind-domain section instances in two lemmas while retaining both original explicit hypotheses. Replace one simpa whose simp phase actually closes the goal with simp. All public solution/card statements and every mathematical hypothesis retained. No linter suppression added;all original options retained. Pinned supplier source/card and exact canonical baselines archived;the only preexisting canonical source change was the listed tensor-induction elaborator normalization. Current source/card verification pending.",
+  "full_original_complete": false,
+  "official_new_solve_credit": 0,
+  "active_import_closure_excluded": [
+    "Submission.Supplier.P2M.Sol.S_WeierstrassCurve_Affine_IsogenyEndDatum_exists_dualEndData_dual_mem_and_norm_eq_finrankAlong"
+  ],
+  "active_transitive_import_closure_size": 122,
+  "actual_live_descendant_sources": [
+    {
+      "pid": 79032,
+      "source": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_WeierstrassCurve_Affine_IsogenyEndDatum_exists_dualEndData_dual_mem_and_norm_eq_finrankAlong.lean"
+    }
+  ],
+  "all_four_canonical_adapted_source_card_modules_excluded": [
+    "P2M.Sol.S_WeierstrassCurve_Affine_isAddCyclic_ker_pointMapOfPushforward_of_baseChange_algHom",
+    "Submission.Supplier.P2M.Sol.S_WeierstrassCurve_Affine_isAddCyclic_ker_pointMapOfPushforward_of_baseChange_algHom",
+    "Submission.Supplier.Theorems.Thm_WeierstrassCurve_Affine_isAddCyclic_ker_pointMapOfPushforward_of_baseChange_algHom",
+    "Theorems.Thm_WeierstrassCurve_Affine_isAddCyclic_ker_pointMapOfPushforward_of_baseChange_algHom"
+  ]
+}
