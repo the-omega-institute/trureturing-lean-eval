@@ -1,0 +1,60 @@
+{
+  "at": "2026-10-17T16:15:27.588660+00:00",
+  "name": "WeierstrassCurve_exists_valuationSubring_with_transcendental_of_charZero",
+  "candidate": "r1",
+  "card_candidate": "r1",
+  "source_replacements": [
+    [
+      "  haveI hR'0 : CharZero (PowerSeries k) :=\n",
+      "  have hR'0 : CharZero (PowerSeries k) :=\n",
+      1
+    ],
+    [
+      "  haveI : CharZero (FractionRing (PowerSeries k)) := IsFractionRing.charZero (PowerSeries k)\n",
+      "  have : CharZero (FractionRing (PowerSeries k)) := IsFractionRing.charZero (PowerSeries k)\n",
+      1
+    ],
+    [
+      "  haveI hL : CharZero (AlgebraicClosure (FractionRing (PowerSeries k))) :=\n",
+      "  have hL : CharZero (AlgebraicClosure (FractionRing (PowerSeries k))) :=\n",
+      1
+    ],
+    [
+      "  haveI : IsLocalHom g := hAloc\n",
+      "  have : IsLocalHom g := hAloc\n",
+      1
+    ]
+  ],
+  "card_replacements": [],
+  "baseline_byte_identical_to_pinned_supplier": true,
+  "pinned_supplier_source_and_card_preserved": true,
+  "verification_pending": false,
+  "installed": true,
+  "no_linter_suppression_added": true,
+  "complete_original_proof_preserved": true,
+  "full_original_statement_and_hypotheses_preserved": true,
+  "max_active_flt_jobs": 1,
+  "lean_threads": 1,
+  "original_actual_errors": 0,
+  "original_actual_warnings": 4,
+  "original_kernel_seconds": 39.281195958,
+  "change": "Retain complete original70-line valuation-subring construction via power series, fraction field and algebraic closure, including transcendental-element proof. Public source/card statements and every hypothesis unchanged. Update only4 actually flagged local haveI/letI declarations. No suppression added;pending natural verification.",
+  "full_original_complete": false,
+  "official_new_solve_credit": 0,
+  "active_import_closure_excluded": [
+    "Submission.Supplier.P2M.Sol.S_WeierstrassCurve_hasseInvariant_variableChange"
+  ],
+  "active_transitive_import_closure_size": 4,
+  "actual_live_descendant_sources": [
+    {
+      "pid": 97891,
+      "source": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_WeierstrassCurve_hasseInvariant_variableChange.lean"
+    }
+  ],
+  "all_four_canonical_adapted_source_card_modules_excluded": [
+    "P2M.Sol.S_WeierstrassCurve_exists_valuationSubring_with_transcendental_of_charZero",
+    "Submission.Supplier.P2M.Sol.S_WeierstrassCurve_exists_valuationSubring_with_transcendental_of_charZero",
+    "Submission.Supplier.Theorems.Thm_WeierstrassCurve_exists_valuationSubring_with_transcendental_of_charZero",
+    "Theorems.Thm_WeierstrassCurve_exists_valuationSubring_with_transcendental_of_charZero"
+  ]
+}
