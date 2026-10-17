@@ -1,0 +1,18 @@
+--- pinned-original
++++ candidate-r1
+@@ -24,6 +24,9 @@
+ open CategoryTheory MonoidalCategory Module groupCohomology ExtCitation NumberField.LevelArith
+ open scoped Classical NumberField NumberField.LevelArith TensorProduct Pointwise
+ 
++set_option backward.isDefEq.respectTransparency false
++set_option backward.isDefEq.respectTransparency.types false
++
+ theorem NumberField.LevelArith.exists_continuousH1Sr_sUnitsMaxRep_linearMap_sClassGroupRep_injective_natural
+     {p : ℕ} [Fact p.Prime] (S : Finset Nat.Primes) (hpS : pPrime p ∈ S)
+     (L : IntermediateField ℚ (AlgebraicClosure ℚ)) (hL : L.IsUnramifiedOutside S) [FiniteDimensional ℚ ↥L] :
+@@ -41,3 +44,5 @@
+                   Submodule.Quotient.mk (Additive.ofMul C) →
+               f ⟨(H1π (sUnitsMaxRep S L)).hom c'.1, H1π_mem_continuousH1Sr L.fixingSubgroup.subtype S (sUnitsMaxRep S L) c'.2⟩ =
+                   Submodule.Quotient.mk (Additive.ofMul (τ • C)) := by p2m_exact_reverting @_root_.P2MW.S_NumberField_LevelArith_exists_continuousH1Sr_sUnitsMaxRep_linearMap_sClassGroupRep_injective_natural.solution
++
++#print axioms NumberField.LevelArith.exists_continuousH1Sr_sUnitsMaxRep_linearMap_sClassGroupRep_injective_natural

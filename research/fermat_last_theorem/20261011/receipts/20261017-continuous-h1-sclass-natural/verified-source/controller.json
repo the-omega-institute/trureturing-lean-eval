@@ -1,0 +1,158 @@
+{
+  "sha256": "60cb9e6f1ca05c9580a98797c50ede6f7755a2c8fc70bf1a489d71f2d0b73549",
+  "exit": 0,
+  "empty_output_retry_done": false,
+  "source_sha256_after": "60cb9e6f1ca05c9580a98797c50ede6f7755a2c8fc70bf1a489d71f2d0b73549",
+  "source_unchanged": true,
+  "olean_sha256": "4ac8241742d6b8f2d3e3035d86661e1c8147568d99009aff3a25611b7798f25a",
+  "seconds": 170.55837404198246,
+  "pid": 1514,
+  "command": [
+    "/Users/macstudio/.local/omega-shims/lean",
+    "-j1",
+    "--trust=0",
+    "-Ddebug.skipKernelTC=false",
+    "-R",
+    "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src",
+    "-o",
+    "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-build/lib/lean/Submission/Supplier/P2M/Sol/S_NumberField_LevelArith_exists_continuousH1Sr_sUnitsMaxRep_linearMap_sClassGroupRep_injective_natural.olean",
+    "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_NumberField_LevelArith_exists_continuousH1Sr_sUnitsMaxRep_linearMap_sClassGroupRep_injective_natural.lean"
+  ],
+  "make_wrapper_pid": 77831,
+  "make_exit": 0,
+  "make_entry_failed": false,
+  "cache_binding_valid": true,
+  "canonical_make_running_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/f6aef8cb56de1f7944a11aca-1792222578664566000.make-running.json",
+  "canonical_make_terminal_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/f6aef8cb56de1f7944a11aca-1792222578664566000.make-terminal.json",
+  "kernel_terminal_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/f6aef8cb56de1f7944a11aca-1792222578664566000.kernel/result.json",
+  "direct_dependencies": [
+    {
+      "module": "Submission.Supplier.Definitions.Def_GroupCohomology_ContinuousUnramified",
+      "source_sha256": "043332b5cfde215c097e58af5d5becdb67b1aafa6711d65e156d9eb78931ad68",
+      "object_sha256": "a5e6d1d085476ac2b0cae24f241961b3f8f43525140e9217a3beeb698205d63d",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Definitions.Def_DualSelmer_ExtConditions",
+      "source_sha256": "c1b2c251df0f5beafe5cd5e5079f48fc890964eede2aae816c4508fe3834786a",
+      "object_sha256": "838fb01ac2d003926c96c374442f289247b4fa2a0921d784ca9ce4eea6ef87cb",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Definitions.Def_ExtCitation_KummerBridge",
+      "source_sha256": "59618eef9e977ba7b4db42699f1b25a4c50134175fcb159bb321f8a977a16925",
+      "object_sha256": "ce523fc576bd45225aac312cf80ffc58beddc29981314458f54ce5c53547c941",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Definitions.Def_GroupCohomology_ContinuousUnramifiedLevel",
+      "source_sha256": "745fd60eea12b40c929c7f13e9071f2b6065342300f6287551a54238cae9cafc",
+      "object_sha256": "16352c302eeeaa2183322a2c3ecfe25e8810b88de604decba70d8f3e007280b2",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Definitions.Def_GroupCohomology_ContinuousUnramifiedLevelMap",
+      "source_sha256": "58c80bce3b05ba1a576d5963799f1ea0ab87f2a587c46f0694838602dc5b1855",
+      "object_sha256": "02f9dc280294c11ddbdf9f9283dcb3f206034a46c2c1bc28096f13f83075277c",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Definitions.Def_NumberField_LevelArithmeticModP",
+      "source_sha256": "37497d867786ea5b548e706cb5c1f4ca555a699a47f66a0bb265972bb4134f33",
+      "object_sha256": "c4910d20d2381d653dde3ceeb89b19e3f69ede736e21c38c4b8d44cf91a0d190",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Definitions.Def_NumberField_SelmerRepModP",
+      "source_sha256": "12ab985a6baf8e713cc0bf951a3ea2621a1e7a2d16d9db8ebffe4322ee6d95dc",
+      "object_sha256": "b73581a0b9ca8cbf4f5cb86c81bb4cffcd6e3168ca9571d1e4e9422850aea09a",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Definitions.Def_NumberField_SUnitsMax",
+      "source_sha256": "317033a51ba23c0f01918faa3cb69a9189b2055b41e1352c83415596aeaf3080",
+      "object_sha256": "e5079c2fafa7fd484c78f41bf6b7b65007390ab6463671abeb86f12eebe285c0",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Theorems.Thm_IntermediateField_exists_normal_isUnramifiedOutside_of_le",
+      "source_sha256": "a2e87d6e373ecd7cb0e032364500a0e7daa308d35a648dd7c4b3a9fb44b09af8",
+      "object_sha256": "7a3b1eab1ecebc35b61c15c6ad0f3bfc83a17d60a0efa5cfbedf639cfc31e23e",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Theorems.Thm_NumberField_LevelArith_normal_levelField_of_isNormalLevel",
+      "source_sha256": "4ac4edcf2daadc07bd48cd6b0b479f6b3f915e18d4bb8567b0663399cf7ba0b3",
+      "object_sha256": "1bea41034223af07eff7537827046a8847f63fdb0567fab85a34e77c6533f1af",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Theorems.Thm_NumberField_exists_valuationSubring_algebraicClosure_forall_mem_iff_valuation_le_one",
+      "source_sha256": "23826e2dcfc4eba5526d2b9f18a940a6b64aab977b2616a2417e726d573225e2",
+      "object_sha256": "95000c7d5e637a760a157cf5283a145dbdfc0c0ddb21d25bf4ffc6ab241b0254",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Theorems.Thm_NumberField_ramificationIdx_under_eq_one_of_forall_liesOverPrime_inertiaSubgroupIn_le_fixingSubgroup",
+      "source_sha256": "cf56b80a91927dee27368d3507d5fbbd8ca089769f26625f69a26fb813b96cc3",
+      "object_sha256": "dc552b2259a72d3b69b71bfb5ef031f6e5c54c6d89fc77dee0f009e35bc2203c",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Theorems.Thm_IntermediateField_isUnramifiedOutside_sup_adjoin_of_pow_eq",
+      "source_sha256": "4eb26198c01b05e7a9b1dd82f001af3d2765b709de1fd279854b78aa5165d403",
+      "object_sha256": "ee6150ba14a7eb647e595f9cf1f7b629bd583a7ba43eca1b459ca2894db2f1ee",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Theorems.Thm_NumberField_LevelArith_sUnitsMaxStable_eq_sUnitsMax",
+      "source_sha256": "da5eb74a6cff11f0515ae96ac02bb9ebbf17943b0ed64c60a6856f6cf7503f7a",
+      "object_sha256": "bf85fd843119455bc6f42dc6798bcdd9942a33f89e53a81f484114da21bca2ba",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Theorems.Thm_NumberField_LevelArith_sPrimeClasses_eq_closure",
+      "source_sha256": "a67a3a8cc9b7699c689f00288cb95e5d467a22f76715705c33bd675a8b2177c4",
+      "object_sha256": "ff705b68d16115f9563d6932de7c5054d5330857ea72e0405f4bcc9d7547c7c8",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Theorems.Thm_NumberField_existsUnique_heightOneSpectrum_forall_map_mem_iff_valuation_le_one",
+      "source_sha256": "73d0e47474bef87db838ed802e1856956d5ac8b7e5e57510ae1b10dbee990dda",
+      "object_sha256": "80de39bbac5e5bb02b365367ee9d47a897f6aa6a18251d7f80b8be5336b6d005",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Theorems.Thm_NumberField_LevelArith_inertia_apply_eq_of_dvd_valuation",
+      "source_sha256": "d0dccde21df10ee725a229975109705021c3374f4b646766f0f033b27bb8516e",
+      "object_sha256": "3ae28d4c1c62c1951e90a92a33c530499cf13293ff527acfd6f2933166233859",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Theorems.Thm_IntermediateField_IsUnramifiedOutside_normalClosure",
+      "source_sha256": "d2bd43c3f3fe176d96df6603220f2a0c9aa49a2324eff09a1f177fc4d724eac3",
+      "object_sha256": "3257d435e69dbe0fe96ba3a6dfc9ba34a858ae730aa63d5bff5d6cc6da261f07",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Definitions.Def_NumberField_SUnitsMax",
+      "source_sha256": "317033a51ba23c0f01918faa3cb69a9189b2055b41e1352c83415596aeaf3080",
+      "object_sha256": "e5079c2fafa7fd484c78f41bf6b7b65007390ab6463671abeb86f12eebe285c0",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Definitions.Def_NumberField_PlaceTransport",
+      "source_sha256": "267495c4974bac1f017bc9d5d927963f35a6ad7a10bcd66d0f5887409e0b53da",
+      "object_sha256": "c058d625a2c3443960f8ee5d2376f8d7312b7ce6cfec2082b9b9c0b79bb5d222",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.P2M.Util",
+      "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+      "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+      "receipt_reused": true
+    }
+  ],
+  "stdout": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/f6aef8cb56de1f7944a11aca-1792222578664566000.kernel/stdout.log",
+  "stderr": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/f6aef8cb56de1f7944a11aca-1792222578664566000.kernel/stderr.log"
+}

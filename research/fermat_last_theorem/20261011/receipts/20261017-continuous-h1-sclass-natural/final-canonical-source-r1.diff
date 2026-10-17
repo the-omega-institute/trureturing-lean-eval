@@ -1,0 +1,878 @@
+--- pinned-original
++++ candidate-r1
+@@ -33,6 +33,9 @@
+ set_option synthInstance.maxHeartbeats 1600000
+ set_option Elab.async false
+ 
++set_option backward.isDefEq.respectTransparency false
++set_option backward.isDefEq.respectTransparency.types false
++
+ p2m_open "CategoryTheory CategoryTheory.MonoidalCategory Module groupCohomology ExtCitation NumberField.LevelArith IsDedekindDomain"
+ open scoped Classical NumberField NumberField.LevelArith
+ 
+@@ -98,7 +101,7 @@
+ 
+ lemma levelSubgroup_finiteIndex (F : IntermediateField ℚ (AlgebraicClosure ℚ)) [Normal ℚ F] [FiniteDimensional ℚ F] :
+     (levelSubgroup r F).FiniteIndex := by
+-  haveI := fixingSubgroup_normal F
++  have := fixingSubgroup_normal F
+   refine ⟨fun h0 => ?_⟩
+   rw [Subgroup.index_comap] at h0
+   have h1 : F.fixingSubgroup.index ≠ 0 := by
+@@ -122,7 +125,7 @@
+ 
+ lemma apply_mul_left_eq {X : Type} {f : G → X} (F : IntermediateField ℚ (AlgebraicClosure ℚ)) [Normal ℚ F]
+     (h : ∀ g s, s ∈ levelSubgroup r F → f (g * s) = f g) (g s : G) (hs : s ∈ levelSubgroup r F) : f (s * g) = f g := by
+-  haveI := levelSubgroup_normal r F
++  have := levelSubgroup_normal r F
+   have h1 : g⁻¹ * s * g ∈ levelSubgroup r F := by
+     have := Subgroup.Normal.conj_mem inferInstance s hs g⁻¹
+     rwa [inv_inv] at this
+@@ -131,11 +134,11 @@
+ 
+ private lemma _root_.CycBaseLES.finite_range {X : Type} {f : G → X} (hf : IsLevelConstantSr₁ r S f) : (Set.range f).Finite := by
+   obtain ⟨F, hF, hN, h⟩ := exists_normal_level r S hf
+-  haveI := hN
+-  haveI : FiniteDimensional ℚ ↥F := hF.1
+-  haveI := levelSubgroup_normal r F
+-  haveI := levelSubgroup_finiteIndex r F
+-  haveI : Finite (G ⧸ levelSubgroup r F) := Subgroup.finite_quotient_of_finiteIndex
++  have := hN
++  have : FiniteDimensional ℚ ↥F := hF.1
++  have := levelSubgroup_normal r F
++  have := levelSubgroup_finiteIndex r F
++  have : Finite (G ⧸ levelSubgroup r F) := Subgroup.finite_quotient_of_finiteIndex
+ 
+   let fbar : G ⧸ levelSubgroup r F → X := Quotient.lift f (fun a b hab => by
+     have hab' : a⁻¹ * b ∈ levelSubgroup r F := QuotientGroup.leftRel_apply.mp hab
+@@ -178,7 +181,7 @@
+     (hb : IsLevelConstantSr₁ r S b) : IsLevelConstantSr₂ r S ((d₁₂ E).hom b) := by
+   obtain ⟨F₁, hF₁, hN₁, h₁⟩ := exists_normal_level r S hb
+   obtain ⟨F₂, hF₂, -, h₂⟩ := exists_level_forall_fixed r S E hsm (Set.range b) (finite_range r S hb)
+-  haveI := hN₁
++  have := hN₁
+   refine ⟨F₁ ⊔ F₂, hF₁.sup hF₂, fun g g' s s' hs hs' => ?_⟩
+   have hs₁ : s ∈ levelSubgroup r F₁ := IntermediateField.fixingSubgroup_antitone le_sup_left hs
+   have hs'₁ : s' ∈ levelSubgroup r F₁ := IntermediateField.fixingSubgroup_antitone le_sup_left hs'
+@@ -189,7 +192,7 @@
+   congr 2
+ 
+   rw [show g * s * (g' * s') = g * g' * (g'⁻¹ * s * g') * s' by group]
+-  haveI := levelSubgroup_normal r F₁
++  have := levelSubgroup_normal r F₁
+   have hc : g'⁻¹ * s * g' ∈ levelSubgroup r F₁ := by
+     have := Subgroup.Normal.conj_mem inferInstance s hs₁ g'⁻¹; rwa [inv_inv] at this
+   rw [h₁ _ s' hs'₁, h₁ _ _ hc]
+@@ -297,10 +300,10 @@
+     ∃ α : (AlgebraicClosure ℚ)ˣ, (α : AlgebraicClosure ℚ) ∈ F ∧
+       ∀ g : ↥L.fixingSubgroup, v g = ((g : AlgebraicClosure ℚ ≃ₐ[ℚ] AlgebraicClosure ℚ) • α) / α := by
+   classical
+-  letI instMDA : MulDistribMulAction (LevelGal L F hLF) (↥(levelField L F hLF))ˣ := inferInstance
+-  letI instMA : MulAction (LevelGal L F hLF) (↥(levelField L F hLF))ˣ := inferInstance
+-  letI instSM : SMul (LevelGal L F hLF) (↥(levelField L F hLF))ˣ := inferInstance
+-  letI instHSM : HSMul (LevelGal L F hLF) (↥(levelField L F hLF))ˣ (↥(levelField L F hLF))ˣ := inferInstance
++  let instMDA : MulDistribMulAction (LevelGal L F hLF) (↥(levelField L F hLF))ˣ := inferInstance
++  let instMA : MulAction (LevelGal L F hLF) (↥(levelField L F hLF))ˣ := inferInstance
++  let instSM : SMul (LevelGal L F hLF) (↥(levelField L F hLF))ˣ := inferInstance
++  let instHSM : HSMul (LevelGal L F hLF) (↥(levelField L F hLF))ˣ (↥(levelField L F hLF))ˣ := inferInstance
+   have hπsurj := CycBaseKummerSurj.levelGal_surjective L F hLF
+   have hu_eq : ∀ γ γ' : ↥L.fixingSubgroup, levelGal L F hLF γ = levelGal L F hLF γ' →
+       uF L F hLF v hvF γ = uF L F hLF v hvF γ' := by
+@@ -341,11 +344,11 @@
+         ∀ g : ↥L.fixingSubgroup,
+           sUnitsMaxRep.val S L (c.1 g) = ((g : AlgebraicClosure ℚ ≃ₐ[ℚ] AlgebraicClosure ℚ) • α) / α := by
+   obtain ⟨F, hF, hN, hLF, hcst⟩ := exists_normal_level_ge S L hL c
+-  haveI := hN
+-  haveI : FiniteDimensional ℚ ↥F := hF.1
+-  haveI : FiniteDimensional ℚ ↥L := hL.1
++  have := hN
++  have : FiniteDimensional ℚ ↥F := hF.1
++  have : FiniteDimensional ℚ ↥L := hL.1
+   have hnorm : IsNormalLevel L F := fun g _ s hs => (CycBaseLES.fixingSubgroup_normal F).conj_mem s hs g
+-  haveI : Normal ↥L ↥(levelField L F hLF) := NumberField.LevelArith.normal_levelField_of_isNormalLevel L F hLF hnorm
++  have : Normal ↥L ↥(levelField L F hLF) := NumberField.LevelArith.normal_levelField_of_isNormalLevel L F hLF hnorm
+   refine ⟨F, hF, hN, hLF, hcst, ?_⟩
+   exact exists_coboundary L F hLF (fun g => sUnitsMaxRep.val S L (c.1 g)) (val_apply_mul S L c.1)
+     (fun g s hs => congrArg (sUnitsMaxRep.val S L) (hcst g s hs)) (val_mem_level S L c.1 F hLF hcst)
+@@ -357,11 +360,11 @@
+ abbrev algLF : Algebra ↥L ↥F := (IntermediateField.inclusion hLF).toRingHom.toAlgebra
+ 
+ lemma isScalarTower_LF : letI := algLF L F hLF; IsScalarTower ℚ ↥L ↥F := by
+-  letI := algLF L F hLF
++  let := algLF L F hLF
+   exact IsScalarTower.of_algebraMap_eq (fun x => rfl)
+ 
+ lemma isScalarTower_LFQ : letI := algLF L F hLF; IsScalarTower ↥L ↥F (AlgebraicClosure ℚ) := by
+-  letI := algLF L F hLF
++  let := algLF L F hLF
+   exact IsScalarTower.of_algebraMap_eq (fun x => rfl)
+ 
+ end overF
+@@ -392,9 +395,9 @@
+       ∀ x : ↥F, (x : AlgebraicClosure ℚ) ∈ B ↔ v.valuation ↥F x ≤ 1 := by
+   classical
+   obtain ⟨B, hB⟩ := NumberField.exists_valuationSubring_algebraicClosure_forall_mem_iff_valuation_le_one F v
+-  haveI := v.isMaximal
+-  haveI : Finite (𝓞 ↥F ⧸ v.asIdeal) := Ideal.finiteQuotientOfFreeOfNeBot v.asIdeal v.ne_bot
+-  letI := Ideal.Quotient.field v.asIdeal
++  have := v.isMaximal
++  have : Finite (𝓞 ↥F ⧸ v.asIdeal) := Ideal.finiteQuotientOfFreeOfNeBot v.asIdeal v.ne_bot
++  let := Ideal.Quotient.field v.asIdeal
+   obtain ⟨q, hq⟩ := CharP.exists (𝓞 ↥F ⧸ v.asIdeal)
+   have hq0 : q ≠ 0 := CharP.char_ne_zero_of_finite (𝓞 ↥F ⧸ v.asIdeal) q
+   have hqp : q.Prime := (CharP.char_is_prime_or_zero (𝓞 ↥F ⧸ v.asIdeal) q).resolve_right hq0
+@@ -428,11 +431,11 @@
+     ∀ (w' w'' : IsDedekindDomain.HeightOneSpectrum (𝓞 ↥F)),
+       w' ∉ placesOverPrimes ↥F (S : Set Nat.Primes) → w'.asIdeal.under (𝓞 ↥L) = w''.asIdeal.under (𝓞 ↥L) →
+         w'.valuationOfNeZero α = w''.valuationOfNeZero α := by
+-  letI := algLF L F hLF
+-  haveI := isScalarTower_LF L F hLF
+-  haveI := isScalarTower_LFQ L F hLF
+-  haveI : FiniteDimensional ↥L ↥F := Module.Finite.of_restrictScalars_finite ℚ ↥L ↥F
+-  haveI : IsGalois ↥L ↥F := IsGalois.tower_top_of_isGalois ℚ ↥L ↥F
++  let := algLF L F hLF
++  have := isScalarTower_LF L F hLF
++  have := isScalarTower_LFQ L F hLF
++  have : FiniteDimensional ↥L ↥F := Module.Finite.of_restrictScalars_finite ℚ ↥L ↥F
++  have : IsGalois ↥L ↥F := IsGalois.tower_top_of_isGalois ℚ ↥L ↥F
+   intro w' w'' hS hunder
+ 
+   obtain ⟨τ, hτ⟩ : ∃ τ : ↥F ≃ₐ[↥L] ↥F, w''.asIdeal.comap (galRestrict (𝓞 ↥L) ↥L ↥F (𝓞 ↥F) τ) = w'.asIdeal :=
+@@ -503,14 +506,16 @@
+ variable (S : Finset Nat.Primes) (L F : IntermediateField ℚ (AlgebraicClosure ℚ)) (hLF : L ≤ F)
+   [FiniteDimensional ℚ ↥L] [FiniteDimensional ℚ ↥F]
+ 
+-lemma isIntegral_OLF : letI := algLF L F hLF; Algebra.IsIntegral (𝓞 ↥L) (𝓞 ↥F) := by
+-  letI := algLF L F hLF
+-  haveI := isScalarTower_LF L F hLF
++omit [FiniteDimensional ℚ ↥L] [FiniteDimensional ℚ ↥F] in
++lemma isIntegral_OLF [FiniteDimensional ℚ ↥L] [FiniteDimensional ℚ ↥F] : letI := algLF L F hLF; Algebra.IsIntegral (𝓞 ↥L) (𝓞 ↥F) := by
++  let := algLF L F hLF
++  have := isScalarTower_LF L F hLF
+   exact inferInstance
+ 
+-lemma faithfulSMul_OLF : letI := algLF L F hLF; FaithfulSMul (𝓞 ↥L) (𝓞 ↥F) := by
+-  letI := algLF L F hLF
+-  haveI := isScalarTower_LF L F hLF
++omit [FiniteDimensional ℚ ↥F] in
++lemma faithfulSMul_OLF [FiniteDimensional ℚ ↥F] : letI := algLF L F hLF; FaithfulSMul (𝓞 ↥L) (𝓞 ↥F) := by
++  let := algLF L F hLF
++  have := isScalarTower_LF L F hLF
+   exact inferInstance
+ 
+ def primeOver (w : HeightOneSpectrum (𝓞 ↥L)) : HeightOneSpectrum (𝓞 ↥F) :=
+@@ -527,10 +532,10 @@
+ 
+ lemma primeOver_under (w : HeightOneSpectrum (𝓞 ↥L)) :
+     letI := algLF L F hLF; (primeOver L F hLF w).asIdeal.under (𝓞 ↥L) = w.asIdeal := by
+-  letI := algLF L F hLF
+-  haveI := isIntegral_OLF L F hLF
+-  haveI := faithfulSMul_OLF L F hLF
+-  haveI := w.isMaximal
++  let := algLF L F hLF
++  have := isIntegral_OLF L F hLF
++  have := faithfulSMul_OLF L F hLF
++  have := w.isMaximal
+   exact ((Classical.choose_spec (Ideal.exists_maximal_ideal_liesOver_of_isIntegral (S := 𝓞 ↥F) w.asIdeal)).2.over).symm
+ 
+ def expo (α : (↥F)ˣ) (w : HeightOneSpectrum (𝓞 ↥L)) : ℤ :=
+@@ -557,7 +562,7 @@
+   apply ((Ideal.finite_factors (Ideal.span_singleton_eq_bot.not.mpr ha)).union
+     (Ideal.finite_factors (Ideal.span_singleton_eq_bot.not.mpr hb0))).subset
+   intro w' hw'
+-  simp only [Set.mem_setOf_eq, Set.mem_union] at hw' ⊢
++  simp only [Set.mem_ofPred_eq, Set.mem_union] at hw' ⊢
+   by_contra h
+   push Not at h
+   obtain ⟨h1, h2⟩ := h
+@@ -583,7 +588,7 @@
+   rw [Filter.eventually_cofinite]
+   apply ((finite_setOf_valuation_ne_one F (α : ↥F) α.ne_zero).preimage (primeOver_injective L F hLF).injOn).subset
+   intro w hw
+-  simp only [Set.mem_setOf_eq, Set.mem_preimage] at hw ⊢
++  simp only [Set.mem_ofPred_eq, Set.mem_preimage] at hw ⊢
+   intro h1
+   apply hw
+   show Multiplicative.toAdd ((primeOver L F hLF w).valuationOfNeZero α) = 0
+@@ -592,10 +597,11 @@
+   have h3 : (primeOver L F hLF w).valuationOfNeZero α = 1 := by exact_mod_cast h2
+   rw [h3, toAdd_one]
+ 
+-lemma not_mem_placesOverPrimes_of_under (w : HeightOneSpectrum (𝓞 ↥L)) (hw : w ∉ placesOverPrimes ↥L (S : Set Nat.Primes))
++omit [FiniteDimensional ℚ ↥L] [FiniteDimensional ℚ ↥F] in
++lemma not_mem_placesOverPrimes_of_under [FiniteDimensional ℚ ↥L] [FiniteDimensional ℚ ↥F] (w : HeightOneSpectrum (𝓞 ↥L)) (hw : w ∉ placesOverPrimes ↥L (S : Set Nat.Primes))
+     (w' : HeightOneSpectrum (𝓞 ↥F)) (hunder : letI := algLF L F hLF; w'.asIdeal.under (𝓞 ↥L) = w.asIdeal) :
+     w' ∉ placesOverPrimes ↥F (S : Set Nat.Primes) := by
+-  letI := algLF L F hLF
++  let := algLF L F hLF
+   rintro ⟨q, hqS, hq⟩
+   apply hw
+   refine ⟨q, hqS, ?_⟩
+@@ -617,7 +623,7 @@
+       ∀ (w : HeightOneSpectrum (𝓞 ↥L)), w ∉ placesOverPrimes ↥L (S : Set Nat.Primes) →
+         ∀ w' : HeightOneSpectrum (𝓞 ↥F), w'.asIdeal.under (𝓞 ↥L) = w.asIdeal →
+           FractionalIdeal.count ↥L w (idealOf L F hLF α) = Multiplicative.toAdd (w'.valuationOfNeZero α) := by
+-  letI := algLF L F hLF
++  let := algLF L F hLF
+   refine ⟨idealOf_ne_zero' L F hLF α, fun w hw w' hunder => ?_⟩
+   unfold idealOf
+   rw [FractionalIdeal.count_finprod ↥L w _ (expo_eventually_eq_zero L F hLF α)]
+@@ -640,9 +646,9 @@
+     (he : letI := algLF L F hLF; Ideal.ramificationIdx' w.asIdeal w'.asIdeal = 1) (r : 𝓞 ↥L) (hr : r ≠ 0) (n : ℕ) :
+     letI := algLF L F hLF
+     w'.asIdeal ^ n ∣ Ideal.span {algebraMap (𝓞 ↥L) (𝓞 ↥F) r} ↔ w.asIdeal ^ n ∣ Ideal.span {r} := by
+-  letI := algLF L F hLF
+-  haveI := isScalarTower_LF L F hLF
+-  haveI := faithfulSMul_OLF L F hLF
++  let := algLF L F hLF
++  have := isScalarTower_LF L F hLF
++  have := faithfulSMul_OLF L F hLF
+   have hmapspan : Ideal.map (algebraMap (𝓞 ↥L) (𝓞 ↥F)) (Ideal.span {r}) = Ideal.span {algebraMap (𝓞 ↥L) (𝓞 ↥F) r} := by
+     rw [Ideal.map_span, Set.image_singleton]
+   have hmaple : Ideal.map (algebraMap (𝓞 ↥L) (𝓞 ↥F)) w.asIdeal ≤ w'.asIdeal := by
+@@ -707,9 +713,9 @@
+     (he : letI := algLF L F hLF; Ideal.ramificationIdx' w.asIdeal w'.asIdeal = 1) (r : 𝓞 ↥L) :
+     letI := algLF L F hLF
+     w'.intValuation (algebraMap (𝓞 ↥L) (𝓞 ↥F) r) = w.intValuation r := by
+-  letI := algLF L F hLF
+-  haveI := isScalarTower_LF L F hLF
+-  haveI := faithfulSMul_OLF L F hLF
++  let := algLF L F hLF
++  have := isScalarTower_LF L F hLF
++  have := faithfulSMul_OLF L F hLF
+   by_cases hr : r = 0
+   · subst hr; simp
+   have hr' : algebraMap (𝓞 ↥L) (𝓞 ↥F) r ≠ 0 := (map_ne_zero_iff _ (FaithfulSMul.algebraMap_injective _ _)).mpr hr
+@@ -735,8 +741,8 @@
+     (he : letI := algLF L F hLF; Ideal.ramificationIdx' w.asIdeal w'.asIdeal = 1) (x : ↥L) :
+     letI := algLF L F hLF
+     w'.valuation ↥F (algebraMap ↥L ↥F x) = w.valuation ↥L x := by
+-  letI := algLF L F hLF
+-  haveI := isScalarTower_LF L F hLF
++  let := algLF L F hLF
++  have := isScalarTower_LF L F hLF
+   obtain ⟨a, b, hb, rfl⟩ := IsFractionRing.div_surjective (A := 𝓞 ↥L) x
+   rw [map_div₀, map_div₀, map_div₀, HeightOneSpectrum.valuation_of_algebraMap, HeightOneSpectrum.valuation_of_algebraMap]
+   have e1 : algebraMap ↥L ↥F (algebraMap (𝓞 ↥L) ↥L a) = algebraMap (𝓞 ↥F) ↥F (algebraMap (𝓞 ↥L) (𝓞 ↥F) a) := by
+@@ -761,8 +767,8 @@
+   classical
+ 
+   have hQ0 : Q ≠ ⊥ := Ring.ne_bot_of_isMaximal_of_not_isField hQ (RingOfIntegers.not_isField ↥F)
+-  haveI : Finite (𝓞 ↥F ⧸ Q) := Ideal.finiteQuotientOfFreeOfNeBot Q hQ0
+-  letI := Ideal.Quotient.field Q
++  have : Finite (𝓞 ↥F ⧸ Q) := Ideal.finiteQuotientOfFreeOfNeBot Q hQ0
++  let := Ideal.Quotient.field Q
+   obtain ⟨ℓ, hℓ⟩ := CharP.exists (𝓞 ↥F ⧸ Q)
+   have hℓ0 : ℓ ≠ 0 := CharP.char_ne_zero_of_finite (𝓞 ↥F ⧸ Q) ℓ
+   have hℓp : ℓ.Prime := (CharP.char_is_prime_or_zero (𝓞 ↥F ⧸ Q) ℓ).resolve_right hℓ0
+@@ -871,7 +877,8 @@
+ lemma coe_liftUnit {F F'' : IntermediateField ℚ (AlgebraicClosure ℚ)} (h : F ≤ F'') (α : (↥F)ˣ) :
+     (((liftUnit h α : (↥F'')ˣ) : ↥F'') : AlgebraicClosure ℚ) = ((α : ↥F) : AlgebraicClosure ℚ) := rfl
+ 
+-lemma hα_liftUnit {F F'' : IntermediateField ℚ (AlgebraicClosure ℚ)} (h : F ≤ F'') (α : (↥F)ˣ)
++omit [FiniteDimensional ℚ ↥L] in
++lemma hα_liftUnit [FiniteDimensional ℚ ↥L] {F F'' : IntermediateField ℚ (AlgebraicClosure ℚ)} (h : F ≤ F'') (α : (↥F)ˣ)
+     (hα : ∀ g : ↥L.fixingSubgroup, ∀ q : Nat.Primes, q ∉ S → ∀ A : ValuationSubring (AlgebraicClosure ℚ), A.LiesOverPrime (q : ℕ) →
+       ((g : AlgebraicClosure ℚ ≃ₐ[ℚ] AlgebraicClosure ℚ) ((α : ↥F) : AlgebraicClosure ℚ)) / ((α : ↥F) : AlgebraicClosure ℚ) ∈ A ∧
+       (((g : AlgebraicClosure ℚ ≃ₐ[ℚ] AlgebraicClosure ℚ) ((α : ↥F) : AlgebraicClosure ℚ)) / ((α : ↥F) : AlgebraicClosure ℚ))⁻¹ ∈ A) :
+@@ -890,21 +897,21 @@
+     (w : HeightOneSpectrum (𝓞 ↥L)) (hw : w ∉ placesOverPrimes ↥L (S : Set Nat.Primes)) :
+     FractionalIdeal.count ↥L w (idealOf L F hLF α) = FractionalIdeal.count ↥L w (idealOf L F'' (hLF.trans hFF) (liftUnit hFF α)) := by
+ 
+-  letI iLF := algLF L F hLF
+-  letI iFF := algLF F F'' hFF
+-  letI iLF'' := algLF L F'' (hLF.trans hFF)
+-  haveI : IsScalarTower ↥L ↥F ↥F'' := IsScalarTower.of_algebraMap_eq (fun x => rfl)
+-  haveI := isScalarTower_LF L F hLF
+-  haveI := isScalarTower_LF F F'' hFF
+-  haveI := isScalarTower_LF L F'' (hLF.trans hFF)
+-  haveI := isIntegral_OLF F F'' hFF
++  let iLF := algLF L F hLF
++  let iFF := algLF F F'' hFF
++  let iLF'' := algLF L F'' (hLF.trans hFF)
++  have : IsScalarTower ↥L ↥F ↥F'' := IsScalarTower.of_algebraMap_eq (fun x => rfl)
++  have := isScalarTower_LF L F hLF
++  have := isScalarTower_LF F F'' hFF
++  have := isScalarTower_LF L F'' (hLF.trans hFF)
++  have := isIntegral_OLF F F'' hFF
+ 
+   let w'' := primeOver L F'' (hLF.trans hFF) w
+   have hw''under : w''.asIdeal.under (𝓞 ↥L) = w.asIdeal := primeOver_under L F'' (hLF.trans hFF) w
+   have hw''S : w'' ∉ placesOverPrimes ↥F'' (S : Set Nat.Primes) := not_mem_placesOverPrimes_of_under S L F'' (hLF.trans hFF) w hw w'' hw''under
+-  haveI := w''.isPrime
++  have := w''.isPrime
+   let w' : HeightOneSpectrum (𝓞 ↥F) := ⟨w''.asIdeal.under (𝓞 ↥F), inferInstance,
+-    fun h0 => w''.ne_bot (Ideal.eq_bot_of_comap_eq_bot h0)⟩
++    fun h0 => w''.ne_bot (Ideal.eq_bot_of_under_eq_bot h0)⟩
+   have hw'under : w'.asIdeal.under (𝓞 ↥L) = w.asIdeal := by
+     show (w''.asIdeal.under (𝓞 ↥F)).under (𝓞 ↥L) = w.asIdeal
+     rw [Ideal.under_under]; exact hw''under
+@@ -969,7 +976,8 @@
+   hcob : ∀ g : ↥L.fixingSubgroup, ((sUnitsMaxRep.val S L (c.1 g) : (AlgebraicClosure ℚ)ˣ) : AlgebraicClosure ℚ) =
+     (g : AlgebraicClosure ℚ ≃ₐ[ℚ] AlgebraicClosure ℚ) ((α : ↥F) : AlgebraicClosure ℚ) / ((α : ↥F) : AlgebraicClosure ℚ)
+ 
+-lemma sUnitsMaxRep_unit (e : sUnitsMaxRep S L) (q : Nat.Primes) (hq : q ∉ S) (A : ValuationSubring (AlgebraicClosure ℚ))
++omit [FiniteDimensional ℚ ↥L] in
++lemma sUnitsMaxRep_unit [FiniteDimensional ℚ ↥L] (e : sUnitsMaxRep S L) (q : Nat.Primes) (hq : q ∉ S) (A : ValuationSubring (AlgebraicClosure ℚ))
+     (hA : A.LiesOverPrime (q : ℕ)) :
+     ((sUnitsMaxRep.val S L e : (AlgebraicClosure ℚ)ˣ) : AlgebraicClosure ℚ) ∈ A ∧
+       (((sUnitsMaxRep.val S L e : (AlgebraicClosure ℚ)ˣ) : AlgebraicClosure ℚ))⁻¹ ∈ A := by
+@@ -988,12 +996,18 @@
+   rw [← d.hcob g]
+   exact sUnitsMaxRep_unit (c.1 g) q hq A hA
+ 
+-def cls [FiniteDimensional ℚ ↥L] : sClassGroupRep ↥L ↥L (S : Set Nat.Primes) :=
++def cls {S : Finset Nat.Primes} {L : IntermediateField ℚ (AlgebraicClosure ℚ)}
++    {_sectionFinite : FiniteDimensional ℚ ↥L}
++    {c : ↥(levelCocyclesSr₁ L.fixingSubgroup.subtype S (sUnitsMaxRep S L))} (d : Datum c)
++    [FiniteDimensional ℚ ↥L] : sClassGroupRep ↥L ↥L (S : Set Nat.Primes) :=
+   haveI : FiniteDimensional ℚ ↥d.F := d.hF.1
+   mkS S L (idealOf L d.F d.hLF d.α) (idealOf_ne_zero' L d.F d.hLF d.α)
+ 
+-lemma cls_eq [FiniteDimensional ℚ ↥L] [FiniteDimensional ℚ ↥d.F] :
+-    d.cls = mkS S L (idealOf L d.F d.hLF d.α) (idealOf_ne_zero' L d.F d.hLF d.α) := rfl
++lemma cls_eq {S : Finset Nat.Primes} {L : IntermediateField ℚ (AlgebraicClosure ℚ)}
++    {_sectionFinite : FiniteDimensional ℚ ↥L}
++    {c : ↥(levelCocyclesSr₁ L.fixingSubgroup.subtype S (sUnitsMaxRep S L))} (d : Datum c)
++    [FiniteDimensional ℚ ↥L] [FiniteDimensional ℚ ↥d.F] :
++    d.cls (_sectionFinite := inferInstance) = mkS S L (idealOf L d.F d.hLF d.α) (idealOf_ne_zero' L d.F d.hLF d.α) := rfl
+ 
+ end Datum
+ 
+@@ -1028,14 +1042,14 @@
+   rw [Units.val_mul, Units.val_div_eq_div_val, sUnitsMaxRep.val_ρ]
+   rfl
+ 
+-lemma exists_common_level (hL : L.IsUnramifiedOutside S) {c₁ c₂ : ↥(levelCocyclesSr₁ L.fixingSubgroup.subtype S (sUnitsMaxRep S L))}
++lemma exists_common_level (_hL : L.IsUnramifiedOutside S) {c₁ c₂ : ↥(levelCocyclesSr₁ L.fixingSubgroup.subtype S (sUnitsMaxRep S L))}
+     (d₁ : Datum c₁) (d₂ : Datum c₂) (e₀ : sUnitsMaxRep S L) :
+     ∃ F'' : IntermediateField ℚ (AlgebraicClosure ℚ), F''.IsUnramifiedOutside S ∧ IsGalois ℚ ↥F'' ∧ d₁.F ≤ F'' ∧ d₂.F ≤ F'' ∧
+       ((sUnitsMaxRep.val S L e₀ : (AlgebraicClosure ℚ)ˣ) : AlgebraicClosure ℚ) ∈ F'' := by
+   obtain ⟨⟨Fε, hFε, hεF⟩, -⟩ := sUnitsMaxStable_le S L e₀.2
+   obtain ⟨F'', hle, hF'', hN⟩ := IntermediateField.exists_normal_isUnramifiedOutside_of_le S (d₁.F ⊔ d₂.F ⊔ Fε) ((d₁.hF.sup d₂.hF).sup hFε)
+-  haveI := hN
+-  haveI : FiniteDimensional ℚ ↥F'' := hF''.1
++  have := hN
++  have : FiniteDimensional ℚ ↥F'' := hF''.1
+   exact ⟨F'', hF'', ⟨⟩, (le_sup_left.trans le_sup_left).trans hle, (le_sup_right.trans le_sup_left).trans hle,
+     (le_sup_right.trans hle) hεF⟩
+ 
+@@ -1087,7 +1101,7 @@
+     (w : HeightOneSpectrum (𝓞 ↥L)) (hw : w ∉ placesOverPrimes ↥L (S : Set Nat.Primes)) :
+     FractionalIdeal.count ↥L w (idealOf L F'' hLF a₂) =
+       FractionalIdeal.count ↥L w (idealOf L F'' hLF a₁) - FractionalIdeal.count ↥L w (FractionalIdeal.spanSingleton (nonZeroDivisors (𝓞 ↥L)) (βL : ↥L)) := by
+-  letI := algLF L F'' hLF
++  let := algLF L F'' hLF
+   let w'' := primeOver L F'' hLF w
+   have hunder : w''.asIdeal.under (𝓞 ↥L) = w.asIdeal := primeOver_under L F'' hLF w
+   have hw''S : w'' ∉ placesOverPrimes ↥F'' (S : Set Nat.Primes) := not_mem_placesOverPrimes_of_under S L F'' hLF w hw w'' hunder
+@@ -1119,16 +1133,16 @@
+ 
+ theorem Datum.cls_eq_of_H1π_eq (hL : L.IsUnramifiedOutside S)
+     {c₁ c₂ : ↥(levelCocyclesSr₁ L.fixingSubgroup.subtype S (sUnitsMaxRep S L))} (d₁ : Datum c₁) (d₂ : Datum c₂)
+-    (h : (H1π (sUnitsMaxRep S L)).hom c₁.1 = (H1π (sUnitsMaxRep S L)).hom c₂.1) : d₁.cls = d₂.cls := by
++    (h : (H1π (sUnitsMaxRep S L)).hom c₁.1 = (H1π (sUnitsMaxRep S L)).hom c₂.1) : d₁.cls (_sectionFinite := inferInstance) = d₂.cls (_sectionFinite := inferInstance) := by
+   classical
+-  haveI : FiniteDimensional ℚ ↥d₁.F := d₁.hF.1
+-  haveI : FiniteDimensional ℚ ↥d₂.F := d₂.hF.1
+-  haveI := d₁.gal
+-  haveI := d₂.gal
++  have : FiniteDimensional ℚ ↥d₁.F := d₁.hF.1
++  have : FiniteDimensional ℚ ↥d₂.F := d₂.hF.1
++  have := d₁.gal
++  have := d₂.gal
+   obtain ⟨e₀, hrel⟩ := exists_val_rel c₁ c₂ h
+   obtain ⟨F'', hF'', hgal, h₁, h₂, hεF⟩ := exists_common_level hL d₁ d₂ e₀
+-  haveI := hgal
+-  haveI : FiniteDimensional ℚ ↥F'' := hF''.1
++  have := hgal
++  have : FiniteDimensional ℚ ↥F'' := hF''.1
+   have hLF'' : L ≤ F'' := d₁.hLF.trans h₁
+ 
+   set ε : (AlgebraicClosure ℚ)ˣ := sUnitsMaxRep.val S L e₀ with hεdef
+@@ -1164,11 +1178,11 @@
+         (FractionalIdeal.spanSingleton_ne_zero_iff.mpr (Units.ne_zero _)),
+       Units.val_inv_eq_inv_val, ← FractionalIdeal.spanSingleton_inv, FractionalIdeal.count_inv]
+     ring
+-  rw [d₂.cls_eq, mkS_eq_of_count_eq S L _ _ (idealOf_ne_zero' L d₂.F d₂.hLF d₂.α)
++  rw [d₂.cls_eq (_sectionFinite := inferInstance), mkS_eq_of_count_eq S L _ _ (idealOf_ne_zero' L d₂.F d₂.hLF d₂.α)
+       (mul_ne_zero (idealOf_ne_zero' L d₁.F d₁.hLF d₁.α) (FractionalIdeal.spanSingleton_ne_zero_iff.mpr (Units.ne_zero _))) hcount,
+     mkS_congr S L _ (mul_ne_zero (FractionalIdeal.spanSingleton_ne_zero_iff.mpr (Units.ne_zero _)) (idealOf_ne_zero' L d₁.F d₁.hLF d₁.α))
+       (mul_comm _ _),
+-    mkS_spanSingleton_mul S L _ (Units.ne_zero _) _ (idealOf_ne_zero' L d₁.F d₁.hLF d₁.α), d₁.cls_eq]
++    mkS_spanSingleton_mul S L _ (Units.ne_zero _) _ (idealOf_ne_zero' L d₁.F d₁.hLF d₁.α), d₁.cls_eq (_sectionFinite := inferInstance)]
+ 
+ end asm3c
+ 
+@@ -1180,11 +1194,12 @@
+ 
+ set_option maxHeartbeats 6400000 in
+ 
+-lemma nonempty_datum (hL : L.IsUnramifiedOutside S) (c : ↥(levelCocyclesSr₁ L.fixingSubgroup.subtype S (sUnitsMaxRep S L))) :
++omit [FiniteDimensional ℚ ↥L] in
++lemma nonempty_datum [FiniteDimensional ℚ ↥L] (hL : L.IsUnramifiedOutside S) (c : ↥(levelCocyclesSr₁ L.fixingSubgroup.subtype S (sUnitsMaxRep S L))) :
+     Nonempty (Datum c) := by
+   obtain ⟨F, hF, hN, hLF, -, α, hαF, hcob⟩ := exists_level_coboundary S L hL c
+-  haveI := hN
+-  haveI : FiniteDimensional ℚ ↥F := hF.1
++  have := hN
++  have : FiniteDimensional ℚ ↥F := hF.1
+   refine ⟨⟨F, hF, ⟨⟩, hLF, Units.mk0 ⟨(α : AlgebraicClosure ℚ), hαF⟩ (fun h0 => α.ne_zero (congrArg Subtype.val h0)), fun g => ?_⟩⟩
+   rw [hcob g, Units.val_div_eq_div_val]
+   rfl
+@@ -1194,23 +1209,25 @@
+ 
+ set_option maxHeartbeats 6400000 in
+ 
+-lemma exists_datum_zero (hL : L.IsUnramifiedOutside S) :
++omit [FiniteDimensional ℚ ↥L] in
++lemma exists_datum_zero [FiniteDimensional ℚ ↥L] (hL : L.IsUnramifiedOutside S) :
+     ∃ d : Datum (0 : ↥(levelCocyclesSr₁ L.fixingSubgroup.subtype S (sUnitsMaxRep S L))), d.α = 1 := by
+   obtain ⟨F, hLF, hF, hN⟩ := IntermediateField.exists_normal_isUnramifiedOutside_of_le S L hL
+-  haveI := hN
+-  haveI : FiniteDimensional ℚ ↥F := hF.1
++  have := hN
++  have : FiniteDimensional ℚ ↥F := hF.1
+   refine ⟨⟨F, hF, ⟨⟩, hLF, 1, fun g => ?_⟩, rfl⟩
+   rw [Units.val_one, OneMemClass.coe_one, map_one, div_one]
+   rfl
+ 
+ set_option maxHeartbeats 6400000 in
+ 
+-lemma exists_datum_add (hL : L.IsUnramifiedOutside S) {c₁ c₂ : ↥(levelCocyclesSr₁ L.fixingSubgroup.subtype S (sUnitsMaxRep S L))}
++omit [FiniteDimensional ℚ ↥L] in
++lemma exists_datum_add [FiniteDimensional ℚ ↥L] (_hL : L.IsUnramifiedOutside S) {c₁ c₂ : ↥(levelCocyclesSr₁ L.fixingSubgroup.subtype S (sUnitsMaxRep S L))}
+     (d₁ : Datum c₁) (d₂ : Datum c₂) :
+     ∃ (d : Datum (c₁ + c₂)) (h₁ : d₁.F ≤ d.F) (h₂ : d₂.F ≤ d.F), d.α = liftUnit h₁ d₁.α * liftUnit h₂ d₂.α := by
+   obtain ⟨F'', hle, hF'', hN⟩ := IntermediateField.exists_normal_isUnramifiedOutside_of_le S (d₁.F ⊔ d₂.F) (d₁.hF.sup d₂.hF)
+-  haveI := hN
+-  haveI : FiniteDimensional ℚ ↥F'' := hF''.1
++  have := hN
++  have : FiniteDimensional ℚ ↥F'' := hF''.1
+   have h₁ : d₁.F ≤ F'' := le_sup_left.trans hle
+   have h₂ : d₂.F ≤ F'' := le_sup_right.trans hle
+   refine ⟨⟨F'', hF'', ⟨⟩, d₁.hLF.trans h₁, liftUnit h₁ d₁.α * liftUnit h₂ d₂.α, fun g => ?_⟩, h₁, h₂, rfl⟩
+@@ -1226,25 +1243,25 @@
+ 
+ def fXfun (hL : L.IsUnramifiedOutside S) (x : ↥(continuousH1Sr L.fixingSubgroup.subtype S (sUnitsMaxRep S L))) :
+     sClassGroupRep ↥L ↥L (S : Set Nat.Primes) :=
+-  (datum₀ hL (CycBaseLES.rep L.fixingSubgroup.subtype S (sUnitsMaxRep S L) x)).cls
++  (datum₀ hL (CycBaseLES.rep L.fixingSubgroup.subtype S (sUnitsMaxRep S L) x)).cls (_sectionFinite := inferInstance)
+ 
+ set_option maxHeartbeats 6400000 in
+ 
+ lemma fXfun_eq (hL : L.IsUnramifiedOutside S) (x : ↥(continuousH1Sr L.fixingSubgroup.subtype S (sUnitsMaxRep S L)))
+     {c : ↥(levelCocyclesSr₁ L.fixingSubgroup.subtype S (sUnitsMaxRep S L))} (d : Datum c)
+-    (hc : (H1π (sUnitsMaxRep S L)).hom c.1 = x.1) : fXfun S L hL x = d.cls :=
++    (hc : (H1π (sUnitsMaxRep S L)).hom c.1 = x.1) : fXfun S L hL x = d.cls (_sectionFinite := inferInstance) :=
+   Datum.cls_eq_of_H1π_eq hL _ d ((CycBaseLES.H1π_rep L.fixingSubgroup.subtype S (sUnitsMaxRep S L) x).trans hc.symm)
+ 
+ set_option maxHeartbeats 6400000 in
+ lemma fXfun_zero (hL : L.IsUnramifiedOutside S) : fXfun S L hL 0 = 0 := by
+   obtain ⟨d, hd⟩ := exists_datum_zero (S := S) (L := L) hL
+-  haveI : FiniteDimensional ℚ ↥d.F := d.hF.1
+-  haveI := d.gal
+-  rw [fXfun_eq S L hL 0 d (by exact (map_zero _)), d.cls_eq]
++  have : FiniteDimensional ℚ ↥d.F := d.hF.1
++  have := d.gal
++  rw [fXfun_eq S L hL 0 d (by exact (map_zero _)), d.cls_eq (_sectionFinite := inferInstance)]
+   have h1 : mkS S L (idealOf L d.F d.hLF d.α) (idealOf_ne_zero' L d.F d.hLF d.α) = mkS S L 1 one_ne_zero := by
+     apply mkS_eq_of_count_eq
+     intro w hw
+-    letI := algLF L d.F d.hLF
++    let := algLF L d.F d.hLF
+     rw [(idealOf_spec' S L d.F d.hLF d.α d.hα).2 w hw (primeOver L d.F d.hLF w) (primeOver_under L d.F d.hLF w), hd, map_one,
+       toAdd_one, FractionalIdeal.count_one]
+   rw [h1]
+@@ -1261,7 +1278,7 @@
+     (w : HeightOneSpectrum (𝓞 ↥L)) (hw : w ∉ placesOverPrimes ↥L (S : Set Nat.Primes)) :
+     FractionalIdeal.count ↥L w (idealOf L d.F d.hLF d.α) =
+       FractionalIdeal.count ↥L w (idealOf L d₁.F d₁.hLF d₁.α) + FractionalIdeal.count ↥L w (idealOf L d₂.F d₂.hLF d₂.α) := by
+-  letI := algLF L d.F d.hLF
++  let := algLF L d.F d.hLF
+   have e0 := (idealOf_spec' S L d.F d.hLF d.α d.hα).2 w hw (primeOver L d.F d.hLF w) (primeOver_under L d.F d.hLF w)
+   have e1 := count_idealOf_liftUnit S L d₁.F d.F d₁.hLF h₁ d.hF d₁.α d₁.hα w hw
+   have e2 := count_idealOf_liftUnit S L d₂.F d.F d₂.hLF h₂ d.hF d₂.α d₂.hα w hw
+@@ -1277,12 +1294,12 @@
+ 
+ lemma cls_datum_add {c₁ c₂ : ↥(levelCocyclesSr₁ L.fixingSubgroup.subtype S (sUnitsMaxRep S L))}
+     (d₁ : Datum c₁) (d₂ : Datum c₂) (d : Datum (c₁ + c₂)) (h₁ : d₁.F ≤ d.F) (h₂ : d₂.F ≤ d.F)
+-    (hd : d.α = liftUnit h₁ d₁.α * liftUnit h₂ d₂.α) : d.cls = d₁.cls + d₂.cls := by
+-  haveI : FiniteDimensional ℚ ↥d.F := d.hF.1
+-  haveI : FiniteDimensional ℚ ↥d₁.F := d₁.hF.1
+-  haveI : FiniteDimensional ℚ ↥d₂.F := d₂.hF.1
+-  haveI := d.gal; haveI := d₁.gal; haveI := d₂.gal
+-  rw [d.cls_eq, d₁.cls_eq, d₂.cls_eq, ← mkS_mul]
++    (hd : d.α = liftUnit h₁ d₁.α * liftUnit h₂ d₂.α) : d.cls (_sectionFinite := inferInstance) = d₁.cls (_sectionFinite := inferInstance) + d₂.cls (_sectionFinite := inferInstance) := by
++  have : FiniteDimensional ℚ ↥d.F := d.hF.1
++  have : FiniteDimensional ℚ ↥d₁.F := d₁.hF.1
++  have : FiniteDimensional ℚ ↥d₂.F := d₂.hF.1
++  have := d.gal; have := d₁.gal; have := d₂.gal
++  rw [d.cls_eq (_sectionFinite := inferInstance), d₁.cls_eq (_sectionFinite := inferInstance), d₂.cls_eq (_sectionFinite := inferInstance), ← mkS_mul]
+   apply mkS_eq_of_count_eq
+   intro w hw
+   rw [FractionalIdeal.count_mul ↥L w (idealOf_ne_zero' L d₁.F d₁.hLF d₁.α) (idealOf_ne_zero' L d₂.F d₂.hLF d₂.α)]
+@@ -1344,7 +1361,6 @@
+   rw [FractionalIdeal.count_well_defined K v hI heq, map_div₀, HeightOneSpectrum.valuation_of_algebraMap,
+     HeightOneSpectrum.valuation_of_algebraMap, v.intValuation_if_neg hr0, v.intValuation_if_neg hs0, ← WithZero.exp_sub]
+   congr 1
+-  push_cast
+   ring
+ 
+ end L1
+@@ -1388,11 +1404,14 @@
+   (KT : Type) [Field KT] [Algebra T KT] [IsFractionRing T KT]
+ 
+ noncomputable def underv (P : HeightOneSpectrum T) : HeightOneSpectrum R :=
+-  ⟨P.asIdeal.under R, Ideal.IsPrime.under R P.asIdeal, fun h => P.ne_bot (Ideal.eq_bot_of_comap_eq_bot h)⟩
+-
+-lemma underv_asIdeal (P : HeightOneSpectrum T) : (underv (R := R) P).asIdeal = P.asIdeal.under R := rfl
+-
+-lemma mem_primesOver_iff (p : HeightOneSpectrum R) (P : HeightOneSpectrum T) :
++  ⟨P.asIdeal.under R, Ideal.IsPrime.under R P.asIdeal, fun h => P.ne_bot (Ideal.eq_bot_of_under_eq_bot h)⟩
++
++omit [Module.IsTorsionFree R T] in
++lemma underv_asIdeal [Module.IsTorsionFree R T] (P : HeightOneSpectrum T) : (underv (R := R) P).asIdeal = P.asIdeal.under R := rfl
++
++lemma mem_primesOver_iff {R T : Type} [CommRing R] [IsDedekindDomain R]
++    [CommRing T] [IsDedekindDomain T] [Algebra R T] [Algebra.IsIntegral R T]
++    [Module.IsTorsionFree R T] (p : HeightOneSpectrum R) (P : HeightOneSpectrum T) :
+     P.asIdeal ∈ p.asIdeal.primesOver T ↔ P.asIdeal.under R = p.asIdeal := by
+   constructor
+   · intro h; exact h.2.over.symm
+@@ -1401,11 +1420,11 @@
+ lemma count_map_prime (p : HeightOneSpectrum R) (P : HeightOneSpectrum T) :
+     FractionalIdeal.count KT P ((p.asIdeal.map (algebraMap R T) : Ideal T) : FractionalIdeal (nonZeroDivisors T) KT) =
+       if P.asIdeal.under R = p.asIdeal then (p.asIdeal.ramificationIdx' P.asIdeal : ℤ) else 0 := by
+-  haveI := p.isMaximal
++  have := p.isMaximal
+   have hp0 : p.asIdeal ≠ 0 := by simpa using p.ne_bot
+   rw [Ideal.map_algebraMap_eq_finsetProd_pow hp0,
+     Finset.prod_congr rfl (fun Q hQ => by
+-      haveI := (Set.mem_toFinset.mp hQ).1; haveI := (Set.mem_toFinset.mp hQ).2
++      have := (Set.mem_toFinset.mp hQ).1; have := (Set.mem_toFinset.mp hQ).2
+       rw [← Ideal.ramificationIdx'_eq_ramificationIdx p.asIdeal Q p.ne_bot]),
+     show (((∏ Q ∈ (p.asIdeal.primesOver T).toFinset, Q ^ p.asIdeal.ramificationIdx' Q : Ideal T)) : FractionalIdeal (nonZeroDivisors T) KT) =
+       ∏ Q ∈ (p.asIdeal.primesOver T).toFinset, (FractionalIdeal.coeIdealHom (nonZeroDivisors T) KT) (Q ^ p.asIdeal.ramificationIdx' Q) from
+@@ -1418,8 +1437,8 @@
+       intro Q hQ
+       rw [Set.mem_toFinset] at hQ
+       by_cases hQP : Q = P.asIdeal
+-      · subst hQP; rw [if_pos rfl, FractionalIdeal.count_self, mul_one]
+-      · rw [if_neg hQP]
++      · subst hQP; rw [ite_eq_left rfl, FractionalIdeal.count_self, mul_one]
++      · rw [ite_eq_right hQP]
+         let Qv : HeightOneSpectrum T := ⟨Q, hQ.1, Ideal.ne_bot_of_mem_primesOver (p.ne_bot) hQ⟩
+         have hne : Qv ≠ P := fun h => hQP (congrArg HeightOneSpectrum.asIdeal h)
+         have := FractionalIdeal.count_maximal_coprime KT P hne
+@@ -1427,9 +1446,9 @@
+           this, mul_zero]
+     rw [Finset.sum_congr rfl hterm, Finset.sum_ite_eq']
+     by_cases hP : P.asIdeal.under R = p.asIdeal
+-    · rw [if_pos hP, if_pos]
++    · rw [ite_eq_left hP, ite_eq_left]
+       rw [Set.mem_toFinset]; exact (mem_primesOver_iff p P).2 hP
+-    · rw [if_neg hP, if_neg]
++    · rw [ite_eq_right hP, ite_eq_right]
+       rw [Set.mem_toFinset]; exact fun h => hP ((mem_primesOver_iff p P).1 h)
+   · intro Q hQ
+     rw [Set.mem_toFinset] at hQ
+@@ -1465,11 +1484,11 @@
+         ((qv.asIdeal.map (algebraMap R T) : Ideal T) : FractionalIdeal (nonZeroDivisors T) KT) from rfl, h1,
+       show ((q : Ideal R) : FractionalIdeal (nonZeroDivisors R) KR) = ((qv.asIdeal : Ideal R) : FractionalIdeal (nonZeroDivisors R) KR) from rfl]
+     by_cases hPq : P.asIdeal.under R = qv.asIdeal
+-    · rw [if_pos hPq]
++    · rw [ite_eq_left hPq]
+       have : underv (R := R) P = qv := HeightOneSpectrum.ext hPq
+       rw [this, FractionalIdeal.count_self, mul_one]
+       rw [hPq]
+-    · rw [if_neg hPq]
++    · rw [ite_eq_right hPq]
+       have hne : qv ≠ underv (R := R) P := fun h => hPq (by rw [h]; rfl)
+       rw [FractionalIdeal.count_maximal_coprime KR (underv (R := R) P) hne, mul_zero]
+ 
+@@ -1564,10 +1583,10 @@
+     letI := algLF L F hLF
+     haveI := isIntegral_OLF L F hLF
+     v'.valuation ↥F (algebraMap ↥L ↥F z) = (CapInj.underv (R := 𝓞 ↥L) v').valuation ↥L z := by
+-  letI := algLF L F hLF
+-  haveI := isScalarTower_LF L F hLF
+-  haveI := isIntegral_OLF L F hLF
+-  haveI := faithfulSMul_OLF L F hLF
++  let := algLF L F hLF
++  have := isScalarTower_LF L F hLF
++  have := isIntegral_OLF L F hLF
++  have := faithfulSMul_OLF L F hLF
+   have he : (v'.asIdeal.under (𝓞 ↥L)).ramificationIdx' v'.asIdeal = 1 :=
+     ramificationIdx_eq_one' S L F hLF hF v'.asIdeal v'.isMaximal hv'S
+ 
+@@ -1588,7 +1607,7 @@
+     rw [map_zero, zero_div] at hzrs
+     exact hz hzrs.symm
+   rw [← hzrs, map_div₀, map_div₀, map_div₀, ← key r hr0, ← key s hs0]
+-  congr 1 <;> congr 1 <;> exact (IsScalarTower.algebraMap_apply (𝓞 ↥L) (𝓞 ↥F) ↥F _).symm.trans (IsScalarTower.algebraMap_apply (𝓞 ↥L) ↥L ↥F _)
++  congr 1
+ 
+ theorem exists_div_sunit_of_classOf_eq_zero' [IsGalois ℚ ↥F] (hF : F.IsUnramifiedOutside S) (α : (↥F)ˣ)
+     (hα : ∀ g : ↥L.fixingSubgroup, ∀ q : Nat.Primes, q ∉ S → ∀ A : ValuationSubring (AlgebraicClosure ℚ), A.LiesOverPrime (q : ℕ) →
+@@ -1600,10 +1619,10 @@
+     ∃ β : (↥L)ˣ, ∀ q : Nat.Primes, q ∉ S → ∀ A : ValuationSubring (AlgebraicClosure ℚ), A.LiesOverPrime (q : ℕ) →
+       ((α : ↥F) : AlgebraicClosure ℚ) / ((β : ↥L) : AlgebraicClosure ℚ) ∈ A ∧
+         (((α : ↥F) : AlgebraicClosure ℚ) / ((β : ↥L) : AlgebraicClosure ℚ))⁻¹ ∈ A := by
+-  letI := algLF L F hLF
+-  haveI := isScalarTower_LF L F hLF
+-  haveI := isScalarTower_LFQ L F hLF
+-  haveI := isIntegral_OLF L F hLF
++  let := algLF L F hLF
++  have := isScalarTower_LF L F hLF
++  have := isScalarTower_LFQ L F hLF
++  have := isIntegral_OLF L F hLF
+ 
+   have hc : ClassGroup.mk ↥L (Units.mk0 (idealOf L F hLF α) h0) ∈ Subgroup.closure (primeClass ↥L '' placesOverPrimes ↥L (S : Set Nat.Primes)) := by
+     rw [← NumberField.LevelArith.sPrimeClasses_eq_closure ↥L ↥L]
+@@ -1706,9 +1725,9 @@
+     ∃ F : IntermediateField ℚ (AlgebraicClosure ℚ), L ≤ F ∧ y ∈ F ∧ F.IsUnramifiedOutside S ∧ IsGalois ℚ ↥F ∧ FiniteDimensional ℚ ↥F := by
+ 
+   have hyint : IsIntegral ℚ y := Algebra.IsIntegral.isIntegral y
+-  haveI : FiniteDimensional ℚ ↥(IntermediateField.adjoin ℚ {y}) := IntermediateField.adjoin.finiteDimensional hyint
++  have : FiniteDimensional ℚ ↥(IntermediateField.adjoin ℚ {y}) := IntermediateField.adjoin.finiteDimensional hyint
+   let E₀ : IntermediateField ℚ (AlgebraicClosure ℚ) := L ⊔ IntermediateField.adjoin ℚ {y}
+-  haveI hE₀fd : FiniteDimensional ℚ ↥E₀ := IntermediateField.finiteDimensional_sup L _
++  have hE₀fd : FiniteDimensional ℚ ↥E₀ := IntermediateField.finiteDimensional_sup L _
+ 
+   have hE₀ : E₀.IsUnramifiedOutside S := by
+     refine ⟨hE₀fd, fun q hq A hA σ hσ => ?_⟩
+@@ -1753,7 +1772,7 @@
+     | mul a b _ _ ha hb => rw [map_mul, ha, hb]
+ 
+   have hyE₀ : y ∈ E₀ := (le_sup_right : IntermediateField.adjoin ℚ {y} ≤ E₀) (IntermediateField.subset_adjoin ℚ {y} (Set.mem_singleton y))
+-  haveI : Normal ℚ ↥(IntermediateField.normalClosure ℚ (↥E₀) (AlgebraicClosure ℚ)) := normalClosure.normal ℚ (↥E₀) (AlgebraicClosure ℚ)
++  have : Normal ℚ ↥(IntermediateField.normalClosure ℚ (↥E₀) (AlgebraicClosure ℚ)) := normalClosure.normal ℚ (↥E₀) (AlgebraicClosure ℚ)
+   exact ⟨IntermediateField.normalClosure ℚ (↥E₀) (AlgebraicClosure ℚ), le_sup_left.trans (IntermediateField.le_normalClosure E₀),
+     IntermediateField.le_normalClosure E₀ hyE₀, IntermediateField.IsUnramifiedOutside.normalClosure hE₀, ⟨⟩, inferInstance⟩
+ 
+@@ -1795,8 +1814,8 @@
+ 
+   obtain ⟨y, hy⟩ := IsAlgClosed.exists_pow_nat_eq ((x : ↥L) : AlgebraicClosure ℚ) hp.pos
+   obtain ⟨F, hLF, hyF, hF, hGal, hFD⟩ := exists_kummer_level S hpS L hL x hx0 hdiv y hy
+-  haveI := hGal
+-  haveI := hFD
++  have := hGal
++  have := hFD
+   have hx0' : ((x : ↥L) : AlgebraicClosure ℚ) ≠ 0 := fun h => hx0 (Subtype.ext h)
+   have hy0 : y ≠ 0 := by rintro rfl; rw [zero_pow hp.ne_zero] at hy; exact hx0' hy.symm
+   let α : (↥F)ˣ := Units.mk0 ⟨y, hyF⟩ (fun h => hy0 (congrArg Subtype.val h))
+@@ -1808,8 +1827,8 @@
+       (IntermediateField.mem_fixingSubgroup_iff _ _).1 g.2 _ x.2
+     rw [hαy, div_pow, ← map_pow, hy, hgx, div_self hx0']
+   ·
+-    letI := algLF L F hLF
+-    haveI := isScalarTower_LF L F hLF
++    let := algLF L F hLF
++    have := isScalarTower_LF L F hLF
+     refine ⟨idealOf_ne_zero' L F hLF α, ?_⟩
+ 
+     have hval : ∀ w : HeightOneSpectrum (𝓞 ↥L), w ∉ placesOverPrimes ↥L (S : Set Nat.Primes) →
+@@ -1855,7 +1874,8 @@
+ 
+ variable (S : Finset Nat.Primes) (L : IntermediateField ℚ (AlgebraicClosure ℚ)) [FiniteDimensional ℚ ↥L]
+ 
+-lemma mem_sUnitsMaxStable_of_unit {F : IntermediateField ℚ (AlgebraicClosure ℚ)} (hF : F.IsUnramifiedOutside S)
++omit [FiniteDimensional ℚ ↥L] in
++lemma mem_sUnitsMaxStable_of_unit [FiniteDimensional ℚ ↥L] {F : IntermediateField ℚ (AlgebraicClosure ℚ)} (hF : F.IsUnramifiedOutside S)
+     (ε : (AlgebraicClosure ℚ)ˣ) (hεF : (ε : AlgebraicClosure ℚ) ∈ F)
+     (hunit : ∀ q : Nat.Primes, q ∉ S → ∀ A : ValuationSubring (AlgebraicClosure ℚ), A.LiesOverPrime (q : ℕ) →
+       (ε : AlgebraicClosure ℚ) ∈ A ∧ ((ε : AlgebraicClosure ℚ))⁻¹ ∈ A) : ε ∈ sUnitsMaxStable S L := by
+@@ -1874,8 +1894,8 @@
+ 
+   let c := CycBaseLES.rep L.fixingSubgroup.subtype S (sUnitsMaxRep S L) z
+   let d := datum₀ hL c
+-  haveI : FiniteDimensional ℚ ↥d.F := d.hF.1
+-  haveI := d.gal
++  have : FiniteDimensional ℚ ↥d.F := d.hF.1
++  have := d.gal
+   have hcls : (Submodule.Quotient.mk (Additive.ofMul (ClassGroup.mk ↥L (Units.mk0 (idealOf L d.F d.hLF d.α) (idealOf_ne_zero' L d.F d.hLF d.α)))) :
+       sClassGroupRep ↥L ↥L (S : Set Nat.Primes)) = 0 := hxy
+   obtain ⟨β, hβ⟩ := exists_div_sunit_of_classOf_eq_zero' S L d.F d.hLF d.hF d.α d.hα (idealOf_ne_zero' L d.F d.hLF d.α) hcls
+@@ -1923,7 +1943,8 @@
+ 
+ include hpS in
+ 
+-lemma mem_sUnitsMaxStable_of_pow_eq_one (u : (AlgebraicClosure ℚ)ˣ) (hu : (u : AlgebraicClosure ℚ) ^ p = 1) : u ∈ sUnitsMaxStable S L := by
++omit [FiniteDimensional ℚ ↥L] in
++lemma mem_sUnitsMaxStable_of_pow_eq_one [FiniteDimensional ℚ ↥L] (u : (AlgebraicClosure ℚ)ˣ) (hu : (u : AlgebraicClosure ℚ) ^ p = 1) : u ∈ sUnitsMaxStable S L := by
+   have hp : p.Prime := Fact.out
+   rw [NumberField.LevelArith.sUnitsMaxStable_eq_sUnitsMax]
+   have hlev : (⊥ ⊔ IntermediateField.adjoin ℚ {(u : AlgebraicClosure ℚ)}).IsUnramifiedOutside S :=
+@@ -1948,7 +1969,7 @@
+       fX S L hL x = Submodule.Quotient.mk (Additive.ofMul C) := by
+   have hp : p.Prime := Fact.out
+   obtain ⟨F, hLF, hF, hgal, hFD, α, hαp, hroot, h0, hcls⟩ := exists_kummer_level_of_torsion' S hpS L hL C hC
+-  haveI := hgal; haveI := hFD
++  have := hgal; have := hFD
+   have hα0 : ((α : ↥F) : AlgebraicClosure ℚ) ≠ 0 := fun h => α.ne_zero (Subtype.ext h)
+ 
+   let u : ↥L.fixingSubgroup → (AlgebraicClosure ℚ)ˣ := fun g =>
+@@ -1996,8 +2017,8 @@
+     rw [← map_nsmul, hpc, map_zero]
+   ·
+     let D : Datum c := ⟨F, hF, hgal, hLF, α, fun g => rfl⟩
+-    haveI : FiniteDimensional ℚ ↥D.F := hFD
+-    rw [show fX S L hL x = fXfun S L hL x from rfl, fXfun_eq S L hL x D rfl, D.cls_eq]
++    have : FiniteDimensional ℚ ↥D.F := hFD
++    rw [show fX S L hL x = fXfun S L hL x from rfl, fXfun_eq S L hL x D rfl, D.cls_eq (_sectionFinite := inferInstance)]
+     exact hcls
+ 
+ end asm6
+@@ -2008,7 +2029,8 @@
+ 
+ variable (S : Finset Nat.Primes) (L : IntermediateField ℚ (AlgebraicClosure ℚ)) [FiniteDimensional ℚ ↥L]
+ 
+-lemma ringOfIntegersAut_eq_toRingEquiv (τ : ↥L ≃ₐ[ℚ] ↥L) :
++omit [FiniteDimensional ℚ ↥L] in
++lemma ringOfIntegersAut_eq_toRingEquiv [FiniteDimensional ℚ ↥L] (τ : ↥L ≃ₐ[ℚ] ↥L) :
+     (ringOfIntegersAut ℚ ↥L τ : 𝓞 ↥L ≃+* 𝓞 ↥L) = MulSemiringAction.toRingEquiv (↥L ≃ₐ[ℚ] ↥L) (𝓞 ↥L) τ :=
+   RingEquiv.ext fun _ => rfl
+ 
+@@ -2020,7 +2042,8 @@
+   show Ideal.map (ringOfIntegersAut ℚ ↥L τ : 𝓞 ↥L →+* 𝓞 ↥L) w.asIdeal = (τ • w).asIdeal
+   rw [NumberField.PlaceTransport.smul_asIdeal_eq_map, ringOfIntegersAut_eq_toRingEquiv]
+ 
+-lemma smul_mem_placesOverPrimes_iff (τ : ↥L ≃ₐ[ℚ] ↥L) (w : HeightOneSpectrum (𝓞 ↥L)) :
++omit [FiniteDimensional ℚ ↥L] in
++lemma smul_mem_placesOverPrimes_iff [FiniteDimensional ℚ ↥L] (τ : ↥L ≃ₐ[ℚ] ↥L) (w : HeightOneSpectrum (𝓞 ↥L)) :
+     τ • w ∈ placesOverPrimes ↥L (S : Set Nat.Primes) ↔ w ∈ placesOverPrimes ↥L (S : Set Nat.Primes) := by
+   constructor
+   · rintro ⟨q, hq, h⟩
+@@ -2089,7 +2112,7 @@
+     (Function.mulSupport fun w => (w.asIdeal : FractionalIdeal (nonZeroDivisors (𝓞 ↥L)) ↥L) ^ n w).Finite := by
+   apply (Filter.eventually_cofinite.mp hn).subset
+   intro w hw
+-  simp only [Function.mem_mulSupport, Set.mem_setOf_eq] at hw ⊢
++  simp only [Function.mem_mulSupport, Set.mem_ofPred_eq] at hw ⊢
+   intro h0; exact hw (by rw [h0, zpow_zero])
+ 
+ lemma smul_mk_J (τ : ↥L ≃ₐ[ℚ] ↥L) (n : HeightOneSpectrum (𝓞 ↥L) → ℤ) (hn : ∀ᶠ w in Filter.cofinite, n w = 0) :
+@@ -2104,7 +2127,7 @@
+   have hsupp : (Function.mulSupport fun w => primeClass ↥L w ^ n w).Finite := by
+     apply (Filter.eventually_cofinite.mp hn).subset
+     intro w hw
+-    simp only [Function.mem_mulSupport, Set.mem_setOf_eq] at hw ⊢
++    simp only [Function.mem_mulSupport, Set.mem_ofPred_eq] at hw ⊢
+     intro h0; exact hw (by rw [h0, zpow_zero])
+   rw [← MulDistribMulAction.toMonoidHom_apply, MonoidHom.map_finprod _ hsupp]
+ 
+@@ -2125,15 +2148,17 @@
+ 
+ noncomputable abbrev σF : ↥F ≃ₐ[ℚ] ↥F := AlgEquiv.restrictNormalHom ↥F σ
+ 
+-lemma coe_σF (x : ↥F) : ((σF F σ x : ↥F) : AlgebraicClosure ℚ) = σ (x : AlgebraicClosure ℚ) :=
++omit [FiniteDimensional ℚ ↥F] in
++lemma coe_σF [FiniteDimensional ℚ ↥F] (x : ↥F) : ((σF F σ x : ↥F) : AlgebraicClosure ℚ) = σ (x : AlgebraicClosure ℚ) :=
+   AlgEquiv.restrictNormal_commutes σ ↥F x
+ 
+ include hστ in
+ 
+-lemma σF_algebraMap (x : 𝓞 ↥L) :
++omit [FiniteDimensional ℚ ↥L] in
++lemma σF_algebraMap [FiniteDimensional ℚ ↥L] (x : 𝓞 ↥L) :
+     letI := algLF L F hLF
+     σF F σ • algebraMap (𝓞 ↥L) (𝓞 ↥F) x = algebraMap (𝓞 ↥L) (𝓞 ↥F) (τ • x) := by
+-  letI := algLF L F hLF
++  let := algLF L F hLF
+   apply RingOfIntegers.ext
+   apply Subtype.ext
+   show ((σF F σ (algebraMap ↥L ↥F (x : ↥L)) : ↥F) : AlgebraicClosure ℚ) = ((algebraMap ↥L ↥F (τ (x : ↥L)) : ↥F) : AlgebraicClosure ℚ)
+@@ -2146,7 +2171,7 @@
+     (hunder : letI := algLF L F hLF; W'.asIdeal.under (𝓞 ↥L) = w'.asIdeal) :
+     letI := algLF L F hLF
+     ((σF F σ)⁻¹ • W').asIdeal.under (𝓞 ↥L) = (τ⁻¹ • w').asIdeal := by
+-  letI := algLF L F hLF
++  let := algLF L F hLF
+   ext x
+   rw [Ideal.under_def, Ideal.mem_comap, NumberField.PlaceTransport.mem_smul_asIdeal_iff, inv_inv,
+     NumberField.PlaceTransport.mem_smul_asIdeal_iff, inv_inv, σF_algebraMap L F hLF σ τ hστ x]
+@@ -2167,7 +2192,7 @@
+     (w' : HeightOneSpectrum (𝓞 ↥L)) (hw' : w' ∉ placesOverPrimes ↥L (S : Set Nat.Primes)) :
+     FractionalIdeal.count ↥L w' (idealOf L F hLF (Units.map (σF F σ : ↥F →* ↥F) α)) =
+       FractionalIdeal.count ↥L (τ⁻¹ • w') (idealOf L F hLF α) := by
+-  letI := algLF L F hLF
++  let := algLF L F hLF
+   let W' := primeOver L F hLF w'
+   have hunder : W'.asIdeal.under (𝓞 ↥L) = w'.asIdeal := primeOver_under L F hLF w'
+   have hw'' : τ⁻¹ • w' ∉ placesOverPrimes ↥L (S : Set Nat.Primes) := fun h => hw' (by
+@@ -2191,7 +2216,8 @@
+ 
+ variable {S : Finset Nat.Primes} {L : IntermediateField ℚ (AlgebraicClosure ℚ)} [FiniteDimensional ℚ ↥L]
+ 
+-lemma conj_mem_fixingSubgroup (σ : (AlgebraicClosure ℚ ≃ₐ[ℚ] AlgebraicClosure ℚ)) (τ : ↥L ≃ₐ[ℚ] ↥L)
++omit [FiniteDimensional ℚ ↥L] in
++lemma conj_mem_fixingSubgroup [FiniteDimensional ℚ ↥L] (σ : (AlgebraicClosure ℚ ≃ₐ[ℚ] AlgebraicClosure ℚ)) (τ : ↥L ≃ₐ[ℚ] ↥L)
+     (hστ : ∀ y : ↥L, σ (y : AlgebraicClosure ℚ) = ((τ y : ↥L) : AlgebraicClosure ℚ)) (s : ↥L.fixingSubgroup) :
+     σ⁻¹ * (s : (AlgebraicClosure ℚ ≃ₐ[ℚ] AlgebraicClosure ℚ)) * σ ∈ L.fixingSubgroup := by
+   rw [IntermediateField.mem_fixingSubgroup_iff]
+@@ -2213,7 +2239,7 @@
+     simp only at h2
+     rw [h2]
+     show σ ((sUnitsMaxRep.val S L (c.1 ⟨_, conj_mem_fixingSubgroup σ τ hστ s⟩) : (AlgebraicClosure ℚ)ˣ) : AlgebraicClosure ℚ) = _
+-    rw [d.hcob, map_div₀, Units.coe_map, MonoidHom.coe_coe, coe_σF]
++    rw [d.hcob, map_div₀, Units.coe_map, MonoidHom.coe_ofClass, coe_σF]
+     show σ ((σ⁻¹ * (s : (AlgebraicClosure ℚ ≃ₐ[ℚ] AlgebraicClosure ℚ)) * σ) _) / _ = _
+     rw [AlgEquiv.mul_apply, AlgEquiv.mul_apply, AlgEquiv.aut_inv, AlgEquiv.apply_symm_apply]⟩
+ 
+@@ -2244,13 +2270,13 @@
+       Submodule.Quotient.mk (Additive.ofMul (τ • C)) := by
+   let d := datum₀ hL c
+   let d' := transportDatum σ τ hστ hcc' d
+-  haveI : FiniteDimensional ℚ ↥d.F := d.hF.1
+-  haveI := d.gal
+-  haveI : FiniteDimensional ℚ ↥d'.F := d.hF.1
+-  haveI : IsGalois ℚ ↥d'.F := d.gal
+-  have h1 : fX S L hL ⟨(H1π (sUnitsMaxRep S L)).hom c.1, H1π_mem_continuousH1Sr L.fixingSubgroup.subtype S (sUnitsMaxRep S L) c.2⟩ = d.cls :=
++  have : FiniteDimensional ℚ ↥d.F := d.hF.1
++  have := d.gal
++  have : FiniteDimensional ℚ ↥d'.F := d.hF.1
++  have : IsGalois ℚ ↥d'.F := d.gal
++  have h1 : fX S L hL ⟨(H1π (sUnitsMaxRep S L)).hom c.1, H1π_mem_continuousH1Sr L.fixingSubgroup.subtype S (sUnitsMaxRep S L) c.2⟩ = d.cls (_sectionFinite := inferInstance) :=
+     fXfun_eq S L hL _ d rfl
+-  have h2 : fX S L hL ⟨(H1π (sUnitsMaxRep S L)).hom c'.1, H1π_mem_continuousH1Sr L.fixingSubgroup.subtype S (sUnitsMaxRep S L) c'.2⟩ = d'.cls :=
++  have h2 : fX S L hL ⟨(H1π (sUnitsMaxRep S L)).hom c'.1, H1π_mem_continuousH1Sr L.fixingSubgroup.subtype S (sUnitsMaxRep S L) c'.2⟩ = d'.cls (_sectionFinite := inferInstance) :=
+     fXfun_eq S L hL _ d' rfl
+ 
+   let n : HeightOneSpectrum (𝓞 ↥L) → ℤ := expo L d.F d.hLF d.α
+@@ -2260,7 +2286,7 @@
+     refine (hn.image (τ • ·)).subset ?_
+     intro w hw
+     exact ⟨τ⁻¹ • w, hw, smul_inv_smul τ w⟩
+-  have hJ : d.cls = mkS S L (J L n) (J_ne_zero L n) := by rw [d.cls_eq]; rfl
++  have hJ : d.cls (_sectionFinite := inferInstance) = mkS S L (J L n) (J_ne_zero L n) := by rw [d.cls_eq (_sectionFinite := inferInstance)]; rfl
+ 
+   have hτC : (Submodule.Quotient.mk (Additive.ofMul (τ • C)) : sClassGroupRep ↥L ↥L (S : Set Nat.Primes)) =
+       mkS S L (J L (fun w => n (τ⁻¹ • w))) (J_ne_zero L _) := by
+@@ -2268,8 +2294,8 @@
+     rw [h3, smul_mk_J L τ n hn]
+     rfl
+ 
+-  have hd' : d'.cls = mkS S L (J L (fun w => n (τ⁻¹ • w))) (J_ne_zero L _) := by
+-    rw [d'.cls_eq]
++  have hd' : d'.cls (_sectionFinite := inferInstance) = mkS S L (J L (fun w => n (τ⁻¹ • w))) (J_ne_zero L _) := by
++    rw [d'.cls_eq (_sectionFinite := inferInstance)]
+     apply mkS_eq_of_count_eq
+     intro w hw
+     rw [count_J L _ hn' w]
+@@ -2392,12 +2418,6 @@
+                   Submodule.Quotient.mk (Additive.ofMul C) →
+               f ⟨(H1π (sUnitsMaxRep S L)).hom c'.1, H1π_mem_continuousH1Sr L.fixingSubgroup.subtype S (sUnitsMaxRep S L) c'.2⟩ =
+                   Submodule.Quotient.mk (Additive.ofMul (τ • C)) := by
+-  have k := CycBaseCAP.key_natural S hpS L hL
+-  first
+-  | exact k
+-  | (convert k using 5 <;>
+-      first
+-      | exact Subsingleton.elim _ _
+-      | exact CycBaseCAP.mem_torsionBy_iff_of_subsingleton _ _
+-      | (funext x; exact propext (CycBaseCAP.mem_torsionBy_iff_of_subsingleton _ _))
+-      | exact CycBaseCAP.torsionBy_heq_of_subsingleton _)
++  exact CycBaseCAP.key_natural S hpS L hL
++
++#print axioms solution
