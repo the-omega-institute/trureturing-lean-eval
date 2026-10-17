@@ -1,0 +1,62 @@
+{
+  "at": "2026-10-17T07:56:16.740744+00:00",
+  "name": "groupCohomology_exists_continuousH2Sr_cyclotomicQuotientRep_equiv_pin",
+  "candidate": "r1",
+  "card_candidate": "r1",
+  "source_replacements": [
+    [
+      "namespace P2MW.S_groupCohomology_exists_continuousH2Sr_cyclotomicQuotientRep_equiv_pin\n",
+      "namespace P2MW.S_groupCohomology_exists_continuousH2Sr_cyclotomicQuotientRep_equiv_pin\n\nset_option backward.isDefEq.respectTransparency false\nset_option backward.isDefEq.respectTransparency.types false\n\nprivate local instance scalarAddCommGroup (p : \u2115) : AddCommGroup (ZMod p) :=\n  (inferInstance : CommRing (ZMod p)).toAddCommGroup\n",
+      1
+    ],
+    [
+      "\n  haveI : FiniteDimensional \u211a \u21a5F := hF.1\n",
+      "\n  have : FiniteDimensional \u211a \u21a5F := hF.1\n",
+      1
+    ],
+    [
+      "\n  haveI : Normal \u211a \u21a5(IntermediateField.normalClosure \u211a (\u21a5F) Qbar) := normalClosure.normal \u211a (\u21a5F) Qbar\n",
+      "\n  have : Normal \u211a \u21a5(IntermediateField.normalClosure \u211a (\u21a5F) Qbar) := normalClosure.normal \u211a (\u21a5F) Qbar\n",
+      1
+    ]
+  ],
+  "card_replacements": [
+    [
+      "open CategoryTheory MonoidalCategory Module groupCohomology ExtCitation\n",
+      "open CategoryTheory MonoidalCategory Module groupCohomology ExtCitation\n\nset_option backward.isDefEq.respectTransparency false\nset_option backward.isDefEq.respectTransparency.types false\n\nprivate local instance scalarAddCommGroup (p : \u2115) : AddCommGroup (ZMod p) :=\n  (inferInstance : CommRing (ZMod p)).toAddCommGroup\n",
+      1
+    ]
+  ],
+  "baseline_byte_identical_to_pinned_supplier": false,
+  "pinned_supplier_source_and_card_preserved": true,
+  "prior_finsupp_api_adaptations_preserved": 2,
+  "verification_pending": false,
+  "installed": true,
+  "installed_at": "2026-10-17T07:56:16.741047+00:00",
+  "original_actual_errors": 22,
+  "original_actual_warnings": 2,
+  "no_linter_suppression_added": true,
+  "full_original_statement_and_hypotheses_preserved": true,
+  "complete_original_proof_preserved": true,
+  "max_active_flt_jobs": 1,
+  "lean_threads": 1,
+  "full_original_complete": false,
+  "official_new_solve_credit": 0,
+  "change": "Preserve the complete original proof and literal public source/card statements; reuse current Mathlib definitional-equality compatibility settings and the already verified coherent ZMod scalar AddCommGroup projection. No new linter suppression, axiom or proof placeholder. Change only actual proposition-style diagnostics; actual verification pending.",
+  "active_import_closure_excluded": [
+    "Submission.Supplier.P2M.Sol.S_CerednikDrinfeld_Omega_exists_mem_holOn_hasProd_evalAt"
+  ],
+  "active_transitive_import_closure_size": 8,
+  "actual_live_descendant_sources": [
+    {
+      "pid": 6271,
+      "source": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_CerednikDrinfeld_Omega_exists_mem_holOn_hasProd_evalAt.lean"
+    }
+  ],
+  "all_four_canonical_adapted_source_card_modules_excluded": [
+    "P2M.Sol.S_groupCohomology_exists_continuousH2Sr_cyclotomicQuotientRep_equiv_pin",
+    "Submission.Supplier.P2M.Sol.S_groupCohomology_exists_continuousH2Sr_cyclotomicQuotientRep_equiv_pin",
+    "Submission.Supplier.Theorems.Thm_groupCohomology_exists_continuousH2Sr_cyclotomicQuotientRep_equiv_pin",
+    "Theorems.Thm_groupCohomology_exists_continuousH2Sr_cyclotomicQuotientRep_equiv_pin"
+  ]
+}
