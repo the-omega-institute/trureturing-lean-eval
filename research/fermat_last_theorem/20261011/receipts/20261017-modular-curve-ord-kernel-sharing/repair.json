@@ -1,0 +1,61 @@
+{
+  "at": "2026-10-17T09:06:36.461308+00:00",
+  "name": "ModularCurve_ord_charLGeomPlaceOfPoint_jqModC_sub_algebraMap",
+  "candidate": "r2",
+  "card_candidate": "r1",
+  "source_replacements": [
+    [
+      "    apply Subtype.ext\n    change ((IntermediateField.equivOfEq (modularFunctionFieldC_one k).symm\n        (RatFunc.algEquivOfTranscendental (jqModC k) _\n          (algebraMap (Polynomial k) (RatFunc k) (Polynomial.X - Polynomial.C c))) :\n            \u21a5(modularFunctionFieldC k 1)) : LaurentSeries k) = _\n    have hcoe : \u2200 (h : IntermediateField.adjoin k {jqModC k} = modularFunctionFieldC k 1)\n        (x : \u21a5(IntermediateField.adjoin k {jqModC k})),\n        ((IntermediateField.equivOfEq h x : \u21a5(modularFunctionFieldC k 1)) : LaurentSeries k)\n          = (x : LaurentSeries k) := fun _ _ => rfl\n    rw [hcoe, RatFunc.algEquivOfTranscendental_algebraMap, map_sub, Polynomial.aeval_X, Polynomial.aeval_C]\n    rfl\n",
+      "    as_aux_lemma =>\n      apply Subtype.ext\n      change ((IntermediateField.equivOfEq (modularFunctionFieldC_one k).symm\n          (RatFunc.algEquivOfTranscendental (jqModC k) _\n            (algebraMap (Polynomial k) (RatFunc k) (Polynomial.X - Polynomial.C c))) :\n              \u21a5(modularFunctionFieldC k 1)) : LaurentSeries k) = _\n      have hcoe : \u2200 (h : IntermediateField.adjoin k {jqModC k} = modularFunctionFieldC k 1)\n          (x : \u21a5(IntermediateField.adjoin k {jqModC k})),\n          ((IntermediateField.equivOfEq h x : \u21a5(modularFunctionFieldC k 1)) : LaurentSeries k)\n            = (x : LaurentSeries k) := fun _ _ => rfl\n      rw [hcoe, RatFunc.algEquivOfTranscendental_algebraMap, map_sub, Polynomial.aeval_X, Polynomial.aeval_C]\n      rfl\n",
+      1
+    ],
+    [
+      "  have hplace : charLGeomPlaceOfPoint k a\n      = Place.congrRingEquiv (ratFuncEquivCharLOneC k).toRingEquiv\n          (fun x => (ratFuncEquivCharLOneC k).commutes x) (RationalFunctionField.placeOfPoint k a) := rfl\n",
+      "  have hplace : charLGeomPlaceOfPoint k a\n      = Place.congrRingEquiv (ratFuncEquivCharLOneC k).toRingEquiv\n          (fun x => (ratFuncEquivCharLOneC k).commutes x) (RationalFunctionField.placeOfPoint k a) := by\n    as_aux_lemma => rfl\n",
+      1
+    ],
+    [
+      "open AlgebraicCurve ModularCurve\n\ntheorem solution",
+      "open AlgebraicCurve ModularCurve\n\nprivate theorem equivOfEq_apply_coe\n    {K L : Type*} [Field K] [Field L] [Algebra K L]\n    {S T : IntermediateField K L} (h : S = T) (x : S) :\n    ((IntermediateField.equivOfEq h x : T) : L) = (x : L) := rfl\n\ntheorem solution",
+      1
+    ],
+    [
+      "= (x : LaurentSeries k) := fun _ _ => rfl",
+      "= (x : LaurentSeries k) := fun h x => equivOfEq_apply_coe h x",
+      1
+    ]
+  ],
+  "card_replacements": [],
+  "baseline_byte_identical_to_pinned_supplier": true,
+  "pinned_supplier_source_and_card_preserved": true,
+  "verification_pending": false,
+  "installed": true,
+  "no_linter_suppression_added": true,
+  "complete_original_proof_preserved": true,
+  "full_original_statement_and_hypotheses_preserved": true,
+  "max_active_flt_jobs": 1,
+  "lean_threads": 1,
+  "original_actual_errors": 1,
+  "original_actual_warnings": 0,
+  "original_kernel_seconds": 1139.393482,
+  "original_failure": "kernel deterministic timeout on whole solution declaration,not proven localized to key",
+  "change": "Retain the complete original key/hplace/valuation/root-multiplicity proof. Add a uniform generic IntermediateField equivOfEq coercion theorem with rfl proof,and reuse that opaque proof for the original specialized hcoe lambda. This avoids checking a specialized concrete modular-field rfl proof in every local term. Original key/hplace auxiliary boundaries retained. No checker/trust/heartbeat settings changed;actual source/card verification pending.",
+  "full_original_complete": false,
+  "official_new_solve_credit": 0,
+  "active_import_closure_excluded": [
+    "Submission.Supplier.P2M.Sol.S_Module_End_exists_mem_adjoin_aeval_ne_zero_mul_eq_of_ratForm_of_multiplicityOne"
+  ],
+  "active_transitive_import_closure_size": 2,
+  "actual_live_descendant_sources": [],
+  "all_four_canonical_adapted_source_card_modules_excluded": [
+    "P2M.Sol.S_ModularCurve_ord_charLGeomPlaceOfPoint_jqModC_sub_algebraMap",
+    "Submission.Supplier.P2M.Sol.S_ModularCurve_ord_charLGeomPlaceOfPoint_jqModC_sub_algebraMap",
+    "Submission.Supplier.Theorems.Thm_ModularCurve_ord_charLGeomPlaceOfPoint_jqModC_sub_algebraMap",
+    "Theorems.Thm_ModularCurve_ord_charLGeomPlaceOfPoint_jqModC_sub_algebraMap"
+  ],
+  "installed_at": "2026-10-17T09:30:02.816388+00:00",
+  "actual_r1_source_errors": 2,
+  "actual_r1_source_warnings": 0,
+  "actual_r1_kernel_seconds": 1186.3760914999998,
+  "actual_r1_failure_boundary": "Timeout located at key as_aux_lemma on adapted line33;unknown auxiliary constant is a cascade."
+}
