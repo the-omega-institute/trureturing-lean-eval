@@ -1,0 +1,86 @@
+{
+  "sha256": "b464416afb16b63e926a904079b1fea6bf0ee9761031cd2e8128e6fd1236ecc5",
+  "exit": 1,
+  "empty_output_retry_done": false,
+  "source_sha256_after": "b464416afb16b63e926a904079b1fea6bf0ee9761031cd2e8128e6fd1236ecc5",
+  "source_unchanged": true,
+  "olean_sha256": null,
+  "seconds": 44.84328004199779,
+  "pid": 72563,
+  "command": [
+    "/Users/macstudio/.local/omega-shims/lean",
+    "-j1",
+    "--trust=0",
+    "-Ddebug.skipKernelTC=false",
+    "-R",
+    "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src",
+    "-o",
+    "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-build/lib/lean/Submission/Supplier/P2M/Sol/S_WeierstrassCurve_exists_velu2FunctionFieldHom_restrictAlong_placeOfPoint_veluPointMap2.olean",
+    "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_WeierstrassCurve_exists_velu2FunctionFieldHom_restrictAlong_placeOfPoint_veluPointMap2.lean"
+  ],
+  "make_wrapper_pid": 72157,
+  "make_exit": 2,
+  "make_entry_failed": false,
+  "cache_binding_valid": true,
+  "canonical_make_running_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/50edb2e3f00e20417d75cc96-1792247082057953000.make-running.json",
+  "canonical_make_terminal_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/50edb2e3f00e20417d75cc96-1792247082057953000.make-terminal.json",
+  "kernel_terminal_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/50edb2e3f00e20417d75cc96-1792247082057953000.kernel/result.json",
+  "direct_dependencies": [
+    {
+      "module": "Submission.Supplier.Definitions.Def_Isogeny_ConditionalCurrency",
+      "source_sha256": "f049c10c409f2ff7c3832be0d342db951f53022826fa7ea57fa4caee2f1bf0c4",
+      "object_sha256": "0b3369f9af05f15abff27270e0cdb60fcfaeb810568becdd43257ecdb021a6c6",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Definitions.Def_WeierstrassCurve_GenusOnePlaceGateCentred",
+      "source_sha256": "e1b0b89b4815ce958b09691a36a1506485b9ae6a43af821c82c77c51b1f64101",
+      "object_sha256": "2adbcc8a801bb1ca85e1561fbc09cb0862e20a96b85411fcb7587222047a0807",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Definitions.Def_WeierstrassCurve_VeluPointMap2",
+      "source_sha256": "32e1b557d01ea0bfcad20f28792fb71bbc3150be979253d97c6e371c912f99eb",
+      "object_sha256": "f02957d976fc8d2f92626fa432a927d7946591c3a84197c0a0f3ff542a230a3a",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Definitions.Def_WeierstrassCurve_FunctionFieldQuadratic",
+      "source_sha256": "7c407278b0a0f64dfa10f33696c2cce86495fe9731740dcb5beb2a2b66c891ad",
+      "object_sha256": "e14c85bd4400e1355e8fe5cc76e1af2816824db64b8bf1f61adbba4386c4a97c",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Theorems.Thm_WeierstrassCurve_Affine_CoordinateRing_isDedekindDomain",
+      "source_sha256": "6710f0776b1079b991422e7760b11733939e89d71b6acd3331d38affd867147d",
+      "object_sha256": null,
+      "receipt_reused": false
+    },
+    {
+      "module": "Submission.Supplier.Theorems.Thm_WeierstrassCurve_veluGx_ne_zero_of_two_torsion",
+      "source_sha256": "ca45171533a503caf1ac44cc458b76ea9d8648f028bbbaade4201089c0953f2d",
+      "object_sha256": "2608706f4d7d6b652ddf36c5504d8790e73002065f18ba7a7ac7510e6011679d",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Theorems.Thm_WeierstrassCurve_Affine_algebraMap_mk_C_X_notMem_toValuationSubring_placeOfPoint_zero",
+      "source_sha256": "a01dc4ebf725f83a1874870286ca28a14579b07bfc6e341e499b4931ac97022e",
+      "object_sha256": "f3fe9d495ad496dbd0f338f9daac75bca4dce3f2b05cf9be18f90d52f8adbfff",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Theorems.Thm_WeierstrassCurve_Affine_eq_placeOfPoint_some_of_XClass_mem_nonunits_of_YClass_mem_nonunits",
+      "source_sha256": "e2401fa93c25a7f67c7d8d27efbf1bd4325460f9d7b6a8dd0540468c99aad0b3",
+      "object_sha256": "c96cfdd38327667720f4fe13d5105b66e5d74d9c4dee76bd09741ca0c21d848a",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.P2M.Util",
+      "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+      "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+      "receipt_reused": true
+    }
+  ],
+  "stdout": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/50edb2e3f00e20417d75cc96-1792247082057953000.kernel/stdout.log",
+  "stderr": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/50edb2e3f00e20417d75cc96-1792247082057953000.kernel/stderr.log"
+}

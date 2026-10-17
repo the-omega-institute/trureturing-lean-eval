@@ -1,0 +1,89 @@
+{
+  "at": "2026-10-17T14:34:11.233317+00:00",
+  "name": "WeierstrassCurve_exists_velu2FunctionFieldHom_restrictAlong_placeOfPoint_veluPointMap2",
+  "candidate": "r1",
+  "card_candidate": "r2",
+  "source_replacements": [
+    [
+      "Ideal.eq_bot_of_comap_eq_bot",
+      "Ideal.eq_bot_of_under_eq_bot",
+      1
+    ],
+    [
+      "rw [RingHom.comap_ker, coordHom_comp_algebraMap",
+      "rw [Ideal.under_def, RingHom.comap_ker, coordHom_comp_algebraMap",
+      1
+    ],
+    [
+      "haveI :",
+      "have :",
+      4
+    ],
+    [
+      "\n  letI := algebraAlong (ffHom hQ hgy)",
+      "\n  let := algebraAlong (ffHom hQ hgy)",
+      3
+    ]
+  ],
+  "card_replacements": [
+    [
+      "instIsScalarTowerPolynomialRatFuncFunctionField_definitions",
+      "instIsScalarTowerPolynomialRatFuncFunctionField_submission",
+      1
+    ],
+    [
+      "instAlgebraRatFuncFunctionField_definitions",
+      "instAlgebraRatFuncFunctionField_submission",
+      1
+    ],
+    [
+      "instIsScalarTowerRatFuncFunctionField_definitions",
+      "instIsScalarTowerRatFuncFunctionField_submission",
+      1
+    ],
+    [
+      "(hfin : AlgebraicCurve.FiniteAlong F \u03b9)",
+      "(_hfin : AlgebraicCurve.FiniteAlong F \u03b9)",
+      1
+    ]
+  ],
+  "baseline_byte_identical_to_pinned_supplier": true,
+  "pinned_supplier_source_and_card_preserved": true,
+  "verification_pending": false,
+  "installed": true,
+  "no_linter_suppression_added": true,
+  "complete_original_proof_preserved": true,
+  "full_original_statement_and_hypotheses_preserved": true,
+  "max_active_flt_jobs": 1,
+  "lean_threads": 1,
+  "original_actual_errors": 1,
+  "original_actual_warnings": 8,
+  "original_kernel_seconds": 39.791227959000004,
+  "change": "Retain the complete original 634-line Velu quadratic quotient function-field map, coordinate-map injectivity, finite/integral extension, and all point-place restriction proofs. Use the pinned eq_bot_of_under_eq_bot name and explicitly expand Ideal.under_def before the original comap-kernel rewrite. Use have for four flagged proposition declarations and let in the three flagged algebraAlong proof bodies;both internal letI statement expressions remain byte-unchanged. Public source/card statements and every original hypothesis,including AbelTheorem and GenusOnePlaceGate assumptions,unchanged. No linter suppression added;one preexisting option retained. Both canonical baselines are byte-identical to pinned supplier. Natural source/card verification pending. Card revision r2 updates three obsolete generated-instance _definitions suffixes to the _submission names confirmed in the actual pinned dependency object,retaining the original instance-disable behavior. Rename only unused existential witness binder hfin to _hfin;the finite-along condition and all other hypotheses/conclusion remain unchanged. Original r1 card failure receipt archived. Source r1 already passed zero-diagnostic make/kernel and standard three recursive axioms;current card r2 verification pending.",
+  "full_original_complete": false,
+  "official_new_solve_credit": 0,
+  "active_import_closure_excluded": [
+    "Submission.Supplier.P2M.Sol.S_WeierstrassCurve_Affine_exists_algHom_baseChange_of_isAddCyclic_ker_pointMapOfPushforward"
+  ],
+  "active_transitive_import_closure_size": 171,
+  "actual_live_descendant_sources": [
+    {
+      "pid": 60369,
+      "source": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_WeierstrassCurve_Affine_exists_algHom_baseChange_of_isAddCyclic_ker_pointMapOfPushforward.lean"
+    }
+  ],
+  "all_four_canonical_adapted_source_card_modules_excluded": [
+    "P2M.Sol.S_WeierstrassCurve_exists_velu2FunctionFieldHom_restrictAlong_placeOfPoint_veluPointMap2",
+    "Submission.Supplier.P2M.Sol.S_WeierstrassCurve_exists_velu2FunctionFieldHom_restrictAlong_placeOfPoint_veluPointMap2",
+    "Submission.Supplier.Theorems.Thm_WeierstrassCurve_exists_velu2FunctionFieldHom_restrictAlong_placeOfPoint_veluPointMap2",
+    "Theorems.Thm_WeierstrassCurve_exists_velu2FunctionFieldHom_restrictAlong_placeOfPoint_veluPointMap2"
+  ],
+  "r1_card_actual_errors": 1,
+  "r1_card_actual_warnings": 1,
+  "r1_card_kernel_seconds": 34.606860083,
+  "generated_instance_names_confirmed_in_current_pinned_object": [
+    "instIsScalarTowerPolynomialRatFuncFunctionField_submission",
+    "instAlgebraRatFuncFunctionField_submission",
+    "instIsScalarTowerRatFuncFunctionField_submission"
+  ]
+}
