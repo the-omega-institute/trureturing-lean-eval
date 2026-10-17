@@ -1,0 +1,260 @@
+{
+  "at": "2026-10-17T15:20:24.011514+00:00",
+  "name": "WeierstrassCurve_exists_veluFunctionFieldHom_restrictAlong_placeOfPoint_eq",
+  "candidate": "r1",
+  "card_candidate": "r1",
+  "source_replacements": [
+    [
+      "    haveI := hv.centre_isPrime\n",
+      "    have := hv.centre_isPrime\n",
+      1
+    ],
+    [
+      "    haveI hAded : IsDedekindDomain A := by rw [hA]; infer_instance\n",
+      "    have hAded : IsDedekindDomain A := by rw [hA]; infer_instance\n",
+      1
+    ],
+    [
+      "  haveI : HasPrincipalDivisors F W.FunctionField := hasPrincipalDivisors_functionField W\n",
+      "  have : HasPrincipalDivisors F W.FunctionField := hasPrincipalDivisors_functionField W\n",
+      1
+    ],
+    [
+      "  haveI : CharZero V.FunctionField :=\n",
+      "  have : CharZero V.FunctionField :=\n",
+      1
+    ],
+    [
+      "    letI := algebraAlong \u03b9\n",
+      "    let := algebraAlong \u03b9\n",
+      1
+    ],
+    [
+      "    haveI := isScalarTower_along \u03b9\n",
+      "    have := isScalarTower_along \u03b9\n",
+      1
+    ],
+    [
+      "    haveI : Module.Finite V.FunctionField W.FunctionField := hfin\n",
+      "    have : Module.Finite V.FunctionField W.FunctionField := hfin\n",
+      1
+    ],
+    [
+      "  haveI := h\ud835\udd2a\n",
+      "  have := h\ud835\udd2a\n",
+      1
+    ],
+    [
+      "  letI : Field (W.CoordinateRing \u29f8 \ud835\udd2a) := Ideal.Quotient.field \ud835\udd2a\n",
+      "  let : Field (W.CoordinateRing \u29f8 \ud835\udd2a) := Ideal.Quotient.field \ud835\udd2a\n",
+      1
+    ],
+    [
+      "  haveI : Module.Finite F (W.CoordinateRing \u29f8 \ud835\udd2a) :=\n",
+      "  have : Module.Finite F (W.CoordinateRing \u29f8 \ud835\udd2a) :=\n",
+      1
+    ],
+    [
+      "  haveI := Fintype.ofFinite F\n",
+      "  have := Fintype.ofFinite F\n",
+      1
+    ],
+    [
+      "  letI := algebraAlong \u03c6\n",
+      "  let := algebraAlong \u03c6\n",
+      1
+    ],
+    [
+      "  haveI := isScalarTower_along \u03c6\n",
+      "  have := isScalarTower_along \u03c6\n",
+      1
+    ],
+    [
+      "  haveI := isIntegral_along \u03c6 h\u03c6\n",
+      "  have := isIntegral_along \u03c6 h\u03c6\n",
+      1
+    ],
+    [
+      "    haveI : Module.Finite F[X] W.CoordinateRing :=\n",
+      "    have : Module.Finite F[X] W.CoordinateRing :=\n",
+      1
+    ],
+    [
+      "  haveI := hPD W h\u0394\n",
+      "  have := hPD W h\u0394\n",
+      1
+    ],
+    [
+      "  have := hPD W h\u0394\n  haveI := hDD W h\u0394\n",
+      "  have := hPD W h\u0394\n  have := hDD W h\u0394\n",
+      1
+    ],
+    [
+      "  intro W h\u0394 x\u2080 y\u2080 h\u2080 hord c hc r s hrs hav\n  haveI := hDD W h\u0394\n",
+      "  intro W h\u0394 x\u2080 y\u2080 h\u2080 hord c hc r s hrs hav\n  have := hDD W h\u0394\n",
+      1
+    ],
+    [
+      "  intro W h\u0394 x\u2080 y\u2080 h\u2080 _hord r s hrs hav\n  haveI := hDD W h\u0394\n",
+      "  intro W h\u0394 x\u2080 y\u2080 h\u2080 _hord r s hrs hav\n  have := hDD W h\u0394\n",
+      1
+    ],
+    [
+      "  haveI hRint : Algebra.IsIntegral F\n",
+      "  have hRint : Algebra.IsIntegral F\n",
+      1
+    ],
+    [
+      "  haveI := hDD W h\u0394\n",
+      "  have := hDD W h\u0394\n",
+      1
+    ],
+    [
+      "  haveI : Infinite F := kw_infinite_of_isAlgClosed\n",
+      "  have : Infinite F := kw_infinite_of_isAlgClosed\n",
+      1
+    ],
+    [
+      "  haveI : W.IsElliptic := \u27e8(Ne.isUnit h\u0394W)\u27e9\n",
+      "  have : W.IsElliptic := \u27e8(Ne.isUnit h\u0394W)\u27e9\n",
+      1
+    ],
+    [
+      "  haveI : HasPrincipalDivisors F W.toAffine.FunctionField := veluHPDSupplier F W h\u0394W\n",
+      "  have : HasPrincipalDivisors F W.toAffine.FunctionField := veluHPDSupplier F W h\u0394W\n",
+      1
+    ],
+    [
+      "  haveI : IsDedekindDomain W.toAffine.CoordinateRing :=\n",
+      "  have : IsDedekindDomain W.toAffine.CoordinateRing :=\n",
+      1
+    ],
+    [
+      "    haveI : Module.Finite F[X]\n",
+      "    have : Module.Finite F[X]\n",
+      1
+    ],
+    [
+      "    _root_.IsIntegral (V').FunctionField (polyToFunctionField W.toAffine X) := by\n  letI : Algebra (V').FunctionField W.toAffine.FunctionField := (\u03b9).toRingHom.toAlgebra\n",
+      "    _root_.IsIntegral (V').FunctionField (polyToFunctionField W.toAffine X) := by\n  let : Algebra (V').FunctionField W.toAffine.FunctionField := (\u03b9).toRingHom.toAlgebra\n",
+      1
+    ],
+    [
+      "      = \u22a4 := by\n  letI : Algebra (V').FunctionField W.toAffine.FunctionField := (\u03b9).toRingHom.toAlgebra\n",
+      "      = \u22a4 := by\n  let : Algebra (V').FunctionField W.toAffine.FunctionField := (\u03b9).toRingHom.toAlgebra\n",
+      1
+    ],
+    [
+      "    FiniteAlong F (kw_oddOrderSummingSetFunctionFieldHom_odd (W := W) hp3 hpodd hord) := by\n  letI : Algebra (V').FunctionField W.toAffine.FunctionField := (\u03b9).toRingHom.toAlgebra\n",
+      "    FiniteAlong F (kw_oddOrderSummingSetFunctionFieldHom_odd (W := W) hp3 hpodd hord) := by\n  let : Algebra (V').FunctionField W.toAffine.FunctionField := (\u03b9).toRingHom.toAlgebra\n",
+      1
+    ],
+    [
+      "  haveI hxfd : FiniteDimensional (V').FunctionField Lx :=\n",
+      "  have hxfd : FiniteDimensional (V').FunctionField Lx :=\n",
+      1
+    ],
+    [
+      "      haveI : Module.Finite F[X] W.toAffine.CoordinateRing :=\n",
+      "      have : Module.Finite F[X] W.toAffine.CoordinateRing :=\n",
+      1
+    ],
+    [
+      "    := by\n  letI : Algebra (V').FunctionField W.toAffine.FunctionField := (\u03b9).toRingHom.toAlgebra\n",
+      "    := by\n  let : Algebra (V').FunctionField W.toAffine.FunctionField := (\u03b9).toRingHom.toAlgebra\n",
+      1
+    ],
+    [
+      "  haveI : Module.Finite (V').FunctionField W.toAffine.FunctionField :=\n",
+      "  have : Module.Finite (V').FunctionField W.toAffine.FunctionField :=\n",
+      1
+    ],
+    [
+      "  haveI : IsDedekindDomain V.toAffine.CoordinateRing := CoordinateRing.isDedekindDomain V\n",
+      "  have : IsDedekindDomain V.toAffine.CoordinateRing := CoordinateRing.isDedekindDomain V\n",
+      1
+    ],
+    [
+      "    letI := algebraAlong (AlgHom.id F V.toAffine.FunctionField)\n",
+      "    let := algebraAlong (AlgHom.id F V.toAffine.FunctionField)\n",
+      1
+    ],
+    [
+      "  haveI : W.toAffine.IsElliptic := \u2039W.IsElliptic\u203a\n",
+      "  have : W.toAffine.IsElliptic := \u2039W.IsElliptic\u203a\n",
+      1
+    ],
+    [
+      "Ideal.eq_bot_of_comap_eq_bot",
+      "Ideal.eq_bot_of_under_eq_bot",
+      2
+    ],
+    [
+      "rw [RingHom.comap_ker, translationCoordHom_comp_algebraMap",
+      "rw [Ideal.under_def, RingHom.comap_ker, translationCoordHom_comp_algebraMap",
+      1
+    ],
+    [
+      "rw [RingHom.comap_ker, kw_oddOrderSummingSetCoordHom_odd_comp_algebraMap",
+      "rw [Ideal.under_def, RingHom.comap_ker, kw_oddOrderSummingSetCoordHom_odd_comp_algebraMap",
+      1
+    ],
+    [
+      "dif_neg",
+      "dite_eq_right",
+      1
+    ],
+    [
+      "dif_pos",
+      "dite_eq_left",
+      1
+    ],
+    [
+      "; beta_reduce",
+      "",
+      6
+    ],
+    [
+      "@[scoped simp]\ntheorem placeOfPoint_some [IsDedekindDomain W.CoordinateRing]",
+      "omit [IsDedekindDomain W.CoordinateRing] in\n@[scoped simp]\ntheorem placeOfPoint_some [IsDedekindDomain W.CoordinateRing]",
+      1
+    ],
+    [
+      "theorem eq_of_not_isFinitePlace [IsDedekindDomain W.CoordinateRing]",
+      "omit [IsDedekindDomain W.CoordinateRing] in\ntheorem eq_of_not_isFinitePlace [IsDedekindDomain W.CoordinateRing]",
+      1
+    ]
+  ],
+  "card_replacements": [],
+  "baseline_byte_identical_to_pinned_supplier": true,
+  "pinned_supplier_source_and_card_preserved": true,
+  "verification_pending": false,
+  "installed": true,
+  "no_linter_suppression_added": true,
+  "complete_original_proof_preserved": true,
+  "full_original_statement_and_hypotheses_preserved": true,
+  "max_active_flt_jobs": 1,
+  "lean_threads": 1,
+  "original_actual_errors": 2,
+  "original_actual_warnings": 48,
+  "original_kernel_seconds": 107.470778042,
+  "change": "Retain complete original9542-line odd-order Velu quotient,coordinate/function-field maps,degree,cyclic kernel and place specialization construction. Unfold Ideal.under before both original kernel rewrites;update2 dependent-if aliases,36 actually flagged haveI/letI declarations,two automatic duplicate section instances while keeping explicit hypotheses. Remove only6 beta_reduce tactics confirmed ineffective by terminal diagnostics;all arithmetic,sums and point-map proofs retained. Public source/card statements unchanged;no suppression added. Pending natural verification.",
+  "full_original_complete": false,
+  "official_new_solve_credit": 0,
+  "active_import_closure_excluded": [
+    "Submission.Supplier.P2M.Sol.S_WeierstrassCurve_Affine_exists_intermediateField_countable_map_eq_of_isAddCyclic_ker_pointMapOfPushforward"
+  ],
+  "active_transitive_import_closure_size": 177,
+  "actual_live_descendant_sources": [
+    {
+      "pid": 6746,
+      "source": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_WeierstrassCurve_Affine_exists_intermediateField_countable_map_eq_of_isAddCyclic_ker_pointMapOfPushforward.lean"
+    }
+  ],
+  "all_four_canonical_adapted_source_card_modules_excluded": [
+    "P2M.Sol.S_WeierstrassCurve_exists_veluFunctionFieldHom_restrictAlong_placeOfPoint_eq",
+    "Submission.Supplier.P2M.Sol.S_WeierstrassCurve_exists_veluFunctionFieldHom_restrictAlong_placeOfPoint_eq",
+    "Submission.Supplier.Theorems.Thm_WeierstrassCurve_exists_veluFunctionFieldHom_restrictAlong_placeOfPoint_eq",
+    "Theorems.Thm_WeierstrassCurve_exists_veluFunctionFieldHom_restrictAlong_placeOfPoint_eq"
+  ]
+}
