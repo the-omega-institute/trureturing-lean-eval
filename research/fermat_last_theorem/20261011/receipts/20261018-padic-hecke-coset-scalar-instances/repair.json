@@ -1,0 +1,50 @@
+{
+  "at": "2026-10-17T18:51:44.857767+00:00",
+  "name": "LocalLanglands_PadicHeckeCosetSystem",
+  "source_prefix": "Definitions/Def_",
+  "candidate": "r1",
+  "source_replacements": [
+    [
+      "  haveI : NeZero p := \u27e8hp.out.ne_zero\u27e9",
+      "  have : NeZero p := \u27e8hp.out.ne_zero\u27e9",
+      3
+    ],
+    [
+      "  have hker : (((ZMod.val c' : \u2115) : \u2124_[p]) - ((ZMod.val c : \u2115) : \u2124_[p]))",
+      "  let : AddCommGroup (ZMod p) := (inferInstance : CommRing (ZMod p)).toAddCommGroup\n  have hker : (((ZMod.val c' : \u2115) : \u2124_[p]) - ((ZMod.val c : \u2115) : \u2124_[p]))",
+      1
+    ]
+  ],
+  "axiom_declarations": [
+    "HeckeIntegralSeam.algebraMap_natCast_p_ne_zero",
+    "HeckeIntegralSeam.padicDiagP",
+    "HeckeIntegralSeam.exists_zmod_natCast_val_sub_dvd",
+    "HeckeIntegralSeam.zmod_eq_of_dvd_natCast_val_sub",
+    "HeckeIntegralSeam.finite_padicInt_quotient_span_p",
+    "HeckeIntegralSeam.finite_image_mulSet_padic",
+    "HeckeIntegralSeam.padicHeckeRep",
+    "HeckeIntegralSeam.isHeckeCosetSystem_padicHeckeRep"
+  ],
+  "baseline_byte_identical_to_pinned_supplier": true,
+  "pinned_supplier_source_preserved": true,
+  "full_original_statements_hypotheses_and_all_proof_branches_preserved": true,
+  "no_linter_suppression_added": true,
+  "verification_pending": false,
+  "installed": true,
+  "actual_failure": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/official-layout/terminal-proof-repairs/20261018-padic-hecke-coset-scalar-instances/previous-actual-failure",
+  "change": "Reuse the already verified proof-local ZMod AddCommGroup pin to the existing CommRing projection for the original residue uniqueness proof. Preserve all original public telescopes, the complete original quotient finiteness proof, Hecke representatives, double-coset coverage and uniqueness branches. Replace exactly three proposition-local haveI declarations reported by the actual linter with have. Query recursive axioms of all eight exported local definitions/theorems/instances. Pending natural single-job make/kernel verification.",
+  "max_active_flt_jobs": 1,
+  "lean_threads": 1,
+  "full_original_complete": false,
+  "official_new_solve_credit": 0,
+  "active_import_closure_excluded": [
+    "Submission.Supplier.Definitions.Def_Mathlib_MeasureTheory_Function_L2KernelOperator"
+  ],
+  "active_transitive_import_closure_size": 1,
+  "actual_live_descendant_sources": [],
+  "canonical_adapted_definition_modules_excluded": [
+    "Definitions.Def_LocalLanglands_PadicHeckeCosetSystem",
+    "Submission.Supplier.Definitions.Def_LocalLanglands_PadicHeckeCosetSystem"
+  ],
+  "definition_module_has_no_separate_source_card_pair": true
+}

@@ -1,0 +1,36 @@
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/Definitions/Def_LocalLanglands_PadicHeckeCosetSystem.lean:36:2: warning: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/Definitions/Def_LocalLanglands_PadicHeckeCosetSystem.lean:46:2: warning: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/Definitions/Def_LocalLanglands_PadicHeckeCosetSystem.lean:51:32: error: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  @Eq ?m.83 (?m.85 - ?m.86) 0
+in the target expression
+  @Eq (ZMod p) (PadicInt.toZMod ↑c'.val - PadicInt.toZMod ↑c.val) 0
+
+p : ℕ
+hp : Fact (Nat.Prime p)
+c c' : ZMod p
+h : ↑p ∣ ↑c'.val - ↑c.val
+this : NeZero p
+hker : PadicInt.toZMod ↑c'.val - PadicInt.toZMod ↑c.val = 0
+⊢ c = c'
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/Definitions/Def_LocalLanglands_PadicHeckeCosetSystem.lean:58:2: warning: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
