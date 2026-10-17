@@ -1,0 +1,42 @@
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_LanglandsTunnell_exists_rpow_bound_near_zero_of_whittaker_ode_of_abs_re_lt_half.lean:74:2: error: No goals to be solved
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_LanglandsTunnell_exists_rpow_bound_near_zero_of_whittaker_ode_of_abs_re_lt_half.lean:92:2: error: No goals to be solved
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_LanglandsTunnell_exists_rpow_bound_near_zero_of_whittaker_ode_of_abs_re_lt_half.lean:144:4: error: Tactic `rfl` failed: The left-hand side
+  2 * ((v t).re * v'.re + (v t).im * v'.im)
+is not definitionally equal to the right-hand side
+  v'.re * (v t).re + (v t).re * v'.re + (v'.im * (v t).im + (v t).im * v'.im)
+
+case e'_9
+v : ℝ → ℂ
+v' : ℂ
+t : ℝ
+hv : HasDerivAt v v' t
+hre : HasDerivAt (fun x => (v x).re) v'.re t
+him : HasDerivAt (fun x => (v x).im) v'.im t
+h :
+  HasDerivAt (((fun x => (v x).re) * fun x => (v x).re) + (fun x => (v x).im) * fun x => (v x).im)
+    (v'.re * (v t).re + (v t).re * v'.re + (v'.im * (v t).im + (v t).im * v'.im)) t
+⊢ 2 * ((v t).re * v'.re + (v t).im * v'.im) =
+    v'.re * (v t).re + (v t).re * v'.re + (v'.im * (v t).im + (v t).im * v'.im)
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_LanglandsTunnell_exists_rpow_bound_near_zero_of_whittaker_ode_of_abs_re_lt_half.lean:145:2: error: No goals to be solved
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_LanglandsTunnell_exists_rpow_bound_near_zero_of_whittaker_ode_of_abs_re_lt_half.lean:278:4: error: Tactic `rfl` failed: The left-hand side
+  2 * |l.re| + 2 * ‖l‖⁻¹ * (m₀ + 2 * π * |k| * eA t + 4 * π ^ 2 * (eA t * eA t))
+is not definitionally equal to the right-hand side
+  2 * |l.re| * 1 + 2 * ‖l‖⁻¹ * (m₀ * 1 + 2 * π * |k| * - -eA t + 4 * π ^ 2 / 2 * -(-eA t * eA t + eA t * -eA t))
+
+case e'_9
+l : ℂ
+k m₀ t : ℝ
+hA : HasDerivAt eA (-eA t) t
+h1 : HasDerivAt (fun x => 1 - eA x) (- -eA t) t
+h2 : HasDerivAt (fun x => 1 - eA x * eA x) (-(-eA t * eA t + eA t * -eA t)) t
+h3 : HasDerivAt (fun x => m₀ * x) (m₀ * 1) t
+h4 : HasDerivAt (fun x => 2 * |l.re| * x) (2 * |l.re| * 1) t
+h :
+  HasDerivAt
+    ((fun x => 2 * |l.re| * x) + fun y =>
+      2 * ‖l‖⁻¹ *
+        (((fun x => m₀ * x) + fun y => 2 * π * |k| * (1 - eA y)) + fun y => 4 * π ^ 2 / 2 * (1 - eA y * eA y)) y)
+    (2 * |l.re| * 1 + 2 * ‖l‖⁻¹ * (m₀ * 1 + 2 * π * |k| * - -eA t + 4 * π ^ 2 / 2 * -(-eA t * eA t + eA t * -eA t))) t
+⊢ 2 * |l.re| + 2 * ‖l‖⁻¹ * (m₀ + 2 * π * |k| * eA t + 4 * π ^ 2 * (eA t * eA t)) =
+    2 * |l.re| * 1 + 2 * ‖l‖⁻¹ * (m₀ * 1 + 2 * π * |k| * - -eA t + 4 * π ^ 2 / 2 * -(-eA t * eA t + eA t * -eA t))
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_LanglandsTunnell_exists_rpow_bound_near_zero_of_whittaker_ode_of_abs_re_lt_half.lean:279:2: error: No goals to be solved

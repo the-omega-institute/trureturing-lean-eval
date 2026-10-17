@@ -1,0 +1,56 @@
+{
+  "at": "2026-10-16T12:26:39.663911+00:00",
+  "name": "LanglandsTunnell_exists_rpow_bound_near_zero_of_whittaker_ode_of_abs_re_lt_half",
+  "source_replacements": [
+    [
+      "  convert h3 using 1\n  rfl\n  rfl\n  rfl",
+      "  convert h3 using 1",
+      1
+    ],
+    [
+      "  convert h4 using 1\n  rfl\n  rfl\n  rfl",
+      "  convert h4 using 1",
+      1
+    ],
+    [
+      "  convert h using 1\n  \u00b7 rfl\n  \u00b7 rfl\n  \u00b7 rfl\n  ring",
+      "  convert h using 1\n  first | rfl | ring",
+      2
+    ]
+  ],
+  "baseline_byte_identical_to_pinned_supplier": true,
+  "full_original_statements_hypotheses_and_all_proof_branches_preserved": true,
+  "proof_change": "Retain derivative-chain construction and ring identities; discharge exactly the conversion goals emitted by current Lean.",
+  "no_linter_suppression_added": true,
+  "verification_pending": false,
+  "candidate": "r2",
+  "active_import_closure_excluded": [
+    "Submission.Supplier.P2M.Sol.S_ModularCurve_CharPModel_finiteDimensional_adjoin_jBar"
+  ],
+  "card_candidate": "r1",
+  "installed": true,
+  "installed_at": "2026-10-17T08:33:42.400712+00:00",
+  "actual_r1_source_warnings": 6,
+  "actual_r1_source_errors": 0,
+  "actual_r1_card_warnings": 0,
+  "complete_original_proof_preserved": true,
+  "full_original_statement_and_hypotheses_preserved": true,
+  "max_active_flt_jobs": 1,
+  "lean_threads": 1,
+  "full_original_complete": false,
+  "official_new_solve_credit": 0,
+  "change": "Keep the complete derivative-chain proof and every public hypothesis/conclusion. Remove only rfl tactics proved unreachable by actual diagnostics, and sequence the two remaining one-goal conversions without unnecessary focus. Await fresh canonical make/kernel source and dependent card checks.",
+  "active_transitive_import_closure_size": 189,
+  "actual_live_descendant_sources": [
+    {
+      "pid": 51235,
+      "source": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_ModularCurve_CharPModel_finiteDimensional_adjoin_jBar.lean"
+    }
+  ],
+  "all_four_canonical_adapted_source_card_modules_excluded": [
+    "P2M.Sol.S_LanglandsTunnell_exists_rpow_bound_near_zero_of_whittaker_ode_of_abs_re_lt_half",
+    "Submission.Supplier.P2M.Sol.S_LanglandsTunnell_exists_rpow_bound_near_zero_of_whittaker_ode_of_abs_re_lt_half",
+    "Submission.Supplier.Theorems.Thm_LanglandsTunnell_exists_rpow_bound_near_zero_of_whittaker_ode_of_abs_re_lt_half",
+    "Theorems.Thm_LanglandsTunnell_exists_rpow_bound_near_zero_of_whittaker_ode_of_abs_re_lt_half"
+  ]
+}
