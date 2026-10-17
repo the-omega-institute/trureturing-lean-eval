@@ -1,0 +1,57 @@
+{
+  "at": "2026-10-17T19:08:02.812037+00:00",
+  "name": "ContinuousMap_exists_continuous_monoidHom_forall_sum_eq_zero_of_compactSpace",
+  "candidate": "r1",
+  "card_candidate": "r1",
+  "source_replacements": [
+    [
+      "ra_exists_joint_eigenvector \u03c1 h\u03c1comm",
+      "ra_exists_joint_eigenvector (E := E\u2080) (\u03b9 := H) \u03c1 h\u03c1comm",
+      1
+    ],
+    [
+      "ContinuousLinearMap.sum_apply",
+      "sum_apply",
+      2
+    ],
+    [
+      "ContinuousLinearMap.smul_apply",
+      "smul_apply",
+      2
+    ],
+    [
+      "haveI",
+      "have",
+      6
+    ]
+  ],
+  "card_replacements": [],
+  "baseline_byte_identical_to_pinned_supplier": true,
+  "pinned_supplier_source_and_card_preserved": true,
+  "full_original_statements_hypotheses_and_all_proof_branches_preserved": true,
+  "no_linter_suppression_added": true,
+  "verification_pending": false,
+  "installed": true,
+  "actual_failure": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/official-layout/terminal-proof-repairs/20261018-compact-character-joint-eigenvector-api/previous-actual-failure",
+  "change": "Specify the existing eigenspace E\u2080 and indexing type H at the original joint-eigenvector helper call, retaining its complete invariant-subspace minimization proof and every original convolution, compactness, eigenfunction and continuous-character construction. Update the two reported deprecated continuous-linear-map aliases and six proposition-local haveI declarations. Preserve all public hypotheses and conclusions. Keep the existing source axiom query and append the card query. Pending natural single-job make/kernel verification.",
+  "max_active_flt_jobs": 1,
+  "lean_threads": 1,
+  "full_original_complete": false,
+  "official_new_solve_credit": 0,
+  "active_import_closure_excluded": [
+    "Submission.Supplier.Theorems.Thm_CuspForm_eisenstein_injective_of_qCoeff_congr_sigmaPrimeTo"
+  ],
+  "active_transitive_import_closure_size": 68,
+  "actual_live_descendant_sources": [
+    {
+      "pid": 43502,
+      "source": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/Theorems/Thm_CuspForm_eisenstein_injective_of_qCoeff_congr_sigmaPrimeTo.lean"
+    }
+  ],
+  "all_four_canonical_adapted_source_card_modules_excluded": [
+    "P2M.Sol.S_ContinuousMap_exists_continuous_monoidHom_forall_sum_eq_zero_of_compactSpace",
+    "Submission.Supplier.P2M.Sol.S_ContinuousMap_exists_continuous_monoidHom_forall_sum_eq_zero_of_compactSpace",
+    "Submission.Supplier.Theorems.Thm_ContinuousMap_exists_continuous_monoidHom_forall_sum_eq_zero_of_compactSpace",
+    "Theorems.Thm_ContinuousMap_exists_continuous_monoidHom_forall_sum_eq_zero_of_compactSpace"
+  ]
+}
