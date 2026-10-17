@@ -1,0 +1,63 @@
+{
+  "at": "2026-10-17T21:54:20.166777+00:00",
+  "name": "AddCommGroup_natCard_primaryComponent_ker_aeval_of_forall_natCard_ker_aeval_eq_natAbs_resultant",
+  "candidate": "r1",
+  "card_candidate": "r1",
+  "source_replacements": [
+    [
+      "haveI",
+      "have",
+      10
+    ],
+    [
+      "if_neg hr",
+      "ite_eq_right hr",
+      1
+    ],
+    [
+      "Set.mem_setOf_eq",
+      "Set.mem_ofPred_eq",
+      7
+    ],
+    [
+      "(hinf.diff hfin)",
+      "(hinf.sdiff hfin)",
+      1
+    ],
+    [
+      "      rw [this, \u2190 mul_assoc, Units.mul_inv, one_mul, add_sub_cancel]\n",
+      "      rw [this, \u2190 mul_assoc, Units.mul_inv, one_mul]\n      exact _root_.add_sub_cancel (a : ZMod p) (1 : ZMod p)\n",
+      1
+    ]
+  ],
+  "card_replacements": [],
+  "installed": true,
+  "verification_pending": false,
+  "original_actual_errors": 1,
+  "original_actual_warnings": 19,
+  "baseline_byte_identical_to_pinned_supplier": true,
+  "supplier_repository": "anthropics/fermats-last-theorem",
+  "supplier_revision": "6e837e75355538c7f80bab5b956861e86c4eacc2",
+  "pinned_supplier_source_and_card_preserved": true,
+  "full_original_statement_and_hypotheses_preserved": true,
+  "original_solution_declaration_and_proof_byte_identical": true,
+  "complete_original_proof_preserved": true,
+  "no_linter_suppression_added": true,
+  "change": "After the unchanged unit-product rewrites, apply root-qualified add_sub_cancel with explicit ZMod p arguments. Preserve the entire public solution and all helper branches. Update the ten actual haveI warnings and the reported deprecated API names. Append source/card recursive axiom queries. Await the unchanged natural single-job make/kernel queue.",
+  "actual_failure": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/official-layout/terminal-proof-repairs/20261018-primary-component-resultant-explicit-cancellation/previous-actual-failure",
+  "max_active_flt_jobs": 1,
+  "lean_threads": 1,
+  "full_original_complete": false,
+  "official_new_solve_credit": 0,
+  "active_import_closure_excluded": [
+    "Submission.Supplier.Theorems.Thm_AddMonoidAlgebra_surjective_of_surjective_residueField_comp"
+  ],
+  "active_transitive_import_closure_size": 3,
+  "actual_live_descendant_sources": [],
+  "all_four_canonical_adapted_source_card_modules_excluded": [
+    "P2M.Sol.S_AddCommGroup_natCard_primaryComponent_ker_aeval_of_forall_natCard_ker_aeval_eq_natAbs_resultant",
+    "Submission.Supplier.P2M.Sol.S_AddCommGroup_natCard_primaryComponent_ker_aeval_of_forall_natCard_ker_aeval_eq_natAbs_resultant",
+    "Submission.Supplier.Theorems.Thm_AddCommGroup_natCard_primaryComponent_ker_aeval_of_forall_natCard_ker_aeval_eq_natAbs_resultant",
+    "Theorems.Thm_AddCommGroup_natCard_primaryComponent_ker_aeval_of_forall_natCard_ker_aeval_eq_natAbs_resultant"
+  ]
+}
