@@ -1,0 +1,65 @@
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_Pencil_exists_rootOfUnity_torus_covector_ne_zero_sum_log_ge.lean:40:72: warning: `MvPolynomial.coeff_X'` has been deprecated: Use `MvPolynomial.coeff_X` instead
+
+Hint: Replace the deprecated name:
+  MvPolynomial.coeff_X'̵
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_Pencil_exists_rootOfUnity_torus_covector_ne_zero_sum_log_ge.lean:63:20: warning: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_Pencil_exists_rootOfUnity_torus_covector_ne_zero_sum_log_ge.lean:87:2: warning: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_Pencil_exists_rootOfUnity_torus_covector_ne_zero_sum_log_ge.lean:88:2: warning: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_Pencil_exists_rootOfUnity_torus_covector_ne_zero_sum_log_ge.lean:153:15: warning: `MvPolynomial.coeff_zero` has been deprecated: Use `AddMonoidAlgebra.coeff_zero` instead
+
+Note: The updated constant has a different type:
+  ∀ {R : Type u_1} {M : Type u_4} [inst : Semiring R], AddMonoidAlgebra.coeff 0 = 0
+instead of
+  ∀ {R : Type u} {σ : Type u_1} [inst : CommSemiring R], AddMonoidAlgebra.coeff 0 = 0
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.coeff_zero` to `AddMonoidAlgebra.coeff_zero x`).
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_Pencil_exists_rootOfUnity_torus_covector_ne_zero_sum_log_ge.lean:149:62: error: unsolved goals
+r : ℕ
+v : Fin r → ℂ
+i₀ : Fin r
+hi₀ : ∀ (i : Fin r), ‖v i‖ ≤ ‖v i₀‖
+ι : Type u_1
+T : Finset ι
+w : ι → Fin r → ℂ
+n : ι → ℕ
+hw : ∀ t ∈ T, ∃ p, v p.1 * w t p.2 - v p.2 * w t p.1 ≠ 0
+this✝ : Nonempty (Fin r)
+this : Nonempty (Fin r × Fin r)
+c : ι → Fin r → ℂ := fun t j => v i₀ * w t j - v j * w t i₀
+hc0 : ∀ (t : ι), c t i₀ = 0
+P : ι → MvPolynomial (Fin r) ℂ := fun t => Pencil.linForm (c t)
+hkey : ∀ t ∈ T, log (⨆ p, ‖v p.1 * w t p.2 - v p.2 * w t p.1‖) ≤ (P t).logMahlerMeasure + ↑r * log 2
+hsum :
+  ∑ t ∈ T, ↑(n t) * log (⨆ p, ‖v p.1 * w t p.2 - v p.2 * w t p.1‖) - (∑ t ∈ T, ↑(n t)) * (↑r * log 2) ≤
+    ∑ t ∈ T, ↑(n t) * (P t).logMahlerMeasure
+f : (Fin r → ℝ) → ℝ := fun θ => ∑ t ∈ T, ↑(n t) * log ‖(MvPolynomial.eval fun i => circleMap 0 1 (θ i)) (P t)‖
+hfi : IntegrableOn f (MvPolynomial.torusBox r) volume
+havg : ⨍ (θ : Fin r → ℝ) in MvPolynomial.torusBox r, f θ = ∑ t ∈ T, ↑(n t) * (P t).logMahlerMeasure
+t : ι
+ht : t ∈ T
+hPt : P t = 0
+p₀ : Fin r × Fin r
+hp₀ : v p₀.1 * w t p₀.2 - v p₀.2 * w t p₀.1 ≠ 0
+l : Fin r
+⊢ (0 fun₀ | l => 1) = 0
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_Pencil_exists_rootOfUnity_torus_covector_ne_zero_sum_log_ge.lean:185:11: warning: `Filter.eventuallyEq_set` has been deprecated: Use `Filter.eventuallyEqSet_iff` instead
+
+Hint: Replace the deprecated name:
+  F̵i̵l̵t̵e̵r̵.̵e̵v̵e̵n̵t̵u̵a̵l̵l̵y̵E̵q̵_̵s̵e̵t̵F̲i̲l̲t̲e̲r̲.̲e̲v̲e̲n̲t̲u̲a̲l̲l̲y̲E̲q̲S̲e̲t̲_̲i̲f̲f̲
