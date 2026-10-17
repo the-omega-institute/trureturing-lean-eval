@@ -1,0 +1,63 @@
+{
+  "at": "2026-10-17T00:01:11.196478+00:00",
+  "name": "ResidualGaloisRep_nonempty_localFlatClassesAd_linearEquiv_of_dualTwist",
+  "candidate": "r1",
+  "card_candidate": "r1",
+  "source_replacements": [
+    [
+      "lemma trPush_injective : Function.Injective (trPush p k M) := by\n  letI := ZMod.algebra k p",
+      "lemma trPush_injective : Function.Injective (trPush p k M) := by\n  let : AddCommGroup (ZMod p) := (inferInstance : CommRing (ZMod p)).toAddCommGroup\n  let := ZMod.algebra k p",
+      1
+    ],
+    [
+      "lemma trPush_surjective : Function.Surjective (trPush p k M) := by\n  letI := ZMod.algebra k p",
+      "lemma trPush_surjective : Function.Surjective (trPush p k M) := by\n  let : AddCommGroup (ZMod p) := (inferInstance : CommRing (ZMod p)).toAddCommGroup\n  let := ZMod.algebra k p",
+      1
+    ],
+    [
+      "  haveI : FiniteDimensional (ZMod p) k := inferInstance",
+      "  have : FiniteDimensional (ZMod p) k := inferInstance",
+      2
+    ],
+    [
+      "  haveI : Algebra.IsSeparable (ZMod p) k := inferInstance",
+      "  have : Algebra.IsSeparable (ZMod p) k := inferInstance",
+      2
+    ],
+    [
+      "trPush p k M ((ZMod.castHom (dvd_refl p) k x) \u2022 f) = x \u2022 trPush p k M f := by\n  letI := ZMod.algebra k p",
+      "trPush p k M ((ZMod.castHom (dvd_refl p) k x) \u2022 f) = x \u2022 trPush p k M f := by\n  let := ZMod.algebra k p",
+      1
+    ],
+    [
+      "  haveI : Module.Free \u2124_[p] H := Module.free_of_flat_of_isLocalRing",
+      "  have : Module.Free \u2124_[p] H := Module.free_of_flat_of_isLocalRing",
+      1
+    ]
+  ],
+  "card_replacements": [],
+  "baseline_byte_identical_to_pinned_supplier": true,
+  "pinned_supplier_source_and_card_preserved": true,
+  "full_original_statements_hypotheses_and_all_proof_branches_preserved": true,
+  "no_linter_suppression_added": true,
+  "verification_pending": false,
+  "installed": true,
+  "installed_at": "2026-10-17T00:01:11.196629+00:00",
+  "actual_failure": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/official-layout/terminal-proof-repairs/20261016-local-flat-dual-trace-instances/previous-actual-failure",
+  "change": "Preserve the entire 682-line trace/character/Cartier-dual/local-flat/cohomology proof and literal public theorem. Pin only ZMod scalar AddCommGroup in the two trace bijectivity lemmas to the existing CommRing projection; replace exactly eight actually warned haveI/letI bindings with have/let. Add final recursive axiom queries.",
+  "max_active_flt_jobs": 1,
+  "lean_threads": 1,
+  "full_original_complete": false,
+  "official_new_solve_credit": 0,
+  "active_import_closure_excluded": [
+    "Submission.Supplier.P2M.Sol.S_groupCohomology_exists_isUnramifiedOutside_forall_apply_eq_one_of_smooth"
+  ],
+  "active_transitive_import_closure_size": 23,
+  "actual_live_descendant_sources": [],
+  "all_four_canonical_adapted_source_card_modules_excluded": [
+    "P2M.Sol.S_ResidualGaloisRep_nonempty_localFlatClassesAd_linearEquiv_of_dualTwist",
+    "Submission.Supplier.P2M.Sol.S_ResidualGaloisRep_nonempty_localFlatClassesAd_linearEquiv_of_dualTwist",
+    "Submission.Supplier.Theorems.Thm_ResidualGaloisRep_nonempty_localFlatClassesAd_linearEquiv_of_dualTwist",
+    "Theorems.Thm_ResidualGaloisRep_nonempty_localFlatClassesAd_linearEquiv_of_dualTwist"
+  ]
+}

@@ -1,0 +1,93 @@
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_ResidualGaloisRep_nonempty_localFlatClassesAd_linearEquiv_of_dualTwist.lean:129:2: warning: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_ResidualGaloisRep_nonempty_localFlatClassesAd_linearEquiv_of_dualTwist.lean:130:2: warning: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_ResidualGaloisRep_nonempty_localFlatClassesAd_linearEquiv_of_dualTwist.lean:131:2: warning: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_ResidualGaloisRep_nonempty_localFlatClassesAd_linearEquiv_of_dualTwist.lean:141:45: error: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  @Eq ?m.147 (?m.149 - ?m.150) 0
+in the target expression
+  @Eq (ZMod p) ((Algebra.trace (ZMod p) k) (f m * a) - (Algebra.trace (ZMod p) k) (g m * a)) 0
+
+p : ℕ
+inst✝⁶ : Fact (Nat.Prime p)
+k : Type
+inst✝⁵ : Field k
+inst✝⁴ : Finite k
+inst✝³ : CharP k p
+M : Type
+inst✝² : AddCommGroup M
+inst✝¹ : Module k M
+inst✝ : Module.Finite k M
+this✝² : Algebra (ZMod p) k := ZMod.algebra k p
+this✝¹ : FiniteDimensional (ZMod p) k
+this✝ : Algebra.IsSeparable (ZMod p) k
+f g : Module.Dual k M
+hfg : (trPush p k M) f = (trPush p k M) g
+m : M
+hnd : (Algebra.traceForm (ZMod p) k).Nondegenerate
+a : k
+this : (Algebra.trace (ZMod p) k) (a * f m) = (Algebra.trace (ZMod p) k) (a * g m)
+⊢ (Algebra.trace (ZMod p) k) (f m * a) - (Algebra.trace (ZMod p) k) (g m * a) = 0
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_ResidualGaloisRep_nonempty_localFlatClassesAd_linearEquiv_of_dualTwist.lean:145:2: warning: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_ResidualGaloisRep_nonempty_localFlatClassesAd_linearEquiv_of_dualTwist.lean:146:2: warning: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_ResidualGaloisRep_nonempty_localFlatClassesAd_linearEquiv_of_dualTwist.lean:147:2: warning: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_ResidualGaloisRep_nonempty_localFlatClassesAd_linearEquiv_of_dualTwist.lean:153:13: error(lean.synthInstanceFailed): failed to synthesize instance of type class
+  Module (ZMod p) (ZMod p)
+
+Hint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_ResidualGaloisRep_nonempty_localFlatClassesAd_linearEquiv_of_dualTwist.lean:184:2: warning: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_ResidualGaloisRep_nonempty_localFlatClassesAd_linearEquiv_of_dualTwist.lean:275:2: warning: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
