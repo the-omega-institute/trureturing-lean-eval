@@ -1,0 +1,180 @@
+{
+  "at": "2026-10-17T15:51:46.729368+00:00",
+  "name": "WeierstrassCurve_Affine_IsogenyEndDatum_exists_pointEnd_eq_of_mem_isogenyEndSubring",
+  "candidate": "r1",
+  "card_candidate": "r1",
+  "source_replacements": [
+    [
+      "    haveI := hv.centre_isPrime\n",
+      "    have := hv.centre_isPrime\n",
+      1
+    ],
+    [
+      "    haveI hAded : IsDedekindDomain A := by rw [hA]; infer_instance\n",
+      "    have hAded : IsDedekindDomain A := by rw [hA]; infer_instance\n",
+      1
+    ],
+    [
+      "  haveI : HasPrincipalDivisors F W.FunctionField := hasPrincipalDivisors_functionField W\n",
+      "  have : HasPrincipalDivisors F W.FunctionField := hasPrincipalDivisors_functionField W\n",
+      1
+    ],
+    [
+      "  haveI : CharZero V.FunctionField :=\n",
+      "  have : CharZero V.FunctionField :=\n",
+      1
+    ],
+    [
+      "    letI := algebraAlong \u03b9\n",
+      "    let := algebraAlong \u03b9\n",
+      1
+    ],
+    [
+      "    haveI := isScalarTower_along \u03b9\n",
+      "    have := isScalarTower_along \u03b9\n",
+      1
+    ],
+    [
+      "    haveI : Module.Finite V.FunctionField W.FunctionField := hfin\n",
+      "    have : Module.Finite V.FunctionField W.FunctionField := hfin\n",
+      1
+    ],
+    [
+      "    (h\u03c6 : FiniteAlong K \u03c6) (h\u03c8 : FiniteAlong K \u03c8) : FiniteAlong K (\u03c8.comp \u03c6) := by\n  letI := algebraAlong \u03c6\n",
+      "    (h\u03c6 : FiniteAlong K \u03c6) (h\u03c8 : FiniteAlong K \u03c8) : FiniteAlong K (\u03c8.comp \u03c6) := by\n  let := algebraAlong \u03c6\n",
+      1
+    ],
+    [
+      "  letI := algebraAlong \u03c8\n",
+      "  let := algebraAlong \u03c8\n",
+      1
+    ],
+    [
+      "  letI := algebraAlong (\u03c8.comp \u03c6)\n",
+      "  let := algebraAlong (\u03c8.comp \u03c6)\n",
+      1
+    ],
+    [
+      "  haveI : IsScalarTower F F' F'' := IsScalarTower.of_algebraMap_eq fun _ => rfl\n",
+      "  have : IsScalarTower F F' F'' := IsScalarTower.of_algebraMap_eq fun _ => rfl\n",
+      1
+    ],
+    [
+      "  haveI : Module.Finite F F' := h\u03c6\n",
+      "  have : Module.Finite F F' := h\u03c6\n",
+      1
+    ],
+    [
+      "  haveI : Module.Finite F' F'' := h\u03c8\n",
+      "  have : Module.Finite F' F'' := h\u03c8\n",
+      1
+    ],
+    [
+      "    IsLocalHom (restrictInclusionAlong \u03c6 h\u03c6 w) := by\n  letI := algebraAlong \u03c6\n",
+      "    IsLocalHom (restrictInclusionAlong \u03c6 h\u03c6 w) := by\n  let := algebraAlong \u03c6\n",
+      1
+    ],
+    [
+      "  let := algebraAlong \u03c6\n  haveI := isScalarTower_along \u03c6\n",
+      "  let := algebraAlong \u03c6\n  have := isScalarTower_along \u03c6\n",
+      1
+    ],
+    [
+      "  have := isScalarTower_along \u03c6\n  haveI := isIntegral_along \u03c6 h\u03c6\n",
+      "  have := isScalarTower_along \u03c6\n  have := isIntegral_along \u03c6 h\u03c6\n",
+      1
+    ],
+    [
+      "  letI iA : Algebra (W.restrictAlong (\u03c7.comp \u03c6) h\u03c7\u03c6).ResidueField W.ResidueField :=\n",
+      "  let iA : Algebra (W.restrictAlong (\u03c7.comp \u03c6) h\u03c7\u03c6).ResidueField W.ResidueField :=\n",
+      1
+    ],
+    [
+      "  letI iB : Algebra w.ResidueField W.ResidueField :=\n",
+      "  let iB : Algebra w.ResidueField W.ResidueField :=\n",
+      1
+    ],
+    [
+      "  letI iC : Algebra (W.restrictAlong (\u03c7.comp \u03c6) h\u03c7\u03c6).ResidueField w.ResidueField :=\n",
+      "  let iC : Algebra (W.restrictAlong (\u03c7.comp \u03c6) h\u03c7\u03c6).ResidueField w.ResidueField :=\n",
+      1
+    ],
+    [
+      "  haveI : IsScalarTower (W.restrictAlong (\u03c7.comp \u03c6) h\u03c7\u03c6).ResidueField\n",
+      "  have : IsScalarTower (W.restrictAlong (\u03c7.comp \u03c6) h\u03c7\u03c6).ResidueField\n",
+      1
+    ],
+    [
+      "    (w : Place K F') : 0 < Place.ramificationIndexAlong \u03c6 w := by\n  letI := algebraAlong \u03c6\n",
+      "    (w : Place K F') : 0 < Place.ramificationIndexAlong \u03c6 w := by\n  let := algebraAlong \u03c6\n",
+      1
+    ],
+    [
+      "  let := algebraAlong \u03c6\n  haveI := isScalarTower_along \u03c6\n",
+      "  let := algebraAlong \u03c6\n  have := isScalarTower_along \u03c6\n",
+      1
+    ],
+    [
+      "  have := isScalarTower_along \u03c6\n  haveI := isIntegral_along \u03c6 h\u03c6\n",
+      "  have := isScalarTower_along \u03c6\n  have := isIntegral_along \u03c6 h\u03c6\n",
+      1
+    ],
+    [
+      "    haveI : Module.Finite F[X] W.CoordinateRing :=\n",
+      "    have : Module.Finite F[X] W.CoordinateRing :=\n",
+      1
+    ],
+    [
+      "Ideal.eq_bot_of_comap_eq_bot",
+      "Ideal.eq_bot_of_under_eq_bot",
+      1
+    ],
+    [
+      "rw [RingHom.comap_ker, pointPullbackCoordHom_comp_algebraMap",
+      "rw [Ideal.under_def, RingHom.comap_ker, pointPullbackCoordHom_comp_algebraMap",
+      1
+    ],
+    [
+      "@[scoped simp]\ntheorem placeOfPoint_some [IsDedekindDomain W.CoordinateRing]",
+      "omit [IsDedekindDomain W.CoordinateRing] in\n@[scoped simp]\ntheorem placeOfPoint_some [IsDedekindDomain W.CoordinateRing]",
+      1
+    ],
+    [
+      "theorem eq_of_not_isFinitePlace [IsDedekindDomain W.CoordinateRing]",
+      "omit [IsDedekindDomain W.CoordinateRing] in\ntheorem eq_of_not_isFinitePlace [IsDedekindDomain W.CoordinateRing]",
+      1
+    ]
+  ],
+  "card_replacements": [],
+  "baseline_byte_identical_to_pinned_supplier": true,
+  "pinned_supplier_source_and_card_preserved": true,
+  "verification_pending": false,
+  "installed": true,
+  "no_linter_suppression_added": true,
+  "complete_original_proof_preserved": true,
+  "full_original_statement_and_hypotheses_preserved": true,
+  "max_active_flt_jobs": 1,
+  "lean_threads": 1,
+  "original_actual_errors": 1,
+  "original_actual_warnings": 27,
+  "original_kernel_seconds": 64.714942084,
+  "change": "Retain complete original2745-line isogeny end-subring realization construction and original public source/card statements and every hypothesis. Unfold Ideal.under before original coordinate-map kernel rewrite. Address24 actual haveI/letI style diagnostics and two automatic duplicate section instances while retaining explicit hypotheses. No suppression added;current source/card verification pending.",
+  "full_original_complete": false,
+  "official_new_solve_credit": 0,
+  "active_import_closure_excluded": [
+    "Submission.Supplier.Theorems.Thm_WeierstrassCurve_exists_map_eq_veluQuotient_and_map_residue_eq_veluQuotient_reduceHom"
+  ],
+  "active_transitive_import_closure_size": 13,
+  "actual_live_descendant_sources": [
+    {
+      "pid": 95023,
+      "source": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/Theorems/Thm_WeierstrassCurve_exists_map_eq_veluQuotient_and_map_residue_eq_veluQuotient_reduceHom.lean"
+    }
+  ],
+  "all_four_canonical_adapted_source_card_modules_excluded": [
+    "P2M.Sol.S_WeierstrassCurve_Affine_IsogenyEndDatum_exists_pointEnd_eq_of_mem_isogenyEndSubring",
+    "Submission.Supplier.P2M.Sol.S_WeierstrassCurve_Affine_IsogenyEndDatum_exists_pointEnd_eq_of_mem_isogenyEndSubring",
+    "Submission.Supplier.Theorems.Thm_WeierstrassCurve_Affine_IsogenyEndDatum_exists_pointEnd_eq_of_mem_isogenyEndSubring",
+    "Theorems.Thm_WeierstrassCurve_Affine_IsogenyEndDatum_exists_pointEnd_eq_of_mem_isogenyEndSubring"
+  ]
+}
