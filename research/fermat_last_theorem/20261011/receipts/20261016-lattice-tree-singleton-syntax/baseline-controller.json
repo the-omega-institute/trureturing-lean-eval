@@ -1,0 +1,50 @@
+{
+  "sha256": "a132eda9ad710d0ffec741ee624128468ec0066a55459696ee51e6ce9496c55b",
+  "exit": 1,
+  "empty_output_retry_done": false,
+  "source_sha256_after": "a132eda9ad710d0ffec741ee624128468ec0066a55459696ee51e6ce9496c55b",
+  "source_unchanged": true,
+  "olean_sha256": null,
+  "seconds": 50.572978708005394,
+  "pid": 27338,
+  "command": [
+    "/Users/macstudio/.local/omega-shims/lean",
+    "-j1",
+    "--trust=0",
+    "-Ddebug.skipKernelTC=false",
+    "-R",
+    "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src",
+    "-o",
+    "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-build/lib/lean/Submission/Supplier/P2M/Sol/S_LT_LatticeTree_Vertex_exists_isWithin_one_and_isWithin_and_forall_not_isWithin_succ_of_isWithin_succ_of_not_isWithin.olean",
+    "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_LT_LatticeTree_Vertex_exists_isWithin_one_and_isWithin_and_forall_not_isWithin_succ_of_isWithin_succ_of_not_isWithin.lean"
+  ],
+  "make_wrapper_pid": 22086,
+  "make_exit": 2,
+  "make_entry_failed": false,
+  "cache_binding_valid": true,
+  "canonical_make_running_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/fa2c447fe89a0bf7e1ba9d98-1792143065587035000.make-running.json",
+  "canonical_make_terminal_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/fa2c447fe89a0bf7e1ba9d98-1792143065587035000.make-terminal.json",
+  "kernel_terminal_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/fa2c447fe89a0bf7e1ba9d98-1792143065587035000.kernel/result.json",
+  "direct_dependencies": [
+    {
+      "module": "Submission.Supplier.Definitions.Def_LatticeTreeBaseChange",
+      "source_sha256": "3358ec6f2de63a79bdc11986ba6990ff0ed3dd47af506e78163eed5ecf3caaf3",
+      "object_sha256": "7f2faf031806f8830b47c0165323696d7d0cf104c8343ae71eb359640bc783ea",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Theorems.Thm_LT_LatticeTree_exists_act_stdVertex_eq",
+      "source_sha256": "dfcebe5bbda2ad6ec4abff4055fb8f7b1d034b796e65cf143fb6450dcbbf06a1",
+      "object_sha256": "5a672bb29f07a695ffcebc7117e9a86031501c64108db5a7d89fd306400f3c00",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.P2M.Util",
+      "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+      "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+      "receipt_reused": true
+    }
+  ],
+  "stdout": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/fa2c447fe89a0bf7e1ba9d98-1792143065587035000.kernel/stdout.log",
+  "stderr": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/fa2c447fe89a0bf7e1ba9d98-1792143065587035000.kernel/stderr.log"
+}

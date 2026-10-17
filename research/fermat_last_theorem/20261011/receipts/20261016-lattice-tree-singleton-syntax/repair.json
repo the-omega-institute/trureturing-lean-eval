@@ -1,0 +1,39 @@
+{
+  "at": "2026-10-16T12:45:37.945840+00:00",
+  "name": "LT_LatticeTree_Vertex_exists_isWithin_one_and_isWithin_and_forall_not_isWithin_succ_of_isWithin_succ_of_not_isWithin",
+  "source_replacements": [
+    [
+      "  have hZroot : Z \u2209 ({latticeMap (scalarGL (unitOfNeZero (K := K) h\u03d6.ne_zero)) X \u2294\n      latticeMap (scalarGL (unitOfNeZero (K := K) h\u03d6.ne_zero ^ (n + 1))) (stdLattice R K)} :",
+      "  have hZroot : Z \u2209 ({(latticeMap (scalarGL (unitOfNeZero (K := K) h\u03d6.ne_zero)) X \u2294\n      latticeMap (scalarGL (unitOfNeZero (K := K) h\u03d6.ne_zero ^ (n + 1))) (stdLattice R K))} :",
+      1
+    ],
+    [
+      "SetLike.exists_of_lt",
+      "IsConcreteLE.exists_of_lt",
+      1
+    ],
+    [
+      "MonoidHom.coe_coe",
+      "MonoidHom.coe_ofClass",
+      3
+    ],
+    [
+      "Set.mem_diff",
+      "Set.mem_sdiff",
+      1
+    ],
+    [
+      "  haveI : Module.Finite R \u21a5M := Module.Finite.iff_fg.mpr hM\n",
+      "  have : Module.Finite R \u21a5M := Module.Finite.iff_fg.mpr hM\n",
+      1
+    ]
+  ],
+  "baseline_byte_identical_to_pinned_supplier": true,
+  "full_original_statements_hypotheses_and_all_proof_branches_preserved": true,
+  "no_linter_suppression_added": true,
+  "verification_pending": false,
+  "candidate": "r1",
+  "active_import_closure_excluded": [
+    "Submission.Supplier.Theorems.Thm_Deformation_ProartinianCat_isAdicTopology_of_isNoetherianRing"
+  ]
+}
