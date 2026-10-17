@@ -1,0 +1,126 @@
+{
+  "at": "2026-10-17T15:59:41.775855+00:00",
+  "name": "WeierstrassCurve_Affine_ker_pointMapOfPushforward_eq_of_j_eq_of_forall_pointEnd_eq_zsmul",
+  "candidate": "r1",
+  "card_candidate": "r1",
+  "source_replacements": [
+    [
+      "  haveI : CharZero V.FunctionField :=\n",
+      "  have : CharZero V.FunctionField :=\n",
+      1
+    ],
+    [
+      "    letI := algebraAlong \u03b9\n",
+      "    let := algebraAlong \u03b9\n",
+      1
+    ],
+    [
+      "    haveI := isScalarTower_along \u03b9\n",
+      "    have := isScalarTower_along \u03b9\n",
+      1
+    ],
+    [
+      "    haveI : Module.Finite V.FunctionField W.FunctionField := hfin\n",
+      "    have : Module.Finite V.FunctionField W.FunctionField := hfin\n",
+      1
+    ],
+    [
+      "  haveI : Finite W.Point := hfinite\n",
+      "  have : Finite W.Point := hfinite\n",
+      1
+    ],
+    [
+      "  letI := algebraAlong \u03c4\n",
+      "  let := algebraAlong \u03c4\n",
+      1
+    ],
+    [
+      "  haveI : Finite (pointMapOfPushforward \u03c4 h\u03c4 hfin hN).ker :=\n",
+      "  have : Finite (pointMapOfPushforward \u03c4 h\u03c4 hfin hN).ker :=\n",
+      1
+    ],
+    [
+      "    letI := algebraAlong \u03b9'\n",
+      "    let := algebraAlong \u03b9'\n",
+      1
+    ],
+    [
+      "    haveI : Module.Finite V'.toAffine.FunctionField W.toAffine.FunctionField := hfin'\n",
+      "    have : Module.Finite V'.toAffine.FunctionField W.toAffine.FunctionField := hfin'\n",
+      1
+    ],
+    [
+      "  haveI hfinker : Finite \u03c6'.ker := Nat.finite_of_card_ne_zero (hd_def \u25b8 hd0)\n",
+      "  have hfinker : Finite \u03c6'.ker := Nat.finite_of_card_ne_zero (hd_def \u25b8 hd0)\n",
+      1
+    ],
+    [
+      "    haveI : Infinite W.toAffine.Point := kw_point_infinite\n",
+      "    have : Infinite W.toAffine.Point := kw_point_infinite\n",
+      1
+    ],
+    [
+      "WeierstrassCurve.Affine.instIsScalarTowerPolynomialRatFuncFunctionField_definitions",
+      "WeierstrassCurve.Affine.instIsScalarTowerPolynomialRatFuncFunctionField_submission",
+      1
+    ],
+    [
+      "WeierstrassCurve.Affine.instAlgebraRatFuncFunctionField_definitions",
+      "WeierstrassCurve.Affine.instAlgebraRatFuncFunctionField_submission",
+      1
+    ],
+    [
+      "WeierstrassCurve.Affine.instIsScalarTowerRatFuncFunctionField_definitions",
+      "WeierstrassCurve.Affine.instIsScalarTowerRatFuncFunctionField_submission",
+      1
+    ]
+  ],
+  "card_replacements": [
+    [
+      "WeierstrassCurve.Affine.instIsScalarTowerPolynomialRatFuncFunctionField_definitions",
+      "WeierstrassCurve.Affine.instIsScalarTowerPolynomialRatFuncFunctionField_submission",
+      1
+    ],
+    [
+      "WeierstrassCurve.Affine.instAlgebraRatFuncFunctionField_definitions",
+      "WeierstrassCurve.Affine.instAlgebraRatFuncFunctionField_submission",
+      1
+    ],
+    [
+      "WeierstrassCurve.Affine.instIsScalarTowerRatFuncFunctionField_definitions",
+      "WeierstrassCurve.Affine.instIsScalarTowerRatFuncFunctionField_submission",
+      1
+    ]
+  ],
+  "baseline_byte_identical_to_pinned_supplier": true,
+  "pinned_supplier_source_and_card_preserved": true,
+  "verification_pending": false,
+  "installed": true,
+  "no_linter_suppression_added": true,
+  "complete_original_proof_preserved": true,
+  "full_original_statement_and_hypotheses_preserved": true,
+  "max_active_flt_jobs": 1,
+  "lean_threads": 1,
+  "original_actual_errors": 1,
+  "original_actual_warnings": 11,
+  "original_kernel_seconds": 104.938101125,
+  "change": "Retain complete original506-line equality-of-isogeny-kernels proof from j-invariant equality and scalar endomorphism hypotheses. Public source/card statements and every hypothesis unchanged. Update3 obsolete instance references in source and card to actual pinned submission names and11 actually flagged haveI/letI declarations. No suppression added;pending natural verification.",
+  "full_original_complete": false,
+  "official_new_solve_credit": 0,
+  "active_import_closure_excluded": [
+    "Submission.Supplier.P2M.Sol.S_WeierstrassCurve_zmultiples_eq_of_veluQuotient_j_eq_of_forall_pointEnd_eq_zsmul"
+  ],
+  "active_transitive_import_closure_size": 203,
+  "actual_live_descendant_sources": [
+    {
+      "pid": 52273,
+      "source": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_WeierstrassCurve_zmultiples_eq_of_veluQuotient_j_eq_of_forall_pointEnd_eq_zsmul.lean"
+    }
+  ],
+  "all_four_canonical_adapted_source_card_modules_excluded": [
+    "P2M.Sol.S_WeierstrassCurve_Affine_ker_pointMapOfPushforward_eq_of_j_eq_of_forall_pointEnd_eq_zsmul",
+    "Submission.Supplier.P2M.Sol.S_WeierstrassCurve_Affine_ker_pointMapOfPushforward_eq_of_j_eq_of_forall_pointEnd_eq_zsmul",
+    "Submission.Supplier.Theorems.Thm_WeierstrassCurve_Affine_ker_pointMapOfPushforward_eq_of_j_eq_of_forall_pointEnd_eq_zsmul",
+    "Theorems.Thm_WeierstrassCurve_Affine_ker_pointMapOfPushforward_eq_of_j_eq_of_forall_pointEnd_eq_zsmul"
+  ]
+}
