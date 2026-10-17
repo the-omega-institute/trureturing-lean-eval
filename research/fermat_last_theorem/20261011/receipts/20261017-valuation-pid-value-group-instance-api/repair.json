@@ -1,0 +1,63 @@
+{
+  "at": "2026-10-17T14:09:42.637206+00:00",
+  "name": "ValuationSubring_isPrincipalIdealRing_of_finiteDimensional_adjoin",
+  "candidate": "r2",
+  "card_candidate": "r1",
+  "source_replacements": [
+    [
+      "(.ofClass v)",
+      "(v : F \u2192*\u2080 O.ValueGroup)",
+      10
+    ],
+    [
+      "[MonoidWithZeroHom.coe_ofClass]",
+      "[Valuation.coe_toMonoidWithZeroHom]",
+      1
+    ],
+    [
+      "haveI :",
+      "have :",
+      9
+    ],
+    [
+      "letI :",
+      "let :",
+      2
+    ]
+  ],
+  "card_replacements": [],
+  "baseline_byte_identical_to_pinned_supplier": true,
+  "pinned_supplier_source_and_card_preserved": true,
+  "verification_pending": false,
+  "installed": true,
+  "no_linter_suppression_added": true,
+  "complete_original_proof_preserved": true,
+  "full_original_statement_and_hypotheses_preserved": true,
+  "max_active_flt_jobs": 1,
+  "lean_threads": 1,
+  "original_actual_errors": 1,
+  "original_actual_warnings": 11,
+  "original_kernel_seconds": 45.056822375,
+  "change": "Retain the complete original 259-line transcendence/adjoin, polynomial valuation, bounded-power, cyclic value-group and PID proof. Use the same direct valuation-to-monoid-with-zero hom coercion in all ten original occurrences, and the corresponding coercion simp lemma. This aligns the actual value-group operations with those required by the PID theorem. Use have/let for the eleven original flagged declarations. All public source/card statements and hypotheses unchanged;no linter suppression added. Original and r1 failure receipts archived. Both current source/card verification pending.",
+  "full_original_complete": false,
+  "official_new_solve_credit": 0,
+  "active_import_closure_excluded": [
+    "Submission.Supplier.P2M.Sol.S_ValuationSubring_nonempty_residueField_algEquiv_algebraicClosure_galoisField"
+  ],
+  "active_transitive_import_closure_size": 9,
+  "actual_live_descendant_sources": [
+    {
+      "pid": 80303,
+      "source": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_ValuationSubring_nonempty_residueField_algEquiv_algebraicClosure_galoisField.lean"
+    }
+  ],
+  "all_four_canonical_adapted_source_card_modules_excluded": [
+    "P2M.Sol.S_ValuationSubring_isPrincipalIdealRing_of_finiteDimensional_adjoin",
+    "Submission.Supplier.P2M.Sol.S_ValuationSubring_isPrincipalIdealRing_of_finiteDimensional_adjoin",
+    "Submission.Supplier.Theorems.Thm_ValuationSubring_isPrincipalIdealRing_of_finiteDimensional_adjoin",
+    "Theorems.Thm_ValuationSubring_isPrincipalIdealRing_of_finiteDimensional_adjoin"
+  ],
+  "r1_source_actual_errors": 1,
+  "r1_source_actual_warnings": 0,
+  "r1_source_kernel_seconds": 39.352102417
+}
