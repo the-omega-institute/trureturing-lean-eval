@@ -1,0 +1,65 @@
+{
+  "at": "2026-10-17T12:42:07.137090+00:00",
+  "name": "Rep_exists_hom_injective_finiteIndex_of_rat",
+  "candidate": "r1",
+  "card_candidate": "r1",
+  "source_replacements": [
+    [
+      "AddGroup.fg_def.1 hL",
+      "AddGroup.isAddFG_iff.mp hL",
+      1
+    ],
+    [
+      "(by convert hL <;> exact Subsingleton.elim _ _)",
+      "hL",
+      1
+    ],
+    [
+      "(by convert hL' <;> exact Subsingleton.elim _ _)",
+      "hL'",
+      1
+    ],
+    [
+      "haveI :",
+      "have :",
+      3
+    ],
+    [
+      "AddMonoid.IsTorsion",
+      "IsAddTorsion",
+      1
+    ],
+    [
+      "AddCommGroup.finite_of_fg_torsion",
+      "AddCommGroup.finite_of_fg_isAddTorsion",
+      1
+    ]
+  ],
+  "card_replacements": [],
+  "baseline_byte_identical_to_pinned_supplier": true,
+  "pinned_supplier_source_and_card_preserved": true,
+  "verification_pending": false,
+  "installed": true,
+  "no_linter_suppression_added": true,
+  "complete_original_proof_preserved": true,
+  "full_original_statement_and_hypotheses_preserved": true,
+  "max_active_flt_jobs": 1,
+  "lean_threads": 1,
+  "original_actual_errors": 1,
+  "original_actual_warnings": 9,
+  "original_kernel_seconds": 40.998622250000004,
+  "change": "Preserve the full original denominator-clearing, equivariant injective map and finite-index quotient proof. Obtain ambient finite generators directly via AddGroup.isAddFG_iff instead of unfolding the top-subgroup FG definition. Remove two actually unreachable convert continuations by using the unchanged finite-module hypotheses directly; use have for three propositional instances; update the torsion predicate and finite-FG torsion aliases. Literal public solution/card statements and all hypotheses are unchanged. Both canonical baselines match pinned supplier bytes. Natural source/card verification pending.",
+  "full_original_complete": false,
+  "official_new_solve_credit": 0,
+  "active_import_closure_excluded": [
+    "Submission.Supplier.P2M.Sol.S_Rep_exists_isIrreducible_forall_additive_eq_sum"
+  ],
+  "active_transitive_import_closure_size": 2,
+  "actual_live_descendant_sources": [],
+  "all_four_canonical_adapted_source_card_modules_excluded": [
+    "P2M.Sol.S_Rep_exists_hom_injective_finiteIndex_of_rat",
+    "Submission.Supplier.P2M.Sol.S_Rep_exists_hom_injective_finiteIndex_of_rat",
+    "Submission.Supplier.Theorems.Thm_Rep_exists_hom_injective_finiteIndex_of_rat",
+    "Theorems.Thm_Rep_exists_hom_injective_finiteIndex_of_rat"
+  ]
+}
