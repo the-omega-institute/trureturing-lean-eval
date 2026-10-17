@@ -1,0 +1,185 @@
+{
+  "at": "2026-10-17T15:41:46.684883+00:00",
+  "name": "WeierstrassCurve_Affine_IsogenyEndDatum_exists_restrictAlong_placeOfPoint_eq_add",
+  "candidate": "r1",
+  "card_candidate": "r1",
+  "source_replacements": [
+    [
+      "    haveI := hv.centre_isPrime\n",
+      "    have := hv.centre_isPrime\n",
+      1
+    ],
+    [
+      "    haveI hAded : IsDedekindDomain A := by rw [hA]; infer_instance\n",
+      "    have hAded : IsDedekindDomain A := by rw [hA]; infer_instance\n",
+      1
+    ],
+    [
+      "  haveI : HasPrincipalDivisors F W.FunctionField := hasPrincipalDivisors_functionField W\n",
+      "  have : HasPrincipalDivisors F W.FunctionField := hasPrincipalDivisors_functionField W\n",
+      1
+    ],
+    [
+      "  haveI : CharZero V.FunctionField :=\n",
+      "  have : CharZero V.FunctionField :=\n",
+      1
+    ],
+    [
+      "    letI := algebraAlong \u03b9\n",
+      "    let := algebraAlong \u03b9\n",
+      1
+    ],
+    [
+      "    haveI := isScalarTower_along \u03b9\n",
+      "    have := isScalarTower_along \u03b9\n",
+      1
+    ],
+    [
+      "    haveI : Module.Finite V.FunctionField W.FunctionField := hfin\n",
+      "    have : Module.Finite V.FunctionField W.FunctionField := hfin\n",
+      1
+    ],
+    [
+      "  letI := algebraAlong \u03c6\n",
+      "  let := algebraAlong \u03c6\n",
+      1
+    ],
+    [
+      "  haveI := isScalarTower_along \u03c6\n",
+      "  have := isScalarTower_along \u03c6\n",
+      1
+    ],
+    [
+      "  haveI := isIntegral_along \u03c6 h\u03c6\n",
+      "  have := isIntegral_along \u03c6 h\u03c6\n",
+      1
+    ],
+    [
+      "    haveI : Module.Finite F[X] W.CoordinateRing :=\n",
+      "    have : Module.Finite F[X] W.CoordinateRing :=\n",
+      1
+    ],
+    [
+      "  haveI : Module.Finite F[X] W.CoordinateRing :=\n",
+      "  have : Module.Finite F[X] W.CoordinateRing :=\n",
+      1
+    ],
+    [
+      "  haveI : Algebra.IsIntegral F[X] W.CoordinateRing := Algebra.IsIntegral.of_finite _ _\n",
+      "  have : Algebra.IsIntegral F[X] W.CoordinateRing := Algebra.IsIntegral.of_finite _ _\n",
+      1
+    ],
+    [
+      "  haveI h1 : Algebra.IsAlgebraic F[X] W.CoordinateRing :=\n",
+      "  have h1 : Algebra.IsAlgebraic F[X] W.CoordinateRing :=\n",
+      1
+    ],
+    [
+      "  haveI h2 : Algebra.IsAlgebraic W.CoordinateRing W.FunctionField :=\n",
+      "  have h2 : Algebra.IsAlgebraic W.CoordinateRing W.FunctionField :=\n",
+      1
+    ],
+    [
+      "  haveI h3 : FaithfulSMul F[X] W.CoordinateRing :=\n",
+      "  have h3 : FaithfulSMul F[X] W.CoordinateRing :=\n",
+      1
+    ],
+    [
+      "  haveI h4 : FaithfulSMul W.CoordinateRing W.FunctionField :=\n",
+      "  have h4 : FaithfulSMul W.CoordinateRing W.FunctionField :=\n",
+      1
+    ],
+    [
+      "  letI : Algebra W.FunctionField W.FunctionField := \u03b9.toRingHom.toAlgebra\n",
+      "  let : Algebra W.FunctionField W.FunctionField := \u03b9.toRingHom.toAlgebra\n",
+      1
+    ],
+    [
+      "  letI : Module W.FunctionField W.FunctionField := Algebra.toModule\n",
+      "  let : Module W.FunctionField W.FunctionField := Algebra.toModule\n",
+      1
+    ],
+    [
+      "  haveI : Finite ({polyToFunctionField W X, yGen W} : Set W.FunctionField) :=\n",
+      "  have : Finite ({polyToFunctionField W X, yGen W} : Set W.FunctionField) :=\n",
+      1
+    ],
+    [
+      "  haveI : Infinite W.Point := WeierstrassCurve.point_infinite _\n",
+      "  have : Infinite W.Point := WeierstrassCurve.point_infinite _\n",
+      1
+    ],
+    [
+      "  haveI : HasPrincipalDivisors F W.FunctionField := hasPrincipalDivisors_functionField _\n",
+      "  have : HasPrincipalDivisors F W.FunctionField := hasPrincipalDivisors_functionField _\n",
+      1
+    ],
+    [
+      "    (((\u27e8_, h\u03b9, hfin\u27e9 : IsogenyEndDatum W).placeOfPoint_geomMorph P).symm.trans hseam)\n\nend Es1a1\np2m_reactivate \"P2MW.S_WeierstrassCurve_Affine_IsogenyEndDatum_exists_restrictAlong_placeOfPoint_eq_add.WeierstrassCurve.Affine.CoordinateRing P2MW.S_WeierstrassCurve_Affine_IsogenyEndDatum_exists_restrictAlong_placeOfPoint_eq_add.WeierstrassCurve.Affine.IsFinitePlace P2MW.S_WeierstrassCurve_Affine_IsogenyEndDatum_exists_restrictAlong_placeOfPoint_eq_add.WeierstrassCurve P2MW.S_WeierstrassCurve_Affine_IsogenyEndDatum_exists_restrictAlong_placeOfPoint_eq_add.WeierstrassCurve.Affine\"\n\nsection ElevenA1Gate\n\nopen Es1a1\n",
+      "    (((\u27e8_, h\u03b9, hfin\u27e9 : IsogenyEndDatum W).placeOfPoint_geomMorph P).symm.trans hseam)\n\nend Es1a1\np2m_reactivate \"P2MW.S_WeierstrassCurve_Affine_IsogenyEndDatum_exists_restrictAlong_placeOfPoint_eq_add.WeierstrassCurve.Affine.CoordinateRing P2MW.S_WeierstrassCurve_Affine_IsogenyEndDatum_exists_restrictAlong_placeOfPoint_eq_add.WeierstrassCurve.Affine.IsFinitePlace P2MW.S_WeierstrassCurve_Affine_IsogenyEndDatum_exists_restrictAlong_placeOfPoint_eq_add.WeierstrassCurve P2MW.S_WeierstrassCurve_Affine_IsogenyEndDatum_exists_restrictAlong_placeOfPoint_eq_add.WeierstrassCurve.Affine\"\n\nsection ElevenA1Gate\n\nopen _root_.P2MW.S_WeierstrassCurve_Affine_IsogenyEndDatum_exists_restrictAlong_placeOfPoint_eq_add.ModularCurve.Es1a1\n",
+      1
+    ],
+    [
+      "              h1.1 h1.2 h2.1 h2.2\n\nend Es1a1\np2m_reactivate \"P2MW.S_WeierstrassCurve_Affine_IsogenyEndDatum_exists_restrictAlong_placeOfPoint_eq_add.WeierstrassCurve.Affine.CoordinateRing P2MW.S_WeierstrassCurve_Affine_IsogenyEndDatum_exists_restrictAlong_placeOfPoint_eq_add.WeierstrassCurve.Affine.IsFinitePlace P2MW.S_WeierstrassCurve_Affine_IsogenyEndDatum_exists_restrictAlong_placeOfPoint_eq_add.WeierstrassCurve P2MW.S_WeierstrassCurve_Affine_IsogenyEndDatum_exists_restrictAlong_placeOfPoint_eq_add.WeierstrassCurve.Affine\"\n\nsection ElevenA1Gate\n\nopen Es1a1\n",
+      "              h1.1 h1.2 h2.1 h2.2\n\nend Es1a1\np2m_reactivate \"P2MW.S_WeierstrassCurve_Affine_IsogenyEndDatum_exists_restrictAlong_placeOfPoint_eq_add.WeierstrassCurve.Affine.CoordinateRing P2MW.S_WeierstrassCurve_Affine_IsogenyEndDatum_exists_restrictAlong_placeOfPoint_eq_add.WeierstrassCurve.Affine.IsFinitePlace P2MW.S_WeierstrassCurve_Affine_IsogenyEndDatum_exists_restrictAlong_placeOfPoint_eq_add.WeierstrassCurve P2MW.S_WeierstrassCurve_Affine_IsogenyEndDatum_exists_restrictAlong_placeOfPoint_eq_add.WeierstrassCurve.Affine\"\n\nsection ElevenA1Gate\n\nopen _root_.P2MW.S_WeierstrassCurve_Affine_IsogenyEndDatum_exists_restrictAlong_placeOfPoint_eq_add.ModularCurve.Es1a1\n",
+      1
+    ],
+    [
+      "open Es1a1\n",
+      "open _root_.P2MW.S_WeierstrassCurve_Affine_IsogenyEndDatum_exists_restrictAlong_placeOfPoint_eq_add.ModularCurve.Es1a1\n",
+      1
+    ],
+    [
+      "Ideal.eq_bot_of_comap_eq_bot",
+      "Ideal.eq_bot_of_under_eq_bot",
+      1
+    ],
+    [
+      "rw [RingHom.comap_ker, pointPullbackCoordHom_comp_algebraMap",
+      "rw [Ideal.under_def, RingHom.comap_ker, pointPullbackCoordHom_comp_algebraMap",
+      1
+    ],
+    [
+      "Set.mem_setOf_eq",
+      "Set.mem_ofPred_eq",
+      2
+    ],
+    [
+      "@[scoped simp]\ntheorem placeOfPoint_some [IsDedekindDomain W.CoordinateRing]",
+      "omit [IsDedekindDomain W.CoordinateRing] in\n@[scoped simp]\ntheorem placeOfPoint_some [IsDedekindDomain W.CoordinateRing]",
+      1
+    ],
+    [
+      "theorem eq_of_not_isFinitePlace [IsDedekindDomain W.CoordinateRing]",
+      "omit [IsDedekindDomain W.CoordinateRing] in\ntheorem eq_of_not_isFinitePlace [IsDedekindDomain W.CoordinateRing]",
+      1
+    ]
+  ],
+  "card_replacements": [],
+  "baseline_byte_identical_to_pinned_supplier": true,
+  "pinned_supplier_source_and_card_preserved": true,
+  "verification_pending": false,
+  "installed": true,
+  "no_linter_suppression_added": true,
+  "complete_original_proof_preserved": true,
+  "full_original_statement_and_hypotheses_preserved": true,
+  "max_active_flt_jobs": 1,
+  "lean_threads": 1,
+  "original_actual_errors": 1,
+  "original_actual_warnings": 30,
+  "original_kernel_seconds": 94.0525155,
+  "change": "Retain complete original7298-line isogeny point-map and translated-place construction,public source/card statements and every hypothesis. Unfold Ideal.under before original coordinate-map kernel rewrite;update2 Set aliases,22 actual haveI/letI style diagnostics,3 actual selected namespace opens,and two automatic duplicate section instances while retaining explicit binders. No suppression added;current source/card verification pending.",
+  "full_original_complete": false,
+  "official_new_solve_credit": 0,
+  "active_import_closure_excluded": [
+    "Submission.Supplier.P2M.Sol.S_PeriodPair_exists_scale_lattice_subset_and_sublatticeIndex_eq_and_isAddCyclic_sublatticeQuotient"
+  ],
+  "active_transitive_import_closure_size": 175,
+  "actual_live_descendant_sources": [],
+  "all_four_canonical_adapted_source_card_modules_excluded": [
+    "P2M.Sol.S_WeierstrassCurve_Affine_IsogenyEndDatum_exists_restrictAlong_placeOfPoint_eq_add",
+    "Submission.Supplier.P2M.Sol.S_WeierstrassCurve_Affine_IsogenyEndDatum_exists_restrictAlong_placeOfPoint_eq_add",
+    "Submission.Supplier.Theorems.Thm_WeierstrassCurve_Affine_IsogenyEndDatum_exists_restrictAlong_placeOfPoint_eq_add",
+    "Theorems.Thm_WeierstrassCurve_Affine_IsogenyEndDatum_exists_restrictAlong_placeOfPoint_eq_add"
+  ]
+}
