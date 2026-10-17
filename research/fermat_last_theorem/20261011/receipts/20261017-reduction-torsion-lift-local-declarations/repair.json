@@ -1,0 +1,75 @@
+{
+  "at": "2026-10-17T16:13:13.730110+00:00",
+  "name": "WeierstrassCurve_exists_reduceHom_eq_of_nsmul_eq_zero_of_natCast_ne_zero",
+  "candidate": "r1",
+  "card_candidate": "r1",
+  "source_replacements": [
+    [
+      "  letI : DecidableEq (AlgebraicClosure (ResidueField A)) := Classical.decEq _\n",
+      "  let : DecidableEq (AlgebraicClosure (ResidueField A)) := Classical.decEq _\n",
+      1
+    ],
+    [
+      "  haveI hEA : W.IsElliptic := \u27e8(map_residue_\u0394_ne_zero_iff W).mp h\u0394\u27e9\n",
+      "  have hEA : W.IsElliptic := \u27e8(map_residue_\u0394_ne_zero_iff W).mp h\u0394\u27e9\n",
+      1
+    ],
+    [
+      "  haveI hEL : (W.map A.subtype).IsElliptic := by\n",
+      "  have hEL : (W.map A.subtype).IsElliptic := by\n",
+      1
+    ],
+    [
+      "  haveI hEk : (W.map (residue A)).IsElliptic := \u27e8isUnit_iff_ne_zero.mpr h\u0394\u27e9\n",
+      "  have hEk : (W.map (residue A)).IsElliptic := \u27e8isUnit_iff_ne_zero.mpr h\u0394\u27e9\n",
+      1
+    ],
+    [
+      "  haveI hEkbar : ((W.map (residue A)).map \u03b9).IsElliptic := by\n",
+      "  have hEkbar : ((W.map (residue A)).map \u03b9).IsElliptic := by\n",
+      1
+    ],
+    [
+      "    haveI : NeZero \u2113 := \u27e8by rintro rfl; exact h\u2113 (by simp)\u27e9\n",
+      "    have : NeZero \u2113 := \u27e8by rintro rfl; exact h\u2113 (by simp)\u27e9\n",
+      1
+    ],
+    [
+      "  haveI : Finite (Submodule.torsionBy \u2124 ((W.map (residue A)).map \u03b9).toAffine.Point (\u2113 : \u2124)) :=\n",
+      "  have : Finite (Submodule.torsionBy \u2124 ((W.map (residue A)).map \u03b9).toAffine.Point (\u2113 : \u2124)) :=\n",
+      1
+    ]
+  ],
+  "card_replacements": [],
+  "baseline_byte_identical_to_pinned_supplier": true,
+  "pinned_supplier_source_and_card_preserved": true,
+  "verification_pending": false,
+  "installed": true,
+  "no_linter_suppression_added": true,
+  "complete_original_proof_preserved": true,
+  "full_original_statement_and_hypotheses_preserved": true,
+  "max_active_flt_jobs": 1,
+  "lean_threads": 1,
+  "original_actual_errors": 0,
+  "original_actual_warnings": 7,
+  "original_kernel_seconds": 6.282895291,
+  "change": "Retain complete original185-line reduction/torsion lifting proof, including torsion subgroup cardinality and reduction-surjectivity construction. Public source/card statements and every hypothesis unchanged. Update only7 actually flagged local haveI/letI declarations. No suppression added;pending natural verification.",
+  "full_original_complete": false,
+  "official_new_solve_credit": 0,
+  "active_import_closure_excluded": [
+    "Submission.Supplier.P2M.Sol.S_WeierstrassCurve_exists_valuationSubring_with_transcendental_of_charZero"
+  ],
+  "active_transitive_import_closure_size": 2,
+  "actual_live_descendant_sources": [
+    {
+      "pid": 42342,
+      "source": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_WeierstrassCurve_exists_valuationSubring_with_transcendental_of_charZero.lean"
+    }
+  ],
+  "all_four_canonical_adapted_source_card_modules_excluded": [
+    "P2M.Sol.S_WeierstrassCurve_exists_reduceHom_eq_of_nsmul_eq_zero_of_natCast_ne_zero",
+    "Submission.Supplier.P2M.Sol.S_WeierstrassCurve_exists_reduceHom_eq_of_nsmul_eq_zero_of_natCast_ne_zero",
+    "Submission.Supplier.Theorems.Thm_WeierstrassCurve_exists_reduceHom_eq_of_nsmul_eq_zero_of_natCast_ne_zero",
+    "Theorems.Thm_WeierstrassCurve_exists_reduceHom_eq_of_nsmul_eq_zero_of_natCast_ne_zero"
+  ]
+}
