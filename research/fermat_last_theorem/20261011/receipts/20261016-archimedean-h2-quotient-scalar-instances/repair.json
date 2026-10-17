@@ -1,0 +1,65 @@
+{
+  "at": "2026-10-17T00:39:28.244032+00:00",
+  "name": "groupCohomology_exists_injective_dual_continuousH2_archimedean",
+  "candidate": "r1",
+  "card_candidate": "r1",
+  "source_replacements": [
+    [
+      "  classical\n  by_cases h\u03b5 : eps p = -1",
+      "  classical\n  let : AddCommGroup (ZMod p) := (inferInstance : CommRing (ZMod p)).toAddCommGroup\n  by_cases h\u03b5 : eps p = -1",
+      1
+    ],
+    [
+      "Submodule.liftQ _ L",
+      "Submodule.liftQ (R := ZMod p) (M := \u21a5(levelCocycles\u2082 archimedeanLoc (Mc p))) (R\u2082 := ZMod p) (M\u2082 := ZMod p) _ L",
+      1
+    ],
+    [
+      "Submodule.ker_liftQ_eq_bot _ _ _",
+      "Submodule.ker_liftQ_eq_bot (R := ZMod p) (M := \u21a5(levelCocycles\u2082 archimedeanLoc (Mc p))) (R\u2082 := ZMod p) (M\u2082 := ZMod p) _ _ _",
+      1
+    ],
+    [
+      "Submodule.mkQ_surjective _ z",
+      "Submodule.mkQ_surjective (R := ZMod p) (M := \u21a5(levelCocycles\u2082 archimedeanLoc (Mc p))) _ z",
+      1
+    ],
+    [
+      "if_pos rfl",
+      "ite_eq_left rfl",
+      1
+    ],
+    [
+      "if_neg gen_ne_one",
+      "ite_eq_right gen_ne_one",
+      1
+    ]
+  ],
+  "card_replacements": [],
+  "baseline_byte_identical_to_pinned_supplier": true,
+  "pinned_supplier_source_and_card_preserved": true,
+  "full_original_statements_hypotheses_and_all_proof_branches_preserved": true,
+  "no_linter_suppression_added": true,
+  "verification_pending": false,
+  "installed": true,
+  "installed_at": "2026-10-17T00:39:28.244757+00:00",
+  "actual_failure": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/official-layout/terminal-proof-repairs/20261016-archimedean-h2-quotient-scalar-instances/previous-actual-failure",
+  "change": "Preserve the complete original 190-line proof, both epsilon cases, every cocycle/coboundary construction and the literal public theorem. Pin scalar AddCommGroup to its existing CommRing projection and explicit existing carriers/rings for liftQ, its kernel lemma and quotient surjectivity. Update the two present deprecated conditional lemmas to ite_eq_left/ite_eq_right. Add final recursive axiom queries.",
+  "original_actual_errors": 6,
+  "original_actual_warnings": 0,
+  "max_active_flt_jobs": 1,
+  "lean_threads": 1,
+  "full_original_complete": false,
+  "official_new_solve_credit": 0,
+  "active_import_closure_excluded": [
+    "Submission.Supplier.P2M.Sol.S_groupCohomology_finrank_invariants_archimedean_coind"
+  ],
+  "active_transitive_import_closure_size": 29,
+  "actual_live_descendant_sources": [],
+  "all_four_canonical_adapted_source_card_modules_excluded": [
+    "P2M.Sol.S_groupCohomology_exists_injective_dual_continuousH2_archimedean",
+    "Submission.Supplier.P2M.Sol.S_groupCohomology_exists_injective_dual_continuousH2_archimedean",
+    "Submission.Supplier.Theorems.Thm_groupCohomology_exists_injective_dual_continuousH2_archimedean",
+    "Theorems.Thm_groupCohomology_exists_injective_dual_continuousH2_archimedean"
+  ]
+}
