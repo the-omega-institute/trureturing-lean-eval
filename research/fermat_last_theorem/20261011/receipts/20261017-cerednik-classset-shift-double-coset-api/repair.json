@@ -1,0 +1,75 @@
+{
+  "at": "2026-10-17T12:10:43.599074+00:00",
+  "name": "CerednikDrinfeld_classSetShift_mk_of_conjByFiniteIdele_eq",
+  "candidate": "r1",
+  "card_candidate": "r1",
+  "source_replacements": [
+    [
+      "obtain \u27e8d, k, hd, hk, hout\u27e9 :=",
+      "obtain \u27e8d, hd, k, hk, hout\u27e9 :=",
+      1
+    ],
+    [
+      "MonoidHom.coe_coe",
+      "MonoidHom.coe_ofClass",
+      5
+    ],
+    [
+      "AlgHom.toRingHom_eq_coe, AlgHom.coe_toRingHom]",
+      "AlgHom.toRingHom_eq_coe]",
+      1
+    ],
+    [
+      "dif_neg",
+      "dite_eq_right",
+      1
+    ],
+    [
+      "if_pos",
+      "ite_eq_left",
+      3
+    ],
+    [
+      "if_neg",
+      "ite_eq_right",
+      3
+    ],
+    [
+      "Set.mem_setOf_eq",
+      "Set.mem_ofPred_eq",
+      1
+    ]
+  ],
+  "card_replacements": [],
+  "baseline_byte_identical_to_pinned_supplier": true,
+  "pinned_supplier_source_and_card_preserved": true,
+  "verification_pending": false,
+  "installed": true,
+  "no_linter_suppression_added": true,
+  "complete_original_proof_preserved": true,
+  "full_original_statement_and_hypotheses_preserved": true,
+  "max_active_flt_jobs": 1,
+  "lean_threads": 1,
+  "original_actual_errors": 1,
+  "original_actual_warnings": 14,
+  "original_kernel_seconds": 64.180351959,
+  "change": "Retain the complete original 930-line local/global stabilizer and class-set shift proof. Match pinned DoubleCoset.mk_out_eq_mul binder order d,hd,k,hk;update deprecated MonoidHom/if/dif/set-membership aliases;remove one actually unused AlgHom coercion simp argument while retaining the four used copies. Literal public solution/card statements and all hypotheses/proof branches preserved. Source/card baselines byte-identical to supplier. Natural source/card verification pending.",
+  "full_original_complete": false,
+  "official_new_solve_credit": 0,
+  "active_import_closure_excluded": [
+    "Submission.Supplier.Theorems.Thm_Rep_augShortComplex_shortExact"
+  ],
+  "active_transitive_import_closure_size": 5,
+  "actual_live_descendant_sources": [
+    {
+      "pid": 98747,
+      "source": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/Theorems/Thm_Rep_augShortComplex_shortExact.lean"
+    }
+  ],
+  "all_four_canonical_adapted_source_card_modules_excluded": [
+    "P2M.Sol.S_CerednikDrinfeld_classSetShift_mk_of_conjByFiniteIdele_eq",
+    "Submission.Supplier.P2M.Sol.S_CerednikDrinfeld_classSetShift_mk_of_conjByFiniteIdele_eq",
+    "Submission.Supplier.Theorems.Thm_CerednikDrinfeld_classSetShift_mk_of_conjByFiniteIdele_eq",
+    "Theorems.Thm_CerednikDrinfeld_classSetShift_mk_of_conjByFiniteIdele_eq"
+  ]
+}
