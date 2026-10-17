@@ -1,0 +1,66 @@
+{
+  "at": "2026-10-17T19:49:53.548106+00:00",
+  "name": "Mathlib_RingTheory_SmoothAlgebraOverFieldRegularStalks",
+  "source_prefix": "Definitions/Def_",
+  "candidate": "r1",
+  "source_replacements": [
+    [
+      "haveI",
+      "have",
+      13
+    ],
+    [
+      "letI",
+      "let",
+      2
+    ],
+    [
+      "  let := hf.toField\n  have hz : algebraMap (DualNumber K)\n",
+      "  let : Field (Localization.AtPrime (maximalIdeal (DualNumber K))) := hf.toField\n  have hz : algebraMap (DualNumber K)\n",
+      1
+    ],
+    [
+      "\nend SmoothFieldFiberRegularStalks\n",
+      "\nend SmoothFieldFiberRegularStalks\n\n#print axioms SmoothFieldFiberRegularStalks.isRegularLocalRing_localization_atPrime_of_isArtinianRing_of_isReduced\n\n#print axioms SmoothFieldFiberRegularStalks.isRegularRing_of_isArtinianRing_of_isReduced\n\n#print axioms SmoothFieldFiberRegularStalks.isRegularLocalRing_localization_atPrime_of_formallyUnramified\n\n#print axioms SmoothFieldFiberRegularStalks.isRegularLocalRing_localization_atPrime_of_etale\n\n#print axioms SmoothFieldFiberRegularStalks.isRegularRing_of_etale\n\n#print axioms SmoothFieldFiberRegularStalks.isRegularRing_of_smooth_of_input\n\n#print axioms SmoothFieldFiberRegularStalks.not_isRegularLocalRing_dualNumber\n\n#print axioms SmoothFieldFiberRegularStalks.not_isRegularLocalRing_localization_atPrime_dualNumber\n\n#print axioms SmoothFieldFiberRegularStalks.not_forall_regular_stalks_without_smooth\n",
+      1
+    ]
+  ],
+  "axiom_declarations": [
+    "SmoothFieldFiberRegularStalks.isRegularLocalRing_localization_atPrime_of_isArtinianRing_of_isReduced",
+    "SmoothFieldFiberRegularStalks.isRegularRing_of_isArtinianRing_of_isReduced",
+    "SmoothFieldFiberRegularStalks.isRegularLocalRing_localization_atPrime_of_formallyUnramified",
+    "SmoothFieldFiberRegularStalks.isRegularLocalRing_localization_atPrime_of_etale",
+    "SmoothFieldFiberRegularStalks.isRegularRing_of_etale",
+    "SmoothFieldFiberRegularStalks.isRegularRing_of_smooth_of_input",
+    "SmoothFieldFiberRegularStalks.not_isRegularLocalRing_dualNumber",
+    "SmoothFieldFiberRegularStalks.not_isRegularLocalRing_localization_atPrime_dualNumber",
+    "SmoothFieldFiberRegularStalks.not_forall_regular_stalks_without_smooth"
+  ],
+  "baseline_byte_identical_to_pinned_supplier": true,
+  "pinned_supplier_source_preserved": true,
+  "full_original_statements_hypotheses_and_all_proof_branches_preserved": true,
+  "no_linter_suppression_added": true,
+  "verification_pending": false,
+  "installed": true,
+  "actual_failure": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/official-layout/terminal-proof-repairs/20261018-smooth-field-regular-stalks-localization-field-instance/previous-actual-failure",
+  "change": "Give the original proof-local hf.toField binding its explicit existing localization Field type, following the current Mathlib RegularLocalRing/Defs and Algebraic/StronglyTranscendental pattern. Preserve every original Artinian/reduced, formally-unramified, etale and conditional-smooth result and the complete dual-number nilpotent/nontriviality and nonregular-localization counterexample. Update exactly thirteen proposition-local haveI and the two letI declarations. Preserve all nine original #guard_msgs standard-axiom assertions and append unsuppressed copies of those same nine queries for acceptance. No public hypothesis or conclusion changed. Pending natural single-job make/kernel verification.",
+  "max_active_flt_jobs": 1,
+  "lean_threads": 1,
+  "full_original_complete": false,
+  "official_new_solve_credit": 0,
+  "active_import_closure_excluded": [
+    "Submission.Supplier.Definitions.Def_NumberField_TateGlobalZeta"
+  ],
+  "active_transitive_import_closure_size": 11,
+  "actual_live_descendant_sources": [
+    {
+      "pid": 29929,
+      "source": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/Definitions/Def_NumberField_TateGlobalZeta.lean"
+    }
+  ],
+  "canonical_adapted_definition_modules_excluded": [
+    "Definitions.Def_Mathlib_RingTheory_SmoothAlgebraOverFieldRegularStalks",
+    "Submission.Supplier.Definitions.Def_Mathlib_RingTheory_SmoothAlgebraOverFieldRegularStalks"
+  ],
+  "definition_module_has_no_separate_source_card_pair": true
+}
