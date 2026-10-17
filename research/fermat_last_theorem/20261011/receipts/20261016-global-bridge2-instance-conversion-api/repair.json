@@ -1,0 +1,105 @@
+{
+  "at": "2026-10-17T01:33:46.511526+00:00",
+  "name": "groupCohomology_exists_isGlobalBridge2",
+  "candidate": "r1",
+  "card_candidate": "r1",
+  "source_replacements": [
+    [
+      "  haveI := Fintype.ofFinite \u03b9\n",
+      "  have := Fintype.ofFinite \u03b9\n",
+      1
+    ],
+    [
+      "    letI := instV\n",
+      "    let := instV\n",
+      1
+    ],
+    [
+      "    letI := instW\n",
+      "    let := instW\n",
+      1
+    ],
+    [
+      "    haveI : FiniteDimensional \u211a F\u2080 := hF\u2080S.1\n",
+      "    have : FiniteDimensional \u211a F\u2080 := hF\u2080S.1\n",
+      1
+    ],
+    [
+      "    haveI : IsAlgClosure \u211a (AlgebraicClosure \u211a) := by convert AlgebraicClosure.instIsAlgClosure \u211a; rfl; rfl\n",
+      "    have : IsAlgClosure \u211a (AlgebraicClosure \u211a) := by convert AlgebraicClosure.instIsAlgClosure \u211a; rfl; rfl\n",
+      1
+    ],
+    [
+      "    haveI : IsGalois \u211a (AlgebraicClosure \u211a) := IsAlgClosure.isGalois \u211a _\n",
+      "    have : IsGalois \u211a (AlgebraicClosure \u211a) := IsAlgClosure.isGalois \u211a _\n",
+      1
+    ],
+    [
+      "    haveI : FiniteDimensional \u211a N := normalClosure.is_finiteDimensional \u211a F\u2080 (AlgebraicClosure \u211a)\n",
+      "    have : FiniteDimensional \u211a N := normalClosure.is_finiteDimensional \u211a F\u2080 (AlgebraicClosure \u211a)\n",
+      1
+    ],
+    [
+      "    haveI : IsGalois \u211a N := IsGalois.normalClosure \u211a F\u2080 (AlgebraicClosure \u211a)\n",
+      "    have : IsGalois \u211a N := IsGalois.normalClosure \u211a F\u2080 (AlgebraicClosure \u211a)\n",
+      1
+    ],
+    [
+      "    haveI hNn : N.fixingSubgroup.Normal := IsGalois.fixingSubgroup_normal_of_isGalois (K := \u211a) (L := AlgebraicClosure \u211a) (E := N)\n",
+      "    have hNn : N.fixingSubgroup.Normal := IsGalois.fixingSubgroup_normal_of_isGalois (K := \u211a) (L := AlgebraicClosure \u211a) (E := N)\n",
+      1
+    ],
+    [
+      "by convert AlgebraicClosure.instIsAlgClosure \u211a; rfl; rfl",
+      "by convert AlgebraicClosure.instIsAlgClosure \u211a",
+      1
+    ],
+    [
+      "dif_pos hex",
+      "dite_eq_left hex",
+      3
+    ],
+    [
+      "if_pos \u27e8h, rfl\u27e9",
+      "ite_eq_left \u27e8h, rfl\u27e9",
+      1
+    ],
+    [
+      "if_neg hd",
+      "ite_eq_right hd",
+      2
+    ]
+  ],
+  "card_replacements": [],
+  "baseline_byte_identical_to_pinned_supplier": true,
+  "pinned_supplier_source_and_card_preserved": true,
+  "full_original_statements_hypotheses_and_all_proof_branches_preserved": true,
+  "no_linter_suppression_added": true,
+  "verification_pending": false,
+  "installed": true,
+  "installed_at": "2026-10-17T01:33:46.511526+00:00",
+  "actual_failure": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/official-layout/terminal-proof-repairs/20261016-global-bridge2-instance-conversion-api/previous-actual-failure",
+  "change": "Preserve complete original global bridge proof and literal public theorem. Remove rfl tactics after convert already closes the goal; correct exactly nine actually warned haveI/letI bindings without changing their types or values, and six deprecated conditional-lemma uses. Add recursive axiom queries.",
+  "original_actual_errors": 1,
+  "original_actual_warnings": 15,
+  "max_active_flt_jobs": 1,
+  "lean_threads": 1,
+  "full_original_complete": false,
+  "official_new_solve_credit": 0,
+  "active_import_closure_excluded": [
+    "Submission.Supplier.P2M.Sol.S_groupCohomology_exists_sha1_dualTwist_sha2_pairing_nondegenerate_of_assembly"
+  ],
+  "active_transitive_import_closure_size": 23,
+  "actual_live_descendant_sources": [
+    {
+      "pid": 21207,
+      "source": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_groupCohomology_exists_sha1_dualTwist_sha2_pairing_nondegenerate_of_assembly.lean"
+    }
+  ],
+  "all_four_canonical_adapted_source_card_modules_excluded": [
+    "P2M.Sol.S_groupCohomology_exists_isGlobalBridge2",
+    "Submission.Supplier.P2M.Sol.S_groupCohomology_exists_isGlobalBridge2",
+    "Submission.Supplier.Theorems.Thm_groupCohomology_exists_isGlobalBridge2",
+    "Theorems.Thm_groupCohomology_exists_isGlobalBridge2"
+  ]
+}
