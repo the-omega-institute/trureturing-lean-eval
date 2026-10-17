@@ -1,0 +1,233 @@
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_groupCohomology_exists_continuousH2Sr_cyclotomicQuotientRep_equiv_apply_eq.lean:169:50: error(lean.synthInstanceFailed): failed to synthesize instance of type class
+  Module (ZMod p) (ZMod p)
+
+Hint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_groupCohomology_exists_continuousH2Sr_cyclotomicQuotientRep_equiv_apply_eq.lean:184:67: error: Application type mismatch: The argument
+  t
+has type
+  ZMod p
+but is expected to have type
+  ↑(B p L)
+in the application
+  ((B p L).ρ s) t
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_groupCohomology_exists_continuousH2Sr_cyclotomicQuotientRep_equiv_apply_eq.lean:184:71: error: Type mismatch
+  ↑((χL p L) s) * t
+has type
+  ZMod p
+but is expected to have type
+  ↑(B p L)
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_groupCohomology_exists_continuousH2Sr_cyclotomicQuotientRep_equiv_apply_eq.lean:186:6: error(lean.synthInstanceFailed): failed to synthesize instance of type class
+  Module (ZMod p) (ZMod p)
+
+Hint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_groupCohomology_exists_continuousH2Sr_cyclotomicQuotientRep_equiv_apply_eq.lean:188:41: error: Type mismatch
+  Finsupp.lapply 1
+has type
+  (↥K.fixingSubgroup ⧸ Λ K L →₀ ?m.25) →ₗ[?m.26] ?m.25
+but is expected to have type
+  ↑(A p K L) →ₗ[ZMod p] ↑(B p L)
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_groupCohomology_exists_continuousH2Sr_cyclotomicQuotientRep_equiv_apply_eq.lean:191:2: error: 'change' tactic failed, pattern
+  (((A p K L).ρ ((incl K L hKL) s)) x) 1 = ↑((χL p L) s) * x 1
+is not definitionally equal to target
+  (pr₁ p K L) (((A p K L).ρ ((incl K L hKL) s)) x) = ((B p L).ρ s) ((pr₁ p K L) x)
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_groupCohomology_exists_continuousH2Sr_cyclotomicQuotientRep_equiv_apply_eq.lean:260:84: error(lean.synthInstanceFailed): failed to synthesize instance of type class
+  Membership (↥L.fixingSubgroup × ↥L.fixingSubgroup → ZMod p)
+    (Submodule (ZMod p) (↥L.fixingSubgroup × ↥L.fixingSubgroup → ↑(B p L)))
+
+Hint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_groupCohomology_exists_continuousH2Sr_cyclotomicQuotientRep_equiv_apply_eq.lean:330:2: warning: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_groupCohomology_exists_continuousH2Sr_cyclotomicQuotientRep_equiv_apply_eq.lean:336:2: warning: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_groupCohomology_exists_continuousH2Sr_cyclotomicQuotientRep_equiv_apply_eq.lean:344:72: error(lean.synthInstanceFailed): failed to synthesize instance of type class
+  Membership (↥L.fixingSubgroup × ↥L.fixingSubgroup → ZMod p)
+    (Submodule (ZMod p) (↥L.fixingSubgroup × ↥L.fixingSubgroup → ↑(B p L)))
+
+Hint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_groupCohomology_exists_continuousH2Sr_cyclotomicQuotientRep_equiv_apply_eq.lean:347:6: warning: declaration uses `sorry`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_groupCohomology_exists_continuousH2Sr_cyclotomicQuotientRep_equiv_apply_eq.lean:349:2: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_groupCohomology_exists_continuousH2Sr_cyclotomicQuotientRep_equiv_apply_eq.lean:350:2: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_groupCohomology_exists_continuousH2Sr_cyclotomicQuotientRep_equiv_apply_eq.lean:348:2: warning: Unused tactic linter: `have h := (mem_cocycles₂_iff _).1 hw 1 1 c` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_groupCohomology_exists_continuousH2Sr_cyclotomicQuotientRep_equiv_apply_eq.lean:349:2: warning: Unused tactic linter: `rw [B_ρ_apply', one_mul, one_mul, map_one, Units.val_one, one_mul] at h` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_groupCohomology_exists_continuousH2Sr_cyclotomicQuotientRep_equiv_apply_eq.lean:350:2: warning: Unused tactic linter: `linear_combination -h` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_groupCohomology_exists_continuousH2Sr_cyclotomicQuotientRep_equiv_apply_eq.lean:352:6: warning: declaration uses `sorry`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_groupCohomology_exists_continuousH2Sr_cyclotomicQuotientRep_equiv_apply_eq.lean:354:2: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_groupCohomology_exists_continuousH2Sr_cyclotomicQuotientRep_equiv_apply_eq.lean:355:2: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_groupCohomology_exists_continuousH2Sr_cyclotomicQuotientRep_equiv_apply_eq.lean:353:2: warning: Unused tactic linter: `have h := (mem_cocycles₂_iff _).1 hw a 1 1` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_groupCohomology_exists_continuousH2Sr_cyclotomicQuotientRep_equiv_apply_eq.lean:354:2: warning: Unused tactic linter: `rw [B_ρ_apply', mul_one, mul_one] at h` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_groupCohomology_exists_continuousH2Sr_cyclotomicQuotientRep_equiv_apply_eq.lean:355:2: warning: Unused tactic linter: `linear_combination h` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_groupCohomology_exists_continuousH2Sr_cyclotomicQuotientRep_equiv_apply_eq.lean:357:6: warning: declaration uses `sorry`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_groupCohomology_exists_continuousH2Sr_cyclotomicQuotientRep_equiv_apply_eq.lean:361:2: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_groupCohomology_exists_continuousH2Sr_cyclotomicQuotientRep_equiv_apply_eq.lean:362:2: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_groupCohomology_exists_continuousH2Sr_cyclotomicQuotientRep_equiv_apply_eq.lean:363:2: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_groupCohomology_exists_continuousH2Sr_cyclotomicQuotientRep_equiv_apply_eq.lean:364:2: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_groupCohomology_exists_continuousH2Sr_cyclotomicQuotientRep_equiv_apply_eq.lean:365:2: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_groupCohomology_exists_continuousH2Sr_cyclotomicQuotientRep_equiv_apply_eq.lean:366:2: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_groupCohomology_exists_continuousH2Sr_cyclotomicQuotientRep_equiv_apply_eq.lean:360:2: warning: Unused tactic linter: `have h := (mem_cocycles₂_iff _).1 hw a u c` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_groupCohomology_exists_continuousH2Sr_cyclotomicQuotientRep_equiv_apply_eq.lean:361:2: warning: Unused tactic linter: `rw [B_ρ_apply'] at h` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_groupCohomology_exists_continuousH2Sr_cyclotomicQuotientRep_equiv_apply_eq.lean:362:2: warning: Unused tactic linter: `have h1 : w (a * u, c) = w (a, c) := by simpa using hwr a c u 1 hu hP1` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_groupCohomology_exists_continuousH2Sr_cyclotomicQuotientRep_equiv_apply_eq.lean:363:2: warning: Unused tactic linter: `have h2 : w (a, u) = w (a, 1) := by simpa using hwr a 1 1 u hP1 hu` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_groupCohomology_exists_continuousH2Sr_cyclotomicQuotientRep_equiv_apply_eq.lean:364:2: warning: Unused tactic linter: `have h3 : w (u, c) = w (1, c) := by simpa using hwr 1 c u 1 hu hP1` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_groupCohomology_exists_continuousH2Sr_cyclotomicQuotientRep_equiv_apply_eq.lean:365:2: warning: Unused tactic linter: `rw [h1, h2, h3, w_one_left p L hw, w_one_right p L hw] at h` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_groupCohomology_exists_continuousH2Sr_cyclotomicQuotientRep_equiv_apply_eq.lean:366:2: warning: Unused tactic linter: `linear_combination -h` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_groupCohomology_exists_continuousH2Sr_cyclotomicQuotientRep_equiv_apply_eq.lean:374:10: error(lean.synthInstanceFailed): failed to synthesize instance of type class
+  Membership (↥L.fixingSubgroup × ↥L.fixingSubgroup → ZMod p)
+    (Submodule (ZMod p) (↥L.fixingSubgroup × ↥L.fixingSubgroup → ↑(B p L)))
+
+Hint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_groupCohomology_exists_continuousH2Sr_cyclotomicQuotientRep_equiv_apply_eq.lean:431:18: error: Application type mismatch: The argument
+  ↑w
+has type
+  ↥L.fixingSubgroup × ↥L.fixingSubgroup → ↑(B p L)
+but is expected to have type
+  ↥L.fixingSubgroup × ↥L.fixingSubgroup → ZMod p
+in the application
+  ψfun p K L τ ↑w
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_groupCohomology_exists_continuousH2Sr_cyclotomicQuotientRep_equiv_apply_eq.lean:439:22: error: Application type mismatch: The argument
+  ↑w
+has type
+  ↥L.fixingSubgroup × ↥L.fixingSubgroup → ↑(B p L)
+but is expected to have type
+  ↥L.fixingSubgroup × ↥L.fixingSubgroup → ZMod p
+in the application
+  ψfun p K L τ ↑w
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_groupCohomology_exists_continuousH2Sr_cyclotomicQuotientRep_equiv_apply_eq.lean:439:63: error: Type mismatch
+  ↑w (s, t)
+has type
+  ↑(B p L)
+but is expected to have type
+  ZMod p
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_groupCohomology_exists_continuousH2Sr_cyclotomicQuotientRep_equiv_apply_eq.lean:459:2: error: Type mismatch
+  cochainsPullPush₂ (incl K L hKL) (pr₁ p K L)
+has type
+  (↥K.fixingSubgroup × ↥K.fixingSubgroup → ↑(A p K L)) →ₗ[ZMod p] ↥L.fixingSubgroup × ↥L.fixingSubgroup → ↑(B p L)
+but is expected to have type
+  (↥K.fixingSubgroup × ↥K.fixingSubgroup → ↑(A p K L)) →ₗ[ZMod p] ↥L.fixingSubgroup × ↥L.fixingSubgroup → ZMod p
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_groupCohomology_exists_continuousH2Sr_cyclotomicQuotientRep_equiv_apply_eq.lean:462:14: error: Application type mismatch: The argument
+  hKL
+has type
+  K ≤ L
+of sort `Prop` but is expected to have type
+  ↥K.fixingSubgroup × ↥K.fixingSubgroup → ↑(A p K L)
+of sort `Type` in the application
+  (shF p K L) hKL
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_groupCohomology_exists_continuousH2Sr_cyclotomicQuotientRep_equiv_apply_eq.lean:469:80: error: Application type mismatch: The argument
+  hKL
+has type
+  K ≤ L
+of sort `Prop` but is expected to have type
+  ↥K.fixingSubgroup × ↥K.fixingSubgroup → ↑(A p K L)
+of sort `Type` in the application
+  (shF p K L) hKL
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_groupCohomology_exists_continuousH2Sr_cyclotomicQuotientRep_equiv_apply_eq.lean:469:103: error: Type mismatch
+  w
+has type
+  ↥L.fixingSubgroup × ↥L.fixingSubgroup → ZMod p
+but is expected to have type
+  ZMod p
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_groupCohomology_exists_continuousH2Sr_cyclotomicQuotientRep_equiv_apply_eq.lean:505:36: error: Application type mismatch: The argument
+  y
+has type
+  ↥L.fixingSubgroup → ZMod p
+but is expected to have type
+  ↑↧(↥L.fixingSubgroup → ↑(B p L))
+in the application
+  (ModuleCat.Hom.hom (d₁₂ (B p L))) y
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_groupCohomology_exists_continuousH2Sr_cyclotomicQuotientRep_equiv_apply_eq.lean:547:28: error: Application type mismatch: The argument
+  hKL
+has type
+  K ≤ L
+of sort `Prop` but is expected to have type
+  ↥K.fixingSubgroup × ↥K.fixingSubgroup → ↑(A p K L)
+of sort `Type` in the application
+  (shF p K L) hKL
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_groupCohomology_exists_continuousH2Sr_cyclotomicQuotientRep_equiv_apply_eq.lean:676:25: error: Application type mismatch: The argument
+  y
+has type
+  ↥L.fixingSubgroup → ↑(B p L)
+but is expected to have type
+  ↥L.fixingSubgroup → ZMod p
+in the application
+  ψ₁ p K L τ y
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_groupCohomology_exists_continuousH2Sr_cyclotomicQuotientRep_equiv_apply_eq.lean:677:41: error: Application type mismatch: The argument
+  y
+has type
+  ↥L.fixingSubgroup → ↑(B p L)
+but is expected to have type
+  ↥L.fixingSubgroup → ZMod p
+in the application
+  ψ₁ p K L τ y
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_groupCohomology_exists_continuousH2Sr_cyclotomicQuotientRep_equiv_apply_eq.lean:681:62: error: Application type mismatch: The argument
+  y
+has type
+  ↥L.fixingSubgroup → ↑(B p L)
+but is expected to have type
+  ↥L.fixingSubgroup → ZMod p
+in the application
+  ψ₁ p K L τ y
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_groupCohomology_exists_continuousH2Sr_cyclotomicQuotientRep_equiv_apply_eq.lean:698:12: error(lean.synthInstanceFailed): failed to synthesize instance of type class
+  Module (ZMod p) (ZMod p)
+
+Hint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_groupCohomology_exists_continuousH2Sr_cyclotomicQuotientRep_equiv_apply_eq.lean:701:14: error(lean.synthInstanceFailed): failed to synthesize instance of type class
+  Module (ZMod p) (ZMod p)
+
+Hint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.
