@@ -1,0 +1,45 @@
+{
+  "at": "2026-10-17T10:25:29.780392+00:00",
+  "name": "PadicInt_toZModPow_two_pow_eq_one_of_toZMod_eq_one",
+  "candidate": "r1",
+  "card_candidate": "r1",
+  "source_replacements": [
+    [
+      "    rw [RingHom.mem_ker, map_sub, hz, map_one, sub_self]\n",
+      "    rw [RingHom.mem_ker, map_sub, hz, map_one]\n    exact _root_.sub_self (1 : ZMod p)\n",
+      1
+    ]
+  ],
+  "card_replacements": [],
+  "baseline_byte_identical_to_pinned_supplier": true,
+  "pinned_supplier_source_and_card_preserved": true,
+  "verification_pending": false,
+  "installed": true,
+  "no_linter_suppression_added": true,
+  "complete_original_proof_preserved": true,
+  "full_original_statement_and_hypotheses_preserved": true,
+  "max_active_flt_jobs": 1,
+  "lean_threads": 1,
+  "original_actual_errors": 1,
+  "original_actual_warnings": 0,
+  "original_kernel_seconds": 43.386606042,
+  "change": "Keep the original kernel-membership rewrite sequence and its sub_self argument;directly apply the explicit root-qualified sub_self proof at 1:ZMod p instead of asking the rewriter to match it. Original binomial expansion,kernel ideal membership,and entire public solution/card remain unchanged. Actual source/card validation pending in the existing natural queue.",
+  "full_original_complete": false,
+  "official_new_solve_credit": 0,
+  "active_import_closure_excluded": [
+    "Submission.Supplier.Theorems.Thm_PeriodPair_exists_mem_primCosetReps_and_jLattice_eq_of_isAddCyclic"
+  ],
+  "active_transitive_import_closure_size": 8,
+  "actual_live_descendant_sources": [
+    {
+      "pid": 91178,
+      "source": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/Theorems/Thm_PeriodPair_exists_mem_primCosetReps_and_jLattice_eq_of_isAddCyclic.lean"
+    }
+  ],
+  "all_four_canonical_adapted_source_card_modules_excluded": [
+    "P2M.Sol.S_PadicInt_toZModPow_two_pow_eq_one_of_toZMod_eq_one",
+    "Submission.Supplier.P2M.Sol.S_PadicInt_toZModPow_two_pow_eq_one_of_toZMod_eq_one",
+    "Submission.Supplier.Theorems.Thm_PadicInt_toZModPow_two_pow_eq_one_of_toZMod_eq_one",
+    "Theorems.Thm_PadicInt_toZModPow_two_pow_eq_one_of_toZMod_eq_one"
+  ]
+}
