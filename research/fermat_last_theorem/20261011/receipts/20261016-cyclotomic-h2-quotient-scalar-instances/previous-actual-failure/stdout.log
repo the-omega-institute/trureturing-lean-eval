@@ -1,0 +1,19 @@
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_groupCohomology_continuousH2S_ofChar_cycloChar_eq_zero_of_not_mem.lean:34:2: warning: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_groupCohomology_continuousH2S_ofChar_cycloChar_eq_zero_of_not_mem.lean:60:4: warning: `simp` already closes the goal
+
+Hint: Use `simp` instead of `simpa`:
+  [apply] simp
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_groupCohomology_continuousH2S_ofChar_cycloChar_eq_zero_of_not_mem.lean:118:21: error(lean.synthInstanceFailed): failed to synthesize instance of type class
+  Module (ZMod p) ↥(levelCocyclesS₂ S (ofChar (cycloChar p)))
+
+Hint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_groupCohomology_continuousH2S_ofChar_cycloChar_eq_zero_of_not_mem.lean:118:9: error: Tactic `rcases` failed: `x✝ : ?m.25` is not an inductive datatype

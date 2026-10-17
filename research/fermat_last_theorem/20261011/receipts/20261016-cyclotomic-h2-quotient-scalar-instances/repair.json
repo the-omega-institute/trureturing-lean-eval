@@ -1,0 +1,65 @@
+{
+  "at": "2026-10-17T01:15:44.502187+00:00",
+  "name": "groupCohomology_continuousH2S_ofChar_cycloChar_eq_zero_of_not_mem",
+  "candidate": "r1",
+  "card_candidate": "r1",
+  "source_replacements": [
+    [
+      "  classical\n  obtain \u27e8f, rfl\u27e9 := Submodule.Quotient.mk_surjective _ c",
+      "  classical\n  let : AddCommGroup (ZMod p) := (inferInstance : CommRing (ZMod p)).toAddCommGroup\n  obtain \u27e8f, rfl\u27e9 := Submodule.Quotient.mk_surjective (R := ZMod p)\n    (M := \u21a5(levelCocyclesS\u2082 S (ofChar (k := ZMod p) (cycloChar p)))) _ c",
+      1
+    ],
+    [
+      "  haveI : NeZero p :=",
+      "  have : NeZero p :=",
+      2
+    ],
+    [
+      "    simpa using hN s\u2080 s\u2080 hs\u2080",
+      "    simp",
+      1
+    ],
+    [
+      "  haveI := hF.1",
+      "  have := hF.1",
+      1
+    ],
+    [
+      "  haveI : IsGalois \u211a \u21a5F' :=",
+      "  have : IsGalois \u211a \u21a5F' :=",
+      1
+    ]
+  ],
+  "card_replacements": [],
+  "baseline_byte_identical_to_pinned_supplier": true,
+  "pinned_supplier_source_and_card_preserved": true,
+  "full_original_statements_hypotheses_and_all_proof_branches_preserved": true,
+  "no_linter_suppression_added": true,
+  "verification_pending": false,
+  "installed": true,
+  "installed_at": "2026-10-17T01:15:44.502187+00:00",
+  "actual_failure": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/official-layout/terminal-proof-repairs/20261016-cyclotomic-h2-quotient-scalar-instances/previous-actual-failure",
+  "change": "Preserve the complete original proof and literal public statement. Pin scalar AddCommGroup to its CommRing projection and explicit existing quotient ring/carrier; use have for four propositional class bindings and simp for the actually redundant simpa. Add recursive axiom queries.",
+  "original_actual_errors": 2,
+  "original_actual_warnings": 2,
+  "max_active_flt_jobs": 1,
+  "lean_threads": 1,
+  "full_original_complete": false,
+  "official_new_solve_credit": 0,
+  "active_import_closure_excluded": [
+    "Submission.Supplier.P2M.Sol.S_groupCohomology_exists_cocycles2_units_eq_pow_of_levelCocyclesS2_ofChar_cycloChar"
+  ],
+  "active_transitive_import_closure_size": 24,
+  "actual_live_descendant_sources": [
+    {
+      "pid": 26913,
+      "source": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_groupCohomology_exists_cocycles2_units_eq_pow_of_levelCocyclesS2_ofChar_cycloChar.lean"
+    }
+  ],
+  "all_four_canonical_adapted_source_card_modules_excluded": [
+    "P2M.Sol.S_groupCohomology_continuousH2S_ofChar_cycloChar_eq_zero_of_not_mem",
+    "Submission.Supplier.P2M.Sol.S_groupCohomology_continuousH2S_ofChar_cycloChar_eq_zero_of_not_mem",
+    "Submission.Supplier.Theorems.Thm_groupCohomology_continuousH2S_ofChar_cycloChar_eq_zero_of_not_mem",
+    "Theorems.Thm_groupCohomology_continuousH2S_ofChar_cycloChar_eq_zero_of_not_mem"
+  ]
+}
