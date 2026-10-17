@@ -1,0 +1,90 @@
+{
+  "at": "2026-10-16T12:42:04.567217+00:00",
+  "name": "AutomorphicForm_memLp_iUnion_centreCutSiegelSet_of_detWindow_le",
+  "source_replacements": [
+    [
+      "    refine \u27e8h\u03c6m.restrict, ?_\u27e9\n    rw [eLpNorm_eq_lintegral_rpow_enorm_toReal two_ne_zero ENNReal.ofNat_ne_top]",
+      "    change eLpNorm \u03c6 2 (\u03bc.restrict D) < \u22a4\n    rw [eLpNorm_eq_lintegral_rpow_enorm_toReal two_ne_zero ENNReal.ofNat_ne_top h\u03c6m.restrict]",
+      1
+    ],
+    [
+      "Finset.prod_le_prod'",
+      "Finset.prod_le_prod",
+      1
+    ],
+    [
+      "if_pos",
+      "ite_eq_left",
+      3
+    ],
+    [
+      "if_neg",
+      "ite_eq_right",
+      3
+    ],
+    [
+      "ENNReal.coe_finsetProd",
+      "ENNReal.ofNNReal_finsetProd",
+      1
+    ],
+    [
+      "  letI := glBorel (Fin 2) (\ud835\udcde F) F\n",
+      "  let := glBorel (Fin 2) (\ud835\udcde F) F\n",
+      1
+    ],
+    [
+      "  haveI := borelSpace_glBorel (Fin 2) (\ud835\udcde F) F\n",
+      "  have := borelSpace_glBorel (Fin 2) (\ud835\udcde F) F\n",
+      1
+    ],
+    [
+      "  letI : MeasurableSpace (AdelicGL2 (\ud835\udcde F) F) := glBorel (Fin 2) (\ud835\udcde F) F\n",
+      "  let : MeasurableSpace (AdelicGL2 (\ud835\udcde F) F) := glBorel (Fin 2) (\ud835\udcde F) F\n",
+      1
+    ],
+    [
+      "  haveI : BorelSpace (AdelicGL2 (\ud835\udcde F) F) := borelSpace_glBorel (Fin 2) (\ud835\udcde F) F\n",
+      "  have : BorelSpace (AdelicGL2 (\ud835\udcde F) F) := borelSpace_glBorel (Fin 2) (\ud835\udcde F) F\n",
+      1
+    ],
+    [
+      "  haveI : \u03bc.IsHaarMeasure := isHaarMeasure_adelicGLHaar (Fin 2) (\ud835\udcde F) F\n",
+      "  have : \u03bc.IsHaarMeasure := isHaarMeasure_adelicGLHaar (Fin 2) (\ud835\udcde F) F\n",
+      1
+    ],
+    [
+      "  haveI : MeasurableMul (AdelicGL2 (\ud835\udcde F) F) :=\n",
+      "  have : MeasurableMul (AdelicGL2 (\ud835\udcde F) F) :=\n",
+      1
+    ],
+    [
+      "(hd\u2081 : d\u2081 \u2264 dp)",
+      "(_hd\u2081 : d\u2081 \u2264 dp)",
+      1
+    ]
+  ],
+  "baseline_byte_identical_to_pinned_supplier": true,
+  "full_original_statements_hypotheses_and_all_proof_branches_preserved": true,
+  "no_linter_suppression_added": true,
+  "verification_pending": false,
+  "candidate": "r2",
+  "active_import_closure_excluded": [
+    "Submission.Supplier.Definitions.Def_ExtEndgame_ChainAdm"
+  ],
+  "card_candidate": "r1",
+  "installed": true,
+  "installed_at": "2026-10-16T21:21:59.638832+00:00",
+  "active_transitive_import_closure_size": 34,
+  "actual_live_descendant_sources": [],
+  "all_four_canonical_adapted_source_card_modules_excluded": [
+    "P2M.Sol.S_AutomorphicForm_memLp_iUnion_centreCutSiegelSet_of_detWindow_le",
+    "Submission.Supplier.P2M.Sol.S_AutomorphicForm_memLp_iUnion_centreCutSiegelSet_of_detWindow_le",
+    "Submission.Supplier.Theorems.Thm_AutomorphicForm_memLp_iUnion_centreCutSiegelSet_of_detWindow_le",
+    "Theorems.Thm_AutomorphicForm_memLp_iUnion_centreCutSiegelSet_of_detWindow_le"
+  ],
+  "pinned_supplier_source_and_card_preserved": true,
+  "r1_actual_make_kernel_all_zero": true,
+  "r1_actual_source_warnings": 1,
+  "r1_not_accepted": true,
+  "r2_change": "Preserve the original d\u2081 \u2264 dp hypothesis in the internal solution, naming its intentionally unused proof _hd\u2081. Its type/position and the entire public card statement/binder names remain unchanged; all original mathematical proof branches retained. No linter options or attributes changed."
+}
