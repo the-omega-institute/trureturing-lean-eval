@@ -1,0 +1,333 @@
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_NumberField_LevelArith_exists_continuousH1Sr_sUnitsMaxRep_linearMap_sClassGroupRep_injective.lean:44:23: error(lean.dependsOnNoncomputable): failed to compile definition, consider marking it as 'noncomputable' because it depends on 'instCommGroupClassGroup', which is 'noncomputable'
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_NumberField_LevelArith_exists_continuousH1Sr_sUnitsMaxRep_linearMap_sClassGroupRep_injective.lean:452:98: error(lean.invalidField): Invalid field `asIdeal`: The environment does not contain `Algebra.asIdeal`, so it is not possible to project the field `asIdeal` from an expression
+  w'
+of type `Algebra ↥L ↥F`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_NumberField_LevelArith_exists_continuousH1Sr_sUnitsMaxRep_linearMap_sClassGroupRep_injective.lean:453:91: error(lean.invalidField): Invalid field `asIdeal`: The environment does not contain `Algebra.asIdeal`, so it is not possible to project the field `asIdeal` from an expression
+  w'
+of type `Algebra ↥L ↥F`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_NumberField_LevelArith_exists_continuousH1Sr_sUnitsMaxRep_linearMap_sClassGroupRep_injective.lean:454:34: error(lean.invalidField): Invalid field `isPrime`: The environment does not contain `Algebra.isPrime`, so it is not possible to project the field `isPrime` from an expression
+  w'
+of type `Algebra ↥L ↥F`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_NumberField_LevelArith_exists_continuousH1Sr_sUnitsMaxRep_linearMap_sClassGroupRep_injective.lean:520:0: warning: automatically included section variable(s) unused in theorem `P2MW.S_NumberField_LevelArith_exists_continuousH1Sr_sUnitsMaxRep_linearMap_sClassGroupRep_injective.CycBaseCAP.isIntegral_OLF`:
+  [FiniteDimensional ℚ ↥L]
+  [FiniteDimensional ℚ ↥F]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [FiniteDimensional ℚ ↥L] [FiniteDimensional ℚ ↥F] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_NumberField_LevelArith_exists_continuousH1Sr_sUnitsMaxRep_linearMap_sClassGroupRep_injective.lean:525:0: warning: automatically included section variable(s) unused in theorem `P2MW.S_NumberField_LevelArith_exists_continuousH1Sr_sUnitsMaxRep_linearMap_sClassGroupRep_injective.CycBaseCAP.faithfulSMul_OLF`:
+  [FiniteDimensional ℚ ↥F]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [FiniteDimensional ℚ ↥F] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_NumberField_LevelArith_exists_continuousH1Sr_sUnitsMaxRep_linearMap_sClassGroupRep_injective.lean:609:0: warning: automatically included section variable(s) unused in theorem `P2MW.S_NumberField_LevelArith_exists_continuousH1Sr_sUnitsMaxRep_linearMap_sClassGroupRep_injective.CycBaseCAP.not_mem_placesOverPrimes_of_under`:
+  [FiniteDimensional ℚ ↥L]
+  [FiniteDimensional ℚ ↥F]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [FiniteDimensional ℚ ↥L] [FiniteDimensional ℚ ↥F] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_NumberField_LevelArith_exists_continuousH1Sr_sUnitsMaxRep_linearMap_sClassGroupRep_injective.lean:739:6: error: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  w'.intValuation ((algebraMap (𝓞 ↥L) (𝓞 ↥F)) r)
+in the target expression
+  let this := algLF L F hLF;
+  w'.intValuation ((algebraMap (𝓞 ↥L) (𝓞 ↥F)) r) = w.intValuation r
+
+case neg
+L F : IntermediateField ℚ (AlgebraicClosure ℚ)
+hLF : L ≤ F
+inst✝¹ : FiniteDimensional ℚ ↥L
+inst✝ : FiniteDimensional ℚ ↥F
+w : HeightOneSpectrum (𝓞 ↥L)
+w' : HeightOneSpectrum (𝓞 ↥F)
+hunder : Ideal.under (𝓞 ↥L) w'.asIdeal = w.asIdeal
+he : w.asIdeal.ramificationIdx' w'.asIdeal = 1
+r : 𝓞 ↥L
+this✝¹ : Algebra ↥L ↥F := algLF L F hLF
+this✝ : IsScalarTower ℚ ↥L ↥F
+this : FaithfulSMul (𝓞 ↥L) (𝓞 ↥F)
+hr : ¬r = 0
+hr' : (algebraMap (𝓞 ↥L) (𝓞 ↥F)) r ≠ 0
+a : ℕ
+key : ∀ (n : ℕ), WithZero.exp (-↑a) ≤ WithZero.exp (-↑n) ↔ w.intValuation r ≤ WithZero.exp (-↑n)
+ha : w'.intValuation ((algebraMap (𝓞 ↥L) (𝓞 ↥F)) r) = WithZero.exp (-↑a)
+b : ℕ
+hb : w.intValuation r = WithZero.exp (-↑b)
+⊢ let this := algLF L F hLF;
+  w'.intValuation ((algebraMap (𝓞 ↥L) (𝓞 ↥F)) r) = w.intValuation r
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_NumberField_LevelArith_exists_continuousH1Sr_sUnitsMaxRep_linearMap_sClassGroupRep_injective.lean:755:16: error: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  ?f (?a / ?b)
+in the target expression
+  let this := algLF L F hLF;
+  (HeightOneSpectrum.valuation (↥F) w') ((algebraMap ↥L ↥F) ((algebraMap (𝓞 ↥L) ↥L) a / (algebraMap (𝓞 ↥L) ↥L) b)) =
+    (HeightOneSpectrum.valuation (↥L) w) ((algebraMap (𝓞 ↥L) ↥L) a) /
+      (HeightOneSpectrum.valuation (↥L) w) ((algebraMap (𝓞 ↥L) ↥L) b)
+
+L F : IntermediateField ℚ (AlgebraicClosure ℚ)
+hLF : L ≤ F
+inst✝¹ : FiniteDimensional ℚ ↥L
+inst✝ : FiniteDimensional ℚ ↥F
+w : HeightOneSpectrum (𝓞 ↥L)
+w' : HeightOneSpectrum (𝓞 ↥F)
+hunder : Ideal.under (𝓞 ↥L) w'.asIdeal = w.asIdeal
+he : w.asIdeal.ramificationIdx' w'.asIdeal = 1
+this✝ : Algebra ↥L ↥F := algLF L F hLF
+this : IsScalarTower ℚ ↥L ↥F
+a b : 𝓞 ↥L
+hb : b ∈ nonZeroDivisors (𝓞 ↥L)
+⊢ let this := algLF L F hLF;
+  (HeightOneSpectrum.valuation (↥F) w') ((algebraMap ↥L ↥F) ((algebraMap (𝓞 ↥L) ↥L) a / (algebraMap (𝓞 ↥L) ↥L) b)) =
+    (HeightOneSpectrum.valuation (↥L) w) ((algebraMap (𝓞 ↥L) ↥L) a) /
+      (HeightOneSpectrum.valuation (↥L) w) ((algebraMap (𝓞 ↥L) ↥L) b)
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_NumberField_LevelArith_exists_continuousH1Sr_sUnitsMaxRep_linearMap_sClassGroupRep_injective.lean:821:123: error(lean.synthInstanceFailed): failed to synthesize instance of type class
+  OfNat (↑(classGroupRep ↥L ↥L) ⧸ sPrimeClassesSubmodule ↥L ↥L ↑S) 0
+numerals are polymorphic in Lean, but the numeral `0` cannot be used in a context where the expected type is
+  ↑(classGroupRep ↥L ↥L) ⧸ sPrimeClassesSubmodule ↥L ↥L ↑S
+due to the absence of the instance above
+
+Hint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_NumberField_LevelArith_exists_continuousH1Sr_sUnitsMaxRep_linearMap_sClassGroupRep_injective.lean:888:0: warning: automatically included section variable(s) unused in theorem `P2MW.S_NumberField_LevelArith_exists_continuousH1Sr_sUnitsMaxRep_linearMap_sClassGroupRep_injective.CycBaseCAP.hα_liftUnit`:
+  [FiniteDimensional ℚ ↥L]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [FiniteDimensional ℚ ↥L] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_NumberField_LevelArith_exists_continuousH1Sr_sUnitsMaxRep_linearMap_sClassGroupRep_injective.lean:986:0: warning: automatically included section variable(s) unused in theorem `P2MW.S_NumberField_LevelArith_exists_continuousH1Sr_sUnitsMaxRep_linearMap_sClassGroupRep_injective.CycBaseCAP.sUnitsMaxRep_unit`:
+  [FiniteDimensional ℚ ↥L]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [FiniteDimensional ℚ ↥L] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_NumberField_LevelArith_exists_continuousH1Sr_sUnitsMaxRep_linearMap_sClassGroupRep_injective.lean:1005:4: warning: Overlapping instance parameters in `cls`:
+
+⚠️ There are 2 `[FiniteDimensional ℚ ↥L]` instances; one is sufficient.
+
+Note: This linter can be disabled with `set_option linter.overlappingInstances false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_NumberField_LevelArith_exists_continuousH1Sr_sUnitsMaxRep_linearMap_sClassGroupRep_injective.lean:1009:0: warning: automatically included section variable(s) unused in theorem `P2MW.S_NumberField_LevelArith_exists_continuousH1Sr_sUnitsMaxRep_linearMap_sClassGroupRep_injective.CycBaseCAP.Datum.cls_eq`:
+  [FiniteDimensional ℚ ↥L]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [FiniteDimensional ℚ ↥L] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_NumberField_LevelArith_exists_continuousH1Sr_sUnitsMaxRep_linearMap_sClassGroupRep_injective.lean:1009:6: warning: Overlapping instance parameters in `cls_eq`:
+
+⚠️ There are 2 `[FiniteDimensional ℚ ↥L]` instances; one is sufficient.
+
+Note: This linter can be disabled with `set_option linter.overlappingInstances false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_NumberField_LevelArith_exists_continuousH1Sr_sUnitsMaxRep_linearMap_sClassGroupRep_injective.lean:1045:27: warning: Variable name `hL` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hL
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_NumberField_LevelArith_exists_continuousH1Sr_sUnitsMaxRep_linearMap_sClassGroupRep_injective.lean:1197:0: warning: automatically included section variable(s) unused in theorem `P2MW.S_NumberField_LevelArith_exists_continuousH1Sr_sUnitsMaxRep_linearMap_sClassGroupRep_injective.CycBaseCAP.nonempty_datum`:
+  [FiniteDimensional ℚ ↥L]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [FiniteDimensional ℚ ↥L] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_NumberField_LevelArith_exists_continuousH1Sr_sUnitsMaxRep_linearMap_sClassGroupRep_injective.lean:1211:0: warning: automatically included section variable(s) unused in theorem `P2MW.S_NumberField_LevelArith_exists_continuousH1Sr_sUnitsMaxRep_linearMap_sClassGroupRep_injective.CycBaseCAP.exists_datum_zero`:
+  [FiniteDimensional ℚ ↥L]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [FiniteDimensional ℚ ↥L] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_NumberField_LevelArith_exists_continuousH1Sr_sUnitsMaxRep_linearMap_sClassGroupRep_injective.lean:1222:0: warning: automatically included section variable(s) unused in theorem `P2MW.S_NumberField_LevelArith_exists_continuousH1Sr_sUnitsMaxRep_linearMap_sClassGroupRep_injective.CycBaseCAP.exists_datum_add`:
+  [FiniteDimensional ℚ ↥L]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [FiniteDimensional ℚ ↥L] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_NumberField_LevelArith_exists_continuousH1Sr_sUnitsMaxRep_linearMap_sClassGroupRep_injective.lean:1222:24: warning: Variable name `hL` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hL
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_NumberField_LevelArith_exists_continuousH1Sr_sUnitsMaxRep_linearMap_sClassGroupRep_injective.lean:1361:2: warning: Unused tactic linter: `push_cast` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_NumberField_LevelArith_exists_continuousH1Sr_sUnitsMaxRep_linearMap_sClassGroupRep_injective.lean:1407:0: warning: automatically included section variable(s) unused in theorem `P2MW.S_NumberField_LevelArith_exists_continuousH1Sr_sUnitsMaxRep_linearMap_sClassGroupRep_injective.CapInj.underv_asIdeal`:
+  [IsTorsionFree R T]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [IsTorsionFree R T] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_NumberField_LevelArith_exists_continuousH1Sr_sUnitsMaxRep_linearMap_sClassGroupRep_injective.lean:1409:0: warning: automatically included section variable(s) unused in theorem `P2MW.S_NumberField_LevelArith_exists_continuousH1Sr_sUnitsMaxRep_linearMap_sClassGroupRep_injective.CapInj.mem_primesOver_iff`:
+  [IsDedekindDomain R]
+  [IsDedekindDomain T]
+  [Algebra.IsIntegral R T]
+  [IsTorsionFree R T]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [IsDedekindDomain R] [IsDedekindDomain T] [Algebra.IsIntegral R T] [IsTorsionFree R T] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_NumberField_LevelArith_exists_continuousH1Sr_sUnitsMaxRep_linearMap_sClassGroupRep_injective.lean:1604:14: error: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  ?f (?a / ?b)
+in the target expression
+  let this := algLF L F hLF;
+  (HeightOneSpectrum.valuation (↥F) v') ((algebraMap ↥L ↥F) ((algebraMap (𝓞 ↥L) ↥L) r / (algebraMap (𝓞 ↥L) ↥L) s)) =
+    (HeightOneSpectrum.valuation (↥L) (CapInj.underv v')) ((algebraMap (𝓞 ↥L) ↥L) r / (algebraMap (𝓞 ↥L) ↥L) s)
+
+S : Finset Nat.Primes
+L F : IntermediateField ℚ (AlgebraicClosure ℚ)
+hLF : L ≤ F
+inst✝² : FiniteDimensional ℚ ↥L
+inst✝¹ : FiniteDimensional ℚ ↥F
+inst✝ : IsGalois ℚ ↥F
+hF : F.IsUnramifiedOutside S
+v' : HeightOneSpectrum (𝓞 ↥F)
+hv'S : ∀ q ∈ S, ↑↑q ∉ v'.asIdeal
+z : ↥L
+hz : z ≠ 0
+this✝² : Algebra ↥L ↥F := algLF L F hLF
+this✝¹ : IsScalarTower ℚ ↥L ↥F
+this✝ : Algebra.IsIntegral (𝓞 ↥L) (𝓞 ↥F)
+this : FaithfulSMul (𝓞 ↥L) (𝓞 ↥F)
+he : (Ideal.under (𝓞 ↥L) v'.asIdeal).ramificationIdx' v'.asIdeal = 1
+key :
+  ∀ (r : 𝓞 ↥L),
+    r ≠ 0 →
+      (HeightOneSpectrum.valuation (↥F) v') ((algebraMap (𝓞 ↥F) ↥F) ((algebraMap (𝓞 ↥L) (𝓞 ↥F)) r)) =
+        (HeightOneSpectrum.valuation (↥L) (CapInj.underv v')) ((algebraMap (𝓞 ↥L) ↥L) r)
+r s : 𝓞 ↥L
+hs : s ∈ nonZeroDivisors (𝓞 ↥L)
+hzrs : (algebraMap (𝓞 ↥L) ↥L) r / (algebraMap (𝓞 ↥L) ↥L) s = z
+hs0 : s ≠ 0
+hr0 : r ≠ 0
+⊢ let this := algLF L F hLF;
+  (HeightOneSpectrum.valuation (↥F) v') ((algebraMap ↥L ↥F) ((algebraMap (𝓞 ↥L) ↥L) r / (algebraMap (𝓞 ↥L) ↥L) s)) =
+    (HeightOneSpectrum.valuation (↥L) (CapInj.underv v')) ((algebraMap (𝓞 ↥L) ↥L) r / (algebraMap (𝓞 ↥L) ↥L) s)
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_NumberField_LevelArith_exists_continuousH1Sr_sUnitsMaxRep_linearMap_sClassGroupRep_injective.lean:1613:51: error(lean.synthInstanceFailed): failed to synthesize instance of type class
+  OfNat (↑(classGroupRep ↥L ↥L) ⧸ sPrimeClassesSubmodule ↥L ↥L ↑S) 0
+numerals are polymorphic in Lean, but the numeral `0` cannot be used in a context where the expected type is
+  ↑(classGroupRep ↥L ↥L) ⧸ sPrimeClassesSubmodule ↥L ↥L ↑S
+due to the absence of the instance above
+
+Hint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_NumberField_LevelArith_exists_continuousH1Sr_sUnitsMaxRep_linearMap_sClassGroupRep_injective.lean:1784:10: error(lean.synthInstanceFailed): failed to synthesize instance of type class
+  HSMul ℕ (↑(classGroupRep ↥L ↥L) ⧸ sPrimeClassesSubmodule ↥L ↥L ↑S) ?m.36
+
+Hint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_NumberField_LevelArith_exists_continuousH1Sr_sUnitsMaxRep_linearMap_sClassGroupRep_injective.lean:1784:103: error(lean.synthInstanceFailed): failed to synthesize instance of type class
+  OfNat (↑(classGroupRep ↥L ↥L) ⧸ sPrimeClassesSubmodule ↥L ↥L ↑S) 0
+numerals are polymorphic in Lean, but the numeral `0` cannot be used in a context where the expected type is
+  ↑(classGroupRep ↥L ↥L) ⧸ sPrimeClassesSubmodule ↥L ↥L ↑S
+due to the absence of the instance above
+
+Hint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_NumberField_LevelArith_exists_continuousH1Sr_sUnitsMaxRep_linearMap_sClassGroupRep_injective.lean:1797:109: error(lean.synthInstanceFailed): failed to synthesize instance of type class
+  OfNat (↑(classGroupRep ↥L ↥L) ⧸ sPrimeClassesSubmodule ↥L ↥L ↑S) 0
+numerals are polymorphic in Lean, but the numeral `0` cannot be used in a context where the expected type is
+  ↑(classGroupRep ↥L ↥L) ⧸ sPrimeClassesSubmodule ↥L ↥L ↑S
+due to the absence of the instance above
+
+Hint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_NumberField_LevelArith_exists_continuousH1Sr_sUnitsMaxRep_linearMap_sClassGroupRep_injective.lean:1837:13: error: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  Ideal.under (𝓞 ↥L) (primeOver L F hLF w).asIdeal
+in the target expression
+  have this := algLF L F hLF;
+  (Ideal.under (𝓞 ↥L) (primeOver L F hLF w).asIdeal).ramificationIdx' (primeOver L F hLF w).asIdeal = 1
+
+p : ℕ
+inst✝¹ : Fact (Nat.Prime p)
+S : Finset Nat.Primes
+hpS : pPrime p ∈ S
+L : IntermediateField ℚ (AlgebraicClosure ℚ)
+hL : L.IsUnramifiedOutside S
+inst✝ : FiniteDimensional ℚ ↥L
+C : ClassGroup (𝓞 ↥L)
+hC : sorry
+hp : Nat.Prime p
+hp0 : ↑p ≠ 0
+hCp : C ^ p ∈ Subgroup.closure (primeClass ↥L '' placesOverPrimes ↥L ↑S)
+𝔞 : (FractionalIdeal (nonZeroDivisors (𝓞 ↥L)) ↥L)ˣ
+x : ↥L
+hx0 : x ≠ 0
+h𝔞 : (ClassGroup.mk ↥L) 𝔞 = C⁻¹
+hcnt :
+  ∀ w ∉ placesOverPrimes ↥L ↑S,
+    ↑p * FractionalIdeal.count (↥L) w ↑𝔞 =
+      FractionalIdeal.count (↥L) w (FractionalIdeal.spanSingleton (nonZeroDivisors (𝓞 ↥L)) x)
+hdiv : ∀ w ∉ placesOverPrimes ↥L ↑S, ↑p ∣ Multiplicative.toAdd (w.valuationOfNeZero (Units.mk0 x hx0))
+y : AlgebraicClosure ℚ
+hy : y ^ p = ↑x
+F : IntermediateField ℚ (AlgebraicClosure ℚ)
+hLF : L ≤ F
+hyF : y ∈ F
+hF : F.IsUnramifiedOutside S
+hGal : IsGalois ℚ ↥F
+hFD : FiniteDimensional ℚ ↥F
+this✝³ : IsGalois ℚ ↥F
+this✝² : FiniteDimensional ℚ ↥F
+hx0' : ↑x ≠ 0
+hy0 : y ≠ 0
+α : (↥F)ˣ := Units.mk0 ⟨y, hyF⟩ ⋯
+hαy : ↑↑α = y
+this✝¹ : Algebra ↥L ↥F := algLF L F hLF
+this✝ : IsScalarTower ℚ ↥L ↥F
+w : HeightOneSpectrum (𝓞 ↥L)
+hw : w ∉ placesOverPrimes ↥L ↑S
+hunder : Ideal.under (𝓞 ↥L) (primeOver L F hLF w).asIdeal = w.asIdeal
+hw'S : primeOver L F hLF w ∉ placesOverPrimes ↥F ↑S
+this :
+  have this := algLF L F hLF;
+  (Ideal.under (𝓞 ↥L) (primeOver L F hLF w).asIdeal).ramificationIdx' (primeOver L F hLF w).asIdeal = 1
+⊢ w.asIdeal.ramificationIdx' (primeOver L F hLF w).asIdeal = 1
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_NumberField_LevelArith_exists_continuousH1Sr_sUnitsMaxRep_linearMap_sClassGroupRep_injective.lean:1872:0: warning: automatically included section variable(s) unused in theorem `P2MW.S_NumberField_LevelArith_exists_continuousH1Sr_sUnitsMaxRep_linearMap_sClassGroupRep_injective.CycBaseCAP.mem_sUnitsMaxStable_of_unit`:
+  [FiniteDimensional ℚ ↥L]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [FiniteDimensional ℚ ↥L] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_NumberField_LevelArith_exists_continuousH1Sr_sUnitsMaxRep_linearMap_sClassGroupRep_injective.lean:1894:51: error(lean.synthInstanceFailed): failed to synthesize instance of type class
+  OfNat (↑(classGroupRep ↥L ↥L) ⧸ sPrimeClassesSubmodule ↥L ↥L ↑S) 0
+numerals are polymorphic in Lean, but the numeral `0` cannot be used in a context where the expected type is
+  ↑(classGroupRep ↥L ↥L) ⧸ sPrimeClassesSubmodule ↥L ↥L ↑S
+due to the absence of the instance above
+
+Hint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_NumberField_LevelArith_exists_continuousH1Sr_sUnitsMaxRep_linearMap_sClassGroupRep_injective.lean:1940:0: warning: automatically included section variable(s) unused in theorem `P2MW.S_NumberField_LevelArith_exists_continuousH1Sr_sUnitsMaxRep_linearMap_sClassGroupRep_injective.CycBaseCAP.mem_sUnitsMaxStable_of_pow_eq_one`:
+  [FiniteDimensional ℚ ↥L]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [FiniteDimensional ℚ ↥L] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_NumberField_LevelArith_exists_continuousH1Sr_sUnitsMaxRep_linearMap_sClassGroupRep_injective.lean:1960:10: error(lean.synthInstanceFailed): failed to synthesize instance of type class
+  HSMul ℕ (↑(classGroupRep ↥L ↥L) ⧸ sPrimeClassesSubmodule ↥L ↥L ↑S) ?m.36
+
+Hint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_NumberField_LevelArith_exists_continuousH1Sr_sUnitsMaxRep_linearMap_sClassGroupRep_injective.lean:1960:103: error(lean.synthInstanceFailed): failed to synthesize instance of type class
+  OfNat (↑(classGroupRep ↥L ↥L) ⧸ sPrimeClassesSubmodule ↥L ↥L ↑S) 0
+numerals are polymorphic in Lean, but the numeral `0` cannot be used in a context where the expected type is
+  ↑(classGroupRep ↥L ↥L) ⧸ sPrimeClassesSubmodule ↥L ↥L ↑S
+due to the absence of the instance above
+
+Hint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_NumberField_LevelArith_exists_continuousH1Sr_sUnitsMaxRep_linearMap_sClassGroupRep_injective.lean:2055:15: error(lean.synthInstanceFailed): failed to synthesize instance of type class
+  HSMul ℕ (↑(classGroupRep ↥L ↥L) ⧸ sPrimeClassesSubmodule ↥L ↥L ↑S) ?m.242
+
+Hint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_NumberField_LevelArith_exists_continuousH1Sr_sUnitsMaxRep_linearMap_sClassGroupRep_injective.lean:2055:125: error(lean.synthInstanceFailed): failed to synthesize instance of type class
+  OfNat (↑(classGroupRep ↥L ↥L) ⧸ sPrimeClassesSubmodule ↥L ↥L ↑S) 0
+numerals are polymorphic in Lean, but the numeral `0` cannot be used in a context where the expected type is
+  ↑(classGroupRep ↥L ↥L) ⧸ sPrimeClassesSubmodule ↥L ↥L ↑S
+due to the absence of the instance above
+
+Hint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_NumberField_LevelArith_exists_continuousH1Sr_sUnitsMaxRep_linearMap_sClassGroupRep_injective.lean:2076:4: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_NumberField_LevelArith_exists_continuousH1Sr_sUnitsMaxRep_linearMap_sClassGroupRep_injective.lean:2076:4: warning: Unused tactic linter: `(convert k using 5 <;>
+    first
+    | exact Subsingleton.elim _ _
+    | exact CycBaseCAP.mem_torsionBy_iff_of_subsingleton _ _
+    | (funext x; exact propext (CycBaseCAP.mem_torsionBy_iff_of_subsingleton _ _))
+    | exact CycBaseCAP.torsionBy_heq_of_subsingleton _)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+'P2MW.S_NumberField_LevelArith_exists_continuousH1Sr_sUnitsMaxRep_linearMap_sClassGroupRep_injective.solution' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]

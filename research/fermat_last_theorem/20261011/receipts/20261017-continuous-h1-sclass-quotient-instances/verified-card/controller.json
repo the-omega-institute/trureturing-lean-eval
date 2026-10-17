@@ -1,0 +1,92 @@
+{
+  "sha256": "c3241ac75a330ec6b94ad650c308f6f6e05c79d3c02ef190fb57de7597c9e216",
+  "exit": 0,
+  "empty_output_retry_done": false,
+  "source_sha256_after": "c3241ac75a330ec6b94ad650c308f6f6e05c79d3c02ef190fb57de7597c9e216",
+  "source_unchanged": true,
+  "olean_sha256": "90c2d5b8c276e94f011830df5a3ceca38352a93b0e6980ca25ef1585475320fe",
+  "seconds": 100.52787849999731,
+  "pid": 54913,
+  "command": [
+    "/Users/macstudio/.local/omega-shims/lean",
+    "-j1",
+    "--trust=0",
+    "-Ddebug.skipKernelTC=false",
+    "-R",
+    "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src",
+    "-o",
+    "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-build/lib/lean/Submission/Supplier/Theorems/Thm_NumberField_LevelArith_exists_continuousH1Sr_sUnitsMaxRep_linearMap_sClassGroupRep_injective.olean",
+    "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/Theorems/Thm_NumberField_LevelArith_exists_continuousH1Sr_sUnitsMaxRep_linearMap_sClassGroupRep_injective.lean"
+  ],
+  "make_wrapper_pid": 46691,
+  "make_exit": 0,
+  "make_entry_failed": false,
+  "cache_binding_valid": true,
+  "canonical_make_running_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/20af7db82b79f47299c38b78-1792222142087181000.make-running.json",
+  "canonical_make_terminal_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/20af7db82b79f47299c38b78-1792222142087181000.make-terminal.json",
+  "kernel_terminal_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/20af7db82b79f47299c38b78-1792222142087181000.kernel/result.json",
+  "direct_dependencies": [
+    {
+      "module": "Submission.Supplier.Definitions.Def_GroupCohomology_ContinuousUnramified",
+      "source_sha256": "043332b5cfde215c097e58af5d5becdb67b1aafa6711d65e156d9eb78931ad68",
+      "object_sha256": "a5e6d1d085476ac2b0cae24f241961b3f8f43525140e9217a3beeb698205d63d",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Definitions.Def_DualSelmer_ExtConditions",
+      "source_sha256": "c1b2c251df0f5beafe5cd5e5079f48fc890964eede2aae816c4508fe3834786a",
+      "object_sha256": "838fb01ac2d003926c96c374442f289247b4fa2a0921d784ca9ce4eea6ef87cb",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Definitions.Def_ExtCitation_KummerBridge",
+      "source_sha256": "59618eef9e977ba7b4db42699f1b25a4c50134175fcb159bb321f8a977a16925",
+      "object_sha256": "ce523fc576bd45225aac312cf80ffc58beddc29981314458f54ce5c53547c941",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Definitions.Def_GroupCohomology_ContinuousUnramifiedLevel",
+      "source_sha256": "745fd60eea12b40c929c7f13e9071f2b6065342300f6287551a54238cae9cafc",
+      "object_sha256": "16352c302eeeaa2183322a2c3ecfe25e8810b88de604decba70d8f3e007280b2",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Definitions.Def_GroupCohomology_ContinuousUnramifiedLevelMap",
+      "source_sha256": "58c80bce3b05ba1a576d5963799f1ea0ab87f2a587c46f0694838602dc5b1855",
+      "object_sha256": "02f9dc280294c11ddbdf9f9283dcb3f206034a46c2c1bc28096f13f83075277c",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Definitions.Def_NumberField_LevelArithmeticModP",
+      "source_sha256": "37497d867786ea5b548e706cb5c1f4ca555a699a47f66a0bb265972bb4134f33",
+      "object_sha256": "c4910d20d2381d653dde3ceeb89b19e3f69ede736e21c38c4b8d44cf91a0d190",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Definitions.Def_NumberField_SelmerRepModP",
+      "source_sha256": "12ab985a6baf8e713cc0bf951a3ea2621a1e7a2d16d9db8ebffe4322ee6d95dc",
+      "object_sha256": "b73581a0b9ca8cbf4f5cb86c81bb4cffcd6e3168ca9571d1e4e9422850aea09a",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Definitions.Def_NumberField_SUnitsMax",
+      "source_sha256": "317033a51ba23c0f01918faa3cb69a9189b2055b41e1352c83415596aeaf3080",
+      "object_sha256": "e5079c2fafa7fd484c78f41bf6b7b65007390ab6463671abeb86f12eebe285c0",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.P2M.Util",
+      "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+      "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.P2M.Sol.S_NumberField_LevelArith_exists_continuousH1Sr_sUnitsMaxRep_linearMap_sClassGroupRep_injective",
+      "source_sha256": "ac9386855a561fe29fdd270c95fc7d14b5fd2e168dad2c280abdf407b92963f0",
+      "object_sha256": "8fde65111f3b27555a2b75f086cdcd4b7ba280dbee9201ce6369be1170605472",
+      "receipt_reused": true
+    }
+  ],
+  "stdout": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/20af7db82b79f47299c38b78-1792222142087181000.kernel/stdout.log",
+  "stderr": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/20af7db82b79f47299c38b78-1792222142087181000.kernel/stderr.log"
+}
