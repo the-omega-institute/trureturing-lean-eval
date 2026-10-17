@@ -1,0 +1,182 @@
+{
+  "at": "2026-10-17T15:39:57.417595+00:00",
+  "name": "PeriodPair_exists_differentiable_toPoint_comp_eq_pointMapOfPushforward_toPoint",
+  "candidate": "r2",
+  "card_candidate": "r2",
+  "source_replacements": [
+    [
+      "    haveI := hv.centre_isPrime\n",
+      "    have := hv.centre_isPrime\n",
+      1
+    ],
+    [
+      "    haveI hAded : IsDedekindDomain A := by rw [hA]; infer_instance\n",
+      "    have hAded : IsDedekindDomain A := by rw [hA]; infer_instance\n",
+      1
+    ],
+    [
+      "  haveI : HasPrincipalDivisors F W.FunctionField := hasPrincipalDivisors_functionField W\n",
+      "  have : HasPrincipalDivisors F W.FunctionField := hasPrincipalDivisors_functionField W\n",
+      1
+    ],
+    [
+      "  haveI : CharZero V.FunctionField :=\n",
+      "  have : CharZero V.FunctionField :=\n",
+      1
+    ],
+    [
+      "  have hsep : SeparableAlong F \u03b9 := by\n    letI := algebraAlong \u03b9\n",
+      "  have hsep : SeparableAlong F \u03b9 := by\n    let := algebraAlong \u03b9\n",
+      1
+    ],
+    [
+      "    let := algebraAlong \u03b9\n    haveI := isScalarTower_along \u03b9\n",
+      "    let := algebraAlong \u03b9\n    have := isScalarTower_along \u03b9\n",
+      1
+    ],
+    [
+      "    haveI : Module.Finite V.FunctionField W.FunctionField := hfin\n",
+      "    have : Module.Finite V.FunctionField W.FunctionField := hfin\n",
+      1
+    ],
+    [
+      "  haveI : Countable L.lattice.toAddSubgroup :=\n",
+      "  have : Countable L.lattice.toAddSubgroup :=\n",
+      1
+    ],
+    [
+      "  haveI : Countable ((\u2102 \u29f8 L.lattice.toAddSubgroup) \u00d7 L.lattice.toAddSubgroup) := inferInstance\n",
+      "  have : Countable ((\u2102 \u29f8 L.lattice.toAddSubgroup) \u00d7 L.lattice.toAddSubgroup) := inferInstance\n",
+      1
+    ],
+    [
+      "  haveI : Uncountable \u2102 := Complex.ofReal_injective.uncountable\n",
+      "  have : Uncountable \u2102 := Complex.ofReal_injective.uncountable\n",
+      1
+    ],
+    [
+      "  letI := algebraAlong \u03c6\n",
+      "  let := algebraAlong \u03c6\n",
+      1
+    ],
+    [
+      "  haveI := isScalarTower_along \u03c6\n",
+      "  have := isScalarTower_along \u03c6\n",
+      1
+    ],
+    [
+      "  haveI := isIntegral_along \u03c6 h\u03c6\n",
+      "  have := isIntegral_along \u03c6 h\u03c6\n",
+      1
+    ],
+    [
+      "  unfold finrankAlong\n  letI := algebraAlong \u03b9\n",
+      "  unfold finrankAlong\n  let := algebraAlong \u03b9\n",
+      1
+    ],
+    [
+      "  haveI : Module.Finite E'.FunctionField E.FunctionField := hfin\n",
+      "  have : Module.Finite E'.FunctionField E.FunctionField := hfin\n",
+      1
+    ],
+    [
+      "    letI := algebraAlong \u03b9\n",
+      "    let := algebraAlong \u03b9\n",
+      1
+    ],
+    [
+      "    haveI := isScalarTower_along \u03b9\n",
+      "    have := isScalarTower_along \u03b9\n",
+      1
+    ],
+    [
+      "    haveI := isIntegral_along \u03b9 h\u03b9\n",
+      "    have := isIntegral_along \u03b9 h\u03b9\n",
+      1
+    ],
+    [
+      "continuous_add_right w",
+      "continuous_add_const (a := w)",
+      1
+    ],
+    [
+      "Set.mem_setOf_eq",
+      "Set.mem_ofPred_eq",
+      3
+    ],
+    [
+      "@[scoped simp]\ntheorem placeOfPoint_some [IsDedekindDomain W.CoordinateRing]",
+      "omit [IsDedekindDomain W.CoordinateRing] in\n@[scoped simp]\ntheorem placeOfPoint_some [IsDedekindDomain W.CoordinateRing]",
+      1
+    ],
+    [
+      "theorem eq_of_not_isFinitePlace [IsDedekindDomain W.CoordinateRing]",
+      "omit [IsDedekindDomain W.CoordinateRing] in\ntheorem eq_of_not_isFinitePlace [IsDedekindDomain W.CoordinateRing]",
+      1
+    ],
+    [
+      "continuous_add_const (a := w)",
+      "continuous_add_const w",
+      1
+    ]
+  ],
+  "card_replacements": [
+    [
+      "instIsScalarTowerPolynomialRatFuncFunctionField_definitions",
+      "instIsScalarTowerPolynomialRatFuncFunctionField_submission",
+      1
+    ],
+    [
+      "instAlgebraRatFuncFunctionField_definitions",
+      "instAlgebraRatFuncFunctionField_submission",
+      1
+    ],
+    [
+      "instIsScalarTowerRatFuncFunctionField_definitions",
+      "instIsScalarTowerRatFuncFunctionField_submission",
+      1
+    ]
+  ],
+  "baseline_byte_identical_to_pinned_supplier": true,
+  "pinned_supplier_source_and_card_preserved": true,
+  "verification_pending": false,
+  "installed": true,
+  "no_linter_suppression_added": true,
+  "complete_original_proof_preserved": true,
+  "full_original_statement_and_hypotheses_preserved": true,
+  "max_active_flt_jobs": 1,
+  "lean_threads": 1,
+  "original_actual_errors": 1,
+  "original_actual_warnings": 23,
+  "original_kernel_seconds": 57.068895584,
+  "change": "Retain complete original2673-line local holomorphic lift,point-map and differentiability construction and public source/card statements. Replace removed continuous_add_right with current continuous_add_const using the same translation map;update3 flagged Set aliases,18 actual haveI/letI style diagnostics,and two automatic duplicate section instances while retaining explicit hypotheses. No suppression added. Pending natural verification. Revision r2 supplies the translation constant as the explicit argument of generated top-level continuous_add_const. Original translation map and proof unchanged. Actual r1 invalid named-argument diagnostic archived;current verification pending. Card revision r2 updates three obsolete generated-instance _definitions suffixes to the _submission names confirmed in the actual pinned dependency object,retaining the original instance-disable behavior. Public card statement and every hypothesis/conclusion remain byte-unchanged. Original r1 card failure receipt archived. Source r2 already passed zero-diagnostic make/kernel and standard three recursive axioms;current card r2 verification pending.",
+  "full_original_complete": false,
+  "official_new_solve_credit": 0,
+  "active_import_closure_excluded": [
+    "Submission.Supplier.P2M.Sol.S_WeierstrassCurve_Affine_IsogenyEndDatum_exists_restrictAlong_placeOfPoint_eq_add"
+  ],
+  "active_transitive_import_closure_size": 106,
+  "actual_live_descendant_sources": [
+    {
+      "pid": 53701,
+      "source": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_WeierstrassCurve_Affine_IsogenyEndDatum_exists_restrictAlong_placeOfPoint_eq_add.lean"
+    }
+  ],
+  "all_four_canonical_adapted_source_card_modules_excluded": [
+    "P2M.Sol.S_PeriodPair_exists_differentiable_toPoint_comp_eq_pointMapOfPushforward_toPoint",
+    "Submission.Supplier.P2M.Sol.S_PeriodPair_exists_differentiable_toPoint_comp_eq_pointMapOfPushforward_toPoint",
+    "Submission.Supplier.Theorems.Thm_PeriodPair_exists_differentiable_toPoint_comp_eq_pointMapOfPushforward_toPoint",
+    "Theorems.Thm_PeriodPair_exists_differentiable_toPoint_comp_eq_pointMapOfPushforward_toPoint"
+  ],
+  "r1_source_actual_errors": 1,
+  "r1_source_actual_warnings": 0,
+  "r1_source_kernel_seconds": 73.20018962500001,
+  "r1_card_actual_errors": 1,
+  "r1_card_actual_warnings": 0,
+  "r1_card_kernel_seconds": 38.595210707999996,
+  "generated_instance_names_confirmed_in_current_pinned_object": [
+    "instIsScalarTowerPolynomialRatFuncFunctionField_submission",
+    "instAlgebraRatFuncFunctionField_submission",
+    "instIsScalarTowerRatFuncFunctionField_submission"
+  ]
+}
