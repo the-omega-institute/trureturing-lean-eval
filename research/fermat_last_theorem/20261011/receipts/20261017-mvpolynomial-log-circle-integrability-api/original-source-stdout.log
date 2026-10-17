@@ -1,0 +1,15 @@
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_MvPolynomial_integrableOn_log_norm_eval_circleMap.lean:122:32: error: Application type mismatch: The argument
+  norm_nonneg ?m.190
+has type
+  0 ≤ ‖?m.190‖
+but is expected to have type
+  -1 ≤ ‖Polynomial.eval (circleMap 0 1 x) p‖
+in the application
+  posLog_le_posLog (norm_nonneg ?m.190)
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_MvPolynomial_integrableOn_log_norm_eval_circleMap.lean:165:31: error(lean.unknownIdentifier): Unknown identifier `coeff`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_MvPolynomial_integrableOn_log_norm_eval_circleMap.lean:174:34: error: Type mismatch
+  norm_eval_circleMap_le_sum_norm_coeff P ?m.523
+has type
+  ‖(eval fun i => circleMap 0 1 (?m.523 i)) P‖ ≤ ∑ m ∈ P.support, ‖P.coeff m‖
+but is expected to have type
+  ‖(eval fun i => circleMap 0 1 (Fin.cons x θ' i)) P‖ ≤ B

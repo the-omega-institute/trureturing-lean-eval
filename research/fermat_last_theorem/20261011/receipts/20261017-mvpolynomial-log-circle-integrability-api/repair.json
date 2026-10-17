@@ -1,0 +1,50 @@
+{
+  "at": "2026-10-17T10:48:34.467119+00:00",
+  "name": "MvPolynomial_integrableOn_log_norm_eval_circleMap",
+  "candidate": "r1",
+  "card_candidate": "r1",
+  "source_replacements": [
+    [
+      "    exact Real.posLog_le_posLog (norm_nonneg _) (hB x)",
+      "    exact Real.posLog_le_posLog (neg_one_lt_zero.le.trans (norm_nonneg _)) (hB x)",
+      1
+    ],
+    [
+      "    set B := \u2211 m \u2208 P.support, \u2016coeff m P\u2016",
+      "    set B := \u2211 m \u2208 P.support, \u2016P.coeff m\u2016",
+      1
+    ]
+  ],
+  "card_replacements": [],
+  "baseline_byte_identical_to_pinned_supplier": true,
+  "pinned_supplier_source_and_card_preserved": true,
+  "verification_pending": false,
+  "installed": true,
+  "no_linter_suppression_added": true,
+  "complete_original_proof_preserved": true,
+  "full_original_statement_and_hypotheses_preserved": true,
+  "max_active_flt_jobs": 1,
+  "lean_threads": 1,
+  "original_actual_errors": 3,
+  "original_actual_warnings": 0,
+  "original_kernel_seconds": 20.761655375,
+  "change": "Preserve complete original circle-fiber induction,Fubini and logarithmic integral proof. Derive the new posLog lower bound minus1<=norm from norm_nonneg;use the current P.coeff m notation in the same finite coefficient-sum bound. The third observed bound mismatch follows the unbound coeff expression and is left to actual recompilation after that local correction. All public hypotheses/conclusions and remaining proof steps unchanged. Actual natural-queue source/card checks pending.",
+  "full_original_complete": false,
+  "official_new_solve_credit": 0,
+  "active_import_closure_excluded": [
+    "Submission.Supplier.Theorems.Thm_Polynomial_natDegree_le_of_aeval_mul_inv_pow_mem_adjoin_inv"
+  ],
+  "active_transitive_import_closure_size": 3,
+  "actual_live_descendant_sources": [
+    {
+      "pid": 79250,
+      "source": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/Theorems/Thm_Polynomial_natDegree_le_of_aeval_mul_inv_pow_mem_adjoin_inv.lean"
+    }
+  ],
+  "all_four_canonical_adapted_source_card_modules_excluded": [
+    "P2M.Sol.S_MvPolynomial_integrableOn_log_norm_eval_circleMap",
+    "Submission.Supplier.P2M.Sol.S_MvPolynomial_integrableOn_log_norm_eval_circleMap",
+    "Submission.Supplier.Theorems.Thm_MvPolynomial_integrableOn_log_norm_eval_circleMap",
+    "Theorems.Thm_MvPolynomial_integrableOn_log_norm_eval_circleMap"
+  ]
+}
