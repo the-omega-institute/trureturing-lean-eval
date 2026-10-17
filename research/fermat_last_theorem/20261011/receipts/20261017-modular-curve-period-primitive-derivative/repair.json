@@ -1,0 +1,49 @@
+{
+  "at": "2026-10-17T09:09:50.733612+00:00",
+  "name": "ModularCurve_periodOf_apply_eq_sub_of_hasEquivariantPrimitiveOf",
+  "candidate": "r2",
+  "card_candidate": "r1",
+  "source_replacements": [
+    [
+      "  convert this using 1\n  \u00b7 rfl\n  \u00b7 rfl\n  ring\n",
+      "  convert this using 1\n  ring\n",
+      1
+    ]
+  ],
+  "card_replacements": [],
+  "baseline_byte_identical_to_pinned_supplier": true,
+  "pinned_supplier_source_and_card_preserved": true,
+  "verification_pending": false,
+  "installed": true,
+  "no_linter_suppression_added": true,
+  "complete_original_proof_preserved": true,
+  "full_original_statement_and_hypotheses_preserved": true,
+  "max_active_flt_jobs": 1,
+  "lean_threads": 1,
+  "original_actual_errors": 2,
+  "original_actual_warnings": 0,
+  "original_kernel_seconds": 58.141589124999996,
+  "change": "Retain complete original derivative/segment/FTC/primitive proof. Actual r1 diagnostics prove only the derivative conversion equality remains;discharge it with the original ring tactic and remove both obsolete conversion rfl steps. Full original public statement/hypotheses unchanged;actual source/card verification pending.",
+  "full_original_complete": false,
+  "official_new_solve_credit": 0,
+  "active_import_closure_excluded": [
+    "Submission.Supplier.P2M.Sol.S_ModularCurve_ord_charLGeomPlaceOfPoint_jqModC_sub_algebraMap"
+  ],
+  "active_transitive_import_closure_size": 105,
+  "actual_live_descendant_sources": [
+    {
+      "pid": 27760,
+      "source": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_ModularCurve_ord_charLGeomPlaceOfPoint_jqModC_sub_algebraMap.lean"
+    }
+  ],
+  "all_four_canonical_adapted_source_card_modules_excluded": [
+    "P2M.Sol.S_ModularCurve_periodOf_apply_eq_sub_of_hasEquivariantPrimitiveOf",
+    "Submission.Supplier.P2M.Sol.S_ModularCurve_periodOf_apply_eq_sub_of_hasEquivariantPrimitiveOf",
+    "Submission.Supplier.Theorems.Thm_ModularCurve_periodOf_apply_eq_sub_of_hasEquivariantPrimitiveOf",
+    "Theorems.Thm_ModularCurve_periodOf_apply_eq_sub_of_hasEquivariantPrimitiveOf"
+  ],
+  "installed_at": "2026-10-17T09:30:17.509260+00:00",
+  "actual_r1_source_errors": 2,
+  "actual_r1_source_warnings": 0,
+  "actual_r1_kernel_seconds": 29.884577541000002
+}
