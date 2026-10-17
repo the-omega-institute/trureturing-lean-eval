@@ -1,0 +1,151 @@
+{
+  "at": "2026-10-17T15:43:37.150162+00:00",
+  "name": "PeriodPair_exists_scale_lattice_subset_and_sublatticeIndex_eq_and_isAddCyclic_sublatticeQuotient",
+  "candidate": "r1",
+  "card_candidate": "r1",
+  "source_replacements": [
+    [
+      "    haveI := hv.centre_isPrime\n",
+      "    have := hv.centre_isPrime\n",
+      1
+    ],
+    [
+      "    haveI hAded : IsDedekindDomain A := by rw [hA]; infer_instance\n",
+      "    have hAded : IsDedekindDomain A := by rw [hA]; infer_instance\n",
+      1
+    ],
+    [
+      "  haveI : HasPrincipalDivisors F W.FunctionField := hasPrincipalDivisors_functionField W\n",
+      "  have : HasPrincipalDivisors F W.FunctionField := hasPrincipalDivisors_functionField W\n",
+      1
+    ],
+    [
+      "  haveI : CharZero V.FunctionField :=\n",
+      "  have : CharZero V.FunctionField :=\n",
+      1
+    ],
+    [
+      "    letI := algebraAlong \u03b9\n",
+      "    let := algebraAlong \u03b9\n",
+      1
+    ],
+    [
+      "    haveI := isScalarTower_along \u03b9\n",
+      "    have := isScalarTower_along \u03b9\n",
+      1
+    ],
+    [
+      "    haveI : Module.Finite V.FunctionField W.FunctionField := hfin\n",
+      "    have : Module.Finite V.FunctionField W.FunctionField := hfin\n",
+      1
+    ],
+    [
+      "  haveI : Countable L.lattice.toAddSubgroup :=\n",
+      "  have : Countable L.lattice.toAddSubgroup :=\n",
+      1
+    ],
+    [
+      "  haveI : Countable ((\u2102 \u29f8 L.lattice.toAddSubgroup) \u00d7 L.lattice.toAddSubgroup) := inferInstance\n",
+      "  have : Countable ((\u2102 \u29f8 L.lattice.toAddSubgroup) \u00d7 L.lattice.toAddSubgroup) := inferInstance\n",
+      1
+    ],
+    [
+      "  haveI : Uncountable \u2102 := Complex.ofReal_injective.uncountable\n",
+      "  have : Uncountable \u2102 := Complex.ofReal_injective.uncountable\n",
+      1
+    ],
+    [
+      "  haveI : NeZero n := \u27e8by exact_mod_cast hn\u27e9\n",
+      "  have : NeZero n := \u27e8by exact_mod_cast hn\u27e9\n",
+      1
+    ],
+    [
+      "  haveI hfin : Finite C := Nat.finite_of_card_ne_zero (hcard \u25b8 NeZero.ne N)\n",
+      "  have hfin : Finite C := Nat.finite_of_card_ne_zero (hcard \u25b8 NeZero.ne N)\n",
+      1
+    ],
+    [
+      "open ModularCurve\n",
+      "open _root_.P2MW.S_PeriodPair_exists_scale_lattice_subset_and_sublatticeIndex_eq_and_isAddCyclic_sublatticeQuotient.ModularCurve\n",
+      1
+    ],
+    [
+      "WeierstrassCurve.Affine.instIsScalarTowerPolynomialRatFuncFunctionField_definitions",
+      "WeierstrassCurve.Affine.instIsScalarTowerPolynomialRatFuncFunctionField_submission",
+      1
+    ],
+    [
+      "WeierstrassCurve.Affine.instAlgebraRatFuncFunctionField_definitions",
+      "WeierstrassCurve.Affine.instAlgebraRatFuncFunctionField_submission",
+      1
+    ],
+    [
+      "WeierstrassCurve.Affine.instIsScalarTowerRatFuncFunctionField_definitions",
+      "WeierstrassCurve.Affine.instIsScalarTowerRatFuncFunctionField_submission",
+      1
+    ],
+    [
+      "AddMonoidHomClass.toAddMonoidHom",
+      "AddMonoidHom.ofClass",
+      1
+    ],
+    [
+      "@[scoped simp]\ntheorem placeOfPoint_some [IsDedekindDomain W.CoordinateRing]",
+      "omit [IsDedekindDomain W.CoordinateRing] in\n@[scoped simp]\ntheorem placeOfPoint_some [IsDedekindDomain W.CoordinateRing]",
+      1
+    ],
+    [
+      "theorem eq_of_not_isFinitePlace [IsDedekindDomain W.CoordinateRing]",
+      "omit [IsDedekindDomain W.CoordinateRing] in\ntheorem eq_of_not_isFinitePlace [IsDedekindDomain W.CoordinateRing]",
+      1
+    ]
+  ],
+  "card_replacements": [
+    [
+      "WeierstrassCurve.Affine.instIsScalarTowerPolynomialRatFuncFunctionField_definitions",
+      "WeierstrassCurve.Affine.instIsScalarTowerPolynomialRatFuncFunctionField_submission",
+      1
+    ],
+    [
+      "WeierstrassCurve.Affine.instAlgebraRatFuncFunctionField_definitions",
+      "WeierstrassCurve.Affine.instAlgebraRatFuncFunctionField_submission",
+      1
+    ],
+    [
+      "WeierstrassCurve.Affine.instIsScalarTowerRatFuncFunctionField_definitions",
+      "WeierstrassCurve.Affine.instIsScalarTowerRatFuncFunctionField_submission",
+      1
+    ]
+  ],
+  "baseline_byte_identical_to_pinned_supplier": true,
+  "pinned_supplier_source_and_card_preserved": true,
+  "verification_pending": false,
+  "installed": true,
+  "no_linter_suppression_added": true,
+  "complete_original_proof_preserved": true,
+  "full_original_statement_and_hypotheses_preserved": true,
+  "max_active_flt_jobs": 1,
+  "lean_threads": 1,
+  "original_actual_errors": 1,
+  "original_actual_warnings": 16,
+  "original_kernel_seconds": 34.29689875,
+  "change": "Retain complete original2021-line period-pair scaling,lattice containment,index and cyclic quotient proof and unchanged public solution/card statements. Update3 obsolete instance references in source and card to actual pinned submission names. Update additive-hom alias,12 actual haveI/letI style diagnostics,one selected namespace open and two automatic duplicate section instances while retaining explicit hypotheses. No suppression added;pending natural verification.",
+  "full_original_complete": false,
+  "official_new_solve_credit": 0,
+  "active_import_closure_excluded": [
+    "Submission.Supplier.P2M.Sol.S_WeierstrassCurve_Affine_IsogenyEndDatum_exists_restrictAlong_placeOfPoint_eq_add"
+  ],
+  "active_transitive_import_closure_size": 106,
+  "actual_live_descendant_sources": [
+    {
+      "pid": 25343,
+      "source": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_WeierstrassCurve_Affine_IsogenyEndDatum_exists_restrictAlong_placeOfPoint_eq_add.lean"
+    }
+  ],
+  "all_four_canonical_adapted_source_card_modules_excluded": [
+    "P2M.Sol.S_PeriodPair_exists_scale_lattice_subset_and_sublatticeIndex_eq_and_isAddCyclic_sublatticeQuotient",
+    "Submission.Supplier.P2M.Sol.S_PeriodPair_exists_scale_lattice_subset_and_sublatticeIndex_eq_and_isAddCyclic_sublatticeQuotient",
+    "Submission.Supplier.Theorems.Thm_PeriodPair_exists_scale_lattice_subset_and_sublatticeIndex_eq_and_isAddCyclic_sublatticeQuotient",
+    "Theorems.Thm_PeriodPair_exists_scale_lattice_subset_and_sublatticeIndex_eq_and_isAddCyclic_sublatticeQuotient"
+  ]
+}
