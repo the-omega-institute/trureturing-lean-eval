@@ -1,0 +1,161 @@
+{
+  "at": "2026-10-17T16:06:42.790556+00:00",
+  "name": "WeierstrassCurve_zmultiples_eq_of_veluQuotient_j_eq_of_forall_isogenyEndDatum_exists_int",
+  "candidate": "r1",
+  "card_candidate": "r1",
+  "source_replacements": [
+    [
+      "  haveI : CharZero V.FunctionField :=\n",
+      "  have : CharZero V.FunctionField :=\n",
+      1
+    ],
+    [
+      "    letI := algebraAlong \u03b9\n",
+      "    let := algebraAlong \u03b9\n",
+      1
+    ],
+    [
+      "    haveI := isScalarTower_along \u03b9\n",
+      "    have := isScalarTower_along \u03b9\n",
+      1
+    ],
+    [
+      "    haveI : Module.Finite V.FunctionField W.FunctionField := hfin\n",
+      "    have : Module.Finite V.FunctionField W.FunctionField := hfin\n",
+      1
+    ],
+    [
+      "  haveI : Finite W.Point := hfinite\n",
+      "  have : Finite W.Point := hfinite\n",
+      1
+    ],
+    [
+      "  letI := algebraAlong \u03c4\n",
+      "  let := algebraAlong \u03c4\n",
+      1
+    ],
+    [
+      "  haveI : Finite (pointMapOfPushforward \u03c4 h\u03c4 hfin hN).ker :=\n",
+      "  have : Finite (pointMapOfPushforward \u03c4 h\u03c4 hfin hN).ker :=\n",
+      1
+    ],
+    [
+      "  haveI hell : (W.veluQuotient (W.oddOrderSummingSet Q n)).IsElliptic :=\n",
+      "  have hell : (W.veluQuotient (W.oddOrderSummingSet Q n)).IsElliptic :=\n",
+      1
+    ],
+    [
+      "  haveI hell' : (W.veluQuotient (W.oddOrderSummingSet Q' n)).IsElliptic :=\n",
+      "  have hell' : (W.veluQuotient (W.oddOrderSummingSet Q' n)).IsElliptic :=\n",
+      1
+    ],
+    [
+      "  haveI : IsDedekindDomain (W.veluQuotient (W.oddOrderSummingSet Q n)).toAffine.CoordinateRing :=\n",
+      "  have : IsDedekindDomain (W.veluQuotient (W.oddOrderSummingSet Q n)).toAffine.CoordinateRing :=\n",
+      1
+    ],
+    [
+      "  haveI : IsDedekindDomain (W.veluQuotient (W.oddOrderSummingSet Q' n)).toAffine.CoordinateRing :=\n",
+      "  have : IsDedekindDomain (W.veluQuotient (W.oddOrderSummingSet Q' n)).toAffine.CoordinateRing :=\n",
+      1
+    ],
+    [
+      "  letI := gV\n",
+      "  let := gV\n",
+      1
+    ],
+    [
+      "  letI := gV'\n",
+      "  let := gV'\n",
+      1
+    ],
+    [
+      "  haveI := hcV\n",
+      "  have := hcV\n",
+      1
+    ],
+    [
+      "  haveI := hcV'\n",
+      "  have := hcV'\n",
+      1
+    ],
+    [
+      "  haveI := haV\n",
+      "  have := haV\n",
+      1
+    ],
+    [
+      "  haveI := haV'\n",
+      "  have := haV'\n",
+      1
+    ],
+    [
+      "    haveI : Infinite W.toAffine.Point := kw_point_infinite\n",
+      "    have : Infinite W.toAffine.Point := kw_point_infinite\n",
+      1
+    ],
+    [
+      "WeierstrassCurve.Affine.instIsScalarTowerPolynomialRatFuncFunctionField_definitions",
+      "WeierstrassCurve.Affine.instIsScalarTowerPolynomialRatFuncFunctionField_submission",
+      1
+    ],
+    [
+      "WeierstrassCurve.Affine.instAlgebraRatFuncFunctionField_definitions",
+      "WeierstrassCurve.Affine.instAlgebraRatFuncFunctionField_submission",
+      1
+    ],
+    [
+      "WeierstrassCurve.Affine.instIsScalarTowerRatFuncFunctionField_definitions",
+      "WeierstrassCurve.Affine.instIsScalarTowerRatFuncFunctionField_submission",
+      1
+    ],
+    [
+      "AddMonoidHom.ker_restrict",
+      "AddMonoidHom.ker_domRestrict",
+      1
+    ]
+  ],
+  "card_replacements": [
+    [
+      "WeierstrassCurve.Affine.instIsScalarTowerPolynomialRatFuncFunctionField_definitions",
+      "WeierstrassCurve.Affine.instIsScalarTowerPolynomialRatFuncFunctionField_submission",
+      1
+    ],
+    [
+      "WeierstrassCurve.Affine.instAlgebraRatFuncFunctionField_definitions",
+      "WeierstrassCurve.Affine.instAlgebraRatFuncFunctionField_submission",
+      1
+    ],
+    [
+      "WeierstrassCurve.Affine.instIsScalarTowerRatFuncFunctionField_definitions",
+      "WeierstrassCurve.Affine.instIsScalarTowerRatFuncFunctionField_submission",
+      1
+    ]
+  ],
+  "baseline_byte_identical_to_pinned_supplier": true,
+  "pinned_supplier_source_and_card_preserved": true,
+  "verification_pending": false,
+  "installed": true,
+  "no_linter_suppression_added": true,
+  "complete_original_proof_preserved": true,
+  "full_original_statement_and_hypotheses_preserved": true,
+  "max_active_flt_jobs": 1,
+  "lean_threads": 1,
+  "original_actual_errors": 1,
+  "original_actual_warnings": 19,
+  "original_kernel_seconds": 105.71104779100001,
+  "change": "Retain complete original525-line equality-of-cyclic-subgroups proof from Velu quotient j-invariant equality and scalar endomorphism hypotheses. Public source/card statements and every hypothesis unchanged. Update3 obsolete instance references in source and card to actual pinned submission names,one kernel restriction alias and18 actually flagged haveI/letI declarations. No suppression added;pending natural verification.",
+  "full_original_complete": false,
+  "official_new_solve_credit": 0,
+  "active_import_closure_excluded": [
+    "Submission.Supplier.Theorems.Thm_WeierstrassCurve_exists_mul_Psi3_add_mul_derivative_Psi3"
+  ],
+  "active_transitive_import_closure_size": 3,
+  "actual_live_descendant_sources": [],
+  "all_four_canonical_adapted_source_card_modules_excluded": [
+    "P2M.Sol.S_WeierstrassCurve_zmultiples_eq_of_veluQuotient_j_eq_of_forall_isogenyEndDatum_exists_int",
+    "Submission.Supplier.P2M.Sol.S_WeierstrassCurve_zmultiples_eq_of_veluQuotient_j_eq_of_forall_isogenyEndDatum_exists_int",
+    "Submission.Supplier.Theorems.Thm_WeierstrassCurve_zmultiples_eq_of_veluQuotient_j_eq_of_forall_isogenyEndDatum_exists_int",
+    "Theorems.Thm_WeierstrassCurve_zmultiples_eq_of_veluQuotient_j_eq_of_forall_isogenyEndDatum_exists_int"
+  ]
+}
