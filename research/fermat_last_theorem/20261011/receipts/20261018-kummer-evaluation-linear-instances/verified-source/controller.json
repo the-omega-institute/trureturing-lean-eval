@@ -1,0 +1,86 @@
+{
+  "sha256": "728eea88f65d90231793759aa809715fe4dcc9906028cf6d2e24fef7626a0171",
+  "exit": 0,
+  "empty_output_retry_done": false,
+  "source_sha256_after": "728eea88f65d90231793759aa809715fe4dcc9906028cf6d2e24fef7626a0171",
+  "source_unchanged": true,
+  "olean_sha256": "1b3e3bfc8c674eeae77063a93ae9ba02832ee3259f35960137541d145a0aff1e",
+  "seconds": 58.04330499999992,
+  "pid": 70933,
+  "command": [
+    "/Users/macstudio/.local/omega-shims/lean",
+    "-j1",
+    "--trust=0",
+    "-Ddebug.skipKernelTC=false",
+    "-R",
+    "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src",
+    "-o",
+    "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-build/lib/lean/Submission/Supplier/P2M/Sol/S_groupCohomology_finrank_continuousEquivariantHom_eq_finrank_invariants_linHom_dualTwist.olean",
+    "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_groupCohomology_finrank_continuousEquivariantHom_eq_finrank_invariants_linHom_dualTwist.lean"
+  ],
+  "make_wrapper_pid": 68929,
+  "make_exit": 0,
+  "make_entry_failed": false,
+  "cache_binding_valid": true,
+  "canonical_make_running_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/b87adcd135687a380966fcf0-1792260739114462000.make-running.json",
+  "canonical_make_terminal_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/b87adcd135687a380966fcf0-1792260739114462000.make-terminal.json",
+  "kernel_terminal_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/b87adcd135687a380966fcf0-1792260739114462000.kernel/result.json",
+  "direct_dependencies": [
+    {
+      "module": "Submission.Supplier.Definitions.Def_GroupCohomology_Selmer",
+      "source_sha256": "ea2f6af9262277769520a6befcffc0da39a53f4a76cc35059a557f2e38d7dbe5",
+      "object_sha256": "7b41816c8e3fb9eb5e1688b69337fe88e6431118f74f37d178c3293396e47754",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Definitions.Def_GroupCohomology_Kummer",
+      "source_sha256": "500c75799936d71b79d37a28cfc29f1c27e7f2e7e982e5e253d3f0aefa089137",
+      "object_sha256": "76a524eef253e4cf61dd7f213549aca3f47f94d7b338760062ea86435465e652",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Theorems.Thm_groupCohomology_Kummer_exists_kummerCocycle_eq_of_monoidHom_fixingSubgroup",
+      "source_sha256": "2ea255143e6832e07bb937859b552737b7d88693357c0a678e15f0d104352b03",
+      "object_sha256": "2d18ca5f6419fe2864d34aaedb4bf935bb1b97585360085b280a4deda6e819de",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Theorems.Thm_groupCohomology_Kummer_exists_pow_eq_iff_forall_kummerCocycle_eq_one",
+      "source_sha256": "386de2c4e041d9476e3e061ee0f613858090884b4a781b1313bd531141e561f4",
+      "object_sha256": "517d5fea4b580090cd0461caa54729082328412ebd1a841d36d5e50726c4e3f7",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Theorems.Thm_groupCohomology_Kummer_kummerCocycle_conj",
+      "source_sha256": "32f5afc73dfc2b70033163e0de37f60b9d54f24e0c91cdae111d0f7d105fb9b8",
+      "object_sha256": "8cefa49a0c65bc133e6781a7379f50a0db5edaa94689ff86a0295a6003abae1a",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Theorems.Thm_groupCohomology_Kummer_kummerCocycle_pow_eq_one_of_mem_fixingSubgroup",
+      "source_sha256": "816d5ab69feeb811a5ea627cf86a8889f6bbbffa3a64ed211aa9181018852d3f",
+      "object_sha256": "bfe1616c08500d0576d361245752ba12920430d3c8353176afe28f23cd4fa3c0",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Theorems.Thm_groupCohomology_Kummer_kummerCocycle_mul_of_mem_fixingSubgroup",
+      "source_sha256": "6736a01b772a21f977dab1e102670521e1e466c005811fde70ae04dfc019a46d",
+      "object_sha256": "9f1d5d906844b1cb8cda6d5996cbca45974525efc0698507ade4732808cf4806",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Theorems.Thm_groupCohomology_Kummer_kummerCocycle_mul_eq_of_apply_eq",
+      "source_sha256": "3b30640414269c179b3f40c24126eb2667e5a2bd7ccd5a10f6569cb3e501e43c",
+      "object_sha256": "25bf9ea5bb15c12877edc221773e04ac8e555273055b709c8b37a0fdc0319db8",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.P2M.Util",
+      "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+      "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+      "receipt_reused": true
+    }
+  ],
+  "stdout": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/b87adcd135687a380966fcf0-1792260739114462000.kernel/stdout.log",
+  "stderr": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/b87adcd135687a380966fcf0-1792260739114462000.kernel/stderr.log"
+}

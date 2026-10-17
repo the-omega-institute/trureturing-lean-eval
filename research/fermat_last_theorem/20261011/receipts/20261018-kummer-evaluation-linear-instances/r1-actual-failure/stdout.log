@@ -1,0 +1,13 @@
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_groupCohomology_finrank_continuousEquivariantHom_eq_finrank_invariants_linHom_dualTwist.lean:219:4: error: Type mismatch
+  AddMonoidHom.toZModLinearMap p ?m.3054
+has type
+  @LinearMap (ZMod p) (ZMod p) CommRing.toCommSemiring.toSemiring CommRing.toCommSemiring.toSemiring
+    (RingHom.id (ZMod p)) ?m.3048 ?m.3049 AddCommGroup.toAddCommMonoid AddCommGroup.toAddCommMonoid ?m.3052 ?m.3053
+but is expected to have type
+  @LinearMap (ZMod p) (ZMod p) Field.toSemifield.toSemiring Field.toSemifield.toSemiring (RingHom.id (ZMod p)) (↥W)
+    (↥((A.dualTwist χ).ρ.linHom X).invariants) W.addCommMonoid ((A.dualTwist χ).ρ.linHom X).invariants.addCommMonoid
+    AddSubgroupClass.instZModModule AddSubgroupClass.instZModModule
+'P2MW.S_groupCohomology_finrank_continuousEquivariantHom_eq_finrank_invariants_linHom_dualTwist.solution' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]

@@ -1,0 +1,61 @@
+{
+  "at": "2026-10-17T18:07:54.051289+00:00",
+  "name": "groupCohomology_finrank_continuousEquivariantHom_eq_finrank_invariants_linHom_dualTwist",
+  "candidate": "r2",
+  "card_candidate": "r1",
+  "source_replacements": [
+    [
+      "  classical\n",
+      "  classical\n  let : AddCommGroup (ZMod p) := (inferInstance : CommRing (ZMod p)).toAddCommGroup\n",
+      1
+    ],
+    [
+      "  haveI : NeZero p :=",
+      "  have : NeZero p :=",
+      1
+    ],
+    [
+      "    haveI hEfd : FiniteDimensional k E :=",
+      "    have hEfd : FiniteDimensional k E :=",
+      1
+    ],
+    [
+      "  let T : W \u2192\u2097[ZMod p] ((A.dualTwist \u03c7).\u03c1.linHom X).invariants :=\n    (AddMonoidHom.mk' (fun w => (\u27e8\u03a6 w, hinv w\u27e9 : ((A.dualTwist \u03c7).\u03c1.linHom X).invariants))\n      (fun w\u2081 w\u2082 => Subtype.ext (LinearMap.ext fun l => by\n        change Ev (w\u2081 + w\u2082) l = Ev w\u2081 l + Ev w\u2082 l\n        exact hEv_addw w\u2081 w\u2082 l))).toZModLinearMap p\n",
+      "  let Tadd : W \u2192+ ((A.dualTwist \u03c7).\u03c1.linHom X).invariants :=\n    AddMonoidHom.mk' (fun w => (\u27e8\u03a6 w, hinv w\u27e9 : ((A.dualTwist \u03c7).\u03c1.linHom X).invariants))\n      (fun w\u2081 w\u2082 => Subtype.ext (LinearMap.ext fun l => by\n        change Ev (w\u2081 + w\u2082) l = Ev w\u2081 l + Ev w\u2082 l\n        exact hEv_addw w\u2081 w\u2082 l))\n  let T : W \u2192\u2097[ZMod p] ((A.dualTwist \u03c7).\u03c1.linHom X).invariants :=\n    { Tadd with\n      map_smul' := fun a w => by\n        change Tadd (a \u2022 w) = a \u2022 Tadd w\n        rw [\u2190 ZMod.natCast_zmod_val a]\n        simp only [Nat.cast_smul_eq_nsmul, map_nsmul] }\n",
+      1
+    ]
+  ],
+  "card_replacements": [],
+  "baseline_byte_identical_to_pinned_supplier": true,
+  "pinned_supplier_source_and_card_preserved": true,
+  "full_original_statements_hypotheses_and_all_proof_branches_preserved": true,
+  "no_linter_suppression_added": true,
+  "verification_pending": false,
+  "installed": true,
+  "actual_failure": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/official-layout/terminal-proof-repairs/20261018-kummer-evaluation-linear-instances/previous-actual-failure",
+  "change": "Reuse the verified local scalar AddCommGroup pin to the existing CommRing projection. Keep the complete original Kummer evaluation construction, all original hypotheses, both linear-map constructions and all proof branches. Replace exactly two proposition-local haveI declarations with have as requested by the actual style linter. Add final recursive axiom queries. Verification pending in the unchanged single-job natural make queue. Revision r2 preserves exactly the same T evaluation function and original additive proof, packages it as Tadd, and proves ZMod linearity directly from natCast_zmod_val and preservation of nsmul. This avoids the second hard-coded ring/field semiring conversion while preserving all remaining original proof branches.",
+  "max_active_flt_jobs": 1,
+  "lean_threads": 1,
+  "full_original_complete": false,
+  "official_new_solve_credit": 0,
+  "active_import_closure_excluded": [
+    "Submission.Supplier.P2M.Sol.S_groupCohomology_bijective_theta_dualTwist_of_res_of_isOpen"
+  ],
+  "active_transitive_import_closure_size": 64,
+  "actual_live_descendant_sources": [
+    {
+      "pid": 21660,
+      "source": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_groupCohomology_bijective_theta_dualTwist_of_res_of_isOpen.lean"
+    }
+  ],
+  "all_four_canonical_adapted_source_card_modules_excluded": [
+    "P2M.Sol.S_groupCohomology_finrank_continuousEquivariantHom_eq_finrank_invariants_linHom_dualTwist",
+    "Submission.Supplier.P2M.Sol.S_groupCohomology_finrank_continuousEquivariantHom_eq_finrank_invariants_linHom_dualTwist",
+    "Submission.Supplier.Theorems.Thm_groupCohomology_finrank_continuousEquivariantHom_eq_finrank_invariants_linHom_dualTwist",
+    "Theorems.Thm_groupCohomology_finrank_continuousEquivariantHom_eq_finrank_invariants_linHom_dualTwist"
+  ],
+  "updated_at": "2026-10-17T18:10:27.135298+00:00",
+  "r1_actual_failure": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/official-layout/terminal-proof-repairs/20261018-kummer-evaluation-linear-instances/r1-actual-failure",
+  "r1_actual_errors": 1,
+  "r1_actual_warnings": 0
+}

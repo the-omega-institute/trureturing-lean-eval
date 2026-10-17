@@ -1,0 +1,16 @@
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_groupCohomology_finrank_continuousEquivariantHom_eq_finrank_invariants_linHom_dualTwist.lean:46:2: warning: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_groupCohomology_finrank_continuousEquivariantHom_eq_finrank_invariants_linHom_dualTwist.lean:143:4: error: Type mismatch
+  AddMonoidHom.toZModLinearMap p ?m.1735
+has type
+  @LinearMap (ZMod p) (ZMod p) CommRing.toCommSemiring.toSemiring CommRing.toCommSemiring.toSemiring
+    (RingHom.id (ZMod p)) ?m.1729 ?m.1730 AddCommGroup.toAddCommMonoid AddCommGroup.toAddCommMonoid ?m.1733 ?m.1734
+but is expected to have type
+  @LinearMap (ZMod p) (ZMod p) Field.toSemifield.toSemiring Field.toSemifield.toSemiring (RingHom.id (ZMod p))
+    (Dual (ZMod p) ↑A) VX LinearMap.addCommMonoid inst✝¹.toAddCommMonoid LinearMap.module inst✝
