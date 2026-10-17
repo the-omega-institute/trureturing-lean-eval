@@ -1,0 +1,10 @@
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_Padic_dvd_of_prime_zpow_mul_one_add_prime_zpow_eq_pow.lean:63:47: error: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  ?a - ?a
+in the target expression
+  1 - 1 = 0
+
+p : ℕ
+hp : Fact (Nat.Prime p)
+z : ℤ_[p]
+hz : toZMod z = 1
+⊢ 1 - 1 = 0
