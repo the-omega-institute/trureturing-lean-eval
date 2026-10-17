@@ -1,0 +1,68 @@
+{
+  "at": "2026-10-17T16:34:39.182816+00:00",
+  "name": "WeierstrassProjModel_projModelStrCR_smoothOfRelativeDimension_one",
+  "candidate": "r2",
+  "card_candidate": "r1",
+  "source_replacements": [
+    [
+      "  haveI : Nontrivial (Polynomial (Polynomial R) \u29f8 M) :=\n",
+      "  have : Nontrivial (Polynomial (Polynomial R) \u29f8 M) :=\n",
+      1
+    ],
+    [
+      "  haveI := hmax\n",
+      "  have := hmax\n",
+      1
+    ],
+    [
+      "  letI : Field (MvPolynomial (Fin 2) R \u29f8 M) := Ideal.Quotient.field M\n",
+      "  let : Field (MvPolynomial (Fin 2) R \u29f8 M) := Ideal.Quotient.field M\n",
+      1
+    ],
+    [
+      "      \u2208 Ideal.span {Ideal.Quotient.mk (projModelHomogeneousIdealCR V).toIdeal\n          (X 2 : MvPolynomial (Fin 3) R)} := by",
+      "      \u2208 Ideal.span (Set.singleton (Ideal.Quotient.mk (projModelHomogeneousIdealCR V).toIdeal\n          (X 2 : MvPolynomial (Fin 3) R))) := by",
+      1
+    ],
+    [
+      "      \u2208 Ideal.span (Set.singleton (Ideal.Quotient.mk (projModelHomogeneousIdealCR V).toIdeal\n          (X 2 : MvPolynomial (Fin 3) R))) := by",
+      "      \u2208 Ideal.span {(Ideal.Quotient.mk (projModelHomogeneousIdealCR V).toIdeal\n          (X 2 : MvPolynomial (Fin 3) R))} := by",
+      1
+    ]
+  ],
+  "card_replacements": [],
+  "baseline_byte_identical_to_pinned_supplier": true,
+  "pinned_supplier_source_and_card_preserved": true,
+  "verification_pending": false,
+  "installed": true,
+  "no_linter_suppression_added": true,
+  "complete_original_proof_preserved": true,
+  "full_original_statement_and_hypotheses_preserved": true,
+  "max_active_flt_jobs": 1,
+  "lean_threads": 1,
+  "original_actual_errors": 1,
+  "original_actual_warnings": 4,
+  "original_kernel_seconds": 12.244784583,
+  "change": "Retain complete original862-line projective smoothness proof through the two affine charts, Jacobian/standard-smooth constructions and open-cover descent. Public source/card statements and every hypothesis unchanged. Disambiguate one internal singleton-set expression with explicit Set.singleton, and update3 actually flagged local haveI/letI declarations. Original parse-recovery sorry warning must disappear;no admitted proof accepted. No suppression added;pending natural verification. Revision r2 uses ordinary singleton notation with its entire element parenthesized. This removes both the original binder-parser ambiguity and the r1 rewrite-transparency mismatch introduced by explicit Set.singleton. Original polynomial identity, ideal-membership proof and all subsequent smoothness constructions retained. Actual r1 rewrite failure and resulting sorryAx diagnostic archived;no sorryAx accepted;current verification pending.",
+  "full_original_complete": false,
+  "official_new_solve_credit": 0,
+  "active_import_closure_excluded": [
+    "Submission.Supplier.P2M.Sol.S_WeierstrassProjModel_projModel_isPullback_baseChange"
+  ],
+  "active_transitive_import_closure_size": 14,
+  "actual_live_descendant_sources": [
+    {
+      "pid": 98476,
+      "source": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_WeierstrassProjModel_projModel_isPullback_baseChange.lean"
+    }
+  ],
+  "all_four_canonical_adapted_source_card_modules_excluded": [
+    "P2M.Sol.S_WeierstrassProjModel_projModelStrCR_smoothOfRelativeDimension_one",
+    "Submission.Supplier.P2M.Sol.S_WeierstrassProjModel_projModelStrCR_smoothOfRelativeDimension_one",
+    "Submission.Supplier.Theorems.Thm_WeierstrassProjModel_projModelStrCR_smoothOfRelativeDimension_one",
+    "Theorems.Thm_WeierstrassProjModel_projModelStrCR_smoothOfRelativeDimension_one"
+  ],
+  "r1_source_actual_errors": 1,
+  "r1_source_actual_warnings": 0,
+  "r1_source_kernel_seconds": 12.835207083
+}

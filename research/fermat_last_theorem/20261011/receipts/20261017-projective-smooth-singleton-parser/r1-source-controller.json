@@ -1,0 +1,62 @@
+{
+  "sha256": "206fff58e19564fbbdc35bc4f779ef9ad198a187c0161539c1f05d7b52d38935",
+  "exit": 1,
+  "empty_output_retry_done": false,
+  "source_sha256_after": "206fff58e19564fbbdc35bc4f779ef9ad198a187c0161539c1f05d7b52d38935",
+  "source_unchanged": true,
+  "olean_sha256": null,
+  "seconds": 22.131180625001434,
+  "pid": 38095,
+  "command": [
+    "/Users/macstudio/.local/omega-shims/lean",
+    "-j1",
+    "--trust=0",
+    "-Ddebug.skipKernelTC=false",
+    "-R",
+    "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src",
+    "-o",
+    "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-build/lib/lean/Submission/Supplier/P2M/Sol/S_WeierstrassProjModel_projModelStrCR_smoothOfRelativeDimension_one.olean",
+    "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_WeierstrassProjModel_projModelStrCR_smoothOfRelativeDimension_one.lean"
+  ],
+  "make_wrapper_pid": 37577,
+  "make_exit": 2,
+  "make_entry_failed": false,
+  "cache_binding_valid": true,
+  "canonical_make_running_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/d9ee668041a0e38ff5494263-1792254769373121000.make-running.json",
+  "canonical_make_terminal_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/d9ee668041a0e38ff5494263-1792254769373121000.make-terminal.json",
+  "kernel_terminal_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/d9ee668041a0e38ff5494263-1792254769373121000.kernel/result.json",
+  "direct_dependencies": [
+    {
+      "module": "Submission.Supplier.Definitions.Def_WeierstrassCurve_ProjModel",
+      "source_sha256": "cc898544826274a2df206f7c9af8bf557ec5c8c1df145f4a4d6425b8b7e66c64",
+      "object_sha256": "2f88c3259cd36659db71f926da2ad8e1fa5ac4cfb8e49c533005e4522781a44e",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Definitions.Def_WeierstrassCurve_ProjModel_GroupLawVocabulary",
+      "source_sha256": "4984d5fdbd6d5a87e8bf237afd69cd29e127c702bee1e5fe55494745bb6be678",
+      "object_sha256": "151df36fa57481ec5638dea9112aaafad9e127ad4bc835ff1b501f351944cbc5",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Theorems.Thm_WeierstrassProjModel_exists_zChartAway_equiv_coordinateRing",
+      "source_sha256": "ef2f411930e88dda79cbe7b82f00e2bec8a535dfcdcc723af920eba71c281b03",
+      "object_sha256": "ce976486ffa9672fe158dac211e593f3b4f8de8a609086a6b9c3da144fafb267",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Theorems.Thm_WeierstrassProjModel_exists_yChartAway_equiv_coordinateRing",
+      "source_sha256": "1caad60d1f206ce1eeeb195bf91272b4493857afa1a0db9f9352c0a49bb9f262",
+      "object_sha256": "283e8bebf37ebd8f70c47148fa5e8262d7a77d454f76734a1de51c4783733e7d",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.P2M.Util",
+      "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+      "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+      "receipt_reused": true
+    }
+  ],
+  "stdout": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/d9ee668041a0e38ff5494263-1792254769373121000.kernel/stdout.log",
+  "stderr": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/d9ee668041a0e38ff5494263-1792254769373121000.kernel/stderr.log"
+}

@@ -1,0 +1,24 @@
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_WeierstrassProjModel_projModelStrCR_smoothOfRelativeDimension_one.lean:133:11: error: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  @Membership.mem ?m.182 (Ideal ?m.182) SetLike.instMembership (Ideal.span {?m.185}) ?m.184
+in the target expression
+  @Membership.mem (MvPolynomial (Fin 3) R ⧸ (projModelHomogeneousIdealCR V).toIdeal)
+    (Ideal (MvPolynomial (Fin 3) R ⧸ (projModelHomogeneousIdealCR V).toIdeal)) SetLike.instMembership
+    (Ideal.span (Set.singleton ((Ideal.Quotient.mk (projModelHomogeneousIdealCR V).toIdeal) (X 2))))
+    ((Ideal.Quotient.mk (projModelHomogeneousIdealCR V).toIdeal) (X 2) *
+      (Ideal.Quotient.mk (projModelHomogeneousIdealCR V).toIdeal) (srd1_pmsCR_zCofactor V))
+
+R : Type u
+inst✝ : CommRing R
+V : WeierstrassCurve.Projective R
+hpoly : (Ideal.Quotient.mk (projModelHomogeneousIdealCR V).toIdeal) V.polynomial = 0
+hid :
+  (Ideal.Quotient.mk (projModelHomogeneousIdealCR V).toIdeal) (X 0) ^ 3 =
+    (Ideal.Quotient.mk (projModelHomogeneousIdealCR V).toIdeal) (X 2) *
+      (Ideal.Quotient.mk (projModelHomogeneousIdealCR V).toIdeal) (srd1_pmsCR_zCofactor V)
+⊢ (Ideal.Quotient.mk (projModelHomogeneousIdealCR V).toIdeal) (X 2) *
+      (Ideal.Quotient.mk (projModelHomogeneousIdealCR V).toIdeal) (srd1_pmsCR_zCofactor V) ∈
+    Ideal.span (Set.singleton ((Ideal.Quotient.mk (projModelHomogeneousIdealCR V).toIdeal) (X 2)))
+'P2MW.S_WeierstrassProjModel_projModelStrCR_smoothOfRelativeDimension_one.solution' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
