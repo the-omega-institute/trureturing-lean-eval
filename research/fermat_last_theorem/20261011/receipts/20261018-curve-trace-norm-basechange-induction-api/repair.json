@@ -1,0 +1,44 @@
+{
+  "at": "2026-10-17T22:17:31.528583+00:00",
+  "name": "AlgebraicCurve_traceDiff_inv_smul_D_eq_inv_norm_smul_D_norm",
+  "candidate": "r1",
+  "card_candidate": "r1",
+  "source_replacements": [
+    [
+      "  induction n using (isBaseChange K F F').inductionOn with\n  | zero => intro s; simp\n",
+      "  by_cases hn : n = 0\n  \u00b7 subst n\n    intro s\n    simp\n  clear hn\n  induction n using (isBaseChange K F F').inductionOn with\n",
+      1
+    ]
+  ],
+  "card_replacements": [],
+  "installed": true,
+  "verification_pending": false,
+  "baseline_byte_identical_to_pinned_supplier": true,
+  "supplier_repository": "anthropics/fermats-last-theorem",
+  "supplier_revision": "6e837e75355538c7f80bab5b956861e86c4eacc2",
+  "pinned_supplier_source_and_card_preserved": true,
+  "full_original_statement_and_hypotheses_preserved": true,
+  "original_solution_declaration_and_proof_byte_identical": true,
+  "complete_original_proof_preserved": true,
+  "original_zero_case_proof_retained_before_induction": true,
+  "no_linter_suppression_added": true,
+  "original_actual_errors": 1,
+  "original_actual_warnings": 0,
+  "actual_failure": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/official-layout/terminal-proof-repairs/20261018-curve-trace-norm-basechange-induction-api/previous-actual-failure",
+  "max_active_flt_jobs": 1,
+  "lean_threads": 1,
+  "full_original_complete": false,
+  "official_new_solve_credit": 0,
+  "change": "Adapt IsBaseChange.inductionOn to its actual tmul/smul/add API. Retain the original zero-vector proof as an explicit preliminary case, clear its unused complement hypothesis, and keep every other induction branch unchanged. Entire public solution and card statement/proof unchanged apart from appended axiom queries. Await natural single-job source/card make/kernel verification.",
+  "active_import_closure_excluded": [
+    "Submission.Supplier.Theorems.Thm_AlgebraicCurve_AlgEquiv_eq_one_of_forall_smul_place_eq"
+  ],
+  "active_transitive_import_closure_size": 33,
+  "actual_live_descendant_sources": [],
+  "all_four_canonical_adapted_source_card_modules_excluded": [
+    "P2M.Sol.S_AlgebraicCurve_traceDiff_inv_smul_D_eq_inv_norm_smul_D_norm",
+    "Submission.Supplier.P2M.Sol.S_AlgebraicCurve_traceDiff_inv_smul_D_eq_inv_norm_smul_D_norm",
+    "Submission.Supplier.Theorems.Thm_AlgebraicCurve_traceDiff_inv_smul_D_eq_inv_norm_smul_D_norm",
+    "Theorems.Thm_AlgebraicCurve_traceDiff_inv_smul_D_eq_inv_norm_smul_D_norm"
+  ]
+}
