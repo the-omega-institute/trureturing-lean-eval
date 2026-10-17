@@ -1,0 +1,54 @@
+import Mathlib
+import Submission.Supplier.P2M.Util
+
+-- Elaborator settings from the recovered exact-pin FLT controller.
+set_option autoImplicit false
+set_option maxHeartbeats 4000000
+set_option synthInstance.maxHeartbeats 400000
+set_option backward.isDefEq.respectTransparency.types false
+set_option debug.skipKernelTC false
+-- End recovered elaborator settings.
+namespace P2MW.S_AlgebraicGeometry_LocallyQuasiFinite_ringKrullDim_stalk_quotient_eq_zero
+
+set_option autoImplicit false
+
+universe u
+
+open CategoryTheory AlgebraicGeometry IsLocalRing
+
+namespace LQFfibre
+
+open scoped TensorProduct
+
+theorem ringKrullDim_quotient_map_maximalIdeal_eq_zero
+    (R S : Type*) [CommRing R] [CommRing S] [IsLocalRing R] [IsLocalRing S] [Algebra R S]
+    [IsLocalHom (algebraMap R S)] [Algebra.QuasiFinite R S] :
+    ringKrullDim (S ⧸ (maximalIdeal R).map (algebraMap R S)) = 0 := by
+  let e : (maximalIdeal R).Fiber S ≃ₐ[R] S ⧸ (maximalIdeal R).map (algebraMap R S) :=
+    (Algebra.TensorProduct.congr (.symm <| .ofBijective _
+      (Ideal.bijective_algebraMap_quotient_residueField (maximalIdeal R))) .refl).trans <|
+    (Algebra.TensorProduct.comm _ _ _).trans
+    ((Algebra.TensorProduct.quotIdealMapEquivTensorQuot S (maximalIdeal R)).symm.restrictScalars R)
+  have : IsArtinianRing ((maximalIdeal R).Fiber S) := inferInstance
+  have hA : IsArtinianRing (S ⧸ (maximalIdeal R).map (algebraMap R S)) := e.surjective.isArtinianRing
+  have : Ring.KrullDimLE 0 (S ⧸ (maximalIdeal R).map (algebraMap R S)) :=
+    (isArtinianRing_iff_isNoetherianRing_krullDimLE_zero.mp hA).2
+  have : Nontrivial (S ⧸ (maximalIdeal R).map (algebraMap R S)) := by
+    rw [Ideal.Quotient.nontrivial_iff]
+    exact ((IsLocalRing.map_maximalIdeal_le (algebraMap R S)).trans_lt
+      (inferInstance : (maximalIdeal S).IsMaximal).ne_top.lt_top).ne
+  exact ringKrullDimZero_iff_ringKrullDim_eq_zero.mp inferInstance
+
+end LQFfibre
+
+theorem solution
+    {X Y : Scheme.{u}} (g : X ⟶ Y) [LocallyQuasiFinite g] (x : X) :
+    ringKrullDim ((X.presheaf.stalk x) ⧸
+      (maximalIdeal (Y.presheaf.stalk (g.base x))).map (g.stalkMap x).hom) = 0 := by
+  let : Algebra (Y.presheaf.stalk (g.base x)) (X.presheaf.stalk x) := (g.stalkMap x).hom.toAlgebra
+  have : Algebra.QuasiFinite (Y.presheaf.stalk (g.base x)) (X.presheaf.stalk x) := g.quasiFiniteAt x
+  have : IsLocalHom (algebraMap (Y.presheaf.stalk (g.base x)) (X.presheaf.stalk x)) :=
+    inferInstanceAs (IsLocalHom (g.stalkMap x).hom)
+  exact LQFfibre.ringKrullDim_quotient_map_maximalIdeal_eq_zero (Y.presheaf.stalk (g.base x)) (X.presheaf.stalk x)
+
+#print axioms solution

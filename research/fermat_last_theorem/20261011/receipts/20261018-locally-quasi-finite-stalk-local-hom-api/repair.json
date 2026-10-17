@@ -1,0 +1,53 @@
+{
+  "at": "2026-10-17T19:30:58.514260+00:00",
+  "name": "AlgebraicGeometry_LocallyQuasiFinite_ringKrullDim_stalk_quotient_eq_zero",
+  "candidate": "r1",
+  "card_candidate": "r1",
+  "source_replacements": [
+    [
+      "(((local_hom_TFAE (algebraMap R S)).out 0 2 rfl rfl).mp inferInstance)",
+      "(IsLocalRing.map_maximalIdeal_le (algebraMap R S))",
+      1
+    ],
+    [
+      "haveI",
+      "have",
+      6
+    ],
+    [
+      "letI",
+      "let",
+      1
+    ]
+  ],
+  "card_replacements": [],
+  "baseline_byte_identical_to_pinned_supplier": true,
+  "pinned_supplier_source_and_card_preserved": true,
+  "full_original_statements_hypotheses_and_all_proof_branches_preserved": true,
+  "no_linter_suppression_added": true,
+  "verification_pending": false,
+  "installed": true,
+  "actual_failure": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/official-layout/terminal-proof-repairs/20261018-locally-quasi-finite-stalk-local-hom-api/previous-actual-failure",
+  "change": "Reuse the existing accepted IsFinite stalk-quotient repair: replace only the old zero-indexed local_hom_TFAE projection with the current named theorem IsLocalRing.map_maximalIdeal_le. Preserve the complete residue-fiber/quotient algebra equivalence, Artinianity transport, quotient nontriviality and Krull-dimension-zero proof, including the full locally-quasi-finite stalk specialization and all original hypotheses and conclusions. Update exactly six proposition-local haveI declarations and one proposition-local letI. Append source/card recursive axiom queries. Pending natural single-job make/kernel verification.",
+  "library_precedent": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/official-layout/terminal-proof-repairs/20261016-finite-stalk-quotient-local-hom-api/repair.json",
+  "max_active_flt_jobs": 1,
+  "lean_threads": 1,
+  "full_original_complete": false,
+  "official_new_solve_credit": 0,
+  "active_import_closure_excluded": [
+    "Submission.Supplier.P2M.Sol.S_TateCurve_pointX_zpow_mul"
+  ],
+  "active_transitive_import_closure_size": 6,
+  "actual_live_descendant_sources": [
+    {
+      "pid": 21292,
+      "source": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_TateCurve_pointX_zpow_mul.lean"
+    }
+  ],
+  "all_four_canonical_adapted_source_card_modules_excluded": [
+    "P2M.Sol.S_AlgebraicGeometry_LocallyQuasiFinite_ringKrullDim_stalk_quotient_eq_zero",
+    "Submission.Supplier.P2M.Sol.S_AlgebraicGeometry_LocallyQuasiFinite_ringKrullDim_stalk_quotient_eq_zero",
+    "Submission.Supplier.Theorems.Thm_AlgebraicGeometry_LocallyQuasiFinite_ringKrullDim_stalk_quotient_eq_zero",
+    "Theorems.Thm_AlgebraicGeometry_LocallyQuasiFinite_ringKrullDim_stalk_quotient_eq_zero"
+  ]
+}
