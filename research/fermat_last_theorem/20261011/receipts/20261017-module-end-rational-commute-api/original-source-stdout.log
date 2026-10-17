@@ -1,0 +1,168 @@
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_Module_End_exists_mem_adjoin_aeval_ne_zero_mul_eq_of_ratForm_of_multiplicityOne.lean:24:0: warning: automatically included section variable(s) unused in theorem `P2MW.S_Module_End_exists_mem_adjoin_aeval_ne_zero_mul_eq_of_ratForm_of_multiplicityOne.RatGoodGen.finite_VQ`:
+  [CharZero L]
+  [IsScalarTower ℚ L V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [CharZero L] [IsScalarTower ℚ L V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_Module_End_exists_mem_adjoin_aeval_ne_zero_mul_eq_of_ratForm_of_multiplicityOne.lean:44:0: warning: automatically included section variable(s) unused in theorem `P2MW.S_Module_End_exists_mem_adjoin_aeval_ne_zero_mul_eq_of_ratForm_of_multiplicityOne.RatGoodGen.mapsTo`:
+  [CharZero L]
+  [IsScalarTower ℚ L V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [CharZero L] [IsScalarTower ℚ L V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_Module_End_exists_mem_adjoin_aeval_ne_zero_mul_eq_of_ratForm_of_multiplicityOne.lean:85:8: error: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  ?f ?x * ?f ?y
+in the target expression
+  Commute ((fun g => (rhoQ VQ ρ hrat) (MvPolynomial.X ↑g)) a) ((fun g => (rhoQ VQ ρ hrat) (MvPolynomial.X ↑g)) b)
+
+L : Type u_1
+V : Type u_2
+σ : Type u_3
+inst✝⁵ : Field L
+inst✝⁴ : CharZero L
+inst✝³ : AddCommGroup V
+inst✝² : Module L V
+inst✝¹ : Module ℚ V
+inst✝ : IsScalarTower ℚ L V
+VQ : Submodule ℚ V
+ρ : MvPolynomial σ ℤ →+* Module.End L V
+hrat : ∀ (i : σ), ∀ v ∈ VQ, (ρ (MvPolynomial.X i)) v ∈ VQ
+G : Set σ
+lam : σ → L
+a b : ↑G
+a✝ : (fun g => (rhoQ VQ ρ hrat) (MvPolynomial.X ↑g)) a ≠ (fun g => (rhoQ VQ ρ hrat) (MvPolynomial.X ↑g)) b
+⊢ Commute ((fun g => (rhoQ VQ ρ hrat) (MvPolynomial.X ↑g)) a) ((fun g => (rhoQ VQ ρ hrat) (MvPolynomial.X ↑g)) b)
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_Module_End_exists_mem_adjoin_aeval_ne_zero_mul_eq_of_ratForm_of_multiplicityOne.lean:93:8: error: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  ?f ?x * ?f ?y
+in the target expression
+  Commute ((fun g => ρ (MvPolynomial.X ↑g)) a) ((fun g => ρ (MvPolynomial.X ↑g)) b)
+
+L : Type u_1
+V : Type u_2
+σ : Type u_3
+inst✝⁵ : Field L
+inst✝⁴ : CharZero L
+inst✝³ : AddCommGroup V
+inst✝² : Module L V
+inst✝¹ : Module ℚ V
+inst✝ : IsScalarTower ℚ L V
+VQ : Submodule ℚ V
+ρ : MvPolynomial σ ℤ →+* Module.End L V
+hrat : ∀ (i : σ), ∀ v ∈ VQ, (ρ (MvPolynomial.X i)) v ∈ VQ
+G : Set σ
+lam : σ → L
+a b : ↑G
+a✝ : (fun g => ρ (MvPolynomial.X ↑g)) a ≠ (fun g => ρ (MvPolynomial.X ↑g)) b
+⊢ Commute ((fun g => ρ (MvPolynomial.X ↑g)) a) ((fun g => ρ (MvPolynomial.X ↑g)) b)
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_Module_End_exists_mem_adjoin_aeval_ne_zero_mul_eq_of_ratForm_of_multiplicityOne.lean:168:17: warning: This simp argument is unused:
+  RingHom.coe_comp
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [Function.comp_apply, MvPolynomial.map_C, eq_intCast, map_intCast, AlgHom.toRingHom_eq_coe,
+    RingHom.coe_coe]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_Module_End_exists_mem_adjoin_aeval_ne_zero_mul_eq_of_ratForm_of_multiplicityOne.lean:168:35: warning: This simp argument is unused:
+  Function.comp_apply
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [RingHom.coe_comp, MvPolynomial.map_C, eq_intCast, map_intCast, AlgHom.toRingHom_eq_coe,
+    RingHom.coe_coe]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_Module_End_exists_mem_adjoin_aeval_ne_zero_mul_eq_of_ratForm_of_multiplicityOne.lean:168:56: warning: This simp argument is unused:
+  MvPolynomial.map_C
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [RingHom.coe_comp, Function.comp_apply, eq_intCast, map_intCast, AlgHom.toRingHom_eq_coe,
+    RingHom.coe_coe]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_Module_End_exists_mem_adjoin_aeval_ne_zero_mul_eq_of_ratForm_of_multiplicityOne.lean:169:33: warning: This simp argument is unused:
+  RingHom.coe_coe
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [RingHom.coe_comp, Function.comp_apply, MvPolynomial.map_C, eq_intCast, map_intCast,
+    AlgHom.toRingHom_eq_coe]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_Module_End_exists_mem_adjoin_aeval_ne_zero_mul_eq_of_ratForm_of_multiplicityOne.lean:274:18: warning: `Polynomial.finset_sum_coeff` has been deprecated: Use `Polynomial.finsetSum_coeff` instead
+
+Hint: Replace the deprecated name:
+  P̵o̵l̵y̵n̵o̵m̵i̵a̵l̵.̵f̵i̵n̵s̵e̵t̵_̵s̵u̵m̵_̵c̵o̵e̵f̵f̵f̲i̲n̲s̲e̲t̲S̲u̲m̲_̲c̲o̲e̲f̲f̲
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_Module_End_exists_mem_adjoin_aeval_ne_zero_mul_eq_of_ratForm_of_multiplicityOne.lean:275:47: warning: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_Module_End_exists_mem_adjoin_aeval_ne_zero_mul_eq_of_ratForm_of_multiplicityOne.lean:281:13: warning: `Polynomial.finset_sum_coeff` has been deprecated: Use `Polynomial.finsetSum_coeff` instead
+
+Hint: Replace the deprecated name:
+  P̵o̵l̵y̵n̵o̵m̵i̵a̵l̵.̵f̵i̵n̵s̵e̵t̵_̵s̵u̵m̵_̵c̵o̵e̵f̵f̵f̲i̲n̲s̲e̲t̲S̲u̲m̲_̲c̲o̲e̲f̲f̲
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_Module_End_exists_mem_adjoin_aeval_ne_zero_mul_eq_of_ratForm_of_multiplicityOne.lean:282:45: warning: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_Module_End_exists_mem_adjoin_aeval_ne_zero_mul_eq_of_ratForm_of_multiplicityOne.lean:307:2: warning: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_Module_End_exists_mem_adjoin_aeval_ne_zero_mul_eq_of_ratForm_of_multiplicityOne.lean:345:2: warning: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_Module_End_exists_mem_adjoin_aeval_ne_zero_mul_eq_of_ratForm_of_multiplicityOne.lean:347:2: warning: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_Module_End_exists_mem_adjoin_aeval_ne_zero_mul_eq_of_ratForm_of_multiplicityOne.lean:373:2: warning: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_Module_End_exists_mem_adjoin_aeval_ne_zero_mul_eq_of_ratForm_of_multiplicityOne.lean:421:2: warning: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_Module_End_exists_mem_adjoin_aeval_ne_zero_mul_eq_of_ratForm_of_multiplicityOne.lean:428:2: warning: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_Module_End_exists_mem_adjoin_aeval_ne_zero_mul_eq_of_ratForm_of_multiplicityOne.lean:710:4: warning: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_Module_End_exists_mem_adjoin_aeval_ne_zero_mul_eq_of_ratForm_of_multiplicityOne.lean:793:37: warning: This simp argument is unused:
+  coe_rhoQ
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [Module.End.mul_apply] at this ⊢
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`

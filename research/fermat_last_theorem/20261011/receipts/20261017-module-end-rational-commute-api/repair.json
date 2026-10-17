@@ -1,0 +1,118 @@
+{
+  "at": "2026-10-17T09:35:20.538183+00:00",
+  "name": "Module_End_exists_mem_adjoin_aeval_ne_zero_mul_eq_of_ratForm_of_multiplicityOne",
+  "candidate": "r1",
+  "card_candidate": "r1",
+  "source_replacements": [
+    [
+      "theorem finite_VQ [FiniteDimensional L V]",
+      "omit [CharZero L] [IsScalarTower \u211a L V] in\ntheorem finite_VQ [FiniteDimensional L V]",
+      1
+    ],
+    [
+      "include hrat in\ntheorem mapsTo",
+      "include hrat in\nomit [CharZero L] [IsScalarTower \u211a L V] in\ntheorem mapsTo",
+      1
+    ],
+    [
+      "    rintro _ \u27e8a, rfl\u27e9 _ \u27e8b, rfl\u27e9 _\n    rw [\u2190 map_mul, \u2190 map_mul, mul_comm]",
+      "    rintro _ \u27e8a, rfl\u27e9 _ \u27e8b, rfl\u27e9 _\n    rw [commute_iff_eq, \u2190 map_mul, \u2190 map_mul, mul_comm]",
+      2
+    ],
+    [
+      "    \u00b7 simp only [RingHom.coe_comp, Function.comp_apply, MvPolynomial.map_C, eq_intCast, map_intCast,\n        AlgHom.toRingHom_eq_coe, RingHom.coe_coe]",
+      "    \u00b7 simp only [eq_intCast, map_intCast, AlgHom.toRingHom_eq_coe]",
+      1
+    ],
+    [
+      "Polynomial.finset_sum_coeff",
+      "Polynomial.finsetSum_coeff",
+      2
+    ],
+    [
+      "if_neg (fun h => hij (Fin.ext h.symm))",
+      "ite_eq_right (fun h => hij (Fin.ext h.symm))",
+      2
+    ],
+    [
+      "  haveI hfin : Module.Finite \u211a VQ",
+      "  have hfin : Module.Finite \u211a VQ",
+      1
+    ],
+    [
+      "  haveI : Module.Finite \u211a T'",
+      "  have : Module.Finite \u211a T'",
+      1
+    ],
+    [
+      "  haveI : IsArtinianRing T'",
+      "  have : IsArtinianRing T'",
+      1
+    ],
+    [
+      "  haveI : IsReduced T'",
+      "  have : IsReduced T'",
+      1
+    ],
+    [
+      "  haveI : Module.Finite \u211a F\u2080",
+      "  have : Module.Finite \u211a F\u2080",
+      1
+    ],
+    [
+      "  haveI : FiniteDimensional \u211a F\u2081",
+      "  have : FiniteDimensional \u211a F\u2081",
+      1
+    ],
+    [
+      "    push_neg at h",
+      "    push Not at h",
+      1
+    ],
+    [
+      "    simp only [Module.End.mul_apply, coe_rhoQ] at this \u22a2",
+      "    simp only [Module.End.mul_apply] at this \u22a2",
+      1
+    ]
+  ],
+  "card_replacements": [],
+  "baseline_byte_identical_to_pinned_supplier": false,
+  "pinned_supplier_to_baseline_source_replacements": [
+    [
+      "    rintro _ \u27e8a, rfl\u27e9 _ \u27e8b, rfl\u27e9\n",
+      "    rintro _ \u27e8a, rfl\u27e9 _ \u27e8b, rfl\u27e9 _\n",
+      2
+    ]
+  ],
+  "pinned_supplier_to_baseline_card_replacements": [],
+  "pinned_supplier_source_and_card_preserved": true,
+  "verification_pending": false,
+  "installed": true,
+  "no_linter_suppression_added": true,
+  "complete_original_proof_preserved": true,
+  "full_original_statement_and_hypotheses_preserved": true,
+  "max_active_flt_jobs": 1,
+  "lean_threads": 1,
+  "original_actual_errors": 2,
+  "original_actual_warnings": 18,
+  "original_kernel_seconds": 50.68917525,
+  "change": "Expose Commute via commute_iff_eq before the unchanged map_mul commutativity proof. Canonical baseline differs from pinned supplier only by the two prior pairwise-inequality introductions, explicitly checked and recorded. Omit unused section instances only from finite_VQ/mapsTo helper signatures; literal solution/card hypotheses unchanged. Replace deprecated APIs, proposition-valued haveI, and actual unused simp arguments. Preserve full rational-form multiplicity-one proof. Await natural canonical source/card checks.",
+  "full_original_complete": false,
+  "official_new_solve_credit": 0,
+  "active_import_closure_excluded": [
+    "Submission.Supplier.Theorems.Thm_ModularCurve_periodMapOf_gammaH_eq_diamondRaw_of_coe_eq_slash"
+  ],
+  "active_transitive_import_closure_size": 74,
+  "actual_live_descendant_sources": [
+    {
+      "pid": 22937,
+      "source": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/Theorems/Thm_ModularCurve_periodMapOf_gammaH_eq_diamondRaw_of_coe_eq_slash.lean"
+    }
+  ],
+  "all_four_canonical_adapted_source_card_modules_excluded": [
+    "P2M.Sol.S_Module_End_exists_mem_adjoin_aeval_ne_zero_mul_eq_of_ratForm_of_multiplicityOne",
+    "Submission.Supplier.P2M.Sol.S_Module_End_exists_mem_adjoin_aeval_ne_zero_mul_eq_of_ratForm_of_multiplicityOne",
+    "Submission.Supplier.Theorems.Thm_Module_End_exists_mem_adjoin_aeval_ne_zero_mul_eq_of_ratForm_of_multiplicityOne",
+    "Theorems.Thm_Module_End_exists_mem_adjoin_aeval_ne_zero_mul_eq_of_ratForm_of_multiplicityOne"
+  ]
+}
