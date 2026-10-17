@@ -1,0 +1,146 @@
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_groupCohomology_nonempty_invariants_tensor_linearEquiv_eqLevelConstantHom.lean:41:22: error(lean.synthInstanceFailed): failed to synthesize instance of type class
+  Module (ZMod p) (ZMod p)
+
+Hint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_groupCohomology_nonempty_invariants_tensor_linearEquiv_eqLevelConstantHom.lean:51:18: warning: declaration uses `sorry`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_groupCohomology_nonempty_invariants_tensor_linearEquiv_eqLevelConstantHom.lean:57:8: warning: Unused tactic linter: `rw [map_add, Submodule.coe_add, Pi.add_apply, add_smul]` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_groupCohomology_nonempty_invariants_tensor_linearEquiv_eqLevelConstantHom.lean:61:8: warning: Unused tactic linter: `rw [map_smul, Submodule.coe_smul, Pi.smul_apply, smul_eq_mul, mul_smul]` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_groupCohomology_nonempty_invariants_tensor_linearEquiv_eqLevelConstantHom.lean:65:45: error: Application type mismatch: The argument
+  Sg
+has type
+  Subgroup Γ
+of sort `Type` but is expected to have type
+  Rep.{0, 0, 0} (ZMod ?m.78) ?m.80
+of sort `Type 1` in the application
+  Φ ?m.82 Sg
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_groupCohomology_nonempty_invariants_tensor_linearEquiv_eqLevelConstantHom.lean:69:46: error: Application type mismatch: The argument
+  Sg
+has type
+  Subgroup Γ
+of sort `Type` but is expected to have type
+  Rep.{0, 0, 0} (ZMod ?m.88) ?m.90
+of sort `Type 1` in the application
+  Φ ?m.92 Sg
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_groupCohomology_nonempty_invariants_tensor_linearEquiv_eqLevelConstantHom.lean:82:8: error: Application type mismatch: The argument
+  Sg
+has type
+  Subgroup Γ
+of sort `Type` but is expected to have type
+  Rep.{0, 0, 0} (ZMod ?m.82) ?m.84
+of sort `Type 1` in the application
+  Φ ?m.86 Sg
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_groupCohomology_nonempty_invariants_tensor_linearEquiv_eqLevelConstantHom.lean:83:43: error: Application type mismatch: The argument
+  Sg
+has type
+  Subgroup Γ
+of sort `Type` but is expected to have type
+  Rep.{0, 0, 0} (ZMod ?m.99) ?m.101
+of sort `Type 1` in the application
+  Φ ?m.103 Sg
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_groupCohomology_nonempty_invariants_tensor_linearEquiv_eqLevelConstantHom.lean:96:55: error(lean.synthInstanceFailed): failed to synthesize instance of type class
+  Module (ZMod p) (ZMod p)
+
+Hint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_groupCohomology_nonempty_invariants_tensor_linearEquiv_eqLevelConstantHom.lean:104:18: warning: declaration uses `sorry`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_groupCohomology_nonempty_invariants_tensor_linearEquiv_eqLevelConstantHom.lean:109:4: warning: Unused tactic linter: `rw [map_add, map_add, TensorProduct.add_tmul]` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_groupCohomology_nonempty_invariants_tensor_linearEquiv_eqLevelConstantHom.lean:113:4: warning: Unused tactic linter: `rw [map_smul, map_smul, TensorProduct.smul_tmul']` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_groupCohomology_nonempty_invariants_tensor_linearEquiv_eqLevelConstantHom.lean:115:60: error: typeclass instance problem is stuck
+  Module (ZMod p) ?m.105
+
+Note: Lean will not try to resolve this typeclass instance problem because the second and fourth type arguments to `Module` are metavariables. These arguments must be fully determined before Lean will try to resolve the typeclass.
+
+Hint: Adding type annotations and supplying implicit arguments to functions can give Lean more information for typeclass resolution. For example, if you have a variable `x` that you intend to be a `Nat`, but Lean reports it as having an unresolved type like `?m`, replacing `x` with `(x : Nat)` can get typeclass resolution un-stuck.
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_groupCohomology_nonempty_invariants_tensor_linearEquiv_eqLevelConstantHom.lean:117:34: error: Application type mismatch: The argument
+  Sg
+has type
+  Subgroup Γ
+of sort `Type` but is expected to have type
+  Rep.{0, 0, 0} (ZMod ?m.83) ?m.85
+of sort `Type 1` in the application
+  Φ ?m.87 Sg
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_groupCohomology_nonempty_invariants_tensor_linearEquiv_eqLevelConstantHom.lean:125:20: warning: `TensorProduct.induction_on` has been deprecated: Use `TensorProduction.inductionOn` instead
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_groupCohomology_nonempty_invariants_tensor_linearEquiv_eqLevelConstantHom.lean:127:58: error(lean.unknownIdentifier): Unknown identifier `S`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_groupCohomology_nonempty_invariants_tensor_linearEquiv_eqLevelConstantHom.lean:127:60: error(lean.unknownIdentifier): Unknown identifier `Sg`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_groupCohomology_nonempty_invariants_tensor_linearEquiv_eqLevelConstantHom.lean:127:63: error(lean.unknownIdentifier): Unknown identifier `r`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_groupCohomology_nonempty_invariants_tensor_linearEquiv_eqLevelConstantHom.lean:127:15: error(lean.unknownIdentifier): Unknown identifier `S`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_groupCohomology_nonempty_invariants_tensor_linearEquiv_eqLevelConstantHom.lean:127:17: error(lean.unknownIdentifier): Unknown identifier `Sg`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_groupCohomology_nonempty_invariants_tensor_linearEquiv_eqLevelConstantHom.lean:127:20: error(lean.unknownIdentifier): Unknown identifier `r`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_groupCohomology_nonempty_invariants_tensor_linearEquiv_eqLevelConstantHom.lean:127:31: error(lean.unknownIdentifier): Unknown identifier `Φ_mem`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_groupCohomology_nonempty_invariants_tensor_linearEquiv_eqLevelConstantHom.lean:130:8: error(lean.unknownIdentifier): Unknown identifier `Ψ_apply`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_groupCohomology_nonempty_invariants_tensor_linearEquiv_eqLevelConstantHom.lean:140:64: error(lean.unknownIdentifier): Unknown identifier `S`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_groupCohomology_nonempty_invariants_tensor_linearEquiv_eqLevelConstantHom.lean:140:66: error(lean.unknownIdentifier): Unknown identifier `Sg`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_groupCohomology_nonempty_invariants_tensor_linearEquiv_eqLevelConstantHom.lean:140:69: error(lean.unknownIdentifier): Unknown identifier `r`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_groupCohomology_nonempty_invariants_tensor_linearEquiv_eqLevelConstantHom.lean:140:15: error(lean.unknownIdentifier): Unknown identifier `S`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_groupCohomology_nonempty_invariants_tensor_linearEquiv_eqLevelConstantHom.lean:140:17: error(lean.unknownIdentifier): Unknown identifier `Sg`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_groupCohomology_nonempty_invariants_tensor_linearEquiv_eqLevelConstantHom.lean:140:20: error(lean.unknownIdentifier): Unknown identifier `r`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_groupCohomology_nonempty_invariants_tensor_linearEquiv_eqLevelConstantHom.lean:140:37: error(lean.unknownIdentifier): Unknown identifier `Φ_mem`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_groupCohomology_nonempty_invariants_tensor_linearEquiv_eqLevelConstantHom.lean:141:11: error(lean.unknownIdentifier): Unknown identifier `S`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_groupCohomology_nonempty_invariants_tensor_linearEquiv_eqLevelConstantHom.lean:141:13: error(lean.unknownIdentifier): Unknown identifier `Sg`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_groupCohomology_nonempty_invariants_tensor_linearEquiv_eqLevelConstantHom.lean:141:16: error(lean.unknownIdentifier): Unknown identifier `r`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_groupCohomology_nonempty_invariants_tensor_linearEquiv_eqLevelConstantHom.lean:141:27: error(lean.unknownIdentifier): Unknown identifier `Φ_mem`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_groupCohomology_nonempty_invariants_tensor_linearEquiv_eqLevelConstantHom.lean:141:54: error(lean.unknownIdentifier): Unknown identifier `S`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_groupCohomology_nonempty_invariants_tensor_linearEquiv_eqLevelConstantHom.lean:141:56: error(lean.unknownIdentifier): Unknown identifier `Sg`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_groupCohomology_nonempty_invariants_tensor_linearEquiv_eqLevelConstantHom.lean:141:59: error(lean.unknownIdentifier): Unknown identifier `r`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_groupCohomology_nonempty_invariants_tensor_linearEquiv_eqLevelConstantHom.lean:141:70: error(lean.unknownIdentifier): Unknown identifier `Φ_mem`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_groupCohomology_nonempty_invariants_tensor_linearEquiv_eqLevelConstantHom.lean:146:44: error: Application type mismatch: The argument
+  Sg
+has type
+  Subgroup Γ
+of sort `Type` but is expected to have type
+  Rep.{0, 0, 0} (ZMod ?m.80) ?m.82
+of sort `Type 1` in the application
+  Φ ?m.84 Sg
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_groupCohomology_nonempty_invariants_tensor_linearEquiv_eqLevelConstantHom.lean:155:27: error: Application type mismatch: The argument
+  Sg
+has type
+  Subgroup Γ
+of sort `Type` but is expected to have type
+  Rep.{0, 0, 0} (ZMod ?m.136) ?m.138
+of sort `Type 1` in the application
+  Φ ?m.140 Sg
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_groupCohomology_nonempty_invariants_tensor_linearEquiv_eqLevelConstantHom.lean:155:43: error(lean.unknownIdentifier): Unknown identifier `Φ_mem`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_groupCohomology_nonempty_invariants_tensor_linearEquiv_eqLevelConstantHom.lean:157:18: error(lean.unknownIdentifier): Unknown identifier `Φ_ρ`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_groupCohomology_nonempty_invariants_tensor_linearEquiv_eqLevelConstantHom.lean:155:84: error: unsolved goals
+p : ℕ
+inst✝³ : Fact (Nat.Prime p)
+S : Finset Nat.Primes
+Γ : Type
+inst✝² : Group Γ
+Sg : Subgroup Γ
+inst✝¹ : Sg.Normal
+r : Γ →* Gal(AlgebraicClosure ℚ/ℚ)
+χ : Γ →* (ZMod p)ˣ
+C N : Rep.{0, 0, 0} (ZMod p) Γ
+inst✝ : FiniteDimensional (ZMod p) ↑N
+e : sorry
+he : ∀ (g : Γ) (x : ↑C) (s t : ↥Sg), g⁻¹ * ↑s * g = ↑t → sorry s = ↑(χ g) * sorry t
+b : Basis (Fin (finrank (ZMod p) ↑N)) (ZMod p) ↑N := finBasis (ZMod p) ↑N
+z : ↥(C ⊗ N).ρ.invariants
+g : Γ
+s t : ↥Sg
+hst : g⁻¹ * ↑s * g = ↑t
+hz : ((C ⊗ N).ρ g) ↑z = ↑z
+⊢ ((N.twist χ).ρ g) (sorry t) = sorry s
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_groupCohomology_nonempty_invariants_tensor_linearEquiv_eqLevelConstantHom.lean:165:12: error(lean.unknownIdentifier): Unknown identifier `Φ_injective`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_groupCohomology_nonempty_invariants_tensor_linearEquiv_eqLevelConstantHom.lean:166:6: error: No goals to be solved
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_groupCohomology_nonempty_invariants_tensor_linearEquiv_eqLevelConstantHom.lean:173:57: error: Application type mismatch: The argument
+  S
+has type
+  Finset Nat.Primes
+of sort `Type` but is expected to have type
+  Rep.{0, 0, 0} (ZMod ?m.263) ?m.265
+of sort `Type 1` in the application
+  Ψ_Φ S
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_groupCohomology_nonempty_invariants_tensor_linearEquiv_eqLevelConstantHom.lean:174:54: error(lean.unknownIdentifier): Unknown identifier `Φ_Ψ`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_groupCohomology_nonempty_invariants_tensor_linearEquiv_eqLevelConstantHom.lean:182:24: error(lean.synthInstanceFailed): failed to synthesize instance of type class
+  Module (ZMod p) (ZMod p)
+
+Hint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.

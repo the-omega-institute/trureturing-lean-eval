@@ -1,0 +1,61 @@
+{
+  "at": "2026-10-17T06:03:51.871394+00:00",
+  "name": "groupCohomology_nonempty_invariants_tensor_linearEquiv_eqLevelConstantHom",
+  "candidate": "r1",
+  "card_candidate": "r1",
+  "source_replacements": [
+    [
+      "set_option Elab.async false\n",
+      "set_option Elab.async false\n\nprivate local instance scalarAddCommGroup (p : \u2115) : AddCommGroup (ZMod p) :=\n  (inferInstance : CommRing (ZMod p)).toAddCommGroup\n",
+      1
+    ],
+    [
+      "local notation \"k\" => (ZMod p)\n",
+      "local notation \"k\" => (ZMod p)\n\nprivate theorem tensorInduction {motive : (C \u2297 N : Rep.{0} k \u0393) \u2192 Prop}\n    (z : (C \u2297 N : Rep.{0} k \u0393)) (zero : motive 0)\n    (tmul : \u2200 (x : C) (n : N), motive (x \u2297\u209c[k] n))\n    (add : \u2200 z w, motive z \u2192 motive w \u2192 motive (z + w)) : motive z := by\n  classical\n  by_cases hz : z = 0\n  \u00b7 subst z\n    exact zero\n  \u00b7 exact TensorProduct.inductionOn z tmul add\n",
+      1
+    ],
+    [
+      "induction z using TensorProduct.induction_on with",
+      "induction z using tensorInduction C N with",
+      3
+    ]
+  ],
+  "card_replacements": [
+    [
+      "open scoped Classical NumberField NumberField.LevelArith\n",
+      "open scoped Classical NumberField NumberField.LevelArith\n\nprivate local instance scalarAddCommGroup (p : \u2115) : AddCommGroup (ZMod p) :=\n  (inferInstance : CommRing (ZMod p)).toAddCommGroup\n",
+      1
+    ]
+  ],
+  "baseline_byte_identical_to_pinned_supplier": true,
+  "pinned_supplier_source_and_card_preserved": true,
+  "full_original_statements_hypotheses_and_all_proof_branches_preserved": true,
+  "no_linter_suppression_added": true,
+  "verification_pending": false,
+  "installed": true,
+  "installed_at": "2026-10-17T06:03:51.871588+00:00",
+  "actual_failure": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/official-layout/terminal-proof-repairs/20261017-invariants-tensor-scalar-instances/previous-actual-failure",
+  "original_actual_errors": 41,
+  "original_actual_warnings": 7,
+  "max_active_flt_jobs": 1,
+  "lean_threads": 1,
+  "full_original_complete": false,
+  "official_new_solve_credit": 0,
+  "change": "Pin private local scalar AddCommGroup in source/card to the CommRing projection. Replace the three deprecated tensor induction calls with a private eliminator using current TensorProduct.inductionOn and an explicit zero case; retain all original zero/tmul/add proof branches and every public hypothesis and statement verbatim. Append recursive axiom queries. Actual candidate verification remains pending in the unchanged canonical make/omega-gate queue.",
+  "active_import_closure_excluded": [
+    "Submission.Supplier.P2M.Sol.S_groupCohomology_mem_continuousH1S_of_forall_map_primeLocalToGlobal_eq_zero"
+  ],
+  "active_transitive_import_closure_size": 39,
+  "actual_live_descendant_sources": [
+    {
+      "pid": 70344,
+      "source": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_groupCohomology_mem_continuousH1S_of_forall_map_primeLocalToGlobal_eq_zero.lean"
+    }
+  ],
+  "all_four_canonical_adapted_source_card_modules_excluded": [
+    "P2M.Sol.S_groupCohomology_nonempty_invariants_tensor_linearEquiv_eqLevelConstantHom",
+    "Submission.Supplier.P2M.Sol.S_groupCohomology_nonempty_invariants_tensor_linearEquiv_eqLevelConstantHom",
+    "Submission.Supplier.Theorems.Thm_groupCohomology_nonempty_invariants_tensor_linearEquiv_eqLevelConstantHom",
+    "Theorems.Thm_groupCohomology_nonempty_invariants_tensor_linearEquiv_eqLevelConstantHom"
+  ]
+}
