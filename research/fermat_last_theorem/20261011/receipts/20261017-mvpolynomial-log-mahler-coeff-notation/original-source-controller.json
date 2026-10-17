@@ -1,0 +1,68 @@
+{
+  "sha256": "b870560322f1dc3eab740e5dc4c9e7b29de5ce65508a54647a816ada1bf609f5",
+  "exit": 1,
+  "empty_output_retry_done": false,
+  "source_sha256_after": "b870560322f1dc3eab740e5dc4c9e7b29de5ce65508a54647a816ada1bf609f5",
+  "source_unchanged": true,
+  "olean_sha256": null,
+  "seconds": 38.94953945899033,
+  "pid": 85171,
+  "command": [
+    "/Users/macstudio/.local/omega-shims/lean",
+    "-j1",
+    "--trust=0",
+    "-Ddebug.skipKernelTC=false",
+    "-R",
+    "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src",
+    "-o",
+    "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-build/lib/lean/Submission/Supplier/P2M/Sol/S_MvPolynomial_log_norm_coeff_le_logMahlerMeasure_add.olean",
+    "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_MvPolynomial_log_norm_coeff_le_logMahlerMeasure_add.lean"
+  ],
+  "make_wrapper_pid": 78799,
+  "make_exit": 2,
+  "make_entry_failed": false,
+  "cache_binding_valid": true,
+  "canonical_make_running_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/51c52e9a371dee1d2bc1b305-1792234258860660000.make-running.json",
+  "canonical_make_terminal_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/51c52e9a371dee1d2bc1b305-1792234258860660000.make-terminal.json",
+  "kernel_terminal_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/51c52e9a371dee1d2bc1b305-1792234258860660000.kernel/result.json",
+  "direct_dependencies": [
+    {
+      "module": "Submission.Supplier.Definitions.Def_MvPolynomial_LogMahlerMeasure",
+      "source_sha256": "2e65cfe5ee783197957f6be5ed4067ca06adf1612ec9095fc53e82494390b3ee",
+      "object_sha256": "318f99998e4aef09e20b39ad1cfc430e61fa8520be81da121c91753c40577fbb",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Theorems.Thm_Polynomial_log_norm_coeff_le_logMahlerMeasure_add",
+      "source_sha256": "af01a18d9492ea45707858a45d3243e490c24eacd0812f5a9b9482379e0979ea",
+      "object_sha256": "ce1ae56e0d0b573434f5da737f9e8f7b5d1d436b41758cc88d199b09c9f81303",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Theorems.Thm_MvPolynomial_ae_restrict_torusBox_eval_circleMap_ne_zero",
+      "source_sha256": "b2e26b6ad29a58bbbb39cfabe3f30439f89052064e85e2f038642cf745aaa514",
+      "object_sha256": "2ec3fa84799f3eec199fc193c1984d0a1f9439f7a37cc537b06be5d8dfaffbb0",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Theorems.Thm_MvPolynomial_integrableOn_log_norm_eval_circleMap",
+      "source_sha256": "6830303839aacec5f52ffdaa1e9e7ce125b4c7deaf19f482c72fea4a6e004886",
+      "object_sha256": "50e27a148de20564ad9cc855437728d634414392b359632b6caa6f985d016d06",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Theorems.Thm_MvPolynomial_logMahlerMeasure_eq_mul_integral_logMahlerMeasure_map_finSuccEquiv",
+      "source_sha256": "85200bdbdf4d46387c6f4655dbcf9245bc6784db3afb8c59cc9ced1259ca3a0b",
+      "object_sha256": "1ac350259f68f51038a11c8281c66973a137ad203e5840ace948a9758e9c9f85",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.P2M.Util",
+      "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+      "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+      "receipt_reused": true
+    }
+  ],
+  "stdout": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/51c52e9a371dee1d2bc1b305-1792234258860660000.kernel/stdout.log",
+  "stderr": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/51c52e9a371dee1d2bc1b305-1792234258860660000.kernel/stderr.log"
+}

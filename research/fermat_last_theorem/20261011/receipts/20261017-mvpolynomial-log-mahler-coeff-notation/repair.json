@@ -1,0 +1,50 @@
+{
+  "at": "2026-10-17T10:52:19.339288+00:00",
+  "name": "MvPolynomial_log_norm_coeff_le_logMahlerMeasure_add",
+  "candidate": "r1",
+  "card_candidate": "r1",
+  "source_replacements": [
+    [
+      "      Real.log \u2016coeff m P\u2016 \u2264 P.logMahlerMeasure",
+      "      Real.log \u2016P.coeff m\u2016 \u2264 P.logMahlerMeasure",
+      1
+    ],
+    [
+      "    have hcoeff : coeff m.tail ((finSuccEquiv \u2102 n P).coeff (m 0)) = coeff m P := by",
+      "    have hcoeff : ((finSuccEquiv \u2102 n P).coeff (m 0)).coeff m.tail = P.coeff m := by",
+      1
+    ]
+  ],
+  "card_replacements": [],
+  "baseline_byte_identical_to_pinned_supplier": true,
+  "pinned_supplier_source_and_card_preserved": true,
+  "verification_pending": false,
+  "installed": true,
+  "no_linter_suppression_added": true,
+  "complete_original_proof_preserved": true,
+  "full_original_statement_and_hypotheses_preserved": true,
+  "max_active_flt_jobs": 1,
+  "lean_threads": 1,
+  "original_actual_errors": 5,
+  "original_actual_warnings": 0,
+  "original_kernel_seconds": 16.595334917,
+  "change": "Preserve the full original torus-fiber integral and coefficient-degree induction proof. Resolve the three bare internal coefficient applications through P.coeff m and the analogous nested polynomial coefficient notation. Literal public solution/card remain byte-identical apart from appended axiom queries. Actual unknown-coeff,cascaded zero-case and missing theorem errors are archived;natural source/card verification pending.",
+  "full_original_complete": false,
+  "official_new_solve_credit": 0,
+  "active_import_closure_excluded": [
+    "Submission.Supplier.P2M.Sol.S_QuaternionAlgebra_IsDefiniteRamifiedExactlyAt_exists_nrd_eq_of_pos"
+  ],
+  "active_transitive_import_closure_size": 21,
+  "actual_live_descendant_sources": [
+    {
+      "pid": 12143,
+      "source": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_QuaternionAlgebra_IsDefiniteRamifiedExactlyAt_exists_nrd_eq_of_pos.lean"
+    }
+  ],
+  "all_four_canonical_adapted_source_card_modules_excluded": [
+    "P2M.Sol.S_MvPolynomial_log_norm_coeff_le_logMahlerMeasure_add",
+    "Submission.Supplier.P2M.Sol.S_MvPolynomial_log_norm_coeff_le_logMahlerMeasure_add",
+    "Submission.Supplier.Theorems.Thm_MvPolynomial_log_norm_coeff_le_logMahlerMeasure_add",
+    "Theorems.Thm_MvPolynomial_log_norm_coeff_le_logMahlerMeasure_add"
+  ]
+}
