@@ -1,0 +1,29 @@
+{
+  "at": "2026-10-16T12:39:33.558866+00:00",
+  "name": "CerednikDrinfeld_Omega_exists_mem_holOn_hasProd_evalAt",
+  "source_replacements": [
+    [
+      "(\u03b3 : MonoidWithZeroHom.ValueGroup\u2080 _)",
+      "\u03b3.val",
+      1
+    ],
+    [
+      "Finset.prod_le_prod'",
+      "Finset.prod_le_prod",
+      1
+    ],
+    [
+      "Set.mem_setOf_eq",
+      "Set.mem_ofPred_eq",
+      1
+    ]
+  ],
+  "baseline_byte_identical_to_pinned_supplier": true,
+  "full_original_statements_hypotheses_and_all_proof_branches_preserved": true,
+  "no_linter_suppression_added": true,
+  "verification_pending": false,
+  "candidate": "r1",
+  "active_import_closure_excluded": [
+    "Submission.Supplier.P2M.Sol.S_Deformation_ProartinianCat_exists_surjective_mvPowerSeriesLift"
+  ]
+}
