@@ -1,0 +1,143 @@
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_QuaternionAlgebra_IsDefiniteRamifiedExactlyAt_exists_nrd_eq_of_pos.lean:148:2: warning: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_QuaternionAlgebra_IsDefiniteRamifiedExactlyAt_exists_nrd_eq_of_pos.lean:150:2: warning: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_QuaternionAlgebra_IsDefiniteRamifiedExactlyAt_exists_nrd_eq_of_pos.lean:206:2: warning: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_QuaternionAlgebra_IsDefiniteRamifiedExactlyAt_exists_nrd_eq_of_pos.lean:286:2: warning: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_QuaternionAlgebra_IsDefiniteRamifiedExactlyAt_exists_nrd_eq_of_pos.lean:414:10: error: Type mismatch: After simplification, term
+  this
+ has type
+  IsSquare (-1 * -↑t₁)
+but is expected to have type
+  IsSquare ↑t₁
+Try this:
+  [apply] ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_QuaternionAlgebra_IsDefiniteRamifiedExactlyAt_exists_nrd_eq_of_pos.lean:432:44: error: unsolved goals
+q : ℕ
+hq : Nat.Prime q
+hq2 : q ≠ 2
+e t₁ : ℕ
+ht₁ : ¬q ∣ t₁
+this : Fact (Nat.Prime q)
+w : HeightOneSpectrum (𝓞 ℚ) := place q hq
+hw : w = place q hq
+hgen : Rat.HeightOneSpectrum.natGenerator w = q
+hq0 : ↑q ≠ 0
+hqpos : 0 < ↑q
+ht₁0 : 0 < t₁
+ht₁0' : 0 < ↑t₁
+hvq : (HeightOneSpectrum.valuation ℚ w) ↑q = WithZero.exp (-1)
+hv1 : ∀ (z : ℤ), ¬↑q ∣ z → (HeightOneSpectrum.valuation ℚ w) ↑z = 1
+hv1n : ∀ (n : ℕ), ¬q ∣ n → (HeightOneSpectrum.valuation ℚ w) ↑n = 1
+hsqmod : ∀ (u : ℤ), ¬↑q ∣ u → IsSquare ((algebraMap ℚ (HeightOneSpectrum.adicCompletion ℚ w)) ↑u) → IsSquare ↑u
+L : ℕ := 2 * q + 1
+hL : L = 2 * q + 1
+hLq : ¬q ∣ L
+hLmod : ↑L = 1
+hL0 : ↑L ≠ 0
+hvL : (HeightOneSpectrum.valuation ℚ w) ↑L = 1
+m : ℕ
+hm : e = m + m
+hτ0 : ↑t₁ ≠ 0
+build :
+  ∀ y < L,
+    (∃ n, Odd n ∧ (HeightOneSpectrum.valuation ℚ w) ↑(↑L ^ 2 * ↑t₁ - ↑y ^ 2) = WithZero.exp n) ∨
+        ¬↑q ∣ ↑L ^ 2 * ↑t₁ - ↑y ^ 2 ∧ ¬IsSquare ↑(-(↑L ^ 2 * ↑t₁ - ↑y ^ 2)) →
+      ∃ x₀ c, ↑q ^ e * ↑t₁ = x₀ ^ 2 + c ∧ 0 < c ∧ ¬IsSquare ((algebraMap ℚ (HeightOneSpectrum.adicCompletion ℚ w)) (-c))
+hsq : ¬IsSquare ↑t₁
+hneg : IsSquare (-↑t₁)
+hm1 : ¬IsSquare (-1)
+abar bbar : ZMod q
+hab : abar ^ 2 + bbar ^ 2 = ↑t₁
+hb0 : bbar ≠ 0
+y₁ : ℕ := abar.val
+hy₁ : y₁ = abar.val
+hy₁q : y₁ < q
+hy₁c : ↑y₁ = abar
+hDc : ↑(↑L ^ 2 * ↑t₁ - ↑y₁ ^ 2) = bbar ^ 2
+s : ZMod q
+hs : ↑(-(↑L ^ 2 * ↑t₁ - ↑y₁ ^ 2)) = s * s
+⊢ -bbar ^ 2 = -bbar ^ 2
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_QuaternionAlgebra_IsDefiniteRamifiedExactlyAt_exists_nrd_eq_of_pos.lean:435:10: error: ring failed, ring expressions not equal
+q : ℕ
+hq : Nat.Prime q
+hq2 : q ≠ 2
+e t₁ : ℕ
+ht₁ : ¬q ∣ t₁
+this : Fact (Nat.Prime q)
+w : HeightOneSpectrum (𝓞 ℚ) := ⋯
+hw : w = place q hq
+hgen : Rat.HeightOneSpectrum.natGenerator w = q
+hq0 : ↑q ≠ 0
+hqpos : 0 < ↑q
+ht₁0 : 0 < t₁
+ht₁0' : 0 < ↑t₁
+hvq : (HeightOneSpectrum.valuation ℚ w) ↑q = WithZero.exp (-1)
+hv1 : ∀ (z : ℤ), ¬↑q ∣ z → (HeightOneSpectrum.valuation ℚ w) ↑z = 1
+hv1n : ∀ (n : ℕ), ¬q ∣ n → (HeightOneSpectrum.valuation ℚ w) ↑n = 1
+hsqmod : ∀ (u : ℤ), ¬↑q ∣ u → IsSquare ((algebraMap ℚ (HeightOneSpectrum.adicCompletion ℚ w)) ↑u) → IsSquare ↑u
+L : ℕ := ⋯
+hL : L = 2 * q + 1
+hLq : ¬q ∣ L
+hLmod : ↑L = 1
+hL0 : ↑L ≠ 0
+hvL : (HeightOneSpectrum.valuation ℚ w) ↑L = 1
+m : ℕ
+hm : e = m + m
+hτ0 : ↑t₁ ≠ 0
+build :
+  ∀ y < L,
+    (∃ n, Odd n ∧ (HeightOneSpectrum.valuation ℚ w) ↑(↑L ^ 2 * ↑t₁ - ↑y ^ 2) = WithZero.exp n) ∨
+        ¬↑q ∣ ↑L ^ 2 * ↑t₁ - ↑y ^ 2 ∧ ¬IsSquare ↑(-(↑L ^ 2 * ↑t₁ - ↑y ^ 2)) →
+      ∃ x₀ c, ↑q ^ e * ↑t₁ = x₀ ^ 2 + c ∧ 0 < c ∧ ¬IsSquare ((algebraMap ℚ (HeightOneSpectrum.adicCompletion ℚ w)) (-c))
+hsq : ¬IsSquare ↑t₁
+hneg : IsSquare (-↑t₁)
+hm1 : ¬IsSquare (-1)
+abar bbar : ZMod q
+hab : abar ^ 2 + bbar ^ 2 = ↑t₁
+hb0 : bbar ≠ 0
+y₁ : ℕ := ⋯
+hy₁ : y₁ = abar.val
+hy₁q : y₁ < q
+hy₁c : ↑y₁ = abar
+hDc : ↑(↑L ^ 2 * ↑t₁ - ↑y₁ ^ 2) = bbar ^ 2
+s : ZMod q
+hs : ↑(-(↑L ^ 2 * ↑t₁ - ↑y₁ ^ 2)) = s * s
+hs' : -bbar ^ 2 = s * s
+⊢ -bbar ^ 2 - -bbar ^ 2 = 0
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_QuaternionAlgebra_IsDefiniteRamifiedExactlyAt_exists_nrd_eq_of_pos.lean:450:8: error: Type mismatch: After simplification, term
+  h2
+ has type
+  @IsSquare (ZMod q) instDistribOfSemiring.toMul (-↑t₁)
+but is expected to have type
+  @IsSquare (ZMod q) instDistribOfSemiring.toMul (-↑t₁)

@@ -1,0 +1,60 @@
+{
+  "at": "2026-10-17T10:55:36.036427+00:00",
+  "name": "QuaternionAlgebra_IsDefiniteRamifiedExactlyAt_exists_nrd_eq_of_pos",
+  "candidate": "r1",
+  "card_candidate": "r1",
+  "source_replacements": [
+    [
+      "  haveI :",
+      "  have :",
+      4
+    ],
+    [
+      "          have := h1.mul hneg\n          simpa using this",
+      "          have := h1.mul hneg\n          simpa only [neg_mul_neg, one_mul] using this",
+      1
+    ],
+    [
+      "          refine \u27e8s * bbar\u207b\u00b9, ?_\u27e9\n          have hs' : -(bbar ^ 2) = s * s := by\n            rw [\u2190 hs]; push_cast; rw [hLmod, hy\u2081c, \u2190 hab]; ring\n          field_simp\n          linear_combination hs'",
+      "          apply isSquare_of_isSquare_sq_mul hb0\n          refine \u27e8s, ?_\u27e9\n          calc\n            bbar ^ 2 * (-1) = -(bbar ^ 2) := mul_neg_one _\n            _ = -((((L : \u2124) ^ 2 * t\u2081 - (y\u2081 : \u2124) ^ 2 : \u2124) : ZMod q)) :=\n              congrArg Neg.neg hDc.symm\n            _ = s * s := by simpa only [Int.cast_neg] using hs",
+      1
+    ],
+    [
+      "        simpa using h2",
+      "        simpa only [Int.cast_neg, Int.cast_natCast] using h2",
+      1
+    ]
+  ],
+  "card_replacements": [],
+  "baseline_byte_identical_to_pinned_supplier": true,
+  "pinned_supplier_source_and_card_preserved": true,
+  "verification_pending": true,
+  "installed": true,
+  "no_linter_suppression_added": true,
+  "complete_original_proof_preserved": true,
+  "full_original_statement_and_hypotheses_preserved": true,
+  "max_active_flt_jobs": 1,
+  "lean_threads": 1,
+  "original_actual_errors": 4,
+  "original_actual_warnings": 4,
+  "original_kernel_seconds": 41.042656459,
+  "change": "Retain the original global reduced-norm, local valuation and non-square construction proof. Make negative-square and integer-to-ZMod cast normalization explicit; use the existing proved nonzero-square-factor cancellation helper in the same modular-square contradiction. Replace four proposition-valued haveI declarations with have. Public solution and card unchanged apart from axiom queries. Natural source/card verification pending.",
+  "full_original_complete": false,
+  "official_new_solve_credit": 0,
+  "active_import_closure_excluded": [
+    "Submission.Supplier.P2M.Sol.S_Pencil_exists_rootOfUnity_torus_covector_sum_log_ge"
+  ],
+  "active_transitive_import_closure_size": 15,
+  "actual_live_descendant_sources": [
+    {
+      "pid": 38487,
+      "source": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_Pencil_exists_rootOfUnity_torus_covector_sum_log_ge.lean"
+    }
+  ],
+  "all_four_canonical_adapted_source_card_modules_excluded": [
+    "P2M.Sol.S_QuaternionAlgebra_IsDefiniteRamifiedExactlyAt_exists_nrd_eq_of_pos",
+    "Submission.Supplier.P2M.Sol.S_QuaternionAlgebra_IsDefiniteRamifiedExactlyAt_exists_nrd_eq_of_pos",
+    "Submission.Supplier.Theorems.Thm_QuaternionAlgebra_IsDefiniteRamifiedExactlyAt_exists_nrd_eq_of_pos",
+    "Theorems.Thm_QuaternionAlgebra_IsDefiniteRamifiedExactlyAt_exists_nrd_eq_of_pos"
+  ]
+}

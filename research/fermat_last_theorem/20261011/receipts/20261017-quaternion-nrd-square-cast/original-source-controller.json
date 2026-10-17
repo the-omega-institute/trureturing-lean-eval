@@ -1,0 +1,92 @@
+{
+  "sha256": "163362c48c651df5d512813858753a88a8515ffcd4569eae4bea42ae1f2461e0",
+  "exit": 1,
+  "empty_output_retry_done": false,
+  "source_sha256_after": "163362c48c651df5d512813858753a88a8515ffcd4569eae4bea42ae1f2461e0",
+  "source_unchanged": true,
+  "olean_sha256": null,
+  "seconds": 56.48959983402165,
+  "pid": 12143,
+  "command": [
+    "/Users/macstudio/.local/omega-shims/lean",
+    "-j1",
+    "--trust=0",
+    "-Ddebug.skipKernelTC=false",
+    "-R",
+    "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src",
+    "-o",
+    "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-build/lib/lean/Submission/Supplier/P2M/Sol/S_QuaternionAlgebra_IsDefiniteRamifiedExactlyAt_exists_nrd_eq_of_pos.olean",
+    "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_QuaternionAlgebra_IsDefiniteRamifiedExactlyAt_exists_nrd_eq_of_pos.lean"
+  ],
+  "make_wrapper_pid": 9137,
+  "make_exit": 2,
+  "make_entry_failed": false,
+  "cache_binding_valid": true,
+  "canonical_make_running_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/bb2311f912c930eb458df69c-1792234303897147000.make-running.json",
+  "canonical_make_terminal_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/bb2311f912c930eb458df69c-1792234303897147000.make-terminal.json",
+  "kernel_terminal_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/bb2311f912c930eb458df69c-1792234303897147000.kernel/result.json",
+  "direct_dependencies": [
+    {
+      "module": "Submission.Supplier.Definitions.Def_QuaternionAlgebra_EichlerOrder",
+      "source_sha256": "616666b45c5e5c83ff980cb8b286d35eaa0580c94707feb98a30a33f2b3cf19c",
+      "object_sha256": "0331ea06b2b270a4e9fd47ef316eadfd1667dd342bd3b5f2f313850569d0cac7",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Definitions.Def_QuaternionAlgebra_ReducedNorm",
+      "source_sha256": "d6dbd45e7408d9b8f5f0da93fae73bb8550ab4a881be89c6993a09f38f627fec",
+      "object_sha256": null,
+      "receipt_reused": false
+    },
+    {
+      "module": "Submission.Supplier.Definitions.Def_Submodule_LocalBox",
+      "source_sha256": "ab2c6d1b38ba27a7aac5a2e001e38b01c1b230839b8dc8b077620dfc9077e9f9",
+      "object_sha256": "b75864e2f9b0bc0ff1290cb0bac083f61e17fb37287b144edc3c433f7d443bd6",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Theorems.Thm_QuaternionAlgebra_exists_ringEquiv_tensorProduct_forall_one_tmul_of_algEquiv",
+      "source_sha256": "bf5b80edae0cc736777dd54ec63db2bc0ecc97763952d1fd4444c25f6406a972",
+      "object_sha256": "6007a30e085dc4eeb3757e0a2eb8e527bd76a8de3c907be0d6d61dadf17ad4c3",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Theorems.Thm_QuaternionAlgebra_forall_isUnit_iff_forall_normForm_eq_zero",
+      "source_sha256": "1d54d7a77148cb14178471e944563ea38e17d4feab465ac3fdfbfd99df66970a",
+      "object_sha256": "f899c86f89b251d0d11028a23ff14cc7dacc57d8c0ba16822168262fe2abeef4",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Theorems.Thm_QuaternionAlgebra_nonempty_algEquiv_matrix_of_normForm_eq_zero",
+      "source_sha256": "27ad76db061693d77fa37e8d3a36a864d669f807583d1b2d2aa1bfae05f80369",
+      "object_sha256": "48718946e46b3810c2ede1f4221f6a2b15c239b2567eade29671cdcb9ee79a15",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Theorems.Thm_QuadraticForm_forall_exists_ternary_pureNrd_eq_of_exists_ne_zero_eq_zero",
+      "source_sha256": "eb3683b6a34d9ac4925aeaa0b3344292a8685ea55e40c467ee093f31fda471cb",
+      "object_sha256": "dcb85ce42c6309e45a0ea07737eb7cac31b9248c9a420c03b1e81d86c664fbce",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Theorems.Thm_QuadraticForm_exists_ternary_pureNrd_eq_adicCompletion_of_not_isSquare_neg_of_not_split",
+      "source_sha256": "1253d4338817bff428adfb4c601c9986e00a9d197f4526afb56bce00788f2aa5",
+      "object_sha256": "c4edf6889b80bf06037f32f7c1735aee3ab7bcf1020ab6ccdce5d4a8addd94a8",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Theorems.Thm_QuadraticForm_exists_rat_ternary_pureNrd_eq_of_forall_adicCompletion_of_real",
+      "source_sha256": "56cf471b243528cad50fe3dafe2438232c7faf638e2ed4ee0a1239e674695108",
+      "object_sha256": "a02dc71738eb201d6e0acdb290dc2b53f695f3a8b211c2a47ac9c41a45edf231",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.P2M.Util",
+      "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+      "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+      "receipt_reused": true
+    }
+  ],
+  "stdout": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/bb2311f912c930eb458df69c-1792234303897147000.kernel/stdout.log",
+  "stderr": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/bb2311f912c930eb458df69c-1792234303897147000.kernel/stderr.log"
+}

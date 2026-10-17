@@ -1,0 +1,45 @@
+{
+  "at": "2026-10-17T11:02:50.429137+00:00",
+  "name": "QuaternionAlgebra_IsDefiniteRamifiedExactlyAt_exists_nrd_eq_of_pos",
+  "candidate": "r2",
+  "card_candidate": "r1",
+  "source_replacements": [
+    [
+      "  haveI :",
+      "  have :",
+      4
+    ],
+    [
+      "theorem exists_sq_add",
+      "set_option backward.isDefEq.respectTransparency false in\ntheorem exists_sq_add",
+      1
+    ]
+  ],
+  "card_replacements": [],
+  "baseline_byte_identical_to_pinned_supplier": true,
+  "pinned_supplier_source_and_card_preserved": true,
+  "verification_pending": true,
+  "installed": true,
+  "no_linter_suppression_added": true,
+  "complete_original_proof_preserved": true,
+  "full_original_statement_and_hypotheses_preserved": true,
+  "max_active_flt_jobs": 1,
+  "lean_threads": 1,
+  "original_actual_errors": 4,
+  "original_actual_warnings": 4,
+  "original_kernel_seconds": 41.042656459,
+  "change": "Keep the entire original reduced-norm/local non-square proof byte-for-byte except four proposition haveI-to-have declarations. Scope backward.isDefEq.respectTransparency=false to exists_sq_add, reusing the already kernel-verified repair for the same ZMod ring/field instance transparency boundary in two p-adic ternary proofs. This changes elaboration only;trust0/full kernel checking remains mandatory. r1 actual three hidden type mismatches archived. Source/card natural queue verification pending.",
+  "full_original_complete": false,
+  "official_new_solve_credit": 0,
+  "active_import_closure_excluded": [
+    "Submission.Supplier.P2M.Sol.S_QuaternionAlgebra_IsOrder_relIndex_finiteIdeleStabilizer_inf_map_conj_eq_local"
+  ],
+  "active_transitive_import_closure_size": 22,
+  "actual_live_descendant_sources": [],
+  "all_four_canonical_adapted_source_card_modules_excluded": [
+    "P2M.Sol.S_QuaternionAlgebra_IsDefiniteRamifiedExactlyAt_exists_nrd_eq_of_pos",
+    "Submission.Supplier.P2M.Sol.S_QuaternionAlgebra_IsDefiniteRamifiedExactlyAt_exists_nrd_eq_of_pos",
+    "Submission.Supplier.Theorems.Thm_QuaternionAlgebra_IsDefiniteRamifiedExactlyAt_exists_nrd_eq_of_pos",
+    "Theorems.Thm_QuaternionAlgebra_IsDefiniteRamifiedExactlyAt_exists_nrd_eq_of_pos"
+  ]
+}

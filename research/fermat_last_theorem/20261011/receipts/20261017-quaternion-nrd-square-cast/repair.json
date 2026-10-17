@@ -1,0 +1,55 @@
+{
+  "at": "2026-10-17T11:06:09.415783+00:00",
+  "name": "QuaternionAlgebra_IsDefiniteRamifiedExactlyAt_exists_nrd_eq_of_pos",
+  "candidate": "r3",
+  "card_candidate": "r1",
+  "source_replacements": [
+    [
+      "  haveI :",
+      "  have :",
+      4
+    ],
+    [
+      "theorem exists_sq_add",
+      "set_option backward.isDefEq.respectTransparency false in\ntheorem exists_sq_add",
+      1
+    ],
+    [
+      "exact \u27e8-(k : \u2124) - 1, by push_cast; omega\u27e9",
+      "exact \u27e8-(k : \u2124) - 1, by omega\u27e9",
+      1
+    ]
+  ],
+  "card_replacements": [],
+  "baseline_byte_identical_to_pinned_supplier": true,
+  "pinned_supplier_source_and_card_preserved": true,
+  "verification_pending": false,
+  "installed": true,
+  "no_linter_suppression_added": true,
+  "complete_original_proof_preserved": true,
+  "full_original_statement_and_hypotheses_preserved": true,
+  "max_active_flt_jobs": 1,
+  "lean_threads": 1,
+  "original_actual_errors": 4,
+  "original_actual_warnings": 4,
+  "original_kernel_seconds": 41.042656459,
+  "change": "Scope backward.isDefEq.respectTransparency=false to exists_sq_add, as already kernel-verified for the same ZMod boundary. Keep complete original proof apart from four proposition haveI-to-have edits and removal of one actually reported no-op push_cast before unchanged omega. r2 actual source/card make/kernel0/0, standard axioms;source had1 warning,card0. r3 requires fresh zero-diagnostic source/card verification.",
+  "full_original_complete": false,
+  "official_new_solve_credit": 0,
+  "active_import_closure_excluded": [
+    "Submission.Supplier.P2M.Sol.S_QuaternionAlgebra_exists_eq_finiteIdeleDiagonal_mul_mul_of_forall_classSet_eq_empty_or_eq_univ"
+  ],
+  "active_transitive_import_closure_size": 80,
+  "actual_live_descendant_sources": [
+    {
+      "pid": 75460,
+      "source": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_QuaternionAlgebra_exists_eq_finiteIdeleDiagonal_mul_mul_of_forall_classSet_eq_empty_or_eq_univ.lean"
+    }
+  ],
+  "all_four_canonical_adapted_source_card_modules_excluded": [
+    "P2M.Sol.S_QuaternionAlgebra_IsDefiniteRamifiedExactlyAt_exists_nrd_eq_of_pos",
+    "Submission.Supplier.P2M.Sol.S_QuaternionAlgebra_IsDefiniteRamifiedExactlyAt_exists_nrd_eq_of_pos",
+    "Submission.Supplier.Theorems.Thm_QuaternionAlgebra_IsDefiniteRamifiedExactlyAt_exists_nrd_eq_of_pos",
+    "Theorems.Thm_QuaternionAlgebra_IsDefiniteRamifiedExactlyAt_exists_nrd_eq_of_pos"
+  ]
+}
