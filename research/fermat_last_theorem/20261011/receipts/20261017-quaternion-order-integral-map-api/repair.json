@@ -1,0 +1,50 @@
+{
+  "at": "2026-10-17T11:12:04.091687+00:00",
+  "name": "QuaternionAlgebra_IsOrder_finite_isUnitOf_and_nrd_eq_one",
+  "candidate": "r1",
+  "card_candidate": "r1",
+  "source_replacements": [
+    [
+      "isIntegral_algebraMap_iff (algebraMap \u211a \u210d[\u211a, a, b]).injective",
+      "isIntegral_algebraMap_iff",
+      1
+    ],
+    [
+      "if_neg (one_ne_zero)",
+      "ite_eq_right (one_ne_zero)",
+      1
+    ],
+    [
+      "  haveI :",
+      "  have :",
+      2
+    ]
+  ],
+  "card_replacements": [],
+  "baseline_byte_identical_to_pinned_supplier": true,
+  "pinned_supplier_source_and_card_preserved": true,
+  "verification_pending": false,
+  "installed": true,
+  "no_linter_suppression_added": true,
+  "complete_original_proof_preserved": true,
+  "full_original_statement_and_hypotheses_preserved": true,
+  "max_active_flt_jobs": 1,
+  "lean_threads": 1,
+  "original_actual_errors": 2,
+  "original_actual_warnings": 3,
+  "original_kernel_seconds": 39.267368208,
+  "change": "Keep the complete original integral-element,charpoly,embedding-datum and finite-unit proof. Match pinned Mathlib isIntegral_algebraMap_iff,whose injectivity now comes from FaithfulSMul rather than an explicit argument;update deprecated if_neg name and two proposition haveI declarations. Public solution/card unchanged apart from axiom queries. Natural source/card verification pending.",
+  "full_original_complete": false,
+  "official_new_solve_credit": 0,
+  "active_import_closure_excluded": [
+    "Submission.Supplier.P2M.Sol.S_QuaternionAlgebra_nonempty_algEquiv_matrix_of_eq_mul_self_sub"
+  ],
+  "active_transitive_import_closure_size": 2,
+  "actual_live_descendant_sources": [],
+  "all_four_canonical_adapted_source_card_modules_excluded": [
+    "P2M.Sol.S_QuaternionAlgebra_IsOrder_finite_isUnitOf_and_nrd_eq_one",
+    "Submission.Supplier.P2M.Sol.S_QuaternionAlgebra_IsOrder_finite_isUnitOf_and_nrd_eq_one",
+    "Submission.Supplier.Theorems.Thm_QuaternionAlgebra_IsOrder_finite_isUnitOf_and_nrd_eq_one",
+    "Theorems.Thm_QuaternionAlgebra_IsOrder_finite_isUnitOf_and_nrd_eq_one"
+  ]
+}

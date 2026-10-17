@@ -1,0 +1,56 @@
+{
+  "sha256": "4d2fa39bc2845283abd56c57bbbf3c5ea11fa4784d8ba6b20d3940b4e04abfee",
+  "exit": 0,
+  "empty_output_retry_done": false,
+  "source_sha256_after": "4d2fa39bc2845283abd56c57bbbf3c5ea11fa4784d8ba6b20d3940b4e04abfee",
+  "source_unchanged": true,
+  "olean_sha256": "19e564073955d05b92118ef9575e8aa7e44b47378b38e116749365efa482fe0d",
+  "seconds": 64.87169216698385,
+  "pid": 93999,
+  "command": [
+    "/Users/macstudio/.local/omega-shims/lean",
+    "-j1",
+    "--trust=0",
+    "-Ddebug.skipKernelTC=false",
+    "-R",
+    "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src",
+    "-o",
+    "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-build/lib/lean/Submission/Supplier/Theorems/Thm_QuaternionAlgebra_IsOrder_finite_isUnitOf_and_nrd_eq_one.olean",
+    "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/Theorems/Thm_QuaternionAlgebra_IsOrder_finite_isUnitOf_and_nrd_eq_one.lean"
+  ],
+  "make_wrapper_pid": 88696,
+  "make_exit": 0,
+  "make_entry_failed": false,
+  "cache_binding_valid": true,
+  "canonical_make_running_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/9568fe266734530841382e74-1792235668007859000.make-running.json",
+  "canonical_make_terminal_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/9568fe266734530841382e74-1792235668007859000.make-terminal.json",
+  "kernel_terminal_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/9568fe266734530841382e74-1792235668007859000.kernel/result.json",
+  "direct_dependencies": [
+    {
+      "module": "Submission.Supplier.Definitions.Def_QuaternionAlgebra_Order",
+      "source_sha256": "6e9f5cec2a5578c8c6661468e6cbc05396673dca4d3154232c83c70ff2f2c9f0",
+      "object_sha256": "174883405aed78b65c0b29cebfe82caa97e95bd7c1f3970c96bb730f414bfe31",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Definitions.Def_QuaternionAlgebra_ReducedNorm",
+      "source_sha256": "d6dbd45e7408d9b8f5f0da93fae73bb8550ab4a881be89c6993a09f38f627fec",
+      "object_sha256": null,
+      "receipt_reused": false
+    },
+    {
+      "module": "Submission.Supplier.P2M.Util",
+      "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+      "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.P2M.Sol.S_QuaternionAlgebra_IsOrder_finite_isUnitOf_and_nrd_eq_one",
+      "source_sha256": "0450f2fb882e0f5b51a036f4ae1ca56d65b065ec164d74110edc1e29b4b414bc",
+      "object_sha256": "87235cfac0b0a4554badb89c3a1fc2342548afc848ab46fa80cac443a600d8b8",
+      "receipt_reused": true
+    }
+  ],
+  "stdout": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/9568fe266734530841382e74-1792235668007859000.kernel/stdout.log",
+  "stderr": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/9568fe266734530841382e74-1792235668007859000.kernel/stderr.log"
+}

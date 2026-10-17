@@ -1,0 +1,35 @@
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_QuaternionAlgebra_IsOrder_finite_isUnitOf_and_nrd_eq_one.lean:48:6: error: Function expected at
+  isIntegral_algebraMap_iff
+but this term has type
+  IsIntegral ?m.46 ((algebraMap ?m.47 ?m.48) ?m.56) ↔ IsIntegral ?m.46 ?m.56
+
+Note: Expected a function because this term is being applied to the argument
+  (algebraMap ℚ ℍ[ℚ,a,b]).injective
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_QuaternionAlgebra_IsOrder_finite_isUnitOf_and_nrd_eq_one.lean:45:62: error: unsolved goals
+a b : ℚ
+Λ : Submodule ℤ ℍ[ℚ,a,b]
+hΛ : IsOrder Λ
+r : ℚ
+hr : r • 1 ∈ Λ
+hi : IsIntegral ℤ ((algebraMap ℚ ℍ[ℚ,a,b]) r)
+⊢ ∃ k, ↑k = r
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_QuaternionAlgebra_IsOrder_finite_isUnitOf_and_nrd_eq_one.lean:128:17: warning: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_QuaternionAlgebra_IsOrder_finite_isUnitOf_and_nrd_eq_one.lean:206:2: warning: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_QuaternionAlgebra_IsOrder_finite_isUnitOf_and_nrd_eq_one.lean:209:2: warning: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
