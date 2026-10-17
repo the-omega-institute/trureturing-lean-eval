@@ -1,0 +1,75 @@
+{
+  "at": "2026-10-17T13:58:23.497334+00:00",
+  "name": "ValuationSubring_exists_window_and_adapted_basis",
+  "candidate": "r1",
+  "card_candidate": "r1",
+  "source_replacements": [
+    [
+      "CompleteLattice.IsCompactElement.exists_finset_of_le_iSup",
+      "_root_.IsCompactElement.exists_finset_of_le_iSup",
+      1
+    ],
+    [
+      "haveI :",
+      "have :",
+      2
+    ],
+    [
+      "zero_le'",
+      "zero_le",
+      1
+    ],
+    [
+      "if_true",
+      "ite_true",
+      2
+    ],
+    [
+      "if_neg",
+      "ite_eq_right",
+      2
+    ],
+    [
+      "AddSubmonoidClass.coe_finset_sum",
+      "AddSubmonoidClass.coe_finsetSum",
+      1
+    ],
+    [
+      "simp [Finset.sum_ite_eq', Finset.sum_ite_eq]",
+      "simp [Finset.sum_ite_eq']",
+      1
+    ]
+  ],
+  "card_replacements": [],
+  "baseline_byte_identical_to_pinned_supplier": true,
+  "pinned_supplier_source_and_card_preserved": true,
+  "verification_pending": false,
+  "installed": true,
+  "no_linter_suppression_added": true,
+  "complete_original_proof_preserved": true,
+  "full_original_statement_and_hypotheses_preserved": true,
+  "max_active_flt_jobs": 1,
+  "lean_threads": 1,
+  "original_actual_errors": 2,
+  "original_actual_warnings": 9,
+  "original_kernel_seconds": 39.986855,
+  "change": "Retain the complete original 407-line finite-window, pivot-selection, valuation-Gaussian elimination and adapted residue-basis assembly proof. Use the pinned root IsCompactElement finite-iSup extraction theorem, current zero/if/coercion aliases,and have for two local instances. Remove one actually unused sum_ite_eq simp argument while retaining sum_ite_eq'. Public solution/card statements and every hypothesis unchanged. No linter suppression added;two preexisting options retained. Canonical baselines byte-identical to pinned supplier. Natural source/card verification pending.",
+  "full_original_complete": false,
+  "official_new_solve_credit": 0,
+  "active_import_closure_excluded": [
+    "Submission.Supplier.P2M.Sol.S_ValuationSubring_isPrincipalIdealRing_of_finiteDimensional_adjoin"
+  ],
+  "active_transitive_import_closure_size": 2,
+  "actual_live_descendant_sources": [
+    {
+      "pid": 60117,
+      "source": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_ValuationSubring_isPrincipalIdealRing_of_finiteDimensional_adjoin.lean"
+    }
+  ],
+  "all_four_canonical_adapted_source_card_modules_excluded": [
+    "P2M.Sol.S_ValuationSubring_exists_window_and_adapted_basis",
+    "Submission.Supplier.P2M.Sol.S_ValuationSubring_exists_window_and_adapted_basis",
+    "Submission.Supplier.Theorems.Thm_ValuationSubring_exists_window_and_adapted_basis",
+    "Theorems.Thm_ValuationSubring_exists_window_and_adapted_basis"
+  ]
+}
