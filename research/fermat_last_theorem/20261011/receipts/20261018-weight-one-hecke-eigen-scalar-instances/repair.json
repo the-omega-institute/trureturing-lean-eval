@@ -1,0 +1,86 @@
+{
+  "at": "2026-10-17T18:57:02.622691+00:00",
+  "name": "LanglandsTunnell_isHeckeCosetEigenfunctionAt_weightOneLift",
+  "candidate": "r2",
+  "card_candidate": "r1",
+  "source_replacements": [
+    [
+      "MonoidHom.coe_coe",
+      "MonoidHom.coe_ofClass",
+      1
+    ],
+    [
+      "dif_pos",
+      "dite_eq_left",
+      1
+    ],
+    [
+      "  haveI : NeZero Nv := \u27e8hp.out.ne_zero\u27e9",
+      "  have : NeZero Nv := \u27e8hp.out.ne_zero\u27e9",
+      2
+    ],
+    [
+      "  haveI : IsPrincipalIdealRing (\ud835\udcde \u211a) :=",
+      "  have : IsPrincipalIdealRing (\ud835\udcde \u211a) :=",
+      1
+    ],
+    [
+      "  haveI : NeZero p := \u27e8hp.out.ne_zero\u27e9",
+      "  have : NeZero p := \u27e8hp.out.ne_zero\u27e9",
+      1
+    ],
+    [
+      "  haveI : Fact (Ideal.absNorm v.asIdeal).Prime :=",
+      "  have : Fact (Ideal.absNorm v.asIdeal).Prime :=",
+      1
+    ],
+    [
+      "  have : NeZero p := \u27e8hp.out.ne_zero\u27e9\n  have hp0 : (p : \u2102) \u2260 0 :=",
+      "  have : NeZero p := \u27e8hp.out.ne_zero\u27e9\n  let : AddCommGroup (ZMod p) := (inferInstance : CommRing (ZMod p)).toAddCommGroup\n  have hp0 : (p : \u2102) \u2260 0 :=",
+      1
+    ],
+    [
+      "    simp [Matrix.mul_apply, Fin.sum_univ_two, diagNat_apply,\n      ratHeckeRep_none_apply, twistQ, sl2ToQ_apply, twistZ, x0Z,\n      Matrix.SpecialLinearGroup.mapGL_coe_matrix, Matrix.SpecialLinearGroup.map_apply_coe,\n      RingHom.mapMatrix_apply, Matrix.map_apply] <;> ring\n",
+      "    (simp [Matrix.mul_apply, Fin.sum_univ_two, diagNat_apply,\n      ratHeckeRep_none_apply, twistQ, sl2ToQ_apply, twistZ, x0Z,\n      Matrix.SpecialLinearGroup.mapGL_coe_matrix, Matrix.SpecialLinearGroup.map_apply_coe,\n      RingHom.mapMatrix_apply, Matrix.map_apply]; ring)\n",
+      1
+    ],
+    [
+      "    (simp [Matrix.mul_apply, Fin.sum_univ_two, diagNat_apply,\n      ratHeckeRep_none_apply, twistQ, sl2ToQ_apply, twistZ, x0Z,\n      Matrix.SpecialLinearGroup.mapGL_coe_matrix, Matrix.SpecialLinearGroup.map_apply_coe,\n      RingHom.mapMatrix_apply, Matrix.map_apply]; ring)\n",
+      "    simp [Matrix.mul_apply, Fin.sum_univ_two, diagNat_apply,\n      ratHeckeRep_none_apply, twistQ, sl2ToQ_apply, twistZ, x0Z,\n      Matrix.SpecialLinearGroup.mapGL_coe_matrix, Matrix.SpecialLinearGroup.map_apply_coe,\n      RingHom.mapMatrix_apply, Matrix.map_apply]\n  all_goals ring\n",
+      1
+    ],
+    [
+      "if_neg",
+      "ite_eq_right",
+      1
+    ]
+  ],
+  "card_replacements": [],
+  "baseline_byte_identical_to_pinned_supplier": true,
+  "pinned_supplier_source_and_card_preserved": true,
+  "full_original_statements_hypotheses_and_all_proof_branches_preserved": true,
+  "no_linter_suppression_added": true,
+  "verification_pending": false,
+  "installed": true,
+  "actual_failure": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/official-layout/terminal-proof-repairs/20261018-weight-one-hecke-eigen-scalar-instances/previous-actual-failure",
+  "change": "Reuse the accepted proof-local ZMod AddCommGroup pin to the existing CommRing projection only in the original finite Hecke-sum reindexing helper, aligning neg_zero, neg_val and neg_neg without changing the bijection or any summand. Preserve every original zero/nonzero branch, all original rational/adelic decompositions, Hecke coset transport, all public hypotheses/conclusions and the complete 1753-line weight-one eigenfunction proof. Update two actual deprecated names, five proposition-local haveI declarations, and the one reported unnecessary sequence-focus combinator. Keep the original val_natCast simp argument, which is needed after fixing negation. Append source/card recursive axiom queries. Pending natural single-job make/kernel verification. Revision r2 retains the original four matrix cases and original simp/ring arguments, but runs ring with all_goals only on the goals left after simp, avoiding three no-goal errors introduced by sequencing in r1. Update the newly reached if_neg alias to ite_eq_right. All three original negation/reindexing errors and the prior style warnings are gone in the actual r1 result.",
+  "max_active_flt_jobs": 1,
+  "lean_threads": 1,
+  "full_original_complete": false,
+  "official_new_solve_credit": 0,
+  "active_import_closure_excluded": [
+    "Submission.Supplier.P2M.Sol.S_MeasureTheory_L2_exists_convolutionCLM_isCompactOperator"
+  ],
+  "active_transitive_import_closure_size": 3,
+  "actual_live_descendant_sources": [],
+  "all_four_canonical_adapted_source_card_modules_excluded": [
+    "P2M.Sol.S_LanglandsTunnell_isHeckeCosetEigenfunctionAt_weightOneLift",
+    "Submission.Supplier.P2M.Sol.S_LanglandsTunnell_isHeckeCosetEigenfunctionAt_weightOneLift",
+    "Submission.Supplier.Theorems.Thm_LanglandsTunnell_isHeckeCosetEigenfunctionAt_weightOneLift",
+    "Theorems.Thm_LanglandsTunnell_isHeckeCosetEigenfunctionAt_weightOneLift"
+  ],
+  "updated_at": "2026-10-17T18:59:22.485659+00:00",
+  "r1_actual_failure": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/official-layout/terminal-proof-repairs/20261018-weight-one-hecke-eigen-scalar-instances/r1-actual-failure",
+  "r1_actual_errors": 3,
+  "r1_actual_warnings": 1
+}

@@ -1,0 +1,98 @@
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_LanglandsTunnell_isHeckeCosetEigenfunctionAt_weightOneLift.lean:180:71: warning: `MonoidHom.coe_coe` has been deprecated: Use `MonoidHom.coe_ofClass` instead
+
+Hint: Replace the deprecated name:
+  M̵o̵n̵o̵i̵d̵H̵o̵m̵.̵c̵o̵e̵_̵c̵o̵e̵M̲o̲n̲o̲i̲d̲H̲o̲m̲.̲c̲o̲e̲_̲o̲f̲C̲l̲a̲s̲s̲
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_LanglandsTunnell_isHeckeCosetEigenfunctionAt_weightOneLift.lean:448:6: warning: `dif_pos` has been deprecated: Use `dite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  d̵i̵f̵_̵p̵o̵s̵d̲i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_LanglandsTunnell_isHeckeCosetEigenfunctionAt_weightOneLift.lean:1001:2: warning: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_LanglandsTunnell_isHeckeCosetEigenfunctionAt_weightOneLift.lean:1050:2: warning: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_LanglandsTunnell_isHeckeCosetEigenfunctionAt_weightOneLift.lean:1063:2: warning: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_LanglandsTunnell_isHeckeCosetEigenfunctionAt_weightOneLift.lean:1264:49: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_LanglandsTunnell_isHeckeCosetEigenfunctionAt_weightOneLift.lean:1606:2: warning: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_LanglandsTunnell_isHeckeCosetEigenfunctionAt_weightOneLift.lean:1612:4: error: unsolved goals
+case pos
+n p : ℕ
+hp : Fact (Nat.Prime p)
+f : ℍ → ℂ
+hf :
+  ∀ ε ∈ CongruenceSubgroup.Gamma1 n, f ∣[1] SpecialLinearGroup.toGL ((SpecialLinearGroup.map (Int.castRingHom ℝ)) ε) = f
+z : ℍ
+this : NeZero p
+hp0 : ↑p ≠ 0
+⊢ ↑z / ↑p = (↑z + (-0).cast) / ↑p
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_LanglandsTunnell_isHeckeCosetEigenfunctionAt_weightOneLift.lean:1622:8: error: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  (-?a).val
+in the target expression
+  (↑z - ↑↑c.val) / ↑p = ↑↑(-1) + (↑z + ↑(-c).val) / ↑p
+
+case neg
+n p : ℕ
+hp : Fact (Nat.Prime p)
+f : ℍ → ℂ
+hf :
+  ∀ ε ∈ CongruenceSubgroup.Gamma1 n, f ∣[1] SpecialLinearGroup.toGL ((SpecialLinearGroup.map (Int.castRingHom ℝ)) ε) = f
+z : ℍ
+this : NeZero p
+hp0 : ↑p ≠ 0
+c : ZMod p
+hc : ¬c = 0
+⊢ (↑z - ↑↑c.val) / ↑p = ↑↑(-1) + (↑z + ↑(-c).val) / ↑p
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_LanglandsTunnell_isHeckeCosetEigenfunctionAt_weightOneLift.lean:1631:45: error: unsolved goals
+n p : ℕ
+hp : Fact (Nat.Prime p)
+f : ℍ → ℂ
+hf :
+  ∀ ε ∈ CongruenceSubgroup.Gamma1 n, f ∣[1] SpecialLinearGroup.toGL ((SpecialLinearGroup.map (Int.castRingHom ℝ)) ε) = f
+z : ℍ
+this : NeZero p
+hp0 : ↑p ≠ 0
+hterm : ∀ (c : ZMod p), f (heckeArchFin p ↑c.val • z) = f (ModularForm.heckeMatrix p (-c).val • z)
+j : Fin p
+⊢ (- -↑↑j).val = ↑j
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_LanglandsTunnell_isHeckeCosetEigenfunctionAt_weightOneLift.lean:1631:54: warning: This simp argument is unused:
+  ZMod.val_natCast_of_lt j.isLt
+
+Hint: Omit it from the simp argument list.
+  [apply] simp
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_LanglandsTunnell_isHeckeCosetEigenfunctionAt_weightOneLift.lean:1744:2: warning: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`

@@ -1,0 +1,56 @@
+{
+  "sha256": "1bb187db210f96a17e114d3861899a3473bfa64a9971db2b513d960ee7236534",
+  "exit": 0,
+  "empty_output_retry_done": false,
+  "source_sha256_after": "1bb187db210f96a17e114d3861899a3473bfa64a9971db2b513d960ee7236534",
+  "source_unchanged": true,
+  "olean_sha256": "c284bd0775c8a70c5c12f6f3e8011917fd3c93c4517878b702575fb921ef1528",
+  "seconds": 51.18172595799979,
+  "pid": 18542,
+  "command": [
+    "/Users/macstudio/.local/omega-shims/lean",
+    "-j1",
+    "--trust=0",
+    "-Ddebug.skipKernelTC=false",
+    "-R",
+    "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src",
+    "-o",
+    "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-build/lib/lean/Submission/Supplier/Theorems/Thm_LanglandsTunnell_isHeckeCosetEigenfunctionAt_weightOneLift.olean",
+    "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/Theorems/Thm_LanglandsTunnell_isHeckeCosetEigenfunctionAt_weightOneLift.lean"
+  ],
+  "make_wrapper_pid": 17933,
+  "make_exit": 0,
+  "make_entry_failed": false,
+  "cache_binding_valid": true,
+  "canonical_make_running_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/ee9d39d93d59cedfcd31ac08-1792263636297305000.make-running.json",
+  "canonical_make_terminal_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/ee9d39d93d59cedfcd31ac08-1792263636297305000.make-terminal.json",
+  "kernel_terminal_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/ee9d39d93d59cedfcd31ac08-1792263636297305000.kernel/result.json",
+  "direct_dependencies": [
+    {
+      "module": "Submission.Supplier.Definitions.Def_AutomorphicForm_DihedralWeightOneLift",
+      "source_sha256": "c9fbaa64bf33cd585ef1ead29b0c76a9a93de7b2f49dc3f28ac3c8876f533190",
+      "object_sha256": null,
+      "receipt_reused": false
+    },
+    {
+      "module": "Submission.Supplier.Definitions.Def_ModularForm_HeckeOperator",
+      "source_sha256": "20baff864009cb329b3acc99122be19f306fd99643f79b447f7e67cfac37301c",
+      "object_sha256": "fce69e9b4d07765a4f4e03a9ed858c6aed52c89e920248e5bf2467b64a8f9760",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.P2M.Util",
+      "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+      "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.P2M.Sol.S_LanglandsTunnell_isHeckeCosetEigenfunctionAt_weightOneLift",
+      "source_sha256": "2cf8a6826a8ccf986c4ca5aca86a80c2bada130505e1cf7b0dc394ed3c0097d9",
+      "object_sha256": "1e365ec54e25f03ad8a7330755ce18b4bf06bb03014f664f97ba7fc53c1cb159",
+      "receipt_reused": true
+    }
+  ],
+  "stdout": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/ee9d39d93d59cedfcd31ac08-1792263636297305000.kernel/stdout.log",
+  "stderr": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/ee9d39d93d59cedfcd31ac08-1792263636297305000.kernel/stderr.log"
+}
