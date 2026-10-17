@@ -1,0 +1,64 @@
+{
+  "at": "2026-10-17T18:08:44.590727+00:00",
+  "name": "groupCohomology_bijective_theta_dualTwist_of_res_of_isOpen",
+  "candidate": "r2",
+  "card_candidate": "r1",
+  "source_replacements": [
+    [
+      "open CategoryTheory Module groupCohomology ExtCitation\n",
+      "open CategoryTheory Module groupCohomology ExtCitation\n\nprivate local instance scalarAddCommGroup (p : \u2115) : AddCommGroup (ZMod p) :=\n  (inferInstance : CommRing (ZMod p)).toAddCommGroup\n",
+      1
+    ],
+    [
+      "  haveI := hfdS\n",
+      "  have := hfdS\n",
+      1
+    ],
+    [
+      "  haveI : FiniteDimensional (ZMod p) (continuousH2",
+      "  have : FiniteDimensional (ZMod p) (continuousH2",
+      2
+    ]
+  ],
+  "card_replacements": [
+    [
+      "open CategoryTheory Module groupCohomology ExtCitation\n",
+      "open CategoryTheory Module groupCohomology ExtCitation\n\nprivate local instance scalarAddCommGroup (p : \u2115) : AddCommGroup (ZMod p) :=\n  (inferInstance : CommRing (ZMod p)).toAddCommGroup\n",
+      1
+    ]
+  ],
+  "baseline_byte_identical_to_pinned_supplier": true,
+  "pinned_supplier_source_and_card_preserved": true,
+  "full_original_statements_hypotheses_and_all_proof_branches_preserved": true,
+  "no_linter_suppression_added": true,
+  "verification_pending": false,
+  "installed": true,
+  "actual_failure": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/official-layout/terminal-proof-repairs/20261018-dual-twist-restriction-scalar-instances/previous-actual-failure",
+  "change": "Reuse the already accepted private local scalar AddCommGroup pin to the existing CommRing projection in source and public card. Actual failure was in the original full theta telescope for restricted dual twists, before the proof body. Keep the complete original Shapiro transport proof, all public statement text and hypotheses, all three theta cases. Append recursive axiom queries. Verification pending in the unchanged natural one-job make queue. Revision r2 changes the three proposition-local haveI declarations reported by the actual linter to have. The complete Shapiro transport proof and public statement remain unchanged; r1 actual make/kernel succeeded with standard axioms, but its three warnings require another natural queue validation.",
+  "max_active_flt_jobs": 1,
+  "lean_threads": 1,
+  "full_original_complete": false,
+  "official_new_solve_credit": 0,
+  "active_import_closure_excluded": [
+    "Submission.Supplier.P2M.Sol.S_groupCohomology_finrank_continuousEquivariantHom_eq_finrank_invariants_linHom_dualTwist"
+  ],
+  "active_transitive_import_closure_size": 26,
+  "actual_live_descendant_sources": [
+    {
+      "pid": 70933,
+      "source": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_groupCohomology_finrank_continuousEquivariantHom_eq_finrank_invariants_linHom_dualTwist.lean"
+    }
+  ],
+  "all_four_canonical_adapted_source_card_modules_excluded": [
+    "P2M.Sol.S_groupCohomology_bijective_theta_dualTwist_of_res_of_isOpen",
+    "Submission.Supplier.P2M.Sol.S_groupCohomology_bijective_theta_dualTwist_of_res_of_isOpen",
+    "Submission.Supplier.Theorems.Thm_groupCohomology_bijective_theta_dualTwist_of_res_of_isOpen",
+    "Theorems.Thm_groupCohomology_bijective_theta_dualTwist_of_res_of_isOpen"
+  ],
+  "updated_at": "2026-10-17T18:12:43.296301+00:00",
+  "r1_actual_make_exit": 0,
+  "r1_actual_kernel_exit": 0,
+  "r1_actual_source_warnings": 3,
+  "r1_actual_card_warnings": 0,
+  "r1_actual_result": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/official-layout/terminal-proof-repairs/20261018-dual-twist-restriction-scalar-instances/r1-actual-warning-result"
+}

@@ -1,0 +1,176 @@
+{
+  "sha256": "bc5d9ec29a2a899d4cfd9e76278e7ac1769bc20a8616d8fe6ad62ceb12b8552a",
+  "exit": 0,
+  "empty_output_retry_done": false,
+  "source_sha256_after": "bc5d9ec29a2a899d4cfd9e76278e7ac1769bc20a8616d8fe6ad62ceb12b8552a",
+  "source_unchanged": true,
+  "olean_sha256": "a89db00ceaac1e5642b58bad259b2d57be3d54b7b1fc168265c163b993a4afd4",
+  "seconds": 75.57951708300004,
+  "pid": 21660,
+  "command": [
+    "/Users/macstudio/.local/omega-shims/lean",
+    "-j1",
+    "--trust=0",
+    "-Ddebug.skipKernelTC=false",
+    "-R",
+    "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src",
+    "-o",
+    "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-build/lib/lean/Submission/Supplier/P2M/Sol/S_groupCohomology_bijective_theta_dualTwist_of_res_of_isOpen.olean",
+    "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_groupCohomology_bijective_theta_dualTwist_of_res_of_isOpen.lean"
+  ],
+  "make_wrapper_pid": 19118,
+  "make_exit": 0,
+  "make_entry_failed": false,
+  "cache_binding_valid": true,
+  "canonical_make_running_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/d987be46a2f748f273b822c2-1792260590438935000.make-running.json",
+  "canonical_make_terminal_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/d987be46a2f748f273b822c2-1792260590438935000.make-terminal.json",
+  "kernel_terminal_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/d987be46a2f748f273b822c2-1792260590438935000.kernel/result.json",
+  "direct_dependencies": [
+    {
+      "module": "Submission.Supplier.Definitions.Def_ExtEndgame_ProductionDatum",
+      "source_sha256": "9a1fdd7e662f69e542992438f8ecf0ced39bebbd9fa618ec8e5f252effbc1ef7",
+      "object_sha256": "a8787784b2bc80dc7e202d9acfd53bc478ecfce31ec7133e8b3c3a34c2da4595",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Definitions.Def_GroupCohomology_ContinuousH2",
+      "source_sha256": "ba2bef00cc25e4291c572686ab15d40de26367864cdf950b2e4cbbaebee234b1",
+      "object_sha256": "060f989d75ea782244200fae88e609b67279db7bf63256466ef1dba3f5eb10f4",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Definitions.Def_GroupCohomology_ContinuousH2Map",
+      "source_sha256": "549003d3ac42c6071e6edb34cdd3460fbc450aa45a7894d25269c0790c246a71",
+      "object_sha256": "3f516ea18719a73cf71385c4a676b796e45988a320bb380bc31b6bc4683703bd",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Definitions.Def_GroupCohomology_ContinuousH1",
+      "source_sha256": "d883f882b521ee513cd0fc873a2bef46d620a5961ad4e379075493c276b427d8",
+      "object_sha256": "eb73ce791d07b459d62466bad4cc7fac36c1ceadac70ad167597316bf1fdba19",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Definitions.Def_GroupCohomology_CupProduct",
+      "source_sha256": "14a9a62eaf3cf7589d0e71825ab128469d10ee6bbf4ecd3a7c02c8f4329ec624",
+      "object_sha256": "ab93afaabe348737b78b0a91b810a701ec2dbbbc5aeaabc084dc9f1cc6282563",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Definitions.Def_GroupCohomology_ContinuousDuality",
+      "source_sha256": "00c6ffc079bcdba78193edf10a1d39d5626253c7aada2b8621e2b5af04346c28",
+      "object_sha256": "056f692b20812ae33577c90f06a278d69aa1bee94b3b746fb22e1a55083aee1b",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Definitions.Def_GroupCohomology_Selmer",
+      "source_sha256": "ea2f6af9262277769520a6befcffc0da39a53f4a76cc35059a557f2e38d7dbe5",
+      "object_sha256": "7b41816c8e3fb9eb5e1688b69337fe88e6431118f74f37d178c3293396e47754",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Definitions.Def_DualSelmer_ExtConditions",
+      "source_sha256": "c1b2c251df0f5beafe5cd5e5079f48fc890964eede2aae816c4508fe3834786a",
+      "object_sha256": "838fb01ac2d003926c96c374442f289247b4fa2a0921d784ca9ce4eea6ef87cb",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Definitions.Def_ExtCitation_KummerBridge",
+      "source_sha256": "59618eef9e977ba7b4db42699f1b25a4c50134175fcb159bb321f8a977a16925",
+      "object_sha256": "ce523fc576bd45225aac312cf80ffc58beddc29981314458f54ce5c53547c941",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Theorems.Thm_Rep_exists_hom_coind_res_comp_eq_index_smul",
+      "source_sha256": "a4ad02b5f86c7a6e4ba93e1b0ff7bb5a66579048e24d0ccfe782a50f4fdeb921",
+      "object_sha256": "613dc1aca87bf1c7ee18aa798ccebdf46a8fe587981b92d18ed790af1cbe9a8a",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Theorems.Thm_Rep_isEquivariantBilinear_eval_dualTwist",
+      "source_sha256": "927850fbba5b2249a253148e3fc079eff7d6d2009dcbb66b943e5f4d5381879e",
+      "object_sha256": "cc4abbc9e1765d6760809ad0352f886ad42ddac9f32b1628cbeb38ddc953e298",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Theorems.Thm_Rep_dualTwist_smooth",
+      "source_sha256": "32a4f040ebd5f15122550198b4a294d76bcb7375d667c9e2677c4cf3f757338a",
+      "object_sha256": "ebc98b64bebdd189ede11ca10ed8db227d96a5aa312d3ff1718488d0ecada739",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Theorems.Thm_groupCohomology_exists_theta0_and_theta2",
+      "source_sha256": "9a3f233d40ad91799595bd74c35de9cf6ec741444bf01bebb5eae4a03bad6390",
+      "object_sha256": "c5a6d9ee71c4c61bf82fe91c2ff8d5e5bdbf37dee350ad2c2a48b4eea978a1c2",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Theorems.Thm_groupCohomology_exists_theta1",
+      "source_sha256": "8af3d433869f73caa01d46069756cb8f7af23a50b3dbd6a664bf0c3d3e727ff9",
+      "object_sha256": "4fefd43beeb381546f256250c8d289a4d8880b1713eb0e643f6e4dbccca03cdc",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Theorems.Thm_groupCohomology_bijective_theta_of_retract",
+      "source_sha256": "2998245ec0532daf54c6d1b64f972233f6738be7bfcee878b587c8634292d65b",
+      "object_sha256": "5f7ac69b5bceaf7d36fc847f1b3c82ace6a4e9a2dd32696641c3037504746cbf",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Theorems.Thm_groupCohomology_bijective_theta_coind",
+      "source_sha256": "70800c5a184f1ed99967c7d1901931c635dbc9a89923d0a0e959c442305d0c80",
+      "object_sha256": "b669d2044175836c8e0865613896342e874a65cceef58ba97058dfd448b54e96",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Theorems.Thm_Rep_coind_pairing_adjoint",
+      "source_sha256": "94b3a14d19b56cc29134faff2095ecb272a7285a2cd0fbaf0ccd3984dec92a19",
+      "object_sha256": "047a2c1019f6f6a9d3aa9db6b2a6c7c3dd18bbb14b952b2575a30b79cc0bb73d",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Theorems.Thm_groupCohomology_exists_level_ofChar_cycloChar_comp",
+      "source_sha256": "c5391856c9a38a64d5564332b83c4495b3dca5d918243e1fb7d81c9133d9565b",
+      "object_sha256": "8fb02b3c922406019e0d1e3922a6151727310e30311120477e117becbaddaa34",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Theorems.Thm_Rep_exists_level_coind_apply_eq_self",
+      "source_sha256": "98e71828bf83c8317fff89a6bd623278060f72a6a8b9c2a4ab3f92475ac36522",
+      "object_sha256": "03175aa39ae9d923f5a5f4a536fa0966e722a63bdcf73aaf286255f6ef31c577",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Theorems.Thm_groupCohomology_coind_cocycles1_mem_coboundaries1_of_eval_one_mem_coboundaries1",
+      "source_sha256": "b835632d7228822c2f8ae8d08a1008eb8b620a5fed99211b361b72c0c09f0327",
+      "object_sha256": "e28f1667ea65f4a019114130aa270e82a8e02fbe8d817dd1fb0f151dc76f4134",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Theorems.Thm_groupCohomology_coind_mem_levelCoboundaries2_of_eval_one_mem_levelCoboundaries2",
+      "source_sha256": "1f1fa26c737080cb2b0ec34bf38007c6b01e2ff8df5a08343b64c5969129106c",
+      "object_sha256": "e44b938b22c37ca4ff3ae65153ac4d6f1e81490d3660bc5cbd67ca9cc570e27c",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Theorems.Thm_groupCohomology_exists_coind_cocycles1_isLevelConstant1_eval_one_eq",
+      "source_sha256": "7c15f9294d4513216c3e86544be0303da583852a9d07f0716a1179c436e77178",
+      "object_sha256": "88427703b07db64a6da9a0117f04eef57785e5ae8cc4c863caffacaa4a545ab7",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Theorems.Thm_groupCohomology_exists_coind_mem_levelCocycles2_eval_one_eq",
+      "source_sha256": "157e54924f1a3b6e6f7a2db379eaef194b7cb121237bbb84c02779fc5b73b981",
+      "object_sha256": "c85c3d077fcdc83d16705d8b895d053226246e9cb11daad361008819a4c4c71e",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.P2M.Util",
+      "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+      "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+      "receipt_reused": true
+    }
+  ],
+  "stdout": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/d987be46a2f748f273b822c2-1792260590438935000.kernel/stdout.log",
+  "stderr": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/d987be46a2f748f273b822c2-1792260590438935000.kernel/stderr.log"
+}
