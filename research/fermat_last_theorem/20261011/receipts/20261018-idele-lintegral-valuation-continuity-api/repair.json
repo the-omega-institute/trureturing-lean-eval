@@ -1,0 +1,62 @@
+{
+  "at": "2026-10-17T20:15:41.168578+00:00",
+  "name": "NumberField_Idele_lintegral_mul_prod_ord_sPartMeasure_eq_lintegral_sPartMeasure_empty_mul_prod_tsum",
+  "candidate": "r1",
+  "card_candidate": "r1",
+  "source_replacements": [
+    [
+      "continuous_mul_left",
+      "continuous_const_mul",
+      1
+    ],
+    [
+      "if_pos",
+      "ite_eq_left",
+      2
+    ],
+    [
+      "if_neg",
+      "ite_eq_right",
+      2
+    ],
+    [
+      "Set.mem_setOf_eq",
+      "Set.mem_ofPred_eq",
+      5
+    ],
+    [
+      "Set.mem_diff",
+      "Set.mem_sdiff",
+      1
+    ]
+  ],
+  "card_replacements": [],
+  "baseline_byte_identical_to_pinned_supplier": true,
+  "pinned_supplier_source_and_card_preserved": true,
+  "full_original_statements_hypotheses_and_all_proof_branches_preserved": true,
+  "no_linter_suppression_added": true,
+  "verification_pending": false,
+  "installed": true,
+  "actual_failure": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/official-layout/terminal-proof-repairs/20261018-idele-lintegral-valuation-continuity-api/previous-actual-failure",
+  "change": "Replace the removed continuous_mul_left with the current continuous_const_mul theorem for the identical left-multiplication map in the original valuation-subring openness proof. Update exactly the ten reported deprecated conditional/set-membership aliases. Preserve every original idele component, valuation, unit-part, measurable-order, translation, Haar/set-lintegral and list/finite-product induction argument, including the full final integral-to-series product formula with its original hypotheses. Append source/card recursive axiom queries. Pending natural single-job make/kernel verification.",
+  "max_active_flt_jobs": 1,
+  "lean_threads": 1,
+  "full_original_complete": false,
+  "official_new_solve_credit": 0,
+  "active_import_closure_excluded": [
+    "Submission.Supplier.P2M.Sol.S_NumberField_Idele_sPartMeasure_pos_of_isOpen_of_partAt_eq"
+  ],
+  "active_transitive_import_closure_size": 23,
+  "actual_live_descendant_sources": [
+    {
+      "pid": 60282,
+      "source": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_NumberField_Idele_sPartMeasure_pos_of_isOpen_of_partAt_eq.lean"
+    }
+  ],
+  "all_four_canonical_adapted_source_card_modules_excluded": [
+    "P2M.Sol.S_NumberField_Idele_lintegral_mul_prod_ord_sPartMeasure_eq_lintegral_sPartMeasure_empty_mul_prod_tsum",
+    "Submission.Supplier.P2M.Sol.S_NumberField_Idele_lintegral_mul_prod_ord_sPartMeasure_eq_lintegral_sPartMeasure_empty_mul_prod_tsum",
+    "Submission.Supplier.Theorems.Thm_NumberField_Idele_lintegral_mul_prod_ord_sPartMeasure_eq_lintegral_sPartMeasure_empty_mul_prod_tsum",
+    "Theorems.Thm_NumberField_Idele_lintegral_mul_prod_ord_sPartMeasure_eq_lintegral_sPartMeasure_empty_mul_prod_tsum"
+  ]
+}
