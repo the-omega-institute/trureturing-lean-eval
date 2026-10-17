@@ -1,0 +1,35 @@
+{
+  "at": "2026-10-17T04:01:03.037738+00:00",
+  "candidate": "r2",
+  "source_replacements": [
+    [
+      "set_option Elab.async false\n",
+      "set_option Elab.async false\n\nprivate local instance scalarAddCommGroup (p : ℕ) : AddCommGroup (ZMod p) :=\n  (inferInstance : CommRing (ZMod p)).toAddCommGroup\n",
+      1
+    ],
+    [
+      "pow_lt_one₀ zero_le' h hn.ne'",
+      "pow_lt_one₀ zero_le h hn.ne'",
+      1
+    ],
+    [
+      "variable (E : Type) [Field E] [NumberField E] [Algebra E K]",
+      "variable (E : Type) [Field E] [numberFieldE : NumberField E] [Algebra E K]",
+      1
+    ],
+    [
+      "lemma mem_sUnits_of_pow_eq_one",
+      "include numberFieldE in\nlemma mem_sUnits_of_pow_eq_one",
+      1
+    ],
+    [
+      "  haveI : NeZero p := ⟨hp.out.ne_zero⟩",
+      "  have : NeZero p := ⟨hp.out.ne_zero⟩",
+      1
+    ]
+  ],
+  "actual_r1_syntax_failure": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/official-layout/terminal-proof-repairs/20261017-sunits-torsion-cyclotomic-scalar-instances/r1-actual-include-syntax-failure",
+  "card_candidate": "r1",
+  "public_card_unchanged_from_r1": true,
+  "description": "Correct include command to name the original NumberField E instance and explicitly retain that exact instance; all hypothesis types/positions and complete original proof preserved. Original three instance-related errors and other two warnings absent in actual r1; only include syntax error and unused-section warning remain. Not installed yet."
+}

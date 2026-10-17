@@ -1,0 +1,31 @@
+{
+  "at": "2026-10-17T04:09:31.962742+00:00",
+  "candidate": "r3",
+  "card_candidate": "r1",
+  "source_replacements": [
+    [
+      "set_option Elab.async false\n",
+      "set_option Elab.async false\n\nprivate local instance scalarAddCommGroup (p : \u2115) : AddCommGroup (ZMod p) :=\n  (inferInstance : CommRing (ZMod p)).toAddCommGroup\n",
+      1
+    ],
+    [
+      "pow_lt_one\u2080 zero_le' h hn.ne'",
+      "pow_lt_one\u2080 zero_le h hn.ne'",
+      1
+    ],
+    [
+      "variable (E : Type) [Field E] [NumberField E] [Algebra E K]\n\nlemma mem_sUnits_of_pow_eq_one",
+      "lemma mem_sUnits_of_pow_eq_one (E : Type) [Field E] [NumberField E] [Algebra E K]",
+      1
+    ],
+    [
+      "  haveI : NeZero p := \u27e8hp.out.ne_zero\u27e9",
+      "  have : NeZero p := \u27e8hp.out.ne_zero\u27e9",
+      1
+    ]
+  ],
+  "installed": false,
+  "reason": "Actual r2 make/kernel0/0 but one unused-section-variable warning despite include. Make original E/Field/NumberField/Algebra helper binders explicit on the same lemma, in the same order, keeping all hypothesis types and the entire original proof. No linter suppression; no active source edit until actual live+queued closure excludes all four modules.",
+  "full_original_complete": false,
+  "official_new_solve_credit": 0
+}

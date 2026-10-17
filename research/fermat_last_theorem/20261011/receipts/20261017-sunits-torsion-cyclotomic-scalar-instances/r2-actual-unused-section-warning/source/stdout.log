@@ -1,0 +1,9 @@
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_NumberField_LevelArith_nonempty_inflLevel_repTorsionP_sUnitsRep_iso_twist_cycloChar.lean:57:0: warning: automatically included section variable(s) unused in theorem `P2MW.S_NumberField_LevelArith_nonempty_inflLevel_repTorsionP_sUnitsRep_iso_twist_cycloChar.TorsionUnits.mem_sUnits_of_pow_eq_one`:
+  numberFieldE
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit numberFieldE in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+'P2MW.S_NumberField_LevelArith_nonempty_inflLevel_repTorsionP_sUnitsRep_iso_twist_cycloChar.solution' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

@@ -1,0 +1,69 @@
+{
+  "at": "2026-10-17T03:51:31.111019+00:00",
+  "name": "NumberField_LevelArith_nonempty_inflLevel_repTorsionP_sUnitsRep_iso_twist_cycloChar",
+  "candidate": "r2",
+  "card_candidate": "r1",
+  "source_replacements": [
+    [
+      "set_option Elab.async false\n",
+      "set_option Elab.async false\n\nprivate local instance scalarAddCommGroup (p : ℕ) : AddCommGroup (ZMod p) :=\n  (inferInstance : CommRing (ZMod p)).toAddCommGroup\n",
+      1
+    ],
+    [
+      "pow_lt_one₀ zero_le' h hn.ne'",
+      "pow_lt_one₀ zero_le h hn.ne'",
+      1
+    ],
+    [
+      "variable (E : Type) [Field E] [NumberField E] [Algebra E K]",
+      "variable (E : Type) [Field E] [numberFieldE : NumberField E] [Algebra E K]",
+      1
+    ],
+    [
+      "lemma mem_sUnits_of_pow_eq_one",
+      "include numberFieldE in\nlemma mem_sUnits_of_pow_eq_one",
+      1
+    ],
+    [
+      "  haveI : NeZero p := ⟨hp.out.ne_zero⟩",
+      "  have : NeZero p := ⟨hp.out.ne_zero⟩",
+      1
+    ]
+  ],
+  "card_replacements": [
+    [
+      "open scoped Classical NumberField.LevelArith\n",
+      "open scoped Classical NumberField.LevelArith\n\nprivate local instance scalarAddCommGroup (p : ℕ) : AddCommGroup (ZMod p) :=\n  (inferInstance : CommRing (ZMod p)).toAddCommGroup\n",
+      1
+    ]
+  ],
+  "baseline_byte_identical_to_pinned_supplier": true,
+  "pinned_supplier_source_and_card_preserved": true,
+  "full_original_statements_hypotheses_and_all_proof_branches_preserved": true,
+  "no_linter_suppression_added": true,
+  "verification_pending": true,
+  "installed": true,
+  "installed_at": "2026-10-17T04:01:20.254273+00:00",
+  "actual_failure": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/official-layout/terminal-proof-repairs/20261017-sunits-torsion-cyclotomic-scalar-instances/previous-actual-failure",
+  "original_actual_errors": 3,
+  "original_actual_warnings": 3,
+  "max_active_flt_jobs": 1,
+  "lean_threads": 1,
+  "full_original_complete": false,
+  "official_new_solve_credit": 0,
+  "change": "Preserve complete original212-line proof and literal public theorem. Pin scalar AddCommGroup to existing CommRing projection in private local instances in source/card so declaration types and proofs elaborate coherently. Replace zero_le deprecated spelling, use have for NeZero proof, explicitly include the already automatically included NumberField E helper hypothesis, retaining its type and position; no linter option added. Candidate r2 corrects include syntax by naming the original NumberField E instance and explicitly including that same existing hypothesis; all hypothesis types/positions retained; public card stays r1.",
+  "active_import_closure_excluded": [
+    "Submission.Supplier.P2M.Sol.S_groupCohomology_finrank_H1_res_extArithLoc_archSlot_eq_zero"
+  ],
+  "active_transitive_import_closure_size": 18,
+  "actual_live_descendant_sources": [],
+  "all_four_canonical_adapted_source_card_modules_excluded": [
+    "P2M.Sol.S_NumberField_LevelArith_nonempty_inflLevel_repTorsionP_sUnitsRep_iso_twist_cycloChar",
+    "Submission.Supplier.P2M.Sol.S_NumberField_LevelArith_nonempty_inflLevel_repTorsionP_sUnitsRep_iso_twist_cycloChar",
+    "Submission.Supplier.Theorems.Thm_NumberField_LevelArith_nonempty_inflLevel_repTorsionP_sUnitsRep_iso_twist_cycloChar",
+    "Theorems.Thm_NumberField_LevelArith_nonempty_inflLevel_repTorsionP_sUnitsRep_iso_twist_cycloChar"
+  ],
+  "r1_actual_syntax_failure": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/official-layout/terminal-proof-repairs/20261017-sunits-torsion-cyclotomic-scalar-instances/r1-actual-include-syntax-failure",
+  "r1_actual_errors": 1,
+  "r1_actual_warnings": 1
+}
