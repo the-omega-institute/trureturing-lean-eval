@@ -1,0 +1,101 @@
+{
+  "at": "2026-10-17T18:53:05.323142+00:00",
+  "name": "Mathlib_MeasureTheory_Function_L2KernelOperator",
+  "source_prefix": "Definitions/Def_",
+  "candidate": "r2",
+  "source_replacements": [
+    [
+      "  have h2 : ((2 : \u211d\u22650\u221e)).toReal = (2 : \u211d) := by norm_num\n  rw [eLpNorm_eq_lintegral_rpow_enorm_toReal (by norm_num) (by norm_num),\n    eLpNorm_eq_lintegral_rpow_enorm_toReal (by norm_num) (by norm_num),\n    eLpNorm_eq_lintegral_rpow_enorm_toReal (by norm_num) (by norm_num), h2,\n",
+      "  have h2 : ((2 : \u211d\u22650\u221e)).toReal = (2 : \u211d) := by norm_num\n  have hKI : AEStronglyMeasurable (kernelIntegral \u03bd K f) \u03bc :=\n    (hK.mul (hf.comp_quasiMeasurePreserving\n      Measure.quasiMeasurePreserving_snd)).integral_prod_right'\n  rw [eLpNorm_eq_lintegral_rpow_enorm_toReal (by norm_num) (by norm_num) hKI,\n    eLpNorm_eq_lintegral_rpow_enorm_toReal (by norm_num) (by norm_num) hK,\n    eLpNorm_eq_lintegral_rpow_enorm_toReal (by norm_num) (by norm_num) hf, h2,\n",
+      1
+    ],
+    [
+      "  refine \u27e8?_, ?_\u27e9\n  \u00b7 exact (hK.aestronglyMeasurable.mul (hf.aestronglyMeasurable.comp_quasiMeasurePreserving\n      Measure.quasiMeasurePreserving_snd)).integral_prod_right'\n  \u00b7 exact (eLpNorm_kernelIntegral_le hK.aestronglyMeasurable hf.aestronglyMeasurable).trans_lt\n      (ENNReal.mul_lt_top hK.eLpNorm_lt_top hf.eLpNorm_lt_top)\n",
+      "  change eLpNorm (kernelIntegral \u03bd K f) 2 \u03bc < \u221e\n  exact (eLpNorm_kernelIntegral_le hK.aestronglyMeasurable hf.aestronglyMeasurable).trans_lt\n    (ENNReal.mul_lt_top hK.eLpNorm_lt_top hf.eLpNorm_lt_top)\n",
+      1
+    ],
+    [
+      "    rw [eLpNorm_eq_lintegral_rpow_enorm_toReal (by norm_num) (by norm_num)] at h2\n",
+      "    rw [eLpNorm_eq_lintegral_rpow_enorm_toReal (by norm_num) (by norm_num)\n      hK.aestronglyMeasurable] at h2\n",
+      1
+    ],
+    [
+      "  refine \u27e8hx1, ?_\u27e9\n  rw [eLpNorm_eq_lintegral_rpow_enorm_toReal (by norm_num) (by norm_num)]\n",
+      "  change eLpNorm (fun y => K (x, y)) 2 \u03bd < \u221e\n  rw [eLpNorm_eq_lintegral_rpow_enorm_toReal (by norm_num) (by norm_num) hx1]\n",
+      1
+    ],
+    [
+      "ContinuousLinearMap.smul_apply",
+      "smul_apply",
+      1
+    ],
+    [
+      "isClosed_setOf_isCompactOperator",
+      "isClosed_setOfPred_isCompactOperator",
+      1
+    ],
+    [
+      "Set.mem_diff",
+      "Set.mem_sdiff",
+      1
+    ],
+    [
+      "zero_le'",
+      "zero_le",
+      1
+    ],
+    [
+      "\nend MeasureTheory\n",
+      "\nend MeasureTheory\n\n#print axioms MeasureTheory.L2.lintegral_enorm_kernelIntegral_sq_le\n\n#print axioms MeasureTheory.L2.eLpNorm_kernelIntegral_le\n\n#print axioms MeasureTheory.MemLp.kernelIntegral\n\n#print axioms MeasureTheory.L2.norm_kernelIntegralCLM_le\n\n#print axioms MeasureTheory.L2.norm_kernelIntegral\u2097_le\n\n#print axioms MeasureTheory.L2.kernelIntegralCLM_indicatorConst_prod\n\n#print axioms MeasureTheory.L2.isCompactOperator_kernelIntegralCLM_indicatorConst_prod\n\n#print axioms MeasureTheory.L2.compactKernels_eq_top\n\n#print axioms MeasureTheory.L2.isCompactOperator_kernelIntegralCLM\n\n#print axioms MeasureTheory.L2.finiteDimensional_of_kernelIntegralCLM_eq_id\n",
+      1
+    ],
+    [
+      "  change eLpNorm (kernelIntegral \u03bd K f) 2 \u03bc < \u221e\n",
+      "  change eLpNorm (MeasureTheory.L2.kernelIntegral \u03bd K f) 2 \u03bc < \u221e\n",
+      1
+    ]
+  ],
+  "axiom_declarations": [
+    "MeasureTheory.L2.lintegral_enorm_kernelIntegral_sq_le",
+    "MeasureTheory.L2.eLpNorm_kernelIntegral_le",
+    "MeasureTheory.MemLp.kernelIntegral",
+    "MeasureTheory.L2.norm_kernelIntegralCLM_le",
+    "MeasureTheory.L2.norm_kernelIntegral\u2097_le",
+    "MeasureTheory.L2.kernelIntegralCLM_indicatorConst_prod",
+    "MeasureTheory.L2.isCompactOperator_kernelIntegralCLM_indicatorConst_prod",
+    "MeasureTheory.L2.compactKernels_eq_top",
+    "MeasureTheory.L2.isCompactOperator_kernelIntegralCLM",
+    "MeasureTheory.L2.finiteDimensional_of_kernelIntegralCLM_eq_id"
+  ],
+  "baseline_byte_identical_to_pinned_supplier": true,
+  "pinned_supplier_source_preserved": true,
+  "full_original_statements_hypotheses_and_all_proof_branches_preserved": true,
+  "no_linter_suppression_added": true,
+  "verification_pending": false,
+  "installed": true,
+  "actual_failure": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/official-layout/terminal-proof-repairs/20261018-l2-kernel-operator-memlp-api/previous-actual-failure",
+  "change": "Adapt to the pinned Mathlib MemLp/eLpNorm API: move the identical original kernel measurability argument into the norm-bound proof where the new formula needs it; explicitly supply all five existing measurability witnesses; use the current finite-eLpNorm definition for the two original MemLp constructions. Preserve the full Holder bound, every linear-map branch, rank-one factorization, rectangle approximation, compactness closure, and finite-dimensional consequence, with all public telescopes unchanged. Replace four actual deprecated names with their official current spellings. Keep every original #guard_msgs standard-axiom assertion unchanged and add unsuppressed copies of the same ten queries for acceptance evidence. Pending natural single-job make/kernel verification. Revision r2 fully qualifies the kernel-integral function in the new MemLp change statement; inside the proof of MemLp.kernelIntegral the short name resolves to the theorem being defined. The original measurability/norm API errors are gone in r1, and the remaining eight guard failures followed this one name-resolution error.",
+  "max_active_flt_jobs": 1,
+  "lean_threads": 1,
+  "full_original_complete": false,
+  "official_new_solve_credit": 0,
+  "active_import_closure_excluded": [
+    "Submission.Supplier.P2M.Sol.S_LanglandsTunnell_isHeckeCosetEigenfunctionAt_weightOneLift"
+  ],
+  "active_transitive_import_closure_size": 58,
+  "actual_live_descendant_sources": [
+    {
+      "pid": 94485,
+      "source": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_LanglandsTunnell_isHeckeCosetEigenfunctionAt_weightOneLift.lean"
+    }
+  ],
+  "canonical_adapted_definition_modules_excluded": [
+    "Definitions.Def_Mathlib_MeasureTheory_Function_L2KernelOperator",
+    "Submission.Supplier.Definitions.Def_Mathlib_MeasureTheory_Function_L2KernelOperator"
+  ],
+  "definition_module_has_no_separate_source_card_pair": true,
+  "updated_at": "2026-10-17T18:57:57.023087+00:00",
+  "r1_actual_failure": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/official-layout/terminal-proof-repairs/20261018-l2-kernel-operator-memlp-api/r1-actual-failure",
+  "r1_actual_errors": 9,
+  "r1_actual_warnings": 0
+}

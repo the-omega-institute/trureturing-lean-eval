@@ -1,0 +1,152 @@
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/Definitions/Def_Mathlib_MeasureTheory_Function_L2KernelOperator.lean:73:83: error: unsolved goals
+α : Type u_1
+β : Type u_2
+inst✝² : MeasurableSpace α
+inst✝¹ : MeasurableSpace β
+μ : Measure α
+ν : Measure β
+inst✝ : SFinite ν
+K : α × β → ℂ
+f : β → ℂ
+hK : AEStronglyMeasurable K (μ.prod ν)
+hf : AEStronglyMeasurable f ν
+h2 : ENNReal.toReal 2 = 2
+⊢ AEStronglyMeasurable f ν
+
+α : Type u_1
+β : Type u_2
+inst✝² : MeasurableSpace α
+inst✝¹ : MeasurableSpace β
+μ : Measure α
+ν : Measure β
+inst✝ : SFinite ν
+K : α × β → ℂ
+f : β → ℂ
+hK : AEStronglyMeasurable K (μ.prod ν)
+hf : AEStronglyMeasurable f ν
+h2 : ENNReal.toReal 2 = 2
+⊢ AEStronglyMeasurable K (μ.prod ν)
+
+α : Type u_1
+β : Type u_2
+inst✝² : MeasurableSpace α
+inst✝¹ : MeasurableSpace β
+μ : Measure α
+ν : Measure β
+inst✝ : SFinite ν
+K : α × β → ℂ
+f : β → ℂ
+hK : AEStronglyMeasurable K (μ.prod ν)
+hf : AEStronglyMeasurable f ν
+h2 : ENNReal.toReal 2 = 2
+⊢ AEStronglyMeasurable (kernelIntegral ν K f) μ
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/Definitions/Def_Mathlib_MeasureTheory_Function_L2KernelOperator.lean:84:9: error: Invalid `⟨...⟩` notation: The expected type
+  WithTop.LT (eLpNorm (L2.kernelIntegral ν K f) 2 μ) ∞
+has more than one constructor
+
+Note: This notation can only be used when the expected type is an inductive type with a single constructor
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/Definitions/Def_Mathlib_MeasureTheory_Function_L2KernelOperator.lean:85:2: error: No goals to be solved
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/Definitions/Def_Mathlib_MeasureTheory_Function_L2KernelOperator.lean:94:61: error: unsolved goals
+α : Type u_1
+β : Type u_2
+inst✝² : MeasurableSpace α
+inst✝¹ : MeasurableSpace β
+μ : Measure α
+ν : Measure β
+inst✝ : SFinite ν
+K : α × β → ℂ
+hK : MemLp K 2 (μ.prod ν)
+hmeas : ∀ᵐ (x : α) ∂μ, AEStronglyMeasurable (fun y => K (x, y)) ν
+h2 : eLpNorm K 2 (μ.prod ν) < ∞
+⊢ AEStronglyMeasurable K (μ.prod ν)
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/Definitions/Def_Mathlib_MeasureTheory_Function_L2KernelOperator.lean:105:9: error: Invalid `⟨...⟩` notation: The expected type
+  WithTop.LT (eLpNorm (fun y => K (x, y)) 2 ν) ∞
+has more than one constructor
+
+Note: This notation can only be used when the expected type is an inductive type with a single constructor
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/Definitions/Def_Mathlib_MeasureTheory_Function_L2KernelOperator.lean:106:6: error: No goals to be solved
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/Definitions/Def_Mathlib_MeasureTheory_Function_L2KernelOperator.lean:264:36: warning: `ContinuousLinearMap.smul_apply` has been deprecated: Use `smul_apply` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.smul_apply` to `smul_apply x`).
+
+Hint: Replace the deprecated name:
+  C̵o̵n̵t̵i̵n̵u̵o̵u̵s̵L̵i̵n̵e̵a̵r̵M̵a̵p̵.̵s̵m̵u̵l̵_̵a̵p̵p̵l̵y̵s̲m̲u̲l̲_̲a̲p̲p̲l̲y̲
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/Definitions/Def_Mathlib_MeasureTheory_Function_L2KernelOperator.lean:316:8: warning: `isClosed_setOf_isCompactOperator` has been deprecated: Use `isClosed_setOfPred_isCompactOperator` instead
+
+Hint: Replace the deprecated name:
+  isClosed_setOfP̲r̲e̲d̲_isCompactOperator
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/Definitions/Def_Mathlib_MeasureTheory_Function_L2KernelOperator.lean:348:17: warning: `Set.mem_diff` has been deprecated: Use `Set.mem_sdiff` instead
+
+Hint: Replace the deprecated name:
+  S̵e̵t̵.̵m̵e̵m̵_̵d̵i̵f̵f̵m̲e̲m̲_̲s̲d̲i̲f̲f̲
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/Definitions/Def_Mathlib_MeasureTheory_Function_L2KernelOperator.lean:441:50: warning: `zero_le'` has been deprecated: Use `zero_le` instead
+
+Hint: Replace the deprecated name:
+  zero_le'̵
+'MeasureTheory.L2.eLpNorm_kernelIntegral_le' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/Definitions/Def_Mathlib_MeasureTheory_Function_L2KernelOperator.lean:500:0: error: ❌️ Docstring on `#guard_msgs` does not match generated message:
+
+- info: 'MeasureTheory.L2.eLpNorm_kernelIntegral_le' depends on axioms: [propext, Classical.choice, Quot.sound]
++ info: 'MeasureTheory.L2.eLpNorm_kernelIntegral_le' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'MeasureTheory.MemLp.kernelIntegral' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/Definitions/Def_Mathlib_MeasureTheory_Function_L2KernelOperator.lean:506:0: error: ❌️ Docstring on `#guard_msgs` does not match generated message:
+
+- info: 'MeasureTheory.MemLp.kernelIntegral' depends on axioms: [propext, Classical.choice, Quot.sound]
++ info: 'MeasureTheory.MemLp.kernelIntegral' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'MeasureTheory.L2.norm_kernelIntegralCLM_le' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/Definitions/Def_Mathlib_MeasureTheory_Function_L2KernelOperator.lean:512:0: error: ❌️ Docstring on `#guard_msgs` does not match generated message:
+
+- info: 'MeasureTheory.L2.norm_kernelIntegralCLM_le' depends on axioms: [propext, Classical.choice, Quot.sound]
++ info: 'MeasureTheory.L2.norm_kernelIntegralCLM_le' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'MeasureTheory.L2.norm_kernelIntegralₗ_le' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/Definitions/Def_Mathlib_MeasureTheory_Function_L2KernelOperator.lean:518:0: error: ❌️ Docstring on `#guard_msgs` does not match generated message:
+
+- info: 'MeasureTheory.L2.norm_kernelIntegralₗ_le' depends on axioms: [propext, Classical.choice, Quot.sound]
++ info: 'MeasureTheory.L2.norm_kernelIntegralₗ_le' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'MeasureTheory.L2.kernelIntegralCLM_indicatorConst_prod' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/Definitions/Def_Mathlib_MeasureTheory_Function_L2KernelOperator.lean:524:0: error: ❌️ Docstring on `#guard_msgs` does not match generated message:
+
+- info: 'MeasureTheory.L2.kernelIntegralCLM_indicatorConst_prod' depends on axioms: [propext, Classical.choice, Quot.sound]
++ info: 'MeasureTheory.L2.kernelIntegralCLM_indicatorConst_prod' depends on axioms: [propext,
++  sorryAx,
++  Classical.choice,
++  Quot.sound]
+'MeasureTheory.L2.isCompactOperator_kernelIntegralCLM_indicatorConst_prod' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/Definitions/Def_Mathlib_MeasureTheory_Function_L2KernelOperator.lean:532:0: error: ❌️ Docstring on `#guard_msgs` does not match generated message:
+
+  info: 'MeasureTheory.L2.isCompactOperator_kernelIntegralCLM_indicatorConst_prod' depends on axioms: [propext,
++  sorryAx,
+   Classical.choice,
+   Quot.sound]
+'MeasureTheory.L2.compactKernels_eq_top' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/Definitions/Def_Mathlib_MeasureTheory_Function_L2KernelOperator.lean:538:0: error: ❌️ Docstring on `#guard_msgs` does not match generated message:
+
+- info: 'MeasureTheory.L2.compactKernels_eq_top' depends on axioms: [propext, Classical.choice, Quot.sound]
++ info: 'MeasureTheory.L2.compactKernels_eq_top' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'MeasureTheory.L2.isCompactOperator_kernelIntegralCLM' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/Definitions/Def_Mathlib_MeasureTheory_Function_L2KernelOperator.lean:544:0: error: ❌️ Docstring on `#guard_msgs` does not match generated message:
+
+- info: 'MeasureTheory.L2.isCompactOperator_kernelIntegralCLM' depends on axioms: [propext, Classical.choice, Quot.sound]
++ info: 'MeasureTheory.L2.isCompactOperator_kernelIntegralCLM' depends on axioms: [propext,
++  sorryAx,
++  Classical.choice,
++  Quot.sound]
+'MeasureTheory.L2.finiteDimensional_of_kernelIntegralCLM_eq_id' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/Definitions/Def_Mathlib_MeasureTheory_Function_L2KernelOperator.lean:552:0: error: ❌️ Docstring on `#guard_msgs` does not match generated message:
+
+  info: 'MeasureTheory.L2.finiteDimensional_of_kernelIntegralCLM_eq_id' depends on axioms: [propext,
++  sorryAx,
+   Classical.choice,
+   Quot.sound]
