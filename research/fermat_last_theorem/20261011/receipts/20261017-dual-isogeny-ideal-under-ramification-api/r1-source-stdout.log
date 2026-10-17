@@ -1,0 +1,29 @@
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_WeierstrassCurve_Affine_IsogenyEndDatum_exists_dualEndData_dual_mem_and_norm_eq_finrankAlong.lean:4502:8: error(lean.invalidField): Invalid field `intValuation_ite_eq_right`: The environment does not contain `IsDedekindDomain.HeightOneSpectrum.intValuation_ite_eq_right`, so it is not possible to project the field `intValuation_ite_eq_right` from an expression
+  w
+of type `HeightOneSpectrum R`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_WeierstrassCurve_Affine_IsogenyEndDatum_exists_dualEndData_dual_mem_and_norm_eq_finrankAlong.lean:4491:76: error: unsolved goals
+K : Type u_1
+inst✝⁸ : Field K
+R : Type u_2
+inst✝⁷ : CommRing R
+inst✝⁶ : IsDedekindDomain R
+L : Type u_3
+inst✝⁵ : Field L
+inst✝⁴ : Algebra R L
+inst✝³ : IsFractionRing R L
+inst✝² : Algebra K R
+inst✝¹ : Algebra K L
+inst✝ : IsScalarTower K R L
+w : HeightOneSpectrum R
+r : R
+hr : r ∈ w.asIdeal
+hr2 : r ∉ w.asIdeal ^ 2
+hr0 : r ≠ 0
+hrL : (algebraMap R L) r ≠ 0
+h1 : w.intValuation r ≤ exp (-↑1)
+h2 : ¬w.intValuation r ≤ exp (-↑2)
+⊢ -(w.intValuation r).log = 1
+'P2MW.S_WeierstrassCurve_Affine_IsogenyEndDatum_exists_dualEndData_dual_mem_and_norm_eq_finrankAlong.solution' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]

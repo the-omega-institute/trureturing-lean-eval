@@ -1,0 +1,529 @@
+{
+  "at": "2026-10-17T14:52:58.087569+00:00",
+  "name": "WeierstrassCurve_Affine_IsogenyEndDatum_exists_dualEndData_dual_mem_and_norm_eq_finrankAlong",
+  "candidate": "r2",
+  "card_candidate": "r1",
+  "source_replacements": [
+    [
+      "    haveI := hv.centre_isPrime\n",
+      "    have := hv.centre_isPrime\n",
+      1
+    ],
+    [
+      "    haveI hAded : IsDedekindDomain A := by rw [hA]; infer_instance\n",
+      "    have hAded : IsDedekindDomain A := by rw [hA]; infer_instance\n",
+      1
+    ],
+    [
+      "  haveI : HasPrincipalDivisors F W.FunctionField := hasPrincipalDivisors_functionField W\n",
+      "  have : HasPrincipalDivisors F W.FunctionField := hasPrincipalDivisors_functionField W\n",
+      1
+    ],
+    [
+      "  have : HasPrincipalDivisors F W.FunctionField := hasPrincipalDivisors_functionField W\n  haveI : CharZero V.FunctionField :=\n",
+      "  have : HasPrincipalDivisors F W.FunctionField := hasPrincipalDivisors_functionField W\n  have : CharZero V.FunctionField :=\n",
+      1
+    ],
+    [
+      "    letI := algebraAlong \u03b9\n",
+      "    let := algebraAlong \u03b9\n",
+      1
+    ],
+    [
+      "    haveI := isScalarTower_along \u03b9\n",
+      "    have := isScalarTower_along \u03b9\n",
+      1
+    ],
+    [
+      "    haveI : Module.Finite V.FunctionField W.FunctionField := hfin\n",
+      "    have : Module.Finite V.FunctionField W.FunctionField := hfin\n",
+      1
+    ],
+    [
+      "  haveI : NeZero n := \u27e8Nat.one_le_iff_ne_zero.mp hn\u27e9\n",
+      "  have : NeZero n := \u27e8Nat.one_le_iff_ne_zero.mp hn\u27e9\n",
+      1
+    ],
+    [
+      "  letI := algebraAlong \u03b9\n",
+      "  let := algebraAlong \u03b9\n",
+      1
+    ],
+    [
+      "  haveI := isScalarTower_along \u03b9\n",
+      "  have := isScalarTower_along \u03b9\n",
+      1
+    ],
+    [
+      "  haveI := isIntegral_along \u03b9 h\u03b9\n",
+      "  have := isIntegral_along \u03b9 h\u03b9\n",
+      1
+    ],
+    [
+      "  haveI : FundamentalIdentity F W.FunctionField W.FunctionField := hFI\n",
+      "  have : FundamentalIdentity F W.FunctionField W.FunctionField := hFI\n",
+      1
+    ],
+    [
+      "  letI i\u03c6 : Algebra F F' := algebraAlong \u03c6\n",
+      "  let i\u03c6 : Algebra F F' := algebraAlong \u03c6\n",
+      1
+    ],
+    [
+      "  letI i\u03c8 : Algebra F' F'' := algebraAlong \u03c8\n",
+      "  let i\u03c8 : Algebra F' F'' := algebraAlong \u03c8\n",
+      1
+    ],
+    [
+      "  letI i\u03c8\u03c6 : Algebra F F'' := algebraAlong (\u03c8.comp \u03c6)\n",
+      "  let i\u03c8\u03c6 : Algebra F F'' := algebraAlong (\u03c8.comp \u03c6)\n",
+      1
+    ],
+    [
+      "  haveI : IsScalarTower F F' F'' := IsScalarTower.of_algebraMap_eq fun _ => rfl\n",
+      "  have : IsScalarTower F F' F'' := IsScalarTower.of_algebraMap_eq fun _ => rfl\n",
+      1
+    ],
+    [
+      "    0 < finrankAlong K \u03c6 := by\n  letI := algebraAlong \u03c6\n",
+      "    0 < finrankAlong K \u03c6 := by\n  let := algebraAlong \u03c6\n",
+      1
+    ],
+    [
+      "  haveI hfin' : Module.Finite F F' := hfin\n",
+      "  have hfin' : Module.Finite F F' := hfin\n",
+      1
+    ],
+    [
+      "  haveI hmax : (fiberCenter F' v hw).asIdeal.IsMaximal :=\n",
+      "  have hmax : (fiberCenter F' v hw).asIdeal.IsMaximal :=\n",
+      1
+    ],
+    [
+      "  haveI := fiberCenter_liesOver hw\n",
+      "  have := fiberCenter_liesOver hw\n",
+      1
+    ],
+    [
+      "  haveI : FaithfulSMul v.toValuationSubring (integralClosureAt F' v) :=\n",
+      "  have : FaithfulSMul v.toValuationSubring (integralClosureAt F' v) :=\n",
+      1
+    ],
+    [
+      "  letI : Algebra (FractionRing v.toValuationSubring) (FractionRing (integralClosureAt F' v)) :=\n",
+      "  let : Algebra (FractionRing v.toValuationSubring) (FractionRing (integralClosureAt F' v)) :=\n",
+      1
+    ],
+    [
+      "  haveI : IsScalarTower v.toValuationSubring (FractionRing v.toValuationSubring)\n",
+      "  have : IsScalarTower v.toValuationSubring (FractionRing v.toValuationSubring)\n",
+      1
+    ],
+    [
+      "  haveI : Algebra.IsSeparable (FractionRing v.toValuationSubring)\n",
+      "  have : Algebra.IsSeparable (FractionRing v.toValuationSubring)\n",
+      1
+    ],
+    [
+      "  haveI := (fiberCenter F' v hw).isPrime\n",
+      "  have := (fiberCenter F' v hw).isPrime\n",
+      1
+    ],
+    [
+      "    haveI : Algebra.IsUnramifiedAt v.toValuationSubring (fiberCenter F' v hw).asIdeal :=\n",
+      "    have : Algebra.IsUnramifiedAt v.toValuationSubring (fiberCenter F' v hw).asIdeal :=\n",
+      1
+    ],
+    [
+      "    (w : Place K F') : 0 < Place.ramificationIndexAlong \u03c6 w := by\n  letI := algebraAlong \u03c6\n",
+      "    (w : Place K F') : 0 < Place.ramificationIndexAlong \u03c6 w := by\n  let := algebraAlong \u03c6\n",
+      1
+    ],
+    [
+      "  let := algebraAlong \u03c6\n  haveI := isScalarTower_along \u03c6\n",
+      "  let := algebraAlong \u03c6\n  have := isScalarTower_along \u03c6\n",
+      1
+    ],
+    [
+      "  have := isScalarTower_along \u03c6\n  haveI := isIntegral_along \u03c6 h\u03c6\n",
+      "  have := isScalarTower_along \u03c6\n  have := isIntegral_along \u03c6 h\u03c6\n",
+      1
+    ],
+    [
+      "    FundamentalIdentityAlong K \u03c6 h\u03c6 := by\n  letI := algebraAlong \u03c6\n",
+      "    FundamentalIdentityAlong K \u03c6 h\u03c6 := by\n  let := algebraAlong \u03c6\n",
+      1
+    ],
+    [
+      "  let := algebraAlong \u03c6\n  haveI := isScalarTower_along \u03c6\n",
+      "  let := algebraAlong \u03c6\n  have := isScalarTower_along \u03c6\n",
+      1
+    ],
+    [
+      "  have := isScalarTower_along \u03c6\n  haveI : Module.Finite F F' := hfin\n",
+      "  have := isScalarTower_along \u03c6\n  have : Module.Finite F F' := hfin\n",
+      1
+    ],
+    [
+      "  have : Module.Finite F F' := hfin\n  haveI : Algebra.IsSeparable F F' := inferInstance\n",
+      "  have : Module.Finite F F' := hfin\n  have : Algebra.IsSeparable F F' := inferInstance\n",
+      1
+    ],
+    [
+      "  haveI := isIntegral_along \u03c6 h\u03c6\n",
+      "  have := isIntegral_along \u03c6 h\u03c6\n",
+      1
+    ],
+    [
+      "  haveI := hM\n",
+      "  have := hM\n",
+      1
+    ],
+    [
+      "    haveI : Module.Finite F[X] W.CoordinateRing :=\n",
+      "    have : Module.Finite F[X] W.CoordinateRing :=\n",
+      1
+    ],
+    [
+      "  letI := algebraAlong \u03c6\n",
+      "  let := algebraAlong \u03c6\n",
+      1
+    ],
+    [
+      "  haveI := isScalarTower_along \u03c6\n",
+      "  have := isScalarTower_along \u03c6\n",
+      1
+    ],
+    [
+      "  haveI : Module.Finite F F' := hfin\n",
+      "  have : Module.Finite F F' := hfin\n",
+      1
+    ],
+    [
+      "  haveI : Algebra.IsSeparable F F' := inferInstance\n",
+      "  have : Algebra.IsSeparable F F' := inferInstance\n",
+      1
+    ],
+    [
+      "  haveI : CharZero W.FunctionField :=\n",
+      "  have : CharZero W.FunctionField :=\n",
+      1
+    ],
+    [
+      "      = D.degree := by\n  letI := algebraAlong D.\u03b9\n",
+      "      = D.degree := by\n  let := algebraAlong D.\u03b9\n",
+      1
+    ],
+    [
+      "  let := algebraAlong D.\u03b9\n  haveI := isScalarTower_along D.\u03b9\n",
+      "  let := algebraAlong D.\u03b9\n  have := isScalarTower_along D.\u03b9\n",
+      1
+    ],
+    [
+      "  have := isScalarTower_along D.\u03b9\n  haveI := isIntegral_along D.\u03b9 D.h\u03b9\n",
+      "  have := isScalarTower_along D.\u03b9\n  have := isIntegral_along D.\u03b9 D.h\u03b9\n",
+      1
+    ],
+    [
+      "  have := isIntegral_along D.\u03b9 D.h\u03b9\n  haveI hFI' : FundamentalIdentity F W.FunctionField W.FunctionField :=\n",
+      "  have := isIntegral_along D.\u03b9 D.h\u03b9\n  have hFI' : FundamentalIdentity F W.FunctionField W.FunctionField :=\n",
+      1
+    ],
+    [
+      "  haveI : Module.Finite F[X] W.CoordinateRing :=\n",
+      "  have : Module.Finite F[X] W.CoordinateRing :=\n",
+      1
+    ],
+    [
+      "  haveI : Algebra.IsIntegral F[X] W.CoordinateRing := Algebra.IsIntegral.of_finite _ _\n",
+      "  have : Algebra.IsIntegral F[X] W.CoordinateRing := Algebra.IsIntegral.of_finite _ _\n",
+      1
+    ],
+    [
+      "  haveI h1 : Algebra.IsAlgebraic F[X] W.CoordinateRing :=\n",
+      "  have h1 : Algebra.IsAlgebraic F[X] W.CoordinateRing :=\n",
+      1
+    ],
+    [
+      "  haveI h2 : Algebra.IsAlgebraic W.CoordinateRing W.FunctionField :=\n",
+      "  have h2 : Algebra.IsAlgebraic W.CoordinateRing W.FunctionField :=\n",
+      1
+    ],
+    [
+      "  haveI h3 : FaithfulSMul F[X] W.CoordinateRing :=\n",
+      "  have h3 : FaithfulSMul F[X] W.CoordinateRing :=\n",
+      1
+    ],
+    [
+      "  haveI h4 : FaithfulSMul W.CoordinateRing W.FunctionField :=\n",
+      "  have h4 : FaithfulSMul W.CoordinateRing W.FunctionField :=\n",
+      1
+    ],
+    [
+      "  letI : Algebra W.FunctionField W.FunctionField := \u03b9.toRingHom.toAlgebra\n",
+      "  let : Algebra W.FunctionField W.FunctionField := \u03b9.toRingHom.toAlgebra\n",
+      1
+    ],
+    [
+      "  letI : Module W.FunctionField W.FunctionField := Algebra.toModule\n",
+      "  let : Module W.FunctionField W.FunctionField := Algebra.toModule\n",
+      1
+    ],
+    [
+      "  haveI : Finite ({polyToFunctionField W X, yGen W} : Set W.FunctionField) :=\n",
+      "  have : Finite ({polyToFunctionField W X, yGen W} : Set W.FunctionField) :=\n",
+      1
+    ],
+    [
+      "    kw_ExistsUnramifiedBasePlace D := by\n  classical\n  letI := algebraAlong D.\u03b9\n",
+      "    kw_ExistsUnramifiedBasePlace D := by\n  classical\n  let := algebraAlong D.\u03b9\n",
+      1
+    ],
+    [
+      "  let := algebraAlong D.\u03b9\n  haveI := isScalarTower_along D.\u03b9\n",
+      "  let := algebraAlong D.\u03b9\n  have := isScalarTower_along D.\u03b9\n",
+      1
+    ],
+    [
+      "  have := isScalarTower_along D.\u03b9\n  haveI := isIntegral_along D.\u03b9 D.h\u03b9\n",
+      "  have := isScalarTower_along D.\u03b9\n  have := isIntegral_along D.\u03b9 D.h\u03b9\n",
+      1
+    ],
+    [
+      "  haveI hfin : @Module.Finite W.FunctionField W.FunctionField _ _\n",
+      "  have hfin : @Module.Finite W.FunctionField W.FunctionField _ _\n",
+      1
+    ],
+    [
+      "  haveI hcz : CharZero W.FunctionField :=\n",
+      "  have hcz : CharZero W.FunctionField :=\n",
+      1
+    ],
+    [
+      "  haveI hsep : Algebra.IsSeparable W.FunctionField W.FunctionField := inferInstance\n",
+      "  have hsep : Algebra.IsSeparable W.FunctionField W.FunctionField := inferInstance\n",
+      1
+    ],
+    [
+      "  haveI hpd : HasPrincipalDivisors F W.FunctionField := hasPrincipalDivisors_functionField _\n",
+      "  have hpd : HasPrincipalDivisors F W.FunctionField := hasPrincipalDivisors_functionField _\n",
+      1
+    ],
+    [
+      "  haveI : Infinite (AlgebraicCurve.Place F W.FunctionField) :=\n",
+      "  have : Infinite (AlgebraicCurve.Place F W.FunctionField) :=\n",
+      1
+    ],
+    [
+      "  have _pin := Classical.em True\n  letI := algebraAlong D.\u03b9\n",
+      "  have _pin := Classical.em True\n  let := algebraAlong D.\u03b9\n",
+      1
+    ],
+    [
+      "  let := algebraAlong D.\u03b9\n  haveI := isScalarTower_along D.\u03b9\n",
+      "  let := algebraAlong D.\u03b9\n  have := isScalarTower_along D.\u03b9\n",
+      1
+    ],
+    [
+      "  have := isScalarTower_along D.\u03b9\n  haveI := isIntegral_along D.\u03b9 D.h\u03b9\n",
+      "  have := isScalarTower_along D.\u03b9\n  have := isIntegral_along D.\u03b9 D.h\u03b9\n",
+      1
+    ],
+    [
+      "  haveI hFI' : FundamentalIdentity F W.FunctionField W.FunctionField :=\n",
+      "  have hFI' : FundamentalIdentity F W.FunctionField W.FunctionField :=\n",
+      1
+    ],
+    [
+      "  classical\n  letI := algebraAlong D.\u03b9\n",
+      "  classical\n  let := algebraAlong D.\u03b9\n",
+      1
+    ],
+    [
+      "  let := algebraAlong D.\u03b9\n  haveI := isScalarTower_along D.\u03b9\n",
+      "  let := algebraAlong D.\u03b9\n  have := isScalarTower_along D.\u03b9\n",
+      1
+    ],
+    [
+      "  have := isScalarTower_along D.\u03b9\n  haveI := isIntegral_along D.\u03b9 D.h\u03b9\n",
+      "  have := isScalarTower_along D.\u03b9\n  have := isIntegral_along D.\u03b9 D.h\u03b9\n",
+      1
+    ],
+    [
+      "  haveI : Infinite W.Point := WeierstrassCurve.point_infinite _\n",
+      "  have : Infinite W.Point := WeierstrassCurve.point_infinite _\n",
+      1
+    ],
+    [
+      "  haveI : HasPrincipalDivisors F W.FunctionField := hasPrincipalDivisors_functionField _\n",
+      "  have : HasPrincipalDivisors F W.FunctionField := hasPrincipalDivisors_functionField _\n",
+      1
+    ],
+    [
+      "    haveI : Finite (Submodule.torsionBy \u2124 W.Point (n : \u2124)) :=\n",
+      "    have : Finite (Submodule.torsionBy \u2124 W.Point (n : \u2124)) :=\n",
+      1
+    ],
+    [
+      "    haveI : Finite W.Point := Finite.of_surjective _ hsurj\n",
+      "    have : Finite W.Point := Finite.of_surjective _ hsurj\n",
+      1
+    ],
+    [
+      "  haveI : Infinite W.Point := kw_point_infinite\n",
+      "  have : Infinite W.Point := kw_point_infinite\n",
+      1
+    ],
+    [
+      "        haveI := kw_charZero_end_point (W := W)\n",
+      "        have := kw_charZero_end_point (W := W)\n",
+      1
+    ],
+    [
+      "  exact \u27e8P, by rw [D.pointEnd_eq_geomMorph_sub_geomMorph_zero, hP, add_sub_cancel_right]\u27e9\n\nend GeneralW\np2m_reactivate \"P2MW.S_WeierstrassCurve_Affine_IsogenyEndDatum_exists_dualEndData_dual_mem_and_norm_eq_finrankAlong.WeierstrassCurve.Affine.CoordinateRing P2MW.S_WeierstrassCurve_Affine_IsogenyEndDatum_exists_dualEndData_dual_mem_and_norm_eq_finrankAlong.WeierstrassCurve.Affine.IsFinitePlace P2MW.S_WeierstrassCurve_Affine_IsogenyEndDatum_exists_dualEndData_dual_mem_and_norm_eq_finrankAlong.WeierstrassCurve P2MW.S_WeierstrassCurve_Affine_IsogenyEndDatum_exists_dualEndData_dual_mem_and_norm_eq_finrankAlong.WeierstrassCurve.Affine P2MW.S_WeierstrassCurve_Affine_IsogenyEndDatum_exists_dualEndData_dual_mem_and_norm_eq_finrankAlong.ModularCurve P2MW.S_WeierstrassCurve_Affine_IsogenyEndDatum_exists_dualEndData_dual_mem_and_norm_eq_finrankAlong.ModularCurve.Es1a1 P2MW.S_WeierstrassCurve_Affine_IsogenyEndDatum_exists_dualEndData_dual_mem_and_norm_eq_finrankAlong.WeierstrassCurve.Affine.IsogenyEndDatum P2MW.S_WeierstrassCurve_Affine_IsogenyEndDatum_exists_dualEndData_dual_mem_and_norm_eq_finrankAlong.ModularCurve.Gamma0Fourteen P2MW.S_WeierstrassCurve_Affine_IsogenyEndDatum_exists_dualEndData_dual_mem_and_norm_eq_finrankAlong.AlgebraicCurve.Place P2MW.S_WeierstrassCurve_Affine_IsogenyEndDatum_exists_dualEndData_dual_mem_and_norm_eq_finrankAlong.AlgebraicCurve\"\n\nsection ElevenA1\n\nopen ModularCurve\n",
+      "  exact \u27e8P, by rw [D.pointEnd_eq_geomMorph_sub_geomMorph_zero, hP, add_sub_cancel_right]\u27e9\n\nend GeneralW\np2m_reactivate \"P2MW.S_WeierstrassCurve_Affine_IsogenyEndDatum_exists_dualEndData_dual_mem_and_norm_eq_finrankAlong.WeierstrassCurve.Affine.CoordinateRing P2MW.S_WeierstrassCurve_Affine_IsogenyEndDatum_exists_dualEndData_dual_mem_and_norm_eq_finrankAlong.WeierstrassCurve.Affine.IsFinitePlace P2MW.S_WeierstrassCurve_Affine_IsogenyEndDatum_exists_dualEndData_dual_mem_and_norm_eq_finrankAlong.WeierstrassCurve P2MW.S_WeierstrassCurve_Affine_IsogenyEndDatum_exists_dualEndData_dual_mem_and_norm_eq_finrankAlong.WeierstrassCurve.Affine P2MW.S_WeierstrassCurve_Affine_IsogenyEndDatum_exists_dualEndData_dual_mem_and_norm_eq_finrankAlong.ModularCurve P2MW.S_WeierstrassCurve_Affine_IsogenyEndDatum_exists_dualEndData_dual_mem_and_norm_eq_finrankAlong.ModularCurve.Es1a1 P2MW.S_WeierstrassCurve_Affine_IsogenyEndDatum_exists_dualEndData_dual_mem_and_norm_eq_finrankAlong.WeierstrassCurve.Affine.IsogenyEndDatum P2MW.S_WeierstrassCurve_Affine_IsogenyEndDatum_exists_dualEndData_dual_mem_and_norm_eq_finrankAlong.ModularCurve.Gamma0Fourteen P2MW.S_WeierstrassCurve_Affine_IsogenyEndDatum_exists_dualEndData_dual_mem_and_norm_eq_finrankAlong.AlgebraicCurve.Place P2MW.S_WeierstrassCurve_Affine_IsogenyEndDatum_exists_dualEndData_dual_mem_and_norm_eq_finrankAlong.AlgebraicCurve\"\n\nsection ElevenA1\n\nopen _root_.P2MW.S_WeierstrassCurve_Affine_IsogenyEndDatum_exists_dualEndData_dual_mem_and_norm_eq_finrankAlong.ModularCurve\n",
+      1
+    ],
+    [
+      "    kw_natCard_restrictAlong_fiber_eq_degree_of_unramified D v hv]\n\nend GeneralW\np2m_reactivate \"P2MW.S_WeierstrassCurve_Affine_IsogenyEndDatum_exists_dualEndData_dual_mem_and_norm_eq_finrankAlong.WeierstrassCurve.Affine.CoordinateRing P2MW.S_WeierstrassCurve_Affine_IsogenyEndDatum_exists_dualEndData_dual_mem_and_norm_eq_finrankAlong.WeierstrassCurve.Affine.IsFinitePlace P2MW.S_WeierstrassCurve_Affine_IsogenyEndDatum_exists_dualEndData_dual_mem_and_norm_eq_finrankAlong.WeierstrassCurve P2MW.S_WeierstrassCurve_Affine_IsogenyEndDatum_exists_dualEndData_dual_mem_and_norm_eq_finrankAlong.WeierstrassCurve.Affine P2MW.S_WeierstrassCurve_Affine_IsogenyEndDatum_exists_dualEndData_dual_mem_and_norm_eq_finrankAlong.ModularCurve P2MW.S_WeierstrassCurve_Affine_IsogenyEndDatum_exists_dualEndData_dual_mem_and_norm_eq_finrankAlong.ModularCurve.Es1a1 P2MW.S_WeierstrassCurve_Affine_IsogenyEndDatum_exists_dualEndData_dual_mem_and_norm_eq_finrankAlong.WeierstrassCurve.Affine.IsogenyEndDatum P2MW.S_WeierstrassCurve_Affine_IsogenyEndDatum_exists_dualEndData_dual_mem_and_norm_eq_finrankAlong.ModularCurve.Gamma0Fourteen P2MW.S_WeierstrassCurve_Affine_IsogenyEndDatum_exists_dualEndData_dual_mem_and_norm_eq_finrankAlong.AlgebraicCurve.Place P2MW.S_WeierstrassCurve_Affine_IsogenyEndDatum_exists_dualEndData_dual_mem_and_norm_eq_finrankAlong.AlgebraicCurve\"\n\nsection ElevenA1\n\nopen ModularCurve\n",
+      "    kw_natCard_restrictAlong_fiber_eq_degree_of_unramified D v hv]\n\nend GeneralW\np2m_reactivate \"P2MW.S_WeierstrassCurve_Affine_IsogenyEndDatum_exists_dualEndData_dual_mem_and_norm_eq_finrankAlong.WeierstrassCurve.Affine.CoordinateRing P2MW.S_WeierstrassCurve_Affine_IsogenyEndDatum_exists_dualEndData_dual_mem_and_norm_eq_finrankAlong.WeierstrassCurve.Affine.IsFinitePlace P2MW.S_WeierstrassCurve_Affine_IsogenyEndDatum_exists_dualEndData_dual_mem_and_norm_eq_finrankAlong.WeierstrassCurve P2MW.S_WeierstrassCurve_Affine_IsogenyEndDatum_exists_dualEndData_dual_mem_and_norm_eq_finrankAlong.WeierstrassCurve.Affine P2MW.S_WeierstrassCurve_Affine_IsogenyEndDatum_exists_dualEndData_dual_mem_and_norm_eq_finrankAlong.ModularCurve P2MW.S_WeierstrassCurve_Affine_IsogenyEndDatum_exists_dualEndData_dual_mem_and_norm_eq_finrankAlong.ModularCurve.Es1a1 P2MW.S_WeierstrassCurve_Affine_IsogenyEndDatum_exists_dualEndData_dual_mem_and_norm_eq_finrankAlong.WeierstrassCurve.Affine.IsogenyEndDatum P2MW.S_WeierstrassCurve_Affine_IsogenyEndDatum_exists_dualEndData_dual_mem_and_norm_eq_finrankAlong.ModularCurve.Gamma0Fourteen P2MW.S_WeierstrassCurve_Affine_IsogenyEndDatum_exists_dualEndData_dual_mem_and_norm_eq_finrankAlong.AlgebraicCurve.Place P2MW.S_WeierstrassCurve_Affine_IsogenyEndDatum_exists_dualEndData_dual_mem_and_norm_eq_finrankAlong.AlgebraicCurve\"\n\nsection ElevenA1\n\nopen _root_.P2MW.S_WeierstrassCurve_Affine_IsogenyEndDatum_exists_dualEndData_dual_mem_and_norm_eq_finrankAlong.ModularCurve\n",
+      1
+    ],
+    [
+      "open ModularCurve\n",
+      "open _root_.P2MW.S_WeierstrassCurve_Affine_IsogenyEndDatum_exists_dualEndData_dual_mem_and_norm_eq_finrankAlong.ModularCurve\n",
+      1
+    ],
+    [
+      "    (((\u27e8_, h\u03b9, hfin\u27e9 : IsogenyEndDatum W).placeOfPoint_geomMorph P).symm.trans hseam)\n\nend Es1a1\np2m_reactivate \"P2MW.S_WeierstrassCurve_Affine_IsogenyEndDatum_exists_dualEndData_dual_mem_and_norm_eq_finrankAlong.WeierstrassCurve.Affine.CoordinateRing P2MW.S_WeierstrassCurve_Affine_IsogenyEndDatum_exists_dualEndData_dual_mem_and_norm_eq_finrankAlong.WeierstrassCurve.Affine.IsFinitePlace P2MW.S_WeierstrassCurve_Affine_IsogenyEndDatum_exists_dualEndData_dual_mem_and_norm_eq_finrankAlong.WeierstrassCurve P2MW.S_WeierstrassCurve_Affine_IsogenyEndDatum_exists_dualEndData_dual_mem_and_norm_eq_finrankAlong.WeierstrassCurve.Affine P2MW.S_WeierstrassCurve_Affine_IsogenyEndDatum_exists_dualEndData_dual_mem_and_norm_eq_finrankAlong.ModularCurve P2MW.S_WeierstrassCurve_Affine_IsogenyEndDatum_exists_dualEndData_dual_mem_and_norm_eq_finrankAlong.ModularCurve.Es1a1 P2MW.S_WeierstrassCurve_Affine_IsogenyEndDatum_exists_dualEndData_dual_mem_and_norm_eq_finrankAlong.WeierstrassCurve.Affine.IsogenyEndDatum P2MW.S_WeierstrassCurve_Affine_IsogenyEndDatum_exists_dualEndData_dual_mem_and_norm_eq_finrankAlong.ModularCurve.Gamma0Fourteen P2MW.S_WeierstrassCurve_Affine_IsogenyEndDatum_exists_dualEndData_dual_mem_and_norm_eq_finrankAlong.AlgebraicCurve.Place P2MW.S_WeierstrassCurve_Affine_IsogenyEndDatum_exists_dualEndData_dual_mem_and_norm_eq_finrankAlong.AlgebraicCurve\"\n\nsection ElevenA1Gate\n\nopen Es1a1\n",
+      "    (((\u27e8_, h\u03b9, hfin\u27e9 : IsogenyEndDatum W).placeOfPoint_geomMorph P).symm.trans hseam)\n\nend Es1a1\np2m_reactivate \"P2MW.S_WeierstrassCurve_Affine_IsogenyEndDatum_exists_dualEndData_dual_mem_and_norm_eq_finrankAlong.WeierstrassCurve.Affine.CoordinateRing P2MW.S_WeierstrassCurve_Affine_IsogenyEndDatum_exists_dualEndData_dual_mem_and_norm_eq_finrankAlong.WeierstrassCurve.Affine.IsFinitePlace P2MW.S_WeierstrassCurve_Affine_IsogenyEndDatum_exists_dualEndData_dual_mem_and_norm_eq_finrankAlong.WeierstrassCurve P2MW.S_WeierstrassCurve_Affine_IsogenyEndDatum_exists_dualEndData_dual_mem_and_norm_eq_finrankAlong.WeierstrassCurve.Affine P2MW.S_WeierstrassCurve_Affine_IsogenyEndDatum_exists_dualEndData_dual_mem_and_norm_eq_finrankAlong.ModularCurve P2MW.S_WeierstrassCurve_Affine_IsogenyEndDatum_exists_dualEndData_dual_mem_and_norm_eq_finrankAlong.ModularCurve.Es1a1 P2MW.S_WeierstrassCurve_Affine_IsogenyEndDatum_exists_dualEndData_dual_mem_and_norm_eq_finrankAlong.WeierstrassCurve.Affine.IsogenyEndDatum P2MW.S_WeierstrassCurve_Affine_IsogenyEndDatum_exists_dualEndData_dual_mem_and_norm_eq_finrankAlong.ModularCurve.Gamma0Fourteen P2MW.S_WeierstrassCurve_Affine_IsogenyEndDatum_exists_dualEndData_dual_mem_and_norm_eq_finrankAlong.AlgebraicCurve.Place P2MW.S_WeierstrassCurve_Affine_IsogenyEndDatum_exists_dualEndData_dual_mem_and_norm_eq_finrankAlong.AlgebraicCurve\"\n\nsection ElevenA1Gate\n\nopen _root_.P2MW.S_WeierstrassCurve_Affine_IsogenyEndDatum_exists_dualEndData_dual_mem_and_norm_eq_finrankAlong.ModularCurve.Es1a1\n",
+      1
+    ],
+    [
+      "    es1a8_addInt_selfHom_finiteAlong_cmp _ htrans\u27e9\n\nend Es1a1\np2m_reactivate \"P2MW.S_WeierstrassCurve_Affine_IsogenyEndDatum_exists_dualEndData_dual_mem_and_norm_eq_finrankAlong.WeierstrassCurve.Affine.CoordinateRing P2MW.S_WeierstrassCurve_Affine_IsogenyEndDatum_exists_dualEndData_dual_mem_and_norm_eq_finrankAlong.WeierstrassCurve.Affine.IsFinitePlace P2MW.S_WeierstrassCurve_Affine_IsogenyEndDatum_exists_dualEndData_dual_mem_and_norm_eq_finrankAlong.WeierstrassCurve P2MW.S_WeierstrassCurve_Affine_IsogenyEndDatum_exists_dualEndData_dual_mem_and_norm_eq_finrankAlong.WeierstrassCurve.Affine P2MW.S_WeierstrassCurve_Affine_IsogenyEndDatum_exists_dualEndData_dual_mem_and_norm_eq_finrankAlong.ModularCurve P2MW.S_WeierstrassCurve_Affine_IsogenyEndDatum_exists_dualEndData_dual_mem_and_norm_eq_finrankAlong.ModularCurve.Es1a1 P2MW.S_WeierstrassCurve_Affine_IsogenyEndDatum_exists_dualEndData_dual_mem_and_norm_eq_finrankAlong.WeierstrassCurve.Affine.IsogenyEndDatum P2MW.S_WeierstrassCurve_Affine_IsogenyEndDatum_exists_dualEndData_dual_mem_and_norm_eq_finrankAlong.ModularCurve.Gamma0Fourteen P2MW.S_WeierstrassCurve_Affine_IsogenyEndDatum_exists_dualEndData_dual_mem_and_norm_eq_finrankAlong.AlgebraicCurve.Place P2MW.S_WeierstrassCurve_Affine_IsogenyEndDatum_exists_dualEndData_dual_mem_and_norm_eq_finrankAlong.AlgebraicCurve\"\n\nsection ElevenA1Gate\n\nopen Es1a1\n",
+      "    es1a8_addInt_selfHom_finiteAlong_cmp _ htrans\u27e9\n\nend Es1a1\np2m_reactivate \"P2MW.S_WeierstrassCurve_Affine_IsogenyEndDatum_exists_dualEndData_dual_mem_and_norm_eq_finrankAlong.WeierstrassCurve.Affine.CoordinateRing P2MW.S_WeierstrassCurve_Affine_IsogenyEndDatum_exists_dualEndData_dual_mem_and_norm_eq_finrankAlong.WeierstrassCurve.Affine.IsFinitePlace P2MW.S_WeierstrassCurve_Affine_IsogenyEndDatum_exists_dualEndData_dual_mem_and_norm_eq_finrankAlong.WeierstrassCurve P2MW.S_WeierstrassCurve_Affine_IsogenyEndDatum_exists_dualEndData_dual_mem_and_norm_eq_finrankAlong.WeierstrassCurve.Affine P2MW.S_WeierstrassCurve_Affine_IsogenyEndDatum_exists_dualEndData_dual_mem_and_norm_eq_finrankAlong.ModularCurve P2MW.S_WeierstrassCurve_Affine_IsogenyEndDatum_exists_dualEndData_dual_mem_and_norm_eq_finrankAlong.ModularCurve.Es1a1 P2MW.S_WeierstrassCurve_Affine_IsogenyEndDatum_exists_dualEndData_dual_mem_and_norm_eq_finrankAlong.WeierstrassCurve.Affine.IsogenyEndDatum P2MW.S_WeierstrassCurve_Affine_IsogenyEndDatum_exists_dualEndData_dual_mem_and_norm_eq_finrankAlong.ModularCurve.Gamma0Fourteen P2MW.S_WeierstrassCurve_Affine_IsogenyEndDatum_exists_dualEndData_dual_mem_and_norm_eq_finrankAlong.AlgebraicCurve.Place P2MW.S_WeierstrassCurve_Affine_IsogenyEndDatum_exists_dualEndData_dual_mem_and_norm_eq_finrankAlong.AlgebraicCurve\"\n\nsection ElevenA1Gate\n\nopen _root_.P2MW.S_WeierstrassCurve_Affine_IsogenyEndDatum_exists_dualEndData_dual_mem_and_norm_eq_finrankAlong.ModularCurve.Es1a1\n",
+      1
+    ],
+    [
+      "open Es1a1\n",
+      "open _root_.P2MW.S_WeierstrassCurve_Affine_IsogenyEndDatum_exists_dualEndData_dual_mem_and_norm_eq_finrankAlong.ModularCurve.Es1a1\n",
+      1
+    ],
+    [
+      "  classical\n  have hkey := Ideal.sum_ramification_inertia (integralClosureAt F' v) F F'\n    (p := IsLocalRing.maximalIdeal v.toValuationSubring) (maximalIdeal_ne_bot v)\n  rw [\u2190 hkey]\n  push_cast\n  refine Finset.sum_bij\n    (fun w hw => (fiberCenter F' v ((hs w).mp hw)).asIdeal) ?_ ?_ ?_ ?_\n  \u00b7\n    intro w hw\n    rw [IsDedekindDomain.mem_primesOverFinset_iff (maximalIdeal_ne_bot v)]\n    exact \u27e8(fiberCenter F' v ((hs w).mp hw)).isPrime,\n      fiberCenter_liesOver ((hs w).mp hw)\u27e9\n  \u00b7\n    intro w hw w' hw' h\n    exact eq_of_fiberCenter_eq ((hs w).mp hw) ((hs w').mp hw')\n      (HeightOneSpectrum.ext h)\n  \u00b7\n    intro P hP\n    rw [IsDedekindDomain.mem_primesOverFinset_iff (maximalIdeal_ne_bot v)] at hP\n    obtain \u27e8hP1, hP2\u27e9 := hP\n    have hPne : P \u2260 \u22a5 := by\n      intro h\n      apply maximalIdeal_ne_bot v\n      have h2 := hP2.over\n      rw [h, Ideal.under_def, Ideal.comap_bot_of_injective _\n        (algebraMap_integralClosureAt_injective v)] at h2\n      exact h2\n    refine \u27e8placeOfPrime \u27e8P, hP1, hPne\u27e9,\n      (hs _).mpr (restrict_placeOfPrime \u27e8P, hP1, hPne\u27e9), ?_\u27e9\n    exact congrArg HeightOneSpectrum.asIdeal\n      (fiberCenter_placeOfPrime (\u27e8P, hP1, hPne\u27e9 :\n        HeightOneSpectrum (integralClosureAt F' v)))\n  \u00b7\n    intro w hw\n    rw [ramificationIndex_eq_ramificationIdx_fiberCenter ((hs w).mp hw),\n      inertiaDeg_eq_inertiaDeg_fiberCenter ((hs w).mp hw)]\n",
+      "  classical\n  let : Fintype ((IsLocalRing.maximalIdeal v.toValuationSubring).primesOver\n      (integralClosureAt F' v)) := Fintype.ofFinite _\n  have hkey := Ideal.sum_ramification_inertia_eq_finrank\n    (IsLocalRing.maximalIdeal v.toValuationSubring) (integralClosureAt F' v)\n  rw [\u2190 _root_.IsFractionRing.finrank_eq v.toValuationSubring F\n    (integralClosureAt F' v) F'] at hkey\n  rw [\u2190 hkey]\n  push_cast\n  refine Finset.sum_bij\n    (fun w hw =>\n      (\u27e8(fiberCenter F' v ((hs w).mp hw)).asIdeal,\n        (fiberCenter F' v ((hs w).mp hw)).isPrime,\n        fiberCenter_liesOver ((hs w).mp hw)\u27e9 :\n          (IsLocalRing.maximalIdeal v.toValuationSubring).primesOver\n            (integralClosureAt F' v))) ?_ ?_ ?_ ?_\n  \u00b7 intro w hw\n    simp only [Finset.mem_univ]\n  \u00b7 intro w hw w' hw' h\n    exact eq_of_fiberCenter_eq ((hs w).mp hw) ((hs w').mp hw')\n      (HeightOneSpectrum.ext (congrArg Subtype.val h))\n  \u00b7 intro P _\n    obtain \u27e8hP1, hP2\u27e9 := P.2\n    have hPne : P.1 \u2260 \u22a5 := by\n      intro h\n      apply maximalIdeal_ne_bot v\n      have h2 := hP2.over\n      rw [h, Ideal.under_def, Ideal.comap_bot_of_injective _\n        (algebraMap_integralClosureAt_injective v)] at h2\n      exact h2\n    refine \u27e8placeOfPrime \u27e8P.1, hP1, hPne\u27e9,\n      (hs _).mpr (restrict_placeOfPrime \u27e8P.1, hP1, hPne\u27e9), ?_\u27e9\n    exact Subtype.ext (congrArg HeightOneSpectrum.asIdeal\n      (fiberCenter_placeOfPrime (\u27e8P.1, hP1, hPne\u27e9 :\n        HeightOneSpectrum (integralClosureAt F' v))))\n  \u00b7 intro w hw\n    have := (fiberCenter F' v ((hs w).mp hw)).isPrime\n    have := fiberCenter_liesOver ((hs w).mp hw)\n    rw [ramificationIndex_eq_ramificationIdx_fiberCenter ((hs w).mp hw),\n      inertiaDeg_eq_inertiaDeg_fiberCenter ((hs w).mp hw),\n      Ideal.ramificationIdx'_eq_ramificationIdx _ _ (maximalIdeal_ne_bot v)]\n",
+      1
+    ],
+    [
+      "      (IsLocalRing.maximalIdeal v.toValuationSubring).inertiaDeg'\n        (fiberCenter F' v hw).asIdeal := by\n  have := fiberCenter_liesOver hw\n  rw [Ideal.inertiaDeg_algebraMap]",
+      "      (fiberCenter F' v hw).asIdeal.inertiaDeg v.toValuationSubring := by\n  have := fiberCenter_liesOver hw\n  have : (fiberCenter F' v hw).asIdeal.IsMaximal :=\n    (fiberCenter F' v hw).isPrime.isMaximal (fiberCenter F' v hw).ne_bot\n  rw [Ideal.inertiaDeg_eq_of_isMaximal\n    (IsLocalRing.maximalIdeal v.toValuationSubring)\n    (fiberCenter F' v hw).asIdeal]",
+      1
+    ],
+    [
+      "Ideal.eq_bot_of_comap_eq_bot",
+      "Ideal.eq_bot_of_under_eq_bot",
+      1
+    ],
+    [
+      "rw [RingHom.comap_ker, pointPullbackCoordHom_comp_algebraMap",
+      "rw [Ideal.under_def, RingHom.comap_ker, pointPullbackCoordHom_comp_algebraMap",
+      1
+    ],
+    [
+      "Set.mem_setOf_eq",
+      "Set.mem_ofPred_eq",
+      2
+    ],
+    [
+      "zero_le'",
+      "zero_le",
+      1
+    ],
+    [
+      "if_pos",
+      "ite_eq_left",
+      14
+    ],
+    [
+      "if_neg",
+      "ite_eq_right",
+      26
+    ],
+    [
+      "if_false",
+      "ite_false",
+      1
+    ],
+    [
+      "Ideal.ramificationIdx_spec",
+      "Ideal.ramificationIdx'_spec",
+      1
+    ],
+    [
+      "@[scoped simp]\ntheorem placeOfPoint_some [IsDedekindDomain W.CoordinateRing]",
+      "omit [IsDedekindDomain W.CoordinateRing] in\n@[scoped simp]\ntheorem placeOfPoint_some [IsDedekindDomain W.CoordinateRing]",
+      1
+    ],
+    [
+      "theorem eq_of_not_isFinitePlace [IsDedekindDomain W.CoordinateRing]",
+      "omit [IsDedekindDomain W.CoordinateRing] in\ntheorem eq_of_not_isFinitePlace [IsDedekindDomain W.CoordinateRing]",
+      1
+    ],
+    [
+      "intValuation_ite_eq_right",
+      "intValuation_if_neg",
+      1
+    ]
+  ],
+  "card_replacements": [
+    [
+      "WeierstrassCurve.Affine.instIsScalarTowerPolynomialRatFuncFunctionField_definitions",
+      "WeierstrassCurve.Affine.instIsScalarTowerPolynomialRatFuncFunctionField_submission",
+      1
+    ],
+    [
+      "WeierstrassCurve.Affine.instAlgebraRatFuncFunctionField_definitions",
+      "WeierstrassCurve.Affine.instAlgebraRatFuncFunctionField_submission",
+      1
+    ],
+    [
+      "WeierstrassCurve.Affine.instIsScalarTowerRatFuncFunctionField_definitions",
+      "WeierstrassCurve.Affine.instIsScalarTowerRatFuncFunctionField_submission",
+      1
+    ]
+  ],
+  "baseline_byte_identical_to_pinned_supplier": true,
+  "pinned_supplier_source_and_card_preserved": true,
+  "verification_pending": false,
+  "installed": true,
+  "no_linter_suppression_added": true,
+  "complete_original_proof_preserved": true,
+  "full_original_statement_and_hypotheses_preserved": true,
+  "max_active_flt_jobs": 1,
+  "lean_threads": 1,
+  "original_actual_errors": 1,
+  "original_actual_warnings": 131,
+  "original_kernel_seconds": 77.621416875,
+  "change": "Retain complete original9956-line dual-isogeny construction and public solution/card statements. Unfold Ideal.under before original comap kernel proof. Migrate inertia degree helper and ramification-inertia sum to current prime-over API using original fiber-center bijection and residue-field equivalence;retain all hypotheses. Update listed aliases,75 actually flagged haveI/letI declarations,6 actually selected namespace opens,and2 automatic duplicate Dedekind section instances while retaining explicit binders. Rename3 obsolete card instance references to actual pinned submission names. No linter suppression added. Pending natural make/kernel verification;no acceptance claim. Revision r2 restores original nondeprecated intValuation_if_neg identifier accidentally caught by substring alias replacement. Current ramification-inertia migration produced no diagnostics;two r1 errors were this invalid name and its unclosed goal. r2 verification pending.",
+  "full_original_complete": false,
+  "official_new_solve_credit": 0,
+  "active_import_closure_excluded": [
+    "Submission.Supplier.P2M.Sol.S_WeierstrassCurve_Affine_exists_algEquiv_restrictAlong_placeOfPoint_eq_add"
+  ],
+  "active_transitive_import_closure_size": 106,
+  "actual_live_descendant_sources": [
+    {
+      "pid": 81043,
+      "source": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_WeierstrassCurve_Affine_exists_algEquiv_restrictAlong_placeOfPoint_eq_add.lean"
+    }
+  ],
+  "all_four_canonical_adapted_source_card_modules_excluded": [
+    "P2M.Sol.S_WeierstrassCurve_Affine_IsogenyEndDatum_exists_dualEndData_dual_mem_and_norm_eq_finrankAlong",
+    "Submission.Supplier.P2M.Sol.S_WeierstrassCurve_Affine_IsogenyEndDatum_exists_dualEndData_dual_mem_and_norm_eq_finrankAlong",
+    "Submission.Supplier.Theorems.Thm_WeierstrassCurve_Affine_IsogenyEndDatum_exists_dualEndData_dual_mem_and_norm_eq_finrankAlong",
+    "Theorems.Thm_WeierstrassCurve_Affine_IsogenyEndDatum_exists_dualEndData_dual_mem_and_norm_eq_finrankAlong"
+  ],
+  "r1_source_actual_errors": 2,
+  "r1_source_actual_warnings": 0,
+  "r1_source_kernel_seconds": 113.495299875
+}
