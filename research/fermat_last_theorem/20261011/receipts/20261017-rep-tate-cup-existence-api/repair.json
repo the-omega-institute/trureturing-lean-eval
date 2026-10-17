@@ -1,0 +1,66 @@
+{
+  "at": "2026-10-17T13:24:08.222355+00:00",
+  "name": "Rep_exists_isTateCupProduct",
+  "candidate": "r2",
+  "card_candidate": "r1",
+  "source_replacements": [
+    [
+      "theorem gcup_spec (A B :",
+      "omit [Fintype G] in\ntheorem gcup_spec [Fintype G] (A B :",
+      1
+    ],
+    [
+      "Rep.TateCupFamily k G := fun A B p q r h =>\n  match p, q, h with",
+      "Rep.TateCupFamily k G := fun A B p q _r h =>\n  match p, q, h with",
+      1
+    ],
+    [
+      "induction t using TensorProduct.induction_on with\n  | zero => simp only [map_zero]",
+      "induction t using TensorProduct.inductionOn with",
+      2
+    ],
+    [
+      "      (Rep.shortExact_map_tensorRight_dimShiftDownObj B hXB) p (r + 1) (by omega) x (\u03c3 B q y)]\n    rfl",
+      "      (Rep.shortExact_map_tensorRight_dimShiftDownObj B hXB) p (r + 1) (by omega) x (\u03c3 B q y)]",
+      1
+    ]
+  ],
+  "card_replacements": [],
+  "baseline_byte_identical_to_pinned_supplier": true,
+  "pinned_supplier_source_and_card_preserved": true,
+  "verification_pending": false,
+  "installed": true,
+  "no_linter_suppression_added": true,
+  "complete_original_proof_preserved": true,
+  "full_original_statement_and_hypotheses_preserved": true,
+  "max_active_flt_jobs": 1,
+  "lean_threads": 1,
+  "original_actual_errors": 1,
+  "original_actual_warnings": 4,
+  "original_kernel_seconds": 12.335747541,
+  "change": "Preserve the complete original 916-line construction and naturality/left-right boundary compatibility proof of Tate cup products. Remove one rfl after the original rewrite now closes delta_tcup;use current TensorProduct.inductionOn with its two actual pure-tensor/additive cases, removing the two obsolete ignored zero clauses. Keep the original gcup_spec finite-group typeclass hypothesis explicitly declared;rename the unused F0 output-degree binder _r. Public solution/card statements and all original hypotheses unchanged. Canonical baselines byte-identical to pinned supplier. Natural source/card verification pending. Revision r2 omits the automatically included section Fintype G only for gcup_spec while explicitly retaining its original single Fintype G hypothesis;this avoids adding a duplicate instance. r1 actual source warnings and zero-error source/card receipts archived. Current r2 source and dependent card verification pending.",
+  "full_original_complete": false,
+  "official_new_solve_credit": 0,
+  "active_import_closure_excluded": [
+    "Submission.Supplier.P2M.Sol.S_Rep_IsTateCupProduct_cup_assoc"
+  ],
+  "active_transitive_import_closure_size": 76,
+  "actual_live_descendant_sources": [
+    {
+      "pid": 43660,
+      "source": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_Rep_IsTateCupProduct_cup_assoc.lean"
+    }
+  ],
+  "all_four_canonical_adapted_source_card_modules_excluded": [
+    "P2M.Sol.S_Rep_exists_isTateCupProduct",
+    "Submission.Supplier.P2M.Sol.S_Rep_exists_isTateCupProduct",
+    "Submission.Supplier.Theorems.Thm_Rep_exists_isTateCupProduct",
+    "Theorems.Thm_Rep_exists_isTateCupProduct"
+  ],
+  "r1_source_kernel_seconds": 12.714270542,
+  "r1_source_actual_errors": 0,
+  "r1_source_actual_warnings": 2,
+  "r1_card_kernel_seconds": 4.909966958,
+  "r1_card_actual_errors": 0,
+  "r1_card_actual_warnings": 0
+}

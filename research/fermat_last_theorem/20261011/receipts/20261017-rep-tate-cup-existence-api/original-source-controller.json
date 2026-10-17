@@ -1,0 +1,236 @@
+{
+  "sha256": "3a4aba7d9261036825e3308ffb72c8960f5bdfec522382e52e9716a3ee3600c4",
+  "exit": 1,
+  "empty_output_retry_done": false,
+  "source_sha256_after": "3a4aba7d9261036825e3308ffb72c8960f5bdfec522382e52e9716a3ee3600c4",
+  "source_unchanged": true,
+  "olean_sha256": null,
+  "seconds": 22.523938416008605,
+  "pid": 39946,
+  "command": [
+    "/Users/macstudio/.local/omega-shims/lean",
+    "-j1",
+    "--trust=0",
+    "-Ddebug.skipKernelTC=false",
+    "-R",
+    "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src",
+    "-o",
+    "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-build/lib/lean/Submission/Supplier/P2M/Sol/S_Rep_exists_isTateCupProduct.olean",
+    "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_Rep_exists_isTateCupProduct.lean"
+  ],
+  "make_wrapper_pid": 39868,
+  "make_exit": 2,
+  "make_entry_failed": false,
+  "cache_binding_valid": true,
+  "canonical_make_running_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/9b9bb5928aac9e819e0ed776-1792243166794946000.make-running.json",
+  "canonical_make_terminal_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/9b9bb5928aac9e819e0ed776-1792243166794946000.make-terminal.json",
+  "kernel_terminal_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/9b9bb5928aac9e819e0ed776-1792243166794946000.kernel/result.json",
+  "direct_dependencies": [
+    {
+      "module": "Submission.Supplier.Definitions.Def_GroupCohomology_TateCohomology",
+      "source_sha256": "945d08a532ddf3320bc429f4d1c13cc1e331a24479fb3c1ee501d3fb74a345e3",
+      "object_sha256": null,
+      "receipt_reused": false
+    },
+    {
+      "module": "Submission.Supplier.Definitions.Def_GroupCohomology_TateSeam",
+      "source_sha256": "da641e68f33e1f2f8b330ea7e740cb2c8542dcc18c5b1fcc0591b206912a2133",
+      "object_sha256": "9722d0da5e28026661b0fcd11a8adf8d6272cb984ebc68e10f97aecdb181e1b6",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Definitions.Def_GroupCohomology_TateShiftMaps",
+      "source_sha256": "de5509563b9147fb63a78bcf7837f1fdff275b9fefeec46051aa6bd6d2537548",
+      "object_sha256": "b4d8e5d2f63695d8992eba36aad82b796c8b1e57ea04d3347f59ad994045cee3",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Definitions.Def_GroupCohomology_CochainCup",
+      "source_sha256": "8acc686f97e80f462c43c2d64dc3729559af9c4cbb093cf86af85d01fc7af005",
+      "object_sha256": "f8767f7b52ea1e701c1f6257a02858e1338c096dd56607e4c8273e2c85c300cc",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Definitions.Def_GroupCohomology_IsGradedCupProduct",
+      "source_sha256": "4b5f25617610412213faa3b6c4b7fd4f25d3081c8a9ec5e0667b3423905af52d",
+      "object_sha256": "0cb60761d7efe4f93c004dd664bdc13be4677d8a20ae20f7c20cae469a1c0f08",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Definitions.Def_GroupCohomology_IsTateCupProduct",
+      "source_sha256": "b9dded8a1f4c6bcb042a05f7347596982d9e056f6589c41861f8968883ab0f0a",
+      "object_sha256": "9d4c6f829ec209da8e4516c6b6c74f9267ab2e0acc5258d9aec112cc5d5eceab",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Definitions.Def_GroupCohomology_TateDimensionShift",
+      "source_sha256": "af6947d2299af8fac5a2c825bc297fe7f4f04ca96ee41572fe58ea22d235a7bc",
+      "object_sha256": "56b5ea6aca0deda73c7051d1d825f0443d1788cd095d294d9b55fec0c2c506cc",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Definitions.Def_GroupCohomology_TateDimensionShiftMaps",
+      "source_sha256": "c3da1ffc942933f4be59644f965c607ad1ac1a075b0bd8585f5abdb575ac7ce8",
+      "object_sha256": "25ab5a53990684f8d84bcf9b4460f87b0ca463a8cfdb32fadf8cb6f9b0223348",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Theorems.Thm_groupCohomology_exists_isGradedCupProduct",
+      "source_sha256": "95ccdae3b32b456daf640cf65341d0b64f4bdd9ffa1a9882d74352ff5a7a8264",
+      "object_sha256": "f5e60ecc24f405e75a9f39ac0a119267fbf0a65e516c82361f58fcd8058e52c1",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Theorems.Thm_Rep_bijective_tateDelta_of_isZero",
+      "source_sha256": "f6df0f720c37255118b44905e09bad03bac781e8b0478c544ea6404dcc30ab83",
+      "object_sha256": "cef0e23773253c89b0120f8a502d756f4e9bf463747496ffdb76d78249bd1805",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Theorems.Thm_Rep_bijective_tateDelta_dimShiftDown",
+      "source_sha256": "8a8e34928d7852888f7e909388cc9670ece9b8372b74f9a3f1850c99c3695126",
+      "object_sha256": "91d5a2729990c494aa0cbf4922c976ce3d6ea98232b31332f176d6a520060d97",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Theorems.Thm_Rep_dimShiftDown_shortExact",
+      "source_sha256": "f16c674ac12258cc75a923eeb9d46bbfca49c2f2b672bb9b25b57e8776c8f53c",
+      "object_sha256": "b68a8786b52f0efd0c043d66e268b967e971a0d4445071d3b9887f4f4f32bee6",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Theorems.Thm_Rep_shortExact_dimShiftDown_map_tensorRight",
+      "source_sha256": "c58c615c3e8f49543fb254aae78f4f8f50dce21bfd7ea9a106dac9f21da3c001",
+      "object_sha256": "af55b707eddd74ae76ca8066228172ef7e37a2bedf8e5f45ba2251bc510452be",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Theorems.Thm_Rep_shortExact_dimShiftDown_map_tensorLeft",
+      "source_sha256": "5cc360dc1f878229382038528bf828521c729e78c7f8945241d11f6fa89d2bdf",
+      "object_sha256": "4198c65640e7b1d2000ba091dbaf7a692497d6c46e7a8759e7a5093a9d0f8834",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Theorems.Thm_Rep_isZero_tateCohomology_indBot_tensor",
+      "source_sha256": "fac74bc251f9b76ac01544ac13607dba923592f2f481de46f794c8321531a852",
+      "object_sha256": "1bc208cce956523824fe3b8aaad9867c46a08987e496af08f31ef4072259d99f",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Theorems.Thm_Rep_isZero_tateCohomology_tensor_indBot",
+      "source_sha256": "d620c218f9a705f020eff9e2a6487446af225efc8922623dc4c5220e7cc2e71d",
+      "object_sha256": "1cb7a5b22832018ea1fabe5d99a0ca87a17caf5e26bfe52847aafecc9d230d4b",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Theorems.Thm_Rep_tateDelta_comp_tateDelta_eq_neg",
+      "source_sha256": "577686f6b6c1c73809b3c617c89f080de5cc5a81bace15404eb72460cd6cdb6f",
+      "object_sha256": "152233c99b3e8e4f9e0d030715656dcd2a9b73faca6936931ef5c1b9e0f570da",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Theorems.Thm_groupCohomology_IsGradedCupProduct_delta_cup",
+      "source_sha256": "e500f0e5c9df6a2076678082adf14fd220bdeb2a51c15664c8160169a6b68a12",
+      "object_sha256": "008cac635a01c7a60011d8e0b5f85082a89d331cdca314343f5db6c7552b3d26",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Theorems.Thm_groupCohomology_IsGradedCupProduct_cup_delta",
+      "source_sha256": "18a0e57cf20b2f51f93a99ddd99bab9bc08c022aa152f38ea24a70c1af1bc9d5",
+      "object_sha256": "da11543b23841cd2e67617158a2327fb9d57e2e8443e2c7f3f17971bf7bb7b2b",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Theorems.Thm_Rep_tateDelta_naturality",
+      "source_sha256": "53386fe3e27cdac21a54226f8487d4e92145bc6eb47b0c2064eb14296484640b",
+      "object_sha256": "83358be3087935232a6e9a06ab9078ca0a53dc9a45d0c549fdee5269992ae444",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Theorems.Thm_groupCohomology_IsGradedCupProduct_map_cup",
+      "source_sha256": "b238b779f68ad9adb12d1d2159fa2eb5870b833528bc9977cf047024702f513c",
+      "object_sha256": "9c99fee141b951ba2af1b3bba1a924f8aa02ac4f54b28049af6be2ba2b5d1d3f",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Theorems.Thm_Rep_tateDelta_comp_tateDelta_eq_neg_of_hom",
+      "source_sha256": "3a49aedebea0d523dc7b036cd5f2d370c75ff36a0d96db775159e758eafe61a3",
+      "object_sha256": "4e2d68826d76ed2e70512b70cc167b7a36b05324097bafd7952d6440d5f51d30",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Theorems.Thm_Rep_indBotSC_shortExact",
+      "source_sha256": "f22b8ac7a723877dc28069a748aab22db35c04e1fcc0f3608e0bb63d6fcf36ca",
+      "object_sha256": "55ea8175dee416f62b59fd05c153fa622e8ed7b6af6e52fd9a4219f9021b1d6f",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Theorems.Thm_Rep_dimShiftDownSC_shortExact",
+      "source_sha256": "2ede62c7f758c302a4148dfb38c5fa2662132d9f8dda9775735e61910b71e2c2",
+      "object_sha256": "fbcc5a3f3a3ff082395c6f83458d30aae9c9e2d30c5a9bbc5548150c5a723b6c",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Theorems.Thm_Rep_shortExact_indBotSC_map_tensorRight",
+      "source_sha256": "48479b456e74874d16c15fcd349aa93d31bd11147bd34e27dcc31300bd7c3d96",
+      "object_sha256": "71b3595967232935c88d62f3c45f55eac290ce5a6deabf7a28c2750ffe0e04f1",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Theorems.Thm_Rep_shortExact_indBotSC_map_tensorLeft",
+      "source_sha256": "bee15056472f9708623e6c5a2ef416f9679901f30c248339fcfe6e11a914aefd",
+      "object_sha256": "a918569df3ecaad4184515671fb5ee97dad824f9070d19852868b2ca05959709",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Theorems.Thm_Rep_shortExact_dimShiftDownSC_map_tensorRight",
+      "source_sha256": "432666b45c48acf1f3049b3626728f95c2c7f8a69183496698c5cc105c4f0b25",
+      "object_sha256": "1834968643125fd732f025899e3eb901bb28f750e8964496171dca957cda1d56",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Theorems.Thm_Rep_shortExact_dimShiftDownSC_map_tensorLeft",
+      "source_sha256": "bd7d2dfb8b8caf4878acdcb7aa7d967a46f5fb43a3933c07e6ad47e3b02a1ff8",
+      "object_sha256": "644af6c23006db2bcc4b87acddcf5feebf858e171dcdab0eba84b453c2c78130",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Theorems.Thm_Rep_shortExact_map_tensorRight_indBot",
+      "source_sha256": "7c8199e9ae7b74b6459574fb359e9b36dd31188221bdc8779965bc89cfb55074",
+      "object_sha256": "47ad0b71ebf6fa1d2fd277767fee724a908fda7ea5c6e703fb1b005b2ba23212",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Theorems.Thm_Rep_shortExact_map_tensorLeft_indBot",
+      "source_sha256": "b9f04cda0da42bcf7f79f3427a866fdb29564439a8ba5474383ced341d172028",
+      "object_sha256": "57e9e5bcc1f8ee428374ce2737c64e683548c036e9c2e8af7faa10b3aeee0de9",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Theorems.Thm_Rep_shortExact_map_tensorRight_dimShiftDownObj",
+      "source_sha256": "483ac7c33d4b4643840225e5ff3e9eee42531f65932bd7950f39497b714c771d",
+      "object_sha256": "a1696ffa87126a4f1a52baafaf1a4296a5a7e77c3e114a978eddfb2f7a5882cb",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Theorems.Thm_Rep_shortExact_map_tensorLeft_dimShiftDownObj",
+      "source_sha256": "ceb86954c8422eadf3c89e1349a6f011f9ad287a5d503e25199429f98b49cc39",
+      "object_sha256": "73da72361bad13ece02924096a85349094e8da76e72680844f205bb2aaf91b7f",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Theorems.Thm_groupCohomology_IsGradedCupProduct_unique",
+      "source_sha256": "1fc99d77364ded5856d6fa7811dcf43382d75601c6475093bdda46210e528e3b",
+      "object_sha256": "9698f24fd8528a308f424ffe7969beedcbf95b2f710494c8381c74041d7341df",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.P2M.Util",
+      "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+      "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+      "receipt_reused": true
+    }
+  ],
+  "stdout": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/9b9bb5928aac9e819e0ed776-1792243166794946000.kernel/stdout.log",
+  "stderr": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/9b9bb5928aac9e819e0ed776-1792243166794946000.kernel/stderr.log"
+}

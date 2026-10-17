@@ -1,0 +1,80 @@
+{
+  "sha256": "e9b31c8f1236227e924c42bc1e96963614be4ec4eec511166dcf2b8feb73a8bc",
+  "exit": 0,
+  "empty_output_retry_done": false,
+  "source_sha256_after": "e9b31c8f1236227e924c42bc1e96963614be4ec4eec511166dcf2b8feb73a8bc",
+  "source_unchanged": true,
+  "olean_sha256": "9d20937b2dfca8b025af163c9ede1d356d3377e8306b7f274f95cbe8ffe0751a",
+  "seconds": 50.934634459001245,
+  "pid": 44688,
+  "command": [
+    "/Users/macstudio/.local/omega-shims/lean",
+    "-j1",
+    "--trust=0",
+    "-Ddebug.skipKernelTC=false",
+    "-R",
+    "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src",
+    "-o",
+    "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-build/lib/lean/Submission/Supplier/Theorems/Thm_Rep_exists_isTateCupProduct.olean",
+    "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/Theorems/Thm_Rep_exists_isTateCupProduct.lean"
+  ],
+  "make_wrapper_pid": 44618,
+  "make_exit": 0,
+  "make_entry_failed": false,
+  "cache_binding_valid": true,
+  "canonical_make_running_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/b280a1de9709d81f6820f260-1792243534310988000.make-running.json",
+  "canonical_make_terminal_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/b280a1de9709d81f6820f260-1792243534310988000.make-terminal.json",
+  "kernel_terminal_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/b280a1de9709d81f6820f260-1792243534310988000.kernel/result.json",
+  "direct_dependencies": [
+    {
+      "module": "Submission.Supplier.Definitions.Def_GroupCohomology_TateCohomology",
+      "source_sha256": "945d08a532ddf3320bc429f4d1c13cc1e331a24479fb3c1ee501d3fb74a345e3",
+      "object_sha256": null,
+      "receipt_reused": false
+    },
+    {
+      "module": "Submission.Supplier.Definitions.Def_GroupCohomology_TateSeam",
+      "source_sha256": "da641e68f33e1f2f8b330ea7e740cb2c8542dcc18c5b1fcc0591b206912a2133",
+      "object_sha256": "9722d0da5e28026661b0fcd11a8adf8d6272cb984ebc68e10f97aecdb181e1b6",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Definitions.Def_GroupCohomology_TateShiftMaps",
+      "source_sha256": "de5509563b9147fb63a78bcf7837f1fdff275b9fefeec46051aa6bd6d2537548",
+      "object_sha256": "b4d8e5d2f63695d8992eba36aad82b796c8b1e57ea04d3347f59ad994045cee3",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Definitions.Def_GroupCohomology_CochainCup",
+      "source_sha256": "8acc686f97e80f462c43c2d64dc3729559af9c4cbb093cf86af85d01fc7af005",
+      "object_sha256": "f8767f7b52ea1e701c1f6257a02858e1338c096dd56607e4c8273e2c85c300cc",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Definitions.Def_GroupCohomology_IsGradedCupProduct",
+      "source_sha256": "4b5f25617610412213faa3b6c4b7fd4f25d3081c8a9ec5e0667b3423905af52d",
+      "object_sha256": "0cb60761d7efe4f93c004dd664bdc13be4677d8a20ae20f7c20cae469a1c0f08",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Definitions.Def_GroupCohomology_IsTateCupProduct",
+      "source_sha256": "b9dded8a1f4c6bcb042a05f7347596982d9e056f6589c41861f8968883ab0f0a",
+      "object_sha256": "9d4c6f829ec209da8e4516c6b6c74f9267ab2e0acc5258d9aec112cc5d5eceab",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.P2M.Util",
+      "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+      "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.P2M.Sol.S_Rep_exists_isTateCupProduct",
+      "source_sha256": "be7dd6f689e9d2f243c99b724bb6e05b81ac320785f8fbf019a1d8fea9d7a57f",
+      "object_sha256": "f4f05dfb8c4c27bafdb6e0be140dd7181668f9b3ffabd1338cf7523bee8b895f",
+      "receipt_reused": true
+    }
+  ],
+  "stdout": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/b280a1de9709d81f6820f260-1792243534310988000.kernel/stdout.log",
+  "stderr": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/b280a1de9709d81f6820f260-1792243534310988000.kernel/stderr.log"
+}
