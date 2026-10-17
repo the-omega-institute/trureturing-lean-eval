@@ -1,0 +1,62 @@
+{
+  "at": "2026-10-17T01:36:33.494848+00:00",
+  "name": "groupCohomology_exists_sha1_dualTwist_sha2_pairing_nondegenerate_of_assembly",
+  "candidate": "r2",
+  "card_candidate": "r1",
+  "source_replacements": [
+    [
+      "  classical\n",
+      "  classical\n  let : AddCommGroup (ZMod p) := (inferInstance : CommRing (ZMod p)).toAddCommGroup\n",
+      2
+    ],
+    [
+      "(f : R \u27f6 P)",
+      "(_f : R \u27f6 P)",
+      1
+    ],
+    [
+      "(hLESb :",
+      "(_hLESb :",
+      1
+    ],
+    [
+      "(iEJ\u2082 : E\u2082 \u27f6 J\u2082)",
+      "(_iEJ\u2082 : E\u2082 \u27f6 J\u2082)",
+      1
+    ],
+    [
+      "(hiB\u2082 : Function.Surjective iB\u2082)",
+      "(_hiB\u2082 : Function.Surjective iB\u2082)",
+      1
+    ]
+  ],
+  "card_replacements": [],
+  "baseline_byte_identical_to_pinned_supplier": true,
+  "pinned_supplier_source_and_card_preserved": true,
+  "full_original_statements_hypotheses_and_all_proof_branches_preserved": true,
+  "no_linter_suppression_added": true,
+  "verification_pending": false,
+  "installed": true,
+  "installed_at": "2026-10-17T01:58:00.148640+00:00",
+  "actual_failure": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/official-layout/terminal-proof-repairs/20261016-sha-dual-pairing-scalar-instances/previous-actual-failure",
+  "change": "Preserve entire original assembly and both pairing nondegeneracy arguments, every hypothesis and literal public statement. Pin scalar AddCommGroup to its existing CommRing projection in exactly two existing proof entries: the dual-extension helper and main solution. Add final recursive axiom queries. Candidate r2 retains all internal hypothesis types and positions while prefixing exactly four actually unused internal binding names (f,hLESb,iEJ\u2082,hiB\u2082) with underscore; literal public card unchanged.",
+  "original_actual_errors": 6,
+  "original_actual_warnings": 0,
+  "max_active_flt_jobs": 1,
+  "lean_threads": 1,
+  "full_original_complete": false,
+  "official_new_solve_credit": 0,
+  "active_import_closure_excluded": [
+    "Submission.Supplier.P2M.Sol.S_groupCohomology_isLevelConstant1_primeLocalToGlobal_iff"
+  ],
+  "active_transitive_import_closure_size": 29,
+  "actual_live_descendant_sources": [],
+  "all_four_canonical_adapted_source_card_modules_excluded": [
+    "P2M.Sol.S_groupCohomology_exists_sha1_dualTwist_sha2_pairing_nondegenerate_of_assembly",
+    "Submission.Supplier.P2M.Sol.S_groupCohomology_exists_sha1_dualTwist_sha2_pairing_nondegenerate_of_assembly",
+    "Submission.Supplier.Theorems.Thm_groupCohomology_exists_sha1_dualTwist_sha2_pairing_nondegenerate_of_assembly",
+    "Theorems.Thm_groupCohomology_exists_sha1_dualTwist_sha2_pairing_nondegenerate_of_assembly"
+  ],
+  "r1_source_and_card_receipts_with_source_warnings": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/official-layout/terminal-proof-repairs/20261016-sha-dual-pairing-scalar-instances/r1-source-and-card-with-source-warnings",
+  "r1_actual_source_warnings": 4
+}
