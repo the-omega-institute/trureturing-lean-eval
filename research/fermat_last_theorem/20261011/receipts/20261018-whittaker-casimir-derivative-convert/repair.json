@@ -1,0 +1,71 @@
+{
+  "at": "2026-10-18T12:38:57.129502+00:00",
+  "name": "LanglandsTunnell_whittaker_ode_splitTorus_of_casimir_of_archWeightChar_of_unipotent",
+  "candidate": "r2",
+  "card_candidate": "r1",
+  "source_replacements": [
+    [
+      "  convert h using 1\n  \u00b7 rfl\n  \u00b7 rfl\n  simp",
+      "  convert h using 1\n  simp",
+      1
+    ],
+    [
+      "    convert h using 1\n    \u00b7 rfl\n    \u00b7 rfl\n    simp [mul_comm]",
+      "    convert h using 1\n    simp [mul_comm]",
+      2
+    ],
+    [
+      "rw [dif_pos hdet]",
+      "rw [dite_eq_left hdet]",
+      1
+    ],
+    [
+      "  convert h using 1\n  simp\n\nprivate theorem hasDerivAt_rotK\u2102_zpow_zero",
+      "  convert h using 1\n  \u00b7 rfl\n  \u00b7 simp\n\nprivate theorem hasDerivAt_rotK\u2102_zpow_zero",
+      1
+    ]
+  ],
+  "card_replacements": [],
+  "supplier_repository": "anthropics/fermats-last-theorem",
+  "supplier_revision": "6e837e75355538c7f80bab5b956861e86c4eacc2",
+  "baseline_byte_identical_to_pinned_supplier": true,
+  "pinned_supplier_source_and_card_preserved": true,
+  "original_actual_errors": 6,
+  "original_actual_warnings": 1,
+  "actual_failure": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/official-layout/terminal-proof-repairs/20261018-whittaker-casimir-derivative-convert/previous-actual-failure",
+  "complete_original_proof_preserved": true,
+  "full_original_statement_and_hypotheses_preserved": true,
+  "public_solution_telescope_and_conclusion_byte_identical": true,
+  "card_proof_byte_identical_before_axiom_query": true,
+  "no_linter_suppression_added": true,
+  "change": "Preserve the complete original matrix decomposition, complex derivative calculations, regularity argument and both Whittaker ODE conclusions. Three convert invocations already discharge definitional equalities; remove the obsolete rfl steps and retain the existing simplification of the sole remaining derivative coefficient. Replace deprecated dif_pos with dite_eq_left in the same determinant branch. Public statement and every assumption unchanged, no linter suppression, original single-worker make/kernel queue only. Actual R1 still has two convert goals for rotK\u2102: its named function requires definitional unfolding by rfl, then simp discharges the coefficient. Restore that single needed rfl and focus simp on the derivative goal. Failed R1 and its error-recovery sorryAx diagnostic archived and never accepted.",
+  "verification_pending": false,
+  "installed": true,
+  "max_active_flt_jobs": 1,
+  "lean_threads": 1,
+  "full_original_complete": false,
+  "official_new_solve_credit": 0,
+  "stale_terminal_state_entries_excluded": [
+    {
+      "module": "Submission.Supplier.Theorems.Thm_Matrix_GeneralLinearGroup_exists_inv_mul_mem_iwahori_or_atkinLehner_inv_mul_mem_of_forall_conj_mem",
+      "wrapper_pid": 77284,
+      "make_exit": 0,
+      "terminal": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/e3e9803609b5cdcb0eecd99d-1792327229431757000.make-terminal.json"
+    }
+  ],
+  "active_import_closure_excluded": [],
+  "active_transitive_import_closure_size": 0,
+  "actual_live_descendant_sources": [],
+  "all_four_canonical_adapted_source_card_modules_excluded": [
+    "P2M.Sol.S_LanglandsTunnell_whittaker_ode_splitTorus_of_casimir_of_archWeightChar_of_unipotent",
+    "Submission.Supplier.P2M.Sol.S_LanglandsTunnell_whittaker_ode_splitTorus_of_casimir_of_archWeightChar_of_unipotent",
+    "Submission.Supplier.Theorems.Thm_LanglandsTunnell_whittaker_ode_splitTorus_of_casimir_of_archWeightChar_of_unipotent",
+    "Theorems.Thm_LanglandsTunnell_whittaker_ode_splitTorus_of_casimir_of_archWeightChar_of_unipotent"
+  ],
+  "installed_at": "2026-10-18T12:40:41.159275+00:00",
+  "r1_actual_failure": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/official-layout/terminal-proof-repairs/20261018-whittaker-casimir-derivative-convert/r1-actual-function-equality-needs-reflexivity",
+  "r1_actual_make_exit": 2,
+  "r1_actual_kernel_exit": 1,
+  "r1_actual_errors": 1,
+  "r1_actual_warnings": 0
+}

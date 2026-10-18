@@ -1,0 +1,20 @@
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_LanglandsTunnell_whittaker_ode_splitTorus_of_casimir_of_archWeightChar_of_unipotent.lean:177:75: error: unsolved goals
+case e'_8
+hre : HasDerivAt (fun y => ↑(√(1 + y ^ 2))⁻¹) (↑0) 0
+him : HasDerivAt (fun y => ↑(-(id y * (√(1 + y ^ 2))⁻¹))) (↑(-(1 * (√(1 + 0 ^ 2))⁻¹ + id 0 * 0))) 0
+h :
+  HasDerivAt (fun i => ↑(√(1 + i ^ 2))⁻¹ + ↑(-(id i * (√(1 + i ^ 2))⁻¹)) * Complex.I)
+    (↑0 + ↑(-(1 * (√(1 + 0 ^ 2))⁻¹ + id 0 * 0)) * Complex.I) 0
+⊢ rotKℂ = fun i => (↑√(1 + i ^ 2))⁻¹ + -(↑i * (↑√(1 + i ^ 2))⁻¹ * Complex.I)
+
+case e'_9
+hre : HasDerivAt (fun y => ↑(√(1 + y ^ 2))⁻¹) (↑0) 0
+him : HasDerivAt (fun y => ↑(-(id y * (√(1 + y ^ 2))⁻¹))) (↑(-(1 * (√(1 + 0 ^ 2))⁻¹ + id 0 * 0))) 0
+h :
+  HasDerivAt (fun i => ↑(√(1 + i ^ 2))⁻¹ + ↑(-(id i * (√(1 + i ^ 2))⁻¹)) * Complex.I)
+    (↑0 + ↑(-(1 * (√(1 + 0 ^ 2))⁻¹ + id 0 * 0)) * Complex.I) 0
+⊢ -Complex.I = ↑0 + ↑(-(1 * (√(1 + 0 ^ 2))⁻¹ + id 0 * 0)) * Complex.I
+'P2MW.S_LanglandsTunnell_whittaker_ode_splitTorus_of_casimir_of_archWeightChar_of_unipotent.solution' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
