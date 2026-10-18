@@ -1,0 +1,66 @@
+{
+  "at": "2026-10-18T08:27:41.496163+00:00",
+  "name": "CohCarrier_jDeg_apply_eq_zero_of_mem_cornerSubmodule_of_forall_notMem",
+  "candidate": "r1",
+  "card_candidate": "r1",
+  "source_replacements": [
+    [
+      "rw [hj\u2080, hQ', Ideal.comap_comap, \u2190 halg, hQ]",
+      "rw [hj\u2080, hQ', Ideal.comap_comap, \u2190 halg]\n  exact hQ",
+      1
+    ],
+    [
+      "letI : Algebra F (B \u29f8 I)",
+      "let : Algebra F (B \u29f8 I)",
+      1
+    ],
+    [
+      "haveI ",
+      "have ",
+      7
+    ],
+    [
+      "Ideal.isMaximal_comap_of_isIntegral_of_isMaximal'",
+      "Ideal.isMaximal_comap_of_isIntegral_of_isMaximal",
+      1
+    ]
+  ],
+  "card_replacements": [],
+  "supplier_repository": "anthropics/fermats-last-theorem",
+  "supplier_revision": "6e837e75355538c7f80bab5b956861e86c4eacc2",
+  "baseline_byte_identical_to_pinned_supplier": true,
+  "pinned_supplier_source_and_card_preserved": true,
+  "original_actual_errors": 1,
+  "original_actual_warnings": 9,
+  "actual_failure": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/official-layout/terminal-proof-repairs/20261018-cohcarrier-jdeg-ideal-under-api/previous-actual-failure",
+  "complete_original_proof_preserved": true,
+  "full_original_statement_and_hypotheses_preserved": true,
+  "public_solution_and_card_telescope_conclusion_proof_byte_identical_before_axiom_query": true,
+  "no_linter_suppression_added": true,
+  "fixed_pin_api_evidence": "Official Mathlib5e0c4e5 Ideal/Over.lean:96 defines under as abbrev of comap(algebraMap); GoingUp.lean:363 returns Q.under R=P. Direct exact hQ accepts the identical definitional equality after the unchanged comap rewrite. GoingUp.lean:230 deprecates the apostrophe alias; actual diagnostic reports one letI and seven haveI style warnings.",
+  "change": "After the same ideal-comap rewrites, use exact hQ for the definitionally identical under equality. Keep the original543-line proof and every helper/hypothesis/public solution/card unchanged; only replace the reported deprecated alias and local instance bindings, and append recursive source/card axiom queries. Await original single-worker make/kernel queue.",
+  "verification_pending": false,
+  "installed": true,
+  "max_active_flt_jobs": 1,
+  "lean_threads": 1,
+  "full_original_complete": false,
+  "official_new_solve_credit": 0,
+  "stale_terminal_state_entries_excluded": [],
+  "active_import_closure_excluded": [
+    "Submission.Supplier.P2M.Sol.S_CuspForm_TWLevel_HeckeRing_finite_and_isLocalRing_and_isAdicComplete"
+  ],
+  "active_transitive_import_closure_size": 87,
+  "actual_live_descendant_sources": [
+    {
+      "pid": 2231,
+      "source": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_CuspForm_TWLevel_HeckeRing_finite_and_isLocalRing_and_isAdicComplete.lean"
+    }
+  ],
+  "all_four_canonical_adapted_source_card_modules_excluded": [
+    "P2M.Sol.S_CohCarrier_jDeg_apply_eq_zero_of_mem_cornerSubmodule_of_forall_notMem",
+    "Submission.Supplier.P2M.Sol.S_CohCarrier_jDeg_apply_eq_zero_of_mem_cornerSubmodule_of_forall_notMem",
+    "Submission.Supplier.Theorems.Thm_CohCarrier_jDeg_apply_eq_zero_of_mem_cornerSubmodule_of_forall_notMem",
+    "Theorems.Thm_CohCarrier_jDeg_apply_eq_zero_of_mem_cornerSubmodule_of_forall_notMem"
+  ],
+  "installed_at": "2026-10-18T08:27:41.609970+00:00"
+}

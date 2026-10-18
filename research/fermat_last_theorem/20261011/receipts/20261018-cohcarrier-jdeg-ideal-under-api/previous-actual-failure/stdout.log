@@ -1,0 +1,99 @@
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_CohCarrier_jDeg_apply_eq_zero_of_mem_cornerSubmodule_of_forall_notMem.lean:92:2: warning: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_CohCarrier_jDeg_apply_eq_zero_of_mem_cornerSubmodule_of_forall_notMem.lean:94:2: warning: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_CohCarrier_jDeg_apply_eq_zero_of_mem_cornerSubmodule_of_forall_notMem.lean:107:2: warning: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_CohCarrier_jDeg_apply_eq_zero_of_mem_cornerSubmodule_of_forall_notMem.lean:116:43: error: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  Ideal.under F Q
+in the target expression
+  Ideal.comap (algebraMap F (B ⧸ I)) Q = P
+
+B : Type
+inst✝¹ : CommRing B
+S : IdempotentSplitting B
+F : Type
+inst✝ : CommRing F
+ψ : F →+* B
+hψ : ∀ (b : B), ∃ p, p.Monic ∧ eval₂ ψ b p = 0
+P : Ideal F
+hP : P.IsMaximal
+j₀ : Fin S.n
+I : Ideal B := Ideal.span {1 - S.e j₀}
+hle : Ideal.comap ψ I ≤ P
+hI : I = Ideal.span {1 - S.e j₀}
+this✝ : Algebra F (B ⧸ I) := ((Ideal.Quotient.mk I).comp ψ).toAlgebra
+halg : algebraMap F (B ⧸ I) = (Ideal.Quotient.mk I).comp ψ
+this : Algebra.IsIntegral F (B ⧸ I)
+hker : RingHom.ker (algebraMap F (B ⧸ I)) ≤ P
+Q : Ideal (B ⧸ I)
+hQmax : Q.IsMaximal
+hQ : Ideal.under F Q = P
+Q' : Ideal B := Ideal.comap (Ideal.Quotient.mk I) Q
+hQ' : Q' = Ideal.comap (Ideal.Quotient.mk I) Q
+hQ'max : Q'.IsMaximal
+h1e : 1 - S.e j₀ ∈ Q'
+hj₀ : S.𝔪 j₀ = Q'
+⊢ Ideal.comap (algebraMap F (B ⧸ I)) Q = P
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_CohCarrier_jDeg_apply_eq_zero_of_mem_cornerSubmodule_of_forall_notMem.lean:132:4: warning: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_CohCarrier_jDeg_apply_eq_zero_of_mem_cornerSubmodule_of_forall_notMem.lean:227:2: warning: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_CohCarrier_jDeg_apply_eq_zero_of_mem_cornerSubmodule_of_forall_notMem.lean:265:2: warning: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_CohCarrier_jDeg_apply_eq_zero_of_mem_cornerSubmodule_of_forall_notMem.lean:325:8: warning: `Ideal.isMaximal_comap_of_isIntegral_of_isMaximal'` has been deprecated: Use `Ideal.isMaximal_comap_of_isIntegral_of_isMaximal` instead
+
+Hint: Replace the deprecated name:
+  Ideal.isMaximal_comap_of_isIntegral_of_isMaximal'̵
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_CohCarrier_jDeg_apply_eq_zero_of_mem_cornerSubmodule_of_forall_notMem.lean:324:6: warning: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_CohCarrier_jDeg_apply_eq_zero_of_mem_cornerSubmodule_of_forall_notMem.lean:429:4: warning: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
