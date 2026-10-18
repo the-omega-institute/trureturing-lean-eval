@@ -1,0 +1,71 @@
+{
+  "at": "2026-10-18T12:53:58.126440+00:00",
+  "name": "MeasureTheory_exists_finset_forall_exists_eLpNorm_sub_lt_of_equicontinuous_of_forall_ae_norm_le",
+  "candidate": "r1",
+  "card_candidate": "r1",
+  "source_replacements": [
+    [
+      "  haveI : CompactSpace K := isCompact_iff_compactSpace.mp hK",
+      "  have : CompactSpace K := isCompact_iff_compactSpace.mp hK",
+      1
+    ],
+    [
+      "simp only [inv, dif_pos hy']",
+      "simp only [inv, dite_eq_left hy']",
+      1
+    ],
+    [
+      "(eLpNorm_le_of_ae_bound (C := (d : \u211d)) ?_).trans ?_",
+      "(eLpNorm_le_of_ae_bound (C := (d : \u211d)) hgm.restrict ?_).trans ?_",
+      1
+    ],
+    [
+      "(eLpNorm_le_of_ae_bound (C := C + C) ?_).trans",
+      "(eLpNorm_le_of_ae_bound (C := C + C) hgm.restrict ?_).trans",
+      1
+    ],
+    [
+      "eLpNorm_add_le (hgm.indicator hKm) (hgm.indicator hKm.compl) hp\u2081 (\u03bc := \u03bc)",
+      "eLpNorm_add_le (f := K.indicator g) (g := K\u1d9c.indicator g) hp\u2081 (\u03bc := \u03bc)",
+      1
+    ]
+  ],
+  "card_replacements": [],
+  "supplier_repository": "anthropics/fermats-last-theorem",
+  "supplier_revision": "6e837e75355538c7f80bab5b956861e86c4eacc2",
+  "baseline_byte_identical_to_pinned_supplier": true,
+  "pinned_supplier_source_and_card_preserved": true,
+  "original_actual_errors": 6,
+  "original_actual_warnings": 2,
+  "actual_failure": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/official-layout/terminal-proof-repairs/20261018-equicontinuous-finite-lp-approximation/previous-actual-failure",
+  "complete_original_proof_preserved": true,
+  "full_original_statement_and_hypotheses_preserved": true,
+  "public_solution_telescope_and_conclusion_byte_identical": true,
+  "card_proof_byte_identical_before_axiom_query": true,
+  "no_linter_suppression_added": true,
+  "change": "Preserve the full original tightness/Arzela-Ascoli finite-approximation proof, all hypotheses and the exact approximation conclusion. Supply the already-proved hgm.restrict measurability to both current eLpNorm_le_of_ae_bound invocations. Current eLpNorm_add_le takes only the existing exponent bound; explicitly identify the same two indicator functions. Migrate the one logged CompactSpace haveI in the proposition proof and the one deprecated dif_pos call. Public telescope and card byte-identical before axiom queries, no linter suppression, original single-worker make/kernel queue only.",
+  "verification_pending": false,
+  "installed": true,
+  "max_active_flt_jobs": 1,
+  "lean_threads": 1,
+  "full_original_complete": false,
+  "official_new_solve_credit": 0,
+  "stale_terminal_state_entries_excluded": [],
+  "active_import_closure_excluded": [
+    "Submission.Supplier.P2M.Sol.S_ModularCurve_CuspSpace_card_fromCoset_fiber"
+  ],
+  "active_transitive_import_closure_size": 7,
+  "actual_live_descendant_sources": [
+    {
+      "pid": 50853,
+      "source": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_ModularCurve_CuspSpace_card_fromCoset_fiber.lean"
+    }
+  ],
+  "all_four_canonical_adapted_source_card_modules_excluded": [
+    "P2M.Sol.S_MeasureTheory_exists_finset_forall_exists_eLpNorm_sub_lt_of_equicontinuous_of_forall_ae_norm_le",
+    "Submission.Supplier.P2M.Sol.S_MeasureTheory_exists_finset_forall_exists_eLpNorm_sub_lt_of_equicontinuous_of_forall_ae_norm_le",
+    "Submission.Supplier.Theorems.Thm_MeasureTheory_exists_finset_forall_exists_eLpNorm_sub_lt_of_equicontinuous_of_forall_ae_norm_le",
+    "Theorems.Thm_MeasureTheory_exists_finset_forall_exists_eLpNorm_sub_lt_of_equicontinuous_of_forall_ae_norm_le"
+  ],
+  "installed_at": "2026-10-18T12:53:58.234534+00:00"
+}

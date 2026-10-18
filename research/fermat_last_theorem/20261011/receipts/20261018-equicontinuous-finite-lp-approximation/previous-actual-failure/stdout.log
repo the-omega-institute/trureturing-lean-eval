@@ -1,0 +1,39 @@
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_MeasureTheory_exists_finset_forall_exists_eLpNorm_sub_lt_of_equicontinuous_of_forall_ae_norm_le.lean:74:2: warning: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_MeasureTheory_exists_finset_forall_exists_eLpNorm_sub_lt_of_equicontinuous_of_forall_ae_norm_le.lean:105:20: warning: `dif_pos` has been deprecated: Use `dite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  d̵i̵f̵_̵p̵o̵s̵d̲i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_MeasureTheory_exists_finset_forall_exists_eLpNorm_sub_lt_of_equicontinuous_of_forall_ae_norm_le.lean:122:54: error(lean.invalidField): Invalid field `trans`: The environment does not contain `Function.trans`, so it is not possible to project the field `trans` from an expression
+  eLpNorm_le_of_ae_bound ?m.802
+of type
+  (∀ᵐ (x : ?m.795) ∂?m.799, ‖?m.801 x‖ ≤ ↑d) →
+    eLpNorm ?m.801 ?m.798 ?m.799 ≤ ?m.799 univ ^ (ENNReal.toReal ?m.798)⁻¹ * ENNReal.ofReal ↑d
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_MeasureTheory_exists_finset_forall_exists_eLpNorm_sub_lt_of_equicontinuous_of_forall_ae_norm_le.lean:123:4: error: No goals to be solved
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_MeasureTheory_exists_finset_forall_exists_eLpNorm_sub_lt_of_equicontinuous_of_forall_ae_norm_le.lean:130:52: error(lean.invalidField): Invalid field `trans`: The environment does not contain `Function.trans`, so it is not possible to project the field `trans` from an expression
+  eLpNorm_le_of_ae_bound ?m.859
+of type
+  (∀ᵐ (x : ?m.848) ∂?m.852, ‖?m.854 x‖ ≤ C + C) →
+    eLpNorm ?m.854 ?m.851 ?m.852 ≤ ?m.852 univ ^ (ENNReal.toReal ?m.851)⁻¹ * ENNReal.ofReal (C + C)
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_MeasureTheory_exists_finset_forall_exists_eLpNorm_sub_lt_of_equicontinuous_of_forall_ae_norm_le.lean:131:4: error: No goals to be solved
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_MeasureTheory_exists_finset_forall_exists_eLpNorm_sub_lt_of_equicontinuous_of_forall_ae_norm_le.lean:135:14: error: Function expected at
+  eLpNorm_add_le ?m.910
+but this term has type
+  eLpNorm (?m.899 + ?m.900) ?m.898 μ ≤ eLpNorm ?m.899 ?m.898 μ + eLpNorm ?m.900 ?m.898 μ
+
+Note: Expected a function because this term is being applied to the argument
+  (hgm.indicator hKm.compl)
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_MeasureTheory_exists_finset_forall_exists_eLpNorm_sub_lt_of_equicontinuous_of_forall_ae_norm_le.lean:135:29: error: Application type mismatch: The argument
+  AEStronglyMeasurable.indicator hgm hKm
+has type
+  AEStronglyMeasurable (K.indicator g) μ
+but is expected to have type
+  1 ≤ ?m.898
+in the application
+  eLpNorm_add_le (AEStronglyMeasurable.indicator hgm hKm)
