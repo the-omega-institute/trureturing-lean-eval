@@ -1,0 +1,120 @@
+{
+  "at": "2026-10-18T03:01:48.051250+00:00",
+  "name": "AlgebraicCurve_finrankAlong_id",
+  "candidate": "r1",
+  "card_candidate": "r1",
+  "source_replacements": [
+    [
+      "attribute [-simp] ModularCurve.coe_heckeFibreGeomLevelDegZero ModularCurve.coe_frobeniusPullbackGeomLevelDegZero ModularCurve.frobeniusPullbackGeomLevelPic0_mk ModularCurve.frobeniusPullbackGeomLevel_single ModularCurve.heckeFibreGeomLevelPic0_mk ModularCurve.frobeniusPushforwardGeomLevelPic0OfIsCurveOver_mk ModularCurve.frobeniusPushforwardGeomLevel_single ModularCurve.qExpandAlgC_apply AlgebraicCurve.Place.congrEquiv_symm_apply AlgebraicCurve.RationalFunctionField.heightOneSpectrumOfIrreducible_asIdeal AlgebraicCurve.Place.congrRingEquiv_toValuationSubring AlgebraicCurve.Place.congrEquiv_apply AlgebraicCurve.Place.coe_comapSymmRingEquiv_apply AlgebraicCurve.RationalFunctionField.deg_placeOfPoint AlgebraicCurve.coe_frobeniusPushforwardDegZero AlgebraicCurve.IsFrobeniusEndo.coe_frobeniusPullbackDegZero ModularCurve.reduceModBivar_C_X ModularCurve.laurentMap_coeff ModularCurve.reduceModBivar_X ModularCurve.laurentMap_single ModularCurve.evalAtJInt_X ModularCurve.evalAtJMod_X ModularCurve.jqNMod_one ModularCurve.aeval_heckeGen ModularCurve.coe_mTorsionGaloisRep_apply ModularCurve.eisensteinSystem_of_dvd ModularCurve.eisensteinSystem_of_not_dvd FreyPackage.mk.sizeOf_spec FreyPackage.mk.injEq WeierstrassCurve.Affine.Point.galoisRepModuleEnd_apply ModularCurve.eisensteinNumerator_nineteen ModularCurve.eisensteinNumerator_seventeen ModularCurve.eisensteinNumerator_eleven ModularCurve.eisensteinNumerator_five ModularCurve.eisensteinNumerator_seven ModularCurve.eisensteinNumerator_twentythree ModularCurve.eisensteinNumerator_thirteen ModularCurve.constantCoeff_dedekindEtaUnitQ\n",
+      "attribute [-simp] ModularCurve.coe_heckeFibreGeomLevelDegZero ModularCurve.coe_frobeniusPullbackGeomLevelDegZero ModularCurve.frobeniusPullbackGeomLevelPic0_mk ModularCurve.frobeniusPullbackGeomLevel_single ModularCurve.heckeFibreGeomLevelPic0_mk ModularCurve.frobeniusPushforwardGeomLevelPic0OfIsCurveOver_mk ModularCurve.frobeniusPushforwardGeomLevel_single ModularCurve.qExpandAlgC_apply AlgebraicCurve.Place.congrEquiv_symm_apply AlgebraicCurve.RationalFunctionField.heightOneSpectrumOfIrreducible_asIdeal AlgebraicCurve.Place.congrRingEquiv_toValuationSubring AlgebraicCurve.Place.congrEquiv_apply AlgebraicCurve.Place.coe_comapSymmRingEquiv_apply AlgebraicCurve.RationalFunctionField.deg_placeOfPoint AlgebraicCurve.coe_frobeniusPushforwardDegZero AlgebraicCurve.IsFrobeniusEndo.coe_frobeniusPullbackDegZero ModularCurve.reduceModBivar_C_X ModularCurve.laurentMap_coeff ModularCurve.reduceModBivar_X ModularCurve.laurentMap_single ModularCurve.evalAtJInt_X ModularCurve.evalAtJMod_X ModularCurve.jqNMod_one ModularCurve.aeval_heckeGen ModularCurve.coe_mTorsionGaloisRep_apply ModularCurve.eisensteinSystem_of_dvd ModularCurve.eisensteinSystem_of_not_dvd FreyPackage.mk.sizeOf_spec FreyPackage.mk.injEq WeierstrassCurve.Affine.Point.galoisRepModuleEnd_apply\n",
+      1
+    ],
+    [
+      "  haveI : NeZero ((N : \u2115) : \u211a) := \u27e8Nat.cast_ne_zero.mpr (NeZero.ne N)\u27e9\n",
+      "  have : NeZero ((N : \u2115) : \u211a) := \u27e8Nat.cast_ne_zero.mpr (NeZero.ne N)\u27e9\n",
+      1
+    ],
+    [
+      "  haveI : IsCyclotomicExtension {N} \u211a (CyclotomicField N \u211a) := CyclotomicField.isCyclotomicExtension N \u211a\n",
+      "  have : IsCyclotomicExtension {N} \u211a (CyclotomicField N \u211a) := CyclotomicField.isCyclotomicExtension N \u211a\n",
+      1
+    ],
+    [
+      "  letI : Algebra F F' := AlgebraicCurve.algebraAlong \u03c6\n",
+      "  let : Algebra F F' := AlgebraicCurve.algebraAlong \u03c6\n",
+      1
+    ],
+    [
+      "  letI : Algebra F' F'' := AlgebraicCurve.algebraAlong \u03c7\n",
+      "  let : Algebra F' F'' := AlgebraicCurve.algebraAlong \u03c7\n",
+      1
+    ],
+    [
+      "  letI : Algebra F F'' := AlgebraicCurve.algebraAlong (\u03c7.comp \u03c6)\n",
+      "  let : Algebra F F'' := AlgebraicCurve.algebraAlong (\u03c7.comp \u03c6)\n",
+      1
+    ],
+    [
+      "  haveI : IsScalarTower F F' F'' := IsScalarTower.of_algebraMap_eq fun _ => rfl\n",
+      "  have : IsScalarTower F F' F'' := IsScalarTower.of_algebraMap_eq fun _ => rfl\n",
+      1
+    ],
+    [
+      "  letI : Algebra F F := AlgebraicCurve.algebraAlong (AlgHom.id K F)\n",
+      "  let : Algebra F F := AlgebraicCurve.algebraAlong (AlgHom.id K F)\n",
+      1
+    ],
+    [
+      "  letI : Algebra A B := AlgebraicCurve.algebraAlong \u03c6\n",
+      "  let : Algebra A B := AlgebraicCurve.algebraAlong \u03c6\n",
+      1
+    ],
+    [
+      "  convert h using 2 <;> try rfl\n",
+      "  convert h using 2; try rfl\n",
+      1
+    ],
+    [
+      "if_pos",
+      "ite_eq_left",
+      2
+    ],
+    [
+      "if_neg",
+      "ite_eq_right",
+      2
+    ]
+  ],
+  "card_replacements": [
+    [
+      "attribute [-simp] ModularCurve.frobeniusPullbackGeomLevel_single ModularCurve.heckeFibreGeomLevelPic0_mk ModularCurve.frobeniusPushforwardGeomLevelPic0OfIsCurveOver_mk ModularCurve.frobeniusPushforwardGeomLevel_single ModularCurve.qExpandAlgC_apply AlgebraicCurve.Place.congrEquiv_symm_apply AlgebraicCurve.RationalFunctionField.heightOneSpectrumOfIrreducible_asIdeal AlgebraicCurve.Place.congrRingEquiv_toValuationSubring AlgebraicCurve.Place.congrEquiv_apply AlgebraicCurve.Place.coe_comapSymmRingEquiv_apply AlgebraicCurve.RationalFunctionField.deg_placeOfPoint AlgebraicCurve.coe_frobeniusPushforwardDegZero AlgebraicCurve.IsFrobeniusEndo.coe_frobeniusPullbackDegZero ModularCurve.reduceModBivar_C_X ModularCurve.laurentMap_coeff ModularCurve.reduceModBivar_X ModularCurve.laurentMap_single ModularCurve.evalAtJInt_X ModularCurve.evalAtJMod_X ModularCurve.jqNMod_one ModularCurve.aeval_heckeGen ModularCurve.coe_mTorsionGaloisRep_apply ModularCurve.eisensteinSystem_of_dvd ModularCurve.eisensteinSystem_of_not_dvd FreyPackage.mk.sizeOf_spec FreyPackage.mk.injEq WeierstrassCurve.Affine.Point.galoisRepModuleEnd_apply ModularCurve.eisensteinNumerator_nineteen ModularCurve.eisensteinNumerator_seventeen ModularCurve.eisensteinNumerator_eleven ModularCurve.eisensteinNumerator_five ModularCurve.eisensteinNumerator_seven ModularCurve.eisensteinNumerator_twentythree ModularCurve.eisensteinNumerator_thirteen ModularCurve.constantCoeff_dedekindEtaUnitQ\n",
+      "attribute [-simp] ModularCurve.frobeniusPullbackGeomLevel_single ModularCurve.heckeFibreGeomLevelPic0_mk ModularCurve.frobeniusPushforwardGeomLevelPic0OfIsCurveOver_mk ModularCurve.frobeniusPushforwardGeomLevel_single ModularCurve.qExpandAlgC_apply AlgebraicCurve.Place.congrEquiv_symm_apply AlgebraicCurve.RationalFunctionField.heightOneSpectrumOfIrreducible_asIdeal AlgebraicCurve.Place.congrRingEquiv_toValuationSubring AlgebraicCurve.Place.congrEquiv_apply AlgebraicCurve.Place.coe_comapSymmRingEquiv_apply AlgebraicCurve.RationalFunctionField.deg_placeOfPoint AlgebraicCurve.coe_frobeniusPushforwardDegZero AlgebraicCurve.IsFrobeniusEndo.coe_frobeniusPullbackDegZero ModularCurve.reduceModBivar_C_X ModularCurve.laurentMap_coeff ModularCurve.reduceModBivar_X ModularCurve.laurentMap_single ModularCurve.evalAtJInt_X ModularCurve.evalAtJMod_X ModularCurve.jqNMod_one ModularCurve.aeval_heckeGen ModularCurve.coe_mTorsionGaloisRep_apply ModularCurve.eisensteinSystem_of_dvd ModularCurve.eisensteinSystem_of_not_dvd FreyPackage.mk.sizeOf_spec FreyPackage.mk.injEq WeierstrassCurve.Affine.Point.galoisRepModuleEnd_apply\n",
+      1
+    ]
+  ],
+  "removed_header_attribute_names": [
+    "ModularCurve.constantCoeff_dedekindEtaUnitQ",
+    "ModularCurve.eisensteinNumerator_eleven",
+    "ModularCurve.eisensteinNumerator_five",
+    "ModularCurve.eisensteinNumerator_nineteen",
+    "ModularCurve.eisensteinNumerator_seven",
+    "ModularCurve.eisensteinNumerator_seventeen",
+    "ModularCurve.eisensteinNumerator_thirteen",
+    "ModularCurve.eisensteinNumerator_twentythree"
+  ],
+  "baseline_byte_identical_to_pinned_supplier": true,
+  "pinned_supplier_source_and_card_preserved": true,
+  "supplier_repository": "anthropics/fermats-last-theorem",
+  "supplier_revision": "6e837e75355538c7f80bab5b956861e86c4eacc2",
+  "verification_pending": false,
+  "installed": true,
+  "no_linter_suppression_added": true,
+  "complete_original_proof_preserved": true,
+  "full_original_statement_and_hypotheses_preserved": true,
+  "max_active_flt_jobs": 1,
+  "lean_threads": 1,
+  "original_actual_errors": 1,
+  "original_actual_warnings": 13,
+  "original_kernel_seconds": 57.816872333,
+  "actual_failure": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/official-layout/terminal-proof-repairs/20261018-finrank-identity-header-attributes/previous-actual-failure",
+  "change": "Repair actual sibling identity-module failure by removing the same eight absent numerical header blacklist entries from source/card. Preserve the full 608-line original proof and exact identity-degree statement with all original hypotheses. Fix reported eight haveI/letI bindings, replace unnecessary sequence focus with sequential try rfl, and migrate four deprecated if rewrite names. Original single-worker natural queue verification pending.",
+  "full_original_complete": false,
+  "official_new_solve_credit": 0,
+  "stale_terminal_state_entries_excluded": [
+    {
+      "module": "Submission.Supplier.Theorems.Thm_AlgebraicCurve_finrankAlong_eq_relfinrank_fieldRange",
+      "wrapper_pid": 2647,
+      "make_exit": 0,
+      "terminal": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/43efe01c169b5739c36bf03e-1792292494311558000.make-terminal.json"
+    }
+  ],
+  "active_import_closure_excluded": [],
+  "active_transitive_import_closure_size": 0,
+  "actual_live_descendant_sources": [],
+  "all_four_canonical_adapted_source_card_modules_excluded": [
+    "P2M.Sol.S_AlgebraicCurve_finrankAlong_id",
+    "Submission.Supplier.P2M.Sol.S_AlgebraicCurve_finrankAlong_id",
+    "Submission.Supplier.Theorems.Thm_AlgebraicCurve_finrankAlong_id",
+    "Theorems.Thm_AlgebraicCurve_finrankAlong_id"
+  ]
+}
