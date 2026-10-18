@@ -1,0 +1,73 @@
+{
+  "at": "2026-10-18T06:46:01.359108+00:00",
+  "name": "AutomorphicForm_iterate_raise_iterate_lower_eq_smul_of_archCasimirAt_eq_smul",
+  "candidate": "r2",
+  "card_candidate": "r1",
+  "source_replacements": [
+    [
+      "dif_neg",
+      "dite_eq_right",
+      2
+    ],
+    [
+      "(by simp; norm_cast)",
+      "(by simp)",
+      1
+    ],
+    [
+      "ext i j; fin_cases i <;> fin_cases j <;> simp [archDirMatrix, Matrix.mul_apply, Fin.sum_univ_two] <;> norm_num",
+      "ext i j; fin_cases i <;> fin_cases j <;> norm_num [archDirMatrix]",
+      2
+    ],
+    [
+      "ext i j; fin_cases i <;> fin_cases j <;> simp [archDirMatrix, Matrix.mul_apply, Fin.sum_univ_two]",
+      "ext i j; fin_cases i <;> fin_cases j <;> simp [archDirMatrix]",
+      1
+    ],
+    [
+      "private theorem smooth_sub (h\u03b8 : IsArchSmoothAt hw \u03b8)",
+      "private theorem smooth_sub (_h\u03b8 : IsArchSmoothAt hw \u03b8)",
+      1
+    ]
+  ],
+  "card_replacements": [],
+  "supplier_repository": "anthropics/fermats-last-theorem",
+  "supplier_revision": "6e837e75355538c7f80bab5b956861e86c4eacc2",
+  "baseline_byte_identical_to_pinned_supplier": true,
+  "pinned_supplier_source_and_card_preserved": true,
+  "original_actual_errors": 1,
+  "original_actual_warnings": 11,
+  "actual_failure": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/official-layout/terminal-proof-repairs/20261018-casimir-iterate-closed-goal/previous-actual-failure",
+  "complete_original_proof_preserved": true,
+  "full_original_statement_and_hypotheses_preserved": true,
+  "public_solution_and_card_telescope_conclusion_proof_byte_identical_before_axiom_query": true,
+  "no_linter_suppression_added": true,
+  "fixed_pin_api_evidence": "Actual kernel diagnostic at adapted source line250: No goals to be solved after simp; norm_cast. Lean4.35rc3 Init/Core.lean:1213,1219 defines dite_eq_right and dif_neg as its deprecated alias. Use only actual unused-simp/sequencing hints; retain the unused private smooth_sub hypothesis as _h\u03b8 with the identical type.",
+  "change": "Remove norm_cast after simp already closes its subgoal; replace two dif_neg aliases by dite_eq_right. Use norm_num [archDirMatrix] for the two matrix bracket proofs, keeping the original ext/fin_cases; remove only reported unused simp arguments from the third bracket. Retain the unused private smooth_sub hypothesis as _h\u03b8 with identical type. Preserve every helper, the full original 917-line proof, public solution/card proof and all hypotheses. Append recursive source/card axiom queries. Candidate r1 actual failure is archived; await original single-worker make/kernel queue for r2.",
+  "verification_pending": false,
+  "installed": true,
+  "max_active_flt_jobs": 1,
+  "lean_threads": 1,
+  "full_original_complete": false,
+  "official_new_solve_credit": 0,
+  "stale_terminal_state_entries_excluded": [],
+  "active_import_closure_excluded": [
+    "Submission.Supplier.P2M.Sol.S_AutomorphicForm_not_coversModCentre_iUnion_centreCutSiegelSet_of_eq_zero"
+  ],
+  "active_transitive_import_closure_size": 33,
+  "actual_live_descendant_sources": [
+    {
+      "pid": 18370,
+      "source": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_AutomorphicForm_not_coversModCentre_iUnion_centreCutSiegelSet_of_eq_zero.lean"
+    }
+  ],
+  "all_four_canonical_adapted_source_card_modules_excluded": [
+    "P2M.Sol.S_AutomorphicForm_iterate_raise_iterate_lower_eq_smul_of_archCasimirAt_eq_smul",
+    "Submission.Supplier.P2M.Sol.S_AutomorphicForm_iterate_raise_iterate_lower_eq_smul_of_archCasimirAt_eq_smul",
+    "Submission.Supplier.Theorems.Thm_AutomorphicForm_iterate_raise_iterate_lower_eq_smul_of_archCasimirAt_eq_smul",
+    "Theorems.Thm_AutomorphicForm_iterate_raise_iterate_lower_eq_smul_of_archCasimirAt_eq_smul"
+  ],
+  "installed_at": "2026-10-18T06:50:28.686062+00:00",
+  "r1_actual_failure": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/official-layout/terminal-proof-repairs/20261018-casimir-iterate-closed-goal/actual-r1-failure",
+  "r2_change": "The actual first candidate shows simp closes three branches before the sequenced norm_num. Replace the two matrix bracket tactic bodies with norm_num [archDirMatrix] after the same ext/fin_cases; preserve all statements, hypotheses, helpers and public solution/card proof. The r1 failure is archived and never accepted or checkpointed."
+}
