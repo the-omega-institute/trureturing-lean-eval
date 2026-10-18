@@ -1,0 +1,148 @@
+{
+  "at": "2026-10-18T09:14:38.573581+00:00",
+  "name": "ModPForms_exists_isEigensystemH1_binaryFormRepSL_of_isModPEigen",
+  "candidate": "r2",
+  "card_candidate": "r1",
+  "source_replacements": [
+    [
+      "  convert h using 1\n  \u00b7 rfl\n  \u00b7 rfl\n  ring\n",
+      "  convert h using 1\n  exact mul_assoc _ _ _\n",
+      1
+    ],
+    [
+      "  haveI ",
+      "  have ",
+      8
+    ],
+    [
+      "    letI ",
+      "    let ",
+      2
+    ],
+    [
+      "ModularForm.IsGLPos.coe_smul",
+      "FunLike.coe_smul",
+      2
+    ],
+    [
+      "ModularForm.coe_add",
+      "FunLike.coe_add",
+      1
+    ],
+    [
+      "MonoidHom.coe_coe",
+      "MonoidHom.coe_ofClass",
+      1
+    ],
+    [
+      "TensorProduct.induction_on",
+      "TensorProduct.inductionOn",
+      3
+    ],
+    [
+      "  | zero => rw [map_zero]; exact Submodule.zero_mem _\n",
+      "",
+      1
+    ],
+    [
+      "  | zero => rw [map_zero, map_zero]; ext m; simp [ModPForms.heckePS, PowerSeries.coeff_mk]\n",
+      "",
+      1
+    ],
+    [
+      "    | zero =>\n      have h0 : (LinearMap.baseChange F (tH N S\u2080 n \u2124 i)) (0 : F \u2297[\u2124] H1 \u2124 N n) = (0 : F \u2297[\u2124] H1 \u2124 N n) :=\n        map_zero _\n      rw [h0, map_zero, map_zero]\n",
+      "",
+      1
+    ],
+    [
+      "  congr 1 <;> ring",
+      "  congr 1; ring",
+      1
+    ],
+    [
+      "  have : Fact p.Prime := \u27e8hp\u27e9",
+      "  clear hpN' hS\u2080fin hS\u2080p\n  have : Fact p.Prime := \u27e8hp\u27e9",
+      1
+    ],
+    [
+      "  letI : Algebra (ZMod p) F := ZMod.algebra F p",
+      "  let : Algebra (ZMod p) F := ZMod.algebra F p",
+      1
+    ],
+    [
+      "  clear hpN' hS\u2080fin hS\u2080p\n",
+      "",
+      1
+    ],
+    [
+      "(hpN' : \u00ac p \u2223 N')",
+      "(_hpN' : \u00ac p \u2223 N')",
+      1
+    ],
+    [
+      "(hS\u2080fin : S\u2080.Finite)",
+      "(_hS\u2080fin : S\u2080.Finite)",
+      1
+    ],
+    [
+      "(hS\u2080p : p \u2208 S\u2080)",
+      "(_hS\u2080p : p \u2208 S\u2080)",
+      1
+    ]
+  ],
+  "card_replacements": [],
+  "supplier_repository": "anthropics/fermats-last-theorem",
+  "supplier_revision": "6e837e75355538c7f80bab5b956861e86c4eacc2",
+  "baseline_byte_identical_to_pinned_supplier": false,
+  "pinned_supplier_source_and_card_preserved": true,
+  "pinned_to_canonical_preexisting_source_replacements": [
+    [
+      "obtain \u27e8S, hS\u27e9 := h\u0393.out",
+      "obtain \u27e8_, S, _, hS\u27e9 := Group.fg_iff'.mp h\u0393",
+      1
+    ]
+  ],
+  "original_actual_errors": 2,
+  "original_actual_warnings": 22,
+  "actual_failure": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/official-layout/terminal-proof-repairs/20261018-modpforms-derivative-convert-api/previous-actual-failure",
+  "complete_original_proof_preserved": true,
+  "full_original_statement_and_hypotheses_preserved": true,
+  "public_solution_telescope_and_conclusion_byte_identical": false,
+  "card_proof_byte_identical_before_axiom_query": true,
+  "no_linter_suppression_added": true,
+  "change": "Use the existing mul_assoc theorem for the single derivative-value equality left by current convert; remove two obsolete rfl bullets. Migrate three tensor inductions to its current tmul/add API; preserve original tmul/add proofs, all public hypotheses/conclusion, and full original source. Modernize logged local bindings and aliases; replace unnecessary seqFocus by sequential tactics. Explicitly clear three already-unused proof-local assumptions without changing any public binder or premise. Original single-worker make/kernel queue only. R1 kernel/make0 but four warnings, not accepted. R2 migrates the one remaining local letI and prefixes exactly three unused internal solution binder names with underscores, preserving every binder type/order and the published card names; removes the ineffective clear tactic. The published card remains byte-identical except its axiom query.",
+  "verification_pending": false,
+  "installed": true,
+  "max_active_flt_jobs": 1,
+  "lean_threads": 1,
+  "full_original_complete": false,
+  "official_new_solve_credit": 0,
+  "stale_terminal_state_entries_excluded": [
+    {
+      "module": "Submission.Supplier.Theorems.Thm_HeckeEis_isEigensystemH1_binaryFormRepSL_of_heckeTLin_eq_smul",
+      "wrapper_pid": 17089,
+      "make_exit": 0,
+      "terminal": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/ef575f3bdd12881ad9266c77-1792315022281667000.make-terminal.json"
+    }
+  ],
+  "active_import_closure_excluded": [],
+  "active_transitive_import_closure_size": 0,
+  "actual_live_descendant_sources": [],
+  "all_four_canonical_adapted_source_card_modules_excluded": [
+    "P2M.Sol.S_ModPForms_exists_isEigensystemH1_binaryFormRepSL_of_isModPEigen",
+    "Submission.Supplier.P2M.Sol.S_ModPForms_exists_isEigensystemH1_binaryFormRepSL_of_isModPEigen",
+    "Submission.Supplier.Theorems.Thm_ModPForms_exists_isEigensystemH1_binaryFormRepSL_of_isModPEigen",
+    "Theorems.Thm_ModPForms_exists_isEigensystemH1_binaryFormRepSL_of_isModPEigen"
+  ],
+  "installed_at": "2026-10-18T09:17:51.295611+00:00",
+  "r1_actual_warnings": 4,
+  "r1_actual_errors": 0,
+  "r1_result_not_accepted": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/official-layout/terminal-proof-repairs/20261018-modpforms-derivative-convert-api/actual-r1-warning-result",
+  "public_solution_assumption_types_order_and_conclusion_preserved": true,
+  "only_unused_internal_solution_binder_names_prefixed_underscore": [
+    "hpN'",
+    "hS\u2080fin",
+    "hS\u2080p"
+  ],
+  "published_card_all_binder_names_and_proof_unchanged": true
+}
