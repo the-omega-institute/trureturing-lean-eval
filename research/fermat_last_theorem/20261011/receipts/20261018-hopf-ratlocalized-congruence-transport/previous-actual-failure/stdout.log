@@ -1,0 +1,65 @@
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_HopfAlgebra_ringHom_ratLocalizedAt_eq_of_forall_sub_mem_span_of_natCard_algHom_eq_of_ne_two.lean:193:20: warning: `TensorProduct.induction_on` has been deprecated: Use `TensorProduction.inductionOn` instead
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_HopfAlgebra_ringHom_ratLocalizedAt_eq_of_forall_sub_mem_span_of_natCard_algHom_eq_of_ne_two.lean:225:54: warning: `TensorProduct.induction_on` has been deprecated: Use `TensorProduction.inductionOn` instead
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_HopfAlgebra_ringHom_ratLocalizedAt_eq_of_forall_sub_mem_span_of_natCard_algHom_eq_of_ne_two.lean:240:9: error: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  -?a + ?b
+in the target expression
+  Cong hrat ℓ (pt hq (-a₂ + a₁)) (pt hq (-a₂ + a₂))
+
+K : Type
+inst✝² : CommRing K
+inst✝¹ : HopfAlgebra ℤ K
+hrat : ∀ (ψ : Pt K) (k : K), ∃ r, ψ k = (algebraMap ℚ L) r
+q : ℕ
+inst✝ : Fact (Nat.Prime q)
+hq : Nat.card (Pt K) = q
+ℓ : ℕ
+hint : ∀ (a : ZMod q), IsIntL hrat ℓ (pt hq a)
+a₁ a₂ : ZMod q
+hne : a₁ ≠ a₂
+h : Cong hrat ℓ (pt hq a₁) (pt hq a₂)
+b : ZMod q
+this : Cong hrat ℓ (pt hq (-a₂ + a₁)) (pt hq (-a₂ + a₂))
+⊢ Cong hrat ℓ (pt hq (a₁ - a₂)) (pt hq 0)
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_HopfAlgebra_ringHom_ratLocalizedAt_eq_of_forall_sub_mem_span_of_natCard_algHom_eq_of_ne_two.lean:278:20: warning: `TensorProduct.induction_on` has been deprecated: Use `TensorProduction.inductionOn` instead
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_HopfAlgebra_ringHom_ratLocalizedAt_eq_of_forall_sub_mem_span_of_natCard_algHom_eq_of_ne_two.lean:313:20: warning: `TensorProduct.induction_on` has been deprecated: Use `TensorProduction.inductionOn` instead
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_HopfAlgebra_ringHom_ratLocalizedAt_eq_of_forall_sub_mem_span_of_natCard_algHom_eq_of_ne_two.lean:369:20: warning: `TensorProduct.induction_on` has been deprecated: Use `TensorProduction.inductionOn` instead
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_HopfAlgebra_ringHom_ratLocalizedAt_eq_of_forall_sub_mem_span_of_natCard_algHom_eq_of_ne_two.lean:389:2: warning: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_HopfAlgebra_ringHom_ratLocalizedAt_eq_of_forall_sub_mem_span_of_natCard_algHom_eq_of_ne_two.lean:442:33: warning: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_HopfAlgebra_ringHom_ratLocalizedAt_eq_of_forall_sub_mem_span_of_natCard_algHom_eq_of_ne_two.lean:465:2: warning: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_HopfAlgebra_ringHom_ratLocalizedAt_eq_of_forall_sub_mem_span_of_natCard_algHom_eq_of_ne_two.lean:478:66: warning: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_HopfAlgebra_ringHom_ratLocalizedAt_eq_of_forall_sub_mem_span_of_natCard_algHom_eq_of_ne_two.lean:508:4: warning: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_HopfAlgebra_ringHom_ratLocalizedAt_eq_of_forall_sub_mem_span_of_natCard_algHom_eq_of_ne_two.lean:554:2: warning: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`

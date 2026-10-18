@@ -1,0 +1,91 @@
+{
+  "at": "2026-10-18T11:09:13.326275+00:00",
+  "name": "HopfAlgebra_ringHom_ratLocalizedAt_eq_of_forall_sub_mem_span_of_natCard_algHom_eq_of_ne_two",
+  "candidate": "r1",
+  "card_candidate": "r1",
+  "source_replacements": [
+    [
+      "    rwa [neg_add_eq_sub, neg_add_cancel] at this",
+      "    exact Eq.mp\n      (congrArg\u2082 (fun x y : ZMod q => Cong hrat \u2113 (pt hq x) (pt hq y))\n        (_root_.neg_add_eq_sub a\u2082 a\u2081) (_root_.neg_add_cancel a\u2082)) this",
+      1
+    ],
+    [
+      "TensorProduct.induction_on",
+      "TensorProduct.inductionOn",
+      5
+    ],
+    [
+      "\n  | zero => rw [map_zero]; exact zero_mem _\n",
+      "\n",
+      1
+    ],
+    [
+      "\n  | zero => exact \u27e80, zero_mem _, by simp\u27e9\n",
+      "\n",
+      1
+    ],
+    [
+      "\n  | zero => simp\n",
+      "\n",
+      1
+    ],
+    [
+      "\n  | zero => rw [SD_zero]; exact zero_mem _\n",
+      "\n",
+      1
+    ],
+    [
+      "\n  | zero => exact \u27e80, zero_mem _, fun a b => by rw [SD_zero, smul_zero, sub_zero]; exact zero_mem _\u27e9\n",
+      "\n",
+      1
+    ],
+    [
+      "  haveI ",
+      "  have ",
+      4
+    ],
+    [
+      "if_neg",
+      "ite_eq_right",
+      2
+    ]
+  ],
+  "card_replacements": [],
+  "supplier_repository": "anthropics/fermats-last-theorem",
+  "supplier_revision": "6e837e75355538c7f80bab5b956861e86c4eacc2",
+  "baseline_byte_identical_to_pinned_supplier": true,
+  "pinned_supplier_source_and_card_preserved": true,
+  "original_actual_errors": 1,
+  "original_actual_warnings": 11,
+  "actual_failure": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/official-layout/terminal-proof-repairs/20261018-hopf-ratlocalized-congruence-transport/previous-actual-failure",
+  "complete_original_proof_preserved": true,
+  "full_original_statement_and_hypotheses_preserved": true,
+  "public_solution_telescope_and_conclusion_byte_identical": true,
+  "card_proof_byte_identical_before_axiom_query": true,
+  "no_linter_suppression_added": true,
+  "change": "Retain the original translated congruence and transport it with congrArg2/Eq.mp using the existing root-qualified ZMod neg_add_eq_sub and neg_add_cancel equalities. The generic rewrite failed on the displayed proposition; no unverified name-resolution cause is claimed. Migrate five tensor inductions to the actual TensorProduct.inductionOn API, removing only the five corresponding old zero branches because that eliminator derives zero from tmul 0 0. Preserve all other natural-number induction zero branches. Migrate the four logged haveI bindings and two if_neg aliases. Retain the complete585-line original proof, all assumptions/public statement/card and supplier source attribution. No linter suppression. Original single-worker make/kernel queue only.",
+  "verification_pending": false,
+  "installed": true,
+  "max_active_flt_jobs": 1,
+  "lean_threads": 1,
+  "full_original_complete": false,
+  "official_new_solve_credit": 0,
+  "stale_terminal_state_entries_excluded": [],
+  "active_import_closure_excluded": [
+    "Submission.Supplier.P2M.Sol.S_HopfAlgebra_natCard_algHom_eq_mul_of_isHopfGalois"
+  ],
+  "active_transitive_import_closure_size": 5,
+  "actual_live_descendant_sources": [
+    {
+      "pid": 57296,
+      "source": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_HopfAlgebra_natCard_algHom_eq_mul_of_isHopfGalois.lean"
+    }
+  ],
+  "all_four_canonical_adapted_source_card_modules_excluded": [
+    "P2M.Sol.S_HopfAlgebra_ringHom_ratLocalizedAt_eq_of_forall_sub_mem_span_of_natCard_algHom_eq_of_ne_two",
+    "Submission.Supplier.P2M.Sol.S_HopfAlgebra_ringHom_ratLocalizedAt_eq_of_forall_sub_mem_span_of_natCard_algHom_eq_of_ne_two",
+    "Submission.Supplier.Theorems.Thm_HopfAlgebra_ringHom_ratLocalizedAt_eq_of_forall_sub_mem_span_of_natCard_algHom_eq_of_ne_two",
+    "Theorems.Thm_HopfAlgebra_ringHom_ratLocalizedAt_eq_of_forall_sub_mem_span_of_natCard_algHom_eq_of_ne_two"
+  ],
+  "installed_at": "2026-10-18T11:09:13.457689+00:00"
+}
