@@ -1,0 +1,58 @@
+{
+  "at": "2026-10-18T01:33:41.744582+00:00",
+  "name": "AlgebraicCurve_Place_residueField_eq_compositum_of_isConstantFieldExtension",
+  "candidate": "r1",
+  "card_candidate": "r1",
+  "source_replacements": [
+    [
+      "(B := F')\n    (algebraMap (IntermediateField.adjoin F ({a} : Set F')) F').injective).mp ha",
+      "(B := F')).mp ha",
+      1
+    ],
+    [
+      "(isIntegral_algebraMap_iff (algebraMap (↥F₁) F').injective).mp haK",
+      "(isIntegral_algebraMap_iff (R := K) (A := ↥F₁) (B := F')).mp haK",
+      1
+    ],
+    [
+      "haveI",
+      "have",
+      11
+    ]
+  ],
+  "card_replacements": [],
+  "installed": true,
+  "verification_pending": false,
+  "baseline_byte_identical_to_pinned_supplier": true,
+  "supplier_repository": "anthropics/fermats-last-theorem",
+  "supplier_revision": "6e837e75355538c7f80bab5b956861e86c4eacc2",
+  "pinned_supplier_source_and_card_preserved": true,
+  "full_original_statement_and_hypotheses_preserved": true,
+  "original_solution_declaration_and_proof_byte_identical": true,
+  "complete_original_proof_preserved": true,
+  "no_linter_suppression_added": true,
+  "original_actual_errors": 2,
+  "original_actual_warnings": 11,
+  "actual_failure": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/official-layout/terminal-proof-repairs/20261018-residue-compositum-integrality-api/previous-actual-failure",
+  "max_active_flt_jobs": 1,
+  "lean_threads": 1,
+  "full_original_complete": false,
+  "official_new_solve_credit": 0,
+  "change": "Use the current isIntegral_algebraMap_iff with implicit FaithfulSMul instead of its removed explicit injectivity argument at two proof steps. Preserve the original constant-field primitive-element/layer/discriminant/local-residue chase. Replace eleven actually flagged proposition-valued haveI bindings by have. Preserve the literal public solution and theorem card, append actual recursive axiom queries, and let the original single-worker make/kernel queue validate source/card.",
+  "active_import_closure_excluded": [
+    "Submission.Supplier.Theorems.Thm_AlgebraicCurve_coeffIn_local_calculus"
+  ],
+  "active_transitive_import_closure_size": 36,
+  "actual_live_descendant_sources": [
+    {
+      "pid": 65204,
+      "source": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/Theorems/Thm_AlgebraicCurve_coeffIn_local_calculus.lean"
+    }
+  ],
+  "all_four_canonical_adapted_source_card_modules_excluded": [
+    "P2M.Sol.S_AlgebraicCurve_Place_residueField_eq_compositum_of_isConstantFieldExtension",
+    "Submission.Supplier.P2M.Sol.S_AlgebraicCurve_Place_residueField_eq_compositum_of_isConstantFieldExtension",
+    "Submission.Supplier.Theorems.Thm_AlgebraicCurve_Place_residueField_eq_compositum_of_isConstantFieldExtension",
+    "Theorems.Thm_AlgebraicCurve_Place_residueField_eq_compositum_of_isConstantFieldExtension"
+  ]
+}
