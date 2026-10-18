@@ -1,0 +1,48 @@
+{
+  "at": "2026-10-18T01:37:27.254555+00:00",
+  "name": "AlgebraicCurve_CellDissection_exists_int_pathIntegral_sub_primitive_eq_sum_jump",
+  "candidate": "r1",
+  "card_candidate": "r1",
+  "source_replacements": [
+    [
+      "    convert key using 1\n    rfl\n",
+      "    convert key using 1\n",
+      1
+    ],
+    [
+      "      haveI : Fintype 𝒟.ιC := 𝒟.fintypeC",
+      "      have : Fintype 𝒟.ιC := 𝒟.fintypeC",
+      1
+    ]
+  ],
+  "card_replacements": [],
+  "installed": true,
+  "verification_pending": false,
+  "baseline_byte_identical_to_pinned_supplier": true,
+  "supplier_repository": "anthropics/fermats-last-theorem",
+  "supplier_revision": "6e837e75355538c7f80bab5b956861e86c4eacc2",
+  "pinned_supplier_source_and_card_preserved": true,
+  "full_original_statement_and_hypotheses_preserved": true,
+  "original_solution_declaration_and_proof_byte_identical": true,
+  "complete_original_proof_preserved": true,
+  "no_linter_suppression_added": true,
+  "original_actual_errors": 1,
+  "original_actual_warnings": 1,
+  "actual_failure": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/official-layout/terminal-proof-repairs/20261018-cell-path-primitive-closed-convert/previous-actual-failure",
+  "max_active_flt_jobs": 1,
+  "lean_threads": 1,
+  "full_original_complete": false,
+  "official_new_solve_credit": 0,
+  "change": "The existing convert key using 1 now closes its goal; remove only the following redundant rfl. Use have for the single flagged local Fintype binding in this proposition-valued proof. Preserve every theorem telescope and the complete path/atlas/jump argument; public solution/card remain literal. Append recursive axiom queries and await original single-worker make/kernel queue.",
+  "active_import_closure_excluded": [
+    "Submission.Supplier.P2M.Sol.S_AlgebraicCurve_CellDissection_exists_loop_pathIntegral_eq_sum_cycle_mul_edgeInt"
+  ],
+  "active_transitive_import_closure_size": 39,
+  "actual_live_descendant_sources": [],
+  "all_four_canonical_adapted_source_card_modules_excluded": [
+    "P2M.Sol.S_AlgebraicCurve_CellDissection_exists_int_pathIntegral_sub_primitive_eq_sum_jump",
+    "Submission.Supplier.P2M.Sol.S_AlgebraicCurve_CellDissection_exists_int_pathIntegral_sub_primitive_eq_sum_jump",
+    "Submission.Supplier.Theorems.Thm_AlgebraicCurve_CellDissection_exists_int_pathIntegral_sub_primitive_eq_sum_jump",
+    "Theorems.Thm_AlgebraicCurve_CellDissection_exists_int_pathIntegral_sub_primitive_eq_sum_jump"
+  ]
+}
