@@ -1,0 +1,38 @@
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_Deformation_exists_module_forall_exists_intCast_smul_eq_of_pow_smul_eq_zero.lean:22:2: warning: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_Deformation_exists_module_forall_exists_intCast_smul_eq_of_pow_smul_eq_zero.lean:25:4: error: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  ?a - ?a
+in the target expression
+  (algebraMap 𝓞 (ZMod p)) a - (algebraMap 𝓞 (ZMod p)) a = 0
+
+𝓞 : Type u
+inst✝² : CommRing 𝓞
+p : ℕ
+inst✝¹ : Fact (Nat.Prime p)
+inst✝ : Algebra 𝓞 (ZMod p)
+hker : RingHom.ker (algebraMap 𝓞 (ZMod p)) = Ideal.span {↑p}
+a : 𝓞
+this : NeZero p
+⊢ (algebraMap 𝓞 (ZMod p)) a - (algebraMap 𝓞 (ZMod p)) a = 0
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_Deformation_exists_module_forall_exists_intCast_smul_eq_of_pow_smul_eq_zero.lean:44:2: warning: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_Deformation_exists_module_forall_exists_intCast_smul_eq_of_pow_smul_eq_zero.lean:93:2: warning: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`

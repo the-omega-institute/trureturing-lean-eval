@@ -1,0 +1,61 @@
+{
+  "at": "2026-10-18T09:38:49.930819+00:00",
+  "name": "Deformation_exists_module_forall_exists_intCast_smul_eq_of_pow_smul_eq_zero",
+  "candidate": "r1",
+  "card_candidate": "r1",
+  "source_replacements": [
+    [
+      "  rw [\u2190 hker, RingHom.mem_ker, map_sub, map_intCast, Int.cast_natCast, ZMod.natCast_zmod_val,\n    sub_self]",
+      "  rw [\u2190 hker, RingHom.mem_ker, map_sub, map_intCast, Int.cast_natCast, ZMod.natCast_zmod_val]\n  exact _root_.sub_self ((algebraMap \ud835\udcde (ZMod p)) a)",
+      1
+    ],
+    [
+      "  haveI ",
+      "  have ",
+      2
+    ],
+    [
+      "  letI S : SMul \ud835\udcde M",
+      "  let S : SMul \ud835\udcde M",
+      1
+    ]
+  ],
+  "card_replacements": [],
+  "supplier_repository": "anthropics/fermats-last-theorem",
+  "supplier_revision": "6e837e75355538c7f80bab5b956861e86c4eacc2",
+  "baseline_byte_identical_to_pinned_supplier": true,
+  "pinned_supplier_source_and_card_preserved": true,
+  "original_actual_errors": 1,
+  "original_actual_warnings": 3,
+  "actual_failure": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/official-layout/terminal-proof-repairs/20261018-deformation-module-sub-self-proof/previous-actual-failure",
+  "complete_original_proof_preserved": true,
+  "full_original_statement_and_hypotheses_preserved": true,
+  "public_solution_telescope_and_conclusion_byte_identical": true,
+  "card_proof_byte_identical_before_axiom_query": true,
+  "no_linter_suppression_added": true,
+  "change": "Reuse the previously verified p-adic helper repair: retain the kernel-membership and map rewrites,then apply the existing root-qualified sub_self to the exact ZMod p element. The last unqualified rewrite failed on the displayed subtraction; use direct application of the root theorem instead. No unverified name-resolution cause is claimed. Migrate only two logged haveI bindings and one logged letI SMul binding. All original hypotheses/public telescope/conclusion and full module-structure proof retained; published card unchanged before axiom query. Original single-worker make/kernel queue only.",
+  "verification_pending": false,
+  "installed": true,
+  "max_active_flt_jobs": 1,
+  "lean_threads": 1,
+  "full_original_complete": false,
+  "official_new_solve_credit": 0,
+  "stale_terminal_state_entries_excluded": [],
+  "active_import_closure_excluded": [
+    "Submission.Supplier.Theorems.Thm_Function_exists_eq_sum_mul_prod_apply_update_of_forall_exists_forall_apply_update_eq_sum_mul"
+  ],
+  "active_transitive_import_closure_size": 3,
+  "actual_live_descendant_sources": [
+    {
+      "pid": 3193,
+      "source": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/Theorems/Thm_Function_exists_eq_sum_mul_prod_apply_update_of_forall_exists_forall_apply_update_eq_sum_mul.lean"
+    }
+  ],
+  "all_four_canonical_adapted_source_card_modules_excluded": [
+    "P2M.Sol.S_Deformation_exists_module_forall_exists_intCast_smul_eq_of_pow_smul_eq_zero",
+    "Submission.Supplier.P2M.Sol.S_Deformation_exists_module_forall_exists_intCast_smul_eq_of_pow_smul_eq_zero",
+    "Submission.Supplier.Theorems.Thm_Deformation_exists_module_forall_exists_intCast_smul_eq_of_pow_smul_eq_zero",
+    "Theorems.Thm_Deformation_exists_module_forall_exists_intCast_smul_eq_of_pow_smul_eq_zero"
+  ],
+  "installed_at": "2026-10-18T09:38:50.041815+00:00"
+}
