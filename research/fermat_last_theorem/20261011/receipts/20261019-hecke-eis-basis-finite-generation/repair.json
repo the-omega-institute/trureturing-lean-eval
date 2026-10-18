@@ -1,0 +1,106 @@
+{
+  "at": "2026-10-18T18:47:25.130632+00:00",
+  "name": "HeckeEis_exists_basis_coeffH1par_int_complex",
+  "candidate": "r1",
+  "card_candidate": "r1",
+  "source_replacements": [
+    [
+      "obtain \u27e8S, hS\u27e9 := Group.fg_def.mp (HeckeEis.ZQAux.instGroupFG_Gamma0 N)",
+      "obtain \u27e8_, S, _, hS\u27e9 := Group.fg_iff'.mp (HeckeEis.ZQAux.instGroupFG_Gamma0 N)",
+      2
+    ],
+    [
+      "haveI : (Gamma0 N).FiniteIndex",
+      "have : (Gamma0 N).FiniteIndex",
+      1
+    ],
+    [
+      "haveI : Group.FG SL(2, \u2124)",
+      "have : Group.FG SL(2, \u2124)",
+      1
+    ],
+    [
+      "haveI := moduleFinite_binaryForm n",
+      "have := moduleFinite_binaryForm n",
+      1
+    ],
+    [
+      "haveI : IsNoetherian \u2124",
+      "have : IsNoetherian \u2124",
+      1
+    ],
+    [
+      "haveI := moduleFinite_coeffParabolicCocycles n N",
+      "have := moduleFinite_coeffParabolicCocycles n N",
+      1
+    ],
+    [
+      "haveI := moduleFinite_coeffH1par n N",
+      "have := moduleFinite_coeffH1par n N",
+      2
+    ],
+    [
+      "haveI := isTorsionFree_coeffH1par n N",
+      "have := isTorsionFree_coeffH1par n N",
+      1
+    ],
+    [
+      "haveI := free_coeffH1par n N",
+      "have := free_coeffH1par n N",
+      1
+    ],
+    [
+      "Set.mem_setOf_eq",
+      "Set.mem_ofPred_eq",
+      1
+    ],
+    [
+      "dif_pos",
+      "dite_eq_left",
+      2
+    ],
+    [
+      "theorem comp_eq_of_clauses",
+      "omit [NeZero N] in\ntheorem comp_eq_of_clauses",
+      1
+    ]
+  ],
+  "card_replacements": [],
+  "supplier_repository": "anthropics/fermats-last-theorem",
+  "supplier_revision": "6e837e75355538c7f80bab5b956861e86c4eacc2",
+  "supplier_license": "Apache-2.0",
+  "baseline_byte_identical_to_pinned_supplier": false,
+  "pinned_supplier_source_and_card_preserved": true,
+  "prior_port_progress_preserved": true,
+  "prior_supplier_diff": "prior-port-changes.diff",
+  "full_original_statement_and_hypotheses_preserved": true,
+  "complete_original_proof_preserved": true,
+  "public_solution_telescope_and_conclusion_byte_identical": true,
+  "public_solution_identical_to_pinned_supplier": true,
+  "card_proof_byte_identical_before_axiom_query": true,
+  "card_identical_to_pinned_supplier_before_axiom_query": true,
+  "no_linter_suppression_added": true,
+  "verification_pending": false,
+  "installed": true,
+  "max_active_flt_jobs": 1,
+  "lean_threads": 1,
+  "original_actual_errors": 2,
+  "original_actual_warnings": 13,
+  "verified_same_finite_generation_repair": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/official-layout/terminal-proof-repairs/20261019-hecke-eis-integral-coefficient-finite-generation/verified-record.json",
+  "change": "Preserve the full original317-line proof and prior group instance port. Extract finite generating finsets with subgroup closure via the now verified Group.fg_iff' API; use the original chosen set in the original injective cocycle-evaluation proof. Clean only reported proposition haveI, Set/dite aliases and unused automatic NeZero on local composition helper. Public source/card target and all hypotheses byte-identical to pinned supplier. Source/card full make/kernel, clean warnings and recursive axioms pending.",
+  "full_original_complete": false,
+  "official_new_solve_credit": 0,
+  "stale_terminal_state_entries_excluded": [],
+  "active_import_closure_excluded": [
+    "Submission.Supplier.Theorems.Thm_HeckeEis_exists_isEichlerIntegral_isParabolicCocycle"
+  ],
+  "active_transitive_import_closure_size": 33,
+  "actual_live_descendant_sources": [],
+  "all_four_canonical_adapted_source_card_modules_excluded": [
+    "P2M.Sol.S_HeckeEis_exists_basis_coeffH1par_int_complex",
+    "Submission.Supplier.P2M.Sol.S_HeckeEis_exists_basis_coeffH1par_int_complex",
+    "Submission.Supplier.Theorems.Thm_HeckeEis_exists_basis_coeffH1par_int_complex",
+    "Theorems.Thm_HeckeEis_exists_basis_coeffH1par_int_complex"
+  ],
+  "installed_at": "2026-10-18T18:47:38.235686+00:00"
+}
