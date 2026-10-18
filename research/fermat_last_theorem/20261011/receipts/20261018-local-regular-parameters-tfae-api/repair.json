@@ -1,0 +1,361 @@
+{
+  "at": "2026-10-18T11:57:47.747750+00:00",
+  "name": "IsLocalRing_isRegular_of_systemOfParameters",
+  "candidate": "r1",
+  "card_candidate": "r1",
+  "source_replacements": [
+    [
+      "  haveI := hp\n",
+      "  have := hp\n",
+      1
+    ],
+    [
+      "  haveI : Ring.KrullDimLE 0 (R \u29f8 I) :=\n",
+      "  have : Ring.KrullDimLE 0 (R \u29f8 I) :=\n",
+      1
+    ],
+    [
+      "  haveI : IsLocalRing (R \u29f8 I) :=\n",
+      "  have : IsLocalRing (R \u29f8 I) :=\n",
+      1
+    ],
+    [
+      "  haveI : Nontrivial (R \u29f8 I) := Ideal.Quotient.nontrivial_iff.mpr hne\n",
+      "  have : Nontrivial (R \u29f8 I) := Ideal.Quotient.nontrivial_iff.mpr hne\n",
+      1
+    ],
+    [
+      "  haveI := hP\n",
+      "  have := hP\n",
+      1
+    ],
+    [
+      "        haveI : IsLocalRing (R \u29f8 p) :=\n",
+      "        have : IsLocalRing (R \u29f8 p) :=\n",
+      1
+    ],
+    [
+      "    haveI : p.IsPrime := hpprime\n",
+      "    have : p.IsPrime := hpprime\n",
+      1
+    ],
+    [
+      "    haveI : IsLocalHom (Ideal.Quotient.mk (Ideal.span {x})) :=\n",
+      "    have : IsLocalHom (Ideal.Quotient.mk (Ideal.span {x})) :=\n",
+      1
+    ],
+    [
+      "    haveI hloc' : IsLocalRing (R \u29f8 Ideal.span {x}) :=\n",
+      "    have hloc' : IsLocalRing (R \u29f8 Ideal.span {x}) :=\n",
+      1
+    ],
+    [
+      "    rw [hs_def, Set.mem_setOf_eq, List.mem_map] at hy'\n",
+      "    rw [hs_def, Set.mem_ofPred_eq, List.mem_map] at hy'\n",
+      1
+    ],
+    [
+      "  haveI : IsLocalHom (Ideal.Quotient.mk p) :=\n",
+      "  have : IsLocalHom (Ideal.Quotient.mk p) :=\n",
+      1
+    ],
+    [
+      "  haveI : p.IsPrime := hp\n  haveI : IsLocalRing (R \u29f8 p) :=\n",
+      "  haveI : p.IsPrime := hp\n  have : IsLocalRing (R \u29f8 p) :=\n",
+      1
+    ],
+    [
+      "  haveI : p.IsPrime := hp\n",
+      "  have : p.IsPrime := hp\n",
+      1
+    ],
+    [
+      "  haveI : Ring.KrullDimLE 0 (R \u29f8 p) := Ring.krullDimLE_iff.mpr (by exact_mod_cast h)\n",
+      "  have : Ring.KrullDimLE 0 (R \u29f8 p) := Ring.krullDimLE_iff.mpr (by exact_mod_cast h)\n",
+      1
+    ],
+    [
+      "  haveI : IsLocalRing (R \u29f8 p) :=\n",
+      "  have : IsLocalRing (R \u29f8 p) :=\n",
+      1
+    ],
+    [
+      "  haveI : IsDomain R := isDomain_of_isRegularLocalRing R\n",
+      "  have : IsDomain R := isDomain_of_isRegularLocalRing R\n",
+      1
+    ],
+    [
+      "    haveI : (\u22a5 : Ideal R).IsPrime := hp_bot \u25b8 hp_prime\n",
+      "    have : (\u22a5 : Ideal R).IsPrime := hp_bot \u25b8 hp_prime\n",
+      1
+    ],
+    [
+      "    have hp_prime : p.IsPrime := Ideal.minimalPrimes_isPrime hp_min\n",
+      "    have hp_prime : p.IsPrime := Ideal.IsMinimalPrime.isPrime hp_min\n",
+      1
+    ],
+    [
+      "    haveI := hprime\n",
+      "    have := hprime\n",
+      1
+    ],
+    [
+      "        hx_mem hx_sq hx_min\n    haveI := hreg'\n",
+      "        hx_mem hx_sq hx_min\n    have := hreg'\n",
+      1
+    ],
+    [
+      "    obtain \u27e8x, hx_mem, hx_sq, hx_min\u27e9 := exists_parameter_notMem_minimalPrimes R hdim_pos\n\n    haveI hloc : IsLocalRing (R \u29f8 Ideal.span {x}) :=\n",
+      "    obtain \u27e8x, hx_mem, hx_sq, hx_min\u27e9 := exists_parameter_notMem_minimalPrimes R hdim_pos\n\n    have hloc : IsLocalRing (R \u29f8 Ideal.span {x}) :=\n",
+      1
+    ],
+    [
+      "    haveI hprime : (\u22a5 : Ideal R).IsPrime := hbot \u25b8 (maximalIdeal.isMaximal R).isPrime\n",
+      "    have hprime : (\u22a5 : Ideal R).IsPrime := hbot \u25b8 (maximalIdeal.isMaximal R).isPrime\n",
+      1
+    ],
+    [
+      "    (hxmin : \u2200 p \u2208 minimalPrimes R, x \u2209 p) [IsLocalRing (R \u29f8 Ideal.span {x})] :\n    IsRegularLocalRing (R \u29f8 Ideal.span {x}) \u2227\n      (maximalIdeal (R \u29f8 Ideal.span {x})).spanFinrank + 1 =\n        (maximalIdeal R).spanFinrank := by\n\n  obtain \u27e8S, hxS, hSfin, hScard, hSspan\u27e9 :=\n    exists_finite_span_eq_maximalIdeal_mem R hx hx2\n\n  have hmax' : (maximalIdeal R).map (Ideal.Quotient.mk (Ideal.span {x})) =\n      maximalIdeal (R \u29f8 Ideal.span {x}) :=\n    IsLocalRing.map_maximalIdeal_of_surjective _ Ideal.Quotient.mk_surjective\n  have hmkx : (Ideal.Quotient.mk (Ideal.span {x})) x = 0 := by\n    rw [Ideal.Quotient.eq_zero_iff_mem]\n    exact Ideal.subset_span rfl\n  have hmap : (maximalIdeal R).map (Ideal.Quotient.mk (Ideal.span {x})) =\n      Ideal.span ((Ideal.Quotient.mk (Ideal.span {x})) '' (S \\ {x})) := by\n    rw [\u2190 hSspan, Ideal.map_span]\n    apply le_antisymm\n    \u00b7 rw [Ideal.span_le]\n      rintro _ \u27e8y, hy, rfl\u27e9\n      by_cases hyx : y = x\n      \u00b7 subst hyx\n        rw [SetLike.mem_coe, hmkx]\n        exact Submodule.zero_mem _\n      \u00b7 exact Ideal.subset_span \u27e8y, \u27e8hy, hyx\u27e9, rfl\u27e9\n    \u00b7 exact Ideal.span_mono (Set.image_mono Set.diff_subset)\n\n  have hsf_le : (maximalIdeal (R \u29f8 Ideal.span {x})).spanFinrank + 1 \u2264\n      (maximalIdeal R).spanFinrank := by\n    have h1 : (maximalIdeal (R \u29f8 Ideal.span {x})).spanFinrank \u2264 (S \\ {x}).ncard := by\n      rw [\u2190 hmax', hmap]\n      exact le_trans\n        (Submodule.spanFinrank_span_le_ncard_of_finite ((hSfin.diff).image _))\n        (Set.ncard_image_le hSfin.diff)\n    have h2 : (S \\ {x}).ncard + 1 = S.ncard :=\n      Set.ncard_diff_singleton_add_one hxS hSfin\n",
+      "    (hxmin : \u2200 p \u2208 minimalPrimes R, x \u2209 p) [IsLocalRing (R \u29f8 Ideal.span {x})] :\n    IsRegularLocalRing (R \u29f8 Ideal.span {x}) \u2227\n      (maximalIdeal (R \u29f8 Ideal.span {x})).spanFinrank + 1 =\n        (maximalIdeal R).spanFinrank := by\n\n  obtain \u27e8S, hxS, hSfin, hScard, hSspan\u27e9 :=\n    exists_finite_span_eq_maximalIdeal_mem R hx hx2\n\n  have hmax' : (maximalIdeal R).map (Ideal.Quotient.mk (Ideal.span {x})) =\n      maximalIdeal (R \u29f8 Ideal.span {x}) :=\n    IsLocalRing.map_maximalIdeal_of_surjective _ Ideal.Quotient.mk_surjective\n  have hmkx : (Ideal.Quotient.mk (Ideal.span {x})) x = 0 := by\n    rw [Ideal.Quotient.eq_zero_iff_mem]\n    exact Ideal.subset_span rfl\n  have hmap : (maximalIdeal R).map (Ideal.Quotient.mk (Ideal.span {x})) =\n      Ideal.span ((Ideal.Quotient.mk (Ideal.span {x})) '' (S \\ {x})) := by\n    rw [\u2190 hSspan, Ideal.map_span]\n    apply le_antisymm\n    \u00b7 rw [Ideal.span_le]\n      rintro _ \u27e8y, hy, rfl\u27e9\n      by_cases hyx : y = x\n      \u00b7 subst hyx\n        rw [SetLike.mem_coe, hmkx]\n        exact Submodule.zero_mem _\n      \u00b7 exact Ideal.subset_span \u27e8y, \u27e8hy, hyx\u27e9, rfl\u27e9\n    \u00b7 exact Ideal.span_mono (Set.image_mono Set.diff_subset)\n\n  have hsf_le : (maximalIdeal (R \u29f8 Ideal.span {x})).spanFinrank + 1 \u2264\n      (maximalIdeal R).spanFinrank := by\n    have h1 : (maximalIdeal (R \u29f8 Ideal.span {x})).spanFinrank \u2264 (S \\ {x}).ncard := by\n      rw [\u2190 hmax', hmap]\n      exact le_trans\n        (Submodule.spanFinrank_span_le_ncard_of_finite ((hSfin.diff).image _))\n        (Set.ncard_image_le hSfin.diff)\n    have h2 : (S \\ {x}).ncard + 1 = S.ncard :=\n      Set.ncard_sdiff_singleton_add_one hxS hSfin\n",
+      1
+    ],
+    [
+      "    (hxmin : \u2200 p \u2208 minimalPrimes R, x \u2209 p) [IsLocalRing (R \u29f8 Ideal.span {x})] :\n    IsRegularLocalRing (R \u29f8 Ideal.span {x}) \u2227\n      (maximalIdeal (R \u29f8 Ideal.span {x})).spanFinrank + 1 =\n        (maximalIdeal R).spanFinrank := by\n\n  obtain \u27e8S, hxS, hSfin, hScard, hSspan\u27e9 :=\n    exists_finite_span_eq_maximalIdeal_mem R hx hx2\n\n  have hmax' : (maximalIdeal R).map (Ideal.Quotient.mk (Ideal.span {x})) =\n      maximalIdeal (R \u29f8 Ideal.span {x}) :=\n    IsLocalRing.map_maximalIdeal_of_surjective _ Ideal.Quotient.mk_surjective\n  have hmkx : (Ideal.Quotient.mk (Ideal.span {x})) x = 0 := by\n    rw [Ideal.Quotient.eq_zero_iff_mem]\n    exact Ideal.subset_span rfl\n  have hmap : (maximalIdeal R).map (Ideal.Quotient.mk (Ideal.span {x})) =\n      Ideal.span ((Ideal.Quotient.mk (Ideal.span {x})) '' (S \\ {x})) := by\n    rw [\u2190 hSspan, Ideal.map_span]\n    apply le_antisymm\n    \u00b7 rw [Ideal.span_le]\n      rintro _ \u27e8y, hy, rfl\u27e9\n      by_cases hyx : y = x\n      \u00b7 subst hyx\n        rw [SetLike.mem_coe, hmkx]\n        exact Submodule.zero_mem _\n      \u00b7 exact Ideal.subset_span \u27e8y, \u27e8hy, hyx\u27e9, rfl\u27e9\n    \u00b7 exact Ideal.span_mono (Set.image_mono Set.diff_subset)\n\n  have hsf_le : (maximalIdeal (R \u29f8 Ideal.span {x})).spanFinrank + 1 \u2264\n      (maximalIdeal R).spanFinrank := by\n    have h1 : (maximalIdeal (R \u29f8 Ideal.span {x})).spanFinrank \u2264 (S \\ {x}).ncard := by\n      rw [\u2190 hmax', hmap]\n      exact le_trans\n        (Submodule.spanFinrank_span_le_ncard_of_finite ((hSfin.diff).image _))\n        (Set.ncard_image_le hSfin.diff)\n",
+      "    (hxmin : \u2200 p \u2208 minimalPrimes R, x \u2209 p) [IsLocalRing (R \u29f8 Ideal.span {x})] :\n    IsRegularLocalRing (R \u29f8 Ideal.span {x}) \u2227\n      (maximalIdeal (R \u29f8 Ideal.span {x})).spanFinrank + 1 =\n        (maximalIdeal R).spanFinrank := by\n\n  obtain \u27e8S, hxS, hSfin, hScard, hSspan\u27e9 :=\n    exists_finite_span_eq_maximalIdeal_mem R hx hx2\n\n  have hmax' : (maximalIdeal R).map (Ideal.Quotient.mk (Ideal.span {x})) =\n      maximalIdeal (R \u29f8 Ideal.span {x}) :=\n    IsLocalRing.map_maximalIdeal_of_surjective _ Ideal.Quotient.mk_surjective\n  have hmkx : (Ideal.Quotient.mk (Ideal.span {x})) x = 0 := by\n    rw [Ideal.Quotient.eq_zero_iff_mem]\n    exact Ideal.subset_span rfl\n  have hmap : (maximalIdeal R).map (Ideal.Quotient.mk (Ideal.span {x})) =\n      Ideal.span ((Ideal.Quotient.mk (Ideal.span {x})) '' (S \\ {x})) := by\n    rw [\u2190 hSspan, Ideal.map_span]\n    apply le_antisymm\n    \u00b7 rw [Ideal.span_le]\n      rintro _ \u27e8y, hy, rfl\u27e9\n      by_cases hyx : y = x\n      \u00b7 subst hyx\n        rw [SetLike.mem_coe, hmkx]\n        exact Submodule.zero_mem _\n      \u00b7 exact Ideal.subset_span \u27e8y, \u27e8hy, hyx\u27e9, rfl\u27e9\n    \u00b7 exact Ideal.span_mono (Set.image_mono Set.diff_subset)\n\n  have hsf_le : (maximalIdeal (R \u29f8 Ideal.span {x})).spanFinrank + 1 \u2264\n      (maximalIdeal R).spanFinrank := by\n    have h1 : (maximalIdeal (R \u29f8 Ideal.span {x})).spanFinrank \u2264 (S \\ {x}).ncard := by\n      rw [\u2190 hmax', hmap]\n      exact le_trans\n        (Submodule.spanFinrank_span_le_ncard_of_finite ((hSfin.diff).image _))\n        (Set.ncard_image_le hSfin.sdiff)\n",
+      1
+    ],
+    [
+      "    (hxmin : \u2200 p \u2208 minimalPrimes R, x \u2209 p) [IsLocalRing (R \u29f8 Ideal.span {x})] :\n    IsRegularLocalRing (R \u29f8 Ideal.span {x}) \u2227\n      (maximalIdeal (R \u29f8 Ideal.span {x})).spanFinrank + 1 =\n        (maximalIdeal R).spanFinrank := by\n\n  obtain \u27e8S, hxS, hSfin, hScard, hSspan\u27e9 :=\n    exists_finite_span_eq_maximalIdeal_mem R hx hx2\n\n  have hmax' : (maximalIdeal R).map (Ideal.Quotient.mk (Ideal.span {x})) =\n      maximalIdeal (R \u29f8 Ideal.span {x}) :=\n    IsLocalRing.map_maximalIdeal_of_surjective _ Ideal.Quotient.mk_surjective\n  have hmkx : (Ideal.Quotient.mk (Ideal.span {x})) x = 0 := by\n    rw [Ideal.Quotient.eq_zero_iff_mem]\n    exact Ideal.subset_span rfl\n  have hmap : (maximalIdeal R).map (Ideal.Quotient.mk (Ideal.span {x})) =\n      Ideal.span ((Ideal.Quotient.mk (Ideal.span {x})) '' (S \\ {x})) := by\n    rw [\u2190 hSspan, Ideal.map_span]\n    apply le_antisymm\n    \u00b7 rw [Ideal.span_le]\n      rintro _ \u27e8y, hy, rfl\u27e9\n      by_cases hyx : y = x\n      \u00b7 subst hyx\n        rw [SetLike.mem_coe, hmkx]\n        exact Submodule.zero_mem _\n      \u00b7 exact Ideal.subset_span \u27e8y, \u27e8hy, hyx\u27e9, rfl\u27e9\n    \u00b7 exact Ideal.span_mono (Set.image_mono Set.diff_subset)\n\n  have hsf_le : (maximalIdeal (R \u29f8 Ideal.span {x})).spanFinrank + 1 \u2264\n      (maximalIdeal R).spanFinrank := by\n    have h1 : (maximalIdeal (R \u29f8 Ideal.span {x})).spanFinrank \u2264 (S \\ {x}).ncard := by\n      rw [\u2190 hmax', hmap]\n      exact le_trans\n        (Submodule.spanFinrank_span_le_ncard_of_finite ((hSfin.diff).image _))\n",
+      "    (hxmin : \u2200 p \u2208 minimalPrimes R, x \u2209 p) [IsLocalRing (R \u29f8 Ideal.span {x})] :\n    IsRegularLocalRing (R \u29f8 Ideal.span {x}) \u2227\n      (maximalIdeal (R \u29f8 Ideal.span {x})).spanFinrank + 1 =\n        (maximalIdeal R).spanFinrank := by\n\n  obtain \u27e8S, hxS, hSfin, hScard, hSspan\u27e9 :=\n    exists_finite_span_eq_maximalIdeal_mem R hx hx2\n\n  have hmax' : (maximalIdeal R).map (Ideal.Quotient.mk (Ideal.span {x})) =\n      maximalIdeal (R \u29f8 Ideal.span {x}) :=\n    IsLocalRing.map_maximalIdeal_of_surjective _ Ideal.Quotient.mk_surjective\n  have hmkx : (Ideal.Quotient.mk (Ideal.span {x})) x = 0 := by\n    rw [Ideal.Quotient.eq_zero_iff_mem]\n    exact Ideal.subset_span rfl\n  have hmap : (maximalIdeal R).map (Ideal.Quotient.mk (Ideal.span {x})) =\n      Ideal.span ((Ideal.Quotient.mk (Ideal.span {x})) '' (S \\ {x})) := by\n    rw [\u2190 hSspan, Ideal.map_span]\n    apply le_antisymm\n    \u00b7 rw [Ideal.span_le]\n      rintro _ \u27e8y, hy, rfl\u27e9\n      by_cases hyx : y = x\n      \u00b7 subst hyx\n        rw [SetLike.mem_coe, hmkx]\n        exact Submodule.zero_mem _\n      \u00b7 exact Ideal.subset_span \u27e8y, \u27e8hy, hyx\u27e9, rfl\u27e9\n    \u00b7 exact Ideal.span_mono (Set.image_mono Set.diff_subset)\n\n  have hsf_le : (maximalIdeal (R \u29f8 Ideal.span {x})).spanFinrank + 1 \u2264\n      (maximalIdeal R).spanFinrank := by\n    have h1 : (maximalIdeal (R \u29f8 Ideal.span {x})).spanFinrank \u2264 (S \\ {x}).ncard := by\n      rw [\u2190 hmax', hmap]\n      exact le_trans\n        (Submodule.spanFinrank_span_le_ncard_of_finite ((hSfin.sdiff).image _))\n",
+      1
+    ],
+    [
+      "    (hxmin : \u2200 p \u2208 minimalPrimes R, x \u2209 p) [IsLocalRing (R \u29f8 Ideal.span {x})] :\n    IsRegularLocalRing (R \u29f8 Ideal.span {x}) \u2227\n      (maximalIdeal (R \u29f8 Ideal.span {x})).spanFinrank + 1 =\n        (maximalIdeal R).spanFinrank := by\n\n  obtain \u27e8S, hxS, hSfin, hScard, hSspan\u27e9 :=\n    exists_finite_span_eq_maximalIdeal_mem R hx hx2\n\n  have hmax' : (maximalIdeal R).map (Ideal.Quotient.mk (Ideal.span {x})) =\n      maximalIdeal (R \u29f8 Ideal.span {x}) :=\n    IsLocalRing.map_maximalIdeal_of_surjective _ Ideal.Quotient.mk_surjective\n  have hmkx : (Ideal.Quotient.mk (Ideal.span {x})) x = 0 := by\n    rw [Ideal.Quotient.eq_zero_iff_mem]\n    exact Ideal.subset_span rfl\n  have hmap : (maximalIdeal R).map (Ideal.Quotient.mk (Ideal.span {x})) =\n      Ideal.span ((Ideal.Quotient.mk (Ideal.span {x})) '' (S \\ {x})) := by\n    rw [\u2190 hSspan, Ideal.map_span]\n    apply le_antisymm\n    \u00b7 rw [Ideal.span_le]\n      rintro _ \u27e8y, hy, rfl\u27e9\n      by_cases hyx : y = x\n      \u00b7 subst hyx\n        rw [SetLike.mem_coe, hmkx]\n        exact Submodule.zero_mem _\n      \u00b7 exact Ideal.subset_span \u27e8y, \u27e8hy, hyx\u27e9, rfl\u27e9\n    \u00b7 exact Ideal.span_mono (Set.image_mono Set.diff_subset)\n",
+      "    (hxmin : \u2200 p \u2208 minimalPrimes R, x \u2209 p) [IsLocalRing (R \u29f8 Ideal.span {x})] :\n    IsRegularLocalRing (R \u29f8 Ideal.span {x}) \u2227\n      (maximalIdeal (R \u29f8 Ideal.span {x})).spanFinrank + 1 =\n        (maximalIdeal R).spanFinrank := by\n\n  obtain \u27e8S, hxS, hSfin, hScard, hSspan\u27e9 :=\n    exists_finite_span_eq_maximalIdeal_mem R hx hx2\n\n  have hmax' : (maximalIdeal R).map (Ideal.Quotient.mk (Ideal.span {x})) =\n      maximalIdeal (R \u29f8 Ideal.span {x}) :=\n    IsLocalRing.map_maximalIdeal_of_surjective _ Ideal.Quotient.mk_surjective\n  have hmkx : (Ideal.Quotient.mk (Ideal.span {x})) x = 0 := by\n    rw [Ideal.Quotient.eq_zero_iff_mem]\n    exact Ideal.subset_span rfl\n  have hmap : (maximalIdeal R).map (Ideal.Quotient.mk (Ideal.span {x})) =\n      Ideal.span ((Ideal.Quotient.mk (Ideal.span {x})) '' (S \\ {x})) := by\n    rw [\u2190 hSspan, Ideal.map_span]\n    apply le_antisymm\n    \u00b7 rw [Ideal.span_le]\n      rintro _ \u27e8y, hy, rfl\u27e9\n      by_cases hyx : y = x\n      \u00b7 subst hyx\n        rw [SetLike.mem_coe, hmkx]\n        exact Submodule.zero_mem _\n      \u00b7 exact Ideal.subset_span \u27e8y, \u27e8hy, hyx\u27e9, rfl\u27e9\n    \u00b7 exact Ideal.span_mono (Set.image_mono Set.sdiff_subset)\n",
+      1
+    ],
+    [
+      "    \u00b7 exact Ideal.minimalPrimes_isPrime hI\n",
+      "    \u00b7 exact Ideal.IsMinimalPrime.isPrime hI\n",
+      1
+    ],
+    [
+      "      have hp_prime : I.IsPrime := Ideal.minimalPrimes_isPrime hI\n",
+      "      have hp_prime : I.IsPrime := Ideal.IsMinimalPrime.isPrime hI\n",
+      1
+    ],
+    [
+      "    letI : Unique (PrimeSpectrum R) := uniqueOfSubsingleton (Classical.arbitrary _)\n",
+      "    let : Unique (PrimeSpectrum R) := uniqueOfSubsingleton (Classical.arbitrary _)\n",
+      1
+    ],
+    [
+      "    haveI : Nonempty (PrimeSpectrum R) := \u27e8\u27e8maximalIdeal R, inferInstance\u27e9\u27e9\n",
+      "    have : Nonempty (PrimeSpectrum R) := \u27e8\u27e8maximalIdeal R, inferInstance\u27e9\u27e9\n",
+      1
+    ],
+    [
+      "  haveI : Subsingleton (PrimeSpectrum R) :=\n",
+      "  have : Subsingleton (PrimeSpectrum R) :=\n",
+      1
+    ],
+    [
+      "    haveI := hreg'\n",
+      "    have := hreg'\n",
+      1
+    ],
+    [
+      "    haveI : Module.Finite (R \u29f8 Ideal.span {x}) (QuotSMulTop x M) :=\n",
+      "    have : Module.Finite (R \u29f8 Ideal.span {x}) (QuotSMulTop x M) :=\n",
+      1
+    ],
+    [
+      "    haveI : IsScalarTower R (R \u29f8 Ideal.span {x}) (QuotSMulTop x M) :=\n",
+      "    have : IsScalarTower R (R \u29f8 Ideal.span {x}) (QuotSMulTop x M) :=\n",
+      1
+    ],
+    [
+      "    haveI hloc : IsLocalRing (R \u29f8 Ideal.span {x}) :=\n",
+      "    have hloc : IsLocalRing (R \u29f8 Ideal.span {x}) :=\n",
+      1
+    ],
+    [
+      "      Set.ncard_diff_singleton_add_one hxS hSfin\n",
+      "      Set.ncard_sdiff_singleton_add_one hxS hSfin\n",
+      1
+    ],
+    [
+      "        (Set.ncard_image_le hSfin.diff)\n",
+      "        (Set.ncard_image_le hSfin.sdiff)\n",
+      1
+    ],
+    [
+      "        (Submodule.spanFinrank_span_le_ncard_of_finite ((hSfin.diff).image _))\n",
+      "        (Submodule.spanFinrank_span_le_ncard_of_finite ((hSfin.sdiff).image _))\n",
+      1
+    ],
+    [
+      "    \u00b7 exact Ideal.span_mono (Set.image_mono Set.diff_subset)\n",
+      "    \u00b7 exact Ideal.span_mono (Set.image_mono Set.sdiff_subset)\n",
+      1
+    ],
+    [
+      "      Set.ncard_diff_singleton_add_one h\u03beB hBfin\n",
+      "      Set.ncard_sdiff_singleton_add_one h\u03beB hBfin\n",
+      1
+    ],
+    [
+      "      Set.ncard_image_le hBfin.diff\n",
+      "      Set.ncard_image_le hBfin.sdiff\n",
+      1
+    ],
+    [
+      "    have hfin\u2081 : (lift '' (B \\ {\u03be})).Finite := (hBfin.diff).image _\n",
+      "    have hfin\u2081 : (lift '' (B \\ {\u03be})).Finite := (hBfin.sdiff).image _\n",
+      1
+    ],
+    [
+      "    exact (((hBfin.diff).image _).insert _).image _\n",
+      "    exact (((hBfin.sdiff).image _).insert _).image _\n",
+      1
+    ],
+    [
+      "    rw [hcomp, Set.insert_diff_singleton, Set.insert_eq_self.mpr h\u03beB]\n",
+      "    rw [hcomp, Set.insert_sdiff_singleton, Set.insert_eq_self.mpr h\u03beB]\n",
+      1
+    ],
+    [
+      "      haveI : Fintype (hli.extend (Set.subset_univ ({\u03be} : Set (CotangentSpace R)))) :=\n",
+      "      have : Fintype (hli.extend (Set.subset_univ ({\u03be} : Set (CotangentSpace R)))) :=\n",
+      1
+    ],
+    [
+      "      exact Set.toFinite _\n    \u00b7 haveI : Finite (hli.extend (Set.subset_univ ({\u03be} : Set (CotangentSpace R)))) :=\n",
+      "      exact Set.toFinite _\n    \u00b7 have : Finite (hli.extend (Set.subset_univ ({\u03be} : Set (CotangentSpace R)))) :=\n",
+      1
+    ],
+    [
+      "    \u00b7 haveI : Finite (hli.extend (Set.subset_univ ({\u03be} : Set (CotangentSpace R)))) :=\n",
+      "    \u00b7 have : Finite (hli.extend (Set.subset_univ ({\u03be} : Set (CotangentSpace R)))) :=\n",
+      1
+    ],
+    [
+      "  letI : Field R := (isField_of_spanFinrank_maximalIdeal_eq_zero R hn).toField\n",
+      "  let : Field R := (isField_of_spanFinrank_maximalIdeal_eq_zero R hn).toField\n",
+      1
+    ],
+    [
+      "  haveI := isScalarTower_quotient_span_singleton (R := R) (M := M) x\n",
+      "  have := isScalarTower_quotient_span_singleton (R := R) (M := M) x\n",
+      1
+    ],
+    [
+      "  haveI : Nontrivial (R \u29f8 Ideal.span {x}) := Ideal.Quotient.nontrivial_iff.mpr hne\n",
+      "  have : Nontrivial (R \u29f8 Ideal.span {x}) := Ideal.Quotient.nontrivial_iff.mpr hne\n",
+      1
+    ],
+    [
+      "  haveI : Nontrivial (R \u29f8 Ideal.span {x}) := QuotSMulTop.nontrivial_quotientRing x hx\n  haveI : Fintype (Module.Free.ChooseBasisIndex (R \u29f8 Ideal.span {x}) (QuotSMulTop x M)) :=\n",
+      "  haveI : Nontrivial (R \u29f8 Ideal.span {x}) := QuotSMulTop.nontrivial_quotientRing x hx\n  have : Fintype (Module.Free.ChooseBasisIndex (R \u29f8 Ideal.span {x}) (QuotSMulTop x M)) :=\n",
+      1
+    ],
+    [
+      "  haveI : Nontrivial (R \u29f8 Ideal.span {x}) := QuotSMulTop.nontrivial_quotientRing x hx\n",
+      "  have : Nontrivial (R \u29f8 Ideal.span {x}) := QuotSMulTop.nontrivial_quotientRing x hx\n",
+      1
+    ],
+    [
+      "    Module.finrank (R \u29f8 Ideal.span {x}) (QuotSMulTop x M) = Module.finrank R M := by\n  haveI := hfree\n",
+      "    Module.finrank (R \u29f8 Ideal.span {x}) (QuotSMulTop x M) = Module.finrank R M := by\n  have := hfree\n",
+      1
+    ],
+    [
+      "  haveI : Fintype (Module.Free.ChooseBasisIndex (R \u29f8 Ideal.span {x}) (QuotSMulTop x M)) :=\n",
+      "  have : Fintype (Module.Free.ChooseBasisIndex (R \u29f8 Ideal.span {x}) (QuotSMulTop x M)) :=\n",
+      1
+    ],
+    [
+      "  haveI := hfree\n",
+      "  have := hfree\n",
+      1
+    ],
+    [
+      "open QuotSMulTop\n",
+      "open _root_.P2MW.S_IsLocalRing_isRegular_of_systemOfParameters.Ws14Port.QuotSMulTop\n",
+      1
+    ],
+    [
+      "  obtain \u27e8x, hxq, hxp\u27e9 := SetLike.exists_of_lt hpq\n",
+      "  obtain \u27e8x, hxq, hxp\u27e9 := IsConcreteLE.exists_of_lt hpq\n",
+      1
+    ],
+    [
+      "      zero_lt_one.trans_le (ENat.one_le_iff_ne_zero.mpr hne)\n",
+      "      zero_lt_one.trans_le (Order.one_le_iff_ne_zero.mpr hne)\n",
+      1
+    ],
+    [
+      "  haveI : IsLocalRing (R \u29f8 Ideal.span {x}) := isLocalRing_quotient_span_singleton hx\n",
+      "  have : IsLocalRing (R \u29f8 Ideal.span {x}) := isLocalRing_quotient_span_singleton hx\n",
+      1
+    ],
+    [
+      "    rw [biUnion_associatedPrimes_eq_compl_regular R M] at hxnot\n    simpa only [Set.mem_compl_iff, Set.mem_setOf_eq, not_not] using hxnot\n",
+      "    rw [biUnion_associatedPrimes_eq_compl_regular R M] at hxnot\n    simpa only [Set.mem_compl_iff, Set.mem_ofPred_eq, not_not] using hxnot\n",
+      1
+    ],
+    [
+      "    simpa only [Set.mem_compl_iff, Set.mem_setOf_eq, not_not] using hxnot\n",
+      "    simpa only [Set.mem_compl_iff, Set.mem_ofPred_eq, not_not] using hxnot\n",
+      1
+    ],
+    [
+      "      cases (ENat.coe_lt_top n).not_ge this\n",
+      "      cases (ENat.natCast_lt_top n).not_ge this\n",
+      1
+    ],
+    [
+      "  simp only [Set.mem_setOf_eq, exists_prop, \u2193existsAndEq, and_true, Nat.cast_lt]\n",
+      "  simp only [Set.mem_ofPred_eq, exists_prop, \u2193existsAndEq, and_true, Nat.cast_lt]\n",
+      1
+    ],
+    [
+      ".out 1 0 rfl rfl",
+      ".out 2 1 rfl rfl",
+      1
+    ]
+  ],
+  "card_replacements": [],
+  "supplier_repository": "anthropics/fermats-last-theorem",
+  "supplier_revision": "6e837e75355538c7f80bab5b956861e86c4eacc2",
+  "baseline_byte_identical_to_pinned_supplier": true,
+  "pinned_supplier_source_and_card_preserved": true,
+  "original_actual_errors": 3,
+  "original_actual_warnings": 63,
+  "actual_failure": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/official-layout/terminal-proof-repairs/20261018-local-regular-parameters-tfae-api/previous-actual-failure",
+  "complete_original_proof_preserved": true,
+  "full_original_statement_and_hypotheses_preserved": true,
+  "public_solution_telescope_and_conclusion_byte_identical": true,
+  "card_proof_byte_identical_before_axiom_query": true,
+  "no_linter_suppression_added": true,
+  "change": "Retain the complete original system-of-parameters proof and all public hypotheses/conclusion/card. Update the existing equivalence from unique prime to the Krull-dimension/local-ring conjunction to the current one-based TFAE.out API, changing out 1 0 to out 2 1 with the same explicit reflexivity witnesses. Migrate exactly the 63 logged warning sites, using line-specific exact contexts: proposition haveI/letI bindings, the suggested nondeprecated API names, and the fully qualified local QuotSMulTop namespace. No linter suppression or proof weakening. Original single-worker make/kernel queue only.",
+  "verification_pending": false,
+  "installed": true,
+  "max_active_flt_jobs": 1,
+  "lean_threads": 1,
+  "full_original_complete": false,
+  "official_new_solve_credit": 0,
+  "stale_terminal_state_entries_excluded": [],
+  "active_import_closure_excluded": [
+    "Submission.Supplier.P2M.Sol.S_IsLocalRing_IsCohenMacaulayOfDim_ringKrullDim_quotient_add_height"
+  ],
+  "active_transitive_import_closure_size": 14,
+  "actual_live_descendant_sources": [],
+  "all_four_canonical_adapted_source_card_modules_excluded": [
+    "P2M.Sol.S_IsLocalRing_isRegular_of_systemOfParameters",
+    "Submission.Supplier.P2M.Sol.S_IsLocalRing_isRegular_of_systemOfParameters",
+    "Submission.Supplier.Theorems.Thm_IsLocalRing_isRegular_of_systemOfParameters",
+    "Theorems.Thm_IsLocalRing_isRegular_of_systemOfParameters"
+  ],
+  "installed_at": "2026-10-18T11:57:47.852359+00:00"
+}
