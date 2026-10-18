@@ -1,0 +1,48 @@
+{
+  "at": "2026-10-18T16:08:51.826389+00:00",
+  "temporary": true,
+  "all_original_maps_and_mathematical_steps_preserved": true,
+  "changes": [
+    [
+      "  rw [coe_phiRF, AlgEquiv.commutes]\n  rfl\n",
+      "  exact (coe_phiRF K N (algebraMap K (RatFunc K) k)).trans\n    (congrArg Subtype.val ((sigmaA K).commutes k))\n",
+      1
+    ],
+    [
+      "  rw [coe_phiRF, coe_jF, coe_sigmaA_X]\n",
+      "  exact (coe_phiRF K N RatFunc.X).trans\n    ((coe_sigmaA_X K).trans (coe_jF K N).symm)\n",
+      1
+    ],
+    [
+      "  rw [phiRF_apply, AlgEquiv.apply_symm_apply]\n",
+      "  exact (phiRF_apply K N ((sigmaA K).symm y)).trans\n    (congrArg (fun z : K⟮jqModC K⟯ =>\n      jTr K N (algebraMap (K⟮jqModC K⟯) (K⟮jqModC K⟯⟮jqNModC K N⟯) z))\n      ((sigmaA K).apply_symm_apply y))\n",
+      1
+    ],
+    [
+      "  rw [← Algebra.finrank_eq_of_equiv_equiv\n    ((sigmaA K).symm.toRingEquiv : K⟮jqModC K⟯ ≃+* RatFunc K) (jTr K N) (he_compat K N)]\n  exact finrank_adjoin_jqNModC K N\n",
+      "  exact (Algebra.finrank_eq_of_equiv_equiv\n    ((sigmaA K).symm.toRingEquiv : K⟮jqModC K⟯ ≃+* RatFunc K) (jTr K N)\n    (he_compat K N)).symm.trans (finrank_adjoin_jqNModC K N)\n",
+      1
+    ]
+  ],
+  "verification_pending": true,
+  "stale_terminal_state_entries_excluded": [],
+  "active_import_closure_excluded": [
+    "Submission.Supplier.P2M.Sol.S_ModularCurve_exists_order_algHom_qExpand_jqModC_eq_of_apply_jqModC_eq"
+  ],
+  "active_transitive_import_closure_size": 280,
+  "actual_live_descendant_sources": [
+    {
+      "pid": 97545,
+      "source": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_ModularCurve_exists_order_algHom_qExpand_jqModC_eq_of_apply_jqModC_eq.lean"
+    }
+  ],
+  "all_four_canonical_adapted_source_card_modules_excluded": [
+    "P2M.Sol.S_ModularCurve_card_poles_jqModC_modularFunctionFieldFullC_eq_cuspCount",
+    "Submission.Supplier.P2M.Sol.S_ModularCurve_card_poles_jqModC_modularFunctionFieldFullC_eq_cuspCount",
+    "Submission.Supplier.Theorems.Thm_ModularCurve_card_poles_jqModC_modularFunctionFieldFullC_eq_cuspCount",
+    "Theorems.Thm_ModularCurve_card_poles_jqModC_modularFunctionFieldFullC_eq_cuspCount"
+  ],
+  "prior_kernel_environment_forced_before_every_marker": true,
+  "prior_error_flag_reported_before_every_marker": true,
+  "updated_at": "2026-10-18T16:13:46.318920+00:00"
+}

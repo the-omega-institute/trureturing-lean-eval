@@ -1,0 +1,51 @@
+{
+  "at": "2026-10-18T17:11:29.389821+00:00",
+  "temporary": true,
+  "verification_pending": true,
+  "change": "R12 keeps original phiRF_algebraMap statement and all original maps; composes original coe_phiRF and sigmaA.commutes with BOTH generic IntermediateField.coe_algebraMap_apply lemmas, explicitly relating source/target scalar embeddings instead of leaving their definitional equality to the kernel. All other later original proofs unchanged; actual full source/card verification pending.",
+  "source_replacements": [
+    [
+      "haveI",
+      "have",
+      21
+    ],
+    [
+      "letI",
+      "let",
+      2
+    ],
+    [
+      "dif_neg",
+      "dite_eq_right",
+      3
+    ],
+    [
+      "  unfold jTr; rfl\n",
+      "  exact Subtype.map_coe id (fun y hy => (mem_full_iff K N y).mpr hy) x\n",
+      1
+    ],
+    [
+      "  rw [coe_phiRF, AlgEquiv.commutes]\n  rfl\n",
+      "  exact (coe_phiRF K N (algebraMap K (RatFunc K) k)).trans\n    ((congrArg Subtype.val ((sigmaA K).commutes k)).trans\n      ((IntermediateField.coe_algebraMap_apply (K\u27eejqModC K\u27ef) k).trans\n        (IntermediateField.coe_algebraMap_apply (modularFunctionFieldFullC K N) k).symm))\n",
+      1
+    ]
+  ],
+  "markers": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/official-layout/terminal-proof-repairs/20261018-cusp-count-coe-jtr-kernel/r12-phiRF-scalar-explicit-coercions-diagnostic/markers.log",
+  "stale_terminal_state_entries_excluded": [],
+  "active_import_closure_excluded": [
+    "Submission.Supplier.P2M.Sol.S_ModularCurve_exists_order_algHom_qExpand_jqModC_eq_of_apply_jqModC_eq"
+  ],
+  "active_transitive_import_closure_size": 280,
+  "actual_live_descendant_sources": [
+    {
+      "pid": 98747,
+      "source": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_ModularCurve_exists_order_algHom_qExpand_jqModC_eq_of_apply_jqModC_eq.lean"
+    }
+  ],
+  "all_four_canonical_adapted_source_card_modules_excluded": [
+    "P2M.Sol.S_ModularCurve_card_poles_jqModC_modularFunctionFieldFullC_eq_cuspCount",
+    "Submission.Supplier.P2M.Sol.S_ModularCurve_card_poles_jqModC_modularFunctionFieldFullC_eq_cuspCount",
+    "Submission.Supplier.Theorems.Thm_ModularCurve_card_poles_jqModC_modularFunctionFieldFullC_eq_cuspCount",
+    "Theorems.Thm_ModularCurve_card_poles_jqModC_modularFunctionFieldFullC_eq_cuspCount"
+  ]
+}
