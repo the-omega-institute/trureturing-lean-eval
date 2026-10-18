@@ -1,0 +1,58 @@
+{
+  "at": "2026-10-18T11:30:35.757444+00:00",
+  "name": "AlgebraicGeometry_nonempty_iso_or_exists_shortExact_of_sectionsEquiv_algHom_of_ne_two",
+  "prepared_candidate": "r2",
+  "active_installed_candidate": "r1",
+  "source_replacements": [
+    [
+      "include hqPrime in\n\ntheorem Rq_map_up",
+      "omit hqPrime in\n\ntheorem Rq_map_up [Fact q.Prime]",
+      1
+    ],
+    [
+      "include hqPrime in\n\ntheorem toC_secC",
+      "omit hqPrime in\n\ntheorem toC_secC [Fact q.Prime]",
+      1
+    ],
+    [
+      "include hqPrime in\n\ntheorem secC_toC",
+      "omit hqPrime in\n\ntheorem secC_toC [Fact q.Prime]",
+      1
+    ],
+    [
+      "include hqPrime in\n\ntheorem map_toC",
+      "omit hqPrime in\n\ntheorem map_toC [Fact q.Prime]",
+      1
+    ],
+    [
+      "include hqPrime in\n\ntheorem mem_piece",
+      "omit hqPrime in\n\ntheorem mem_piece [Fact q.Prime]",
+      1
+    ],
+    [
+      "include hqPrime in\n\ntheorem piece_le_basicOpen",
+      "omit hqPrime in\n\ntheorem piece_le_basicOpen [Fact q.Prime]",
+      1
+    ],
+    [
+      "include he hpPrime in\n\ntheorem index_eq_zero_of_mem_fib",
+      "include he in\nomit hpPrime in\n\ntheorem index_eq_zero_of_mem_fib [Fact p.Prime]",
+      1
+    ],
+    [
+      "include hpPrime in\n\ntheorem isUnit_res_natCast",
+      "omit hpPrime in\n\ntheorem isUnit_res_natCast [Fact p.Prime]",
+      1
+    ]
+  ],
+  "source_files_edited": false,
+  "prepared_candidate_files": [
+    "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/official-layout/terminal-proof-repairs/20261018-fppf-constant-sheaf-sub-transport/candidate-canonical-source-r2.lean",
+    "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/official-layout/terminal-proof-repairs/20261018-fppf-constant-sheaf-sub-transport/candidate-adapted-source-r2.lean"
+  ],
+  "all_eight_original_fact_assumptions_redeclared_explicitly": true,
+  "current_source_make_exit": 0,
+  "current_source_kernel_exit": 0,
+  "current_source_warnings": 8,
+  "installation_requires_fresh_active_guard": true
+}

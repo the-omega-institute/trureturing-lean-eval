@@ -1,0 +1,217 @@
+{
+  "at": "2026-10-18T11:24:59.878844+00:00",
+  "name": "AlgebraicGeometry_nonempty_iso_or_exists_shortExact_of_sectionsEquiv_algHom_of_ne_two",
+  "candidate": "r2",
+  "card_candidate": "r1",
+  "source_replacements": [
+    [
+      "attribute [local instance] FppfRepresentableGroupSchemeSheaf.instTopologicalSpaceZMod_definitions",
+      "local instance instTopologicalSpaceZMod (n : \u2115) : TopologicalSpace (ZMod n) := \u22a5",
+      1
+    ],
+    [
+      "variable {q : \u2115} [Fact q.Prime]",
+      "variable {q : \u2115} [hqPrime : Fact q.Prime]",
+      2
+    ],
+    [
+      "section Fibre\n\nvariable {p : \u2115} [Fact p.Prime]",
+      "section Fibre\n\nvariable {p : \u2115} [hpPrime : Fact p.Prime]",
+      1
+    ],
+    [
+      "include he in\n\ntheorem index_eq_zero_of_mem_fib",
+      "include he hpPrime in\n\ntheorem index_eq_zero_of_mem_fib",
+      1
+    ],
+    [
+      "theorem isUnit_res_natCast",
+      "include hpPrime in\n\ntheorem isUnit_res_natCast",
+      1
+    ],
+    [
+      "(fun a => homOfLE le_top) (iSup_piece \u03b3) s t h",
+      "(fun _a => homOfLE le_top) (iSup_piece \u03b3) s t h",
+      1
+    ],
+    [
+      "      rw [sub_eq_add_neg, toC_add, hneg, \u2190 sub_eq_add_neg]",
+      "      calc\n        _ = toC C iC (Y i) (\u03b3 i) +\n            toC C iC (Y i) (-ContinuousMap.const (Y i).left \u03b3\u2080) :=\n          (congrArg (toC C iC (Y i)) (sub_eq_add_neg _ _)).trans\n            (toC_add C iC (Y i) _ _)\n        _ = toC C iC (Y i) (\u03b3 i) -\n            toC C iC (Y i) (ContinuousMap.const (Y i).left \u03b3\u2080) :=\n          (congrArg (fun z => toC C iC (Y i) (\u03b3 i) + z)\n            (hneg (Y i) (ContinuousMap.const (Y i).left \u03b3\u2080))).trans\n              (sub_eq_add_neg _ _).symm",
+      1
+    ],
+    [
+      "open P2mConstLayerSheaf in",
+      "open _root_.P2MW.S_AlgebraicGeometry_nonempty_iso_or_exists_shortExact_of_sectionsEquiv_algHom_of_ne_two.P2mConstLayerSheaf in",
+      1
+    ],
+    [
+      "  haveI : \u2200 U : (specInt.Fppf)\u1d52\u1d56, Mono",
+      "  have : \u2200 U : (specInt.Fppf)\u1d52\u1d56, Mono",
+      1
+    ],
+    [
+      "  haveI : Mono (fval he L eL hnat C iC)",
+      "  have : Mono (fval he L eL hnat C iC)",
+      1
+    ],
+    [
+      "  haveI : Sheaf.IsLocallySurjective",
+      "  have : Sheaf.IsLocallySurjective",
+      1
+    ],
+    [
+      "  haveI : Epi (fval he L eL hnat C iC)",
+      "  have : Epi (fval he L eL hnat C iC)",
+      1
+    ],
+    [
+      "    haveI := isIso_fval",
+      "    have := isIso_fval",
+      1
+    ],
+    [
+      ", if_pos",
+      ", ite_eq_left",
+      3
+    ],
+    [
+      "[if_pos",
+      "[ite_eq_left",
+      1
+    ],
+    [
+      ", if_neg",
+      ", ite_eq_right",
+      2
+    ],
+    [
+      "[if_neg",
+      "[ite_eq_right",
+      2
+    ],
+    [
+      "if_true",
+      "ite_true",
+      1
+    ],
+    [
+      "Set.mem_setOf_eq",
+      "Set.mem_ofPred_eq",
+      3
+    ],
+    [
+      "dif_pos",
+      "dite_eq_left",
+      1
+    ],
+    [
+      "theorem Rq_map_up",
+      "include hqPrime in\n\ntheorem Rq_map_up",
+      1
+    ],
+    [
+      "theorem toC_secC",
+      "include hqPrime in\n\ntheorem toC_secC",
+      1
+    ],
+    [
+      "theorem secC_toC",
+      "include hqPrime in\n\ntheorem secC_toC",
+      1
+    ],
+    [
+      "theorem map_toC",
+      "include hqPrime in\n\ntheorem map_toC",
+      1
+    ],
+    [
+      "theorem mem_piece",
+      "include hqPrime in\n\ntheorem mem_piece",
+      1
+    ],
+    [
+      "theorem piece_le_basicOpen",
+      "include hqPrime in\n\ntheorem piece_le_basicOpen",
+      1
+    ],
+    [
+      "include hqPrime in\n\ntheorem Rq_map_up",
+      "omit hqPrime in\n\ntheorem Rq_map_up [Fact q.Prime]",
+      1
+    ],
+    [
+      "include hqPrime in\n\ntheorem toC_secC",
+      "omit hqPrime in\n\ntheorem toC_secC [Fact q.Prime]",
+      1
+    ],
+    [
+      "include hqPrime in\n\ntheorem secC_toC",
+      "omit hqPrime in\n\ntheorem secC_toC [Fact q.Prime]",
+      1
+    ],
+    [
+      "include hqPrime in\n\ntheorem map_toC",
+      "omit hqPrime in\n\ntheorem map_toC [Fact q.Prime]",
+      1
+    ],
+    [
+      "include hqPrime in\n\ntheorem mem_piece",
+      "omit hqPrime in\n\ntheorem mem_piece [Fact q.Prime]",
+      1
+    ],
+    [
+      "include hqPrime in\n\ntheorem piece_le_basicOpen",
+      "omit hqPrime in\n\ntheorem piece_le_basicOpen [Fact q.Prime]",
+      1
+    ],
+    [
+      "include he hpPrime in\n\ntheorem index_eq_zero_of_mem_fib",
+      "include he in\nomit hpPrime in\n\ntheorem index_eq_zero_of_mem_fib [Fact p.Prime]",
+      1
+    ],
+    [
+      "include hpPrime in\n\ntheorem isUnit_res_natCast",
+      "omit hpPrime in\n\ntheorem isUnit_res_natCast [Fact p.Prime]",
+      1
+    ]
+  ],
+  "card_replacements": [],
+  "supplier_repository": "anthropics/fermats-last-theorem",
+  "supplier_revision": "6e837e75355538c7f80bab5b956861e86c4eacc2",
+  "baseline_byte_identical_to_pinned_supplier": true,
+  "pinned_supplier_source_and_card_preserved": true,
+  "original_actual_errors": 2,
+  "original_actual_warnings": 28,
+  "actual_failure": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/official-layout/terminal-proof-repairs/20261018-fppf-constant-sheaf-sub-transport/previous-actual-failure",
+  "complete_original_proof_preserved": true,
+  "full_original_statement_and_hypotheses_preserved": true,
+  "public_solution_telescope_and_conclusion_byte_identical": true,
+  "card_proof_byte_identical_before_axiom_query": true,
+  "no_linter_suppression_added": true,
+  "change": "Use the same bottom topology as the imported constant ZMod sheaf in an explicit local instance, replacing the absent generated declaration name. Retain hneg and toC_add and compose their equalities explicitly for subtraction. Explicitly name and include all eight original unused section instances without dropping any assumption or suppressing any linter. Migrate only logged haveI and deprecated aliases, qualify the local namespace, and rename the logged unused binder. Preserve the complete original proof, full solution telescope and card. Original single-worker make/kernel queue only. Actual r1 make/kernel0 proved the full source with standard3 axioms but still emitted eight unusedSectionVars warnings despite include. The r2 candidate omits each ambient instance only while redeclaring the identical Fact assumption explicitly in that theorem. All eight original assumptions remain; no linter suppression.",
+  "verification_pending": false,
+  "installed": true,
+  "max_active_flt_jobs": 1,
+  "lean_threads": 1,
+  "full_original_complete": false,
+  "official_new_solve_credit": 0,
+  "stale_terminal_state_entries_excluded": [],
+  "active_import_closure_excluded": [
+    "Submission.Supplier.P2M.Sol.S_Ideal_not_isMaximal_of_mem_minimalPrimes_of_forall_not_isOpen_singleton"
+  ],
+  "active_transitive_import_closure_size": 2,
+  "actual_live_descendant_sources": [],
+  "all_four_canonical_adapted_source_card_modules_excluded": [
+    "P2M.Sol.S_AlgebraicGeometry_nonempty_iso_or_exists_shortExact_of_sectionsEquiv_algHom_of_ne_two",
+    "Submission.Supplier.P2M.Sol.S_AlgebraicGeometry_nonempty_iso_or_exists_shortExact_of_sectionsEquiv_algHom_of_ne_two",
+    "Submission.Supplier.Theorems.Thm_AlgebraicGeometry_nonempty_iso_or_exists_shortExact_of_sectionsEquiv_algHom_of_ne_two",
+    "Theorems.Thm_AlgebraicGeometry_nonempty_iso_or_exists_shortExact_of_sectionsEquiv_algHom_of_ne_two"
+  ],
+  "installed_at": "2026-10-18T11:31:58.261987+00:00",
+  "explicit_original_section_instance_parameters_preserved": 8,
+  "r1_actual_make_exit": 0,
+  "r1_actual_kernel_exit": 0,
+  "r1_actual_errors": 0,
+  "r1_actual_warnings": 8,
+  "r1_diagnostics": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/official-layout/terminal-proof-repairs/20261018-fppf-constant-sheaf-sub-transport/r1-actual-make-kernel-zero-eight-unused-section-warnings"
+}
