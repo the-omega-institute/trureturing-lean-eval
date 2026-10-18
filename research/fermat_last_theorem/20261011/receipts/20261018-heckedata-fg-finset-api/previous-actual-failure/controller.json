@@ -1,0 +1,74 @@
+{
+  "sha256": "2aea5f3faa06cb2f68580ca68c7187179876022ed749a0f0eea724238dc6ebd2",
+  "exit": 1,
+  "empty_output_retry_done": false,
+  "source_sha256_after": "2aea5f3faa06cb2f68580ca68c7187179876022ed749a0f0eea724238dc6ebd2",
+  "source_unchanged": true,
+  "olean_sha256": null,
+  "seconds": 58.56189941699995,
+  "pid": 79845,
+  "command": [
+    "/Users/macstudio/.local/omega-shims/lean",
+    "-j1",
+    "--trust=0",
+    "-Ddebug.skipKernelTC=false",
+    "-R",
+    "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src",
+    "-o",
+    "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-build/lib/lean/Submission/Supplier/P2M/Sol/S_CohCarrier_HeckeData_exists_eigenvector_H1_of_toML_ne_zero.olean",
+    "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_CohCarrier_HeckeData_exists_eigenvector_H1_of_toML_ne_zero.lean"
+  ],
+  "make_wrapper_pid": 79031,
+  "make_exit": 2,
+  "make_entry_failed": false,
+  "cache_binding_valid": true,
+  "canonical_make_running_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/54a35e28e2abf47cb2381178-1792312985491165000.make-running.json",
+  "canonical_make_terminal_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/54a35e28e2abf47cb2381178-1792312985491165000.make-terminal.json",
+  "kernel_terminal_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/54a35e28e2abf47cb2381178-1792312985491165000.kernel/result.json",
+  "direct_dependencies": [
+    {
+      "module": "Submission.Supplier.Definitions.Def_CohCarrier_Inst",
+      "source_sha256": "076f03311787d0ecc0b3acf4f1279f11cbfffacd1312baef8566d1731517c961",
+      "object_sha256": "74092ccbcb0bc8e196c67d3a25924f00145d857ca4e095df7bacae6eb3591653",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Theorems.Thm_CohCarrier_H1_moduleFinite",
+      "source_sha256": "ab80f7da4abbc1c258e7cf93384e9bf3f4020922f27bd570fdac763638671a36",
+      "object_sha256": "3d9cb4fdf436ff846c7f62fa3362e270759746e3a0c4569583442524b60e45f1",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Theorems.Thm_CohCarrier_heckeT_comp_coeff",
+      "source_sha256": "7c7ff04c6ce0b3f858fb1f6781fa357fe55d85388217869a05dafbf98c8277d7",
+      "object_sha256": "1e9b2ffd0134c2e9b9d4ffaed3a1e826593574b27c3808fa1be0c6a028bd255f",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Theorems.Thm_CohCarrier_HeckeData_nonempty_idempotentSplitting_opSubalgebra",
+      "source_sha256": "826be9632985157c73fc670615ad952162e388852e68b36a7539b901a0f3b1ce",
+      "object_sha256": "9e035d000986fe0d1e20cee6a0f7aa5e587a8227d154931edf842294fdd2ecbc",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Theorems.Thm_IsLocalRing_exists_fin_points_dvr_iInf_ker_eq_bot",
+      "source_sha256": "dac06a5a382456a3cf054771969cfab73b02dbd8041b3c00b4c3b39c934a12e0",
+      "object_sha256": "9ee9f96503057b7c8b71a6ddfb6d472acb0acba9cb251bd98af56d4ebf7616bc",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Theorems.Thm_DeligneSerre_OperatorAlgebra_exists_eigenvector_baseChange_of_algHom",
+      "source_sha256": "a96807ffff7ba61f5d4f7d8b272f23038d8a2411889a393c8b9ebbba2b79b80c",
+      "object_sha256": "43774d8302e7a7161847cbd8459b09659c2c71fe73a7de952374260a5e9126ba",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.P2M.Util",
+      "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+      "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+      "receipt_reused": true
+    }
+  ],
+  "stdout": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/54a35e28e2abf47cb2381178-1792312985491165000.kernel/stdout.log",
+  "stderr": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/54a35e28e2abf47cb2381178-1792312985491165000.kernel/stderr.log"
+}

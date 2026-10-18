@@ -1,0 +1,87 @@
+{
+  "at": "2026-10-18T09:00:29.006102+00:00",
+  "name": "CohCarrier_HeckeData_exists_eigenvector_H1_of_toML_ne_zero",
+  "candidate": "r2",
+  "card_candidate": "r1",
+  "source_replacements": [
+    [
+      "obtain \u27e8s, hs\u27e9 := (Group.fg_def.mp (fg_GammaH M H))",
+      "obtain \u27e8_, s, _, hs\u27e9 := Group.fg_iff'.mp (fg_GammaH M H)",
+      1
+    ],
+    [
+      "Set.mem_setOf_eq",
+      "Set.mem_ofPred_eq",
+      2
+    ],
+    [
+      "TensorProduct.induction_on",
+      "TensorProduct.inductionOn",
+      3
+    ],
+    [
+      "  haveI ",
+      "  have ",
+      24
+    ],
+    [
+      "  letI ",
+      "  let ",
+      1
+    ],
+    [
+      "\n    | zero => simp\n",
+      "\n",
+      1
+    ],
+    [
+      "\n  | zero => rw [map_zero]; exact Submodule.zero_mem _\n",
+      "\n",
+      1
+    ],
+    [
+      "\n  | zero => simp\n",
+      "\n",
+      1
+    ]
+  ],
+  "card_replacements": [],
+  "supplier_repository": "anthropics/fermats-last-theorem",
+  "supplier_revision": "6e837e75355538c7f80bab5b956861e86c4eacc2",
+  "baseline_byte_identical_to_pinned_supplier": true,
+  "pinned_supplier_source_and_card_preserved": true,
+  "original_actual_errors": 1,
+  "original_actual_warnings": 30,
+  "actual_failure": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/official-layout/terminal-proof-repairs/20261018-heckedata-fg-finset-api/previous-actual-failure",
+  "complete_original_proof_preserved": true,
+  "full_original_statement_and_hypotheses_preserved": true,
+  "public_solution_and_card_telescope_conclusion_proof_byte_identical_before_axiom_query": true,
+  "no_linter_suppression_added": true,
+  "fixed_pin_api_evidence": "Official Mathlib5e0c4e5 GroupTheory/Finiteness.lean:710 Group.fg_iff prime returns the direct Finset G. TensorProduct/Defs.lean:135 defines TensorProduct.inductionOn with tmul/add cases; the deprecated wrapper at143 has a misspelled TensorProduction hint and an unused zero case. Migrate the three inductions to the real declaration and its two actual cases. Preserve statements/all hypotheses/public solution/card proof.",
+  "change": "Use direct finite-generation Finset witness from Group.fg_iff prime. Migrate the three tensor inductions to TensorProduct.inductionOn, keeping tmul/add proofs and removing zero branches now subsumed by tmul0. Keep every helper, all original statements/hypotheses and complete public solution/card proof. Replace the actual deprecated Set aliases and local proof bindings; append recursive axiom queries. r1 exact failure archived and never accepted; verify r2 through original single-worker make/kernel queue.",
+  "verification_pending": false,
+  "installed": true,
+  "max_active_flt_jobs": 1,
+  "lean_threads": 1,
+  "full_original_complete": false,
+  "official_new_solve_credit": 0,
+  "stale_terminal_state_entries_excluded": [
+    {
+      "module": "Submission.Supplier.Theorems.Thm_CohCarrier_exists_complex_heckeT_eigen_reduction_eq_of_mem_span_int",
+      "wrapper_pid": 24130,
+      "make_exit": 0,
+      "terminal": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/f006810ae6a32180ca75e018-1792314238812371000.make-terminal.json"
+    }
+  ],
+  "active_import_closure_excluded": [],
+  "active_transitive_import_closure_size": 0,
+  "actual_live_descendant_sources": [],
+  "all_four_canonical_adapted_source_card_modules_excluded": [
+    "P2M.Sol.S_CohCarrier_HeckeData_exists_eigenvector_H1_of_toML_ne_zero",
+    "Submission.Supplier.P2M.Sol.S_CohCarrier_HeckeData_exists_eigenvector_H1_of_toML_ne_zero",
+    "Submission.Supplier.Theorems.Thm_CohCarrier_HeckeData_exists_eigenvector_H1_of_toML_ne_zero",
+    "Theorems.Thm_CohCarrier_HeckeData_exists_eigenvector_H1_of_toML_ne_zero"
+  ],
+  "installed_at": "2026-10-18T09:04:09.509592+00:00",
+  "r1_actual_failure": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/official-layout/terminal-proof-repairs/20261018-heckedata-fg-finset-api/actual-r1-failure"
+}
