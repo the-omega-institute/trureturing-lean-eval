@@ -1,0 +1,91 @@
+{
+  "at": "2026-10-18T10:48:01.471652+00:00",
+  "name": "HopfAlgebra_exists_finiteFlat_model_bialgHom_surjective_baseChange_of_algEquiv_baseChange",
+  "candidate": "r1",
+  "card_candidate": "r1",
+  "source_replacements": [
+    [
+      "  rw [Module.Basis.tensorProduct_apply', h\u03b8]\n  rfl",
+      "  rw [Module.Basis.tensorProduct_apply', h\u03b8]",
+      1
+    ],
+    [
+      "  rw [Algebra.TensorProduct.basis_apply, LinearMap.liftBaseChange_tmul, one_smul]\n  rfl",
+      "  rw [Algebra.TensorProduct.basis_apply, LinearMap.liftBaseChange_tmul, one_smul]",
+      1
+    ],
+    [
+      "HopfAlgebra.antipode_mul,",
+      "HopfAlgebra.antipode_mul_antidistrib,",
+      1
+    ],
+    [
+      "TensorProduct.induction_on",
+      "TensorProduct.inductionOn",
+      9
+    ],
+    [
+      "\n  | zero => simp\n",
+      "\n",
+      4
+    ],
+    [
+      "\n    | zero => simp\n",
+      "\n",
+      3
+    ],
+    [
+      "\n    | zero => simp only [map_zero]\n",
+      "\n",
+      1
+    ],
+    [
+      "\n      | zero => simp only [map_zero, TensorProduct.zero_tmul]\n",
+      "\n",
+      1
+    ],
+    [
+      "  haveI ",
+      "  have ",
+      3
+    ]
+  ],
+  "card_replacements": [],
+  "supplier_repository": "anthropics/fermats-last-theorem",
+  "supplier_revision": "6e837e75355538c7f80bab5b956861e86c4eacc2",
+  "baseline_byte_identical_to_pinned_supplier": true,
+  "pinned_supplier_source_and_card_preserved": true,
+  "original_actual_errors": 2,
+  "original_actual_warnings": 13,
+  "actual_failure": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/official-layout/terminal-proof-repairs/20261018-hopf-finite-flat-model-tensor-api/previous-actual-failure",
+  "complete_original_proof_preserved": true,
+  "full_original_statement_and_hypotheses_preserved": true,
+  "public_solution_telescope_and_conclusion_byte_identical": true,
+  "card_proof_byte_identical_before_axiom_query": true,
+  "no_linter_suppression_added": true,
+  "change": "Remove only two terminal rfl tactics whose preceding original rw now closes the goal. Migrate nine tensor inductions to the actual TensorProduct.inductionOn API and remove only their old zero branches, because the new eliminator derives zero from tmul 0 0. The deprecation text misspells TensorProduction; use the verified Mathlib declaration. Migrate antipode_mul to antipode_mul_antidistrib and the three logged haveI bindings. Preserve all918 original proof lines except these exact API/redundant-tactic changes, all original hypotheses/public statement/card/source attribution. No linter suppression. Original single-worker make/kernel queue only.",
+  "verification_pending": false,
+  "installed": true,
+  "max_active_flt_jobs": 1,
+  "lean_threads": 1,
+  "full_original_complete": false,
+  "official_new_solve_credit": 0,
+  "stale_terminal_state_entries_excluded": [],
+  "active_import_closure_excluded": [
+    "Submission.Supplier.Theorems.Thm_HopfAlgebra_exists_hopfAlgebra_bialgHom_surjective_ker_eq_of_hopfIdeal_of_commRing"
+  ],
+  "active_transitive_import_closure_size": 3,
+  "actual_live_descendant_sources": [
+    {
+      "pid": 37032,
+      "source": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/Theorems/Thm_HopfAlgebra_exists_hopfAlgebra_bialgHom_surjective_ker_eq_of_hopfIdeal_of_commRing.lean"
+    }
+  ],
+  "all_four_canonical_adapted_source_card_modules_excluded": [
+    "P2M.Sol.S_HopfAlgebra_exists_finiteFlat_model_bialgHom_surjective_baseChange_of_algEquiv_baseChange",
+    "Submission.Supplier.P2M.Sol.S_HopfAlgebra_exists_finiteFlat_model_bialgHom_surjective_baseChange_of_algEquiv_baseChange",
+    "Submission.Supplier.Theorems.Thm_HopfAlgebra_exists_finiteFlat_model_bialgHom_surjective_baseChange_of_algEquiv_baseChange",
+    "Theorems.Thm_HopfAlgebra_exists_finiteFlat_model_bialgHom_surjective_baseChange_of_algEquiv_baseChange"
+  ],
+  "installed_at": "2026-10-18T10:48:01.583997+00:00"
+}
