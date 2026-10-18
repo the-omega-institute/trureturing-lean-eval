@@ -1,0 +1,78 @@
+{
+  "at": "2026-10-18T15:44:53.093869+00:00",
+  "name": "ModularCurve_exists_slot_of_ord_jqModC_neg",
+  "candidate": "r12",
+  "card_candidate": "r1",
+  "source_replacements": [
+    [
+      "haveI",
+      "have",
+      21
+    ],
+    [
+      "letI",
+      "let",
+      2
+    ],
+    [
+      "dif_neg",
+      "dite_eq_right",
+      3
+    ],
+    [
+      "  unfold jTr; rfl\n",
+      "  exact Subtype.map_coe id (fun y hy => (mem_full_iff K N y).mpr hy) x\n",
+      1
+    ],
+    [
+      "  rw [coe_phiRF, AlgEquiv.commutes]\n  rfl\n",
+      "  exact (coe_phiRF K N (algebraMap K (RatFunc K) k)).trans\n    ((congrArg Subtype.val ((sigmaA K).commutes k)).trans\n      ((IntermediateField.coe_algebraMap_apply (K\u27eejqModC K\u27ef) k).trans\n        (IntermediateField.coe_algebraMap_apply (modularFunctionFieldFullC K N) k).symm))\n",
+      1
+    ]
+  ],
+  "card_replacements": [],
+  "supplier_repository": "anthropics/fermats-last-theorem",
+  "supplier_revision": "6e837e75355538c7f80bab5b956861e86c4eacc2",
+  "baseline_byte_identical_to_pinned_supplier": true,
+  "pinned_supplier_source_and_card_preserved": true,
+  "complete_original_proof_preserved": true,
+  "full_original_statement_and_hypotheses_preserved": true,
+  "public_solution_telescope_and_conclusion_byte_identical": true,
+  "card_proof_byte_identical_before_axiom_query": true,
+  "no_linter_suppression_added": true,
+  "exact_costly_declaration": "CuspCountModC.coe_jTr",
+  "resource_diagnostic": "/Users/macstudio/omega/research/lean-eval-01a124c1-52fb-7761-a67c-75fc0610196f/cusp-count-kernel-defeq-resource-20261018T152052Z/coe-jTr-exact-declaration.json",
+  "change": "Retain complete original helper/main proof, all statements/hypotheses, original jTr/maps and all subsequent original transport proofs. Generic Subtype.map_coe proves coe_jTr; explicit coe_phiRF/sigmaA.commutes/source-target coe_algebraMap_apply chain proves phiRF_algebraMap. Migrate only original proposition-valued haveI/letI and dif_neg aliases. Count complete source/card diagnostic has actual make/kernel0 and standard3 recursive axioms. This clean slot source/card still needs actual independent full make/kernel verification; no acceptance inferred.",
+  "verification_pending": false,
+  "installed": true,
+  "max_active_flt_jobs": 1,
+  "lean_threads": 1,
+  "full_original_complete": false,
+  "official_new_solve_credit": 0,
+  "stale_terminal_state_entries_excluded": [
+    {
+      "module": "Submission.Supplier.P2M.Sol.S_ModularCurve_exists_slot_of_ord_jqModC_neg",
+      "wrapper_pid": 23820,
+      "make_exit": 2,
+      "terminal": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/efe2b9f0f44c57aceb4d489f-1792343693623901000.make-terminal.json"
+    }
+  ],
+  "active_import_closure_excluded": [
+    "Submission.Supplier.P2M.Sol.S_ModularCurve_card_poles_jqModC_modularFunctionFieldFullC_eq_cuspCount"
+  ],
+  "active_transitive_import_closure_size": 280,
+  "actual_live_descendant_sources": [],
+  "all_four_canonical_adapted_source_card_modules_excluded": [
+    "P2M.Sol.S_ModularCurve_exists_slot_of_ord_jqModC_neg",
+    "Submission.Supplier.P2M.Sol.S_ModularCurve_exists_slot_of_ord_jqModC_neg",
+    "Submission.Supplier.Theorems.Thm_ModularCurve_exists_slot_of_ord_jqModC_neg",
+    "Theorems.Thm_ModularCurve_exists_slot_of_ord_jqModC_neg"
+  ],
+  "installed_at": "2026-10-18T15:44:53.248409+00:00",
+  "previous_candidate": "r4",
+  "updated_at": "2026-10-18T17:16:46.273824+00:00",
+  "temporary_diagnostic_installed": null,
+  "final_candidate_prepared": "r12",
+  "actual_projection_kernel_audit_in_sibling": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/official-layout/terminal-proof-repairs/20261018-cusp-order-coe-jtr-kernel/r10-original-map-generic-projection-diagnostic/coe-jTr-kernel-audit.txt",
+  "complete_helper_diagnostic_verified_in_sibling": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/official-layout/terminal-proof-repairs/20261018-cusp-count-coe-jtr-kernel/r12-phiRF-scalar-explicit-coercions-diagnostic"
+}
