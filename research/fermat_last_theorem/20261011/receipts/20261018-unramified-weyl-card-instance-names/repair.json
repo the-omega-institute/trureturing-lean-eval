@@ -1,0 +1,128 @@
+{
+  "at": "2026-10-18T05:32:59.187341+00:00",
+  "name": "AutomorphicForm_LocalIntertwining_integral_unramifiedWeylIntegrand_adicCompletion",
+  "source_prefix": "Theorems/Thm_",
+  "candidate": "r1",
+  "source_replacements": [
+    [
+      "instFiniteResidueFieldAdicCompletionRingOfIntegersWithZeroMultiplicativeInt_definitions",
+      "instFiniteResidueFieldAdicCompletionRingOfIntegersWithZeroMultiplicativeInt_submission",
+      1
+    ],
+    [
+      "instWeaklyLocallyCompactSpaceAdicCompletionRingOfIntegers_definitions",
+      "instWeaklyLocallyCompactSpaceAdicCompletionRingOfIntegers_submission",
+      1
+    ],
+    [
+      "instLocallyCompactSpaceAdicCompletionRingOfIntegers_definitions",
+      "instLocallyCompactSpaceAdicCompletionRingOfIntegers_submission",
+      1
+    ],
+    [
+      "instCountableOfNumberField_definitions",
+      "instCountableOfNumberField_submission",
+      1
+    ]
+  ],
+  "axiom_declarations": [
+    "AutomorphicForm.LocalIntertwining.integral_unramifiedWeylIntegrand_adicCompletion"
+  ],
+  "verification_pending": false,
+  "installed": true,
+  "actual_failure": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/official-layout/terminal-proof-repairs/20261018-unramified-weyl-card-instance-names/previous-actual-failure",
+  "pinned_supplier_source_and_card_preserved": true,
+  "baseline_byte_identical_to_pinned_supplier": false,
+  "public_statement_and_proof_byte_identical_to_pinned_supplier": true,
+  "baseline_role": "Public theorem card only. Complete 2110-line canonical proof source is unchanged; its successful make/kernel receipt and 32 existing warnings are preserved and not claimed as zero-warning repair acceptance.",
+  "generated_name_evidence": "Reuse exact four generated-instance substitutions previously make/kernel-verified for smooth Weyl integral, adic-square and Tate Euler cards. Completion_Finite and Countable definition inputs remain unchanged.",
+  "full_original_statements_hypotheses_and_proof_preserved": true,
+  "current_baseline_instance_disable_attributes_preserved": true,
+  "no_linter_suppression_added": true,
+  "original_actual_errors": 1,
+  "original_actual_warnings": 0,
+  "original_source_warnings": 32,
+  "unchanged_proof_source_lines": 2110,
+  "unchanged_proof_source_record": {
+    "sha256": "c2cb030f47014379b06d70461be7f369688ac9b8be8ced7db67f6d340f48935d",
+    "exit": 0,
+    "empty_output_retry_done": false,
+    "source_sha256_after": "c2cb030f47014379b06d70461be7f369688ac9b8be8ced7db67f6d340f48935d",
+    "source_unchanged": true,
+    "olean_sha256": "573ae9f4c441064aa973b045aea1deee3de58f2a7edff5de4dfbc7529527da63",
+    "seconds": 104.42218562500057,
+    "pid": 26032,
+    "command": [
+      "/Users/macstudio/.local/omega-shims/lean",
+      "-j1",
+      "--trust=0",
+      "-Ddebug.skipKernelTC=false",
+      "-R",
+      "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src",
+      "-o",
+      "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-build/lib/lean/Submission/Supplier/P2M/Sol/S_AutomorphicForm_LocalIntertwining_integral_unramifiedWeylIntegrand_adicCompletion.olean",
+      "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_AutomorphicForm_LocalIntertwining_integral_unramifiedWeylIntegrand_adicCompletion.lean"
+    ],
+    "make_wrapper_pid": 23991,
+    "make_exit": 0,
+    "make_entry_failed": false,
+    "cache_binding_valid": true,
+    "canonical_make_running_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/a143dc2c70e3d22215ebcd39-1792301298641918000.make-running.json",
+    "canonical_make_terminal_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/a143dc2c70e3d22215ebcd39-1792301298641918000.make-terminal.json",
+    "kernel_terminal_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/a143dc2c70e3d22215ebcd39-1792301298641918000.kernel/result.json",
+    "direct_dependencies": [
+      {
+        "module": "Submission.Supplier.Definitions.Def_NumberField_AdelicHaar",
+        "source_sha256": "094c4798004b34b5de79ac153482cada33fd2d568217e482f57ae64130a67c5f",
+        "object_sha256": "56f8cb3975fb1e2f7c289b534529067dad86940b3623882fff7ad256240b9f63",
+        "receipt_reused": true
+      },
+      {
+        "module": "Submission.Supplier.Definitions.Def_LanglandsTunnell_TateLocalZeta",
+        "source_sha256": "41ff21d2d94b2bb17c50681b1d7680a352a0823d61bffe69857475334927e2fa",
+        "object_sha256": null,
+        "receipt_reused": false
+      },
+      {
+        "module": "Submission.Supplier.Definitions.Def_NumberField_Completion_Finite",
+        "source_sha256": "06b3c51f0586df1459578ecda504306a64e63ddb97156c7b9a9e0da18701611b",
+        "object_sha256": "0880abece232c1c9ca1132bad850ce138adced560bb5a548d2548f97bbf7ba43",
+        "receipt_reused": true
+      },
+      {
+        "module": "Submission.Supplier.P2M.Util",
+        "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+        "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+        "receipt_reused": true
+      }
+    ],
+    "stdout": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/a143dc2c70e3d22215ebcd39-1792301298641918000.kernel/stdout.log",
+    "stderr": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/a143dc2c70e3d22215ebcd39-1792301298641918000.kernel/stderr.log"
+  },
+  "change": "Correct four module-derived instance references and append the recursive axiom query. Preserve the complete original theorem telescope, conclusion and proof; no proof-source or definition changes. Await original single-worker make/kernel queue.",
+  "max_active_flt_jobs": 1,
+  "lean_threads": 1,
+  "full_original_complete": false,
+  "official_new_solve_credit": 0,
+  "stale_terminal_state_entries_excluded": [],
+  "active_import_closure_excluded": [
+    "Submission.Supplier.Theorems.Thm_AutomorphicForm_RealIwasawa_contDiff_and_exists_bound_iteratedFDeriv_kR_apply"
+  ],
+  "active_transitive_import_closure_size": 3,
+  "actual_live_descendant_sources": [
+    {
+      "pid": 58592,
+      "source": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/Theorems/Thm_AutomorphicForm_RealIwasawa_contDiff_and_exists_bound_iteratedFDeriv_kR_apply.lean"
+    }
+  ],
+  "all_four_canonical_adapted_source_card_modules_excluded": [
+    "P2M.Sol.S_AutomorphicForm_LocalIntertwining_integral_unramifiedWeylIntegrand_adicCompletion",
+    "Submission.Supplier.P2M.Sol.S_AutomorphicForm_LocalIntertwining_integral_unramifiedWeylIntegrand_adicCompletion",
+    "Submission.Supplier.Theorems.Thm_AutomorphicForm_LocalIntertwining_integral_unramifiedWeylIntegrand_adicCompletion",
+    "Theorems.Thm_AutomorphicForm_LocalIntertwining_integral_unramifiedWeylIntegrand_adicCompletion"
+  ],
+  "installed_at": "2026-10-18T05:32:59.285777+00:00",
+  "preexisting_difference": "--- pinned-supplier-card\n+++ current-baseline-card\n@@ -2,7 +2,7 @@\n import Definitions.Def_LanglandsTunnell_TateLocalZeta\n import P2M.Util\n import P2M.Sol.S_AutomorphicForm_LocalIntertwining_integral_unramifiedWeylIntegrand_adicCompletion\n-attribute [-instance] instFiniteResidueFieldAdicCompletionRingOfIntegersWithZeroMultiplicativeInt_definitions NumberField.instCompactSpaceAdicCompletionIntegers Rat.adicCompletion.locallyCompactSpace NumberField.instFiniteResidueFieldAdicCompletionIntegers instWeaklyLocallyCompactSpaceAdicCompletionRingOfIntegers_definitions instLocallyCompactSpaceAdicCompletionRingOfIntegers_definitions IsDedekindDomain.HeightOneSpectrum.adicCompletion.instIsDiscreteValuationRingSubtypeMemValuationSubringAdicCompletionIntegers_definitions IsDedekindDomain.HeightOneSpectrum.adicCompletion.instDimensionLEOneSubtypeMemValuationSubringAdicCompletionIntegers_definitions IsDedekindDomain.HeightOneSpectrum.instLiesOverSubtypeAdicCompletionMemValuationSubringAdicCompletionIntegersCompletionIdealAsIdeal IsDedekindDomain.HeightOneSpectrum.adicCompletion.instIsPrincipalIdealRingSubtypeMemValuationSubringAdicCompletionIntegers_definitions IsDedekindDomain.HeightOneSpectrum.adicCompletion.instIsDiscreteValuationRingSubtypeMemSubringIntegerWithZeroMultiplicativeInt_definitions IsDedekindDomain.HeightOneSpectrum.instIsRankOneDiscreteWithZeroMultiplicativeIntAdicCompletionV_definitions instCountableOfNumberField_definitions\n+attribute [-instance] instFiniteResidueFieldAdicCompletionRingOfIntegersWithZeroMultiplicativeInt_definitions NumberField.instCompactSpaceAdicCompletionIntegers Rat.adicCompletion.locallyCompactSpace NumberField.instFiniteResidueFieldAdicCompletionIntegers instWeaklyLocallyCompactSpaceAdicCompletionRingOfIntegers_definitions instLocallyCompactSpaceAdicCompletionRingOfIntegers_definitions IsDedekindDomain.HeightOneSpectrum.instLiesOverSubtypeAdicCompletionMemValuationSubringAdicCompletionIntegersCompletionIdealAsIdeal instCountableOfNumberField_definitions\n \n set_option autoImplicit false\n \n",
+  "supplier_repository": "anthropics/fermats-last-theorem",
+  "supplier_revision": "6e837e75355538c7f80bab5b956861e86c4eacc2"
+}
