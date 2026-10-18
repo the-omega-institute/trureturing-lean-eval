@@ -1,0 +1,16 @@
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_LanglandsTunnell_eq_zero_of_deriv_eq_div_add_mul_of_re_pos_of_isBigO_pow.lean:55:6: error: Tactic `rfl` failed: The left-hand side
+  0
+is not definitionally equal to the right-hand side
+  ((α / ↑t + β) * f t * sol α β t - f t * ((α / ↑t + β) * sol α β t)) / sol α β t ^ 2
+
+case e'_9
+α β : ℂ
+f : ℝ → ℂ
+hf : ∀ (t : ℝ), 0 < t → HasDerivAt f ((α / ↑t + β) * f t) t
+g : ℝ → ℂ := fun t => f t / sol α β t
+hg : g = fun t => f t / sol α β t
+t : ℝ
+ht : 0 < t
+h : HasDerivAt (f / sol α β) (((α / ↑t + β) * f t * sol α β t - f t * ((α / ↑t + β) * sol α β t)) / sol α β t ^ 2) t
+⊢ 0 = ((α / ↑t + β) * f t * sol α β t - f t * ((α / ↑t + β) * sol α β t)) / sol α β t ^ 2
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_LanglandsTunnell_eq_zero_of_deriv_eq_div_add_mul_of_re_pos_of_isBigO_pow.lean:56:4: error: No goals to be solved
