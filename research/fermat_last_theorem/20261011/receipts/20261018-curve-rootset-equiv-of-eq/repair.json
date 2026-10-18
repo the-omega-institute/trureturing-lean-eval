@@ -1,0 +1,271 @@
+{
+  "at": "2026-10-18T12:16:45.725112+00:00",
+  "name": "AlgebraicCurve_exists_isCurveOver_adjoin_range_eq_top_apply_algEquiv_eq_pow_of_pow_eq_one",
+  "candidate": "r1",
+  "card_candidate": "r1",
+  "source_replacements": [
+    [
+      "  letI : Algebra FI F := ((DescentAux.Lsub F p r \u03c3 e s).subtype.comp (algebraMap FI (DescentAux.Lsub F p r \u03c3 e s))).toAlgebra\n",
+      "  let : Algebra FI F := ((DescentAux.Lsub F p r \u03c3 e s).subtype.comp (algebraMap FI (DescentAux.Lsub F p r \u03c3 e s))).toAlgebra\n",
+      1
+    ],
+    [
+      "  haveI hsepK := DescentAux.isSeparable_adjoinK_F (k := k) (K := K) (F\u2080 := F\u2080) (F := F) p r hr hgen t\u2080\n",
+      "  have hsepK := DescentAux.isSeparable_adjoinK_F (k := k) (K := K) (F\u2080 := F\u2080) (F := F) p r hr hgen t\u2080\n",
+      1
+    ],
+    [
+      "  haveI := hsep\u2080\n",
+      "  have := hsep\u2080\n",
+      1
+    ],
+    [
+      "  haveI := hfin\u2080\n",
+      "  have := hfin\u2080\n",
+      1
+    ],
+    [
+      "  haveI : Algebra.EssFiniteType k F\u2080 := DescentAux.essFiniteType_of_adjoin_eq_top k F\u2080 s\u2080 hs\u2080\n",
+      "  have : Algebra.EssFiniteType k F\u2080 := DescentAux.essFiniteType_of_adjoin_eq_top k F\u2080 s\u2080 hs\u2080\n",
+      1
+    ],
+    [
+      "  haveI : CharP k p := (RingHom.charP_iff_charP (algebraMap k F\u2080) p).mpr hcharF\u2080\n",
+      "  have : CharP k p := (RingHom.charP_iff_charP (algebraMap k F\u2080) p).mpr hcharF\u2080\n",
+      1
+    ],
+    [
+      "  haveI hfact : Fact (Nat.card k = p ^ r) := \u27e8hcard\u27e9\n",
+      "  have hfact : Fact (Nat.card k = p ^ r) := \u27e8hcard\u27e9\n",
+      1
+    ],
+    [
+      "  haveI := hcharF\u2080\n",
+      "  have := hcharF\u2080\n",
+      1
+    ],
+    [
+      "  haveI := hcharK\n",
+      "  have := hcharK\n",
+      1
+    ],
+    [
+      "  haveI := hcharF\n",
+      "  have := hcharF\n",
+      1
+    ],
+    [
+      "  haveI : Fact p.Prime := \u27e8hp\u27e9\n",
+      "  have : Fact p.Prime := \u27e8hp\u27e9\n",
+      1
+    ],
+    [
+      "  haveI h3 : Algebra.EssFiniteType k (IntermediateField.adjoin k (s : Set E)) :=\n",
+      "  have h3 : Algebra.EssFiniteType k (IntermediateField.adjoin k (s : Set E)) :=\n",
+      1
+    ],
+    [
+      "  haveI h2 : Algebra.EssFiniteType (Algebra.adjoin k (s : Set E)) (IntermediateField.adjoin k (s : Set E)) :=\n",
+      "  have h2 : Algebra.EssFiniteType (Algebra.adjoin k (s : Set E)) (IntermediateField.adjoin k (s : Set E)) :=\n",
+      1
+    ],
+    [
+      "  haveI : Algebra.FiniteType k (Algebra.adjoin k (s : Set E)) :=\n",
+      "  have : Algebra.FiniteType k (Algebra.adjoin k (s : Set E)) :=\n",
+      1
+    ],
+    [
+      "  haveI : Algebra.FormallyUnramified K F := Algebra.FormallyUnramified.of_isSeparable K F\n",
+      "  have : Algebra.FormallyUnramified K F := Algebra.FormallyUnramified.of_isSeparable K F\n",
+      1
+    ],
+    [
+      "  haveI : Algebra.IsSeparable K F := inferInstance\n",
+      "  have : Algebra.IsSeparable K F := inferInstance\n",
+      1
+    ],
+    [
+      "  haveI : Algebra.IsAlgebraic K F := Algebra.IsAlgebraic.trans K (IntermediateField.adjoin K ({t} : Set F)) F\n",
+      "  have : Algebra.IsAlgebraic K F := Algebra.IsAlgebraic.trans K (IntermediateField.adjoin K ({t} : Set F)) F\n",
+      1
+    ],
+    [
+      "  haveI : Algebra.IsAlgebraic K (IntermediateField.adjoin K ({t} : Set F)) :=\n",
+      "  have : Algebra.IsAlgebraic K (IntermediateField.adjoin K ({t} : Set F)) :=\n",
+      1
+    ],
+    [
+      "  haveI : FiniteDimensional K (IntermediateField.adjoin K ({t} : Set F)) :=\n",
+      "  have : FiniteDimensional K (IntermediateField.adjoin K ({t} : Set F)) :=\n",
+      1
+    ],
+    [
+      "  haveI : Algebra.IsAlgebraic (IntermediateField.adjoin K ({t} : Set F)) F :=\n",
+      "  have : Algebra.IsAlgebraic (IntermediateField.adjoin K ({t} : Set F)) F :=\n",
+      1
+    ],
+    [
+      "  haveI := isSeparable_adjoinK_F (k := k) (K := K) (F\u2080 := F\u2080) (F := F) p r hr hgen t\u2080\n",
+      "  have := isSeparable_adjoinK_F (k := k) (K := K) (F\u2080 := F\u2080) (F := F) p r hr hgen t\u2080\n",
+      1
+    ],
+    [
+      "  haveI h2 : Algebra.IsSeparable Kt (IntermediateField.adjoin Kt (Set.range (algebraMap F\u2080 F))) :=\n",
+      "  have h2 : Algebra.IsSeparable Kt (IntermediateField.adjoin Kt (Set.range (algebraMap F\u2080 F))) :=\n",
+      1
+    ],
+    [
+      "  haveI := hsep\n",
+      "  have := hsep\n",
+      1
+    ],
+    [
+      "  haveI := hfin\n",
+      "  have := hfin\n",
+      1
+    ],
+    [
+      "  haveI h2 : Algebra.IsSeparable Kt (IntermediateField.adjoin Kt (GenL p r \u03c3 e s)) :=\n",
+      "  have h2 : Algebra.IsSeparable Kt (IntermediateField.adjoin Kt (GenL p r \u03c3 e s)) :=\n",
+      1
+    ],
+    [
+      "  haveI h1 : FiniteDimensional Kt (IntermediateField.adjoin Kt (GenL p r \u03c3 e s)) :=\n",
+      "  have h1 : FiniteDimensional Kt (IntermediateField.adjoin Kt (GenL p r \u03c3 e s)) :=\n",
+      1
+    ],
+    [
+      "  haveI : Finite (GenL p r \u03c3 e s) := (finite_GenL (K := K) p r \u03c3 e he hr s).to_subtype\n",
+      "  have : Finite (GenL p r \u03c3 e s) := (finite_GenL (K := K) p r \u03c3 e he hr s).to_subtype\n",
+      1
+    ],
+    [
+      "  letI : Algebra Kt F := f.toAlgebra\n",
+      "  let : Algebra Kt F := f.toAlgebra\n",
+      1
+    ],
+    [
+      "  haveI := finite_S (K := K) (F := F) p r hr one_pos\n",
+      "  have := finite_S (K := K) (F := F) p r hr one_pos\n",
+      1
+    ],
+    [
+      "  haveI := finite_S (K := K) (F := F) p r hr he\n",
+      "  have := finite_S (K := K) (F := F) p r hr he\n",
+      1
+    ],
+    [
+      "    (algebraMap F\u2080 F (algebraMap k F\u2080 c)) ^ p ^ r = algebraMap F\u2080 F (algebraMap k F\u2080 c) := by\n  haveI : Fintype k := Fintype.ofFinite k\n",
+      "    (algebraMap F\u2080 F (algebraMap k F\u2080 c)) ^ p ^ r = algebraMap F\u2080 F (algebraMap k F\u2080 c) := by\n  have : Fintype k := Fintype.ofFinite k\n",
+      1
+    ],
+    [
+      "  haveI := finite_S (K := K) (F := F) p r hr hi\n",
+      "  have := finite_S (K := K) (F := F) p r hr hi\n",
+      1
+    ],
+    [
+      "theorem frobF_apply (n : \u2115) (x : F) : frobF (F := F) p r n x = x ^ (p ^ r) ^ n := by\n  haveI : ExpChar F p := ExpChar.prime Fact.out\n",
+      "theorem frobF_apply (n : \u2115) (x : F) : frobF (F := F) p r n x = x ^ (p ^ r) ^ n := by\n  have : ExpChar F p := ExpChar.prime Fact.out\n",
+      1
+    ],
+    [
+      "  haveI := hF\n",
+      "  have := hF\n",
+      1
+    ],
+    [
+      "  haveI := hF\u2080\n",
+      "  have := hF\u2080\n",
+      1
+    ],
+    [
+      "  haveI : Fintype k := Fintype.ofFinite k\n",
+      "  have : Fintype k := Fintype.ofFinite k\n",
+      1
+    ],
+    [
+      "  haveI := hp\n",
+      "  have := hp\n",
+      1
+    ],
+    [
+      "  haveI : Algebra.EssFiniteType k A :=\n",
+      "  have : Algebra.EssFiniteType k A :=\n",
+      1
+    ],
+    [
+      "  haveI hfinA : FiniteDimensional (adjoin k ({x} : Set A)) A := finiteDimensional_adjoin_intermediate A x\n",
+      "  have hfinA : FiniteDimensional (adjoin k ({x} : Set A)) A := finiteDimensional_adjoin_intermediate A x\n",
+      1
+    ],
+    [
+      "  haveI : FiniteDimensional (adjoin k ({((x : A) : B)} : Set B)) B :=\n",
+      "  have : FiniteDimensional (adjoin k ({((x : A) : B)} : Set B)) B :=\n",
+      1
+    ],
+    [
+      "  haveI hT : Algebra.Transcendental k A := algebra_transcendental_of_tower k A B t ht\n",
+      "  have hT : Algebra.Transcendental k A := algebra_transcendental_of_tower k A B t ht\n",
+      1
+    ],
+    [
+      "  haveI : Algebra.IsAlgebraic A B := Algebra.IsAlgebraic.of_finite A B\n",
+      "  have : Algebra.IsAlgebraic A B := Algebra.IsAlgebraic.of_finite A B\n",
+      1
+    ],
+    [
+      "  haveI : FiniteDimensional KxB A' := IntermediateField.finiteDimensional_left (K := KxB) (F := A') (L := B)\n",
+      "  have : FiniteDimensional KxB A' := IntermediateField.finiteDimensional_left (K := KxB) (F := A') (L := B)\n",
+      1
+    ],
+    [
+      "  haveI : Algebra.IsAlgebraic k B := Algebra.IsAlgebraic.trans k A B\n",
+      "  have : Algebra.IsAlgebraic k B := Algebra.IsAlgebraic.trans k A B\n",
+      1
+    ],
+    [
+      "  haveI : Algebra.FormallyEtale A B := Algebra.FormallyEtale.of_isSeparable A B\n",
+      "  have : Algebra.FormallyEtale A B := Algebra.FormallyEtale.of_isSeparable A B\n",
+      1
+    ],
+    [
+      "Equiv.setCongr (coe_S_eq_rootSet (K := K) p r hr hn)",
+      "Set.equivOfEq (coe_S_eq_rootSet (K := K) p r hr hn)",
+      1
+    ]
+  ],
+  "card_replacements": [],
+  "supplier_repository": "anthropics/fermats-last-theorem",
+  "supplier_revision": "6e837e75355538c7f80bab5b956861e86c4eacc2",
+  "baseline_byte_identical_to_pinned_supplier": true,
+  "pinned_supplier_source_and_card_preserved": true,
+  "original_actual_errors": 1,
+  "original_actual_warnings": 45,
+  "actual_failure": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/official-layout/terminal-proof-repairs/20261018-curve-rootset-equiv-of-eq/previous-actual-failure",
+  "complete_original_proof_preserved": true,
+  "full_original_statement_and_hypotheses_preserved": true,
+  "public_solution_telescope_and_conclusion_byte_identical": true,
+  "card_proof_byte_identical_before_axiom_query": true,
+  "no_linter_suppression_added": true,
+  "change": "Preserve the original root-set equality proof and Nat.card_congr argument. Replace the obsolete Equiv.setCongr call with the current Set.equivOfEq API, which constructs the equivalence between the same equal-set subtypes. Migrate exactly the 45 logged haveI/letI bindings in proposition bodies using unique local source contexts. Preserve the complete original curve-descent proof, every assumption, the byte-identical public solution telescope/conclusion and the original card proof. No linter suppression. Original single-worker make/kernel queue only.",
+  "verification_pending": false,
+  "installed": true,
+  "max_active_flt_jobs": 1,
+  "lean_threads": 1,
+  "full_original_complete": false,
+  "official_new_solve_credit": 0,
+  "stale_terminal_state_entries_excluded": [],
+  "active_import_closure_excluded": [
+    "Submission.Supplier.P2M.Sol.S_LanglandsTunnell_TateLocal_exists_hasConductorExponentAt_le_three_of_pow_two_eq_one"
+  ],
+  "active_transitive_import_closure_size": 7,
+  "actual_live_descendant_sources": [],
+  "all_four_canonical_adapted_source_card_modules_excluded": [
+    "P2M.Sol.S_AlgebraicCurve_exists_isCurveOver_adjoin_range_eq_top_apply_algEquiv_eq_pow_of_pow_eq_one",
+    "Submission.Supplier.P2M.Sol.S_AlgebraicCurve_exists_isCurveOver_adjoin_range_eq_top_apply_algEquiv_eq_pow_of_pow_eq_one",
+    "Submission.Supplier.Theorems.Thm_AlgebraicCurve_exists_isCurveOver_adjoin_range_eq_top_apply_algEquiv_eq_pow_of_pow_eq_one",
+    "Theorems.Thm_AlgebraicCurve_exists_isCurveOver_adjoin_range_eq_top_apply_algEquiv_eq_pow_of_pow_eq_one"
+  ],
+  "installed_at": "2026-10-18T12:16:46.002332+00:00"
+}
