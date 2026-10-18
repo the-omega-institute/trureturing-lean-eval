@@ -1,0 +1,51 @@
+{
+  "at": "2026-10-18T12:45:42.361708+00:00",
+  "name": "MeasureTheory_Lp_finiteDimensional_and_finrank_le_of_forall_ae_norm_le_mul_norm",
+  "candidate": "r1",
+  "card_candidate": "r1",
+  "source_replacements": [
+    [
+      "(memLp_two_iff_integrable_sq_norm (Lp.memLp \u03c6).1).mp (Lp.memLp \u03c6)",
+      "(memLp_two_iff_integrable_sq_norm (Lp.aestronglyMeasurable \u03c6)).mp (Lp.memLp \u03c6)",
+      1
+    ],
+    [
+      "    haveI : FiniteDimensional \ud835\udd5c W := FiniteDimensional.span_of_finite \ud835\udd5c (Set.finite_range _)",
+      "    have : FiniteDimensional \ud835\udd5c W := FiniteDimensional.span_of_finite \ud835\udd5c (Set.finite_range _)",
+      1
+    ]
+  ],
+  "card_replacements": [],
+  "supplier_repository": "anthropics/fermats-last-theorem",
+  "supplier_revision": "6e837e75355538c7f80bab5b956861e86c4eacc2",
+  "baseline_byte_identical_to_pinned_supplier": true,
+  "pinned_supplier_source_and_card_preserved": true,
+  "original_actual_errors": 1,
+  "original_actual_warnings": 1,
+  "actual_failure": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/official-layout/terminal-proof-repairs/20261018-lp-godement-aestrongly-measurable/previous-actual-failure",
+  "complete_original_proof_preserved": true,
+  "full_original_statement_and_hypotheses_preserved": true,
+  "public_solution_telescope_and_conclusion_byte_identical": true,
+  "card_proof_byte_identical_before_axiom_query": true,
+  "no_linter_suppression_added": true,
+  "change": "Preserve the complete original Godement finite-dimensionality and sharp finrank-bound proof, including the orthonormal-family integral bound and finite-rank argument. Current MemLp only records finite eLpNorm; obtain the same already-available measurability of the Lp representative from Lp.aestronglyMeasurable instead of the obsolete (Lp.memLp \u03c6).1 projection. Migrate the single logged haveI in a proposition proof to have. Public statements, all assumptions and card unchanged; no linter suppression; original single-worker make/kernel queue only.",
+  "verification_pending": false,
+  "installed": true,
+  "max_active_flt_jobs": 1,
+  "lean_threads": 1,
+  "full_original_complete": false,
+  "official_new_solve_credit": 0,
+  "stale_terminal_state_entries_excluded": [],
+  "active_import_closure_excluded": [
+    "Submission.Supplier.P2M.Sol.S_MeasureTheory_Measure_exists_isHaarMeasure_map_continuousMulEquiv_eq_prod"
+  ],
+  "active_transitive_import_closure_size": 2,
+  "actual_live_descendant_sources": [],
+  "all_four_canonical_adapted_source_card_modules_excluded": [
+    "P2M.Sol.S_MeasureTheory_Lp_finiteDimensional_and_finrank_le_of_forall_ae_norm_le_mul_norm",
+    "Submission.Supplier.P2M.Sol.S_MeasureTheory_Lp_finiteDimensional_and_finrank_le_of_forall_ae_norm_le_mul_norm",
+    "Submission.Supplier.Theorems.Thm_MeasureTheory_Lp_finiteDimensional_and_finrank_le_of_forall_ae_norm_le_mul_norm",
+    "Theorems.Thm_MeasureTheory_Lp_finiteDimensional_and_finrank_le_of_forall_ae_norm_le_mul_norm"
+  ],
+  "installed_at": "2026-10-18T12:45:42.467594+00:00"
+}
