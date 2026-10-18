@@ -1,0 +1,51 @@
+{
+  "at": "2026-10-18T06:36:15.479823+00:00",
+  "name": "AutomorphicForm_IsKfSmooth_exists_isCompact_isOpen_eq_inf_forall_apply_mul_eq",
+  "candidate": "r1",
+  "card_candidate": "r1",
+  "source_replacements": [
+    [
+      "      convert AutomorphicForm.isCompact_levelOne_inf_finiteAdelicGL2Subgroup F \u22a4 using 1\n      exact this\n",
+      "      convert AutomorphicForm.isCompact_levelOne_inf_finiteAdelicGL2Subgroup F \u22a4 using 1\n",
+      1
+    ]
+  ],
+  "card_replacements": [],
+  "supplier_repository": "anthropics/fermats-last-theorem",
+  "supplier_revision": "6e837e75355538c7f80bab5b956861e86c4eacc2",
+  "baseline_byte_identical_to_pinned_supplier": true,
+  "pinned_supplier_source_and_card_preserved": true,
+  "original_actual_errors": 1,
+  "original_actual_warnings": 0,
+  "actual_failure": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/official-layout/terminal-proof-repairs/20261018-kf-smooth-convert-closed-goal/previous-actual-failure",
+  "complete_original_proof_preserved": true,
+  "full_original_statement_and_hypotheses_preserved": true,
+  "public_solution_and_card_telescope_conclusion_proof_byte_identical_before_axiom_query": true,
+  "no_linter_suppression_added": true,
+  "fixed_pin_api_evidence": "Actual kernel diagnostic at adapted source line 68: No goals to be solved. The preceding convert at canonical line 59 already closes the compactness goal.",
+  "change": "Remove only exact this after the convert that already closes its goal. Preserve all helper declarations, the complete original public solution/card proof and all hypotheses. Append recursive source/card axiom queries. Await original single-worker make/kernel queue.",
+  "verification_pending": false,
+  "installed": true,
+  "max_active_flt_jobs": 1,
+  "lean_threads": 1,
+  "full_original_complete": false,
+  "official_new_solve_credit": 0,
+  "stale_terminal_state_entries_excluded": [
+    {
+      "module": "Submission.Supplier.P2M.Sol.S_AutomorphicForm_isKfSmooth_unipotentAverage",
+      "wrapper_pid": 89163,
+      "make_exit": 0,
+      "terminal": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/31442683f7582d20849bdf6c-1792305285018213000.make-terminal.json"
+    }
+  ],
+  "active_import_closure_excluded": [],
+  "active_transitive_import_closure_size": 0,
+  "actual_live_descendant_sources": [],
+  "all_four_canonical_adapted_source_card_modules_excluded": [
+    "P2M.Sol.S_AutomorphicForm_IsKfSmooth_exists_isCompact_isOpen_eq_inf_forall_apply_mul_eq",
+    "Submission.Supplier.P2M.Sol.S_AutomorphicForm_IsKfSmooth_exists_isCompact_isOpen_eq_inf_forall_apply_mul_eq",
+    "Submission.Supplier.Theorems.Thm_AutomorphicForm_IsKfSmooth_exists_isCompact_isOpen_eq_inf_forall_apply_mul_eq",
+    "Theorems.Thm_AutomorphicForm_IsKfSmooth_exists_isCompact_isOpen_eq_inf_forall_apply_mul_eq"
+  ],
+  "installed_at": "2026-10-18T06:36:15.598712+00:00"
+}
