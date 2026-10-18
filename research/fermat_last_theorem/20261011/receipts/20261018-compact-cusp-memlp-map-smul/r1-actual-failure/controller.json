@@ -1,0 +1,146 @@
+{
+  "sha256": "97f0acd8897aeadcbde2c95a887ca9478ce8c0050389bc62e62d9f2b96047e06",
+  "exit": 1,
+  "empty_output_retry_done": false,
+  "source_sha256_after": "97f0acd8897aeadcbde2c95a887ca9478ce8c0050389bc62e62d9f2b96047e06",
+  "source_unchanged": true,
+  "olean_sha256": null,
+  "seconds": 129.60667074999947,
+  "pid": 98814,
+  "command": [
+    "/Users/macstudio/.local/omega-shims/lean",
+    "-j1",
+    "--trust=0",
+    "-Ddebug.skipKernelTC=false",
+    "-R",
+    "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src",
+    "-o",
+    "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-build/lib/lean/Submission/Supplier/P2M/Sol/S_AutomorphicForm_exists_weightOne_cuspForm_of_isCusp_viaCompactCuspNotion.olean",
+    "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_AutomorphicForm_exists_weightOne_cuspForm_of_isCusp_viaCompactCuspNotion.lean"
+  ],
+  "make_wrapper_pid": 95853,
+  "make_exit": 2,
+  "make_entry_failed": false,
+  "cache_binding_valid": true,
+  "canonical_make_running_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/2cbaac881cbee3d40be3d1e1-1792319373452096000.make-running.json",
+  "canonical_make_terminal_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/2cbaac881cbee3d40be3d1e1-1792319373452096000.make-terminal.json",
+  "kernel_terminal_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/2cbaac881cbee3d40be3d1e1-1792319373452096000.kernel/result.json",
+  "direct_dependencies": [
+    {
+      "module": "Submission.Supplier.Definitions.Def_AutomorphicForm_ArchType",
+      "source_sha256": "daaf9156a04625301a95c37fb3ff7d29d36b02262cfbf3d8006ad9968e84feec",
+      "object_sha256": "acc039653f113eb1fea6daaeb5a1869b0dcdde23d2ec7af7501aece272749cb1",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Definitions.Def_AutomorphicForm_SiegelCoordinates",
+      "source_sha256": "939f9d464c4d40b480620cbc4b7112db4e2f63c43c62cd175a2480e1eccf96c2",
+      "object_sha256": "ba67268fcd5c8412e7c46a4cf7d932e8349347a0d483ad8a8d994b5ada79fab5",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Definitions.Def_AutomorphicForm_CentreCutSiegelSet",
+      "source_sha256": "259fd965bbbe66e7faa8cbfb22eb3a3ffe3da71830f68b3a67de2b2f7679464a",
+      "object_sha256": "00b3f3861fd90f88136eee7530c706e48be791dca7baea79fe9fd1c90f76e788",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Definitions.Def_AdelicDock_LocalEmbedding",
+      "source_sha256": "8dd7d0ec1dfab8c88a8cc7de14be8d9a65ae4ab5458530bb25f42f6742b4ae47",
+      "object_sha256": "0d9a261afbc1ecca88149032c76920e6a9b20319ef4f272e47f0f73f5fd181f2",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Definitions.Def_NumberField_AdelicHaar",
+      "source_sha256": "094c4798004b34b5de79ac153482cada33fd2d568217e482f57ae64130a67c5f",
+      "object_sha256": "56f8cb3975fb1e2f7c289b534529067dad86940b3623882fff7ad256240b9f63",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Definitions.Def_NumberField_AdelicBox",
+      "source_sha256": "286d2f475bce1fe1d29bd907480fa7eb9f67b47ad961d1f789765d2b9a9f5d3f",
+      "object_sha256": "f341d3e7fb4d2df5316ff12651a8c9789cdfe510c63fe8ddceb3c5ee4a4680a8",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Definitions.Def_AutomorphicForm_ArithCuspRealization",
+      "source_sha256": "5a3ef654a29a4d7f6174c7e5b9514add12fad471520fb0c2a3642646181c40a4",
+      "object_sha256": "a7f961d43ec4af7687c2c0f9c60db1464eb7c59529e76d8aab4622f188b07d76",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Definitions.Def_AutomorphicForm_ProductionPinsCompact",
+      "source_sha256": "bcdc630ede58740a62ace2e75b10afa439cb880285cdb66353f6ad5144dc50a0",
+      "object_sha256": "0c3bac3884304abf80ddef66877a5dbc9b051d7b631fbbeff0d55c5be61cd745",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Definitions.Def_AutomorphicForm_ArchWeightCharTransport",
+      "source_sha256": "a12764f168e208d7e5e5b2802a44f3de24a54bba0d525b55116a6058efc99bed",
+      "object_sha256": "4abd87281ea8ffef058f4f9c00fbff229f987f161fdd617001ee7426a6e227d5",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Theorems.Thm_NumberField_AdelicLevel_exists_globalPoints_mul_mem_levelOne_rat",
+      "source_sha256": "79b2e90ffbc6e5c015ad8fc4fc720a126634e18eadf092000420ee3c6ac7f83a",
+      "object_sha256": "7ad59f62321ad80001374071aa685c1fb8cccedcffec62fcfab79e9558677289",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Definitions.Def_LanglandsTunnell_RealizationDictionary",
+      "source_sha256": "6faf632f93e0eddcbc1e7764659d76d469de60a7b4f6acc5b5fa8b4961ca79dc",
+      "object_sha256": "c754fa4070812fd275e3338c8d701542702601e2f385b66af1d2aa1c9a47e408",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Definitions.Def_ModularForm_EisensteinChiNegThree",
+      "source_sha256": "bded5e31ec68c0abd396b39bdbbc8ce4dd08abf28ff2fe3cd4f59ec0bde1c28f",
+      "object_sha256": "9e2b14c3ad597139312d626ea554588587e5d9c22f77e277d9d97ce1b6ab8be8",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Definitions.Def_ModularForm_HeckeOperator",
+      "source_sha256": "20baff864009cb329b3acc99122be19f306fd99643f79b447f7e67cfac37301c",
+      "object_sha256": "fce69e9b4d07765a4f4e03a9ed858c6aed52c89e920248e5bf2467b64a8f9760",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Definitions.Def_LocalLanglands_HeckeCosetLocal",
+      "source_sha256": "92dfebaaeb01ad17036044c7b1a11bcf769cfa10ec0c7e4c9c28b14e112b8b49",
+      "object_sha256": null,
+      "receipt_reused": false
+    },
+    {
+      "module": "Submission.Supplier.Theorems.Thm_HeckeIntegralSeam_heckeCosetSum_eq_of_isHeckeCosetSystem",
+      "source_sha256": "db8f317b8c757a85fce34d0a38925f80e072a8e503b4b2cc0cd04c249c743b5b",
+      "object_sha256": "ae76a652aac71673e253f8f9d0397cf4021753e49b9fd2acf69589285cae9866",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Definitions.Def_CuspForm_IntegralLattice",
+      "source_sha256": "46bcb52112c32d515491e282319947f81a8bc83e29670ac6782e0e049e526d95",
+      "object_sha256": "d78184052c8c5f0f5eb2effc38515a9940b36320799a2d0b50fef57ac07b0ccd",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Definitions.Def_FormalHecke_Eigensystem",
+      "source_sha256": "d5f1b4df2b091799f4f11026981abcda581eff505e374c403a9821358edc5c36",
+      "object_sha256": "b4bb8027626e450ceb38828149abc655bb5cec8ae32a55586cdea112da579cdb",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Definitions.Def_AutomorphicForm_ViaCompactCuspNotion",
+      "source_sha256": "66146d708254a6098d0d2afb1801d98834f7c2e419be154995d11925db0cc298",
+      "object_sha256": "63da8bae7613df8bc9d93b65c2ecb0afff5bd64c0c285c585f32cc326926d3c7",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.P2M.Util",
+      "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+      "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+      "receipt_reused": true
+    }
+  ],
+  "stdout": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/2cbaac881cbee3d40be3d1e1-1792319373452096000.kernel/stdout.log",
+  "stderr": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/2cbaac881cbee3d40be3d1e1-1792319373452096000.kernel/stderr.log"
+}

@@ -1,0 +1,186 @@
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_AutomorphicForm_exists_weightOne_cuspForm_of_isCusp_viaCompactCuspNotion.lean:2350:10: error: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  Measure.map (⇑(archCollapseEquiv w hw).symm.toHomeomorph) (?m.1302 • ?m.1329)
+in the target expression
+  (↑c₂ •
+          Measure.map (⇑(archCollapseEquiv w hw).symm)
+            (↑c₃ • Measure.map iwasawaParam (borelHaar₃.prod haarRowIso))).prod
+      finGLHaar =
+    (↑c₂ * ↑c₃) • Measure.map (Prod.map (⇑(archCollapseEquiv w hw).symm ∘ iwasawaParam) id) μ_P
+
+w : InfinitePlace ℚ
+hw : w.IsReal
+φ : AdelicGL2 (𝓞 ℚ) ℚ → ℂ
+homega :
+  ∀ (t : ℝˣ),
+    0 < ↑t →
+      ∀ (g : AdelicGL2 (𝓞 ℚ) ℚ),
+        φ
+            ((adelicArchGLInclAt ℚ w)
+                ((Matrix.GeneralLinearGroup.map (ringEquivRealOfIsReal hw).symm.toRingHom)
+                  ((Matrix.GeneralLinearGroup.scalar (Fin 2)) t)) *
+              g) =
+          ↑↑t * φ g
+L : Ideal (𝓞 ℚ)
+hL : L ≠ ⊥
+hlev : ∀ (g : AdelicGL2 (𝓞 ℚ) ℚ), ∀ u ∈ levelOne (𝓞 ℚ) ℚ L ⊓ (glArch (𝓞 ℚ) ℚ).ker, φ (g * u) = φ g
+hKinf :
+  ∀ (k : GL (Fin 2) w.Completion),
+    IsRowIsometry k → (↑k).det = 1 → ∀ (g : AdelicGL2 (𝓞 ℚ) ℚ), ‖φ (g * (adelicArchGLInclAt ℚ w) k)‖ = ‖φ g‖
+h : ↥(finiteIntegralGL2 (𝓞 ℚ) ℚ)
+this✝¹² : MeasurableSpace (GL (Fin 2) (AdeleRing (𝓞 ℚ) ℚ)) := glBorel (Fin 2) (𝓞 ℚ) ℚ
+this✝¹¹ : BorelSpace (GL (Fin 2) (AdeleRing (𝓞 ℚ) ℚ))
+this✝¹⁰ : MeasurableSpace (GL (Fin 2) (InfiniteAdeleRing ℚ)) := archGLBorel
+this✝⁹ : BorelSpace (GL (Fin 2) (InfiniteAdeleRing ℚ))
+this✝⁸ : MeasurableSpace (GL (Fin 2) (FiniteAdeleRing (𝓞 ℚ) ℚ)) := finGLBorel
+this✝⁷ : BorelSpace (GL (Fin 2) (FiniteAdeleRing (𝓞 ℚ) ℚ))
+this✝⁶ : MeasurableSpace (GL (Fin 2) ℝ) := realGLBorel
+this✝⁵ : BorelSpace (GL (Fin 2) ℝ)
+this✝⁴ : MeasurableSpace ↥(rowIsometrySubgroup ℝ) := rowIsoBorel
+this✝³ : BorelSpace ↥(rowIsometrySubgroup ℝ)
+this✝² : SigmaFinite archGLHaar
+this✝¹ : SigmaFinite finGLHaar
+this✝ : finGLHaar.IsHaarMeasure
+D : Set (AdelicGL2 (𝓞 ℚ) ℚ) := centreCutSiegelSet ℚ (1 / 2) 1 (1 / 2) 2
+hφ : MemLp φ 2 ((adelicGLHaar (Fin 2) (𝓞 ℚ) ℚ).restrict D)
+hD_def : D = centreCutSiegelSet ℚ (1 / 2) 1 (1 / 2) 2
+hDmeas : MeasurableSet D
+hJ : ∫⁻ (g : GL (Fin 2) (AdeleRing (𝓞 ℚ) ℚ)) in D, ‖φ g‖ₑ ^ 2 ∂adelicGLHaar (Fin 2) (𝓞 ℚ) ℚ < ⊤
+c₁ : NNReal
+hc₁ : 0 < c₁
+hG1 : adelicGLHaar (Fin 2) (𝓞 ℚ) ℚ = c₁ • Measure.map (⇑adelicGLProdEquiv.symm) (archGLHaar.prod finGLHaar)
+c₂ : NNReal
+hc₂ : 0 < c₂
+hG2 : archGLHaar = c₂ • Measure.map (⇑(archCollapseEquiv w hw).symm) realGLHaar
+Box : Set (ℝ × ℝ) := Icc 0 1 ×ˢ Ici (1 / 2)
+hBox_def : Box = Icc 0 1 ×ˢ Ici (1 / 2)
+Fh : ℝ × ℝ → ℝ := fun p => ‖descentFn w hw φ h (↑p.1 + ↑p.2 * Complex.I)‖ ^ 2 * p.2⁻¹
+hFh_def : Fh = fun p => ‖descentFn w hw φ h (↑p.1 + ↑p.2 * Complex.I)‖ ^ 2 * p.2⁻¹
+hFh_nonneg : ∀ p ∈ Box, 0 ≤ Fh p
+c₃ : NNReal
+hc₃ : 0 < c₃
+hbake : realGLHaar = c₃ • iwasawaHaar
+this : SigmaFinite realGLHaar
+E : ((ℝ × ℝ × ℝ) × ↥(rowIsometrySubgroup ℝ)) × GL (Fin 2) (FiniteAdeleRing (𝓞 ℚ) ℚ) → AdelicGL2 (𝓞 ℚ) ℚ :=
+  fun p =>
+    (adelicArchGLInclAt ℚ w)
+        ((Matrix.GeneralLinearGroup.map (ringEquivRealOfIsReal hw).symm.toRingHom) (iwasawaParam p.1)) *
+      (finEmbed (𝓞 ℚ) ℚ) p.2
+hE_def :
+  E = fun p =>
+    (adelicArchGLInclAt ℚ w)
+        ((Matrix.GeneralLinearGroup.map (ringEquivRealOfIsReal hw).symm.toRingHom) (iwasawaParam p.1)) *
+      (finEmbed (𝓞 ℚ) ℚ) p.2
+hE_eq : E = ⇑adelicGLProdEquiv.symm ∘ Prod.map (⇑(archCollapseEquiv w hw).symm ∘ iwasawaParam) id
+hE2Ψ_meas : Measurable (⇑(archCollapseEquiv w hw).symm ∘ iwasawaParam)
+μ_P : Measure (((ℝ × ℝ × ℝ) × ↥(rowIsometrySubgroup ℝ)) × GL (Fin 2) (FiniteAdeleRing (𝓞 ℚ) ℚ)) :=
+  (borelHaar₃.prod haarRowIso).prod finGLHaar
+hμP_def : μ_P = (borelHaar₃.prod haarRowIso).prod finGLHaar
+hE_meas : Measurable E
+hG1' : adelicGLHaar (Fin 2) (𝓞 ℚ) ℚ = ↑c₁ • Measure.map (⇑adelicGLProdEquiv.symm) (archGLHaar.prod finGLHaar)
+hG2' : archGLHaar = ↑c₂ • Measure.map (⇑(archCollapseEquiv w hw).symm) realGLHaar
+hbake' : realGLHaar = ↑c₃ • iwasawaHaar
+hiw : iwasawaHaar = Measure.map iwasawaParam (borelHaar₃.prod haarRowIso)
+step1 :
+  Measure.map (⇑(archCollapseEquiv w hw).symm) (Measure.map iwasawaParam (borelHaar₃.prod haarRowIso)) =
+    Measure.map (⇑(archCollapseEquiv w hw).symm ∘ iwasawaParam) (borelHaar₃.prod haarRowIso)
+⊢ (↑c₂ •
+          Measure.map (⇑(archCollapseEquiv w hw).symm)
+            (↑c₃ • Measure.map iwasawaParam (borelHaar₃.prod haarRowIso))).prod
+      finGLHaar =
+    (↑c₂ * ↑c₃) • Measure.map (Prod.map (⇑(archCollapseEquiv w hw).symm ∘ iwasawaParam) id) μ_P
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_AutomorphicForm_exists_weightOne_cuspForm_of_isCusp_viaCompactCuspNotion.lean:2363:8: error: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  Measure.map (⇑adelicGLProdEquiv.symm.toHomeomorph) (?m.1441 • ?m.1468)
+in the target expression
+  ↑c₁ •
+      Measure.map (⇑adelicGLProdEquiv.symm)
+        ((↑c₂ * ↑c₃) • Measure.map (Prod.map (⇑(archCollapseEquiv w hw).symm ∘ iwasawaParam) id) μ_P) =
+    (↑c₁ * ↑c₂ * ↑c₃) • Measure.map E μ_P
+
+w : InfinitePlace ℚ
+hw : w.IsReal
+φ : AdelicGL2 (𝓞 ℚ) ℚ → ℂ
+homega :
+  ∀ (t : ℝˣ),
+    0 < ↑t →
+      ∀ (g : AdelicGL2 (𝓞 ℚ) ℚ),
+        φ
+            ((adelicArchGLInclAt ℚ w)
+                ((Matrix.GeneralLinearGroup.map (ringEquivRealOfIsReal hw).symm.toRingHom)
+                  ((Matrix.GeneralLinearGroup.scalar (Fin 2)) t)) *
+              g) =
+          ↑↑t * φ g
+L : Ideal (𝓞 ℚ)
+hL : L ≠ ⊥
+hlev : ∀ (g : AdelicGL2 (𝓞 ℚ) ℚ), ∀ u ∈ levelOne (𝓞 ℚ) ℚ L ⊓ (glArch (𝓞 ℚ) ℚ).ker, φ (g * u) = φ g
+hKinf :
+  ∀ (k : GL (Fin 2) w.Completion),
+    IsRowIsometry k → (↑k).det = 1 → ∀ (g : AdelicGL2 (𝓞 ℚ) ℚ), ‖φ (g * (adelicArchGLInclAt ℚ w) k)‖ = ‖φ g‖
+h : ↥(finiteIntegralGL2 (𝓞 ℚ) ℚ)
+this✝¹² : MeasurableSpace (GL (Fin 2) (AdeleRing (𝓞 ℚ) ℚ)) := glBorel (Fin 2) (𝓞 ℚ) ℚ
+this✝¹¹ : BorelSpace (GL (Fin 2) (AdeleRing (𝓞 ℚ) ℚ))
+this✝¹⁰ : MeasurableSpace (GL (Fin 2) (InfiniteAdeleRing ℚ)) := archGLBorel
+this✝⁹ : BorelSpace (GL (Fin 2) (InfiniteAdeleRing ℚ))
+this✝⁸ : MeasurableSpace (GL (Fin 2) (FiniteAdeleRing (𝓞 ℚ) ℚ)) := finGLBorel
+this✝⁷ : BorelSpace (GL (Fin 2) (FiniteAdeleRing (𝓞 ℚ) ℚ))
+this✝⁶ : MeasurableSpace (GL (Fin 2) ℝ) := realGLBorel
+this✝⁵ : BorelSpace (GL (Fin 2) ℝ)
+this✝⁴ : MeasurableSpace ↥(rowIsometrySubgroup ℝ) := rowIsoBorel
+this✝³ : BorelSpace ↥(rowIsometrySubgroup ℝ)
+this✝² : SigmaFinite archGLHaar
+this✝¹ : SigmaFinite finGLHaar
+this✝ : finGLHaar.IsHaarMeasure
+D : Set (AdelicGL2 (𝓞 ℚ) ℚ) := centreCutSiegelSet ℚ (1 / 2) 1 (1 / 2) 2
+hφ : MemLp φ 2 ((adelicGLHaar (Fin 2) (𝓞 ℚ) ℚ).restrict D)
+hD_def : D = centreCutSiegelSet ℚ (1 / 2) 1 (1 / 2) 2
+hDmeas : MeasurableSet D
+hJ : ∫⁻ (g : GL (Fin 2) (AdeleRing (𝓞 ℚ) ℚ)) in D, ‖φ g‖ₑ ^ 2 ∂adelicGLHaar (Fin 2) (𝓞 ℚ) ℚ < ⊤
+c₁ : NNReal
+hc₁ : 0 < c₁
+hG1 : adelicGLHaar (Fin 2) (𝓞 ℚ) ℚ = c₁ • Measure.map (⇑adelicGLProdEquiv.symm) (archGLHaar.prod finGLHaar)
+c₂ : NNReal
+hc₂ : 0 < c₂
+hG2 : archGLHaar = c₂ • Measure.map (⇑(archCollapseEquiv w hw).symm) realGLHaar
+Box : Set (ℝ × ℝ) := Icc 0 1 ×ˢ Ici (1 / 2)
+hBox_def : Box = Icc 0 1 ×ˢ Ici (1 / 2)
+Fh : ℝ × ℝ → ℝ := fun p => ‖descentFn w hw φ h (↑p.1 + ↑p.2 * Complex.I)‖ ^ 2 * p.2⁻¹
+hFh_def : Fh = fun p => ‖descentFn w hw φ h (↑p.1 + ↑p.2 * Complex.I)‖ ^ 2 * p.2⁻¹
+hFh_nonneg : ∀ p ∈ Box, 0 ≤ Fh p
+c₃ : NNReal
+hc₃ : 0 < c₃
+hbake : realGLHaar = c₃ • iwasawaHaar
+this : SigmaFinite realGLHaar
+E : ((ℝ × ℝ × ℝ) × ↥(rowIsometrySubgroup ℝ)) × GL (Fin 2) (FiniteAdeleRing (𝓞 ℚ) ℚ) → AdelicGL2 (𝓞 ℚ) ℚ :=
+  fun p =>
+    (adelicArchGLInclAt ℚ w)
+        ((Matrix.GeneralLinearGroup.map (ringEquivRealOfIsReal hw).symm.toRingHom) (iwasawaParam p.1)) *
+      (finEmbed (𝓞 ℚ) ℚ) p.2
+hE_def :
+  E = fun p =>
+    (adelicArchGLInclAt ℚ w)
+        ((Matrix.GeneralLinearGroup.map (ringEquivRealOfIsReal hw).symm.toRingHom) (iwasawaParam p.1)) *
+      (finEmbed (𝓞 ℚ) ℚ) p.2
+hE_eq : E = ⇑adelicGLProdEquiv.symm ∘ Prod.map (⇑(archCollapseEquiv w hw).symm ∘ iwasawaParam) id
+hE2Ψ_meas : Measurable (⇑(archCollapseEquiv w hw).symm ∘ iwasawaParam)
+μ_P : Measure (((ℝ × ℝ × ℝ) × ↥(rowIsometrySubgroup ℝ)) × GL (Fin 2) (FiniteAdeleRing (𝓞 ℚ) ℚ)) :=
+  (borelHaar₃.prod haarRowIso).prod finGLHaar
+hμP_def : μ_P = (borelHaar₃.prod haarRowIso).prod finGLHaar
+hE_meas : Measurable E
+hG1' : adelicGLHaar (Fin 2) (𝓞 ℚ) ℚ = ↑c₁ • Measure.map (⇑adelicGLProdEquiv.symm) (archGLHaar.prod finGLHaar)
+hG2' : archGLHaar = ↑c₂ • Measure.map (⇑(archCollapseEquiv w hw).symm) realGLHaar
+hbake' : realGLHaar = ↑c₃ • iwasawaHaar
+hiw : iwasawaHaar = Measure.map iwasawaParam (borelHaar₃.prod haarRowIso)
+haf :
+  archGLHaar.prod finGLHaar =
+    (↑c₂ * ↑c₃) • Measure.map (Prod.map (⇑(archCollapseEquiv w hw).symm ∘ iwasawaParam) id) μ_P
+step2 :
+  Measure.map (⇑adelicGLProdEquiv.symm)
+      (Measure.map (Prod.map (⇑(archCollapseEquiv w hw).symm ∘ iwasawaParam) id) μ_P) =
+    Measure.map E μ_P
+⊢ ↑c₁ •
+      Measure.map (⇑adelicGLProdEquiv.symm)
+        ((↑c₂ * ↑c₃) • Measure.map (Prod.map (⇑(archCollapseEquiv w hw).symm ∘ iwasawaParam) id) μ_P) =
+    (↑c₁ * ↑c₂ * ↑c₃) • Measure.map E μ_P
+'P2MW.S_AutomorphicForm_exists_weightOne_cuspForm_of_isCusp_viaCompactCuspNotion.solution' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
