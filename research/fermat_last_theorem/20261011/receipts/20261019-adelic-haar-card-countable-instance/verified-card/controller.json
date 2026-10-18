@@ -1,0 +1,50 @@
+{
+  "sha256": "085fc9bd0aa136817dcccc956064022625ef4b200a18485cc5a86ea51b78da02",
+  "exit": 0,
+  "empty_output_retry_done": false,
+  "source_sha256_after": "085fc9bd0aa136817dcccc956064022625ef4b200a18485cc5a86ea51b78da02",
+  "source_unchanged": true,
+  "olean_sha256": "8ea956dbb482c8d88e774eb843e54644ec50d30faf32f0c16250ea6f66875914",
+  "seconds": 97.89798770900234,
+  "pid": 17323,
+  "command": [
+    "/Users/macstudio/.local/omega-shims/lean",
+    "-j1",
+    "--trust=0",
+    "-Ddebug.skipKernelTC=false",
+    "-R",
+    "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src",
+    "-o",
+    "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-build/lib/lean/Submission/Supplier/Theorems/Thm_NumberField_AdelicFourier_exists_smul_eq_of_isAddHaarMeasure_adeleRing.olean",
+    "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/Theorems/Thm_NumberField_AdelicFourier_exists_smul_eq_of_isAddHaarMeasure_adeleRing.lean"
+  ],
+  "make_wrapper_pid": 11973,
+  "make_exit": 0,
+  "make_entry_failed": false,
+  "cache_binding_valid": true,
+  "canonical_make_running_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/18126c69f05b6161a9d9ec51-1792356434707671000.make-running.json",
+  "canonical_make_terminal_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/18126c69f05b6161a9d9ec51-1792356434707671000.make-terminal.json",
+  "kernel_terminal_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/18126c69f05b6161a9d9ec51-1792356434707671000.kernel/result.json",
+  "direct_dependencies": [
+    {
+      "module": "Submission.Supplier.Definitions.Def_NumberField_AdelicHaar",
+      "source_sha256": "094c4798004b34b5de79ac153482cada33fd2d568217e482f57ae64130a67c5f",
+      "object_sha256": "56f8cb3975fb1e2f7c289b534529067dad86940b3623882fff7ad256240b9f63",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.P2M.Util",
+      "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+      "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.P2M.Sol.S_NumberField_AdelicFourier_exists_smul_eq_of_isAddHaarMeasure_adeleRing",
+      "source_sha256": "257df66113cd41da04b60bb1b1a3fdf0541553cd3e8215ea8317e9cb01bb5a1e",
+      "object_sha256": "326e38e095add6fc2b627e21c3a5bac67bbedcd5f2b2550bd8932b5ca38c6891",
+      "receipt_reused": true
+    }
+  ],
+  "stdout": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/18126c69f05b6161a9d9ec51-1792356434707671000.kernel/stdout.log",
+  "stderr": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/18126c69f05b6161a9d9ec51-1792356434707671000.kernel/stderr.log"
+}
