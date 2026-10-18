@@ -1,0 +1,65 @@
+{
+  "at": "2026-10-18T06:35:32.451368+00:00",
+  "name": "AutomorphicForm_hasSum_setIntegral_sigmaCentralizer_of_lintegral_tsum_enorm_lt_top",
+  "candidate": "r1",
+  "card_candidate": "r1",
+  "source_replacements": [
+    [
+      "_ \u2264 \u2211' q' : G \u29f8 H, \u222b\u207b x in s, \u2016f (q'.out\u207b\u00b9 \u2022 x)\u2016\u2091 \u2202\u03bc := ENNReal.le_tsum q",
+      "_ \u2264 \u2211' q' : G \u29f8 H, \u222b\u207b x in s, \u2016f (q'.out\u207b\u00b9 \u2022 x)\u2016\u2091 \u2202\u03bc :=\n      ENNReal.le_tsum (f := fun q' : G \u29f8 H => \u222b\u207b x in s, \u2016f (q'.out\u207b\u00b9 \u2022 x)\u2016\u2091 \u2202\u03bc) q",
+      1
+    ],
+    [
+      "\u2264 \u2211' q', \u222b\u207b x in t q', \u2016k (rep q') x\u2016\u2091 \u2202\u03bc := ENNReal.le_tsum q",
+      "\u2264 \u2211' q', \u222b\u207b x in t q', \u2016k (rep q') x\u2016\u2091 \u2202\u03bc :=\n      ENNReal.le_tsum (f := fun q' : Q => \u222b\u207b x in t q', \u2016k (rep q') x\u2016\u2091 \u2202\u03bc) q",
+      1
+    ],
+    [
+      "  haveI ",
+      "  have ",
+      12
+    ],
+    [
+      "  letI ",
+      "  let ",
+      1
+    ]
+  ],
+  "card_replacements": [],
+  "supplier_repository": "anthropics/fermats-last-theorem",
+  "supplier_revision": "6e837e75355538c7f80bab5b956861e86c4eacc2",
+  "baseline_byte_identical_to_pinned_supplier": true,
+  "pinned_supplier_source_and_card_preserved": true,
+  "original_actual_errors": 2,
+  "original_actual_warnings": 13,
+  "actual_failure": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/official-layout/terminal-proof-repairs/20261018-sigma-centralizer-integral-tsum-api/previous-actual-failure",
+  "complete_original_proof_preserved": true,
+  "full_original_statement_and_hypotheses_preserved": true,
+  "no_linter_suppression_added": true,
+  "fixed_pin_api_evidence": "Mathlib/Topology/Algebra/InfiniteSum/ENNReal.lean:43,147: ENNReal.le_tsum has an implicit function f; specify exactly the target integrand at each of the two reported errors.",
+  "change": "Give the two le_tsum applications their existing explicit summand functions. Replace only the 12 haveI and one letI reported by the style linter with have/let, preserving the binding values. Retain all 657 original proof lines modulo these local edits, every hypothesis and the original theorem card. Append recursive source/card axiom queries. Await the original single-worker make/kernel queue.",
+  "verification_pending": false,
+  "installed": true,
+  "max_active_flt_jobs": 1,
+  "lean_threads": 1,
+  "full_original_complete": false,
+  "official_new_solve_credit": 0,
+  "stale_terminal_state_entries_excluded": [],
+  "active_import_closure_excluded": [
+    "Submission.Supplier.P2M.Sol.S_AutomorphicForm_isKfSmooth_unipotentAverage"
+  ],
+  "active_transitive_import_closure_size": 19,
+  "actual_live_descendant_sources": [
+    {
+      "pid": 91812,
+      "source": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_AutomorphicForm_isKfSmooth_unipotentAverage.lean"
+    }
+  ],
+  "all_four_canonical_adapted_source_card_modules_excluded": [
+    "P2M.Sol.S_AutomorphicForm_hasSum_setIntegral_sigmaCentralizer_of_lintegral_tsum_enorm_lt_top",
+    "Submission.Supplier.P2M.Sol.S_AutomorphicForm_hasSum_setIntegral_sigmaCentralizer_of_lintegral_tsum_enorm_lt_top",
+    "Submission.Supplier.Theorems.Thm_AutomorphicForm_hasSum_setIntegral_sigmaCentralizer_of_lintegral_tsum_enorm_lt_top",
+    "Theorems.Thm_AutomorphicForm_hasSum_setIntegral_sigmaCentralizer_of_lintegral_tsum_enorm_lt_top"
+  ],
+  "installed_at": "2026-10-18T06:35:32.575623+00:00"
+}
