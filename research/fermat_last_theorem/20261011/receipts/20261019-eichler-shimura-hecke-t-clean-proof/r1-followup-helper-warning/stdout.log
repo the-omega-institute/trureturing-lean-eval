@@ -1,0 +1,7 @@
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_HeckeEis_eichlerShimuraMap_heckeTLin.lean:856:0: warning: automatically included section variable(s) unused in theorem `P2MW.S_HeckeEis_eichlerShimuraMap_heckeTLin.HeckeEis.HeckeESSol.cosetOp_apply_eq`:
+  [NeZero ℓ]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [NeZero ℓ] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+'P2MW.S_HeckeEis_eichlerShimuraMap_heckeTLin.solution' depends on axioms: [propext, Classical.choice, Quot.sound]

@@ -1,0 +1,74 @@
+{
+  "sha256": "a7929d25e46c5da51ef7a116ec52403a1f12df6f2ec2e9127ca841815cd0f16e",
+  "exit": 0,
+  "empty_output_retry_done": false,
+  "source_sha256_after": "a7929d25e46c5da51ef7a116ec52403a1f12df6f2ec2e9127ca841815cd0f16e",
+  "source_unchanged": true,
+  "olean_sha256": "de3d0953ba015518d1a00b245adc503db42ee54d7848cd48fe56a106183129ba",
+  "seconds": 10.225672041997313,
+  "pid": 15917,
+  "command": [
+    "/Users/macstudio/.local/omega-shims/lean",
+    "-j1",
+    "--trust=0",
+    "-Ddebug.skipKernelTC=false",
+    "-R",
+    "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src",
+    "-o",
+    "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-build/lib/lean/Submission/Supplier/Theorems/Thm_HeckeEis_eichlerShimuraMap_heckeTLin.olean",
+    "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/Theorems/Thm_HeckeEis_eichlerShimuraMap_heckeTLin.lean"
+  ],
+  "make_wrapper_pid": 15413,
+  "make_exit": 0,
+  "make_entry_failed": false,
+  "cache_binding_valid": true,
+  "canonical_make_running_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/7df174aa2867101fcfbbb7ed-1792350201951619000.make-running.json",
+  "canonical_make_terminal_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/7df174aa2867101fcfbbb7ed-1792350201951619000.make-terminal.json",
+  "kernel_terminal_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/7df174aa2867101fcfbbb7ed-1792350201951619000.kernel/result.json",
+  "direct_dependencies": [
+    {
+      "module": "Submission.Supplier.Definitions.Def_HeckeEis_BinaryFormRep",
+      "source_sha256": "703e128de7dd1e083d98b5e96978b2a2c39b92a5b3aae9eb506bb6b3b760a5a8",
+      "object_sha256": "451c3d91d03f1de77a045ef1fc6a21772b48136a6a45623b298826e38f8b4c44",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Definitions.Def_Gamma0HeckeOperatorHom",
+      "source_sha256": "a3dd5ba42426a016a1f7906ec17f8f63e109e5db4b07ef18160375bb9d3e499d",
+      "object_sha256": "fb7a089a396da30008911bf751aa544f3b351dd0a8129c83a6b97c134a2df47d",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Definitions.Def_Gamma0CoeffCohomology",
+      "source_sha256": "e2e73dc31be6b4c85b0e0ada78717f4ba3e482be7019a447b3910134c9189d0a",
+      "object_sha256": null,
+      "receipt_reused": false
+    },
+    {
+      "module": "Submission.Supplier.Definitions.Def_HeckeEis_EichlerIntegral",
+      "source_sha256": "67ba958a173c99e6334035c1327ec37afd73fa04ed83f2ae3a21311659b506df",
+      "object_sha256": "2049a9e2b3c7903b8a07fd43c8557d092f1da61fa7ee1368945e7994bc75a2b9",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Definitions.Def_ModularForm_HeckeOperatorForms",
+      "source_sha256": "36c108839c251290084675f604becf026e9d5d5dc5883c1cc68eab05f476dc6e",
+      "object_sha256": "57e3313d532c30ec1a08467d128863a317f988d05ae7530f52601862594cc596",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.P2M.Util",
+      "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+      "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.P2M.Sol.S_HeckeEis_eichlerShimuraMap_heckeTLin",
+      "source_sha256": "a34f82da8130b275549a1139d16ef3bdfff9edf2e5c18fdefec5a553ffec4e29",
+      "object_sha256": "ec7a0836b85742655c65e46f5cc7c5de9eaac0f42616073e8c74546955de1c56",
+      "receipt_reused": true
+    }
+  ],
+  "stdout": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/7df174aa2867101fcfbbb7ed-1792350201951619000.kernel/stdout.log",
+  "stderr": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/7df174aa2867101fcfbbb7ed-1792350201951619000.kernel/stderr.log"
+}
