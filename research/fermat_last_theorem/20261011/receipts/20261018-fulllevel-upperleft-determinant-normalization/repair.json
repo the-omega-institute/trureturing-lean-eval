@@ -1,0 +1,56 @@
+{
+  "at": "2026-10-18T13:04:19.741640+00:00",
+  "name": "ModularCurve_FullLevel_coe_levelAutBar_apply_eq_coe_levelAutBar_apply_of_dvd_of_coe_eq",
+  "candidate": "r1",
+  "card_candidate": "r1",
+  "source_replacements": [
+    [
+      "  simp only [Int.cast_sub, Int.cast_mul, Int.cast_one, hq10, h11, mul_one, mul_zero, sub_zero] at this\n  exact this",
+      "  simp only [Int.cast_sub, Int.cast_mul, Int.cast_one, hq10, h11, mul_one, mul_zero] at this\n  linear_combination this",
+      1
+    ],
+    [
+      "  haveI : Algebra.IsAlgebraic \u211a (AlgebraicClosure \u211a) := AlgebraicClosure.isAlgebraic \u211a",
+      "  have : Algebra.IsAlgebraic \u211a (AlgebraicClosure \u211a) := AlgebraicClosure.isAlgebraic \u211a",
+      1
+    ]
+  ],
+  "card_replacements": [],
+  "supplier_repository": "anthropics/fermats-last-theorem",
+  "supplier_revision": "6e837e75355538c7f80bab5b956861e86c4eacc2",
+  "baseline_byte_identical_to_pinned_supplier": true,
+  "pinned_supplier_source_and_card_preserved": true,
+  "original_actual_errors": 1,
+  "original_actual_warnings": 2,
+  "actual_failure": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/official-layout/terminal-proof-repairs/20261018-fulllevel-upperleft-determinant-normalization/previous-actual-failure",
+  "complete_original_proof_preserved": true,
+  "full_original_statement_and_hypotheses_preserved": true,
+  "public_solution_telescope_and_conclusion_byte_identical": true,
+  "card_proof_byte_identical_before_axiom_query": true,
+  "no_linter_suppression_added": true,
+  "change": "Preserve the complete original full-level automorphism compatibility proof, all inputs and exact conclusion. In upperLeft_of_mem_GH retain the determinant/cast argument and the existing simplification, remove its logged unused sub_zero simp argument, then use linear_combination on the same equality to normalize the residual a-0=1 into a=1. Migrate the one logged Algebra.IsAlgebraic haveI binding in the proposition proof. Public telescope and card byte-identical before axiom queries, no linter suppression, original single-worker make/kernel queue only.",
+  "verification_pending": false,
+  "installed": true,
+  "max_active_flt_jobs": 1,
+  "lean_threads": 1,
+  "full_original_complete": false,
+  "official_new_solve_credit": 0,
+  "stale_terminal_state_entries_excluded": [],
+  "active_import_closure_excluded": [
+    "Submission.Supplier.P2M.Sol.S_ModularCurve_IgusaScheme_chartRing_le_span_coeffEmb_chartAlg"
+  ],
+  "active_transitive_import_closure_size": 47,
+  "actual_live_descendant_sources": [
+    {
+      "pid": 95174,
+      "source": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_ModularCurve_IgusaScheme_chartRing_le_span_coeffEmb_chartAlg.lean"
+    }
+  ],
+  "all_four_canonical_adapted_source_card_modules_excluded": [
+    "P2M.Sol.S_ModularCurve_FullLevel_coe_levelAutBar_apply_eq_coe_levelAutBar_apply_of_dvd_of_coe_eq",
+    "Submission.Supplier.P2M.Sol.S_ModularCurve_FullLevel_coe_levelAutBar_apply_eq_coe_levelAutBar_apply_of_dvd_of_coe_eq",
+    "Submission.Supplier.Theorems.Thm_ModularCurve_FullLevel_coe_levelAutBar_apply_eq_coe_levelAutBar_apply_of_dvd_of_coe_eq",
+    "Theorems.Thm_ModularCurve_FullLevel_coe_levelAutBar_apply_eq_coe_levelAutBar_apply_of_dvd_of_coe_eq"
+  ],
+  "installed_at": "2026-10-18T13:04:19.861633+00:00"
+}
