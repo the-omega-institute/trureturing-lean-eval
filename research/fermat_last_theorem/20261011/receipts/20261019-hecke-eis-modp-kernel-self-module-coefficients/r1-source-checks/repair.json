@@ -1,0 +1,109 @@
+{
+  "at": "2026-10-18T19:20:27.849966+00:00",
+  "name": "HeckeEis_exists_eq_prime_smul_of_coeffH1par_map_eq_zero",
+  "candidate": "r1",
+  "card_candidate": "r1",
+  "source_replacements": [
+    [
+      "(fun a => by simp [binarySubst_C]) (fun j => by simp [binarySubst_X, map_sum])",
+      "(fun a => by simp) (fun j => by simp [binarySubst_X])",
+      1
+    ],
+    [
+      "haveI : (Gamma0 N).FiniteIndex",
+      "have : (Gamma0 N).FiniteIndex",
+      2
+    ],
+    [
+      "haveI : Group.FG SL(2, \u2124)",
+      "have : Group.FG SL(2, \u2124)",
+      1
+    ],
+    [
+      "haveI : Fintype (SL(2, \u2124) \u29f8 Gamma0 N)",
+      "have : Fintype (SL(2, \u2124) \u29f8 Gamma0 N)",
+      1
+    ],
+    [
+      "haveI : NeZero p := \u27e8hp.ne_zero\u27e9",
+      "have : NeZero p := \u27e8hp.ne_zero\u27e9",
+      1
+    ],
+    [
+      "  first\n    | rfl\n    | simp\n",
+      "  rfl\n",
+      1
+    ],
+    [
+      "simp only [Submodule.coe_zero, MvPolynomial.coeff_zero] at h\n",
+      "simp only [Submodule.coe_zero, AddMonoidAlgebra.coeff_zero, Finsupp.zero_apply] at h\n",
+      1
+    ],
+    [
+      "  letI : Algebra (ZMod p) K := ZMod.algebra K p\n",
+      "  let : AddCommGroup (ZMod p) := (ZMod.commRing p).toAddCommGroup\n  let : Module (ZMod p) (ZMod p) := Semiring.toModule\n  let : Algebra (ZMod p) K := ZMod.algebra K p\n",
+      1
+    ],
+    [
+      "simp only [Submodule.coe_add, MvPolynomial.coeff_add, Submodule.coe_zero, MvPolynomial.coeff_zero] at h2",
+      "simp only [Submodule.coe_add, AddMonoidAlgebra.coeff_add, Finsupp.add_apply,\n            Submodule.coe_zero, AddMonoidAlgebra.coeff_zero, Finsupp.zero_apply] at h2",
+      1
+    ],
+    [
+      "simp only [Submodule.coe_zero, MvPolynomial.coeff_zero]\n",
+      "simp only [Submodule.coe_zero, AddMonoidAlgebra.coeff_zero, Finsupp.zero_apply]\n",
+      1
+    ],
+    [
+      "\n  HeckeEis.ModPAux.main N n p hpN hn K \u03a6 h\u03a6 y hy\n",
+      "\n  (fun (_ : p \u2260 2) => HeckeEis.ModPAux.main N n p hpN hn K \u03a6 h\u03a6 y hy) hp\n",
+      1
+    ]
+  ],
+  "card_replacements": [],
+  "supplier_repository": "anthropics/fermats-last-theorem",
+  "supplier_revision": "6e837e75355538c7f80bab5b956861e86c4eacc2",
+  "supplier_license": "Apache-2.0",
+  "baseline_byte_identical_to_pinned_supplier": false,
+  "pinned_supplier_source_and_card_preserved": true,
+  "prior_port_progress_preserved": true,
+  "prior_supplier_diff": "prior-port-changes.diff",
+  "full_original_statement_and_hypotheses_preserved": true,
+  "complete_original_proof_preserved": true,
+  "public_solution_telescope_and_conclusion_byte_identical": true,
+  "public_solution_telescope_identical_to_pinned_supplier": true,
+  "public_hp_ne_two_retained_and_explicitly_passed": true,
+  "card_proof_byte_identical_before_axiom_query": true,
+  "card_identical_to_pinned_supplier_before_axiom_query": true,
+  "no_linter_suppression_added": true,
+  "verification_pending": true,
+  "installed": true,
+  "max_active_flt_jobs": 1,
+  "lean_threads": 1,
+  "original_actual_errors": 4,
+  "original_actual_warnings": 15,
+  "library_search": "No matching Library helper in trureturing. Reuse Mathlib Semiring.toModule and original LinearMap.exists_leftInverse_of_injective,plus already verified AddMonoidAlgebra/Finsupp coefficient simplification.",
+  "same_standard_instance_precedent": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/official-layout/terminal-proof-repairs/20261013-residual-frobenius-determinant-linearity/WeierstrassCurve_det_galoisRepModuleEnd_frobenius_eq/accepted-repair-record.json",
+  "same_coefficient_precedent": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/official-layout/terminal-proof-repairs/20261019-hecke-eis-integral-coefficient-finite-generation/verified-record.json",
+  "change": "Preserve full original790-line proof and prior coefficient/group instance port. Explicitly select canonical ZMod additive group and standard self-module for the original linear left-inverse argument;fully evaluate coefficient sums and zero before the original omega. Clean only reported unused simp arguments,unreachable fallback,and proposition local instance bindings. Retain public hp:p\u22602 with an explicit original-proof application,all other public hypotheses and original proof unchanged. Source/card full make/kernel,zero warnings and standard3 recursive axioms pending.",
+  "full_original_complete": false,
+  "official_new_solve_credit": 0,
+  "stale_terminal_state_entries_excluded": [],
+  "active_import_closure_excluded": [
+    "Submission.Supplier.P2M.Sol.S_HeckeEis_finite_int_heckeAlgebra"
+  ],
+  "active_transitive_import_closure_size": 150,
+  "actual_live_descendant_sources": [
+    {
+      "pid": 92193,
+      "source": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_HeckeEis_finite_int_heckeAlgebra.lean"
+    }
+  ],
+  "all_four_canonical_adapted_source_card_modules_excluded": [
+    "P2M.Sol.S_HeckeEis_exists_eq_prime_smul_of_coeffH1par_map_eq_zero",
+    "Submission.Supplier.P2M.Sol.S_HeckeEis_exists_eq_prime_smul_of_coeffH1par_map_eq_zero",
+    "Submission.Supplier.Theorems.Thm_HeckeEis_exists_eq_prime_smul_of_coeffH1par_map_eq_zero",
+    "Theorems.Thm_HeckeEis_exists_eq_prime_smul_of_coeffH1par_map_eq_zero"
+  ],
+  "installed_at": "2026-10-18T19:20:43.232391+00:00"
+}
