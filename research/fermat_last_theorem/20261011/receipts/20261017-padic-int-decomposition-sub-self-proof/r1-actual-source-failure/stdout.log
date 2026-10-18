@@ -1,0 +1,27 @@
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_PadicInt_exists_eq_one_add_prime_pow_mul_pow.lean:97:2: warning: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_PadicInt_exists_eq_one_add_prime_pow_mul_pow.lean:104:70: error: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  ?a - ?a
+in the target expression
+  toZMod b - toZMod b = 0
+
+p : ℕ
+hp : Fact (Nat.Prime p)
+hp2 : p ≠ 2
+this : NeZero p
+b : ℤ_[p]
+hv : toZMod (1 + ↑p * b) = 1
+j : ℕ := (toZMod b).val
+hj_def : j = (toZMod b).val
+hj : j < p
+⊢ toZMod b - toZMod b = 0
+'P2MW.S_PadicInt_exists_eq_one_add_prime_pow_mul_pow.solution' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
