@@ -1,0 +1,35 @@
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_Complex_tsum_int_one_div_add_sq_eq_pi_sq_div_sin_sq.lean:43:4: error: Tactic `rfl` failed: The left-hand side
+  -(1 / (w - (↑n + 1)) ^ 2) - 1 / (w + (↑n + 1)) ^ 2
+is not definitionally equal to the right-hand side
+  -1 / (w - (↑n + 1)) ^ 2 + -1 / (w + (↑n + 1)) ^ 2
+
+case e'_9
+w : ℂ
+hw : w ∈ integerComplement
+n : ℕ
+h1 : HasDerivAt (fun w => (w - (↑n + 1))⁻¹) (-1 / (w - (↑n + 1)) ^ 2) w
+h2 : HasDerivAt (fun w => (w + (↑n + 1))⁻¹) (-1 / (w + (↑n + 1)) ^ 2) w
+h :
+  HasDerivAt ((fun w => (w - (↑n + 1))⁻¹) + fun w => (w + (↑n + 1))⁻¹)
+    (-1 / (w - (↑n + 1)) ^ 2 + -1 / (w + (↑n + 1)) ^ 2) w
+hF : F n = fun w => (w - (↑n + 1))⁻¹ + (w + (↑n + 1))⁻¹
+⊢ -(1 / (w - (↑n + 1)) ^ 2) - 1 / (w + (↑n + 1)) ^ 2 = -1 / (w - (↑n + 1)) ^ 2 + -1 / (w + (↑n + 1)) ^ 2
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_Complex_tsum_int_one_div_add_sq_eq_pi_sq_div_sin_sq.lean:44:2: error: No goals to be solved
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_Complex_tsum_int_one_div_add_sq_eq_pi_sq_div_sin_sq.lean:76:2: warning: Unused tactic linter: `all_goals try rfl` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_Complex_tsum_int_one_div_add_sq_eq_pi_sq_div_sin_sq.lean:127:10: warning: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_Complex_tsum_int_one_div_add_sq_eq_pi_sq_div_sin_sq.lean:136:21: warning: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_Complex_tsum_int_one_div_add_sq_eq_pi_sq_div_sin_sq.lean:153:21: warning: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_Complex_tsum_int_one_div_add_sq_eq_pi_sq_div_sin_sq.lean:196:2: warning: Unused tactic linter: `all_goals try rfl` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`

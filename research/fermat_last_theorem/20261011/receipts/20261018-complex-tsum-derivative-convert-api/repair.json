@@ -1,0 +1,66 @@
+{
+  "at": "2026-10-18T09:15:10.156579+00:00",
+  "name": "Complex_tsum_int_one_div_add_sq_eq_pi_sq_div_sin_sq",
+  "candidate": "r1",
+  "card_candidate": "r1",
+  "source_replacements": [
+    [
+      "  convert h using 1\n  \u00b7 rfl\n  \u00b7 rfl\n  \u00b7 rfl\n",
+      "  convert h using 1\n",
+      1
+    ],
+    [
+      "  all_goals try rfl\n",
+      "",
+      2
+    ],
+    [
+      "if_neg",
+      "ite_eq_right",
+      2
+    ],
+    [
+      "if_pos",
+      "ite_eq_left",
+      1
+    ]
+  ],
+  "card_replacements": [],
+  "supplier_repository": "anthropics/fermats-last-theorem",
+  "supplier_revision": "6e837e75355538c7f80bab5b956861e86c4eacc2",
+  "baseline_byte_identical_to_pinned_supplier": true,
+  "pinned_supplier_source_and_card_preserved": true,
+  "original_actual_errors": 2,
+  "original_actual_warnings": 5,
+  "actual_failure": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/official-layout/terminal-proof-repairs/20261018-complex-tsum-derivative-convert-api/previous-actual-failure",
+  "complete_original_proof_preserved": true,
+  "full_original_statement_and_hypotheses_preserved": true,
+  "public_solution_telescope_and_conclusion_byte_identical": true,
+  "card_proof_byte_identical_before_axiom_query": true,
+  "no_linter_suppression_added": true,
+  "change": "Keep the original algebra proof for the single derivative-value equality left by current convert; remove three obsolete rfl bullets and two logged no-op all_goals try rfl. Rename the three logged ite aliases. Preserve every original hypothesis, public theorem, and the complete original analytic proof. Original single-worker make/kernel queue only.",
+  "verification_pending": false,
+  "installed": true,
+  "max_active_flt_jobs": 1,
+  "lean_threads": 1,
+  "full_original_complete": false,
+  "official_new_solve_credit": 0,
+  "stale_terminal_state_entries_excluded": [],
+  "active_import_closure_excluded": [
+    "Submission.Supplier.P2M.Sol.S_ModPForms_exists_isEigensystemH1_binaryFormRepSL_of_isModPEigen"
+  ],
+  "active_transitive_import_closure_size": 111,
+  "actual_live_descendant_sources": [
+    {
+      "pid": 94607,
+      "source": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_ModPForms_exists_isEigensystemH1_binaryFormRepSL_of_isModPEigen.lean"
+    }
+  ],
+  "all_four_canonical_adapted_source_card_modules_excluded": [
+    "P2M.Sol.S_Complex_tsum_int_one_div_add_sq_eq_pi_sq_div_sin_sq",
+    "Submission.Supplier.P2M.Sol.S_Complex_tsum_int_one_div_add_sq_eq_pi_sq_div_sin_sq",
+    "Submission.Supplier.Theorems.Thm_Complex_tsum_int_one_div_add_sq_eq_pi_sq_div_sin_sq",
+    "Theorems.Thm_Complex_tsum_int_one_div_add_sq_eq_pi_sq_div_sin_sq"
+  ],
+  "installed_at": "2026-10-18T09:15:10.278567+00:00"
+}
