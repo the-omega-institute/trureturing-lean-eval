@@ -1,0 +1,65 @@
+{
+  "at": "2026-10-18T18:11:17.485033+00:00",
+  "name": "ModularCurve_sum_periodAlong_mem_periodLattice_of_boundary_eq_zero",
+  "candidate": "r2",
+  "card_candidate": "r1",
+  "source_replacements": [
+    [
+      "  convert this using 1\n  \u00b7 rfl\n  \u00b7 rfl\n  ring\n",
+      "  convert this using 1\n  ring\n",
+      1
+    ],
+    [
+      "if_pos",
+      "ite_eq_left",
+      6
+    ],
+    [
+      "if_neg",
+      "ite_eq_right",
+      4
+    ]
+  ],
+  "card_replacements": [],
+  "supplier_repository": "anthropics/fermats-last-theorem",
+  "supplier_revision": "6e837e75355538c7f80bab5b956861e86c4eacc2",
+  "baseline_byte_identical_to_pinned_supplier": true,
+  "pinned_supplier_source_and_card_preserved": true,
+  "complete_original_proof_preserved": true,
+  "full_original_statement_and_hypotheses_preserved": true,
+  "public_solution_telescope_and_conclusion_byte_identical": true,
+  "card_proof_byte_identical_before_axiom_query": true,
+  "no_linter_suppression_added": true,
+  "verification_pending": false,
+  "installed": true,
+  "max_active_flt_jobs": 1,
+  "lean_threads": 1,
+  "original_actual_errors": 2,
+  "original_actual_warnings": 10,
+  "library_search": "No matching Library lemma; official Mathlib AffineMap.hasDerivAt_lineMap exists over one scalar field. Preserve original real-to-complex derivative argument and discharge its scalar equality with ring.",
+  "change": "Retain original h1/h2/h3 derivative proof and convert. Current convert leaves only the scalar equality, so remove both redundant rfl branches and keep the original ring tactic. All original public solution/card proofs and hypotheses remain identical. Migrate only if_pos/if_neg aliases. R1 rejected after actual compiler errors; R2 full source/card verification pending.",
+  "full_original_complete": false,
+  "official_new_solve_credit": 0,
+  "stale_terminal_state_entries_excluded": [
+    {
+      "module": "Submission.Supplier.Theorems.Thm_ModularForm_exists_levelOne_coe_eq_zpow_smul_add_heckeU_slash_fricke",
+      "wrapper_pid": 87126,
+      "make_exit": 0,
+      "terminal": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/f31d306cb5e4869c8f256c7c-1792347221818722000.make-terminal.json"
+    }
+  ],
+  "active_import_closure_excluded": [],
+  "active_transitive_import_closure_size": 0,
+  "actual_live_descendant_sources": [],
+  "all_four_canonical_adapted_source_card_modules_excluded": [
+    "P2M.Sol.S_ModularCurve_sum_periodAlong_mem_periodLattice_of_boundary_eq_zero",
+    "Submission.Supplier.P2M.Sol.S_ModularCurve_sum_periodAlong_mem_periodLattice_of_boundary_eq_zero",
+    "Submission.Supplier.Theorems.Thm_ModularCurve_sum_periodAlong_mem_periodLattice_of_boundary_eq_zero",
+    "Theorems.Thm_ModularCurve_sum_periodAlong_mem_periodLattice_of_boundary_eq_zero"
+  ],
+  "installed_at": "2026-10-18T18:11:17.636804+00:00",
+  "updated_at": "2026-10-18T18:13:52.764556+00:00",
+  "r1_accepted": false,
+  "r1_actual_kernel_exit": 1,
+  "r1_actual_make_exit": 2
+}

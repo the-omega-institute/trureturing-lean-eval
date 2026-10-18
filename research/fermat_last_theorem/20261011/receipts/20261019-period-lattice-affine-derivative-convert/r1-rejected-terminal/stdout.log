@@ -1,0 +1,18 @@
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_ModularCurve_sum_periodAlong_mem_periodLattice_of_boundary_eq_zero.lean:38:4: error: Tactic `rfl` failed: The left-hand side
+  b - a
+is not definitionally equal to the right-hand side
+  -1 * a + 1 * b
+
+case e'_9
+a b : ℂ
+t : ℝ
+h1 : HasDerivAt (fun s => ↑s) 1 t
+h2 : HasDerivAt (fun s => (1 - ↑s) * a) (-1 * a) t
+h3 : HasDerivAt (fun s => ↑s * b) (1 * b) t
+this : HasDerivAt ((fun s => (1 - ↑s) * a) + fun s => ↑s * b) (-1 * a + 1 * b) t
+⊢ b - a = -1 * a + 1 * b
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_ModularCurve_sum_periodAlong_mem_periodLattice_of_boundary_eq_zero.lean:39:2: error: No goals to be solved
+'P2MW.S_ModularCurve_sum_periodAlong_mem_periodLattice_of_boundary_eq_zero.solution' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
