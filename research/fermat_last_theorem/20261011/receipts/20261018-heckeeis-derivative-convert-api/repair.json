@@ -1,0 +1,88 @@
+{
+  "at": "2026-10-18T09:14:11.016551+00:00",
+  "name": "HeckeEis_isEigensystemH1_binaryFormRepSL_of_heckeTLin_eq_smul",
+  "candidate": "r1",
+  "card_candidate": "r1",
+  "source_replacements": [
+    [
+      "  convert h using 1\n  \u00b7 rfl\n  \u00b7 rfl\n  ring\n",
+      "  convert h using 1\n  exact mul_assoc _ _ _\n",
+      1
+    ],
+    [
+      "  haveI ",
+      "  have ",
+      5
+    ],
+    [
+      "    letI ",
+      "    let ",
+      2
+    ],
+    [
+      "ModularForm.IsGLPos.coe_smul",
+      "FunLike.coe_smul",
+      1
+    ],
+    [
+      "MonoidHom.coe_coe",
+      "MonoidHom.coe_ofClass",
+      1
+    ],
+    [
+      "TensorProduct.induction_on",
+      "TensorProduct.inductionOn",
+      1
+    ],
+    [
+      "    | zero =>\n      have h0 : (LinearMap.baseChange F (tH N S\u2080 n \u2124 i)) (0 : F \u2297[\u2124] H1 \u2124 N n) = (0 : F \u2297[\u2124] H1 \u2124 N n) :=\n        map_zero _\n      rw [h0, map_zero, map_zero]\n",
+      "",
+      1
+    ]
+  ],
+  "card_replacements": [],
+  "supplier_repository": "anthropics/fermats-last-theorem",
+  "supplier_revision": "6e837e75355538c7f80bab5b956861e86c4eacc2",
+  "baseline_byte_identical_to_pinned_supplier": false,
+  "pinned_supplier_source_and_card_preserved": true,
+  "pinned_to_canonical_preexisting_source_replacements": [
+    [
+      "obtain \u27e8S, hS\u27e9 := h\u0393.out",
+      "obtain \u27e8_, S, _, hS\u27e9 := Group.fg_iff'.mp h\u0393",
+      1
+    ]
+  ],
+  "original_actual_errors": 2,
+  "original_actual_warnings": 10,
+  "actual_failure": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/official-layout/terminal-proof-repairs/20261018-heckeeis-derivative-convert-api/previous-actual-failure",
+  "complete_original_proof_preserved": true,
+  "full_original_statement_and_hypotheses_preserved": true,
+  "public_solution_telescope_and_conclusion_byte_identical": true,
+  "card_proof_byte_identical_before_axiom_query": true,
+  "no_linter_suppression_added": true,
+  "change": "Use the existing mul_assoc theorem for the single derivative-value equality left by current convert; remove two obsolete rfl bullets. Migrate one tensor induction to its current tmul/add API; preserve original tmul/add proofs, all public hypotheses/conclusion, and full original source. Modernize only logged local bindings and aliases. Original single-worker make/kernel queue only.",
+  "verification_pending": false,
+  "installed": true,
+  "max_active_flt_jobs": 1,
+  "lean_threads": 1,
+  "full_original_complete": false,
+  "official_new_solve_credit": 0,
+  "stale_terminal_state_entries_excluded": [],
+  "active_import_closure_excluded": [
+    "Submission.Supplier.Theorems.Thm_ContinuousLinearMap_le_ker_or_finiteDimensional_of_forall_inf_highPart_orthogonal"
+  ],
+  "active_transitive_import_closure_size": 3,
+  "actual_live_descendant_sources": [
+    {
+      "pid": 71791,
+      "source": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/Theorems/Thm_ContinuousLinearMap_le_ker_or_finiteDimensional_of_forall_inf_highPart_orthogonal.lean"
+    }
+  ],
+  "all_four_canonical_adapted_source_card_modules_excluded": [
+    "P2M.Sol.S_HeckeEis_isEigensystemH1_binaryFormRepSL_of_heckeTLin_eq_smul",
+    "Submission.Supplier.P2M.Sol.S_HeckeEis_isEigensystemH1_binaryFormRepSL_of_heckeTLin_eq_smul",
+    "Submission.Supplier.Theorems.Thm_HeckeEis_isEigensystemH1_binaryFormRepSL_of_heckeTLin_eq_smul",
+    "Theorems.Thm_HeckeEis_isEigensystemH1_binaryFormRepSL_of_heckeTLin_eq_smul"
+  ],
+  "installed_at": "2026-10-18T09:14:11.124256+00:00"
+}
