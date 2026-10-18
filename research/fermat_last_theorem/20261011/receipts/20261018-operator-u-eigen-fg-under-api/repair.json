@@ -1,0 +1,81 @@
+{
+  "at": "2026-10-18T09:06:24.960033+00:00",
+  "name": "CuspForm_TWLevel_HeckeRing_OperatorAlgebra_exists_U_eigenvector_H1_of_algHom",
+  "candidate": "r1",
+  "card_candidate": "r1",
+  "source_replacements": [
+    [
+      "obtain \u27e8s, hs\u27e9 := (Group.fg_def.mp (fg_GammaH M H))",
+      "obtain \u27e8_, s, _, hs\u27e9 := Group.fg_iff'.mp (fg_GammaH M H)",
+      1
+    ],
+    [
+      "Set.mem_setOf_eq",
+      "Set.mem_ofPred_eq",
+      2
+    ],
+    [
+      "TensorProduct.induction_on",
+      "TensorProduct.inductionOn",
+      3
+    ],
+    [
+      "\n    | zero => simp\n",
+      "\n",
+      1
+    ],
+    [
+      "\n  | zero => simp\n",
+      "\n",
+      2
+    ],
+    [
+      "  haveI ",
+      "  have ",
+      23
+    ],
+    [
+      "  letI ",
+      "  let ",
+      2
+    ],
+    [
+      "  have := hQ\n",
+      "  change Q.comap (algebraMap R S) = P at hQP\n  have := hQ\n",
+      1
+    ]
+  ],
+  "card_replacements": [],
+  "supplier_repository": "anthropics/fermats-last-theorem",
+  "supplier_revision": "6e837e75355538c7f80bab5b956861e86c4eacc2",
+  "baseline_byte_identical_to_pinned_supplier": true,
+  "pinned_supplier_source_and_card_preserved": true,
+  "original_actual_errors": 3,
+  "original_actual_warnings": 30,
+  "actual_failure": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/official-layout/terminal-proof-repairs/20261018-operator-u-eigen-fg-under-api/previous-actual-failure",
+  "complete_original_proof_preserved": true,
+  "full_original_statement_and_hypotheses_preserved": true,
+  "public_solution_and_card_telescope_conclusion_proof_byte_identical_before_axiom_query": true,
+  "no_linter_suppression_added": true,
+  "fixed_pin_api_evidence": "Official Mathlib5e0c4e5 GroupTheory/Finiteness.lean:710 Group.fg_iff prime returns direct Finset G. TensorProduct/Defs.lean:135 declares TensorProduct.inductionOn with tmul/add cases; deprecated hint misspells its namespace. Ideal/Over.lean:96 under abbreviates comap(algebraMap). Normalize the existing hQP via change once, preserving both subsequent rewrites and every hypothesis. Actual original errors are the Finset witness and two ideal-under rewrites; warnings are five aliases and25 local bindings.",
+  "change": "Use the direct finite-generation Finset witness; migrate three tensor inductions to the actual tmul/add API, with zero subsumed by tmul0; change the existing hQP to its definitionally identical comap equality. Preserve the complete914-line proof/helpers/all hypotheses/public solution/card proof and attribution. Modernize only logged aliases and local proof bindings, leaving public inline instance hypotheses unchanged. Append source/card axiom queries; original single-worker make/kernel queue only.",
+  "verification_pending": false,
+  "installed": true,
+  "max_active_flt_jobs": 1,
+  "lean_threads": 1,
+  "full_original_complete": false,
+  "official_new_solve_credit": 0,
+  "stale_terminal_state_entries_excluded": [],
+  "active_import_closure_excluded": [
+    "Submission.Supplier.Theorems.Thm_CohCarrier_HeckeData_exists_eigenvector_H1_of_toML_ne_zero"
+  ],
+  "active_transitive_import_closure_size": 23,
+  "actual_live_descendant_sources": [],
+  "all_four_canonical_adapted_source_card_modules_excluded": [
+    "P2M.Sol.S_CuspForm_TWLevel_HeckeRing_OperatorAlgebra_exists_U_eigenvector_H1_of_algHom",
+    "Submission.Supplier.P2M.Sol.S_CuspForm_TWLevel_HeckeRing_OperatorAlgebra_exists_U_eigenvector_H1_of_algHom",
+    "Submission.Supplier.Theorems.Thm_CuspForm_TWLevel_HeckeRing_OperatorAlgebra_exists_U_eigenvector_H1_of_algHom",
+    "Theorems.Thm_CuspForm_TWLevel_HeckeRing_OperatorAlgebra_exists_U_eigenvector_H1_of_algHom"
+  ],
+  "installed_at": "2026-10-18T09:06:25.068355+00:00"
+}
