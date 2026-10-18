@@ -1,0 +1,97 @@
+{
+  "at": "2026-10-18T04:43:19.959654+00:00",
+  "name": "NeronSpecialFibreInfra_exists_mapDomainRingHom_comp_eq_comp_of_comp_one_of_forall_torsion_mul",
+  "candidate": "r1",
+  "card_candidate": "r1",
+  "source_replacements": [
+    [
+      "Finsupp.mapDomain_notin_range",
+      "Finsupp.mapDomain_of_notMem_range",
+      2
+    ],
+    [
+      "if_pos",
+      "ite_eq_left",
+      2
+    ],
+    [
+      "if_neg",
+      "ite_eq_right",
+      4
+    ],
+    [
+      "  haveI : Fact \u2113.Prime := \u27e8h\u2113p\u27e9\n",
+      "  have : Fact \u2113.Prime := \u27e8h\u2113p\u27e9\n",
+      1
+    ],
+    [
+      "      haveI : Nontrivial \u03ba := inferInstance\n",
+      "      have : Nontrivial \u03ba := inferInstance\n",
+      1
+    ],
+    [
+      "  haveI : NeZero (\u2113 : \u03ba) := \u27e8h\u2113\u03ba\u27e9\n",
+      "  have : NeZero (\u2113 : \u03ba) := \u27e8h\u2113\u03ba\u27e9\n",
+      1
+    ],
+    [
+      "  letI := L.pointGroup t\n",
+      "  let := L.pointGroup t\n",
+      1
+    ],
+    [
+      "    haveI := h\u03c4\u2080\n",
+      "    have := h\u03c4\u2080\n",
+      1
+    ],
+    [
+      "      first\n        | (rw [AddMonoidAlgebra.mapDomainAlgHom_apply, AddMonoidAlgebra.mapDomain_single])\n        | simp [AddMonoidAlgebra.mapDomain_single])",
+      "      rw [AddMonoidAlgebra.mapDomainAlgHom_apply, AddMonoidAlgebra.mapDomain_single])",
+      1
+    ]
+  ],
+  "card_replacements": [],
+  "baseline_byte_identical_to_pinned_supplier": false,
+  "pinned_supplier_source_and_card_preserved": true,
+  "supplier_repository": "anthropics/fermats-last-theorem",
+  "supplier_revision": "6e837e75355538c7f80bab5b956861e86c4eacc2",
+  "prior_existing_api_adaptation": [
+    [
+      "Finsupp.mapDomain_apply",
+      "Finsupp.mapDomain_apply_of_injective",
+      2
+    ]
+  ],
+  "verification_pending": false,
+  "installed": true,
+  "no_linter_suppression_added": true,
+  "complete_original_proof_preserved": true,
+  "full_original_statement_and_hypotheses_preserved": true,
+  "max_active_flt_jobs": 1,
+  "lean_threads": 1,
+  "original_actual_errors": 0,
+  "original_actual_warnings": 15,
+  "original_kernel_seconds": 72.543928208,
+  "original_terminal_success_preserved": true,
+  "change": "Finish the already-existing two-site mapDomain API port by replacing the eight reported deprecated aliases, five reported local haveI/letI bindings and one reported unexecuted fallback. Keep every original public assumption and the complete torus-character, torsion-density and Neron factorization proof. Add final source/card recursive axiom queries. Await the original single-worker make/kernel queue.",
+  "full_original_complete": false,
+  "official_new_solve_credit": 0,
+  "stale_terminal_state_entries_excluded": [],
+  "active_import_closure_excluded": [
+    "Submission.Supplier.P2M.Sol.S_AlgebraicGeometry_geometricallyIntegral_of_isAlgClosed"
+  ],
+  "active_transitive_import_closure_size": 2,
+  "actual_live_descendant_sources": [
+    {
+      "pid": 53703,
+      "source": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_AlgebraicGeometry_geometricallyIntegral_of_isAlgClosed.lean"
+    }
+  ],
+  "all_four_canonical_adapted_source_card_modules_excluded": [
+    "P2M.Sol.S_NeronSpecialFibreInfra_exists_mapDomainRingHom_comp_eq_comp_of_comp_one_of_forall_torsion_mul",
+    "Submission.Supplier.P2M.Sol.S_NeronSpecialFibreInfra_exists_mapDomainRingHom_comp_eq_comp_of_comp_one_of_forall_torsion_mul",
+    "Submission.Supplier.Theorems.Thm_NeronSpecialFibreInfra_exists_mapDomainRingHom_comp_eq_comp_of_comp_one_of_forall_torsion_mul",
+    "Theorems.Thm_NeronSpecialFibreInfra_exists_mapDomainRingHom_comp_eq_comp_of_comp_one_of_forall_torsion_mul"
+  ],
+  "installed_at": "2026-10-18T04:43:20.061934+00:00"
+}
