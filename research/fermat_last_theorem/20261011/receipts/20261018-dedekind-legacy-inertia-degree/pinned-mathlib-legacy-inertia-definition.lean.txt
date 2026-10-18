@@ -1,0 +1,5 @@
+noncomputable def inertiaDeg' : ℕ :=
+  if hPp : comap f P = p then
+    letI : Algebra (R ⧸ p) (S ⧸ P) := Quotient.algebraQuotientOfLEComap hPp.ge
+    finrank (R ⧸ p) (S ⧸ P)
+  else 0

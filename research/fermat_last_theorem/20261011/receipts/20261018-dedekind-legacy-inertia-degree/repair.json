@@ -1,0 +1,73 @@
+{
+  "at": "2026-10-18T11:54:59.805393+00:00",
+  "name": "IsDedekindDomain_HeightOneSpectrum_ramificationIdx_eq_one_and_inertiaDeg_dvd_of_baseChange_of_unramified",
+  "candidate": "r1",
+  "card_candidate": "r1",
+  "source_replacements": [
+    [
+      "attribute [local instance] Ideal.Quotient.field\n",
+      "attribute [local instance] Ideal.Quotient.field\n\n-- Keep every branch of the legacy quotient-based inertia degree.\n-- This is the definition of Ideal.inertiaDeg' at the pinned Mathlib revision.\nnoncomputable def quotientInertiaDegree {R S : Type*} [CommRing R] [CommRing S]\n    [Algebra R S] (p : Ideal R) (P : Ideal S) : \u2115 := by\n  classical\n  exact if hPp : Ideal.comap (algebraMap R S) P = p then\n    letI : Algebra (R \u29f8 p) (S \u29f8 P) := Ideal.Quotient.algebraQuotientOfLEComap hPp.ge\n    Module.finrank (R \u29f8 p) (S \u29f8 P)\n  else 0\n\ntheorem quotientInertiaDegree_eq {R S : Type*} [CommRing R] [CommRing S]\n    [Algebra R S] (p : Ideal R) (P : Ideal S) [P.LiesOver p] [p.IsMaximal] [P.IsMaximal] :\n    quotientInertiaDegree p P = P.inertiaDeg R := by\n  rw [quotientInertiaDegree, dite_eq_left (Ideal.over_def P p).symm,\n    Ideal.inertiaDeg_eq_of_isMaximal p P]\n\n",
+      1
+    ],
+    [
+      "  haveI ",
+      "  have ",
+      13
+    ],
+    [
+      "Ideal.inertiaDeg' \ud835\udd33.1.asIdeal \ud835\udd34.1.asIdeal",
+      "quotientInertiaDegree \ud835\udd33.1.asIdeal \ud835\udd34.1.asIdeal",
+      1
+    ],
+    [
+      "\u2190 Ideal.inertiaDeg'_eq_inertiaDeg (p := \ud835\udd33.1.asIdeal) (q := \ud835\udd34.1.asIdeal)",
+      "\u2190 quotientInertiaDegree_eq \ud835\udd33.1.asIdeal \ud835\udd34.1.asIdeal",
+      1
+    ]
+  ],
+  "card_replacements": [
+    [
+      "Ideal.inertiaDeg' \ud835\udd33.1.asIdeal \ud835\udd34.1.asIdeal",
+      "_root_.P2MW.S_IsDedekindDomain_HeightOneSpectrum_ramificationIdx_eq_one_and_inertiaDeg_dvd_of_baseChange_of_unramified.CMPAux.quotientInertiaDegree \ud835\udd33.1.asIdeal \ud835\udd34.1.asIdeal",
+      1
+    ]
+  ],
+  "supplier_repository": "anthropics/fermats-last-theorem",
+  "supplier_revision": "6e837e75355538c7f80bab5b956861e86c4eacc2",
+  "baseline_byte_identical_to_pinned_supplier": true,
+  "pinned_supplier_source_and_card_preserved": true,
+  "original_actual_errors": 1,
+  "original_actual_warnings": 15,
+  "actual_failure": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/official-layout/terminal-proof-repairs/20261018-dedekind-legacy-inertia-degree/previous-actual-failure",
+  "complete_original_proof_preserved": true,
+  "full_original_statement_and_hypotheses_preserved": true,
+  "public_solution_telescope_and_conclusion_byte_identical": false,
+  "public_solution_and_card_definitional_legacy_expansion_only": true,
+  "card_proof_byte_identical_before_axiom_query": true,
+  "no_linter_suppression_added": true,
+  "change": "Retain the entire legacy Ideal.inertiaDeg-prime definition, including its comap condition and zero branch, in a nondeprecated quotientInertiaDegree compatibility definition. The exact pinned Mathlib definition is checked and preserved; public source/card change only the spelling of this definition, with all original hypotheses and complete conclusion retained definitionally, rather than substituting the newer residue-field degree. Prove its equality to the newer degree under the original maximal/liesOver instances using inertiaDeg_eq_of_isMaximal; use that equality in the original fundamental identity rewrite. Preserve the full original proof and card proof. Migrate all 13 logged haveI proposition bindings. No linter suppression. Original single-worker make/kernel queue only.",
+  "verification_pending": false,
+  "installed": true,
+  "max_active_flt_jobs": 1,
+  "lean_threads": 1,
+  "full_original_complete": false,
+  "official_new_solve_credit": 0,
+  "stale_terminal_state_entries_excluded": [],
+  "active_import_closure_excluded": [
+    "Submission.Supplier.Theorems.Thm_IsLocalRing_ringKrullDim_quotient_span_singleton_add_one_of_forall_minimalPrimes_notMem"
+  ],
+  "active_transitive_import_closure_size": 3,
+  "actual_live_descendant_sources": [
+    {
+      "pid": 51177,
+      "source": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/Theorems/Thm_IsLocalRing_ringKrullDim_quotient_span_singleton_add_one_of_forall_minimalPrimes_notMem.lean"
+    }
+  ],
+  "all_four_canonical_adapted_source_card_modules_excluded": [
+    "P2M.Sol.S_IsDedekindDomain_HeightOneSpectrum_ramificationIdx_eq_one_and_inertiaDeg_dvd_of_baseChange_of_unramified",
+    "Submission.Supplier.P2M.Sol.S_IsDedekindDomain_HeightOneSpectrum_ramificationIdx_eq_one_and_inertiaDeg_dvd_of_baseChange_of_unramified",
+    "Submission.Supplier.Theorems.Thm_IsDedekindDomain_HeightOneSpectrum_ramificationIdx_eq_one_and_inertiaDeg_dvd_of_baseChange_of_unramified",
+    "Theorems.Thm_IsDedekindDomain_HeightOneSpectrum_ramificationIdx_eq_one_and_inertiaDeg_dvd_of_baseChange_of_unramified"
+  ],
+  "installed_at": "2026-10-18T11:54:59.916531+00:00"
+}
