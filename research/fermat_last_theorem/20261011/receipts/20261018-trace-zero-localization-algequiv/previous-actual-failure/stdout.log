@@ -1,0 +1,221 @@
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_AlgebraicGeometry_trace_eq_zero_of_finrank_eq_char_of_forall_isClosed_eq.lean:30:2: warning: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_AlgebraicGeometry_trace_eq_zero_of_finrank_eq_char_of_forall_isClosed_eq.lean:53:2: warning: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_AlgebraicGeometry_trace_eq_zero_of_finrank_eq_char_of_forall_isClosed_eq.lean:54:2: warning: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_AlgebraicGeometry_trace_eq_zero_of_finrank_eq_char_of_forall_isClosed_eq.lean:56:2: warning: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_AlgebraicGeometry_trace_eq_zero_of_finrank_eq_char_of_forall_isClosed_eq.lean:57:2: warning: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_AlgebraicGeometry_trace_eq_zero_of_finrank_eq_char_of_forall_isClosed_eq.lean:58:2: warning: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_AlgebraicGeometry_trace_eq_zero_of_finrank_eq_char_of_forall_isClosed_eq.lean:62:11: error: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  ?e ((RingEquiv.symm ?e) ?x)
+in the target expression
+  (IsLocalization.AtPrime.equivQuotMaximalIdeal 𝔪 Rₚ) ((Ideal.Quotient.mk 𝔪) ((Algebra.trace A B) b)) =
+    (IsLocalization.AtPrime.equivQuotMaximalIdeal 𝔪 Rₚ)
+      ((IsLocalization.AtPrime.equivQuotMaximalIdeal 𝔪 Rₚ).symm
+        ((Algebra.trace (Rₚ ⧸ IsLocalRing.maximalIdeal Rₚ)
+            (Sₚ ⧸ Ideal.map (algebraMap Rₚ Sₚ) (IsLocalRing.maximalIdeal Rₚ)))
+          ((algebraMap B (Sₚ ⧸ Ideal.map (algebraMap Rₚ Sₚ) (IsLocalRing.maximalIdeal Rₚ))) b)))
+
+A : Type u_1
+B : Type u_2
+inst✝⁵ : CommRing A
+inst✝⁴ : CommRing B
+inst✝³ : Algebra A B
+inst✝² : Module.Free A B
+inst✝¹ : Module.Finite A B
+𝔪 : Ideal A
+inst✝ : 𝔪.IsMaximal
+b : B
+Rₚ : Type u_1 := Localization.AtPrime 𝔪
+Sₚ : Type u_2 := Localization (Algebra.algebraMapSubmonoid B 𝔪.primeCompl)
+this✝³ : Algebra Rₚ Sₚ := localizationAlgebra 𝔪.primeCompl B
+this✝² : IsScalarTower A Rₚ Sₚ
+this✝¹ : IsLocalization (Algebra.algebraMapSubmonoid B 𝔪.primeCompl) Sₚ
+this✝ : Module.Finite Rₚ Sₚ
+this : Module.Free Rₚ Sₚ
+key :
+  (Algebra.trace (A ⧸ 𝔪) (B ⧸ Ideal.map (algebraMap A B) 𝔪)) ((Ideal.Quotient.mk (Ideal.map (algebraMap A B) 𝔪)) b) =
+    (IsLocalization.AtPrime.equivQuotMaximalIdeal 𝔪 Rₚ).symm
+      ((Algebra.trace (Rₚ ⧸ IsLocalRing.maximalIdeal Rₚ)
+          (Sₚ ⧸ Ideal.map (algebraMap Rₚ Sₚ) (IsLocalRing.maximalIdeal Rₚ)))
+        ((algebraMap B (Sₚ ⧸ Ideal.map (algebraMap Rₚ Sₚ) (IsLocalRing.maximalIdeal Rₚ))) b))
+⊢ (IsLocalization.AtPrime.equivQuotMaximalIdeal 𝔪 Rₚ) ((Ideal.Quotient.mk 𝔪) ((Algebra.trace A B) b)) =
+    (IsLocalization.AtPrime.equivQuotMaximalIdeal 𝔪 Rₚ)
+      ((IsLocalization.AtPrime.equivQuotMaximalIdeal 𝔪 Rₚ).symm
+        ((Algebra.trace (Rₚ ⧸ IsLocalRing.maximalIdeal Rₚ)
+            (Sₚ ⧸ Ideal.map (algebraMap Rₚ Sₚ) (IsLocalRing.maximalIdeal Rₚ)))
+          ((algebraMap B (Sₚ ⧸ Ideal.map (algebraMap Rₚ Sₚ) (IsLocalRing.maximalIdeal Rₚ))) b)))
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_AlgebraicGeometry_trace_eq_zero_of_finrank_eq_char_of_forall_isClosed_eq.lean:104:0: warning: automatically included section variable(s) unused in theorem `P2MW.S_AlgebraicGeometry_trace_eq_zero_of_finrank_eq_char_of_forall_isClosed_eq.TraceZero3a67f5ea.isPullback_fromSpec`:
+  [Flat f]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Flat f] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_AlgebraicGeometry_trace_eq_zero_of_finrank_eq_char_of_forall_isClosed_eq.lean:148:2: warning: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_AlgebraicGeometry_trace_eq_zero_of_finrank_eq_char_of_forall_isClosed_eq.lean:173:2: warning: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_AlgebraicGeometry_trace_eq_zero_of_finrank_eq_char_of_forall_isClosed_eq.lean:179:4: warning: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_AlgebraicGeometry_trace_eq_zero_of_finrank_eq_char_of_forall_isClosed_eq.lean:185:2: warning: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_AlgebraicGeometry_trace_eq_zero_of_finrank_eq_char_of_forall_isClosed_eq.lean:186:2: warning: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_AlgebraicGeometry_trace_eq_zero_of_finrank_eq_char_of_forall_isClosed_eq.lean:189:2: warning: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_AlgebraicGeometry_trace_eq_zero_of_finrank_eq_char_of_forall_isClosed_eq.lean:190:2: warning: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_AlgebraicGeometry_trace_eq_zero_of_finrank_eq_char_of_forall_isClosed_eq.lean:198:2: warning: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_AlgebraicGeometry_trace_eq_zero_of_finrank_eq_char_of_forall_isClosed_eq.lean:201:2: warning: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_AlgebraicGeometry_trace_eq_zero_of_finrank_eq_char_of_forall_isClosed_eq.lean:204:2: warning: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_AlgebraicGeometry_trace_eq_zero_of_finrank_eq_char_of_forall_isClosed_eq.lean:206:2: warning: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_AlgebraicGeometry_trace_eq_zero_of_finrank_eq_char_of_forall_isClosed_eq.lean:209:2: warning: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_AlgebraicGeometry_trace_eq_zero_of_finrank_eq_char_of_forall_isClosed_eq.lean:211:2: warning: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_AlgebraicGeometry_trace_eq_zero_of_finrank_eq_char_of_forall_isClosed_eq.lean:212:2: warning: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_AlgebraicGeometry_trace_eq_zero_of_finrank_eq_char_of_forall_isClosed_eq.lean:216:4: warning: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_AlgebraicGeometry_trace_eq_zero_of_finrank_eq_char_of_forall_isClosed_eq.lean:218:4: warning: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`

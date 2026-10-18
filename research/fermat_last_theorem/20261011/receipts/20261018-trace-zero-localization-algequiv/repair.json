@@ -1,0 +1,173 @@
+{
+  "at": "2026-10-18T05:01:20.735208+00:00",
+  "name": "AlgebraicGeometry_trace_eq_zero_of_finrank_eq_char_of_forall_isClosed_eq",
+  "candidate": "r2",
+  "card_candidate": "r1",
+  "source_replacements": [
+    [
+      "RingEquiv.apply_symm_apply",
+      "AlgEquiv.apply_symm_apply",
+      1
+    ],
+    [
+      "[IsFinite f] [Flat f] (U : Y.Opens)",
+      "[IsFinite f] [hflat : Flat f] (U : Y.Opens)",
+      1
+    ],
+    [
+      "theorem isPullback_fromSpec :\n",
+      "omit hflat in\ntheorem isPullback_fromSpec [Flat f] :\n",
+      1
+    ],
+    [
+      "\n  haveI : IsArtinianRing B := IsArtinianRing.of_finite k B\n",
+      "\n  have : IsArtinianRing B := IsArtinianRing.of_finite k B\n",
+      1
+    ],
+    [
+      "\n  letI : Algebra R\u209a S\u209a := localizationAlgebra \ud835\udd2a.primeCompl B\n",
+      "\n  let : Algebra R\u209a S\u209a := localizationAlgebra \ud835\udd2a.primeCompl B\n",
+      1
+    ],
+    [
+      "\n  haveI : IsScalarTower A R\u209a S\u209a := IsScalarTower.of_algebraMap_eq'\n",
+      "\n  have : IsScalarTower A R\u209a S\u209a := IsScalarTower.of_algebraMap_eq'\n",
+      1
+    ],
+    [
+      "\n  haveI : IsLocalization (Algebra.algebraMapSubmonoid B \ud835\udd2a.primeCompl) S\u209a := inferInstance\n",
+      "\n  have : IsLocalization (Algebra.algebraMapSubmonoid B \ud835\udd2a.primeCompl) S\u209a := inferInstance\n",
+      1
+    ],
+    [
+      "\n  haveI : Module.Finite R\u209a S\u209a := .of_isLocalization A B \ud835\udd2a.primeCompl\n",
+      "\n  have : Module.Finite R\u209a S\u209a := .of_isLocalization A B \ud835\udd2a.primeCompl\n",
+      1
+    ],
+    [
+      "\n  haveI : Module.Free R\u209a S\u209a :=\n",
+      "\n  have : Module.Free R\u209a S\u209a :=\n",
+      1
+    ],
+    [
+      "\n  letI := (f.app U).hom.toAlgebra\n",
+      "\n  let := (f.app U).hom.toAlgebra\n",
+      2
+    ],
+    [
+      "\n  \u00b7 haveI : Subsingleton B := Module.subsingleton A B\n",
+      "\n  \u00b7 have : Subsingleton B := Module.subsingleton A B\n",
+      1
+    ],
+    [
+      "\n  letI : Algebra \u03ba A := \u03c6.toAlgebra\n",
+      "\n  let : Algebra \u03ba A := \u03c6.toAlgebra\n",
+      1
+    ],
+    [
+      "\n  haveI : Algebra.FiniteType \u03ba A := by\n",
+      "\n  have : Algebra.FiniteType \u03ba A := by\n",
+      1
+    ],
+    [
+      "\n  haveI : IsJacobsonRing A := isJacobsonRing_of_finiteType (A := \u03ba) (B := A)\n",
+      "\n  have : IsJacobsonRing A := isJacobsonRing_of_finiteType (A := \u03ba) (B := A)\n",
+      1
+    ],
+    [
+      "\n  haveI : JacobsonSpace X := LocallyOfFiniteType.jacobsonSpace (f \u226b fY)\n",
+      "\n  have : JacobsonSpace X := LocallyOfFiniteType.jacobsonSpace (f \u226b fY)\n",
+      1
+    ],
+    [
+      "\n  haveI := h\ud835\udd2a\n",
+      "\n  have := h\ud835\udd2a\n",
+      1
+    ],
+    [
+      "\n  letI : Field (A \u29f8 \ud835\udd2a) := Ideal.Quotient.field \ud835\udd2a\n",
+      "\n  let : Field (A \u29f8 \ud835\udd2a) := Ideal.Quotient.field \ud835\udd2a\n",
+      1
+    ],
+    [
+      "\n  haveI : Module.Finite (A \u29f8 \ud835\udd2a) (B \u29f8 \ud835\udd2a.map (algebraMap A B)) := Module.Finite.of_restrictScalars_finite A _ _\n",
+      "\n  have : Module.Finite (A \u29f8 \ud835\udd2a) (B \u29f8 \ud835\udd2a.map (algebraMap A B)) := Module.Finite.of_restrictScalars_finite A _ _\n",
+      1
+    ],
+    [
+      "\n  haveI : IsLocalRing (B \u29f8 \ud835\udd2a.map (algebraMap A B)) :=\n",
+      "\n  have : IsLocalRing (B \u29f8 \ud835\udd2a.map (algebraMap A B)) :=\n",
+      1
+    ],
+    [
+      "\n  haveI : Module.Finite \u03ba (A \u29f8 \ud835\udd2a) := finite_of_finite_type_of_isJacobsonRing \u03ba (A \u29f8 \ud835\udd2a)\n",
+      "\n  have : Module.Finite \u03ba (A \u29f8 \ud835\udd2a) := finite_of_finite_type_of_isJacobsonRing \u03ba (A \u29f8 \ud835\udd2a)\n",
+      1
+    ],
+    [
+      "\n  haveI : IsAlgClosed (A \u29f8 \ud835\udd2a) := IsAlgClosed.of_ringEquiv \u03ba (A \u29f8 \ud835\udd2a) (RingEquiv.ofBijective _ hbij)\n",
+      "\n  have : IsAlgClosed (A \u29f8 \ud835\udd2a) := IsAlgClosed.of_ringEquiv \u03ba (A \u29f8 \ud835\udd2a) (RingEquiv.ofBijective _ hbij)\n",
+      1
+    ],
+    [
+      "\n  haveI : CharP (A \u29f8 \ud835\udd2a) p := charP_of_injective_ringHom hbij.1 p\n",
+      "\n  have : CharP (A \u29f8 \ud835\udd2a) p := charP_of_injective_ringHom hbij.1 p\n",
+      1
+    ],
+    [
+      "\n    letI : Field ((B \u29f8 \ud835\udd2a.map (algebraMap A B)) \u29f8 IsLocalRing.maximalIdeal (B \u29f8 \ud835\udd2a.map (algebraMap A B))) :=\n",
+      "\n    let : Field ((B \u29f8 \ud835\udd2a.map (algebraMap A B)) \u29f8 IsLocalRing.maximalIdeal (B \u29f8 \ud835\udd2a.map (algebraMap A B))) :=\n",
+      1
+    ],
+    [
+      "\n    haveI : Module.Finite (A \u29f8 \ud835\udd2a) ((B \u29f8 \ud835\udd2a.map (algebraMap A B)) \u29f8 IsLocalRing.maximalIdeal (B \u29f8 \ud835\udd2a.map (algebraMap A B))) :=\n",
+      "\n    have : Module.Finite (A \u29f8 \ud835\udd2a) ((B \u29f8 \ud835\udd2a.map (algebraMap A B)) \u29f8 IsLocalRing.maximalIdeal (B \u29f8 \ud835\udd2a.map (algebraMap A B))) :=\n",
+      1
+    ]
+  ],
+  "card_replacements": [],
+  "baseline_byte_identical_to_pinned_supplier": true,
+  "pinned_supplier_source_and_card_preserved": true,
+  "supplier_repository": "anthropics/fermats-last-theorem",
+  "supplier_revision": "6e837e75355538c7f80bab5b956861e86c4eacc2",
+  "verification_pending": false,
+  "installed": true,
+  "no_linter_suppression_added": true,
+  "complete_original_proof_preserved": true,
+  "full_original_statement_and_hypotheses_preserved": true,
+  "max_active_flt_jobs": 1,
+  "lean_threads": 1,
+  "original_actual_errors": 1,
+  "original_actual_warnings": 23,
+  "original_kernel_seconds": 67.058675459,
+  "actual_failure": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/official-layout/terminal-proof-repairs/20261018-trace-zero-localization-algequiv/previous-actual-failure",
+  "fixed_pin_api_evidence": {
+    "equivQuotMaximalIdeal": "Mathlib/RingTheory/Localization/AtPrime/Basic.lean:603 returns an algebra equivalence",
+    "AlgEquiv.apply_symm_apply": "Mathlib/Algebra/Algebra/Equiv.lean:331",
+    "original_error": "RingEquiv.apply_symm_apply fails to match AlgEquiv inverse application"
+  },
+  "change": "Use AlgEquiv.apply_symm_apply for the actual residue-field algebra equivalence. Preserve the full original localization/trace proof and public theorem, every original hypothesis, and the Flat f hypothesis of isPullback_fromSpec by explicitly naming/including it. Repair the 22 reported local haveI/letI style bindings without changing their values. Append final source/card recursive axiom queries. Await original single-worker queue.",
+  "full_original_complete": false,
+  "official_new_solve_credit": 0,
+  "stale_terminal_state_entries_excluded": [],
+  "active_import_closure_excluded": [
+    "Submission.Supplier.P2M.Sol.S_AutomorphicForm_ComplexIwasawa_contDiff_and_exists_bound_iteratedFDeriv_kC_apply"
+  ],
+  "active_transitive_import_closure_size": 3,
+  "actual_live_descendant_sources": [],
+  "all_four_canonical_adapted_source_card_modules_excluded": [
+    "P2M.Sol.S_AlgebraicGeometry_trace_eq_zero_of_finrank_eq_char_of_forall_isClosed_eq",
+    "Submission.Supplier.P2M.Sol.S_AlgebraicGeometry_trace_eq_zero_of_finrank_eq_char_of_forall_isClosed_eq",
+    "Submission.Supplier.Theorems.Thm_AlgebraicGeometry_trace_eq_zero_of_finrank_eq_char_of_forall_isClosed_eq",
+    "Theorems.Thm_AlgebraicGeometry_trace_eq_zero_of_finrank_eq_char_of_forall_isClosed_eq"
+  ],
+  "installed_at": "2026-10-18T05:06:03.441530+00:00",
+  "r1_make_kernel_success": true,
+  "r1_remaining_source_warnings": 1,
+  "r1_recursive_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "r2_change": "Retain Flat f as an explicit theorem instance parameter of isPullback_fromSpec, omitting only the duplicate automatic section parameter; no original logical hypothesis is removed. Original Flat-dependent remaining helpers keep the section parameter."
+}
