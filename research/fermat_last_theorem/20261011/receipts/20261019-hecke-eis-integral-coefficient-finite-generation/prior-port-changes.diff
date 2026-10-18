@@ -1,0 +1,42 @@
+--- pinned-supplier
++++ prior-canonical
+@@ -5,6 +5,9 @@
+ import Theorems.Thm_HeckeEis_binaryFormRepSL_neg_one_apply
+ import P2M.Util
+ namespace P2MW.S_HeckeEis_exists_ne_zero_smul_eq_coeffH1par_map_int_rat
++
++local macro "coeff" d:term:arg P:term:arg : term => `(AddMonoidAlgebra.coeff $P $d)
++local macro "coeff" d:term:arg : term => `(fun P => AddMonoidAlgebra.coeff P $d)
+ 
+ set_option autoImplicit false
+ 
+@@ -322,7 +325,7 @@
+ 
+ theorem IsInt.zero : IsInt 0 := fun d => ⟨0, by simp⟩
+ theorem IsInt.add {P Q : MvPolynomial (Fin 2) ℚ} (hP : IsInt P) (hQ : IsInt Q) : IsInt (P + Q) := fun d => by
+-  obtain ⟨a, ha⟩ := hP d; obtain ⟨b, hb⟩ := hQ d; exact ⟨a + b, by rw [coeff_add, ha, hb]; push_cast; rfl⟩
++  obtain ⟨a, ha⟩ := hP d; obtain ⟨b, hb⟩ := hQ d; exact ⟨a + b, by rw [MvPolynomial.coeff_add, ha, hb]; push_cast; rfl⟩
+ theorem IsInt.neg {P : MvPolynomial (Fin 2) ℚ} (hP : IsInt P) : IsInt (-P) := fun d => by
+   obtain ⟨a, ha⟩ := hP d; exact ⟨-a, by rw [coeff_neg, ha]; push_cast; rfl⟩
+ theorem IsInt.zsmul {P : MvPolynomial (Fin 2) ℚ} (hP : IsInt P) (m : ℤ) : IsInt (m • P) := fun d => by
+@@ -438,7 +441,8 @@
+ 
+ scoped instance instGroupFG_Gamma0 (N : ℕ) [NeZero N] : Group.FG (Gamma0 N) := by
+   haveI : (Gamma0 N).FiniteIndex := Subgroup.finiteIndex_of_le (Gamma_le_Gamma0 N)
+-  haveI : Group.FG SL(2, ℤ) := ⟨⟨{ModularGroup.S, ModularGroup.T}, by simpa using SpecialLinearGroup.SL2Z_generators⟩⟩
++  haveI : Group.FG SL(2, ℤ) := Group.fg_iff.mpr
++    ⟨{ModularGroup.S, ModularGroup.T}, SpecialLinearGroup.SL2Z_generators, Set.toFinite _⟩
+   exact Subgroup.fg_of_index_ne_zero _
+ 
+ theorem conj_T_zpow_eq (δ : SL(2, ℤ)) (h : ℤ) : δ * ModularGroup.T ^ h * δ⁻¹ = MulAut.conj δ (ModularGroup.T ^ h) := by
+@@ -624,8 +628,8 @@
+ 
+       apply Subtype.ext; ext d
+       have h2 := congrArg (fun P : ↥(BinaryForm ℤ n) => coeff d (P : MvPolynomial (Fin 2) ℤ)) h1
+-      simp only [Submodule.coe_add, coeff_add, Submodule.coe_zero, coeff_zero] at h2
+-      simp only [Submodule.coe_zero, coeff_zero]
++      simp only [Submodule.coe_add, MvPolynomial.coeff_add, Submodule.coe_zero, MvPolynomial.coeff_zero] at h2
++      simp only [Submodule.coe_zero, MvPolynomial.coeff_zero]
+       omega
+     rw [hγm, hycoc m₁ γ', hym₁, zero_add, hρm₁, Module.End.one_apply, map_mul, hρm₁, one_mul]
+     exact hpar'

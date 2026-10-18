@@ -1,0 +1,95 @@
+{
+  "at": "2026-10-18T18:43:52.023734+00:00",
+  "name": "HeckeEis_exists_ne_zero_smul_eq_coeffH1par_map_int_rat",
+  "candidate": "r1",
+  "card_candidate": "r1",
+  "source_replacements": [
+    [
+      "(fun a => by simp [binarySubst_C]) (fun j => by simp [binarySubst_X, map_sum])",
+      "(fun a => by simp) (fun j => by simp [binarySubst_X])",
+      1
+    ],
+    [
+      "rw [MvPolynomial.coeff_add, ha, hb]",
+      "rw [AddMonoidAlgebra.coeff_add, Finsupp.add_apply, ha, hb]",
+      1
+    ],
+    [
+      "haveI : (Gamma0 N).FiniteIndex",
+      "have : (Gamma0 N).FiniteIndex",
+      2
+    ],
+    [
+      "haveI : Group.FG SL(2, \u2124)",
+      "have : Group.FG SL(2, \u2124)",
+      1
+    ],
+    [
+      "haveI : Fintype (SL(2, \u2124) \u29f8 Gamma0 N)",
+      "have : Fintype (SL(2, \u2124) \u29f8 Gamma0 N)",
+      1
+    ],
+    [
+      "theorem mul_cuspRep_inv_mem",
+      "omit [NeZero N] in\ntheorem mul_cuspRep_inv_mem",
+      1
+    ],
+    [
+      "simp only [Submodule.coe_add, MvPolynomial.coeff_add, Submodule.coe_zero, MvPolynomial.coeff_zero] at h2",
+      "simp only [Submodule.coe_add, AddMonoidAlgebra.coeff_add, Finsupp.add_apply,\n        Submodule.coe_zero, AddMonoidAlgebra.coeff_zero, Finsupp.zero_apply] at h2",
+      1
+    ],
+    [
+      "simp only [Submodule.coe_zero, MvPolynomial.coeff_zero]",
+      "simp only [Submodule.coe_zero, AddMonoidAlgebra.coeff_zero, Finsupp.zero_apply]",
+      1
+    ],
+    [
+      "obtain \u27e8S, hS\u27e9 := Group.fg_def.mp (instGroupFG_Gamma0 N)",
+      "obtain \u27e8_, S, _, hS\u27e9 := Group.fg_iff'.mp (instGroupFG_Gamma0 N)",
+      1
+    ]
+  ],
+  "card_replacements": [],
+  "supplier_repository": "anthropics/fermats-last-theorem",
+  "supplier_revision": "6e837e75355538c7f80bab5b956861e86c4eacc2",
+  "baseline_byte_identical_to_pinned_supplier": false,
+  "pinned_supplier_source_and_card_preserved": true,
+  "prior_port_progress_preserved": true,
+  "prior_supplier_diff": "prior-port-changes.diff",
+  "full_original_statement_and_hypotheses_preserved": true,
+  "complete_original_proof_preserved": true,
+  "public_solution_telescope_and_conclusion_byte_identical": true,
+  "card_proof_byte_identical_before_axiom_query": true,
+  "no_linter_suppression_added": true,
+  "verification_pending": false,
+  "installed": true,
+  "max_active_flt_jobs": 1,
+  "lean_threads": 1,
+  "original_actual_errors": 2,
+  "original_actual_warnings": 11,
+  "change": "Preserve the complete original proof and existing local coefficient/API port. Explicitly evaluate coefficient Finsupp sums/zero before the original omega step; extract the original finite generating finset via Group.fg_iff' with subgroup closure and use that same S for clearing denominators. Clean only reported unused simp arguments/proposition haveI/deprecated coefficient lemmas and omit the unused automatic NeZero hypothesis on the local cusp representative helper. Exact public solution/card statements, every target hypothesis and full downstream proofs unchanged. Verification pending.",
+  "full_original_complete": false,
+  "official_new_solve_credit": 0,
+  "stale_terminal_state_entries_excluded": [],
+  "active_import_closure_excluded": [
+    "Submission.Supplier.P2M.Sol.S_HeckeEis_exists_isEichlerIntegral_isParabolicCocycle"
+  ],
+  "active_transitive_import_closure_size": 32,
+  "actual_live_descendant_sources": [
+    {
+      "pid": 13397,
+      "source": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_HeckeEis_exists_isEichlerIntegral_isParabolicCocycle.lean"
+    }
+  ],
+  "all_four_canonical_adapted_source_card_modules_excluded": [
+    "P2M.Sol.S_HeckeEis_exists_ne_zero_smul_eq_coeffH1par_map_int_rat",
+    "Submission.Supplier.P2M.Sol.S_HeckeEis_exists_ne_zero_smul_eq_coeffH1par_map_int_rat",
+    "Submission.Supplier.Theorems.Thm_HeckeEis_exists_ne_zero_smul_eq_coeffH1par_map_int_rat",
+    "Theorems.Thm_HeckeEis_exists_ne_zero_smul_eq_coeffH1par_map_int_rat"
+  ],
+  "installed_at": "2026-10-18T18:44:10.641722+00:00",
+  "supplier_license": "Apache-2.0",
+  "public_solution_identical_to_pinned_supplier": true,
+  "card_identical_to_pinned_supplier_before_axiom_query": true
+}
