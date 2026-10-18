@@ -1,0 +1,50 @@
+{
+  "sha256": "3c4f91153b5a4884d96c86a723db465a16a9991fcc55223b9fda5d15c5f3231c",
+  "exit": 0,
+  "empty_output_retry_done": false,
+  "source_sha256_after": "3c4f91153b5a4884d96c86a723db465a16a9991fcc55223b9fda5d15c5f3231c",
+  "source_unchanged": true,
+  "olean_sha256": "dbbe5b46d1aa4fd6779efdba8bbe9c40c9bb140ba256e29f94ac9f8c0daa078b",
+  "seconds": 10.21859116700216,
+  "pid": 24155,
+  "command": [
+    "/Users/macstudio/.local/omega-shims/lean",
+    "-j1",
+    "--trust=0",
+    "-Ddebug.skipKernelTC=false",
+    "-R",
+    "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src",
+    "-o",
+    "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-build/lib/lean/Submission/Supplier/Theorems/Thm_CohCarrier_exists_complex_heckeT_eigen_reduction_eq_of_mem_span_int.olean",
+    "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/Theorems/Thm_CohCarrier_exists_complex_heckeT_eigen_reduction_eq_of_mem_span_int.lean"
+  ],
+  "make_wrapper_pid": 24130,
+  "make_exit": 0,
+  "make_entry_failed": false,
+  "cache_binding_valid": true,
+  "canonical_make_running_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/f006810ae6a32180ca75e018-1792314238812371000.make-running.json",
+  "canonical_make_terminal_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/f006810ae6a32180ca75e018-1792314238812371000.make-terminal.json",
+  "kernel_terminal_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/f006810ae6a32180ca75e018-1792314238812371000.kernel/result.json",
+  "direct_dependencies": [
+    {
+      "module": "Submission.Supplier.Definitions.Def_CohCarrier_Level",
+      "source_sha256": "f153a8d16b5962fd7bc39c58257bcc87660e656712c65df73420b9c6f5fe41f7",
+      "object_sha256": "9238d03ad828e4a8d14782c0b931dd9d803d2ca916c6cf3247ff632280d52872",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.P2M.Util",
+      "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+      "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.P2M.Sol.S_CohCarrier_exists_complex_heckeT_eigen_reduction_eq_of_mem_span_int",
+      "source_sha256": "7d7012eb5442c316113931afcbf22d5e1eebfb1f065f74a6447c58d860a007cc",
+      "object_sha256": "bf12d3c3754dd7c0d959b91bc7f4e318648b166199939e9628755acac792f063",
+      "receipt_reused": true
+    }
+  ],
+  "stdout": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/f006810ae6a32180ca75e018-1792314238812371000.kernel/stdout.log",
+  "stderr": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/f006810ae6a32180ca75e018-1792314238812371000.kernel/stderr.log"
+}

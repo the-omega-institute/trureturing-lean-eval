@@ -1,0 +1,80 @@
+{
+  "at": "2026-10-18T09:02:31.666764+00:00",
+  "name": "CohCarrier_exists_complex_heckeT_eigen_reduction_eq_of_mem_span_int",
+  "candidate": "r1",
+  "card_candidate": "r1",
+  "source_replacements": [
+    [
+      "rw [hcomap]",
+      "rw [Ideal.under_def, hcomap]",
+      1
+    ],
+    [
+      "  haveI ",
+      "  have ",
+      21
+    ],
+    [
+      ":=\n  have : NeZero \u2113.1 := \u27e8\u2113.2.1.ne_zero\u27e9",
+      ":=\n  haveI : NeZero \u2113.1 := \u27e8\u2113.2.1.ne_zero\u27e9",
+      1
+    ],
+    [
+      "  letI ",
+      "  let ",
+      4
+    ],
+    [
+      "dif_pos",
+      "dite_eq_left",
+      2
+    ]
+  ],
+  "card_replacements": [],
+  "supplier_repository": "anthropics/fermats-last-theorem",
+  "supplier_revision": "6e837e75355538c7f80bab5b956861e86c4eacc2",
+  "baseline_byte_identical_to_pinned_supplier": false,
+  "preexisting_source_replacements": [
+    [
+      "Ideal.isMaximal_of_isIntegral_of_isMaximal_comap",
+      "Ideal.isMaximal_of_isIntegral_of_isMaximal_under",
+      1
+    ]
+  ],
+  "exactly_this_preexisting_supplier_difference_verified": true,
+  "pinned_supplier_source_and_card_preserved": true,
+  "original_actual_errors": 1,
+  "original_actual_warnings": 25,
+  "actual_failure": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/official-layout/terminal-proof-repairs/20261018-complex-hecke-ideal-under-api/previous-actual-failure",
+  "complete_original_proof_preserved": true,
+  "full_original_statement_and_hypotheses_preserved": true,
+  "public_solution_and_card_telescope_conclusion_byte_identical_before_axiom_query": true,
+  "public_solution_body_only_listed_binding_and_alias_changes": true,
+  "no_linter_suppression_added": true,
+  "fixed_pin_api_evidence": "Official Mathlib5e0c4e5 Ideal/Over.lean:98 under_def unfolds exactly to the comap used by hcomap. The existing source already renamed isMaximal_of_isIntegral_of_isMaximal_comap to its under API; exact replacement equality against the pinned supplier was verified. Add under_def to the unchanged rewrite. Actual diagnostics contain23 binding warnings and two dif_pos aliases; also modernize the subsequent unreachable prime-ideal haveI once the failed rewrite is repaired. Keep the nonproof Tgen instance binding unchanged.",
+  "change": "Unfold Ideal.under with under_def before the existing hcomap rewrite. Preserve the complete590-line original proof/helpers/all hypotheses/public statement/card proof and source attribution. Keep the one preexisting supplier API-name migration explicitly recorded; modernize local proof bindings and the two logged dif_pos aliases only. No new linter suppression. Append recursive axiom queries and await original single-worker make/kernel queue.",
+  "verification_pending": false,
+  "installed": true,
+  "max_active_flt_jobs": 1,
+  "lean_threads": 1,
+  "full_original_complete": false,
+  "official_new_solve_credit": 0,
+  "stale_terminal_state_entries_excluded": [],
+  "active_import_closure_excluded": [
+    "Submission.Supplier.P2M.Sol.S_CongruenceSubgroup_relIndex_gamma1_inf_gamma0_mul_of_dvd"
+  ],
+  "active_transitive_import_closure_size": 2,
+  "actual_live_descendant_sources": [
+    {
+      "pid": 23580,
+      "source": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_CongruenceSubgroup_relIndex_gamma1_inf_gamma0_mul_of_dvd.lean"
+    }
+  ],
+  "all_four_canonical_adapted_source_card_modules_excluded": [
+    "P2M.Sol.S_CohCarrier_exists_complex_heckeT_eigen_reduction_eq_of_mem_span_int",
+    "Submission.Supplier.P2M.Sol.S_CohCarrier_exists_complex_heckeT_eigen_reduction_eq_of_mem_span_int",
+    "Submission.Supplier.Theorems.Thm_CohCarrier_exists_complex_heckeT_eigen_reduction_eq_of_mem_span_int",
+    "Theorems.Thm_CohCarrier_exists_complex_heckeT_eigen_reduction_eq_of_mem_span_int"
+  ],
+  "installed_at": "2026-10-18T09:02:31.796284+00:00"
+}
