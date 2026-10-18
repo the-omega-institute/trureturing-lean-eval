@@ -1,0 +1,67 @@
+{
+  "at": "2026-10-18T18:58:00.636907+00:00",
+  "name": "HeckeEis_eichlerShimuraMap_heckeULin",
+  "candidate": "r2",
+  "card_candidate": "r1",
+  "source_replacements": [
+    [
+      "\n  haveI : NeZero \u2113 := \u27e8h\u2113.ne_zero\u27e9\n",
+      "\n  have : NeZero \u2113 := \u27e8h\u2113.ne_zero\u27e9\n",
+      1
+    ],
+    [
+      "theorem adjugate_cosetMat",
+      "omit [NeZero \u2113] in\ntheorem adjugate_cosetMat",
+      1
+    ],
+    [
+      "theorem cosetOp_apply_eq",
+      "omit [NeZero \u2113] in\ntheorem cosetOp_apply_eq",
+      1
+    ]
+  ],
+  "card_replacements": [],
+  "supplier_repository": "anthropics/fermats-last-theorem",
+  "supplier_revision": "6e837e75355538c7f80bab5b956861e86c4eacc2",
+  "supplier_license": "Apache-2.0",
+  "baseline_byte_identical_to_pinned_supplier": false,
+  "pinned_supplier_source_and_card_preserved": true,
+  "prior_port_progress_preserved": true,
+  "prior_supplier_diff": "prior-port-changes.diff",
+  "full_original_statement_and_hypotheses_preserved": true,
+  "complete_original_proof_preserved": true,
+  "public_solution_telescope_and_conclusion_byte_identical": true,
+  "public_solution_telescope_identical_to_pinned_supplier": true,
+  "card_proof_byte_identical_before_axiom_query": true,
+  "card_identical_to_pinned_supplier_before_axiom_query": true,
+  "no_linter_suppression_added": true,
+  "verification_pending": false,
+  "installed": true,
+  "max_active_flt_jobs": 1,
+  "lean_threads": 1,
+  "original_actual_errors": 0,
+  "original_actual_warnings": 2,
+  "change": "Retain the complete original Eichler integral/coset/action/Hecke compatibility proof and existing coefficient macros. Change only actually reported proposition-valued proof-body haveI bindings to have;omit the unused automatic NeZero hypothesis on the local adjugate-coset helper. Public solution telescope, including embedded haveI in hT, all target hypotheses and theorem-card proof remain byte-identical to supplier. Add source/card recursive axiom queries;actual clean validation pending.",
+  "full_original_complete": false,
+  "official_new_solve_credit": 0,
+  "stale_terminal_state_entries_excluded": [],
+  "active_import_closure_excluded": [
+    "Submission.Supplier.Theorems.Thm_HeckeEis_eichlerShimuraMap_heckeTLin"
+  ],
+  "active_transitive_import_closure_size": 62,
+  "actual_live_descendant_sources": [
+    {
+      "pid": 99015,
+      "source": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/Theorems/Thm_HeckeEis_eichlerShimuraMap_heckeTLin.lean"
+    }
+  ],
+  "all_four_canonical_adapted_source_card_modules_excluded": [
+    "P2M.Sol.S_HeckeEis_eichlerShimuraMap_heckeULin",
+    "Submission.Supplier.P2M.Sol.S_HeckeEis_eichlerShimuraMap_heckeULin",
+    "Submission.Supplier.Theorems.Thm_HeckeEis_eichlerShimuraMap_heckeULin",
+    "Theorems.Thm_HeckeEis_eichlerShimuraMap_heckeULin"
+  ],
+  "installed_at": "2026-10-18T18:59:52.984244+00:00",
+  "followup_warning": "After adjugate helper no longer auto-includes NeZero, cosetOp_apply_eq also no longer needs that automatic local hypothesis;omit it there. Public target hypotheses unchanged.",
+  "same_helper_warning_evidence": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/9e9aff2ea133b50921776cdd-1792349908799345000.kernel/stdout.log"
+}

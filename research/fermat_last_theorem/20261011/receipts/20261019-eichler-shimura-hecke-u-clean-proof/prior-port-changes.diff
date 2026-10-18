@@ -1,0 +1,12 @@
+--- pinned-supplier
++++ prior-canonical
+@@ -12,6 +12,9 @@
+ import Theorems.Thm_HeckeEis_eichlerShimuraMap_eq_coeffH1parMk
+ import P2M.Util
+ namespace P2MW.S_HeckeEis_eichlerShimuraMap_heckeULin
++
++local macro "coeff" d:term:arg P:term:arg : term => `(AddMonoidAlgebra.coeff $P $d)
++local macro "coeff" d:term:arg : term => `(fun P => AddMonoidAlgebra.coeff P $d)
+ 
+ set_option autoImplicit false
+ set_option maxHeartbeats 800000

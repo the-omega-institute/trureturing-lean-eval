@@ -1,0 +1,47 @@
+{
+  "at": "2026-10-18T19:00:58.613069+00:00",
+  "configuration": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/c8240775b128149589509ebb-1792350056638474000.configuration.json",
+  "configuration_sha256": "51d447c43a24a995256373581a994be3f57a9c0102bc3793d2ba3124a7012c74",
+  "source": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_HeckeEis_eichlerShimuraMap_heckeULin.lean",
+  "source_sha256": "81a00b949cd5dcf4c7aeaeb0f1d5bcd132e480ce76ca9089a55af4eedf6dd665",
+  "canonical_common": "/Users/macstudio/omega/trureturing/.git",
+  "official_dependency_partition": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/official-deps",
+  "toolchain": "leanprover/lean4:v4.35.0-rc3",
+  "mathlib_revision": "5e0c4e5239cb0a2d86d68a884bf52cfd963fce22",
+  "make_entry_required": true,
+  "phase": "compile_source",
+  "full_original_proof_verified": false,
+  "official_solve_credit": 0,
+  "command": [
+    "/Users/macstudio/.local/omega-shims/lean",
+    "-j1",
+    "--trust=0",
+    "-Ddebug.skipKernelTC=false",
+    "-R",
+    "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src",
+    "-o",
+    "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-build/lib/lean/Submission/Supplier/P2M/Sol/S_HeckeEis_eichlerShimuraMap_heckeULin.olean",
+    "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_HeckeEis_eichlerShimuraMap_heckeULin.lean"
+  ],
+  "memory_admission": {
+    "workers": 1,
+    "reasons": [
+      "user requires one job; no memory gate"
+    ],
+    "sample": {},
+    "memory_limit_enforced": false
+  },
+  "compiler_pid": 99672,
+  "memory_guard": {
+    "mode": "single_job_no_memory_gate",
+    "memory_limit_enforced": false,
+    "resource_cancellation": null,
+    "actual_exit": 0,
+    "proof_completion_claimed": false
+  },
+  "exit": 0,
+  "seconds": 8.172434,
+  "source_unchanged": true,
+  "object_sha256": "b3eb36ab1f0a72975bb2f42cf6e34d32fbe14fc6645ee5e39fc3b42aad2c5c09",
+  "ended_at": "2026-10-18T19:01:06.786681+00:00"
+}
