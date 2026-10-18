@@ -1,0 +1,85 @@
+{
+  "at": "2026-10-18T00:03:36.771555+00:00",
+  "name": "AlgebraicCurve_Place_existsUnique_sub_algebraMap_mem_nonunits_of_eval_pderiv_ne_zero",
+  "candidate": "r1",
+  "card_candidate": "r1",
+  "source_replacements": [
+    [
+      ".out 4 0).mp",
+      ".out 5 1).mp",
+      1
+    ],
+    [
+      ".out 4 1).mp",
+      ".out 5 2).mp",
+      1
+    ],
+    [
+      "  haveI : FaithfulSMul",
+      "  have : FaithfulSMul",
+      2
+    ],
+    [
+      "  haveI : Algebra.FiniteType",
+      "  have : Algebra.FiniteType",
+      1
+    ],
+    [
+      "  haveI := isFractionRing_A (x := x) (y := y) hF\n  obtain \u27e8p, r, -, hz\u27e9",
+      "  have := isFractionRing_A (x := x) (y := y) hF\n  obtain \u27e8p, r, -, hz\u27e9",
+      1
+    ],
+    [
+      "  haveI := isFractionRing_A (x := x) (y := y) hF\n  obtain \u27e8\u27e8p, r\u27e9, hpr\u27e9",
+      "  have := isFractionRing_A (x := x) (y := y) hF\n  obtain \u27e8\u27e8p, r\u27e9, hpr\u27e9",
+      1
+    ],
+    [
+      "    haveI := isFractionRing_O hker hF hab",
+      "    have := isFractionRing_O hker hF hab",
+      1
+    ],
+    [
+      "    haveI := valuationRing_O hf hker hF hab hsmooth",
+      "    have := valuationRing_O hf hker hF hab hsmooth",
+      1
+    ],
+    [
+      "include hf hsmooth in\ntheorem tO_ne_zero",
+      "include hsmooth in\ntheorem tO_ne_zero",
+      1
+    ]
+  ],
+  "card_replacements": [],
+  "installed": true,
+  "verification_pending": false,
+  "baseline_byte_identical_to_pinned_supplier": true,
+  "supplier_repository": "anthropics/fermats-last-theorem",
+  "supplier_revision": "6e837e75355538c7f80bab5b956861e86c4eacc2",
+  "pinned_supplier_source_and_card_preserved": true,
+  "full_original_statement_and_hypotheses_preserved": true,
+  "preservation_scope": "Entire public solution and theorem card statements/hypotheses/proofs byte-identical apart from appended axiom queries. Only internal unused tO_ne_zero helper omits its unused automatically included hf; its proof body is unchanged and it has no source-local callers.",
+  "original_solution_declaration_and_proof_byte_identical": true,
+  "complete_original_proof_preserved": true,
+  "original_internal_unused_helper_hf_omitted": true,
+  "no_linter_suppression_added": true,
+  "original_actual_errors": 8,
+  "original_actual_warnings": 8,
+  "actual_failure": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/official-layout/terminal-proof-repairs/20261018-smooth-point-dvr-tfae-one-based-indices/previous-actual-failure",
+  "max_active_flt_jobs": 1,
+  "lean_threads": 1,
+  "full_original_complete": false,
+  "official_new_solve_credit": 0,
+  "change": "Adapt the two DVR TFAE.out calls from old zero-based4\u21920/4\u21921 to current one-based5\u21921/5\u21922. Preserve the same principal-maximal-ideal to PID/valuation-ring proof. Update seven actually flagged proposition-valued haveI declarations to have, and omit only the unused automatically included hf from the internal tO_ne_zero helper. Preserve complete original smooth-point localization, valuation-subring/place construction and uniqueness proof, and the literal public solution/card. Append actual axiom queries for natural source/card make/kernel verification.",
+  "active_import_closure_excluded": [
+    "Submission.Supplier.Theorems.Thm_AlgebraicCurve_Place_exists_eq_smul_D_of_ord_ne_zero"
+  ],
+  "active_transitive_import_closure_size": 17,
+  "actual_live_descendant_sources": [],
+  "all_four_canonical_adapted_source_card_modules_excluded": [
+    "P2M.Sol.S_AlgebraicCurve_Place_existsUnique_sub_algebraMap_mem_nonunits_of_eval_pderiv_ne_zero",
+    "Submission.Supplier.P2M.Sol.S_AlgebraicCurve_Place_existsUnique_sub_algebraMap_mem_nonunits_of_eval_pderiv_ne_zero",
+    "Submission.Supplier.Theorems.Thm_AlgebraicCurve_Place_existsUnique_sub_algebraMap_mem_nonunits_of_eval_pderiv_ne_zero",
+    "Theorems.Thm_AlgebraicCurve_Place_existsUnique_sub_algebraMap_mem_nonunits_of_eval_pderiv_ne_zero"
+  ]
+}

@@ -1,0 +1,171 @@
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_AlgebraicCurve_Place_existsUnique_sub_algebraMap_mem_nonunits_of_eval_pderiv_ne_zero.lean:202:2: warning: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_AlgebraicCurve_Place_existsUnique_sub_algebraMap_mem_nonunits_of_eval_pderiv_ne_zero.lean:215:2: warning: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_AlgebraicCurve_Place_existsUnique_sub_algebraMap_mem_nonunits_of_eval_pderiv_ne_zero.lean:408:0: warning: automatically included section variable(s) unused in theorem `P2MW.S_AlgebraicCurve_Place_existsUnique_sub_algebraMap_mem_nonunits_of_eval_pderiv_ne_zero.SmoothPointDVR.tO_ne_zero`:
+  hf
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit hf in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_AlgebraicCurve_Place_existsUnique_sub_algebraMap_mem_nonunits_of_eval_pderiv_ne_zero.lean:421:3: error: could not synthesize default value for parameter 'h₁' using tactics
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_AlgebraicCurve_Place_existsUnique_sub_algebraMap_mem_nonunits_of_eval_pderiv_ne_zero.lean:421:3: error: Tactic `rfl` failed: The left-hand side
+  [IsPrincipalIdealRing ↥(O hker hab hF), ValuationRing ↥(O hker hab hF), IsDedekindDomain ↥(O hker hab hF),
+      IsIntegrallyClosed ↥(O hker hab hF) ∧
+        ∀ (P : Ideal ↥(O hker hab hF)), P ≠ ⊥ → P.IsPrime → P = IsLocalRing.maximalIdeal ↥(O hker hab hF),
+      Submodule.IsPrincipal (IsLocalRing.maximalIdeal ↥(O hker hab hF)),
+      Module.finrank (IsLocalRing.ResidueField ↥(O hker hab hF)) (IsLocalRing.CotangentSpace ↥(O hker hab hF)) ≤ 1,
+      ∀ (I : Ideal ↥(O hker hab hF)), I ≠ ⊥ → ∃ n, I = IsLocalRing.maximalIdeal ↥(O hker hab hF) ^ n][4 - 1]?
+is not definitionally equal to the right-hand side
+  some (Submodule.IsPrincipal (IsLocalRing.maximalIdeal ↥(O hker hab hF)))
+
+K : Type u_1
+F : Type u_2
+inst✝² : Field K
+inst✝¹ : Field F
+inst✝ : Algebra K F
+x y : F
+f : MvPolynomial (Fin 2) K
+a b : K
+hf : (aeval ![x, y]) f = 0
+hker : ∀ (g : MvPolynomial (Fin 2) K), (aeval ![x, y]) g = 0 → g ∈ Ideal.span {f}
+hF : Subfield.closure (Set.range ⇑(algebraMap K F) ∪ {x, y}) = ⊤
+hab : (eval ![a, b]) f = 0
+hsmooth : (eval ![a, b]) ((pderiv 1) f) ≠ 0
+⊢ [IsPrincipalIdealRing ↥(O hker hab hF), ValuationRing ↥(O hker hab hF), IsDedekindDomain ↥(O hker hab hF),
+        IsIntegrallyClosed ↥(O hker hab hF) ∧
+          ∀ (P : Ideal ↥(O hker hab hF)), P ≠ ⊥ → P.IsPrime → P = IsLocalRing.maximalIdeal ↥(O hker hab hF),
+        Submodule.IsPrincipal (IsLocalRing.maximalIdeal ↥(O hker hab hF)),
+        Module.finrank (IsLocalRing.ResidueField ↥(O hker hab hF)) (IsLocalRing.CotangentSpace ↥(O hker hab hF)) ≤ 1,
+        ∀ (I : Ideal ↥(O hker hab hF)), I ≠ ⊥ → ∃ n, I = IsLocalRing.maximalIdeal ↥(O hker hab hF) ^ n][4 - 1]? =
+    some (Submodule.IsPrincipal (IsLocalRing.maximalIdeal ↥(O hker hab hF)))
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_AlgebraicCurve_Place_existsUnique_sub_algebraMap_mem_nonunits_of_eval_pderiv_ne_zero.lean:421:3: error: could not synthesize default value for parameter 'x._@.Mathlib.Data.List.TFAE.4142160432._hygCtx._hyg.58' using tactics
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_AlgebraicCurve_Place_existsUnique_sub_algebraMap_mem_nonunits_of_eval_pderiv_ne_zero.lean:421:3: error: TFAE indices start at 1.
+K : Type u_1
+F : Type u_2
+inst✝² : Field K
+inst✝¹ : Field F
+inst✝ : Algebra K F
+x y : F
+f : MvPolynomial (Fin 2) K
+a b : K
+hf : (aeval ![x, y]) f = 0
+hker : ∀ (g : MvPolynomial (Fin 2) K), (aeval ![x, y]) g = 0 → g ∈ Ideal.span {f}
+hF : Subfield.closure (Set.range ⇑(algebraMap K F) ∪ {x, y}) = ⊤
+hab : (eval ![a, b]) f = 0
+hsmooth : (eval ![a, b]) ((pderiv 1) f) ≠ 0
+⊢ 0 ≠ 0
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_AlgebraicCurve_Place_existsUnique_sub_algebraMap_mem_nonunits_of_eval_pderiv_ne_zero.lean:426:3: error: could not synthesize default value for parameter 'h₁' using tactics
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_AlgebraicCurve_Place_existsUnique_sub_algebraMap_mem_nonunits_of_eval_pderiv_ne_zero.lean:426:3: error: Tactic `rfl` failed: The left-hand side
+  [IsPrincipalIdealRing ↥(O hker hab hF), ValuationRing ↥(O hker hab hF), IsDedekindDomain ↥(O hker hab hF),
+      IsIntegrallyClosed ↥(O hker hab hF) ∧
+        ∀ (P : Ideal ↥(O hker hab hF)), P ≠ ⊥ → P.IsPrime → P = IsLocalRing.maximalIdeal ↥(O hker hab hF),
+      Submodule.IsPrincipal (IsLocalRing.maximalIdeal ↥(O hker hab hF)),
+      Module.finrank (IsLocalRing.ResidueField ↥(O hker hab hF)) (IsLocalRing.CotangentSpace ↥(O hker hab hF)) ≤ 1,
+      ∀ (I : Ideal ↥(O hker hab hF)), I ≠ ⊥ → ∃ n, I = IsLocalRing.maximalIdeal ↥(O hker hab hF) ^ n][4 - 1]?
+is not definitionally equal to the right-hand side
+  some (Submodule.IsPrincipal (IsLocalRing.maximalIdeal ↥(O hker hab hF)))
+
+K : Type u_1
+F : Type u_2
+inst✝² : Field K
+inst✝¹ : Field F
+inst✝ : Algebra K F
+x y : F
+f : MvPolynomial (Fin 2) K
+a b : K
+hf : (aeval ![x, y]) f = 0
+hker : ∀ (g : MvPolynomial (Fin 2) K), (aeval ![x, y]) g = 0 → g ∈ Ideal.span {f}
+hF : Subfield.closure (Set.range ⇑(algebraMap K F) ∪ {x, y}) = ⊤
+hab : (eval ![a, b]) f = 0
+hsmooth : (eval ![a, b]) ((pderiv 1) f) ≠ 0
+⊢ [IsPrincipalIdealRing ↥(O hker hab hF), ValuationRing ↥(O hker hab hF), IsDedekindDomain ↥(O hker hab hF),
+        IsIntegrallyClosed ↥(O hker hab hF) ∧
+          ∀ (P : Ideal ↥(O hker hab hF)), P ≠ ⊥ → P.IsPrime → P = IsLocalRing.maximalIdeal ↥(O hker hab hF),
+        Submodule.IsPrincipal (IsLocalRing.maximalIdeal ↥(O hker hab hF)),
+        Module.finrank (IsLocalRing.ResidueField ↥(O hker hab hF)) (IsLocalRing.CotangentSpace ↥(O hker hab hF)) ≤ 1,
+        ∀ (I : Ideal ↥(O hker hab hF)), I ≠ ⊥ → ∃ n, I = IsLocalRing.maximalIdeal ↥(O hker hab hF) ^ n][4 - 1]? =
+    some (Submodule.IsPrincipal (IsLocalRing.maximalIdeal ↥(O hker hab hF)))
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_AlgebraicCurve_Place_existsUnique_sub_algebraMap_mem_nonunits_of_eval_pderiv_ne_zero.lean:426:3: error: could not synthesize default value for parameter 'h₂' using tactics
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_AlgebraicCurve_Place_existsUnique_sub_algebraMap_mem_nonunits_of_eval_pderiv_ne_zero.lean:426:3: error: Tactic `rfl` failed: The left-hand side
+  [IsPrincipalIdealRing ↥(O hker hab hF), ValuationRing ↥(O hker hab hF), IsDedekindDomain ↥(O hker hab hF),
+      IsIntegrallyClosed ↥(O hker hab hF) ∧
+        ∀ (P : Ideal ↥(O hker hab hF)), P ≠ ⊥ → P.IsPrime → P = IsLocalRing.maximalIdeal ↥(O hker hab hF),
+      Submodule.IsPrincipal (IsLocalRing.maximalIdeal ↥(O hker hab hF)),
+      Module.finrank (IsLocalRing.ResidueField ↥(O hker hab hF)) (IsLocalRing.CotangentSpace ↥(O hker hab hF)) ≤ 1,
+      ∀ (I : Ideal ↥(O hker hab hF)), I ≠ ⊥ → ∃ n, I = IsLocalRing.maximalIdeal ↥(O hker hab hF) ^ n][1 - 1]?
+is not definitionally equal to the right-hand side
+  some (ValuationRing ↥(O hker hab hF))
+
+K : Type u_1
+F : Type u_2
+inst✝² : Field K
+inst✝¹ : Field F
+inst✝ : Algebra K F
+x y : F
+f : MvPolynomial (Fin 2) K
+a b : K
+hf : (aeval ![x, y]) f = 0
+hker : ∀ (g : MvPolynomial (Fin 2) K), (aeval ![x, y]) g = 0 → g ∈ Ideal.span {f}
+hF : Subfield.closure (Set.range ⇑(algebraMap K F) ∪ {x, y}) = ⊤
+hab : (eval ![a, b]) f = 0
+hsmooth : (eval ![a, b]) ((pderiv 1) f) ≠ 0
+⊢ [IsPrincipalIdealRing ↥(O hker hab hF), ValuationRing ↥(O hker hab hF), IsDedekindDomain ↥(O hker hab hF),
+        IsIntegrallyClosed ↥(O hker hab hF) ∧
+          ∀ (P : Ideal ↥(O hker hab hF)), P ≠ ⊥ → P.IsPrime → P = IsLocalRing.maximalIdeal ↥(O hker hab hF),
+        Submodule.IsPrincipal (IsLocalRing.maximalIdeal ↥(O hker hab hF)),
+        Module.finrank (IsLocalRing.ResidueField ↥(O hker hab hF)) (IsLocalRing.CotangentSpace ↥(O hker hab hF)) ≤ 1,
+        ∀ (I : Ideal ↥(O hker hab hF)), I ≠ ⊥ → ∃ n, I = IsLocalRing.maximalIdeal ↥(O hker hab hF) ^ n][1 - 1]? =
+    some (ValuationRing ↥(O hker hab hF))
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_AlgebraicCurve_Place_existsUnique_sub_algebraMap_mem_nonunits_of_eval_pderiv_ne_zero.lean:447:2: warning: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_AlgebraicCurve_Place_existsUnique_sub_algebraMap_mem_nonunits_of_eval_pderiv_ne_zero.lean:450:2: warning: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_AlgebraicCurve_Place_existsUnique_sub_algebraMap_mem_nonunits_of_eval_pderiv_ne_zero.lean:467:4: warning: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_AlgebraicCurve_Place_existsUnique_sub_algebraMap_mem_nonunits_of_eval_pderiv_ne_zero.lean:468:4: warning: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_AlgebraicCurve_Place_existsUnique_sub_algebraMap_mem_nonunits_of_eval_pderiv_ne_zero.lean:596:2: warning: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
