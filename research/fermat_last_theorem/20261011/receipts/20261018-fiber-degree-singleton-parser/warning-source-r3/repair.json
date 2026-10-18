@@ -1,0 +1,306 @@
+{
+  "at": "2026-10-18T01:56:59.602604+00:00",
+  "name": "AlgebraicCurve_Place_sum_deg_fiberConstants_eq_deg_of_isCurveOver",
+  "candidate": "r3",
+  "card_candidate": "r1",
+  "source_replacements": [
+    [
+      "  letI : Algebra K W.toValuationSubring :=\n",
+      "  let : Algebra K W.toValuationSubring :=\n",
+      1
+    ],
+    [
+      "  haveI : IsScalarTower K K' W.toValuationSubring :=\n",
+      "  have : IsScalarTower K K' W.toValuationSubring :=\n",
+      1
+    ],
+    [
+      "  haveI : IsScalarTower K K' W.ResidueField := IsScalarTower.of_algebraMap_eq fun k => by\n",
+      "  have : IsScalarTower K K' W.ResidueField := IsScalarTower.of_algebraMap_eq fun k => by\n",
+      1
+    ],
+    [
+      "  haveI : Algebra.FiniteType F F' := finiteType_of_adjoin_range_eq_top (K := K) hgen\n",
+      "  have : Algebra.FiniteType F F' := finiteType_of_adjoin_range_eq_top (K := K) hgen\n",
+      1
+    ],
+    [
+      "  haveI : Module.Finite F F' := Algebra.IsIntegral.finite\n",
+      "  have : Module.Finite F F' := Algebra.IsIntegral.finite\n",
+      1
+    ],
+    [
+      "  haveI : Algebra.IsSeparable F F' := isSeparable_of_adjoin_range_eq_top (K := K) hgen\n",
+      "  have : Algebra.IsSeparable F F' := isSeparable_of_adjoin_range_eq_top (K := K) hgen\n",
+      1
+    ],
+    [
+      "  haveI : HasPrincipalDivisors K F' := hasPrincipalDivisors_forget (K := K) (K' := K')\n",
+      "  have : HasPrincipalDivisors K F' := hasPrincipalDivisors_forget (K := K) (K' := K')\n",
+      1
+    ],
+    [
+      "  refine \u27e8(S \u00d7\u02e2 S).sup g, ?_, ?_\u27e9\n  \u00b7 refine Finset.sup_induction (p := fun K\u2081 : IntermediateField K K' => FiniteDimensional K K\u2081)\n      (inferInstance : FiniteDimensional K (\u22a5 : IntermediateField K K')) ?_ ?_\n    \u00b7 intro a ha b hb\n      haveI : FiniteDimensional K a := ha\n",
+      "  refine \u27e8(S \u00d7\u02e2 S).sup g, ?_, ?_\u27e9\n  \u00b7 refine Finset.sup_induction (p := fun K\u2081 : IntermediateField K K' => FiniteDimensional K K\u2081)\n      (inferInstance : FiniteDimensional K (\u22a5 : IntermediateField K K')) ?_ ?_\n    \u00b7 intro a ha b hb\n      have : FiniteDimensional K a := ha\n",
+      1
+    ],
+    [
+      "      have : FiniteDimensional K a := ha\n      haveI : FiniteDimensional K b := hb\n",
+      "      have : FiniteDimensional K a := ha\n      have : FiniteDimensional K b := hb\n",
+      1
+    ],
+    [
+      "      haveI : FiniteDimensional K a := ha\n",
+      "      have : FiniteDimensional K a := ha\n",
+      1
+    ],
+    [
+      "      haveI : FiniteDimensional K b := hb\n",
+      "      have : FiniteDimensional K b := hb\n",
+      1
+    ],
+    [
+      "  haveI := hfd\n",
+      "  have := hfd\n",
+      1
+    ],
+    [
+      "  haveI := hsep\n",
+      "  have := hsep\n",
+      1
+    ],
+    [
+      "  haveI : FiniteDimensional F (FK F F' K\u2081) := finiteDimensional_FK K\u2081\n",
+      "  have : FiniteDimensional F (FK F F' K\u2081) := finiteDimensional_FK K\u2081\n",
+      1
+    ],
+    [
+      "  have : FiniteDimensional F (FK F F' K\u2081) := finiteDimensional_FK K\u2081\n  haveI : Algebra.IsAlgebraic K K\u2081 := Algebra.IsAlgebraic.of_finite K K\u2081\n",
+      "  have : FiniteDimensional F (FK F F' K\u2081) := finiteDimensional_FK K\u2081\n  have : Algebra.IsAlgebraic K K\u2081 := Algebra.IsAlgebraic.of_finite K K\u2081\n",
+      1
+    ],
+    [
+      "  have : Algebra.IsAlgebraic K K\u2081 := Algebra.IsAlgebraic.of_finite K K\u2081\n  haveI : Algebra.IsSeparable K K\u2081 := Algebra.IsAlgebraic.isSeparable_of_perfectField\n",
+      "  have : Algebra.IsAlgebraic K K\u2081 := Algebra.IsAlgebraic.of_finite K K\u2081\n  have : Algebra.IsSeparable K K\u2081 := Algebra.IsAlgebraic.isSeparable_of_perfectField\n",
+      1
+    ],
+    [
+      "  haveI : Algebra.IsSeparable F (FK F F' K\u2081) := isSeparable_FK K\u2081\n",
+      "  have : Algebra.IsSeparable F (FK F F' K\u2081) := isSeparable_FK K\u2081\n",
+      1
+    ],
+    [
+      "  haveI : IsScalarTower (IntermediateField.adjoin K ({t} : Set F)) F (FK F F' K\u2081) := inferInstance\n",
+      "  have : IsScalarTower (IntermediateField.adjoin K ({t} : Set F)) F (FK F F' K\u2081) := inferInstance\n",
+      1
+    ],
+    [
+      "  haveI : FiniteDimensional (IntermediateField.adjoin K ({t} : Set F)) (FK F F' K\u2081) :=\n",
+      "  have : FiniteDimensional (IntermediateField.adjoin K ({t} : Set F)) (FK F F' K\u2081) :=\n",
+      1
+    ],
+    [
+      "  haveI : Algebra.IsSeparable (IntermediateField.adjoin K ({t} : Set F)) (FK F F' K\u2081) :=\n",
+      "  have : Algebra.IsSeparable (IntermediateField.adjoin K ({t} : Set F)) (FK F F' K\u2081) :=\n",
+      1
+    ],
+    [
+      "  haveI : FiniteDimensional (IntermediateField.adjoin K ({x} : Set (FK F F' K\u2081))) (FK F F' K\u2081) :=\n",
+      "  have : FiniteDimensional (IntermediateField.adjoin K ({x} : Set (FK F F' K\u2081))) (FK F F' K\u2081) :=\n",
+      1
+    ],
+    [
+      "  haveI : Algebra.IsSeparable (IntermediateField.adjoin K ({x} : Set (FK F F' K\u2081))) (FK F F' K\u2081) :=\n",
+      "  have : Algebra.IsSeparable (IntermediateField.adjoin K ({x} : Set (FK F F' K\u2081))) (FK F F' K\u2081) :=\n",
+      1
+    ],
+    [
+      "  haveI : IsCurveOver K (FK F F' K\u2081) := isCurveOver_FK K\u2081\n",
+      "  have : IsCurveOver K (FK F F' K\u2081) := isCurveOver_FK K\u2081\n",
+      1
+    ],
+    [
+      "    \u2211 U \u2208 Place.fiberConstants K\u2081 (FK F F' K\u2081) v, (U.deg : \u2124) = v.deg := by\n  haveI := hasPrincipalDivisors_FK (F := F) (F' := F') K\u2081\n",
+      "    \u2211 U \u2208 Place.fiberConstants K\u2081 (FK F F' K\u2081) v, (U.deg : \u2124) = v.deg := by\n  have := hasPrincipalDivisors_FK (F := F) (F' := F') K\u2081\n",
+      1
+    ],
+    [
+      "  haveI : Algebra.IsAlgebraic K K\u2081 := Algebra.IsAlgebraic.of_finite K K\u2081\n",
+      "  have : Algebra.IsAlgebraic K K\u2081 := Algebra.IsAlgebraic.of_finite K K\u2081\n",
+      1
+    ],
+    [
+      "  haveI : Algebra.IsSeparable K K\u2081 := Algebra.IsAlgebraic.isSeparable_of_perfectField\n",
+      "  have : Algebra.IsSeparable K K\u2081 := Algebra.IsAlgebraic.isSeparable_of_perfectField\n",
+      1
+    ],
+    [
+      "  classical\n  haveI : Algebra.IsSeparable K K' := Algebra.IsAlgebraic.isSeparable_of_perfectField\n",
+      "  classical\n  have : Algebra.IsSeparable K K' := Algebra.IsAlgebraic.isSeparable_of_perfectField\n",
+      1
+    ],
+    [
+      "  have : Algebra.IsSeparable K K' := Algebra.IsAlgebraic.isSeparable_of_perfectField\n  haveI : \u2200 u : Place K F, FiniteDimensional K u.ResidueField := fun u => IsCurveOver.finiteResidue u\n",
+      "  have : Algebra.IsSeparable K K' := Algebra.IsAlgebraic.isSeparable_of_perfectField\n  have : \u2200 u : Place K F, FiniteDimensional K u.ResidueField := fun u => IsCurveOver.finiteResidue u\n",
+      1
+    ],
+    [
+      "  haveI : \u2200 u : Place K F, Algebra.IsSeparable K u.ResidueField := fun u =>\n",
+      "  have : \u2200 u : Place K F, Algebra.IsSeparable K u.ResidueField := fun u =>\n",
+      1
+    ],
+    [
+      "  haveI : FiniteDimensional K K\u2081 := hK\u2081\n",
+      "  have : FiniteDimensional K K\u2081 := hK\u2081\n",
+      1
+    ],
+    [
+      "  haveI : FiniteDimensional K K\u2082 := hK\u2082\n",
+      "  have : FiniteDimensional K K\u2082 := hK\u2082\n",
+      1
+    ],
+    [
+      "  haveI : FiniteDimensional K (K\u2081 \u2294 K\u2082 : IntermediateField K K') :=\n",
+      "  have : FiniteDimensional K (K\u2081 \u2294 K\u2082 : IntermediateField K K') :=\n",
+      1
+    ],
+    [
+      "  haveI := hasPrincipalDivisors_FK (F := F) (F' := F') (K\u2081 \u2294 K\u2082)\n",
+      "  have := hasPrincipalDivisors_FK (F := F) (F' := F') (K\u2081 \u2294 K\u2082)\n",
+      1
+    ],
+    [
+      "    (hgen : Algebra.adjoin F (Set.range (algebraMap K' F')) = \u22a4) (W : Place K' F') : ResGenerated F W := by\n  haveI : \u2200 u : Place K F, FiniteDimensional K u.ResidueField := fun u => IsCurveOver.finiteResidue u\n",
+      "    (hgen : Algebra.adjoin F (Set.range (algebraMap K' F')) = \u22a4) (W : Place K' F') : ResGenerated F W := by\n  have : \u2200 u : Place K F, FiniteDimensional K u.ResidueField := fun u => IsCurveOver.finiteResidue u\n",
+      1
+    ],
+    [
+      "  haveI : Algebra.IsAlgebraic K K\u2082 :=\n",
+      "  have : Algebra.IsAlgebraic K K\u2082 :=\n",
+      1
+    ],
+    [
+      "  haveI : Algebra.IsSeparable K K\u2082 := Algebra.isSeparable_tower_bot_of_isSeparable K K\u2082 K'\n",
+      "  have : Algebra.IsSeparable K K\u2082 := Algebra.isSeparable_tower_bot_of_isSeparable K K\u2082 K'\n",
+      1
+    ],
+    [
+      "  haveI : \u2200 u : Place K F, FiniteDimensional K u.ResidueField := fun u => IsCurveOver.finiteResidue u\n",
+      "  have : \u2200 u : Place K F, FiniteDimensional K u.ResidueField := fun u => IsCurveOver.finiteResidue u\n",
+      1
+    ],
+    [
+      "  haveI : Algebra.IsSeparable K K' := Algebra.IsAlgebraic.isSeparable_of_perfectField\n",
+      "  have : Algebra.IsSeparable K K' := Algebra.IsAlgebraic.isSeparable_of_perfectField\n",
+      1
+    ],
+    [
+      "Algebra.adjoin K {IsLocalRing.residue\n      ((W.forgetConstants (K := K)).restrict F).toValuationSubring \u27e8b, hb\u27e9} = \u22a4",
+      "Algebra.adjoin K {(IsLocalRing.residue\n      ((W.forgetConstants (K := K)).restrict F).toValuationSubring \u27e8b, hb\u27e9)} = \u22a4",
+      1
+    ],
+    [
+      "Algebra.adjoin_le (by simpa using IntermediateField.mem_adjoin_simple_self F b)",
+      "Algebra.adjoin_le (by simp)",
+      1
+    ],
+    [
+      "    push_neg at hall",
+      "    push Not at hall",
+      1
+    ],
+    [
+      "  simp only [Place.restrictConstants_toValuationSubring, ValuationSubring.mem_comap,\n    Place.forgetConstants_toValuationSubring, res_toValuationSubring, Place.restrict_toValuationSubring]",
+      "  simp only [Place.restrictConstants_toValuationSubring, ValuationSubring.mem_comap,\n    res_toValuationSubring]",
+      1
+    ],
+    [
+      "theorem exists_finset_mem_adjoin {t : F'}\n",
+      "omit [Algebra.IsIntegral F F'] in\ntheorem exists_finset_mem_adjoin {t : F'}\n",
+      1
+    ],
+    [
+      "theorem FK_mono {K\u2081 K\u2082 : IntermediateField K K'} (h : K\u2081 \u2264 K\u2082) : FK F F' K\u2081 \u2264 FK F F' K\u2082 :=\n",
+      "omit [Algebra K F'] [IsScalarTower K K' F'] [Algebra K F] [IsScalarTower K F F'] in\ntheorem FK_mono {K\u2081 K\u2082 : IntermediateField K K'} (h : K\u2081 \u2264 K\u2082) : FK F F' K\u2081 \u2264 FK F F' K\u2082 :=\n",
+      1
+    ],
+    [
+      "theorem algebraMap_K1_F' (k : K\u2081) : algebraMap K\u2081 F' k = algebraMap K' F' (k : K') := rfl\n",
+      "omit [Algebra K F'] [IsScalarTower K K' F'] in\ntheorem algebraMap_K1_F' (k : K\u2081) : algebraMap K\u2081 F' k = algebraMap K' F' (k : K') := rfl\n",
+      1
+    ],
+    [
+      "theorem algebraMap_mem_FK (k : K\u2081) : algebraMap K' F' (k : K') \u2208 FK F F' K\u2081 :=\n",
+      "omit [Algebra K F'] [IsScalarTower K K' F'] [Algebra K F] [IsScalarTower K F F'] in\ntheorem algebraMap_mem_FK (k : K\u2081) : algebraMap K' F' (k : K') \u2208 FK F F' K\u2081 :=\n",
+      1
+    ],
+    [
+      "theorem algebraMap_FK_apply ",
+      "omit [Algebra K F'] [IsScalarTower K K' F'] [Algebra K F] [IsScalarTower K F F'] in\ntheorem algebraMap_FK_apply ",
+      1
+    ],
+    [
+      "theorem res_toValuationSubring ",
+      "omit [Algebra K F'] [IsScalarTower K K' F'] [Algebra K F] [IsScalarTower K F F'] in\ntheorem res_toValuationSubring ",
+      1
+    ],
+    [
+      "theorem mem_res_iff ",
+      "omit [Algebra K F'] [IsScalarTower K K' F'] [Algebra K F] [IsScalarTower K F F'] in\ntheorem mem_res_iff ",
+      1
+    ],
+    [
+      "theorem exists_fd_mem_FK ",
+      "omit [Algebra K F'] [IsScalarTower K K' F'] [Algebra K F] [IsScalarTower K F F'] [Algebra.IsIntegral F F'] in\ntheorem exists_fd_mem_FK ",
+      1
+    ],
+    [
+      "theorem natDegree_minpoly_res_eq ",
+      "omit [Algebra K F'] [IsScalarTower K K' F'] [Algebra K F] [IsScalarTower K F F'] in\ntheorem natDegree_minpoly_res_eq ",
+      1
+    ],
+    [
+      "theorem exists_fd_separating ",
+      "omit [Algebra K F'] [IsScalarTower K K' F'] [Algebra K F] [IsScalarTower K F F'] in\ntheorem exists_fd_separating ",
+      1
+    ]
+  ],
+  "card_replacements": [],
+  "baseline_byte_identical_to_pinned_supplier": true,
+  "pinned_supplier_source_and_card_preserved": true,
+  "supplier_repository": "anthropics/fermats-last-theorem",
+  "supplier_revision": "6e837e75355538c7f80bab5b956861e86c4eacc2",
+  "verification_pending": true,
+  "installed": true,
+  "no_linter_suppression_added": true,
+  "complete_original_proof_preserved": true,
+  "full_original_statement_and_hypotheses_preserved": true,
+  "max_active_flt_jobs": 1,
+  "lean_threads": 1,
+  "original_actual_errors": 3,
+  "original_actual_warnings": 46,
+  "original_kernel_seconds": 109.104143667,
+  "actual_failure": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/official-layout/terminal-proof-repairs/20261018-fiber-degree-singleton-parser/previous-actual-failure",
+  "style_diagnostics_addressed": 38,
+  "change": "Parenthesize the complete residue expression inside one singleton set to remove the actual parser failure and its two downstream errors. Preserve the original finite constant-field descent/minpoly stabilization/fiber-sum proof and the exact public solution/card with every hypothesis. Apply only actual linter fixes: local haveI/letI bindings to have/let; four omit clauses remove only unused implicit variables of internal helper lemmas; use simp at the already-closed goal; drop two unused simp arguments; migrate push_neg to push Not. Append recursive axiom queries. Verify in the original single-worker natural make/kernel queue, without an extra compiler. Revision r2: r1 actually passed kernel with standard three axioms; archive its five remaining unused-section-variable warnings and explicitly omit only those unused internal-helper variables. Public solution/card and every public hypothesis remain unchanged. Current natural verification pending. Revision r3: r2 actually passed kernel with standard three axioms and one remaining unused-section-variable warning in internal exists_fd_separating. Omit only those four actually unused implicit helper variables, preserving exact public statements, every public hypothesis and the full proof. Actual r2 receipt retained; current natural verification pending.",
+  "full_original_complete": false,
+  "official_new_solve_credit": 0,
+  "active_import_closure_excluded": [
+    "Submission.Supplier.P2M.Sol.S_AlgebraicCurve_RegularProlongation_mul_min_ord_residue_le_of_forall_valuationSubring_mem"
+  ],
+  "active_transitive_import_closure_size": 24,
+  "actual_live_descendant_sources": [
+    {
+      "pid": 55742,
+      "source": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_AlgebraicCurve_RegularProlongation_mul_min_ord_residue_le_of_forall_valuationSubring_mem.lean"
+    }
+  ],
+  "all_four_canonical_adapted_source_card_modules_excluded": [
+    "P2M.Sol.S_AlgebraicCurve_Place_sum_deg_fiberConstants_eq_deg_of_isCurveOver",
+    "Submission.Supplier.P2M.Sol.S_AlgebraicCurve_Place_sum_deg_fiberConstants_eq_deg_of_isCurveOver",
+    "Submission.Supplier.Theorems.Thm_AlgebraicCurve_Place_sum_deg_fiberConstants_eq_deg_of_isCurveOver",
+    "Theorems.Thm_AlgebraicCurve_Place_sum_deg_fiberConstants_eq_deg_of_isCurveOver"
+  ],
+  "latest_warning_source_evidence": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/official-layout/terminal-proof-repairs/20261018-fiber-degree-singleton-parser/warning-source-r2",
+  "stale_terminal_state_entries_excluded": []
+}

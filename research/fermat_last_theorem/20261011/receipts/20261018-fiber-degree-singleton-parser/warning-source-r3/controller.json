@@ -1,0 +1,86 @@
+{
+  "sha256": "bfd754a1f1dff5767c95a5b8a12ccc40b3f40df1361c74b7ca6f43eba6862aa3",
+  "exit": 0,
+  "empty_output_retry_done": false,
+  "source_sha256_after": "bfd754a1f1dff5767c95a5b8a12ccc40b3f40df1361c74b7ca6f43eba6862aa3",
+  "source_unchanged": true,
+  "olean_sha256": "c8547edd0369573d3fe7af80f43985e385da4ec396e09dfcef11b98f659e9768",
+  "seconds": 26.912523416000113,
+  "pid": 70870,
+  "command": [
+    "/Users/macstudio/.local/omega-shims/lean",
+    "-j1",
+    "--trust=0",
+    "-Ddebug.skipKernelTC=false",
+    "-R",
+    "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src",
+    "-o",
+    "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-build/lib/lean/Submission/Supplier/P2M/Sol/S_AlgebraicCurve_Place_sum_deg_fiberConstants_eq_deg_of_isCurveOver.olean",
+    "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_AlgebraicCurve_Place_sum_deg_fiberConstants_eq_deg_of_isCurveOver.lean"
+  ],
+  "make_wrapper_pid": 70308,
+  "make_exit": 0,
+  "make_entry_failed": false,
+  "cache_binding_valid": true,
+  "canonical_make_running_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/3466fd26045546c986e083d3-1792290292824635000.make-running.json",
+  "canonical_make_terminal_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/3466fd26045546c986e083d3-1792290292824635000.make-terminal.json",
+  "kernel_terminal_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/3466fd26045546c986e083d3-1792290292824635000.kernel/result.json",
+  "direct_dependencies": [
+    {
+      "module": "Submission.Supplier.Definitions.Def_AlgebraicCurve_ConstantFieldPullback",
+      "source_sha256": "a47068540605fa5a13c93fc83c7aff03cfabb3d2503482be8ebc52decb117937",
+      "object_sha256": "8c17f309ff6af5f20e3a8d67820d6fb31a2c9a045d0237204e37869760aa1154",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Definitions.Def_AlgebraicCurve_IsCurveOver",
+      "source_sha256": "3d53c0528c8bc1ae3b59135d2dc1a76d8abbd68c829305a8f4a8d584c3796553",
+      "object_sha256": "e059f779f8f2ce4be7ecc33e0af4e4d4e1629cd5eb8f0516c569e5b236d3539d",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Theorems.Thm_AlgebraicCurve_Place_ramificationIndex_forgetConstants_eq_one_of_isConstantFieldExtension",
+      "source_sha256": "ccc8e5973700cd5d8c15e33f2123b7c7cfc39700336951fca91259e329e75a53",
+      "object_sha256": "0acbd1212f6d66edc5f890a7ee47fd60bb2fcf16c065db874435fdcecbf08ce0",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Theorems.Thm_AlgebraicCurve_Place_sum_ramificationIndex_mul_inertiaDeg",
+      "source_sha256": "a50a35e3d4374bea4d916856ddec0233330da1be60807d979c2b5a8a3d77f794",
+      "object_sha256": "a09ede88b5564410f7119bcf9b382c72825928d5f61a289180bea0f444b8b29a",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Theorems.Thm_AlgebraicCurve_Place_exists_forgetConstants_restrict_eq_of_isConstantFieldExtension",
+      "source_sha256": "1efdbc0ff0355e53e3fcc8548a18f13c60c1d6c0a747ee87e610677e6ac62472",
+      "object_sha256": "9ad6fccfc02d8e106eaacf98b53dd91e897494c3d8b30e38eab7c10a465cdd8d",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Theorems.Thm_AlgebraicCurve_IsCurveOver_exists_separating_transcendental",
+      "source_sha256": "ad4eab10ceb41bf1b52c5719bc930e1a87862e1592f154e5baafd856ee67263c",
+      "object_sha256": "3f241206f963673c8047d7f66e95986c969c33a4c6893f5c077db1d37346a950",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Theorems.Thm_AlgebraicCurve_isCurveOver_of_transcendental",
+      "source_sha256": "8f24a5bc92fcb5aca4fd6c9788be52500ca0d2053b5fdbc43bd532c54c54de6e",
+      "object_sha256": "1b5c73d37a45ab2822095a33e0aa400d8e08e69ae4b41a97d2f0860d52db0adb",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Theorems.Thm_AlgebraicCurve_Place_residueField_eq_compositum_of_isConstantFieldExtension",
+      "source_sha256": "d1703d7628af056b4b6dde32ea25f9ea9b0232220ebed9e95c8ed1471909562b",
+      "object_sha256": "deade7add1edf6a22634eb82a3c766219996154f7340e35ebb19884bbc4a7225",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.P2M.Util",
+      "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+      "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+      "receipt_reused": true
+    }
+  ],
+  "stdout": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/3466fd26045546c986e083d3-1792290292824635000.kernel/stdout.log",
+  "stderr": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/3466fd26045546c986e083d3-1792290292824635000.kernel/stderr.log"
+}
