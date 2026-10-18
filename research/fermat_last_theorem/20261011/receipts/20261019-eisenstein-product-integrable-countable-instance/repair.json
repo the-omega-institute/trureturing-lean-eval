@@ -1,0 +1,69 @@
+{
+  "at": "2026-10-18T20:52:09.406401+00:00",
+  "name": "EisensteinGeneral_Glue_integrable_mul_of_integrable_of_integrable",
+  "candidate": "r1",
+  "card_candidate": "r1",
+  "source_replacements": [
+    [
+      "instCountableOfNumberField_definitions",
+      "instCountableOfNumberField_submission",
+      1
+    ],
+    [
+      "Set.mem_setOf_eq",
+      "Set.mem_ofPred_eq",
+      1
+    ],
+    [
+      "haveI",
+      "have",
+      9
+    ],
+    [
+      "letI",
+      "let",
+      2
+    ]
+  ],
+  "card_replacements": [
+    [
+      "instCountableOfNumberField_definitions",
+      "instCountableOfNumberField_submission",
+      1
+    ]
+  ],
+  "baseline_byte_identical_to_pinned_supplier": true,
+  "public_card_statement_literal_preserved": true,
+  "solution_statement_literal_preserved": true,
+  "pinned_supplier_source_and_card_preserved": true,
+  "verification_pending": false,
+  "installed": true,
+  "no_linter_suppression_added": true,
+  "complete_original_proof_preserved": true,
+  "full_original_statement_and_hypotheses_preserved": true,
+  "max_active_flt_jobs": 1,
+  "lean_threads": 1,
+  "original_actual_errors": 1,
+  "original_actual_warnings": 12,
+  "library_search": "Reuse the just accepted Adelic Haar source/card repair and current generated anonymous instance instCountableOfNumberField_submission; pinned supplier source already proves its target with standard3 axioms despite the obsolete attribute error. Preserve original compactness/sigma-compactness, infinite-place second-countability, measurable-equivalence and Haar-product proof. Existing Countable, Haar uniqueness and Integrable.mul_prod library lemmas remain the proof path.",
+  "change": "Correct only the stale countability instance name in source/card attribute directives, keeping their deactivation effect and all other original attributes. Clear one actually reported Set alias, nine haveI and two letI style warnings. Preserve the complete original proof and every original statement/hypothesis. Existing source recursive axiom query retained; card query appended. Await unchanged single-queue actual make/kernel results.",
+  "full_original_complete": false,
+  "official_new_solve_credit": 0,
+  "stale_terminal_state_entries_excluded": [
+    {
+      "module": "Submission.Supplier.P2M.Sol.S_NumberField_AdelicBox_inv_measure_adelicBox_mul_integral_pureTensor_eq",
+      "wrapper_pid": 59993,
+      "make_exit": 2,
+      "terminal": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/9e03fdb02f1045df01f7f0d7-1792356648096132000.make-terminal.json"
+    }
+  ],
+  "active_import_closure_excluded": [],
+  "active_transitive_import_closure_size": 0,
+  "actual_live_descendant_sources": [],
+  "all_four_canonical_adapted_source_card_modules_excluded": [
+    "P2M.Sol.S_EisensteinGeneral_Glue_integrable_mul_of_integrable_of_integrable",
+    "Submission.Supplier.P2M.Sol.S_EisensteinGeneral_Glue_integrable_mul_of_integrable_of_integrable",
+    "Submission.Supplier.Theorems.Thm_EisensteinGeneral_Glue_integrable_mul_of_integrable_of_integrable",
+    "Theorems.Thm_EisensteinGeneral_Glue_integrable_mul_of_integrable_of_integrable"
+  ]
+}
