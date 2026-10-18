@@ -1,0 +1,95 @@
+{
+  "at": "2026-10-18T21:56:35.484312+00:00",
+  "name": "AutomorphicForm_weylIntertwiningIntegrand_finiteAdeleSlice_integrable_of_re_gt_half",
+  "candidate": "r1",
+  "card_candidate": "r1",
+  "source_replacements": [
+    [
+      "haveI",
+      "have",
+      12
+    ],
+    [
+      "letI",
+      "let",
+      1
+    ],
+    [
+      "if_pos",
+      "ite_eq_left",
+      2
+    ],
+    [
+      "if_neg",
+      "ite_eq_right",
+      4
+    ],
+    [
+      "Set.mem_setOf_eq",
+      "Set.mem_ofPred_eq",
+      1
+    ],
+    [
+      "zero_le'",
+      "zero_le",
+      1
+    ],
+    [
+      "Finset.one_le_prod'",
+      "Finset.one_le_prod",
+      1
+    ],
+    [
+      "Ideal.finite_setOf_absNorm_eq",
+      "Ideal.finite_setOfPred_absNorm_eq",
+      1
+    ],
+    [
+      "simp only [AddSubgroup.coe_add, AddSubgroup.coe_neg, neg_add_eq_sub] at hmem",
+      "simp only [neg_add_eq_sub] at hmem",
+      1
+    ],
+    [
+      "  exact ENNReal.le_tsum k",
+      "  exact ENNReal.le_tsum (f := fun k => idx F k ^ (-a) * (latt F k : Set \ud835\udd38f).indicator 1 t) k",
+      1
+    ]
+  ],
+  "card_replacements": [],
+  "baseline_byte_identical_to_pinned_supplier": true,
+  "prior_source_changes_preserved": [],
+  "prior_card_changes_preserved": [],
+  "public_card_statement_literal_preserved": true,
+  "solution_statement_literal_preserved": true,
+  "pinned_supplier_source_and_card_preserved": true,
+  "verification_pending": false,
+  "installed": true,
+  "no_linter_suppression_added": true,
+  "complete_original_proof_preserved": true,
+  "full_original_statement_and_hypotheses_preserved": true,
+  "max_active_flt_jobs": 1,
+  "lean_threads": 1,
+  "original_actual_errors": 1,
+  "original_actual_warnings": 25,
+  "library_search": "Original domGf is definitionally the ENNReal tsum of idx F k ^ (-a) times the lattice indicator. Reuse Mathlib.Topology.Algebra.InfiniteSum.ENNReal.le_tsum with its existing f argument made explicit. Preserve original domination, lattice-index summability and integrability proofs, plus six existing recursive-axiom queries.",
+  "change": "Give ENNReal.le_tsum its explicit existing summand so elaboration matches the unchanged domGf target; clean exactly 25 reported warnings, including two redundant simp arguments. Preserve all original statements/hypotheses and complete 1349-line proof. Await current original single queue make/kernel/source/card verification; no official submission.",
+  "full_original_complete": false,
+  "official_new_solve_credit": 0,
+  "stale_terminal_state_entries_excluded": [
+    {
+      "module": "Submission.Supplier.P2M.Sol.S_PadicInt_exists_eq_one_add_prime_pow_mul_pow",
+      "wrapper_pid": 43303,
+      "make_exit": 2,
+      "terminal": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/95f020175697ea3b464ac2ad-1792360555218648000.make-terminal.json"
+    }
+  ],
+  "active_import_closure_excluded": [],
+  "active_transitive_import_closure_size": 0,
+  "actual_live_descendant_sources": [],
+  "all_four_canonical_adapted_source_card_modules_excluded": [
+    "P2M.Sol.S_AutomorphicForm_weylIntertwiningIntegrand_finiteAdeleSlice_integrable_of_re_gt_half",
+    "Submission.Supplier.P2M.Sol.S_AutomorphicForm_weylIntertwiningIntegrand_finiteAdeleSlice_integrable_of_re_gt_half",
+    "Submission.Supplier.Theorems.Thm_AutomorphicForm_weylIntertwiningIntegrand_finiteAdeleSlice_integrable_of_re_gt_half",
+    "Theorems.Thm_AutomorphicForm_weylIntertwiningIntegrand_finiteAdeleSlice_integrable_of_re_gt_half"
+  ]
+}
