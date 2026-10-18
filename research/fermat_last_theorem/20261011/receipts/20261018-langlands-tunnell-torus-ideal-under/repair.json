@@ -1,0 +1,79 @@
+{
+  "at": "2026-10-18T10:44:00.347322+00:00",
+  "name": "LanglandsTunnell_Converse_eq_zero_or_exists_continuous_torus_recursion_of_unipotent_invariant",
+  "candidate": "r1",
+  "card_candidate": "r1",
+  "source_replacements": [
+    [
+      "  rw [Ideal.comap_bot_of_injective (f := algebraMap \u2124 (\ud835\udcde K)) hinj] at hQP",
+      "  rw [Ideal.under_def, Ideal.comap_bot_of_injective (f := algebraMap \u2124 (\ud835\udcde K)) hinj] at hQP",
+      1
+    ],
+    [
+      "  haveI ",
+      "  have ",
+      5
+    ],
+    [
+      "Set.mem_setOf_eq",
+      "Set.mem_ofPred_eq",
+      1
+    ],
+    [
+      "zero_le'",
+      "zero_le",
+      2
+    ],
+    [
+      "\n#print axioms solution\n",
+      "\n#print axioms solution\n\n#print axioms solution\n",
+      1
+    ]
+  ],
+  "card_replacements": [],
+  "supplier_repository": "anthropics/fermats-last-theorem",
+  "supplier_revision": "6e837e75355538c7f80bab5b956861e86c4eacc2",
+  "baseline_byte_identical_to_pinned_supplier": false,
+  "preexisting_canonical_source_api_migrations": [
+    [
+      "    (by rw [Ideal.comap_bot_of_injective (f := algebraMap \u2124 (\ud835\udcde K)) hinj]; exact bot_le)",
+      "    (by rw [Ideal.under_def, Ideal.comap_bot_of_injective (f := algebraMap \u2124 (\ud835\udcde K)) hinj]; exact bot_le)",
+      1
+    ]
+  ],
+  "pinned_supplier_source_and_card_preserved": true,
+  "original_actual_errors": 1,
+  "original_actual_warnings": 8,
+  "actual_failure": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/official-layout/terminal-proof-repairs/20261018-langlands-tunnell-torus-ideal-under/previous-actual-failure",
+  "complete_original_proof_preserved": true,
+  "full_original_statement_and_hypotheses_preserved": true,
+  "public_solution_telescope_and_conclusion_byte_identical": true,
+  "card_proof_byte_identical_before_axiom_query": true,
+  "no_linter_suppression_added": true,
+  "change": "The baseline already has one exact under_def migration at the preceding prime-over assumption, recorded separately. Unfold Ideal.under with the fixed Mathlib under_def before the original comap_bot_of_injective rewrite at hQP, retaining the injectivity argument, contradiction and complete prime-place/torus-recursion proof. Migrate only the five logged haveI bindings and three logged deprecated API occurrences. Complete public solution telescope, all assumptions, conclusion and card proof retained. No linter suppression. Use original single-worker make/kernel queue only.",
+  "verification_pending": false,
+  "installed": true,
+  "max_active_flt_jobs": 1,
+  "lean_threads": 1,
+  "full_original_complete": false,
+  "official_new_solve_credit": 0,
+  "stale_terminal_state_entries_excluded": [],
+  "active_import_closure_excluded": [
+    "Submission.Supplier.Theorems.Thm_HopfAlgebra_exists_algEquiv_comul_counit_withConv_comp_of_etale_of_withConv_equiv_algClosure"
+  ],
+  "active_transitive_import_closure_size": 3,
+  "actual_live_descendant_sources": [
+    {
+      "pid": 94505,
+      "source": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/Theorems/Thm_HopfAlgebra_exists_algEquiv_comul_counit_withConv_comp_of_etale_of_withConv_equiv_algClosure.lean"
+    }
+  ],
+  "all_four_canonical_adapted_source_card_modules_excluded": [
+    "P2M.Sol.S_LanglandsTunnell_Converse_eq_zero_or_exists_continuous_torus_recursion_of_unipotent_invariant",
+    "Submission.Supplier.P2M.Sol.S_LanglandsTunnell_Converse_eq_zero_or_exists_continuous_torus_recursion_of_unipotent_invariant",
+    "Submission.Supplier.Theorems.Thm_LanglandsTunnell_Converse_eq_zero_or_exists_continuous_torus_recursion_of_unipotent_invariant",
+    "Theorems.Thm_LanglandsTunnell_Converse_eq_zero_or_exists_continuous_torus_recursion_of_unipotent_invariant"
+  ],
+  "installed_at": "2026-10-18T10:44:00.457656+00:00",
+  "diagnostic_query_note": "The original source already contained its axiom query. The generic installation appended the same query; explicitly record this diagnostic-only addition to preserve exact provenance without rebuilding an unchanged proof solely to delete duplicate diagnostic output."
+}
