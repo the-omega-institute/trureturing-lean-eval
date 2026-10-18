@@ -1,0 +1,44 @@
+{
+  "sha256": "74edfd84b485cccd8eb582ac6ac27d947ab19656b37d74ce48eb877ad4550b70",
+  "exit": 0,
+  "empty_output_retry_done": false,
+  "source_sha256_after": "74edfd84b485cccd8eb582ac6ac27d947ab19656b37d74ce48eb877ad4550b70",
+  "source_unchanged": true,
+  "olean_sha256": "5dd25ee7177c981acc5932e92c24a5db925fb219b02ebae66d86a143c62a7094",
+  "seconds": 25.685408624995034,
+  "pid": 5832,
+  "command": [
+    "/Users/macstudio/.local/omega-shims/lean",
+    "-j1",
+    "--trust=0",
+    "-Ddebug.skipKernelTC=false",
+    "-R",
+    "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src",
+    "-o",
+    "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-build/lib/lean/Submission/Supplier/Theorems/Thm_LanglandsTunnell_exists_rpow_bound_near_zero_of_whittaker_ode_of_discrete_tower_of_moderateGrowth.olean",
+    "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/Theorems/Thm_LanglandsTunnell_exists_rpow_bound_near_zero_of_whittaker_ode_of_discrete_tower_of_moderateGrowth.lean"
+  ],
+  "make_wrapper_pid": 5236,
+  "make_exit": 0,
+  "make_entry_failed": false,
+  "cache_binding_valid": true,
+  "canonical_make_running_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/b67cc60ae69117071f6e54c2-1792326787755049000.make-running.json",
+  "canonical_make_terminal_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/b67cc60ae69117071f6e54c2-1792326787755049000.make-terminal.json",
+  "kernel_terminal_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/b67cc60ae69117071f6e54c2-1792326787755049000.kernel/result.json",
+  "direct_dependencies": [
+    {
+      "module": "Submission.Supplier.P2M.Util",
+      "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+      "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.P2M.Sol.S_LanglandsTunnell_exists_rpow_bound_near_zero_of_whittaker_ode_of_discrete_tower_of_moderateGrowth",
+      "source_sha256": "772caf798bc64ec1e47c3cde1fd5fbccabb2773e34a8c7f0e7723f487a9d31d5",
+      "object_sha256": "3d9c8ccb539b6f97ca131833a7e92b6983141d559d76866b0a96608344aa378c",
+      "receipt_reused": true
+    }
+  ],
+  "stdout": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/b67cc60ae69117071f6e54c2-1792326787755049000.kernel/stdout.log",
+  "stderr": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/b67cc60ae69117071f6e54c2-1792326787755049000.kernel/stderr.log"
+}

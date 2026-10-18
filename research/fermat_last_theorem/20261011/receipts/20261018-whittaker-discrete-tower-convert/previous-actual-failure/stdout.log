@@ -1,0 +1,74 @@
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_LanglandsTunnell_exists_rpow_bound_near_zero_of_whittaker_ode_of_discrete_tower_of_moderateGrowth.lean:118:4: error: Tactic `rfl` failed: The left-hand side
+  (eval y (derivative (P n m)) - 2 * Real.pi * eval y (P n m)) * Real.exp (-(2 * Real.pi * y))
+is not definitionally equal to the right-hand side
+  eval y (derivative (P n m)) * Real.exp (-(2 * Real.pi * y)) +
+    eval y (P n m) * (-(2 * Real.pi) * Real.exp (-(2 * Real.pi * y)))
+
+case e'_9
+n m : ℕ
+y : ℝ
+hp : HasDerivAt (fun x => eval x (P n m)) (eval y (derivative (P n m))) y
+he : HasDerivAt (fun y => Real.exp (-(2 * Real.pi * y))) (-(2 * Real.pi) * Real.exp (-(2 * Real.pi * y))) y
+this :
+  HasDerivAt ((fun x => eval x (P n m)) * fun y => Real.exp (-(2 * Real.pi * y)))
+    (eval y (derivative (P n m)) * Real.exp (-(2 * Real.pi * y)) +
+      eval y (P n m) * (-(2 * Real.pi) * Real.exp (-(2 * Real.pi * y))))
+    y
+⊢ (eval y (derivative (P n m)) - 2 * Real.pi * eval y (P n m)) * Real.exp (-(2 * Real.pi * y)) =
+    eval y (derivative (P n m)) * Real.exp (-(2 * Real.pi * y)) +
+      eval y (P n m) * (-(2 * Real.pi) * Real.exp (-(2 * Real.pi * y)))
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_LanglandsTunnell_exists_rpow_bound_near_zero_of_whittaker_ode_of_discrete_tower_of_moderateGrowth.lean:119:2: error: No goals to be solved
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_LanglandsTunnell_exists_rpow_bound_near_zero_of_whittaker_ode_of_discrete_tower_of_moderateGrowth.lean:130:4: error: Tactic `rfl` failed: The left-hand side
+  (eval y (derivative (derivative (P n m))) - 4 * Real.pi * eval y (derivative (P n m)) +
+      4 * Real.pi ^ 2 * eval y (P n m)) *
+    Real.exp (-(2 * Real.pi * y))
+is not definitionally equal to the right-hand side
+  (eval y (derivative (derivative (P n m))) - 2 * Real.pi * eval y (derivative (P n m))) *
+      Real.exp (-(2 * Real.pi * y)) +
+    ((fun x => eval x (derivative (P n m))) - fun y => 2 * Real.pi * eval y (P n m)) y *
+      (-(2 * Real.pi) * Real.exp (-(2 * Real.pi * y)))
+
+case e'_9
+n m : ℕ
+y : ℝ
+hp : HasDerivAt (fun x => eval x (P n m)) (eval y (derivative (P n m))) y
+hp' : HasDerivAt (fun x => eval x (derivative (P n m))) (eval y (derivative (derivative (P n m)))) y
+he : HasDerivAt (fun y => Real.exp (-(2 * Real.pi * y))) (-(2 * Real.pi) * Real.exp (-(2 * Real.pi * y))) y
+this :
+  HasDerivAt
+    (((fun x => eval x (derivative (P n m))) - fun y => 2 * Real.pi * eval y (P n m)) * fun y =>
+      Real.exp (-(2 * Real.pi * y)))
+    ((eval y (derivative (derivative (P n m))) - 2 * Real.pi * eval y (derivative (P n m))) *
+        Real.exp (-(2 * Real.pi * y)) +
+      ((fun x => eval x (derivative (P n m))) - fun y => 2 * Real.pi * eval y (P n m)) y *
+        (-(2 * Real.pi) * Real.exp (-(2 * Real.pi * y))))
+    y
+⊢ (eval y (derivative (derivative (P n m))) - 4 * Real.pi * eval y (derivative (P n m)) +
+        4 * Real.pi ^ 2 * eval y (P n m)) *
+      Real.exp (-(2 * Real.pi * y)) =
+    (eval y (derivative (derivative (P n m))) - 2 * Real.pi * eval y (derivative (P n m))) *
+        Real.exp (-(2 * Real.pi * y)) +
+      ((fun x => eval x (derivative (P n m))) - fun y => 2 * Real.pi * eval y (P n m)) y *
+        (-(2 * Real.pi) * Real.exp (-(2 * Real.pi * y)))
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_LanglandsTunnell_exists_rpow_bound_near_zero_of_whittaker_ode_of_discrete_tower_of_moderateGrowth.lean:131:2: error: No goals to be solved
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_LanglandsTunnell_exists_rpow_bound_near_zero_of_whittaker_ode_of_discrete_tower_of_moderateGrowth.lean:146:2: error: No goals to be solved
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_LanglandsTunnell_exists_rpow_bound_near_zero_of_whittaker_ode_of_discrete_tower_of_moderateGrowth.lean:155:24: error: Tactic `rfl` failed: The left-hand side
+  s n * (s n - 1) * y ^ (s n - 1 - 1) * h n m y + 2 * s n * y ^ (s n - 1) * h1 n m y + y ^ s n * h2 n m y
+is not definitionally equal to the right-hand side
+  s n * ((s n - 1) * y ^ (s n - 1 - 1)) * h n m y + s n * y ^ (s n - 1) * h1 n m y +
+    (s n * y ^ (s n - 1) * h1 n m y + y ^ s n * h2 n m y)
+
+case e'_9
+n m : ℕ
+y : ℝ
+hy : 0 < y
+hr : HasDerivAt (fun x => x ^ s n) (s n * y ^ (s n - 1)) y
+hr' : HasDerivAt (fun x => x ^ (s n - 1)) ((s n - 1) * y ^ (s n - 1 - 1)) y
+this :
+  HasDerivAt ((fun y => s n * y ^ (s n - 1)) * h n m + (fun x => x ^ s n) * h1 n m)
+    (s n * ((s n - 1) * y ^ (s n - 1 - 1)) * h n m y + s n * y ^ (s n - 1) * h1 n m y +
+      (s n * y ^ (s n - 1) * h1 n m y + y ^ s n * h2 n m y))
+    y
+⊢ s n * (s n - 1) * y ^ (s n - 1 - 1) * h n m y + 2 * s n * y ^ (s n - 1) * h1 n m y + y ^ s n * h2 n m y =
+    s n * ((s n - 1) * y ^ (s n - 1 - 1)) * h n m y + s n * y ^ (s n - 1) * h1 n m y +
+      (s n * y ^ (s n - 1) * h1 n m y + y ^ s n * h2 n m y)

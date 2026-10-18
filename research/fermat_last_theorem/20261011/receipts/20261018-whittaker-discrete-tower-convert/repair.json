@@ -1,0 +1,66 @@
+{
+  "at": "2026-10-18T12:32:40.724632+00:00",
+  "name": "LanglandsTunnell_exists_rpow_bound_near_zero_of_whittaker_ode_of_discrete_tower_of_moderateGrowth",
+  "candidate": "r1",
+  "card_candidate": "r1",
+  "source_replacements": [
+    [
+      "  unfold h h1\n  convert this using 1\n  \u00b7 rfl\n  \u00b7 rfl\n  \u00b7 rfl\n  ring",
+      "  unfold h h1\n  convert this using 1\n  ring",
+      1
+    ],
+    [
+      "  unfold h1 h2\n  convert this using 1\n  \u00b7 rfl\n  \u00b7 rfl\n  \u00b7 rfl\n  simp only [Pi.sub_apply]\n  ring",
+      "  unfold h1 h2\n  convert this using 1\n  simp only [Pi.sub_apply]\n  ring",
+      1
+    ],
+    [
+      "  unfold g g1\n  convert this using 1\n  rfl\n  rfl\n  rfl",
+      "  unfold g g1\n  convert this using 1",
+      1
+    ],
+    [
+      "  unfold g1 g2\n  convert this using 1; rfl; rfl; rfl; ring",
+      "  unfold g1 g2\n  convert this using 1\n  ring",
+      1
+    ]
+  ],
+  "card_replacements": [],
+  "supplier_repository": "anthropics/fermats-last-theorem",
+  "supplier_revision": "6e837e75355538c7f80bab5b956861e86c4eacc2",
+  "baseline_byte_identical_to_pinned_supplier": true,
+  "pinned_supplier_source_and_card_preserved": true,
+  "original_actual_errors": 6,
+  "original_actual_warnings": 0,
+  "actual_failure": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/official-layout/terminal-proof-repairs/20261018-whittaker-discrete-tower-convert/previous-actual-failure",
+  "complete_original_proof_preserved": true,
+  "full_original_statement_and_hypotheses_preserved": true,
+  "public_solution_telescope_and_conclusion_byte_identical": true,
+  "card_proof_byte_identical_before_axiom_query": true,
+  "no_linter_suppression_added": true,
+  "change": "Preserve the full original polynomial/Laguerre construction, analytic bounds and public proof. In four derivative proofs remove obsolete reflexivity steps after convert automatically discharges definitional goals. Retain the existing ring proofs for h, h1 and g1 and the Pi.sub_apply normalization for h1; g has no remaining goal. No change to any statement or assumption, no linter suppression, original single-worker make/kernel queue only.",
+  "verification_pending": false,
+  "installed": true,
+  "max_active_flt_jobs": 1,
+  "lean_threads": 1,
+  "full_original_complete": false,
+  "official_new_solve_credit": 0,
+  "stale_terminal_state_entries_excluded": [],
+  "active_import_closure_excluded": [
+    "Submission.Supplier.P2M.Sol.S_LanglandsTunnell_whittaker_ode_neg_weight_eq_zero_of_tendsto_zero_of_mellinConvergent"
+  ],
+  "active_transitive_import_closure_size": 2,
+  "actual_live_descendant_sources": [
+    {
+      "pid": 89150,
+      "source": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_LanglandsTunnell_whittaker_ode_neg_weight_eq_zero_of_tendsto_zero_of_mellinConvergent.lean"
+    }
+  ],
+  "all_four_canonical_adapted_source_card_modules_excluded": [
+    "P2M.Sol.S_LanglandsTunnell_exists_rpow_bound_near_zero_of_whittaker_ode_of_discrete_tower_of_moderateGrowth",
+    "Submission.Supplier.P2M.Sol.S_LanglandsTunnell_exists_rpow_bound_near_zero_of_whittaker_ode_of_discrete_tower_of_moderateGrowth",
+    "Submission.Supplier.Theorems.Thm_LanglandsTunnell_exists_rpow_bound_near_zero_of_whittaker_ode_of_discrete_tower_of_moderateGrowth",
+    "Theorems.Thm_LanglandsTunnell_exists_rpow_bound_near_zero_of_whittaker_ode_of_discrete_tower_of_moderateGrowth"
+  ],
+  "installed_at": "2026-10-18T12:32:40.830066+00:00"
+}
