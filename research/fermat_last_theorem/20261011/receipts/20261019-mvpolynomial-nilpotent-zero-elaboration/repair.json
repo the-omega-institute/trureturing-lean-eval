@@ -1,0 +1,64 @@
+{
+  "at": "2026-10-18T20:15:30.545226+00:00",
+  "name": "MvPolynomial_exists_subst_X_add_sum_mul_X_pow_sub_X_coeff_mem_span_of_isNilpotent",
+  "candidate": "r1",
+  "card_candidate": "r1",
+  "source_replacements": [
+    [
+      "if_pos",
+      "ite_eq_left",
+      3
+    ],
+    [
+      "if_neg",
+      "ite_eq_right",
+      3
+    ],
+    [
+      "  \u00b7 rw [Pi.neg_apply, map_neg, constantCoeff_iterate_T_X, neg_zero]",
+      "  \u00b7 rw [Pi.neg_apply, map_neg, constantCoeff_iterate_T_X]\n    exact neg_zero",
+      1
+    ],
+    [
+      "\u2190 MvPolynomial.coeff_map, map_sub, h, sub_self,\n    MvPolynomial.coeff_zero]",
+      "\u2190 MvPolynomial.coeff_map, map_sub, h, sub_self]\n  rfl",
+      1
+    ]
+  ],
+  "card_replacements": [],
+  "baseline_byte_identical_to_pinned_supplier": true,
+  "public_card_statement_literal_preserved": true,
+  "solution_statement_literal_preserved": true,
+  "pinned_supplier_source_and_card_preserved": true,
+  "verification_pending": false,
+  "installed": true,
+  "no_linter_suppression_added": true,
+  "complete_original_proof_preserved": true,
+  "full_original_statement_and_hypotheses_preserved": true,
+  "max_active_flt_jobs": 1,
+  "lean_threads": 1,
+  "original_actual_errors": 2,
+  "original_actual_warnings": 7,
+  "original_kernel_seconds": 58.373942041,
+  "library_search": "No matching chiBar/coeff_sub_coeff_mem or full nilpotent substitution theorem in trureturing D5/Library or pinned Mathlib. Reuse the supplier construction and standard neg_zero/definitional zero coefficient rather than replace the proof.",
+  "change": "Preserve the complete original nilpotent Frobenius-operator iteration, polynomial lift and both substitution identities. Finish the negated zero coefficient with exact neg_zero and the zero-polynomial coefficient by rfl after the original rewrite chain. Replace six actually deprecated if aliases. Append source/card recursive axiom queries; await the unchanged single queue actual checks.",
+  "full_original_complete": false,
+  "official_new_solve_credit": 0,
+  "stale_terminal_state_entries_excluded": [
+    {
+      "module": "Submission.Supplier.P2M.Sol.S_MvPolynomial_forall_apply_eq_apply_smul_of_forall_X_of_eq_act",
+      "wrapper_pid": 30960,
+      "make_exit": 0,
+      "terminal": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/c9a9b71461354a49328c00c0-1792354450872291000.make-terminal.json"
+    }
+  ],
+  "active_import_closure_excluded": [],
+  "active_transitive_import_closure_size": 0,
+  "actual_live_descendant_sources": [],
+  "all_four_canonical_adapted_source_card_modules_excluded": [
+    "P2M.Sol.S_MvPolynomial_exists_subst_X_add_sum_mul_X_pow_sub_X_coeff_mem_span_of_isNilpotent",
+    "Submission.Supplier.P2M.Sol.S_MvPolynomial_exists_subst_X_add_sum_mul_X_pow_sub_X_coeff_mem_span_of_isNilpotent",
+    "Submission.Supplier.Theorems.Thm_MvPolynomial_exists_subst_X_add_sum_mul_X_pow_sub_X_coeff_mem_span_of_isNilpotent",
+    "Theorems.Thm_MvPolynomial_exists_subst_X_add_sum_mul_X_pow_sub_X_coeff_mem_span_of_isNilpotent"
+  ]
+}
