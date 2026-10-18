@@ -1,0 +1,93 @@
+{
+  "at": "2026-10-18T05:37:39.200839+00:00",
+  "name": "EisensteinGeneral_LocalUnr_integrable_twisted_and_integral_norm_eq",
+  "candidate": "r1",
+  "card_candidate": "r1",
+  "source_replacements": [
+    [
+      "instFiniteResidueFieldAdicCompletionRingOfIntegersWithZeroMultiplicativeInt_definitions",
+      "instFiniteResidueFieldAdicCompletionRingOfIntegersWithZeroMultiplicativeInt_submission",
+      1
+    ],
+    [
+      "instWeaklyLocallyCompactSpaceAdicCompletionRingOfIntegers_definitions",
+      "instWeaklyLocallyCompactSpaceAdicCompletionRingOfIntegers_submission",
+      1
+    ],
+    [
+      "instLocallyCompactSpaceAdicCompletionRingOfIntegers_definitions",
+      "instLocallyCompactSpaceAdicCompletionRingOfIntegers_submission",
+      1
+    ],
+    [
+      "instCountableOfNumberField_definitions",
+      "instCountableOfNumberField_submission",
+      1
+    ],
+    [
+      "exact zero_le'",
+      "exact zero_le",
+      2
+    ]
+  ],
+  "card_replacements": [
+    [
+      "instFiniteResidueFieldAdicCompletionRingOfIntegersWithZeroMultiplicativeInt_definitions",
+      "instFiniteResidueFieldAdicCompletionRingOfIntegersWithZeroMultiplicativeInt_submission",
+      1
+    ],
+    [
+      "instWeaklyLocallyCompactSpaceAdicCompletionRingOfIntegers_definitions",
+      "instWeaklyLocallyCompactSpaceAdicCompletionRingOfIntegers_submission",
+      1
+    ],
+    [
+      "instLocallyCompactSpaceAdicCompletionRingOfIntegers_definitions",
+      "instLocallyCompactSpaceAdicCompletionRingOfIntegers_submission",
+      1
+    ],
+    [
+      "instCountableOfNumberField_definitions",
+      "instCountableOfNumberField_submission",
+      1
+    ]
+  ],
+  "supplier_repository": "anthropics/fermats-last-theorem",
+  "supplier_revision": "6e837e75355538c7f80bab5b956861e86c4eacc2",
+  "baseline_byte_identical_to_pinned_supplier": false,
+  "preexisting_difference": "Only preexisting removal of obsolete disabled-instance names; all original non-attribute lines are identical to pinned supplier.",
+  "pinned_supplier_source_and_card_preserved": true,
+  "original_actual_errors": 1,
+  "original_actual_warnings": 2,
+  "actual_failure": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/official-layout/terminal-proof-repairs/20261018-eisenstein-twisted-local-instance-names/previous-actual-failure",
+  "public_solution_and_card_telescope_conclusion_proof_byte_identical_before_axiom_query": true,
+  "complete_original_proof_preserved": true,
+  "full_original_statement_and_hypotheses_preserved": true,
+  "no_linter_suppression_added": true,
+  "fixed_pin_api_evidence": "Mathlib/Algebra/Order/IsBotOne.lean:35-42: zero_le has an implicit argument; zero_le' is its deprecated alias. The four generated-instance substitutions reuse the accepted unramified Weyl card repair.",
+  "change": "Replace four module-derived instance names in source/card; replace two deprecated zero_le prime proof references by their identical zero_le alias in private norm_addChar_of_level. Preserve every helper and the full solution/card proof and all hypotheses. Append source/card recursive axiom queries. Await original single-worker queue.",
+  "verification_pending": false,
+  "installed": true,
+  "max_active_flt_jobs": 1,
+  "lean_threads": 1,
+  "full_original_complete": false,
+  "official_new_solve_credit": 0,
+  "stale_terminal_state_entries_excluded": [],
+  "active_import_closure_excluded": [
+    "Submission.Supplier.P2M.Sol.S_AutomorphicForm_RealIwasawa_exists_forall_norm_fourierIntegral_cpow_rad_mul_le_polyDecay_of_isCompact"
+  ],
+  "active_transitive_import_closure_size": 2,
+  "actual_live_descendant_sources": [
+    {
+      "pid": 26036,
+      "source": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_AutomorphicForm_RealIwasawa_exists_forall_norm_fourierIntegral_cpow_rad_mul_le_polyDecay_of_isCompact.lean"
+    }
+  ],
+  "all_four_canonical_adapted_source_card_modules_excluded": [
+    "P2M.Sol.S_EisensteinGeneral_LocalUnr_integrable_twisted_and_integral_norm_eq",
+    "Submission.Supplier.P2M.Sol.S_EisensteinGeneral_LocalUnr_integrable_twisted_and_integral_norm_eq",
+    "Submission.Supplier.Theorems.Thm_EisensteinGeneral_LocalUnr_integrable_twisted_and_integral_norm_eq",
+    "Theorems.Thm_EisensteinGeneral_LocalUnr_integrable_twisted_and_integral_norm_eq"
+  ],
+  "installed_at": "2026-10-18T05:37:39.318422+00:00"
+}
