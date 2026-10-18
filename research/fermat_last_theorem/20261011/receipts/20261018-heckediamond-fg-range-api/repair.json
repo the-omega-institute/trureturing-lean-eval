@@ -1,0 +1,101 @@
+{
+  "at": "2026-10-18T09:08:49.857798+00:00",
+  "name": "CohCarrier_heckeDiamondRing_exists_ringHom_ker_eq_eigenvector",
+  "candidate": "r1",
+  "card_candidate": "r1",
+  "source_replacements": [
+    [
+      "obtain \u27e8s, hs\u27e9 := (Group.fg_def.mp (fg_GammaH M H))",
+      "obtain \u27e8_, s, _, hs\u27e9 := Group.fg_iff'.mp (fg_GammaH M H)",
+      1
+    ],
+    [
+      "Set.mem_setOf_eq",
+      "Set.mem_ofPred_eq",
+      2
+    ],
+    [
+      "TensorProduct.induction_on",
+      "TensorProduct.inductionOn",
+      3
+    ],
+    [
+      "\n    | zero => simp\n",
+      "\n",
+      1
+    ],
+    [
+      "\n  | zero => simp\n",
+      "\n",
+      2
+    ],
+    [
+      "  haveI ",
+      "  have ",
+      20
+    ],
+    [
+      "\u00b7 haveI ",
+      "\u00b7 have ",
+      1
+    ],
+    [
+      "  letI ",
+      "  let ",
+      1
+    ],
+    [
+      "AddGroup.fg_range \u03c6",
+      "inferInstance",
+      1
+    ],
+    [
+      "MonoidHom.coe_coe",
+      "MonoidHom.coe_ofClass",
+      1
+    ],
+    [
+      "Ideal.eq_bot_of_comap_eq_bot",
+      "Ideal.eq_bot_of_under_eq_bot",
+      1
+    ]
+  ],
+  "card_replacements": [],
+  "supplier_repository": "anthropics/fermats-last-theorem",
+  "supplier_revision": "6e837e75355538c7f80bab5b956861e86c4eacc2",
+  "baseline_byte_identical_to_pinned_supplier": true,
+  "pinned_supplier_source_and_card_preserved": true,
+  "original_actual_errors": 2,
+  "original_actual_warnings": 29,
+  "actual_failure": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/official-layout/terminal-proof-repairs/20261018-heckediamond-fg-range-api/previous-actual-failure",
+  "complete_original_proof_preserved": true,
+  "full_original_statement_and_hypotheses_preserved": true,
+  "public_solution_and_card_telescope_conclusion_proof_byte_identical_before_axiom_query": true,
+  "no_linter_suppression_added": true,
+  "fixed_pin_api_evidence": "Official Mathlib5e0c4e5 GroupTheory/Finiteness.lean:710 gives the direct Finset witness and line241 supplies the to_additive instance IsAddFG f.range. Replace the removed AddGroup.fg_range call by inferInstance for the same additive-range type. TensorProduct/Defs.lean:135 uses tmul/add induction. Ideal/GoingUp.lean:216 aliases eq_bot_of_comap_eq_bot directly to eq_bot_of_under_eq_bot; keep the existing proof. Actual warnings name Set.mem_ofPred_eq,MonoidHom.coe_ofClass and the local bindings.",
+  "change": "Use direct finite-generation Finset witness and the existing finite-generation instance for the same additive range; migrate three tensor inductions to tmul/add with zero covered by tmul0. Preserve the complete607-line proof/helpers/all original hypotheses/public solution/card proof and attribution. Modernize only logged aliases and proof instance bindings. Append source/card axiom queries; original single-worker make/kernel queue only.",
+  "verification_pending": false,
+  "installed": true,
+  "max_active_flt_jobs": 1,
+  "lean_threads": 1,
+  "full_original_complete": false,
+  "official_new_solve_credit": 0,
+  "stale_terminal_state_entries_excluded": [],
+  "active_import_closure_excluded": [
+    "Submission.Supplier.Theorems.Thm_CongruenceSubgroup_relIndex_gamma1_inf_gamma0_mul_of_dvd"
+  ],
+  "active_transitive_import_closure_size": 3,
+  "actual_live_descendant_sources": [
+    {
+      "pid": 15677,
+      "source": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/Theorems/Thm_CongruenceSubgroup_relIndex_gamma1_inf_gamma0_mul_of_dvd.lean"
+    }
+  ],
+  "all_four_canonical_adapted_source_card_modules_excluded": [
+    "P2M.Sol.S_CohCarrier_heckeDiamondRing_exists_ringHom_ker_eq_eigenvector",
+    "Submission.Supplier.P2M.Sol.S_CohCarrier_heckeDiamondRing_exists_ringHom_ker_eq_eigenvector",
+    "Submission.Supplier.Theorems.Thm_CohCarrier_heckeDiamondRing_exists_ringHom_ker_eq_eigenvector",
+    "Theorems.Thm_CohCarrier_heckeDiamondRing_exists_ringHom_ker_eq_eigenvector"
+  ],
+  "installed_at": "2026-10-18T09:08:49.965620+00:00"
+}
