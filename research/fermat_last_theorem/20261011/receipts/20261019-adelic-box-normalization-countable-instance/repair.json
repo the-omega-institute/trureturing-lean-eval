@@ -1,0 +1,69 @@
+{
+  "at": "2026-10-18T20:53:07.428153+00:00",
+  "name": "NumberField_AdelicBox_inv_measure_adelicBox_mul_integral_pureTensor_eq",
+  "candidate": "r1",
+  "card_candidate": "r1",
+  "source_replacements": [
+    [
+      "instCountableOfNumberField_definitions",
+      "instCountableOfNumberField_submission",
+      1
+    ],
+    [
+      "Set.mem_setOf_eq",
+      "Set.mem_ofPred_eq",
+      1
+    ],
+    [
+      "haveI",
+      "have",
+      9
+    ],
+    [
+      "letI",
+      "let",
+      2
+    ]
+  ],
+  "card_replacements": [
+    [
+      "instCountableOfNumberField_definitions",
+      "instCountableOfNumberField_submission",
+      1
+    ]
+  ],
+  "baseline_byte_identical_to_pinned_supplier": true,
+  "public_card_statement_literal_preserved": true,
+  "solution_statement_literal_preserved": true,
+  "pinned_supplier_source_and_card_preserved": true,
+  "verification_pending": false,
+  "installed": true,
+  "no_linter_suppression_added": true,
+  "complete_original_proof_preserved": true,
+  "full_original_statement_and_hypotheses_preserved": true,
+  "max_active_flt_jobs": 1,
+  "lean_threads": 1,
+  "original_actual_errors": 1,
+  "original_actual_warnings": 12,
+  "library_search": "Reuse the actually accepted Adelic Haar countability-instance fix, imported Haar uniqueness theorem, Mathlib integral_prod_mul and integral_map_equiv, and the original pinned BoxNormalization compactness/second-countability/product-measure proof. Actual source error is solely the obsolete generated instance name; original source recursive query already reports standard3 axioms. No replacement mathematical proof needed.",
+  "change": "Rename stale countability instance in source/card attributes, preserving deactivation. Replace one actually deprecated set alias and all nine haveI/two letI bindings reported by the actual source linter. Retain original measure-scaling, box-volume/discriminant identity, arbitrary f/g tensor integral identity, and final field calculation; no assumptions or integrability hypotheses added. Existing source axiom query retained; card query appended. Await unchanged single-queue actual checks.",
+  "full_original_complete": false,
+  "official_new_solve_credit": 0,
+  "stale_terminal_state_entries_excluded": [],
+  "active_import_closure_excluded": [
+    "Submission.Supplier.P2M.Sol.S_EisensteinGeneral_Glue_integrable_mul_of_integrable_of_integrable"
+  ],
+  "active_transitive_import_closure_size": 36,
+  "actual_live_descendant_sources": [
+    {
+      "pid": 22676,
+      "source": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_EisensteinGeneral_Glue_integrable_mul_of_integrable_of_integrable.lean"
+    }
+  ],
+  "all_four_canonical_adapted_source_card_modules_excluded": [
+    "P2M.Sol.S_NumberField_AdelicBox_inv_measure_adelicBox_mul_integral_pureTensor_eq",
+    "Submission.Supplier.P2M.Sol.S_NumberField_AdelicBox_inv_measure_adelicBox_mul_integral_pureTensor_eq",
+    "Submission.Supplier.Theorems.Thm_NumberField_AdelicBox_inv_measure_adelicBox_mul_integral_pureTensor_eq",
+    "Theorems.Thm_NumberField_AdelicBox_inv_measure_adelicBox_mul_integral_pureTensor_eq"
+  ]
+}
