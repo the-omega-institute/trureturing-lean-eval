@@ -1,0 +1,64 @@
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_ModularCurve_CharPReduction_mem_or_inv_mem_modularLocalized.lean:284:4: warning: Unused tactic linter: `change (s : F) = ((φ e * r : R) : F)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_ModularCurve_CharPReduction_mem_or_inv_mem_modularLocalized.lean:346:2: warning: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_ModularCurve_CharPReduction_mem_or_inv_mem_modularLocalized.lean:405:34: warning: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_ModularCurve_CharPReduction_mem_or_inv_mem_modularLocalized.lean:427:2: warning: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_ModularCurve_CharPReduction_mem_or_inv_mem_modularLocalized.lean:445:4: warning: Unused tactic linter: `all_goals rfl` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_ModularCurve_CharPReduction_mem_or_inv_mem_modularLocalized.lean:445:14: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_ModularCurve_CharPReduction_mem_or_inv_mem_modularLocalized.lean:620:12: warning: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_ModularCurve_CharPReduction_mem_or_inv_mem_modularLocalized.lean:626:22: warning: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_ModularCurve_CharPReduction_mem_or_inv_mem_modularLocalized.lean:766:4: error: Tactic `rfl` failed: The left-hand side
+  (Polynomial.eval₂RingHom (constSeries A.toSubring) (jqModC L)).comp
+    (Polynomial.mapRingHom (Int.castRingHom ↥A.toSubring))
+is not definitionally equal to the right-hand side
+  (Polynomial.aeval (jqModC L)).toRingHom
+
+case e'_5
+N : ℕ
+inst✝¹ : NeZero N
+L : Type u_1
+inst✝ : Field L
+A : ValuationSubring L
+data : ModularPolynomialData N
+h : Polynomial.eval₂ (Polynomial.aeval (jqModC L)).toRingHom (jqNModC L N) data.Φ = 0
+e_4✝ : HahnSeries.instCommSemiring.toSemiring = HahnSeries.instSemiring
+⊢ (Polynomial.eval₂RingHom (constSeries A.toSubring) (jqModC L)).comp
+      (Polynomial.mapRingHom (Int.castRingHom ↥A.toSubring)) =
+    (Polynomial.aeval (jqModC L)).toRingHom
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_ModularCurve_CharPReduction_mem_or_inv_mem_modularLocalized.lean:767:2: error: No goals to be solved
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_ModularCurve_CharPReduction_mem_or_inv_mem_modularLocalized.lean:819:2: warning: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`

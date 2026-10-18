@@ -1,0 +1,86 @@
+{
+  "at": "2026-10-18T12:58:44.574788+00:00",
+  "name": "ModularCurve_CharPReduction_mem_or_inv_mem_modularLocalized",
+  "candidate": "r1",
+  "card_candidate": "r1",
+  "source_replacements": [
+    [
+      "  haveI := redKer_isPrime A.toSubring red (modularRing N A.toSubring)\n",
+      "  have := redKer_isPrime A.toSubring red (modularRing N A.toSubring)\n",
+      1
+    ],
+    [
+      "  haveI : FiniteDimensional k\u27eex\u27ef k\u27eex\u27ef\u27eey\u27ef := Module.finite_of_finrank_pos (by omega)\n",
+      "  have : FiniteDimensional k\u27eex\u27ef k\u27eex\u27ef\u27eey\u27ef := Module.finite_of_finrank_pos (by omega)\n",
+      1
+    ],
+    [
+      "    (\u27e8x, hx\u27e9 : locSubring R \ud835\udd2d) \u2208 maximalIdeal (locSubring R \ud835\udd2d) \u2194 r \u2208 \ud835\udd2d := by\n  haveI := locSubring_isLocalRing R \ud835\udd2d\n",
+      "    (\u27e8x, hx\u27e9 : locSubring R \ud835\udd2d) \u2208 maximalIdeal (locSubring R \ud835\udd2d) \u2194 r \u2208 \ud835\udd2d := by\n  have := locSubring_isLocalRing R \ud835\udd2d\n",
+      1
+    ],
+    [
+      "    change (s : F) = ((\u03c6 e * r : R) : F)\n",
+      "",
+      1
+    ],
+    [
+      "      rfl\n    all_goals rfl\n  subst hdim",
+      "      rfl\n  subst hdim",
+      1
+    ],
+    [
+      "if_pos",
+      "ite_eq_left",
+      2
+    ],
+    [
+      "if_neg",
+      "ite_eq_right",
+      1
+    ],
+    [
+      "  convert h using 2\n  \u00b7 rfl\n  apply Polynomial.ringHom_ext",
+      "  convert h using 2\n  apply Polynomial.ringHom_ext",
+      1
+    ]
+  ],
+  "card_replacements": [],
+  "supplier_repository": "anthropics/fermats-last-theorem",
+  "supplier_revision": "6e837e75355538c7f80bab5b956861e86c4eacc2",
+  "baseline_byte_identical_to_pinned_supplier": true,
+  "pinned_supplier_source_and_card_preserved": true,
+  "original_actual_errors": 2,
+  "original_actual_warnings": 9,
+  "actual_failure": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/official-layout/terminal-proof-repairs/20261018-charp-localized-evaluation-convert/previous-actual-failure",
+  "complete_original_proof_preserved": true,
+  "full_original_statement_and_hypotheses_preserved": true,
+  "public_solution_telescope_and_conclusion_byte_identical": true,
+  "card_proof_byte_identical_before_axiom_query": true,
+  "no_linter_suppression_added": true,
+  "change": "Preserve the complete original modular-localization proof and every public hypothesis. The actual convert goal in hrel_modular is already equality of the two polynomial evaluation ring homomorphisms; remove the obsolete rfl and retain the original Polynomial.ringHom_ext proof on constants and X. Migrate exactly three logged haveI bindings, the two if_pos and one if_neg aliases. Remove only the logged no-op change and the single unreachable all_goals rfl at the end of hli. Public statement and card proof byte-identical before axiom queries; no linter suppression; original single-worker make/kernel queue only.",
+  "verification_pending": false,
+  "installed": true,
+  "max_active_flt_jobs": 1,
+  "lean_threads": 1,
+  "full_original_complete": false,
+  "official_new_solve_credit": 0,
+  "stale_terminal_state_entries_excluded": [],
+  "active_import_closure_excluded": [
+    "Submission.Supplier.Theorems.Thm_ModularCurve_GammaH_le_GammaH_div_infSubgroup"
+  ],
+  "active_transitive_import_closure_size": 61,
+  "actual_live_descendant_sources": [
+    {
+      "pid": 71311,
+      "source": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/Theorems/Thm_ModularCurve_GammaH_le_GammaH_div_infSubgroup.lean"
+    }
+  ],
+  "all_four_canonical_adapted_source_card_modules_excluded": [
+    "P2M.Sol.S_ModularCurve_CharPReduction_mem_or_inv_mem_modularLocalized",
+    "Submission.Supplier.P2M.Sol.S_ModularCurve_CharPReduction_mem_or_inv_mem_modularLocalized",
+    "Submission.Supplier.Theorems.Thm_ModularCurve_CharPReduction_mem_or_inv_mem_modularLocalized",
+    "Theorems.Thm_ModularCurve_CharPReduction_mem_or_inv_mem_modularLocalized"
+  ],
+  "installed_at": "2026-10-18T12:58:44.684939+00:00"
+}
