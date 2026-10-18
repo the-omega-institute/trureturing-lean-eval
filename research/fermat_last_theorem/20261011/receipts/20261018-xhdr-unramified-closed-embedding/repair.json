@@ -1,0 +1,217 @@
+{
+  "at": "2026-10-18T14:15:02.779197+00:00",
+  "name": "ModularCurve_XHDRModelAtP_exists_opens_formallyUnramified_pi_of_comp_zero_of_forall_ne_placeOn0",
+  "candidate": "r1",
+  "card_candidate": "r1",
+  "source_replacements": [
+    [
+      "  letI : Algebra P.ResidueField K := g.toAlgebra\n",
+      "  let : Algebra P.ResidueField K := g.toAlgebra\n",
+      1
+    ],
+    [
+      "  haveI : IsScalarTower S P.ResidueField K :=\n",
+      "  have : IsScalarTower S P.ResidueField K :=\n",
+      1
+    ],
+    [
+      "  letI iB : Algebra B' B := \u03c6.toRingHom.toAlgebra\n",
+      "  let iB : Algebra B' B := \u03c6.toRingHom.toAlgebra\n",
+      1
+    ],
+    [
+      "  haveI : IsScalarTower R\u2080 B' B := IsScalarTower.of_algebraMap_eq fun r => (\u03c6.commutes r).symm\n",
+      "  have : IsScalarTower R\u2080 B' B := IsScalarTower.of_algebraMap_eq fun r => (\u03c6.commutes r).symm\n",
+      1
+    ],
+    [
+      "  haveI : Algebra.FiniteType B' B := (RingHom.finiteType_algebraMap).mp h\u03c6\n",
+      "  have : Algebra.FiniteType B' B := (RingHom.finiteType_algebraMap).mp h\u03c6\n",
+      1
+    ],
+    [
+      "  letI i\u03ba : Algebra (B' \u2297[R\u2080] \u03ba) (B \u2297[R\u2080] \u03ba) := \u03c6\u03ba.toRingHom.toAlgebra\n",
+      "  let i\u03ba : Algebra (B' \u2297[R\u2080] \u03ba) (B \u2297[R\u2080] \u03ba) := \u03c6\u03ba.toRingHom.toAlgebra\n",
+      1
+    ],
+    [
+      "  haveI : IsScalarTower B' (B' \u2297[R\u2080] \u03ba) (B \u2297[R\u2080] \u03ba) := IsScalarTower.of_algebraMap_eq fun b => by\n",
+      "  have : IsScalarTower B' (B' \u2297[R\u2080] \u03ba) (B \u2297[R\u2080] \u03ba) := IsScalarTower.of_algebraMap_eq fun b => by\n",
+      1
+    ],
+    [
+      "  haveI hpo : Algebra.IsPushout B' B (B' \u2297[R\u2080] \u03ba) (B \u2297[R\u2080] \u03ba) :=\n",
+      "  have hpo : Algebra.IsPushout B' B (B' \u2297[R\u2080] \u03ba) (B \u2297[R\u2080] \u03ba) :=\n",
+      1
+    ],
+    [
+      "  haveI hpo' : Algebra.IsPushout B' (B' \u2297[R\u2080] \u03ba) B (B \u2297[R\u2080] \u03ba) := hpo.symm\n",
+      "  have hpo' : Algebra.IsPushout B' (B' \u2297[R\u2080] \u03ba) B (B \u2297[R\u2080] \u03ba) := hpo.symm\n",
+      1
+    ],
+    [
+      "  haveI : Algebra.FiniteType (B' \u2297[R\u2080] \u03ba) (B \u2297[R\u2080] \u03ba) :=\n",
+      "  have : Algebra.FiniteType (B' \u2297[R\u2080] \u03ba) (B \u2297[R\u2080] \u03ba) :=\n",
+      1
+    ],
+    [
+      "  haveI hq : Algebra.IsUnramifiedAt (B' \u2297[R\u2080] \u03ba) q :=\n",
+      "  have hq : Algebra.IsUnramifiedAt (B' \u2297[R\u2080] \u03ba) q :=\n",
+      1
+    ],
+    [
+      "  haveI : (q.comap (algebraMap B (B \u2297[R\u2080] \u03ba))).IsPrime := Ideal.IsPrime.comap _\n",
+      "  have : (q.comap (algebraMap B (B \u2297[R\u2080] \u03ba))).IsPrime := Ideal.IsPrime.comap _\n",
+      1
+    ],
+    [
+      "  haveI : Algebra.IsUnramifiedAt B' (q.comap (algebraMap B (B \u2297[R\u2080] \u03ba))) :=\n",
+      "  have : Algebra.IsUnramifiedAt B' (q.comap (algebraMap B (B \u2297[R\u2080] \u03ba))) :=\n",
+      1
+    ],
+    [
+      "  letI : Algebra R\u2080 \u03ba := \u03c4.toAlgebra\n",
+      "  let : Algebra R\u2080 \u03ba := \u03c4.toAlgebra\n",
+      1
+    ],
+    [
+      "  haveI : IsOpenImmersion jB := inferInstance\n",
+      "  have : IsOpenImmersion jB := inferInstance\n",
+      1
+    ],
+    [
+      "  haveI : IsOpenImmersion jB' := inferInstance\n",
+      "  have : IsOpenImmersion jB' := inferInstance\n",
+      1
+    ],
+    [
+      "  haveI : IsOpenImmersion l := by\n",
+      "  have : IsOpenImmersion l := by\n",
+      1
+    ],
+    [
+      "  haveI : IsClosedImmersion c := \ud835\udd1b.comp_isClosedImmersion A hA \u03c1 h\u03c1 0\n",
+      "  have : IsClosedImmersion c := \ud835\udd1b.comp_isClosedImmersion A hA \u03c1 h\u03c1 0\n",
+      1
+    ],
+    [
+      "  haveI : IsReduced (fibre (\u0393 := \u0393M M H) (hj := hj) ((IsLocalRing.residue \u21a5A).comp \u03c1)) :=\n",
+      "  have : IsReduced (fibre (\u0393 := \u0393M M H) (hj := hj) ((IsLocalRing.residue \u21a5A).comp \u03c1)) :=\n",
+      1
+    ],
+    [
+      "  haveI : Surjective (c \u2223_ V\u2080) := by\n",
+      "  have : Surjective (c \u2223_ V\u2080) := by\n",
+      1
+    ],
+    [
+      "  haveI : IsIso (c \u2223_ V\u2080) := isIso_of_isClosedImmersion_of_surjective _\n",
+      "  have : IsIso (c \u2223_ V\u2080) := isIso_of_isClosedImmersion_of_surjective _\n",
+      1
+    ],
+    [
+      "  letI algM : Algebra (R p) \u21a5(chartAlgFin p (\u0393M M H) hj) := (chartAlgFin p (\u0393M M H) hj).algebra\n",
+      "  let algM : Algebra (R p) \u21a5(chartAlgFin p (\u0393M M H) hj) := (chartAlgFin p (\u0393M M H) hj).algebra\n",
+      1
+    ],
+    [
+      "  letI algN : Algebra (R p) \u21a5(chartAlgFin p (\u0393N p M H hpM) hj) := (chartAlgFin p (\u0393N p M H hpM) hj).algebra\n",
+      "  let algN : Algebra (R p) \u21a5(chartAlgFin p (\u0393N p M H hpM) hj) := (chartAlgFin p (\u0393N p M H hpM) hj).algebra\n",
+      1
+    ],
+    [
+      "  letI algMi : Algebra (R p) \u21a5(chartAlgInf p (\u0393M M H) hj) := (chartAlgInf p (\u0393M M H) hj).algebra\n",
+      "  let algMi : Algebra (R p) \u21a5(chartAlgInf p (\u0393M M H) hj) := (chartAlgInf p (\u0393M M H) hj).algebra\n",
+      1
+    ],
+    [
+      "  letI algNi : Algebra (R p) \u21a5(chartAlgInf p (\u0393N p M H hpM) hj) := (chartAlgInf p (\u0393N p M H hpM) hj).algebra\n",
+      "  let algNi : Algebra (R p) \u21a5(chartAlgInf p (\u0393N p M H hpM) hj) := (chartAlgInf p (\u0393N p M H hpM) hj).algebra\n",
+      1
+    ],
+    [
+      "  haveI := \ud835\udd1b.lfp\n",
+      "  have := \ud835\udd1b.lfp\n",
+      2
+    ],
+    [
+      "  haveI : LocallyOfFiniteType (toBase p (\u0393M M H) hj) := inferInstance\n",
+      "  have : LocallyOfFiniteType (toBase p (\u0393M M H) hj) := inferInstance\n",
+      1
+    ],
+    [
+      "    haveI := hwOI\n",
+      "    have := hwOI\n",
+      2
+    ],
+    [
+      "  haveI : LocallyOfFiniteType \ud835\udd1b.\u03c0.1 := by\n",
+      "  have : LocallyOfFiniteType \ud835\udd1b.\u03c0.1 := by\n",
+      1
+    ],
+    [
+      "  haveI : FormallyUnramified (V.\u03b9 \u226b \ud835\udd1b.\u03c0.1) := hFU\n",
+      "  have : FormallyUnramified (V.\u03b9 \u226b \ud835\udd1b.\u03c0.1) := hFU\n",
+      1
+    ],
+    [
+      "  haveI := \ud835\udd1b.efib_iso A hA \u03c1 h\u03c1\n",
+      "  have := \ud835\udd1b.efib_iso A hA \u03c1 h\u03c1\n",
+      1
+    ],
+    [
+      "    (\ud835\udd1b.comp_isClosedImmersion A hA \u03c1 h\u03c1 1).base_closed.isClosed_range.isOpen_compl\u27e9",
+      "    by\n      have : IsClosedImmersion (\ud835\udd1b.comp A hA \u03c1 h\u03c1 1) := \ud835\udd1b.comp_isClosedImmersion A hA \u03c1 h\u03c1 1\n      exact (\ud835\udd1b.comp A hA \u03c1 h\u03c1 1).isClosedEmbedding.isClosed_range.isOpen_compl\u27e9",
+      1
+    ],
+    [
+      "      all_goals\n        ext b\n        change algebraMap (B \u2297[R\u2080] \u03ba) (Localization.Away g) (algebraMap B (B \u2297[R\u2080] \u03ba) (\u03c6 b)) =\n          algebraMap (B \u2297[R\u2080] \u03ba) (Localization.Away g) (\u03c6\u03ba (algebraMap B' (B' \u2297[R\u2080] \u03ba) b))\n        simp [\u03c6\u03ba, Algebra.TensorProduct.algebraMap_apply]\n",
+      "",
+      1
+    ],
+    [
+      "  have := \ud835\udd1b.efib_iso A hA \u03c1 h\u03c1\n",
+      "  refine (And.intro hu (And.intro hu\u03ba\u2082 ?_)).2.2\n  have := \ud835\udd1b.efib_iso A hA \u03c1 h\u03c1\n",
+      1
+    ]
+  ],
+  "card_replacements": [],
+  "supplier_repository": "anthropics/fermats-last-theorem",
+  "supplier_revision": "6e837e75355538c7f80bab5b956861e86c4eacc2",
+  "baseline_byte_identical_to_pinned_supplier": true,
+  "pinned_supplier_source_and_card_preserved": true,
+  "original_actual_errors": 1,
+  "original_actual_warnings": 39,
+  "actual_failure": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/official-layout/terminal-proof-repairs/20261018-xhdr-unramified-closed-embedding/previous-actual-failure",
+  "complete_original_proof_preserved": true,
+  "full_original_statement_and_hypotheses_preserved": true,
+  "public_solution_telescope_and_conclusion_byte_identical": true,
+  "card_proof_byte_identical_before_axiom_query": true,
+  "no_linter_suppression_added": true,
+  "logged_style_binding_sites": 33,
+  "change": "Preserve the complete 555-line original XHDR unramified-neighborhood proof, exact public statement, binder names and every hypothesis. Supply the original closed-immersion proof locally and use the morphism isClosedEmbedding.isClosed_range conclusion. Migrate only logged haveI/letI bindings. Remove the one logged unreachable all_goals continuation after congr 1; retain the other ext/simp branch. Explicitly retain hu and hu\u03ba\u2082 in conjunction projections before the unchanged proof body. No linter suppression added; same single-job make/kernel queue.",
+  "verification_pending": false,
+  "installed": true,
+  "max_active_flt_jobs": 1,
+  "lean_threads": 1,
+  "full_original_complete": false,
+  "official_new_solve_credit": 0,
+  "stale_terminal_state_entries_excluded": [],
+  "active_import_closure_excluded": [
+    "Submission.Supplier.Theorems.Thm_ModularCurve_eq_zero_of_forall_re_periodOf_eq_zero"
+  ],
+  "active_transitive_import_closure_size": 71,
+  "actual_live_descendant_sources": [
+    {
+      "pid": 96084,
+      "source": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/Theorems/Thm_ModularCurve_eq_zero_of_forall_re_periodOf_eq_zero.lean"
+    }
+  ],
+  "all_four_canonical_adapted_source_card_modules_excluded": [
+    "P2M.Sol.S_ModularCurve_XHDRModelAtP_exists_opens_formallyUnramified_pi_of_comp_zero_of_forall_ne_placeOn0",
+    "Submission.Supplier.P2M.Sol.S_ModularCurve_XHDRModelAtP_exists_opens_formallyUnramified_pi_of_comp_zero_of_forall_ne_placeOn0",
+    "Submission.Supplier.Theorems.Thm_ModularCurve_XHDRModelAtP_exists_opens_formallyUnramified_pi_of_comp_zero_of_forall_ne_placeOn0",
+    "Theorems.Thm_ModularCurve_XHDRModelAtP_exists_opens_formallyUnramified_pi_of_comp_zero_of_forall_ne_placeOn0"
+  ],
+  "installed_at": "2026-10-18T14:15:02.896854+00:00"
+}
