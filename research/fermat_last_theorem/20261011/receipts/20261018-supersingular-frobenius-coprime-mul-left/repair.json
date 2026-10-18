@@ -1,0 +1,61 @@
+{
+  "at": "2026-10-18T13:44:51.283483+00:00",
+  "name": "ModularCurve_ModuliPoint_map_frobenius_map_frobenius_eq_self_of_mem_ssLocus_univ",
+  "candidate": "r1",
+  "card_candidate": "r1",
+  "source_replacements": [
+    [
+      "Nat.Coprime.mul hcop1 hqcop",
+      "Nat.Coprime.mul_left hcop1 hqcop",
+      1
+    ],
+    [
+      "Set.mem_setOf_eq",
+      "Set.mem_ofPred_eq",
+      1
+    ],
+    [
+      "| zero => simp [zero_nsmul, Point.vcInvFun_zero]",
+      "| zero => simp [Point.vcInvFun_zero]",
+      1
+    ]
+  ],
+  "card_replacements": [],
+  "supplier_repository": "anthropics/fermats-last-theorem",
+  "supplier_revision": "6e837e75355538c7f80bab5b956861e86c4eacc2",
+  "baseline_byte_identical_to_pinned_supplier": true,
+  "pinned_supplier_source_and_card_preserved": true,
+  "original_actual_errors": 1,
+  "original_actual_warnings": 2,
+  "actual_failure": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/official-layout/terminal-proof-repairs/20261018-supersingular-frobenius-coprime-mul-left/previous-actual-failure",
+  "complete_original_proof_preserved": true,
+  "full_original_statement_and_hypotheses_preserved": true,
+  "public_solution_telescope_and_conclusion_byte_identical": true,
+  "card_proof_byte_identical_before_axiom_query": true,
+  "no_linter_suppression_added": true,
+  "change": "Retain the complete 922-line original supersingular Frobenius-square descent proof, exact public statement and all hypotheses. Use current Nat.Coprime.mul_left on the same two coprimality proofs, migrate the logged Set.mem_ofPred_eq API and remove only the logged unused zero_nsmul simp argument. Public telescope and card byte-identical before axiom queries. No linter suppression; same single-job make/kernel queue.",
+  "verification_pending": false,
+  "installed": true,
+  "max_active_flt_jobs": 1,
+  "lean_threads": 1,
+  "full_original_complete": false,
+  "official_new_solve_credit": 0,
+  "stale_terminal_state_entries_excluded": [],
+  "active_import_closure_excluded": [
+    "Submission.Supplier.Theorems.Thm_ModularCurve_Period_exists_basis_parabolicHoms_of_isAddTorsionFree"
+  ],
+  "active_transitive_import_closure_size": 6,
+  "actual_live_descendant_sources": [
+    {
+      "pid": 40454,
+      "source": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/Theorems/Thm_ModularCurve_Period_exists_basis_parabolicHoms_of_isAddTorsionFree.lean"
+    }
+  ],
+  "all_four_canonical_adapted_source_card_modules_excluded": [
+    "P2M.Sol.S_ModularCurve_ModuliPoint_map_frobenius_map_frobenius_eq_self_of_mem_ssLocus_univ",
+    "Submission.Supplier.P2M.Sol.S_ModularCurve_ModuliPoint_map_frobenius_map_frobenius_eq_self_of_mem_ssLocus_univ",
+    "Submission.Supplier.Theorems.Thm_ModularCurve_ModuliPoint_map_frobenius_map_frobenius_eq_self_of_mem_ssLocus_univ",
+    "Theorems.Thm_ModularCurve_ModuliPoint_map_frobenius_map_frobenius_eq_self_of_mem_ssLocus_univ"
+  ],
+  "installed_at": "2026-10-18T13:44:51.401767+00:00"
+}
