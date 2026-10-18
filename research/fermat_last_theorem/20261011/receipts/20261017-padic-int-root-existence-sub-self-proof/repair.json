@@ -1,0 +1,64 @@
+{
+  "at": "2026-10-17T10:36:02.849261+00:00",
+  "name": "PadicInt_exists_pow_eq_of_toZModPow_two_eq_one",
+  "candidate": "r1",
+  "card_candidate": "r1",
+  "source_replacements": [
+    [
+      "    rw [RingHom.mem_ker, map_sub, hz, map_one, sub_self]\n",
+      "    rw [RingHom.mem_ker, map_sub, hz, map_one]\n    exact _root_.sub_self (1 : ZMod p)\n",
+      1
+    ]
+  ],
+  "card_replacements": [],
+  "baseline_byte_identical_to_pinned_supplier": true,
+  "pinned_supplier_source_and_card_preserved": true,
+  "verification_pending": false,
+  "installed": true,
+  "no_linter_suppression_added": true,
+  "complete_original_proof_preserved": true,
+  "full_original_statement_and_hypotheses_preserved": true,
+  "max_active_flt_jobs": 1,
+  "lean_threads": 1,
+  "original_actual_errors": null,
+  "original_actual_warnings": null,
+  "original_kernel_seconds": null,
+  "original_source_was_actually_compiled": false,
+  "identical_full_helper_to_verified_padic_int_modular_power_baseline": true,
+  "verified_identical_helper_repair_commit": "2342dc444f69722da05a79419e4d6376bc98d551",
+  "change": "Reuse the exact locally verified replacement in a byte-identical copy of the full auxiliary lemma. Directly apply root-qualified sub_self at1:ZMod p after the unchanged kernel-membership rewrites. Entire public solution/card and all other proof steps unchanged. Any absent original failure receipt means this copy had not yet compiled,not a claimed observed failure. Actual source/card verification pending in the unchanged natural queue.",
+  "full_original_complete": false,
+  "official_new_solve_credit": 0,
+  "active_import_closure_excluded": [
+    "Submission.Supplier.P2M.Sol.S_PeriodPair_jLattice_ofTau"
+  ],
+  "active_transitive_import_closure_size": 5,
+  "actual_live_descendant_sources": [
+    {
+      "pid": 78047,
+      "source": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_PeriodPair_jLattice_ofTau.lean"
+    }
+  ],
+  "all_four_canonical_adapted_source_card_modules_excluded": [
+    "P2M.Sol.S_PadicInt_exists_eq_one_add_prime_pow_mul_pow",
+    "P2M.Sol.S_PadicInt_exists_pow_eq_of_toZModPow_two_eq_one",
+    "P2M.Sol.S_Padic_dvd_of_prime_zpow_mul_one_add_prime_zpow_eq_pow",
+    "P2M.Sol.S_Padic_exists_eq_prime_pow_mul_one_add_prime_pow_mul_pow",
+    "P2M.Sol.S_Padic_index_range_powMonoidHom_units_of_ne_two",
+    "Submission.Supplier.P2M.Sol.S_PadicInt_exists_eq_one_add_prime_pow_mul_pow",
+    "Submission.Supplier.P2M.Sol.S_PadicInt_exists_pow_eq_of_toZModPow_two_eq_one",
+    "Submission.Supplier.P2M.Sol.S_Padic_dvd_of_prime_zpow_mul_one_add_prime_zpow_eq_pow",
+    "Submission.Supplier.P2M.Sol.S_Padic_exists_eq_prime_pow_mul_one_add_prime_pow_mul_pow",
+    "Submission.Supplier.P2M.Sol.S_Padic_index_range_powMonoidHom_units_of_ne_two",
+    "Submission.Supplier.Theorems.Thm_PadicInt_exists_eq_one_add_prime_pow_mul_pow",
+    "Submission.Supplier.Theorems.Thm_PadicInt_exists_pow_eq_of_toZModPow_two_eq_one",
+    "Submission.Supplier.Theorems.Thm_Padic_dvd_of_prime_zpow_mul_one_add_prime_zpow_eq_pow",
+    "Submission.Supplier.Theorems.Thm_Padic_exists_eq_prime_pow_mul_one_add_prime_pow_mul_pow",
+    "Submission.Supplier.Theorems.Thm_Padic_index_range_powMonoidHom_units_of_ne_two",
+    "Theorems.Thm_PadicInt_exists_eq_one_add_prime_pow_mul_pow",
+    "Theorems.Thm_PadicInt_exists_pow_eq_of_toZModPow_two_eq_one",
+    "Theorems.Thm_Padic_dvd_of_prime_zpow_mul_one_add_prime_zpow_eq_pow",
+    "Theorems.Thm_Padic_exists_eq_prime_pow_mul_one_add_prime_pow_mul_pow",
+    "Theorems.Thm_Padic_index_range_powMonoidHom_units_of_ne_two"
+  ]
+}

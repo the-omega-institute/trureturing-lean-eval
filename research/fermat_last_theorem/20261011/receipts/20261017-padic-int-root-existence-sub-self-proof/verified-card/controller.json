@@ -1,0 +1,44 @@
+{
+  "sha256": "86395254337a825dcf51a2a864ecad0373bb068e9f49b56261c35daf14eef7e4",
+  "exit": 0,
+  "empty_output_retry_done": false,
+  "source_sha256_after": "86395254337a825dcf51a2a864ecad0373bb068e9f49b56261c35daf14eef7e4",
+  "source_unchanged": true,
+  "olean_sha256": "83363312b837675e0f6b7d7138bc9af838b7a3c7b8290887c7f19dce37cd6796",
+  "seconds": 10.253448542003753,
+  "pid": 40428,
+  "command": [
+    "/Users/macstudio/.local/omega-shims/lean",
+    "-j1",
+    "--trust=0",
+    "-Ddebug.skipKernelTC=false",
+    "-R",
+    "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src",
+    "-o",
+    "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-build/lib/lean/Submission/Supplier/Theorems/Thm_PadicInt_exists_pow_eq_of_toZModPow_two_eq_one.olean",
+    "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/Theorems/Thm_PadicInt_exists_pow_eq_of_toZModPow_two_eq_one.lean"
+  ],
+  "make_wrapper_pid": 39634,
+  "make_exit": 0,
+  "make_entry_failed": false,
+  "cache_binding_valid": true,
+  "canonical_make_running_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/95165ab131de5e7cf4a6504b-1792360538998698000.make-running.json",
+  "canonical_make_terminal_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/95165ab131de5e7cf4a6504b-1792360538998698000.make-terminal.json",
+  "kernel_terminal_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/95165ab131de5e7cf4a6504b-1792360538998698000.kernel/result.json",
+  "direct_dependencies": [
+    {
+      "module": "Submission.Supplier.P2M.Util",
+      "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+      "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.P2M.Sol.S_PadicInt_exists_pow_eq_of_toZModPow_two_eq_one",
+      "source_sha256": "7504bc4dbeee5904965096cc34fc82a8841f47f2d78d67ee4526d7c0abf81264",
+      "object_sha256": "f815fc3f879ea40155e03ea166a002c27a7c137f0b604decd0224278a72ad167",
+      "receipt_reused": true
+    }
+  ],
+  "stdout": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/95165ab131de5e7cf4a6504b-1792360538998698000.kernel/stdout.log",
+  "stderr": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/95165ab131de5e7cf4a6504b-1792360538998698000.kernel/stderr.log"
+}
