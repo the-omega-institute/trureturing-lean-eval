@@ -1,0 +1,61 @@
+{
+  "at": "2026-10-18T12:50:42.882408+00:00",
+  "name": "MeasureTheory_finiteDimensional_and_finrank_le_of_forall_norm_le_mul_eLpNorm_restrict",
+  "candidate": "r1",
+  "card_candidate": "r1",
+  "source_replacements": [
+    [
+      "    \u00b7 exact \u27e8hmeas \u03c6 h\u03c6, htop\u27e9",
+      "    \u00b7 exact (And.intro (hmeas \u03c6 h\u03c6) htop).2",
+      1
+    ],
+    [
+      "(eLpNorm_eq_zero_iff (hW _ (w - w').2).aestronglyMeasurable two_ne_zero).mpr hae",
+      "(eLpNorm_eq_zero_iff two_ne_zero).mpr hae",
+      1
+    ],
+    [
+      "  haveI : IsFiniteMeasure (\u03bc.restrict s) := isFiniteMeasure_restrict.mpr hs",
+      "  have : IsFiniteMeasure (\u03bc.restrict s) := isFiniteMeasure_restrict.mpr hs",
+      1
+    ],
+    [
+      "  haveI := hfin",
+      "  have := hfin",
+      1
+    ]
+  ],
+  "card_replacements": [],
+  "supplier_repository": "anthropics/fermats-last-theorem",
+  "supplier_revision": "6e837e75355538c7f80bab5b956861e86c4eacc2",
+  "baseline_byte_identical_to_pinned_supplier": true,
+  "pinned_supplier_source_and_card_preserved": true,
+  "original_actual_errors": 2,
+  "original_actual_warnings": 2,
+  "actual_failure": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/official-layout/terminal-proof-repairs/20261018-restrict-godement-memlp-zero/previous-actual-failure",
+  "complete_original_proof_preserved": true,
+  "full_original_statement_and_hypotheses_preserved": true,
+  "public_solution_telescope_and_conclusion_byte_identical": true,
+  "card_proof_byte_identical_before_axiom_query": true,
+  "no_linter_suppression_added": true,
+  "change": "Preserve the complete original restriction-measure finite-dimensionality and finrank-bound proof, every public assumption (including hmeas) and its uses. Retain the original measurable-and-finite witness via And.intro and project its finite-norm component, which is the current MemLp definition. The current eLpNorm_eq_zero_iff needs only the existing nonzero exponent, so remove its obsolete measurability argument. Migrate exactly two logged haveI bindings in proposition proofs to have. Public telescope and card byte-identical before axiom queries, no linter suppression, original single-worker make/kernel queue only.",
+  "verification_pending": false,
+  "installed": true,
+  "max_active_flt_jobs": 1,
+  "lean_threads": 1,
+  "full_original_complete": false,
+  "official_new_solve_credit": 0,
+  "stale_terminal_state_entries_excluded": [],
+  "active_import_closure_excluded": [
+    "Submission.Supplier.P2M.Sol.S_Complex_volume_ball_inter_exists_sum_mul_eq_zero_le_mul_volume"
+  ],
+  "active_transitive_import_closure_size": 8,
+  "actual_live_descendant_sources": [],
+  "all_four_canonical_adapted_source_card_modules_excluded": [
+    "P2M.Sol.S_MeasureTheory_finiteDimensional_and_finrank_le_of_forall_norm_le_mul_eLpNorm_restrict",
+    "Submission.Supplier.P2M.Sol.S_MeasureTheory_finiteDimensional_and_finrank_le_of_forall_norm_le_mul_eLpNorm_restrict",
+    "Submission.Supplier.Theorems.Thm_MeasureTheory_finiteDimensional_and_finrank_le_of_forall_norm_le_mul_eLpNorm_restrict",
+    "Theorems.Thm_MeasureTheory_finiteDimensional_and_finrank_le_of_forall_norm_le_mul_eLpNorm_restrict"
+  ],
+  "installed_at": "2026-10-18T12:50:42.980912+00:00"
+}
