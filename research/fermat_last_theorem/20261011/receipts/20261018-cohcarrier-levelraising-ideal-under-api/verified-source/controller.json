@@ -1,0 +1,86 @@
+{
+  "sha256": "ca265637ad025efc26fa3d6f68c1a0dfe5a74be12bdd04766346ae71edbd64fe",
+  "exit": 0,
+  "empty_output_retry_done": false,
+  "source_sha256_after": "ca265637ad025efc26fa3d6f68c1a0dfe5a74be12bdd04766346ae71edbd64fe",
+  "source_unchanged": true,
+  "olean_sha256": "12f21a2cdfc1b805130a9aff71b9c82f6dc0526cc0af4c4b916577ae8059225c",
+  "seconds": 102.22837925000204,
+  "pid": 24213,
+  "command": [
+    "/Users/macstudio/.local/omega-shims/lean",
+    "-j1",
+    "--trust=0",
+    "-Ddebug.skipKernelTC=false",
+    "-R",
+    "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src",
+    "-o",
+    "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-build/lib/lean/Submission/Supplier/P2M/Sol/S_CohCarrier_levelRaisingComb_mem_cornerSubmodule_of_prime_of_dvd.olean",
+    "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_CohCarrier_levelRaisingComb_mem_cornerSubmodule_of_prime_of_dvd.lean"
+  ],
+  "make_wrapper_pid": 24126,
+  "make_exit": 0,
+  "make_entry_failed": false,
+  "cache_binding_valid": true,
+  "canonical_make_running_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/f481e99103416876736eb099-1792312185688679000.make-running.json",
+  "canonical_make_terminal_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/f481e99103416876736eb099-1792312185688679000.make-terminal.json",
+  "kernel_terminal_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/f481e99103416876736eb099-1792312185688679000.kernel/result.json",
+  "direct_dependencies": [
+    {
+      "module": "Submission.Supplier.Definitions.Def_CohCarrier_Inst",
+      "source_sha256": "076f03311787d0ecc0b3acf4f1279f11cbfffacd1312baef8566d1731517c961",
+      "object_sha256": "74092ccbcb0bc8e196c67d3a25924f00145d857ca4e095df7bacae6eb3591653",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Definitions.Def_IharaLemma_IdempotentSplitting",
+      "source_sha256": "02dd1302db82e05d0112e50cc3b2274651db13c350fdbef09898ab704c94160a",
+      "object_sha256": "1c969ba5a6fc6a4391e2fe5db3242536e8da692e38373b568a01c0b21a2a03ab",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Theorems.Thm_CohCarrier_heckeT_iDeg_one_comm_of_dvd",
+      "source_sha256": "0a99e12afda9a2c15d48b34c27dc6be2264407d8d39de7559d4918126b502c46",
+      "object_sha256": "4f402f42b706debb2049a6264adab02a480dd512791ac31c82ccbfaf41dc8497",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Theorems.Thm_CohCarrier_heckeT_iDeg_q_eq_smul",
+      "source_sha256": "40f549dfaaa764a62339a119c81b0336aeeaf944e5037122677b69fc9d0664c4",
+      "object_sha256": "b9b8449861961c48ddfe2520a7ed92eeff43bbcec3876b5be9c885f229fcfde6",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Theorems.Thm_CohCarrier_iDeg_heckeT_comm_of_dvd",
+      "source_sha256": "b1dea0c3dac7cf502e64fb4907a8c0d142ca23e3eb23a54fad4a581b15be4e1f",
+      "object_sha256": "009895645b66cc70fe5aa69b79899d273c7577584c886c5349d8c8ed339a8ac4",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Theorems.Thm_CohCarrier_iDeg_heckeT_comm_of_coprime",
+      "source_sha256": "dad92a9c6cb98e13481781fefdf2de867b9818ecfd0dce538650206b3316e957",
+      "object_sha256": "35edeecf54be9ca86a6de020c8806f5bfa81b7fe78ee66ce87c35e526ac2c35b",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Theorems.Thm_CohCarrier_heckeT_comm_of_prime",
+      "source_sha256": "161927a8865b9f93a4db5990cda790c84e127a848874ffc21c80a961aa90026d",
+      "object_sha256": "4f4f7b2290347c5137f99e00f99842a9788a8686e8e42287d4111d1abd237066",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Theorems.Thm_CohCarrier_H1_moduleFinite",
+      "source_sha256": "ab80f7da4abbc1c258e7cf93384e9bf3f4020922f27bd570fdac763638671a36",
+      "object_sha256": "3d9cb4fdf436ff846c7f62fa3362e270759746e3a0c4569583442524b60e45f1",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.P2M.Util",
+      "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+      "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+      "receipt_reused": true
+    }
+  ],
+  "stdout": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/f481e99103416876736eb099-1792312185688679000.kernel/stdout.log",
+  "stderr": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/f481e99103416876736eb099-1792312185688679000.kernel/stderr.log"
+}
