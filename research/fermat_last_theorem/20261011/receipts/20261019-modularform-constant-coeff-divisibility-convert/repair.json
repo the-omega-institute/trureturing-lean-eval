@@ -1,0 +1,71 @@
+{
+  "at": "2026-10-18T18:32:51.716348+00:00",
+  "name": "ModularForm_dvd_succ_mul_qCoeff_zero_of_dvd_qCoeff",
+  "candidate": "r1",
+  "card_candidate": "r1",
+  "source_replacements": [
+    [
+      "    convert h using 1\n    \u00b7 rfl\n    ring\n",
+      "    convert h using 1\n    ring\n",
+      2
+    ],
+    [
+      "ModularForm.IsGLPos.coe_smul",
+      "FunLike.coe_smul",
+      5
+    ],
+    [
+      "ModularForm.coe_zero",
+      "FunLike.coe_zero",
+      1
+    ],
+    [
+      "if_pos",
+      "ite_eq_left",
+      5
+    ],
+    [
+      "if_neg",
+      "ite_eq_right",
+      2
+    ]
+  ],
+  "card_replacements": [],
+  "supplier_repository": "anthropics/fermats-last-theorem",
+  "supplier_revision": "6e837e75355538c7f80bab5b956861e86c4eacc2",
+  "baseline_byte_identical_to_pinned_supplier": true,
+  "pinned_supplier_source_and_card_preserved": true,
+  "complete_original_proof_preserved": true,
+  "full_original_statement_and_hypotheses_preserved": true,
+  "public_solution_telescope_and_conclusion_byte_identical": true,
+  "card_proof_byte_identical_before_axiom_query": true,
+  "no_linter_suppression_added": true,
+  "verification_pending": false,
+  "installed": true,
+  "max_active_flt_jobs": 1,
+  "lean_threads": 1,
+  "original_actual_errors": 4,
+  "original_actual_warnings": 13,
+  "verified_same_convert_repair": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/official-layout/terminal-proof-repairs/20261019-period-lattice-affine-derivative-convert/verified-record.json",
+  "change": "Retain complete original561-line proof and all hypotheses. In hd3/hd4 convert now leaves only a scalar ring equality; remove the two redundant rfl focus blocks and keep each original ring tactic. Migrate only reported coe_smul/coe_zero/if aliases to existing generic library lemmas. Exact public source/card statements and card proof unchanged. Full source/card make/kernel, warning and standard3-axiom validation pending.",
+  "full_original_complete": false,
+  "official_new_solve_credit": 0,
+  "stale_terminal_state_entries_excluded": [],
+  "active_import_closure_excluded": [
+    "Submission.Supplier.P2M.Sol.S_ModularGroup_exists_bounds_smul_of_mem_fd_of_im_le"
+  ],
+  "active_transitive_import_closure_size": 2,
+  "actual_live_descendant_sources": [
+    {
+      "pid": 6111,
+      "source": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_ModularGroup_exists_bounds_smul_of_mem_fd_of_im_le.lean"
+    }
+  ],
+  "all_four_canonical_adapted_source_card_modules_excluded": [
+    "P2M.Sol.S_ModularForm_dvd_succ_mul_qCoeff_zero_of_dvd_qCoeff",
+    "Submission.Supplier.P2M.Sol.S_ModularForm_dvd_succ_mul_qCoeff_zero_of_dvd_qCoeff",
+    "Submission.Supplier.Theorems.Thm_ModularForm_dvd_succ_mul_qCoeff_zero_of_dvd_qCoeff",
+    "Theorems.Thm_ModularForm_dvd_succ_mul_qCoeff_zero_of_dvd_qCoeff"
+  ],
+  "installed_at": "2026-10-18T18:32:51.813262+00:00"
+}
