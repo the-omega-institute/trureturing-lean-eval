@@ -1,0 +1,126 @@
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_GaloisRepAdic_exists_submodule_finrank_le_invariants_add_one_mem_of_isStrictOrdinaryAt.lean:300:50: error: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  0 • ?m
+in the target expression
+  0 • u = 0
+
+k : Type
+inst✝ : Field k
+ρbar : ResidualGaloisRep k
+ρA : GaloisRepAdic (DualNumber k)
+b : Basis (Fin 2) (DualNumber k) ρA.V
+bbar : Basis (Fin 2) k ρbar.V
+b' : Basis (Fin 2) (DualNumber k) ρA.V
+i : Fin 2
+h0 : π₀ ρbar ρA b bbar (b' i) = 0
+u : ρA.V := lift ρbar ρA b bbar (π₁ ρbar ρA b bbar (b' i)) 0
+hu : u = lift ρbar ρA b bbar (π₁ ρbar ρA b bbar (b' i)) 0
+hεu : DualNumber.eps • u = b' i
+⊢ 0 • u = 0
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_GaloisRepAdic_exists_submodule_finrank_le_invariants_add_one_mem_of_isStrictOrdinaryAt.lean:311:2: warning: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_GaloisRepAdic_exists_submodule_finrank_le_invariants_add_one_mem_of_isStrictOrdinaryAt.lean:656:2: warning: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_GaloisRepAdic_exists_submodule_finrank_le_invariants_add_one_mem_of_isStrictOrdinaryAt.lean:656:15: warning: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_GaloisRepAdic_exists_submodule_finrank_le_invariants_add_one_mem_of_isStrictOrdinaryAt.lean:736:2: warning: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_GaloisRepAdic_exists_submodule_finrank_le_invariants_add_one_mem_of_isStrictOrdinaryAt.lean:891:2: warning: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_GaloisRepAdic_exists_submodule_finrank_le_invariants_add_one_mem_of_isStrictOrdinaryAt.lean:901:2: warning: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_GaloisRepAdic_exists_submodule_finrank_le_invariants_add_one_mem_of_isStrictOrdinaryAt.lean:911:2: warning: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_GaloisRepAdic_exists_submodule_finrank_le_invariants_add_one_mem_of_isStrictOrdinaryAt.lean:918:2: warning: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_GaloisRepAdic_exists_submodule_finrank_le_invariants_add_one_mem_of_isStrictOrdinaryAt.lean:920:2: warning: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_GaloisRepAdic_exists_submodule_finrank_le_invariants_add_one_mem_of_isStrictOrdinaryAt.lean:929:23: warning: `SetLike.exists_of_lt` has been deprecated: Use `IsConcreteLE.exists_of_lt` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.exists_of_lt` to `IsConcreteLE.exists_of_lt x`).
+
+Hint: Replace the deprecated name:
+  S̵e̵t̵L̵i̵k̵e̵.̵e̵x̵i̵s̵t̵s̵_̵o̵f̵_̵l̵t̵I̲s̲C̲o̲n̲c̲r̲e̲t̲e̲L̲E̲.̲e̲x̲i̲s̲t̲s̲_̲o̲f̲_̲l̲t̲
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_GaloisRepAdic_exists_submodule_finrank_le_invariants_add_one_mem_of_isStrictOrdinaryAt.lean:1100:23: warning: `SetLike.exists_of_lt` has been deprecated: Use `IsConcreteLE.exists_of_lt` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.exists_of_lt` to `IsConcreteLE.exists_of_lt x`).
+
+Hint: Replace the deprecated name:
+  S̵e̵t̵L̵i̵k̵e̵.̵e̵x̵i̵s̵t̵s̵_̵o̵f̵_̵l̵t̵I̲s̲C̲o̲n̲c̲r̲e̲t̲e̲L̲E̲.̲e̲x̲i̲s̲t̲s̲_̲o̲f̲_̲l̲t̲
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_GaloisRepAdic_exists_submodule_finrank_le_invariants_add_one_mem_of_isStrictOrdinaryAt.lean:1239:2: warning: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_GaloisRepAdic_exists_submodule_finrank_le_invariants_add_one_mem_of_isStrictOrdinaryAt.lean:1241:2: warning: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_GaloisRepAdic_exists_submodule_finrank_le_invariants_add_one_mem_of_isStrictOrdinaryAt.lean:1264:6: warning: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`

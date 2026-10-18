@@ -1,0 +1,60 @@
+{
+  "at": "2026-10-18T22:09:17.257747+00:00",
+  "name": "GaloisRepAdic_exists_submodule_finrank_le_invariants_add_one_mem_of_isStrictOrdinaryAt",
+  "candidate": "r1",
+  "card_candidate": "r1",
+  "source_replacements": [
+    [
+      "    rw [\u2190 h\u03b5u, smul_smul, DualNumber.eps_mul_eps, zero_smul]\n",
+      "    rw [\u2190 h\u03b5u, smul_smul, DualNumber.eps_mul_eps]\n    exact _root_.zero_smul (DualNumber k) u\n",
+      1
+    ],
+    [
+      "haveI",
+      "have",
+      11
+    ],
+    [
+      "letI",
+      "let",
+      1
+    ],
+    [
+      "SetLike.exists_of_lt",
+      "IsConcreteLE.exists_of_lt",
+      2
+    ]
+  ],
+  "card_replacements": [],
+  "baseline_byte_identical_to_pinned_supplier": true,
+  "prior_source_changes_preserved": [],
+  "prior_card_changes_preserved": [],
+  "public_card_statement_literal_preserved": true,
+  "solution_statement_literal_preserved": true,
+  "pinned_supplier_source_and_card_preserved": true,
+  "verification_pending": false,
+  "installed": true,
+  "no_linter_suppression_added": true,
+  "complete_original_proof_preserved": true,
+  "full_original_statement_and_hypotheses_preserved": true,
+  "max_active_flt_jobs": 1,
+  "lean_threads": 1,
+  "original_actual_errors": 1,
+  "original_actual_warnings": 14,
+  "library_search": "No existing full target or specialized DualNumber zero_smul proof found in trureturing D5/Reg. Reuse actual pinned Mathlib.Algebra.GroupWithZero.Action.Defs.zero_smul (explicit M\u2080, implicit A, argument m), with the unchanged DualNumber k scalar and existing u. Original identity eps*eps=0 and all coordinate, cocycle, span and finrank arguments retained.",
+  "change": "After the unchanged eps square-zero rewrite, close 0 \u2022 u = 0 by the root-qualified zero_smul with explicit DualNumber k. Clean the 14 actual binding/deprecation warnings. Preserve the entire 1312-line original proof, exact solution and public card statement, every hypothesis and source attribution. Await current original single queue make/kernel/source/card verification; no official submission.",
+  "full_original_complete": false,
+  "official_new_solve_credit": 0,
+  "stale_terminal_state_entries_excluded": [],
+  "active_import_closure_excluded": [
+    "Submission.Supplier.P2M.Sol.S_AutomorphicForm_LocalIntertwining_integral_adeleRing_pureTensor_prod_mul_finprod_unramifiedWeylIntegrand_mul_tprod"
+  ],
+  "active_transitive_import_closure_size": 20,
+  "actual_live_descendant_sources": [],
+  "all_four_canonical_adapted_source_card_modules_excluded": [
+    "P2M.Sol.S_GaloisRepAdic_exists_submodule_finrank_le_invariants_add_one_mem_of_isStrictOrdinaryAt",
+    "Submission.Supplier.P2M.Sol.S_GaloisRepAdic_exists_submodule_finrank_le_invariants_add_one_mem_of_isStrictOrdinaryAt",
+    "Submission.Supplier.Theorems.Thm_GaloisRepAdic_exists_submodule_finrank_le_invariants_add_one_mem_of_isStrictOrdinaryAt",
+    "Theorems.Thm_GaloisRepAdic_exists_submodule_finrank_le_invariants_add_one_mem_of_isStrictOrdinaryAt"
+  ]
+}
