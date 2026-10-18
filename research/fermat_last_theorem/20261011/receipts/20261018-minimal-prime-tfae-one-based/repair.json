@@ -1,0 +1,61 @@
+{
+  "at": "2026-10-18T11:25:46.022413+00:00",
+  "name": "Ideal_not_isMaximal_of_mem_minimalPrimes_of_forall_not_isOpen_singleton",
+  "candidate": "r1",
+  "card_candidate": "r1",
+  "source_replacements": [
+    [
+      ".out 0 2).mpr h3",
+      ".out 1 3).mpr h3",
+      1
+    ],
+    [
+      "  haveI ",
+      "  have ",
+      18
+    ],
+    [
+      "  letI ",
+      "  let ",
+      7
+    ]
+  ],
+  "card_replacements": [],
+  "supplier_repository": "anthropics/fermats-last-theorem",
+  "supplier_revision": "6e837e75355538c7f80bab5b956861e86c4eacc2",
+  "baseline_byte_identical_to_pinned_supplier": true,
+  "pinned_supplier_source_and_card_preserved": true,
+  "original_actual_errors": 4,
+  "original_actual_warnings": 24,
+  "actual_failure": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/official-layout/terminal-proof-repairs/20261018-minimal-prime-tfae-one-based/previous-actual-failure",
+  "complete_original_proof_preserved": true,
+  "full_original_statement_and_hypotheses_preserved": true,
+  "public_solution_telescope_and_conclusion_byte_identical": true,
+  "card_proof_byte_identical_before_axiom_query": true,
+  "no_linter_suppression_added": true,
+  "change": "Migrate the equivalence between the first and third propositions to the current one-based List.TFAE.out API, changing out 0 2 to out 1 3. Preserve the existing closed/generalization-stable proof and every original assumption. Migrate the 24 logged local haveI/letI bindings in proposition bodies to have/let, retaining the letI in the theorem type. Preserve complete original proof and public solution/card. No linter suppression. Original single-worker make/kernel queue only.",
+  "verification_pending": false,
+  "installed": true,
+  "max_active_flt_jobs": 1,
+  "lean_threads": 1,
+  "full_original_complete": false,
+  "official_new_solve_credit": 0,
+  "stale_terminal_state_entries_excluded": [],
+  "active_import_closure_excluded": [
+    "Submission.Supplier.P2M.Sol.S_AlgebraicGeometry_nonempty_iso_or_exists_shortExact_of_sectionsEquiv_algHom_of_ne_two"
+  ],
+  "active_transitive_import_closure_size": 83,
+  "actual_live_descendant_sources": [
+    {
+      "pid": 86256,
+      "source": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_AlgebraicGeometry_nonempty_iso_or_exists_shortExact_of_sectionsEquiv_algHom_of_ne_two.lean"
+    }
+  ],
+  "all_four_canonical_adapted_source_card_modules_excluded": [
+    "P2M.Sol.S_Ideal_not_isMaximal_of_mem_minimalPrimes_of_forall_not_isOpen_singleton",
+    "Submission.Supplier.P2M.Sol.S_Ideal_not_isMaximal_of_mem_minimalPrimes_of_forall_not_isOpen_singleton",
+    "Submission.Supplier.Theorems.Thm_Ideal_not_isMaximal_of_mem_minimalPrimes_of_forall_not_isOpen_singleton",
+    "Theorems.Thm_Ideal_not_isMaximal_of_mem_minimalPrimes_of_forall_not_isOpen_singleton"
+  ],
+  "installed_at": "2026-10-18T11:25:46.344123+00:00"
+}
