@@ -1,0 +1,56 @@
+{
+  "sha256": "229cc682c6dc1c35800f6c1db6640c2217160d768bfc13fbe0c1eceec0a71dd7",
+  "exit": 0,
+  "empty_output_retry_done": false,
+  "source_sha256_after": "229cc682c6dc1c35800f6c1db6640c2217160d768bfc13fbe0c1eceec0a71dd7",
+  "source_unchanged": true,
+  "olean_sha256": "6f5676592b69ee25c808cb060bd9974336edadd8494ec52b513b9cd220626a34",
+  "seconds": 74.95424033299787,
+  "pid": 46734,
+  "command": [
+    "/Users/macstudio/.local/omega-shims/lean",
+    "-j1",
+    "--trust=0",
+    "-Ddebug.skipKernelTC=false",
+    "-R",
+    "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src",
+    "-o",
+    "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-build/lib/lean/Submission/Supplier/P2M/Sol/S_EisensteinGeneral_Factorization_inv_measure_adelicBox_mul_fourierIntegral_tensor_eq.olean",
+    "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_EisensteinGeneral_Factorization_inv_measure_adelicBox_mul_fourierIntegral_tensor_eq.lean"
+  ],
+  "make_wrapper_pid": 39706,
+  "make_exit": 0,
+  "make_entry_failed": false,
+  "cache_binding_valid": true,
+  "canonical_make_running_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/9e71eed3c13731ff314ca20a-1792357312176147000.make-running.json",
+  "canonical_make_terminal_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/9e71eed3c13731ff314ca20a-1792357312176147000.make-terminal.json",
+  "kernel_terminal_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/9e71eed3c13731ff314ca20a-1792357312176147000.kernel/result.json",
+  "direct_dependencies": [
+    {
+      "module": "Submission.Supplier.Definitions.Def_NumberField_AdelicBox",
+      "source_sha256": "286d2f475bce1fe1d29bd907480fa7eb9f67b47ad961d1f789765d2b9a9f5d3f",
+      "object_sha256": "f341d3e7fb4d2df5316ff12651a8c9789cdfe510c63fe8ddceb3c5ee4a4680a8",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Definitions.Def_NumberField_AdelicFourier",
+      "source_sha256": "e7fc23fd95cb18474776709586a1b08ead94eb8bb97c0447c6ac0226d12c9aa6",
+      "object_sha256": null,
+      "receipt_reused": false
+    },
+    {
+      "module": "Submission.Supplier.Theorems.Thm_NumberField_AdelicBox_inv_measure_adelicBox_mul_integral_pureTensor_eq",
+      "source_sha256": "fa081979d992da6a372569f300303e18ecb375a72baca2151866889be11e5898",
+      "object_sha256": "1a1cb71d511e2468be1fefc754b3762e70d2b1951a712e06f01dbc35955148bf",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.P2M.Util",
+      "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+      "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+      "receipt_reused": true
+    }
+  ],
+  "stdout": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/9e71eed3c13731ff314ca20a-1792357312176147000.kernel/stdout.log",
+  "stderr": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/9e71eed3c13731ff314ca20a-1792357312176147000.kernel/stderr.log"
+}
