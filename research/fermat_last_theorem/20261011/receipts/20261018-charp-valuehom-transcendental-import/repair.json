@@ -1,0 +1,151 @@
+{
+  "at": "2026-10-18T12:57:42.516747+00:00",
+  "name": "ModularCurve_CharPModel_exists_unique_valueHom",
+  "candidate": "r2",
+  "card_candidate": "r1",
+  "source_replacements": [
+    [
+      "  haveI : IsFractionRing (Algebra.adjoin K ({x} : Set E)) E := by\n",
+      "  have : IsFractionRing (Algebra.adjoin K ({x} : Set E)) E := by\n",
+      1
+    ],
+    [
+      "  haveI : FaithfulSMul (Algebra.adjoin K ({x} : Set E)) E :=\n",
+      "  have : FaithfulSMul (Algebra.adjoin K ({x} : Set E)) E :=\n",
+      1
+    ],
+    [
+      "  haveI : IsDedekindDomain (Algebra.adjoin K ({x} : Set E)) := isDedekindDomain_adjoin_singleton hx\n",
+      "  have : IsDedekindDomain (Algebra.adjoin K ({x} : Set E)) := isDedekindDomain_adjoin_singleton hx\n",
+      1
+    ],
+    [
+      "  haveI : IsFractionRing R F := isFractionRing_integralClosure_adjoin hj\n",
+      "  have : IsFractionRing R F := isFractionRing_integralClosure_adjoin hj\n",
+      1
+    ],
+    [
+      "  haveI : IsDedekindDomain R := isDedekindDomain_integralClosure_adjoin hj\n",
+      "  have : IsDedekindDomain R := isDedekindDomain_integralClosure_adjoin hj\n",
+      1
+    ],
+    [
+      "  haveI := h\ud835\udd2d\n",
+      "  have := h\ud835\udd2d\n",
+      1
+    ],
+    [
+      "  haveI hp : p.IsPrime := Ideal.map_isPrime_of_equiv e\n",
+      "  have hp : p.IsPrime := Ideal.map_isPrime_of_equiv e\n",
+      1
+    ],
+    [
+      "  haveI hp\u2080 : p\u2080.IsPrime := by\n",
+      "  have hp\u2080 : p\u2080.IsPrime := by\n",
+      1
+    ],
+    [
+      "  haveI : IsIntegrallyClosed S := A.isIntegrallyClosed_closure hj\n",
+      "  have : IsIntegrallyClosed S := A.isIntegrallyClosed_closure hj\n",
+      1
+    ],
+    [
+      "  haveI : FaithfulSMul A (B \u29f8 \ud835\udd2d) := by\n",
+      "  have : FaithfulSMul A (B \u29f8 \ud835\udd2d) := by\n",
+      1
+    ],
+    [
+      "  haveI hintq : Algebra.IsIntegral A (B \u29f8 \ud835\udd2d) := by\n",
+      "  have hintq : Algebra.IsIntegral A (B \u29f8 \ud835\udd2d) := by\n",
+      1
+    ],
+    [
+      "  letI alg : Algebra A (B \u29f8 \ud835\udd2d) := ((Ideal.Quotient.mk \ud835\udd2d).comp cB).toAlgebra\n",
+      "  let alg : Algebra A (B \u29f8 \ud835\udd2d) := ((Ideal.Quotient.mk \ud835\udd2d).comp cB).toAlgebra\n",
+      1
+    ],
+    [
+      "  haveI : Algebra.IsAlgebraic A R := Algebra.IsIntegral.isAlgebraic\n",
+      "  have : Algebra.IsAlgebraic A R := Algebra.IsIntegral.isAlgebraic\n",
+      1
+    ],
+    [
+      "  haveI : Q.LiesOver q := \u27e8by rw [Ideal.under_def, \u2190 hQ]; rfl\u27e9\n",
+      "  have : Q.LiesOver q := \u27e8by rw [Ideal.under_def, \u2190 hQ]; rfl\u27e9\n",
+      1
+    ],
+    [
+      "  haveI : Algebra.IsIntegral S B := \u27e8fun b => by\n",
+      "  have : Algebra.IsIntegral S B := \u27e8fun b => by\n",
+      1
+    ],
+    [
+      "  haveI : FaithfulSMul S B := (faithfulSMul_iff_algebraMap_injective S B).mpr fun a b h => by\n",
+      "  have : FaithfulSMul S B := (faithfulSMul_iff_algebraMap_injective S B).mpr fun a b h => by\n",
+      1
+    ],
+    [
+      "  letI : Algebra S B := (Subring.inclusion hSB).toAlgebra\n",
+      "  let : Algebra S B := (Subring.inclusion hSB).toAlgebra\n",
+      1
+    ],
+    [
+      "Ideal.eq_bot_of_comap_eq_bot (R := A)",
+      "Ideal.eq_bot_of_under_eq_bot (R := A)",
+      1
+    ],
+    [
+      "import Mathlib.RingTheory.Algebraic.Basic\n",
+      "import Mathlib.RingTheory.Algebraic.Basic\nimport Mathlib.RingTheory.Adjoin.Polynomial.Transcendental\n",
+      1
+    ],
+    [
+      "  haveI : FiniteDimensional K K\u27eexbar\u27ef := IntermediateField.adjoin.finiteDimensional hint\n",
+      "  have : FiniteDimensional K K\u27eexbar\u27ef := IntermediateField.adjoin.finiteDimensional hint\n",
+      1
+    ]
+  ],
+  "card_replacements": [],
+  "supplier_repository": "anthropics/fermats-last-theorem",
+  "supplier_revision": "6e837e75355538c7f80bab5b956861e86c4eacc2",
+  "baseline_byte_identical_to_pinned_supplier": true,
+  "pinned_supplier_source_and_card_preserved": true,
+  "original_actual_errors": 4,
+  "original_actual_warnings": 18,
+  "actual_failure": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/official-layout/terminal-proof-repairs/20261018-charp-valuehom-transcendental-import/previous-actual-failure",
+  "complete_original_proof_preserved": true,
+  "full_original_statement_and_hypotheses_preserved": true,
+  "public_solution_telescope_and_conclusion_byte_identical": true,
+  "card_proof_byte_identical_before_axiom_query": true,
+  "no_linter_suppression_added": true,
+  "change": "Preserve the complete original value-homomorphism proof, all valuation/residue-field arguments and every public assumption. The existing Polynomial.algEquivOfTranscendental and its apply lemma are unchanged in current Mathlib but now need the precise Mathlib.RingTheory.Adjoin.Polynomial.Transcendental import. Add only that import, retain all existing calls and proofs, migrate exactly the 17 logged haveI/letI bindings, and rename the single deprecated Ideal.eq_bot_of_comap_eq_bot alias to Ideal.eq_bot_of_under_eq_bot. Public telescope/conclusion and card proof byte-identical. No linter suppression, original single-worker make/kernel queue only. R1 completed the proof with only standard3 axioms and reached one additional haveI warning after the formerly missing equivalence; migrate exactly that logged finite-dimensionality binding to have. No other change.",
+  "verification_pending": false,
+  "installed": true,
+  "max_active_flt_jobs": 1,
+  "lean_threads": 1,
+  "full_original_complete": false,
+  "official_new_solve_credit": 0,
+  "stale_terminal_state_entries_excluded": [],
+  "active_import_closure_excluded": [
+    "Submission.Supplier.P2M.Sol.S_ModularCurve_CharPReduction_mem_or_inv_mem_modularLocalized"
+  ],
+  "active_transitive_import_closure_size": 14,
+  "actual_live_descendant_sources": [
+    {
+      "pid": 82276,
+      "source": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_ModularCurve_CharPReduction_mem_or_inv_mem_modularLocalized.lean"
+    }
+  ],
+  "all_four_canonical_adapted_source_card_modules_excluded": [
+    "P2M.Sol.S_ModularCurve_CharPModel_exists_unique_valueHom",
+    "Submission.Supplier.P2M.Sol.S_ModularCurve_CharPModel_exists_unique_valueHom",
+    "Submission.Supplier.Theorems.Thm_ModularCurve_CharPModel_exists_unique_valueHom",
+    "Theorems.Thm_ModularCurve_CharPModel_exists_unique_valueHom"
+  ],
+  "installed_at": "2026-10-18T13:01:25.472301+00:00",
+  "r1_actual_result": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/official-layout/terminal-proof-repairs/20261018-charp-valuehom-transcendental-import/r1-actual-success-with-newly-reached-warning",
+  "r1_actual_make_exit": 0,
+  "r1_actual_kernel_exit": 0,
+  "r1_actual_errors": 0,
+  "r1_actual_warnings": 1
+}
