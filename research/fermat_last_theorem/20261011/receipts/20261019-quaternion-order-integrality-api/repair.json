@@ -1,0 +1,56 @@
+{
+  "at": "2026-10-18T22:58:34.538865+00:00",
+  "name": "QuaternionAlgebra_IsOrder_exists_int_trd_eq_and_nrd_eq",
+  "candidate": "r1",
+  "card_candidate": "r1",
+  "source_replacements": [
+    [
+      "isIntegral_algebraMap_iff (algebraMap \u211a \u210d[\u211a, a, b]).injective",
+      "isIntegral_algebraMap_iff",
+      1
+    ],
+    [
+      "if_neg (one_ne_zero)",
+      "ite_eq_right (one_ne_zero)",
+      1
+    ]
+  ],
+  "card_replacements": [],
+  "baseline_byte_identical_to_pinned_supplier": true,
+  "prior_source_changes_preserved": [],
+  "prior_card_changes_preserved": [],
+  "public_card_statement_literal_preserved": true,
+  "solution_statement_literal_preserved": true,
+  "pinned_supplier_source_and_card_preserved": true,
+  "verification_pending": false,
+  "installed": true,
+  "no_linter_suppression_added": true,
+  "complete_original_proof_preserved": true,
+  "full_original_statement_and_hypotheses_preserved": true,
+  "max_active_flt_jobs": 1,
+  "lean_threads": 1,
+  "original_actual_errors": 2,
+  "original_actual_warnings": 1,
+  "library_search": "No exact project hit from trureturing D5/Library/Problems/Blueprint. Official Mathlib.RingTheory.IntegralClosure.IsIntegral.Basic:197 isIntegral_algebraMap_iff now obtains algebraMap injectivity from FaithfulSMul; existing library clients rewrite it without an explicit injectivity argument.",
+  "change": "Remove the obsolete explicit injectivity argument from the original integrality rewrite and update the one actual deprecated if_neg occurrence. Retain complete 146-line proof, all original statements and hypotheses; append source/card recursive-axiom queries. Await unchanged original single queue actual verification.",
+  "full_original_complete": false,
+  "official_new_solve_credit": 0,
+  "stale_terminal_state_entries_excluded": [],
+  "active_import_closure_excluded": [
+    "Submission.Supplier.P2M.Sol.S_QuaternionAlgebra_IsOrder_exists_mem_dvd_nrd_forall_ne_smul"
+  ],
+  "active_transitive_import_closure_size": 10,
+  "actual_live_descendant_sources": [
+    {
+      "pid": 12651,
+      "source": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_QuaternionAlgebra_IsOrder_exists_mem_dvd_nrd_forall_ne_smul.lean"
+    }
+  ],
+  "all_four_canonical_adapted_source_card_modules_excluded": [
+    "P2M.Sol.S_QuaternionAlgebra_IsOrder_exists_int_trd_eq_and_nrd_eq",
+    "Submission.Supplier.P2M.Sol.S_QuaternionAlgebra_IsOrder_exists_int_trd_eq_and_nrd_eq",
+    "Submission.Supplier.Theorems.Thm_QuaternionAlgebra_IsOrder_exists_int_trd_eq_and_nrd_eq",
+    "Theorems.Thm_QuaternionAlgebra_IsOrder_exists_int_trd_eq_and_nrd_eq"
+  ],
+  "original_source_lines": 146
+}
