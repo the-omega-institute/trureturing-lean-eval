@@ -1,0 +1,180 @@
+{
+  "at": "2026-10-18T15:45:41.912461+00:00",
+  "name": "ModularCurve_exists_order_algHom_qExpand_jqModC_eq_of_apply_jqModC_eq",
+  "candidate": "r12",
+  "card_candidate": "r1",
+  "source_replacements": [
+    [
+      "haveI",
+      "have",
+      25
+    ],
+    [
+      "letI",
+      "let",
+      2
+    ],
+    [
+      "dif_neg",
+      "dite_eq_right",
+      4
+    ],
+    [
+      "  unfold jTr; rfl\n",
+      "  exact Subtype.map_coe id (fun y hy => (mem_full_iff K N y).mpr hy) x\n",
+      1
+    ],
+    [
+      "  rw [coe_phiRF, AlgEquiv.commutes]\n  rfl\n",
+      "  exact (coe_phiRF K N (algebraMap K (RatFunc K) k)).trans\n    ((congrArg Subtype.val ((sigmaA K).commutes k)).trans\n      ((IntermediateField.coe_algebraMap_apply (K\u27eejqModC K\u27ef) k).trans\n        (IntermediateField.coe_algebraMap_apply (modularFunctionFieldFullC K N) k).symm))\n",
+      1
+    ]
+  ],
+  "card_replacements": [],
+  "supplier_repository": "anthropics/fermats-last-theorem",
+  "supplier_revision": "6e837e75355538c7f80bab5b956861e86c4eacc2",
+  "baseline_byte_identical_to_pinned_supplier": true,
+  "pinned_supplier_source_and_card_preserved": true,
+  "complete_original_proof_preserved": true,
+  "full_original_statement_and_hypotheses_preserved": true,
+  "public_solution_telescope_and_conclusion_byte_identical": true,
+  "card_proof_byte_identical_before_axiom_query": true,
+  "no_linter_suppression_added": true,
+  "exact_costly_declaration": "CuspCountModC.coe_jTr",
+  "resource_diagnostic": "/Users/macstudio/omega/research/lean-eval-01a124c1-52fb-7761-a67c-75fc0610196f/cusp-count-kernel-defeq-resource-20261018T152052Z/coe-jTr-exact-declaration.json",
+  "change": "Keep every original statement/hypothesis, original jTr/maps and all subsequent original proofs. Prove original coe_jTr via Subtype.map_coe; prove original phiRF_algebraMap via original coe_phiRF/sigmaA.commutes and explicit generic source/target coe_algebraMap_apply lemmas. Migrate proposition-valued haveI/letI and dif_neg aliases. Clean source/card axiom queries retained. Count sibling complete original full-source diagnostic has actual make/kernel0, zero warnings/errors/stderr, standard3 recursive axioms. This clean source/card pair still needs its own actual full verification; no acceptance inferred.",
+  "verification_pending": false,
+  "installed": true,
+  "max_active_flt_jobs": 1,
+  "lean_threads": 1,
+  "full_original_complete": false,
+  "official_new_solve_credit": 0,
+  "stale_terminal_state_entries_excluded": [],
+  "active_import_closure_excluded": [
+    "Submission.Supplier.P2M.Sol.S_ModularCurve_exists_slot_of_ord_jqModC_neg"
+  ],
+  "active_transitive_import_closure_size": 280,
+  "actual_live_descendant_sources": [
+    {
+      "pid": 25528,
+      "source": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_ModularCurve_exists_slot_of_ord_jqModC_neg.lean"
+    }
+  ],
+  "all_four_canonical_adapted_source_card_modules_excluded": [
+    "P2M.Sol.S_ModularCurve_exists_order_algHom_qExpand_jqModC_eq_of_apply_jqModC_eq",
+    "Submission.Supplier.P2M.Sol.S_ModularCurve_exists_order_algHom_qExpand_jqModC_eq_of_apply_jqModC_eq",
+    "Submission.Supplier.Theorems.Thm_ModularCurve_exists_order_algHom_qExpand_jqModC_eq_of_apply_jqModC_eq",
+    "Theorems.Thm_ModularCurve_exists_order_algHom_qExpand_jqModC_eq_of_apply_jqModC_eq"
+  ],
+  "installed_at": "2026-10-18T15:45:42.063987+00:00",
+  "previous_candidate": "r4",
+  "updated_at": "2026-10-18T17:15:15.549548+00:00",
+  "temporary_diagnostic_installed": null,
+  "final_candidate_prepared": "r12",
+  "r5_accepted": false,
+  "pending_source_replacements_r8": [
+    [
+      "  unfold jTr; rfl\n",
+      "  rfl\n",
+      1
+    ],
+    [
+      "haveI",
+      "have",
+      25
+    ],
+    [
+      "letI",
+      "let",
+      2
+    ],
+    [
+      "dif_neg",
+      "dite_eq_right",
+      4
+    ],
+    [
+      "    ((jTr K N x : modularFunctionFieldFullC K N) : LaurentSeries K) = x := by\n  rfl\n",
+      "    ((jTr K N x : modularFunctionFieldFullC K N) : LaurentSeries K) = x := by\n  symm\n  rfl\n",
+      1
+    ]
+  ],
+  "pending_source_replacements_r9": [
+    [
+      "haveI",
+      "have",
+      25
+    ],
+    [
+      "letI",
+      "let",
+      2
+    ],
+    [
+      "dif_neg",
+      "dite_eq_right",
+      4
+    ],
+    [
+      "  toFun x := \u27e8x, (mem_full_iff K N _).mpr x.2\u27e9\n  invFun y := \u27e8y, (mem_full_iff K N _).mp y.2\u27e9\n",
+      "  toFun := Subtype.map id (fun x hx => (mem_full_iff K N x).mpr hx)\n  invFun := Subtype.map id (fun y hy => (mem_full_iff K N y).mp hy)\n",
+      1
+    ],
+    [
+      "  unfold jTr; rfl\n",
+      "  exact Subtype.map_coe id (fun y hy => (mem_full_iff K N y).mpr hy) x\n",
+      1
+    ]
+  ],
+  "change_correction": "R10 count synchronous persistent markers have genuinely crossed phiRF_apply, coe_algebraMap_tower and coe_phiRF; next costly theorem is phiRF_algebraMap. R11 preserves its complete original equality and derives it from the same original coe_phiRF and sigmaA.commutes by trans/congrArg instead of rewriting concrete field structures. All other later original proofs and original jTr maps preserved; full source/card verification pending.",
+  "pending_source_replacements_r10": [
+    [
+      "haveI",
+      "have",
+      25
+    ],
+    [
+      "letI",
+      "let",
+      2
+    ],
+    [
+      "dif_neg",
+      "dite_eq_right",
+      4
+    ],
+    [
+      "  unfold jTr; rfl\n",
+      "  exact Subtype.map_coe id (fun y hy => (mem_full_iff K N y).mpr hy) x\n",
+      1
+    ]
+  ],
+  "pending_source_replacements_r11": [
+    [
+      "haveI",
+      "have",
+      25
+    ],
+    [
+      "letI",
+      "let",
+      2
+    ],
+    [
+      "dif_neg",
+      "dite_eq_right",
+      4
+    ],
+    [
+      "  unfold jTr; rfl\n",
+      "  exact Subtype.map_coe id (fun y hy => (mem_full_iff K N y).mpr hy) x\n",
+      1
+    ],
+    [
+      "  rw [coe_phiRF, AlgEquiv.commutes]\n  rfl\n",
+      "  exact (coe_phiRF K N (algebraMap K (RatFunc K) k)).trans\n    (congrArg Subtype.val ((sigmaA K).commutes k))\n",
+      1
+    ]
+  ],
+  "complete_helper_diagnostic_verified_in_sibling": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/official-layout/terminal-proof-repairs/20261018-cusp-count-coe-jtr-kernel/r12-phiRF-scalar-explicit-coercions-diagnostic"
+}

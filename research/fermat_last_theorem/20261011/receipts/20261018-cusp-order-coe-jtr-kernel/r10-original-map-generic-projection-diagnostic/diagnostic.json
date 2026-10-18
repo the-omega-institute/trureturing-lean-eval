@@ -1,0 +1,46 @@
+{
+  "at": "2026-10-18T16:55:42.071749+00:00",
+  "temporary": true,
+  "verification_pending": true,
+  "change": "R9b persistent-file synchronous markers locate new costly definition in modified jTr, before coe_jTr. R10 restores original jTr construction/maps verbatim and uses generic Subtype.map_coe only as the proof of the unchanged original projection equality. All original helper/public statements and omit/open directives preserved. Full source/card verification pending; no accepted repair.",
+  "source_replacements": [
+    [
+      "haveI",
+      "have",
+      25
+    ],
+    [
+      "letI",
+      "let",
+      2
+    ],
+    [
+      "dif_neg",
+      "dite_eq_right",
+      4
+    ],
+    [
+      "  unfold jTr; rfl\n",
+      "  exact Subtype.map_coe id (fun y hy => (mem_full_iff K N y).mpr hy) x\n",
+      1
+    ]
+  ],
+  "markers": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/official-layout/terminal-proof-repairs/20261018-cusp-order-coe-jtr-kernel/r10-original-map-generic-projection-diagnostic/markers.log",
+  "stale_terminal_state_entries_excluded": [],
+  "active_import_closure_excluded": [
+    "Submission.Supplier.P2M.Sol.S_ModularCurve_card_poles_jqModC_modularFunctionFieldFullC_eq_cuspCount"
+  ],
+  "active_transitive_import_closure_size": 280,
+  "actual_live_descendant_sources": [
+    {
+      "pid": 15638,
+      "source": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_ModularCurve_card_poles_jqModC_modularFunctionFieldFullC_eq_cuspCount.lean"
+    }
+  ],
+  "all_four_canonical_adapted_source_card_modules_excluded": [
+    "P2M.Sol.S_ModularCurve_exists_order_algHom_qExpand_jqModC_eq_of_apply_jqModC_eq",
+    "Submission.Supplier.P2M.Sol.S_ModularCurve_exists_order_algHom_qExpand_jqModC_eq_of_apply_jqModC_eq",
+    "Submission.Supplier.Theorems.Thm_ModularCurve_exists_order_algHom_qExpand_jqModC_eq_of_apply_jqModC_eq",
+    "Theorems.Thm_ModularCurve_exists_order_algHom_qExpand_jqModC_eq_of_apply_jqModC_eq"
+  ]
+}
