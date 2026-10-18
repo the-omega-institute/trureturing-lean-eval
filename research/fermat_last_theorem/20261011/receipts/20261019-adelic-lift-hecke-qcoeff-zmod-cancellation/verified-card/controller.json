@@ -1,0 +1,86 @@
+{
+  "sha256": "feed98117668bbc31eca91fff0f9e363817a16bc59218d51490c58e790c1c585",
+  "exit": 0,
+  "empty_output_retry_done": false,
+  "source_sha256_after": "feed98117668bbc31eca91fff0f9e363817a16bc59218d51490c58e790c1c585",
+  "source_unchanged": true,
+  "olean_sha256": "cc3a3538f8b00413f4bf679cc89b18583fb077668f1e82aec8420d1a8b5d46c5",
+  "seconds": 60.902274542007945,
+  "pid": 64449,
+  "command": [
+    "/Users/macstudio/.local/omega-shims/lean",
+    "-j1",
+    "--trust=0",
+    "-Ddebug.skipKernelTC=false",
+    "-R",
+    "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src",
+    "-o",
+    "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-build/lib/lean/Submission/Supplier/Theorems/Thm_CuspForm_IsAdelicLiftOf_sum_toFn_mul_eq_qCoeff_mul_of_mem_span_of_isHeckeCosetSystem.olean",
+    "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/Theorems/Thm_CuspForm_IsAdelicLiftOf_sum_toFn_mul_eq_qCoeff_mul_of_mem_span_of_isHeckeCosetSystem.lean"
+  ],
+  "make_wrapper_pid": 48004,
+  "make_exit": 0,
+  "make_entry_failed": false,
+  "cache_binding_valid": true,
+  "canonical_make_running_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/6ba1cfff1aad18c8a04c1fba-1792359523409383000.make-running.json",
+  "canonical_make_terminal_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/6ba1cfff1aad18c8a04c1fba-1792359523409383000.make-terminal.json",
+  "kernel_terminal_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/6ba1cfff1aad18c8a04c1fba-1792359523409383000.kernel/result.json",
+  "direct_dependencies": [
+    {
+      "module": "Submission.Supplier.Definitions.Def_CuspForm_AdelicLift",
+      "source_sha256": "5de40ae353dd962cc2efeb8427be45980d72968e95bd6888e7a54aa3fc07f764",
+      "object_sha256": "57a55d4f8cb392d088729a693eeb875105b940341468becafcd9b81f6e1d9015",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Definitions.Def_FLTPrelim_Modularity",
+      "source_sha256": "cd80952a6230452e6aaa5edf715476e07b302f0997d2402dfcf314c5c07d2219",
+      "object_sha256": "f469fdbf80c45b247e2d1cb30e2d93a46b3bc393fe5f91f8fa89e627ae837b77",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Definitions.Def_LocalLanglands_HeckeCosetSystem",
+      "source_sha256": "b154c3e180f6c550002a7d3f9ddc87c639a689beb050e14a8701a2d9b475181b",
+      "object_sha256": "22438c2ef7134a709436dd80918284212331df07f1569b0478575637e2cbf400",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Definitions.Def_AutomorphicForm_SmoothAutomorphicFnAt",
+      "source_sha256": "df18f8d677cfaef69c6485bf9f41d2f4260c26926903e1590f50faf58d5452d7",
+      "object_sha256": "a1b8b61729f1eece2b9e1c0eed10cc7495acf64eb817d5854e9e15f0f2f229d1",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Definitions.Def_LocalNewvector_AdelicSpanCarrier",
+      "source_sha256": "b9a8c834045a62e0c43a02f357b8c1a19334af215bb8d4372e37d650e454e767",
+      "object_sha256": "1f94967f7a11261edd5279088c1bae8d9bc83901bfcc6e1a1ce6ed25d9904b80",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Definitions.Def_NumberField_AdelicLevel",
+      "source_sha256": "b2abbefdbcc0befdce3eba26e743768681de7830f30af7a32bdd667e91f15731",
+      "object_sha256": "1981db2375bbafba16ced1c3ef8e299fa4b2f3b34cc21e7c486a23422e4d9dc5",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Definitions.Def_AdelicDock_LocalEmbedding",
+      "source_sha256": "8dd7d0ec1dfab8c88a8cc7de14be8d9a65ae4ab5458530bb25f42f6742b4ae47",
+      "object_sha256": "0d9a261afbc1ecca88149032c76920e6a9b20319ef4f272e47f0f73f5fd181f2",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.P2M.Util",
+      "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+      "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.P2M.Sol.S_CuspForm_IsAdelicLiftOf_sum_toFn_mul_eq_qCoeff_mul_of_mem_span_of_isHeckeCosetSystem",
+      "source_sha256": "855f167b930f9fedd152ee930887a886e89375246287a87c8de5074c6ab8acc8",
+      "object_sha256": "7193d69d25618d728ebf3daae80817d6e7810406a20768aa08ef2a4236fb2f95",
+      "receipt_reused": true
+    }
+  ],
+  "stdout": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/6ba1cfff1aad18c8a04c1fba-1792359523409383000.kernel/stdout.log",
+  "stderr": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/6ba1cfff1aad18c8a04c1fba-1792359523409383000.kernel/stderr.log"
+}

@@ -1,0 +1,78 @@
+{
+  "at": "2026-10-18T21:37:13.841880+00:00",
+  "name": "CuspForm_IsAdelicLiftOf_sum_toFn_mul_eq_qCoeff_mul_of_mem_span_of_isHeckeCosetSystem",
+  "candidate": "r1",
+  "card_candidate": "r1",
+  "source_replacements": [
+    [
+      "\n  haveI : Fact (Rat.HeightOneSpectrum.natGenerator v).Prime :=",
+      "\n  have : Fact (Rat.HeightOneSpectrum.natGenerator v).Prime :=",
+      1
+    ],
+    [
+      "\n  haveI h\u2113F : Fact \u2113.Prime := \u27e8h\u2113\u27e9",
+      "\n  have h\u2113F : Fact \u2113.Prime := \u27e8h\u2113\u27e9",
+      1
+    ],
+    [
+      "MonoidHom.coe_coe",
+      "MonoidHom.coe_ofClass",
+      1
+    ],
+    [
+      "zero_le'",
+      "zero_le",
+      2
+    ],
+    [
+      "    change Valued.v ((0 : FiniteAdeleRing (\ud835\udcde \u211a) \u211a) w) \u2264 _\n",
+      "",
+      1
+    ],
+    [
+      "    rw [ZMod.natCast_zmod_val, ZMod.natCast_zmod_val, add_neg_cancel]",
+      "    rw [ZMod.natCast_zmod_val, ZMod.natCast_zmod_val]\n    exact _root_.add_neg_cancel c",
+      1
+    ],
+    [
+      "if_pos",
+      "ite_eq_left",
+      2
+    ],
+    [
+      "CuspForm.IsGLPos.coe_smul",
+      "FunLike.coe_smul",
+      1
+    ]
+  ],
+  "card_replacements": [],
+  "baseline_byte_identical_to_pinned_supplier": true,
+  "public_card_statement_literal_preserved": true,
+  "solution_statement_literal_preserved": true,
+  "pinned_supplier_source_and_card_preserved": true,
+  "verification_pending": false,
+  "installed": true,
+  "no_linter_suppression_added": true,
+  "complete_original_proof_preserved": true,
+  "full_original_statement_and_hypotheses_preserved": true,
+  "max_active_flt_jobs": 1,
+  "lean_threads": 1,
+  "original_actual_errors": 1,
+  "original_actual_warnings": 9,
+  "library_search": "Reuse Mathlib additive cancellation generated from Algebra.Group.Defs.mul_inv_cancel. The source cast normalization already reduces to c + -c = 0; apply add_neg_cancel c directly. Accepted zero_le/API replacements and original complete Hecke coset, slash action, normalized eigenform and span-induction proofs retained.",
+  "change": "Split failed generic rewrite from an explicitly instantiated root add_neg_cancel c application; clean only nine actually reported style/deprecation/unused-tactic warnings. Preserve statement-level haveI telescope and every public parameter/hypothesis. Add source/card recursive-axiom queries. Await actual single original queue verification; no official submission.",
+  "full_original_complete": false,
+  "official_new_solve_credit": 0,
+  "stale_terminal_state_entries_excluded": [],
+  "active_import_closure_excluded": [
+    "Submission.Supplier.Theorems.Thm_NumberField_InfinitePlace_exists_isReal_and_three_real_or_one_complex_of_finrank_eq_three"
+  ],
+  "active_transitive_import_closure_size": 3,
+  "actual_live_descendant_sources": [],
+  "all_four_canonical_adapted_source_card_modules_excluded": [
+    "P2M.Sol.S_CuspForm_IsAdelicLiftOf_sum_toFn_mul_eq_qCoeff_mul_of_mem_span_of_isHeckeCosetSystem",
+    "Submission.Supplier.P2M.Sol.S_CuspForm_IsAdelicLiftOf_sum_toFn_mul_eq_qCoeff_mul_of_mem_span_of_isHeckeCosetSystem",
+    "Submission.Supplier.Theorems.Thm_CuspForm_IsAdelicLiftOf_sum_toFn_mul_eq_qCoeff_mul_of_mem_span_of_isHeckeCosetSystem",
+    "Theorems.Thm_CuspForm_IsAdelicLiftOf_sum_toFn_mul_eq_qCoeff_mul_of_mem_span_of_isHeckeCosetSystem"
+  ]
+}
