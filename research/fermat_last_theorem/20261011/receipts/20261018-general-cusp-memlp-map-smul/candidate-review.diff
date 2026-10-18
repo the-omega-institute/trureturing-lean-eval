@@ -1,0 +1,1780 @@
+--- baseline
++++ candidate-r1
+@@ -43,9 +43,9 @@
+ 
+ private scoped instance compactSpace_rowIsometrySubgroup : CompactSpace (rowIsometrySubgroup ℝ) := by
+ 
+-  letI : NormedAddCommGroup (Matrix (Fin 2) (Fin 2) ℝ) :=
++  let : NormedAddCommGroup (Matrix (Fin 2) (Fin 2) ℝ) :=
+     inferInstanceAs (NormedAddCommGroup (Fin 2 → Fin 2 → ℝ))
+-  haveI : ProperSpace (Matrix (Fin 2) (Fin 2) ℝ) :=
++  have : ProperSpace (Matrix (Fin 2) (Fin 2) ℝ) :=
+     inferInstanceAs (ProperSpace (Fin 2 → Fin 2 → ℝ))
+ 
+   have hbd : ∀ k ∈ rowIsometrySubgroup ℝ,
+@@ -82,7 +82,7 @@
+           + ‖x * (k : Matrix (Fin 2) (Fin 2) ℝ) 0 1
+             + y * (k : Matrix (Fin 2) (Fin 2) ℝ) 1 1‖ ^ 2
+           = ‖x‖ ^ 2 + ‖y‖ ^ 2} := by
+-      ext k; simp only [Set.mem_inter_iff, Set.mem_iInter, Set.mem_setOf_eq, SetLike.mem_coe,
++      ext k; simp only [Set.mem_inter_iff, Set.mem_iInter, Set.mem_ofPred_eq, SetLike.mem_coe,
+         mem_rowIsometrySubgroup_iff, IsRowIsometry]
+     rw [heq]
+ 
+@@ -111,9 +111,9 @@
+ private scoped instance instLCGLReal : LocallyCompactSpace (GL (Fin 2) ℝ) := inferInstance
+ 
+ private scoped instance instSCGLReal : SecondCountableTopology (GL (Fin 2) ℝ) := by
+-  haveI : SecondCountableTopology (Matrix (Fin 2) (Fin 2) ℝ) :=
++  have : SecondCountableTopology (Matrix (Fin 2) (Fin 2) ℝ) :=
+     inferInstanceAs (SecondCountableTopology (Fin 2 → Fin 2 → ℝ))
+-  haveI : SecondCountableTopology (Matrix (Fin 2) (Fin 2) ℝ)ᵐᵒᵖ :=
++  have : SecondCountableTopology (Matrix (Fin 2) (Fin 2) ℝ)ᵐᵒᵖ :=
+     MulOpposite.opHomeomorph.symm.isEmbedding.secondCountableTopology
+   exact Units.isEmbedding_embedProduct.secondCountableTopology
+ 
+@@ -158,7 +158,7 @@
+ private theorem val_iwasawaBorelFactor_box (p : (ℝ × ℝ × ℝ)) (hp : 0 < p.2.1 ∧ 0 < p.2.2) :
+     (iwasawaBorelFactor p : Matrix (Fin 2) (Fin 2) ℝ)
+       = !![p.2.2 * p.2.1, p.2.2 * p.1; 0, p.2.2] := by
+-  unfold iwasawaBorelFactor; rw [dif_pos hp]; ext i j
++  unfold iwasawaBorelFactor; rw [dite_eq_left hp]; ext i j
+   fin_cases i <;> fin_cases j <;> simp [borelCoordGL]
+ 
+ private theorem continuous_val_iwasawaBorelFactor_box :
+@@ -172,7 +172,7 @@
+ 
+ private theorem continuousOn_iwasawaBorelFactor_box :
+     ContinuousOn iwasawaBorelFactor iwasawaBox := by
+-  rw [continuousOn_iff_continuous_restrict, Units.isEmbedding_embedProduct.continuous_iff]
++  rw [continuousOn_iff_continuous_domRestrict, Units.isEmbedding_embedProduct.continuous_iff]
+   refine continuous_prodMk.mpr ⟨continuous_val_iwasawaBorelFactor_box,
+     MulOpposite.continuous_op.comp ?_⟩
+ 
+@@ -183,27 +183,27 @@
+     have hy : (0:ℝ) < (↑p : ℝ × ℝ × ℝ).2.1 := p.2.1
+     have ht : (0:ℝ) < (↑p : ℝ × ℝ × ℝ).2.2 := p.2.2
+     positivity
+-  simp only [Set.restrict_apply, Matrix.coe_units_inv, Matrix.inv_def, Ring.inverse_eq_inv]
++  simp only [Set.domRestrict_apply, Matrix.coe_units_inv, Matrix.inv_def, Ring.inverse_eq_inv]
+   exact ((continuous_val_iwasawaBorelFactor_box.matrix_det).inv₀ hdet).smul
+     continuous_val_iwasawaBorelFactor_box.matrix_adjugate
+ 
+ private theorem measurable_iwasawaBorelFactor :
+     letI := realGLBorel; Measurable iwasawaBorelFactor := by
+-  letI := realGLBorel; haveI := borelSpace_realGLBorel
++  let := realGLBorel; have := borelSpace_realGLBorel
+   refine measurable_of_restrict_of_restrict_compl isOpen_iwasawaBox.measurableSet ?_ ?_
+   ·
+-    exact (continuousOn_iff_continuous_restrict.mp
++    exact (continuousOn_iff_continuous_domRestrict.mp
+       continuousOn_iwasawaBorelFactor_box).measurable
+   ·
+     have heq : iwasawaBoxᶜ.domRestrict iwasawaBorelFactor = fun _ => (1 : GL (Fin 2) ℝ) :=
+-      funext fun p => dif_neg fun h => p.2 h
++      funext fun p => dite_eq_right fun h => p.2 h
+     exact heq ▸ measurable_const
+ 
+ private theorem measurable_iwasawaParam :
+     letI := realGLBorel; letI := rowIsoBorel
+     Measurable iwasawaParam := by
+-  letI := realGLBorel; letI := rowIsoBorel
+-  haveI := borelSpace_realGLBorel; haveI := borelSpace_rowIsoBorel
++  let := realGLBorel; let := rowIsoBorel
++  have := borelSpace_realGLBorel; have := borelSpace_rowIsoBorel
+ 
+   have hmul : Measurable (fun q : (GL (Fin 2) ℝ) × (GL (Fin 2) ℝ) => q.1 * q.2) :=
+     continuous_mul.measurable
+@@ -216,12 +216,12 @@
+   unfold borelHaar₃; infer_instance
+ 
+ private scoped instance sFinite_haarRowIso : letI := rowIsoBorel; SFinite haarRowIso := by
+-  letI := rowIsoBorel; haveI := borelSpace_rowIsoBorel
++  let := rowIsoBorel; have := borelSpace_rowIsoBorel
+   show SFinite (Measure.haar : Measure (rowIsometrySubgroup ℝ)); infer_instance
+ 
+ private theorem borelHaar₃_prod_haarRowIso_ne_zero :
+     letI := rowIsoBorel; borelHaar₃.prod haarRowIso ≠ 0 := by
+-  letI := rowIsoBorel; haveI := borelSpace_rowIsoBorel
++  let := rowIsoBorel; have := borelSpace_rowIsoBorel
+   rw [ne_eq, ← Measure.measure_univ_eq_zero, ← Set.univ_prod_univ, Measure.prod_prod,
+     mul_eq_zero, not_or]
+   refine ⟨?_, ?_⟩
+@@ -237,7 +237,7 @@
+         ⟨(0, 1, 1), by simp [Set.mem_prod, Set.mem_Ioi]⟩
+     refine lt_of_lt_of_le hreg (measure_mono ?_)
+     rintro ⟨x, y, t⟩ ⟨_, hy, ht⟩
+-    simp only [Set.mem_setOf_eq, ne_eq, ENNReal.ofReal_eq_zero, not_le]
++    simp only [Set.mem_ofPred_eq, ne_eq, ENNReal.ofReal_eq_zero, not_le]
+     exact mul_pos (inv_pos.2 (pow_pos hy 2)) (inv_pos.2 ht)
+   ·
+     show (Measure.haar : Measure (rowIsometrySubgroup ℝ)) Set.univ ≠ 0
+@@ -272,7 +272,7 @@
+ private theorem iwasawaBpart_eq (h : GL (Fin 2) ℝ) :
+     iwasawaBpart h = borelCoordGL (iwasawaX h) (iwasawaY h) (iwasawaT h)
+       (iwasawaY_pos h) (iwasawaT_pos h) :=
+-  dif_pos (iwasawaCoords_mem_box h)
++  dite_eq_left (iwasawaCoords_mem_box h)
+ 
+ private theorem sq_det_eq_gram (M : Matrix (Fin 2) (Fin 2) ℝ) :
+     M.det ^ 2 = topNormSq M * rowNormSq M - topRowDotBottom M ^ 2 := by
+@@ -300,7 +300,7 @@
+   ext i j
+   fin_cases i <;> fin_cases j <;>
+     simp [Matrix.mul_apply, Fin.sum_univ_two] <;>
+-    field_simp <;> ring
++    field_simp; ring
+ 
+ private theorem isRowIsometry_iwasawaKpartGL (h : GL (Fin 2) ℝ) :
+     IsRowIsometry (iwasawaKpartGL h) := by
+@@ -421,7 +421,7 @@
+ 
+ private theorem measurable_hIwasawaCoords :
+     letI := rowIsoBorel; Measurable hIwasawaCoords := by
+-  letI := rowIsoBorel; haveI := borelSpace_rowIsoBorel
++  let := rowIsoBorel; have := borelSpace_rowIsoBorel
+   refine Measurable.prodMk (Measurable.prodMk ?_ (Measurable.prodMk ?_ ?_)) ?_ <;> fun_prop
+ 
+ private def hIwasawaSource : letI := rowIsoBorel
+@@ -431,7 +431,7 @@
+ 
+ private scoped instance sFinite_hIwasawaSource :
+     letI := rowIsoBorel; SFinite hIwasawaSource := by
+-  letI := rowIsoBorel
++  let := rowIsoBorel
+   show SFinite ((volume : Measure ℍ).prod (mulHaarReal.prod haarRowIso)); infer_instance
+ 
+ private theorem map_withDensity_measurableEquiv {α β : Type*} [MeasurableSpace α] [MeasurableSpace β]
+@@ -523,7 +523,7 @@
+ private theorem map_hIwasawaCoords_hIwasawaSource :
+     letI := rowIsoBorel
+     Measure.map hIwasawaCoords hIwasawaSource = borelHaar₃.prod haarRowIso := by
+-  letI := rowIsoBorel; haveI := borelSpace_rowIsoBorel
++  let := rowIsoBorel; have := borelSpace_rowIsoBorel
+ 
+   have hfact : hIwasawaCoords = Prod.map
+       (⇑MeasurableEquiv.prodAssoc ∘ Prod.map upperHalfPlaneCoords id) id
+@@ -670,8 +670,7 @@
+       Matrix.empty_val', Matrix.cons_val_fin_one,
+       mul_zero, add_zero, mul_one]
+     simp only [UpperHalfPlane.num, UpperHalfPlane.denom, Complex.add_re, Complex.mul_re,
+-      Complex.ofReal_re, Complex.ofReal_im, zero_mul, sub_zero, Complex.add_im, Complex.mul_im,
+-      mul_zero]
++      Complex.ofReal_re, Complex.ofReal_im, zero_mul, sub_zero, Complex.add_im, Complex.mul_im]
+     ring
+   rw [htop, Complex.div_re,
+     mul_comm (Complex.normSq _) (t ^ 2),
+@@ -738,7 +737,7 @@
+ private theorem map_mul_haarRowIso (κ : rowIsometrySubgroup ℝ) :
+     letI := rowIsoBorel
+     Measure.map (κ * ·) haarRowIso = haarRowIso := by
+-  letI := rowIsoBorel; haveI := borelSpace_rowIsoBorel
++  let := rowIsoBorel; have := borelSpace_rowIsoBorel
+   show Measure.map (κ * ·) (Measure.haar : Measure (rowIsometrySubgroup ℝ)) = Measure.haar
+   exact map_mul_left_eq_self Measure.haar κ
+ 
+@@ -756,7 +755,7 @@
+     letI := rowIsoBorel
+     Measurable (Function.uncurry fun (z : ℍ) (tk : ℝ × rowIsometrySubgroup ℝ) =>
+       (‖UpperHalfPlane.denom g (z : ℂ)‖ * tk.1, skewKpart g z * tk.2)) := by
+-  letI := rowIsoBorel; haveI := borelSpace_rowIsoBorel
++  let := rowIsoBorel; have := borelSpace_rowIsoBorel
+   have hdenom : Continuous (fun z : ℍ => ‖UpperHalfPlane.denom g (z : ℂ)‖) := by
+     refine continuous_norm.comp ?_
+     unfold UpperHalfPlane.denom
+@@ -769,7 +768,7 @@
+ private theorem measurePreserving_hIwasawaSkew (g : GL (Fin 2) ℝ) :
+     letI := rowIsoBorel
+     MeasurePreserving (hIwasawaSkew g) hIwasawaSource hIwasawaSource := by
+-  letI := rowIsoBorel; haveI := borelSpace_rowIsoBorel
++  let := rowIsoBorel; have := borelSpace_rowIsoBorel
+   show MeasurePreserving (hIwasawaSkew g)
+     ((volume : Measure ℍ).prod (mulHaarReal.prod haarRowIso))
+     ((volume : Measure ℍ).prod (mulHaarReal.prod haarRowIso))
+@@ -790,7 +789,7 @@
+     letI := rowIsoBorel
+     (fun p => g * hIwasawaParam p) =ᵐ[hIwasawaSource]
+       (fun p => hIwasawaParam (hIwasawaSkew g p)) := by
+-  letI := rowIsoBorel; haveI := borelSpace_rowIsoBorel
++  let := rowIsoBorel; have := borelSpace_rowIsoBorel
+   have h1 : ∀ᵐ t ∂mulHaarReal, (0:ℝ) < t := by
+     unfold mulHaarReal
+     refine (ae_withDensity_iff (by fun_prop)).mpr ?_
+@@ -812,8 +811,8 @@
+ 
+ private theorem isMulLeftInvariant_iwasawaHaar :
+     letI := realGLBorel; haveI := borelSpace_realGLBorel; iwasawaHaar.IsMulLeftInvariant := by
+-  letI := realGLBorel; letI := rowIsoBorel
+-  haveI := borelSpace_realGLBorel; haveI := borelSpace_rowIsoBorel
++  let := realGLBorel; let := rowIsoBorel
++  have := borelSpace_realGLBorel; have := borelSpace_rowIsoBorel
+   refine ⟨fun g => ?_⟩
+   have hmΦ : Measurable hIwasawaParam :=
+     measurable_iwasawaParam.comp measurable_hIwasawaCoords
+@@ -896,10 +895,10 @@
+ 
+ private theorem isFiniteMeasureOnCompacts_iwasawaHaar :
+     letI := realGLBorel; IsFiniteMeasureOnCompacts iwasawaHaar := by
+-  letI := realGLBorel; letI := rowIsoBorel
+-  haveI := borelSpace_realGLBorel; haveI := borelSpace_rowIsoBorel
+-
+-  haveI hFinK : IsFiniteMeasure haarRowIso := by
++  let := realGLBorel; let := rowIsoBorel
++  have := borelSpace_realGLBorel; have := borelSpace_rowIsoBorel
++
++  have hFinK : IsFiniteMeasure haarRowIso := by
+     show IsFiniteMeasure (Measure.haar : Measure (rowIsometrySubgroup ℝ)); infer_instance
+   refine ⟨fun K hK => ?_⟩
+ 
+@@ -947,19 +946,19 @@
+ 
+ private theorem iwasawaHaar_ne_zero :
+     letI := realGLBorel; iwasawaHaar ≠ 0 := by
+-  letI := realGLBorel; letI := rowIsoBorel
+-  haveI := borelSpace_realGLBorel; haveI := borelSpace_rowIsoBorel
++  let := realGLBorel; let := rowIsoBorel
++  have := borelSpace_realGLBorel; have := borelSpace_rowIsoBorel
+   exact (Measure.map_ne_zero_iff measurable_iwasawaParam.aemeasurable).mpr
+     borelHaar₃_prod_haarRowIso_ne_zero
+ 
+ private theorem realGLHaar_eq_smul_iwasawaHaar :
+     letI := realGLBorel
+     ∃ c : NNReal, 0 < c ∧ realGLHaar = c • iwasawaHaar := by
+-  letI := realGLBorel; haveI := borelSpace_realGLBorel
+-  haveI : realGLHaar.IsHaarMeasure := by
++  let := realGLBorel; have := borelSpace_realGLBorel
++  have : realGLHaar.IsHaarMeasure := by
+     show (Measure.haar : Measure (GL (Fin 2) ℝ)).IsHaarMeasure; infer_instance
+-  haveI := isMulLeftInvariant_iwasawaHaar
+-  haveI := isFiniteMeasureOnCompacts_iwasawaHaar
++  have := isMulLeftInvariant_iwasawaHaar
++  have := isFiniteMeasureOnCompacts_iwasawaHaar
+ 
+   obtain ⟨c, hceq⟩ : ∃ c : NNReal, iwasawaHaar = c • realGLHaar :=
+     ⟨_, Measure.isMulLeftInvariant_eq_smul iwasawaHaar realGLHaar⟩
+@@ -974,8 +973,8 @@
+     ∃ c : NNReal, 0 < c ∧
+       ∫⁻ g, f g ∂realGLHaar = (c : ENNReal) * ∫⁻ p, f (iwasawaParam p)
+         ∂(borelHaar₃.prod haarRowIso) := by
+-  letI := realGLBorel; letI := rowIsoBorel
+-  haveI := borelSpace_realGLBorel; haveI := borelSpace_rowIsoBorel
++  let := realGLBorel; let := rowIsoBorel
++  have := borelSpace_realGLBorel; have := borelSpace_rowIsoBorel
+   obtain ⟨c, hc, heq⟩ := realGLHaar_eq_smul_iwasawaHaar
+   refine ⟨c, hc, ?_⟩
+ 
+@@ -1135,31 +1134,31 @@
+ 
+ private theorem isHaarMeasure_archGLHaar :
+     letI := archGLBorel; archGLHaar.IsHaarMeasure := by
+-  letI := archGLBorel; haveI := borelSpace_archGLBorel
++  let := archGLBorel; have := borelSpace_archGLBorel
+   exact Measure.isHaarMeasure_haarMeasure _
+ 
+ private theorem isHaarMeasure_finGLHaar :
+     letI := finGLBorel; finGLHaar.IsHaarMeasure := by
+-  letI := finGLBorel; haveI := borelSpace_finGLBorel
++  let := finGLBorel; have := borelSpace_finGLBorel
+   exact Measure.isHaarMeasure_haarMeasure _
+ 
+ private theorem regular_adelicGLHaar :
+     letI := glBorel (Fin 2) (𝓞 ℚ) ℚ
+     (adelicGLHaar (Fin 2) (𝓞 ℚ) ℚ).Regular := by
+-  letI := glBorel (Fin 2) (𝓞 ℚ) ℚ
+-  haveI := borelSpace_glBorel (Fin 2) (𝓞 ℚ) ℚ
++  let := glBorel (Fin 2) (𝓞 ℚ) ℚ
++  have := borelSpace_glBorel (Fin 2) (𝓞 ℚ) ℚ
+   show (Measure.haar : Measure (AdelicGL2 (𝓞 ℚ) ℚ)).Regular
+   infer_instance
+ 
+ private theorem regular_archGLHaar :
+     letI := archGLBorel; archGLHaar.Regular := by
+-  letI := archGLBorel; haveI := borelSpace_archGLBorel
++  let := archGLBorel; have := borelSpace_archGLBorel
+   show (Measure.haar : Measure (GL (Fin 2) (InfiniteAdeleRing ℚ))).Regular
+   infer_instance
+ 
+ private theorem regular_finGLHaar :
+     letI := finGLBorel; finGLHaar.Regular := by
+-  letI := finGLBorel; haveI := borelSpace_finGLBorel
++  let := finGLBorel; have := borelSpace_finGLBorel
+   show (Measure.haar : Measure (GL (Fin 2) (FiniteAdeleRing (𝓞 ℚ) ℚ))).Regular
+   infer_instance
+ 
+@@ -1187,7 +1186,7 @@
+ 
+ private theorem isCompact_integralFiniteAdeles :
+     IsCompact (NumberField.AdelicBox.integralFiniteAdeles (𝓞 ℚ) ℚ) := by
+-  haveI : ∀ v : HeightOneSpectrum (𝓞 ℚ),
++  have : ∀ v : HeightOneSpectrum (𝓞 ℚ),
+       CompactSpace ((v.adicCompletionIntegers ℚ : Set (v.adicCompletion ℚ))) := fun v =>
+     inferInstanceAs (CompactSpace (v.adicCompletionIntegers ℚ))
+   have h := isCompact_range (RestrictedProduct.isOpenEmbedding_structureMap
+@@ -1198,7 +1197,7 @@
+   exact h
+ 
+ private scoped instance sigmaCompactSpace_finiteAdeleRing : SigmaCompactSpace (FiniteAdeleRing (𝓞 ℚ) ℚ) := by
+-  haveI : Countable (𝓞 ℚ) := countable_of_free_finite_int
++  have : Countable (𝓞 ℚ) := countable_of_free_finite_int
+   refine ⟨?_⟩
+   rw [← iUnion_smul_integralFiniteAdeles]
+   exact isSigmaCompact_iUnion_of_isCompact _ fun s =>
+@@ -1231,21 +1230,21 @@
+ 
+ private theorem sigmaFinite_archGLHaar :
+     letI := archGLBorel; SigmaFinite archGLHaar := by
+-  letI := archGLBorel; haveI := borelSpace_archGLBorel
+-  haveI := isHaarMeasure_archGLHaar
++  let := archGLBorel; have := borelSpace_archGLBorel
++  have := isHaarMeasure_archGLHaar
+   exact Measure.IsHaarMeasure.sigmaFinite _
+ 
+ private theorem sigmaFinite_finGLHaar :
+     letI := finGLBorel; SigmaFinite finGLHaar := by
+-  letI := finGLBorel; haveI := borelSpace_finGLBorel
+-  haveI := isHaarMeasure_finGLHaar
++  let := finGLBorel; have := borelSpace_finGLBorel
++  have := isHaarMeasure_finGLHaar
+   exact Measure.IsHaarMeasure.sigmaFinite _
+ 
+ private theorem sigmaFinite_adelicGLHaar :
+     letI := glBorel (Fin 2) (𝓞 ℚ) ℚ
+     SigmaFinite (adelicGLHaar (Fin 2) (𝓞 ℚ) ℚ) := by
+-  letI := glBorel (Fin 2) (𝓞 ℚ) ℚ; haveI := borelSpace_glBorel (Fin 2) (𝓞 ℚ) ℚ
+-  haveI := isHaarMeasure_adelicGLHaar (Fin 2) (𝓞 ℚ) ℚ
++  let := glBorel (Fin 2) (𝓞 ℚ) ℚ; have := borelSpace_glBorel (Fin 2) (𝓞 ℚ) ℚ
++  have := isHaarMeasure_adelicGLHaar (Fin 2) (𝓞 ℚ) ℚ
+   exact Measure.IsHaarMeasure.sigmaFinite _
+ 
+ private theorem adelicGLHaar_eq_haarScalarFactor_smul_map_prod :
+@@ -1255,33 +1254,33 @@
+       adelicGLHaar (Fin 2) (𝓞 ℚ) ℚ
+         = c • Measure.map (adelicGLProdEquiv.symm : _ → AdelicGL2 (𝓞 ℚ) ℚ)
+             (archGLHaar.prod finGLHaar) := by
+-  letI := glBorel (Fin 2) (𝓞 ℚ) ℚ
+-  haveI := borelSpace_glBorel (Fin 2) (𝓞 ℚ) ℚ
+-  letI := archGLBorel; haveI := borelSpace_archGLBorel
+-  letI := finGLBorel; haveI := borelSpace_finGLBorel
+-  haveI := isHaarMeasure_adelicGLHaar (Fin 2) (𝓞 ℚ) ℚ
+-  haveI := isHaarMeasure_archGLHaar
+-  haveI := isHaarMeasure_finGLHaar
+-  haveI := sigmaFinite_archGLHaar
+-  haveI := sigmaFinite_finGLHaar
+-
+-  haveI : ∀ v : InfinitePlace ℚ, SecondCountableTopology v.Completion := fun v =>
++  let := glBorel (Fin 2) (𝓞 ℚ) ℚ
++  have := borelSpace_glBorel (Fin 2) (𝓞 ℚ) ℚ
++  let := archGLBorel; have := borelSpace_archGLBorel
++  let := finGLBorel; have := borelSpace_finGLBorel
++  have := isHaarMeasure_adelicGLHaar (Fin 2) (𝓞 ℚ) ℚ
++  have := isHaarMeasure_archGLHaar
++  have := isHaarMeasure_finGLHaar
++  have := sigmaFinite_archGLHaar
++  have := sigmaFinite_finGLHaar
++
++  have : ∀ v : InfinitePlace ℚ, SecondCountableTopology v.Completion := fun v =>
+     (InfinitePlace.Completion.isometry_extensionEmbedding v).isEmbedding.secondCountableTopology
+-  haveI : SecondCountableTopology (InfiniteAdeleRing ℚ) :=
++  have : SecondCountableTopology (InfiniteAdeleRing ℚ) :=
+     inferInstanceAs (SecondCountableTopology ((v : InfinitePlace ℚ) → v.Completion))
+-  haveI : SecondCountableTopology (Matrix (Fin 2) (Fin 2) (InfiniteAdeleRing ℚ)) :=
++  have : SecondCountableTopology (Matrix (Fin 2) (Fin 2) (InfiniteAdeleRing ℚ)) :=
+     inferInstanceAs (SecondCountableTopology (Fin 2 → Fin 2 → InfiniteAdeleRing ℚ))
+-  haveI : SecondCountableTopology (Matrix (Fin 2) (Fin 2) (InfiniteAdeleRing ℚ))ᵐᵒᵖ :=
++  have : SecondCountableTopology (Matrix (Fin 2) (Fin 2) (InfiniteAdeleRing ℚ))ᵐᵒᵖ :=
+     MulOpposite.opHomeomorph.symm.isEmbedding.secondCountableTopology
+-  haveI : SecondCountableTopology (GL (Fin 2) (InfiniteAdeleRing ℚ)) :=
++  have : SecondCountableTopology (GL (Fin 2) (InfiniteAdeleRing ℚ)) :=
+     Units.isEmbedding_embedProduct.secondCountableTopology
+-  haveI : BorelSpace (GL (Fin 2) (InfiniteAdeleRing ℚ) × GL (Fin 2) (FiniteAdeleRing (𝓞 ℚ) ℚ)) :=
++  have : BorelSpace (GL (Fin 2) (InfiniteAdeleRing ℚ) × GL (Fin 2) (FiniteAdeleRing (𝓞 ℚ) ℚ)) :=
+     Prod.borelSpace
+-  haveI : (archGLHaar.prod finGLHaar).IsHaarMeasure := by infer_instance
++  have : (archGLHaar.prod finGLHaar).IsHaarMeasure := by infer_instance
+   set ν : Measure (AdelicGL2 (𝓞 ℚ) ℚ) :=
+     Measure.map (⇑(adelicGLProdEquiv.symm : _ ≃ₜ* AdelicGL2 (𝓞 ℚ) ℚ))
+       (archGLHaar.prod finGLHaar) with hν_def
+-  haveI hνHaar : ν.IsHaarMeasure :=
++  have hνHaar : ν.IsHaarMeasure :=
+     ContinuousMulEquiv.isHaarMeasure_map _ adelicGLProdEquiv.symm
+   set c := (adelicGLHaar (Fin 2) (𝓞 ℚ) ℚ).haarScalarFactor ν with hc_def
+   have hc : 0 < c := Measure.haarScalarFactor_pos_of_isHaarMeasure _ _
+@@ -1386,28 +1385,28 @@
+ 
+ private scoped instance instSCGLCompletion (w : InfinitePlace ℚ) :
+     SecondCountableTopology (GL (Fin 2) w.Completion) := by
+-  haveI : SecondCountableTopology w.Completion :=
++  have : SecondCountableTopology w.Completion :=
+     (isometry_extensionEmbedding w).isEmbedding.secondCountableTopology
+-  haveI : SecondCountableTopology (Matrix (Fin 2) (Fin 2) w.Completion) :=
++  have : SecondCountableTopology (Matrix (Fin 2) (Fin 2) w.Completion) :=
+     inferInstanceAs (SecondCountableTopology (Fin 2 → Fin 2 → w.Completion))
+-  haveI : SecondCountableTopology (Matrix (Fin 2) (Fin 2) w.Completion)ᵐᵒᵖ :=
++  have : SecondCountableTopology (Matrix (Fin 2) (Fin 2) w.Completion)ᵐᵒᵖ :=
+     MulOpposite.opHomeomorph.symm.isEmbedding.secondCountableTopology
+   exact Units.isEmbedding_embedProduct.secondCountableTopology
+ 
+ private scoped instance instSecondCountableGLArch : SecondCountableTopology (GL (Fin 2) (InfiniteAdeleRing ℚ)) := by
+-  haveI : ∀ v : InfinitePlace ℚ, SecondCountableTopology v.Completion := fun v =>
++  have : ∀ v : InfinitePlace ℚ, SecondCountableTopology v.Completion := fun v =>
+     (isometry_extensionEmbedding v).isEmbedding.secondCountableTopology
+-  haveI : SecondCountableTopology (InfiniteAdeleRing ℚ) :=
++  have : SecondCountableTopology (InfiniteAdeleRing ℚ) :=
+     inferInstanceAs (SecondCountableTopology ((v : InfinitePlace ℚ) → v.Completion))
+-  haveI : SecondCountableTopology (Matrix (Fin 2) (Fin 2) (InfiniteAdeleRing ℚ)) :=
++  have : SecondCountableTopology (Matrix (Fin 2) (Fin 2) (InfiniteAdeleRing ℚ)) :=
+     inferInstanceAs (SecondCountableTopology (Fin 2 → Fin 2 → InfiniteAdeleRing ℚ))
+-  haveI : SecondCountableTopology (Matrix (Fin 2) (Fin 2) (InfiniteAdeleRing ℚ))ᵐᵒᵖ :=
++  have : SecondCountableTopology (Matrix (Fin 2) (Fin 2) (InfiniteAdeleRing ℚ))ᵐᵒᵖ :=
+     MulOpposite.opHomeomorph.symm.isEmbedding.secondCountableTopology
+   exact Units.isEmbedding_embedProduct.secondCountableTopology
+ 
+ private theorem isHaarMeasure_realGLHaar :
+     letI := realGLBorel; realGLHaar.IsHaarMeasure := by
+-  letI := realGLBorel; haveI := borelSpace_realGLBorel
++  let := realGLBorel; have := borelSpace_realGLBorel
+   exact Measure.isHaarMeasure_haarMeasure _
+ 
+ private theorem archGLHaar_eq_smul_map_realGLHaar (w : InfinitePlace ℚ) (hw : w.IsReal) :
+@@ -1415,16 +1414,16 @@
+     ∃ c : NNReal, 0 < c ∧
+       archGLHaar = c • Measure.map ((archCollapseEquiv w hw).symm : _ → GL (Fin 2) (InfiniteAdeleRing ℚ))
+         realGLHaar := by
+-  letI := archGLBorel; haveI := borelSpace_archGLBorel
+-  letI := realGLBorel; haveI := borelSpace_realGLBorel
+-  haveI : archGLHaar.IsHaarMeasure := by
++  let := archGLBorel; have := borelSpace_archGLBorel
++  let := realGLBorel; have := borelSpace_realGLBorel
++  have : archGLHaar.IsHaarMeasure := by
+     show (Measure.haar : Measure (GL (Fin 2) (InfiniteAdeleRing ℚ))).IsHaarMeasure
+     infer_instance
+-  haveI := isHaarMeasure_realGLHaar
++  have := isHaarMeasure_realGLHaar
+   set ν : Measure (GL (Fin 2) (InfiniteAdeleRing ℚ)) :=
+     Measure.map (⇑((archCollapseEquiv w hw).symm : _ ≃ₜ* GL (Fin 2) (InfiniteAdeleRing ℚ)))
+       realGLHaar with hν_def
+-  haveI : ν.IsHaarMeasure :=
++  have : ν.IsHaarMeasure :=
+     ContinuousMulEquiv.isHaarMeasure_map _ (archCollapseEquiv w hw).symm
+   exact ⟨archGLHaar.haarScalarFactor ν, Measure.haarScalarFactor_pos_of_isHaarMeasure _ _,
+     Measure.isMulLeftInvariant_eq_smul archGLHaar ν⟩
+@@ -1522,9 +1521,9 @@
+ private theorem measure_cappedSiegelBlock_lt_top :
+     letI := glBorel (Fin 2) (𝓞 ℚ) ℚ
+     adelicGLHaar (Fin 2) (𝓞 ℚ) ℚ (cappedSiegelBlock ℚ (1/2:ℝ) 1 (1/2) 2) < ⊤ := by
+-  letI := glBorel (Fin 2) (𝓞 ℚ) ℚ
+-  haveI := borelSpace_glBorel (Fin 2) (𝓞 ℚ) ℚ
+-  haveI := isHaarMeasure_adelicGLHaar (Fin 2) (𝓞 ℚ) ℚ
++  let := glBorel (Fin 2) (𝓞 ℚ) ℚ
++  have := borelSpace_glBorel (Fin 2) (𝓞 ℚ) ℚ
++  have := isHaarMeasure_adelicGLHaar (Fin 2) (𝓞 ℚ) ℚ
+   exact IsCompact.measure_lt_top <| isCompact_cappedSiegelBlock (by norm_num) (by norm_num)
+ 
+ section C3Internal
+@@ -1560,7 +1559,7 @@
+     rintro w ⟨_, hw2⟩
+     simp only [Complex.add_im, Complex.one_im, Complex.ofReal_im, Complex.I_im, add_zero,
+       zero_add, Complex.mul_im, Complex.ofReal_re, Complex.I_re, mul_one, mul_zero,
+-      Set.mem_setOf_eq] at hw2 ⊢
++      Set.mem_ofPred_eq] at hw2 ⊢
+     rcases le_or_gt 1 y with h1y | h1y
+     · rw [Set.uIcc_of_le h1y] at hw2; linarith [hw2.1]
+     · rw [Set.uIcc_of_ge h1y.le] at hw2; linarith [hw2.1]
+@@ -2153,7 +2152,7 @@
+ 
+   have hset : {t : ℝ | 0 < t ∧ t ^ 2 * y ∈ Icc (1/2:ℝ) 2} = Icc a b := by
+     ext t
+-    simp only [mem_setOf_eq, mem_Icc]
++    simp only [mem_ofPred_eq, mem_Icc]
+     constructor
+     · rintro ⟨ht0, ht1, ht2⟩
+       refine ⟨?_, ?_⟩
+@@ -2197,9 +2196,9 @@
+         hf ∈ finiteIntegralGL2 (𝓞 ℚ) ℚ ∧
+         (AdelicDock.finEmbed (𝓞 ℚ) ℚ ↑h)⁻¹ * AdelicDock.finEmbed (𝓞 ℚ) ℚ hf
+           ∈ levelOne (𝓞 ℚ) ℚ L ⊓ MonoidHom.ker (glArch (𝓞 ℚ) ℚ)}) < ⊤ := by
+-  letI := finGLBorel
+-  haveI := borelSpace_finGLBorel
+-  haveI := isHaarMeasure_finGLHaar
++  let := finGLBorel
++  have := borelSpace_finGLBorel
++  have := isHaarMeasure_finGLHaar
+   set S := {hf : GL (Fin 2) (FiniteAdeleRing (𝓞 ℚ) ℚ) |
+     hf ∈ finiteIntegralGL2 (𝓞 ℚ) ℚ ∧
+     (AdelicDock.finEmbed (𝓞 ℚ) ℚ ↑h)⁻¹ * AdelicDock.finEmbed (𝓞 ℚ) ℚ hf
+@@ -2209,7 +2208,7 @@
+       ∩ {hf | ((↑h : GL (Fin 2) (FiniteAdeleRing (𝓞 ℚ) ℚ)))⁻¹ * hf
+         ∈ finiteLevelOne (𝓞 ℚ) ℚ L} := by
+     ext hf
+-    simp only [hS_def, mem_setOf_eq, mem_inter_iff, SetLike.mem_coe, Subgroup.mem_inf,
++    simp only [hS_def, mem_ofPred_eq, mem_inter_iff, SetLike.mem_coe, Subgroup.mem_inf,
+       MonoidHom.mem_ker]
+     refine and_congr_right fun _ => ?_
+     rw [← map_inv, ← map_mul, AdelicDock.finEmbed_mem_levelOne_iff,
+@@ -2221,7 +2220,7 @@
+     exact (isOpen_finiteLevelOne (𝓞 ℚ) ℚ hL).preimage (continuous_const.mul continuous_id)
+   have hMem : (↑h : GL (Fin 2) (FiniteAdeleRing (𝓞 ℚ) ℚ)) ∈ S := by
+     rw [hSeq]
+-    exact ⟨h.2, by rw [mem_setOf_eq, inv_mul_cancel]; exact (finiteLevelOne (𝓞 ℚ) ℚ L).one_mem⟩
++    exact ⟨h.2, by rw [mem_ofPred_eq, inv_mul_cancel]; exact (finiteLevelOne (𝓞 ℚ) ℚ L).one_mem⟩
+   have hSub : S ⊆ (finiteIntegralGL2 (𝓞 ℚ) ℚ : Set _) := by
+     rw [hSeq]; exact inter_subset_left
+   refine ⟨?_, ?_⟩
+@@ -2264,20 +2263,20 @@
+     Integrable (fun p : ℝ × ℝ => ‖descentFn w hw φ h (↑p.1 + ↑p.2 * Complex.I)‖ ^ 2 * p.2⁻¹)
+       (volume.restrict (Icc (0:ℝ) 1 ×ˢ Ici (1/2:ℝ))) := by
+ 
+-  letI := glBorel (Fin 2) (𝓞 ℚ) ℚ; haveI := borelSpace_glBorel (Fin 2) (𝓞 ℚ) ℚ
+-  letI := archGLBorel; haveI := borelSpace_archGLBorel
+-  letI := finGLBorel; haveI := borelSpace_finGLBorel
+-  letI := realGLBorel; haveI := borelSpace_realGLBorel
+-  letI := rowIsoBorel; haveI := borelSpace_rowIsoBorel
+-  haveI := sigmaFinite_archGLHaar; haveI := sigmaFinite_finGLHaar
+-  haveI := isHaarMeasure_finGLHaar
++  let := glBorel (Fin 2) (𝓞 ℚ) ℚ; have := borelSpace_glBorel (Fin 2) (𝓞 ℚ) ℚ
++  let := archGLBorel; have := borelSpace_archGLBorel
++  let := finGLBorel; have := borelSpace_finGLBorel
++  let := realGLBorel; have := borelSpace_realGLBorel
++  let := rowIsoBorel; have := borelSpace_rowIsoBorel
++  have := sigmaFinite_archGLHaar; have := sigmaFinite_finGLHaar
++  have := isHaarMeasure_finGLHaar
+ 
+   set D : Set (AdelicGL2 (𝓞 ℚ) ℚ) := centreCutSiegelSet ℚ (1/2:ℝ) 1 (1/2) 2 with hD_def
+   have hDmeas : MeasurableSet D := measurableSet_centreCutSiegelSet _ _ _ _
+   have hJ : ∫⁻ g in D, ‖φ g‖ₑ ^ (2:ℝ) ∂(adelicGLHaar (Fin 2) (𝓞 ℚ) ℚ) < ⊤ := by
+     have h2 : ((2:ENNReal).toReal) = (2:ℝ) := by norm_num
+     have := lintegral_rpow_enorm_lt_top_of_eLpNorm_lt_top (p := 2) two_ne_zero
+-      ENNReal.ofNat_ne_top hφ.2
++      ENNReal.ofNat_ne_top hφ
+     rwa [h2] at this
+ 
+   obtain ⟨c₁, hc₁, hG1⟩ := adelicGLHaar_eq_haarScalarFactor_smul_map_prod
+@@ -2294,8 +2293,8 @@
+       ∧ ∫⁻ p in Box, ENNReal.ofReal (Fh p) < ⊤ := by
+ 
+     obtain ⟨c₃, hc₃, hbake⟩ := realGLHaar_eq_smul_iwasawaHaar
+-    haveI : SigmaFinite realGLHaar := by
+-      haveI := isHaarMeasure_realGLHaar; exact Measure.IsHaarMeasure.sigmaFinite _
++    have : SigmaFinite realGLHaar := by
++      have := isHaarMeasure_realGLHaar; exact Measure.IsHaarMeasure.sigmaFinite _
+ 
+     set E : ((ℝ × ℝ × ℝ) × rowIsometrySubgroup ℝ) × GL (Fin 2) (FiniteAdeleRing (𝓞 ℚ) ℚ)
+         → AdelicGL2 (𝓞 ℚ) ℚ :=
+@@ -2352,6 +2351,7 @@
+         congr 1
+         conv_lhs => rw [show finGLHaar = Measure.map id finGLHaar from (Measure.map_id).symm]
+         rw [Measure.map_prod_map _ _ hE2Ψ_meas measurable_id]
++        exact (archCollapseEquiv w hw).symm.continuous.measurable.aemeasurable
+       have step2 : Measure.map (⇑(adelicGLProdEquiv.symm : _ ≃ₜ* AdelicGL2 (𝓞 ℚ) ℚ))
+             (Measure.map (Prod.map ((⇑((archCollapseEquiv w hw).symm : _ ≃ₜ* _)) ∘ iwasawaParam)
+               id) μ_P)
+@@ -2360,6 +2360,7 @@
+         · exact adelicGLProdEquiv.symm.continuous.measurable
+         · rw [← hE_eq]
+       rw [hG1', haf, Measure.map_smul, smul_smul, step2, ← mul_assoc]
++      exact adelicGLProdEquiv.symm.continuous.measurable.aemeasurable
+ 
+     set Sxyt : Set (ℝ × ℝ × ℝ) :=
+       {q | q.1 ∈ Icc (0:ℝ) 1 ∧ q.2.1 ∈ Ici (1/2:ℝ) ∧ 0 < q.2.2
+@@ -2375,7 +2376,7 @@
+       have : Sxyt = (Icc (0:ℝ) 1 ×ˢ (Ici (1/2:ℝ) ×ˢ Ioi (0:ℝ)))
+           ∩ {q : ℝ × ℝ × ℝ | q.2.2 ^ 2 * q.2.1 ∈ Icc (1/2:ℝ) 2} := by
+         ext q
+-        simp only [hSxyt_def, mem_setOf_eq, mem_inter_iff, mem_prod, mem_Ici, mem_Ioi]
++        simp only [hSxyt_def, mem_ofPred_eq, mem_inter_iff, mem_prod, mem_Ici, mem_Ioi]
+         tauto
+       rw [this]
+       refine (measurableSet_Icc.prod (measurableSet_Ici.prod measurableSet_Ioi)).inter ?_
+@@ -2393,7 +2394,7 @@
+             ∩ {hf | ((↑h : GL (Fin 2) (FiniteAdeleRing (𝓞 ℚ) ℚ)))⁻¹ * hf
+               ∈ finiteLevelOne (𝓞 ℚ) ℚ L} := by
+           ext hf
+-          simp only [hSgf_def, mem_setOf_eq, mem_inter_iff, SetLike.mem_coe, Subgroup.mem_inf,
++          simp only [hSgf_def, mem_ofPred_eq, mem_inter_iff, SetLike.mem_coe, Subgroup.mem_inf,
+             MonoidHom.mem_ker]
+           refine and_congr_right fun _ => ?_
+           rw [← map_inv, ← map_mul, AdelicDock.finEmbed_mem_levelOne_iff,
+@@ -2415,7 +2416,7 @@
+       simp only [hE_def]
+ 
+       have hψ : iwasawaParam (q, k) = borelCoordGL q.1 q.2.1 q.2.2 hy ht * ↑k := by
+-        unfold iwasawaParam; rw [dif_pos ⟨hy, ht⟩]
++        unfold iwasawaParam; rw [dite_eq_left ⟨hy, ht⟩]
+       rw [hψ, hD_def]
+       exact assemblyImage_mem_centreCutSiegelSet w hw hq.1 hy12 ht hq.2.2.2
+         ↑k (mem_rowIsometrySubgroup_iff.mp k.2) ⟨gf, hgf.1⟩
+@@ -2426,7 +2427,7 @@
+       have hSk_eq : Sk = {k : rowIsometrySubgroup ℝ |
+           0 < ((k : GL (Fin 2) ℝ) : Matrix (Fin 2) (Fin 2) ℝ).det} := by
+         ext k
+-        simp only [hSk_def, mem_setOf_eq]
++        simp only [hSk_def, mem_ofPred_eq]
+         rcases det_eq_one_or_neg_one_of_isRowIsometry_real
+             (mem_rowIsometrySubgroup_iff.mp k.2) with h1 | hn1
+         · rw [h1]; norm_num
+@@ -2437,12 +2438,12 @@
+ 
+         fun_prop
+       have h1 : (1 : rowIsometrySubgroup ℝ) ∈ Sk := by
+-        simp only [hSk_def, mem_setOf_eq, OneMemClass.coe_one, Units.val_one, Matrix.det_one]
+-      haveI : (haarRowIso).IsHaarMeasure := by
++        simp only [hSk_def, mem_ofPred_eq, OneMemClass.coe_one, Units.val_one, Matrix.det_one]
++      have : (haarRowIso).IsHaarMeasure := by
+         show (Measure.haar : Measure (rowIsometrySubgroup ℝ)).IsHaarMeasure; infer_instance
+       exact hSk_open.measure_pos haarRowIso ⟨1, h1⟩
+     have hck_fin : haarRowIso Sk < ⊤ := by
+-      haveI : IsFiniteMeasure haarRowIso := by
++      have : IsFiniteMeasure haarRowIso := by
+         show IsFiniteMeasure (Measure.haar : Measure (rowIsometrySubgroup ℝ)); infer_instance
+       exact measure_lt_top haarRowIso Sk
+ 
+@@ -2455,7 +2456,7 @@
+       have hφAE_restrict : AEMeasurable (fun g => ‖φ g‖ₑ ^ (2:ℝ))
+           ((adelicGLHaar (Fin 2) (𝓞 ℚ) ℚ).restrict D) := by
+         simp_rw [ENNReal.rpow_two]
+-        exact hφ.1.enorm.pow_const 2
++        exact hφ.aemeasurable.enorm.pow_const 2
+       have hφAE_ind : AEMeasurable (D.indicator fun g => ‖φ g‖ₑ ^ (2:ℝ))
+           (adelicGLHaar (Fin 2) (𝓞 ℚ) ℚ) :=
+         (aemeasurable_indicator_iff hDmeas).mpr hφAE_restrict
+@@ -2498,7 +2499,7 @@
+         have ht : 0 < q.2.2 := hq.2.2.1
+         have hy : 0 < q.2.1 := lt_of_lt_of_le (by norm_num) hy12
+         have hψ : iwasawaParam (q, k) = borelCoordGL q.1 q.2.1 q.2.2 hy ht * ↑k := by
+-          unfold iwasawaParam; rw [dif_pos ⟨hy, ht⟩]
++          unfold iwasawaParam; rw [dite_eq_left ⟨hy, ht⟩]
+ 
+         have hF1 := enorm_phi_assemblyImage_eq w hw φ homega L hlev hKinf h
+           (x := q.1) hy ht (↑k) (mem_rowIsometrySubgroup_iff.mp k.2) hk ⟨gf, hgf.1⟩ hgf.2
+@@ -2613,14 +2614,14 @@
+             show Sxyt.indicator K (xy.1, (xy.2, t)) = _
+             by_cases ht : 0 < t ∧ t ^ 2 * xy.2 ∈ Icc (1/2:ℝ) 2
+             · have hmem : (xy.1, (xy.2, t)) ∈ Sxyt := by
+-                simp only [hSxyt_def, Set.mem_setOf_eq]
++                simp only [hSxyt_def, Set.mem_ofPred_eq]
+                 exact ⟨hxy.1, hxy.2, ht.1, ht.2⟩
+               simp only [indicator_of_mem hmem,
+                 indicator_of_mem (show t ∈ {t : ℝ | 0 < t ∧ t ^ 2 * xy.2 ∈ Icc (1/2:ℝ) 2} from ht),
+                 hK_def, hcF_def]
+             · have hmem : (xy.1, (xy.2, t)) ∉ Sxyt := by
+                 intro hm
+-                simp only [hSxyt_def, Set.mem_setOf_eq] at hm
++                simp only [hSxyt_def, Set.mem_ofPred_eq] at hm
+                 exact ht ⟨hm.2.2.1, hm.2.2.2⟩
+               simp only [indicator_of_notMem hmem,
+                 indicator_of_notMem
+@@ -2632,7 +2633,7 @@
+             intro t
+             have hnot : (xy.1, (xy.2, t)) ∉ Sxyt := by
+               intro hm
+-              simp only [hSxyt_def, Set.mem_setOf_eq] at hm
++              simp only [hSxyt_def, Set.mem_ofPred_eq] at hm
+               exact hxy ⟨hm.1, hm.2.1⟩
+             show Sxyt.indicator K (xy.1, (xy.2, t)) = 0
+             exact indicator_of_notMem hnot K
+@@ -3073,7 +3074,7 @@
+ private theorem omega_spec (R : SmoothCuspRealizationAt ℚ h4pins Ψ) (z : H4Adˣ)
+     (g : AdelicGL2 (𝓞 ℚ) ℚ) :
+     R.toFun (centralScalar (𝓞 ℚ) ℚ z * g) = ((omegaUnit R z : ℂˣ) : ℂ) * R.toFun g := by
+-  letI := h4pins.mS
++  let := h4pins.mS
+   exact (((lsXiMemberAt_iff (𝓞 ℚ) ℚ h4pins.μ h4pins.Z R.centralChar h4pins.D R.toFun).mp
+     R.smoothCusp.1.1).1).central_transform ⟨z, by rw [productionPinsCompact_Z]; trivial⟩ g
+ 
+@@ -3183,7 +3184,7 @@
+   have h1 : ((globalPoints (𝓞 ℚ) ℚ γ) : Matrix (Fin 2) (Fin 2) (AdeleRing (𝓞 ℚ) ℚ)) i j
+       = algebraMap ℚ (AdeleRing (𝓞 ℚ) ℚ) ((γ : Matrix (Fin 2) (Fin 2) ℚ) i j) := by
+     simp only [globalPoints, Matrix.GeneralLinearGroup.map, Units.coe_map,
+-      RingHom.toMonoidHom_eq_coe, MonoidHom.coe_coe, RingHom.mapMatrix_apply, Matrix.map_apply]
++      RingHom.toMonoidHom_eq_coe, MonoidHom.coe_ofClass, RingHom.mapMatrix_apply, Matrix.map_apply]
+   rw [h1, ← RingHom.comp_apply, adeleFin_comp_algebraMap]
+ 
+ private theorem intValuation_le_idealBound_of_mem {A : Type*} [CommRing A] [IsDedekindDomain A]
+@@ -3198,7 +3199,7 @@
+   · by_cases hr0 : r = 0
+     · subst hr0
+       rw [map_zero]
+-      exact zero_le'
++      exact zero_le
+     · rw [v.intValuation_if_neg hr0, idealBound_of_ne_bot hN]
+       have hdvd : Ideal.span {r} ≤ N := Ideal.span_le.mpr (Set.singleton_subset_iff.mpr hr)
+       have hle := Associates.mk_le_mk_iff_dvd.mpr (Ideal.dvd_iff_le.mpr hdvd)
+@@ -3516,7 +3517,7 @@
+ private theorem omegaPos_of_pos (R : SmoothCuspRealizationAt ℚ h4pins Ψ)
+     (w : InfinitePlace ℚ) (hw : w.IsReal) {t : ℝ} (ht : 0 < t) :
+     omegaPos R w hw t
+-      = ((omegaUnit R (archIdeleUnit w hw (Units.mk0 t ht.ne')) : ℂˣ) : ℂ) := dif_pos ht
++      = ((omegaUnit R (archIdeleUnit w hw (Units.mk0 t ht.ne')) : ℂˣ) : ℂ) := dite_eq_left ht
+ 
+ private theorem omegaPos_ne_zero (R : SmoothCuspRealizationAt ℚ h4pins Ψ)
+     (w : InfinitePlace ℚ) (hw : w.IsReal) {t : ℝ} (ht : 0 < t) :
+@@ -3590,7 +3591,7 @@
+       = !![r * (a / r), r * (-(c / r)); r * (c / r), r * (a / r)] := by
+     ext i j
+     fin_cases i <;> fin_cases j <;>
+-      simp [Matrix.mul_apply, Fin.sum_univ_two, Matrix.scalar_apply, Matrix.diagonal_apply]
++      simp [Matrix.mul_apply, Matrix.scalar_apply, Matrix.diagonal_apply]
+   have hκdecomp : kappa γ z
+       = Matrix.GeneralLinearGroup.scalar (Fin 2) (Units.mk0 r hrne) * rot := by
+     apply Units.ext
+@@ -3637,13 +3638,12 @@
+     have hrot01 : ((rot : GL (Fin 2) ℝ) : Matrix (Fin 2) (Fin 2) ℝ) 0 1 = -(c / r) := rfl
+     rw [eq_div_iff (by exact_mod_cast hrne : ((r : ℝ) : ℂ) ≠ 0)]
+     apply Complex.ext
+-    · simp [firstRowℂ, hdac, Complex.mul_re, Complex.add_re, Complex.add_im,
++    · simp [firstRowℂ, hdac, Complex.mul_re, Complex.add_re, ]
++      simp only [hrot00]
++      field_simp
++    · simp [firstRowℂ, hdac, Complex.add_im,
+         Complex.mul_im]
+-      simp only [hrot00, hrot01]
+-      field_simp
+-    · simp [firstRowℂ, hdac, Complex.mul_re, Complex.add_re, Complex.add_im,
+-        Complex.mul_im]
+-      simp only [hrot00, hrot01]
++      simp only [ hrot01]
+       field_simp
+ 
+   have hω : R.toFun (archAt w hw (iwasawaSec z))
+@@ -3769,7 +3769,7 @@
+       = !![r * (a / r), r * (-(c / r)); r * (c / r), r * (a / r)] := by
+     ext i j
+     fin_cases i <;> fin_cases j <;>
+-      simp [Matrix.mul_apply, Fin.sum_univ_two, Matrix.scalar_apply, Matrix.diagonal_apply]
++      simp [Matrix.mul_apply, Matrix.scalar_apply, Matrix.diagonal_apply]
+   have hκdecomp : κ = Matrix.GeneralLinearGroup.scalar (Fin 2) (Units.mk0 r hrne) * rot := by
+     apply Units.ext
+     rw [Units.val_mul,
+@@ -4139,7 +4139,7 @@
+   · by_cases hr0 : r = 0
+     · subst hr0
+       rw [map_zero]
+-      exact zero_le'
++      exact zero_le
+     · rw [v.intValuation_if_neg hr0, idealBound_of_ne_bot hN]
+       have hdvd : Ideal.span {r} ≤ N := Ideal.span_le.mpr (Set.singleton_subset_iff.mpr hr)
+       have hle := Associates.mk_le_mk_iff_dvd.mpr (Ideal.dvd_iff_le.mpr hdvd)
+@@ -4333,11 +4333,11 @@
+     ← finAdeleEval_apply, map_prod]
+   simp only [finAdeleEval_apply, MonoidHom.coe_comp, Function.comp_apply]
+   by_cases hw : idealBound (𝓞 ℚ) L w ≠ 1
+-  · rw [if_pos hw]
++  · rw [ite_eq_left hw]
+     rw [Finset.prod_eq_single_of_mem w (mem_levelPlaces.mpr hw)
+       (fun w' _ hne => localUnit_apply_of_ne (𝓞 ℚ) ℚ w' _ hne.symm)]
+     exact localUnit_apply_self (𝓞 ℚ) ℚ w _
+-  · rw [if_neg hw]
++  · rw [ite_eq_right hw]
+     refine Finset.prod_eq_one fun w' hw' => ?_
+     refine localUnit_apply_of_ne (𝓞 ℚ) ℚ w' _ ?_
+     intro h
+@@ -4379,10 +4379,10 @@
+           ∈ w.adicCompletionIntegers ℚ := by
+     intro a b ha hb w
+     by_cases hw : idealBound (𝓞 ℚ) L w ≠ 1
+-    · rw [if_pos hw, HeightOneSpectrum.mem_adicCompletionIntegers, map_div₀, map_div₀,
++    · rw [ite_eq_left hw, HeightOneSpectrum.mem_adicCompletionIntegers, map_div₀, map_div₀,
+         valued_natCast_eq_one hL hw ha, valued_natCast_eq_one hL hw hb]
+       simp
+-    · rw [if_neg hw]
++    · rw [ite_eq_right hw]
+       exact one_mem _
+   refine ⟨?_, ?_, ?_⟩
+   · intro w
+@@ -4394,7 +4394,7 @@
+   · intro w
+     rw [← finAdeleEval_apply, map_sub, map_one, finAdeleEval_apply, epsUnitHom_apply, hq]
+     by_cases hw : idealBound (𝓞 ℚ) L w ≠ 1
+-    · rw [if_pos hw]
++    · rw [ite_eq_left hw]
+       have hQ : (m : ℚ) / (m' : ℚ) - 1 = ((m : ℚ) - (m' : ℚ)) / (m' : ℚ) := by
+         field_simp
+       rw [show algebraMap ℚ (w.adicCompletion ℚ) ((m : ℚ) / (m' : ℚ)) - 1
+@@ -4412,8 +4412,8 @@
+         exact h2
+       rw [hδ]
+       exact Ideal.mul_mem_right _ _ (Ideal.absNorm_mem L)
+-    · rw [if_neg hw, sub_self, map_zero]
+-      exact zero_le'
++    · rw [ite_eq_right hw, sub_self, map_zero]
++      exact zero_le
+ 
+ private theorem omegaUnit_epsUnitHom_div {Ψ : HeckeEigensystem ℚ ℂ}
+     (R : SmoothCuspRealizationAt ℚ h4pins Ψ) {m m' : ℕ} (hm : 0 < m) (hm' : 0 < m')
+@@ -4591,7 +4591,7 @@
+             simp
+         _ = idealBound (𝓞 ℚ) Ψ.level w := hv.symm
+     · rw [localUnit_apply_of_ne (𝓞 ℚ) ℚ v u hw, sub_self, map_zero]
+-      exact zero_le'
++      exact zero_le
+ 
+ private theorem omegaUnit_finIncl_localUnit_pUnit (R : SmoothCuspRealizationAt ℚ h4pins Ψ)
+     (p : Nat.Primes) (hpN : ¬ (p : ℕ) ∣ Ideal.absNorm Ψ.level)
+@@ -4734,7 +4734,7 @@
+     rw [← finAdeleEval_apply, map_sub, map_one, finAdeleEval_apply]
+     by_cases hw : idealBound (𝓞 ℚ) Ψ.level w ≠ 1
+     · rw [h2 w hw, sub_self, map_zero]
+-      exact zero_le'
++      exact zero_le
+     · rw [not_not.mp hw]
+       calc Valued.v (((u : (FiniteAdeleRing (𝓞 ℚ) ℚ)ˣ) : FiniteAdeleRing (𝓞 ℚ) ℚ) w - 1)
+           ≤ max (Valued.v (((u : (FiniteAdeleRing (𝓞 ℚ) ℚ)ˣ) :
+@@ -4801,7 +4801,7 @@
+     rw [hcomp w]
+     by_cases hwp : w = ratPrime p
+     · subst hwp
+-      rw [localUnit_apply_self, epsUnitHom_apply, if_neg (by rw [hboundp]; simp),
++      rw [localUnit_apply_self, epsUnitHom_apply, ite_eq_right (by rw [hboundp]; simp),
+         mul_one]
+       rw [show ((pUnit p : ((ratPrime p).adicCompletion ℚ)))
+           = algebraMap ℚ ((ratPrime p).adicCompletion ℚ) (((p : ℕ) : ℚ)) from rfl,
+@@ -4810,14 +4810,14 @@
+     · rw [localUnit_apply_of_ne (𝓞 ℚ) ℚ (ratPrime p) (pUnit p) hwp, one_mul,
+         epsUnitHom_apply]
+       by_cases hw : idealBound (𝓞 ℚ) Ψ.level w ≠ 1
+-      · rw [if_pos hw, ratUnit_val, inv_mul_cancel₀ ((map_ne_zero _).mpr hpQ)]
++      · rw [ite_eq_left hw, ratUnit_val, inv_mul_cancel₀ ((map_ne_zero _).mpr hpQ)]
+         exact map_one _
+-      · rw [if_neg hw, inv_one, one_mul]
++      · rw [ite_eq_right hw, inv_one, one_mul]
+         exact valued_natCast_prime_eq_one p hwp
+   · intro w hw
+     have hwp : w ≠ ratPrime p := fun h => hw (h ▸ hboundp)
+     rw [hcomp w, localUnit_apply_of_ne (𝓞 ℚ) ℚ (ratPrime p) (pUnit p) hwp, one_mul,
+-      epsUnitHom_apply, if_pos hw, ratUnit_val, inv_mul_cancel₀ ((map_ne_zero _).mpr hpQ)]
++      epsUnitHom_apply, ite_eq_left hw, ratUnit_val, inv_mul_cancel₀ ((map_ne_zero _).mpr hpQ)]
+ 
+ end RestKill
+ p2m_reactivate "P2MW.S_AutomorphicForm_exists_weightOne_cuspForm_of_isCusp_viaGeneralCuspNotion.HeckeDictionary"
+@@ -5258,9 +5258,8 @@
+       from rfl]
+   refine Matrix.ext fun i j => ?_
+   fin_cases i <;> fin_cases j <;>
+-    simp [Matrix.mul_apply, Fin.sum_univ_two, Matrix.scalar_apply, Matrix.diagonal_apply,
+-      Matrix.cons_val_zero, Matrix.cons_val_one, Matrix.head_cons, Units.inv_mul,
+-      Units.mul_inv]
++    simp [Matrix.mul_apply, Matrix.scalar_apply, Matrix.diagonal_apply,
++      Matrix.cons_val_zero, Matrix.cons_val_one, Units.inv_mul]
+ 
+ private theorem scalar_mul_diagOne_inv_coe (e : (FiniteAdeleRing (𝓞 ℚ) ℚ)ˣ) :
+     ((Matrix.GeneralLinearGroup.scalar (Fin 2) e * diagOne e⁻¹ :
+@@ -5275,8 +5274,8 @@
+       from rfl]
+   refine Matrix.ext fun i j => ?_
+   fin_cases i <;> fin_cases j <;>
+-    simp [Matrix.mul_apply, Fin.sum_univ_two, Matrix.scalar_apply, Matrix.diagonal_apply,
+-      Matrix.cons_val_zero, Matrix.cons_val_one, Matrix.head_cons, Units.inv_mul,
++    simp [Matrix.mul_apply, Matrix.scalar_apply, Matrix.diagonal_apply,
++      Matrix.cons_val_zero, Matrix.cons_val_one,
+       Units.mul_inv]
+ 
+ private theorem peel_inv_coe (e : (FiniteAdeleRing (𝓞 ℚ) ℚ)ˣ) :
+@@ -5292,9 +5291,8 @@
+       from rfl]
+   refine Matrix.ext fun i j => ?_
+   fin_cases i <;> fin_cases j <;>
+-    simp [Matrix.mul_apply, Fin.sum_univ_two, Matrix.scalar_apply, Matrix.diagonal_apply,
+-      Matrix.cons_val_zero, Matrix.cons_val_one, Matrix.head_cons, Units.inv_mul,
+-      Units.mul_inv]
++    simp [Matrix.mul_apply, Matrix.scalar_apply, Matrix.diagonal_apply,
++      Matrix.cons_val_zero, Matrix.cons_val_one, Units.inv_mul]
+ 
+ private theorem peel_identity (e : (FiniteAdeleRing (𝓞 ℚ) ℚ)ˣ)
+     (γf : GL (Fin 2) (FiniteAdeleRing (𝓞 ℚ) ℚ)) :
+@@ -5307,8 +5305,8 @@
+       Matrix.diagonal_mul_diagonal, Units.val_one]
+     refine Matrix.ext fun i j => ?_
+     fin_cases i <;> fin_cases j <;>
+-      simp [Matrix.diagonal_apply, Matrix.one_apply, Matrix.cons_val_zero,
+-        Matrix.cons_val_one, Matrix.head_cons, Units.mul_inv]
++      simp [ Matrix.cons_val_zero,
++        Matrix.cons_val_one, Units.mul_inv]
+   rw [← mul_assoc, hone, one_mul]
+ 
+ private theorem diagOne_mem_finiteLevelOne (e : (FiniteAdeleRing (𝓞 ℚ) ℚ)ˣ)
+@@ -5324,13 +5322,11 @@
+     · intro i j
+       fin_cases i <;> fin_cases j <;>
+         simp only [Matrix.diagonal_apply, Matrix.cons_val_zero, Matrix.cons_val_one,
+-          Matrix.head_cons, if_true, if_false, Fin.zero_eta, Fin.mk_one, ne_eq,
+-          reduceCtorEq, ite_true, ite_false] <;>
++           ite_true, Fin.zero_eta, Fin.mk_one] <;>
+         first
+           | exact he
+           | exact one_mem_integralFiniteAdeles
+           | exact zero_mem_integralFiniteAdeles
+-          | simp_all
+     · simpa [Matrix.diagonal_apply] using zero_mem_idealBall L
+     · simpa [Matrix.diagonal_apply] using zero_mem_idealBall L
+   · rw [← map_inv, diagOne_coe]
+@@ -5338,13 +5334,11 @@
+     · intro i j
+       fin_cases i <;> fin_cases j <;>
+         simp only [Matrix.diagonal_apply, Matrix.cons_val_zero, Matrix.cons_val_one,
+-          Matrix.head_cons, if_true, if_false, Fin.zero_eta, Fin.mk_one, ne_eq,
+-          reduceCtorEq, ite_true, ite_false] <;>
++           ite_true, Fin.zero_eta, Fin.mk_one] <;>
+         first
+           | exact hei
+           | exact one_mem_integralFiniteAdeles
+           | exact zero_mem_integralFiniteAdeles
+-          | simp_all
+     · simpa [Matrix.diagonal_apply] using zero_mem_idealBall L
+     · simpa [Matrix.diagonal_apply] using zero_mem_idealBall L
+ 
+@@ -5448,7 +5442,7 @@
+     by_cases h : i = j
+     · subst h
+       simp [Matrix.scalar_apply, Matrix.diagonal_apply_eq]
+-    · simp [Matrix.scalar_apply, Matrix.diagonal_apply_ne _ h, h]
++    · simp [Matrix.scalar_apply, h]
+ 
+ private theorem epsUnitHom_ratUnit_mem_integral {L : Ideal (𝓞 ℚ)} (hL : L ≠ ⊥) {m : ℕ}
+     (hm : 0 < m) (hcop : m.Coprime (Ideal.absNorm L)) :
+@@ -5494,7 +5488,7 @@
+   rw [epsUnitHom_apply]
+   split_ifs with h
+   · rw [ratUnit_val, sub_self, map_zero]
+-    exact zero_le'
++    exact zero_le
+   · rw [not_not] at h
+     rw [h]
+     have h1 : (1 : v.adicCompletion ℚ) - algebraMap ℚ (v.adicCompletion ℚ) ((m : ℚ))
+@@ -5559,7 +5553,7 @@
+     ∃ m : ℕ, 0 < m ∧ ((m : ℤ) : ZMod N) = (d : ZMod N) ∧ m.Coprime B ∧
+       ((m : ℤ) : ZMod 3) = (d : ZMod 3) := by
+   classical
+-  haveI : NeZero N := ⟨hN⟩
++  have : NeZero N := ⟨hN⟩
+ 
+   set B₀ : ℕ := ∏ p ∈ B.primeFactors.filter (fun p => ¬ p ∣ N), p with hB₀_def
+   have hB₀_pos : 0 < B₀ := Finset.prod_pos fun p hp =>
+@@ -5658,7 +5652,7 @@
+       = !![r * (a / r), r * (-(c / r)); r * (c / r), r * (a / r)] := by
+     ext i j
+     fin_cases i <;> fin_cases j <;>
+-      simp [Matrix.mul_apply, Fin.sum_univ_two, Matrix.scalar_apply, Matrix.diagonal_apply]
++      simp [Matrix.mul_apply, Matrix.scalar_apply, Matrix.diagonal_apply]
+   have hκdecomp : κ = Matrix.GeneralLinearGroup.scalar (Fin 2) (Units.mk0 r hrne) * rot := by
+     apply Units.ext
+     rw [Units.val_mul,
+@@ -5699,7 +5693,7 @@
+       rw [← hc, ← h1]
+     rw [hd]
+     apply Complex.ext <;>
+-      simp [Complex.ext_iff, Complex.mul_re, Complex.mul_im, Complex.I_re, Complex.I_im] <;>
++      simp [ Complex.mul_re, Complex.mul_im, Complex.I_re, Complex.I_im] <;>
+       field_simp
+   calc R.toFun (X * archAt w hw κ)
+       = R.toFun (X * (archAt w hw (Matrix.GeneralLinearGroup.scalar (Fin 2) (Units.mk0 r hrne))
+@@ -6260,7 +6254,7 @@
+           have := congrArg (fun n : ℕ => (n : ZMod 3)) h
+           simpa [ZMod.natCast_val, ZMod.cast_id] using this
+         rw [h0] at h11unit
+-        simpa using h11unit
++        simp at h11unit
+       · simp at hdvd
+       · omega
+     have h3m : ¬ (3 : ℕ) ∣ m := by
+@@ -6689,7 +6683,7 @@
+     { y : R | Valued.v (y - b) < (1 : Γ₀) } ∈ nhds b := by
+   rw [Valued.mem_nhds]
+   refine ⟨1, fun y hy => ?_⟩
+-  simp only [Set.mem_setOf_eq, Units.val_one] at hy
++  simp only [Set.mem_ofPred_eq, Units.val_one] at hy
+   have h1 : Valued.v.restrict (y - b) < Valued.v.restrict 1 := by rwa [map_one]
+   rw [Valuation.restrict_lt_iff] at h1
+   simpa using h1
+@@ -6740,7 +6734,7 @@
+ 
+ private theorem exists_nat_sub_mem_ratPrime (p : Nat.Primes) (a : 𝓞 ℚ) :
+     ∃ n : ℕ, n < (p : ℕ) ∧ a - ((n : ℕ) : 𝓞 ℚ) ∈ (ratPrime p).asIdeal := by
+-  haveI : NeZero (p : ℕ) := ⟨p.2.pos.ne'⟩
++  have : NeZero (p : ℕ) := ⟨p.2.pos.ne'⟩
+   set z : ℤ := Rat.IsIntegralClosure.intEquiv (𝓞 ℚ) a with hz
+   refine ⟨(z : ZMod (p : ℕ)).val, ZMod.val_lt _, ?_⟩
+   rw [ratPrime_asIdeal_eq_span, Ideal.mem_span_singleton, intEquiv_dvd_iff,
+@@ -6755,7 +6749,7 @@
+       ≤ WithZero.exp (-1 : ℤ) := by
+   rw [valued_algebraMap]
+   rcases eq_or_ne ((ratPrime p).intValuation x) 0 with h0 | h0
+-  · rw [h0]; exact zero_le'
++  · rw [h0]; exact zero_le
+   · exact le_exp_neg_one_of_lt_one h0
+       (((ratPrime p).intValuation_lt_one_iff_mem _).mpr hx)
+ 
+@@ -6781,7 +6775,7 @@
+     · rcases eq_or_ne (Valued.v ((b : (ratPrime p).adicCompletion ℚ)
+           - algebraMap ℚ ((ratPrime p).adicCompletion ℚ) (algebraMap (𝓞 ℚ) ℚ a))) 0
+         with h0 | h0
+-      · rw [h0]; exact zero_le'
++      · rw [h0]; exact zero_le
+       · exact le_exp_neg_one_of_lt_one h0 ha
+     · have hcoe : algebraMap ℚ ((ratPrime p).adicCompletion ℚ) (algebraMap (𝓞 ℚ) ℚ a)
+           - ((natInt (ratPrime p) n : (ratPrime p).adicCompletionIntegers ℚ)
+@@ -6951,7 +6945,7 @@
+   by_cases hw : w = ratPrime p
+   · subst hw
+     rw [finDelta_apply_self, map_one, idealBound_eq_one_of_not_dvd hL hdvd]
+-  · rw [finDelta_apply_of_ne hw, map_zero]; exact zero_le'
++  · rw [finDelta_apply_of_ne hw, map_zero]; exact zero_le
+ 
+ private theorem finCoDelta_sub_one_mem_idealBall (p : Nat.Primes) {L : Ideal (𝓞 ℚ)} (hL : L ≠ ⊥)
+     (hdvd : ¬ (ratPrime p).asIdeal ∣ L) :
+@@ -6961,7 +6955,7 @@
+   · subst hw
+     rw [finCoDelta_apply_self, zero_sub, Valuation.map_neg, map_one,
+       idealBound_eq_one_of_not_dvd hL hdvd]
+-  · rw [finCoDelta_apply_of_ne hw, sub_self, map_zero]; exact zero_le'
++  · rw [finCoDelta_apply_of_ne hw, sub_self, map_zero]; exact zero_le
+ 
+ private theorem weylFin_isLevelOneMatrix (p : Nat.Primes) {L : Ideal (𝓞 ℚ)}
+     (hpN : ¬ (p : ℕ) ∣ Ideal.absNorm L) :
+@@ -7260,7 +7254,7 @@
+       glFin_globalPoints_apply_place,
+       show ((upperTriQ 1 b 1 one_ne_zero one_ne_zero : Matrix (Fin 2) (Fin 2) ℚ) 1 0)
+         = (0 : ℚ) from rfl, map_zero, map_zero]
+-    exact zero_le'
++    exact zero_le
+   · rw [show (((glFin (𝓞 ℚ) ℚ (globalPoints (𝓞 ℚ) ℚ
+         (upperTriQ 1 b 1 one_ne_zero one_ne_zero)) : GL (Fin 2) (FiniteAdeleRing (𝓞 ℚ) ℚ)) :
+         Matrix (Fin 2) (Fin 2) (FiniteAdeleRing (𝓞 ℚ) ℚ)) 1 1 - 1) w
+@@ -7270,7 +7264,7 @@
+       map_sub, map_one, finAdeleEval_apply, glFin_globalPoints_apply_place,
+       show ((upperTriQ 1 b 1 one_ne_zero one_ne_zero : Matrix (Fin 2) (Fin 2) ℚ) 1 1)
+         = (1 : ℚ) from rfl, map_one, sub_self, map_zero]
+-    exact zero_le'
++    exact zero_le
+ 
+ private theorem glFin_globalPoints_uniQ_mem_finiteLevelOne (b : ℚ)
+     (hb : ∀ w : IsDedekindDomain.HeightOneSpectrum (𝓞 ℚ),
+@@ -7651,7 +7645,7 @@
+       rw [Matrix.mul_fin_two]
+       refine Matrix.ext fun i j => ?_
+       fin_cases i <;> fin_cases j <;>
+-        simp <;> simpa using h1
++        simp; simpa using h1
+     , by
+       have h2 : (((isUnit_natInt_p_of_ne p hp hw).unit⁻¹ : (w.adicCompletionIntegers ℚ)ˣ) :
+             w.adicCompletionIntegers ℚ) * (natInt w p) = 1 :=
+@@ -7665,7 +7659,7 @@
+       rw [Matrix.mul_fin_two]
+       refine Matrix.ext fun i j => ?_
+       fin_cases i <;> fin_cases j <;>
+-        simp <;> simpa using h1⟩
++        simp; simpa using h1⟩
+ 
+ private theorem finComponent_glFin_globalPoints_diag_of_ne (p : ℕ) (hp : p.Prime)
+     {w : IsDedekindDomain.HeightOneSpectrum (𝓞 ℚ)} (hw : w ≠ ratPrime ⟨p, hp⟩) :
+@@ -7757,11 +7751,11 @@
+         by_cases hw : w = ratPrime ⟨p, hp⟩
+         · subst hw; rw [hcompv]
+           simp only [Units.val_one, Matrix.one_apply_ne one_ne_zero, map_zero]
+-          exact zero_le'
++          exact zero_le
+         · rw [hcompw w hw]
+           show Valued.v (0 : w.adicCompletion ℚ) ≤ _
+           rw [map_zero]
+-          exact zero_le'
++          exact zero_le
+       · rw [show (((glFin (𝓞 ℚ) ℚ T : Matrix (Fin 2) (Fin 2)
+             (FiniteAdeleRing (𝓞 ℚ) ℚ)) 1 1 - 1)) w
+           = finAdeleEval (𝓞 ℚ) ℚ w ((glFin (𝓞 ℚ) ℚ T : Matrix (Fin 2) (Fin 2)
+@@ -7770,11 +7764,11 @@
+         by_cases hw : w = ratPrime ⟨p, hp⟩
+         · subst hw; rw [hcompv]
+           simp only [Units.val_one, Matrix.one_apply_eq, sub_self, map_zero]
+-          exact zero_le'
++          exact zero_le
+         · rw [hcompw w hw]
+           show Valued.v ((1 : w.adicCompletion ℚ) - 1) ≤ _
+           rw [sub_self, map_zero]
+-          exact zero_le'
++          exact zero_le
+     ·
+       refine ⟨⟨fun i j => fun w => ?_, fun w => ?_⟩, fun w => ?_⟩
+       · rw [hcompinv w i j]
+@@ -7798,11 +7792,11 @@
+         by_cases hw : w = ratPrime ⟨p, hp⟩
+         · subst hw; rw [hcompv, inv_one]
+           simp only [Units.val_one, Matrix.one_apply_ne one_ne_zero, map_zero]
+-          exact zero_le'
++          exact zero_le
+         · rw [hcompw w hw]
+           show Valued.v (0 : w.adicCompletion ℚ) ≤ _
+           rw [map_zero]
+-          exact zero_le'
++          exact zero_le
+       · rw [show (((((glFin (𝓞 ℚ) ℚ T)⁻¹ : GL (Fin 2) (FiniteAdeleRing (𝓞 ℚ) ℚ)) :
+               Matrix (Fin 2) (Fin 2) (FiniteAdeleRing (𝓞 ℚ) ℚ)) 1 1 - 1)) w
+           = finAdeleEval (𝓞 ℚ) ℚ w ((((glFin (𝓞 ℚ) ℚ T)⁻¹ :
+@@ -7812,11 +7806,11 @@
+         by_cases hw : w = ratPrime ⟨p, hp⟩
+         · subst hw; rw [hcompv, inv_one]
+           simp only [Units.val_one, Matrix.one_apply_eq, sub_self, map_zero]
+-          exact zero_le'
++          exact zero_le
+         · rw [hcompw w hw]
+           show Valued.v ((1 : w.adicCompletion ℚ) - 1) ≤ _
+           rw [sub_self, map_zero]
+-          exact zero_le'
++          exact zero_le
+   ·
+     refine (mem_finiteAdelicGL2Subgroup_iff ℚ _).mpr ?_
+     rw [map_mul, map_inv, glArch_heckeGenAt_unit (ratPrime ⟨p, hp⟩) (pUnit ⟨p, hp⟩),
+@@ -7869,17 +7863,17 @@
+       Units.val_inv_eq_inv_val, ratUnit_val]
+     by_cases hwv : w' = ratPrime ⟨p, hp⟩
+     · subst hwv
+-      rw [if_pos rfl, localUnit_apply_self,
+-        if_neg (fun hcon => hcon hbv), mul_one, Units.val_inv_eq_inv_val,
++      rw [ite_eq_left rfl, localUnit_apply_self,
++        ite_eq_right (fun hcon => hcon hbv), mul_one, Units.val_inv_eq_inv_val,
+         show ((pUnit ⟨p, hp⟩ : ((ratPrime ⟨p, hp⟩).adicCompletion ℚ)ˣ) :
+             (ratPrime ⟨p, hp⟩).adicCompletion ℚ)
+           = algebraMap ℚ ((ratPrime ⟨p, hp⟩).adicCompletion ℚ) ((p : ℚ)) from rfl]
+       exact mul_inv_cancel₀ ((map_ne_zero _).mpr hp0)
+-    · rw [if_neg hwv,
++    · rw [ite_eq_right hwv,
+         localUnit_apply_of_ne (𝓞 ℚ) ℚ (ratPrime ⟨p, hp⟩) (pUnit ⟨p, hp⟩)⁻¹ hwv, mul_one]
+       by_cases hb : idealBound (𝓞 ℚ) L w' ≠ 1
+-      · rw [if_pos hb, if_pos hb, ← map_mul, mul_inv_cancel₀ hp0, map_one]
+-      · rw [if_neg hb, if_neg hb, mul_one]
++      · rw [ite_eq_left hb, ite_eq_left hb, ← map_mul, mul_inv_cancel₀ hp0, map_one]
++      · rw [ite_eq_right hb, ite_eq_right hb, mul_one]
+ 
+   have hvalinv : ∀ w' : IsDedekindDomain.HeightOneSpectrum (𝓞 ℚ),
+       ((((finRatUnit (ratUnit p hp.pos)
+@@ -7901,16 +7895,16 @@
+       epsUnitHom_apply, finRatUnit_val, Units.val_inv_eq_inv_val, ratUnit_val]
+     by_cases hwv : w' = ratPrime ⟨p, hp⟩
+     · subst hwv
+-      rw [if_pos rfl, if_neg (fun hcon => hcon hbv), localUnit_apply_self, one_mul,
++      rw [ite_eq_left rfl, ite_eq_right (fun hcon => hcon hbv), localUnit_apply_self, one_mul,
+         show ((pUnit ⟨p, hp⟩ : ((ratPrime ⟨p, hp⟩).adicCompletion ℚ)ˣ) :
+             (ratPrime ⟨p, hp⟩).adicCompletion ℚ)
+           = algebraMap ℚ ((ratPrime ⟨p, hp⟩).adicCompletion ℚ) ((p : ℚ)) from rfl,
+         ← map_mul, mul_inv_cancel₀ hp0, map_one]
+-    · rw [if_neg hwv,
++    · rw [ite_eq_right hwv,
+         localUnit_apply_of_ne (𝓞 ℚ) ℚ (ratPrime ⟨p, hp⟩) (pUnit ⟨p, hp⟩) hwv]
+       by_cases hb : idealBound (𝓞 ℚ) L w' ≠ 1
+-      · rw [if_pos hb, if_pos hb, mul_one, ← map_mul, mul_inv_cancel₀ hp0, map_one]
+-      · rw [if_neg hb, if_neg hb, one_mul, one_mul]
++      · rw [ite_eq_left hb, ite_eq_left hb, mul_one, ← map_mul, mul_inv_cancel₀ hp0, map_one]
++      · rw [ite_eq_right hb, ite_eq_right hb, one_mul, one_mul]
+ 
+   have hbridge : ∀ (w'' : IsDedekindDomain.HeightOneSpectrum (𝓞 ℚ))
+       (hw : w'' ≠ ratPrime ⟨p, hp⟩),
+@@ -7958,7 +7952,7 @@
+     show Valued.v ((0 : FiniteAdeleRing (𝓞 ℚ) ℚ) w'') ≤ idealBound (𝓞 ℚ) L w''
+     rw [show ((0 : FiniteAdeleRing (𝓞 ℚ) ℚ)) w'' = (0 : w''.adicCompletion ℚ) from rfl,
+       map_zero]
+-    exact zero_le'
++    exact zero_le
+   have hruBall : (((finRatUnit (ratUnit p hp.pos)
+       * (localUnit (𝓞 ℚ) ℚ (ratPrime ⟨p, hp⟩) (pUnit ⟨p, hp⟩))⁻¹
+       * (epsUnitHom hL (ratUnit p hp.pos))⁻¹ : (FiniteAdeleRing (𝓞 ℚ) ℚ)ˣ) :
+@@ -7966,11 +7960,11 @@
+     intro w''
+     rw [coe_sub_apply, show ((1 : FiniteAdeleRing (𝓞 ℚ) ℚ)) w'' = 1 from rfl, hval w'']
+     by_cases hwv : w'' = ratPrime ⟨p, hp⟩
+-    · rw [if_pos hwv, sub_self, map_zero]; exact zero_le'
+-    · rw [if_neg hwv]
++    · rw [ite_eq_left hwv, sub_self, map_zero]; exact zero_le
++    · rw [ite_eq_right hwv]
+       by_cases hb : idealBound (𝓞 ℚ) L w'' ≠ 1
+-      · rw [if_pos hb, sub_self, map_zero]; exact zero_le'
+-      · rw [if_neg hb, not_not.mp hb]
++      · rw [ite_eq_left hb, sub_self, map_zero]; exact zero_le
++      · rw [ite_eq_right hb, not_not.mp hb]
+         have hint : algebraMap ℚ (w''.adicCompletion ℚ) ((p : ℚ)) - 1
+             ∈ w''.adicCompletionIntegers ℚ := sub_mem (natInt w'' p).2 (one_mem _)
+         rw [mem_adicCompletionIntegers] at hint
+@@ -7982,11 +7976,11 @@
+     intro w''
+     rw [coe_sub_apply, show ((1 : FiniteAdeleRing (𝓞 ℚ) ℚ)) w'' = 1 from rfl, hvalinv w'']
+     by_cases hwv : w'' = ratPrime ⟨p, hp⟩
+-    · rw [if_pos hwv, sub_self, map_zero]; exact zero_le'
+-    · rw [if_neg hwv]
++    · rw [ite_eq_left hwv, sub_self, map_zero]; exact zero_le
++    · rw [ite_eq_right hwv]
+       by_cases hb : idealBound (𝓞 ℚ) L w'' ≠ 1
+-      · rw [if_pos hb, sub_self, map_zero]; exact zero_le'
+-      · rw [if_neg hb, not_not.mp hb, hbridge w'' hwv]
++      · rw [ite_eq_left hb, sub_self, map_zero]; exact zero_le
++      · rw [ite_eq_right hb, not_not.mp hb, hbridge w'' hwv]
+         have hint : ((((isUnit_natInt_p_of_ne p hp hwv).unit⁻¹ :
+             (w''.adicCompletionIntegers ℚ)ˣ) : w''.adicCompletionIntegers ℚ) :
+               w''.adicCompletion ℚ) - 1 ∈ w''.adicCompletionIntegers ℚ :=
+@@ -8059,11 +8053,11 @@
+         | exact zero_mem_integralFiniteAdeles
+     · rw [hmat]
+       simp only [Matrix.diagonal_apply]
+-      rw [if_neg (one_ne_zero : (1 : Fin 2) ≠ 0)]
++      rw [ite_eq_right (one_ne_zero : (1 : Fin 2) ≠ 0)]
+       exact hzeroBall
+     · rw [hmat]
+       simp only [Matrix.diagonal_apply]
+-      rw [if_pos trivial]
++      rw [ite_eq_left trivial]
+       exact hruBall
+   · refine ⟨⟨fun i j => ?_, ?_⟩, ?_⟩
+     · rw [hmatinv]
+@@ -8074,11 +8068,11 @@
+         | exact zero_mem_integralFiniteAdeles
+     · rw [hmatinv]
+       simp only [Matrix.diagonal_apply]
+-      rw [if_neg (one_ne_zero : (1 : Fin 2) ≠ 0)]
++      rw [ite_eq_right (one_ne_zero : (1 : Fin 2) ≠ 0)]
+       exact hzeroBall
+     · rw [hmatinv]
+       simp only [Matrix.diagonal_apply]
+-      rw [if_pos trivial]
++      rw [ite_eq_left trivial]
+       exact hruInvBall
+ 
+ private theorem omegaUnit_finIncl_localUnit_pUnit_H7 (R : SmoothCuspRealizationAt ℚ h4pins Ψ)
+@@ -8246,14 +8240,14 @@
+           = AdelicDock.finEmbed (𝓞 ℚ) ℚ (glFin (𝓞 ℚ) ℚ (globalPoints (𝓞 ℚ) ℚ
+               (upperTriQ 1 (-((i : ℕ) : ℚ)) 1 one_ne_zero one_ne_zero)))
+             * heckeGenAt (𝓞 ℚ) ℚ (ratPrime ⟨p, hp⟩) (pUnit ⟨p, hp⟩) from by
+-        simp only [heckeReps]; rw [if_pos hi]]
++        simp only [heckeReps]; rw [ite_eq_left hi]]
+       exact HeckePair.mem_doubleCoset_iff.mpr
+         ⟨_, uniQ_mem_U (i : ℕ), _, hseam, by group⟩
+     · rw [show heckeReps p hp i
+           = centralScalar (𝓞 ℚ) ℚ (Units.map (finIncl (𝓞 ℚ) ℚ)
+               (localUnit (𝓞 ℚ) ℚ (ratPrime ⟨p, hp⟩) (pUnit ⟨p, hp⟩)))
+             * (heckeGenAt (𝓞 ℚ) ℚ (ratPrime ⟨p, hp⟩) (pUnit ⟨p, hp⟩))⁻¹ from by
+-        simp only [heckeReps]; rw [if_neg hi],
++        simp only [heckeReps]; rw [ite_eq_right hi],
+         central_mul_heckeGenAt_inv_eq_weyl_sandwich ⟨p, hp⟩]
+       exact HeckePair.mem_doubleCoset_iff.mpr
+         ⟨_, weylV_mem_U ⟨p, hp⟩ hpN, _, mul_mem hseam (weylV_mem_U ⟨p, hp⟩ hpN), by group⟩
+@@ -8289,7 +8283,7 @@
+           = AdelicDock.finEmbed (𝓞 ℚ) ℚ (glFin (𝓞 ℚ) ℚ (globalPoints (𝓞 ℚ) ℚ
+               (upperTriQ 1 (-((n : ℕ) : ℚ)) 1 one_ne_zero one_ne_zero)))
+             * heckeGenAt (𝓞 ℚ) ℚ (ratPrime ⟨p, hp⟩) (pUnit ⟨p, hp⟩) from by
+-        simp only [heckeReps]; rw [if_pos (show ((⟨n, by omega⟩ :
++        simp only [heckeReps]; rw [ite_eq_left (show ((⟨n, by omega⟩ :
+           Fin (Ideal.absNorm (ratPrime ⟨p, hp⟩).asIdeal + 1)) : ℕ) < p from hn)]]
+       refine hmkz.trans (mk_eq_mk_of_transfer ⟨p, hp⟩ hLbot hvL
+         (y := u⁻¹ * AdelicDock.finEmbed (𝓞 ℚ) ℚ (glFin (𝓞 ℚ) ℚ (globalPoints (𝓞 ℚ) ℚ
+@@ -8308,7 +8302,7 @@
+           = centralScalar (𝓞 ℚ) ℚ (Units.map (finIncl (𝓞 ℚ) ℚ)
+               (localUnit (𝓞 ℚ) ℚ (ratPrime ⟨p, hp⟩) (pUnit ⟨p, hp⟩)))
+             * (heckeGenAt (𝓞 ℚ) ℚ (ratPrime ⟨p, hp⟩) (pUnit ⟨p, hp⟩))⁻¹ from by
+-        simp only [heckeReps]; rw [if_neg (lt_irrefl p)]]
++        simp only [heckeReps]; rw [ite_eq_right (lt_irrefl p)]]
+       refine hmkz.trans (mk_eq_mk_of_transfer ⟨p, hp⟩ hLbot hvL
+         (y := u⁻¹) (inv_mem hu) ?_ ?_ ?_)
+       · simp only [map_mul, map_inv, huA, glArch_central ⟨p, hp⟩,
+@@ -8326,12 +8320,12 @@
+           = AdelicDock.finEmbed (𝓞 ℚ) ℚ (glFin (𝓞 ℚ) ℚ (globalPoints (𝓞 ℚ) ℚ
+               (upperTriQ 1 (-((i : ℕ) : ℚ)) 1 one_ne_zero one_ne_zero)))
+             * heckeGenAt (𝓞 ℚ) ℚ (ratPrime ⟨p, hp⟩) (pUnit ⟨p, hp⟩) from by
+-          simp only [heckeReps]; rw [if_pos hi],
++          simp only [heckeReps]; rw [ite_eq_left hi],
+         show heckeReps p hp j
+           = AdelicDock.finEmbed (𝓞 ℚ) ℚ (glFin (𝓞 ℚ) ℚ (globalPoints (𝓞 ℚ) ℚ
+               (upperTriQ 1 (-((j : ℕ) : ℚ)) 1 one_ne_zero one_ne_zero)))
+             * heckeGenAt (𝓞 ℚ) ℚ (ratPrime ⟨p, hp⟩) (pUnit ⟨p, hp⟩) from by
+-          simp only [heckeReps]; rw [if_pos hj],
++          simp only [heckeReps]; rw [ite_eq_left hj],
+         finComponent_glFin_repsFin_self, finComponent_glFin_repsFin_self] at hloc
+       have hdvd := LocalGL2.dvd_sub_of_mk_localRepSome_eq _ _ hloc
+       have hsub2 : (-(natInt (ratPrime ⟨p, hp⟩) (j : ℕ))
+@@ -8348,12 +8342,12 @@
+           = AdelicDock.finEmbed (𝓞 ℚ) ℚ (glFin (𝓞 ℚ) ℚ (globalPoints (𝓞 ℚ) ℚ
+               (upperTriQ 1 (-((i : ℕ) : ℚ)) 1 one_ne_zero one_ne_zero)))
+             * heckeGenAt (𝓞 ℚ) ℚ (ratPrime ⟨p, hp⟩) (pUnit ⟨p, hp⟩) from by
+-          simp only [heckeReps]; rw [if_pos hi],
++          simp only [heckeReps]; rw [ite_eq_left hi],
+         show heckeReps p hp j
+           = centralScalar (𝓞 ℚ) ℚ (Units.map (finIncl (𝓞 ℚ) ℚ)
+               (localUnit (𝓞 ℚ) ℚ (ratPrime ⟨p, hp⟩) (pUnit ⟨p, hp⟩)))
+             * (heckeGenAt (𝓞 ℚ) ℚ (ratPrime ⟨p, hp⟩) (pUnit ⟨p, hp⟩))⁻¹ from by
+-          simp only [heckeReps]; rw [if_neg hj],
++          simp only [heckeReps]; rw [ite_eq_right hj],
+         finComponent_glFin_repsFin_self, finComponent_glFin_repsLast_self] at hloc
+       exact absurd hloc (LocalGL2.mk_localRepSome_ne_mk_localRepInf _ _
+         (irreducible_pInt ⟨p, hp⟩).not_isUnit _)
+@@ -8361,12 +8355,12 @@
+           = centralScalar (𝓞 ℚ) ℚ (Units.map (finIncl (𝓞 ℚ) ℚ)
+               (localUnit (𝓞 ℚ) ℚ (ratPrime ⟨p, hp⟩) (pUnit ⟨p, hp⟩)))
+             * (heckeGenAt (𝓞 ℚ) ℚ (ratPrime ⟨p, hp⟩) (pUnit ⟨p, hp⟩))⁻¹ from by
+-          simp only [heckeReps]; rw [if_neg hi],
++          simp only [heckeReps]; rw [ite_eq_right hi],
+         show heckeReps p hp j
+           = AdelicDock.finEmbed (𝓞 ℚ) ℚ (glFin (𝓞 ℚ) ℚ (globalPoints (𝓞 ℚ) ℚ
+               (upperTriQ 1 (-((j : ℕ) : ℚ)) 1 one_ne_zero one_ne_zero)))
+             * heckeGenAt (𝓞 ℚ) ℚ (ratPrime ⟨p, hp⟩) (pUnit ⟨p, hp⟩) from by
+-          simp only [heckeReps]; rw [if_pos hj],
++          simp only [heckeReps]; rw [ite_eq_left hj],
+         finComponent_glFin_repsLast_self, finComponent_glFin_repsFin_self] at hloc
+       exact absurd hloc.symm (LocalGL2.mk_localRepSome_ne_mk_localRepInf _ _
+         (irreducible_pInt ⟨p, hp⟩).not_isUnit _)
+@@ -8520,7 +8514,7 @@
+         * heckeGenAt (𝓞 ℚ) ℚ (ratPrime ⟨p, hp⟩) (pUnit ⟨p, hp⟩)
+       = heckeReps p hp i from by
+       simp only [heckeReps]
+-      rw [if_pos hi]]
++      rw [ite_eq_left hi]]
+ 
+   have hy : ((τ.im : ℝ) : ℂ) ≠ 0 := by exact_mod_cast τ.im_ne_zero
+   push_cast
+@@ -8591,11 +8585,11 @@
+         by_cases hw : w = ratPrime ⟨p, hp⟩
+         · subst hw; rw [hcompv]
+           simp only [Units.val_one, Matrix.one_apply_ne one_ne_zero, map_zero]
+-          exact zero_le'
++          exact zero_le
+         · rw [hcompw w hw]
+           show Valued.v (0 : w.adicCompletion ℚ) ≤ _
+           rw [map_zero]
+-          exact zero_le'
++          exact zero_le
+       · rw [show (((glFin (𝓞 ℚ) ℚ T : Matrix (Fin 2) (Fin 2)
+             (FiniteAdeleRing (𝓞 ℚ) ℚ)) 1 1 - 1)) w
+           = finAdeleEval (𝓞 ℚ) ℚ w ((glFin (𝓞 ℚ) ℚ T : Matrix (Fin 2) (Fin 2)
+@@ -8604,11 +8598,11 @@
+         by_cases hw : w = ratPrime ⟨p, hp⟩
+         · subst hw; rw [hcompv]
+           simp only [Units.val_one, Matrix.one_apply_eq, sub_self, map_zero]
+-          exact zero_le'
++          exact zero_le
+         · rw [hcompw w hw]
+           show Valued.v ((1 : w.adicCompletion ℚ) - 1) ≤ _
+           rw [sub_self, map_zero]
+-          exact zero_le'
++          exact zero_le
+     · refine ⟨⟨fun i j => fun w => ?_, fun w => ?_⟩, fun w => ?_⟩
+       · rw [hcompinv w i j]
+         by_cases hw : w = ratPrime ⟨p, hp⟩
+@@ -8631,11 +8625,11 @@
+         by_cases hw : w = ratPrime ⟨p, hp⟩
+         · subst hw; rw [hcompv, inv_one]
+           simp only [Units.val_one, Matrix.one_apply_ne one_ne_zero, map_zero]
+-          exact zero_le'
++          exact zero_le
+         · rw [hcompw w hw]
+           show Valued.v (0 : w.adicCompletion ℚ) ≤ _
+           rw [map_zero]
+-          exact zero_le'
++          exact zero_le
+       · rw [show (((((glFin (𝓞 ℚ) ℚ T)⁻¹ : GL (Fin 2) (FiniteAdeleRing (𝓞 ℚ) ℚ)) :
+               Matrix (Fin 2) (Fin 2) (FiniteAdeleRing (𝓞 ℚ) ℚ)) 1 1 - 1)) w
+           = finAdeleEval (𝓞 ℚ) ℚ w ((((glFin (𝓞 ℚ) ℚ T)⁻¹ :
+@@ -8645,11 +8639,11 @@
+         by_cases hw : w = ratPrime ⟨p, hp⟩
+         · subst hw; rw [hcompv, inv_one]
+           simp only [Units.val_one, Matrix.one_apply_eq, sub_self, map_zero]
+-          exact zero_le'
++          exact zero_le
+         · rw [hcompw w hw]
+           show Valued.v ((1 : w.adicCompletion ℚ) - 1) ≤ _
+           rw [sub_self, map_zero]
+-          exact zero_le'
++          exact zero_le
+   · refine (mem_finiteAdelicGL2Subgroup_iff ℚ _).mpr ?_
+     rw [map_mul, map_inv, AdelicDock.glArch_finEmbed,
+       glArch_heckeGenAt_unit (ratPrime ⟨p, hp⟩) (pUnit ⟨p, hp⟩), inv_one, mul_one]
+@@ -8764,7 +8758,7 @@
+       = heckeReps p hp (Fin.last (Ideal.absNorm (ratPrime ⟨p, hp⟩).asIdeal))
+       from by
+         simp only [heckeReps]
+-        rw [if_neg (by rw [Fin.val_last, absNorm_ratPrime]; exact lt_irrefl p)]]
++        rw [ite_eq_right (by rw [Fin.val_last, absNorm_ratPrime]; exact lt_irrefl p)]]
+ 
+   have h6bval := omegaUnit_finIncl_localUnit_pUnit_H7 R w hw homega hepsval hN3 p hp hpN hpB hdet
+   have homvald : ((omegaUnit R ((Units.map (finIncl (𝓞 ℚ) ℚ)
+@@ -8972,7 +8966,7 @@
+   ·
+     have hm2' : m = m₂ := by rw [hm2, hr0, pow_zero, one_mul]
+     have hpm : ¬ p ∣ m := hm2' ▸ hpm2
+-    rw [if_neg hpm, mul_zero, sub_zero]
++    rw [ite_eq_right hpm, mul_zero, sub_zero]
+     calc lam (p * m) = lam p * lam m := by
+           rw [hlam_mul p m (by
+             rw [hm2']
+@@ -8984,7 +8978,7 @@
+     have hpm : p ∣ m := by
+       rw [hm2, hrs]
+       exact Dvd.dvd.mul_right (dvd_pow_self p (Nat.succ_ne_zero s)) m₂
+-    rw [if_pos hpm]
++    rw [ite_eq_left hpm]
+     have hmp : m / p = p ^ s * m₂ := by
+       rw [hm2, hrs, pow_succ', mul_assoc, Nat.mul_div_cancel_left _ hp.pos]
+     calc lam (p * m) = lam (p ^ (s + 2) * m₂) := by
+@@ -9053,8 +9047,8 @@
+         ih (m₁ / p) hqlt hq0 (fun q hq hd => hgood q hq (hd.trans hqdvd))
+           (Nat.Coprime.coprime_dvd_right hqdvd hcop)
+       have peel := lam_peel 𝔅 a e w lam hlam_p hlam_rec hlam_mul p hp hpB m₁ hm₁0
+-      rw [if_pos hpm₁] at peel
+-      rw [if_pos hdvd', hquot, hIHq, hIH₁] at hkey
++      rw [ite_eq_left hpm₁] at peel
++      rw [ite_eq_left hdvd', hquot, hIHq, hIH₁] at hkey
+       have hout : c (n₁ * m) = a p * (c n₁ * lam m₁) - e p * w p * (c n₁ * lam (m₁ / p)) := by
+         linear_combination hkey
+       rw [hout, hm1, peel]
+@@ -9063,8 +9057,8 @@
+         intro h
+         exact ((Nat.Prime.dvd_mul hp).mp h).elim hpn₁ hpm₁
+       have peel := lam_peel 𝔅 a e w lam hlam_p hlam_rec hlam_mul p hp hpB m₁ hm₁0
+-      rw [if_neg hpm₁] at peel
+-      rw [if_neg hdvd'] at hkey
++      rw [ite_eq_right hpm₁] at peel
++      rw [ite_eq_right hdvd'] at hkey
+       have hout : c (n₁ * m) = a p * (c n₁ * lam m₁) := by
+         rw [← hIH₁]
+         linear_combination hkey
+@@ -9138,7 +9132,7 @@
+   classical
+   induction s using Finset.induction_on with
+   | empty => simp
+-  | insert a s ha ih => rw [Finset.sum_insert ha, Finset.sum_insert ha, CuspForm.coe_add, ih]
++  | insert a s ha ih => rw [Finset.sum_insert ha, Finset.sum_insert ha, FunLike.coe_add, ih]
+ 
+ private def zetaQ (q : ℕ) : ℂ := Complex.exp (2 * π * Complex.I / q)
+ 
+@@ -9333,7 +9327,7 @@
+     have h := ModularFormClass.holo (heckeUGamma p f)
+     rwa [coe_heckeUGamma] at h
+   zero_at_cusps' {c} hc := by
+-    haveI : NeZero (p * M) := ⟨mul_ne_zero (NeZero.ne p) (NeZero.ne M)⟩
++    have : NeZero (p * M) := ⟨mul_ne_zero (NeZero.ne p) (NeZero.ne M)⟩
+     have hc' : IsCusp c ((Gamma (p * M) : Subgroup SL(2, ℤ)) : Subgroup (GL (Fin 2) ℝ)) :=
+       (Subgroup.IsArithmetic.isCusp_iff_isCusp_SL2Z _).mpr
+         ((Subgroup.IsArithmetic.isCusp_iff_isCusp_SL2Z _).mp hc)
+@@ -9440,7 +9434,6 @@
+       Function.Periodic.qParam p (τ : ℂ) ^ n) (heckeU k p (⇑f) τ) := by
+     rw [hval]
+     convert hS.mul_left ((p : ℂ)⁻¹) using 1
+-    all_goals first | rfl | skip
+     funext n
+     rw [← Finset.mul_sum, sum_zetaQ_pow p n]
+     split_ifs with hpn
+@@ -9451,12 +9444,12 @@
+     · simp
+   have h2 := (Function.Injective.hasSum_iff (mul_right_injective₀ hp) (fun x hx => by
+       show (if p ∣ x then ModularFormClass.qCoeff (⇑f) x else 0) • Function.Periodic.qParam p (τ : ℂ) ^ x = 0
+-      rw [if_neg, zero_smul]
++      rw [ite_eq_right, zero_smul]
+       rintro ⟨m, rfl⟩
+       exact hx ⟨m, rfl⟩)).mpr h1
+   convert h2 using 1
+   funext m
+-  simp only [Function.comp_apply, if_pos (dvd_mul_right p m), pow_mul, qParam_pow_self p hp]
++  simp only [Function.comp_apply, ite_eq_left (dvd_mul_right p m), pow_mul, qParam_pow_self p hp]
+ 
+ private theorem qCoeff_heckeU₁ (p : ℕ) [NeZero p] {M : ℕ} [NeZero M] {k : ℤ} (f : CuspForm (Gamma1 M) k) (n : ℕ) :
+     ModularFormClass.qCoeff (⇑(heckeU₁ p f)) n = ModularFormClass.qCoeff (⇑f) (p * n) := by
+@@ -9485,13 +9478,12 @@
+   refine (Function.Injective.hasSum_iff (mul_right_injective₀ hp) (fun x hx => ?_)).mp ?_
+   · show (if p ∣ x then (p : ℂ) ^ (k - 1) * ModularFormClass.qCoeff (⇑F) (x / p) else 0) •
+         Function.Periodic.qParam 1 (τ : ℂ) ^ x = 0
+-    rw [if_neg, zero_smul]
++    rw [ite_eq_right, zero_smul]
+     rintro ⟨m, rfl⟩
+     exact hx ⟨m, rfl⟩
+   · convert h using 1
+-    all_goals first | rfl | skip
+     funext m
+-    simp only [Function.comp_apply, if_pos (dvd_mul_right p m), Nat.mul_div_cancel_left m (Nat.pos_of_ne_zero hp),
++    simp only [Function.comp_apply, ite_eq_left (dvd_mul_right p m), Nat.mul_div_cancel_left m (Nat.pos_of_ne_zero hp),
+       smul_eq_mul, pow_mul]
+     ring
+ 
+@@ -9508,7 +9500,7 @@
+ 
+ private theorem qCoeff_smul_Gamma1 {N : ℕ} {k : ℤ} (a : ℂ) (F : CuspForm (Gamma1 N) k) (n : ℕ) :
+     ModularFormClass.qCoeff (⇑(a • F)) n = a * ModularFormClass.qCoeff (⇑F) n := by
+-  simp only [ModularFormClass.qCoeff, CuspForm.IsGLPos.coe_smul]
++  simp only [ModularFormClass.qCoeff, FunLike.coe_smul]
+   rw [ModularForm.qExpansion_smul one_pos (one_mem_strictPeriods_Gamma1' N) a F, map_smul, smul_eq_mul]
+ 
+ private theorem qCoeff_rel_of_heckeT_char_eq_mul (p : ℕ) [NeZero p] {N : ℕ} {k : ℤ} (F : CuspForm (Gamma1 N) k) (ε a : ℂ)
+@@ -9519,7 +9511,7 @@
+   have hsum : ∀ τ : ℍ, HasSum (fun m : ℕ => (ModularFormClass.qCoeff (⇑F) (p * m) +
+         ε * (if p ∣ m then (p : ℂ) ^ (k - 1) * ModularFormClass.qCoeff (⇑F) (m / p) else 0)) •
+       Function.Periodic.qParam 1 (τ : ℂ) ^ m) ((a • F) τ) := fun τ => by
+-    rw [CuspForm.IsGLPos.coe_smul, Pi.smul_apply, smul_eq_mul, ← hT τ]
++    rw [FunLike.coe_smul, Pi.smul_apply, smul_eq_mul, ← hT τ]
+     exact hasSum_heckeT_char p F ε τ
+   refine (ModularFormClass.qExpansion_coeff_unique one_pos (one_mem_strictPeriods_Gamma1' N) hsum n).trans ?_
+   exact qCoeff_smul_Gamma1 a F n
+@@ -9554,7 +9546,7 @@
+ 
+ private theorem σ_transl (t : ℝ) (z : ℂ) : σ (transl t) z = z := by
+   have h : 0 < (transl t).det.val := by rw [det_transl]; norm_num
+-  rw [σ, if_pos h]
++  rw [σ, ite_eq_left h]
+   rfl
+ 
+ private theorem coe_transl_smul (t : ℝ) (τ : ℍ) : ((transl t • τ : ℍ) : ℂ) = (τ : ℂ) + (t : ℂ) := by
+@@ -9709,7 +9701,7 @@
+     have h := ModularFormClass.holo (sumTranslGamma₁ q f)
+     rwa [coe_sumTranslGamma₁] at h
+   zero_at_cusps' {c} hc := by
+-    haveI : NeZero (q ^ 2 * M) := ⟨mul_ne_zero (pow_ne_zero 2 (NeZero.ne q)) (NeZero.ne M)⟩
++    have : NeZero (q ^ 2 * M) := ⟨mul_ne_zero (pow_ne_zero 2 (NeZero.ne q)) (NeZero.ne M)⟩
+     have hc' : IsCusp c ((Gamma (q ^ 2 * M) : Subgroup SL(2, ℤ)) : Subgroup (GL (Fin 2) ℝ)) :=
+       (Subgroup.IsArithmetic.isCusp_iff_isCusp_SL2Z _).mpr
+         ((Subgroup.IsArithmetic.isCusp_iff_isCusp_SL2Z _).mp hc)
+@@ -9758,7 +9750,7 @@
+ 
+ private theorem coe_deprive₁ (q : ℕ) [NeZero q] {M : ℕ} [NeZero M] {k : ℤ} (f : CuspForm (Gamma1 M) k) :
+     ⇑(deprive₁ q f) = ⇑f - (q : ℂ)⁻¹ • ⇑(sumTransl₁ q f) := by
+-  rw [deprive₁, CuspForm.coe_sub, CuspForm.IsGLPos.coe_smul, coe_restrictCusp]
++  rw [deprive₁, FunLike.coe_sub, FunLike.coe_smul, coe_restrictCusp]
+ 
+ private theorem deprive₁_apply (q : ℕ) [NeZero q] {M : ℕ} [NeZero M] {k : ℤ} (f : CuspForm (Gamma1 M) k) (τ : ℍ) :
+     deprive₁ q f τ = f τ - (q : ℂ)⁻¹ * ∑ j : ZMod q, f (transl ((j.val : ℝ) / q) • τ) := by
+@@ -9811,7 +9803,6 @@
+     have h := (hasSum_qCoeff_Gamma1 f τ).sub (hS.mul_left (q : ℂ)⁻¹)
+     rw [deprive₁_apply]
+     convert h using 1
+-    all_goals first | rfl | skip
+     funext m
+     rw [← Finset.mul_sum, sum_zetaQ_pow q m]
+     split_ifs with hqm
+@@ -9869,7 +9860,7 @@
+     have hxℓ : x = ℓ := Finset.mem_singleton.mp (Finsupp.support_single_subset hx)
+     rw [hxℓ, Nat.support_factorization, Nat.mem_primeFactors] at hxm
+     exact hℓm hxm.2.1
+-  rw [extend, if_neg (mul_ne_zero hℓk hm), extend, if_neg hm, Nat.factorization_mul hℓk hm,
++  rw [extend, ite_eq_right (mul_ne_zero hℓk hm), extend, ite_eq_right hm, Nat.factorization_mul hℓk hm,
+     hℓ.factorization_pow, Finsupp.prod_add_index_of_disjoint hd,
+     Finsupp.prod_single_index (ppow_zero e c ℓ)]
+ 
+@@ -9889,13 +9880,13 @@
+   cases k with
+   | zero =>
+     have h0 : ¬ ℓ ∣ ℓ ^ 0 * m := by simpa using hℓm
+-    rw [if_neg h0]
++    rw [ite_eq_right h0]
+     simp
+   | succ j =>
+     have hdvd : ℓ ∣ ℓ ^ (j + 1) * m := Dvd.dvd.mul_right (dvd_pow_self ℓ j.succ_ne_zero) m
+     have hdiv : ℓ ^ (j + 1) * m / ℓ = ℓ ^ j * m := by
+       rw [show ℓ ^ (j + 1) * m = ℓ * (ℓ ^ j * m) by ring, Nat.mul_div_cancel_left _ hℓ.pos]
+-    rw [if_pos hdvd, hdiv, extend_prime_pow_mul e c hℓ hm0 hℓm, ppow_add_two]
++    rw [ite_eq_left hdvd, hdiv, extend_prime_pow_mul e c hℓ hm0 hℓm, ppow_add_two]
+     ring
+ 
+ private theorem exists_isEigensystem_of_primeData (e c : ℕ → R) :
+@@ -9935,7 +9926,7 @@
+   have hd : Disjoint m.factorization.support n.factorization.support := by
+     rw [Nat.support_factorization, Nat.support_factorization]
+     exact hmn.disjoint_primeFactors
+-  rw [extend, if_neg (mul_ne_zero hm hn), extend, if_neg hm, extend, if_neg hn,
++  rw [extend, ite_eq_right (mul_ne_zero hm hn), extend, ite_eq_right hm, extend, ite_eq_right hn,
+     Nat.factorization_mul_of_coprime hmn, Finsupp.prod_add_index_of_disjoint hd]
+ 
+ private theorem extend_prime_pow (e c : ℕ → R) {p : ℕ} (hp : p.Prime) (r : ℕ) :
+@@ -10006,8 +9997,8 @@
+         ((chiNegThree (((γ 1 1 : ℤ) : ZMod 3).val) : ℤ) : ℂ) • (⇑(depriveList l hl f))
+   | [], _, _, _, _, _, hf => hf
+   | q :: l, hl, M, _, hM, f, hf => by
+-      haveI : NeZero q := ⟨(hl q List.mem_cons_self).ne_zero⟩
+-      haveI : NeZero (depLevel l M) :=
++      have : NeZero q := ⟨(hl q List.mem_cons_self).ne_zero⟩
++      have : NeZero (depLevel l M) :=
+         ⟨depLevel_ne_zero l (fun r hr => (hl r (List.mem_cons_of_mem q hr)).ne_zero) (NeZero.ne M)⟩
+       intro γ hγ
+       simp only [depriveList]
+@@ -10019,21 +10010,21 @@
+     ModularFormClass.qCoeff (⇑(depriveList l hl f)) n =
+       if ∃ q ∈ l, q ∣ n then 0 else ModularFormClass.qCoeff (⇑f) n
+   | [], _, _, _, f, n => by
+-      rw [if_neg (by simp)]
++      rw [ite_eq_right (by simp)]
+       rfl
+   | q :: l, hl, M, _, f, n => by
+-      haveI : NeZero q := ⟨(hl q List.mem_cons_self).ne_zero⟩
+-      haveI : NeZero (depLevel l M) :=
++      have : NeZero q := ⟨(hl q List.mem_cons_self).ne_zero⟩
++      have : NeZero (depLevel l M) :=
+         ⟨depLevel_ne_zero l (fun r hr => (hl r (List.mem_cons_of_mem q hr)).ne_zero) (NeZero.ne M)⟩
+       have key := qCoeff_deprive₁ q (depriveList l (fun r hr => hl r (List.mem_cons_of_mem q hr)) f) n
+       rw [qCoeff_depriveList l _ f n] at key
+       refine key.trans ?_
+       by_cases hq : q ∣ n
+-      · rw [if_pos hq, if_pos ⟨q, List.mem_cons_self, hq⟩]
+-      · rw [if_neg hq]
++      · rw [ite_eq_left hq, ite_eq_left ⟨q, List.mem_cons_self, hq⟩]
++      · rw [ite_eq_right hq]
+         by_cases hr : ∃ r ∈ l, r ∣ n
+-        · rw [if_pos hr, if_pos (hr.imp fun r ⟨hr, hrn⟩ => ⟨List.mem_cons_of_mem q hr, hrn⟩)]
+-        · rw [if_neg hr, if_neg]
++        · rw [ite_eq_left hr, ite_eq_left (hr.imp fun r ⟨hr, hrn⟩ => ⟨List.mem_cons_of_mem q hr, hrn⟩)]
++        · rw [ite_eq_right hr, ite_eq_right]
+           rintro ⟨r, hr', hrn⟩
+           rcases List.mem_cons.mp hr' with rfl | hr'
+           · exact hq hrn
+@@ -10076,7 +10067,7 @@
+ 
+   set t : ℕ := ∏ ℓ ∈ T, max ℓ 1 with ht
+   have ht0 : t ≠ 0 := Finset.prod_ne_zero_iff.mpr fun ℓ _ => (lt_max_of_lt_right one_pos).ne'
+-  haveI hN't : NeZero (N * t) := ⟨mul_ne_zero (NeZero.ne N) ht0⟩
++  have hN't : NeZero (N * t) := ⟨mul_ne_zero (NeZero.ne N) ht0⟩
+   have hTdvd : ∀ ℓ ∈ T, ℓ ≠ 0 → ℓ ∣ N * t := fun ℓ hℓ hℓ0 => by
+     have h1 : max ℓ 1 ∣ t := Finset.dvd_prod_of_mem (fun ℓ => max ℓ 1) hℓ
+     rw [max_eq_left (Nat.one_le_iff_ne_zero.mpr hℓ0)] at h1
+@@ -10102,7 +10093,7 @@
+   set b : ℕ → ℤ√(-2) := extend w a' with hb
+   have hb_zero_of_dvd : ∀ {q : ℕ}, q.Prime → q ∈ 𝔅' → ∀ {n : ℕ}, q ∣ n → b n = 0 :=
+     fun {q} hq hqB {n} hqn =>
+-      extend_eq_zero_of_dvd w a' hq (by simp only [hw, if_pos hqB]) (by simp only [ha', if_pos hqB]) hqn
++      extend_eq_zero_of_dvd w a' hq (by simp only [hw, ite_eq_left hqB]) (by simp only [ha', ite_eq_left hqB]) hqn
+ 
+   set c : ℕ → ℂ := fun n => ModularFormClass.qCoeff (⇑F) n with hc
+   set ac : ℕ → ℂ := fun p => iotaW (a p) with hac
+@@ -10117,8 +10108,8 @@
+     simp only [hc, he, hwt, hac, mul_one, iotaW_apply]
+     exact h
+   have hlam_1 : lam 1 = 1 := by simp only [hlam, hb, extend_one, map_one]
+-  have ha'p : ∀ p, p ∉ 𝔅' → a' p = a p := fun p hpB => by simp only [ha', if_neg hpB]
+-  have hwp : ∀ p, p ∉ 𝔅' → w p = ((chiNegThree p : ℤ) : ℤ√(-2)) := fun p hpB => by simp only [hw, if_neg hpB]
++  have ha'p : ∀ p, p ∉ 𝔅' → a' p = a p := fun p hpB => by simp only [ha', ite_eq_right hpB]
++  have hwp : ∀ p, p ∉ 𝔅' → w p = ((chiNegThree p : ℤ) : ℤ√(-2)) := fun p hpB => by simp only [hw, ite_eq_right hpB]
+   have hlam_p : ∀ p, p.Prime → p ∉ 𝔅' → lam p = ac p := fun p hp hpB => by
+     have h1 : b p = a p := by rw [hb, extend_prime w a' hp, ha'p p hpB]
+     simp only [hlam, hac, h1]
+@@ -10137,7 +10128,7 @@
+     exact hF (coe_eq_zero_of_qCoeff_eq_zero F fun n hn => hcon n hn)
+   obtain ⟨s, hs0, hsB, hcs⟩ := ArchimedeanDescent.exists_smooth_index_ne_zero 𝔅' c ac e wt lam hrel' hlam_1 hlam_p
+     hlam_rec hlam_mul hne
+-  haveI : NeZero s := ⟨hs0⟩
++  have : NeZero s := ⟨hs0⟩
+ 
+   set l : List ℕ := (𝔅'.filter Nat.Prime).toList with hl
+   have hlmem : ∀ q, q ∈ l ↔ q ∈ 𝔅' ∧ q.Prime := fun q => by
+@@ -10145,7 +10136,7 @@
+   have hlprime : ∀ q ∈ l, q.Prime := fun q hq => ((hlmem q).mp hq).2
+   set M : ℕ := depLevel l (s * (N * t)) with hM
+   have hM0 : M ≠ 0 := depLevel_ne_zero l (fun q hq => (hlprime q hq).ne_zero) (NeZero.ne _)
+-  haveI hMne : NeZero M := ⟨hM0⟩
++  have hMne : NeZero M := ⟨hM0⟩
+   have hNtM : N * t ∣ M := (dvd_mul_left (N * t) s).trans (dvd_depLevel l _)
+   obtain ⟨F₁, hF₁⟩ : ∃ F₁ : CuspForm (Gamma1 (s * (N * t))) 1, F₁ = heckeU₁ s F' := ⟨_, rfl⟩
+   have hg₁ : ∀ γ : SL(2, ℤ), γ ∈ Gamma0 (s * (N * t)) →
+@@ -10174,14 +10165,14 @@
+   refine ⟨M, hMne, hN'.trans hNtM, fun ℓ hℓ hℓ0 => (hTdvd ℓ hℓ hℓ0).trans hNtM, g, b, ?_, ?_, ?_, ?_, ?_⟩
+   ·
+     intro γ hγ
+-    rw [hgdef, CuspForm.IsGLPos.coe_smul, ModularForm.SL_smul_slash, hg₂ γ hγ, smul_comm]
++    rw [hgdef, FunLike.coe_smul, ModularForm.SL_smul_slash, hg₂ γ hγ, smul_comm]
+   ·
+     intro n
+     rw [← iotaW_apply, hgdef, qCoeff_smul_Gamma1, hF₂, qCoeff_depriveList, hF₁, qCoeff_heckeU₁]
+     by_cases hex : ∃ q ∈ l, q ∣ n
+     · obtain ⟨q, hq, hqn⟩ := hex
+-      rw [if_pos ⟨q, hq, hqn⟩, mul_zero, hb_zero_of_dvd (hlprime q hq) ((hlmem q).mp hq).1 hqn, map_zero]
+-    · rw [if_neg hex]
++      rw [ite_eq_left ⟨q, hq, hqn⟩, mul_zero, hb_zero_of_dvd (hlprime q hq) ((hlmem q).mp hq).1 hqn, map_zero]
++    · rw [ite_eq_right hex]
+       have hn0 : n ≠ 0 := by
+         rintro rfl
+         exact hex ⟨3, (hlmem 3).mpr ⟨h3B, Nat.prime_three⟩, dvd_zero 3⟩
+@@ -10209,7 +10200,7 @@
+     have hpB : p ∉ 𝔅' := fun hpB => hp3M (((hprimeM p hp).mpr hpB).trans (dvd_mul_left M 3))
+     show extend w a' p = a p
+     rw [extend_prime w a' hp]
+-    simp only [ha', if_neg hpB]
++    simp only [ha', ite_eq_right hpB]
+ 
+ end Extract
+ p2m_reactivate "P2MW.S_AutomorphicForm_exists_weightOne_cuspForm_of_isCusp_viaGeneralCuspNotion.HeckeDictionary"
+@@ -10290,7 +10281,7 @@
+ private theorem hasSum_fcoeff (f : ℂ → ℂ) (hf : DifferentiableOn ℂ f {z : ℂ | 0 < z.im})
+     (hper : Function.Periodic f 1) {z : ℂ} (hz : 0 < z.im) :
+     HasSum (fun n : ℤ => fcoeff f n * Complex.exp (2 * ↑π * Complex.I * ↑n * z)) (f z) := by
+-  haveI : Fact ((0:ℝ) < 1) := ⟨one_pos⟩
++  have : Fact ((0:ℝ) < 1) := ⟨one_pos⟩
+   set Y : ℝ := z.im with hY
+ 
+   obtain ⟨C₁, hC₁⟩ := (isCompact_Icc : IsCompact (Set.Icc (0:ℝ) 1)).exists_bound_of_continuousOn
+@@ -10436,7 +10427,6 @@
+       · simpa using (hasSum_geometric_of_lt_one hr0 hr1).mul_left C'
+       · have h2 := (hasSum_geometric_of_lt_one hr0 hr1).mul_left (C' * r)
+         convert h2 using 1
+-        all_goals first | rfl | skip
+         funext n
+         rw [show (-((n : ℤ) + 1)).natAbs = n + 1 by omega, pow_succ]
+         ring
+@@ -10569,7 +10559,7 @@
+         (volume.restrict (Icc (0:ℝ) 1 ×ˢ Ici (1/2:ℝ)))) :
+     Integrable (fun p : ℝ × ℝ => ‖f ((N:ℂ) * (↑p.1 + ↑p.2 * Complex.I))‖ ^ 2 * p.2⁻¹)
+       (volume.restrict (Icc (0:ℝ) 1 ×ˢ Ici (1/2:ℝ))) := by
+-  haveI : Measure.IsAddHaarMeasure (volume : Measure (ℝ × ℝ)) :=
++  have : Measure.IsAddHaarMeasure (volume : Measure (ℝ × ℝ)) :=
+     inferInstanceAs (Measure.IsAddHaarMeasure ((volume : Measure ℝ).prod (volume : Measure ℝ)))
+   set G : ℝ × ℝ → ℝ := fun p => ‖f (↑p.1 + ↑p.2 * Complex.I)‖ ^ 2 * p.2⁻¹ with hG_def
+   have hbox_meas : MeasurableSet (Icc (0:ℝ) 1 ×ˢ Ici (1/2:ℝ)) := measurableSet_Icc.prod measurableSet_Ici
+@@ -10758,7 +10748,7 @@
+         ((z.im : ℝ) : ℂ)⁻¹ * R.toFun (g * archAt w hw (iwasawaSec z)) := by
+   intro g
+   have h := hhol g
+-  first | exact h | simpa only [archAt, MonoidHom.comp_apply, iwasawaSec_eq_iwasawaSectionGL] using h
++  exact h
+ 
+ private theorem mdifferentiable_descentF (R : SmoothCuspRealizationAt ℚ h4pins Ψ) (w : InfinitePlace ℚ)
+     (hw : w.IsReal) (hhol : IsArchHolomorphicAt w hw R.toFun) :
+@@ -10816,7 +10806,7 @@
+     MemLp R.toFun 2 ((adelicGLHaar (Fin 2) (𝓞 ℚ) ℚ).restrict
+       (centreCutSiegelSet ℚ (1/2:ℝ) 1 (1/2) 2)) := by
+ 
+-  letI := glBorel (Fin 2) (𝓞 ℚ) ℚ
++  let := glBorel (Fin 2) (𝓞 ℚ) ℚ
+   have h := R.smoothCusp.1.1
+   exact ((lsXiMemberAt_iff ..).mp h).2
+ 
+@@ -10894,7 +10884,7 @@
+         ring
+       rw [hpt, hper]
+     · have hz1 : ¬ 0 < (z + 1).im := by simpa using hz
+-      simp only [Function.comp_apply, ofComplex_apply_eq_ite, dif_neg hz, dif_neg hz1]
++      simp only [Function.comp_apply, ofComplex_apply_eq_ite, dite_eq_right hz, dite_eq_right hz1]
+ 
+   have brick : ∀ (f h : ℂ → ℂ) (g : ℕ → ℂ → ℂ),
+       (∀ k, k < N → Integrable (fun p : ℝ × ℝ => ‖g k (↑p.1 + ↑p.2 * Complex.I)‖ ^ 2 * p.2⁻¹)
+@@ -10964,7 +10954,7 @@
+   set N : ℕ := Ideal.absNorm ((Φ.map iotaZsqrtdNegTwo).toRawCentral).level with hN_def
+   have hNpos : 0 < N := Nat.pos_of_ne_zero (by
+     rw [hN_def]; exact Ideal.absNorm_eq_zero_iff.not.mpr ((Φ.map iotaZsqrtdNegTwo).toRawCentral).level_ne_bot)
+-  haveI : NeZero N := ⟨hNpos.ne'⟩
++  have : NeZero N := ⟨hNpos.ne'⟩
+ 
+   have homega := homega_of_archType R w hw ((Φ.map iotaZsqrtdNegTwo).toRawCentral).level_ne_bot harch
+     (hhol_storey R w hw hhol)
+@@ -11003,7 +10993,7 @@
+           ((chiNegThree p : ℤ) : ℂ) * (if p ∣ n then ModularFormClass.qCoeff (⇑Fc) (n / p) else 0) =
+         (((a p).re : ℂ) + ((a p).im : ℂ) * ((Real.sqrt 2 : ℂ) * Complex.I)) * ModularFormClass.qCoeff (⇑Fc) n := by
+     intro p hp hpB hpN n
+-    haveI : NeZero p := ⟨hp.ne_zero⟩
++    have : NeZero p := ⟨hp.ne_zero⟩
+     have hpR : ratPrime ⟨p, hp⟩ ∉ R.exceptionalSet := fun h =>
+       hpB (Finset.mem_image.mpr ⟨_, h, absNorm_ratPrime ⟨p, hp⟩⟩)
+     have hp3 : p ≠ 3 := fun h => hpN (h ▸ hN3)
+@@ -11014,7 +11004,7 @@
+         exact descentF_heckeT_char_eigen R w hw homega hepsval hN3 p hp hpN hpR (hdet p hp hpN hp3 hpR) τ) n
+     rw [hT]
+     congr 1
+-    have ha : a p = Φ.a (ratPrime ⟨p, hp⟩) := dif_pos hp
++    have ha : a p = Φ.a (ratPrime ⟨p, hp⟩) := dite_eq_left hp
+     rw [ha]
+     exact iotaZsqrtdNegTwo_apply _
+   have hF0 : (⇑Fc : ℍ → ℂ) ≠ 0 := by
+@@ -11026,7 +11016,9 @@
+   refine ⟨M, hM, h3M, hTM, g, b, hg', hqb, hb0, heig, ?_⟩
+   intro p hp hpM
+   rw [hbp p hp hpM]
+-  exact dif_pos hp
++  exact dite_eq_left hp
+ 
+ end Part11
+ p2m_reactivate "P2MW.S_AutomorphicForm_exists_weightOne_cuspForm_of_isCusp_viaGeneralCuspNotion.HeckeDictionary"
++
++#print axioms solution
