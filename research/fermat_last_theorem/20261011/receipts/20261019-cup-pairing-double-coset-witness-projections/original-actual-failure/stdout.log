@@ -1,0 +1,310 @@
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_ModularCurve_CupPairing_exists_perfectPairing_intCast_eq_pair.lean:195:8: warning: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_ModularCurve_CupPairing_exists_perfectPairing_intCast_eq_pair.lean:202:8: warning: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_ModularCurve_CupPairing_exists_perfectPairing_intCast_eq_pair.lean:255:8: warning: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_ModularCurve_CupPairing_exists_perfectPairing_intCast_eq_pair.lean:261:8: warning: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_ModularCurve_CupPairing_exists_perfectPairing_intCast_eq_pair.lean:336:21: error: Application type mismatch: The argument
+  Classical.choose_spec (DoubleCoset.mk_out_eq_mul H Γ g)
+has type
+  Classical.choose ⋯ ∈ H ∧ ∃ k ∈ Γ, Quotient.out (DoubleCoset.mk H Γ g) = Classical.choose ⋯ * g * k
+but is expected to have type
+  ∃ x, ?m.24 x
+in the application
+  Classical.choose ⋯
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_ModularCurve_CupPairing_exists_perfectPairing_intCast_eq_pair.lean:337:37: error: Application type mismatch: The argument
+  Classical.choose_spec (DoubleCoset.mk_out_eq_mul H Γ g)
+has type
+  Classical.choose ⋯ ∈ H ∧ ∃ k ∈ Γ, Quotient.out (DoubleCoset.mk H Γ g) = Classical.choose ⋯ * g * k
+but is expected to have type
+  ∃ x, ?m.34 x
+in the application
+  Classical.choose_spec (Classical.choose_spec (DoubleCoset.mk_out_eq_mul H Γ g))
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_ModularCurve_CupPairing_exists_perfectPairing_intCast_eq_pair.lean:340:91: error: Application type mismatch: The argument
+  H
+has type
+  Subgroup SL(2, ℤ)
+but is expected to have type
+  SL(2, ℤ)
+in the application
+  kk Γ H
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_ModularCurve_CupPairing_exists_perfectPairing_intCast_eq_pair.lean:343:35: error: Application type mismatch: The argument
+  hh
+has type
+  h ∈ H ∧ ∃ k ∈ Γ, Quotient.out (DoubleCoset.mk H Γ g) = h * g * k
+but is expected to have type
+  ∃ x, ?m.78 x
+in the application
+  Classical.choose_spec hh
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_ModularCurve_CupPairing_exists_perfectPairing_intCast_eq_pair.lean:340:99: error: unsolved goals
+Γ H : Subgroup SL(2, ℤ)
+g : SL(2, ℤ)
+h : SL(2, ℤ) := Classical.choose ⋯
+hh : h ∈ H ∧ ∃ k ∈ Γ, Quotient.out (DoubleCoset.mk H Γ g) = h * g * k
+hh_def : h = Classical.choose ⋯
+⊢ ∃ h ∈ H, g = h * Quotient.out (DoubleCoset.mk H Γ g) * sorry
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_ModularCurve_CupPairing_exists_perfectPairing_intCast_eq_pair.lean:350:91: error: Application type mismatch: The argument
+  H
+has type
+  Subgroup SL(2, ℤ)
+but is expected to have type
+  SL(2, ℤ)
+in the application
+  kk Γ H
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_ModularCurve_CupPairing_exists_perfectPairing_intCast_eq_pair.lean:353:11: error: Application type mismatch: The argument
+  H
+has type
+  Subgroup SL(2, ℤ)
+but is expected to have type
+  Additive ↥Γ →+ ℤ
+in the application
+  prim Γ H
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_ModularCurve_CupPairing_exists_perfectPairing_intCast_eq_pair.lean:353:14: error: Type mismatch
+  φ + ψ
+has type
+  Additive ↥Γ →+ ℤ
+but is expected to have type
+  SL(2, ℤ)
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_ModularCurve_CupPairing_exists_perfectPairing_intCast_eq_pair.lean:353:32: error: Application type mismatch: The argument
+  H
+has type
+  Subgroup SL(2, ℤ)
+but is expected to have type
+  Additive ↥Γ →+ ℤ
+in the application
+  prim Γ H
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_ModularCurve_CupPairing_exists_perfectPairing_intCast_eq_pair.lean:353:47: error: Application type mismatch: The argument
+  H
+has type
+  Subgroup SL(2, ℤ)
+but is expected to have type
+  Additive ↥Γ →+ ℤ
+in the application
+  prim Γ H
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_ModularCurve_CupPairing_exists_perfectPairing_intCast_eq_pair.lean:356:11: error: Application type mismatch: The argument
+  H
+has type
+  Subgroup SL(2, ℤ)
+but is expected to have type
+  Additive ↥Γ →+ ℤ
+in the application
+  prim Γ H
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_ModularCurve_CupPairing_exists_perfectPairing_intCast_eq_pair.lean:356:14: error: Type mismatch
+  c • φ
+has type
+  Additive ↥Γ →+ ℤ
+but is expected to have type
+  SL(2, ℤ)
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_ModularCurve_CupPairing_exists_perfectPairing_intCast_eq_pair.lean:356:36: error: Application type mismatch: The argument
+  H
+has type
+  Subgroup SL(2, ℤ)
+but is expected to have type
+  Additive ↥Γ →+ ℤ
+in the application
+  prim Γ H
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_ModularCurve_CupPairing_exists_perfectPairing_intCast_eq_pair.lean:356:45: error: unsolved goals
+Γ : Subgroup SL(2, ℤ)
+c : ℤ
+φ : Additive ↥Γ →+ ℤ
+g : SL(2, ℤ)
+⊢ sorry () = c * sorry ()
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_ModularCurve_CupPairing_exists_perfectPairing_intCast_eq_pair.lean:357:8: warning: declaration uses `sorry`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_ModularCurve_CupPairing_exists_perfectPairing_intCast_eq_pair.lean:357:8: warning: This simp argument is unused:
+  prim
+
+Hint: Omit it from the simp argument list.
+  [apply] simp
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_ModularCurve_CupPairing_exists_perfectPairing_intCast_eq_pair.lean:391:49: error: Application type mismatch: The argument
+  H
+has type
+  Subgroup SL(2, ℤ)
+but is expected to have type
+  Additive ↥Γ →+ ℤ
+in the application
+  prim Γ H
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_ModularCurve_CupPairing_exists_perfectPairing_intCast_eq_pair.lean:391:70: error: Application type mismatch: The argument
+  H
+has type
+  Subgroup SL(2, ℤ)
+but is expected to have type
+  Additive ↥Γ →+ ℤ
+in the application
+  prim Γ H
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_ModularCurve_CupPairing_exists_perfectPairing_intCast_eq_pair.lean:404:70: error: Application type mismatch: The argument
+  H
+has type
+  Subgroup SL(2, ℤ)
+but is expected to have type
+  Additive ↥Γ →+ ℤ
+in the application
+  prim Γ H
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_ModularCurve_CupPairing_exists_perfectPairing_intCast_eq_pair.lean:404:91: error: Application type mismatch: The argument
+  H
+has type
+  Subgroup SL(2, ℤ)
+but is expected to have type
+  Additive ↥Γ →+ ℤ
+in the application
+  prim Γ H
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_ModularCurve_CupPairing_exists_perfectPairing_intCast_eq_pair.lean:408:2: error: No goals to be solved
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_ModularCurve_CupPairing_exists_perfectPairing_intCast_eq_pair.lean:426:15: warning: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
+
+Hint: Replace the deprecated name:
+  S̵e̵t̵.̵m̵e̵m̵_̵s̵e̵t̵O̵f̵_̵e̵q̵S̲e̲t̲.̲m̲e̲m̲_̲o̲f̲P̲r̲e̲d̲_̲e̲q̲
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_ModularCurve_CupPairing_exists_perfectPairing_intCast_eq_pair.lean:431:15: warning: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
+
+Hint: Replace the deprecated name:
+  S̵e̵t̵.̵m̵e̵m̵_̵s̵e̵t̵O̵f̵_̵e̵q̵S̲e̲t̲.̲m̲e̲m̲_̲o̲f̲P̲r̲e̲d̲_̲e̲q̲
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_ModularCurve_CupPairing_exists_perfectPairing_intCast_eq_pair.lean:509:56: error: Application type mismatch: The argument
+  Binf
+has type
+  Subgroup SL(2, ℤ)
+but is expected to have type
+  Additive ↥Γ →+ ℤ
+in the application
+  prim Γ Binf
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_ModularCurve_CupPairing_exists_perfectPairing_intCast_eq_pair.lean:511:56: error: Application type mismatch: The argument
+  Subgroup.zpowers S
+has type
+  Subgroup SL(2, ℤ)
+but is expected to have type
+  Additive ↥Γ →+ ℤ
+in the application
+  prim Γ (Subgroup.zpowers S)
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_ModularCurve_CupPairing_exists_perfectPairing_intCast_eq_pair.lean:513:56: error: Application type mismatch: The argument
+  Subgroup.zpowers (S * T)
+has type
+  Subgroup SL(2, ℤ)
+but is expected to have type
+  Additive ↥Γ →+ ℤ
+in the application
+  prim Γ (Subgroup.zpowers (S * T))
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_ModularCurve_CupPairing_exists_perfectPairing_intCast_eq_pair.lean:515:8: warning: declaration uses `sorry`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_ModularCurve_CupPairing_exists_perfectPairing_intCast_eq_pair.lean:518:8: warning: declaration uses `sorry`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_ModularCurve_CupPairing_exists_perfectPairing_intCast_eq_pair.lean:521:8: warning: declaration uses `sorry`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_ModularCurve_CupPairing_exists_perfectPairing_intCast_eq_pair.lean:523:2: warning: Unused tactic linter: `exact prim_left _ (fun o γ h => killB _ x.2 o γ h) (-1) neg_one_mem_Binf g` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_ModularCurve_CupPairing_exists_perfectPairing_intCast_eq_pair.lean:525:8: warning: declaration uses `sorry`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_ModularCurve_CupPairing_exists_perfectPairing_intCast_eq_pair.lean:528:8: warning: declaration uses `sorry`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_ModularCurve_CupPairing_exists_perfectPairing_intCast_eq_pair.lean:531:8: warning: declaration uses `sorry`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_ModularCurve_CupPairing_exists_perfectPairing_intCast_eq_pair.lean:534:8: warning: declaration uses `sorry`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_ModularCurve_CupPairing_exists_perfectPairing_intCast_eq_pair.lean:562:67: error(lean.unknownIdentifier): Unknown identifier `prim_add`
+Try this:
+  [apply] ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_ModularCurve_CupPairing_exists_perfectPairing_intCast_eq_pair.lean:560:19: error: unsolved goals
+Γ : Subgroup SL(2, ℤ)
+inst✝ : Γ.FiniteIndex
+x x' : L Γ
+q : Qb Γ
+⊢ ↑(prim Γ sorry sorry) (Quotient.out q) - ↑(prim Γ sorry sorry) (S * Quotient.out q) =
+    ↑(prim Γ sorry sorry) (Quotient.out q) * 2 - ↑(prim Γ sorry sorry) (S * Quotient.out q) * 2
+Try this:
+  [apply] ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_ModularCurve_CupPairing_exists_perfectPairing_intCast_eq_pair.lean:564:19: error: unsolved goals
+Γ : Subgroup SL(2, ℤ)
+inst✝ : Γ.FiniteIndex
+c : ℤ
+x : L Γ
+q : Qb Γ
+⊢ ↑(prim Γ sorry sorry) (Quotient.out q) - ↑(prim Γ sorry sorry) (S * Quotient.out q) =
+    ↑(prim Γ sorry sorry) (Quotient.out q) * c - ↑(prim Γ sorry sorry) (S * Quotient.out q) * c
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_ModularCurve_CupPairing_exists_perfectPairing_intCast_eq_pair.lean:562:30: warning: declaration uses `sorry`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_ModularCurve_CupPairing_exists_perfectPairing_intCast_eq_pair.lean:562:48: warning: This simp argument is unused:
+  Submodule.coe_add
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [descend, Xfun, Fx, Pi.add_apply, prim_add]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_ModularCurve_CupPairing_exists_perfectPairing_intCast_eq_pair.lean:566:49: warning: This simp argument is unused:
+  Submodule.coe_smul
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [descend, Xfun, Fx, Pi.smul_apply, prim_smul, RingHom.id_apply, smul_eq_mul]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_ModularCurve_CupPairing_exists_perfectPairing_intCast_eq_pair.lean:566:69: warning: This simp argument is unused:
+  prim_smul
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [descend, Xfun, Fx, Pi.smul_apply, Submodule.coe_smul, RingHom.id_apply, smul_eq_mul]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_ModularCurve_CupPairing_exists_perfectPairing_intCast_eq_pair.lean:574:71: error(lean.unknownIdentifier): Unknown identifier `prim_add`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_ModularCurve_CupPairing_exists_perfectPairing_intCast_eq_pair.lean:574:30: warning: declaration uses `sorry`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_ModularCurve_CupPairing_exists_perfectPairing_intCast_eq_pair.lean:574:34: warning: declaration uses `sorry`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_ModularCurve_CupPairing_exists_perfectPairing_intCast_eq_pair.lean:574:52: warning: This simp argument is unused:
+  Submodule.coe_add
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [descend, ffun, Ga, Gb, Pi.add_apply, prim_add]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_ModularCurve_CupPairing_exists_perfectPairing_intCast_eq_pair.lean:578:53: warning: This simp argument is unused:
+  Submodule.coe_smul
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [descend, ffun, Ga, Gb, Pi.smul_apply, prim_smul, RingHom.id_apply, smul_eq_mul]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_ModularCurve_CupPairing_exists_perfectPairing_intCast_eq_pair.lean:578:73: warning: This simp argument is unused:
+  prim_smul
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [descend, ffun, Ga, Gb, Pi.smul_apply, Submodule.coe_smul, RingHom.id_apply, smul_eq_mul]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_ModularCurve_CupPairing_exists_perfectPairing_intCast_eq_pair.lean:826:2: warning: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_ModularCurve_CupPairing_exists_perfectPairing_intCast_eq_pair.lean:1056:2: warning: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_ModularCurve_CupPairing_exists_perfectPairing_intCast_eq_pair.lean:1057:2: warning: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_ModularCurve_CupPairing_exists_perfectPairing_intCast_eq_pair.lean:1073:2: warning: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`

@@ -1,0 +1,86 @@
+{
+  "at": "2026-10-18T19:51:35.891411+00:00",
+  "name": "ModularCurve_CupPairing_exists_perfectPairing_intCast_eq_pair",
+  "candidate": "r1",
+  "card_candidate": "r1",
+  "source_replacements": [
+    [
+      "Classical.choose (Classical.choose_spec (DoubleCoset.mk_out_eq_mul H \u0393 g))",
+      "Classical.choose (Classical.choose_spec (DoubleCoset.mk_out_eq_mul H \u0393 g)).2",
+      1
+    ],
+    [
+      "\u0393.inv_mem (Classical.choose_spec (Classical.choose_spec (DoubleCoset.mk_out_eq_mul H \u0393 g))).2.1",
+      "\u0393.inv_mem (Classical.choose_spec (Classical.choose_spec (DoubleCoset.mk_out_eq_mul H \u0393 g)).2).1",
+      1
+    ],
+    [
+      "  have hk := Classical.choose_spec hh\n  set k := Classical.choose hh with hk_def\n  refine \u27e8h\u207b\u00b9, H.inv_mem hk.1, ?_\u27e9",
+      "  have hk := Classical.choose_spec hh.2\n  set k := Classical.choose hh.2 with hk_def\n  refine \u27e8h\u207b\u00b9, H.inv_mem hh.1, ?_\u27e9",
+      1
+    ],
+    [
+      "  rw [hkk, hk.2.2]",
+      "  rw [hkk, hk.2]",
+      1
+    ],
+    [
+      "if_pos",
+      "ite_eq_left",
+      2
+    ],
+    [
+      "if_neg",
+      "ite_eq_right",
+      2
+    ],
+    [
+      "Set.mem_setOf_eq",
+      "Set.mem_ofPred_eq",
+      2
+    ],
+    [
+      "haveI :",
+      "have :",
+      4
+    ]
+  ],
+  "card_replacements": [],
+  "supplier_repository": "anthropics/fermats-last-theorem",
+  "supplier_revision": "6e837e75355538c7f80bab5b956861e86c4eacc2",
+  "supplier_license": "Apache-2.0",
+  "baseline_byte_identical_to_pinned_supplier": true,
+  "pinned_supplier_source_and_card_preserved": true,
+  "full_original_statement_and_hypotheses_preserved": true,
+  "complete_original_proof_preserved": true,
+  "public_solution_and_card_proof_byte_identical_before_axiom_queries": true,
+  "no_linter_suppression_added": true,
+  "verification_pending": false,
+  "installed": true,
+  "max_active_flt_jobs": 1,
+  "lean_threads": 1,
+  "original_actual_errors": 26,
+  "original_actual_warnings": 29,
+  "original_kernel_seconds": 49.168707458,
+  "library_search": "No matching CupPairing/prim helper in trureturing D5/Library. Reuse pinned Mathlib DoubleCoset.mk_out_eq_mul (Mathlib/GroupTheory/DoubleCoset.lean:132), as in existing accepted Cerednik double-coset binder ports; retain original choice, decomp, group and perfect-pairing proofs.",
+  "change": "Adapt the original kk/decomp witness extraction to current existential/conjunction order h,h\u2208H,k,k\u2208\u0393,equality. Preserve original witnesses, inverse choices, complete1115-line perfect pairing proof and literal public solution/card statements and hypotheses. Clean only actually reported if/set deprecations and four proposition haveI bindings; defer cascading simp warnings until current source verification. Append source/card recursive axiom queries. Await unchanged single queue actual make/kernel checks.",
+  "full_original_complete": false,
+  "official_new_solve_credit": 0,
+  "stale_terminal_state_entries_excluded": [
+    {
+      "module": "Submission.Supplier.Theorems.Thm_ModularCurve_CupPairing_cuspSum_comp_eq_of_conjRel",
+      "wrapper_pid": 90143,
+      "make_exit": 0,
+      "terminal": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/dc1f725d9d0e8aeb6aec162c-1792353019271314000.make-terminal.json"
+    }
+  ],
+  "active_import_closure_excluded": [],
+  "active_transitive_import_closure_size": 0,
+  "actual_live_descendant_sources": [],
+  "all_four_canonical_adapted_source_card_modules_excluded": [
+    "P2M.Sol.S_ModularCurve_CupPairing_exists_perfectPairing_intCast_eq_pair",
+    "Submission.Supplier.P2M.Sol.S_ModularCurve_CupPairing_exists_perfectPairing_intCast_eq_pair",
+    "Submission.Supplier.Theorems.Thm_ModularCurve_CupPairing_exists_perfectPairing_intCast_eq_pair",
+    "Theorems.Thm_ModularCurve_CupPairing_exists_perfectPairing_intCast_eq_pair"
+  ]
+}
