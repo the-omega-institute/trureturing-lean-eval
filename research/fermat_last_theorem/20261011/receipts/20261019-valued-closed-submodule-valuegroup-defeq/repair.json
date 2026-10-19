@@ -1,0 +1,66 @@
+{
+  "at": "2026-10-19T08:47:08.305381+00:00",
+  "name": "Valued_isClosed_submodule_of_finiteDimensional_of_isClosed_subfield",
+  "candidate": "r1",
+  "card_candidate": "r1",
+  "source_replacements": [
+    [
+      "    rw [\u2190 Valuation.restrict_def] at hb \u22a2\n    rw [\u2190 Valuation.restrict_def]\n",
+      "    change 1 < (Valued.v : Valuation K \u0393\u2080).restrict xb at hb\n    change \u2203 n : \u2115, (Valued.v : Valuation K \u0393\u2080).restrict xa \u2264\n      (Valued.v : Valuation K \u0393\u2080).restrict xb ^ n\n",
+      1
+    ],
+    [
+      "haveI ",
+      "have ",
+      3
+    ],
+    [
+      "letI ",
+      "let ",
+      4
+    ],
+    [
+      "zero_le'",
+      "zero_le",
+      2
+    ]
+  ],
+  "card_replacements": [],
+  "baseline_byte_identical_to_pinned_supplier": true,
+  "prior_source_changes_preserved": [],
+  "prior_card_changes_preserved": [],
+  "public_card_statement_literal_preserved": true,
+  "solution_statement_literal_preserved": true,
+  "pinned_supplier_source_and_card_preserved": true,
+  "verification_pending": false,
+  "installed": true,
+  "no_linter_suppression_added": true,
+  "complete_original_proof_preserved": true,
+  "full_original_statement_and_hypotheses_preserved": true,
+  "max_active_flt_jobs": 1,
+  "lean_threads": 1,
+  "original_actual_errors": 1,
+  "original_actual_warnings": 7,
+  "original_source_lines": 55,
+  "library_search": "No exact theorem-name match in current trureturing D5/Reg. Pinned Mathlib/RingTheory/Valuation/Basic.lean:475-487 defines valuation restriction with restrict_def proved by rfl; :515 and :529 provide restrict_le_iff and restrict_le_one_iff. Reuse the complete supplier proof and its Submodule.closed_of_finiteDimensional consumer; bridge only the definitional ofClass/coercion presentation.",
+  "change": "Replace the two failing reverse restrict_def rewrites with explicit definitionally equal change targets. Apply the compiler-recommended haveI/letI to have/let edits inside the proposition proof and rename deprecated zero_le-prime to zero_le. Append exact source/card recursive axiom queries; await the original single queue.",
+  "full_original_complete": false,
+  "official_new_solve_credit": 0,
+  "stale_terminal_state_entries_excluded": [],
+  "active_import_closure_excluded": [
+    "Submission.Supplier.P2M.Sol.S_WeierstrassCurve_Psi2Sq_mul_wronskian_sq"
+  ],
+  "active_transitive_import_closure_size": 10,
+  "actual_live_descendant_sources": [
+    {
+      "pid": 98778,
+      "source": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_WeierstrassCurve_Psi2Sq_mul_wronskian_sq.lean"
+    }
+  ],
+  "all_four_canonical_adapted_source_card_modules_excluded": [
+    "P2M.Sol.S_Valued_isClosed_submodule_of_finiteDimensional_of_isClosed_subfield",
+    "Submission.Supplier.P2M.Sol.S_Valued_isClosed_submodule_of_finiteDimensional_of_isClosed_subfield",
+    "Submission.Supplier.Theorems.Thm_Valued_isClosed_submodule_of_finiteDimensional_of_isClosed_subfield",
+    "Theorems.Thm_Valued_isClosed_submodule_of_finiteDimensional_of_isClosed_subfield"
+  ]
+}
