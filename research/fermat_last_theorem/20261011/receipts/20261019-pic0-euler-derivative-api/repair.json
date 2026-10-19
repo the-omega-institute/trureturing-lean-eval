@@ -1,0 +1,67 @@
+{
+  "at": "2026-10-19T14:22:15.486898+00:00",
+  "name": "AlgebraicCurve_eval_one_eq_natCard_pic0_of_natCard_fixedPoints_restrictAlong_eq",
+  "candidate": "r1",
+  "card_candidate": "r1",
+  "source_replacements": [
+    [
+      "X * (d\u2044dX \u2102) f",
+      "X * PowerSeries.derivative f",
+      1
+    ],
+    [
+      "  haveI hEss\u2080 : Algebra.EssFiniteType k F\u2080 := by\n",
+      "  have hEss\u2080 : Algebra.EssFiniteType k F\u2080 := by\n",
+      1
+    ],
+    [
+      "      simp only [hr0, if_false]\n",
+      "      simp only [hr0, ite_false]\n",
+      1
+    ],
+    [
+      "      simp only [e1, e2, e3, if_false]\n",
+      "      simp only [e1, e2, e3, ite_false]\n",
+      1
+    ]
+  ],
+  "card_replacements": [],
+  "baseline_byte_identical_to_pinned_supplier": true,
+  "baseline_by_role_byte_identical_to_pinned_supplier": {
+    "source": true,
+    "card": true
+  },
+  "prior_source_changes_preserved": "",
+  "prior_card_changes_preserved": "",
+  "pinned_supplier_source_and_card_preserved": true,
+  "public_card_statement_literal_preserved": true,
+  "solution_statement_literal_preserved": true,
+  "all_public_declaration_headers_literal_unchanged": true,
+  "verification_pending": false,
+  "installed": true,
+  "no_linter_suppression_added": true,
+  "complete_original_proof_preserved": true,
+  "full_original_statement_and_hypotheses_preserved": true,
+  "max_active_flt_jobs": 1,
+  "lean_threads": 1,
+  "original_actual_errors": 4,
+  "original_actual_warnings": 8,
+  "actual_warned_style_lines": 2,
+  "actual_warned_style_tokens": 2,
+  "library_search": "Reuse complete accepted derivative repair 2ee05cde253b7c7428b685619493387a9096dd42. Exact complex Euler-derivative coefficient and product proofs use the same current Mathlib derivation API. Current trureturing D5 exact-theorem search did not provide these Pic0/constant-extension declarations; current Mathlib PowerSeries.derivative infers its coefficient type.",
+  "change": "Replace only the obsolete explicit complex coefficient-type argument by the current PowerSeries.derivative in the original Euler operator. Retain every declaration header, hypothesis and full generating-function/Pic0 or constant-extension proof. Migrate only the actual proof-local instance-style and deprecated-if warnings. Append exact source/card recursive-axiom queries; unchanged single make/kernel queue verifies the candidates.",
+  "full_original_complete": false,
+  "official_new_solve_credit": 0,
+  "stale_terminal_state_entries_excluded": [],
+  "active_import_closure_excluded": [
+    "Submission.Supplier.P2M.Sol.S_WeierstrassCurve_hasPrincipalDivisors_functionField_of_isElliptic"
+  ],
+  "active_transitive_import_closure_size": 82,
+  "actual_live_descendant_sources": [],
+  "all_four_canonical_adapted_source_card_modules_excluded": [
+    "P2M.Sol.S_AlgebraicCurve_eval_one_eq_natCard_pic0_of_natCard_fixedPoints_restrictAlong_eq",
+    "Submission.Supplier.P2M.Sol.S_AlgebraicCurve_eval_one_eq_natCard_pic0_of_natCard_fixedPoints_restrictAlong_eq",
+    "Submission.Supplier.Theorems.Thm_AlgebraicCurve_eval_one_eq_natCard_pic0_of_natCard_fixedPoints_restrictAlong_eq",
+    "Theorems.Thm_AlgebraicCurve_eval_one_eq_natCard_pic0_of_natCard_fixedPoints_restrictAlong_eq"
+  ]
+}

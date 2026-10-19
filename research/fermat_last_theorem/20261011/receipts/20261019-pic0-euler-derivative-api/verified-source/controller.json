@@ -1,0 +1,80 @@
+{
+  "sha256": "0c3067ffd14790aa14875a165d0893918bec6115e45370d7a49e16e39f152123",
+  "exit": 0,
+  "empty_output_retry_done": false,
+  "source_sha256_after": "0c3067ffd14790aa14875a165d0893918bec6115e45370d7a49e16e39f152123",
+  "source_unchanged": true,
+  "olean_sha256": "e30a561ac5aaadc870e45776dde1b16ae822f4449f4fcc4746b85cc98951ca0e",
+  "seconds": 63.759714458021335,
+  "pid": 80786,
+  "command": [
+    "/Users/macstudio/.local/omega-shims/lean",
+    "-j1",
+    "--trust=0",
+    "-Ddebug.skipKernelTC=false",
+    "-R",
+    "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src",
+    "-o",
+    "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-build/lib/lean/Submission/Supplier/P2M/Sol/S_AlgebraicCurve_eval_one_eq_natCard_pic0_of_natCard_fixedPoints_restrictAlong_eq.olean",
+    "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_AlgebraicCurve_eval_one_eq_natCard_pic0_of_natCard_fixedPoints_restrictAlong_eq.lean"
+  ],
+  "make_wrapper_pid": 80735,
+  "make_exit": 0,
+  "make_entry_failed": false,
+  "cache_binding_valid": true,
+  "canonical_make_running_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/d2291cd5d654eaf83c957e13-1792419748133127000.make-running.json",
+  "canonical_make_terminal_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/d2291cd5d654eaf83c957e13-1792419748133127000.make-terminal.json",
+  "kernel_terminal_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/d2291cd5d654eaf83c957e13-1792419748133127000.kernel/result.json",
+  "direct_dependencies": [
+    {
+      "module": "Submission.Supplier.Definitions.Def_AlgebraicCurve_Correspondence",
+      "source_sha256": "22d43195e5e1e56a79944d3f469e206b1dbea2f6727f6e0e0bccbc151f220881",
+      "object_sha256": "c99c86ef38a52c80a3925a267b8c93ae03a81f20f54c6c6e8d2d2fb01743b08c",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Definitions.Def_AlgebraicCurve_IsCurveOver",
+      "source_sha256": "3d53c0528c8bc1ae3b59135d2dc1a76d8abbd68c829305a8f4a8d584c3796553",
+      "object_sha256": "e059f779f8f2ce4be7ecc33e0af4e4d4e1629cd5eb8f0516c569e5b236d3539d",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Definitions.Def_AlgebraicCurve_AdelicIndex",
+      "source_sha256": "024b6fb80cd1ea9652c4ae5b7f5550d255384d4fd41161a694048492d096d1fe",
+      "object_sha256": "f8ad1cb2ae7d1d74eaad2b6af18cd768588d5a5295e77b576393a3d0efdfb355",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Theorems.Thm_AlgebraicCurve_finite_fixedPoints_restrictAlong_iterate_and_natCard_eq_sum_divisors",
+      "source_sha256": "dafc3a19682ab353c7da9cfec75c5aec5657221604ed08a1f867ff8b85d7807e",
+      "object_sha256": "4e4830c69cb5dd60b08dee42701633dced3dd16f9e96c13b9aa49f8d76b3a336",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Theorems.Thm_AlgebraicCurve_exists_LPolynomial_of_finite",
+      "source_sha256": "7e677b0cced83fad912594cf1bd3030a198b49534a3446d5b20850f937386393",
+      "object_sha256": "7877b05ad5594da59367ab27ad23576e67691a5caf71bd223f2f65d5aed41c8b",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Theorems.Thm_AlgebraicCurve_card_effectiveDivisors_mul_eq_sum",
+      "source_sha256": "9fc85c046e7acbfe665b5cc7af20b88bd09b6c8a0939c7b408934e23037ed5c1",
+      "object_sha256": "37908eabf7dacf66702204c2504819d10b622c18882bbbbc5f67352438e50cdb",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Theorems.Thm_AlgebraicCurve_LPolynomial_eval_one_eq_natCard_pic0",
+      "source_sha256": "f365e04b79d27ae75d09d4b2fca9294e7e87e1dd275a4e198b776cbff9d63b69",
+      "object_sha256": "8a35ae7fa14774db0c2c4d47c5d6a8f15ef8a6839b3386efe16949b5975d83b7",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.P2M.Util",
+      "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+      "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+      "receipt_reused": true
+    }
+  ],
+  "stdout": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/d2291cd5d654eaf83c957e13-1792419748133127000.kernel/stdout.log",
+  "stderr": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/d2291cd5d654eaf83c957e13-1792419748133127000.kernel/stderr.log"
+}
