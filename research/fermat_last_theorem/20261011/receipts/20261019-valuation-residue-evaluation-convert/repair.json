@@ -1,0 +1,46 @@
+{
+  "at": "2026-10-19T02:32:42.937443+00:00",
+  "name": "ValuationSubring_exists_eval_eq_zero_and_residue_eq",
+  "candidate": "r1",
+  "card_candidate": "r1",
+  "source_replacements": [
+    [
+      "    convert h1 using 3\n    \u00b7 rfl\n    simp [Polynomial.map_sub, eval_sub]\n",
+      "    convert h1 using 3\n    simp [Polynomial.map_sub, eval_sub]\n",
+      1
+    ]
+  ],
+  "card_replacements": [],
+  "baseline_byte_identical_to_pinned_supplier": true,
+  "prior_source_changes_preserved": [],
+  "prior_card_changes_preserved": [],
+  "public_card_statement_literal_preserved": true,
+  "solution_statement_literal_preserved": true,
+  "pinned_supplier_source_and_card_preserved": true,
+  "verification_pending": false,
+  "installed": true,
+  "no_linter_suppression_added": true,
+  "complete_original_proof_preserved": true,
+  "full_original_statement_and_hypotheses_preserved": true,
+  "max_active_flt_jobs": 1,
+  "lean_threads": 1,
+  "original_actual_errors": 2,
+  "original_actual_warnings": 0,
+  "original_source_lines": 60,
+  "library_search": "No matching residue-root-lifting theorem found by rg in current trureturing D5/Reg/Blueprint. Preserve the complete pinned supplier proof. Pinned Mathlib/Algebra/Polynomial/Eval/Defs.lean:498/502 supplies map_C/map_X, :738 map_sub and :766 eval_sub. The actual convert goal is the non-definitional evaluation identity, discharged by the existing simp step rather than rfl.",
+  "change": "Remove only the rfl bullet that incorrectly tries to close the single non-definitional map/eval goal. Preserve the complete polynomial-root-lifting argument and existing simp proof. Append exact source/card recursive axiom queries; await original single queue.",
+  "full_original_complete": false,
+  "official_new_solve_credit": 0,
+  "stale_terminal_state_entries_excluded": [],
+  "active_import_closure_excluded": [
+    "Submission.Supplier.P2M.Sol.S_ValuationSubring_exists_pow_pow_eq_self_residueField_of_liesOverPrime"
+  ],
+  "active_transitive_import_closure_size": 9,
+  "actual_live_descendant_sources": [],
+  "all_four_canonical_adapted_source_card_modules_excluded": [
+    "P2M.Sol.S_ValuationSubring_exists_eval_eq_zero_and_residue_eq",
+    "Submission.Supplier.P2M.Sol.S_ValuationSubring_exists_eval_eq_zero_and_residue_eq",
+    "Submission.Supplier.Theorems.Thm_ValuationSubring_exists_eval_eq_zero_and_residue_eq",
+    "Theorems.Thm_ValuationSubring_exists_eval_eq_zero_and_residue_eq"
+  ]
+}

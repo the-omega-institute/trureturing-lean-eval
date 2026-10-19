@@ -1,0 +1,32 @@
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_ValuationSubring_exists_eval_eq_zero_and_residue_eq.lean:56:6: error: Tactic `rfl` failed: The left-hand side
+  a₀ - (IsLocalRing.residue ↥A) x✝
+is not definitionally equal to the right-hand side
+  ((eval a₀ ∘ map (IsLocalRing.residue ↥A)) ∘ fun a => X - C a) x✝
+
+case e'_3.a
+L : Type u_1
+inst✝¹ : Field L
+inst✝ : IsAlgClosed L
+A : ValuationSubring L
+q : (↥A)[X]
+hq : IsUnit q.leadingCoeff
+a₀ : IsLocalRing.ResidueField ↥A
+hroot : eval a₀ (map (IsLocalRing.residue ↥A) q) = 0
+u : (↥A)ˣ := hq.unit
+hu : u = hq.unit
+qm : (↥A)[X] := C ↑u⁻¹ * q
+hqm : qm = C ↑u⁻¹ * q
+hqmq : q = C ↑u * qm
+hqu : q.leadingCoeff = ↑u
+hlc : qm.Monic
+hspl : (map (algebraMap (↥A) L) qm).Splits
+hinj : Function.Injective ⇑(algebraMap (↥A) L)
+hrange : ∀ a ∈ (map (algebraMap (↥A) L) qm).roots, a ∈ (algebraMap (↥A) L).range
+hsA : qm.Splits
+hfac : qm = (Multiset.map (fun a => X - C a) qm.roots).prod
+hres_qm : eval a₀ (map (IsLocalRing.residue ↥A) qm) = 0
+h1 : (Multiset.map ((eval a₀ ∘ map (IsLocalRing.residue ↥A)) ∘ fun a => X - C a) qm.roots).prod = 0
+x✝ : ↥A
+a✝ : x✝ ∈ qm.roots
+⊢ a₀ - (IsLocalRing.residue ↥A) x✝ = ((eval a₀ ∘ map (IsLocalRing.residue ↥A)) ∘ fun a => X - C a) x✝
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_ValuationSubring_exists_eval_eq_zero_and_residue_eq.lean:57:4: error: No goals to be solved
