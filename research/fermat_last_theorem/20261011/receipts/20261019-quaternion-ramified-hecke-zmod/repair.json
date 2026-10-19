@@ -1,0 +1,86 @@
+{
+  "at": "2026-10-19T01:08:52.832753+00:00",
+  "name": "QuaternionAlgebra_IsEichlerOrder_exists_primeHeckeSet_eq_setOf_mul_of_isDefiniteRamifiedExactlyAt",
+  "candidate": "r1",
+  "card_candidate": "r1",
+  "source_replacements": [
+    [
+      "    rw [RingHom.mem_ker, map_sub, map_one, h1, sub_self]",
+      "    rw [RingHom.mem_ker, map_sub, map_one, h1]\n    decide",
+      1
+    ],
+    [
+      "  induction x using TensorProduct.induction_on with\n  | zero => rw [smul_zero, mul_zero]",
+      "  induction x using TensorProduct.inductionOn with",
+      1
+    ],
+    [
+      "haveI : Nonempty",
+      "have : Nonempty",
+      1
+    ],
+    [
+      "haveI : Subsingleton",
+      "have : Subsingleton",
+      1
+    ],
+    [
+      "haveI : IsEmpty",
+      "have : IsEmpty",
+      1
+    ],
+    [
+      "haveI : Fact",
+      "have : Fact",
+      1
+    ],
+    [
+      "Set.mem_setOf_eq",
+      "Set.mem_ofPred_eq",
+      1
+    ],
+    [
+      "    change unitAt w u \u2208 _ \u2194 unitAt w (\u03c0 * u * \u03c0\u207b\u00b9) \u2208 _\n",
+      "",
+      1
+    ]
+  ],
+  "card_replacements": [],
+  "baseline_byte_identical_to_pinned_supplier": true,
+  "prior_source_changes_preserved": [],
+  "prior_card_changes_preserved": [],
+  "public_card_statement_literal_preserved": true,
+  "solution_statement_literal_preserved": true,
+  "pinned_supplier_source_and_card_preserved": true,
+  "verification_pending": false,
+  "installed": true,
+  "no_linter_suppression_added": true,
+  "complete_original_proof_preserved": true,
+  "full_original_statement_and_hypotheses_preserved": true,
+  "max_active_flt_jobs": 1,
+  "lean_threads": 1,
+  "original_actual_errors": 1,
+  "original_actual_warnings": 7,
+  "original_source_lines": 978,
+  "library_search": "Project D5 PadicInt.toZMod clients inspected (ParityNodeDividedDifference and GoodPrimeCoverings); no replacement full Hecke proof is needed. Reuse the existing ring-hom rewrites and kernel decide for the closed ZMod 2 equality. Pinned Mathlib.LinearAlgebra.TensorProduct.Defs:135 inductionOn supplies the zero case through tmul 0 0; Mathlib.Data.Set.Operations:79 provides mem_ofPred_eq.",
+  "change": "Preserve the complete 978-line supplier proof and exact original public statements and hypotheses. Close the final ZMod 2 subtraction goal by kernel decide after the original ring-hom rewrites. Use TensorProduct.inductionOn with its tmul/add cases (its library proof supplies zero), replace the four actual haveI-on-Prop warnings with have, update mem_ofPred_eq, and remove only the actual no-op change tactic. Append source/card recursive-axiom queries. Await the unchanged original single queue.",
+  "full_original_complete": false,
+  "official_new_solve_credit": 0,
+  "stale_terminal_state_entries_excluded": [],
+  "active_import_closure_excluded": [
+    "Submission.Supplier.P2M.Sol.S_CerednikDrinfeld_localBox_meetOrder_eq_of_isDefiniteRamifiedExactlyAt"
+  ],
+  "active_transitive_import_closure_size": 55,
+  "actual_live_descendant_sources": [
+    {
+      "pid": 3873,
+      "source": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_CerednikDrinfeld_localBox_meetOrder_eq_of_isDefiniteRamifiedExactlyAt.lean"
+    }
+  ],
+  "all_four_canonical_adapted_source_card_modules_excluded": [
+    "P2M.Sol.S_QuaternionAlgebra_IsEichlerOrder_exists_primeHeckeSet_eq_setOf_mul_of_isDefiniteRamifiedExactlyAt",
+    "Submission.Supplier.P2M.Sol.S_QuaternionAlgebra_IsEichlerOrder_exists_primeHeckeSet_eq_setOf_mul_of_isDefiniteRamifiedExactlyAt",
+    "Submission.Supplier.Theorems.Thm_QuaternionAlgebra_IsEichlerOrder_exists_primeHeckeSet_eq_setOf_mul_of_isDefiniteRamifiedExactlyAt",
+    "Theorems.Thm_QuaternionAlgebra_IsEichlerOrder_exists_primeHeckeSet_eq_setOf_mul_of_isDefiniteRamifiedExactlyAt"
+  ]
+}

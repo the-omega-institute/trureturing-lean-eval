@@ -1,0 +1,134 @@
+{
+  "sha256": "85453953f036fef983de3b40a52de2abdfcec825ceb56ebe88531280bfaa4da3",
+  "exit": 0,
+  "empty_output_retry_done": false,
+  "source_sha256_after": "85453953f036fef983de3b40a52de2abdfcec825ceb56ebe88531280bfaa4da3",
+  "source_unchanged": true,
+  "olean_sha256": "2ebba9e4e6833a0bbd62bb358c2914c36d6c8529f44021ddae938445a4c0bdd5",
+  "seconds": 79.87742900000012,
+  "pid": 67188,
+  "command": [
+    "/Users/macstudio/.local/omega-shims/lean",
+    "-j1",
+    "--trust=0",
+    "-Ddebug.skipKernelTC=false",
+    "-R",
+    "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src",
+    "-o",
+    "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-build/lib/lean/Submission/Supplier/P2M/Sol/S_QuaternionAlgebra_IsEichlerOrder_exists_primeHeckeSet_eq_setOf_mul_of_isDefiniteRamifiedExactlyAt.olean",
+    "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_QuaternionAlgebra_IsEichlerOrder_exists_primeHeckeSet_eq_setOf_mul_of_isDefiniteRamifiedExactlyAt.lean"
+  ],
+  "make_wrapper_pid": 57013,
+  "make_exit": 0,
+  "make_entry_failed": false,
+  "cache_binding_valid": true,
+  "canonical_make_running_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/7a2df9b17d1da97384d7e25b-1792372200498404000.make-running.json",
+  "canonical_make_terminal_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/7a2df9b17d1da97384d7e25b-1792372200498404000.make-terminal.json",
+  "kernel_terminal_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/7a2df9b17d1da97384d7e25b-1792372200498404000.kernel/result.json",
+  "direct_dependencies": [
+    {
+      "module": "Submission.Supplier.Definitions.Def_QuaternionAlgebra_EichlerOrder",
+      "source_sha256": "616666b45c5e5c83ff980cb8b286d35eaa0580c94707feb98a30a33f2b3cf19c",
+      "object_sha256": "0331ea06b2b270a4e9fd47ef316eadfd1667dd342bd3b5f2f313850569d0cac7",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Definitions.Def_QuaternionAlgebra_ClassSetHecke",
+      "source_sha256": "adaa936c4532290c5efcf55643e44aa259009ca6a9603b23072a7ea1c05dc6a1",
+      "object_sha256": "4a49725364e0f0ca82da16de91201f18790c82e11fda52794d7acd26223ce798",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Definitions.Def_CerednikDrinfeld_ClassSetGraph",
+      "source_sha256": "bc221161ee6bf11ac19c23053d031cfaf0a9e76af2b65a3e5f2d03a9e6430add",
+      "object_sha256": "3acb394c850dfe135db8d3bf539c39a05bcc873db4242afc73f276c115bc2734",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Definitions.Def_Submodule_LocalBox",
+      "source_sha256": "ab2c6d1b38ba27a7aac5a2e001e38b01c1b230839b8dc8b077620dfc9077e9f9",
+      "object_sha256": "b75864e2f9b0bc0ff1290cb0bac083f61e17fb37287b144edc3c433f7d443bd6",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Definitions.Def_Submodule_FiniteAdeleBox",
+      "source_sha256": "a0a065269cf12ce6241d24c92ab0438408a7ef84fa645a4db82f33df4baa8be9",
+      "object_sha256": "28bf6d2c7adf8aefdc2eed5486666e98b2d24c8f84b3e5c1ff113550cffd8205",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Definitions.Def_QuaternionAlgebra_ReducedNorm",
+      "source_sha256": "d6dbd45e7408d9b8f5f0da93fae73bb8550ab4a881be89c6993a09f38f627fec",
+      "object_sha256": null,
+      "receipt_reused": false
+    },
+    {
+      "module": "Submission.Supplier.Theorems.Thm_Padic_exists_ternary_isotropic_of_norm_eq_one_of_ne_two",
+      "source_sha256": "82b183482e98703763ceea694c8a075cadb76e9d5c46d8c614e5cfca0714bff9",
+      "object_sha256": "a2a371f077fe1c32b8e553fcf9781f46fdb0dc5eeefbda39e34e57809ed3b4d6",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Theorems.Thm_Padic_exists_ternary_isotropic_iff_of_norm_eq_one_two",
+      "source_sha256": "c9b9083b5b3e05983c0256344c3c0989ff3b1af2759b511d61aa928c76bb5519",
+      "object_sha256": "8122d6314a0e8cb1a2b9da5f885ee84820d39e7182d2a3d9d7d4f505e57c4c8a",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Theorems.Thm_QuaternionAlgebra_exists_ringEquiv_tensorProduct_forall_one_tmul_of_algEquiv",
+      "source_sha256": "bf5b80edae0cc736777dd54ec63db2bc0ecc97763952d1fd4444c25f6406a972",
+      "object_sha256": "6007a30e085dc4eeb3757e0a2eb8e527bd76a8de3c907be0d6d61dadf17ad4c3",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Theorems.Thm_QuaternionAlgebra_IsMaximalOrder_mem_localBox_iff_nrd_mem_adicCompletionIntegers_of_forall_isUnit",
+      "source_sha256": "1b45db729f0de08fdca6474dc8d1cde46246542ae76c9b059700b456b62a3108",
+      "object_sha256": "e42fb712053c5af65694d4ad92f9a54267990a00aeeb5f836e08f50adc8941e1",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Theorems.Thm_QuaternionAlgebra_IsMaximalOrder_localBox_eq_localBox_of_forall_isUnit",
+      "source_sha256": "83641bf04b3bca6eda8a7a9467b0f26a59ae2b36d0c7253e36ac955f328e0fb4",
+      "object_sha256": "c979303f49eda113cfdc0efdbc55b6321ce84043970c4f93c9fcd420e3dbf00c",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Theorems.Thm_Submodule_localBox_inf",
+      "source_sha256": "e2fb874adbaeeae6064b8d2ec4284a68ad72fa241cff60b9979007fdcb00d06c",
+      "object_sha256": "d595e0b93227fcf10febb169bbf1d9ba5dcf4038493809e00ca54d69b665c090",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Theorems.Thm_Submodule_mem_finiteAdeleBox_iff_forall_finiteAdeleEvalAt_mem_localBox",
+      "source_sha256": "5c2534162bf86f90567fb2a942de214344b059f2504cc627a516852ae83f2127",
+      "object_sha256": "a07d74af5e446365dbda86b0ed565f34acf6d9ff6cb4c8787b853de59a7fd650",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Theorems.Thm_Submodule_ofFiniteIdele_one",
+      "source_sha256": "9257ed441f49acb245c7ebe73bcf9e3242cb65464c8e1737c98ac4d25c09abca",
+      "object_sha256": "eda27d9ae9069c8241c4740b41e44a5bf2c4a6f8878bea4fe95c4db9ca4aaca3",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Theorems.Thm_QuaternionAlgebra_IsOrder_mem_finiteIdeleStabilizer_iff_forall_map_finiteAdeleEvalAt_mem_localBoxUnits",
+      "source_sha256": "47b385bcaa7f7529e9a21f5ffd8796b4345500fbb98cc3d5d5ade4431b493c7e",
+      "object_sha256": "1426402a9024f3ca214bf5c9a390e7fce39a25f4e28e92844d91ec6446823e8a",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Theorems.Thm_Submodule_exists_units_finiteAdeleEvalAt_eq_of_forall_ne",
+      "source_sha256": "ac2317a08c26b52c4fb51742441feed35c069529b5905918cd47cdbe6770ad06",
+      "object_sha256": "c472031e85511ae2ecb4a0c1c0984ec4905248cb8d8e30544bf87ec662b9dc72",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.P2M.Util",
+      "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+      "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+      "receipt_reused": true
+    }
+  ],
+  "stdout": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/7a2df9b17d1da97384d7e25b-1792372200498404000.kernel/stdout.log",
+  "stderr": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/7a2df9b17d1da97384d7e25b-1792372200498404000.kernel/stderr.log"
+}
