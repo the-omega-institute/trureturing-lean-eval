@@ -1,0 +1,50 @@
+{
+  "sha256": "89f30e30f56e6590ad917e7bf270888f248b54cde778d63f6bb895fdfbfeeafb",
+  "exit": 0,
+  "empty_output_retry_done": false,
+  "source_sha256_after": "89f30e30f56e6590ad917e7bf270888f248b54cde778d63f6bb895fdfbfeeafb",
+  "source_unchanged": true,
+  "olean_sha256": "d621989f9ecaf054d35685da31b1ca133a085ea3a5adbc8afc138dc7fdad4266",
+  "seconds": 10.276211499993224,
+  "pid": 12202,
+  "command": [
+    "/Users/macstudio/.local/omega-shims/lean",
+    "-j1",
+    "--trust=0",
+    "-Ddebug.skipKernelTC=false",
+    "-R",
+    "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src",
+    "-o",
+    "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-build/lib/lean/Submission/Supplier/Theorems/Thm_AutomorphicForm_exists_isHaarMeasure_coupled_isOrbitalIntegralOn_conj_and_isTwistedOrbitalIntegralOn_sigmaConj.olean",
+    "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/Theorems/Thm_AutomorphicForm_exists_isHaarMeasure_coupled_isOrbitalIntegralOn_conj_and_isTwistedOrbitalIntegralOn_sigmaConj.lean"
+  ],
+  "make_wrapper_pid": 12184,
+  "make_exit": 0,
+  "make_entry_failed": false,
+  "cache_binding_valid": true,
+  "canonical_make_running_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/e81bfffd160d5907e89c54bb-1792414934427336000.make-running.json",
+  "canonical_make_terminal_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/e81bfffd160d5907e89c54bb-1792414934427336000.make-terminal.json",
+  "kernel_terminal_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/e81bfffd160d5907e89c54bb-1792414934427336000.kernel/result.json",
+  "direct_dependencies": [
+    {
+      "module": "Submission.Supplier.Definitions.Def_AutomorphicForm_TwistedOrbital",
+      "source_sha256": "079adbf468ab691ae4762a46993438ba707012613ada3ae8a2a9c52e71e9b128",
+      "object_sha256": "d0e0a0ee07547b8cb015f28e09e4b8e767d4fadb0b21217566ebd972aa7692ab",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.P2M.Util",
+      "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+      "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.P2M.Sol.S_AutomorphicForm_exists_isHaarMeasure_coupled_isOrbitalIntegralOn_conj_and_isTwistedOrbitalIntegralOn_sigmaConj",
+      "source_sha256": "d5b32d0dfb579cdc25da2f6c75e0c5137eb4f2a9a3b90cc80532b6ffd0280362",
+      "object_sha256": "e198ef05aa2dd10fb64094d078c6ad78f2731e7f2934027ca3e61c560406f48c",
+      "receipt_reused": true
+    }
+  ],
+  "stdout": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/e81bfffd160d5907e89c54bb-1792414934427336000.kernel/stdout.log",
+  "stderr": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/e81bfffd160d5907e89c54bb-1792414934427336000.kernel/stderr.log"
+}

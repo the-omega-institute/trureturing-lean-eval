@@ -1,0 +1,237 @@
+{
+  "at": "2026-10-19T13:01:42.199896+00:00",
+  "name": "AutomorphicForm_exists_isHaarMeasure_coupled_isOrbitalIntegralOn_conj_and_isTwistedOrbitalIntegralOn_sigmaConj",
+  "candidate": "r1",
+  "card_candidate": "r1",
+  "source_replacements": [
+    [
+      "  haveI := isTopologicalGroup_tensorGL K L A\n  haveI : \u03bc.IsMulLeftInvariant := \u27e8h\u03bc\u27e9\n",
+      "  haveI := isTopologicalGroup_tensorGL K L A\n  have : \u03bc.IsMulLeftInvariant := \u27e8h\u03bc\u27e9\n",
+      1
+    ],
+    [
+      "  letI : MeasurableSpace (Subgroup.centralizer ({\u03b3} : Set (GL (Fin 2) A))) := centralizerBorel A \u03b3\n  haveI := borelSpace_glBorelOf (L \u2297[K] A)\n  haveI := isTopologicalGroup_tensorGL K L A\n",
+      "  letI : MeasurableSpace (Subgroup.centralizer ({\u03b3} : Set (GL (Fin 2) A))) := centralizerBorel A \u03b3\n  haveI := borelSpace_glBorelOf (L \u2297[K] A)\n  have := isTopologicalGroup_tensorGL K L A\n",
+      1
+    ],
+    [
+      "  letI : MeasurableSpace (Subgroup.centralizer ({\u03b3} : Set (GL (Fin 2) A))) := centralizerBorel A \u03b3\n  haveI := borelSpace_glBorelOf (L \u2297[K] A)\n",
+      "  letI : MeasurableSpace (Subgroup.centralizer ({\u03b3} : Set (GL (Fin 2) A))) := centralizerBorel A \u03b3\n  have := borelSpace_glBorelOf (L \u2297[K] A)\n",
+      1
+    ],
+    [
+      "    twistedCentralizerBorel K L A \u03c3 (x\u207b\u00b9 * \u03b4 * sigmaGL K L A \u03c3 x)\n  letI : MeasurableSpace (Subgroup.centralizer ({\u03b3} : Set (GL (Fin 2) A))) := centralizerBorel A \u03b3\n",
+      "    twistedCentralizerBorel K L A \u03c3 (x\u207b\u00b9 * \u03b4 * sigmaGL K L A \u03c3 x)\n  let : MeasurableSpace (Subgroup.centralizer ({\u03b3} : Set (GL (Fin 2) A))) := centralizerBorel A \u03b3\n",
+      1
+    ],
+    [
+      "  letI : MeasurableSpace (twistedCentralizer K L A \u03c3 (x\u207b\u00b9 * \u03b4 * sigmaGL K L A \u03c3 x)) :=\n",
+      "  let : MeasurableSpace (twistedCentralizer K L A \u03c3 (x\u207b\u00b9 * \u03b4 * sigmaGL K L A \u03c3 x)) :=\n",
+      1
+    ],
+    [
+      "  letI : MeasurableSpace (twistedCentralizer K L A \u03c3 \u03b4) := twistedCentralizerBorel K L A \u03c3 \u03b4\n",
+      "  let : MeasurableSpace (twistedCentralizer K L A \u03c3 \u03b4) := twistedCentralizerBorel K L A \u03c3 \u03b4\n",
+      1
+    ],
+    [
+      "  letI : MeasurableSpace (GL (Fin 2) (L \u2297[K] A)) := glBorelOf (L \u2297[K] A)\n",
+      "  let : MeasurableSpace (GL (Fin 2) (L \u2297[K] A)) := glBorelOf (L \u2297[K] A)\n",
+      1
+    ],
+    [
+      "  haveI : BorelSpace (twistedCentralizer K L A \u03c3 \u03b4) := \u27e8rfl\u27e9\n  haveI := isTopologicalGroup_tensorGL K L A\n",
+      "  haveI : BorelSpace (twistedCentralizer K L A \u03c3 \u03b4) := \u27e8rfl\u27e9\n  have := isTopologicalGroup_tensorGL K L A\n",
+      1
+    ],
+    [
+      "  haveI : BorelSpace (twistedCentralizer K L A \u03c3 \u03b4) := \u27e8rfl\u27e9\n",
+      "  have : BorelSpace (twistedCentralizer K L A \u03c3 \u03b4) := \u27e8rfl\u27e9\n",
+      1
+    ],
+    [
+      "  letI := twistedCentralizerBorel K L A \u03c3 \u03b4\n  haveI := borelSpace_glBorelOf (L \u2297[K] A)\n",
+      "  letI := twistedCentralizerBorel K L A \u03c3 \u03b4\n  have := borelSpace_glBorelOf (L \u2297[K] A)\n",
+      1
+    ],
+    [
+      "  letI := glBorelOf (L \u2297[K] A)\n  letI := twistedCentralizerBorel K L A \u03c3 \u03b4\n",
+      "  letI := glBorelOf (L \u2297[K] A)\n  let := twistedCentralizerBorel K L A \u03c3 \u03b4\n",
+      1
+    ],
+    [
+      "      fun t : twistedCentralizer K L A \u03c3 \u03b4 => x\u207b\u00b9 * (t : GL (Fin 2) (L \u2297[K] A)) * x := by\n  letI := glBorelOf (L \u2297[K] A)\n",
+      "      fun t : twistedCentralizer K L A \u03c3 \u03b4 => x\u207b\u00b9 * (t : GL (Fin 2) (L \u2297[K] A)) * x := by\n  let := glBorelOf (L \u2297[K] A)\n",
+      1
+    ],
+    [
+      "  letI := centralizerBorel A (x\u207b\u00b9 * \u03b3 * x)\n  letI := twistedCentralizerBorel K L A \u03c3 \u03b4\n",
+      "  letI := centralizerBorel A (x\u207b\u00b9 * \u03b3 * x)\n  let := twistedCentralizerBorel K L A \u03c3 \u03b4\n",
+      1
+    ],
+    [
+      "  letI := glBorelOf (L \u2297[K] A)\n  letI := centralizerBorel A \u03b3\n  letI := centralizerBorel A (x\u207b\u00b9 * \u03b3 * x)\n",
+      "  letI := glBorelOf (L \u2297[K] A)\n  letI := centralizerBorel A \u03b3\n  let := centralizerBorel A (x\u207b\u00b9 * \u03b3 * x)\n",
+      1
+    ],
+    [
+      "  letI := glBorelOf (L \u2297[K] A)\n  letI := centralizerBorel A \u03b3\n",
+      "  letI := glBorelOf (L \u2297[K] A)\n  let := centralizerBorel A \u03b3\n",
+      1
+    ],
+    [
+      "      (@Measure.map _ _ (centralizerBorel A \u03b3) (centralizerBorel A (x\u207b\u00b9 * \u03b3 * x)) (conjFn A \u03b3 x) \u03c4) \u03c4' := by\n  letI := glBorelOf (L \u2297[K] A)\n",
+      "      (@Measure.map _ _ (centralizerBorel A \u03b3) (centralizerBorel A (x\u207b\u00b9 * \u03b3 * x)) (conjFn A \u03b3 x) \u03c4) \u03c4' := by\n  let := glBorelOf (L \u2297[K] A)\n",
+      1
+    ],
+    [
+      "  haveI : IsTopologicalGroup (GL (Fin 2) A) := inferInstance\n  haveI : \u03bc.IsMulLeftInvariant := \u27e8h\u03bc\u27e9\n",
+      "  haveI : IsTopologicalGroup (GL (Fin 2) A) := inferInstance\n  have : \u03bc.IsMulLeftInvariant := \u27e8h\u03bc\u27e9\n",
+      1
+    ],
+    [
+      "  haveI := borelSpace_glBorelOf A\n  haveI : IsTopologicalGroup (GL (Fin 2) A) := inferInstance\n",
+      "  haveI := borelSpace_glBorelOf A\n  have : IsTopologicalGroup (GL (Fin 2) A) := inferInstance\n",
+      1
+    ],
+    [
+      "  haveI := borelSpace_glBorelOf A\n",
+      "  have := borelSpace_glBorelOf A\n",
+      1
+    ],
+    [
+      "  letI : MeasurableSpace (Subgroup.centralizer ({x\u207b\u00b9 * \u03b3 * x} : Set (GL (Fin 2) A))) :=\n",
+      "  let : MeasurableSpace (Subgroup.centralizer ({x\u207b\u00b9 * \u03b3 * x} : Set (GL (Fin 2) A))) :=\n",
+      1
+    ],
+    [
+      "  letI : MeasurableSpace (GL (Fin 2) A) := glBorelOf A\n  letI : MeasurableSpace (Subgroup.centralizer ({\u03b3} : Set (GL (Fin 2) A))) := centralizerBorel A \u03b3\n",
+      "  letI : MeasurableSpace (GL (Fin 2) A) := glBorelOf A\n  let : MeasurableSpace (Subgroup.centralizer ({\u03b3} : Set (GL (Fin 2) A))) := centralizerBorel A \u03b3\n",
+      1
+    ],
+    [
+      "  letI : MeasurableSpace (GL (Fin 2) A) := glBorelOf A\n",
+      "  let : MeasurableSpace (GL (Fin 2) A) := glBorelOf A\n",
+      1
+    ],
+    [
+      "  haveI := h\u03c4\n",
+      "  have := h\u03c4\n",
+      1
+    ],
+    [
+      "  haveI : BorelSpace (Subgroup.centralizer ({x\u207b\u00b9 * \u03b3 * x} : Set (GL (Fin 2) A))) := \u27e8rfl\u27e9\n  haveI : IsTopologicalGroup (GL (Fin 2) A) := inferInstance\n",
+      "  haveI : BorelSpace (Subgroup.centralizer ({x\u207b\u00b9 * \u03b3 * x} : Set (GL (Fin 2) A))) := \u27e8rfl\u27e9\n  have : IsTopologicalGroup (GL (Fin 2) A) := inferInstance\n",
+      1
+    ],
+    [
+      "      (@Measure.map _ _ (centralizerBorel A \u03b3) (centralizerBorel A (x\u207b\u00b9 * \u03b3 * x)) (conjFn A \u03b3 x) \u03c4) := by\n  letI := centralizerBorel A \u03b3\n  letI := centralizerBorel A (x\u207b\u00b9 * \u03b3 * x)\n  haveI : BorelSpace (Subgroup.centralizer ({\u03b3} : Set (GL (Fin 2) A))) := \u27e8rfl\u27e9\n  haveI : BorelSpace (Subgroup.centralizer ({x\u207b\u00b9 * \u03b3 * x} : Set (GL (Fin 2) A))) := \u27e8rfl\u27e9\n",
+      "      (@Measure.map _ _ (centralizerBorel A \u03b3) (centralizerBorel A (x\u207b\u00b9 * \u03b3 * x)) (conjFn A \u03b3 x) \u03c4) := by\n  letI := centralizerBorel A \u03b3\n  letI := centralizerBorel A (x\u207b\u00b9 * \u03b3 * x)\n  haveI : BorelSpace (Subgroup.centralizer ({\u03b3} : Set (GL (Fin 2) A))) := \u27e8rfl\u27e9\n  have : BorelSpace (Subgroup.centralizer ({x\u207b\u00b9 * \u03b3 * x} : Set (GL (Fin 2) A))) := \u27e8rfl\u27e9\n",
+      1
+    ],
+    [
+      "      (@Measure.map _ _ (centralizerBorel A \u03b3) (centralizerBorel A (x\u207b\u00b9 * \u03b3 * x)) (conjFn A \u03b3 x) \u03c4) := by\n  letI := centralizerBorel A \u03b3\n  letI := centralizerBorel A (x\u207b\u00b9 * \u03b3 * x)\n  haveI : BorelSpace (Subgroup.centralizer ({\u03b3} : Set (GL (Fin 2) A))) := \u27e8rfl\u27e9\n",
+      "      (@Measure.map _ _ (centralizerBorel A \u03b3) (centralizerBorel A (x\u207b\u00b9 * \u03b3 * x)) (conjFn A \u03b3 x) \u03c4) := by\n  letI := centralizerBorel A \u03b3\n  letI := centralizerBorel A (x\u207b\u00b9 * \u03b3 * x)\n  have : BorelSpace (Subgroup.centralizer ({\u03b3} : Set (GL (Fin 2) A))) := \u27e8rfl\u27e9\n",
+      1
+    ],
+    [
+      "      (@Measure.map _ _ (centralizerBorel A \u03b3) (centralizerBorel A (x\u207b\u00b9 * \u03b3 * x)) (conjFn A \u03b3 x) \u03c4) := by\n  letI := centralizerBorel A \u03b3\n  letI := centralizerBorel A (x\u207b\u00b9 * \u03b3 * x)\n",
+      "      (@Measure.map _ _ (centralizerBorel A \u03b3) (centralizerBorel A (x\u207b\u00b9 * \u03b3 * x)) (conjFn A \u03b3 x) \u03c4) := by\n  letI := centralizerBorel A \u03b3\n  let := centralizerBorel A (x\u207b\u00b9 * \u03b3 * x)\n",
+      1
+    ],
+    [
+      "      (@Measure.map _ _ (centralizerBorel A \u03b3) (centralizerBorel A (x\u207b\u00b9 * \u03b3 * x)) (conjFn A \u03b3 x) \u03c4) := by\n  letI := centralizerBorel A \u03b3\n",
+      "      (@Measure.map _ _ (centralizerBorel A \u03b3) (centralizerBorel A (x\u207b\u00b9 * \u03b3 * x)) (conjFn A \u03b3 x) \u03c4) := by\n  let := centralizerBorel A \u03b3\n",
+      1
+    ],
+    [
+      "    @MeasurableEmbedding _ _ (centralizerBorel A \u03b3) (centralizerBorel A (x\u207b\u00b9 * \u03b3 * x)) (conjFn A \u03b3 x) := by\n  letI := centralizerBorel A \u03b3\n  letI := centralizerBorel A (x\u207b\u00b9 * \u03b3 * x)\n",
+      "    @MeasurableEmbedding _ _ (centralizerBorel A \u03b3) (centralizerBorel A (x\u207b\u00b9 * \u03b3 * x)) (conjFn A \u03b3 x) := by\n  letI := centralizerBorel A \u03b3\n  let := centralizerBorel A (x\u207b\u00b9 * \u03b3 * x)\n",
+      1
+    ],
+    [
+      "    @MeasurableEmbedding _ _ (centralizerBorel A \u03b3) (centralizerBorel A (x\u207b\u00b9 * \u03b3 * x)) (conjFn A \u03b3 x) := by\n  letI := centralizerBorel A \u03b3\n",
+      "    @MeasurableEmbedding _ _ (centralizerBorel A \u03b3) (centralizerBorel A (x\u207b\u00b9 * \u03b3 * x)) (conjFn A \u03b3 x) := by\n  let := centralizerBorel A \u03b3\n",
+      1
+    ],
+    [
+      "private theorem continuous_conjEquiv_symm (\u03b3 x : GL (Fin 2) A) : Continuous (conjEquiv A \u03b3 x).symm := by\n  haveI : IsTopologicalGroup (GL (Fin 2) A) := inferInstance\n",
+      "private theorem continuous_conjEquiv_symm (\u03b3 x : GL (Fin 2) A) : Continuous (conjEquiv A \u03b3 x).symm := by\n  have : IsTopologicalGroup (GL (Fin 2) A) := inferInstance\n",
+      1
+    ],
+    [
+      "private theorem continuous_conjFn (\u03b3 x : GL (Fin 2) A) : Continuous (conjFn A \u03b3 x) := by\n  haveI : IsTopologicalGroup (GL (Fin 2) A) := inferInstance\n",
+      "private theorem continuous_conjFn (\u03b3 x : GL (Fin 2) A) : Continuous (conjFn A \u03b3 x) := by\n  have : IsTopologicalGroup (GL (Fin 2) A) := inferInstance\n",
+      1
+    ],
+    [
+      "    rw [Measure.map_of_not_aemeasurable hg, Measure.map_of_not_aemeasurable hge]",
+      "    by_cases h\u03bc : \u03bc = 0\n    \u00b7 subst \u03bc\n      simp\n    \u00b7 have he\u03bc : \u03bc.map e \u2260 0 := fun h => h\u03bc ((Measure.map_eq_zero_iff e.measurable.aemeasurable).1 h)\n      rw [Measure.map_of_not_aemeasurable_of_ne_zero hg he\u03bc,\n        Measure.map_of_not_aemeasurable_of_ne_zero hge h\u03bc]",
+      1
+    ],
+    [
+      "private theorem map_map_equiv_outer (f : \u03b1 \u2192 \u03b2) (e : \u03b2 \u2243\u1d50 \u03b3) (\u03bc : Measure \u03b1) :\n    (\u03bc.map f).map e = \u03bc.map (e \u2218 f) := by\n  by_cases hf : AEMeasurable f \u03bc\n  \u00b7 exact AEMeasurable.map_map_of_aemeasurable e.measurable.aemeasurable hf\n  \u00b7 have hef : \u00ac AEMeasurable (e \u2218 f) \u03bc := fun h => hf (e.measurableEmbedding.aemeasurable_comp_iff.1 h)\n    rw [Measure.map_of_not_aemeasurable hf, Measure.map_of_not_aemeasurable hef, Measure.map_zero]",
+      "private theorem map_map_equiv_outer (f : \u03b1 \u2192 \u03b2) (e : \u03b2 \u2243\u1d50 \u03b3) (\u03bc : Measure \u03b1)\n    (hf : Measurable f) :\n    (\u03bc.map f).map e = \u03bc.map (e \u2218 f) := by\n  exact Measure.map_map e.measurable hf",
+      1
+    ],
+    [
+      "  let := twistedCentralizerBorel K L A \u03c3 \u03b4\n  unfold Coupled at hC \u22a2",
+      "  let := twistedCentralizerBorel K L A \u03c3 \u03b4\n  have : BorelSpace (GL (Fin 2) (L \u2297[K] A)) := borelSpace_glBorelOf _\n  have : BorelSpace (twistedCentralizer K L A \u03c3 \u03b4) := \u27e8rfl\u27e9\n  have : BorelSpace (Subgroup.centralizer ({\u03b3} : Set (GL (Fin 2) A))) := \u27e8rfl\u27e9\n  have : IsTopologicalGroup (GL (Fin 2) (L \u2297[K] A)) := isTopologicalGroup_tensorGL K L A\n  have h\u03b9c : Continuous (toTensorGL K L A) := by\n    refine Continuous.units_map _ ?_\n    change Continuous fun M : Matrix (Fin 2) (Fin 2) A =>\n      M.map ((Algebra.TensorProduct.includeRight : A \u2192\u2090[K] L \u2297[K] A).toRingHom)\n    have hincl : Continuous (Algebra.TensorProduct.includeRight : A \u2192\u2090[K] L \u2297[K] A) := by\n      have h : Continuous fun a : A => a \u2022 (1 : L \u2297[K] A) :=\n        continuous_id.fun_smul continuous_const\n      refine h.congr fun a => ?_\n      rw [\u2190 Algebra.algebraMap_eq_smul_one]\n      rfl\n    exact continuous_id.matrix_map hincl\n  unfold Coupled at hC \u22a2",
+      1
+    ],
+    [
+      "      (conjBig K L A (toTensorGL K L A x)) \u03c4',",
+      "      (conjBig K L A (toTensorGL K L A x)) \u03c4'\n      ((continuous_const.mul continuous_subtype_val).mul continuous_const).measurable,",
+      1
+    ],
+    [
+      "      (conjBig K L A (toTensorGL K L A x)) \u03c4]",
+      "      (conjBig K L A (toTensorGL K L A x)) \u03c4\n      (h\u03b9c.comp continuous_subtype_val).measurable]",
+      1
+    ]
+  ],
+  "card_replacements": [],
+  "baseline_byte_identical_to_pinned_supplier": true,
+  "baseline_by_role_byte_identical_to_pinned_supplier": {
+    "source": true,
+    "card": true
+  },
+  "prior_source_changes_preserved": "",
+  "prior_card_changes_preserved": "",
+  "pinned_supplier_source_and_card_preserved": true,
+  "public_card_statement_literal_preserved": true,
+  "solution_statement_literal_preserved": true,
+  "all_public_declaration_headers_literal_unchanged": true,
+  "verification_pending": false,
+  "installed": true,
+  "no_linter_suppression_added": true,
+  "complete_original_proof_preserved": true,
+  "full_original_statement_and_hypotheses_preserved": true,
+  "max_active_flt_jobs": 1,
+  "lean_threads": 1,
+  "original_actual_errors": 2,
+  "original_actual_warnings": 32,
+  "library_search": "No exact orbital-transport target in trureturing. D5/S3/Arith/Lattices/Klartag/Gaussian/GOETail2.lean:50 uses map_of_not_aemeasurable_of_ne_zero. Pinned Mathlib MeasureTheory/Measure/Map.lean:91-105 defines nonmeasurable nonzero pushforwards as arbitrary Dirac measures, :125 provides their value, :181 map_eq_zero_iff, and :208 map_map for measurable functions. Supplier sibling S_AutomorphicForm_exists_isNormConjugator_and_coupled_smul_of_isSigmaConjugate_scalar_of_finrank_eq_two.lean:224-237 gives continuity of includeRight and toTensorGL with exactly the current hypotheses.",
+  "change": "Retain the full original public solution and card statements, every public assumption and the complete orbital-conjugation construction and integral proofs. Update the private inner-equivalence helper for the current Dirac convention, handling zero and nonzero measures explicitly. The private outer-equivalence helper is no longer valid for arbitrary nonmeasurable maps under this convention, so require measurable input in this private helper only and prove that obligation at both existing call sites from continuity, including a complete local tensor-inclusion continuity argument. No public assumptions, conclusion, imports or original module graph are changed. Update only the 32 actually warned proof-local bindings and append recursive-axiom queries for the exact public source/card.",
+  "actual_warned_style_tokens": 32,
+  "actual_warned_style_lines": 32,
+  "private_helper_signature_change": {
+    "name": "map_map_equiv_outer",
+    "added_assumption": "Measurable f",
+    "all_call_site_obligations_proved_from_original_public_hypotheses": true
+  },
+  "full_original_complete": false,
+  "official_new_solve_credit": 0,
+  "stale_terminal_state_entries_excluded": [],
+  "active_import_closure_excluded": [
+    "Submission.Supplier.P2M.Sol.S_AutomorphicForm_twistedCentralizer_eq_map_centralizer_of_isNormConjugator_one"
+  ],
+  "active_transitive_import_closure_size": 56,
+  "actual_live_descendant_sources": [],
+  "all_four_canonical_adapted_source_card_modules_excluded": [
+    "P2M.Sol.S_AutomorphicForm_exists_isHaarMeasure_coupled_isOrbitalIntegralOn_conj_and_isTwistedOrbitalIntegralOn_sigmaConj",
+    "Submission.Supplier.P2M.Sol.S_AutomorphicForm_exists_isHaarMeasure_coupled_isOrbitalIntegralOn_conj_and_isTwistedOrbitalIntegralOn_sigmaConj",
+    "Submission.Supplier.Theorems.Thm_AutomorphicForm_exists_isHaarMeasure_coupled_isOrbitalIntegralOn_conj_and_isTwistedOrbitalIntegralOn_sigmaConj",
+    "Theorems.Thm_AutomorphicForm_exists_isHaarMeasure_coupled_isOrbitalIntegralOn_conj_and_isTwistedOrbitalIntegralOn_sigmaConj"
+  ]
+}
