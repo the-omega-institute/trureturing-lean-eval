@@ -1,0 +1,53 @@
+{
+  "at": "2026-10-19T09:28:03.432804+00:00",
+  "name": "WeierstrassProjModel_kw_bc_baseChangeIso",
+  "candidate": "r2",
+  "card_candidate": "r1",
+  "source_replacements": [
+    [
+      "      \u2208 Ideal.span {Ideal.Quotient.mk (projModelHomogeneousIdealCR V).toIdeal\n          (X 2 : MvPolynomial (Fin 3) R)} := by",
+      "      \u2208 Ideal.span {(Ideal.Quotient.mk (projModelHomogeneousIdealCR V).toIdeal\n          (X 2 : MvPolynomial (Fin 3) R))} := by",
+      1
+    ],
+    [
+      "    \u00b7 rw [h0, hzero, MvPolynomial.coeff_zero]",
+      "    \u00b7 rw [h0, hzero]\n      rfl",
+      1
+    ]
+  ],
+  "card_replacements": [],
+  "baseline_byte_identical_to_pinned_supplier": true,
+  "pinned_supplier_source_and_card_preserved": true,
+  "verification_pending": false,
+  "installed": true,
+  "no_linter_suppression_added": true,
+  "complete_original_proof_preserved": true,
+  "full_original_statement_and_hypotheses_preserved": true,
+  "max_active_flt_jobs": 1,
+  "lean_threads": 1,
+  "original_terminal_failure_observed": true,
+  "repair_trigger": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/official-layout/terminal-proof-repairs/20261017-projective-smooth-singleton-parser/verified-record.json",
+  "original_source_lines": 524,
+  "change": "Parenthesize the entire element of the same internal singleton-set expression that failed the pinned Lean parser in projective smoothness and base-change pullback. This notation-only repair already passed full make/kernel verification in projective smoothness. Retain the complete original proof, all public statements and every hypothesis. Source/card verification remains pending in the same natural one-job queue;no new compiler or reordered work.",
+  "full_original_complete": false,
+  "official_new_solve_credit": 0,
+  "active_import_closure_excluded": [],
+  "active_transitive_import_closure_size": 0,
+  "actual_live_descendant_sources": [],
+  "all_four_canonical_adapted_source_card_modules_excluded": [
+    "P2M.Sol.S_WeierstrassProjModel_kw_bc_baseChangeIso",
+    "Submission.Supplier.P2M.Sol.S_WeierstrassProjModel_kw_bc_baseChangeIso",
+    "Submission.Supplier.Theorems.Thm_WeierstrassProjModel_kw_bc_baseChangeIso",
+    "Theorems.Thm_WeierstrassProjModel_kw_bc_baseChangeIso"
+  ],
+  "latest_actual_failure": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/official-layout/terminal-proof-repairs/20261017-projective-base-change-iso-singleton-parser/r1-actual-source-failure",
+  "latest_change": "After the original homogeneous degree-zero rewrites, close evaluation of the zero coefficient function by definitional equality. Remove the deprecated coefficient-zero alias that left 0 0 = 0. Keep every theorem statement, hypothesis, and the complete projective base-change argument, and the existing r1 singleton parser repair. Await original single queue.",
+  "stale_terminal_state_entries_excluded": [
+    {
+      "module": "Submission.Supplier.Theorems.Thm_WeierstrassProjModel_nontrivial_chartTensor_of_isElliptic",
+      "wrapper_pid": 61393,
+      "make_exit": 0,
+      "terminal": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/83bc042b278cdeca3bfc4c9a-1792402072131153000.make-terminal.json"
+    }
+  ]
+}
