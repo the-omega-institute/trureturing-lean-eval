@@ -1,0 +1,51 @@
+{
+  "at": "2026-10-19T10:07:29.616041+00:00",
+  "name": "groupCohomology_exists_linearEquiv_H1_of_forall_iff_of_isUnit_index",
+  "candidate": "r1",
+  "card_candidate": "r1",
+  "source_replacements": [
+    [
+      "    simp only [H1InfRes_g] at h__af\n",
+      "",
+      1
+    ]
+  ],
+  "card_replacements": [],
+  "baseline_byte_identical_to_pinned_supplier": true,
+  "prior_source_changes_preserved": [],
+  "prior_card_changes_preserved": [],
+  "public_card_statement_literal_preserved": true,
+  "solution_statement_literal_preserved": true,
+  "pinned_supplier_source_and_card_preserved": true,
+  "verification_pending": false,
+  "installed": true,
+  "no_linter_suppression_added": true,
+  "complete_original_proof_preserved": true,
+  "full_original_statement_and_hypotheses_preserved": true,
+  "max_active_flt_jobs": 1,
+  "lean_threads": 1,
+  "original_actual_errors": 1,
+  "original_actual_warnings": 0,
+  "original_source_lines": 71,
+  "library_search": "No exact theorem or obsolete H1InfRes_g match in current trureturing D5/Reg. Pinned Mathlib RepresentationTheory/Homological/GroupCohomology/Functoriality.lean:377-387 defines H1InfRes as HInfRes A S 1 with g := map S.subtype (identity) 1. Thus the existing H1\u03c0_comp_map_apply equality is definitionally the required restriction equality.",
+  "change": "Remove only the obsolete H1InfRes_g rewrite from the original h__af block; retain exact h__af and the complete restriction/injectivity/surjectivity proof. Canonical source and card were compared to supplier originals and both are byte-identical before this edit. Append exact recursive-axiom queries and await the unchanged single queue.",
+  "full_original_complete": false,
+  "official_new_solve_credit": 0,
+  "stale_terminal_state_entries_excluded": [],
+  "active_import_closure_excluded": [
+    "Submission.Supplier.Theorems.Thm_AlgebraicCurve_Pic0_exists_injective_addMonoidHom_torsion_apply_eq_inv_smul_D"
+  ],
+  "active_transitive_import_closure_size": 230,
+  "actual_live_descendant_sources": [
+    {
+      "pid": 85582,
+      "source": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/Theorems/Thm_AlgebraicCurve_Pic0_exists_injective_addMonoidHom_torsion_apply_eq_inv_smul_D.lean"
+    }
+  ],
+  "all_four_canonical_adapted_source_card_modules_excluded": [
+    "P2M.Sol.S_groupCohomology_exists_linearEquiv_H1_of_forall_iff_of_isUnit_index",
+    "Submission.Supplier.P2M.Sol.S_groupCohomology_exists_linearEquiv_H1_of_forall_iff_of_isUnit_index",
+    "Submission.Supplier.Theorems.Thm_groupCohomology_exists_linearEquiv_H1_of_forall_iff_of_isUnit_index",
+    "Theorems.Thm_groupCohomology_exists_linearEquiv_H1_of_forall_iff_of_isUnit_index"
+  ]
+}
