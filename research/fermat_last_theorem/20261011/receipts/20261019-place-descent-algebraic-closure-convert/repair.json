@@ -1,0 +1,160 @@
+{
+  "at": "2026-10-19T13:34:54.800711+00:00",
+  "name": "AlgebraicCurve_Place_exists_intermediateField_finiteDimensional_forall_smul_eq_of_descent",
+  "candidate": "r2",
+  "card_candidate": "r1",
+  "source_replacements": [
+    [
+      "  haveI : Algebra.IsIntegral F Fbar := AlgebraicCurve.C3Tors.Core.isIntegral_of_closure F Fbar toBar halg closure_toBar\n",
+      "  have : Algebra.IsIntegral F Fbar := AlgebraicCurve.C3Tors.Core.isIntegral_of_closure F Fbar toBar halg closure_toBar\n",
+      1
+    ],
+    [
+      "  haveI : IsScalarTower \u211a F Fbar := IsScalarTower.of_algebraMap_eq (fun r => by\n",
+      "  have : IsScalarTower \u211a F Fbar := IsScalarTower.of_algebraMap_eq (fun r => by\n",
+      1
+    ],
+    [
+      "  haveI : IsScalarTower \u211a (AlgebraicClosure \u211a) Fbar := IsScalarTower.of_algebraMap_eq (fun _ => rfl)\n",
+      "  have : IsScalarTower \u211a (AlgebraicClosure \u211a) Fbar := IsScalarTower.of_algebraMap_eq (fun _ => rfl)\n",
+      1
+    ],
+    [
+      "  letI algQ : Algebra \u211a Fbar := ((algebraMap (AlgebraicClosure \u211a) Fbar).comp (algebraMap \u211a (AlgebraicClosure \u211a))).toAlgebra\n",
+      "  let algQ : Algebra \u211a Fbar := ((algebraMap (AlgebraicClosure \u211a) Fbar).comp (algebraMap \u211a (AlgebraicClosure \u211a))).toAlgebra\n",
+      1
+    ],
+    [
+      "  letI algF : Algebra F Fbar := toBar.toAlgebra\n",
+      "  let algF : Algebra F Fbar := toBar.toAlgebra\n",
+      1
+    ],
+    [
+      "  haveI : IsLocalHom \u03c1 := by\n",
+      "  have : IsLocalHom \u03c1 := by\n",
+      1
+    ],
+    [
+      "  haveI h\u03b9loc : IsLocalHom \u03b9 := Place.instIsLocalHomRestrictInclusion (F := F) (overQ Fbar P)\n",
+      "  have h\u03b9loc : IsLocalHom \u03b9 := Place.instIsLocalHomRestrictInclusion (F := F) (overQ Fbar P)\n",
+      1
+    ],
+    [
+      "  haveI : Module.Finite (AlgebraicClosure \u211a) P.ResidueField := IsCurveOver.finiteResidue P\n",
+      "  have : Module.Finite (AlgebraicClosure \u211a) P.ResidueField := IsCurveOver.finiteResidue P\n",
+      1
+    ],
+    [
+      "  haveI : Module.Finite \u211a v.ResidueField := IsCurveOver.finiteResidue v\n",
+      "  have : Module.Finite \u211a v.ResidueField := IsCurveOver.finiteResidue v\n",
+      1
+    ],
+    [
+      "    have hAlg : Algebra.IsAlgebraic \u211a (AlgebraicClosure \u211a) := by\n      convert AlgebraicClosure.isAlgebraic \u211a\n      rfl\n      rfl",
+      "    have hAlg : Algebra.IsAlgebraic \u211a (AlgebraicClosure \u211a) :=\n      AlgebraicClosure.isAlgebraic \u211a",
+      1
+    ],
+    [
+      "theorem algebraMap_eq_of_sub_mem_nonunits (P : Place K F) {y : F} (hy : y \u2208 P.toValuationSubring)",
+      "theorem algebraMap_eq_of_sub_mem_nonunits (P : Place K F) {y : F} (_hy : y \u2208 P.toValuationSubring)",
+      1
+    ],
+    [
+      "variable (F : Type) [Field F] [Algebra \u211a F] [IsCurveOver \u211a F] [Algebra.EssFiniteType \u211a F]\n  (Fbar : Type) [Field Fbar] [Algebra (AlgebraicClosure \u211a) Fbar]\n  [IsCurveOver (AlgebraicClosure \u211a) Fbar] [Algebra.EssFiniteType (AlgebraicClosure \u211a) Fbar]",
+      "variable (F : Type) [Field F] [Algebra \u211a F] [hFcurve : IsCurveOver \u211a F] [hFess : Algebra.EssFiniteType \u211a F]\n  (Fbar : Type) [Field Fbar] [Algebra (AlgebraicClosure \u211a) Fbar]\n  [hFbarcurve : IsCurveOver (AlgebraicClosure \u211a) Fbar] [hFbaress : Algebra.EssFiniteType (AlgebraicClosure \u211a) Fbar]",
+      1
+    ],
+    [
+      "    (overQ Fbar P).toValuationSubring = P.toValuationSubring := rfl",
+      "    (overQ Fbar P).toValuationSubring = P.toValuationSubring := by\n  cases hFbarcurve\n  cases hFbaress\n  rfl",
+      1
+    ],
+    [
+      "    (g \u2022 P).toValuationSubring.comap (algebraMap F Fbar) = ((overQ Fbar P).restrict F).toValuationSubring := by\n  rw",
+      "    (g \u2022 P).toValuationSubring.comap (algebraMap F Fbar) = ((overQ Fbar P).restrict F).toValuationSubring := by\n  cases hFcurve\n  cases hFess\n  rw",
+      1
+    ],
+    [
+      "          algebraMap F Fbar f - algebraMap (AlgebraicClosure \u211a) Fbar a \u2208 P.toValuationSubring.nonunits := by\n  classical",
+      "          algebraMap F Fbar f - algebraMap (AlgebraicClosure \u211a) Fbar a \u2208 P.toValuationSubring.nonunits := by\n  cases hFess\n  cases hFbaress\n  classical",
+      1
+    ],
+    [
+      "    Algebra.IsIntegral F Fbar := by\n  have hrange",
+      "    Algebra.IsIntegral F Fbar := by\n  cases hFcurve\n  cases hFess\n  cases hFbarcurve\n  cases hFbaress\n  have hrange",
+      1
+    ]
+  ],
+  "card_replacements": [],
+  "baseline_byte_identical_to_pinned_supplier": true,
+  "baseline_by_role_byte_identical_to_pinned_supplier": {
+    "source": true,
+    "card": true
+  },
+  "prior_source_changes_preserved": "",
+  "prior_card_changes_preserved": "",
+  "pinned_supplier_source_and_card_preserved": true,
+  "public_card_statement_literal_preserved": true,
+  "solution_statement_literal_preserved": true,
+  "all_public_declaration_headers_literal_unchanged": false,
+  "all_public_declaration_headers_preserved_modulo_one_unused_binder_name": true,
+  "all_original_section_hypotheses_retained": true,
+  "verification_pending": false,
+  "installed": true,
+  "no_linter_suppression_added": true,
+  "complete_original_proof_preserved": true,
+  "full_original_statement_and_hypotheses_preserved": true,
+  "max_active_flt_jobs": 1,
+  "lean_threads": 1,
+  "original_actual_errors": 1,
+  "original_actual_warnings": 13,
+  "library_search": "No exact finite intermediate-field descent target in trureturing. Pinned Mathlib FieldTheory/IsAlgClosed/AlgebraicClosure.lean:179 directly supplies AlgebraicClosure.isAlgebraic. The actual conversion already closed all goals before both old rfl tactics. IsCurveOver is a Prop-valued class in Definitions/Def_AlgebraicCurve_IsCurveOver.lean:15; Algebra.EssFiniteType is a Prop-valued class in Mathlib RingTheory/EssentialFiniteness.lean:40. Reuse the existing kernel-verified treatment of retained unused Prop-valued section assumptions by named cases, with no omitted hypotheses or linter settings.",
+  "change": "Preserve the complete residue-field construction of a finite intermediate field and the Galois fixing argument, exact source solution/card statements, and every original hypothesis. Use the existing algebraic-closure algebraicity theorem directly, removing the already completed conversion and its two unreachable reflexivity steps. Retain all original section assumptions, name them only in the existing Frame variable block and eliminate the actually warned instances in the three affected helper proofs. Rename the one unused helper membership binder hy to _hy, without removing or changing its type. Clean the nine actual local binding warnings; append exact recursive-axiom queries and await the unchanged single queue.",
+  "actual_warned_style_tokens": 9,
+  "actual_warned_style_lines": 9,
+  "unused_helper_binder_rename": {
+    "theorem": "algebraMap_eq_of_sub_mem_nonunits",
+    "before": "hy",
+    "after": "_hy",
+    "hypothesis_type_literal_unchanged": true
+  },
+  "full_original_complete": false,
+  "official_new_solve_credit": 0,
+  "stale_terminal_state_entries_excluded": [],
+  "active_import_closure_excluded": [
+    "Submission.Supplier.Theorems.Thm_AlgebraicCurve_exists_constantFieldExtension_of_finite"
+  ],
+  "active_transitive_import_closure_size": 143,
+  "actual_live_descendant_sources": [],
+  "all_four_canonical_adapted_source_card_modules_excluded": [
+    "P2M.Sol.S_AlgebraicCurve_Place_exists_intermediateField_finiteDimensional_forall_smul_eq_of_descent",
+    "Submission.Supplier.P2M.Sol.S_AlgebraicCurve_Place_exists_intermediateField_finiteDimensional_forall_smul_eq_of_descent",
+    "Submission.Supplier.Theorems.Thm_AlgebraicCurve_Place_exists_intermediateField_finiteDimensional_forall_smul_eq_of_descent",
+    "Theorems.Thm_AlgebraicCurve_Place_exists_intermediateField_finiteDimensional_forall_smul_eq_of_descent"
+  ],
+  "latest_source_warning_fix": {
+    "at": "2026-10-19T13:39:22.180172+00:00",
+    "actual_source_r1_make_kernel_exit": 0,
+    "actual_source_r1_warnings": 1,
+    "change": "The completed algebraicity proof now reveals the four preexisting unused section assumptions in isIntegral_of_closure. Retain every assumption and eliminate those Prop-valued instances before the original proof, following the already verified local treatment.",
+    "guard": {
+      "stale_terminal_state_entries_excluded": [],
+      "active_import_closure_excluded": [
+        "Submission.Supplier.Theorems.Thm_AlgebraicCurve_Place_sum_fiber_ord_eq_finrank"
+      ],
+      "active_transitive_import_closure_size": 70,
+      "actual_live_descendant_sources": [
+        {
+          "pid": 21764,
+          "source": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/Theorems/Thm_AlgebraicCurve_Place_sum_fiber_ord_eq_finrank.lean"
+        }
+      ],
+      "all_four_canonical_adapted_source_card_modules_excluded": [
+        "P2M.Sol.S_AlgebraicCurve_Place_exists_intermediateField_finiteDimensional_forall_smul_eq_of_descent",
+        "Submission.Supplier.P2M.Sol.S_AlgebraicCurve_Place_exists_intermediateField_finiteDimensional_forall_smul_eq_of_descent",
+        "Submission.Supplier.Theorems.Thm_AlgebraicCurve_Place_exists_intermediateField_finiteDimensional_forall_smul_eq_of_descent",
+        "Theorems.Thm_AlgebraicCurve_Place_exists_intermediateField_finiteDimensional_forall_smul_eq_of_descent"
+      ]
+    }
+  }
+}

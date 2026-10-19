@@ -1,0 +1,12 @@
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_AlgebraicCurve_Place_exists_intermediateField_finiteDimensional_forall_smul_eq_of_descent.lean:139:0: warning: automatically included section variable(s) unused in theorem `P2MW.S_AlgebraicCurve_Place_exists_intermediateField_finiteDimensional_forall_smul_eq_of_descent.AlgebraicCurve.C3Tors.Core.isIntegral_of_closure`:
+  hFcurve
+  hFess
+  hFbarcurve
+  hFbaress
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit hFcurve hFess hFbarcurve hFbaress in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+'P2MW.S_AlgebraicCurve_Place_exists_intermediateField_finiteDimensional_forall_smul_eq_of_descent.solution' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
