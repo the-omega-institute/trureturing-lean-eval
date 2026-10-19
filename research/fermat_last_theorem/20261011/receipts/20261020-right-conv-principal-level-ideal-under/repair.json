@@ -1,0 +1,210 @@
+{
+  "at": "2026-10-19T16:15:03.222331+00:00",
+  "name": "AutomorphicForm_exists_isUnitFactorizableAboveOfType_principalLevel_tendsto_rightConv_of_mem_archCutSubmodule",
+  "candidate": "r1",
+  "card_candidate": "r1",
+  "source_replacements": [
+    [
+      "  have h1 : IsOpen {x | \u2200 i j, m x i j \u2208 w.adicCompletionIntegers L} := by\n    simp only [Set.setOf_forall]\n    exact isOpen_iInter_of_finite fun i => isOpen_iInter_of_finite fun j =>\n",
+      "  have h1 : IsOpen {x | \u2200 i j, m x i j \u2208 w.adicCompletionIntegers L} := by\n    simp only [Set.ofPred_forall]\n    exact isOpen_iInter_of_finite fun i => isOpen_iInter_of_finite fun j =>\n",
+      1
+    ],
+    [
+      "    simp only [Set.setOf_forall]\n",
+      "    simp only [Set.ofPred_forall]\n",
+      1
+    ],
+    [
+      "    IsOpen {x | \u2200 i, IsLocalLevelOne L N (w i) (m x i) \u2227 IsLocalLevelOne L N (w i) (m' x i)} := by\n  simp only [Set.setOf_forall, Set.setOf_and]\n  exact isOpen_iInter_of_finite fun i =>\n",
+      "    IsOpen {x | \u2200 i, IsLocalLevelOne L N (w i) (m x i) \u2227 IsLocalLevelOne L N (w i) (m' x i)} := by\n  simp only [Set.ofPred_forall, Set.ofPred_and]\n  exact isOpen_iInter_of_finite fun i =>\n",
+      1
+    ],
+    [
+      "  simp only [Set.setOf_forall, Set.setOf_and]\n",
+      "  simp only [Set.ofPred_forall, Set.ofPred_and]\n",
+      1
+    ],
+    [
+      "    (fun x i a b => m' x i a.rev b.rev) (fun i a b => hm i _ _) (fun i a b => hm' i _ _)\n  have : {x | \u2200 i, IsLocalPrincipal L N (w i) (m x i) \u2227 IsLocalPrincipal L N (w i) (m' x i)} =\n      {x | \u2200 i, IsLocalLevelOne L N (w i) (m x i) \u2227 IsLocalLevelOne L N (w i) (m' x i)} \u2229\n      {x | \u2200 i, (IsLocalLevelOne L N (w i) fun a b => m x i a.rev b.rev) \u2227\n        IsLocalLevelOne L N (w i) fun a b => m' x i a.rev b.rev} := by\n    ext x\n    simp only [Set.mem_setOf_eq, Set.mem_inter_iff, IsLocalPrincipal]\n    exact \u27e8fun h => \u27e8fun i => \u27e8(h i).1.1, (h i).2.1\u27e9, fun i => \u27e8(h i).1.2, (h i).2.2\u27e9\u27e9,\n      fun h i => \u27e8\u27e8(h.1 i).1, (h.2 i).1\u27e9, \u27e8(h.1 i).2, (h.2 i).2\u27e9\u27e9\u27e9\n  rw [this]\n  exact h1.inter h2\n\nprivate theorem isClosed_setOf_forall_isLocalPrincipal (N : Ideal (\ud835\udcde L)) {X : Type} [TopologicalSpace X]\n",
+      "    (fun x i a b => m' x i a.rev b.rev) (fun i a b => hm i _ _) (fun i a b => hm' i _ _)\n  have : {x | \u2200 i, IsLocalPrincipal L N (w i) (m x i) \u2227 IsLocalPrincipal L N (w i) (m' x i)} =\n      {x | \u2200 i, IsLocalLevelOne L N (w i) (m x i) \u2227 IsLocalLevelOne L N (w i) (m' x i)} \u2229\n      {x | \u2200 i, (IsLocalLevelOne L N (w i) fun a b => m x i a.rev b.rev) \u2227\n        IsLocalLevelOne L N (w i) fun a b => m' x i a.rev b.rev} := by\n    ext x\n    simp only [Set.mem_ofPred_eq, Set.mem_inter_iff, IsLocalPrincipal]\n    exact \u27e8fun h => \u27e8fun i => \u27e8(h i).1.1, (h i).2.1\u27e9, fun i => \u27e8(h i).1.2, (h i).2.2\u27e9\u27e9,\n      fun h i => \u27e8\u27e8(h.1 i).1, (h.2 i).1\u27e9, \u27e8(h.1 i).2, (h.2 i).2\u27e9\u27e9\u27e9\n  rw [this]\n  exact h1.inter h2\n\nprivate theorem isClosed_setOf_forall_isLocalPrincipal (N : Ideal (\ud835\udcde L)) {X : Type} [TopologicalSpace X]\n",
+      1
+    ],
+    [
+      "    simp only [Set.mem_setOf_eq, Set.mem_inter_iff, IsLocalPrincipal]\n",
+      "    simp only [Set.mem_ofPred_eq, Set.mem_inter_iff, IsLocalPrincipal]\n",
+      1
+    ],
+    [
+      "  rw [semiLocalLevelSet, Set.mem_setOf_eq, \u2190 map_inv]\n",
+      "  rw [semiLocalLevelSet, Set.mem_ofPred_eq, \u2190 map_inv]\n",
+      1
+    ],
+    [
+      "  haveI := HeightOneSpectrum.Extension.finite (\ud835\udcde K) K L (\ud835\udcde L) v\n",
+      "  have := HeightOneSpectrum.Extension.finite (\ud835\udcde K) K L (\ud835\udcde L) v\n",
+      1
+    ],
+    [
+      "  haveI := t2Space_tensorGL K L (v.adicCompletion K)\n",
+      "  have := t2Space_tensorGL K L (v.adicCompletion K)\n",
+      1
+    ],
+    [
+      "  haveI : R1Space (GL (Fin 2) (L \u2297[K] v.adicCompletion K)) := T2Space.r1Space\n",
+      "  have : R1Space (GL (Fin 2) (L \u2297[K] v.adicCompletion K)) := T2Space.r1Space\n",
+      1
+    ],
+    [
+      "private theorem t2Space_archGL : T2Space (GL (Fin 2) (InfiniteAdeleRing F)) := by\n  haveI : T2Space (Matrix (Fin 2) (Fin 2) (InfiniteAdeleRing F)) :=\n    inferInstanceAs (T2Space (Fin 2 \u2192 Fin 2 \u2192 InfiniteAdeleRing F))\n",
+      "private theorem t2Space_archGL : T2Space (GL (Fin 2) (InfiniteAdeleRing F)) := by\n  have : T2Space (Matrix (Fin 2) (Fin 2) (InfiniteAdeleRing F)) :=\n    inferInstanceAs (T2Space (Fin 2 \u2192 Fin 2 \u2192 InfiniteAdeleRing F))\n",
+      1
+    ],
+    [
+      "private theorem locallyCompactSpace_archGL : LocallyCompactSpace (GL (Fin 2) (InfiniteAdeleRing F)) := by\n  haveI : T2Space (Matrix (Fin 2) (Fin 2) (InfiniteAdeleRing F)) :=\n    inferInstanceAs (T2Space (Fin 2 \u2192 Fin 2 \u2192 InfiniteAdeleRing F))\n",
+      "private theorem locallyCompactSpace_archGL : LocallyCompactSpace (GL (Fin 2) (InfiniteAdeleRing F)) := by\n  have : T2Space (Matrix (Fin 2) (Fin 2) (InfiniteAdeleRing F)) :=\n    inferInstanceAs (T2Space (Fin 2 \u2192 Fin 2 \u2192 InfiniteAdeleRing F))\n",
+      1
+    ],
+    [
+      "  have : T2Space (Matrix (Fin 2) (Fin 2) (InfiniteAdeleRing F)) :=\n    inferInstanceAs (T2Space (Fin 2 \u2192 Fin 2 \u2192 InfiniteAdeleRing F))\n  haveI : LocallyCompactSpace (Matrix (Fin 2) (Fin 2) (InfiniteAdeleRing F)) :=\n    inferInstanceAs (LocallyCompactSpace (Fin 2 \u2192 Fin 2 \u2192 InfiniteAdeleRing F))\n  exact Units.isClosedEmbedding_embedProduct.locallyCompactSpace\n",
+      "  have : T2Space (Matrix (Fin 2) (Fin 2) (InfiniteAdeleRing F)) :=\n    inferInstanceAs (T2Space (Fin 2 \u2192 Fin 2 \u2192 InfiniteAdeleRing F))\n  have : LocallyCompactSpace (Matrix (Fin 2) (Fin 2) (InfiniteAdeleRing F)) :=\n    inferInstanceAs (LocallyCompactSpace (Fin 2 \u2192 Fin 2 \u2192 InfiniteAdeleRing F))\n  exact Units.isClosedEmbedding_embedProduct.locallyCompactSpace\n",
+      1
+    ],
+    [
+      "      (archHaarK F) := by\n  letI := glBorelOf (InfiniteAdeleRing F)\n  haveI := borelSpace_glBorelOf (InfiniteAdeleRing F)\n",
+      "      (archHaarK F) := by\n  let := glBorelOf (InfiniteAdeleRing F)\n  haveI := borelSpace_glBorelOf (InfiniteAdeleRing F)\n",
+      1
+    ],
+    [
+      "  let := glBorelOf (InfiniteAdeleRing F)\n  haveI := borelSpace_glBorelOf (InfiniteAdeleRing F)\n  haveI : T2Space (Matrix (Fin 2) (Fin 2) (InfiniteAdeleRing F)) :=\n",
+      "  let := glBorelOf (InfiniteAdeleRing F)\n  have := borelSpace_glBorelOf (InfiniteAdeleRing F)\n  haveI : T2Space (Matrix (Fin 2) (Fin 2) (InfiniteAdeleRing F)) :=\n",
+      1
+    ],
+    [
+      "  haveI : T2Space (Matrix (Fin 2) (Fin 2) (InfiniteAdeleRing F)) :=\n",
+      "  have : T2Space (Matrix (Fin 2) (Fin 2) (InfiniteAdeleRing F)) :=\n",
+      1
+    ],
+    [
+      "  haveI : LocallyCompactSpace (Matrix (Fin 2) (Fin 2) (InfiniteAdeleRing F)) :=\n",
+      "  have : LocallyCompactSpace (Matrix (Fin 2) (Fin 2) (InfiniteAdeleRing F)) :=\n",
+      1
+    ],
+    [
+      "  haveI : LocallyCompactSpace (GL (Fin 2) (InfiniteAdeleRing F)) :=\n",
+      "  have : LocallyCompactSpace (GL (Fin 2) (InfiniteAdeleRing F)) :=\n",
+      1
+    ],
+    [
+      "  letI : MeasurableSpace (AdelicGL2 (\ud835\udcde F) F) := AdelicHaar.glBorel (Fin 2) (\ud835\udcde F) F\n",
+      "  let : MeasurableSpace (AdelicGL2 (\ud835\udcde F) F) := AdelicHaar.glBorel (Fin 2) (\ud835\udcde F) F\n",
+      1
+    ],
+    [
+      "  haveI := AdelicHaar.borelSpace_glBorel (Fin 2) (\ud835\udcde F) F\n",
+      "  have := AdelicHaar.borelSpace_glBorel (Fin 2) (\ud835\udcde F) F\n",
+      1
+    ],
+    [
+      "  haveI := AdelicHaar.isHaarMeasure_adelicGLHaar (Fin 2) (\ud835\udcde F) F\n",
+      "  have := AdelicHaar.isHaarMeasure_adelicGLHaar (Fin 2) (\ud835\udcde F) F\n",
+      1
+    ],
+    [
+      "  letI : MeasurableSpace (GL (Fin 2) (InfiniteAdeleRing F)) := glBorelOf (InfiniteAdeleRing F)\n",
+      "  let : MeasurableSpace (GL (Fin 2) (InfiniteAdeleRing F)) := glBorelOf (InfiniteAdeleRing F)\n",
+      1
+    ],
+    [
+      "  haveI := borelSpace_glBorelOf (InfiniteAdeleRing F)\n",
+      "  have := borelSpace_glBorelOf (InfiniteAdeleRing F)\n",
+      1
+    ],
+    [
+      "  haveI := t2Space_archGL F\n",
+      "  have := t2Space_archGL F\n",
+      1
+    ],
+    [
+      "  haveI := locallyCompactSpace_archGL F\n",
+      "  have := locallyCompactSpace_archGL F\n",
+      1
+    ],
+    [
+      "  haveI := isHaarMeasure_archHaarK F\n",
+      "  have := isHaarMeasure_archHaarK F\n",
+      1
+    ],
+    [
+      "  haveI hinv : (archProjMeasure F U).IsMulLeftInvariant := by\n",
+      "  have hinv : (archProjMeasure F U).IsMulLeftInvariant := by\n",
+      1
+    ],
+    [
+      "  haveI hfin : IsFiniteMeasureOnCompacts (archProjMeasure F U) := by\n",
+      "  have hfin : IsFiniteMeasureOnCompacts (archProjMeasure F U) := by\n",
+      1
+    ],
+    [
+      "  haveI hpos : (archProjMeasure F U).IsOpenPosMeasure := by\n",
+      "  have hpos : (archProjMeasure F U).IsOpenPosMeasure := by\n",
+      1
+    ],
+    [
+      "  haveI hHaar : (archProjMeasure F U).IsHaarMeasure := {}\n",
+      "  have hHaar : (archProjMeasure F U).IsHaarMeasure := {}\n",
+      1
+    ],
+    [
+      "  haveI : (Ideal.span {(p : \u2124)}).IsPrime :=\n",
+      "  have : (Ideal.span {(p : \u2124)}).IsPrime :=\n",
+      1
+    ],
+    [
+      "  haveI : Infinite {p : \u2115 | Nat.Prime p} := Set.infinite_coe_iff.2 Nat.infinite_setOf_prime\n",
+      "  have : Infinite {p : \u2115 | Nat.Prime p} := Set.infinite_coe_iff.2 Nat.infinite_setOfPred_prime\n",
+      1
+    ],
+    [
+      "  letI : MeasurableSpace (GL (Fin 2) (InfiniteAdeleRing L)) := glBorelOf (InfiniteAdeleRing L)\n",
+      "  let : MeasurableSpace (GL (Fin 2) (InfiniteAdeleRing L)) := glBorelOf (InfiniteAdeleRing L)\n",
+      1
+    ],
+    [
+      "  rw [hQ, Ideal.comap_bot_of_injective _ hinj] at hQcomap",
+      "  rw [hQ, Ideal.under_def, Ideal.comap_bot_of_injective _ hinj] at hQcomap",
+      1
+    ]
+  ],
+  "card_replacements": [],
+  "baseline_byte_identical_to_pinned_supplier": true,
+  "pinned_supplier_source_and_card_preserved": true,
+  "supplier_repository": "anthropics/fermats-last-theorem",
+  "supplier_revision": "6e837e75355538c7f80bab5b956861e86c4eacc2",
+  "original_actual_errors": 1,
+  "original_actual_warnings": 36,
+  "actual_warned_style_lines": 26,
+  "verification_pending": false,
+  "installed": true,
+  "no_linter_suppression_added": true,
+  "public_solution_and_card_statement_byte_unchanged": true,
+  "full_original_statement_and_hypotheses_preserved": true,
+  "complete_original_proof_preserved": true,
+  "library_search": "No exact principal-level right-convolution approximation theorem in main trureturing D5/Reg. Reuse the established current Mathlib Ideal.under_def bridge before the original injective comap-bottom rewrite, and compiler-recommended Set.ofPred/Nat.infinite_setOfPred_prime aliases.",
+  "change": "Retain the full original 971-line right-convolution approximation proof, height-one-prime non-bottom argument, adelic Haar factorization and approximation hypotheses. Unfold only Ideal.under at the actual failing local prime-ideal contraction rewrite. Migrate exactly twenty-six actually warned haveI/letI sites and ten actual Set/Nat alias diagnostics. Public solution/card declarations byte-unchanged; complete original proof and all typed assumptions retained.",
+  "max_active_flt_jobs": 1,
+  "lean_threads": 1,
+  "full_original_complete": false,
+  "official_new_solve_credit": 0,
+  "stale_terminal_state_entries_excluded": [],
+  "active_import_closure_excluded": [
+    "Submission.Supplier.Theorems.Thm_AutomorphicForm_exists_lintegral_ite_bottomRow_maximalCompactHaar_eq_mul_lintegral_maximalCompactAtHaar_empty"
+  ],
+  "active_transitive_import_closure_size": 12,
+  "actual_live_descendant_sources": [],
+  "all_four_canonical_adapted_source_card_modules_excluded": [
+    "P2M.Sol.S_AutomorphicForm_exists_isUnitFactorizableAboveOfType_principalLevel_tendsto_rightConv_of_mem_archCutSubmodule",
+    "Submission.Supplier.P2M.Sol.S_AutomorphicForm_exists_isUnitFactorizableAboveOfType_principalLevel_tendsto_rightConv_of_mem_archCutSubmodule",
+    "Submission.Supplier.Theorems.Thm_AutomorphicForm_exists_isUnitFactorizableAboveOfType_principalLevel_tendsto_rightConv_of_mem_archCutSubmodule",
+    "Theorems.Thm_AutomorphicForm_exists_isUnitFactorizableAboveOfType_principalLevel_tendsto_rightConv_of_mem_archCutSubmodule"
+  ]
+}
