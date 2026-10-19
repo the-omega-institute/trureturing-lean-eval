@@ -1,0 +1,70 @@
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/Definitions/Def_AlgebraicGeometry_KwCartierDlogFixednessEngine.lean:45:2: warning: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/Definitions/Def_AlgebraicGeometry_KwCartierDlogFixednessEngine.lean:47:2: warning: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/Definitions/Def_AlgebraicGeometry_KwCartierDlogFixednessEngine.lean:70:2: warning: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/Definitions/Def_AlgebraicGeometry_KwCartierDlogFixednessEngine.lean:80:40: warning: `MvPolynomial.coeff_zero` has been deprecated: Use `AddMonoidAlgebra.coeff_zero` instead
+
+Note: The updated constant has a different type:
+  ∀ {R : Type u_1} {M : Type u_4} [inst : Semiring R], AddMonoidAlgebra.coeff 0 = 0
+instead of
+  ∀ {R : Type u} {σ : Type u_1} [inst : CommSemiring R], AddMonoidAlgebra.coeff 0 = 0
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.coeff_zero` to `AddMonoidAlgebra.coeff_zero x`).
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/Definitions/Def_AlgebraicGeometry_KwCartierDlogFixednessEngine.lean:80:4: error: Type mismatch: After simplification, term
+  h
+ has type
+  @Eq (ZMod ℓ) (↑(((kw_cfx_G ℓ ^ ℓ - kw_cfx_Gpow ℓ).coeff k).coeff mono)) (0 mono)
+but is expected to have type
+  @Eq (ZMod ℓ) (↑(((kw_cfx_G ℓ ^ ℓ - kw_cfx_Gpow ℓ).coeff k).coeff mono)) 0
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/Definitions/Def_AlgebraicGeometry_KwCartierDlogFixednessEngine.lean:134:36: warning: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/Definitions/Def_AlgebraicGeometry_KwCartierDlogFixednessEngine.lean:149:36: warning: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/Definitions/Def_AlgebraicGeometry_KwCartierDlogFixednessEngine.lean:250:19: warning: `dif_pos` has been deprecated: Use `dite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  d̵i̵f̵_̵p̵o̵s̵d̲i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+'AlgebraicCurve.KwCfx.kw_cfx_z1' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/Definitions/Def_AlgebraicGeometry_KwCartierDlogFixednessEngine.lean:577:0: error: ❌️ Docstring on `#guard_msgs` does not match generated message:
+
+- info: 'AlgebraicCurve.KwCfx.kw_cfx_z1' depends on axioms: [propext, Classical.choice, Quot.sound]
++ info: 'AlgebraicCurve.KwCfx.kw_cfx_z1' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'AlgebraicCurve.KwCfx.kw_cfx_z2' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/Definitions/Def_AlgebraicGeometry_KwCartierDlogFixednessEngine.lean:585:0: error: ❌️ Docstring on `#guard_msgs` does not match generated message:
+
+- info: 'AlgebraicCurve.KwCfx.kw_cfx_z2' depends on axioms: [propext, Classical.choice, Quot.sound]
++ info: 'AlgebraicCurve.KwCfx.kw_cfx_z2' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'AlgebraicCurve.KwCfx.kw_cfx_repr_top' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/Definitions/Def_AlgebraicGeometry_KwCartierDlogFixednessEngine.lean:641:0: error: ❌️ Docstring on `#guard_msgs` does not match generated message:
+
+- info: 'AlgebraicCurve.KwCfx.kw_cfx_repr_top' depends on axioms: [propext, Classical.choice, Quot.sound]
++ info: 'AlgebraicCurve.KwCfx.kw_cfx_repr_top' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'AlgebraicCurve.KwCfx.kw_cfx_C_dlog_fixed' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/Definitions/Def_AlgebraicGeometry_KwCartierDlogFixednessEngine.lean:645:0: error: ❌️ Docstring on `#guard_msgs` does not match generated message:
+
+- info: 'AlgebraicCurve.KwCfx.kw_cfx_C_dlog_fixed' depends on axioms: [propext, Classical.choice, Quot.sound]
++ info: 'AlgebraicCurve.KwCfx.kw_cfx_C_dlog_fixed' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]

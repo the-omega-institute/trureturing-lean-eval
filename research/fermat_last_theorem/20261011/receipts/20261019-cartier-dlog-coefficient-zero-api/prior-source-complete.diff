@@ -1,0 +1,16 @@
+diff --git a/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/supplier-original/Definitions/Def_AlgebraicGeometry_KwCartierDlogFixednessEngine.lean b/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Definitions/Def_AlgebraicGeometry_KwCartierDlogFixednessEngine.lean
+index 94fc0b8..589e9a8 100644
+--- a/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/supplier-original/Definitions/Def_AlgebraicGeometry_KwCartierDlogFixednessEngine.lean
++++ b/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Definitions/Def_AlgebraicGeometry_KwCartierDlogFixednessEngine.lean
+@@ -2,6 +2,11 @@ import Mathlib
+ import Definitions.Def_AlgebraicGeometry_KwCartierOperatorTCoordEngine
+ import Definitions.Def_ModularCurve_KwNo6HspecCartierDlogCampaignFrame
+ 
++local macro "MvPolynomial.coeff" d:term:arg P:term:arg : term =>
++  `(AddMonoidAlgebra.coeff $P $d)
++local macro "MvPolynomial.coeff" d:term:arg : term =>
++  `(fun P => AddMonoidAlgebra.coeff P $d)
++
+ open Polynomial AlgebraicCurve.KwPke AlgebraicCurve.KwCart
+ 
+ noncomputable section

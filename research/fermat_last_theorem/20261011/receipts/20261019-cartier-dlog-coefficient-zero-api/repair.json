@@ -1,0 +1,106 @@
+{
+  "at": "2026-10-19T11:25:40.052089+00:00",
+  "name": "AlgebraicGeometry_KwCartierDlogFixednessEngine",
+  "source_prefix": "Definitions/Def_",
+  "candidate": "r3",
+  "card_candidate": "r1",
+  "axiom_declarations": [
+    "AlgebraicCurve.KwCfx.kw_cfx_axiomAnchor",
+    "AlgebraicCurve.KwCfx.kw_cfx_z1_map_eq",
+    "AlgebraicCurve.KwCfx.kw_cfx_z1",
+    "AlgebraicCurve.KwCfx.kw_cfx_z_derivG",
+    "AlgebraicCurve.KwCfx.kw_cfx_z2",
+    "AlgebraicCurve.KwCfx.kw_cfx_z3_natDegree_le",
+    "AlgebraicCurve.KwCfx.kw_cfx_z3_coeff_zero",
+    "AlgebraicCurve.KwCfx.kw_cfx_tau_coe",
+    "AlgebraicCurve.KwCfx.kw_cfx_vext_of_lt",
+    "AlgebraicCurve.KwCfx.kw_cfx_phiP_X",
+    "AlgebraicCurve.KwCfx.kw_cfx_phi_apply",
+    "AlgebraicCurve.KwCfx.kw_cfx_Phi_apply",
+    "AlgebraicCurve.KwCfx.kw_cfx_t4_natCast_pow",
+    "AlgebraicCurve.KwCfx.kw_cfx_t1_Phi_G",
+    "AlgebraicCurve.KwCfx.kw_cfx_t2_Phi_dG",
+    "AlgebraicCurve.KwCfx.kw_cfx_t3_repr_Phi",
+    "AlgebraicCurve.KwCfx.kw_cfx_D_eq",
+    "AlgebraicCurve.KwCfx.kw_cfx_fstar_pow_char",
+    "AlgebraicCurve.KwCfx.kw_cfx_repr_top",
+    "AlgebraicCurve.KwCfx.kw_cfx_C_dlog_fixed"
+  ],
+  "source_replacements": [
+    [
+      "  haveI : CharP",
+      "  have : CharP",
+      2
+    ],
+    [
+      "  haveI : NeZero \u2113",
+      "  have : NeZero \u2113",
+      1
+    ],
+    [
+      "MvPolynomial.coeff_zero,",
+      "AddMonoidAlgebra.coeff_zero, Pi.zero_apply,",
+      1
+    ],
+    [
+      "if_pos hidx",
+      "ite_eq_left hidx",
+      1
+    ],
+    [
+      "if_neg hne",
+      "ite_eq_right hne",
+      1
+    ],
+    [
+      "dif_pos h",
+      "dite_eq_left h",
+      1
+    ],
+    [
+      "end AlgebraicCurve.KwCfx",
+      "end AlgebraicCurve.KwCfx\n#print axioms AlgebraicCurve.KwCfx.kw_cfx_axiomAnchor\n#print axioms AlgebraicCurve.KwCfx.kw_cfx_z1_map_eq\n#print axioms AlgebraicCurve.KwCfx.kw_cfx_z1\n#print axioms AlgebraicCurve.KwCfx.kw_cfx_z_derivG\n#print axioms AlgebraicCurve.KwCfx.kw_cfx_z2\n#print axioms AlgebraicCurve.KwCfx.kw_cfx_z3_natDegree_le\n#print axioms AlgebraicCurve.KwCfx.kw_cfx_z3_coeff_zero\n#print axioms AlgebraicCurve.KwCfx.kw_cfx_tau_coe\n#print axioms AlgebraicCurve.KwCfx.kw_cfx_vext_of_lt\n#print axioms AlgebraicCurve.KwCfx.kw_cfx_phiP_X\n#print axioms AlgebraicCurve.KwCfx.kw_cfx_phi_apply\n#print axioms AlgebraicCurve.KwCfx.kw_cfx_Phi_apply\n#print axioms AlgebraicCurve.KwCfx.kw_cfx_t4_natCast_pow\n#print axioms AlgebraicCurve.KwCfx.kw_cfx_t1_Phi_G\n#print axioms AlgebraicCurve.KwCfx.kw_cfx_t2_Phi_dG\n#print axioms AlgebraicCurve.KwCfx.kw_cfx_t3_repr_Phi\n#print axioms AlgebraicCurve.KwCfx.kw_cfx_D_eq\n#print axioms AlgebraicCurve.KwCfx.kw_cfx_fstar_pow_char\n#print axioms AlgebraicCurve.KwCfx.kw_cfx_repr_top\n#print axioms AlgebraicCurve.KwCfx.kw_cfx_C_dlog_fixed\n",
+      1
+    ],
+    [
+      "AddMonoidAlgebra.coeff_zero, Pi.zero_apply,",
+      "AddMonoidAlgebra.coeff_zero, Finsupp.zero_apply,",
+      1
+    ]
+  ],
+  "card_replacements": [],
+  "baseline_byte_identical_to_pinned_supplier": false,
+  "prior_source_changes_preserved": [
+    "Existing local MvPolynomial.coeff macros implementing the pinned function-argument API; complete diff saved in prior-source-complete.diff."
+  ],
+  "source_only_definition_module": true,
+  "card_not_applicable": true,
+  "public_declaration_statements_literal_preserved": true,
+  "pinned_supplier_source_preserved": true,
+  "verification_pending": false,
+  "installed": true,
+  "no_linter_suppression_added": true,
+  "complete_original_proof_preserved": true,
+  "full_original_statement_and_hypotheses_preserved": true,
+  "max_active_flt_jobs": 1,
+  "lean_threads": 1,
+  "original_actual_errors": 5,
+  "original_actual_warnings": 7,
+  "original_source_lines": 640,
+  "library_search": "No exact KwCartierDlogFixednessEngine or AlgebraicCurve.KwCfx match in current trureturing D5/Reg. Reuse pinned AddMonoidAlgebra.coeff_zero and Pi.zero_apply to simplify the function-zero application exposed by the current coefficient API.",
+  "change": "Retain the existing coefficient adapter, every original declaration and complete proof, all 20 original guarded recursive-axiom checks. In the actual failing coefficient proof replace the deprecated pointwise-zero spelling with AddMonoidAlgebra.coeff_zero and Pi.zero_apply. Apply actual haveI and conditional-rewrite warning suggestions only. Append duplicate unguarded recursive-axiom queries after the namespace so successful original #guard_msgs checks also have explicit terminal log evidence; all original guards remain byte-for-byte unchanged.",
+  "full_original_complete": false,
+  "official_new_solve_credit": 0,
+  "all_public_declaration_headers_literal_unchanged": true,
+  "stale_terminal_state_entries_excluded": [],
+  "active_import_closure_excluded": [
+    "Submission.Supplier.Theorems.Thm_NumberField_PlaceDecomp_exists_ringHom_adicCompletion_padicAlgCl_extends_padicEmbedding"
+  ],
+  "active_transitive_import_closure_size": 26,
+  "actual_live_descendant_sources": [],
+  "all_four_canonical_adapted_source_card_modules_excluded": [
+    "Definitions.Def_AlgebraicGeometry_KwCartierDlogFixednessEngine",
+    "Submission.Supplier.Definitions.Def_AlgebraicGeometry_KwCartierDlogFixednessEngine"
+  ],
+  "latest_change": "Actual r2 retained 0 mono. Pinned MonoidAlgebra/Defs.lean:191 shows coeff is Finsupp-valued; use the actual Finsupp.zero_apply theorem (Data/Finsupp/Defs.lean:145), preserving the original coefficient proof and all guarded checks."
+}
