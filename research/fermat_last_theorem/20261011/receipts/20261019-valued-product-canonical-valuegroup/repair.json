@@ -1,0 +1,61 @@
+{
+  "at": "2026-10-19T08:53:18.123448+00:00",
+  "name": "Valued_multipliable_one_add_of_tendsto_cofinite_zero",
+  "candidate": "r1",
+  "card_candidate": "r1",
+  "source_replacements": [
+    [
+      "set w : Valuation K (MonoidWithZeroHom.ValueGroup\u2080 (MonoidWithZeroHom.ofClass hv.v)) := (hv.v).restrict with hw",
+      "set w : Valuation K (MonoidWithZeroHom.ValueGroup\u2080 (hv.v : K \u2192*\u2080 \u0393\u2080)) := (hv.v).restrict with hw",
+      1
+    ],
+    [
+      "Finset.prod_le_prod'",
+      "Finset.prod_le_prod",
+      1
+    ],
+    [
+      "Finset.prod_le_prod_of_subset_of_one_le'",
+      "Finset.prod_le_prod_of_subset_of_one_le",
+      1
+    ],
+    [
+      "Finset.one_le_prod'",
+      "Finset.one_le_prod",
+      1
+    ]
+  ],
+  "card_replacements": [],
+  "baseline_byte_identical_to_pinned_supplier": true,
+  "prior_source_changes_preserved": [],
+  "prior_card_changes_preserved": [],
+  "public_card_statement_literal_preserved": true,
+  "solution_statement_literal_preserved": true,
+  "pinned_supplier_source_and_card_preserved": true,
+  "verification_pending": false,
+  "installed": true,
+  "no_linter_suppression_added": true,
+  "complete_original_proof_preserved": true,
+  "full_original_statement_and_hypotheses_preserved": true,
+  "max_active_flt_jobs": 1,
+  "lean_threads": 1,
+  "original_actual_errors": 1,
+  "original_actual_warnings": 3,
+  "original_source_lines": 108,
+  "library_search": "No exact theorem-name match in current trureturing D5/Reg. Pinned Mathlib/Topology/Algebra/Valued/ValuationTopology.lean:147/153 indexes both bases by valuation.ValueGroup0 units, and RingTheory/Valuation/Basic.lean:475-487 defines restrict through the coerced monoid-with-zero hom. Match this canonical codomain instead of ofClass. Algebra/Order/BigOperators/Group/Finset.lean:114/155/180 identifies the three deprecated names as aliases of the replacements.",
+  "change": "Normalize the local restricted valuation codomain to the coercion used by the existing neighborhood/uniformity bases, resolving the mixed unit-group multiplication instance. Rename three deprecated Finset aliases. Preserve the complete Cauchy-product argument and every original hypothesis. Append exact source/card recursive axiom queries; await the original single queue.",
+  "full_original_complete": false,
+  "official_new_solve_credit": 0,
+  "stale_terminal_state_entries_excluded": [],
+  "active_import_closure_excluded": [
+    "Submission.Supplier.Theorems.Thm_WeierstrassCurve_exists_prePsi_eq_expand"
+  ],
+  "active_transitive_import_closure_size": 15,
+  "actual_live_descendant_sources": [],
+  "all_four_canonical_adapted_source_card_modules_excluded": [
+    "P2M.Sol.S_Valued_multipliable_one_add_of_tendsto_cofinite_zero",
+    "Submission.Supplier.P2M.Sol.S_Valued_multipliable_one_add_of_tendsto_cofinite_zero",
+    "Submission.Supplier.Theorems.Thm_Valued_multipliable_one_add_of_tendsto_cofinite_zero",
+    "Theorems.Thm_Valued_multipliable_one_add_of_tendsto_cofinite_zero"
+  ]
+}
