@@ -1,0 +1,105 @@
+{
+  "at": "2026-10-19T19:11:03.229476+00:00",
+  "name": "CerednikDrinfeld_Omega_exists_place_invariantFieldOf_mem_iff_and_evalAt_eq_div_of_map_le_typePreserving",
+  "candidate": "r3",
+  "card_candidate": "r1",
+  "source_replacements": [
+    [
+      "variable {K\u2080 : Type} [Field K\u2080] {K : Type} [Field K] [Algebra K\u2080 K] [DecidableEq K]\n",
+      "variable {K\u2080 : Type} [Field K\u2080] {K : Type} [Field K] [Algebra K\u2080 K] [instDecidableEqK : DecidableEq K]\n",
+      2
+    ],
+    [
+      "variable [IsDomain (Omega.HolRingOf \u03d6 \u03c1)]\n",
+      "variable [instHolDomain : IsDomain (Omega.HolRingOf \u03d6 \u03c1)]\n",
+      1
+    ],
+    [
+      "theorem evz_apply ",
+      "omit instDecidableEqK in\ntheorem evz_apply [DecidableEq K] ",
+      1
+    ],
+    [
+      "theorem coordSub_ne_zero ",
+      "omit instDecidableEqK in\ntheorem coordSub_ne_zero [DecidableEq K] ",
+      1
+    ],
+    [
+      "theorem evz_algebraMap ",
+      "omit instDecidableEqK in\ntheorem evz_algebraMap [DecidableEq K] ",
+      1
+    ],
+    [
+      "theorem alg_ne_zero ",
+      "omit instDecidableEqK instHolDomain in\ntheorem alg_ne_zero [DecidableEq K] [IsDomain (Omega.HolRingOf \u03d6 \u03c1)] ",
+      1
+    ],
+    [
+      "theorem mk_eq_div ",
+      "omit instDecidableEqK in\ntheorem mk_eq_div [DecidableEq K] ",
+      1
+    ],
+    [
+      "(.ofClass w)",
+      "(w : FC \u2192*\u2080 \u2124\u1d50\u2070)",
+      3
+    ],
+    [
+      "    haveI : Nontrivial \u21a5(MonoidWithZeroHom.valueGroup ",
+      "    have : Nontrivial \u21a5(MonoidWithZeroHom.valueGroup ",
+      1
+    ],
+    [
+      "  classical\n  have hfin := CerednikDrinfeld.Omega.exists_finset_forall_v_sub_lt_of_finite_residueField",
+      "  classical\n  have _ := htp\n  have _ := hfin\n  have hfin := CerednikDrinfeld.Omega.exists_finset_forall_v_sub_lt_of_finite_residueField",
+      1
+    ]
+  ],
+  "card_replacements": [],
+  "baseline_byte_identical_to_pinned_supplier": true,
+  "pinned_supplier_source_and_card_preserved": true,
+  "supplier_repository": "anthropics/fermats-last-theorem",
+  "supplier_revision": "6e837e75355538c7f80bab5b956861e86c4eacc2",
+  "original_actual_errors": 1,
+  "original_actual_warnings": 6,
+  "verification_pending": false,
+  "installed": true,
+  "no_linter_suppression_added": true,
+  "public_solution_and_card_statement_byte_unchanged": true,
+  "full_original_statement_and_hypotheses_preserved": true,
+  "complete_original_proof_preserved": true,
+  "library_search": "No matching helper in main D5/Reg. Current Mathlib Valuation/Basic uses explicit Valuation coercion (v : R \u2192*\u2080 \u0393\u2080).valueGroup for its Nontrivial bridge; reuse that exact bundle while retaining the original explicit value-group witness.",
+  "change": "Use explicit valuation-to-monoid-with-zero hom coercions inside the entire original Nontrivial witness. Retain every original helper instance by omitting only its automatic section insertion and redeclaring the same instance explicitly on the same helper. Preserve the full solution/card headers byte-for-byte; reference the two original solution assumptions before local hfin shadowing. Complete original proof retained; no linter options suppressed.",
+  "max_active_flt_jobs": 1,
+  "lean_threads": 1,
+  "full_original_complete": false,
+  "official_new_solve_credit": 0,
+  "stale_terminal_state_entries_excluded": [],
+  "active_import_closure_excluded": [
+    "Submission.Supplier.Theorems.Thm_CerednikDrinfeld_Omega_isDomain_holRing"
+  ],
+  "active_transitive_import_closure_size": 21,
+  "actual_live_descendant_sources": [
+    {
+      "pid": 65780,
+      "source": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/Theorems/Thm_CerednikDrinfeld_Omega_isDomain_holRing.lean"
+    }
+  ],
+  "all_four_canonical_adapted_source_card_modules_excluded": [
+    "P2M.Sol.S_CerednikDrinfeld_Omega_exists_place_invariantFieldOf_mem_iff_and_evalAt_eq_div_of_map_le_typePreserving",
+    "Submission.Supplier.P2M.Sol.S_CerednikDrinfeld_Omega_exists_place_invariantFieldOf_mem_iff_and_evalAt_eq_div_of_map_le_typePreserving",
+    "Submission.Supplier.Theorems.Thm_CerednikDrinfeld_Omega_exists_place_invariantFieldOf_mem_iff_and_evalAt_eq_div_of_map_le_typePreserving",
+    "Theorems.Thm_CerednikDrinfeld_Omega_exists_place_invariantFieldOf_mem_iff_and_evalAt_eq_div_of_map_le_typePreserving"
+  ],
+  "r1_kernel_exit": 0,
+  "r1_recursive_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "r1_warning_count": 7,
+  "helper_original_instance_hypotheses_preserved": true,
+  "r2_kernel_exit": 0,
+  "r2_warning_count": 6,
+  "explicit_original_helper_instance_binders_anonymous": true
+}
