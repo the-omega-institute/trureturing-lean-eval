@@ -1,0 +1,242 @@
+{
+  "at": "2026-10-19T14:12:07.384635+00:00",
+  "name": "AlgebraicCurve_exists_divisor_degree_eq_one_of_finite",
+  "candidate": "r1",
+  "card_candidate": "r1",
+  "source_replacements": [
+    [
+      "PowerSeries.X * (d\u2044dX \u211a) f",
+      "PowerSeries.X * PowerSeries.derivative f",
+      1
+    ],
+    [
+      "  haveI : FiniteDimensional K' K'' := Module.finite_of_finrank_pos (by omega)\n",
+      "  have : FiniteDimensional K' K'' := Module.finite_of_finrank_pos (by omega)\n",
+      1
+    ],
+    [
+      "  haveI : FiniteDimensional K K' := Module.finite_of_finrank_pos (by\n",
+      "  have : FiniteDimensional K K' := Module.finite_of_finrank_pos (by\n",
+      1
+    ],
+    [
+      "  haveI : Algebra.IsIntegral E E'' := Algebra.IsIntegral.of_finite E E''\n",
+      "  have : Algebra.IsIntegral E E'' := Algebra.IsIntegral.of_finite E E''\n",
+      1
+    ],
+    [
+      "  haveI : Module.Finite E E'' := Module.Finite.trans E' E''\n",
+      "  have : Module.Finite E E'' := Module.Finite.trans E' E''\n",
+      1
+    ],
+    [
+      "  haveI : IsScalarTower K E E'' := IsScalarTower.of_algebraMap_eq (fun x => by\n",
+      "  have : IsScalarTower K E E'' := IsScalarTower.of_algebraMap_eq (fun x => by\n",
+      1
+    ],
+    [
+      "  haveI : IsScalarTower K K'' E'' := IsScalarTower.of_algebraMap_eq (fun x => by\n",
+      "  have : IsScalarTower K K'' E'' := IsScalarTower.of_algebraMap_eq (fun x => by\n",
+      1
+    ],
+    [
+      "  haveI : IsScalarTower E E' E'' := IsScalarTower.of_algebraMap_eq (fun _ => rfl)\n",
+      "  have : IsScalarTower E E' E'' := IsScalarTower.of_algebraMap_eq (fun _ => rfl)\n",
+      1
+    ],
+    [
+      "  haveI : IsScalarTower K E' E'' := IsScalarTower.of_algebraMap_eq (fun _ => rfl)\n",
+      "  have : IsScalarTower K E' E'' := IsScalarTower.of_algebraMap_eq (fun _ => rfl)\n",
+      1
+    ],
+    [
+      "  haveI : IsScalarTower K K' K'' := IsScalarTower.of_algebraMap_eq (fun _ => rfl)\n",
+      "  have : IsScalarTower K K' K'' := IsScalarTower.of_algebraMap_eq (fun _ => rfl)\n",
+      1
+    ],
+    [
+      "  letI algEE'' : Algebra E E'' := ((algebraMap E' E'').comp (algebraMap E E')).toAlgebra\n",
+      "  let algEE'' : Algebra E E'' := ((algebraMap E' E'').comp (algebraMap E E')).toAlgebra\n",
+      1
+    ],
+    [
+      "  letI algKE'' : Algebra K E'' := ((algebraMap E' E'').comp (algebraMap K E')).toAlgebra\n",
+      "  let algKE'' : Algebra K E'' := ((algebraMap E' E'').comp (algebraMap K E')).toAlgebra\n",
+      1
+    ],
+    [
+      "  letI algKK'' : Algebra K K'' := ((algebraMap K' K'').comp (algebraMap K K')).toAlgebra\n",
+      "  let algKK'' : Algebra K K'' := ((algebraMap K' K'').comp (algebraMap K K')).toAlgebra\n",
+      1
+    ],
+    [
+      "  haveI : Algebra.IsIntegral E' E'' := Algebra.IsIntegral.of_finite E' E''\n",
+      "  have : Algebra.IsIntegral E' E'' := Algebra.IsIntegral.of_finite E' E''\n",
+      1
+    ],
+    [
+      "  haveI : Finite (Pic0 K E) := Pic0.finite_of_finite K E hC\n",
+      "  have : Finite (Pic0 K E) := Pic0.finite_of_finite K E hC\n",
+      1
+    ],
+    [
+      "  haveI : PerfectField K := PerfectField.ofFinite\n",
+      "  have : PerfectField K := PerfectField.ofFinite\n",
+      1
+    ],
+    [
+      "  haveI : Module.Finite K v.ResidueField := IsCurveOver.finiteResidue v\n",
+      "  have : Module.Finite K v.ResidueField := IsCurveOver.finiteResidue v\n",
+      1
+    ],
+    [
+      "    rw [show d * N\u2082 + d * p\u2082 * m = d * (N\u2082 + p\u2082 * m) by ring, if_pos \u27e8_, rfl\u27e9,\n",
+      "    rw [show d * N\u2082 + d * p\u2082 * m = d * (N\u2082 + p\u2082 * m) by ring, ite_eq_left \u27e8_, rfl\u27e9,\n",
+      1
+    ],
+    [
+      "      \u00b7 rw [if_neg hd, if_neg hd, mul_zero, mul_zero, sub_zero]\n",
+      "      \u00b7 rw [ite_eq_right hd, ite_eq_right hd, mul_zero, mul_zero, sub_zero]\n",
+      1
+    ],
+    [
+      "      \u00b7 rw [if_pos hd, if_pos hd, one_pow, mul_one]\n",
+      "      \u00b7 rw [ite_eq_left hd, ite_eq_left hd, one_pow, mul_one]\n",
+      1
+    ],
+    [
+      "    \u00b7 rw [if_neg hn, if_pos (not_lt.mp hn), zero_add]\n",
+      "    \u00b7 rw [ite_eq_right hn, ite_eq_left (not_lt.mp hn), zero_add]\n",
+      1
+    ],
+    [
+      "    \u00b7 rw [if_pos hn, if_neg (not_le.mpr hn), add_zero]\n",
+      "    \u00b7 rw [ite_eq_left hn, ite_eq_right (not_le.mpr hn), add_zero]\n",
+      1
+    ],
+    [
+      "    \u00b7 rw [if_neg hn0, if_neg]\n",
+      "    \u00b7 rw [ite_eq_right hn0, ite_eq_right]\n",
+      1
+    ],
+    [
+      "  \u00b7 rw [if_neg hpn]\n",
+      "  \u00b7 rw [ite_eq_right hpn]\n",
+      1
+    ],
+    [
+      "      rw [if_neg hd, if_neg hd']\n",
+      "      rw [ite_eq_right hd, ite_eq_right hd']\n",
+      1
+    ],
+    [
+      "      rw [if_pos \u27e8m, rfl\u27e9, h1, if_pos \u27e8m - 1, rfl\u27e9, Nat.mul_div_cancel_left _ hp,\n",
+      "      rw [ite_eq_left \u27e8m, rfl\u27e9, h1, ite_eq_left \u27e8m - 1, rfl\u27e9, Nat.mul_div_cancel_left _ hp,\n",
+      1
+    ],
+    [
+      "    rw [if_neg hn0]\n",
+      "    rw [ite_eq_right hn0]\n",
+      1
+    ],
+    [
+      "  \u00b7 rw [if_pos hpn]\n",
+      "  \u00b7 rw [ite_eq_left hpn]\n",
+      1
+    ],
+    [
+      "    haveI := hfin (C + pdiv k (w : F))\n",
+      "    have := hfin (C + pdiv k (w : F))\n",
+      1
+    ],
+    [
+      "    haveI := hfin (C - D\u2080)\n",
+      "    have := hfin (C - D\u2080)\n",
+      1
+    ],
+    [
+      "  \u00b7 haveI := hfin (D\u2081 + (C\u2080 : Divisor k F))\n",
+      "  \u00b7 have := hfin (D\u2081 + (C\u2080 : Divisor k F))\n",
+      1
+    ],
+    [
+      "  haveI : Finite (Pic0 k F) := Pic0.finite_of_finite k F hC\n",
+      "  have : Finite (Pic0 k F) := Pic0.finite_of_finite k F hC\n",
+      1
+    ],
+    [
+      "  haveI := hfin0\n",
+      "  have := hfin0\n",
+      1
+    ],
+    [
+      "  haveI := hne\n",
+      "  have := hne\n",
+      1
+    ],
+    [
+      "    haveI := hfin C\u2080\n",
+      "    have := hfin C\u2080\n",
+      1
+    ],
+    [
+      "  haveI : \u2200 y : Pic0 K E, Finite {x // \u03c0 x = y} := fun y => by\n",
+      "  have : \u2200 y : Pic0 K E, Finite {x // \u03c0 x = y} := fun y => by\n",
+      1
+    ],
+    [
+      "  letI : Fintype (Pic0 K E) := Fintype.ofFinite _\n",
+      "  let : Fintype (Pic0 K E) := Fintype.ofFinite _\n",
+      1
+    ],
+    [
+      "  haveI : Finite (LSpace C) := Module.finite_of_finite K\n",
+      "  have : Finite (LSpace C) := Module.finite_of_finite K\n",
+      1
+    ]
+  ],
+  "card_replacements": [],
+  "baseline_byte_identical_to_pinned_supplier": true,
+  "baseline_by_role_byte_identical_to_pinned_supplier": {
+    "source": true,
+    "card": true
+  },
+  "prior_source_changes_preserved": "",
+  "prior_card_changes_preserved": "",
+  "pinned_supplier_source_and_card_preserved": true,
+  "public_card_statement_literal_preserved": true,
+  "solution_statement_literal_preserved": true,
+  "all_public_declaration_headers_literal_unchanged": true,
+  "verification_pending": false,
+  "installed": true,
+  "no_linter_suppression_added": true,
+  "complete_original_proof_preserved": true,
+  "full_original_statement_and_hypotheses_preserved": true,
+  "max_active_flt_jobs": 1,
+  "lean_threads": 1,
+  "original_actual_errors": 6,
+  "original_actual_warnings": 56,
+  "actual_warned_style_lines": 28,
+  "actual_warned_style_tokens": 28,
+  "library_search": "Exact divisor-degree-one and Euler-operator declarations absent from current trureturing D5 Lean search. Pinned Mathlib/RingTheory/PowerSeries/Derivative.lean:42-53 makes R implicit in PowerSeries.derivative; its scoped notation d/dX no longer accepts an explicit positional coefficient type. Reuse this existing derivation directly, preserving the coefficient, product, power, subtraction and generating-function arguments.",
+  "change": "Replace only the obsolete coefficient-type argument of the Euler derivative by PowerSeries.derivative with inferred rational base. Preserve the complete 911-line degree-one-divisor proof and every declaration header, hypothesis and source/card statement. Clean only actual proof-local haveI/letI style and deprecated if_pos/if_neg diagnostics; dependent warnings caused by the initial derivative elaboration error await the genuine recompile.",
+  "full_original_complete": false,
+  "official_new_solve_credit": 0,
+  "stale_terminal_state_entries_excluded": [],
+  "active_import_closure_excluded": [
+    "Submission.Supplier.P2M.Sol.S_AlgebraicCurve_finiteDimensional_lSpace_zero_and_ell_zero_eq_one_of_isAlgClosed_of_transcendental"
+  ],
+  "active_transitive_import_closure_size": 248,
+  "actual_live_descendant_sources": [
+    {
+      "pid": 26949,
+      "source": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_AlgebraicCurve_finiteDimensional_lSpace_zero_and_ell_zero_eq_one_of_isAlgClosed_of_transcendental.lean"
+    }
+  ],
+  "all_four_canonical_adapted_source_card_modules_excluded": [
+    "P2M.Sol.S_AlgebraicCurve_exists_divisor_degree_eq_one_of_finite",
+    "Submission.Supplier.P2M.Sol.S_AlgebraicCurve_exists_divisor_degree_eq_one_of_finite",
+    "Submission.Supplier.Theorems.Thm_AlgebraicCurve_exists_divisor_degree_eq_one_of_finite",
+    "Theorems.Thm_AlgebraicCurve_exists_divisor_degree_eq_one_of_finite"
+  ]
+}
