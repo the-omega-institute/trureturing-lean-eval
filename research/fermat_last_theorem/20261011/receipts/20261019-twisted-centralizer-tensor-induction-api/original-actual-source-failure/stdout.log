@@ -1,0 +1,78 @@
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_AutomorphicForm_twistedCentralizer_eq_map_centralizer_of_isNormConjugator_one.lean:114:9: warning: `TensorProduct.induction_on` has been deprecated: Use `TensorProduction.inductionOn` instead
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_AutomorphicForm_twistedCentralizer_eq_map_centralizer_of_isNormConjugator_one.lean:114:2: error: Type mismatch
+  TensorProduct.induction_on z ?m.53 ?m.54 ?m.55
+has type
+  ?m.52 z
+but is expected to have type
+  (sigmaTensor K L A (σ * σ')) z = (sigmaTensor K L A σ) ((sigmaTensor K L A σ') z)
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_AutomorphicForm_twistedCentralizer_eq_map_centralizer_of_isNormConjugator_one.lean:122:9: warning: `TensorProduct.induction_on` has been deprecated: Use `TensorProduction.inductionOn` instead
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_AutomorphicForm_twistedCentralizer_eq_map_centralizer_of_isNormConjugator_one.lean:123:4: error: `simp` made no progress
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_AutomorphicForm_twistedCentralizer_eq_map_centralizer_of_isNormConjugator_one.lean:124:2: error: unsolved goals
+case refine_2
+K L : Type
+inst✝⁴ : Field K
+inst✝³ : Field L
+inst✝² : Algebra K L
+A : Type
+inst✝¹ : CommRing A
+inst✝ : Algebra K A
+z : L ⊗[K] A
+l : L
+a : A
+⊢ (Algebra.TensorProduct.map (↑1) (AlgHom.id K A)) z = l ⊗ₜ[K] a
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_AutomorphicForm_twistedCentralizer_eq_map_centralizer_of_isNormConjugator_one.lean:126:2: error: unsolved goals
+case refine_3
+K L : Type
+inst✝⁴ : Field K
+inst✝³ : Field L
+inst✝² : Algebra K L
+A : Type
+inst✝¹ : CommRing A
+inst✝ : Algebra K A
+z x y : L ⊗[K] A
+hx : (sigmaTensor K L A 1) z = x
+hy : (sigmaTensor K L A 1) z = y
+⊢ x = x + y
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_AutomorphicForm_twistedCentralizer_eq_map_centralizer_of_isNormConjugator_one.lean:125:23: warning: This simp argument is unused:
+  Algebra.TensorProduct.map_tmul
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [sigmaTensor, AlgEquiv.one_apply]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_AutomorphicForm_twistedCentralizer_eq_map_centralizer_of_isNormConjugator_one.lean:125:55: warning: This simp argument is unused:
+  AlgEquiv.one_apply
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [sigmaTensor, Algebra.TensorProduct.map_tmul]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_AutomorphicForm_twistedCentralizer_eq_map_centralizer_of_isNormConjugator_one.lean:127:15: warning: This simp argument is unused:
+  map_add
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [hx, hy]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_AutomorphicForm_twistedCentralizer_eq_map_centralizer_of_isNormConjugator_one.lean:127:28: warning: This simp argument is unused:
+  hy
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [map_add, hx]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_AutomorphicForm_twistedCentralizer_eq_map_centralizer_of_isNormConjugator_one.lean:260:11: warning: `TensorProduct.induction_on` has been deprecated: Use `TensorProduction.inductionOn` instead
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_AutomorphicForm_twistedCentralizer_eq_map_centralizer_of_isNormConjugator_one.lean:260:4: error: Type mismatch
+  TensorProduct.induction_on w ?m.246 ?m.247 ?m.248
+has type
+  ?m.245 w
+but is expected to have type
+  (LinearMap.rTensor A σ.toLinearMap) w = (sigmaTensor K L A σ) w
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_AutomorphicForm_twistedCentralizer_eq_map_centralizer_of_isNormConjugator_one.lean:329:2: warning: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`

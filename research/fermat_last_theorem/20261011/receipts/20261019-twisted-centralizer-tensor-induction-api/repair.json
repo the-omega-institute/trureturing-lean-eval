@@ -1,0 +1,72 @@
+{
+  "at": "2026-10-19T13:04:53.962333+00:00",
+  "name": "AutomorphicForm_twistedCentralizer_eq_map_centralizer_of_isNormConjugator_one",
+  "candidate": "r1",
+  "card_candidate": "r1",
+  "source_replacements": [
+    [
+      "  refine TensorProduct.induction_on z ?_ ?_ ?_\n  \u00b7 simp\n  \u00b7 intro l a\n    simp [sigmaTensor, Algebra.TensorProduct.map_tmul, AlgEquiv.mul_apply]\n  \u00b7 intro x y hx hy\n    simp only [map_add, hx, hy]",
+      "  induction z using TensorProduct.inductionOn with\n  | tmul l a =>\n    simp [sigmaTensor, Algebra.TensorProduct.map_tmul, AlgEquiv.mul_apply]\n  | add x y hx hy =>\n    simp only [map_add, hx, hy]",
+      1
+    ],
+    [
+      "  refine TensorProduct.induction_on z ?_ ?_ ?_\n  \u00b7 simp\n  \u00b7 intro l a\n    simp [sigmaTensor, Algebra.TensorProduct.map_tmul, AlgEquiv.one_apply]\n  \u00b7 intro x y hx hy\n    simp only [map_add, hx, hy]",
+      "  induction z using TensorProduct.inductionOn with\n  | tmul l a =>\n    simp [sigmaTensor, Algebra.TensorProduct.map_tmul, AlgEquiv.one_apply]\n  | add x y hx hy =>\n    simp only [map_add, hx, hy]",
+      1
+    ],
+    [
+      "    refine TensorProduct.induction_on w ?_ ?_ ?_\n    \u00b7 simp\n    \u00b7 intro l a\n      rw [LinearMap.rTensor_tmul, sigmaTensor_tmul, AlgEquiv.toLinearMap_apply]\n    \u00b7 intro u v hu hv\n      rw [map_add, map_add, hu, hv]",
+      "    induction w using TensorProduct.inductionOn with\n    | tmul l a =>\n      rw [LinearMap.rTensor_tmul, sigmaTensor_tmul, AlgEquiv.toLinearMap_apply]\n    | add u v hu hv =>\n      rw [map_add, map_add, hu, hv]",
+      1
+    ],
+    [
+      "\n  haveI : FiniteDimensional K L := Module.finite_of_finrank_pos (by rw [hdeg]; exact two_pos)\n",
+      "\n  have : FiniteDimensional K L := Module.finite_of_finrank_pos (by rw [hdeg]; exact two_pos)\n",
+      1
+    ]
+  ],
+  "card_replacements": [],
+  "baseline_byte_identical_to_pinned_supplier": true,
+  "baseline_by_role_byte_identical_to_pinned_supplier": {
+    "source": true,
+    "card": true
+  },
+  "prior_source_changes_preserved": "",
+  "prior_card_changes_preserved": "",
+  "pinned_supplier_source_and_card_preserved": true,
+  "public_card_statement_literal_preserved": true,
+  "solution_statement_literal_preserved": true,
+  "all_public_declaration_headers_literal_unchanged": true,
+  "verification_pending": false,
+  "installed": true,
+  "no_linter_suppression_added": true,
+  "complete_original_proof_preserved": true,
+  "full_original_statement_and_hypotheses_preserved": true,
+  "max_active_flt_jobs": 1,
+  "lean_threads": 1,
+  "original_actual_errors": 5,
+  "original_actual_warnings": 8,
+  "library_search": "No exact target or sigmaTensor multiplication/identity compatibility lemmas found in current trureturing. Pinned Mathlib LinearAlgebra/TensorProduct/Defs.lean:134-148 supplies inductionOn with pure-tensor and addition cases. The complete split-factor and local matching supplier proofs have independently verified the same typed two-case tensor induction repairs.",
+  "change": "Preserve the complete centralizer proof, exact public solution/card, all assumptions and all original declaration headers. Convert the three failing old tensor eliminators to typed inductionOn with pure-tensor and addition cases, retaining every substantive branch and removing only the now-subsumed zero branches. Clean the one actual proposition-local style warning. Append exact source/card recursive-axiom queries and await the unchanged single queue.",
+  "actual_warned_style_tokens": 1,
+  "actual_warned_style_lines": 1,
+  "full_original_complete": false,
+  "official_new_solve_credit": 0,
+  "stale_terminal_state_entries_excluded": [
+    {
+      "module": "Submission.Supplier.P2M.Sol.S_AlgebraicCurve_Place_sum_ramificationIndex_mul_inertiaDeg_exchange_add",
+      "wrapper_pid": 12849,
+      "make_exit": 0,
+      "terminal": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/a84ac47eb128ccd97e838fda-1792415083589183000.make-terminal.json"
+    }
+  ],
+  "active_import_closure_excluded": [],
+  "active_transitive_import_closure_size": 0,
+  "actual_live_descendant_sources": [],
+  "all_four_canonical_adapted_source_card_modules_excluded": [
+    "P2M.Sol.S_AutomorphicForm_twistedCentralizer_eq_map_centralizer_of_isNormConjugator_one",
+    "Submission.Supplier.P2M.Sol.S_AutomorphicForm_twistedCentralizer_eq_map_centralizer_of_isNormConjugator_one",
+    "Submission.Supplier.Theorems.Thm_AutomorphicForm_twistedCentralizer_eq_map_centralizer_of_isNormConjugator_one",
+    "Theorems.Thm_AutomorphicForm_twistedCentralizer_eq_map_centralizer_of_isNormConjugator_one"
+  ]
+}
