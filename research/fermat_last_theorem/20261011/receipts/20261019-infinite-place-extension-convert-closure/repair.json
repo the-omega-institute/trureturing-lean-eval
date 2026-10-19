@@ -1,0 +1,55 @@
+{
+  "at": "2026-10-19T12:21:18.089457+00:00",
+  "name": "NumberField_Extension",
+  "source_prefix": "Definitions/Def_",
+  "candidate": "r1",
+  "card_candidate": "r1",
+  "axiom_declarations": [
+    "NumberField.InfinitePlace.Extension.isExtension_or_isExtension_conjugate",
+    "NumberField.InfinitePlace.Extension.isLift_or_isConjugateLift"
+  ],
+  "source_replacements": [
+    [
+      "    convert Or.inr <| hr \u25b8 congrArg InfinitePlace.embedding w.mk_embedding\n    rfl\n",
+      "    convert Or.inr <| hr \u25b8 congrArg InfinitePlace.embedding w.mk_embedding\n",
+      1
+    ]
+  ],
+  "card_replacements": [],
+  "baseline_byte_identical_to_pinned_supplier": true,
+  "prior_source_changes_preserved": [],
+  "source_only_definition_module": true,
+  "card_not_applicable": true,
+  "public_declaration_statements_literal_preserved": true,
+  "all_public_declaration_headers_literal_unchanged": true,
+  "pinned_supplier_source_preserved": true,
+  "verification_pending": false,
+  "installed": true,
+  "no_linter_suppression_added": true,
+  "complete_original_proof_preserved": true,
+  "full_original_statement_and_hypotheses_preserved": true,
+  "max_active_flt_jobs": 1,
+  "lean_threads": 1,
+  "original_actual_errors": 1,
+  "original_actual_warnings": 0,
+  "original_source_lines": 198,
+  "library_search": "No exact NumberField extension API match in current trureturing D5/Reg. Actual Lean terminal reports No goals to be solved on the rfl directly after the existing convert Or.inr proof.",
+  "change": "Remove only the actual redundant trailing rfl after convert already closes the conjugate-embedding branch. Preserve all declaration headers, assumptions and the complete existing proof. Append exact changed and downstream lift recursive-axiom queries; wait for the unchanged single queue.",
+  "full_original_complete": false,
+  "official_new_solve_credit": 0,
+  "stale_terminal_state_entries_excluded": [],
+  "active_import_closure_excluded": [
+    "Submission.Supplier.Definitions.Def_PresheafOfModules_ExteriorPower"
+  ],
+  "active_transitive_import_closure_size": 1,
+  "actual_live_descendant_sources": [
+    {
+      "pid": 32706,
+      "source": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/Definitions/Def_PresheafOfModules_ExteriorPower.lean"
+    }
+  ],
+  "all_four_canonical_adapted_source_card_modules_excluded": [
+    "Definitions.Def_NumberField_Extension",
+    "Submission.Supplier.Definitions.Def_NumberField_Extension"
+  ]
+}
