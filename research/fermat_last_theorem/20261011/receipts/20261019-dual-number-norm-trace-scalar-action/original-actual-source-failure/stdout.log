@@ -1,0 +1,26 @@
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_Algebra_norm_one_add_eps_tmul.lean:49:32: error: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  ?r • ?x
+in the target expression
+  1 + (algebraMap A' (DualNumber A')) ((Algebra.trace A' B) f) * DualNumber.eps =
+    1 + (Algebra.trace A' B) f • DualNumber.eps
+
+A' B : Type u
+inst✝⁴ : CommRing A'
+inst✝³ : CommRing B
+inst✝² : Algebra A' B
+inst✝¹ : Module.Free A' B
+inst✝ : Module.Finite A' B
+f : B
+b : Module.Basis (Module.Free.ChooseBasisIndex A' B) A' B := Module.Free.chooseBasis A' B
+b' : Module.Basis (Module.Free.ChooseBasisIndex A' B) (DualNumber A') (DualNumber A' ⊗[A'] B) :=
+  Algebra.TensorProduct.basis (DualNumber A') b
+hM :
+  ∀ (g : B),
+    (Algebra.leftMulMatrix b') (1 ⊗ₜ[A'] g) = ((Algebra.leftMulMatrix b) g).map ⇑(algebraMap A' (DualNumber A'))
+hone : (Algebra.leftMulMatrix b') 1 = 1
+h1 : DualNumber.eps ⊗ₜ[A'] f = DualNumber.eps • 1 ⊗ₜ[A'] f
+hadd :
+  (Algebra.leftMulMatrix b') (1 + DualNumber.eps ⊗ₜ[A'] f) =
+    1 + DualNumber.eps • ((Algebra.leftMulMatrix b) f).map ⇑(algebraMap A' (DualNumber A'))
+⊢ 1 + (algebraMap A' (DualNumber A')) ((Algebra.trace A' B) f) * DualNumber.eps =
+    1 + (Algebra.trace A' B) f • DualNumber.eps

@@ -1,0 +1,57 @@
+{
+  "at": "2026-10-19T13:12:54.114969+00:00",
+  "name": "Algebra_norm_one_add_eps_tmul",
+  "candidate": "r1",
+  "card_candidate": "r1",
+  "source_replacements": [
+    [
+      "    DualNumber.inr_eq_smul_eps, Algebra.smul_def]",
+      "    DualNumber.inr_eq_smul_eps, TrivSqZeroExt.algebraMap_eq_inl, TrivSqZeroExt.inl_mul_eq_smul]",
+      1
+    ]
+  ],
+  "card_replacements": [],
+  "baseline_byte_identical_to_pinned_supplier": true,
+  "baseline_by_role_byte_identical_to_pinned_supplier": {
+    "source": true,
+    "card": true
+  },
+  "prior_source_changes_preserved": "",
+  "prior_card_changes_preserved": "",
+  "pinned_supplier_source_and_card_preserved": true,
+  "public_card_statement_literal_preserved": true,
+  "solution_statement_literal_preserved": true,
+  "all_public_declaration_headers_literal_unchanged": true,
+  "verification_pending": false,
+  "installed": true,
+  "no_linter_suppression_added": true,
+  "complete_original_proof_preserved": true,
+  "full_original_statement_and_hypotheses_preserved": true,
+  "max_active_flt_jobs": 1,
+  "lean_threads": 1,
+  "original_actual_errors": 1,
+  "original_actual_warnings": 0,
+  "library_search": "No exact Algebra.norm_one_add_eps_tmul or DualNumber.eps theorem in current trureturing. Pinned Mathlib Algebra/DualNumber.lean:91 expresses inr as scalar times epsilon. Algebra/TrivSqZeroExt/Basic.lean:872 identifies the base algebraMap with inl, and :471 identifies inl multiplication with the extension scalar action. The generic Algebra.smul_def:276 failed to match the extension action in the actual final goal.",
+  "change": "Preserve the complete matrix-determinant norm/trace argument and the exact public source/card statements with all original hypotheses. Replace only the final generic scalar-action rewrite with the precise square-zero-extension algebraMap and multiplication identities. Append exact recursive-axiom queries and await the unchanged single queue.",
+  "actual_warned_style_tokens": 0,
+  "actual_warned_style_lines": 0,
+  "full_original_complete": false,
+  "official_new_solve_credit": 0,
+  "stale_terminal_state_entries_excluded": [],
+  "active_import_closure_excluded": [
+    "Submission.Supplier.P2M.Sol.S_AlgebraicGeometry_Scheme_exists_normSections_mul_map_eq_norm_of_isFinite_of_isIntegrallyClosed"
+  ],
+  "active_transitive_import_closure_size": 10,
+  "actual_live_descendant_sources": [
+    {
+      "pid": 15166,
+      "source": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_AlgebraicGeometry_Scheme_exists_normSections_mul_map_eq_norm_of_isFinite_of_isIntegrallyClosed.lean"
+    }
+  ],
+  "all_four_canonical_adapted_source_card_modules_excluded": [
+    "P2M.Sol.S_Algebra_norm_one_add_eps_tmul",
+    "Submission.Supplier.P2M.Sol.S_Algebra_norm_one_add_eps_tmul",
+    "Submission.Supplier.Theorems.Thm_Algebra_norm_one_add_eps_tmul",
+    "Theorems.Thm_Algebra_norm_one_add_eps_tmul"
+  ]
+}
