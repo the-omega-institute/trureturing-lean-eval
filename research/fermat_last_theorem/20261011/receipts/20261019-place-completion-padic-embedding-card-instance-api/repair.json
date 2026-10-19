@@ -1,0 +1,166 @@
+{
+  "at": "2026-10-19T11:26:40.762795+00:00",
+  "name": "NumberField_PlaceDecomp_exists_ringHom_adicCompletion_padicAlgCl_extends_padicEmbedding",
+  "candidate": "r3",
+  "card_candidate": "r4",
+  "source_replacements": [
+    [
+      "\n  haveI : Normal \u211a \u21a5F := @IsGalois.to_normal _ _ _ _ _ \u2039IsGalois \u211a \u21a5F\u203a\n",
+      "\n  have : Normal \u211a \u21a5F := @IsGalois.to_normal _ _ _ _ _ \u2039IsGalois \u211a \u21a5F\u203a\n",
+      1
+    ],
+    [
+      "\n  haveI : Normal \u211a \u21a5Fq := Normal.of_algEquiv eF\n",
+      "\n  have : Normal \u211a \u21a5Fq := Normal.of_algEquiv eF\n",
+      1
+    ],
+    [
+      "\n  haveI : Algebra.IsAlgebraic \u211a (AlgebraicClosure \u211a) := AlgebraicClosure.isAlgebraic \u211a\n",
+      "\n  have : Algebra.IsAlgebraic \u211a (AlgebraicClosure \u211a) := AlgebraicClosure.isAlgebraic \u211a\n",
+      1
+    ],
+    [
+      "\n  haveI : IsAlgClosure \u211a (AlgebraicClosure \u211a) := \u27e8inferInstance, inferInstance\u27e9\n",
+      "\n  have : IsAlgClosure \u211a (AlgebraicClosure \u211a) := \u27e8inferInstance, inferInstance\u27e9\n",
+      1
+    ],
+    [
+      "\n  haveI : Normal \u211a (AlgebraicClosure \u211a) := IsAlgClosure.normal \u211a (AlgebraicClosure \u211a)\n",
+      "\n  have : Normal \u211a (AlgebraicClosure \u211a) := IsAlgClosure.normal \u211a (AlgebraicClosure \u211a)\n",
+      1
+    ],
+    [
+      "variable (F : IntermediateField \u211a (AlgebraicClosure \u211a)) [NumberField \u21a5F] [IsGalois \u211a \u21a5F] (w : HeightOneSpectrum (\ud835\udcde \u21a5F))",
+      "variable (F : IntermediateField \u211a (AlgebraicClosure \u211a)) [NumberField \u21a5F] [hFgal : IsGalois \u211a \u21a5F] (w : HeightOneSpectrum (\ud835\udcde \u21a5F))",
+      1
+    ],
+    [
+      "\ntheorem norm_algEquiv",
+      "\ninclude hFgal in\ntheorem norm_algEquiv",
+      1
+    ],
+    [
+      "\ntheorem sigma_conj_apply",
+      "\ninclude hFgal in\ntheorem sigma_conj_apply",
+      1
+    ],
+    [
+      "\ntheorem norm_le_one",
+      "\ninclude hFgal in\ntheorem norm_le_one",
+      1
+    ],
+    [
+      "\ntheorem denseRange_algebraMap",
+      "\ninclude hFgal in\ntheorem denseRange_algebraMap",
+      1
+    ],
+    [
+      "\ntheorem norm_lt_one_of_mem",
+      "\ninclude hFgal in\ntheorem norm_lt_one_of_mem",
+      1
+    ],
+    [
+      "variable (F : IntermediateField \u211a (AlgebraicClosure \u211a)) [NumberField \u21a5F] [hFgal : IsGalois \u211a \u21a5F] (w : HeightOneSpectrum (\ud835\udcde \u21a5F))",
+      "variable (F : IntermediateField \u211a (AlgebraicClosure \u211a)) [hFnum : NumberField \u21a5F] [hFgal : IsGalois \u211a \u21a5F] (w : HeightOneSpectrum (\ud835\udcde \u21a5F))",
+      1
+    ],
+    [
+      "include hFgal in\ntheorem sigma_conj_apply",
+      "include hFnum in\ntheorem sigma_conj_apply",
+      1
+    ],
+    [
+      "\u2016\u03c4 y\u2016 = \u2016y\u2016 := congrArg NNReal.toReal (nnnorm_padicAlgCl_algEquiv _ \u03c4 y)",
+      "\u2016\u03c4 y\u2016 = \u2016y\u2016 := by\n  cases hFgal\n  exact congrArg NNReal.toReal (nnnorm_padicAlgCl_algEquiv _ \u03c4 y)",
+      1
+    ],
+    [
+      "= \u03b3 (\u03c3 (k : AlgebraicClosure \u211a)) := by\n  have h :",
+      "= \u03b3 (\u03c3 (k : AlgebraicClosure \u211a)) := by\n  cases hFnum\n  have h :",
+      1
+    ],
+    [
+      "\u2016padicEmbedding (qOf (\u21a5F) w) (\u03c3 ((x : \u21a5F) : AlgebraicClosure \u211a))\u2016 \u2264 1 := by\n  have hint",
+      "\u2016padicEmbedding (qOf (\u21a5F) w) (\u03c3 ((x : \u21a5F) : AlgebraicClosure \u211a))\u2016 \u2264 1 := by\n  cases hFgal\n  have hint",
+      1
+    ],
+    [
+      "theorem denseRange_algebraMap : DenseRange (algebraMap \u21a5F (w.adicCompletion \u21a5F)) :=\n  IsDedekindDomain.HeightOneSpectrum.denseRange_algebraMap (\u21a5F) w",
+      "theorem denseRange_algebraMap : DenseRange (algebraMap \u21a5F (w.adicCompletion \u21a5F)) := by\n  cases hFgal\n  exact IsDedekindDomain.HeightOneSpectrum.denseRange_algebraMap (\u21a5F) w",
+      1
+    ],
+    [
+      "\u2016padicEmbedding (qOf (\u21a5F) w) (\u03c3 ((x : \u21a5F) : AlgebraicClosure \u211a))\u2016 < 1 := by\n  have hv",
+      "\u2016padicEmbedding (qOf (\u21a5F) w) (\u03c3 ((x : \u21a5F) : AlgebraicClosure \u211a))\u2016 < 1 := by\n  cases hFgal\n  have hv",
+      1
+    ]
+  ],
+  "card_replacements": [
+    [
+      "IsDedekindDomain.HeightOneSpectrum.instMulActionHomClassAlgHomTensorProductAdicCompletionForallValEqUnder_definitions ",
+      "",
+      1
+    ],
+    [
+      " IsDedekindDomain.HeightOneSpectrum.adicCompletion.instFiniteForallValEqUnderOfFiniteDimensional_definitions",
+      "",
+      1
+    ],
+    [
+      " IsDedekindDomain.HeightOneSpectrum.adicCompletion.instFiniteValEqUnderOfFiniteDimensional_definitions",
+      "",
+      1
+    ],
+    [
+      " IsDedekindDomain.HeightOneSpectrum.instIsScalarTowerSubtypeAdicCompletionMemValuationSubringAdicCompletionIntegersValEqUnder_definitions",
+      "",
+      1
+    ]
+  ],
+  "baseline_byte_identical_to_pinned_supplier": false,
+  "baseline_by_role_byte_identical_to_pinned_supplier": {
+    "source": true,
+    "card": false
+  },
+  "prior_source_changes_preserved": "",
+  "prior_card_changes_preserved": "--- supplier\n+++ baseline-canonical\n@@ -7,7 +7,7 @@\n import Definitions.Def_GroupCohomology_ContinuousH1\n import P2M.Util\n import P2M.Sol.S_NumberField_PlaceDecomp_exists_ringHom_adicCompletion_padicAlgCl_extends_padicEmbedding\n-attribute [-instance] IsDedekindDomain.HeightOneSpectrum.Extension.instAlgebraSubtypeAdicCompletionMemValuationSubringAdicCompletionIntegersValEqUnder IsDedekindDomain.HeightOneSpectrum.Extension.instAlgebraSubtypeAdicCompletionMemValuationSubringAdicCompletionIntegersValEqUnder_1 IsDedekindDomain.HeightOneSpectrum.instMulActionHomClassAlgHomTensorProductAdicCompletionForallValEqUnder_definitions IsDedekindDomain.HeightOneSpectrum.Extension.instAlgebraAdicCompletionValEqUnder IsDedekindDomain.HeightOneSpectrum.adicCompletion.instFiniteForallValEqUnderOfFiniteDimensional_definitions IsDedekindDomain.HeightOneSpectrum.instIsBiscalarSubtypeAdicCompletionMemValuationSubringAdicCompletionIntegersTensorProductCoeAlgHomTensorAdicCompletionIntegersTo IsDedekindDomain.HeightOneSpectrum.Extension.instContinuousSMulAdicCompletionValEqUnder IsDedekindDomain.HeightOneSpectrum.adicCompletion.instIsModuleTopology IsDedekindDomain.HeightOneSpectrum.Extension.instFiniteSubtypeAdicCompletionMemValuationSubringAdicCompletionIntegersValEqUnderOfFiniteDimensional IsDedekindDomain.HeightOneSpectrum.adicCompletion.instFiniteValEqUnderOfFiniteDimensional_definitions instIsBiscalarTensorProductCoeAlgHomBaseChange_of_algebraMap IsDedekindDomain.HeightOneSpectrum.instIsScalarTowerSubtypeAdicCompletionMemValuationSubringAdicCompletionIntegersValEqUnder_definitions IsDedekindDomain.HeightOneSpectrum.adicCompletion.instIsModuleTopologyPi IsDedekindDomain.HeightOneSpectrum.adicCompletion.instIsDiscreteValuationRingSubtypeMemValuationSubringAdicCompletionIntegers_definitions IsDedekindDomain.HeightOneSpectrum.adicCompletion.instDimensionLEOneSubtypeMemValuationSubringAdicCompletionIntegers_definitions IsDedekindDomain.HeightOneSpectrum.instLiesOverSubtypeAdicCompletionMemValuationSubringAdicCompletionIntegersCompletionIdealAsIdeal IsDedekindDomain.HeightOneSpectrum.adicCompletion.instIsPrincipalIdealRingSubtypeMemValuationSubringAdicCompletionIntegers_definitions IsDedekindDomain.HeightOneSpectrum.adicCompletion.instIsDiscreteValuationRingSubtypeMemSubringIntegerWithZeroMultiplicativeInt_definitions IsDedekindDomain.HeightOneSpectrum.instIsRankOneDiscreteWithZeroMultiplicativeIntAdicCompletionV_definitions Submodule.instIsTopologicalModuleSubtypeMem Pi.instTopologicalModule IsTopologicalModule.toContinuousSMul IsTopologicalModule.toContinuousAdd instFunLike SemialgHomClass.toSemilinearMapClass instCoeTCSemialgHom SemialgHomClass.toRingHomClass SemialgHomClass.instSemialgHom\n+attribute [-instance] IsDedekindDomain.HeightOneSpectrum.Extension.instAlgebraSubtypeAdicCompletionMemValuationSubringAdicCompletionIntegersValEqUnder IsDedekindDomain.HeightOneSpectrum.Extension.instAlgebraSubtypeAdicCompletionMemValuationSubringAdicCompletionIntegersValEqUnder_1 IsDedekindDomain.HeightOneSpectrum.instMulActionHomClassAlgHomTensorProductAdicCompletionForallValEqUnder_definitions IsDedekindDomain.HeightOneSpectrum.Extension.instAlgebraAdicCompletionValEqUnder IsDedekindDomain.HeightOneSpectrum.adicCompletion.instFiniteForallValEqUnderOfFiniteDimensional_definitions IsDedekindDomain.HeightOneSpectrum.instIsBiscalarSubtypeAdicCompletionMemValuationSubringAdicCompletionIntegersTensorProductCoeAlgHomTensorAdicCompletionIntegersTo IsDedekindDomain.HeightOneSpectrum.Extension.instContinuousSMulAdicCompletionValEqUnder IsDedekindDomain.HeightOneSpectrum.adicCompletion.instIsModuleTopology IsDedekindDomain.HeightOneSpectrum.Extension.instFiniteSubtypeAdicCompletionMemValuationSubringAdicCompletionIntegersValEqUnderOfFiniteDimensional IsDedekindDomain.HeightOneSpectrum.adicCompletion.instFiniteValEqUnderOfFiniteDimensional_definitions instIsBiscalarTensorProductCoeAlgHomBaseChange_of_algebraMap IsDedekindDomain.HeightOneSpectrum.instIsScalarTowerSubtypeAdicCompletionMemValuationSubringAdicCompletionIntegersValEqUnder_definitions IsDedekindDomain.HeightOneSpectrum.adicCompletion.instIsModuleTopologyPi IsDedekindDomain.HeightOneSpectrum.instLiesOverSubtypeAdicCompletionMemValuationSubringAdicCompletionIntegersCompletionIdealAsIdeal Submodule.instIsTopologicalModuleSubtypeMem Pi.instTopologicalModule IsTopologicalModule.toContinuousSMul IsTopologicalModule.toContinuousAdd instFunLike SemialgHomClass.toSemilinearMapClass instCoeTCSemialgHom SemialgHomClass.toRingHomClass SemialgHomClass.instSemialgHom\n attribute [-simp] SemialgHom.baseChange_of_algebraMap_tmul_left SemialgHom.baseChangeRightOfAlgebraMap_apply Pi.semialgHomPi_apply Pi.semialgHom_apply Module.Basis.rightBaseChange_apply LinearEquiv.coe_mulLeft LinearEquiv.coe_mulRight WithVal.semialgebraMap_toFun_ofVal Module.Basis.rightBaseChange_repr IsDedekindDomain.HeightOneSpectrum.adicCompletionIntegers.tensorCoe_tmul IsDedekindDomain.HeightOneSpectrum.tensorAdicCompletionIntegersTo_tmul SemialgHom.baseChangeRightOfAlgebraMap_coe IsDedekindDomain.HeightOneSpectrum.adicCompletion.integerBaseChangeLinearEquiv_tmul_apply SemialgHom.baseChange_of_algebraMap_tmul_right IsLocalization.map_moduleTensorEquiv_symm_tmul IsLocalization.leftModuleTensorEquiv_apply IsLocalization.moduleLid_symm_apply IsLocalization.leftModuleTensorEquiv_symm_apply IsLocalization.map_moduleTensorEquiv_tmul IsModuleTopology.continuousLinearEquiv_apply AlgEquiv.extendScalars_symm_apply IsModuleTopology.Module.Basis.equivFun_homeo_symm_apply IsModuleTopology.Module.Basis.equivFun_homeo_apply IsModuleTopology.continuousAlgEquivOfIsBiscalar_apply AlgEquiv.extendScalars_apply IsModuleTopology.continuousLinearEquiv_symm_apply SemialgHom.restrictScalars_toFun SemialgHom.mk.sizeOf_spec SemialgHom.mk.injEq SemialgHom.coe_coe coe_mk TensorProduct.RightActions.smul_def TensorProduct.RightActions.Module.TensorProduct.comm_symm_apply_tmul TensorProduct.RightActions.LinearMap.baseChange_id TensorProduct.RightActions.algebraMap_eval TensorProduct.RightActions.Module.TensorProduct.comm_apply_tmul TensorProduct.RightActions.Algebra.TensorProduct.comm_symm_apply_tmul TensorProduct.RightActions.Algebra.TensorProduct.comm_apply_tmul\n set_option autoImplicit false\n set_option synthInstance.maxHeartbeats 400000\n",
+  "pinned_supplier_source_and_card_preserved": true,
+  "public_card_statement_literal_preserved": true,
+  "solution_statement_literal_preserved": true,
+  "all_public_declaration_headers_literal_unchanged": true,
+  "original_section_hypotheses_retained_by_explicit_include": true,
+  "verification_pending": false,
+  "installed": true,
+  "no_linter_suppression_added": true,
+  "complete_original_proof_preserved": true,
+  "full_original_statement_and_hypotheses_preserved": true,
+  "max_active_flt_jobs": 1,
+  "lean_threads": 1,
+  "original_actual_errors": 1,
+  "original_source_warnings": 10,
+  "library_search": "No exact theorem or obsolete generated instance-name match in current trureturing D5/Reg. The same generated instance name is absent from pinned Mathlib and the imported completion bridge; actual card compilation reports it as an unknown constant.",
+  "change": "Remove only the unknown instance-disable list entry from the public card. Keep all pre-existing card compatibility edits. Retain the complete 359-line supplier proof, replace the five warned haveI bindings with have, and explicitly include the already-present instance in each warned auxiliary lemma (four Galois, one NumberField). Every public declaration header, original theorem hypothesis and proof is retained. Append exact source/card recursive-axiom queries and await unchanged single queue.",
+  "full_original_complete": false,
+  "official_new_solve_credit": 0,
+  "stale_terminal_state_entries_excluded": [],
+  "active_import_closure_excluded": [
+    "Submission.Supplier.Definitions.Def_AlgebraicGeometry_KwCartierDlogFixednessEngine"
+  ],
+  "active_transitive_import_closure_size": 7,
+  "actual_live_descendant_sources": [
+    {
+      "pid": 26164,
+      "source": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/Definitions/Def_AlgebraicGeometry_KwCartierDlogFixednessEngine.lean"
+    }
+  ],
+  "all_four_canonical_adapted_source_card_modules_excluded": [
+    "P2M.Sol.S_NumberField_PlaceDecomp_exists_ringHom_adicCompletion_padicAlgCl_extends_padicEmbedding",
+    "Submission.Supplier.P2M.Sol.S_NumberField_PlaceDecomp_exists_ringHom_adicCompletion_padicAlgCl_extends_padicEmbedding",
+    "Submission.Supplier.Theorems.Thm_NumberField_PlaceDecomp_exists_ringHom_adicCompletion_padicAlgCl_extends_padicEmbedding",
+    "Theorems.Thm_NumberField_PlaceDecomp_exists_ringHom_adicCompletion_padicAlgCl_extends_padicEmbedding"
+  ],
+  "latest_change": "Use the pinned normal-closure range inclusion lemma where applicable. Retain original section hypotheses and eliminate the existing Prop-valued instances with cases before the original proof, because explicit includes alone still produced actual rc3 unused-section-variable warnings. No omitted hypotheses, linter suppression, solver changes, or statement changes. For the source/card pair remove only the additional instance identifier actually reported unknown by card r1.",
+  "explicit_include_alone_failed_to_silence_actual_rc3_warnings": true,
+  "original_section_instances_retained_and_eliminated_in_proof": true,
+  "latest_card_change": "Remove only the obsolete -instance identifier reported unknown by the current actual card terminal; source, all current instance removals, statement and complete p2m_exact_reverting proof preserved."
+}
