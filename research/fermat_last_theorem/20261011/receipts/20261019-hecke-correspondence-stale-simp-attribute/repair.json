@@ -1,0 +1,204 @@
+{
+  "at": "2026-10-19T15:03:51.554464+00:00",
+  "name": "ModularCurve_correspondence_heckeBetaC_heckeAlphaC_single_add_single_autOnPlaces_eq_pullbackAlong_pushforwardAlong",
+  "candidate": "r3",
+  "card_candidate": "r3",
+  "source_replacements": [
+    [
+      "  haveI : Algebra.IsSeparable A (IntermediateField.adjoin A S) :=\n",
+      "  have : Algebra.IsSeparable A (IntermediateField.adjoin A S) :=\n",
+      1
+    ],
+    [
+      "  haveI := isScalarTower_along (IntermediateField.inclusion hAB)\n",
+      "  have := isScalarTower_along (IntermediateField.inclusion hAB)\n",
+      1
+    ],
+    [
+      "    SeparableAlong k (IntermediateField.inclusion hAB) := by\n  letI := algebraAlong (IntermediateField.inclusion hAB)\n",
+      "    SeparableAlong k (IntermediateField.inclusion hAB) := by\n  let := algebraAlong (IntermediateField.inclusion hAB)\n",
+      1
+    ],
+    [
+      "    IsSeparable A (\u27e8t, ht\u27e9 : B) := by\n  letI := algebraAlong (IntermediateField.inclusion hAB)\n",
+      "    IsSeparable A (\u27e8t, ht\u27e9 : B) := by\n  let := algebraAlong (IntermediateField.inclusion hAB)\n",
+      1
+    ],
+    [
+      "theorem separableAlong_symm : SeparableAlong k (e.symm.toAlgHom : F' \u2192\u2090[k] F) := by\n  letI := algebraAlong (e.symm.toAlgHom : F' \u2192\u2090[k] F)\n",
+      "theorem separableAlong_symm : SeparableAlong k (e.symm.toAlgHom : F' \u2192\u2090[k] F) := by\n  let := algebraAlong (e.symm.toAlgHom : F' \u2192\u2090[k] F)\n",
+      1
+    ],
+    [
+      "theorem finrankAlong_symm : finrankAlong k (e.symm.toAlgHom : F' \u2192\u2090[k] F) = 1 := by\n  letI := algebraAlong (e.symm.toAlgHom : F' \u2192\u2090[k] F)\n",
+      "theorem finrankAlong_symm : finrankAlong k (e.symm.toAlgHom : F' \u2192\u2090[k] F) = 1 := by\n  let := algebraAlong (e.symm.toAlgHom : F' \u2192\u2090[k] F)\n",
+      1
+    ],
+    [
+      "  haveI := isIntegral_along _ h\n",
+      "  have := isIntegral_along _ h\n",
+      1
+    ],
+    [
+      "  haveI := isScalarTower_along (e.symm.toAlgHom : F' \u2192\u2090[k] F)\n",
+      "  have := isScalarTower_along (e.symm.toAlgHom : F' \u2192\u2090[k] F)\n",
+      1
+    ],
+    [
+      "    x.inertiaDegAlong e.symm.toAlgHom h = 1 := by\n  letI := algebraAlong (e.symm.toAlgHom : F' \u2192\u2090[k] F)\n",
+      "    x.inertiaDegAlong e.symm.toAlgHom h = 1 := by\n  let := algebraAlong (e.symm.toAlgHom : F' \u2192\u2090[k] F)\n",
+      1
+    ],
+    [
+      "  letI := algebraAlong (AlgHom.id k F)\n",
+      "  let := algebraAlong (AlgHom.id k F)\n",
+      1
+    ],
+    [
+      "  haveI : Module.Finite F F' := hfin\n",
+      "  have : Module.Finite F F' := hfin\n",
+      1
+    ],
+    [
+      "    (\u03c6 : F \u2192\u2090[k] F') (hfin : FiniteAlong k \u03c6) : \u03c6.toRingHom.IsIntegral := by\n  letI := algebraAlong \u03c6\n",
+      "    (\u03c6 : F \u2192\u2090[k] F') (hfin : FiniteAlong k \u03c6) : \u03c6.toRingHom.IsIntegral := by\n  let := algebraAlong \u03c6\n",
+      1
+    ],
+    [
+      "    (\u03c6 : F \u2192\u2090[k] F') (h : 0 < finrankAlong k \u03c6) : FiniteAlong k \u03c6 := by\n  letI := algebraAlong \u03c6\n",
+      "    (\u03c6 : F \u2192\u2090[k] F') (h : 0 < finrankAlong k \u03c6) : FiniteAlong k \u03c6 := by\n  let := algebraAlong \u03c6\n",
+      1
+    ],
+    [
+      " ModularCurve.eisensteinNumerator_nineteen",
+      "",
+      1
+    ],
+    [
+      "attribute [-simp] ModularCurve.coe_towerInclBar ModularCurve.coe_towerSubstBar ModularCurve.coe_heckeBetaBarRingHom ModularCurve.coe_heckeBetaBar ModularCurve.coe_heckeAlphaBar ModularCurve.baseAut_arithmeticGalois ModularCurve.JZero.torsionGaloisRep_apply ModularCurve.coe_arithmeticRingAut_apply ModularCurve.toRingAut_arithmeticGalois ModularForm.val_heckeDiagMatrix ModularForm.heckeU_zero ModularForm.heckeU_zero_left ModularForm.heckeT_zero ModularForm.val_heckeMatrix ModularForm.heckeMatrix_zero ModularForm.heckeT_zero_left ModularForm.heckeDiagMatrix_zero ModularForm.val_upperTriangularGL ModularCurve.coe_baseChangeEquiv_apply ModularCurve.baseChangeHom_tmul ModularCurve.coe_cuspidalDivisor\u2080 AlgebraicCurve.Place.placeOfPrime_toValuationSubring AlgebraicCurve.Place.mem_fiberOver AlgebraicCurve.Place.fiberEquiv_symm_apply AlgebraicCurve.Place.fiberEquiv_apply AlgebraicCurve.Place.centerHeightOneSpectrum_asIdeal ModularCurve.eisensteinNumerator_seventeen ModularCurve.eisensteinNumerator_eleven ModularCurve.eisensteinNumerator_five ModularCurve.eisensteinNumerator_seven ModularCurve.eisensteinNumerator_twentythree ModularCurve.eisensteinNumerator_thirteen ModularCurve.constantCoeff_dedekindEtaUnitQ\n",
+      "attribute [-simp] ModularCurve.coe_towerInclBar\nattribute [-simp] ModularCurve.coe_towerSubstBar\nattribute [-simp] ModularCurve.coe_heckeBetaBarRingHom\nattribute [-simp] ModularCurve.coe_heckeBetaBar\nattribute [-simp] ModularCurve.coe_heckeAlphaBar\nattribute [-simp] ModularCurve.baseAut_arithmeticGalois\nattribute [-simp] ModularCurve.JZero.torsionGaloisRep_apply\nattribute [-simp] ModularCurve.coe_arithmeticRingAut_apply\nattribute [-simp] ModularCurve.toRingAut_arithmeticGalois\nattribute [-simp] ModularForm.val_heckeDiagMatrix\nattribute [-simp] ModularForm.heckeU_zero\nattribute [-simp] ModularForm.heckeU_zero_left\nattribute [-simp] ModularForm.heckeT_zero\nattribute [-simp] ModularForm.val_heckeMatrix\nattribute [-simp] ModularForm.heckeMatrix_zero\nattribute [-simp] ModularForm.heckeT_zero_left\nattribute [-simp] ModularForm.heckeDiagMatrix_zero\nattribute [-simp] ModularForm.val_upperTriangularGL\nattribute [-simp] ModularCurve.coe_baseChangeEquiv_apply\nattribute [-simp] ModularCurve.baseChangeHom_tmul\nattribute [-simp] ModularCurve.coe_cuspidalDivisor\u2080\nattribute [-simp] AlgebraicCurve.Place.placeOfPrime_toValuationSubring\nattribute [-simp] AlgebraicCurve.Place.mem_fiberOver\nattribute [-simp] AlgebraicCurve.Place.fiberEquiv_symm_apply\nattribute [-simp] AlgebraicCurve.Place.fiberEquiv_apply\nattribute [-simp] AlgebraicCurve.Place.centerHeightOneSpectrum_asIdeal\nattribute [-simp] ModularCurve.eisensteinNumerator_eleven\nattribute [-simp] ModularCurve.eisensteinNumerator_five\nattribute [-simp] ModularCurve.eisensteinNumerator_seven\nattribute [-simp] ModularCurve.eisensteinNumerator_twentythree\nattribute [-simp] ModularCurve.eisensteinNumerator_thirteen\nattribute [-simp] ModularCurve.constantCoeff_dedekindEtaUnitQ\n",
+      1
+    ],
+    [
+      "attribute [-simp] ModularCurve.eisensteinNumerator_eleven\n",
+      "",
+      1
+    ],
+    [
+      "attribute [-simp] ModularCurve.eisensteinNumerator_five\n",
+      "",
+      1
+    ],
+    [
+      "attribute [-simp] ModularCurve.eisensteinNumerator_seven\n",
+      "",
+      1
+    ],
+    [
+      "attribute [-simp] ModularCurve.eisensteinNumerator_twentythree\n",
+      "",
+      1
+    ],
+    [
+      "attribute [-simp] ModularCurve.eisensteinNumerator_thirteen\n",
+      "",
+      1
+    ],
+    [
+      "attribute [-simp] ModularCurve.constantCoeff_dedekindEtaUnitQ\n",
+      "",
+      1
+    ]
+  ],
+  "card_replacements": [
+    [
+      " ModularCurve.eisensteinNumerator_nineteen",
+      "",
+      1
+    ],
+    [
+      "attribute [-simp] AlgebraicCurve.Place.centerHeightOneSpectrum_asIdeal ModularCurve.eisensteinNumerator_seventeen ModularCurve.eisensteinNumerator_eleven ModularCurve.eisensteinNumerator_five ModularCurve.eisensteinNumerator_seven ModularCurve.eisensteinNumerator_twentythree ModularCurve.eisensteinNumerator_thirteen ModularCurve.constantCoeff_dedekindEtaUnitQ ModularCurve.qExpandAlgHomC_apply\n",
+      "attribute [-simp] AlgebraicCurve.Place.centerHeightOneSpectrum_asIdeal\nattribute [-simp] ModularCurve.eisensteinNumerator_eleven\nattribute [-simp] ModularCurve.eisensteinNumerator_five\nattribute [-simp] ModularCurve.eisensteinNumerator_seven\nattribute [-simp] ModularCurve.eisensteinNumerator_twentythree\nattribute [-simp] ModularCurve.eisensteinNumerator_thirteen\nattribute [-simp] ModularCurve.constantCoeff_dedekindEtaUnitQ\nattribute [-simp] ModularCurve.qExpandAlgHomC_apply\n",
+      1
+    ],
+    [
+      "attribute [-simp] ModularCurve.eisensteinNumerator_eleven\n",
+      "",
+      1
+    ],
+    [
+      "attribute [-simp] ModularCurve.eisensteinNumerator_five\n",
+      "",
+      1
+    ],
+    [
+      "attribute [-simp] ModularCurve.eisensteinNumerator_seven\n",
+      "",
+      1
+    ],
+    [
+      "attribute [-simp] ModularCurve.eisensteinNumerator_twentythree\n",
+      "",
+      1
+    ],
+    [
+      "attribute [-simp] ModularCurve.eisensteinNumerator_thirteen\n",
+      "",
+      1
+    ],
+    [
+      "attribute [-simp] ModularCurve.constantCoeff_dedekindEtaUnitQ\n",
+      "",
+      1
+    ]
+  ],
+  "baseline_byte_identical_to_pinned_supplier": true,
+  "pinned_supplier_source_and_card_preserved": true,
+  "supplier_repository": "anthropics/fermats-last-theorem",
+  "supplier_revision": "6e837e75355538c7f80bab5b956861e86c4eacc2",
+  "original_actual_errors": 1,
+  "original_actual_warnings": 13,
+  "actual_warned_style_lines": 13,
+  "all_public_declaration_headers_literal_unchanged": true,
+  "solution_statement_literal_preserved": true,
+  "public_card_statement_literal_preserved": true,
+  "complete_original_proof_preserved": true,
+  "full_original_statement_and_hypotheses_preserved": true,
+  "no_linter_suppression_added": true,
+  "actual_absent_attribute_tokens": [
+    "ModularCurve.eisensteinNumerator_nineteen",
+    "ModularCurve.eisensteinNumerator_seventeen",
+    "ModularCurve.eisensteinNumerator_eleven",
+    "ModularCurve.eisensteinNumerator_five",
+    "ModularCurve.eisensteinNumerator_seven",
+    "ModularCurve.eisensteinNumerator_twentythree",
+    "ModularCurve.eisensteinNumerator_thirteen",
+    "ModularCurve.constantCoeff_dedekindEtaUnitQ"
+  ],
+  "verification_pending": false,
+  "installed": true,
+  "library_search": "No matching existing main-repository Hecke correspondence theorem found. Actual single-queue kernel log establishes the exact missing simp-attribute constant; no matching provider definition found. Source/card only try to remove its simp attribute and do not consume it as a mathematical lemma. Retain every other attribute token and the full 491-line proof.",
+  "change": "Remove only the actual failed obsolete eisensteinNumerator_nineteen token from corresponding source/card negative simp attributes. Preserve every mathematical declaration header, every hypothesis and entire original Hecke pullback/pushforward proof. Migrate only thirteen actually reported haveI/letI style lines; no suppression. Original single queue only. Actual r1 terminal additionally proves the seventeen constant absent. Remove it and spell the remaining negative simp attributes as independent commands so one original queue compile reports all actual failures instead of stopping at the first attribute name. All remaining attribute actions are preserved. The actual r2 independent attribute commands additionally prove six exact names absent; remove exactly those six in both corresponding attribute lists, preserving every other action, all declaration headers and the complete original proof.",
+  "max_active_flt_jobs": 1,
+  "lean_threads": 1,
+  "full_original_complete": false,
+  "official_new_solve_credit": 0,
+  "stale_terminal_state_entries_excluded": [],
+  "active_import_closure_excluded": [
+    "Submission.Supplier.P2M.Sol.S_ModularCurve_place_deg_eq_one_charLDegeneracyRoof"
+  ],
+  "active_transitive_import_closure_size": 248,
+  "actual_live_descendant_sources": [
+    {
+      "pid": 51945,
+      "source": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_ModularCurve_place_deg_eq_one_charLDegeneracyRoof.lean"
+    }
+  ],
+  "all_four_canonical_adapted_source_card_modules_excluded": [
+    "P2M.Sol.S_ModularCurve_correspondence_heckeBetaC_heckeAlphaC_single_add_single_autOnPlaces_eq_pullbackAlong_pushforwardAlong",
+    "Submission.Supplier.P2M.Sol.S_ModularCurve_correspondence_heckeBetaC_heckeAlphaC_single_add_single_autOnPlaces_eq_pullbackAlong_pushforwardAlong",
+    "Submission.Supplier.Theorems.Thm_ModularCurve_correspondence_heckeBetaC_heckeAlphaC_single_add_single_autOnPlaces_eq_pullbackAlong_pushforwardAlong",
+    "Theorems.Thm_ModularCurve_correspondence_heckeBetaC_heckeAlphaC_single_add_single_autOnPlaces_eq_pullbackAlong_pushforwardAlong"
+  ],
+  "last_actual_failure": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/official-layout/terminal-proof-repairs/20261019-hecke-correspondence-stale-simp-attribute/r2-actual-independent-attribute-failures"
+}
