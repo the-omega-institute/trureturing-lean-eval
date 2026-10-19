@@ -1,0 +1,246 @@
+{
+  "at": "2026-10-19T09:44:08.909153+00:00",
+  "name": "WeierstrassCurve_velu_map_equation_of_oddOrderSummingSet_of_isAlgClosed",
+  "candidate": "r3",
+  "card_candidate": "r1",
+  "source_replacements": [
+    [
+      "  haveI := h\ud835\udd2a",
+      "  have := h\ud835\udd2a",
+      1
+    ],
+    [
+      "  letI : Field (W.CoordinateRing \u29f8 \ud835\udd2a) := Ideal.Quotient.field \ud835\udd2a",
+      "  let : Field (W.CoordinateRing \u29f8 \ud835\udd2a) := Ideal.Quotient.field \ud835\udd2a",
+      1
+    ],
+    [
+      "  haveI : Module.Finite F (W.CoordinateRing \u29f8 \ud835\udd2a) :=",
+      "  have : Module.Finite F (W.CoordinateRing \u29f8 \ud835\udd2a) :=",
+      1
+    ],
+    [
+      "  letI : Algebra F w.toValuationSubring :=",
+      "  let : Algebra F w.toValuationSubring :=",
+      1
+    ],
+    [
+      "  letI : IsScalarTower F w.toValuationSubring F' :=",
+      "  let : IsScalarTower F w.toValuationSubring F' :=",
+      1
+    ],
+    [
+      "    haveI := hv.centre_isPrime",
+      "    have := hv.centre_isPrime",
+      1
+    ],
+    [
+      "    haveI hAded : IsDedekindDomain A := by rw [hA]; infer_instance",
+      "    have hAded : IsDedekindDomain A := by rw [hA]; infer_instance",
+      1
+    ],
+    [
+      "  haveI := hfin.to_subtype",
+      "  have := hfin.to_subtype",
+      1
+    ],
+    [
+      "  letI : Algebra v.toValuationSubring F' :=",
+      "  let : Algebra v.toValuationSubring F' :=",
+      1
+    ],
+    [
+      "  haveI : IsScalarTower v.toValuationSubring F F' :=",
+      "  have : IsScalarTower v.toValuationSubring F F' :=",
+      1
+    ],
+    [
+      "  haveI : IsDedekindDomain (integralClosure v.toValuationSubring F') :=",
+      "  have : IsDedekindDomain (integralClosure v.toValuationSubring F') :=",
+      1
+    ],
+    [
+      "  haveI : IsFractionRing (integralClosure v.toValuationSubring F') F' :=",
+      "  have : IsFractionRing (integralClosure v.toValuationSubring F') F' :=",
+      1
+    ],
+    [
+      "  haveI hmax : (fiberCenter F' v hw).asIdeal.IsMaximal :=",
+      "  have hmax : (fiberCenter F' v hw).asIdeal.IsMaximal :=",
+      1
+    ],
+    [
+      "  haveI := fiberCenter_liesOver hw",
+      "  have := fiberCenter_liesOver hw",
+      1
+    ],
+    [
+      "    haveI : Module.Finite F[X] W.CoordinateRing :=",
+      "    have : Module.Finite F[X] W.CoordinateRing :=",
+      1
+    ],
+    [
+      "  haveI := hPD W h\u0394",
+      "  have := hPD W h\u0394",
+      1
+    ],
+    [
+      "  haveI := hDD W h\u0394",
+      "  have := hDD W h\u0394",
+      4
+    ],
+    [
+      "  haveI := Fintype.ofFinite F",
+      "  have := Fintype.ofFinite F",
+      1
+    ],
+    [
+      "  haveI hRint : Algebra.IsIntegral F",
+      "  have hRint : Algebra.IsIntegral F",
+      1
+    ],
+    [
+      "  haveI : Infinite F := kw_infinite_of_isAlgClosed",
+      "  have : Infinite F := kw_infinite_of_isAlgClosed",
+      1
+    ],
+    [
+      "Set.mem_setOf_eq",
+      "Set.mem_ofPred_eq",
+      5
+    ],
+    [
+      "Polynomial.degree_sub_lt",
+      "Polynomial.degree_sub_lt_left",
+      1
+    ],
+    [
+      "dif_pos",
+      "dite_eq_left",
+      1
+    ],
+    [
+      "zero_le'",
+      "zero_le",
+      1
+    ],
+    [
+      "Ideal.ramificationIdx_spec",
+      "Ideal.ramificationIdx'_spec",
+      1
+    ],
+    [
+      "Ideal.eq_bot_of_comap_eq_bot",
+      "Ideal.eq_bot_of_under_eq_bot",
+      1
+    ],
+    [
+      "rw [RingHom.comap_ker, translationCoordHom_comp_algebraMap,",
+      "rw [Ideal.under_def, RingHom.comap_ker, translationCoordHom_comp_algebraMap,",
+      1
+    ],
+    [
+      "if_neg",
+      "ite_eq_right",
+      1
+    ],
+    [
+      "push_neg at h",
+      "push Not at h",
+      1
+    ],
+    [
+      "variable {K : Type*} [Field K] {F' : Type*} [Field F'] [Algebra K F']\n  [Algebra (RatFunc K) F'] [IsScalarTower K (RatFunc K) F']\n  [FiniteDimensional (RatFunc K) F'] [Algebra.IsSeparable (RatFunc K) F']",
+      "variable {K : Type*} [Field K] {F' : Type*} [Field F'] [Algebra K F']\n  [Algebra (RatFunc K) F'] [IsScalarTower K (RatFunc K) F']\n  [FiniteDimensional (RatFunc K) F'] [hFsep : Algebra.IsSeparable (RatFunc K) F']",
+      3
+    ],
+    [
+      "theorem degree_eq_zero_of_forall_eq_ord_of_isGalois [IsGalois (RatFunc K) F']",
+      "include hFsep in\ntheorem degree_eq_zero_of_forall_eq_ord_of_isGalois [IsGalois (RatFunc K) F']",
+      1
+    ],
+    [
+      "    w.inertiaDeg F =\n      (IsLocalRing.maximalIdeal v.toValuationSubring).inertiaDeg'\n        (fiberCenter F' v hw).asIdeal := by",
+      "    w.inertiaDeg F =\n      (fiberCenter F' v hw).asIdeal.inertiaDeg v.toValuationSubring := by",
+      1
+    ],
+    [
+      "  rw [Ideal.inertiaDeg_algebraMap]",
+      "  have : (fiberCenter F' v hw).asIdeal.IsMaximal :=\n    (fiberCenter F' v hw).isPrime.isMaximal (fiberCenter F' v hw).ne_bot\n  rw [Ideal.inertiaDeg_eq_of_isMaximal (IsLocalRing.maximalIdeal v.toValuationSubring)\n    (fiberCenter F' v hw).asIdeal]",
+      1
+    ],
+    [
+      "  have hkey := Ideal.sum_ramification_inertia (integralClosureAt F' v) F F'\n    (p := IsLocalRing.maximalIdeal v.toValuationSubring) (maximalIdeal_ne_bot v)",
+      "  let p := IsLocalRing.maximalIdeal v.toValuationSubring\n  let B := integralClosureAt F' v\n  let : Fintype (p.primesOver B) := Fintype.ofFinite _\n  have hkey :\n      \u2211 P \u2208 IsDedekindDomain.primesOverFinset p B,\n        p.ramificationIdx' P * P.inertiaDeg v.toValuationSubring\n        = Module.finrank F F' := by\n    calc\n      _ = \u2211 P \u2208 IsDedekindDomain.primesOverFinset p B,\n          P.ramificationIdx v.toValuationSubring * P.inertiaDeg v.toValuationSubring := by\n        apply Finset.sum_congr rfl\n        intro P hP\n        obtain \u27e8hprime, hover\u27e9 :=\n          (IsDedekindDomain.mem_primesOverFinset_iff (maximalIdeal_ne_bot v)).mp hP\n        have := hprime\n        have := hover\n        rw [Ideal.ramificationIdx'_eq_ramificationIdx p P (maximalIdeal_ne_bot v)]\n      _ = \u2211 P : p.primesOver B,\n          P.1.ramificationIdx v.toValuationSubring * P.1.inertiaDeg v.toValuationSubring :=\n        Finset.sum_subtype _ (fun _ =>\n          IsDedekindDomain.mem_primesOverFinset_iff (maximalIdeal_ne_bot v)) _\n      _ = Module.finrank v.toValuationSubring B :=\n        Ideal.sum_ramification_inertia_eq_finrank p B\n      _ = Module.finrank F F' :=\n        (IsFractionRing.finrank_eq v.toValuationSubring F B F').symm",
+      1
+    ],
+    [
+      "(IsDedekindDomain.mem_primesOverFinset_iff (maximalIdeal_ne_bot v)).mp hP",
+      "(IsDedekindDomain.mem_primesOverFinset_iff (maximalIdeal_ne_bot v) B).mp hP",
+      1
+    ],
+    [
+      "IsDedekindDomain.mem_primesOverFinset_iff (maximalIdeal_ne_bot v)) _",
+      "IsDedekindDomain.mem_primesOverFinset_iff (maximalIdeal_ne_bot v) B) _",
+      1
+    ],
+    [
+      "include hFsep in\ntheorem degree_eq_zero_of_forall_eq_ord_of_isGalois [IsGalois (RatFunc K) F']",
+      "omit hFsep in\ntheorem degree_eq_zero_of_forall_eq_ord_of_isGalois\n    [hsep : Algebra.IsSeparable (RatFunc K) F'] [IsGalois (RatFunc K) F']",
+      1
+    ],
+    [
+      "[hsep : Algebra.IsSeparable (RatFunc K) F']",
+      "[Algebra.IsSeparable (RatFunc K) F']",
+      1
+    ]
+  ],
+  "card_replacements": [],
+  "baseline_byte_identical_to_pinned_supplier": false,
+  "prior_source_changes_preserved": [
+    [
+      "exact Finsupp.mapDomain_apply (MulAction.injective \u03c3) D v",
+      "exact Finsupp.mapDomain_apply_of_injective (MulAction.injective \u03c3) D v"
+    ]
+  ],
+  "prior_card_changes_preserved": [],
+  "public_card_statement_literal_preserved": true,
+  "solution_statement_literal_preserved": true,
+  "pinned_supplier_source_and_card_preserved": true,
+  "verification_pending": false,
+  "installed": true,
+  "no_linter_suppression_added": true,
+  "complete_original_proof_preserved": true,
+  "full_original_statement_and_hypotheses_preserved": true,
+  "max_active_flt_jobs": 1,
+  "lean_threads": 1,
+  "original_actual_errors": 1,
+  "original_actual_warnings": 39,
+  "original_source_lines": 12012,
+  "library_search": "No exact target or translationCoordHom_injective in current trureturing D5/Reg. Pinned Mathlib Ideal/Over:98 under_def and Ideal/GoingUp:209 supply the actual rewrite repair. RingTheory/RamificationInertia/Basic:72, Ramification:207, Inertia:111 and LinearAlgebra/Dimension/Localization:146, together with Finset.sum_subtype, port the old fundamental identity and inertia dictionary without deprecated declarations. Lean Elab/MutualDef:568 confirms explicitly including the named existing separability instance preserves the original hypothesis and removes only the accidental-inclusion warning.",
+  "change": "Keep the complete 12012-line supplier proof plus the prior single Finsupp API repair. Unfold Ideal.under_def before the original kernel-comap rewrite. Migrate only the actual deprecated names and compiler-identified haveI/letI bindings. Name and explicitly include the existing separability assumption, preserving its type and presence. Use the modern inertia-degree dictionary and derive the same finite ramification sum through existing library theorems and fraction-ring finrank, preserving the original place/prime bijection argument and all hypotheses. Public solution and card statements are literal. Append exact source/card axiom queries; await unchanged single queue.",
+  "full_original_complete": false,
+  "official_new_solve_credit": 0,
+  "stale_terminal_state_entries_excluded": [
+    {
+      "module": "Submission.Supplier.Theorems.Thm_exists_abelInverse_linear_contDiff_eq_zero_of_le_integral_div_sqrt_sub_eq",
+      "wrapper_pid": 86240,
+      "make_exit": 0,
+      "terminal": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/c92682e5d7ae7a22a3cfc92a-1792403004190417000.make-terminal.json"
+    }
+  ],
+  "active_import_closure_excluded": [
+    "Submission.Supplier.P2M.Sol.S_exists_commute_mul_eq_orderOf_coprime_pow_prime_pow_eq_one"
+  ],
+  "active_transitive_import_closure_size": 2,
+  "actual_live_descendant_sources": [],
+  "all_four_canonical_adapted_source_card_modules_excluded": [
+    "P2M.Sol.S_WeierstrassCurve_velu_map_equation_of_oddOrderSummingSet_of_isAlgClosed",
+    "Submission.Supplier.P2M.Sol.S_WeierstrassCurve_velu_map_equation_of_oddOrderSummingSet_of_isAlgClosed",
+    "Submission.Supplier.Theorems.Thm_WeierstrassCurve_velu_map_equation_of_oddOrderSummingSet_of_isAlgClosed",
+    "Theorems.Thm_WeierstrassCurve_velu_map_equation_of_oddOrderSummingSet_of_isAlgClosed"
+  ],
+  "latest_actual_failure": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/official-layout/terminal-proof-repairs/20261019-velu-map-under-ramification-api/r1-actual-source-failure",
+  "latest_change": "The r2 full source passed make/kernel0 with only standard3 recursive axioms. Keep the same explicit separability instance binder and remove its unused local name, leaving its type, presence, and position intact. No linter suppression, theorem-statement weakening, or proof change. Await the original single queue for clean r3 source/card verification.",
+  "latest_actual_warning": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/official-layout/terminal-proof-repairs/20261019-velu-map-under-ramification-api/r2-actual-source-warning"
+}

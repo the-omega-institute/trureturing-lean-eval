@@ -1,0 +1,50 @@
+{
+  "sha256": "897da8068713dbb5257992f3e2204d42af2a7910891ebc489f4d04341ebdae99",
+  "exit": 0,
+  "empty_output_retry_done": false,
+  "source_sha256_after": "897da8068713dbb5257992f3e2204d42af2a7910891ebc489f4d04341ebdae99",
+  "source_unchanged": true,
+  "olean_sha256": "7bf5be2ce0b548e5599ad8b5377d5d693395a36caa3ae8dc8af85bc4aa0ef2a7",
+  "seconds": 149.73890479099646,
+  "pid": 80354,
+  "command": [
+    "/Users/macstudio/.local/omega-shims/lean",
+    "-j1",
+    "--trust=0",
+    "-Ddebug.skipKernelTC=false",
+    "-R",
+    "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src",
+    "-o",
+    "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-build/lib/lean/Submission/Supplier/P2M/Sol/S_WeierstrassCurve_velu_map_equation_of_oddOrderSummingSet_of_isAlgClosed.olean",
+    "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_WeierstrassCurve_velu_map_equation_of_oddOrderSummingSet_of_isAlgClosed.lean"
+  ],
+  "make_wrapper_pid": 77551,
+  "make_exit": 0,
+  "make_entry_failed": false,
+  "cache_binding_valid": true,
+  "canonical_make_running_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/03a01de9b4e98a1a5c06d282-1792403178013898000.make-running.json",
+  "canonical_make_terminal_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/03a01de9b4e98a1a5c06d282-1792403178013898000.make-terminal.json",
+  "kernel_terminal_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/03a01de9b4e98a1a5c06d282-1792403178013898000.kernel/result.json",
+  "direct_dependencies": [
+    {
+      "module": "Submission.Supplier.Definitions.Def_WeierstrassCurve_VeluPointMap",
+      "source_sha256": "8d8bff7971676f481b22254c7c4bf59cdec5ae1aa5597ee2bddd93e5a990564a",
+      "object_sha256": "8a04844975639337df67c9227badb1cc54451de5719d1b790b224fa084c43929",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Definitions.Def_WeierstrassCurve_OddOrderSummingSet",
+      "source_sha256": "a92b5de358fe591b72ce71d741e911a3acaee9e7af797933434b7c49e6e89607",
+      "object_sha256": "aac89f9c8d14f9eda25801f258737313f1044e7e481fc11abaa8431903217ae0",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.P2M.Util",
+      "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+      "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+      "receipt_reused": true
+    }
+  ],
+  "stdout": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/03a01de9b4e98a1a5c06d282-1792403178013898000.kernel/stdout.log",
+  "stderr": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/03a01de9b4e98a1a5c06d282-1792403178013898000.kernel/stderr.log"
+}

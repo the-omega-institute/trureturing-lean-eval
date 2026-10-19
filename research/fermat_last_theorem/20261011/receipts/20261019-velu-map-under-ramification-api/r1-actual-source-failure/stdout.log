@@ -1,0 +1,27 @@
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_WeierstrassCurve_velu_map_equation_of_oddOrderSummingSet_of_isAlgClosed.lean:5688:0: warning: automatically included section variable(s) unused in theorem `P2MW.S_WeierstrassCurve_velu_map_equation_of_oddOrderSummingSet_of_isAlgClosed.AlgebraicCurve.RationalFunctionField.degree_eq_zero_of_forall_eq_ord_of_isGalois`:
+  hFsep
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit hFsep in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_WeierstrassCurve_velu_map_equation_of_oddOrderSummingSet_of_isAlgClosed.lean:6498:10: error: Type mismatch
+  IsDedekindDomain.mem_primesOverFinset_iff (maximalIdeal_ne_bot v)
+has type
+  ∀ (B : Type ?u.146) [inst : CommRing B] [inst_1 : IsDedekindDomain B] [inst_2 : Algebra (↥v.toValuationSubring) B]
+    [IsDomain ↥v.toValuationSubring] [Module.IsTorsionFree (↥v.toValuationSubring) B] {P : Ideal B},
+    P ∈ IsDedekindDomain.primesOverFinset (maximalIdeal ↥v.toValuationSubring) B ↔
+      P ∈ (maximalIdeal ↥v.toValuationSubring).primesOver B
+but is expected to have type
+  x✝ ∈ ?m.214 ↔ ?m.212 x✝
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_WeierstrassCurve_velu_map_equation_of_oddOrderSummingSet_of_isAlgClosed.lean:6491:78: error(lean.invalidField): Invalid field `mp`: The environment does not contain `Function.mp`, so it is not possible to project the field `mp` from an expression
+  IsDedekindDomain.mem_primesOverFinset_iff (maximalIdeal_ne_bot v)
+of type
+  ∀ (B : Type ?u.177) [inst : CommRing B] [inst_1 : IsDedekindDomain B] [inst_2 : Algebra (↥v.toValuationSubring) B]
+    [IsDomain ↥v.toValuationSubring] [Module.IsTorsionFree (↥v.toValuationSubring) B] {P : Ideal B},
+    P ∈ IsDedekindDomain.primesOverFinset (maximalIdeal ↥v.toValuationSubring) B ↔
+      P ∈ (maximalIdeal ↥v.toValuationSubring).primesOver B
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_WeierstrassCurve_velu_map_equation_of_oddOrderSummingSet_of_isAlgClosed.lean:6490:15: error: Tactic `rcases` failed: `x✝ : ?m.299` is not an inductive datatype
+'P2MW.S_WeierstrassCurve_velu_map_equation_of_oddOrderSummingSet_of_isAlgClosed.solution' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
