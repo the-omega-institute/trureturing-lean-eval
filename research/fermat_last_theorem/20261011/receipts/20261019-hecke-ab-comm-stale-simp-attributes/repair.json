@@ -1,0 +1,244 @@
+{
+  "at": "2026-10-19T15:23:25.853042+00:00",
+  "name": "ModularCurve_correspondence_heckeAlphaC_heckeBetaC_correspondence_heckeAlphaC_heckeBetaC_comm",
+  "candidate": "r1",
+  "card_candidate": "r1",
+  "source_replacements": [
+    [
+      "  haveI : HasPrincipalDivisors k (charLDegeneracyRoof k (N * \u2113') \u2113) :=\n",
+      "  have : HasPrincipalDivisors k (charLDegeneracyRoof k (N * \u2113') \u2113) :=\n",
+      1
+    ],
+    [
+      "  have h\u2084 : \u00ac q' \u2223 N * \u2113 * \u2113' := CommAux.not_dvd_mul_of_ne hq' h\u2113' h\u2082 h\u2113'q'\n  haveI : Fact \u2113.Prime := \u27e8h\u2113\u27e9\n",
+      "  have h\u2084 : \u00ac q' \u2223 N * \u2113 * \u2113' := CommAux.not_dvd_mul_of_ne hq' h\u2113' h\u2082 h\u2113'q'\n  have : Fact \u2113.Prime := \u27e8h\u2113\u27e9\n",
+      1
+    ],
+    [
+      "  haveI : NeZero \u2113 := \u27e8h\u2113.ne_zero\u27e9\n  haveI : NeZero \u2113' := \u27e8h\u2113'.ne_zero\u27e9\n",
+      "  haveI : NeZero \u2113 := \u27e8h\u2113.ne_zero\u27e9\n  have : NeZero \u2113' := \u27e8h\u2113'.ne_zero\u27e9\n",
+      1
+    ],
+    [
+      "  intro _hpd _hpd' h\u03b1 h\u03b2 h\u03b1' h\u03b2' D\n  haveI : NeZero \u2113 := \u27e8h\u2113.ne_zero\u27e9\n",
+      "  intro _hpd _hpd' h\u03b1 h\u03b2 h\u03b1' h\u03b2' D\n  have : NeZero \u2113 := \u27e8h\u2113.ne_zero\u27e9\n",
+      1
+    ],
+    [
+      "  haveI : Module.Finite F T := hfin\n",
+      "  have : Module.Finite F T := hfin\n",
+      1
+    ],
+    [
+      "  letI := algebraAlong c\n",
+      "  let := algebraAlong c\n",
+      1
+    ],
+    [
+      "    SeparableAlong k ((inclLeg\u2082 q' N \u2113 \u2113' h\u2082 h\u2083 h\u2084).comp (heckeBetaC k N \u2113)) := by\n  haveI : Fact \u2113.Prime := \u27e8h\u2113\u27e9\n  haveI : Fact \u2113'.Prime := \u27e8h\u2113'\u27e9\n",
+      "    SeparableAlong k ((inclLeg\u2082 q' N \u2113 \u2113' h\u2082 h\u2083 h\u2084).comp (heckeBetaC k N \u2113)) := by\n  haveI : Fact \u2113.Prime := \u27e8h\u2113\u27e9\n  have : Fact \u2113'.Prime := \u27e8h\u2113'\u27e9\n",
+      1
+    ],
+    [
+      "    SeparableAlong k ((inclLeg\u2082 q' N \u2113 \u2113' h\u2082 h\u2083 h\u2084).comp (heckeBetaC k N \u2113)) := by\n  haveI : Fact \u2113.Prime := \u27e8h\u2113\u27e9\n",
+      "    SeparableAlong k ((inclLeg\u2082 q' N \u2113 \u2113' h\u2082 h\u2083 h\u2084).comp (heckeBetaC k N \u2113)) := by\n  have : Fact \u2113.Prime := \u27e8h\u2113\u27e9\n",
+      1
+    ],
+    [
+      "    [IsAlgClosed k] : SeparableAlong k ((inclLeg\u2081 q' N \u2113 \u2113' h\u2081).comp (heckeBetaC k N \u2113')) := by\n  haveI : Fact \u2113.Prime := \u27e8h\u2113\u27e9\n  haveI : Fact \u2113'.Prime := \u27e8h\u2113'\u27e9\n",
+      "    [IsAlgClosed k] : SeparableAlong k ((inclLeg\u2081 q' N \u2113 \u2113' h\u2081).comp (heckeBetaC k N \u2113')) := by\n  haveI : Fact \u2113.Prime := \u27e8h\u2113\u27e9\n  have : Fact \u2113'.Prime := \u27e8h\u2113'\u27e9\n",
+      1
+    ],
+    [
+      "    [IsAlgClosed k] : SeparableAlong k ((inclLeg\u2081 q' N \u2113 \u2113' h\u2081).comp (heckeBetaC k N \u2113')) := by\n  haveI : Fact \u2113.Prime := \u27e8h\u2113\u27e9\n",
+      "    [IsAlgClosed k] : SeparableAlong k ((inclLeg\u2081 q' N \u2113 \u2113' h\u2081).comp (heckeBetaC k N \u2113')) := by\n  have : Fact \u2113.Prime := \u27e8h\u2113\u27e9\n",
+      1
+    ],
+    [
+      "    FiniteAlong k ((inclLeg\u2082 q' N \u2113 \u2113' h\u2082 h\u2083 h\u2084).comp (heckeBetaC k N \u2113)) := by\n  haveI : Fact \u2113.Prime := \u27e8h\u2113\u27e9\n",
+      "    FiniteAlong k ((inclLeg\u2082 q' N \u2113 \u2113' h\u2082 h\u2083 h\u2084).comp (heckeBetaC k N \u2113)) := by\n  have : Fact \u2113.Prime := \u27e8h\u2113\u27e9\n",
+      1
+    ],
+    [
+      "    FiniteAlong k ((inclLeg\u2081 q' N \u2113 \u2113' h\u2081).comp (heckeBetaC k N \u2113')) := by\n  haveI : Fact \u2113'.Prime := \u27e8h\u2113'\u27e9\n",
+      "    FiniteAlong k ((inclLeg\u2081 q' N \u2113 \u2113' h\u2081).comp (heckeBetaC k N \u2113')) := by\n  have : Fact \u2113'.Prime := \u27e8h\u2113'\u27e9\n",
+      1
+    ],
+    [
+      "  haveI : Algebra.IsSeparable F' F'' := h\u03c7\n",
+      "  have : Algebra.IsSeparable F' F'' := h\u03c7\n",
+      1
+    ],
+    [
+      "  haveI : Algebra.IsSeparable F F' := h\u03c6\n",
+      "  have : Algebra.IsSeparable F F' := h\u03c6\n",
+      1
+    ],
+    [
+      "  haveI : IsScalarTower F F' F'' := IsScalarTower.of_algebraMap_eq fun _ => rfl\n",
+      "  have : IsScalarTower F F' F'' := IsScalarTower.of_algebraMap_eq fun _ => rfl\n",
+      1
+    ],
+    [
+      "  letI := algebraAlong (\u03c7.comp \u03c6)\n",
+      "  let := algebraAlong (\u03c7.comp \u03c6)\n",
+      1
+    ],
+    [
+      "  letI := algebraAlong \u03c7\n",
+      "  let := algebraAlong \u03c7\n",
+      1
+    ],
+    [
+      "    (h\u03c7 : SeparableAlong k \u03c7) : SeparableAlong k (\u03c7.comp \u03c6) := by\n  letI := algebraAlong \u03c6\n",
+      "    (h\u03c7 : SeparableAlong k \u03c7) : SeparableAlong k (\u03c7.comp \u03c6) := by\n  let := algebraAlong \u03c6\n",
+      1
+    ],
+    [
+      "  haveI : Module.Finite F F' := hfin\n",
+      "  have : Module.Finite F F' := hfin\n",
+      1
+    ],
+    [
+      "    (\u03c6 : F \u2192\u2090[k] F') (hfin : FiniteAlong k \u03c6) : \u03c6.toRingHom.IsIntegral := by\n  letI := algebraAlong \u03c6\n",
+      "    (\u03c6 : F \u2192\u2090[k] F') (hfin : FiniteAlong k \u03c6) : \u03c6.toRingHom.IsIntegral := by\n  let := algebraAlong \u03c6\n",
+      1
+    ],
+    [
+      "if_neg",
+      "ite_eq_right",
+      1
+    ],
+    [
+      " ModularCurve.eisensteinNumerator_nineteen ",
+      " ",
+      1
+    ],
+    [
+      " ModularCurve.eisensteinNumerator_seventeen ",
+      " ",
+      1
+    ],
+    [
+      " ModularCurve.eisensteinNumerator_eleven ",
+      " ",
+      1
+    ],
+    [
+      " ModularCurve.eisensteinNumerator_five ",
+      " ",
+      1
+    ],
+    [
+      " ModularCurve.eisensteinNumerator_seven ",
+      " ",
+      1
+    ],
+    [
+      " ModularCurve.eisensteinNumerator_twentythree ",
+      " ",
+      1
+    ],
+    [
+      " ModularCurve.eisensteinNumerator_thirteen ",
+      " ",
+      1
+    ],
+    [
+      " ModularCurve.constantCoeff_dedekindEtaUnitQ\n",
+      "\n",
+      1
+    ]
+  ],
+  "card_replacements": [
+    [
+      " ModularCurve.eisensteinNumerator_nineteen ",
+      " ",
+      1
+    ],
+    [
+      " ModularCurve.eisensteinNumerator_seventeen ",
+      " ",
+      1
+    ],
+    [
+      " ModularCurve.eisensteinNumerator_eleven ",
+      " ",
+      1
+    ],
+    [
+      " ModularCurve.eisensteinNumerator_five ",
+      " ",
+      1
+    ],
+    [
+      " ModularCurve.eisensteinNumerator_seven ",
+      " ",
+      1
+    ],
+    [
+      " ModularCurve.eisensteinNumerator_twentythree ",
+      " ",
+      1
+    ],
+    [
+      " ModularCurve.eisensteinNumerator_thirteen ",
+      " ",
+      1
+    ],
+    [
+      " ModularCurve.constantCoeff_dedekindEtaUnitQ ",
+      " ",
+      1
+    ]
+  ],
+  "baseline_byte_identical_to_pinned_supplier": true,
+  "pinned_supplier_source_and_card_preserved": true,
+  "supplier_repository": "anthropics/fermats-last-theorem",
+  "supplier_revision": "6e837e75355538c7f80bab5b956861e86c4eacc2",
+  "original_actual_errors": 1,
+  "original_actual_warnings": 21,
+  "actual_warned_style_lines": 20,
+  "all_public_declaration_headers_literal_unchanged": true,
+  "solution_statement_literal_preserved": true,
+  "public_card_statement_literal_preserved": true,
+  "complete_original_proof_preserved": true,
+  "full_original_statement_and_hypotheses_preserved": true,
+  "no_linter_suppression_added": true,
+  "actual_absent_attribute_tokens": [
+    "ModularCurve.eisensteinNumerator_nineteen",
+    "ModularCurve.eisensteinNumerator_seventeen",
+    "ModularCurve.eisensteinNumerator_eleven",
+    "ModularCurve.eisensteinNumerator_five",
+    "ModularCurve.eisensteinNumerator_seven",
+    "ModularCurve.eisensteinNumerator_twentythree",
+    "ModularCurve.eisensteinNumerator_thirteen",
+    "ModularCurve.constantCoeff_dedekindEtaUnitQ"
+  ],
+  "local_import_closure_sizes": {
+    "source": 521,
+    "card": 522
+  },
+  "modular_unit_provider_outside_both_import_closures": true,
+  "verification_pending": false,
+  "installed": true,
+  "library_search": "No exact main-repository AB/AB Hecke commutation theorem found. Reuse the eight actual missing-name diagnostics from verified eff7317710db4bde24ed598266ff0038813083a9 and the current actual nineteen-name failure. The ModularUnit definition provider is outside both actual source/card recursive local import closures. These are inapplicable negative attributes, not consumed mathematical lemmas; keep the provider and full proof unchanged.",
+  "change": "Retain every literal mathematical declaration header, all hypotheses and the entire 577-line original commutation proof. Omit only the eight negative simp attributes whose provider is outside both closures, supported by actual rejection diagnostics. Migrate the twenty actually reported haveI/letI style lines and single if_neg deprecation. No linter suppression or direct extra compiler; unchanged original single job queue.",
+  "max_active_flt_jobs": 1,
+  "lean_threads": 1,
+  "full_original_complete": false,
+  "official_new_solve_credit": 0,
+  "stale_terminal_state_entries_excluded": [],
+  "active_import_closure_excluded": [
+    "Submission.Supplier.P2M.Sol.S_ModularCurve_degeneracyPair_pushforwardAlong_correspondence_heckeBetaC_heckeAlphaC_comm_of_ne_of_not_dvd"
+  ],
+  "active_transitive_import_closure_size": 462,
+  "actual_live_descendant_sources": [],
+  "all_four_canonical_adapted_source_card_modules_excluded": [
+    "P2M.Sol.S_ModularCurve_correspondence_heckeAlphaC_heckeBetaC_correspondence_heckeAlphaC_heckeBetaC_comm",
+    "Submission.Supplier.P2M.Sol.S_ModularCurve_correspondence_heckeAlphaC_heckeBetaC_correspondence_heckeAlphaC_heckeBetaC_comm",
+    "Submission.Supplier.Theorems.Thm_ModularCurve_correspondence_heckeAlphaC_heckeBetaC_correspondence_heckeAlphaC_heckeBetaC_comm",
+    "Theorems.Thm_ModularCurve_correspondence_heckeAlphaC_heckeBetaC_correspondence_heckeAlphaC_heckeBetaC_comm"
+  ],
+  "original_source_line_count": 577
+}
