@@ -1,0 +1,66 @@
+{
+  "at": "2026-10-19T10:12:33.642240+00:00",
+  "name": "groupCohomology_finrank_continuousClasses_eq_finrank_of_isUnit_index_of_forall_apply_eq",
+  "candidate": "r1",
+  "card_candidate": "r1",
+  "source_replacements": [
+    [
+      "    rw [he, H1InfRes_g]",
+      "    rw [he]",
+      1
+    ],
+    [
+      "  haveI : (Rep.res S.subtype A).IsTrivial",
+      "  have : (Rep.res S.subtype A).IsTrivial",
+      1
+    ],
+    [
+      "    haveI := hF\n",
+      "    have := hF\n",
+      1
+    ],
+    [
+      "    haveI := hF\u2080\n",
+      "    have := hF\u2080\n",
+      1
+    ]
+  ],
+  "card_replacements": [],
+  "baseline_byte_identical_to_pinned_supplier": true,
+  "prior_source_changes_preserved": [],
+  "prior_card_changes_preserved": [],
+  "public_card_statement_literal_preserved": true,
+  "solution_statement_literal_preserved": true,
+  "pinned_supplier_source_and_card_preserved": true,
+  "verification_pending": false,
+  "installed": true,
+  "no_linter_suppression_added": true,
+  "complete_original_proof_preserved": true,
+  "full_original_statement_and_hypotheses_preserved": true,
+  "max_active_flt_jobs": 1,
+  "lean_threads": 1,
+  "original_actual_errors": 2,
+  "original_actual_warnings": 3,
+  "original_source_lines": 130,
+  "library_search": "No exact theorem or obsolete H1InfRes_g match in current trureturing D5/Reg. Pinned Mathlib RepresentationTheory/Homological/GroupCohomology/Functoriality.lean:377-387 defines H1InfRes as HInfRes A S 1 with g := map S.subtype (identity) 1. Thus the existing H1\u03c0_comp_map_apply equality is definitionally the required restriction equality.",
+  "change": "Remove the obsolete H1InfRes_g entry from rw [he], retaining the original following rfl, and replace three warned proposition-valued haveI bindings with have as requested by the actual compiler linter. Keep the complete finrank equivalence, local finite-dimensional instances and proof. Canonical source and card were compared to supplier originals and both are byte-identical before this edit. Append exact recursive-axiom queries and await the unchanged single queue.",
+  "full_original_complete": false,
+  "official_new_solve_credit": 0,
+  "stale_terminal_state_entries_excluded": [
+    {
+      "module": "Submission.Supplier.Definitions.Def_AlgebraicGeometry_KwCartierOperatorTCoordEngine",
+      "wrapper_pid": 78672,
+      "make_exit": 0,
+      "terminal": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/ec1b050581d8dca387a38ff6-1792404706598110000.make-terminal.json"
+    }
+  ],
+  "active_import_closure_excluded": [],
+  "active_transitive_import_closure_size": 0,
+  "actual_live_descendant_sources": [],
+  "all_four_canonical_adapted_source_card_modules_excluded": [
+    "P2M.Sol.S_groupCohomology_finrank_continuousClasses_eq_finrank_of_isUnit_index_of_forall_apply_eq",
+    "Submission.Supplier.P2M.Sol.S_groupCohomology_finrank_continuousClasses_eq_finrank_of_isUnit_index_of_forall_apply_eq",
+    "Submission.Supplier.Theorems.Thm_groupCohomology_finrank_continuousClasses_eq_finrank_of_isUnit_index_of_forall_apply_eq",
+    "Theorems.Thm_groupCohomology_finrank_continuousClasses_eq_finrank_of_isUnit_index_of_forall_apply_eq"
+  ]
+}

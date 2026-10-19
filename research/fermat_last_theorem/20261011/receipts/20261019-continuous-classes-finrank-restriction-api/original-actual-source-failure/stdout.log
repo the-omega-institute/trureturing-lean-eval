@@ -1,0 +1,57 @@
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_groupCohomology_finrank_continuousClasses_eq_finrank_of_isUnit_index_of_forall_apply_eq.lean:46:12: error(lean.unknownIdentifier): Unknown identifier `H1InfRes_g`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_groupCohomology_finrank_continuousClasses_eq_finrank_of_isUnit_index_of_forall_apply_eq.lean:45:84: error: unsolved goals
+k G : Type u
+inst✝³ : Field k
+inst✝² : Group G
+r : G →* Gal(AlgebraicClosure ℚ/ℚ)
+A : Rep.{u, u, u} k G
+S : Subgroup G
+inst✝¹ : S.Normal
+inst✝ : S.FiniteIndex
+hindex : IsUnit ↑S.index
+htriv : ∀ s ∈ S, ∀ (v : ↑A), (A.ρ s) v = v
+hS : ∃ F₀, FiniteDimensional ℚ ↥F₀ ∧ ∀ (s : G), r s ∈ F₀.fixingSubgroup → s ∈ S
+adm : Submodule k ↑(H1 A)
+hadm : ∀ (x : ↑(H1 A)), x ∈ adm ↔ ∃ c, IsLevelConstant₁ r ↑c ∧ (ModuleCat.Hom.hom (H1π A)) c = x
+W : Submodule k ↥(cocycles₁ (Rep.res S.subtype A))
+hW :
+  ∀ (c : ↥(cocycles₁ (Rep.res S.subtype A))),
+    c ∈ W ↔ IsLevelConstant₁ (r.comp S.subtype) ↑c ∧ ∀ (g : G) (s t : ↥S), g⁻¹ * ↑s * g = ↑t → (A.ρ g) (c t) = c s
+htrivB : ∀ (s : ↥S) (v : ↑(Rep.res S.subtype A)), ((Rep.res S.subtype A).ρ s) v = v
+V : Submodule k ↑(H1 (Rep.res S.subtype A))
+hV :
+  ∀ (x : ↑(H1 (Rep.res S.subtype A))),
+    x ∈ V ↔
+      ∃ c,
+        (ConcreteCategory.hom (H1π (Rep.res S.subtype A))) c = x ∧
+          ∀ (g : G), ∃ a, ∀ (s t : ↥S), g⁻¹ * ↑s * g = ↑t → (A.ρ g) (c t) - c s = (A.ρ ↑s) a - a
+e : ↑(H1 A) ≃ₗ[k] ↥V
+he : ∀ (y : ↑(H1 A)), ↑(e y) = (ModuleCat.Hom.hom (H1InfRes A S).g) y
+res : ↑(H1 A) →ₗ[k] ↑(H1 (Rep.res S.subtype A)) :=
+  ModuleCat.Hom.hom (groupCohomology.map S.subtype (𝟙 (Rep.res S.subtype A)) 1)
+y : ↑(H1 A)
+⊢ (ModuleCat.Hom.hom (H1InfRes A S).g) y = res y
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_groupCohomology_finrank_continuousClasses_eq_finrank_of_isUnit_index_of_forall_apply_eq.lean:63:2: warning: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_groupCohomology_finrank_continuousClasses_eq_finrank_of_isUnit_index_of_forall_apply_eq.lean:121:4: warning: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_groupCohomology_finrank_continuousClasses_eq_finrank_of_isUnit_index_of_forall_apply_eq.lean:122:4: warning: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
