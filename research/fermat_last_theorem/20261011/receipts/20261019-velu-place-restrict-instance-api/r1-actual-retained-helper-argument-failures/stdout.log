@@ -1,0 +1,37 @@
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_WeierstrassCurve_exists_veluFunctionFieldHom_restrictAlong_placeOfPoint_eq_of_isAlgClosed.lean:294:47: error: Application type mismatch: The argument
+  h
+has type
+  W.Nonsingular x y
+but is expected to have type
+  autoParam (IsDedekindDomain W.CoordinateRing) placeOfPoint_some._auto_1
+in the application
+  @placeOfPoint_some F ?m.107 W ?m.108 ?m.109 ?m.110 ?m.111 h
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_WeierstrassCurve_exists_veluFunctionFieldHom_restrictAlong_placeOfPoint_eq_of_isAlgClosed.lean:9409:9: error: typeclass instance problem is stuck
+  GenusOnePlaceGate.IsCentred ?m.177
+
+Note: Lean will not try to resolve this typeclass instance problem because the first, second, third, and fourth type arguments to `GenusOnePlaceGate.IsCentred` are metavariables. These arguments must be fully determined before Lean will try to resolve the typeclass.
+
+Hint: Adding type annotations and supplying implicit arguments to functions can give Lean more information for typeclass resolution. For example, if you have a variable `x` that you intend to be a `Nat`, but Lean reports it as having an unresolved type like `?m`, replacing `x` with `(x : Nat)` can get typeclass resolution un-stuck.
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_WeierstrassCurve_exists_veluFunctionFieldHom_restrictAlong_placeOfPoint_eq_of_isAlgClosed.lean:9420:9: error: typeclass instance problem is stuck
+  GenusOnePlaceGate.IsCentred ?m.174
+
+Note: Lean will not try to resolve this typeclass instance problem because the first, second, third, and fourth type arguments to `GenusOnePlaceGate.IsCentred` are metavariables. These arguments must be fully determined before Lean will try to resolve the typeclass.
+
+Hint: Adding type annotations and supplying implicit arguments to functions can give Lean more information for typeclass resolution. For example, if you have a variable `x` that you intend to be a `Nat`, but Lean reports it as having an unresolved type like `?m`, replacing `x` with `(x : Nat)` can get typeclass resolution un-stuck.
+@WeierstrassCurve.Affine.placeOfPoint_some : ∀ {F : Type u_1} [inst : Field F] {W : WeierstrassCurve.Affine F}
+  [IsDedekindDomain W.CoordinateRing] [DecidableEq F] [inst_3 : W.GenusOnePlaceGate]
+  [WeierstrassCurve.Affine.GenusOnePlaceGate.IsCentred W]
+  (_hDDExtra : autoParam (IsDedekindDomain W.CoordinateRing) WeierstrassCurve.Affine.placeOfPoint_some._auto_1)
+  {x y : F} (h : W.Nonsingular x y),
+  WeierstrassCurve.Affine.placeOfPoint (WeierstrassCurve.Affine.Point.some x y h) =
+    WeierstrassCurve.Affine.placeOfEquation ⋯
+@WeierstrassCurve.Affine.InfinitePlace.eq_of_not_isFinitePlace : ∀ {F : Type u_1} [inst : Field F]
+  {W : WeierstrassCurve.Affine F} [IsDedekindDomain W.CoordinateRing] [DecidableEq F] [inst_3 : W.GenusOnePlaceGate]
+  [WeierstrassCurve.Affine.GenusOnePlaceGate.IsCentred W],
+  autoParam (IsDedekindDomain W.CoordinateRing) WeierstrassCurve.Affine.InfinitePlace.eq_of_not_isFinitePlace._auto_1 →
+    ∀ (v : AlgebraicCurve.Place F W.FunctionField),
+      ¬WeierstrassCurve.Affine.IsFinitePlace v → v = WeierstrassCurve.Affine.InfinitePlace.place
+'P2MW.S_WeierstrassCurve_exists_veluFunctionFieldHom_restrictAlong_placeOfPoint_eq_of_isAlgClosed.solution' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]

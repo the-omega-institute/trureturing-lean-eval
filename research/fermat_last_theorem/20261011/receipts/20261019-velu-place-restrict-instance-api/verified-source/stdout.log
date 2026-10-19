@@ -1,0 +1,16 @@
+@WeierstrassCurve.Affine.placeOfPoint_some : ∀ {F : Type u_1} [inst : Field F] {W : WeierstrassCurve.Affine F}
+  [IsDedekindDomain W.CoordinateRing] [DecidableEq F] [inst_3 : W.GenusOnePlaceGate]
+  [WeierstrassCurve.Affine.GenusOnePlaceGate.IsCentred W]
+  (_hDDExtra : autoParam (IsDedekindDomain W.CoordinateRing) WeierstrassCurve.Affine.placeOfPoint_some._auto_1)
+  {x y : F} (h : W.Nonsingular x y),
+  WeierstrassCurve.Affine.placeOfPoint (WeierstrassCurve.Affine.Point.some x y h) =
+    WeierstrassCurve.Affine.placeOfEquation ⋯
+@WeierstrassCurve.Affine.InfinitePlace.eq_of_not_isFinitePlace : ∀ {F : Type u_1} [inst : Field F]
+  {W : WeierstrassCurve.Affine F} [IsDedekindDomain W.CoordinateRing] [DecidableEq F] [inst_3 : W.GenusOnePlaceGate]
+  [WeierstrassCurve.Affine.GenusOnePlaceGate.IsCentred W],
+  autoParam (IsDedekindDomain W.CoordinateRing) WeierstrassCurve.Affine.InfinitePlace.eq_of_not_isFinitePlace._auto_1 →
+    ∀ (v : AlgebraicCurve.Place F W.FunctionField),
+      ¬WeierstrassCurve.Affine.IsFinitePlace v → v = WeierstrassCurve.Affine.InfinitePlace.place
+'P2MW.S_WeierstrassCurve_exists_veluFunctionFieldHom_restrictAlong_placeOfPoint_eq_of_isAlgClosed.solution' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

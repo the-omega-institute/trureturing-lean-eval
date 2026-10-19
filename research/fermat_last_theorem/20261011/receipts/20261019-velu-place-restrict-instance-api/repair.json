@@ -1,0 +1,339 @@
+{
+  "at": "2026-10-19T15:45:08.840335+00:00",
+  "name": "WeierstrassCurve_exists_veluFunctionFieldHom_restrictAlong_placeOfPoint_eq_of_isAlgClosed",
+  "candidate": "r2",
+  "card_candidate": "r1",
+  "source_replacements": [
+    [
+      "    haveI := hv.centre_isPrime\n",
+      "    have := hv.centre_isPrime\n",
+      1
+    ],
+    [
+      "    haveI hAded : IsDedekindDomain A := by rw [hA]; infer_instance\n",
+      "    have hAded : IsDedekindDomain A := by rw [hA]; infer_instance\n",
+      1
+    ],
+    [
+      "theorem placeOfPoint_some [IsDedekindDomain W.CoordinateRing] {x y : F} (h : W.Nonsingular x y) :\n",
+      "theorem placeOfPoint_some (_hDDExtra : IsDedekindDomain W.CoordinateRing := by try infer_instance) {x y : F} (h : W.Nonsingular x y) :\n",
+      1
+    ],
+    [
+      "theorem eq_of_not_isFinitePlace [IsDedekindDomain W.CoordinateRing]\n",
+      "theorem eq_of_not_isFinitePlace (_hDDExtra : IsDedekindDomain W.CoordinateRing := by try infer_instance)\n",
+      1
+    ],
+    [
+      "  exact dif_neg (fun hall => hall Q hQ hx)\n",
+      "  exact dite_eq_right (fun hall => hall Q hQ hx)\n",
+      1
+    ],
+    [
+      "  exact dif_pos hx\n",
+      "  exact dite_eq_left hx\n",
+      1
+    ],
+    [
+      "  push_neg at h\n",
+      "  push Not at h\n",
+      1
+    ],
+    [
+      "  haveI := h\ud835\udd2a\n",
+      "  have := h\ud835\udd2a\n",
+      1
+    ],
+    [
+      "  letI : Field (W.CoordinateRing \u29f8 \ud835\udd2a) := Ideal.Quotient.field \ud835\udd2a\n",
+      "  let : Field (W.CoordinateRing \u29f8 \ud835\udd2a) := Ideal.Quotient.field \ud835\udd2a\n",
+      1
+    ],
+    [
+      "  haveI : Module.Finite F (W.CoordinateRing \u29f8 \ud835\udd2a) :=\n",
+      "  have : Module.Finite F (W.CoordinateRing \u29f8 \ud835\udd2a) :=\n",
+      1
+    ],
+    [
+      "  haveI := Fintype.ofFinite F\n",
+      "  have := Fintype.ofFinite F\n",
+      1
+    ],
+    [
+      "  letI := algebraAlong \u03c6\n",
+      "  let := algebraAlong \u03c6\n",
+      1
+    ],
+    [
+      "  haveI := isScalarTower_along \u03c6\n",
+      "  have := isScalarTower_along \u03c6\n",
+      1
+    ],
+    [
+      "  haveI := isIntegral_along \u03c6 h\u03c6\n",
+      "  have := isIntegral_along \u03c6 h\u03c6\n",
+      1
+    ],
+    [
+      "    haveI : Module.Finite F[X] W.CoordinateRing :=\n",
+      "    have : Module.Finite F[X] W.CoordinateRing :=\n",
+      1
+    ],
+    [
+      "      Module.Finite.of_basis (CoordinateRing.basis W)\n    refine Ideal.eq_bot_of_comap_eq_bot (R := F[X]) ?_\n    rw [Ideal.under_def]\n",
+      "      Module.Finite.of_basis (CoordinateRing.basis W)\n    refine Ideal.eq_bot_of_under_eq_bot (R := F[X]) ?_\n    rw [Ideal.under_def]\n",
+      1
+    ],
+    [
+      "  haveI := hPD W h\u0394\n",
+      "  have := hPD W h\u0394\n",
+      1
+    ],
+    [
+      "  have := hPD W h\u0394\n  haveI := hDD W h\u0394\n  obtain \u27e8c, hc\u27e9 := Affine.functionField_liouville_of_equation h\u2080.left\n",
+      "  have := hPD W h\u0394\n  have := hDD W h\u0394\n  obtain \u27e8c, hc\u27e9 := Affine.functionField_liouville_of_equation h\u2080.left\n",
+      1
+    ],
+    [
+      "  intro W h\u0394 x\u2080 y\u2080 h\u2080 hord c hc r s hrs hav\n  haveI := hDD W h\u0394\n  rw [\u2190 heval W h\u0394 x\u2080 y\u2080 h\u2080 hord hrs hav, hc, Place.evalAt_algebraMap]\n",
+      "  intro W h\u0394 x\u2080 y\u2080 h\u2080 hord c hc r s hrs hav\n  have := hDD W h\u0394\n  rw [\u2190 heval W h\u0394 x\u2080 y\u2080 h\u2080 hord hrs hav, hc, Place.evalAt_algebraMap]\n",
+      1
+    ],
+    [
+      "  intro W h\u0394 x\u2080 y\u2080 h\u2080 _hord r s hrs hav\n  haveI := hDD W h\u0394\n  exact Affine.evalAt_veluDeficitFun_placeOfEquation hrs hav\n",
+      "  intro W h\u0394 x\u2080 y\u2080 h\u2080 _hord r s hrs hav\n  have := hDD W h\u0394\n  exact Affine.evalAt_veluDeficitFun_placeOfEquation hrs hav\n",
+      1
+    ],
+    [
+      "  haveI hRint : Algebra.IsIntegral F\n",
+      "  have hRint : Algebra.IsIntegral F\n",
+      1
+    ],
+    [
+      "        (Point.some x y hP + -(k \u2022 Q) : W.toAffine.Point).xOrZero := by\n    refine Finset.sum_nbij' (fun j => p - j) (fun k => p - k)\n      (fun j hj => by rw [Finset.mem_Icc] at hj; simp only [Finset.mem_Icc]; omega)\n      (fun k hk => by rw [Finset.mem_Icc] at hk; simp only [Finset.mem_Icc]; omega)\n      (fun j hj => by rw [Finset.mem_Icc] at hj; beta_reduce; omega)\n      (fun k hk => by rw [Finset.mem_Icc] at hk; beta_reduce; omega)\n      (fun j hj => ?_)\n    rw [Finset.mem_Icc] at hj\n    beta_reduce\n",
+      "        (Point.some x y hP + -(k \u2022 Q) : W.toAffine.Point).xOrZero := by\n    refine Finset.sum_nbij' (fun j => p - j) (fun k => p - k)\n      (fun j hj => by rw [Finset.mem_Icc] at hj; simp only [Finset.mem_Icc]; omega)\n      (fun k hk => by rw [Finset.mem_Icc] at hk; simp only [Finset.mem_Icc]; omega)\n      (fun j hj => by rw [Finset.mem_Icc] at hj; omega)\n      (fun k hk => by rw [Finset.mem_Icc] at hk; beta_reduce; omega)\n      (fun j hj => ?_)\n    rw [Finset.mem_Icc] at hj\n    beta_reduce\n",
+      1
+    ],
+    [
+      "      (fun j hj => by rw [Finset.mem_Icc] at hj; omega)\n      (fun k hk => by rw [Finset.mem_Icc] at hk; beta_reduce; omega)\n      (fun j hj => ?_)\n",
+      "      (fun j hj => by rw [Finset.mem_Icc] at hj; omega)\n      (fun k hk => by rw [Finset.mem_Icc] at hk; omega)\n      (fun j hj => ?_)\n",
+      1
+    ],
+    [
+      "    rw [Finset.mem_Icc] at hj\n    beta_reduce\n    congr 2\n",
+      "    rw [Finset.mem_Icc] at hj\n    congr 2\n",
+      1
+    ],
+    [
+      "      (fun j hj => by rw [Finset.mem_Icc] at hj; beta_reduce; omega)\n",
+      "      (fun j hj => by rw [Finset.mem_Icc] at hj; omega)\n",
+      1
+    ],
+    [
+      "      (fun k hk => by rw [Finset.mem_Icc] at hk; beta_reduce; omega)\n",
+      "      (fun k hk => by rw [Finset.mem_Icc] at hk; omega)\n",
+      1
+    ],
+    [
+      "    beta_reduce\n",
+      "",
+      1
+    ],
+    [
+      "  haveI := hDD W h\u0394\n",
+      "  have := hDD W h\u0394\n",
+      1
+    ],
+    [
+      "  haveI : Infinite F := kw_infinite_of_isAlgClosed\n",
+      "  have : Infinite F := kw_infinite_of_isAlgClosed\n",
+      1
+    ],
+    [
+      "  haveI : W.IsElliptic := \u27e8(Ne.isUnit h\u0394W)\u27e9\n",
+      "  have : W.IsElliptic := \u27e8(Ne.isUnit h\u0394W)\u27e9\n",
+      1
+    ],
+    [
+      "  haveI : HasPrincipalDivisors F W.toAffine.FunctionField := veluHPDSupplier F W h\u0394W\n",
+      "  have : HasPrincipalDivisors F W.toAffine.FunctionField := veluHPDSupplier F W h\u0394W\n",
+      1
+    ],
+    [
+      "  haveI : IsDedekindDomain W.toAffine.CoordinateRing :=\n",
+      "  have : IsDedekindDomain W.toAffine.CoordinateRing :=\n",
+      1
+    ],
+    [
+      "    haveI : Module.Finite F[X]\n",
+      "    have : Module.Finite F[X]\n",
+      1
+    ],
+    [
+      "    refine Ideal.eq_bot_of_comap_eq_bot (R := F[X]) ?_\n",
+      "    refine Ideal.eq_bot_of_under_eq_bot (R := F[X]) ?_\n",
+      1
+    ],
+    [
+      "    _root_.IsIntegral (V').FunctionField (polyToFunctionField W.toAffine X) := by\n  letI : Algebra (V').FunctionField W.toAffine.FunctionField := (\u03b9).toRingHom.toAlgebra\n  refine \u27e8(veluXClearedPoly W S_Q).map (algebraMap F (V').FunctionField)\n",
+      "    _root_.IsIntegral (V').FunctionField (polyToFunctionField W.toAffine X) := by\n  let : Algebra (V').FunctionField W.toAffine.FunctionField := (\u03b9).toRingHom.toAlgebra\n  refine \u27e8(veluXClearedPoly W S_Q).map (algebraMap F (V').FunctionField)\n",
+      1
+    ],
+    [
+      "      = \u22a4 := by\n  letI : Algebra (V').FunctionField W.toAffine.FunctionField := (\u03b9).toRingHom.toAlgebra\n  rw [eq_top_iff]\n",
+      "      = \u22a4 := by\n  let : Algebra (V').FunctionField W.toAffine.FunctionField := (\u03b9).toRingHom.toAlgebra\n  rw [eq_top_iff]\n",
+      1
+    ],
+    [
+      "    FiniteAlong F (kw_oddOrderSummingSetFunctionFieldHom_odd (W := W) hp3 hpodd hord) := by\n  letI : Algebra (V').FunctionField W.toAffine.FunctionField := (\u03b9).toRingHom.toAlgebra\n  show Module.Finite (V').FunctionField W.toAffine.FunctionField\n",
+      "    FiniteAlong F (kw_oddOrderSummingSetFunctionFieldHom_odd (W := W) hp3 hpodd hord) := by\n  let : Algebra (V').FunctionField W.toAffine.FunctionField := (\u03b9).toRingHom.toAlgebra\n  show Module.Finite (V').FunctionField W.toAffine.FunctionField\n",
+      1
+    ],
+    [
+      "  haveI hxfd : FiniteDimensional (V').FunctionField Lx :=\n",
+      "  have hxfd : FiniteDimensional (V').FunctionField Lx :=\n",
+      1
+    ],
+    [
+      "      haveI : Module.Finite F[X] W.toAffine.CoordinateRing :=\n",
+      "      have : Module.Finite F[X] W.toAffine.CoordinateRing :=\n",
+      1
+    ],
+    [
+      "    := by\n  letI : Algebra (V').FunctionField W.toAffine.FunctionField := (\u03b9).toRingHom.toAlgebra\n  haveI : Module.Finite (V').FunctionField W.toAffine.FunctionField :=\n",
+      "    := by\n  let : Algebra (V').FunctionField W.toAffine.FunctionField := (\u03b9).toRingHom.toAlgebra\n  haveI : Module.Finite (V').FunctionField W.toAffine.FunctionField :=\n",
+      1
+    ],
+    [
+      "  haveI : Module.Finite (V').FunctionField W.toAffine.FunctionField :=\n",
+      "  have : Module.Finite (V').FunctionField W.toAffine.FunctionField :=\n",
+      1
+    ],
+    [
+      "    IsSeparable (V').FunctionField (polyToFunctionField W.toAffine X) := by\n  letI : Algebra (V').FunctionField W.toAffine.FunctionField := (\u03b9).toRingHom.toAlgebra\n  have h\u03c6 : (algebraMap (V').FunctionField W.toAffine.FunctionField).comp\n",
+      "    IsSeparable (V').FunctionField (polyToFunctionField W.toAffine X) := by\n  let : Algebra (V').FunctionField W.toAffine.FunctionField := (\u03b9).toRingHom.toAlgebra\n  have h\u03c6 : (algebraMap (V').FunctionField W.toAffine.FunctionField).comp\n",
+      1
+    ],
+    [
+      "    SeparableAlong F (\u03b9) := by\n  letI : Algebra (V').FunctionField W.toAffine.FunctionField := (\u03b9).toRingHom.toAlgebra\n  show Algebra.IsSeparable (V').FunctionField W.toAffine.FunctionField\n",
+      "    SeparableAlong F (\u03b9) := by\n  let : Algebra (V').FunctionField W.toAffine.FunctionField := (\u03b9).toRingHom.toAlgebra\n  show Algebra.IsSeparable (V').FunctionField W.toAffine.FunctionField\n",
+      1
+    ],
+    [
+      "    haveI : Algebra.IsSeparable (V').FunctionField M :=\n",
+      "    have : Algebra.IsSeparable (V').FunctionField M :=\n",
+      1
+    ],
+    [
+      "  haveI : IsDedekindDomain V.toAffine.CoordinateRing := CoordinateRing.isDedekindDomain V\n",
+      "  have : IsDedekindDomain V.toAffine.CoordinateRing := CoordinateRing.isDedekindDomain V\n",
+      1
+    ],
+    [
+      "    letI := algebraAlong (AlgHom.id F V.toAffine.FunctionField)\n",
+      "    let := algebraAlong (AlgHom.id F V.toAffine.FunctionField)\n",
+      1
+    ],
+    [
+      "  haveI : W.toAffine.IsElliptic := \u2039W.IsElliptic\u203a\n",
+      "  have : W.toAffine.IsElliptic := \u2039W.IsElliptic\u203a\n",
+      1
+    ],
+    [
+      "instIsScalarTowerPolynomialRatFuncFunctionField_definitions",
+      "instIsScalarTowerPolynomialRatFuncFunctionField_submission",
+      1
+    ],
+    [
+      "instAlgebraRatFuncFunctionField_definitions",
+      "instAlgebraRatFuncFunctionField_submission",
+      1
+    ],
+    [
+      "instIsScalarTowerRatFuncFunctionField_definitions",
+      "instIsScalarTowerRatFuncFunctionField_submission",
+      1
+    ],
+    [
+      "    exact s2c_key (W := W) (by omega) \u27e8n, by ring\u27e9 hord h\u0394'\n",
+      "    exact s2c_key (W := W) (by omega) \u27e8n, by ring\u27e9 hord h\u0394'\n\n#check (@_root_.P2MW.S_WeierstrassCurve_exists_veluFunctionFieldHom_restrictAlong_placeOfPoint_eq_of_isAlgClosed.WeierstrassCurve.Affine.placeOfPoint_some :\n    \u2200 {F : Type*} [Field F] {W : _root_.WeierstrassCurve.Affine F}\n      [IsDedekindDomain W.CoordinateRing] [DecidableEq F]\n      [_root_.WeierstrassCurve.Affine.GenusOnePlaceGate W]\n      [_root_.WeierstrassCurve.Affine.GenusOnePlaceGate.IsCentred W]\n      [IsDedekindDomain W.CoordinateRing] {x y : F} (h : W.Nonsingular x y),\n      _root_.WeierstrassCurve.Affine.placeOfPoint (.some x y h) =\n        _root_.P2MW.S_WeierstrassCurve_exists_veluFunctionFieldHom_restrictAlong_placeOfPoint_eq_of_isAlgClosed.WeierstrassCurve.Affine.placeOfEquation h.left)\n#check (@_root_.P2MW.S_WeierstrassCurve_exists_veluFunctionFieldHom_restrictAlong_placeOfPoint_eq_of_isAlgClosed.WeierstrassCurve.Affine.InfinitePlace.eq_of_not_isFinitePlace :\n    \u2200 {F : Type*} [Field F] {W : _root_.WeierstrassCurve.Affine F}\n      [IsDedekindDomain W.CoordinateRing] [DecidableEq F]\n      [_root_.WeierstrassCurve.Affine.GenusOnePlaceGate W]\n      [_root_.WeierstrassCurve.Affine.GenusOnePlaceGate.IsCentred W]\n      [IsDedekindDomain W.CoordinateRing] (v : AlgebraicCurve.Place F W.FunctionField)\n      (hv : \u00ac _root_.P2MW.S_WeierstrassCurve_exists_veluFunctionFieldHom_restrictAlong_placeOfPoint_eq_of_isAlgClosed.WeierstrassCurve.Affine.IsFinitePlace v),\n      v = _root_.P2MW.S_WeierstrassCurve_exists_veluFunctionFieldHom_restrictAlong_placeOfPoint_eq_of_isAlgClosed.WeierstrassCurve.Affine.InfinitePlace.place)\n",
+      1
+    ],
+    [
+      "(placeOfPoint_some (W := W) h \u25b8",
+      "(placeOfPoint_some (W := W) (_hDDExtra := by infer_instance) h \u25b8",
+      1
+    ],
+    [
+      "  refine InfinitePlace.eq_of_not_isFinitePlace _ ?_",
+      "  refine InfinitePlace.eq_of_not_isFinitePlace (W := V') (_hDDExtra := by infer_instance) _ ?_",
+      2
+    ]
+  ],
+  "card_replacements": [
+    [
+      "instIsScalarTowerPolynomialRatFuncFunctionField_definitions",
+      "instIsScalarTowerPolynomialRatFuncFunctionField_submission",
+      1
+    ],
+    [
+      "instAlgebraRatFuncFunctionField_definitions",
+      "instAlgebraRatFuncFunctionField_submission",
+      1
+    ],
+    [
+      "instIsScalarTowerRatFuncFunctionField_definitions",
+      "instIsScalarTowerRatFuncFunctionField_submission",
+      1
+    ]
+  ],
+  "baseline_byte_identical_to_pinned_supplier": false,
+  "preexisting_canonical_source_normalization": [
+    [
+      "    refine Ideal.eq_bot_of_comap_eq_bot (R := F[X]) ?_\n",
+      "    refine Ideal.eq_bot_of_comap_eq_bot (R := F[X]) ?_\n    rw [Ideal.under_def]\n",
+      2
+    ]
+  ],
+  "canonical_card_byte_identical_to_pinned_supplier": true,
+  "pinned_supplier_source_and_card_preserved": true,
+  "supplier_repository": "anthropics/fermats-last-theorem",
+  "supplier_revision": "6e837e75355538c7f80bab5b956861e86c4eacc2",
+  "original_actual_errors": 1,
+  "original_actual_warnings": 47,
+  "actual_warned_style_lines": 34,
+  "verification_pending": false,
+  "installed": true,
+  "no_linter_suppression_added": true,
+  "public_solution_and_card_statement_byte_unchanged": true,
+  "full_original_statement_and_hypotheses_preserved": true,
+  "complete_original_proof_preserved": true,
+  "duplicate_helper_hypotheses_retained_as_normal_default_Prop_parameters": true,
+  "original_helper_full_forall_checks_appended": true,
+  "generated_instance_name_migration_reused_from": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/official-layout/terminal-proof-repairs/20261017-curve-base-change-ideal-under-api/verified-record.json",
+  "library_search": "No exact main-repository theorem found. Reuse the already make/kernel-verified three generated instance renames from definitions to submission, preserving negative-instance behavior. Reuse the current Ideal.under theorem API while retaining both preexisting explicit under_def rewrites.",
+  "change": "Retain the complete 9788-line canonical Velu function-field map proof and all original hypotheses. Migrate three obsolete generated-instance names in source/card; migrate the 34 actually warned haveI/letI sites, two conditional aliases, push_neg and two Ideal aliases. Remove exactly six actually redundant beta_reduce invocations. Retain both duplicate Dedekind-domain helper assumptions by spelling the extra Prop assumption as a normal default parameter and check each complete original two-instance forall type. Public solution/card statement text unchanged. Original preexisting linter options remain unchanged. Actual r1 retained complete original helper types and had zero warnings, but three old positional invocations treated the new normal Prop parameter as their first positional argument. Supply that retained hypothesis by name, explicitly fixing the target curve at the two InfinitePlace calls. No statement or proof assumption changed.",
+  "max_active_flt_jobs": 1,
+  "lean_threads": 1,
+  "full_original_complete": false,
+  "official_new_solve_credit": 0,
+  "stale_terminal_state_entries_excluded": [],
+  "active_import_closure_excluded": [
+    "Submission.Supplier.P2M.Sol.S_AlgebraicGeometry_smoothOfRelativeDimension_of_irreducibleSpace"
+  ],
+  "active_transitive_import_closure_size": 2,
+  "actual_live_descendant_sources": [
+    {
+      "pid": 16081,
+      "source": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_AlgebraicGeometry_smoothOfRelativeDimension_of_irreducibleSpace.lean"
+    }
+  ],
+  "all_four_canonical_adapted_source_card_modules_excluded": [
+    "P2M.Sol.S_WeierstrassCurve_exists_veluFunctionFieldHom_restrictAlong_placeOfPoint_eq_of_isAlgClosed",
+    "Submission.Supplier.P2M.Sol.S_WeierstrassCurve_exists_veluFunctionFieldHom_restrictAlong_placeOfPoint_eq_of_isAlgClosed",
+    "Submission.Supplier.Theorems.Thm_WeierstrassCurve_exists_veluFunctionFieldHom_restrictAlong_placeOfPoint_eq_of_isAlgClosed",
+    "Theorems.Thm_WeierstrassCurve_exists_veluFunctionFieldHom_restrictAlong_placeOfPoint_eq_of_isAlgClosed"
+  ],
+  "last_actual_failure": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/official-layout/terminal-proof-repairs/20261019-velu-place-restrict-instance-api/r1-actual-retained-helper-argument-failures",
+  "retained_helper_assumptions_supplied_at_all_three_actual_positional_call_failures": true
+}
