@@ -1,0 +1,182 @@
+{
+  "at": "2026-10-19T14:30:50.189958+00:00",
+  "name": "AlgebraicCurve_Pic0_exists_monic_natCard_fixedPoints_iterate_eq_resultant_of_pushforwardAlong_frobenius",
+  "candidate": "r1",
+  "card_candidate": "r1",
+  "source_replacements": [
+    [
+      "X * (d\u2044dX \u2102) f",
+      "X * PowerSeries.derivative f",
+      1
+    ],
+    [
+      "(by rw [\u2190 AlgHom.End_toSemigroup_toMul_mul, \u2190 pow_succ]; exact h\u03c6n)",
+      "(by\n          change (\u03c6 ^ n * \u03c6).toRingHom.IsIntegral\n          simpa only [pow_succ] using h\u03c6n)",
+      1
+    ],
+    [
+      "  haveI : Finite ((Polynomial.aeval (R := \u2124) T.toIntLinearMap\n",
+      "  have : Finite ((Polynomial.aeval (R := \u2124) T.toIntLinearMap\n",
+      1
+    ],
+    [
+      "  haveI : Finite (Function.fixedPoints (\u21d1T)^[n]) := hfinT.to_subtype\n",
+      "  have : Finite (Function.fixedPoints (\u21d1T)^[n]) := hfinT.to_subtype\n",
+      1
+    ],
+    [
+      "  letI : Algebra F' F := \u03c8.toRingHom.toAlgebra\n",
+      "  let : Algebra F' F := \u03c8.toRingHom.toAlgebra\n",
+      1
+    ],
+    [
+      "  haveI : CharP F' p := charP_of_injective_algebraMap (algebraMap F\u2080 F').injective p\n",
+      "  have : CharP F' p := charP_of_injective_algebraMap (algebraMap F\u2080 F').injective p\n",
+      1
+    ],
+    [
+      "  haveI : Module.Finite k k' := Module.Finite.of_finite\n",
+      "  have : Module.Finite k k' := Module.Finite.of_finite\n",
+      1
+    ],
+    [
+      "  letI : Fintype k' := Fintype.ofFinite k'\n",
+      "  let : Fintype k' := Fintype.ofFinite k'\n",
+      1
+    ],
+    [
+      "  haveI hEss\u2080 : Algebra.EssFiniteType k F\u2080 := by\n",
+      "  have hEss\u2080 : Algebra.EssFiniteType k F\u2080 := by\n",
+      1
+    ],
+    [
+      "  letI : Fintype k := Fintype.ofFinite k\n",
+      "  let : Fintype k := Fintype.ofFinite k\n",
+      1
+    ],
+    [
+      "  haveI : CharP F\u2080 p := charP_of_injective_algebraMap (algebraMap k F\u2080).injective p\n",
+      "  have : CharP F\u2080 p := charP_of_injective_algebraMap (algebraMap k F\u2080).injective p\n",
+      1
+    ],
+    [
+      "  haveI := hkp\n",
+      "  have := hkp\n",
+      1
+    ],
+    [
+      "  haveI := Fact.mk hp\n",
+      "  have := Fact.mk hp\n",
+      1
+    ],
+    [
+      "  haveI : CharP K (ringChar k) := ((algebraMap K F).charP_iff_charP (ringChar k)).mpr hF\n",
+      "  have : CharP K (ringChar k) := ((algebraMap K F).charP_iff_charP (ringChar k)).mpr hF\n",
+      1
+    ],
+    [
+      "  haveI hF : CharP F (ringChar k) := charP_of_injective_algebraMap (algebraMap F\u2080 F).injective _\n",
+      "  have hF : CharP F (ringChar k) := charP_of_injective_algebraMap (algebraMap F\u2080 F).injective _\n",
+      1
+    ],
+    [
+      "  haveI : CharP F\u2080 (ringChar k) := charP_of_injective_algebraMap (algebraMap k F\u2080).injective _\n",
+      "  have : CharP F\u2080 (ringChar k) := charP_of_injective_algebraMap (algebraMap k F\u2080).injective _\n",
+      1
+    ],
+    [
+      "  letI := Fintype.ofFinite k\n",
+      "  let := Fintype.ofFinite k\n",
+      1
+    ],
+    [
+      "    \u00b7 simp only [hr.ne', if_false, Multiset.sum_map_neg]\n",
+      "    \u00b7 simp only [hr.ne', ite_false, Multiset.sum_map_neg]\n",
+      1
+    ],
+    [
+      "      simp only [e1, e2, e3, if_false]\n",
+      "      simp only [e1, e2, e3, ite_false]\n",
+      1
+    ],
+    [
+      "  haveI : Fintype (H \u29f8 S) := Fintype.ofFinite _\n",
+      "  have : Fintype (H \u29f8 S) := Fintype.ofFinite _\n",
+      1
+    ],
+    [
+      "      haveI := Fact.mk hrp\n",
+      "      have := Fact.mk hrp\n",
+      1
+    ],
+    [
+      "  \u00b7 rw [if_neg hr]\n",
+      "  \u00b7 rw [ite_eq_right hr]\n",
+      1
+    ],
+    [
+      "  haveI : Fintype S := Fintype.ofFinite S\n",
+      "  have : Fintype S := Fintype.ofFinite S\n",
+      1
+    ],
+    [
+      "  haveI := isIntegral_along (AlgHom.id K F) hid\n",
+      "  have := isIntegral_along (AlgHom.id K F) hid\n",
+      1
+    ],
+    [
+      "  haveI := isScalarTower_along (AlgHom.id K F)\n",
+      "  have := isScalarTower_along (AlgHom.id K F)\n",
+      1
+    ],
+    [
+      "  letI := algebraAlong (AlgHom.id K F)\n",
+      "  let := algebraAlong (AlgHom.id K F)\n",
+      1
+    ]
+  ],
+  "card_replacements": [],
+  "baseline_byte_identical_to_pinned_supplier": true,
+  "baseline_by_role_byte_identical_to_pinned_supplier": {
+    "source": true,
+    "card": true
+  },
+  "prior_source_changes_preserved": "",
+  "prior_card_changes_preserved": "",
+  "pinned_supplier_source_and_card_preserved": true,
+  "public_card_statement_literal_preserved": true,
+  "solution_statement_literal_preserved": true,
+  "all_public_declaration_headers_literal_unchanged": true,
+  "verification_pending": false,
+  "installed": true,
+  "no_linter_suppression_added": true,
+  "complete_original_proof_preserved": true,
+  "full_original_statement_and_hypotheses_preserved": true,
+  "max_active_flt_jobs": 1,
+  "lean_threads": 1,
+  "original_actual_errors": 6,
+  "original_actual_warnings": 29,
+  "actual_warned_style_lines": 22,
+  "actual_warned_style_tokens": 22,
+  "library_search": "Current trureturing D5 exact-theorem search found no matching Pic0 resultant theorem. Reuse accepted complex Euler repair e812c4cbd303ccd8c9c49cb0dcdff5112cdd5c43 and constant-extension repair 8c3b71ad1e773beefb98666509bc1fc0c9a96b0d. Pinned Mathlib/Algebra/Algebra/Hom.lean:353-355 defines endomorphism multiplication to be AlgHom.comp. Use that definitional equality and pow_succ instead of the absent generated semigroup projection name.",
+  "change": "Retain the complete original Pic0 resultant/fixed-point proof, every declaration header and all hypotheses. Replace the obsolete complex derivative argument by the current derivation and the failed generated multiplication rewrite by its definitional composition/product identification plus pow_succ. Clean only the 24 lines with actual style/deprecation warnings. Source/card await actual single-queue make/kernel checks and recursive-axiom queries.",
+  "full_original_complete": false,
+  "official_new_solve_credit": 0,
+  "stale_terminal_state_entries_excluded": [],
+  "active_import_closure_excluded": [
+    "Submission.Supplier.P2M.Sol.S_AlgebraicGeometry_Scheme_Hom_comap_ker_eq_top_and_finrank_eq_zero_of_closedPoint_notMem_support"
+  ],
+  "active_transitive_import_closure_size": 5,
+  "actual_live_descendant_sources": [
+    {
+      "pid": 96674,
+      "source": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_AlgebraicGeometry_Scheme_Hom_comap_ker_eq_top_and_finrank_eq_zero_of_closedPoint_notMem_support.lean"
+    }
+  ],
+  "all_four_canonical_adapted_source_card_modules_excluded": [
+    "P2M.Sol.S_AlgebraicCurve_Pic0_exists_monic_natCard_fixedPoints_iterate_eq_resultant_of_pushforwardAlong_frobenius",
+    "Submission.Supplier.P2M.Sol.S_AlgebraicCurve_Pic0_exists_monic_natCard_fixedPoints_iterate_eq_resultant_of_pushforwardAlong_frobenius",
+    "Submission.Supplier.Theorems.Thm_AlgebraicCurve_Pic0_exists_monic_natCard_fixedPoints_iterate_eq_resultant_of_pushforwardAlong_frobenius",
+    "Theorems.Thm_AlgebraicCurve_Pic0_exists_monic_natCard_fixedPoints_iterate_eq_resultant_of_pushforwardAlong_frobenius"
+  ]
+}

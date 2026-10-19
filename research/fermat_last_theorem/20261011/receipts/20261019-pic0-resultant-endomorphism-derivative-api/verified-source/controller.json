@@ -1,0 +1,92 @@
+{
+  "sha256": "067f2e840a2a141ad067835f1b15d73eeef65e116c6f1492a3377b492ab4ef4e",
+  "exit": 0,
+  "empty_output_retry_done": false,
+  "source_sha256_after": "067f2e840a2a141ad067835f1b15d73eeef65e116c6f1492a3377b492ab4ef4e",
+  "source_unchanged": true,
+  "olean_sha256": "40528c77aa52765b01e8407c1e5da1b7d4c8fa3235074d3fb0c63e4cb3166258",
+  "seconds": 22.747394917008933,
+  "pid": 96763,
+  "command": [
+    "/Users/macstudio/.local/omega-shims/lean",
+    "-j1",
+    "--trust=0",
+    "-Ddebug.skipKernelTC=false",
+    "-R",
+    "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src",
+    "-o",
+    "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-build/lib/lean/Submission/Supplier/P2M/Sol/S_AlgebraicCurve_Pic0_exists_monic_natCard_fixedPoints_iterate_eq_resultant_of_pushforwardAlong_frobenius.olean",
+    "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_AlgebraicCurve_Pic0_exists_monic_natCard_fixedPoints_iterate_eq_resultant_of_pushforwardAlong_frobenius.lean"
+  ],
+  "make_wrapper_pid": 96745,
+  "make_exit": 0,
+  "make_entry_failed": false,
+  "cache_binding_valid": true,
+  "canonical_make_running_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/f53109c464e05d4e5fd81742-1792420276598010000.make-running.json",
+  "canonical_make_terminal_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/f53109c464e05d4e5fd81742-1792420276598010000.make-terminal.json",
+  "kernel_terminal_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/f53109c464e05d4e5fd81742-1792420276598010000.kernel/result.json",
+  "direct_dependencies": [
+    {
+      "module": "Submission.Supplier.Definitions.Def_AlgebraicCurve_Correspondence",
+      "source_sha256": "22d43195e5e1e56a79944d3f469e206b1dbea2f6727f6e0e0bccbc151f220881",
+      "object_sha256": "c99c86ef38a52c80a3925a267b8c93ae03a81f20f54c6c6e8d2d2fb01743b08c",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Definitions.Def_AlgebraicCurve_IsCurveOver",
+      "source_sha256": "3d53c0528c8bc1ae3b59135d2dc1a76d8abbd68c829305a8f4a8d584c3796553",
+      "object_sha256": "e059f779f8f2ce4be7ecc33e0af4e4d4e1629cd5eb8f0516c569e5b236d3539d",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Definitions.Def_AlgebraicCurve_AdelicIndex",
+      "source_sha256": "024b6fb80cd1ea9652c4ae5b7f5550d255384d4fd41161a694048492d096d1fe",
+      "object_sha256": "f8ad1cb2ae7d1d74eaad2b6af18cd768588d5a5295e77b576393a3d0efdfb355",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Definitions.Def_AlgebraicCurve_Repartitions",
+      "source_sha256": "83733fda8134700365a3679454ff847c3ff9f42b2911aacc1027ac59bab2b37a",
+      "object_sha256": "422931bbee50ca494e64e48ee960a7cce6fc29deb96c8f6d0133896c26a5cd6b",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Theorems.Thm_AlgebraicCurve_Divisor_pushforwardAlong_pushforwardAlong",
+      "source_sha256": "16117e664c412b35fd38983399c75cff7ead125bc8473b7bfe55a44099bca260",
+      "object_sha256": "3e18b3d609a36438e63b36a882174f34f58c2feb7f11e07fc790720ad96d2f46",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Theorems.Thm_AlgebraicCurve_exists_constantFieldExtension_of_finite",
+      "source_sha256": "6ac5f5d7c7252d192b1d743d4d07a6973de592433e3b39d3f6b36327e06b784f",
+      "object_sha256": "2298f426601f8fb46f73bbf71ed83eb18ec81bdfb33f968ab29c2c18fa86c77a",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Theorems.Thm_AlgebraicCurve_exists_monic_natCard_fixedPoints_restrictAlong_eq_of_constantFieldExtension",
+      "source_sha256": "429abcdb23a32da09173c616f5cafe0b405f9ecd18dccf09dd1581d6a331ae11",
+      "object_sha256": "9e698630c478a77e8b553ec2f6a5f4f3341888305f32f0e066720ef6c9314eaa",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Theorems.Thm_AlgebraicCurve_eval_one_eq_natCard_pic0_of_natCard_fixedPoints_restrictAlong_eq",
+      "source_sha256": "d605e27d708c5e0e1eefdf013ea5a937c338a5b3d5c367c51a503e488c8c6975",
+      "object_sha256": "3d75691c1051886e5e26da24cfdd4b518d1165f2cc919820db71860a6219907a",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Theorems.Thm_AlgebraicCurve_Pic0_natCard_fixedPoints_eq_natCard_pic0_of_pushforwardAlong_frobenius",
+      "source_sha256": "cdf0ba8f5aea7e03119c002cc0294ff8d3164f8960fa9fd773d969b0010ccc63",
+      "object_sha256": "fefeb04c6b3ace97b4898296947d2dcd585f2c81b81bfa15d817466222b9e3c8",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.P2M.Util",
+      "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+      "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+      "receipt_reused": true
+    }
+  ],
+  "stdout": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/f53109c464e05d4e5fd81742-1792420276598010000.kernel/stdout.log",
+  "stderr": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/f53109c464e05d4e5fd81742-1792420276598010000.kernel/stderr.log"
+}
