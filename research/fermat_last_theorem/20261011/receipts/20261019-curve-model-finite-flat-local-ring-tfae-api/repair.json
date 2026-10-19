@@ -1,0 +1,374 @@
+{
+  "at": "2026-10-19T13:21:19.805271+00:00",
+  "name": "AlgebraicCurve_CurveModel_exists_finite_flat_hom_of_algHom",
+  "candidate": "r1",
+  "card_candidate": "r1",
+  "source_replacements": [
+    [
+      "  haveI : IsScalarTower \u0393(M.C, U) M.C.functionField M'.C.functionField :=\n",
+      "  have : IsScalarTower \u0393(M.C, U) M.C.functionField M'.C.functionField :=\n",
+      1
+    ],
+    [
+      "  haveI : IsScalarTower \u0393(M.C, U) \u0393(M'.C, \u03c0 \u207b\u00b9\u1d41 U) M'.C.functionField :=\n",
+      "  have : IsScalarTower \u0393(M.C, U) \u0393(M'.C, \u03c0 \u207b\u00b9\u1d41 U) M'.C.functionField :=\n",
+      1
+    ],
+    [
+      "      (by haveI := isFinite M M' \u03c6 h\u03c6 hfin \u03c0 ha hd; exact hU.preimage \u03c0)\n",
+      "      (by have := isFinite M M' \u03c6 h\u03c6 hfin \u03c0 ha hd; exact hU.preimage \u03c0)\n",
+      1
+    ],
+    [
+      "  haveI : IsFractionRing \u0393(M'.C, \u03c0 \u207b\u00b9\u1d41 U) M'.C.functionField :=\n",
+      "  have : IsFractionRing \u0393(M'.C, \u03c0 \u207b\u00b9\u1d41 U) M'.C.functionField :=\n",
+      1
+    ],
+    [
+      "  haveI : IsFractionRing \u0393(M.C, U) M.C.functionField :=\n",
+      "  have : IsFractionRing \u0393(M.C, U) M.C.functionField :=\n",
+      1
+    ],
+    [
+      "  haveI : FaithfulSMul \u0393(M.C, U) \u0393(M'.C, \u03c0 \u207b\u00b9\u1d41 U) :=\n",
+      "  have : FaithfulSMul \u0393(M.C, U) \u0393(M'.C, \u03c0 \u207b\u00b9\u1d41 U) :=\n",
+      1
+    ],
+    [
+      "  haveI : Module.Finite \u0393(M.C, U) \u0393(M'.C, \u03c0 \u207b\u00b9\u1d41 U) := finite_app M M' \u03c6 h\u03c6 hfin \u03c0 ha hd U hU\n",
+      "  have : Module.Finite \u0393(M.C, U) \u0393(M'.C, \u03c0 \u207b\u00b9\u1d41 U) := finite_app M M' \u03c6 h\u03c6 hfin \u03c0 ha hd U hU\n",
+      1
+    ],
+    [
+      "  letI : Algebra \u0393(M.C, U) M'.C.functionField :=\n",
+      "  let : Algebra \u0393(M.C, U) M'.C.functionField :=\n",
+      1
+    ],
+    [
+      "  letI : Algebra M.C.functionField M'.C.functionField := (ffHom M M' \u03c6).toAlgebra\n",
+      "  let : Algebra M.C.functionField M'.C.functionField := (ffHom M M' \u03c6).toAlgebra\n",
+      1
+    ],
+    [
+      "  letI : Algebra \u0393(M.C, U) \u0393(M'.C, \u03c0 \u207b\u00b9\u1d41 U) := (\u03c0.app U).hom.toAlgebra\n",
+      "  let : Algebra \u0393(M.C, U) \u0393(M'.C, \u03c0 \u207b\u00b9\u1d41 U) := (\u03c0.app U).hom.toAlgebra\n",
+      1
+    ],
+    [
+      "  have h\u03b7' := genericPoint_mem_preimage M M' \u03c6 \u03c0 hd h\u03b7\n  haveI : Nonempty (\u03c0 \u207b\u00b9\u1d41 U) := \u27e8\u27e8_, h\u03b7'\u27e9\u27e9\n",
+      "  have h\u03b7' := genericPoint_mem_preimage M M' \u03c6 \u03c0 hd h\u03b7\n  have : Nonempty (\u03c0 \u207b\u00b9\u1d41 U) := \u27e8\u27e8_, h\u03b7'\u27e9\u27e9\n",
+      1
+    ],
+    [
+      "  have h\u03b7 : genericPoint M.C \u2208 U := hmem _ (Finset.mem_singleton_self _)\n  haveI : Nonempty U := \u27e8\u27e8_, h\u03b7\u27e9\u27e9\n",
+      "  have h\u03b7 : genericPoint M.C \u2208 U := hmem _ (Finset.mem_singleton_self _)\n  have : Nonempty U := \u27e8\u27e8_, h\u03b7\u27e9\u27e9\n",
+      1
+    ],
+    [
+      "  letI := algebraAlong \u03c6\n",
+      "  let := algebraAlong \u03c6\n",
+      1
+    ],
+    [
+      "    Module.finrank M.C.functionField M'.C.functionField = finrankAlong K \u03c6 := by\n  letI := (ffHom M M' \u03c6).toAlgebra\n",
+      "    Module.finrank M.C.functionField M'.C.functionField = finrankAlong K \u03c6 := by\n  let := (ffHom M M' \u03c6).toAlgebra\n",
+      1
+    ],
+    [
+      "  haveI : Nonempty U := \u27e8\u27e8_, h\u03b7\u27e9\u27e9\n  haveI := isFinite M M' \u03c6 h\u03c6 hfin \u03c0 ha hd\n  haveI := flat M M' \u03c6 h\u03c6 hfin \u03c0 ha hd\n",
+      "  haveI : Nonempty U := \u27e8\u27e8_, h\u03b7\u27e9\u27e9\n  haveI := isFinite M M' \u03c6 h\u03c6 hfin \u03c0 ha hd\n  have := flat M M' \u03c6 h\u03c6 hfin \u03c0 ha hd\n",
+      1
+    ],
+    [
+      "  haveI : Nonempty U := \u27e8\u27e8_, h\u03b7\u27e9\u27e9\n  haveI := isFinite M M' \u03c6 h\u03c6 hfin \u03c0 ha hd\n",
+      "  haveI : Nonempty U := \u27e8\u27e8_, h\u03b7\u27e9\u27e9\n  have := isFinite M M' \u03c6 h\u03c6 hfin \u03c0 ha hd\n",
+      1
+    ],
+    [
+      "    \u03c0.finrank (genericPoint M.C) = (\u03c0.app U).hom.finrank (\u22a5 : PrimeSpectrum \u0393(M.C, U)) := by\n  haveI : Nonempty U := \u27e8\u27e8_, h\u03b7\u27e9\u27e9\n",
+      "    \u03c0.finrank (genericPoint M.C) = (\u03c0.app U).hom.finrank (\u22a5 : PrimeSpectrum \u0393(M.C, U)) := by\n  have : Nonempty U := \u27e8\u27e8_, h\u03b7\u27e9\u27e9\n",
+      1
+    ],
+    [
+      "    hU.fromSpec (\u22a5 : PrimeSpectrum \u0393(M.C, U)) = genericPoint M.C := by\n  haveI : Nonempty U := \u27e8\u27e8_, h\u03b7\u27e9\u27e9\n",
+      "    hU.fromSpec (\u22a5 : PrimeSpectrum \u0393(M.C, U)) = genericPoint M.C := by\n  have : Nonempty U := \u27e8\u27e8_, h\u03b7\u27e9\u27e9\n",
+      1
+    ],
+    [
+      "    (U : M.C.Opens) (hU : IsAffineOpen U) : (\u03c0.app U).hom.Flat := by\n  haveI := isFinite M M' \u03c6 h\u03c6 hfin \u03c0 ha hd\n  haveI := flat M M' \u03c6 h\u03c6 hfin \u03c0 ha hd\n",
+      "    (U : M.C.Opens) (hU : IsAffineOpen U) : (\u03c0.app U).hom.Flat := by\n  haveI := isFinite M M' \u03c6 h\u03c6 hfin \u03c0 ha hd\n  have := flat M M' \u03c6 h\u03c6 hfin \u03c0 ha hd\n",
+      1
+    ],
+    [
+      "    (U : M.C.Opens) (hU : IsAffineOpen U) : (\u03c0.app U).hom.Flat := by\n  haveI := isFinite M M' \u03c6 h\u03c6 hfin \u03c0 ha hd\n",
+      "    (U : M.C.Opens) (hU : IsAffineOpen U) : (\u03c0.app U).hom.Flat := by\n  have := isFinite M M' \u03c6 h\u03c6 hfin \u03c0 ha hd\n",
+      1
+    ],
+    [
+      "    (U : M.C.Opens) (hU : IsAffineOpen U) : (\u03c0.app U).hom.Finite := by\n  haveI := isFinite M M' \u03c6 h\u03c6 hfin \u03c0 ha hd\n",
+      "    (U : M.C.Opens) (hU : IsAffineOpen U) : (\u03c0.app U).hom.Finite := by\n  have := isFinite M M' \u03c6 h\u03c6 hfin \u03c0 ha hd\n",
+      1
+    ],
+    [
+      "  haveI : Nonempty U := \u27e8\u27e8_, h\u03b7\u27e9\u27e9\n  haveI : Nonempty (\u03c0 \u207b\u00b9\u1d41 U) := \u27e8\u27e8_, genericPoint_mem_preimage M M' \u03c6 \u03c0 hd h\u03b7\u27e9\u27e9\n",
+      "  haveI : Nonempty U := \u27e8\u27e8_, h\u03b7\u27e9\u27e9\n  have : Nonempty (\u03c0 \u207b\u00b9\u1d41 U) := \u27e8\u27e8_, genericPoint_mem_preimage M M' \u03c6 \u03c0 hd h\u03b7\u27e9\u27e9\n",
+      1
+    ],
+    [
+      "    (U : M.C.Opens) (h\u03b7 : genericPoint M.C \u2208 U) : Function.Injective (\u03c0.app U).hom := by\n  haveI : Nonempty U := \u27e8\u27e8_, h\u03b7\u27e9\u27e9\n",
+      "    (U : M.C.Opens) (h\u03b7 : genericPoint M.C \u2208 U) : Function.Injective (\u03c0.app U).hom := by\n  have : Nonempty U := \u27e8\u27e8_, h\u03b7\u27e9\u27e9\n",
+      1
+    ],
+    [
+      "  have hx : \u03c0.base (genericPoint M'.C) \u2208 U := h\u03b7'\n  haveI : Nonempty (\u03c0 \u207b\u00b9\u1d41 U) := \u27e8\u27e8_, h\u03b7'\u27e9\u27e9\n",
+      "  have hx : \u03c0.base (genericPoint M'.C) \u2208 U := h\u03b7'\n  have : Nonempty (\u03c0 \u207b\u00b9\u1d41 U) := \u27e8\u27e8_, h\u03b7'\u27e9\u27e9\n",
+      1
+    ],
+    [
+      "      ffHom M M' \u03c6 (algebraMap \u0393(M.C, U) M.C.functionField a) := by\n  haveI : Nonempty U := \u27e8\u27e8_, h\u03b7\u27e9\u27e9\n",
+      "      ffHom M M' \u03c6 (algebraMap \u0393(M.C, U) M.C.functionField a) := by\n  have : Nonempty U := \u27e8\u27e8_, h\u03b7\u27e9\u27e9\n",
+      1
+    ],
+    [
+      "      algebraMap \u0393(M.C, U) M.C.functionField b := by\n  haveI : Nonempty U := \u27e8\u27e8_, h\u03b7\u27e9\u27e9\n",
+      "      algebraMap \u0393(M.C, U) M.C.functionField b := by\n  have : Nonempty U := \u27e8\u27e8_, h\u03b7\u27e9\u27e9\n",
+      1
+    ],
+    [
+      "  haveI : Algebra.IsAlgebraic A B := Algebra.IsIntegral.isAlgebraic\n",
+      "  have : Algebra.IsAlgebraic A B := Algebra.IsIntegral.isAlgebraic\n",
+      1
+    ],
+    [
+      "  haveI : Algebra.IsIntegral A B := Algebra.IsIntegral.of_finite A B\n",
+      "  have : Algebra.IsIntegral A B := Algebra.IsIntegral.of_finite A B\n",
+      1
+    ],
+    [
+      "  haveI := locallyOfFinitePresentation M M' \u03c6 h\u03c6 hfin \u03c0 ha hd\n",
+      "  have := locallyOfFinitePresentation M M' \u03c6 h\u03c6 hfin \u03c0 ha hd\n",
+      1
+    ],
+    [
+      "    \u03c0.finrank x = \u03c0.finrank (genericPoint M.C) := by\n  haveI := isFinite M M' \u03c6 h\u03c6 hfin \u03c0 ha hd\n  haveI := flat M M' \u03c6 h\u03c6 hfin \u03c0 ha hd\n",
+      "    \u03c0.finrank x = \u03c0.finrank (genericPoint M.C) := by\n  haveI := isFinite M M' \u03c6 h\u03c6 hfin \u03c0 ha hd\n  have := flat M M' \u03c6 h\u03c6 hfin \u03c0 ha hd\n",
+      1
+    ],
+    [
+      "    \u03c0.finrank x = \u03c0.finrank (genericPoint M.C) := by\n  haveI := isFinite M M' \u03c6 h\u03c6 hfin \u03c0 ha hd\n",
+      "    \u03c0.finrank x = \u03c0.finrank (genericPoint M.C) := by\n  have := isFinite M M' \u03c6 h\u03c6 hfin \u03c0 ha hd\n",
+      1
+    ],
+    [
+      "  haveI := isLocallyNoetherian M\n  haveI := locallyOfFiniteType M M' \u03c0 ha\n",
+      "  haveI := isLocallyNoetherian M\n  have := locallyOfFiniteType M M' \u03c0 ha\n",
+      1
+    ],
+    [
+      "  haveI := isLocallyNoetherian M\n",
+      "  have := isLocallyNoetherian M\n",
+      1
+    ],
+    [
+      "  haveI := valuationRing_stalk' M (\u03c0.base x)\n",
+      "  have := valuationRing_stalk' M (\u03c0.base x)\n",
+      1
+    ],
+    [
+      "  letI : Algebra A B := f.toAlgebra\n",
+      "  let : Algebra A B := f.toAlgebra\n",
+      1
+    ],
+    [
+      "  haveI := locallyQuasiFinite M M' \u03c6 h\u03c6 hfin \u03c0 ha hd\n",
+      "  have := locallyQuasiFinite M M' \u03c6 h\u03c6 hfin \u03c0 ha hd\n",
+      1
+    ],
+    [
+      "    IsFinite \u03c0 := by\n  haveI := isProper M M' \u03c0 ha\n",
+      "    IsFinite \u03c0 := by\n  have := isProper M M' \u03c0 ha\n",
+      1
+    ],
+    [
+      "  haveI := isProper M M' \u03c0 ha\n  haveI := locallyOfFiniteType M M' \u03c0 ha\n",
+      "  haveI := isProper M M' \u03c0 ha\n  have := locallyOfFiniteType M M' \u03c0 ha\n",
+      1
+    ],
+    [
+      "    LocallyQuasiFinite \u03c0 := by\n  haveI := isProper M M' \u03c0 ha\n",
+      "    LocallyQuasiFinite \u03c0 := by\n  have := isProper M M' \u03c0 ha\n",
+      1
+    ],
+    [
+      "    haveI := isNoetherian M'\n",
+      "    have := isNoetherian M'\n",
+      1
+    ],
+    [
+      "  haveI : CompactSpace M.C := QuasiCompact.compactSpace_of_compactSpace M.toBase\n",
+      "  have : CompactSpace M.C := QuasiCompact.compactSpace_of_compactSpace M.toBase\n",
+      1
+    ],
+    [
+      "  haveI : IsLocallyNoetherian M.C := LocallyOfFiniteType.isLocallyNoetherian M.toBase\n",
+      "  have : IsLocallyNoetherian M.C := LocallyOfFiniteType.isLocallyNoetherian M.toBase\n",
+      1
+    ],
+    [
+      "  haveI : JacobsonSpace M.C := LocallyOfFiniteType.jacobsonSpace M.toBase\n",
+      "  have : JacobsonSpace M.C := LocallyOfFiniteType.jacobsonSpace M.toBase\n",
+      1
+    ],
+    [
+      "  haveI : IsPrincipalIdealRing (M.C.presheaf.stalk x\u2080.1) := by\n",
+      "  have : IsPrincipalIdealRing (M.C.presheaf.stalk x\u2080.1) := by\n",
+      1
+    ],
+    [
+      "  haveI : IsPrincipalIdealRing j.range := by\n",
+      "  have : IsPrincipalIdealRing j.range := by\n",
+      1
+    ],
+    [
+      "  haveI := isDominant_fromSpecStalk_genericPoint M'.C\n",
+      "  have := isDominant_fromSpecStalk_genericPoint M'.C\n",
+      1
+    ],
+    [
+      "    \u03c0' = \u03c0 := by\n  haveI : M.C.IsSeparated := isSeparated_of_over M.toBase\n",
+      "    \u03c0' = \u03c0 := by\n  have : M.C.IsSeparated := isSeparated_of_over M.toBase\n",
+      1
+    ],
+    [
+      "    haveI : IsDominant f\u2080.domain.\u03b9 :=\n",
+      "    have : IsDominant f\u2080.domain.\u03b9 :=\n",
+      1
+    ],
+    [
+      "      M'.C.fromSpecStalk (genericPoint M'.C) \u226b \u03c0 = genericHom M M' \u03c6 := by\n  haveI : M.C.IsSeparated := isSeparated_of_over M.toBase\n",
+      "      M'.C.fromSpecStalk (genericPoint M'.C) \u226b \u03c0 = genericHom M M' \u03c6 := by\n  have : M.C.IsSeparated := isSeparated_of_over M.toBase\n",
+      1
+    ],
+    [
+      "  haveI := hV.isLocalization_stalk \u27e8x, hxV\u27e9\n",
+      "  have := hV.isLocalization_stalk \u27e8x, hxV\u27e9\n",
+      1
+    ],
+    [
+      "  letI := C.presheaf.algebra_section_stalk (\u27e8x, hxV\u27e9 : V)\n",
+      "  let := C.presheaf.algebra_section_stalk (\u27e8x, hxV\u27e9 : V)\n",
+      1
+    ],
+    [
+      "  haveI := isPrincipalIdealRing_mvPolynomial_fin_one K\n",
+      "  have := isPrincipalIdealRing_mvPolynomial_fin_one K\n",
+      1
+    ],
+    [
+      "  haveI : IsNoetherianRing \u0393(C, V) :=\n",
+      "  have : IsNoetherianRing \u0393(C, V) :=\n",
+      1
+    ],
+    [
+      "  haveI : IsDomain \u0393(C, V) := IsIntegral.component_integral V\n",
+      "  have : IsDomain \u0393(C, V) := IsIntegral.component_integral V\n",
+      1
+    ],
+    [
+      "  haveI : Nonempty V := \u27e8\u27e8x, hxV\u27e9\u27e9\n",
+      "  have : Nonempty V := \u27e8\u27e8x, hxV\u27e9\u27e9\n",
+      1
+    ],
+    [
+      "    haveI : Subsingleton \u21a5(Spec (.of K)) := inferInstanceAs (Subsingleton (PrimeSpectrum K))\n",
+      "    have : Subsingleton \u21a5(Spec (.of K)) := inferInstanceAs (Subsingleton (PrimeSpectrum K))\n",
+      1
+    ],
+    [
+      "  haveI : IsNoetherianRing (Localization.AtPrime q) :=\n",
+      "  have : IsNoetherianRing (Localization.AtPrime q) :=\n",
+      1
+    ],
+    [
+      "  letI := Localization.AtPrime.algebraOfLiesOver (q.under R) q\n",
+      "  let := Localization.AtPrime.algebraOfLiesOver (q.under R) q\n",
+      1
+    ],
+    [
+      "  haveI := hx\n",
+      "  have := hx\n",
+      1
+    ],
+    [
+      "    (Localization.AtPrime q)).out 4 1).mp hprinc",
+      "    (Localization.AtPrime q)).out 5 2).mp hprinc",
+      1
+    ],
+    [
+      "Algebra.IsAlgebraic.finrank_of_isFractionRing",
+      "IsFractionRing.finrank_eq",
+      1
+    ],
+    [
+      "  simp [RingHom.algebraMap_toAlgebra] at h",
+      "  simp at h",
+      1
+    ]
+  ],
+  "card_replacements": [],
+  "baseline_byte_identical_to_pinned_supplier": true,
+  "baseline_by_role_byte_identical_to_pinned_supplier": {
+    "source": true,
+    "card": true
+  },
+  "prior_source_changes_preserved": "",
+  "prior_card_changes_preserved": "",
+  "pinned_supplier_source_and_card_preserved": true,
+  "public_card_statement_literal_preserved": true,
+  "solution_statement_literal_preserved": true,
+  "all_public_declaration_headers_literal_unchanged": true,
+  "verification_pending": false,
+  "installed": true,
+  "no_linter_suppression_added": true,
+  "complete_original_proof_preserved": true,
+  "full_original_statement_and_hypotheses_preserved": true,
+  "max_active_flt_jobs": 1,
+  "lean_threads": 1,
+  "original_actual_errors": 4,
+  "original_actual_warnings": 61,
+  "library_search": "No exact CurveModel finite-flat hom theorem or use of the relevant local-ring TFAE in current trureturing. Pinned Mathlib RingTheory/DiscreteValuationRing/TFAE.lean:168 places principal maximal ideal at entry5 and ValuationRing at entry2 in the one-based List.TFAE.out interface. RingTheory/Algebraic/Integral.lean:548 declares the finrank alias replacement as IsFractionRing.finrank_eq. Actual log identifies all 59 proof-local style warnings and the unused simp argument.",
+  "change": "Retain the complete finite-flat curve morphism construction, degree equality, place restriction compatibility and uniqueness, with the exact public source/card statements and every assumption. Correct only the private localization valuation-ring TFAE selection from the old indices4/1 to the present5/2. Update the actual finrank alias, remove one actually unused simp argument and clean all 59 actually warned local bindings. Append exact source/card recursive-axiom queries and await the unchanged single queue.",
+  "actual_warned_style_tokens": 59,
+  "actual_warned_style_lines": 59,
+  "full_original_complete": false,
+  "official_new_solve_credit": 0,
+  "stale_terminal_state_entries_excluded": [],
+  "active_import_closure_excluded": [
+    "Submission.Supplier.P2M.Sol.S_ModularCurve_DRLevel_isAffineGeomPlace_and_evalAt_jGeomGen_eq_of_chartPin"
+  ],
+  "active_transitive_import_closure_size": 239,
+  "actual_live_descendant_sources": [
+    {
+      "pid": 17566,
+      "source": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_ModularCurve_DRLevel_isAffineGeomPlace_and_evalAt_jGeomGen_eq_of_chartPin.lean"
+    }
+  ],
+  "all_four_canonical_adapted_source_card_modules_excluded": [
+    "P2M.Sol.S_AlgebraicCurve_CurveModel_exists_finite_flat_hom_of_algHom",
+    "Submission.Supplier.P2M.Sol.S_AlgebraicCurve_CurveModel_exists_finite_flat_hom_of_algHom",
+    "Submission.Supplier.Theorems.Thm_AlgebraicCurve_CurveModel_exists_finite_flat_hom_of_algHom",
+    "Theorems.Thm_AlgebraicCurve_CurveModel_exists_finite_flat_hom_of_algHom"
+  ],
+  "card_declaration": "AlgebraicCurve.CurveModel.exists_finite_flat_hom_of_algHom",
+  "card_axiom_query_literal": "exists_finite_flat_hom_of_algHom",
+  "acceptance_card_namespace_fix": {
+    "at": "2026-10-19T13:23:55.938593+00:00",
+    "old_short_name": "exists_finite_flat_hom_of_algHom",
+    "verified_full_name": "AlgebraicCurve.CurveModel.exists_finite_flat_hom_of_algHom",
+    "public_namespace": "AlgebraicCurve.CurveModel",
+    "script": "/Users/macstudio/omega/research/lean-eval-01a124c1-52fb-7761-a67c-75fc0610196f/accept-exact-repair-pair-20261016.py",
+    "script_backup": "/Users/macstudio/omega/research/lean-eval-01a124c1-52fb-7761-a67c-75fc0610196f/accept-exact-repair-pair-before-namespaced-card-20261019.py",
+    "source_card_unchanged": true,
+    "recompilation_required": false
+  }
+}
