@@ -1,0 +1,146 @@
+{
+  "sha256": "ce136724c9b045ef55ad687f466df07fcce01e19cee3bde5632df72ced9006b9",
+  "exit": 1,
+  "empty_output_retry_done": false,
+  "source_sha256_after": "ce136724c9b045ef55ad687f466df07fcce01e19cee3bde5632df72ced9006b9",
+  "source_unchanged": true,
+  "olean_sha256": null,
+  "seconds": 95.91703033397789,
+  "pid": 55113,
+  "command": [
+    "/Users/macstudio/.local/omega-shims/lean",
+    "-j1",
+    "--trust=0",
+    "-Ddebug.skipKernelTC=false",
+    "-R",
+    "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src",
+    "-o",
+    "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-build/lib/lean/Submission/Supplier/P2M/Sol/S_ModularCurve_degeneracyPair_pushforwardAlong_correspondence_heckeBetaC_heckeAlphaC_comm_of_ne_of_not_dvd.olean",
+    "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_ModularCurve_degeneracyPair_pushforwardAlong_correspondence_heckeBetaC_heckeAlphaC_comm_of_ne_of_not_dvd.lean"
+  ],
+  "make_wrapper_pid": 55082,
+  "make_exit": 2,
+  "make_entry_failed": false,
+  "cache_binding_valid": true,
+  "canonical_make_running_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/23a4e9a0dbceac9b5a43cbcc-1792422602142905000.make-running.json",
+  "canonical_make_terminal_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/23a4e9a0dbceac9b5a43cbcc-1792422602142905000.make-terminal.json",
+  "kernel_terminal_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/23a4e9a0dbceac9b5a43cbcc-1792422602142905000.kernel/result.json",
+  "direct_dependencies": [
+    {
+      "module": "Submission.Supplier.Definitions.Def_ModularCurve_CharLDegeneracyHecke",
+      "source_sha256": "c50b8bb68e7a14dbcc5c84dcb516e91c67e4ecab5e3a33442b9da34c06aeaf50",
+      "object_sha256": "e5a0f818738becd3cfa18341dc38c5231ba65b8daba435ed5b8e3954d28a2919",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Theorems.Thm_AlgebraicCurve_Divisor_pullbackAlong_pushforwardAlong_eq_pushforwardAlong_pullbackAlong",
+      "source_sha256": "d1db6f4dd5276b2da632dade2f28dfac60ad8637b462f04d2ceab13e01e4c7a7",
+      "object_sha256": "940bc9c1cdf165c14fcf05d2ab3952cfc6bbc82e629141fa18d5970c1ca9c1b0",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Theorems.Thm_AlgebraicCurve_Divisor_pushforwardAlong_pushforwardAlong",
+      "source_sha256": "16117e664c412b35fd38983399c75cff7ead125bc8473b7bfe55a44099bca260",
+      "object_sha256": "3e18b3d609a36438e63b36a882174f34f58c2feb7f11e07fc790720ad96d2f46",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Theorems.Thm_AlgebraicCurve_finrankAlong_comp",
+      "source_sha256": "37b5a9d1da2adc27ea9504f159b76967680d6efe5b8647baa0ab06ca222e3f78",
+      "object_sha256": "fa908a7800e81cd10c665d018926595043ed2a15ced0d1de5e91df791a250e97",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Theorems.Thm_AlgebraicCurve_finrankAlong_eq_relfinrank_fieldRange",
+      "source_sha256": "054dcec7988ceb0b3104d636f2b099988f77a718f95bf8720f4c09b842f71048",
+      "object_sha256": "f6081ee5bced48ac3ae16aa810eb0fd4a32a1c075267ff768c521b1d3d462ba1",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Theorems.Thm_ModularCurve_modularFunctionFieldC_eq_modularFunctionFieldFullC",
+      "source_sha256": "750cfba48856d757a9e19d0d324ee241d7ca7f78ce3e7dd97d0e94cea8c2cd7c",
+      "object_sha256": "6dd8bc384fd71855e9b0293c6eaafbcebbce4bcb329ee47769cc62676fda556c",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Theorems.Thm_ModularCurve_charLDegeneracyRoof_eq_modularFunctionFieldFullC_mul",
+      "source_sha256": "17415af394c45e3c4ef947a98a64776fef94466a75b7386ce41ea4e1c0d518d4",
+      "object_sha256": "5f0ebe777055960e87a45d079f537d9e643880132161f88ec77eb7c9b73fbfbe",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Theorems.Thm_ModularCurve_relfinrank_modularFunctionFieldFullC_mul_dedekindPsi",
+      "source_sha256": "b6e9ab2807bd1670e3c044d3933b57eb5d175a50ff58ac272005ba4b1450e689",
+      "object_sha256": "b60cb590beb8042504a2fcdf2fba621fb82d31f13e4e36839df6b46e586bb96e",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Theorems.Thm_ModularCurve_dedekindPsi_mul_of_coprime",
+      "source_sha256": "c431fd338844cd9eeff21fac0cca4f8d1192a240c349bc627eeb4c82c2c0c04a",
+      "object_sha256": "04b22ed5a883c1f6463c5caa533d0a3fd3ddeb36165f9acb1c7700eda25cba02",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Theorems.Thm_ModularCurve_dedekindPsi_pos",
+      "source_sha256": "7c766f161f1965a36be46ee7bf8fcbd2426b4fd2ce3f0c4002e1c21cc556768e",
+      "object_sha256": "0ea735f5dcd12c6ec4b585517957cbeec0e08080218f17dd5cebc5513558d2d7",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Theorems.Thm_ModularCurve_exists_modularPolynomialData_evalSymm",
+      "source_sha256": "abf83f95879f18ab288bcb0a2f23b800514280c17e88a57eff16111ec9b90a48",
+      "object_sha256": "df49ff2463db6966d28195af42349aedf5bc72e9bc07cf44efd243ebe32ff5aa",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Theorems.Thm_ModularCurve_swapBivar_eq_of_evalSymm",
+      "source_sha256": "c573d7c54e3d80a2e6052e3d7dc10b0eab11c3fa7de5509dd5e49770b9e8067b",
+      "object_sha256": "5e3dec45a321c4806a5e98f9f74fc3c8f06daef988199a7949fe82231e49bcaf",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Theorems.Thm_ModularCurve_ModularPolynomialData_separable_map_jqModC_of_prime",
+      "source_sha256": "4559bb419cc5d4cc9e1c57ba7d90934782c509d8e75ece759e14c8f465be1095",
+      "object_sha256": "4fb95ed2610d8e718ac9282c2e90efbf2f05f3dff0c8e1a83d06941689ceab99",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Theorems.Thm_ModularCurve_ModularPolynomialData_eval_jqNModC_mul_eq_zero",
+      "source_sha256": "3aa31a77d10df75e9b99999afea9e802be2ed00c08245aea2ba9a04cb4161b07",
+      "object_sha256": "784126be736b99208dfe764738b30eb485436ca0957c2dbd767763b715677672",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Theorems.Thm_ModularCurve_isSeparable_jqNModC_of_natCast_ne_zero",
+      "source_sha256": "33163b3456fc664922a03166cccbe4f35046f738c84cdfaf1fb40d767a86813f",
+      "object_sha256": "d2d959721ac91540228bb0527e9f67d7d3c3df7f1389048a1b42752165a41c6a",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Theorems.Thm_ModularCurve_finiteAlong_heckeBetaC",
+      "source_sha256": "dde1c66a2e1421c5299baf883744c30dcc9635617412cd4e632216bdc3c53260",
+      "object_sha256": "decd45c084ad51e02ba1ef879d87f657d0b573ada479a398a95a4417690e5506",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Theorems.Thm_AlgebraicCurve_finiteAlong_comp",
+      "source_sha256": "9a9f198856f62d94a1b6aa9e759a6c23eeddbe645aef943715611e72c67a14a0",
+      "object_sha256": "2300e04a9bf96174440b5723aa72bdafb437bf30227a93b7e1d5d9ebb2f0f83a",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Theorems.Thm_ModularCurve_jqModC_mem_adjoin_jqNModC_of_prime_of_ne",
+      "source_sha256": "657f5f725a7fe4474af08ab4f0fa458f1eb19b13358fc9671d3f201158b75f22",
+      "object_sha256": "ef608777bf56b2f861072d445444560661008313f41f0eb520e03b8f01e271f3",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.P2M.Util",
+      "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+      "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+      "receipt_reused": true
+    }
+  ],
+  "stdout": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/23a4e9a0dbceac9b5a43cbcc-1792422602142905000.kernel/stdout.log",
+  "stderr": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/23a4e9a0dbceac9b5a43cbcc-1792422602142905000.kernel/stderr.log"
+}

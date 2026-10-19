@@ -1,0 +1,498 @@
+{
+  "at": "2026-10-19T15:28:28.078254+00:00",
+  "name": "ModularCurve_degeneracyPair_pushforwardAlong_correspondence_heckeBetaC_heckeAlphaC_comm_of_ne_of_not_dvd",
+  "candidate": "r3",
+  "card_candidate": "r3",
+  "source_replacements": [
+    [
+      "  haveI : NeZero (M * s) := \u27e8Nat.mul_ne_zero (NeZero.ne M) (NeZero.ne s)\u27e9\n  haveI : NeZero \u2113 := \u27e8h\u2113.ne_zero\u27e9\n",
+      "  haveI : NeZero (M * s) := \u27e8Nat.mul_ne_zero (NeZero.ne M) (NeZero.ne s)\u27e9\n  have : NeZero \u2113 := \u27e8h\u2113.ne_zero\u27e9\n",
+      1
+    ],
+    [
+      "  intro _ _ \u03c6 h\u03c6 h\u03c6\u03b1 h\u03c6\u03b2 h\u03b1\u2081 h\u03b2\u2081 h\u03b1\u2080 h\u03b2\u2080 i D\n  haveI : NeZero (M * s) := \u27e8Nat.mul_ne_zero (NeZero.ne M) (NeZero.ne s)\u27e9\n",
+      "  intro _ _ \u03c6 h\u03c6 h\u03c6\u03b1 h\u03c6\u03b2 h\u03b1\u2081 h\u03b2\u2081 h\u03b1\u2080 h\u03b2\u2080 i D\n  have : NeZero (M * s) := \u27e8Nat.mul_ne_zero (NeZero.ne M) (NeZero.ne s)\u27e9\n",
+      1
+    ],
+    [
+      "  haveI : Fact \u2113.Prime := \u27e8h\u2113\u27e9\n  haveI : NeZero (\u2113 * s) := \u27e8Nat.mul_ne_zero (NeZero.ne \u2113) (NeZero.ne s)\u27e9\n  haveI : NeZero (M * s * \u2113) := \u27e8Nat.mul_ne_zero (NeZero.ne (M * s)) (NeZero.ne \u2113)\u27e9\n",
+      "  haveI : Fact \u2113.Prime := \u27e8h\u2113\u27e9\n  haveI : NeZero (\u2113 * s) := \u27e8Nat.mul_ne_zero (NeZero.ne \u2113) (NeZero.ne s)\u27e9\n  have : NeZero (M * s * \u2113) := \u27e8Nat.mul_ne_zero (NeZero.ne (M * s)) (NeZero.ne \u2113)\u27e9\n",
+      1
+    ],
+    [
+      "  haveI : Fact \u2113.Prime := \u27e8h\u2113\u27e9\n  haveI : NeZero (\u2113 * s) := \u27e8Nat.mul_ne_zero (NeZero.ne \u2113) (NeZero.ne s)\u27e9\n",
+      "  haveI : Fact \u2113.Prime := \u27e8h\u2113\u27e9\n  have : NeZero (\u2113 * s) := \u27e8Nat.mul_ne_zero (NeZero.ne \u2113) (NeZero.ne s)\u27e9\n",
+      1
+    ],
+    [
+      "  haveI : Fact s.Prime := \u27e8hs\u27e9\n  haveI : Fact \u2113.Prime := \u27e8h\u2113\u27e9\n",
+      "  haveI : Fact s.Prime := \u27e8hs\u27e9\n  have : Fact \u2113.Prime := \u27e8h\u2113\u27e9\n",
+      1
+    ],
+    [
+      "  haveI : Fact s.Prime := \u27e8hs\u27e9\n",
+      "  have : Fact s.Prime := \u27e8hs\u27e9\n",
+      1
+    ],
+    [
+      "    SeparableAlong k ((heckeBetaC k (M * s) \u2113).comp (\u03c6 0)) := by\n  haveI : Fact \u2113.Prime := \u27e8h\u2113\u27e9\n",
+      "    SeparableAlong k ((heckeBetaC k (M * s) \u2113).comp (\u03c6 0)) := by\n  have : Fact \u2113.Prime := \u27e8h\u2113\u27e9\n",
+      1
+    ],
+    [
+      "      IsSeparable (IntermediateField.adjoin k ({jqModC k} : Set (LaurentSeries k))) x := by\n  haveI : NeZero (M * s * \u2113) := \u27e8Nat.mul_ne_zero (NeZero.ne (M * s)) (NeZero.ne \u2113)\u27e9\n",
+      "      IsSeparable (IntermediateField.adjoin k ({jqModC k} : Set (LaurentSeries k))) x := by\n  have : NeZero (M * s * \u2113) := \u27e8Nat.mul_ne_zero (NeZero.ne (M * s)) (NeZero.ne \u2113)\u27e9\n",
+      1
+    ],
+    [
+      "  haveI : NeZero (s * \u2113) := \u27e8Nat.mul_ne_zero (NeZero.ne s) (NeZero.ne \u2113)\u27e9\n  haveI : NeZero (\u2113 * s) := \u27e8Nat.mul_ne_zero (NeZero.ne \u2113) (NeZero.ne s)\u27e9\n  haveI : NeZero (M * s * \u2113) := \u27e8Nat.mul_ne_zero (NeZero.ne (M * s)) (NeZero.ne \u2113)\u27e9\n",
+      "  haveI : NeZero (s * \u2113) := \u27e8Nat.mul_ne_zero (NeZero.ne s) (NeZero.ne \u2113)\u27e9\n  haveI : NeZero (\u2113 * s) := \u27e8Nat.mul_ne_zero (NeZero.ne \u2113) (NeZero.ne s)\u27e9\n  have : NeZero (M * s * \u2113) := \u27e8Nat.mul_ne_zero (NeZero.ne (M * s)) (NeZero.ne \u2113)\u27e9\n",
+      1
+    ],
+    [
+      "  haveI : NeZero (s * \u2113) := \u27e8Nat.mul_ne_zero (NeZero.ne s) (NeZero.ne \u2113)\u27e9\n  haveI : NeZero (\u2113 * s) := \u27e8Nat.mul_ne_zero (NeZero.ne \u2113) (NeZero.ne s)\u27e9\n",
+      "  haveI : NeZero (s * \u2113) := \u27e8Nat.mul_ne_zero (NeZero.ne s) (NeZero.ne \u2113)\u27e9\n  have : NeZero (\u2113 * s) := \u27e8Nat.mul_ne_zero (NeZero.ne \u2113) (NeZero.ne s)\u27e9\n",
+      1
+    ],
+    [
+      "  haveI : NeZero (s * \u2113) := \u27e8Nat.mul_ne_zero (NeZero.ne s) (NeZero.ne \u2113)\u27e9\n",
+      "  have : NeZero (s * \u2113) := \u27e8Nat.mul_ne_zero (NeZero.ne s) (NeZero.ne \u2113)\u27e9\n",
+      1
+    ],
+    [
+      "      \u222a Set.range (roofMap (\u2113 := \u2113) \u03c6 h\u03c6\u03b1 h\u03c6\u03b2 1)) = \u22a4 := by\n  haveI : NeZero (M * \u2113) := \u27e8Nat.mul_ne_zero (NeZero.ne M) (NeZero.ne \u2113)\u27e9\n",
+      "      \u222a Set.range (roofMap (\u2113 := \u2113) \u03c6 h\u03c6\u03b1 h\u03c6\u03b2 1)) = \u22a4 := by\n  have : NeZero (M * \u2113) := \u27e8Nat.mul_ne_zero (NeZero.ne M) (NeZero.ne \u2113)\u27e9\n",
+      1
+    ],
+    [
+      "      \u222a Set.range (roofMap (\u2113 := \u2113) \u03c6 h\u03c6\u03b1 h\u03c6\u03b2 0)) = \u22a4 := by\n  haveI : NeZero (M * s * \u2113) := \u27e8Nat.mul_ne_zero (NeZero.ne (M * s)) (NeZero.ne \u2113)\u27e9\n",
+      "      \u222a Set.range (roofMap (\u2113 := \u2113) \u03c6 h\u03c6\u03b1 h\u03c6\u03b2 0)) = \u22a4 := by\n  have : NeZero (M * s * \u2113) := \u27e8Nat.mul_ne_zero (NeZero.ne (M * s)) (NeZero.ne \u2113)\u27e9\n",
+      1
+    ],
+    [
+      "    FiniteAlong k ((heckeBetaC k (M * s) \u2113).comp (\u03c6 i)) := by\n  haveI : Fact \u2113.Prime := \u27e8h\u2113\u27e9\n",
+      "    FiniteAlong k ((heckeBetaC k (M * s) \u2113).comp (\u03c6 i)) := by\n  have : Fact \u2113.Prime := \u27e8h\u2113\u27e9\n",
+      1
+    ],
+    [
+      "  haveI : NeZero (1 * s) := \u27e8by rw [one_mul]; exact NeZero.ne s\u27e9\n",
+      "  have : NeZero (1 * s) := \u27e8by rw [one_mul]; exact NeZero.ne s\u27e9\n",
+      1
+    ],
+    [
+      "    IsSeparable (IntermediateField.adjoin k ({jqNModC k s} : Set (LaurentSeries k))) (jqModC k) := by\n  haveI : NeZero s := \u27e8(Fact.out : s.Prime).ne_zero\u27e9\n",
+      "    IsSeparable (IntermediateField.adjoin k ({jqNModC k s} : Set (LaurentSeries k))) (jqModC k) := by\n  have : NeZero s := \u27e8(Fact.out : s.Prime).ne_zero\u27e9\n",
+      1
+    ],
+    [
+      "    IsSeparable (IntermediateField.adjoin k ({jqNModC k (N * s)} : Set (LaurentSeries k))) (jqNModC k N) := by\n  haveI : NeZero s := \u27e8(Fact.out : s.Prime).ne_zero\u27e9\n",
+      "    IsSeparable (IntermediateField.adjoin k ({jqNModC k (N * s)} : Set (LaurentSeries k))) (jqNModC k N) := by\n  have : NeZero s := \u27e8(Fact.out : s.Prime).ne_zero\u27e9\n",
+      1
+    ],
+    [
+      "  letI i2 : Algebra F E := algebraAlong \u03c6\n",
+      "  let i2 : Algebra F E := algebraAlong \u03c6\n",
+      1
+    ],
+    [
+      "  letI i1 : Algebra B E := algebraAlong (IntermediateField.inclusion hBE)\n",
+      "  let i1 : Algebra B E := algebraAlong (IntermediateField.inclusion hBE)\n",
+      1
+    ],
+    [
+      "  haveI := isScalarTower_along (IntermediateField.inclusion hBE)\n",
+      "  have := isScalarTower_along (IntermediateField.inclusion hBE)\n",
+      1
+    ],
+    [
+      "  letI := algebraAlong (IntermediateField.inclusion hBE)\n",
+      "  let := algebraAlong (IntermediateField.inclusion hBE)\n",
+      1
+    ],
+    [
+      "  haveI hE'sep : Algebra.IsSeparable (adjoin B S\u2081) (adjoin (adjoin B S\u2081) S) :=\n",
+      "  have hE'sep : Algebra.IsSeparable (adjoin B S\u2081) (adjoin (adjoin B S\u2081) S) :=\n",
+      1
+    ],
+    [
+      "  haveI : Algebra.IsSeparable B (adjoin B S\u2081) :=\n",
+      "  have : Algebra.IsSeparable B (adjoin B S\u2081) :=\n",
+      1
+    ],
+    [
+      "      map_add' := fun _ _ => rfl }\n  haveI : IsScalarTower A T L := IsScalarTower.of_algebraMap_eq (fun a => rfl)\n",
+      "      map_add' := fun _ _ => rfl }\n  have : IsScalarTower A T L := IsScalarTower.of_algebraMap_eq (fun a => rfl)\n",
+      1
+    ],
+    [
+      "  letI : Algebra A T := RingHom.toAlgebra\n",
+      "  let : Algebra A T := RingHom.toAlgebra\n",
+      1
+    ],
+    [
+      "  letI : Algebra A T := (IntermediateField.inclusion h).toRingHom.toAlgebra\n  haveI : IsScalarTower A T L := IsScalarTower.of_algebraMap_eq (fun a => rfl)\n",
+      "  letI : Algebra A T := (IntermediateField.inclusion h).toRingHom.toAlgebra\n  have : IsScalarTower A T L := IsScalarTower.of_algebraMap_eq (fun a => rfl)\n",
+      1
+    ],
+    [
+      "  letI : Algebra A T := (IntermediateField.inclusion h).toRingHom.toAlgebra\n",
+      "  let : Algebra A T := (IntermediateField.inclusion h).toRingHom.toAlgebra\n",
+      1
+    ],
+    [
+      "  haveI : NeZero (M * \u2113) := \u27e8Nat.mul_ne_zero (NeZero.ne M) (NeZero.ne \u2113)\u27e9\n  haveI : NeZero (M * s * \u2113) := \u27e8Nat.mul_ne_zero (NeZero.ne (M * s)) (NeZero.ne \u2113)\u27e9\n",
+      "  haveI : NeZero (M * \u2113) := \u27e8Nat.mul_ne_zero (NeZero.ne M) (NeZero.ne \u2113)\u27e9\n  have : NeZero (M * s * \u2113) := \u27e8Nat.mul_ne_zero (NeZero.ne (M * s)) (NeZero.ne \u2113)\u27e9\n",
+      1
+    ],
+    [
+      "    finrankAlong k (heckeBetaC k (M * s) \u2113) = finrankAlong k (heckeBetaC k M \u2113) := by\n  haveI : NeZero (M * \u2113) := \u27e8Nat.mul_ne_zero (NeZero.ne M) (NeZero.ne \u2113)\u27e9\n",
+      "    finrankAlong k (heckeBetaC k (M * s) \u2113) = finrankAlong k (heckeBetaC k M \u2113) := by\n  have : NeZero (M * \u2113) := \u27e8Nat.mul_ne_zero (NeZero.ne M) (NeZero.ne \u2113)\u27e9\n",
+      1
+    ],
+    [
+      "    r = r' := by\n  haveI : Fact \u2113.Prime := \u27e8h\u2113\u27e9\n",
+      "    r = r' := by\n  have : Fact \u2113.Prime := \u27e8h\u2113\u27e9\n",
+      1
+    ],
+    [
+      "  haveI : Algebra.IsAlgebraic C E := Algebra.IsIntegral.isAlgebraic\n",
+      "  have : Algebra.IsAlgebraic C E := Algebra.IsIntegral.isAlgebraic\n",
+      1
+    ],
+    [
+      "  haveI := isIntegral_along \u03b1 h\u03b1\n",
+      "  have := isIntegral_along \u03b1 h\u03b1\n",
+      1
+    ],
+    [
+      "  haveI := isScalarTower_along \u03b1\n",
+      "  have := isScalarTower_along \u03b1\n",
+      1
+    ],
+    [
+      "  letI := algebraAlong \u03b1\n",
+      "  let := algebraAlong \u03b1\n",
+      1
+    ],
+    [
+      "  haveI : Algebra.FiniteType F E := by\n",
+      "  have : Algebra.FiniteType F E := by\n",
+      1
+    ],
+    [
+      "  haveI : Algebra.IsAlgebraic F E := Algebra.IsIntegral.isAlgebraic\n",
+      "  have : Algebra.IsAlgebraic F E := Algebra.IsIntegral.isAlgebraic\n",
+      1
+    ],
+    [
+      "  haveI := isIntegral_along \u03c6 h\u03c6\n",
+      "  have := isIntegral_along \u03c6 h\u03c6\n",
+      1
+    ],
+    [
+      "  haveI := isScalarTower_along \u03c6\n",
+      "  have := isScalarTower_along \u03c6\n",
+      1
+    ],
+    [
+      "  letI := algebraAlong \u03c6\n",
+      "  let := algebraAlong \u03c6\n",
+      1
+    ],
+    [
+      "  haveI : NeZero (b * a) := \u27e8Nat.mul_ne_zero (NeZero.ne b) (NeZero.ne a)\u27e9\n",
+      "  have : NeZero (b * a) := \u27e8Nat.mul_ne_zero (NeZero.ne b) (NeZero.ne a)\u27e9\n",
+      1
+    ],
+    [
+      "  haveI : NeZero (a * b) := \u27e8Nat.mul_ne_zero (NeZero.ne a) (NeZero.ne b)\u27e9\n",
+      "  have : NeZero (a * b) := \u27e8Nat.mul_ne_zero (NeZero.ne a) (NeZero.ne b)\u27e9\n",
+      1
+    ],
+    [
+      "if_pos",
+      "ite_eq_left",
+      1
+    ],
+    [
+      "if_neg",
+      "ite_eq_right",
+      1
+    ],
+    [
+      "theorem roof_map_le (hle :",
+      "theorem roof_map_le (_hle :",
+      1
+    ],
+    [
+      "variable (k : Type*) [Field k] (M s \u2113 : \u2115) [NeZero M] [NeZero s]",
+      "variable (k : Type*) [Field k] (M s \u2113 : \u2115) [hMNonzero : NeZero M] [hsNonzero : NeZero s]",
+      1
+    ],
+    [
+      "variable {k : Type*} [Field k] {M s \u2113 : \u2115} [NeZero M] [NeZero s]",
+      "variable {k : Type*} [Field k] {M s \u2113 : \u2115} [hMNonzero : NeZero M] [hsNonzero : NeZero s]",
+      1
+    ],
+    [
+      "theorem le_of_pinned\n",
+      "include hsNonzero in\ntheorem le_of_pinned\n",
+      1
+    ],
+    [
+      "theorem roof_le ",
+      "include hsNonzero in\ntheorem roof_le ",
+      1
+    ],
+    [
+      "theorem finiteAlong_heckeBetaC_comp ",
+      "include hsNonzero in\ntheorem finiteAlong_heckeBetaC_comp ",
+      1
+    ],
+    [
+      "theorem roof_le_adjoin_gens ",
+      "include hsNonzero in\ntheorem roof_le_adjoin_gens ",
+      1
+    ],
+    [
+      "theorem gens_subset_roof ",
+      "include hsNonzero in\ntheorem gens_subset_roof ",
+      1
+    ],
+    [
+      "theorem mem_adjoin_of_coe_qExpand ",
+      "include hMNonzero hsNonzero in\ntheorem mem_adjoin_of_coe_qExpand ",
+      1
+    ],
+    [
+      "theorem isSeparable_gens ",
+      "include hMNonzero hsNonzero in\ntheorem isSeparable_gens ",
+      1
+    ],
+    [
+      " ModularCurve.eisensteinNumerator_nineteen ",
+      " ",
+      1
+    ],
+    [
+      " ModularCurve.eisensteinNumerator_seventeen ",
+      " ",
+      1
+    ],
+    [
+      " ModularCurve.eisensteinNumerator_eleven ",
+      " ",
+      1
+    ],
+    [
+      " ModularCurve.eisensteinNumerator_five ",
+      " ",
+      1
+    ],
+    [
+      " ModularCurve.eisensteinNumerator_seven ",
+      " ",
+      1
+    ],
+    [
+      " ModularCurve.eisensteinNumerator_twentythree ",
+      " ",
+      1
+    ],
+    [
+      " ModularCurve.eisensteinNumerator_thirteen ",
+      " ",
+      1
+    ],
+    [
+      " ModularCurve.constantCoeff_dedekindEtaUnitQ ",
+      " ",
+      1
+    ],
+    [
+      "\n    (M s \u2113 : \u2115) [NeZero M] [NeZero s] (hs : s.Prime) (h\u2113 : \u2113.Prime) (h\u2113s : \u2113 \u2260 s)\n    {k : Type*} [Field k] (p : \u2115) [CharP k p] (hp : \u00ac p \u2223 M * s * \u2113) :\n    haveI : NeZero (M * s) := \u27e8Nat.mul_ne_zero (NeZero.ne M) (NeZero.ne s)\u27e9\n    haveI : NeZero \u2113 := \u27e8h\u2113.ne_zero\u27e9\n    \u2200 [HasPrincipalDivisors k \u21a5(charLDegeneracyRoof k (M * s) \u2113)]\n      [HasPrincipalDivisors k \u21a5(charLDegeneracyRoof k M \u2113)]\n      (\u03c6 : Fin 2 \u2192 (\u21a5(modularFunctionFieldC k M) \u2192\u2090[k] \u21a5(modularFunctionFieldC k (M * s))))\n      (h\u03c6 : \u2200 i, (\u03c6 i).toRingHom.IsIntegral)\n      (h\u03c6\u03b1 : \u2200 x, ((\u03c6 0 x : \u21a5(modularFunctionFieldC k (M * s))) : LaurentSeries k) = x)\n      (h\u03c6\u03b2 : \u2200 x, ((\u03c6 1 x : \u21a5(modularFunctionFieldC k (M * s))) : LaurentSeries k)\n        = qExpand k s x)\n      (h\u03b1\u2081 : HeckeAlphaCIntegral k (M * s) \u2113) (h\u03b2\u2081 : HeckeBetaCIntegral k (M * s) \u2113)\n      (h\u03b1\u2080 : HeckeAlphaCIntegral k M \u2113) (h\u03b2\u2080 : HeckeBetaCIntegral k M \u2113)\n      (i : Fin 2) (D : Divisor k \u21a5(modularFunctionFieldC k (M * s))),\n      Divisor.pushforwardAlong (\u03c6 i) (h\u03c6 i)\n          (Divisor.correspondence (heckeBetaC k (M * s) \u2113) (heckeAlphaC k (M * s) \u2113) h\u03b2\u2081 h\u03b1\u2081 D)\n        = Divisor.correspondence (heckeBetaC k M \u2113) (heckeAlphaC k M \u2113) h\u03b2\u2080 h\u03b1\u2080\n            (Divisor.pushforwardAlong (\u03c6 i) (h\u03c6 i) D)",
+      "\n    (M s \u2113 : \u2115) [NeZero M] [NeZero s] (hs : s.Prime) (h\u2113 : \u2113.Prime) (h\u2113s : \u2113 \u2260 s)\n    {k : Type*} [Field k] (p : \u2115) [CharP k p] (hp : \u00ac p \u2223 M * s * \u2113) :\n    haveI : NeZero (M * s) := \u27e8Nat.mul_ne_zero (NeZero.ne M) (NeZero.ne s)\u27e9\n    haveI : NeZero \u2113 := \u27e8h\u2113.ne_zero\u27e9\n    \u2200 [HasPrincipalDivisors k \u21a5(charLDegeneracyRoof k (M * s) \u2113)]\n      [HasPrincipalDivisors k \u21a5(charLDegeneracyRoof k M \u2113)]\n      (\u03c6 : Fin 2 \u2192 (\u21a5(modularFunctionFieldC k M) \u2192\u2090[k] \u21a5(modularFunctionFieldC k (M * s))))\n      (h\u03c6 : \u2200 i, (\u03c6 i).toRingHom.IsIntegral)\n      (_h\u03c6\u03b1 : \u2200 x, ((\u03c6 0 x : \u21a5(modularFunctionFieldC k (M * s))) : LaurentSeries k) = x)\n      (_h\u03c6\u03b2 : \u2200 x, ((\u03c6 1 x : \u21a5(modularFunctionFieldC k (M * s))) : LaurentSeries k)\n        = qExpand k s x)\n      (h\u03b1\u2081 : HeckeAlphaCIntegral k (M * s) \u2113) (h\u03b2\u2081 : HeckeBetaCIntegral k (M * s) \u2113)\n      (h\u03b1\u2080 : HeckeAlphaCIntegral k M \u2113) (h\u03b2\u2080 : HeckeBetaCIntegral k M \u2113)\n      (i : Fin 2) (D : Divisor k \u21a5(modularFunctionFieldC k (M * s))),\n      Divisor.pushforwardAlong (\u03c6 i) (h\u03c6 i)\n          (Divisor.correspondence (heckeBetaC k (M * s) \u2113) (heckeAlphaC k (M * s) \u2113) h\u03b2\u2081 h\u03b1\u2081 D)\n        = Divisor.correspondence (heckeBetaC k M \u2113) (heckeAlphaC k M \u2113) h\u03b2\u2080 h\u03b1\u2080\n            (Divisor.pushforwardAlong (\u03c6 i) (h\u03c6 i) D)",
+      1
+    ],
+    [
+      "\u03b2\u2080 h\u03b1\u2080\n            (Divisor.pushforwardAlong (\u03c6 i) (h\u03c6 i) D) := by\n  intro _ _ \u03c6 h\u03c6 h\u03c6\u03b1 h\u03c6\u03b2 h\u03b1\u2081 h\u03b2\u2081 h\u03b1\u2080 h\u03b2\u2080 i D\n  have : NeZero (M * s) := \u27e8Nat.mul_ne_zero (NeZero.ne M) (NeZero.ne s)\u27e9\n  have : NeZero \u2113 := \u27e8h\u2113.ne_zero\u27e9\n  exact R1LawsC3.comm_of_not_dvd \u03c6 h\u03c6 h\u03c6\u03b1 h\u03c6\u03b2 p hs h\u2113 h\u2113s hp h\u03b1\u2081 h\u03b2\u2081 h\u03b1\u2080 h\u03b2\u2080 i D\n",
+      "\u03b2\u2080 h\u03b1\u2080\n            (Divisor.pushforwardAlong (\u03c6 i) (h\u03c6 i) D) := by\n  intro _ _ \u03c6 h\u03c6 h\u03c6\u03b1 h\u03c6\u03b2 h\u03b1\u2081 h\u03b2\u2081 h\u03b1\u2080 h\u03b2\u2080 i D\n  have : NeZero (M * s) := \u27e8Nat.mul_ne_zero (NeZero.ne M) (NeZero.ne s)\u27e9\n  have : NeZero \u2113 := \u27e8h\u2113.ne_zero\u27e9\n  exact R1LawsC3.comm_of_not_dvd \u03c6 h\u03c6 h\u03c6\u03b1 h\u03c6\u03b2 p hs h\u2113 h\u2113s hp h\u03b1\u2081 h\u03b2\u2081 h\u03b1\u2080 h\u03b2\u2080 i D\n\n#check (@solution : \u2200 (M s \u2113 : \u2115) [NeZero M] [NeZero s] (hs : s.Prime) (h\u2113 : \u2113.Prime) (h\u2113s : \u2113 \u2260 s)\n    {k : Type*} [Field k] (p : \u2115) [CharP k p] (hp : \u00ac p \u2223 M * s * \u2113),\n    haveI : NeZero (M * s) := \u27e8Nat.mul_ne_zero (NeZero.ne M) (NeZero.ne s)\u27e9\n    haveI : NeZero \u2113 := \u27e8h\u2113.ne_zero\u27e9\n    \u2200 [HasPrincipalDivisors k \u21a5(charLDegeneracyRoof k (M * s) \u2113)]\n      [HasPrincipalDivisors k \u21a5(charLDegeneracyRoof k M \u2113)]\n      (\u03c6 : Fin 2 \u2192 (\u21a5(modularFunctionFieldC k M) \u2192\u2090[k] \u21a5(modularFunctionFieldC k (M * s))))\n      (h\u03c6 : \u2200 i, (\u03c6 i).toRingHom.IsIntegral)\n      (h\u03c6\u03b1 : \u2200 x, ((\u03c6 0 x : \u21a5(modularFunctionFieldC k (M * s))) : LaurentSeries k) = x)\n      (h\u03c6\u03b2 : \u2200 x, ((\u03c6 1 x : \u21a5(modularFunctionFieldC k (M * s))) : LaurentSeries k)\n        = qExpand k s x)\n      (h\u03b1\u2081 : HeckeAlphaCIntegral k (M * s) \u2113) (h\u03b2\u2081 : HeckeBetaCIntegral k (M * s) \u2113)\n      (h\u03b1\u2080 : HeckeAlphaCIntegral k M \u2113) (h\u03b2\u2080 : HeckeBetaCIntegral k M \u2113)\n      (i : Fin 2) (D : Divisor k \u21a5(modularFunctionFieldC k (M * s))),\n      Divisor.pushforwardAlong (\u03c6 i) (h\u03c6 i)\n          (Divisor.correspondence (heckeBetaC k (M * s) \u2113) (heckeAlphaC k (M * s) \u2113) h\u03b2\u2081 h\u03b1\u2081 D)\n        = Divisor.correspondence (heckeBetaC k M \u2113) (heckeAlphaC k M \u2113) h\u03b2\u2080 h\u03b1\u2080\n            (Divisor.pushforwardAlong (\u03c6 i) (h\u03c6 i) D))\n",
+      1
+    ],
+    [
+      "include hsNonzero in\ntheorem le_of_pinned\n",
+      "omit hsNonzero in\ntheorem le_of_pinned [hsProof : NeZero s]\n",
+      1
+    ],
+    [
+      "include hsNonzero in\ntheorem roof_le ",
+      "omit hsNonzero in\ntheorem roof_le [hsProof : NeZero s] ",
+      1
+    ],
+    [
+      "include hsNonzero in\ntheorem finiteAlong_heckeBetaC_comp ",
+      "omit hsNonzero in\ntheorem finiteAlong_heckeBetaC_comp [hsProof : NeZero s] ",
+      1
+    ],
+    [
+      "include hsNonzero in\ntheorem roof_le_adjoin_gens ",
+      "omit hsNonzero in\ntheorem roof_le_adjoin_gens [hsProof : NeZero s] ",
+      1
+    ],
+    [
+      "include hsNonzero in\ntheorem gens_subset_roof ",
+      "omit hsNonzero in\ntheorem gens_subset_roof [hsProof : NeZero s] ",
+      1
+    ],
+    [
+      "include hMNonzero hsNonzero in\ntheorem mem_adjoin_of_coe_qExpand ",
+      "omit hMNonzero hsNonzero in\ntheorem mem_adjoin_of_coe_qExpand [hMProof : NeZero M] [hsProof : NeZero s] ",
+      1
+    ],
+    [
+      "include hMNonzero hsNonzero in\ntheorem isSeparable_gens ",
+      "omit hMNonzero hsNonzero in\ntheorem isSeparable_gens [hMProof : NeZero M] [hsProof : NeZero s] ",
+      1
+    ],
+    [
+      "#check (@solution :",
+      "open AlgebraicCurve ModularCurve in\n#check (@solution :",
+      1
+    ],
+    [
+      "[hsProof : NeZero s]",
+      "[_hsProof : NeZero s]",
+      7
+    ],
+    [
+      "[hMProof : NeZero M]",
+      "[_hMProof : NeZero M]",
+      2
+    ],
+    [
+      "#check (@solution : \u2200 (M s \u2113 : \u2115) [NeZero M] [NeZero s] (hs : s.Prime) (h\u2113 : \u2113.Prime) (h\u2113s : \u2113 \u2260 s)\n    {k : Type*} [Field k] (p : \u2115) [CharP k p] (hp : \u00ac p \u2223 M * s * \u2113),\n    haveI : NeZero (M * s) := \u27e8Nat.mul_ne_zero (NeZero.ne M) (NeZero.ne s)\u27e9\n    haveI : NeZero \u2113 := \u27e8h\u2113.ne_zero\u27e9\n    \u2200 [HasPrincipalDivisors k \u21a5(charLDegeneracyRoof k (M * s) \u2113)]\n      [HasPrincipalDivisors k \u21a5(charLDegeneracyRoof k M \u2113)]\n      (\u03c6 : Fin 2 \u2192 (\u21a5(modularFunctionFieldC k M) \u2192\u2090[k] \u21a5(modularFunctionFieldC k (M * s))))\n      (h\u03c6 : \u2200 i, (\u03c6 i).toRingHom.IsIntegral)\n      (h\u03c6\u03b1 : \u2200 x, ((\u03c6 0 x : \u21a5(modularFunctionFieldC k (M * s))) : LaurentSeries k) = x)\n      (h\u03c6\u03b2 : \u2200 x, ((\u03c6 1 x : \u21a5(modularFunctionFieldC k (M * s))) : LaurentSeries k)\n        = qExpand k s x)\n      (h\u03b1\u2081 : HeckeAlphaCIntegral k (M * s) \u2113) (h\u03b2\u2081 : HeckeBetaCIntegral k (M * s) \u2113)\n      (h\u03b1\u2080 : HeckeAlphaCIntegral k M \u2113) (h\u03b2\u2080 : HeckeBetaCIntegral k M \u2113)\n      (i : Fin 2) (D : Divisor k \u21a5(modularFunctionFieldC k (M * s))),\n      Divisor.pushforwardAlong (\u03c6 i) (h\u03c6 i)\n          (Divisor.correspondence (heckeBetaC k (M * s) \u2113) (heckeAlphaC k (M * s) \u2113) h\u03b2\u2081 h\u03b1\u2081 D)\n        = Divisor.correspondence (heckeBetaC k M \u2113) (heckeAlphaC k M \u2113) h\u03b2\u2080 h\u03b1\u2080\n            (Divisor.pushforwardAlong (\u03c6 i) (h\u03c6 i) D))\n",
+      "#check (@solution : \u2200 (M s \u2113 : \u2115) [NeZero M] [NeZero s] (_hs : s.Prime) (h\u2113 : \u2113.Prime) (_h\u2113s : \u2113 \u2260 s)\n    {k : Type*} [Field k] (p : \u2115) [CharP k p] (_hp : \u00ac p \u2223 M * s * \u2113),\n    haveI : NeZero (M * s) := \u27e8Nat.mul_ne_zero (NeZero.ne M) (NeZero.ne s)\u27e9\n    haveI : NeZero \u2113 := \u27e8h\u2113.ne_zero\u27e9\n    \u2200 [HasPrincipalDivisors k \u21a5(charLDegeneracyRoof k (M * s) \u2113)]\n      [HasPrincipalDivisors k \u21a5(charLDegeneracyRoof k M \u2113)]\n      (\u03c6 : Fin 2 \u2192 (\u21a5(modularFunctionFieldC k M) \u2192\u2090[k] \u21a5(modularFunctionFieldC k (M * s))))\n      (h\u03c6 : \u2200 i, (\u03c6 i).toRingHom.IsIntegral)\n      (_h\u03c6\u03b1 : \u2200 x, ((\u03c6 0 x : \u21a5(modularFunctionFieldC k (M * s))) : LaurentSeries k) = x)\n      (_h\u03c6\u03b2 : \u2200 x, ((\u03c6 1 x : \u21a5(modularFunctionFieldC k (M * s))) : LaurentSeries k)\n        = qExpand k s x)\n      (h\u03b1\u2081 : HeckeAlphaCIntegral k (M * s) \u2113) (h\u03b2\u2081 : HeckeBetaCIntegral k (M * s) \u2113)\n      (h\u03b1\u2080 : HeckeAlphaCIntegral k M \u2113) (h\u03b2\u2080 : HeckeBetaCIntegral k M \u2113)\n      (i : Fin 2) (D : Divisor k \u21a5(modularFunctionFieldC k (M * s))),\n      Divisor.pushforwardAlong (\u03c6 i) (h\u03c6 i)\n          (Divisor.correspondence (heckeBetaC k (M * s) \u2113) (heckeAlphaC k (M * s) \u2113) h\u03b2\u2081 h\u03b1\u2081 D)\n        = Divisor.correspondence (heckeBetaC k M \u2113) (heckeAlphaC k M \u2113) h\u03b2\u2080 h\u03b1\u2080\n            (Divisor.pushforwardAlong (\u03c6 i) (h\u03c6 i) D))\n",
+      1
+    ]
+  ],
+  "card_replacements": [
+    [
+      " ModularCurve.eisensteinNumerator_nineteen ",
+      " ",
+      1
+    ],
+    [
+      " ModularCurve.eisensteinNumerator_seventeen ",
+      " ",
+      1
+    ],
+    [
+      " ModularCurve.eisensteinNumerator_eleven ",
+      " ",
+      1
+    ],
+    [
+      " ModularCurve.eisensteinNumerator_five ",
+      " ",
+      1
+    ],
+    [
+      " ModularCurve.eisensteinNumerator_seven ",
+      " ",
+      1
+    ],
+    [
+      " ModularCurve.eisensteinNumerator_twentythree ",
+      " ",
+      1
+    ],
+    [
+      " ModularCurve.eisensteinNumerator_thirteen ",
+      " ",
+      1
+    ],
+    [
+      " ModularCurve.constantCoeff_dedekindEtaUnitQ ",
+      " ",
+      1
+    ],
+    [
+      "\n    (M s \u2113 : \u2115) [NeZero M] [NeZero s] (hs : s.Prime) (h\u2113 : \u2113.Prime) (h\u2113s : \u2113 \u2260 s)\n    {k : Type*} [Field k] (p : \u2115) [CharP k p] (hp : \u00ac p \u2223 M * s * \u2113) :\n    haveI : NeZero (M * s) := \u27e8Nat.mul_ne_zero (NeZero.ne M) (NeZero.ne s)\u27e9\n    haveI : NeZero \u2113 := \u27e8h\u2113.ne_zero\u27e9\n    \u2200 [HasPrincipalDivisors k \u21a5(charLDegeneracyRoof k (M * s) \u2113)]\n      [HasPrincipalDivisors k \u21a5(charLDegeneracyRoof k M \u2113)]\n      (\u03c6 : Fin 2 \u2192 (\u21a5(modularFunctionFieldC k M) \u2192\u2090[k] \u21a5(modularFunctionFieldC k (M * s))))\n      (h\u03c6 : \u2200 i, (\u03c6 i).toRingHom.IsIntegral)\n      (h\u03c6\u03b1 : \u2200 x, ((\u03c6 0 x : \u21a5(modularFunctionFieldC k (M * s))) : LaurentSeries k) = x)\n      (h\u03c6\u03b2 : \u2200 x, ((\u03c6 1 x : \u21a5(modularFunctionFieldC k (M * s))) : LaurentSeries k)\n        = qExpand k s x)\n      (h\u03b1\u2081 : HeckeAlphaCIntegral k (M * s) \u2113) (h\u03b2\u2081 : HeckeBetaCIntegral k (M * s) \u2113)\n      (h\u03b1\u2080 : HeckeAlphaCIntegral k M \u2113) (h\u03b2\u2080 : HeckeBetaCIntegral k M \u2113)\n      (i : Fin 2) (D : Divisor k \u21a5(modularFunctionFieldC k (M * s))),\n      Divisor.pushforwardAlong (\u03c6 i) (h\u03c6 i)\n          (Divisor.correspondence (heckeBetaC k (M * s) \u2113) (heckeAlphaC k (M * s) \u2113) h\u03b2\u2081 h\u03b1\u2081 D)\n        = Divisor.correspondence (heckeBetaC k M \u2113) (heckeAlphaC k M \u2113) h\u03b2\u2080 h\u03b1\u2080\n            (Divisor.pushforwardAlong (\u03c6 i) (h\u03c6 i) D)",
+      "\n    (M s \u2113 : \u2115) [NeZero M] [NeZero s] (hs : s.Prime) (h\u2113 : \u2113.Prime) (h\u2113s : \u2113 \u2260 s)\n    {k : Type*} [Field k] (p : \u2115) [CharP k p] (hp : \u00ac p \u2223 M * s * \u2113) :\n    haveI : NeZero (M * s) := \u27e8Nat.mul_ne_zero (NeZero.ne M) (NeZero.ne s)\u27e9\n    haveI : NeZero \u2113 := \u27e8h\u2113.ne_zero\u27e9\n    \u2200 [HasPrincipalDivisors k \u21a5(charLDegeneracyRoof k (M * s) \u2113)]\n      [HasPrincipalDivisors k \u21a5(charLDegeneracyRoof k M \u2113)]\n      (\u03c6 : Fin 2 \u2192 (\u21a5(modularFunctionFieldC k M) \u2192\u2090[k] \u21a5(modularFunctionFieldC k (M * s))))\n      (h\u03c6 : \u2200 i, (\u03c6 i).toRingHom.IsIntegral)\n      (_h\u03c6\u03b1 : \u2200 x, ((\u03c6 0 x : \u21a5(modularFunctionFieldC k (M * s))) : LaurentSeries k) = x)\n      (_h\u03c6\u03b2 : \u2200 x, ((\u03c6 1 x : \u21a5(modularFunctionFieldC k (M * s))) : LaurentSeries k)\n        = qExpand k s x)\n      (h\u03b1\u2081 : HeckeAlphaCIntegral k (M * s) \u2113) (h\u03b2\u2081 : HeckeBetaCIntegral k (M * s) \u2113)\n      (h\u03b1\u2080 : HeckeAlphaCIntegral k M \u2113) (h\u03b2\u2080 : HeckeBetaCIntegral k M \u2113)\n      (i : Fin 2) (D : Divisor k \u21a5(modularFunctionFieldC k (M * s))),\n      Divisor.pushforwardAlong (\u03c6 i) (h\u03c6 i)\n          (Divisor.correspondence (heckeBetaC k (M * s) \u2113) (heckeAlphaC k (M * s) \u2113) h\u03b2\u2081 h\u03b1\u2081 D)\n        = Divisor.correspondence (heckeBetaC k M \u2113) (heckeAlphaC k M \u2113) h\u03b2\u2080 h\u03b1\u2080\n            (Divisor.pushforwardAlong (\u03c6 i) (h\u03c6 i) D)",
+      1
+    ],
+    [
+      "h\u03b2\u2081 h\u03b1\u2081 D)\n        = Divisor.correspondence (heckeBetaC k M \u2113) (heckeAlphaC k M \u2113) h\u03b2\u2080 h\u03b1\u2080\n            (Divisor.pushforwardAlong (\u03c6 i) (h\u03c6 i) D) := by p2m_exact_reverting @_root_.P2MW.S_ModularCurve_degeneracyPair_pushforwardAlong_correspondence_heckeBetaC_heckeAlphaC_comm_of_ne_of_not_dvd.solution\n",
+      "h\u03b2\u2081 h\u03b1\u2081 D)\n        = Divisor.correspondence (heckeBetaC k M \u2113) (heckeAlphaC k M \u2113) h\u03b2\u2080 h\u03b1\u2080\n            (Divisor.pushforwardAlong (\u03c6 i) (h\u03c6 i) D) := by p2m_exact_reverting @_root_.P2MW.S_ModularCurve_degeneracyPair_pushforwardAlong_correspondence_heckeBetaC_heckeAlphaC_comm_of_ne_of_not_dvd.solution\n\n#check (@ModularCurve.degeneracyPair_pushforwardAlong_correspondence_heckeBetaC_heckeAlphaC_comm_of_ne_of_not_dvd : \u2200 (M s \u2113 : \u2115) [NeZero M] [NeZero s] (hs : s.Prime) (h\u2113 : \u2113.Prime) (h\u2113s : \u2113 \u2260 s)\n    {k : Type*} [Field k] (p : \u2115) [CharP k p] (hp : \u00ac p \u2223 M * s * \u2113),\n    haveI : NeZero (M * s) := \u27e8Nat.mul_ne_zero (NeZero.ne M) (NeZero.ne s)\u27e9\n    haveI : NeZero \u2113 := \u27e8h\u2113.ne_zero\u27e9\n    \u2200 [HasPrincipalDivisors k \u21a5(charLDegeneracyRoof k (M * s) \u2113)]\n      [HasPrincipalDivisors k \u21a5(charLDegeneracyRoof k M \u2113)]\n      (\u03c6 : Fin 2 \u2192 (\u21a5(modularFunctionFieldC k M) \u2192\u2090[k] \u21a5(modularFunctionFieldC k (M * s))))\n      (h\u03c6 : \u2200 i, (\u03c6 i).toRingHom.IsIntegral)\n      (h\u03c6\u03b1 : \u2200 x, ((\u03c6 0 x : \u21a5(modularFunctionFieldC k (M * s))) : LaurentSeries k) = x)\n      (h\u03c6\u03b2 : \u2200 x, ((\u03c6 1 x : \u21a5(modularFunctionFieldC k (M * s))) : LaurentSeries k)\n        = qExpand k s x)\n      (h\u03b1\u2081 : HeckeAlphaCIntegral k (M * s) \u2113) (h\u03b2\u2081 : HeckeBetaCIntegral k (M * s) \u2113)\n      (h\u03b1\u2080 : HeckeAlphaCIntegral k M \u2113) (h\u03b2\u2080 : HeckeBetaCIntegral k M \u2113)\n      (i : Fin 2) (D : Divisor k \u21a5(modularFunctionFieldC k (M * s))),\n      Divisor.pushforwardAlong (\u03c6 i) (h\u03c6 i)\n          (Divisor.correspondence (heckeBetaC k (M * s) \u2113) (heckeAlphaC k (M * s) \u2113) h\u03b2\u2081 h\u03b1\u2081 D)\n        = Divisor.correspondence (heckeBetaC k M \u2113) (heckeAlphaC k M \u2113) h\u03b2\u2080 h\u03b1\u2080\n            (Divisor.pushforwardAlong (\u03c6 i) (h\u03c6 i) D))\n",
+      1
+    ],
+    [
+      "#check (@ModularCurve.degeneracyPair_pushforwardAlong_correspondence_heckeBetaC_heckeAlphaC_comm_of_ne_of_not_dvd :",
+      "open AlgebraicCurve ModularCurve in\n#check (@ModularCurve.degeneracyPair_pushforwardAlong_correspondence_heckeBetaC_heckeAlphaC_comm_of_ne_of_not_dvd :",
+      1
+    ],
+    [
+      "#check (@ModularCurve.degeneracyPair_pushforwardAlong_correspondence_heckeBetaC_heckeAlphaC_comm_of_ne_of_not_dvd : \u2200 (M s \u2113 : \u2115) [NeZero M] [NeZero s] (hs : s.Prime) (h\u2113 : \u2113.Prime) (h\u2113s : \u2113 \u2260 s)\n    {k : Type*} [Field k] (p : \u2115) [CharP k p] (hp : \u00ac p \u2223 M * s * \u2113),\n    haveI : NeZero (M * s) := \u27e8Nat.mul_ne_zero (NeZero.ne M) (NeZero.ne s)\u27e9\n    haveI : NeZero \u2113 := \u27e8h\u2113.ne_zero\u27e9\n    \u2200 [HasPrincipalDivisors k \u21a5(charLDegeneracyRoof k (M * s) \u2113)]\n      [HasPrincipalDivisors k \u21a5(charLDegeneracyRoof k M \u2113)]\n      (\u03c6 : Fin 2 \u2192 (\u21a5(modularFunctionFieldC k M) \u2192\u2090[k] \u21a5(modularFunctionFieldC k (M * s))))\n      (h\u03c6 : \u2200 i, (\u03c6 i).toRingHom.IsIntegral)\n      (h\u03c6\u03b1 : \u2200 x, ((\u03c6 0 x : \u21a5(modularFunctionFieldC k (M * s))) : LaurentSeries k) = x)\n      (h\u03c6\u03b2 : \u2200 x, ((\u03c6 1 x : \u21a5(modularFunctionFieldC k (M * s))) : LaurentSeries k)\n        = qExpand k s x)\n      (h\u03b1\u2081 : HeckeAlphaCIntegral k (M * s) \u2113) (h\u03b2\u2081 : HeckeBetaCIntegral k (M * s) \u2113)\n      (h\u03b1\u2080 : HeckeAlphaCIntegral k M \u2113) (h\u03b2\u2080 : HeckeBetaCIntegral k M \u2113)\n      (i : Fin 2) (D : Divisor k \u21a5(modularFunctionFieldC k (M * s))),\n      Divisor.pushforwardAlong (\u03c6 i) (h\u03c6 i)\n          (Divisor.correspondence (heckeBetaC k (M * s) \u2113) (heckeAlphaC k (M * s) \u2113) h\u03b2\u2081 h\u03b1\u2081 D)\n        = Divisor.correspondence (heckeBetaC k M \u2113) (heckeAlphaC k M \u2113) h\u03b2\u2080 h\u03b1\u2080\n            (Divisor.pushforwardAlong (\u03c6 i) (h\u03c6 i) D))\n",
+      "#check (@ModularCurve.degeneracyPair_pushforwardAlong_correspondence_heckeBetaC_heckeAlphaC_comm_of_ne_of_not_dvd : \u2200 (M s \u2113 : \u2115) [NeZero M] [NeZero s] (_hs : s.Prime) (h\u2113 : \u2113.Prime) (_h\u2113s : \u2113 \u2260 s)\n    {k : Type*} [Field k] (p : \u2115) [CharP k p] (_hp : \u00ac p \u2223 M * s * \u2113),\n    haveI : NeZero (M * s) := \u27e8Nat.mul_ne_zero (NeZero.ne M) (NeZero.ne s)\u27e9\n    haveI : NeZero \u2113 := \u27e8h\u2113.ne_zero\u27e9\n    \u2200 [HasPrincipalDivisors k \u21a5(charLDegeneracyRoof k (M * s) \u2113)]\n      [HasPrincipalDivisors k \u21a5(charLDegeneracyRoof k M \u2113)]\n      (\u03c6 : Fin 2 \u2192 (\u21a5(modularFunctionFieldC k M) \u2192\u2090[k] \u21a5(modularFunctionFieldC k (M * s))))\n      (h\u03c6 : \u2200 i, (\u03c6 i).toRingHom.IsIntegral)\n      (_h\u03c6\u03b1 : \u2200 x, ((\u03c6 0 x : \u21a5(modularFunctionFieldC k (M * s))) : LaurentSeries k) = x)\n      (_h\u03c6\u03b2 : \u2200 x, ((\u03c6 1 x : \u21a5(modularFunctionFieldC k (M * s))) : LaurentSeries k)\n        = qExpand k s x)\n      (h\u03b1\u2081 : HeckeAlphaCIntegral k (M * s) \u2113) (h\u03b2\u2081 : HeckeBetaCIntegral k (M * s) \u2113)\n      (h\u03b1\u2080 : HeckeAlphaCIntegral k M \u2113) (h\u03b2\u2080 : HeckeBetaCIntegral k M \u2113)\n      (i : Fin 2) (D : Divisor k \u21a5(modularFunctionFieldC k (M * s))),\n      Divisor.pushforwardAlong (\u03c6 i) (h\u03c6 i)\n          (Divisor.correspondence (heckeBetaC k (M * s) \u2113) (heckeAlphaC k (M * s) \u2113) h\u03b2\u2081 h\u03b1\u2081 D)\n        = Divisor.correspondence (heckeBetaC k M \u2113) (heckeAlphaC k M \u2113) h\u03b2\u2080 h\u03b1\u2080\n            (Divisor.pushforwardAlong (\u03c6 i) (h\u03c6 i) D))\n",
+      1
+    ]
+  ],
+  "baseline_byte_identical_to_pinned_supplier": true,
+  "pinned_supplier_source_and_card_preserved": true,
+  "supplier_repository": "anthropics/fermats-last-theorem",
+  "supplier_revision": "6e837e75355538c7f80bab5b956861e86c4eacc2",
+  "original_actual_errors": 1,
+  "original_actual_warnings": 53,
+  "actual_warned_style_lines": 41,
+  "complete_original_proof_preserved": true,
+  "full_original_statement_and_hypotheses_preserved": true,
+  "no_linter_suppression_added": true,
+  "original_solution_and_card_forall_types_checked": true,
+  "all_original_typed_hypotheses_retained": true,
+  "auto_included_unused_section_hypotheses_explicitly_included_not_removed": false,
+  "actual_absent_attribute_tokens": [
+    "ModularCurve.eisensteinNumerator_nineteen",
+    "ModularCurve.eisensteinNumerator_seventeen",
+    "ModularCurve.eisensteinNumerator_eleven",
+    "ModularCurve.eisensteinNumerator_five",
+    "ModularCurve.eisensteinNumerator_seven",
+    "ModularCurve.eisensteinNumerator_twentythree",
+    "ModularCurve.eisensteinNumerator_thirteen",
+    "ModularCurve.constantCoeff_dedekindEtaUnitQ"
+  ],
+  "local_import_closure_sizes": {
+    "source": 462,
+    "card": 463
+  },
+  "modular_unit_provider_outside_both_import_closures": true,
+  "verification_pending": false,
+  "installed": true,
+  "library_search": "No exact main-repository degeneracy/Hecke commutation theorem found. Reuse actual eight missing negative-simp-name diagnostics from verified eff7317710db4bde24ed598266ff0038813083a9, plus current actual nineteen-name failure. Definitions.Def_ModularCurve_ModularUnit contains those mathematical lemmas but is outside both actual source/card recursive local import closures (462/463 modules), so its root simp names are not in these environments. Keep its provider and every mathematical proof unchanged; only omit inapplicable negative attribute actions. Lean Elab/MutualDef.lean:565-580 recognizes explicitly included section variables as deliberate API parameters; name and include the original unused NeZero hypotheses, rather than deleting them.",
+  "change": "Retain the entire original 1067-line Hecke/degeneracy commutation proof and all typed hypotheses. Remove only the eight proved inapplicable negative simp attributes. Name and explicitly include the original NeZero M/s parameters in seven declarations so their original telescopes remain intact. Alpha-rename three unused proof binders, retaining the assumptions. Migrate exactly 41 actual haveI/letI style lines and two actual conditional-name deprecations. Exact complete original solution/card forall types are checked, including both pinned map laws and local NeZero definitions; no suppression, no direct extra compiler. Actual r1 shows that include does not remove the seven core unusedSectionVars diagnostics on this compiler. Omit only the old implicit section capture and reintroduce exactly the same NeZero M/s assumptions as explicit instance binders on each affected helper; retain every original typed assumption and original full public forall checks. Restore the original AlgebraicCurve/ModularCurve opens for the standalone interface check. Actual r2 source/card make and kernel passed, with only unused binder warnings: prefix the nine deliberately retained helper instance names and five unused names inside each appended full original forall check with underscores. Every hypothesis and full proof stays present; no linter option changes.",
+  "max_active_flt_jobs": 1,
+  "lean_threads": 1,
+  "full_original_complete": false,
+  "official_new_solve_credit": 0,
+  "stale_terminal_state_entries_excluded": [],
+  "active_import_closure_excluded": [
+    "Submission.Supplier.P2M.Sol.S_ModularCurve_heckeInputsFibre_of_prime"
+  ],
+  "active_transitive_import_closure_size": 247,
+  "actual_live_descendant_sources": [
+    {
+      "pid": 51906,
+      "source": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_ModularCurve_heckeInputsFibre_of_prime.lean"
+    }
+  ],
+  "all_four_canonical_adapted_source_card_modules_excluded": [
+    "P2M.Sol.S_ModularCurve_degeneracyPair_pushforwardAlong_correspondence_heckeBetaC_heckeAlphaC_comm_of_ne_of_not_dvd",
+    "Submission.Supplier.P2M.Sol.S_ModularCurve_degeneracyPair_pushforwardAlong_correspondence_heckeBetaC_heckeAlphaC_comm_of_ne_of_not_dvd",
+    "Submission.Supplier.Theorems.Thm_ModularCurve_degeneracyPair_pushforwardAlong_correspondence_heckeBetaC_heckeAlphaC_comm_of_ne_of_not_dvd",
+    "Theorems.Thm_ModularCurve_degeneracyPair_pushforwardAlong_correspondence_heckeBetaC_heckeAlphaC_comm_of_ne_of_not_dvd"
+  ],
+  "last_actual_failure": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/official-layout/terminal-proof-repairs/20261019-degeneracy-hecke-comm-stale-simp-attributes/r1-actual-section-inclusion-and-interface-check-failure",
+  "section_assumptions_reintroduced_as_explicit_typed_binders": true,
+  "original_section_hypotheses_not_dropped": true,
+  "public_full_original_forall_check_namespaces_restored": true,
+  "last_actual_warning_evidence": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/official-layout/terminal-proof-repairs/20261019-degeneracy-hecke-comm-stale-simp-attributes/r2-actual-unused-binder-warnings"
+}

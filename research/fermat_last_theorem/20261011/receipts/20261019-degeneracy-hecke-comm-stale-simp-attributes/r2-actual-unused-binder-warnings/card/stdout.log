@@ -1,0 +1,53 @@
+degeneracyPair_pushforwardAlong_correspondence_heckeBetaC_heckeAlphaC_comm_of_ne_of_not_dvd : ∀ (M s ℓ : ℕ)
+  [inst : NeZero M] [inst_1 : NeZero s],
+  Nat.Prime s →
+    ∀ (hℓ : Nat.Prime ℓ),
+      ℓ ≠ s →
+        ∀ {k : Type u_1} [inst_2 : Field k] (p : ℕ) [CharP k p],
+          ¬p ∣ M * s * ℓ →
+            ∀ [inst_4 : HasPrincipalDivisors k ↥(charLDegeneracyRoof k (M * s) ℓ)]
+              [inst_5 : HasPrincipalDivisors k ↥(charLDegeneracyRoof k M ℓ)]
+              (φ : Fin 2 → ↥(modularFunctionFieldC k M) →ₐ[k] ↥(modularFunctionFieldC k (M * s)))
+              (hφ : ∀ (i : Fin 2), (φ i).IsIntegral),
+              (∀ (x : ↥(modularFunctionFieldC k M)), ↑((φ 0) x) = ↑x) →
+                (∀ (x : ↥(modularFunctionFieldC k M)), ↑((φ 1) x) = (qExpand k s) ↑x) →
+                  ∀ (hα₁ : HeckeAlphaCIntegral k (M * s) ℓ) (hβ₁ : HeckeBetaCIntegral k (M * s) ℓ)
+                    (hα₀ : HeckeAlphaCIntegral k M ℓ) (hβ₀ : HeckeBetaCIntegral k M ℓ) (i : Fin 2)
+                    (D : Divisor k ↥(modularFunctionFieldC k (M * s))),
+                    (Divisor.pushforwardAlong (φ i) ⋯)
+                        ((Divisor.correspondence (heckeBetaC k (M * s) ℓ) (heckeAlphaC k (M * s) ℓ) hβ₁ hα₁) D) =
+                      (Divisor.correspondence (heckeBetaC k M ℓ) (heckeAlphaC k M ℓ) hβ₀ hα₀)
+                        ((Divisor.pushforwardAlong (φ i) ⋯) D)
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/Theorems/Thm_ModularCurve_degeneracyPair_pushforwardAlong_correspondence_heckeBetaC_heckeAlphaC_comm_of_ne_of_not_dvd.lean:40:153: warning: Variable name `hs` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hs
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/Theorems/Thm_ModularCurve_degeneracyPair_pushforwardAlong_correspondence_heckeBetaC_heckeAlphaC_comm_of_ne_of_not_dvd.lean:40:183: warning: Variable name `hℓs` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hℓs
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/Theorems/Thm_ModularCurve_degeneracyPair_pushforwardAlong_correspondence_heckeBetaC_heckeAlphaC_comm_of_ne_of_not_dvd.lean:41:47: warning: Variable name `hp` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hp
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/Theorems/Thm_ModularCurve_degeneracyPair_pushforwardAlong_correspondence_heckeBetaC_heckeAlphaC_comm_of_ne_of_not_dvd.lean:48:7: warning: Variable name `hφα` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hφα
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/Theorems/Thm_ModularCurve_degeneracyPair_pushforwardAlong_correspondence_heckeBetaC_heckeAlphaC_comm_of_ne_of_not_dvd.lean:49:7: warning: Variable name `hφβ` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hφβ
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+'ModularCurve.degeneracyPair_pushforwardAlong_correspondence_heckeBetaC_heckeAlphaC_comm_of_ne_of_not_dvd' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
