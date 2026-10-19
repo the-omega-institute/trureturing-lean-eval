@@ -1,0 +1,141 @@
+{
+  "at": "2026-10-19T02:15:27.927201+00:00",
+  "name": "RingTheory_Sequence_isWeaklyRegular_ofFn_of_isWeaklyRegular_ofFn_of_forall_mem_span",
+  "candidate": "r1",
+  "card_candidate": "r1",
+  "source_replacements": [
+    [
+      "  exact Finset.filter_congr fun j _ => inl\u2097_lt_inl\u2097\n",
+      "",
+      1
+    ],
+    [
+      "  exact Finset.filter_congr fun j _ => Sum.Lex.inr_lt_inr_iff\n",
+      "",
+      1
+    ],
+    [
+      "  exact Finset.filter_congr fun j _ => Sum.Lex.inl_lt_inl_iff\n",
+      "",
+      1
+    ],
+    [
+      "dif_pos",
+      "dite_eq_left",
+      2
+    ],
+    [
+      "dif_neg",
+      "dite_eq_right",
+      1
+    ],
+    [
+      "if_pos",
+      "ite_eq_left",
+      10
+    ],
+    [
+      "if_neg",
+      "ite_eq_right",
+      12
+    ],
+    [
+      "LinearEquiv.ofLinear",
+      "LinearEquiv.ofLinearMap",
+      2
+    ],
+    [
+      "  haveI : Epi (ZToCycles x M p \u226b (complex x M).homology\u03c0 p) := epi_comp _ _",
+      "  have : Epi (ZToCycles x M p \u226b (complex x M).homology\u03c0 p) := epi_comp _ _",
+      1
+    ],
+    [
+      "    haveI : Subsingleton (H (concat y x) M (p + 1)) := by",
+      "    have : Subsingleton (H (concat y x) M (p + 1)) := by",
+      1
+    ],
+    [
+      "      haveI := hy (p + 1) p.succ_pos",
+      "      have := hy (p + 1) p.succ_pos",
+      1
+    ],
+    [
+      "    haveI : Subsingleton (H x (ModSpan y M) (p + 1)) :=",
+      "    have : Subsingleton (H x (ModSpan y M) (p + 1)) :=",
+      1
+    ],
+    [
+      "    haveI : IsEmpty I := Fintype.card_eq_zero_iff.mp hI",
+      "    have : IsEmpty I := Fintype.card_eq_zero_iff.mp hI",
+      1
+    ],
+    [
+      "    haveI : Nonempty I := Fintype.card_pos_iff.mp (by omega)",
+      "    have : Nonempty I := Fintype.card_pos_iff.mp (by omega)",
+      1
+    ],
+    [
+      "  haveI : Subsingleton (ModuleCat.of P (H x (QuotSMulTop r N) (p + 1))) := hq",
+      "  have : Subsingleton (ModuleCat.of P (H x (QuotSMulTop r N) (p + 1))) := hq",
+      1
+    ],
+    [
+      "  haveI : Subsingleton ((smulSC x (N := N) r).X\u2083.homology (p + 1)) :=",
+      "  have : Subsingleton ((smulSC x (N := N) r).X\u2083.homology (p + 1)) :=",
+      1
+    ],
+    [
+      "  haveI : Subsingleton (ModuleCat.of P (H x N p)) :=",
+      "  have : Subsingleton (ModuleCat.of P (H x N p)) :=",
+      1
+    ],
+    [
+      "        haveI := hH p hp",
+      "        have := hH p hp",
+      1
+    ],
+    [
+      "    haveI := hS 1 Nat.one_pos",
+      "    have := hS 1 Nat.one_pos",
+      1
+    ]
+  ],
+  "card_replacements": [],
+  "baseline_byte_identical_to_pinned_supplier": true,
+  "prior_source_changes_preserved": [],
+  "prior_card_changes_preserved": [],
+  "public_card_statement_literal_preserved": true,
+  "solution_statement_literal_preserved": true,
+  "pinned_supplier_source_and_card_preserved": true,
+  "verification_pending": false,
+  "installed": true,
+  "no_linter_suppression_added": true,
+  "complete_original_proof_preserved": true,
+  "full_original_statement_and_hypotheses_preserved": true,
+  "max_active_flt_jobs": 1,
+  "lean_threads": 1,
+  "original_actual_errors": 3,
+  "original_actual_warnings": 38,
+  "original_source_lines": 3004,
+  "library_search": "Search-first: no IsWeaklyRegular or isWeaklyRegular_ofFn clients found in current trureturing D5/Reg. Preserve the complete existing Koszul proof. Actual kernel shows three congr 2 steps already close the goals, so only their subsequent exact Finset.filter_congr lines are redundant. Pinned Finset.Image:172 supplies filter_map; Finset.Filter:176 supplies the congruence lemma. Algebra.Module.Equiv.Basic:484 defines ofLinearMap, and :499-500 makes ofLinear its deprecated abbreviation with the identical arguments.",
+  "change": "Preserve the complete 3004-line supplier proof and exact original public statement and every hypothesis. Remove exactly three actual no-goals trailing exact tactics. Update the 27 actual deprecated names (dite names before ite names), and replace exactly the eleven actual haveI-on-Prop warning sites with have. Leave unreported haveI sites intact. Append source/card recursive-axiom queries and await the unchanged original single queue.",
+  "full_original_complete": false,
+  "official_new_solve_credit": 0,
+  "stale_terminal_state_entries_excluded": [],
+  "active_import_closure_excluded": [
+    "Submission.Supplier.Theorems.Thm_Subgroup_relIndex_inf_map_conj_eq_natCard_setOf_exists_quotientMk_mul_eq"
+  ],
+  "active_transitive_import_closure_size": 3,
+  "actual_live_descendant_sources": [
+    {
+      "pid": 45392,
+      "source": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/Theorems/Thm_Subgroup_relIndex_inf_map_conj_eq_natCard_setOf_exists_quotientMk_mul_eq.lean"
+    }
+  ],
+  "all_four_canonical_adapted_source_card_modules_excluded": [
+    "P2M.Sol.S_RingTheory_Sequence_isWeaklyRegular_ofFn_of_isWeaklyRegular_ofFn_of_forall_mem_span",
+    "Submission.Supplier.P2M.Sol.S_RingTheory_Sequence_isWeaklyRegular_ofFn_of_isWeaklyRegular_ofFn_of_forall_mem_span",
+    "Submission.Supplier.Theorems.Thm_RingTheory_Sequence_isWeaklyRegular_ofFn_of_isWeaklyRegular_ofFn_of_forall_mem_span",
+    "Theorems.Thm_RingTheory_Sequence_isWeaklyRegular_ofFn_of_isWeaklyRegular_ofFn_of_forall_mem_span"
+  ]
+}
