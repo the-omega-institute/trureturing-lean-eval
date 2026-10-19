@@ -1,0 +1,147 @@
+{
+  "at": "2026-10-19T14:55:09.302550+00:00",
+  "name": "AlgebraicCurve_Divisor_pushforwardNormFormula_of_isSeparable",
+  "candidate": "r1",
+  "card_candidate": "r1",
+  "source_replacements": [
+    [
+      "    haveI : Q.IsPrime := Ideal.isPrime_of_prime hQprime\n",
+      "    have : Q.IsPrime := Ideal.isPrime_of_prime hQprime\n",
+      1
+    ],
+    [
+      "  haveI : (fiberCenter F' v hw).asIdeal.IsPrime := (fiberCenter F' v hw).isPrime\n",
+      "  have : (fiberCenter F' v hw).asIdeal.IsPrime := (fiberCenter F' v hw).isPrime\n",
+      1
+    ],
+    [
+      "  haveI : (fiberCenter F' v hw).asIdeal.LiesOver\n",
+      "  have : (fiberCenter F' v hw).asIdeal.LiesOver\n",
+      1
+    ],
+    [
+      "  haveI : (fiberCenter F' v hw).asIdeal.IsMaximal :=\n",
+      "  have : (fiberCenter F' v hw).asIdeal.IsMaximal :=\n",
+      1
+    ],
+    [
+      "  haveI := fiberCenter_liesOver hw\n",
+      "  have := fiberCenter_liesOver hw\n",
+      1
+    ],
+    [
+      "  haveI hmax : (fiberCenter F' v hw).asIdeal.IsMaximal :=\n",
+      "  have hmax : (fiberCenter F' v hw).asIdeal.IsMaximal :=\n",
+      1
+    ],
+    [
+      "  haveI : IsFractionRing (integralClosure v.toValuationSubring F') F' :=\n",
+      "  have : IsFractionRing (integralClosure v.toValuationSubring F') F' :=\n",
+      1
+    ],
+    [
+      "  haveI : IsDedekindDomain (integralClosure v.toValuationSubring F') :=\n",
+      "  have : IsDedekindDomain (integralClosure v.toValuationSubring F') :=\n",
+      1
+    ],
+    [
+      "  haveI : IsScalarTower v.toValuationSubring F F' :=\n",
+      "  have : IsScalarTower v.toValuationSubring F F' :=\n",
+      1
+    ],
+    [
+      "  letI : Algebra v.toValuationSubring F' :=\n",
+      "  let : Algebra v.toValuationSubring F' :=\n",
+      1
+    ],
+    [
+      "  haveI := hfin.to_subtype\n",
+      "  have := hfin.to_subtype\n",
+      1
+    ],
+    [
+      "import Mathlib.NumberTheory.RamificationInertia.Basic\n",
+      "import Mathlib.LinearAlgebra.Dimension.DivisionRing\nimport Mathlib.NumberTheory.RamificationInertia.Inertia\nimport Mathlib.NumberTheory.RamificationInertia.Ramification\nimport Mathlib.RingTheory.Ideal.Norm.AbsNorm\nimport Mathlib.RingTheory.SimpleModule.Basic\nimport Mathlib.RingTheory.RamificationInertia.Basic\n",
+      1
+    ],
+    [
+      "Set.mem_setOf_eq",
+      "Set.mem_ofPred_eq",
+      1
+    ],
+    [
+      "Ideal.ramificationIdx_spec",
+      "Ideal.ramificationIdx'_spec",
+      1
+    ],
+    [
+      "if_neg",
+      "ite_eq_right",
+      1
+    ],
+    [
+      "if_pos",
+      "ite_eq_left",
+      1
+    ],
+    [
+      "(IsLocalRing.maximalIdeal v.toValuationSubring).inertiaDeg'",
+      "_root_.P2MW.S_AlgebraicCurve_relNorm_eq_pow_of_isMaximal_of_isSeparable.quotientInertiaDegree (IsLocalRing.maximalIdeal v.toValuationSubring)",
+      7
+    ],
+    [
+      "  rw [Ideal.inertiaDeg_algebraMap]",
+      "  rw [_root_.P2MW.S_AlgebraicCurve_relNorm_eq_pow_of_isMaximal_of_isSeparable.quotientInertiaDegree, dite_eq_left (Ideal.over_def _ _).symm]",
+      1
+    ],
+    [
+      "  rw [AlgebraicCurve.relNorm_eq_pow_of_isMaximal_of_isSeparable F F'\n    (fiberCenter F' v hw).asIdeal (IsLocalRing.maximalIdeal v.toValuationSubring),",
+      "  rw [AlgebraicCurve.relNorm_eq_pow_of_isMaximal_of_isSeparable (K := F) (L := F')\n    (P := (fiberCenter F' v hw).asIdeal)\n    (p := IsLocalRing.maximalIdeal v.toValuationSubring),",
+      1
+    ],
+    [
+      "  classical\n  have hkey := Ideal.sum_ramification_inertia (integralClosureAt F' v) F F'\n    (p := IsLocalRing.maximalIdeal v.toValuationSubring) (maximalIdeal_ne_bot v)\n  rw [\u2190 hkey]\n  push_cast\n  refine Finset.sum_bij\n    (fun w hw => (fiberCenter F' v (Place.mem_fiber.mp hw)).asIdeal) ?_ ?_ ?_ ?_\n  \u00b7\n    intro w hw\n    rw [IsDedekindDomain.mem_primesOverFinset_iff (maximalIdeal_ne_bot v)]\n    exact \u27e8(fiberCenter F' v (Place.mem_fiber.mp hw)).isPrime,\n      fiberCenter_liesOver (Place.mem_fiber.mp hw)\u27e9\n  \u00b7\n    intro w hw w' hw' h\n    exact eq_of_fiberCenter_eq (Place.mem_fiber.mp hw) (Place.mem_fiber.mp hw')\n      (HeightOneSpectrum.ext h)\n  \u00b7\n    intro P hP\n    rw [IsDedekindDomain.mem_primesOverFinset_iff (maximalIdeal_ne_bot v)] at hP\n    obtain \u27e8hP1, hP2\u27e9 := hP\n    have hPne : P \u2260 \u22a5 := by\n      intro h\n      apply maximalIdeal_ne_bot v\n      have h2 := hP2.over\n      rw [h, Ideal.under_def, Ideal.comap_bot_of_injective _\n        (algebraMap_integralClosureAt_injective v)] at h2\n      exact h2\n    refine \u27e8placeOfPrime \u27e8P, hP1, hPne\u27e9,\n      Place.mem_fiber.mpr (restrict_placeOfPrime \u27e8P, hP1, hPne\u27e9), ?_\u27e9\n    exact congrArg HeightOneSpectrum.asIdeal\n      (fiberCenter_placeOfPrime (\u27e8P, hP1, hPne\u27e9 :\n        HeightOneSpectrum (integralClosureAt F' v)))\n  \u00b7\n    intro w hw\n    rw [ramificationIndex_eq_ramificationIdx_fiberCenter (Place.mem_fiber.mp hw),\n      inertiaDeg_eq_inertiaDeg_fiberCenter (Place.mem_fiber.mp hw)]\n",
+      "  classical\n  let : Fintype ((IsLocalRing.maximalIdeal v.toValuationSubring).primesOver\n      (integralClosureAt F' v)) := Fintype.ofFinite _\n  have hkey := Ideal.sum_ramification_inertia_eq_finrank\n    (IsLocalRing.maximalIdeal v.toValuationSubring) (integralClosureAt F' v)\n  rw [\u2190 _root_.IsFractionRing.finrank_eq v.toValuationSubring F\n    (integralClosureAt F' v) F'] at hkey\n  rw [\u2190 hkey]\n  push_cast\n  refine Finset.sum_bij\n    (fun w hw =>\n      (\u27e8(fiberCenter F' v (Place.mem_fiber.mp hw)).asIdeal,\n        (fiberCenter F' v (Place.mem_fiber.mp hw)).isPrime,\n        fiberCenter_liesOver (Place.mem_fiber.mp hw)\u27e9 :\n          (IsLocalRing.maximalIdeal v.toValuationSubring).primesOver\n            (integralClosureAt F' v))) ?_ ?_ ?_ ?_\n  \u00b7 intro w hw\n    simp only [Finset.mem_univ]\n  \u00b7 intro w hw w' hw' h\n    exact eq_of_fiberCenter_eq (Place.mem_fiber.mp hw) (Place.mem_fiber.mp hw')\n      (HeightOneSpectrum.ext (congrArg Subtype.val h))\n  \u00b7 intro P _\n    obtain \u27e8hP1, hP2\u27e9 := P.2\n    have hPne : P.1 \u2260 \u22a5 := by\n      intro h\n      apply maximalIdeal_ne_bot v\n      have h2 := hP2.over\n      rw [h, Ideal.under_def, Ideal.comap_bot_of_injective _\n        (algebraMap_integralClosureAt_injective v)] at h2\n      exact h2\n    refine \u27e8placeOfPrime \u27e8P.1, hP1, hPne\u27e9,\n      Place.mem_fiber.mpr (restrict_placeOfPrime \u27e8P.1, hP1, hPne\u27e9), ?_\u27e9\n    exact Subtype.ext (congrArg HeightOneSpectrum.asIdeal\n      (fiberCenter_placeOfPrime (\u27e8P.1, hP1, hPne\u27e9 :\n        HeightOneSpectrum (integralClosureAt F' v))))\n  \u00b7 intro w hw\n    have := (fiberCenter F' v (Place.mem_fiber.mp hw)).isPrime\n    have := fiberCenter_liesOver (Place.mem_fiber.mp hw)\n    have : (fiberCenter F' v (Place.mem_fiber.mp hw)).asIdeal.IsMaximal :=\n      (fiberCenter F' v (Place.mem_fiber.mp hw)).isPrime.isMaximal\n        (fiberCenter F' v (Place.mem_fiber.mp hw)).ne_bot\n    rw [ramificationIndex_eq_ramificationIdx_fiberCenter (Place.mem_fiber.mp hw),\n      inertiaDeg_eq_inertiaDeg_fiberCenter (Place.mem_fiber.mp hw),\n      \u2190 _root_.P2MW.S_AlgebraicCurve_relNorm_eq_pow_of_isMaximal_of_isSeparable.quotientInertiaDegree_eq\n        (IsLocalRing.maximalIdeal v.toValuationSubring)\n        (fiberCenter F' v (Place.mem_fiber.mp hw)).asIdeal,\n      Ideal.ramificationIdx'_eq_ramificationIdx _ _ (maximalIdeal_ne_bot v)]\n",
+      1
+    ]
+  ],
+  "card_replacements": [],
+  "verification_pending": false,
+  "installed": true,
+  "baseline_byte_identical_to_pinned_supplier": true,
+  "pinned_supplier_source_and_card_preserved": true,
+  "supplier_repository": "anthropics/fermats-last-theorem",
+  "supplier_revision": "6e837e75355538c7f80bab5b956861e86c4eacc2",
+  "original_actual_errors": 3,
+  "original_actual_warnings": 25,
+  "actual_warned_style_lines": 11,
+  "no_linter_suppression_added": true,
+  "complete_original_proof_preserved": true,
+  "full_original_statement_and_hypotheses_preserved": true,
+  "solution_statement_literal_preserved": true,
+  "public_card_statement_literal_preserved": true,
+  "legacy_definition_reference": "83b659a67529e422412d93c9680b1bd5eb3a47e8",
+  "library_search": "No exact repository pushforwardNormFormula result found. Reuse the accepted separable relNorm proof 83b659a67529e422412d93c9680b1bd5eb3a47e8 and exact complete quotient legacy degree. The finite sum API migration is reused from accepted 20261017-dual-isogeny-ideal-under-ramification-api replacement81, adapting only the actual fiber-membership lemma and retaining quotient degree via its equality under the original maximal/liesOver hypotheses. Current Mathlib sum_ramification_inertia_eq_finrank and IsFractionRing.finrank_eq provide the same fundamental identity without the deprecated NumberTheory Basic theorem.",
+  "change": "Retain the entire 1246-line original divisor pushforward norm proof and exact public solution/card telescopes. Supply the retained relNorm parameters by name. Replace each of the seven deprecated quotient-based degree spellings with the previously kernel-checked definition, preserving every branch. Expand its old algebraMap equality directly. Reuse the already verified subtype-indexed fundamental-identity sum bijection while converting residue degree back to the legacy definition only under proved original maximal/liesOver hypotheses. Replace the deprecated import by its documented components plus current ring-theory sum theorem. Clean only actual style/deprecation warnings. Original single job queue only; no direct new compiler.",
+  "max_active_flt_jobs": 1,
+  "lean_threads": 1,
+  "full_original_complete": false,
+  "official_new_solve_credit": 0,
+  "stale_terminal_state_entries_excluded": [
+    {
+      "module": "Submission.Supplier.Theorems.Thm_AlgebraicGeometry_isIntegral_pullback_specMap_algebraMap_of_isFractionRing_of_flat",
+      "wrapper_pid": 48848,
+      "make_exit": 0,
+      "terminal": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/a07d901dfabe0917fc445029-1792421697823809000.make-terminal.json"
+    }
+  ],
+  "active_import_closure_excluded": [],
+  "active_transitive_import_closure_size": 0,
+  "actual_live_descendant_sources": [],
+  "all_four_canonical_adapted_source_card_modules_excluded": [
+    "P2M.Sol.S_AlgebraicCurve_Divisor_pushforwardNormFormula_of_isSeparable",
+    "Submission.Supplier.P2M.Sol.S_AlgebraicCurve_Divisor_pushforwardNormFormula_of_isSeparable",
+    "Submission.Supplier.Theorems.Thm_AlgebraicCurve_Divisor_pushforwardNormFormula_of_isSeparable",
+    "Theorems.Thm_AlgebraicCurve_Divisor_pushforwardNormFormula_of_isSeparable"
+  ]
+}
