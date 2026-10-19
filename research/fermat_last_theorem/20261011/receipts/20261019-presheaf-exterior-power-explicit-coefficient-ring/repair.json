@@ -1,0 +1,65 @@
+{
+  "at": "2026-10-19T12:26:52.725830+00:00",
+  "name": "PresheafOfModules_ExteriorPower",
+  "source_prefix": "Definitions/Def_",
+  "candidate": "r1",
+  "card_candidate": "r1",
+  "axiom_declarations": [
+    "PresheafOfModules.exteriorPowerMap_app_\u03b9Multi",
+    "PresheafOfModules.exteriorPowerFunctor"
+  ],
+  "source_replacements": [
+    [
+      "  exteriorPower.map_apply_\u03b9Multi _ _\n",
+      "  exteriorPower.map_apply_\u03b9Multi (R := R.obj X) (ExteriorPower.app\u2097 \u03c6 X) m\n",
+      1
+    ],
+    [
+      " := by\n  letI := moduleAlong R f (M.obj Y); letI := moduleAlong R f (\u22c0[R.obj Y]^n (M.obj Y))\n  simp [map\u2097]",
+      " := by\n  let := moduleAlong R f (M.obj Y); let := moduleAlong R f (\u22c0[R.obj Y]^n (M.obj Y))\n  simp [map\u2097]",
+      1
+    ],
+    [
+      " := by\n  letI := moduleAlong R f (\u22c0[R.obj Y]^n (M.obj Y))\n  exact (map\u2097 n M f).map_smul r x",
+      " := by\n  let := moduleAlong R f (\u22c0[R.obj Y]^n (M.obj Y))\n  exact (map\u2097 n M f).map_smul r x",
+      1
+    ]
+  ],
+  "card_replacements": [],
+  "baseline_byte_identical_to_pinned_supplier": true,
+  "prior_source_changes_preserved": [],
+  "source_only_definition_module": true,
+  "card_not_applicable": true,
+  "public_declaration_statements_literal_preserved": true,
+  "all_public_declaration_headers_literal_unchanged": true,
+  "pinned_supplier_source_preserved": true,
+  "verification_pending": false,
+  "installed": true,
+  "no_linter_suppression_added": true,
+  "complete_original_proof_preserved": true,
+  "full_original_statement_and_hypotheses_preserved": true,
+  "max_active_flt_jobs": 1,
+  "lean_threads": 1,
+  "original_actual_errors": 1,
+  "original_actual_warnings": 3,
+  "original_source_lines": 199,
+  "library_search": "Current trureturing D5/Reg has no exact PresheafOfModules exteriorPower construction. Pinned Mathlib LinearAlgebra/ExteriorPower/Basic.lean:273 provides map_apply_\u03b9Multi with explicit ring parameter R; the actual failed application inferred the forgotten ring object. Preserve the complete original presheaf construction and use this existing theorem with R.obj X.",
+  "change": "Explicitly pass R.obj X, the existing component linear map and original m to map_apply_\u03b9Multi. Change only the three letI bindings flagged in the proofs of map\u2097_\u03b9Multi and map\u2097_smul to let. All declarations, assumptions and full proofs retained. Append changed-lemma and final-functor recursive-axiom queries; verification stays on unchanged single queue.",
+  "full_original_complete": false,
+  "official_new_solve_credit": 0,
+  "stale_terminal_state_entries_excluded": [],
+  "active_import_closure_excluded": [
+    "Submission.Supplier.P2M.Sol.S_AddMonoidHom_natCard_ker_comp_eq_mul_of_surjective"
+  ],
+  "active_transitive_import_closure_size": 2,
+  "actual_live_descendant_sources": [
+    {
+      "pid": 49540,
+      "source": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_AddMonoidHom_natCard_ker_comp_eq_mul_of_surjective.lean"
+    }
+  ],
+  "all_four_canonical_adapted_source_card_modules_excluded": [
+    "Definitions.Def_PresheafOfModules_ExteriorPower",
+    "Submission.Supplier.Definitions.Def_PresheafOfModules_ExteriorPower"
+  ]
+}
