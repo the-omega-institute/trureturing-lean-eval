@@ -1,0 +1,112 @@
+{
+  "at": "2026-10-19T12:33:05.529256+00:00",
+  "name": "M4aHerbrand_ArchSemilocal",
+  "source_prefix": "Definitions/Def_",
+  "candidate": "r1",
+  "card_candidate": "r1",
+  "axiom_declarations": [
+    "M4aHerbrand.ArchSemilocal.psi_bijective",
+    "M4aHerbrand.ArchSemilocal.continuous_conorm"
+  ],
+  "source_replacements": [
+    [
+      "variable {K L : Type*} [Field K] [NumberField K] [Field L] [NumberField L] [Algebra K L]\n\n",
+      "variable {K L : Type*} [Field K] [NumberField K] [Field L] [NumberField L] [Algebra K L]\n\nlocal instance : FaithfulSMul K L :=\n  (faithfulSMul_iff_algebraMap_injective K L).2 (algebraMap K L).injective\n\n",
+      1
+    ],
+    [
+      "Completion.finrank_eq_one_of_isUnramified v h",
+      "IsUnramified.finrank_eq_one v h",
+      1
+    ],
+    [
+      "Completion.finrank_eq_two_of_isRamified v h",
+      "IsRamified.finrank_eq_two v h",
+      1
+    ],
+    [
+      "  Pi.algHom _ _ (fun w => psiFactor v w.1)",
+      "  AlgHom.pi _ _ (fun w => psiFactor v w.1)",
+      1
+    ],
+    [
+      "\n  letI : NontriviallyNormedField v.Completion := nontriviallyNormedCompletion v\n",
+      "\n  let : NontriviallyNormedField v.Completion := nontriviallyNormedCompletion v\n",
+      2
+    ],
+    [
+      "\n  haveI : Module.Finite K L := Module.Finite.of_restrictScalars_finite ℚ K L\n",
+      "\n  have : Module.Finite K L := Module.Finite.of_restrictScalars_finite ℚ K L\n",
+      2
+    ],
+    [
+      "\n  haveI : FiniteDimensional v.Completion (v.Completion ⊗[K] L) :=\n",
+      "\n  have : FiniteDimensional v.Completion (v.Completion ⊗[K] L) :=\n",
+      2
+    ],
+    [
+      "\n  haveI : FiniteDimensional v.Completion ↥S := inferInstance\n",
+      "\n  have : FiniteDimensional v.Completion ↥S := inferInstance\n",
+      1
+    ],
+    [
+      "\n  invFun w := ⟨w.1, by haveI : w.1.1.LiesOver v.1 := w.2; exact LiesOver.comap_eq w.1 v⟩\n",
+      "\n  invFun w := ⟨w.1, by have : w.1.1.LiesOver v.1 := w.2; exact LiesOver.comap_eq w.1 v⟩\n",
+      1
+    ],
+    [
+      "\n  haveI : ∀ w : v.Extension L, FiniteDimensional v.Completion w.1.Completion :=\n",
+      "\n  have : ∀ w : v.Extension L, FiniteDimensional v.Completion w.1.Completion :=\n",
+      2
+    ],
+    [
+      "\n  haveI : ∀ w : v.Extension L, Module.Free v.Completion w.1.Completion :=\n",
+      "\n  have : ∀ w : v.Extension L, Module.Free v.Completion w.1.Completion :=\n",
+      1
+    ],
+    [
+      "\n  haveI : w.1.LiesOver (w.comap (algebraMap K L)).1 := liesOver_of_comap_eq rfl\n",
+      "\n  have : w.1.LiesOver (w.comap (algebraMap K L)).1 := liesOver_of_comap_eq rfl\n",
+      1
+    ]
+  ],
+  "card_replacements": [],
+  "baseline_byte_identical_to_pinned_supplier": true,
+  "prior_source_changes_preserved": [],
+  "source_only_definition_module": true,
+  "card_not_applicable": true,
+  "public_declaration_statements_literal_preserved": true,
+  "all_public_declaration_headers_literal_unchanged": true,
+  "pinned_supplier_source_preserved": true,
+  "verification_pending": true,
+  "installed": true,
+  "no_linter_suppression_added": true,
+  "complete_original_proof_preserved": true,
+  "full_original_statement_and_hypotheses_preserved": true,
+  "max_active_flt_jobs": 1,
+  "lean_threads": 1,
+  "original_actual_errors": 31,
+  "original_actual_warnings": 14,
+  "original_source_lines": 283,
+  "library_search": "Current trureturing D5/Reg has no exact ArchSemilocal or psiFactor construction. Pinned Mathlib Analysis/Normed/Ring/WithAbs.lean:310-329 makes FaithfulSMul an implicit dependency of AbsoluteValue.LiesOver. Algebra/Algebra/IsSimpleRing.lean:19-20 proves the generic FaithfulSMul from algebraMap injectivity without number-field assumptions. Completion/LiesOverInstances.lean:27-49 supplies completion algebras from LiesOver. Completion/Ramification.lean:50-84 names the current ramification-degree theorems.",
+  "change": "Add only a local generic faithful-scalar-action instance using the existing algebraMap injectivity equivalence, preventing omitted number-field instances from entering LiesOver headers through instance search. Preserve every original public declaration header and all number-field assumptions. Update the actual Pi.algHom deprecation and the pinned ramification aliases. Change only actual warned proof-local haveI/letI bindings to have/let. Retain all tensor-product, surjectivity, finite-dimension, bijectivity and continuity proofs, and await actual unchanged single queue verification.",
+  "original_public_headers_compared_after_excluding_one_new_consumed_local_instance": true,
+  "no_new_global_instance": true,
+  "full_original_complete": false,
+  "official_new_solve_credit": 0,
+  "stale_terminal_state_entries_excluded": [],
+  "active_import_closure_excluded": [
+    "Submission.Supplier.P2M.Sol.S_Algebra_FormallyEtale_exists_baseChange_algEquiv_of_isReduced_zmodp"
+  ],
+  "active_transitive_import_closure_size": 4,
+  "actual_live_descendant_sources": [
+    {
+      "pid": 50908,
+      "source": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_Algebra_FormallyEtale_exists_baseChange_algEquiv_of_isReduced_zmodp.lean"
+    }
+  ],
+  "all_four_canonical_adapted_source_card_modules_excluded": [
+    "Definitions.Def_M4aHerbrand_ArchSemilocal",
+    "Submission.Supplier.Definitions.Def_M4aHerbrand_ArchSemilocal"
+  ]
+}

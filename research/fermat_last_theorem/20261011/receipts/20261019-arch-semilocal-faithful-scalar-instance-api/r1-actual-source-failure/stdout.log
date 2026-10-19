@@ -1,0 +1,64 @@
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/Definitions/Def_M4aHerbrand_ArchSemilocal.lean:113:2: warning: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/Definitions/Def_M4aHerbrand_ArchSemilocal.lean:114:2: warning: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/Definitions/Def_M4aHerbrand_ArchSemilocal.lean:173:38: error: Invalid projection: Type of
+  w
+is not known; cannot resolve projection `1`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/Definitions/Def_M4aHerbrand_ArchSemilocal.lean:173:2: error: Type mismatch
+  (AlgHom.pi ?m.37) ?m.39 fun w => psiFactor v ?m.46
+has type
+  ?m.30 fun w => psiFactor v ?m.46
+but is expected to have type
+  v.Completion ⊗[K] L →ₐ[v.Completion] (w : Extension L v) → (↑w).Completion
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/Definitions/Def_M4aHerbrand_ArchSemilocal.lean:176:0: error: Not a definitional equality: the left-hand side
+  (psi v) z w
+is not definitionally equal to the right-hand side
+  (psiFactor v ↑w) z
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/Definitions/Def_M4aHerbrand_ArchSemilocal.lean:177:37: error: Type mismatch
+  rfl
+has type
+  ?m.34 = ?m.34
+but is expected to have type
+  (psi v) z w = (psiFactor v ↑w) z
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/Definitions/Def_M4aHerbrand_ArchSemilocal.lean:188:2: warning: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/Definitions/Def_M4aHerbrand_ArchSemilocal.lean:245:2: warning: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/Definitions/Def_M4aHerbrand_ArchSemilocal.lean:264:31: error: Type mismatch
+  psiFactor_one_tmul v (↑w) l
+has type
+  (psiFactor v ↑w) (1 ⊗ₜ[K] l) = (algebraMap L (↑w).Completion) l
+but is expected to have type
+  (placeEquivAlg v).toRingEquiv (1 ⊗ₜ[K] l) w = (algebraMap L (↑w).Completion) l
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/Definitions/Def_M4aHerbrand_ArchSemilocal.lean:286:4: error: 'show' tactic failed, pattern
+  (psiFactor (w.comap (algebraMap K L)) w) (x (w.comap (algebraMap K L)) ⊗ₜ[K] 1) = ?m.142
+is not definitionally equal to target
+  genuineInfinitePlaceData.conorm x w =
+    (algebraMap (w.comap (algebraMap K L)).Completion w.Completion) (x (w.comap (algebraMap K L)))
+'M4aHerbrand.ArchSemilocal.psi_bijective' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'M4aHerbrand.ArchSemilocal.continuous_conorm' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]

@@ -1,0 +1,208 @@
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/Definitions/Def_M4aHerbrand_ArchSemilocal.lean:22:0: error: cannot omit referenced section variable `inst✝³`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/Definitions/Def_M4aHerbrand_ArchSemilocal.lean:27:0: error: cannot omit referenced section variable `inst✝³`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/Definitions/Def_M4aHerbrand_ArchSemilocal.lean:45:0: error: cannot omit referenced section variable `inst✝³`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/Definitions/Def_M4aHerbrand_ArchSemilocal.lean:52:0: error: cannot omit referenced section variable `inst✝³`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/Definitions/Def_M4aHerbrand_ArchSemilocal.lean:78:2: warning: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/Definitions/Def_M4aHerbrand_ArchSemilocal.lean:79:2: warning: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/Definitions/Def_M4aHerbrand_ArchSemilocal.lean:80:2: warning: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/Definitions/Def_M4aHerbrand_ArchSemilocal.lean:83:2: warning: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/Definitions/Def_M4aHerbrand_ArchSemilocal.lean:76:8: warning: declaration uses `sorry`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/Definitions/Def_M4aHerbrand_ArchSemilocal.lean:109:2: warning: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/Definitions/Def_M4aHerbrand_ArchSemilocal.lean:110:8: error: failed to infer `have` declaration type
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/Definitions/Def_M4aHerbrand_ArchSemilocal.lean:107:66: error: unsolved goals
+K : Type u_1
+L : Type u_2
+inst✝⁶ : Field K
+inst✝⁵ : NumberField K
+inst✝⁴ : Field L
+inst✝³ : NumberField L
+inst✝² : Algebra K L
+v : InfinitePlace K
+w w' : InfinitePlace L
+inst✝¹ : (↑w).LiesOver ↑v
+inst✝ : (↑w').LiesOver ↑v
+x : L
+hx : w x < 1
+hx' : ¬w' x < 1
+hker : RingHom.ker (psiFactor v w) = RingHom.ker (psiFactor v w')
+this : NontriviallyNormedField v.Completion := nontriviallyNormedCompletion v
+⊢ False
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/Definitions/Def_M4aHerbrand_ArchSemilocal.lean:162:0: error: cannot omit referenced section variable `inst✝³`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/Definitions/Def_M4aHerbrand_ArchSemilocal.lean:168:4: error(lean.synthInstanceFailed): failed to synthesize instance of type class
+  Algebra v.Completion ((w : Extension L v) → (↑w).Completion)
+
+Hint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/Definitions/Def_M4aHerbrand_ArchSemilocal.lean:170:2: warning: `Pi.algHom` has been deprecated: Use `AlgHom.pi` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.algHom` to `AlgHom.pi x`).
+
+Hint: Replace the deprecated name:
+  P̵i̵.̵a̵l̵g̵H̵o̵m̵A̲l̲g̲H̲o̲m̲.̲p̲i̲
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/Definitions/Def_M4aHerbrand_ArchSemilocal.lean:170:26: error(lean.synthInstanceFailed): failed to synthesize instance of type class
+  (↑?m.45).LiesOver ↑v
+
+Hint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/Definitions/Def_M4aHerbrand_ArchSemilocal.lean:170:38: error: Invalid projection: Type of
+  w
+is not known; cannot resolve projection `1`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/Definitions/Def_M4aHerbrand_ArchSemilocal.lean:174:16: error(lean.synthInstanceFailed): failed to synthesize instance of type class
+  (↑↑w).LiesOver ↑v
+
+Hint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/Definitions/Def_M4aHerbrand_ArchSemilocal.lean:177:81: error: Invalid argument name `L` for function `psi`
+
+Hint: Perhaps you meant one of the following parameter names:
+  • `v`: L̵v̲
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/Definitions/Def_M4aHerbrand_ArchSemilocal.lean:181:33: error(lean.unknownIdentifier): Unknown identifier `L`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/Definitions/Def_M4aHerbrand_ArchSemilocal.lean:181:61: error: Function expected at
+  y
+but this term has type
+  ?m.11 v
+
+Note: Expected a function because this term is being applied to the argument
+  w
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/Definitions/Def_M4aHerbrand_ArchSemilocal.lean:182:32: error: Function expected at
+  y
+but this term has type
+  ?m.11 v
+
+Note: Expected a function because this term is being applied to the argument
+  w
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/Definitions/Def_M4aHerbrand_ArchSemilocal.lean:177:96: error: unsolved goals
+K : Type u_1
+inst✝¹ : Field K
+inst✝ : NumberField K
+v : InfinitePlace K
+y : ?m.11 v
+⊢ ∃ a, sorry a = y
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/Definitions/Def_M4aHerbrand_ArchSemilocal.lean:211:23: warning: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/Definitions/Def_M4aHerbrand_ArchSemilocal.lean:209:4: warning: declaration uses `sorry`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/Definitions/Def_M4aHerbrand_ArchSemilocal.lean:216:4: error(lean.synthInstanceFailed): failed to synthesize instance of type class
+  Module v.Completion ((w : Extension L v) → (↑w).Completion)
+
+Hint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/Definitions/Def_M4aHerbrand_ArchSemilocal.lean:219:31: error(lean.synthInstanceFailed): failed to synthesize instance of type class
+  Module v.Completion (↑w).Completion
+
+Hint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/Definitions/Def_M4aHerbrand_ArchSemilocal.lean:219:2: warning: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/Definitions/Def_M4aHerbrand_ArchSemilocal.lean:221:31: error(lean.synthInstanceFailed): failed to synthesize instance of type class
+  Module v.Completion (↑w).Completion
+
+Hint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/Definitions/Def_M4aHerbrand_ArchSemilocal.lean:221:2: warning: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/Definitions/Def_M4aHerbrand_ArchSemilocal.lean:238:79: error: Invalid argument name `L` for function `psi`
+
+Hint: Perhaps you meant one of the following parameter names:
+  • `v`: L̵v̲
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/Definitions/Def_M4aHerbrand_ArchSemilocal.lean:239:26: error(lean.unknownIdentifier): Unknown identifier `L`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/Definitions/Def_M4aHerbrand_ArchSemilocal.lean:239:75: error(lean.unknownIdentifier): Unknown identifier `L`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/Definitions/Def_M4aHerbrand_ArchSemilocal.lean:239:2: warning: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/Definitions/Def_M4aHerbrand_ArchSemilocal.lean:240:28: error(lean.unknownIdentifier): Unknown identifier `L`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/Definitions/Def_M4aHerbrand_ArchSemilocal.lean:240:2: warning: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/Definitions/Def_M4aHerbrand_ArchSemilocal.lean:242:55: error(lean.unknownIdentifier): Unknown identifier `L`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/Definitions/Def_M4aHerbrand_ArchSemilocal.lean:242:2: error: stuck at solving universe constraint
+  imax (?u.43 + 1) ?u.45 =?= ?u.39 + 1
+while trying to unify
+  Sort (imax (?u.43 + 1) ?u.45) : Type (imax (?u.43 + 1) ?u.45)
+with
+  Type ?u.39 : Type (?u.39 + 1)
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/Definitions/Def_M4aHerbrand_ArchSemilocal.lean:238:91: error: stuck at solving universe constraint
+  imax (?u.43 + 1) ?u.45 =?= ?u.39 + 1
+while trying to unify
+  Sort (imax (?u.43 + 1) ?u.45) : Type (imax (?u.43 + 1) ?u.45)
+with
+  Type ?u.39 : Type (?u.39 + 1)
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/Definitions/Def_M4aHerbrand_ArchSemilocal.lean:256:4: error(lean.synthInstanceFailed): failed to synthesize instance of type class
+  Algebra v.Completion ((w : Extension L v) → (↑w).Completion)
+
+Hint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/Definitions/Def_M4aHerbrand_ArchSemilocal.lean:257:32: error(lean.unknownIdentifier): Unknown identifier `psi_bijective`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/Definitions/Def_M4aHerbrand_ArchSemilocal.lean:260:42: error: Invalid argument name `L` for function `placeEquivAlg`
+
+Hint: Perhaps you meant one of the following parameter names:
+  • `v`: L̵v̲
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/Definitions/Def_M4aHerbrand_ArchSemilocal.lean:264:0: error: cannot omit referenced section variable `inst✝³`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/Definitions/Def_M4aHerbrand_ArchSemilocal.lean:277:2: warning: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/Definitions/Def_M4aHerbrand_ArchSemilocal.lean:283:4: error: 'show' tactic failed, pattern
+  (psiFactor (w.comap (algebraMap K L)) w) (x (w.comap (algebraMap K L)) ⊗ₜ[K] 1) = ?m.132
+is not definitionally equal to target
+  genuineInfinitePlaceData.conorm x w =
+    (algebraMap (w.comap (algebraMap K L)).Completion w.Completion) (x (w.comap (algebraMap K L)))
