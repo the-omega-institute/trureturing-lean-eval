@@ -1,0 +1,25 @@
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_IntermediateField_apply_algebraMap_eq_and_norm_apply_eq_of_ringEquiv_of_padic.lean:105:71: error: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  @Eq ?m.86 (?m.88 - ?m.89) 0
+in the target expression
+  @Eq (ZMod q) (PadicInt.toZMod u ^ (q - 1) - 1) 0
+
+q : ℕ
+inst✝ : Fact (Nat.Prime q)
+u : ℤ_[q]
+hu : ‖u‖ = 1
+⊢ PadicInt.toZMod u ^ (q - 1) - 1 = 0
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_IntermediateField_apply_algebraMap_eq_and_norm_apply_eq_of_ringEquiv_of_padic.lean:173:15: warning: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
+
+Hint: Replace the deprecated name:
+  S̵e̵t̵.̵m̵e̵m̵_̵s̵e̵t̵O̵f̵_̵e̵q̵S̲e̲t̲.̲m̲e̲m̲_̲o̲f̲P̲r̲e̲d̲_̲e̲q̲
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_IntermediateField_apply_algebraMap_eq_and_norm_apply_eq_of_ringEquiv_of_padic.lean:174:10: warning: `mul_le_one₀` has been deprecated: No replacement, use constituent lemmas from proof.
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_IntermediateField_apply_algebraMap_eq_and_norm_apply_eq_of_ringEquiv_of_padic.lean:177:15: warning: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
+
+Hint: Replace the deprecated name:
+  S̵e̵t̵.̵m̵e̵m̵_̵s̵e̵t̵O̵f̵_̵e̵q̵S̲e̲t̲.̲m̲e̲m̲_̲o̲f̲P̲r̲e̲d̲_̲e̲q̲
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_IntermediateField_apply_algebraMap_eq_and_norm_apply_eq_of_ringEquiv_of_padic.lean:242:0: warning: automatically included section variable(s) unused in theorem `P2MW.S_IntermediateField_apply_algebraMap_eq_and_norm_apply_eq_of_ringEquiv_of_padic.AutoCont.norm_symm_unit_eq_one`:
+  [FiniteDimensional ℚ_[q] ↥L₂]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [FiniteDimensional ℚ_[q] ↥L₂] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`

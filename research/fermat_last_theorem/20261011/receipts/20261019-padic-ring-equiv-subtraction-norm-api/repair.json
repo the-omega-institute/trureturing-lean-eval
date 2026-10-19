@@ -1,0 +1,81 @@
+{
+  "at": "2026-10-19T11:54:57.917410+00:00",
+  "name": "IntermediateField_apply_algebraMap_eq_and_norm_apply_eq_of_ringEquiv_of_padic",
+  "candidate": "r1",
+  "card_candidate": "r1",
+  "source_replacements": [
+    [
+      "RingHom.mem_ker, map_sub, map_pow, map_one, sub_eq_zero]",
+      "RingHom.mem_ker, map_sub, map_pow, map_one]",
+      1
+    ],
+    [
+      "  exact ZMod.pow_card_sub_one_eq_one hu'.ne_zero",
+      "  exact sub_eq_zero.mpr (ZMod.pow_card_sub_one_eq_one hu'.ne_zero)",
+      1
+    ],
+    [
+      "Set.mem_setOf_eq",
+      "Set.mem_ofPred_eq",
+      2
+    ],
+    [
+      "exact mul_le_one\u2080 ha (norm_nonneg _) hb",
+      "exact (mul_le_of_le_one_left (norm_nonneg _) ha).trans hb",
+      1
+    ],
+    [
+      "  [FiniteDimensional \u211a_[q] L\u2081] [FiniteDimensional \u211a_[q] L\u2082] (\u03b1 : L\u2081 \u2243+* L\u2082)",
+      "  [FiniteDimensional \u211a_[q] L\u2081] [hL\u2082 : FiniteDimensional \u211a_[q] L\u2082] (\u03b1 : L\u2081 \u2243+* L\u2082)",
+      1
+    ],
+    [
+      "\u2016((\u03b1.symm (algebraMap \u211a_[q] L\u2082 (algebraMap \u2124_[q] \u211a_[q] u)) : L\u2081) : PadicAlgCl q)\u2016 = 1 := by\n  have hqP",
+      "\u2016((\u03b1.symm (algebraMap \u211a_[q] L\u2082 (algebraMap \u2124_[q] \u211a_[q] u)) : L\u2081) : PadicAlgCl q)\u2016 = 1 := by\n  cases hL\u2082\n  have hqP",
+      1
+    ]
+  ],
+  "card_replacements": [],
+  "baseline_byte_identical_to_pinned_supplier": true,
+  "baseline_by_role_byte_identical_to_pinned_supplier": {
+    "source": true,
+    "card": true
+  },
+  "prior_source_changes_preserved": "",
+  "prior_card_changes_preserved": "",
+  "pinned_supplier_source_and_card_preserved": true,
+  "public_card_statement_literal_preserved": true,
+  "solution_statement_literal_preserved": true,
+  "all_public_declaration_headers_literal_unchanged": true,
+  "original_section_hypotheses_retained_and_eliminated_in_proof": true,
+  "verification_pending": false,
+  "installed": true,
+  "no_linter_suppression_added": true,
+  "complete_original_proof_preserved": true,
+  "full_original_statement_and_hypotheses_preserved": true,
+  "max_active_flt_jobs": 1,
+  "lean_threads": 1,
+  "original_actual_errors": 1,
+  "original_actual_warnings": 4,
+  "library_search": "No exact theorem or norm_symm_unit_eq_one match in current trureturing D5/Reg. Retain the existing ZMod Fermat-power lemma. Replace only the failed sub_eq_zero rewrite by its direct mpr term. Pinned Mathlib Algebra/Order/GroupWithZero/Basic.lean:472-473 gives the exact constituent proof replacing deprecated mul_le_one\u2080.",
+  "change": "Keep the full supplier p-adic ring-equivalence and automatic norm-continuity proof. Apply sub_eq_zero.mpr directly to the same ZMod power equality after the original reduction. Update actual deprecated set-membership and multiplication-bound spellings; name and eliminate the existing finite-dimensional L\u2082 hypothesis in the one warned auxiliary theorem. Every public declaration header and original assumption remains; append exact source/card recursive-axiom queries and await the unchanged single queue.",
+  "full_original_complete": false,
+  "official_new_solve_credit": 0,
+  "stale_terminal_state_entries_excluded": [
+    {
+      "module": "Submission.Supplier.Theorems.Thm_Matrix_isUnit_and_padicValRat_inv_nonneg_of_not_dvd_det",
+      "wrapper_pid": 24338,
+      "make_exit": 0,
+      "terminal": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/ce565d45605847286044b12f-1792410887044576000.make-terminal.json"
+    }
+  ],
+  "active_import_closure_excluded": [],
+  "active_transitive_import_closure_size": 0,
+  "actual_live_descendant_sources": [],
+  "all_four_canonical_adapted_source_card_modules_excluded": [
+    "P2M.Sol.S_IntermediateField_apply_algebraMap_eq_and_norm_apply_eq_of_ringEquiv_of_padic",
+    "Submission.Supplier.P2M.Sol.S_IntermediateField_apply_algebraMap_eq_and_norm_apply_eq_of_ringEquiv_of_padic",
+    "Submission.Supplier.Theorems.Thm_IntermediateField_apply_algebraMap_eq_and_norm_apply_eq_of_ringEquiv_of_padic",
+    "Theorems.Thm_IntermediateField_apply_algebraMap_eq_and_norm_apply_eq_of_ringEquiv_of_padic"
+  ]
+}
