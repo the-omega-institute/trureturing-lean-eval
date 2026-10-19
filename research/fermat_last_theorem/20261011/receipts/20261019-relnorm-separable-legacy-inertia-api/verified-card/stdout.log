@@ -1,0 +1,10 @@
+@AlgebraicCurve.relNorm_eq_pow_of_isMaximal_of_isSeparable : ∀ {R : Type u_1} {S : Type u_2} [inst : CommRing R]
+  (hR : autoParam (IsDomain R) AlgebraicCurve.relNorm_eq_pow_of_isMaximal_of_isSeparable._auto_1) [inst_1 : CommRing S]
+  (hS : autoParam (IsDomain S) AlgebraicCurve.relNorm_eq_pow_of_isMaximal_of_isSeparable._auto_3)
+  [inst_2 : IsDedekindDomain R] [inst_3 : IsDedekindDomain S] [inst_4 : Algebra R S] [inst_5 : Module.Finite R S]
+  [inst_6 : Module.IsTorsionFree R S] (K : Type u_3) (L : Type u_4) [inst_7 : Field K] [inst_8 : Field L]
+  [inst_9 : Algebra R K] [IsFractionRing R K] [inst_11 : Algebra S L] [IsFractionRing S L] [inst_13 : Algebra K L]
+  [inst_14 : Algebra R L] [IsScalarTower R K L] [IsScalarTower R S L] [Algebra.IsSeparable K L] (P : Ideal S)
+  (p : Ideal R) [P.LiesOver p] [P.IsMaximal] [p.IsMaximal],
+  (Ideal.relNorm R) P = p ^ P2MW.S_AlgebraicCurve_relNorm_eq_pow_of_isMaximal_of_isSeparable.quotientInertiaDegree p P
+'AlgebraicCurve.relNorm_eq_pow_of_isMaximal_of_isSeparable' depends on axioms: [propext, Classical.choice, Quot.sound]

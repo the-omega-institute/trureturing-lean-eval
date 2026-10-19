@@ -1,0 +1,129 @@
+{
+  "at": "2026-10-19T14:47:27.460615+00:00",
+  "name": "AlgebraicCurve_relNorm_eq_pow_of_isMaximal_of_isSeparable",
+  "candidate": "r2",
+  "card_candidate": "r2",
+  "source_replacements": [
+    [
+      "namespace AlgebraicCurve\n",
+      "attribute [local instance] Ideal.Quotient.field\n\n-- Keep every branch of the legacy quotient-based inertia degree.\n-- This is the definition of Ideal.inertiaDeg' at the pinned Mathlib revision.\nnoncomputable def quotientInertiaDegree {R S : Type*} [CommRing R] [CommRing S]\n    [Algebra R S] (p : Ideal R) (P : Ideal S) : \u2115 := by\n  classical\n  exact if hPp : Ideal.comap (algebraMap R S) P = p then\n    letI : Algebra (R \u29f8 p) (S \u29f8 P) := Ideal.Quotient.algebraQuotientOfLEComap hPp.ge\n    Module.finrank (R \u29f8 p) (S \u29f8 P)\n  else 0\n\ntheorem quotientInertiaDegree_eq {R S : Type*} [CommRing R] [CommRing S]\n    [Algebra R S] (p : Ideal R) (P : Ideal S) [P.LiesOver p] [p.IsMaximal] [P.IsMaximal] :\n    quotientInertiaDegree p P = P.inertiaDeg R := by\n  rw [quotientInertiaDegree, dite_eq_left (Ideal.over_def P p).symm,\n    Ideal.inertiaDeg_eq_of_isMaximal p P]\n\nnamespace AlgebraicCurve\n",
+      1
+    ],
+    [
+      "example : \u2200 {R S : Type*} [CommRing R] [IsDomain R] [CommRing S] [IsDomain S]\n    [IsDedekindDomain R] [IsDedekindDomain S] [Algebra R S] [Module.Finite R S] [Module.IsTorsionFree R S]\n    (K L : Type*) [Field K] [Field L] [Algebra R K] [IsFractionRing R K] [Algebra S L] [IsFractionRing S L]\n    [Algebra K L] [Algebra R L] [IsScalarTower R K L] [IsScalarTower R S L] [Algebra.IsSeparable K L]\n    (P : Ideal S) (p : Ideal R) [P.LiesOver p] [P.IsMaximal] [p.IsMaximal],\n    Ideal.relNorm R P = p ^ p.inertiaDeg' P := @solution\n",
+      "-- ORIGINAL_INTERFACE_CHECK\n",
+      1
+    ],
+    [
+      "p.inertiaDeg' P",
+      "quotientInertiaDegree p P",
+      3
+    ],
+    [
+      "[IsDomain R]",
+      "(hR : IsDomain R := by try infer_instance)",
+      3
+    ],
+    [
+      "[IsDomain S]",
+      "(hS : IsDomain S := by try infer_instance)",
+      3
+    ],
+    [
+      "  haveI : Algebra.IsSeparable (FractionRing R) (FractionRing S) :=",
+      "  have : Algebra.IsSeparable (FractionRing R) (FractionRing S) :=",
+      1
+    ],
+    [
+      "    Ideal.relNorm R P = p ^ quotientInertiaDegree p P := by\n  obtain",
+      "    Ideal.relNorm R P = p ^ quotientInertiaDegree p P := by\n  rw [quotientInertiaDegree_eq p P]\n  obtain",
+      1
+    ],
+    [
+      "    \u2190 Ideal.inertiaDeg'_eq_inertiaDeg p Q, \u2190 Ideal.inertiaDeg'_eq_inertiaDeg P Q,\n    Ideal.inertiaDeg'_algebra_tower p P Q, pow_mul, pow_left_inj] at h\n  exact Nat.ne_zero_iff_zero_lt.mpr <| Ideal.inertiaDeg'_pos P Q",
+      "    Ideal.inertiaDeg_tower (R := R) P Q, pow_mul,\n    pow_left_inj (Ideal.inertiaDeg_pos Q S).ne'] at h",
+      1
+    ],
+    [
+      "  exact relNorm_eq_pow_of_isMaximal_fractionRing P p",
+      "  exact relNorm_eq_pow_of_isMaximal_fractionRing (P := P) (p := p)",
+      1
+    ],
+    [
+      "  AlgebraicCurve.F10d.relNorm_eq_pow_of_isMaximal_of_isSeparable K L P p",
+      "  AlgebraicCurve.F10d.relNorm_eq_pow_of_isMaximal_of_isSeparable\n    (K := K) (L := L) (P := P) (p := p)",
+      1
+    ],
+    [
+      "-- ORIGINAL_INTERFACE_CHECK\n",
+      "#check (@solution : \u2200 {R S : Type*} [CommRing R] [IsDomain R] [CommRing S] [IsDomain S]\n    [IsDedekindDomain R] [IsDedekindDomain S] [Algebra R S] [Module.Finite R S] [Module.IsTorsionFree R S]\n    (K L : Type*) [Field K] [Field L] [Algebra R K] [IsFractionRing R K] [Algebra S L] [IsFractionRing S L]\n    [Algebra K L] [Algebra R L] [IsScalarTower R K L] [IsScalarTower R S L] [Algebra.IsSeparable K L]\n    (P : Ideal S) (p : Ideal R) [P.LiesOver p] [P.IsMaximal] [p.IsMaximal],\n    Ideal.relNorm R P = p ^ quotientInertiaDegree p P)\n",
+      1
+    ]
+  ],
+  "card_replacements": [
+    [
+      "p.inertiaDeg' P",
+      "_root_.P2MW.S_AlgebraicCurve_relNorm_eq_pow_of_isMaximal_of_isSeparable.quotientInertiaDegree p P",
+      1
+    ],
+    [
+      "[IsDomain R]",
+      "(hR : IsDomain R := by try infer_instance)",
+      1
+    ],
+    [
+      "[IsDomain S]",
+      "(hS : IsDomain S := by try infer_instance)",
+      1
+    ],
+    [
+      " := by p2m_exact_reverting @_root_.P2MW.S_AlgebraicCurve_relNorm_eq_pow_of_isMaximal_of_isSeparable.solution\n",
+      " := by p2m_exact_reverting @_root_.P2MW.S_AlgebraicCurve_relNorm_eq_pow_of_isMaximal_of_isSeparable.solution\n\n#check (@AlgebraicCurve.relNorm_eq_pow_of_isMaximal_of_isSeparable : \u2200 {R S : Type*} [CommRing R] [IsDomain R] [CommRing S] [IsDomain S]\n    [IsDedekindDomain R] [IsDedekindDomain S] [Algebra R S] [Module.Finite R S] [Module.IsTorsionFree R S]\n    (K L : Type*) [Field K] [Field L] [Algebra R K] [IsFractionRing R K] [Algebra S L] [IsFractionRing S L]\n    [Algebra K L] [Algebra R L] [IsScalarTower R K L] [IsScalarTower R S L] [Algebra.IsSeparable K L]\n    (P : Ideal S) (p : Ideal R) [P.LiesOver p] [P.IsMaximal] [p.IsMaximal],\n    Ideal.relNorm R P = p ^ _root_.P2MW.S_AlgebraicCurve_relNorm_eq_pow_of_isMaximal_of_isSeparable.quotientInertiaDegree p P)\n",
+      1
+    ]
+  ],
+  "verification_pending": false,
+  "installed": true,
+  "baseline_byte_identical_to_pinned_supplier": true,
+  "pinned_supplier_source_and_card_preserved": true,
+  "supplier_repository": "anthropics/fermats-last-theorem",
+  "supplier_revision": "6e837e75355538c7f80bab5b956861e86c4eacc2",
+  "original_actual_errors": 6,
+  "original_actual_warnings": 8,
+  "no_linter_suppression_added": true,
+  "complete_original_proof_preserved": true,
+  "full_original_statement_and_hypotheses_preserved": true,
+  "public_solution_telescope_and_conclusion_byte_identical": false,
+  "public_solution_and_card_definitional_legacy_expansion_only": true,
+  "all_original_typed_hypotheses_retained": true,
+  "original_solution_and_card_forall_types_checked": true,
+  "legacy_definition_reference": "20261018-dedekind-legacy-inertia-degree/repair.json: source_replacements[0][1]",
+  "library_search": "No exact trureturing result found. Pinned Mathlib relNorm_eq_pow_of_isMaximal requires PerfectField, which is stronger than the original separability assumption and is not used. Retain original separable normal-closure argument and fraction-ring transport. Reuse the exact previously verified legacy quotient definition and its equality under the existing liesOver/maximal hypotheses; current tower proof uses inertiaDeg_tower/inertiaDeg_pos.",
+  "change": "Preserve every original typed hypothesis and the complete normal-closure/Galois/transport proof. Migrate only legacy inertia degree through its complete quotient-based definition, preserving the comap test and zero branch, then apply the current tower API. Present redundant IsDomain Prop hypotheses as defaulted ordinary proof parameters to avoid duplicate instance inference; explicit #check annotations check against both original complete forall telescopes, including every original instance hypothesis. No hypothesis is removed and no linter is suppressed. Migrate the actual haveI style warning. Await actual single-queue source/card make/kernel verification.",
+  "max_active_flt_jobs": 1,
+  "lean_threads": 1,
+  "full_original_complete": false,
+  "official_new_solve_credit": 0,
+  "stale_terminal_state_entries_excluded": [],
+  "active_import_closure_excluded": [
+    "Submission.Supplier.P2M.Sol.S_AlgebraicGeometry_exists_isAffineOpen_le_inf_forall_mem_of_finset"
+  ],
+  "active_transitive_import_closure_size": 2,
+  "actual_live_descendant_sources": [
+    {
+      "pid": 45922,
+      "source": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_AlgebraicGeometry_exists_isAffineOpen_le_inf_forall_mem_of_finset.lean"
+    }
+  ],
+  "all_four_canonical_adapted_source_card_modules_excluded": [
+    "P2M.Sol.S_AlgebraicCurve_relNorm_eq_pow_of_isMaximal_of_isSeparable",
+    "Submission.Supplier.P2M.Sol.S_AlgebraicCurve_relNorm_eq_pow_of_isMaximal_of_isSeparable",
+    "Submission.Supplier.Theorems.Thm_AlgebraicCurve_relNorm_eq_pow_of_isMaximal_of_isSeparable",
+    "Theorems.Thm_AlgebraicCurve_relNorm_eq_pow_of_isMaximal_of_isSeparable"
+  ],
+  "last_actual_failure": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/official-layout/terminal-proof-repairs/20261019-relnorm-separable-legacy-inertia-api/r1-actual-default-parameter-failure",
+  "r1_math_and_original_interface_checks_had_no_errors": true,
+  "r1_warning_count": 0,
+  "r1_standard_recursive_axioms": true,
+  "default_tactic_fix": "try infer_instance accepts default metavariables already solved by other instance synthesis, as shown by the four actual default tactic diagnostics; otherwise infer the retained IsDomain hypothesis."
+}

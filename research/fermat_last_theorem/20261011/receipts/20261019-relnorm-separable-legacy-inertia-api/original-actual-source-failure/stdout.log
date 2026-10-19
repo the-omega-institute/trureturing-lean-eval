@@ -1,0 +1,122 @@
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_AlgebraicCurve_relNorm_eq_pow_of_isMaximal_of_isSeparable.lean:93:6: warning: Overlapping instance parameters in `instFiniteNormalClosure_submission`:
+
+⚠️ `[IsDomain
+   S]` and `[IsDedekindDomain
+   S]` each imply `[Nontrivial S]`, `[IsLeftCancelMulZero S]`, and `[IsRightCancelMulZero S]`.
+💡️ Of these, `[IsDomain S]` may be removed.
+
+Note: This linter can be disabled with `set_option linter.overlappingInstances false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_AlgebraicCurve_relNorm_eq_pow_of_isMaximal_of_isSeparable.lean:95:6: warning: Overlapping instance parameters in `instFiniteNormalClosure_submission_1`:
+
+⚠️ `[IsDomain
+   S]` and `[IsDedekindDomain
+   S]` each imply `[Nontrivial S]`, `[IsLeftCancelMulZero S]`, and `[IsRightCancelMulZero S]`.
+💡️ Of these, `[IsDomain S]` may be removed.
+
+Note: This linter can be disabled with `set_option linter.overlappingInstances false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_AlgebraicCurve_relNorm_eq_pow_of_isMaximal_of_isSeparable.lean:97:6: warning: Overlapping instance parameters in `instIsDedekindDomainNormalClosure_submission`:
+
+⚠️ `[IsDomain
+   S]` and `[IsDedekindDomain
+   S]` each imply `[Nontrivial S]`, `[IsLeftCancelMulZero S]`, and `[IsRightCancelMulZero S]`.
+💡️ Of these, `[IsDomain S]` may be removed.
+
+Note: This linter can be disabled with `set_option linter.overlappingInstances false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_AlgebraicCurve_relNorm_eq_pow_of_isMaximal_of_isSeparable.lean:106:30: error(lean.invalidField): Invalid field `inertiaDeg'`: The environment does not contain `Submodule.inertiaDeg'`, so it is not possible to project the field `inertiaDeg'` from an expression
+  p
+of type `Submodule R R`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_AlgebraicCurve_relNorm_eq_pow_of_isMaximal_of_isSeparable.lean:113:6: error(lean.unknownIdentifier): Unknown constant `Ideal.inertiaDeg'_eq_inertiaDeg`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_AlgebraicCurve_relNorm_eq_pow_of_isMaximal_of_isSeparable.lean:106:47: error: unsolved goals
+R : Type u_1
+S : Type u_2
+inst✝¹² : CommRing R
+inst✝¹¹ : CommRing S
+inst✝¹⁰ : IsDomain R
+inst✝⁹ : IsDomain S
+inst✝⁸ : Algebra R S
+inst✝⁷ : Module.IsTorsionFree R S
+inst✝⁶ : Module.Finite R S
+inst✝⁵ : Algebra.IsSeparable 𝕂 𝕃
+inst✝⁴ : IsDedekindDomain S
+inst✝³ : IsDedekindDomain R
+P : Ideal S
+p : Ideal R
+inst✝² : P.LiesOver p
+inst✝¹ : P.IsMaximal
+inst✝ : p.IsMaximal
+Q : Ideal 𝕋
+hQ₁ : Q.IsMaximal
+hQ₂ : Q.LiesOver P
+this✝ : Q.LiesOver p
+h : (Ideal.relNorm R) P ^ Q.inertiaDeg S = p ^ Q.inertiaDeg R
+this : IsGalois 𝕃 (FractionRing 𝕋)
+⊢ (Ideal.relNorm R) P = p ^ sorry
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_AlgebraicCurve_relNorm_eq_pow_of_isMaximal_of_isSeparable.lean:104:16: warning: Overlapping instance parameters in `relNorm_eq_pow_of_isMaximal_fractionRing`:
+
+⚠️ `[IsDomain
+   R]` and `[IsDedekindDomain
+   R]` each imply `[Nontrivial R]`, `[IsLeftCancelMulZero R]`, and `[IsRightCancelMulZero R]`.
+💡️ Of these, `[IsDomain R]` may be removed.
+⚠️ `[IsDomain
+   S]` and `[IsDedekindDomain
+   S]` each imply `[Nontrivial S]`, `[IsLeftCancelMulZero S]`, and `[IsRightCancelMulZero S]`.
+💡️ Of these, `[IsDomain S]` may be removed.
+
+Note: This linter can be disabled with `set_option linter.overlappingInstances false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_AlgebraicCurve_relNorm_eq_pow_of_isMaximal_of_isSeparable.lean:131:30: error(lean.invalidField): Invalid field `inertiaDeg'`: The environment does not contain `Submodule.inertiaDeg'`, so it is not possible to project the field `inertiaDeg'` from an expression
+  p
+of type `Submodule R R`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_AlgebraicCurve_relNorm_eq_pow_of_isMaximal_of_isSeparable.lean:132:2: warning: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_AlgebraicCurve_relNorm_eq_pow_of_isMaximal_of_isSeparable.lean:127:16: warning: Overlapping instance parameters in `relNorm_eq_pow_of_isMaximal_of_isSeparable`:
+
+⚠️ `[IsDomain
+   R]` and `[IsDedekindDomain
+   R]` each imply `[Nontrivial R]`, `[IsLeftCancelMulZero R]`, and `[IsRightCancelMulZero R]`.
+💡️ Of these, `[IsDomain R]` may be removed.
+⚠️ `[IsDomain
+   S]` and `[IsDedekindDomain
+   S]` each imply `[Nontrivial S]`, `[IsLeftCancelMulZero S]`, and `[IsRightCancelMulZero S]`.
+💡️ Of these, `[IsDomain S]` may be removed.
+
+Note: This linter can be disabled with `set_option linter.overlappingInstances false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_AlgebraicCurve_relNorm_eq_pow_of_isMaximal_of_isSeparable.lean:153:30: error(lean.invalidField): Invalid field `inertiaDeg'`: The environment does not contain `Submodule.inertiaDeg'`, so it is not possible to project the field `inertiaDeg'` from an expression
+  p
+of type `Submodule R R`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_AlgebraicCurve_relNorm_eq_pow_of_isMaximal_of_isSeparable.lean:148:8: warning: Overlapping instance parameters in `solution`:
+
+⚠️ `[IsDomain
+   R]` and `[IsDedekindDomain
+   R]` each imply `[Nontrivial R]`, `[IsLeftCancelMulZero R]`, and `[IsRightCancelMulZero R]`.
+💡️ Of these, `[IsDomain R]` may be removed.
+⚠️ `[IsDomain
+   S]` and `[IsDedekindDomain
+   S]` each imply `[Nontrivial S]`, `[IsLeftCancelMulZero S]`, and `[IsRightCancelMulZero S]`.
+💡️ Of these, `[IsDomain S]` may be removed.
+
+Note: This linter can be disabled with `set_option linter.overlappingInstances false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_AlgebraicCurve_relNorm_eq_pow_of_isMaximal_of_isSeparable.lean:161:30: error(lean.invalidField): Invalid field `inertiaDeg'`: The environment does not contain `Submodule.inertiaDeg'`, so it is not possible to project the field `inertiaDeg'` from an expression
+  p
+of type `Submodule R R`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_AlgebraicCurve_relNorm_eq_pow_of_isMaximal_of_isSeparable.lean:161:47: warning: Overlapping instance parameters in `_example`:
+
+⚠️ `[IsDomain
+   R]` and `[IsDedekindDomain
+   R]` each imply `[Nontrivial R]`, `[IsLeftCancelMulZero R]`, and `[IsRightCancelMulZero R]`.
+💡️ Of these, `[IsDomain R]` and `[IsDedekindDomain R]` may be removed.
+⚠️ `[IsDomain
+   S]` and `[IsDedekindDomain
+   S]` each imply `[Nontrivial S]`, `[IsLeftCancelMulZero S]`, and `[IsRightCancelMulZero S]`.
+💡️ Of these, `[IsDomain S]` and `[IsDedekindDomain S]` may be removed.
+
+Note: This linter can be disabled with `set_option linter.overlappingInstances false`
+'P2MW.S_AlgebraicCurve_relNorm_eq_pow_of_isMaximal_of_isSeparable.solution' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
