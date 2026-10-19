@@ -1,0 +1,128 @@
+{
+  "sha256": "4737fa59890120076c976d86a9a36cf46e8d2e67a4b0a84550b4a6d20cc85f01",
+  "exit": 0,
+  "empty_output_retry_done": false,
+  "source_sha256_after": "4737fa59890120076c976d86a9a36cf46e8d2e67a4b0a84550b4a6d20cc85f01",
+  "source_unchanged": true,
+  "olean_sha256": "68fde60b54b1bbccc65a3b4801444043a3a6644ba79bd94880d82245b767a122",
+  "seconds": 52.59931633400265,
+  "pid": 17787,
+  "command": [
+    "/Users/macstudio/.local/omega-shims/lean",
+    "-j1",
+    "--trust=0",
+    "-Ddebug.skipKernelTC=false",
+    "-R",
+    "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src",
+    "-o",
+    "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-build/lib/lean/Submission/Supplier/P2M/Sol/S_WeierstrassCurve_exists_veluPointHom_oddOrderSummingSet_of_isAlgClosed.olean",
+    "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_WeierstrassCurve_exists_veluPointHom_oddOrderSummingSet_of_isAlgClosed.lean"
+  ],
+  "make_wrapper_pid": 17742,
+  "make_exit": 0,
+  "make_entry_failed": false,
+  "cache_binding_valid": true,
+  "canonical_make_running_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/4d7d3a72071a0b0f218de082-1792424937810448000.make-running.json",
+  "canonical_make_terminal_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/4d7d3a72071a0b0f218de082-1792424937810448000.make-terminal.json",
+  "kernel_terminal_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/4d7d3a72071a0b0f218de082-1792424937810448000.kernel/result.json",
+  "direct_dependencies": [
+    {
+      "module": "Submission.Supplier.Definitions.Def_WeierstrassCurve_Velu",
+      "source_sha256": "aefc836803ae37021e1e2a1d9ff846d88084ba8065ef07f7124af923045bdf8d",
+      "object_sha256": "43bf43fcf68b4133c93ffcc6f099c11cd77c8103eaae97bd40cf77b0ef12d5ea",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Definitions.Def_WeierstrassCurve_VeluQuotientMap",
+      "source_sha256": "af676e8afe2725ffa3f8b4c5250132a4065bedde05c9d8b9136892c0cbb6ce72",
+      "object_sha256": "e2ed04efcf675f5303e1fefdd106f19c11e1adfbd9d0d94810467d840ae92fcf",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Definitions.Def_WeierstrassCurve_VeluPointMap",
+      "source_sha256": "8d8bff7971676f481b22254c7c4bf59cdec5ae1aa5597ee2bddd93e5a990564a",
+      "object_sha256": "8a04844975639337df67c9227badb1cc54451de5719d1b790b224fa084c43929",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Definitions.Def_WeierstrassCurve_OddOrderSummingSet",
+      "source_sha256": "a92b5de358fe591b72ce71d741e911a3acaee9e7af797933434b7c49e6e89607",
+      "object_sha256": "aac89f9c8d14f9eda25801f258737313f1044e7e481fc11abaa8431903217ae0",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Definitions.Def_Isogeny_ConditionalCurrency",
+      "source_sha256": "f049c10c409f2ff7c3832be0d342db951f53022826fa7ea57fa4caee2f1bf0c4",
+      "object_sha256": "0b3369f9af05f15abff27270e0cdb60fcfaeb810568becdd43257ecdb021a6c6",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Definitions.Def_WeierstrassCurve_GenusOnePlaceGateCentred",
+      "source_sha256": "e1b0b89b4815ce958b09691a36a1506485b9ae6a43af821c82c77c51b1f64101",
+      "object_sha256": "2adbcc8a801bb1ca85e1561fbc09cb0862e20a96b85411fcb7587222047a0807",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Definitions.Def_WeierstrassCurve_GenusOnePic0",
+      "source_sha256": "ce23a85794b4ee0739ed69e00356c86d050d6f3992c0f32305bafa4b99b25b3b",
+      "object_sha256": "28ca0855ecef12367484ae4b073d2cbac8631a7e945ea6c51485102657f683ec",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Definitions.Def_AlgebraicCurve_Correspondence",
+      "source_sha256": "22d43195e5e1e56a79944d3f469e206b1dbea2f6727f6e0e0bccbc151f220881",
+      "object_sha256": "c99c86ef38a52c80a3925a267b8c93ae03a81f20f54c6c6e8d2d2fb01743b08c",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Theorems.Thm_WeierstrassCurve_Affine_CoordinateRing_isDedekindDomain",
+      "source_sha256": "6710f0776b1079b991422e7760b11733939e89d71b6acd3331d38affd867147d",
+      "object_sha256": null,
+      "receipt_reused": false
+    },
+    {
+      "module": "Submission.Supplier.Theorems.Thm_WeierstrassCurve_Affine_exists_genusOnePlaceGate_isCentred_and_abelTheorem",
+      "source_sha256": "020ec1fb17b20bf511e283d0addc0b59349854458c5d7c44acd0687c8fc17af6",
+      "object_sha256": "45ebbd530f1d448279f3c5e0f28607cee4eff5e746c407fca2501769a1315cbc",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Theorems.Thm_Algebra_IsSeparable_of_coprime_finrank_expChar",
+      "source_sha256": "d9ea010bf5013db31d7ef23635e9fa84a8e538b3d28d516b1e5fdfaef2911be3",
+      "object_sha256": "e1ba9781c37e21fe1db4483c427e92bc3e423c4304d595e6d5ca0c9ba5c98ba5",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Theorems.Thm_AlgebraicCurve_normFormulaAlong_of_separableAlong",
+      "source_sha256": "55508a8fd95b12b1e6862a359d6c0359cc3b3e69845edb828d562e4c7ced6ada",
+      "object_sha256": "89b296a6455d741a3440292bed99819bc2cfd2fe3419a3cbbc5a5aad26eca290",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Theorems.Thm_WeierstrassCurve_veluQuotient_oddOrderSummingSet_discriminant_ne_zero_of_addOrderOf_eq",
+      "source_sha256": "a796e5fad44e364359888dae7c902789de59ab2ce26a783f67350fd66cedc3b3",
+      "object_sha256": "24c5b447a85353efc874e0cd9c38dfc683f5561eb0bef99ff8c974ecfd90a9c2",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Theorems.Thm_WeierstrassCurve_hasPrincipalDivisors_functionField_of_isElliptic",
+      "source_sha256": "3879179d7bf4d5a5464e1ab7e3d2377ed0054563e3e2c50b771c60a6bf493df4",
+      "object_sha256": "2588ae39d581487f10890b8b8471ff8df65e4c547c4ee7849e643ee07efe2ce8",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.Theorems.Thm_WeierstrassCurve_exists_veluFunctionFieldHom_restrictAlong_placeOfPoint_eq_of_isAlgClosed",
+      "source_sha256": "c79b7ef993233ef3ad7ee1f5ef1749d0acf3590c52d6f0ee254a27b03b669d2d",
+      "object_sha256": "a8b57441364f75cdab6da977558668964884200dea6ceb015c29ed8cfd148051",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.P2M.Util",
+      "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+      "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+      "receipt_reused": true
+    }
+  ],
+  "stdout": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/4d7d3a72071a0b0f218de082-1792424937810448000.kernel/stdout.log",
+  "stderr": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/4d7d3a72071a0b0f218de082-1792424937810448000.kernel/stderr.log"
+}

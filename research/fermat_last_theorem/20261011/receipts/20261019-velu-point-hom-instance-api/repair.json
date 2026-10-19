@@ -1,0 +1,181 @@
+{
+  "at": "2026-10-19T15:48:43.882566+00:00",
+  "name": "WeierstrassCurve_exists_veluPointHom_oddOrderSummingSet_of_isAlgClosed",
+  "candidate": "r1",
+  "card_candidate": "r1",
+  "source_replacements": [
+    [
+      "  haveI hVell : (W.veluQuotient S).IsElliptic := \u27e8isUnit_iff_ne_zero.mpr h\u0394'\u27e9\n",
+      "  have hVell : (W.veluQuotient S).IsElliptic := \u27e8isUnit_iff_ne_zero.mpr h\u0394'\u27e9\n",
+      1
+    ],
+    [
+      "  haveI : (W.veluQuotient S).toAffine.IsElliptic := hVell\n",
+      "  have : (W.veluQuotient S).toAffine.IsElliptic := hVell\n",
+      1
+    ],
+    [
+      "  haveI : W.toAffine.IsElliptic := \u2039W.IsElliptic\u203a\n",
+      "  have : W.toAffine.IsElliptic := \u2039W.IsElliptic\u203a\n",
+      1
+    ],
+    [
+      "  haveI : IsDedekindDomain W.toAffine.CoordinateRing := CoordinateRing.isDedekindDomain W\n",
+      "  have : IsDedekindDomain W.toAffine.CoordinateRing := CoordinateRing.isDedekindDomain W\n",
+      1
+    ],
+    [
+      "  haveI : IsDedekindDomain (W.veluQuotient S).toAffine.CoordinateRing :=\n",
+      "  have : IsDedekindDomain (W.veluQuotient S).toAffine.CoordinateRing :=\n",
+      1
+    ],
+    [
+      "  haveI : HasPrincipalDivisors F W.toAffine.FunctionField :=\n",
+      "  have : HasPrincipalDivisors F W.toAffine.FunctionField :=\n",
+      1
+    ],
+    [
+      "  haveI : HasPrincipalDivisors F (W.veluQuotient S).toAffine.FunctionField :=\n",
+      "  have : HasPrincipalDivisors F (W.veluQuotient S).toAffine.FunctionField :=\n",
+      1
+    ],
+    [
+      "  letI : GenusOnePlaceGate W.toAffine := gW\n",
+      "  let : GenusOnePlaceGate W.toAffine := gW\n",
+      1
+    ],
+    [
+      "  haveI : GenusOnePlaceGate.IsCentred W.toAffine := cW\n",
+      "  have : GenusOnePlaceGate.IsCentred W.toAffine := cW\n",
+      1
+    ],
+    [
+      "  haveI : AbelTheorem W.toAffine := aW\n",
+      "  have : AbelTheorem W.toAffine := aW\n",
+      1
+    ],
+    [
+      "  letI : GenusOnePlaceGate (W.veluQuotient S).toAffine := gV\n",
+      "  let : GenusOnePlaceGate (W.veluQuotient S).toAffine := gV\n",
+      1
+    ],
+    [
+      "  haveI : GenusOnePlaceGate.IsCentred (W.veluQuotient S).toAffine := cV\n",
+      "  have : GenusOnePlaceGate.IsCentred (W.veluQuotient S).toAffine := cV\n",
+      1
+    ],
+    [
+      "  haveI : AbelTheorem (W.veluQuotient S).toAffine := aV\n",
+      "  have : AbelTheorem (W.veluQuotient S).toAffine := aV\n",
+      1
+    ],
+    [
+      "    letI := algebraAlong \u03b9\n",
+      "    let := algebraAlong \u03b9\n",
+      1
+    ],
+    [
+      "    haveI : Module.Finite (W.veluQuotient S).toAffine.FunctionField W.toAffine.FunctionField := hfin\n",
+      "    have : Module.Finite (W.veluQuotient S).toAffine.FunctionField W.toAffine.FunctionField := hfin\n",
+      1
+    ],
+    [
+      "    haveI : ExpChar (W.veluQuotient S).toAffine.FunctionField q :=\n",
+      "    have : ExpChar (W.veluQuotient S).toAffine.FunctionField q :=\n",
+      1
+    ],
+    [
+      "        \u00b7 have : g (.some a b hab) = 0 := by simp only [g, dif_pos hm]\n",
+      "        \u00b7 have : g (.some a b hab) = 0 := by simp only [g, dite_eq_left hm]\n",
+      1
+    ],
+    [
+      "            simp only [g, dif_neg hm]\n",
+      "            simp only [g, dite_eq_right hm]\n",
+      1
+    ],
+    [
+      "        \u00b7 simp only [g, dif_pos hm]; exact \u27e8fun _ => hm, fun _ => trivial\u27e9\n",
+      "        \u00b7 simp only [g, dite_eq_left hm]; exact \u27e8fun _ => hm, fun _ => trivial\u27e9\n",
+      1
+    ],
+    [
+      "        \u00b7 simp only [g, dif_neg hm]\n",
+      "        \u00b7 simp only [g, dite_eq_right hm]\n",
+      1
+    ],
+    [
+      "    simp only [g, dif_neg hP]\n",
+      "    simp only [g, dite_eq_right hP]\n",
+      1
+    ],
+    [
+      "instIsScalarTowerPolynomialRatFuncFunctionField_definitions",
+      "instIsScalarTowerPolynomialRatFuncFunctionField_submission",
+      1
+    ],
+    [
+      "instAlgebraRatFuncFunctionField_definitions",
+      "instAlgebraRatFuncFunctionField_submission",
+      1
+    ],
+    [
+      "instIsScalarTowerRatFuncFunctionField_definitions",
+      "instIsScalarTowerRatFuncFunctionField_submission",
+      1
+    ]
+  ],
+  "card_replacements": [
+    [
+      "instIsScalarTowerPolynomialRatFuncFunctionField_definitions",
+      "instIsScalarTowerPolynomialRatFuncFunctionField_submission",
+      1
+    ],
+    [
+      "instAlgebraRatFuncFunctionField_definitions",
+      "instAlgebraRatFuncFunctionField_submission",
+      1
+    ],
+    [
+      "instIsScalarTowerRatFuncFunctionField_definitions",
+      "instIsScalarTowerRatFuncFunctionField_submission",
+      1
+    ]
+  ],
+  "baseline_byte_identical_to_pinned_supplier": true,
+  "pinned_supplier_source_and_card_preserved": true,
+  "supplier_repository": "anthropics/fermats-last-theorem",
+  "supplier_revision": "6e837e75355538c7f80bab5b956861e86c4eacc2",
+  "original_actual_errors": 1,
+  "original_actual_warnings": 21,
+  "actual_warned_style_lines": 16,
+  "verification_pending": false,
+  "installed": true,
+  "no_linter_suppression_added": true,
+  "public_solution_and_card_statement_byte_unchanged": true,
+  "full_original_statement_and_hypotheses_preserved": true,
+  "complete_original_proof_preserved": true,
+  "library_search": "No exact veluPointHom theorem in main trureturing D5/Reg. Reuse the already verified three generated instance renames from definitions to submission, including the immediate function-field-map provider verification. Preserve negative-instance behavior.",
+  "change": "Retain the complete 185-line original Velu point-hom construction, all original typed hypotheses and unchanged solution/card declaration text. Migrate the three obsolete generated instance names, exactly sixteen actual haveI/letI warnings and five actual dependent conditional aliases. No linter option changes or additional direct compilation.",
+  "max_active_flt_jobs": 1,
+  "lean_threads": 1,
+  "full_original_complete": false,
+  "official_new_solve_credit": 0,
+  "stale_terminal_state_entries_excluded": [
+    {
+      "module": "Submission.Supplier.P2M.Sol.S_AlgebraicGeometry_valuation_sub_counit_lt_one_of_isClosedImmersion_of_specMap_comp_eq_zeroSection",
+      "wrapper_pid": 17616,
+      "make_exit": 0,
+      "terminal": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/5c85244494da37a4c6b5d937-1792424913164216000.make-terminal.json"
+    }
+  ],
+  "active_import_closure_excluded": [],
+  "active_transitive_import_closure_size": 0,
+  "actual_live_descendant_sources": [],
+  "all_four_canonical_adapted_source_card_modules_excluded": [
+    "P2M.Sol.S_WeierstrassCurve_exists_veluPointHom_oddOrderSummingSet_of_isAlgClosed",
+    "Submission.Supplier.P2M.Sol.S_WeierstrassCurve_exists_veluPointHom_oddOrderSummingSet_of_isAlgClosed",
+    "Submission.Supplier.Theorems.Thm_WeierstrassCurve_exists_veluPointHom_oddOrderSummingSet_of_isAlgClosed",
+    "Theorems.Thm_WeierstrassCurve_exists_veluPointHom_oddOrderSummingSet_of_isAlgClosed"
+  ]
+}
