@@ -1,0 +1,111 @@
+{
+  "at": "2026-10-19T14:16:19.546913+00:00",
+  "name": "WeierstrassCurve_Affine_hasPrincipalDivisors_functionField_of_two_ne_zero_or",
+  "candidate": "r1",
+  "card_candidate": "r3",
+  "source_replacements": [
+    [
+      "  haveI : FiniteDimensional (RatFunc F) W.FunctionField := finiteDimensional_ratFunc_functionField W",
+      "  have : FiniteDimensional (RatFunc F) W.FunctionField := finiteDimensional_ratFunc_functionField W",
+      1
+    ],
+    [
+      "  haveI : Algebra.IsSeparable (RatFunc F) W.FunctionField :=",
+      "  have : Algebra.IsSeparable (RatFunc F) W.FunctionField :=",
+      1
+    ]
+  ],
+  "card_replacements": [
+    [
+      "WeierstrassCurve.Affine.instIsScalarTowerPolynomialRatFuncFunctionField_definitions ",
+      "",
+      1
+    ],
+    [
+      "WeierstrassCurve.Affine.instAlgebraRatFuncFunctionField_definitions ",
+      "",
+      1
+    ],
+    [
+      "WeierstrassCurve.Affine.instIsScalarTowerRatFuncFunctionField_definitions ",
+      "",
+      1
+    ]
+  ],
+  "baseline_byte_identical_to_pinned_supplier": true,
+  "baseline_by_role_byte_identical_to_pinned_supplier": {
+    "source": true,
+    "card": true
+  },
+  "prior_source_changes_preserved": "",
+  "prior_card_changes_preserved": "",
+  "pinned_supplier_source_and_card_preserved": true,
+  "public_card_statement_literal_preserved": true,
+  "solution_statement_literal_preserved": true,
+  "all_public_declaration_headers_literal_unchanged": true,
+  "verification_pending": false,
+  "installed": true,
+  "no_linter_suppression_added": true,
+  "complete_original_proof_preserved": true,
+  "full_original_statement_and_hypotheses_preserved": true,
+  "max_active_flt_jobs": 1,
+  "lean_threads": 1,
+  "original_actual_errors": 1,
+  "original_actual_warnings": 0,
+  "library_search": "Exact principal-divisor theorem and stale generated instance name absent from current trureturing D5 Lean search. Actual kernel error proves that the named generated instance no longer exists in the imported environment. Remove only this diagnosed token from the negative instance attribute, leaving all other instance directives and all mathematical statements/proofs intact.",
+  "change": "Preserve the full separability and principal-divisor argument with every hypothesis and declaration header unchanged. Remove one actually unknown generated instance token in the public card. Clean the two actual proof-local haveI style warnings and append recursive-axiom queries to the exact source/card; await the unchanged single queue.",
+  "actual_warned_style_tokens": 2,
+  "actual_warned_style_lines": 2,
+  "original_actual_source_errors": 0,
+  "original_actual_source_warnings": 2,
+  "original_actual_card_errors": 1,
+  "original_actual_card_warnings": 0,
+  "full_original_complete": false,
+  "official_new_solve_credit": 0,
+  "stale_terminal_state_entries_excluded": [],
+  "active_import_closure_excluded": [
+    "Submission.Supplier.Theorems.Thm_AlgebraicCurve_Divisor_correspondence_eq_finrankAlong_smul_correspondence_of_comp_eq"
+  ],
+  "active_transitive_import_closure_size": 57,
+  "actual_live_descendant_sources": [
+    {
+      "pid": 27762,
+      "source": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/Theorems/Thm_AlgebraicCurve_Divisor_correspondence_eq_finrankAlong_smul_correspondence_of_comp_eq.lean"
+    }
+  ],
+  "all_four_canonical_adapted_source_card_modules_excluded": [
+    "P2M.Sol.S_WeierstrassCurve_Affine_hasPrincipalDivisors_functionField_of_two_ne_zero_or",
+    "Submission.Supplier.P2M.Sol.S_WeierstrassCurve_Affine_hasPrincipalDivisors_functionField_of_two_ne_zero_or",
+    "Submission.Supplier.Theorems.Thm_WeierstrassCurve_Affine_hasPrincipalDivisors_functionField_of_two_ne_zero_or",
+    "Theorems.Thm_WeierstrassCurve_Affine_hasPrincipalDivisors_functionField_of_two_ne_zero_or"
+  ],
+  "latest_actual_card_revision": {
+    "at": "2026-10-19T14:21:26.962315+00:00",
+    "prior_card_candidate": "r3",
+    "card_candidate": "r3",
+    "actual_make_exit": 2,
+    "actual_kernel_exit": 1,
+    "actual_errors": 1,
+    "actual_unknown_constant": "WeierstrassCurve.Affine.instIsScalarTowerRatFuncFunctionField_definitions",
+    "change": "Remove only the next generated-instance token proved absent by this actual kernel run; all other attributes, original statement, hypotheses and complete proof retained.",
+    "guard": {
+      "stale_terminal_state_entries_excluded": [],
+      "active_import_closure_excluded": [
+        "Submission.Supplier.P2M.Sol.S_AlgebraicGeometry_IsOpenImmersion_isRegularLocalRing_stalk_iff"
+      ],
+      "active_transitive_import_closure_size": 2,
+      "actual_live_descendant_sources": [
+        {
+          "pid": 80328,
+          "source": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_AlgebraicGeometry_IsOpenImmersion_isRegularLocalRing_stalk_iff.lean"
+        }
+      ],
+      "all_four_canonical_adapted_source_card_modules_excluded": [
+        "P2M.Sol.S_WeierstrassCurve_Affine_hasPrincipalDivisors_functionField_of_two_ne_zero_or",
+        "Submission.Supplier.P2M.Sol.S_WeierstrassCurve_Affine_hasPrincipalDivisors_functionField_of_two_ne_zero_or",
+        "Submission.Supplier.Theorems.Thm_WeierstrassCurve_Affine_hasPrincipalDivisors_functionField_of_two_ne_zero_or",
+        "Theorems.Thm_WeierstrassCurve_Affine_hasPrincipalDivisors_functionField_of_two_ne_zero_or"
+      ]
+    }
+  }
+}
