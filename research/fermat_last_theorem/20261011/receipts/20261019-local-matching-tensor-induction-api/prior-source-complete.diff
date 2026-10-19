@@ -1,0 +1,29 @@
+--- supplier
++++ baseline-canonical
+@@ -501,7 +501,7 @@
+ private theorem psiL_pi_apply (z : (Π j, E j) ⊗[K] L) (i : Fin (n + 1)) (j : J) :
+     psiL K L (Π j, E j) ι σ n z i j =
+       psiL K L (E j) ((Pi.evalAlgHom K E j).comp ι) σ n (piDistrib K L E z j) i := by
+-  induction z with
++  induction z using TensorProduct.induction_on with
+   | zero => simp
+   | tmul a x => simp [psiL_tmul_apply, piDistrib_tmul]
+   | add y w hy hw => simp only [map_add, Pi.add_apply, hy, hw]
+@@ -575,7 +575,7 @@
+ private theorem psiR_sigmaTensor (hσ1 : σ ^ (n + 1) = 1) (z : L ⊗[K] F) :
+     psiR K L F ι σ n (sigmaTensor K L F σ z) =
+       fun i : Fin (n + 1) => psiR K L F ι σ n z (i + 1) := by
+-  induction z with
++  induction z using TensorProduct.induction_on with
+   | zero => funext i; simp
+   | tmul x a =>
+     funext i
+@@ -1611,7 +1611,7 @@
+       map_add' := fun x y => map_add (sigmaTensor K L A σ) x y
+       map_smul' := fun a z => by
+         rw [RingHom.id_apply]
+-        induction z with
++        induction z using TensorProduct.induction_on with
+         | zero => rw [smul_zero, map_zero, smul_zero]
+         | tmul x b => rw [hs, SplitModel.sigmaTensor_tmul K L A σ, SplitModel.sigmaTensor_tmul K L A σ, hs]
+         | add y w hy hw => rw [smul_add, map_add, map_add, smul_add, hy, hw] }
