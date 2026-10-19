@@ -1,0 +1,50 @@
+{
+  "sha256": "d8b10d4b25080333c9fef44e7b5ad2db9e3c34af7fd2ef609e844995c86ae2ac",
+  "exit": 0,
+  "empty_output_retry_done": false,
+  "source_sha256_after": "d8b10d4b25080333c9fef44e7b5ad2db9e3c34af7fd2ef609e844995c86ae2ac",
+  "source_unchanged": true,
+  "olean_sha256": "ba7085c084b3425caf392a1721679ced2b64ce13651632ec12b0ec1c164a86ab",
+  "seconds": 10.27529125000001,
+  "pid": 13549,
+  "command": [
+    "/Users/macstudio/.local/omega-shims/lean",
+    "-j1",
+    "--trust=0",
+    "-Ddebug.skipKernelTC=false",
+    "-R",
+    "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src",
+    "-o",
+    "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-build/lib/lean/Submission/Supplier/Theorems/Thm_AutomorphicForm_rightConv_rightTranslate_mem_of_isCuspSubrep.olean",
+    "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/Theorems/Thm_AutomorphicForm_rightConv_rightTranslate_mem_of_isCuspSubrep.lean"
+  ],
+  "make_wrapper_pid": 13528,
+  "make_exit": 0,
+  "make_entry_failed": false,
+  "cache_binding_valid": true,
+  "canonical_make_running_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/e7d73da024c162c6b7f11839-1792415231086076000.make-running.json",
+  "canonical_make_terminal_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/e7d73da024c162c6b7f11839-1792415231086076000.make-terminal.json",
+  "kernel_terminal_receipt": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/e7d73da024c162c6b7f11839-1792415231086076000.kernel/result.json",
+  "direct_dependencies": [
+    {
+      "module": "Submission.Supplier.Definitions.Def_AutomorphicForm_CuspidalConstituent",
+      "source_sha256": "b90afc8b0472a84befbc1825010a0e2ad380a7fb2601968c5f9f7fa8fce45911",
+      "object_sha256": "a4edd3c1e6e3b4c3d3249443b8cbd6a2484acf97b59439bed134bb3ed1abcff2",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.P2M.Util",
+      "source_sha256": "a816ae249c7dfe323b77177d87c2b6090d6a9a42bb3907e6d9cda14f7bbe26c6",
+      "object_sha256": "408c869837d10d2d12b619438d068ca78e65f0d8e93096a6ef54cdd4cba039ff",
+      "receipt_reused": true
+    },
+    {
+      "module": "Submission.Supplier.P2M.Sol.S_AutomorphicForm_rightConv_rightTranslate_mem_of_isCuspSubrep",
+      "source_sha256": "e068e3fa703b47967e072bee3e96ac78d3c21682dfb38d3bc93d02726310de41",
+      "object_sha256": "9bc9ef4ec01278ad576e7a3a70141ba5ebbe7ca00b648591f9d6274184d6bc14",
+      "receipt_reused": true
+    }
+  ],
+  "stdout": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/e7d73da024c162c6b7f11839-1792415231086076000.kernel/stdout.log",
+  "stderr": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-coordinator-ready-pipeline-20261006-logs/e7d73da024c162c6b7f11839-1792415231086076000.kernel/stderr.log"
+}
