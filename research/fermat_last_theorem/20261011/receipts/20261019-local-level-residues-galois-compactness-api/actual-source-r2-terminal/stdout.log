@@ -1,0 +1,20 @@
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/Definitions/Def_ExtCitation_LocalLevelResidues.lean:80:39: error: typeclass instance problem is stuck
+  CompleteLattice ?m.275
+
+Note: Lean will not try to resolve this typeclass instance problem because the type argument to `CompleteLattice` is a metavariable. This argument must be fully determined before Lean will try to resolve the typeclass.
+
+Hint: Adding type annotations and supplying implicit arguments to functions can give Lean more information for typeclass resolution. For example, if you have a variable `x` that you intend to be a `Nat`, but Lean reports it as having an unresolved type like `?m`, replacing `x` with `(x : Nat)` can get typeclass resolution un-stuck.
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/Definitions/Def_ExtCitation_LocalLevelResidues.lean:283:0: warning: automatically included section variable(s) unused in theorem `ExtCitation.LocalLevel.algebraMap_Rw_coe`:
+  hKw
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit hKw in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/Definitions/Def_ExtCitation_LocalLevelResidues.lean:426:0: warning: automatically included section variable(s) unused in theorem `ExtCitation.LocalLevel.pow_pow_mul_eq`:
+  hq
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit hq in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+'ExtCitation.LocalLevel.compactSpace_gal' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'ExtCitation.LocalLevel.frob_pow_apply_eq' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]

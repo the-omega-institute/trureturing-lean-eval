@@ -1,0 +1,196 @@
+{
+  "at": "2026-10-19T11:22:12.208725+00:00",
+  "name": "ExtCitation_LocalLevelResidues",
+  "source_prefix": "Definitions/Def_",
+  "candidate": "r3",
+  "card_candidate": "r1",
+  "axiom_declarations": [
+    "ExtCitation.LocalLevel.compactSpace_gal",
+    "ExtCitation.LocalLevel.frob_pow_apply_eq"
+  ],
+  "source_replacements": [
+    [
+      "(val _)",
+      "(val K\u27eex\u27ef)",
+      1
+    ],
+    [
+      "\n  letI := IsTopologicalGroup.rightUniformSpace G\n",
+      "\n  let := IsTopologicalGroup.rightUniformSpace G\n",
+      1
+    ],
+    [
+      "\n  letI := IsTopologicalGroup.rightUniformSpace (L \u2243\u2090[K] L)\n",
+      "\n  let := IsTopologicalGroup.rightUniformSpace (L \u2243\u2090[K] L)\n",
+      1
+    ],
+    [
+      "\n    haveI : IsGalois \u211a_[q] (PadicAlgCl q) := IsAlgClosure.isGalois \u211a_[q] (PadicAlgCl q)\n",
+      "\n    have : IsGalois \u211a_[q] (PadicAlgCl q) := IsAlgClosure.isGalois \u211a_[q] (PadicAlgCl q)\n",
+      2
+    ],
+    [
+      "\n  haveI : P.IsPrime := Ideal.IsPrime.under \u2124_[q] (IsLocalRing.maximalIdeal (OO q))\n",
+      "\n  have : P.IsPrime := Ideal.IsPrime.under \u2124_[q] (IsLocalRing.maximalIdeal (OO q))\n",
+      1
+    ],
+    [
+      "\n  haveI : Algebra.IsIntegral \u211a_[q] (PadicAlgCl q) := \u27e8fun x => (Algebra.IsAlgebraic.isAlgebraic x).isIntegral\u27e9\n",
+      "\n  have : Algebra.IsIntegral \u211a_[q] (PadicAlgCl q) := \u27e8fun x => (Algebra.IsAlgebraic.isAlgebraic x).isIntegral\u27e9\n",
+      2
+    ],
+    [
+      "\n  haveI : Finite (\u2124_[q] \u29f8 Q.under \u2124_[q]) := by\n",
+      "\n  have : Finite (\u2124_[q] \u29f8 Q.under \u2124_[q]) := by\n",
+      1
+    ],
+    [
+      "\n  letI : TopologicalSpace (OO q) := \u22a5\n",
+      "\n  let : TopologicalSpace (OO q) := \u22a5\n",
+      1
+    ],
+    [
+      "\n  haveI : DiscreteTopology (OO q) := \u27e8rfl\u27e9\n",
+      "\n  have : DiscreteTopology (OO q) := \u27e8rfl\u27e9\n",
+      1
+    ],
+    [
+      "\n  haveI : Finite (kM q M) := finite_kM q M hM\n",
+      "\n  have : Finite (kM q M) := finite_kM q M hM\n",
+      1
+    ],
+    [
+      "\n  haveI : Algebra.IsAlgebraic (ZMod q) (kM q M) := Algebra.IsAlgebraic.of_finite (ZMod q) (kM q M)\n",
+      "\n  have : Algebra.IsAlgebraic (ZMod q) (kM q M) := Algebra.IsAlgebraic.of_finite (ZMod q) (kM q M)\n",
+      1
+    ],
+    [
+      "\n  haveI : FiniteDimensional (ZMod q) E := IntermediateField.adjoin.finiteDimensional hxbint\n",
+      "\n  have : FiniteDimensional (ZMod q) E := IntermediateField.adjoin.finiteDimensional hxbint\n",
+      1
+    ],
+    [
+      "\n  haveI : Finite E := Module.finite_of_finite (ZMod q)\n",
+      "\n  have : Finite E := Module.finite_of_finite (ZMod q)\n",
+      1
+    ],
+    [
+      "\n  letI : Fintype E := Fintype.ofFinite E\n",
+      "\n  let : Fintype E := Fintype.ofFinite E\n",
+      1
+    ],
+    [
+      "\n  haveI : FiniteDimensional \u211a_[q] Kw := IntermediateField.adjoin.finiteDimensional hxint\n",
+      "\n  have : FiniteDimensional \u211a_[q] Kw := IntermediateField.adjoin.finiteDimensional hxint\n",
+      1
+    ],
+    [
+      "SetLike.le_def",
+      "IsConcreteLE.le_iff",
+      1
+    ],
+    [
+      "Set.mem_setOf_eq",
+      "Set.mem_ofPred_eq",
+      7
+    ],
+    [
+      "  one_smul x := Subtype.ext rfl",
+      "  one_smul _ := Subtype.ext rfl",
+      1
+    ],
+    [
+      "  mul_smul g h x := Subtype.ext rfl",
+      "  mul_smul _ _ _ := Subtype.ext rfl",
+      1
+    ],
+    [
+      "  smul_add g x y := Subtype.ext (map_add g _ _)",
+      "  smul_add g _ _ := Subtype.ext (map_add g _ _)",
+      1
+    ],
+    [
+      "  smul_mul g x y := Subtype.ext (map_mul g _ _)",
+      "  smul_mul g _ _ := Subtype.ext (map_mul g _ _)",
+      1
+    ],
+    [
+      "      change \u2016algebraMap \u211a_[q] (PadicAlgCl q) x\u2016 \u2264 1\n",
+      "",
+      1
+    ],
+    [
+      "section LevelW\n\nvariable (q : \u2115) [Fact q.Prime]\nvariable (Kw : IntermediateField \u211a_[q] (PadicAlgCl q)) [FiniteDimensional \u211a_[q] Kw]",
+      "section LevelW\n\nvariable (q : \u2115) [Fact q.Prime]\nvariable (Kw : IntermediateField \u211a_[q] (PadicAlgCl q)) [hKw : FiniteDimensional \u211a_[q] Kw]",
+      1
+    ],
+    [
+      "\ntheorem algebraMap_Rw_coe (x : Rw q Kw)",
+      "\ninclude hKw in\ntheorem algebraMap_Rw_coe (x : Rw q Kw)",
+      1
+    ],
+    [
+      "section Residues\n\nvariable (q : \u2115) [Fact q.Prime]",
+      "section Residues\n\nvariable (q : \u2115) [hq : Fact q.Prime]",
+      1
+    ],
+    [
+      "\ntheorem pow_pow_mul_eq {R : Type*}",
+      "\ninclude hq in\ntheorem pow_pow_mul_eq {R : Type*}",
+      1
+    ],
+    [
+      "refine IsConcreteLE.le_iff.mp (le_iSup _ (\u03c4.toAlgHom.comp <| \u03c4\u2080.toAlgHom.comp (val K\u27eex\u27ef))) ?_",
+      "refine IsConcreteLE.le_iff.mp (AlgHom.fieldRange_le_normalClosure\n          (\u03c4.toAlgHom.comp <| \u03c4\u2080.toAlgHom.comp (val K\u27eex\u27ef))) ?_",
+      1
+    ],
+    [
+      "((algebraMap (Rw q Kw) (OO q) x : OO q) : PadicAlgCl q) = ((x : Kw) : PadicAlgCl q) := rfl",
+      "((algebraMap (Rw q Kw) (OO q) x : OO q) : PadicAlgCl q) = ((x : Kw) : PadicAlgCl q) := by\n  cases hKw\n  rfl",
+      1
+    ],
+    [
+      "(b : \u2115) : x ^ (q ^ (a * b)) = x := by\n  induction b with",
+      "(b : \u2115) : x ^ (q ^ (a * b)) = x := by\n  cases hq\n  induction b with",
+      1
+    ]
+  ],
+  "card_replacements": [],
+  "baseline_byte_identical_to_pinned_supplier": true,
+  "prior_source_changes_preserved": [],
+  "source_only_definition_module": true,
+  "card_not_applicable": true,
+  "public_declaration_statements_literal_preserved": true,
+  "pinned_supplier_source_preserved": true,
+  "verification_pending": false,
+  "installed": true,
+  "no_linter_suppression_added": true,
+  "complete_original_proof_preserved": true,
+  "full_original_statement_and_hypotheses_preserved": true,
+  "max_active_flt_jobs": 1,
+  "lean_threads": 1,
+  "original_actual_errors": 1,
+  "original_actual_warnings": 35,
+  "original_source_lines": 696,
+  "library_search": "No exact ExtCitation.LocalLevel or compactSpace_gal match in current trureturing D5/Reg. The actual pinned-source error is at val _ in the normalClosure K K\u27eex\u27ef L argument. Select explicitly that same intermediate field for its existing inclusion hom.",
+  "change": "Add only the existing simple intermediate field to val, retaining the complete compactness proof and every other declaration, hypothesis and proof. Append named compactness and final Frobenius recursive-axiom queries. Original warning cleanup remains pending; await unchanged original single queue.",
+  "full_original_complete": false,
+  "official_new_solve_credit": 0,
+  "stale_terminal_state_entries_excluded": [],
+  "active_import_closure_excluded": [
+    "Submission.Supplier.Definitions.Def_MvPolynomial_CrossingQuotient"
+  ],
+  "active_transitive_import_closure_size": 1,
+  "actual_live_descendant_sources": [],
+  "all_four_canonical_adapted_source_card_modules_excluded": [
+    "Definitions.Def_ExtCitation_LocalLevelResidues",
+    "Submission.Supplier.Definitions.Def_ExtCitation_LocalLevelResidues"
+  ],
+  "all_public_declaration_headers_literal_unchanged": true,
+  "original_section_hypotheses_retained_by_explicit_include": true,
+  "r1_verification_not_claimed": true,
+  "cleanup_from_original_actual_warnings": true,
+  "latest_change": "Use the pinned normal-closure range inclusion lemma where applicable. Retain original section hypotheses and eliminate the existing Prop-valued instances with cases before the original proof, because explicit includes alone still produced actual rc3 unused-section-variable warnings. No omitted hypotheses, linter suppression, solver changes, or statement changes. For the source/card pair remove only the additional instance identifier actually reported unknown by card r1.",
+  "explicit_include_alone_failed_to_silence_actual_rc3_warnings": true,
+  "original_section_instances_retained_and_eliminated_in_proof": true
+}
