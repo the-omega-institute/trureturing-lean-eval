@@ -1,0 +1,607 @@
+{
+  "at": "2026-10-19T12:42:02.611225+00:00",
+  "name": "AutomorphicForm_areMatchingLocal_splitFactor_heckeAlgebra_of_prime",
+  "candidate": "r1",
+  "card_candidate": "r1",
+  "source_replacements": [
+    [
+      "MonoidHomClass.toMonoidHom (chiAlg K L F \u03b9 \u03c3 n i)",
+      "MonoidHom.ofClass (chiAlg K L F \u03b9 \u03c3 n i)",
+      1
+    ],
+    [
+      "Pi.algHom K (A := fun _ : Fin (n + 1) => F) (chiAlg K L F \u03b9 \u03c3 n)",
+      "AlgHom.pi (R := K) (A := fun _ : Fin (n + 1) => F) (chiAlg K L F \u03b9 \u03c3 n)",
+      1
+    ],
+    [
+      "  induction z using TensorProduct.induction_on with\n  | zero => simp\n",
+      "  induction z using TensorProduct.inductionOn with\n",
+      1
+    ],
+    [
+      "  induction z using TensorProduct.induction_on with\n  | zero => funext i; simp\n",
+      "  induction z using TensorProduct.inductionOn with\n",
+      1
+    ],
+    [
+      "        induction z using TensorProduct.induction_on with\n        | zero => rw [smul_zero, map_zero, smul_zero]\n",
+      "        induction z using TensorProduct.inductionOn with\n",
+      1
+    ],
+    [
+      "  refine TensorProduct.induction_on z ?_ ?_ ?_\n  \u00b7 simp\n  \u00b7 intro l a\n    simp [sigmaTensor, Algebra.TensorProduct.map_tmul, AlgEquiv.mul_apply]\n  \u00b7 intro x y hx hy\n    simp only [map_add, hx, hy]",
+      "  induction z using TensorProduct.inductionOn with\n  | tmul l a =>\n    simp [sigmaTensor, Algebra.TensorProduct.map_tmul, AlgEquiv.mul_apply]\n  | add x y hx hy =>\n    simp only [map_add, hx, hy]",
+      1
+    ],
+    [
+      "  refine TensorProduct.induction_on z ?_ ?_ ?_\n  \u00b7 simp\n  \u00b7 intro l a\n    simp [sigmaTensor, Algebra.TensorProduct.map_tmul, AlgEquiv.one_apply]\n  \u00b7 intro x y hx hy\n    simp only [map_add, hx, hy]",
+      "  induction z using TensorProduct.inductionOn with\n  | tmul l a =>\n    simp [sigmaTensor, Algebra.TensorProduct.map_tmul, AlgEquiv.one_apply]\n  | add x y hx hy =>\n    simp only [map_add, hx, hy]",
+      1
+    ],
+    [
+      "    induction z using TensorProduct.induction_on with\n    | zero => simp\n",
+      "    induction z using TensorProduct.inductionOn with\n",
+      1
+    ],
+    [
+      "if_pos",
+      "ite_eq_left",
+      3
+    ],
+    [
+      "if_neg",
+      "ite_eq_right",
+      3
+    ],
+    [
+      "Set.mem_setOf_eq",
+      "Set.mem_ofPred_eq",
+      1
+    ],
+    [
+      "\n  haveI : MeasurableInv T := measurableInv_subgroup T\n",
+      "\n  have : MeasurableInv T := measurableInv_subgroup T\n",
+      1
+    ],
+    [
+      "\n  haveI : \u03c4T.IsInvInvariant := by\n",
+      "\n  have : \u03c4T.IsInvInvariant := by\n",
+      1
+    ],
+    [
+      "\n  haveI := Fact.mk hprime\n",
+      "\n  have := Fact.mk hprime\n",
+      1
+    ],
+    [
+      "\n  haveI : SecondCountableTopology (Matrix (Fin 2) (Fin 2) A) :=\n",
+      "\n  have : SecondCountableTopology (Matrix (Fin 2) (Fin 2) A) :=\n",
+      1
+    ],
+    [
+      "\n  haveI : SecondCountableTopology (Matrix (Fin 2) (Fin 2) A)\u1d50\u1d52\u1d56 :=\n",
+      "\n  have : SecondCountableTopology (Matrix (Fin 2) (Fin 2) A)\u1d50\u1d52\u1d56 :=\n",
+      1
+    ],
+    [
+      "\n  haveI : T2Space (Matrix (Fin 2) (Fin 2) A) := inferInstanceAs (T2Space (Fin 2 \u2192 Fin 2 \u2192 A))\n",
+      "\n  have : T2Space (Matrix (Fin 2) (Fin 2) A) := inferInstanceAs (T2Space (Fin 2 \u2192 Fin 2 \u2192 A))\n",
+      2
+    ],
+    [
+      "\n  haveI : LocallyCompactSpace (Matrix (Fin 2) (Fin 2) A) :=\n",
+      "\n  have : LocallyCompactSpace (Matrix (Fin 2) (Fin 2) A) :=\n",
+      1
+    ],
+    [
+      "\n  haveI := locallyCompactSpace_gl A\n",
+      "\n  have := locallyCompactSpace_gl A\n",
+      2
+    ],
+    [
+      "\n  haveI := secondCountableTopology_gl A\n",
+      "\n  have := secondCountableTopology_gl A\n",
+      3
+    ],
+    [
+      "\n  haveI : T2Space (GL (Fin 2) A) := Units.isEmbedding_embedProduct.t2Space\n",
+      "\n  have : T2Space (GL (Fin 2) A) := Units.isEmbedding_embedProduct.t2Space\n",
+      1
+    ],
+    [
+      "\n  haveI := isTopologicalRing_tensor K L A\n",
+      "\n  have := isTopologicalRing_tensor K L A\n",
+      2
+    ],
+    [
+      "\n  haveI := t2Space_tensorGL K L A\n",
+      "\n  have := t2Space_tensorGL K L A\n",
+      1
+    ],
+    [
+      "\n  letI : MeasurableSpace T := borel T\n",
+      "\n  let : MeasurableSpace T := borel T\n",
+      3
+    ],
+    [
+      "\n  haveI : BorelSpace T := \u27e8rfl\u27e9\n",
+      "\n  have : BorelSpace T := \u27e8rfl\u27e9\n",
+      5
+    ],
+    [
+      "\n  haveI : LocallyCompactSpace T := hT.locallyCompactSpace\n",
+      "\n  have : LocallyCompactSpace T := hT.locallyCompactSpace\n",
+      3
+    ],
+    [
+      "\n  haveI : SecondCountableTopology T := Topology.IsEmbedding.subtypeVal.secondCountableTopology\n",
+      "\n  have : SecondCountableTopology T := Topology.IsEmbedding.subtypeVal.secondCountableTopology\n",
+      3
+    ],
+    [
+      "\n  haveI : SigmaCompactSpace T := sigmaCompactSpace_of_locallyCompact_secondCountable\n",
+      "\n  have : SigmaCompactSpace T := sigmaCompactSpace_of_locallyCompact_secondCountable\n",
+      2
+    ],
+    [
+      "\n  haveI := h\u03c4\n",
+      "\n  have := h\u03c4\n",
+      3
+    ],
+    [
+      "\n  haveI := hcomm\n",
+      "\n  have := hcomm\n",
+      1
+    ],
+    [
+      "\n  haveI := regular_of_isHaarMeasure_of_isClosed T hT \u03c4 h\u03c4\n",
+      "\n  have := regular_of_isHaarMeasure_of_isClosed T hT \u03c4 h\u03c4\n",
+      1
+    ],
+    [
+      "\n  letI : MeasurableSpace (GL (Fin 2) A) := glBorelOf A\n",
+      "\n  let : MeasurableSpace (GL (Fin 2) A) := glBorelOf A\n",
+      2
+    ],
+    [
+      "\n  haveI : BorelSpace (GL (Fin 2) A) := borelSpace_glBorelOf A\n",
+      "\n  have : BorelSpace (GL (Fin 2) A) := borelSpace_glBorelOf A\n",
+      1
+    ],
+    [
+      "\n  haveI := sigmaCompactSpace_gl A\n",
+      "\n  have := sigmaCompactSpace_gl A\n",
+      1
+    ],
+    [
+      "\n  haveI := h\u03bc\n",
+      "\n  have := h\u03bc\n",
+      2
+    ],
+    [
+      "\n  letI : MeasurableSpace T := centralizerBorel A \u03b3\n",
+      "\n  let : MeasurableSpace T := centralizerBorel A \u03b3\n",
+      1
+    ],
+    [
+      "\n  haveI : @SFinite T (borel T) \u03c4 := sfinite_of_isHaarMeasure_of_isClosed T hTc \u03c4 h\u03c4\n",
+      "\n  have : @SFinite T (borel T) \u03c4 := sfinite_of_isHaarMeasure_of_isClosed T hTc \u03c4 h\u03c4\n",
+      1
+    ],
+    [
+      "\n  haveI : @Measure.IsInvInvariant T (borel T) _ \u03c4 :=\n",
+      "\n  have : @Measure.IsInvInvariant T (borel T) _ \u03c4 :=\n",
+      1
+    ],
+    [
+      "\n  haveI := t2Space_tensor K L A\n",
+      "\n  have := t2Space_tensor K L A\n",
+      1
+    ],
+    [
+      "\n  haveI := locallyCompactSpace_tensor K L A\n",
+      "\n  have := locallyCompactSpace_tensor K L A\n",
+      1
+    ],
+    [
+      "\n  haveI := hsc\n",
+      "\n  have := hsc\n",
+      1
+    ],
+    [
+      "\n  letI : MeasurableSpace (GL (Fin 2) (L \u2297[K] A)) := glBorelOf (L \u2297[K] A)\n",
+      "\n  let : MeasurableSpace (GL (Fin 2) (L \u2297[K] A)) := glBorelOf (L \u2297[K] A)\n",
+      1
+    ],
+    [
+      "\n  haveI : BorelSpace (GL (Fin 2) (L \u2297[K] A)) := borelSpace_glBorelOf (L \u2297[K] A)\n",
+      "\n  have : BorelSpace (GL (Fin 2) (L \u2297[K] A)) := borelSpace_glBorelOf (L \u2297[K] A)\n",
+      2
+    ],
+    [
+      "\n  haveI := locallyCompactSpace_gl (L \u2297[K] A)\n",
+      "\n  have := locallyCompactSpace_gl (L \u2297[K] A)\n",
+      1
+    ],
+    [
+      "\n  haveI := secondCountableTopology_gl (L \u2297[K] A)\n",
+      "\n  have := secondCountableTopology_gl (L \u2297[K] A)\n",
+      1
+    ],
+    [
+      "\n  haveI := sigmaCompactSpace_gl (L \u2297[K] A)\n",
+      "\n  have := sigmaCompactSpace_gl (L \u2297[K] A)\n",
+      1
+    ],
+    [
+      "\n  letI : MeasurableSpace T := twistedCentralizerBorel K L A \u03c3 \u03b4\n",
+      "\n  let : MeasurableSpace T := twistedCentralizerBorel K L A \u03c3 \u03b4\n",
+      1
+    ],
+    [
+      "\n  haveI : @SFinite T (borel T) \u03c4' := sfinite_of_isHaarMeasure_of_isClosed T hclosed \u03c4' h\u03c4'\n",
+      "\n  have : @SFinite T (borel T) \u03c4' := sfinite_of_isHaarMeasure_of_isClosed T hclosed \u03c4' h\u03c4'\n",
+      1
+    ],
+    [
+      "\n  haveI : @Measure.IsInvInvariant T (borel T) _ \u03c4' :=\n",
+      "\n  have : @Measure.IsInvInvariant T (borel T) _ \u03c4' :=\n",
+      1
+    ],
+    [
+      "\n  haveI := borelSpace_glBorelOf A\n",
+      "\n  have := borelSpace_glBorelOf A\n",
+      3
+    ],
+    [
+      "\n  haveI := HeightOneSpectrum.Extension.finite (\ud835\udcde K) K L (\ud835\udcde L) v\n",
+      "\n  have := HeightOneSpectrum.Extension.finite (\ud835\udcde K) K L (\ud835\udcde L) v\n",
+      1
+    ],
+    [
+      "\n  haveI : \u2200 w : InfinitePlace K, SecondCountableTopology w.Completion := fun w =>\n",
+      "\n  have : \u2200 w : InfinitePlace K, SecondCountableTopology w.Completion := fun w =>\n",
+      1
+    ],
+    [
+      "\n  haveI := secondCountableTopology_infiniteAdeleRing K\n",
+      "\n  have := secondCountableTopology_infiniteAdeleRing K\n",
+      1
+    ],
+    [
+      "\n  letI := glBorelOf (InfiniteAdeleRing K)\n",
+      "\n  let := glBorelOf (InfiniteAdeleRing K)\n",
+      1
+    ],
+    [
+      "\n  haveI := borelSpace_glBorelOf (InfiniteAdeleRing K)\n",
+      "\n  have := borelSpace_glBorelOf (InfiniteAdeleRing K)\n",
+      1
+    ],
+    [
+      "\n  haveI := locallyCompactSpace_gl (InfiniteAdeleRing K)\n",
+      "\n  have := locallyCompactSpace_gl (InfiniteAdeleRing K)\n",
+      1
+    ],
+    [
+      "\n  letI := glBorelOf (L \u2297[K] InfiniteAdeleRing K)\n",
+      "\n  let := glBorelOf (L \u2297[K] InfiniteAdeleRing K)\n",
+      1
+    ],
+    [
+      "\n  haveI := borelSpace_glBorelOf (L \u2297[K] InfiniteAdeleRing K)\n",
+      "\n  have := borelSpace_glBorelOf (L \u2297[K] InfiniteAdeleRing K)\n",
+      1
+    ],
+    [
+      "\n  haveI := isTopologicalGroup_tensorGL K L (InfiniteAdeleRing K)\n",
+      "\n  have := isTopologicalGroup_tensorGL K L (InfiniteAdeleRing K)\n",
+      1
+    ],
+    [
+      "\n  haveI := locallyCompactSpace_tensorGL K L (InfiniteAdeleRing K)\n",
+      "\n  have := locallyCompactSpace_tensorGL K L (InfiniteAdeleRing K)\n",
+      1
+    ],
+    [
+      "\n  haveI : (Measure.map \u0398 \u03bc).IsHaarMeasure := \u0398.isHaarMeasure_map \u03bc h\u0398 h\u0398s\n",
+      "\n  have : (Measure.map \u0398 \u03bc).IsHaarMeasure := \u0398.isHaarMeasure_map \u03bc h\u0398 h\u0398s\n",
+      1
+    ],
+    [
+      "\n  letI := glBorelOf A\n",
+      "\n  let := glBorelOf A\n",
+      3
+    ],
+    [
+      "\n  letI := glBorelOf (L \u2297[K] A)\n",
+      "\n  let := glBorelOf (L \u2297[K] A)\n",
+      4
+    ],
+    [
+      "\n  haveI := borelSpace_glBorelOf (L \u2297[K] A)\n",
+      "\n  have := borelSpace_glBorelOf (L \u2297[K] A)\n",
+      3
+    ],
+    [
+      "\n  haveI := isTopologicalGroup_tensorGL K L A\n",
+      "\n  have := isTopologicalGroup_tensorGL K L A\n",
+      2
+    ],
+    [
+      "\n  letI := centralizerBorel A \u03b3\n",
+      "\n  let := centralizerBorel A \u03b3\n",
+      2
+    ],
+    [
+      "\n  haveI : BorelSpace (Subgroup.centralizer ({\u03b3} : Set (GL (Fin 2) A))) := \u27e8rfl\u27e9\n",
+      "\n  have : BorelSpace (Subgroup.centralizer ({\u03b3} : Set (GL (Fin 2) A))) := \u27e8rfl\u27e9\n",
+      1
+    ],
+    [
+      "\n  letI := twistedCentralizerBorel K L A \u03c3 \u03b4\n",
+      "\n  let := twistedCentralizerBorel K L A \u03c3 \u03b4\n",
+      2
+    ],
+    [
+      "\n  haveI : BorelSpace (twistedCentralizer K L A \u03c3 \u03b4) := \u27e8rfl\u27e9\n",
+      "\n  have : BorelSpace (twistedCentralizer K L A \u03c3 \u03b4) := \u27e8rfl\u27e9\n",
+      1
+    ],
+    [
+      "\n  haveI : Finite t := htfin.to_subtype\n",
+      "\n  have : Finite t := htfin.to_subtype\n",
+      1
+    ],
+    [
+      "\n  letI : MeasurableSpace (GL (Fin 2) (v.adicCompletion K)) := localGLBorel K v\n",
+      "\n  let : MeasurableSpace (GL (Fin 2) (v.adicCompletion K)) := localGLBorel K v\n",
+      4
+    ],
+    [
+      "\n  letI : MeasurableSpace (GL (Fin 2) (L \u2297[K] v.adicCompletion K)) := glBorelOf (L \u2297[K] v.adicCompletion K)\n",
+      "\n  let : MeasurableSpace (GL (Fin 2) (L \u2297[K] v.adicCompletion K)) := glBorelOf (L \u2297[K] v.adicCompletion K)\n",
+      3
+    ],
+    [
+      "\n  haveI : BorelSpace (GL (Fin 2) (L \u2297[K] v.adicCompletion K)) := borelSpace_glBorelOf _\n",
+      "\n  have : BorelSpace (GL (Fin 2) (L \u2297[K] v.adicCompletion K)) := borelSpace_glBorelOf _\n",
+      2
+    ],
+    [
+      "\n  haveI : BorelSpace (Fin (n + 1) \u2192 GL (Fin 2) (v.adicCompletion K)) := borelSpace_pi K v (n + 1)\n",
+      "\n  have : BorelSpace (Fin (n + 1) \u2192 GL (Fin 2) (v.adicCompletion K)) := borelSpace_pi K v (n + 1)\n",
+      1
+    ],
+    [
+      "\n  letI := localGLBorel K v\n",
+      "\n  let := localGLBorel K v\n",
+      4
+    ],
+    [
+      "\n  haveI := borelSpace_localGLBorel K v\n",
+      "\n  have := borelSpace_localGLBorel K v\n",
+      3
+    ],
+    [
+      "\n  haveI := OrbitalCarriers.secondCountableTopology_gl (v.adicCompletion K)\n",
+      "\n  have := OrbitalCarriers.secondCountableTopology_gl (v.adicCompletion K)\n",
+      3
+    ],
+    [
+      "\n  haveI := OrbitalCarriers.sigmaCompactSpace_gl (v.adicCompletion K)\n",
+      "\n  have := OrbitalCarriers.sigmaCompactSpace_gl (v.adicCompletion K)\n",
+      2
+    ],
+    [
+      "\n  haveI := isHaarMeasure_localHaar K v\n",
+      "\n  have := isHaarMeasure_localHaar K v\n",
+      2
+    ],
+    [
+      "\n  letI := centralizerBorel (v.adicCompletion K) \u03b3\n",
+      "\n  let := centralizerBorel (v.adicCompletion K) \u03b3\n",
+      1
+    ],
+    [
+      "\n  haveI : BorelSpace (Subgroup.centralizer ({\u03b3} : Set (GL (Fin 2) (v.adicCompletion K)))) := \u27e8rfl\u27e9\n",
+      "\n  have : BorelSpace (Subgroup.centralizer ({\u03b3} : Set (GL (Fin 2) (v.adicCompletion K)))) := \u27e8rfl\u27e9\n",
+      1
+    ],
+    [
+      "\n  letI := glBorelOf (L \u2297[K] v.adicCompletion K)\n",
+      "\n  let := glBorelOf (L \u2297[K] v.adicCompletion K)\n",
+      1
+    ],
+    [
+      "\n  letI := twistedCentralizerBorel K L (v.adicCompletion K) \u03c3 \u03b4\n",
+      "\n  let := twistedCentralizerBorel K L (v.adicCompletion K) \u03c3 \u03b4\n",
+      1
+    ],
+    [
+      "\n  haveI := borelSpace_glBorelOf (L \u2297[K] v.adicCompletion K)\n",
+      "\n  have := borelSpace_glBorelOf (L \u2297[K] v.adicCompletion K)\n",
+      1
+    ],
+    [
+      "\n  haveI := isTopologicalGroup_tensorGL K L (v.adicCompletion K)\n",
+      "\n  have := isTopologicalGroup_tensorGL K L (v.adicCompletion K)\n",
+      2
+    ],
+    [
+      "\n  haveI : BorelSpace (twistedCentralizer K L (v.adicCompletion K) \u03c3 \u03b4) := \u27e8rfl\u27e9\n",
+      "\n  have : BorelSpace (twistedCentralizer K L (v.adicCompletion K) \u03c3 \u03b4) := \u27e8rfl\u27e9\n",
+      1
+    ],
+    [
+      "\n  haveI := OrbitalCarriers.locallyCompactSpace_gl (v.adicCompletion K)\n",
+      "\n  have := OrbitalCarriers.locallyCompactSpace_gl (v.adicCompletion K)\n",
+      1
+    ],
+    [
+      "\n  haveI := isTopologicalRing_tensor K L (v.adicCompletion K)\n",
+      "\n  have := isTopologicalRing_tensor K L (v.adicCompletion K)\n",
+      1
+    ],
+    [
+      "\n  haveI := t2Space_tensor K L (v.adicCompletion K)\n",
+      "\n  have := t2Space_tensor K L (v.adicCompletion K)\n",
+      1
+    ],
+    [
+      "\n  haveI := locallyCompactSpace_tensor K L (v.adicCompletion K)\n",
+      "\n  have := locallyCompactSpace_tensor K L (v.adicCompletion K)\n",
+      1
+    ],
+    [
+      "\n  haveI := OrbitalCarriers.secondCountableTopology_semiLocal K L v\n",
+      "\n  have := OrbitalCarriers.secondCountableTopology_semiLocal K L v\n",
+      1
+    ],
+    [
+      "\n  haveI := OrbitalCarriers.locallyCompactSpace_gl (L \u2297[K] v.adicCompletion K)\n",
+      "\n  have := OrbitalCarriers.locallyCompactSpace_gl (L \u2297[K] v.adicCompletion K)\n",
+      1
+    ],
+    [
+      "\n  haveI := OrbitalCarriers.secondCountableTopology_gl (L \u2297[K] v.adicCompletion K)\n",
+      "\n  have := OrbitalCarriers.secondCountableTopology_gl (L \u2297[K] v.adicCompletion K)\n",
+      1
+    ],
+    [
+      "\n    letI := glBorelOf (L \u2297[K] v.adicCompletion K)\n",
+      "\n    let := glBorelOf (L \u2297[K] v.adicCompletion K)\n",
+      1
+    ],
+    [
+      "\n    letI := glBorelOf (v.adicCompletion K)\n",
+      "\n    let := glBorelOf (v.adicCompletion K)\n",
+      1
+    ],
+    [
+      "\n    haveI := borelSpace_glBorelOf (L \u2297[K] v.adicCompletion K)\n",
+      "\n    have := borelSpace_glBorelOf (L \u2297[K] v.adicCompletion K)\n",
+      1
+    ],
+    [
+      "\n    haveI := borelSpace_glBorelOf (v.adicCompletion K)\n",
+      "\n    have := borelSpace_glBorelOf (v.adicCompletion K)\n",
+      1
+    ],
+    [
+      "\n    letI := localGLBorel K v\n",
+      "\n    let := localGLBorel K v\n",
+      1
+    ],
+    [
+      "\n  haveI : @Measure.IsHaarMeasure _ _ _ (localCentralizerBorel K v \u03b3) \u03c4 := h\u03c4\n",
+      "\n  have : @Measure.IsHaarMeasure _ _ _ (localCentralizerBorel K v \u03b3) \u03c4 := h\u03c4\n",
+      1
+    ],
+    [
+      "\n  haveI : BorelSpace (GL (Fin 2) (v.adicCompletion K)) := borelSpace_localGLBorel K v\n",
+      "\n  have : BorelSpace (GL (Fin 2) (v.adicCompletion K)) := borelSpace_localGLBorel K v\n",
+      2
+    ],
+    [
+      "\n  haveI := secondCountable_localGL K v\n",
+      "\n  have := secondCountable_localGL K v\n",
+      1
+    ],
+    [
+      "\n  haveI : (localHaar K v).IsHaarMeasure := isHaarMeasure_localHaar K v\n",
+      "\n  have : (localHaar K v).IsHaarMeasure := isHaarMeasure_localHaar K v\n",
+      1
+    ],
+    [
+      "\n  haveI : T2Space (Matrix (Fin 2) (Fin 2) (v.adicCompletion K)) :=\n",
+      "\n  have : T2Space (Matrix (Fin 2) (Fin 2) (v.adicCompletion K)) :=\n",
+      1
+    ],
+    [
+      "\n  haveI := t2Space_localGL (K := K) (v := v)\n",
+      "\n  have := t2Space_localGL (K := K) (v := v)\n",
+      3
+    ],
+    [
+      "\n  haveI := hsf\n",
+      "\n  have := hsf\n",
+      1
+    ],
+    [
+      "\n  haveI := hmul\u2082; haveI := hinv; haveI := hsf; haveI := hli\n",
+      "\n  have := hmul\u2082; have := hinv; have := hsf; have := hli\n",
+      1
+    ],
+    [
+      "\n    haveI : BorelSpace (GL (Fin 2) (v.adicCompletion K)) := borelSpace_localGLBorel K v\n",
+      "\n    have : BorelSpace (GL (Fin 2) (v.adicCompletion K)) := borelSpace_localGLBorel K v\n",
+      1
+    ],
+    [
+      "\n    letI : MeasurableSpace (twistedCentralizer K L (v.adicCompletion K) \u03c3 \u03b4) :=\n",
+      "\n    let : MeasurableSpace (twistedCentralizer K L (v.adicCompletion K) \u03c3 \u03b4) :=\n",
+      1
+    ],
+    [
+      "\n    letI : MeasurableSpace (Subgroup.centralizer ({\u03b3} : Set (GL (Fin 2) (v.adicCompletion K)))) :=\n",
+      "\n    let : MeasurableSpace (Subgroup.centralizer ({\u03b3} : Set (GL (Fin 2) (v.adicCompletion K)))) :=\n",
+      1
+    ],
+    [
+      "\n    haveI := hTwinv; haveI := hCinv\n",
+      "\n    have := hTwinv; have := hCinv\n",
+      1
+    ],
+    [
+      "\n    haveI := h\u03c4'sf; haveI := h\u03c4'inv; haveI := h\u03c4sf; haveI := h\u03c4inv\n",
+      "\n    have := h\u03c4'sf; have := h\u03c4'inv; have := h\u03c4sf; have := h\u03c4inv\n",
+      1
+    ]
+  ],
+  "card_replacements": [],
+  "baseline_byte_identical_to_pinned_supplier": false,
+  "baseline_by_role_byte_identical_to_pinned_supplier": {
+    "source": false,
+    "card": true
+  },
+  "prior_source_changes_preserved": "--- supplier\n+++ baseline-canonical\n@@ -481,7 +481,7 @@\n private theorem psiL_pi_apply (z : (\u03a0 j, E j) \u2297[K] L) (i : Fin (n + 1)) (j : J) :\n     psiL K L (\u03a0 j, E j) \u03b9 \u03c3 n z i j =\n       psiL K L (E j) ((Pi.evalAlgHom K E j).comp \u03b9) \u03c3 n (piDistrib K L E z j) i := by\n-  induction z with\n+  induction z using TensorProduct.induction_on with\n   | zero => simp\n   | tmul a x => simp [psiL_tmul_apply, piDistrib_tmul]\n   | add y w hy hw => simp only [map_add, Pi.add_apply, hy, hw]\n@@ -555,7 +555,7 @@\n private theorem psiR_sigmaTensor (h\u03c31 : \u03c3 ^ (n + 1) = 1) (z : L \u2297[K] F) :\n     psiR K L F \u03b9 \u03c3 n (sigmaTensor K L F \u03c3 z) =\n       fun i : Fin (n + 1) => psiR K L F \u03b9 \u03c3 n z (i + 1) := by\n-  induction z with\n+  induction z using TensorProduct.induction_on with\n   | zero => funext i; simp\n   | tmul x a =>\n     funext i\n@@ -1591,7 +1591,7 @@\n       map_add' := fun x y => map_add (sigmaTensor K L A \u03c3) x y\n       map_smul' := fun a z => by\n         rw [RingHom.id_apply]\n-        induction z with\n+        induction z using TensorProduct.induction_on with\n         | zero => rw [smul_zero, map_zero, smul_zero]\n         | tmul x b => rw [hs, SplitModel.sigmaTensor_tmul K L A \u03c3, SplitModel.sigmaTensor_tmul K L A \u03c3, hs]\n         | add y w hy hw => rw [smul_add, map_add, map_add, smul_add, hy, hw] }\n",
+  "prior_card_changes_preserved": "",
+  "pinned_supplier_source_and_card_preserved": true,
+  "public_card_statement_literal_preserved": true,
+  "solution_statement_literal_preserved": true,
+  "all_public_declaration_headers_literal_unchanged": true,
+  "verification_pending": false,
+  "installed": true,
+  "no_linter_suppression_added": true,
+  "complete_original_proof_preserved": true,
+  "full_original_statement_and_hypotheses_preserved": true,
+  "max_active_flt_jobs": 1,
+  "lean_threads": 1,
+  "original_actual_errors": 4,
+  "original_actual_warnings": 178,
+  "library_search": "No exact sigmaTensor compatibility or split-factor matching theorem in current trureturing D5/Reg. Pinned Mathlib LinearAlgebra/TensorProduct/Defs.lean:134-148 gives inductionOn with pure-tensor and addition cases and a deprecated wrapper with unused zero branch. Algebra/Algebra/Pi.lean:53-73 supplies AlgHom.pi with implicit R and A. This complete sibling proof uses the same tensor arguments and also has the actual extra factor-coordinate induction and deprecated conditional/set-membership spellings.",
+  "change": "Retain the complete supplier split-factor matching proof, precise Hecke-algebra formula, all original declaration headers and every assumption. Apply the same typed two-case tensor induction as in the individually verified local-matching proof; update four other actual deprecated tensor eliminators, dropping only their subsumed zero branches. Update the two homomorphism interfaces and actual conditional/set-membership aliases. Change only all 159 actually warned haveI/letI tokens across 152 lines and 100 distinct exact line replacements. Preserve all prior supplier-port changes and existing linter settings. Append exact source/card recursive-axiom queries and await the unchanged single queue.",
+  "actual_warned_style_tokens": 159,
+  "actual_warned_style_lines": 152,
+  "full_original_complete": false,
+  "official_new_solve_credit": 0,
+  "stale_terminal_state_entries_excluded": [],
+  "active_import_closure_excluded": [
+    "Submission.Supplier.P2M.Sol.S_AutomorphicForm_exists_finset_forall_eq_and_forall_exists_of_isRegularSemisimple_normString"
+  ],
+  "active_transitive_import_closure_size": 60,
+  "actual_live_descendant_sources": [
+    {
+      "pid": 61696,
+      "source": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_AutomorphicForm_exists_finset_forall_eq_and_forall_exists_of_isRegularSemisimple_normString.lean"
+    }
+  ],
+  "all_four_canonical_adapted_source_card_modules_excluded": [
+    "P2M.Sol.S_AutomorphicForm_areMatchingLocal_splitFactor_heckeAlgebra_of_prime",
+    "Submission.Supplier.P2M.Sol.S_AutomorphicForm_areMatchingLocal_splitFactor_heckeAlgebra_of_prime",
+    "Submission.Supplier.Theorems.Thm_AutomorphicForm_areMatchingLocal_splitFactor_heckeAlgebra_of_prime",
+    "Theorems.Thm_AutomorphicForm_areMatchingLocal_splitFactor_heckeAlgebra_of_prime"
+  ]
+}
