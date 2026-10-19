@@ -1,0 +1,182 @@
+{
+  "at": "2026-10-19T12:57:55.175330+00:00",
+  "name": "AutomorphicForm_exists_finTestFactor_isUnitFactorizableAboveOfType_tendsto_rightConv_of_mem_archCutSubmodule",
+  "candidate": "r1",
+  "card_candidate": "r1",
+  "source_replacements": [
+    [
+      "\n  haveI := HeightOneSpectrum.Extension.finite (\ud835\udcde K) K L (\ud835\udcde L) v\n",
+      "\n  have := HeightOneSpectrum.Extension.finite (\ud835\udcde K) K L (\ud835\udcde L) v\n",
+      1
+    ],
+    [
+      "\n  haveI := t2Space_tensorGL K L (v.adicCompletion K)\n",
+      "\n  have := t2Space_tensorGL K L (v.adicCompletion K)\n",
+      1
+    ],
+    [
+      "\n  haveI : R1Space (GL (Fin 2) (L \u2297[K] v.adicCompletion K)) := T2Space.r1Space\n",
+      "\n  have : R1Space (GL (Fin 2) (L \u2297[K] v.adicCompletion K)) := T2Space.r1Space\n",
+      1
+    ],
+    [
+      "\n  haveI : T2Space (Matrix (Fin 2) (Fin 2) (InfiniteAdeleRing F)) :=\n",
+      "\n  have : T2Space (Matrix (Fin 2) (Fin 2) (InfiniteAdeleRing F)) :=\n",
+      3
+    ],
+    [
+      "\n  haveI : LocallyCompactSpace (Matrix (Fin 2) (Fin 2) (InfiniteAdeleRing F)) :=\n",
+      "\n  have : LocallyCompactSpace (Matrix (Fin 2) (Fin 2) (InfiniteAdeleRing F)) :=\n",
+      2
+    ],
+    [
+      "      (archHaarK F) := by\n  letI := glBorelOf (InfiniteAdeleRing F)\n",
+      "      (archHaarK F) := by\n  let := glBorelOf (InfiniteAdeleRing F)\n",
+      1
+    ],
+    [
+      "\n  haveI := borelSpace_glBorelOf (InfiniteAdeleRing F)\n",
+      "\n  have := borelSpace_glBorelOf (InfiniteAdeleRing F)\n",
+      2
+    ],
+    [
+      "\n  haveI : LocallyCompactSpace (GL (Fin 2) (InfiniteAdeleRing F)) :=\n",
+      "\n  have : LocallyCompactSpace (GL (Fin 2) (InfiniteAdeleRing F)) :=\n",
+      1
+    ],
+    [
+      "\n  letI : MeasurableSpace (AdelicGL2 (\ud835\udcde F) F) := AdelicHaar.glBorel (Fin 2) (\ud835\udcde F) F\n",
+      "\n  let : MeasurableSpace (AdelicGL2 (\ud835\udcde F) F) := AdelicHaar.glBorel (Fin 2) (\ud835\udcde F) F\n",
+      1
+    ],
+    [
+      "\n  haveI := AdelicHaar.borelSpace_glBorel (Fin 2) (\ud835\udcde F) F\n",
+      "\n  have := AdelicHaar.borelSpace_glBorel (Fin 2) (\ud835\udcde F) F\n",
+      1
+    ],
+    [
+      "\n  haveI := AdelicHaar.isHaarMeasure_adelicGLHaar (Fin 2) (\ud835\udcde F) F\n",
+      "\n  have := AdelicHaar.isHaarMeasure_adelicGLHaar (Fin 2) (\ud835\udcde F) F\n",
+      1
+    ],
+    [
+      "\n  letI : MeasurableSpace (GL (Fin 2) (InfiniteAdeleRing F)) := glBorelOf (InfiniteAdeleRing F)\n",
+      "\n  let : MeasurableSpace (GL (Fin 2) (InfiniteAdeleRing F)) := glBorelOf (InfiniteAdeleRing F)\n",
+      1
+    ],
+    [
+      "\n  haveI := t2Space_archGL F\n",
+      "\n  have := t2Space_archGL F\n",
+      1
+    ],
+    [
+      "\n  haveI := locallyCompactSpace_archGL F\n",
+      "\n  have := locallyCompactSpace_archGL F\n",
+      1
+    ],
+    [
+      "\n  haveI := isHaarMeasure_archHaarK F\n",
+      "\n  have := isHaarMeasure_archHaarK F\n",
+      1
+    ],
+    [
+      "\n  haveI hinv : (archProjMeasure F U).IsMulLeftInvariant := by\n",
+      "\n  have hinv : (archProjMeasure F U).IsMulLeftInvariant := by\n",
+      1
+    ],
+    [
+      "\n  haveI hfin : IsFiniteMeasureOnCompacts (archProjMeasure F U) := by\n",
+      "\n  have hfin : IsFiniteMeasureOnCompacts (archProjMeasure F U) := by\n",
+      1
+    ],
+    [
+      "\n  haveI hpos : (archProjMeasure F U).IsOpenPosMeasure := by\n",
+      "\n  have hpos : (archProjMeasure F U).IsOpenPosMeasure := by\n",
+      1
+    ],
+    [
+      "\n  haveI hHaar : (archProjMeasure F U).IsHaarMeasure := {}\n",
+      "\n  have hHaar : (archProjMeasure F U).IsHaarMeasure := {}\n",
+      1
+    ],
+    [
+      "\n  haveI : (Ideal.span {(p : \u2124)}).IsPrime :=\n",
+      "\n  have : (Ideal.span {(p : \u2124)}).IsPrime :=\n",
+      1
+    ],
+    [
+      "\n  haveI : Infinite {p : \u2115 | Nat.Prime p} := Set.infinite_coe_iff.2 Nat.infinite_setOf_prime\n",
+      "\n  have : Infinite {p : \u2115 | Nat.Prime p} := Set.infinite_coe_iff.2 Nat.infinite_setOf_prime\n",
+      1
+    ],
+    [
+      "\n  letI : MeasurableSpace (GL (Fin 2) (InfiniteAdeleRing L)) := glBorelOf (InfiniteAdeleRing L)\n",
+      "\n  let : MeasurableSpace (GL (Fin 2) (InfiniteAdeleRing L)) := glBorelOf (InfiniteAdeleRing L)\n",
+      1
+    ],
+    [
+      "rw [hQ, Ideal.comap_bot_of_injective _ hinj] at hQcomap",
+      "rw [hQ, Ideal.under_def, Ideal.comap_bot_of_injective _ hinj] at hQcomap",
+      1
+    ],
+    [
+      "Set.setOf_forall",
+      "Set.ofPred_forall",
+      4
+    ],
+    [
+      "Set.setOf_and",
+      "Set.ofPred_and",
+      2
+    ],
+    [
+      "Set.mem_setOf_eq",
+      "Set.mem_ofPred_eq",
+      1
+    ],
+    [
+      "Nat.infinite_setOf_prime",
+      "Nat.infinite_setOfPred_prime",
+      1
+    ]
+  ],
+  "card_replacements": [],
+  "baseline_byte_identical_to_pinned_supplier": true,
+  "baseline_by_role_byte_identical_to_pinned_supplier": {
+    "source": true,
+    "card": true
+  },
+  "prior_source_changes_preserved": "",
+  "prior_card_changes_preserved": "",
+  "pinned_supplier_source_and_card_preserved": true,
+  "public_card_statement_literal_preserved": true,
+  "solution_statement_literal_preserved": true,
+  "all_public_declaration_headers_literal_unchanged": true,
+  "verification_pending": false,
+  "installed": true,
+  "no_linter_suppression_added": true,
+  "complete_original_proof_preserved": true,
+  "full_original_statement_and_hypotheses_preserved": true,
+  "max_active_flt_jobs": 1,
+  "lean_threads": 1,
+  "original_actual_errors": 1,
+  "original_actual_warnings": 34,
+  "library_search": "No exact finite-test-factor target in current trureturing. Existing D5/S3/Arith/DiophantineApproximation/PlacesOverFinite.lean uses Ideal.under_def. Pinned official Mathlib RingTheory/Ideal/Over.lean:98 defines under_def as the algebraMap comap, and :263 provides under_bot.",
+  "change": "Retain the complete supplier proof and all original declarations and hypotheses. Explicitly unfold Ideal.under before the existing injective comap-bottom rewrite, preserving the proof of the nonzero height-one ideal over each rational prime. Update only actual deprecated aliases and all 26 actually warned proposition-local bindings. Append exact source/card recursive-axiom queries and await the unchanged single queue.",
+  "actual_warned_style_tokens": 26,
+  "actual_warned_style_lines": 26,
+  "full_original_complete": false,
+  "official_new_solve_credit": 0,
+  "stale_terminal_state_entries_excluded": [],
+  "active_import_closure_excluded": [
+    "Submission.Supplier.Theorems.Thm_AutomorphicForm_exists_pos_setIntegral_prod_semiLocalComponent_eq_mul_prod_integral"
+  ],
+  "active_transitive_import_closure_size": 57,
+  "actual_live_descendant_sources": [],
+  "all_four_canonical_adapted_source_card_modules_excluded": [
+    "P2M.Sol.S_AutomorphicForm_exists_finTestFactor_isUnitFactorizableAboveOfType_tendsto_rightConv_of_mem_archCutSubmodule",
+    "Submission.Supplier.P2M.Sol.S_AutomorphicForm_exists_finTestFactor_isUnitFactorizableAboveOfType_tendsto_rightConv_of_mem_archCutSubmodule",
+    "Submission.Supplier.Theorems.Thm_AutomorphicForm_exists_finTestFactor_isUnitFactorizableAboveOfType_tendsto_rightConv_of_mem_archCutSubmodule",
+    "Theorems.Thm_AutomorphicForm_exists_finTestFactor_isUnitFactorizableAboveOfType_tendsto_rightConv_of_mem_archCutSubmodule"
+  ]
+}
