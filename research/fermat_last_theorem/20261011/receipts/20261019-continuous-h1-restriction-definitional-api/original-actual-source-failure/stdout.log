@@ -1,0 +1,12 @@
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_groupCohomology_exists_continuousH1Sr_linearEquiv_inf_of_isTrivial_of_coprime.lean:41:6: error(lean.unknownIdentifier): Unknown identifier `H1InfRes_g`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_groupCohomology_exists_continuousH1Sr_linearEquiv_inf_of_isTrivial_of_coprime.lean:40:76: error: unsolved goals
+k G : Type
+inst✝² : CommRing k
+inst✝¹ : Group G
+M : Rep.{0, 0, 0} k G
+Sg : Subgroup G
+inst✝ : Sg.Normal
+c : ↥(cocycles₁ M)
+⊢ (ModuleCat.Hom.hom (H1InfRes M Sg).g) ((ModuleCat.Hom.hom (H1π M)) c) =
+    (ModuleCat.Hom.hom (H1π (Rep.res Sg.subtype M)))
+      ((ConcreteCategory.hom (mapCocycles₁ Sg.subtype (𝟙 (Rep.res Sg.subtype M)))) c)
