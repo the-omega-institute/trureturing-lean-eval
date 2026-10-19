@@ -1,0 +1,61 @@
+{
+  "at": "2026-10-19T01:24:51.851988+00:00",
+  "name": "QuaternionAlgebra_IsEichlerOrder_primeHeckeSet_eq_and_heckeKernel_eq_of_ramified",
+  "candidate": "r1",
+  "card_candidate": "r1",
+  "source_replacements": [
+    [
+      "  obtain \u27e8\u03b4, k, h\u03b4, hk, hout\u27e9 :=",
+      "  obtain \u27e8\u03b4, h\u03b4, k, hk, hout\u27e9 :=",
+      1
+    ],
+    [
+      "if_pos",
+      "ite_eq_left",
+      2
+    ],
+    [
+      "if_neg",
+      "ite_eq_right",
+      2
+    ]
+  ],
+  "card_replacements": [],
+  "baseline_byte_identical_to_pinned_supplier": true,
+  "prior_source_changes_preserved": [],
+  "prior_card_changes_preserved": [],
+  "public_card_statement_literal_preserved": true,
+  "solution_statement_literal_preserved": true,
+  "pinned_supplier_source_and_card_preserved": true,
+  "verification_pending": false,
+  "installed": true,
+  "no_linter_suppression_added": true,
+  "complete_original_proof_preserved": true,
+  "full_original_statement_and_hypotheses_preserved": true,
+  "max_active_flt_jobs": 1,
+  "lean_threads": 1,
+  "original_actual_errors": 1,
+  "original_actual_warnings": 4,
+  "original_source_lines": 192,
+  "library_search": "Search-first: no DoubleCoset.mk_out_eq_mul clients found in current trureturing D5/Reg. Pinned Mathlib.GroupTheory.DoubleCoset:132 states exists h in H, exists k in K, out = h * g * k. The original five-slot pattern put k where the membership proof now occurs. Reuse the exact existing theorem with witnesses and memberships in its declared order; retain the complete proof.",
+  "change": "Preserve the complete 192-line supplier proof, every original public statement and all hypotheses. Reorder only the destructured DoubleCoset witnesses and memberships to match the actual existing theorem. Update the four actual deprecated if_pos/if_neg uses to ite_eq_left/ite_eq_right. Append source/card recursive-axiom queries and await the unchanged original single queue.",
+  "full_original_complete": false,
+  "official_new_solve_credit": 0,
+  "stale_terminal_state_entries_excluded": [],
+  "active_import_closure_excluded": [
+    "Submission.Supplier.Theorems.Thm_QuaternionAlgebra_IsMaximalOrder_ofFiniteIdele_mul_eq_mul_and_mem_ofFiniteIdele_mul_mul_iff_of_isDefiniteRamifiedExactlyAt"
+  ],
+  "active_transitive_import_closure_size": 34,
+  "actual_live_descendant_sources": [
+    {
+      "pid": 75984,
+      "source": "/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/Theorems/Thm_QuaternionAlgebra_IsMaximalOrder_ofFiniteIdele_mul_eq_mul_and_mem_ofFiniteIdele_mul_mul_iff_of_isDefiniteRamifiedExactlyAt.lean"
+    }
+  ],
+  "all_four_canonical_adapted_source_card_modules_excluded": [
+    "P2M.Sol.S_QuaternionAlgebra_IsEichlerOrder_primeHeckeSet_eq_and_heckeKernel_eq_of_ramified",
+    "Submission.Supplier.P2M.Sol.S_QuaternionAlgebra_IsEichlerOrder_primeHeckeSet_eq_and_heckeKernel_eq_of_ramified",
+    "Submission.Supplier.Theorems.Thm_QuaternionAlgebra_IsEichlerOrder_primeHeckeSet_eq_and_heckeKernel_eq_of_ramified",
+    "Theorems.Thm_QuaternionAlgebra_IsEichlerOrder_primeHeckeSet_eq_and_heckeKernel_eq_of_ramified"
+  ]
+}
