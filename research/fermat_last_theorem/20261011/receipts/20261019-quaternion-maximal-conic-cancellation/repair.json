@@ -1,0 +1,83 @@
+{
+  "at": "2026-10-19T01:16:33.924510+00:00",
+  "name": "QuaternionAlgebra_IsMaximalOrder_exists_mem_padicValRat_nrd_eq_one_of_isDefiniteRamifiedExactlyAt",
+  "candidate": "r2",
+  "card_candidate": "r1",
+  "source_replacements": [
+    [
+      "  linear_combination h\n",
+      "  apply sub_eq_zero.mp\n  calc\n    y\u2080 ^ 2 - A * y\u2081 ^ 2 - B =\n        y\u2080 ^ 2 - B - A * y\u2081 ^ 2 := sub_right_comm _ _ _\n    _ = (y\u2080 ^ 2 - B) + -(A * y\u2081 ^ 2) := sub_eq_add_neg _ _\n    _ = y\u2080 ^ 2 - B + -A * y\u2081 ^ 2 :=\n      congrArg (fun z : ZMod p => y\u2080 ^ 2 - B + z) (neg_mul A (y\u2081 ^ 2)).symm\n    _ = 0 := h\n",
+      1
+    ],
+    [
+      "      rw [this, map_sub, map_pow, map_add, map_mul, map_pow, hY\u2080r, hY\u2081r, \u2190 hyb]; ring",
+      "      rw [this, map_sub, map_pow, map_add, map_mul, map_pow, hY\u2080r, hY\u2081r, \u2190 hyb]\n      exact sub_eq_zero.mpr (add_sub_cancel (PadicInt.toZMod A * yb\u2081 ^ 2) (yb\u2080 ^ 2)).symm",
+      1
+    ],
+    [
+      "if_neg hr",
+      "ite_eq_right hr",
+      1
+    ],
+    [
+      "haveI : CharZero K",
+      "have : CharZero K",
+      1
+    ],
+    [
+      "  induction x using TensorProduct.induction_on with\n  | zero => rw [smul_zero, mul_zero]",
+      "  induction x using TensorProduct.inductionOn with",
+      1
+    ],
+    [
+      "  induction x using TensorProduct.induction_on with\n  | zero => rw [mul_zero, zero_mul]",
+      "  induction x using TensorProduct.inductionOn with",
+      1
+    ],
+    [
+      "haveI : Fact (Nat.Prime 2)",
+      "have : Fact (Nat.Prime 2)",
+      1
+    ],
+    [
+      "    push_cast; omega\n",
+      "    omega\n",
+      1
+    ]
+  ],
+  "card_replacements": [],
+  "baseline_byte_identical_to_pinned_supplier": true,
+  "prior_source_changes_preserved": [],
+  "prior_card_changes_preserved": [],
+  "public_card_statement_literal_preserved": true,
+  "solution_statement_literal_preserved": true,
+  "pinned_supplier_source_and_card_preserved": true,
+  "verification_pending": false,
+  "installed": true,
+  "no_linter_suppression_added": true,
+  "complete_original_proof_preserved": true,
+  "full_original_statement_and_hypotheses_preserved": true,
+  "max_active_flt_jobs": 1,
+  "lean_threads": 1,
+  "original_actual_errors": 2,
+  "original_actual_warnings": 6,
+  "original_source_lines": 847,
+  "library_search": "Search-first reuse: preserve pinned supplier proof. Pinned Mathlib.Algebra.Group.Basic:549 generates sub_right_comm; Basic:962 generates add_sub_cancel for a + (b - a) = b; Group.Defs:65 supplies sub_self. TensorProduct.Defs:135 inductionOn handles zero through tmul 0 0. Reuse these existing lemmas for the two actual ZMod p normalization failures.",
+  "change": "Preserve the complete 847-line supplier proof and exact original public statements and hypotheses. Replace only the failed conic_mod linear_combination with sub_eq_zero, sub_right_comm and neg_mul; retain conic_padic map rewrites and finish using add_sub_cancel and sub_self. Update the actual deprecated if_neg and TensorProduct names, remove only their obsolete zero branches, replace the two actual haveI-on-Prop warnings with have, and remove only the standalone no-op push_cast. Keep embedded push_cast proofs. Append source/card recursive-axiom queries. Await the unchanged original single queue.",
+  "full_original_complete": false,
+  "official_new_solve_credit": 0,
+  "stale_terminal_state_entries_excluded": [],
+  "active_import_closure_excluded": [
+    "Submission.Supplier.Theorems.Thm_QuaternionAlgebra_IsEichlerOrder_exists_finiteIdele_primeHeckeSet_ramified_conjByFiniteIdele_eq_classSetShift_involutive"
+  ],
+  "active_transitive_import_closure_size": 60,
+  "actual_live_descendant_sources": [],
+  "all_four_canonical_adapted_source_card_modules_excluded": [
+    "P2M.Sol.S_QuaternionAlgebra_IsMaximalOrder_exists_mem_padicValRat_nrd_eq_one_of_isDefiniteRamifiedExactlyAt",
+    "Submission.Supplier.P2M.Sol.S_QuaternionAlgebra_IsMaximalOrder_exists_mem_padicValRat_nrd_eq_one_of_isDefiniteRamifiedExactlyAt",
+    "Submission.Supplier.Theorems.Thm_QuaternionAlgebra_IsMaximalOrder_exists_mem_padicValRat_nrd_eq_one_of_isDefiniteRamifiedExactlyAt",
+    "Theorems.Thm_QuaternionAlgebra_IsMaximalOrder_exists_mem_padicValRat_nrd_eq_one_of_isDefiniteRamifiedExactlyAt"
+  ],
+  "revision_at": "2026-10-19T01:19:40.589407+00:00",
+  "revision_reason": "Actual r1 kernel found two rewrite matching failures on ZMod p operations. Replace those tactic rewrites with explicit congrArg/neg_mul and sub_eq_zero/add_sub_cancel equality proof terms; retain all original statements, hypotheses and complete proof. Actual r1 failures preserved; r2 awaits the same unchanged single queue."
+}

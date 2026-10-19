@@ -1,0 +1,47 @@
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_QuaternionAlgebra_IsMaximalOrder_exists_mem_padicValRat_nrd_eq_one_of_isDefiniteRamifiedExactlyAt.lean:201:26: error: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  -?a * ?b
+in the target expression
+  y₀ ^ 2 - B - A * y₁ ^ 2 = y₀ ^ 2 + -B + -A * y₁ ^ 2
+
+p : ℕ
+inst✝ : Fact (Nat.Prime p)
+hp2 : p ≠ 2
+A B : ZMod p
+hA : A ≠ 0
+hp : Nat.Prime p
+hcard : Fintype.card (ZMod p) % 2 = 1
+hf : (X ^ 2 - C B).degree = 2
+hg : (C (-A) * X ^ 2).degree = 2
+y₀ y₁ : ZMod p
+h : y₀ ^ 2 - B + -A * y₁ ^ 2 = 0
+⊢ y₀ ^ 2 - B - A * y₁ ^ 2 = y₀ ^ 2 + -B + -A * y₁ ^ 2
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_QuaternionAlgebra_IsMaximalOrder_exists_mem_padicValRat_nrd_eq_one_of_isDefiniteRamifiedExactlyAt.lean:255:8: error: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  ?a + (?b - ?a)
+in the target expression
+  yb₀ ^ 2 - (PadicInt.toZMod A * yb₁ ^ 2 + (yb₀ ^ 2 - PadicInt.toZMod A * yb₁ ^ 2)) = 0
+
+p : ℕ
+inst✝ : Fact (Nat.Prime p)
+hp2 : p ≠ 2
+A B : ℤ_[p]
+hA : ‖A‖ = 1
+hB : ‖B‖ = 1
+hp : Nat.Prime p
+h2 : 2 ≠ 0
+hAbar : PadicInt.toZMod A ≠ 0
+hBbar : PadicInt.toZMod B ≠ 0
+yb₀ yb₁ : ZMod p
+hyb : yb₀ ^ 2 - PadicInt.toZMod A * yb₁ ^ 2 = PadicInt.toZMod B
+Y₀ : ℤ_[p] := ↑yb₀.val
+hY₀ : Y₀ = ↑yb₀.val
+Y₁ : ℤ_[p] := ↑yb₁.val
+hY₁ : Y₁ = ↑yb₁.val
+hY₀r : PadicInt.toZMod Y₀ = yb₀
+hY₁r : PadicInt.toZMod Y₁ = yb₁
+hy0 : ¬yb₀ = 0
+this : eval Y₀ (X ^ 2 - C (A * Y₁ ^ 2 + B)) = Y₀ ^ 2 - (A * Y₁ ^ 2 + B)
+⊢ yb₀ ^ 2 - (PadicInt.toZMod A * yb₁ ^ 2 + (yb₀ ^ 2 - PadicInt.toZMod A * yb₁ ^ 2)) = 0
+'P2MW.S_QuaternionAlgebra_IsMaximalOrder_exists_mem_padicValRat_nrd_eq_one_of_isDefiniteRamifiedExactlyAt.solution' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]

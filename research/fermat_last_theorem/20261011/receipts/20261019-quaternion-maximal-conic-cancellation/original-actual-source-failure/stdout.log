@@ -1,0 +1,66 @@
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_QuaternionAlgebra_IsMaximalOrder_exists_mem_padicValRat_nrd_eq_one_of_isDefiniteRamifiedExactlyAt.lean:117:95: warning: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_QuaternionAlgebra_IsMaximalOrder_exists_mem_padicValRat_nrd_eq_one_of_isDefiniteRamifiedExactlyAt.lean:196:2: error: ring failed, ring expressions not equal
+p : ℕ
+inst✝ : Fact (Nat.Prime p)
+hp2 : p ≠ 2
+A B : ZMod p
+hA : A ≠ 0
+hp : Nat.Prime p
+hcard : Fintype.card (ZMod p) % 2 = 1
+hf : (X ^ 2 - C B).degree = 2
+hg : (C (-A) * X ^ 2).degree = 2
+y₀ y₁ : ZMod p
+h : y₀ ^ 2 - B + -A * y₁ ^ 2 = 0
+⊢ -(A * y₁ ^ 2) - y₁ ^ 2 * -A = 0
+Try this:
+  [apply] ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_QuaternionAlgebra_IsMaximalOrder_exists_mem_padicValRat_nrd_eq_one_of_isDefiniteRamifiedExactlyAt.lean:245:87: error: unsolved goals
+p : ℕ
+inst✝ : Fact (Nat.Prime p)
+hp2 : p ≠ 2
+A B : ℤ_[p]
+hA : ‖A‖ = 1
+hB : ‖B‖ = 1
+hp : Nat.Prime p
+h2 : 2 ≠ 0
+hAbar : PadicInt.toZMod A ≠ 0
+hBbar : PadicInt.toZMod B ≠ 0
+yb₀ yb₁ : ZMod p
+hyb : yb₀ ^ 2 - PadicInt.toZMod A * yb₁ ^ 2 = PadicInt.toZMod B
+Y₀ : ℤ_[p] := ↑yb₀.val
+hY₀ : Y₀ = ↑yb₀.val
+Y₁ : ℤ_[p] := ↑yb₁.val
+hY₁ : Y₁ = ↑yb₁.val
+hY₀r : PadicInt.toZMod Y₀ = yb₀
+hY₁r : PadicInt.toZMod Y₁ = yb₁
+hy0 : ¬yb₀ = 0
+this : eval Y₀ (X ^ 2 - C (A * Y₁ ^ 2 + B)) = Y₀ ^ 2 - (A * Y₁ ^ 2 + B)
+⊢ yb₀ ^ 2 - yb₀ ^ 2 = 0
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_QuaternionAlgebra_IsMaximalOrder_exists_mem_padicValRat_nrd_eq_one_of_isDefiniteRamifiedExactlyAt.lean:281:2: warning: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_QuaternionAlgebra_IsMaximalOrder_exists_mem_padicValRat_nrd_eq_one_of_isDefiniteRamifiedExactlyAt.lean:354:20: warning: `TensorProduct.induction_on` has been deprecated: Use `TensorProduction.inductionOn` instead
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_QuaternionAlgebra_IsMaximalOrder_exists_mem_padicValRat_nrd_eq_one_of_isDefiniteRamifiedExactlyAt.lean:403:20: warning: `TensorProduct.induction_on` has been deprecated: Use `TensorProduction.inductionOn` instead
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_QuaternionAlgebra_IsMaximalOrder_exists_mem_padicValRat_nrd_eq_one_of_isDefiniteRamifiedExactlyAt.lean:667:2: warning: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+/Users/macstudio/omega/.lean-eval-recovery-20261007/flt/flt-official-port-20261006-src/Submission/Supplier/P2M/Sol/S_QuaternionAlgebra_IsMaximalOrder_exists_mem_padicValRat_nrd_eq_one_of_isDefiniteRamifiedExactlyAt.lean:835:4: warning: Unused tactic linter: `push_cast` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
